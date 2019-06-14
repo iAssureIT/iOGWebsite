@@ -16,8 +16,8 @@ export default class Footer extends Component {
        return(
             <div>      
             <div id="footer" className="footer-two pt50">
-            <div className="container-fluid bb-solid-1">
-                <div className="container pb35">
+            <div className="bb-solid-1">
+                <div className="col-lg-10 col-lg-offset-1pb35">
                     <div className="row">
                         <div className="col-md-3 col-sm-12 col-xs-12">
                             <h6 className="font-montserrat text-uppercase color-dark">About Us</h6>
@@ -70,8 +70,8 @@ export default class Footer extends Component {
                 </div>
             </div>
             
-            <div className="container-fluid pt20">
-                <div className="container">
+            <div className="pt20">
+                <div className="">
                     <div className="row">
 
                         <div className="col-md-6 col-sm-6 col-xs-6 pull-left">

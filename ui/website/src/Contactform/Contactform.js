@@ -60,7 +60,7 @@ export default class Contactform extends Component {
                             <form name="contactform" id="contactForm" method="post" action="assets/php/send.php" className="positioned">
                                 
                                 <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="senderName" id="senderName" className="input-md input-rounded form-control" placeholder="fullname" maxlength="100" required=""/>
+                                    <input type="text" name="senderName" id="senderName" className="input-md input-rounded form-control" placeholder="fullname" maxLength="100" required=""/>
                                 </div>                                           
                                 
                                 <div className="form-group col-md-6 col-sm-6 col-xs-12">

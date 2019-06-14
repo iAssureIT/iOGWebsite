@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-export default class Upstream extends Component {
+// import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
+export default class Upiog extends Component {
 
     
 
@@ -10,9 +14,8 @@ export default class Upstream extends Component {
 
   render(){
        return(
-            <div className="col-lg-12 contactBg"> 
-        <div className="col-lg-12" id="price" >
-            <div className="container pricepb50">
+        <div id="price" className="col-lg-12">
+            <div className="pricepb50">
 
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2 text-center pricemb50">                        
@@ -138,9 +141,7 @@ export default class Upstream extends Component {
                 </div>
 
             </div>
-        </div>
-        </div>
-                
+        </div>                
 
       );
   } 
