@@ -64,11 +64,11 @@ export default class Contactform extends Component {
                                 </div>                                           
                                 
                                 <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" name="senderEmail" id="senderEmail" className="input-md input-rounded form-control" placeholder="email address" maxlength="100" required=""/>
+                                    <input type="email" name="senderEmail" id="senderEmail" className="input-md input-rounded form-control" placeholder="email address" maxLength="100" required=""/>
                                 </div>                                        
                                 
                                 <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="url" name="senderWebsite" id="senderWebsite" className="input-md input-rounded form-control" placeholder="http://" maxlength="100"/>
+                                    <input type="url" name="senderWebsite" id="senderWebsite" className="input-md input-rounded form-control" placeholder="http://" maxLength="100"/>
                                 </div>                                             
                                 
                                 <div className="form-group col-md-6 col-sm-6 col-xs-12">

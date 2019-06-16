@@ -8,23 +8,28 @@
 }
 .banner{
 	border-radius: 0 0 50% 50%;
-	padding-top: 144px;
-    padding-bottom: 158px;
+	
     position: relative;
     z-index: 1;
     overflow: hidden;
     /*background-image: linear-gradient(44deg,#8232ec,#695cff);*/
-    background-image: url("/images/IOG_2.png");
+    background: #333;
     background-size: 100% 75%;
     color: #fff;
     height: 500px;
 }
-.container {
-    max-width: 930px;
-    position: relative;
+.bannerContainer {
+    /* max-width: 930px; */
+    /* position: relative; */
+    background-size: 100% 100%;
     width: 100%;
     margin-right: auto;
+    height: 550px;
     margin-left: auto;
+    float: left;
+    background-image: url(/images/IOG_2.png);
+    padding-top: 144px;
+    padding-bottom: 158px;
 }
 .lead {
     font-size: 18px;
