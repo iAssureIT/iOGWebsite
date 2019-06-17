@@ -12,11 +12,7 @@
     
     background: linear-gradient(-45deg, #7474BF, #348AC7);
 } 
-.upstreamBg{
-    
-    background-color: #367588;
-    height: 670px;
-}   
+   
 .color-light {
     color: #555 !important;
     font-size: 20px;
@@ -184,7 +180,7 @@ ul.no-icon-list {
     text-align: center;
     background-color: #fff;
     /*padding: 30px 0;*/
-    height: 420px;
+    height: 300px;
 }
 .price {
     margin-top: 10px;
@@ -476,7 +472,7 @@ ul.no-icon-list {
     padding-top: 75px;
 }
 .pricemb50{
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .pricemt50
 {
@@ -484,6 +480,7 @@ ul.no-icon-list {
 }
 .priceh1{
     line-height: 45px !important;
+    padding-top: 13px;
 }
 .priceh4{
     line-height: 30px !important;

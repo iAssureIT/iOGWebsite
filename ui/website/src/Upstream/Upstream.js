@@ -14,7 +14,8 @@ export default class Upiog extends Component {
 
   render(){
        return(
-        <div id="price" className="col-lg-12 upstreamBg">
+        <div className="col-lg-12 upstream-wrapper NOpadding">
+        <div id="price" className="upstreamBg">
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2 text-center pricemb50">                        
                         <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
@@ -133,6 +134,7 @@ export default class Upiog extends Component {
                         </div>
                     </div>
                 </div>
+        </div>                
         </div>                
 
       );
