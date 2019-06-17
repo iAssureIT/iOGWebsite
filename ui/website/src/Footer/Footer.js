@@ -7,20 +7,16 @@ import 'font-awesome/css/font-awesome.min.css';
 
 export default class Footer extends Component {
 
-    
-
-
-  
 
   render(){
        return(
             <div>      
-            <div id="footer" className="footer-two pt50">
+            <div id="footer" className="col-lg-12 pt20  footer-two">
             <div className="bb-solid-1">
-                <div className="col-lg-10 col-lg-offset-1pb35">
+                <div className="col-lg-10 col-lg-offset-1 pb35">
                     <div className="row">
                         <div className="col-md-3 col-sm-12 col-xs-12">
-                            <h6 className="font-montserrat text-uppercase color-dark">About Us</h6>
+                            <h6 className="font-montserrat text-uppercase">About Us</h6>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit morbi sagittis.
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
                         </div>
@@ -71,7 +67,7 @@ export default class Footer extends Component {
             </div>
             
             <div className="pt20">
-                <div className="">
+                <div className="col-lg-10 col-lg-offset-1">
                     <div className="row">
 
                         <div className="col-md-6 col-sm-6 col-xs-6 pull-left">

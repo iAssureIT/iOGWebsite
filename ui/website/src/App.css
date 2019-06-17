@@ -11,10 +11,14 @@
 .contactBg{
     
     background: linear-gradient(-45deg, #7474BF, #348AC7);
-
+} 
+.upstreamBg{
+    
+    background-color: #367588;
+    height: 670px;
 }   
 .color-light {
-    color: #ffffff !important;
+    color: #555 !important;
     font-size: 20px;
 }
 .color-white{
@@ -25,7 +29,7 @@
 }
 .contact.contact-us-one {
     background-color: rgba(255,255,255,.9);
-    border-bottom: 10px solid #ddd;
+    /*border-bottom: 10px solid #ddd;*/
 }
 
 .contact.contact-us-one, .contact.contact-us-two {
@@ -33,9 +37,12 @@
     float: left;
     padding: 20px 20px 40px 20px;
     border-radius: 5px;
+    background-color: #ffc60b;
 }
 
-
+.contactext{
+    color: #333;
+}
 .input-md {
     height: 40px;
     padding: 4px 10px;
@@ -47,7 +54,8 @@
     border-radius: 4px;
 }
 .contactbutton-grad-stellar {
-    background: linear-gradient(-45deg, #7474BF, #348AC7) !important;
+    /*background: linear-gradient(-45deg, #7474BF, #348AC7) !important;*/
+    background-color: #367588;
 }
 .contactbutton-block {
     display: block;
@@ -83,14 +91,12 @@
 
 
 .footer-two{
-    font-size: 13px;
-color: #747474;
-
-font-family: 'Open Sans', sans-serif !important;
-
+ font-size: 13px;
+ color: #fff;
+ background-color: #367588;
 }
 .footer-two a{
-color: #747474;
+color: #fff;
 
 
 }
@@ -113,7 +119,6 @@ color: #747474;
     line-height: 25px;
     text-decoration: none;
     text-align: left;
-    font-family: 'Open Sans', sans-serif !important;
     font-style: normal;
 
 }
@@ -121,7 +126,7 @@ color: #747474;
     color: #fe4530;
 }
 .bb-solid-1{
-    border-bottom: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
 }
 
 .font-montserrat{
@@ -178,7 +183,8 @@ ul.no-icon-list {
 .price.price-three {
     text-align: center;
     background-color: #fff;
-    padding: 30px 0;
+    /*padding: 30px 0;*/
+    height: 420px;
 }
 .price {
     margin-top: 10px;
@@ -224,7 +230,7 @@ ul.no-icon-list {
     text-transform: lowercase;
 }
 .bb-solid-1 {
-    border-bottom: 1px solid #e9eaec;
+    /*border-bottom: 1px solid #e9eaec;*/
 }
 
 .bg-gray {
@@ -311,18 +317,6 @@ color: #fe4530;
 color:#a85ad4;
 }
 
-.footer-two{
-    font-size: 13px;
-color: #747474;
-
-font-family: 'Open Sans', sans-serif !important;
-
-}
-.footer-two a{
-color: #747474;
-
-
-}
 .footer-two ul{
     list-style: none;
     text-decoration: none;
@@ -335,7 +329,7 @@ color: #747474;
 
 }
 .footer-two ul li a:hover{
-    color: #fe4530;
+    color: #000;
 
 }
 .footer-two p a{
@@ -347,10 +341,10 @@ color: #747474;
 
 }
 .footer-two p a:hover{
-    color: #fe4530;
+    color: #000;
 }
 .bb-solid-1{
-    border-bottom: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
 }
 
 .font-montserrat{
@@ -623,7 +617,8 @@ ul.no-icon-list {
 
 }
 .bg-grad-blood-mary {
-    background: linear-gradient(-45deg, #FF512F, #DD2476);
+    /*background: linear-gradient(-45deg, #FF512F, #DD2476);*/
+    background-color: #ffc60b;
 }
 
 .pricecolor-success {

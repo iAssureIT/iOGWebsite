@@ -14,7 +14,7 @@ export default class Contactform extends Component {
   render(){
        return(
         <div>         
-            <div id="contact" className="col-lg-12 pt100 pb100 contactBg">
+            <div id="contact" className="col-lg-12 pt100 pb100 contactext">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
