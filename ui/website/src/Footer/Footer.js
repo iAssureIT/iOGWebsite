@@ -15,7 +15,7 @@ export default class Footer extends Component {
             <div className="bb-solid-1">
                 <div className="col-lg-10 col-lg-offset-1 pb35">
                     <div className="row">
-                        <div className="col-md-3 col-sm-12 col-xs-12">
+                        <div className="col-md-5 col-sm-12 col-xs-12">
                             <h6 className="font-montserrat text-uppercase">About Us</h6>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit morbi sagittis.
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
@@ -49,19 +49,7 @@ export default class Footer extends Component {
                                 <li><a href="#">Forum</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
-                        </div>
-                        
-                        <div className="col-md-2 col-sm-3 col-xs-12">
-                            <h6 className="font-montserrat">Social Media</h6>
-                            <div className="social social-two">
-                                <a href="#"><i className="fa fa-twitter color-blue"></i></a>
-                                <a href="#"><i className="fa fa-facebook-f color-primary"></i></a>
-                                <a href="#"><i className="fa fa-linkedin color-blue"></i></a><br/><br/>
-                                <a href="#"><i className="fa fa-github color-dark"></i></a>
-                                <a href="#"><i className="fa fa-pinterest color-red"></i></a>
-                            </div>
-                        </div>
-
+                        </div>                        
                     </div>
                 </div>
             </div>

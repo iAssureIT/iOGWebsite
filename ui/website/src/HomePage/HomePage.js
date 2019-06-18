@@ -7,6 +7,7 @@ import Downstream             from '../Downstream/Downstream.js';
 import Upstream             from '../Upstream/Upstream.js';
 import Contactform             from '../Contactform/Contactform.js';
 import Footer             from '../Footer/Footer.js';
+import Socialmedia             from '../Socialmedia/Socialmedia.js';
 
 export default class HomePage extends Component {
   render() {  
@@ -16,6 +17,7 @@ export default class HomePage extends Component {
         <Downstream />
         <Upstream />
         <Contactform />
+        <Socialmedia />
         <Footer />
       </div>
     );  
