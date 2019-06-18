@@ -190,3 +190,87 @@
 .havh{
   
 }
+
+
+
+
+@keyframes bubblea1 {
+  
+  0% {
+    left:0px ;top :0px; transform: scale(1) ; 
+  }
+  20% {
+   left:150px ;top :100px; transform: scaleY(0.99) scaleX(1.10);
+  }
+  48% {
+    
+    left:250px ;top :200px; transform: scaleY(1.1) scaleX(0.9);
+  }
+  68% {
+    
+    left:500px ;top :350px; transform-origin: 350px -50px; transform: scaleY(0.98) scaleX(1.02);
+  }
+  80% {
+    transform: scaleY(1.10) scaleX(0.99);
+  }
+  97%, 100% {
+    left:900px; top :700px; transform: scale(1);
+  }
+}
+@keyframes bubblea2 {
+  
+  0% {
+    right:0px ;top :0px; transform: scale(1) ; 
+  }
+  20% {
+    transform: scaleY(0.90) scaleX(1.10);
+  }
+  48% {
+    
+     transform: scaleY(1.1) scaleX(0.9);
+  }
+  68% {
+    
+    transform: scaleY(0.99) scaleX(1.10);
+  }
+  80% {
+    transform: scaleY(1.10) scaleX(0.99);
+  }
+  97%, 100% {
+     right:-900px ;top :-500px;  transform: scale(1);
+  }
+}
+@keyframes bubblea3 {
+  
+  0% {
+       
+   bottom: 0px;  left: 1013px; transform: scale(1) ; 
+  }
+  20% {
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+  48% {
+    
+     transform: scaleY(1.1) scaleX(0.9);
+  }
+  68% {
+    
+    transform-origin: 350px -50px; transform: scaleY(0.98) scaleX(1.02);
+  }
+  80% {
+    transform: scaleY(1.02) scaleX(0.98);
+  }
+  97%, 100% {
+   bottom:550px; left:100px;    transform: scale(1);
+  }
+}
+.bub1{
+    animation:  bubblea1 30s linear infinite;
+
+
+}
+
+.bub2{
+    animation: bubblea3 30s linear infinite;
+}
+

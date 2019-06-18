@@ -87,8 +87,8 @@ export default class Downstream extends Component {
                         </div>
                     </div>
                 <div className="Bubble" >
-                    <div className="Main_Cards__Bubble" style={{"transform":" translateX(28px) translateY(-179px) scale(0.8)"} }></div>
-                    <div className="Main_Cards__Bubble" style={{"transform": "translateX(87px) translateY(157px) scale(0.9)"}}></div>
+                    <div className="Main_Cards__Bubble bub1"></div>
+                    <div className="Main_Cards__Bubble bub2"></div>
                 </div>
             </div>
         );
