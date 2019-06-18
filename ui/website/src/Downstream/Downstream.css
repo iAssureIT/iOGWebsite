@@ -53,11 +53,19 @@
 .text-justify{
 	text-align: justify;
 }
+@-webkit-keyframes rotation {
+    
+    to{
+       
+        -webkit-transform: perspective(100px) rotateY(10deg);
+    }
+}
 .upstreamBg{
+    padding: 30px 0px;
     background-size: 100% 100%;
     /*background-color: #367588;*/
     background-image: url("/images/data_image_svg+xml;….svg");
-    height: 540px;
+    /*height: 540px;*/
 }
 
 .upstream-wrapper:before {

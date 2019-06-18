@@ -187,10 +187,13 @@ ul.no-icon-list {
 
 
 .price.price-three {
+    /*transform: perspective(100px) rotateY(-5deg);
+    -webkit-transform: perspective(100px) rotateY(-5deg);*/
+    padding: 10px 0px;
     text-align: center;
     background-color: #fff;
     /*padding: 30px 0;*/
-    height: 300px;
+    /*height: 300px;*/
 }
 .price {
     margin-top: 10px;
@@ -531,7 +534,7 @@ ul.no-icon-list {
 .price.price-three {
     text-align: center;
     /*background-color: #fff;*/
-    padding: 30px 0;
+    padding: 0px 0px 30px 0px;
 }
 .price {
     margin-top: 10px;
@@ -567,7 +570,7 @@ ul.no-icon-list {
 }
 
 .price-three .price-body {
-    padding: 75px 0;
+    padding: 40px 0;
 }
 
 .price-body ul {
@@ -610,7 +613,7 @@ ul.no-icon-list {
 
 }
  .price-badge1,.price-badge2 {
-    margin: -30px auto 15px auto;
+    /*margin: -30px auto 15px auto;*/
     width: 50%;
     font-size: 11px;
     text-transform: uppercase;
