@@ -11,7 +11,7 @@ export default class Footer extends Component {
   render(){
        return(
             <div>      
-            <div id="footer" className="col-lg-12 pt20  footer-two">
+            <div id="footer" className="col-lg-12 pt20 bgiogblue footer-two">
             <div className="bb-solid-1">
                 <div className="col-lg-10 col-lg-offset-1 pb35">
                     <div className="row">

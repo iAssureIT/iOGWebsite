@@ -10,21 +10,29 @@
 
 .contactBg{
     
-    background: linear-gradient(-45deg, #7474BF, #348AC7);
+    /*background: linear-gradient(-45deg, #7474BF, #348AC7);*/
 } 
+<<<<<<< Updated upstream
    
+=======
+.upstreamBg{
+    
+    /*background-color: #367588;*/
+    height: 570px;
+}   
+>>>>>>> Stashed changes
 .color-light {
-    color: #555 !important;
+    /*color: #555 !important;*/
     font-size: 20px;
 }
 .color-white{
-  color: #fff;
+  /*color: #fff;*/
 }
 .font-size-normal {
     font-weight: 300 !important;
 }
 .contact.contact-us-one {
-    background-color: rgba(255,255,255,.9);
+    /*background-color: rgba(255,255,255,.9);*/
     /*border-bottom: 10px solid #ddd;*/
 }
 
@@ -33,17 +41,17 @@
     float: left;
     padding: 20px 20px 40px 20px;
     border-radius: 5px;
-    background-color: #ffc60b;
+    /*background-color: #ffc60b;*/
 }
 
 .contactext{
-    color: #333;
+    /*color: #333;*/
 }
 .input-md {
     height: 40px;
     padding: 4px 10px;
     font-size: 11px;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     text-transform: uppercase;
 }
 .input-rounded {
@@ -51,7 +59,7 @@
 }
 .contactbutton-grad-stellar {
     /*background: linear-gradient(-45deg, #7474BF, #348AC7) !important;*/
-    background-color: #367588;
+    /*background-color: #367588;*/
 }
 .contactbutton-block {
     display: block;
@@ -59,19 +67,21 @@
     margin-top: 5px !important;
     border:none !important;
     border-radius: 7px !important;
-    color: #ffffff !important;
+    /*color: #ffffff !important;*/
    
 
 
 }
 .contactbutton-md {
-     font-family: 'Montserrat', sans-serif !important;
+     /*font-family: 'Montserrat', sans-serif !important;*/
     text-transform: uppercase !important;
     font-size: 13px !important;
     padding: 12px 25px !important;
 }
 
-
+.unih1{
+    font-size: 30px;
+}
 
 
 
@@ -89,7 +99,7 @@
 .footer-two{
  font-size: 13px;
  color: #fff;
- background-color: #367588;
+ /*background-color: #367588;*/
 }
 .footer-two a{
 color: #fff;
@@ -108,7 +118,7 @@ color: #fff;
 
 }
 .footer-two ul li a:hover{
-    color: #fe4530;
+    /*color: #fe4530;*/
 
 }
 .footer-two p a{
@@ -119,14 +129,14 @@ color: #fff;
 
 }
 .footer-two p a:hover{
-    color: #fe4530;
+    /*color: #fe4530;*/
 }
 .bb-solid-1{
     /*border-bottom: 1px solid #eee;*/
 }
 
 .font-montserrat{
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
 }
 ul.no-icon-list {
     margin: 0;
@@ -189,7 +199,7 @@ ul.no-icon-list {
 }
  .price1 {
     font-size: 80px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     font-weight: ;
     line-height: 70px;
 }
@@ -230,7 +240,7 @@ ul.no-icon-list {
 }
 
 .bg-gray {
-    background-color: #f5f7f9 !important;
+    /*background-color: #f5f7f9 !important;*/
 }
 .pt100{
     padding-top: 100px;
@@ -295,22 +305,22 @@ ul.no-icon-list {
 }
 
 .color-blue{
-    color: #3dace1;
+    /*color: #3dace1;*/
 }
 .color-red{
-color: #fe4530;
+/*color: #fe4530;*/
 }
 .color-primary{
-    color: #337ab7;
+    /*color: #337ab7;*/
 }
 .color-dark{
-    color: #b0b2b4;
+    /*color: #b0b2b4;*/
 }
 .color-green{
-   color:  #b2cc71;
+   /*color:  #b2cc71;*/
 }
 .color-purple{
-color:#a85ad4;
+/*color:#a85ad4;*/
 }
 
 .footer-two ul{
@@ -325,26 +335,26 @@ color:#a85ad4;
 
 }
 .footer-two ul li a:hover{
-    color: #000;
+    /*color: #000;*/
 
 }
 .footer-two p a{
     line-height: 25px;
     text-decoration: none;
     text-align: left;
-    font-family: 'Open Sans', sans-serif !important;
+    /*font-family: 'Open Sans', sans-serif !important;*/
     font-style: normal;
 
 }
 .footer-two p a:hover{
-    color: #000;
+    /*color: #000;*/
 }
 .bb-solid-1{
     /*border-bottom: 1px solid #eee;*/
 }
 
 .font-montserrat{
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
 }
 ul.no-icon-list {
     margin: 0;
@@ -372,11 +382,11 @@ ul.no-icon-list {
     display: block;
     float: left;
     margin-top: 5px;
-        color: #ff4530!important;
+        /*color: #ff4530!important;*/
 }
 
 .blog-one .blog-one-attrib .blog-date {
-    color: #bbb;
+    /*color: #bbb;*/
     font-size: 11px;
     font-weight: 600;
     float: right;
@@ -386,13 +396,13 @@ ul.no-icon-list {
 
 .blog-one .blog-one-body .blog-title {
     font-size: 15px;
-    color: #aaa !important;
+    /*color: #aaa !important;*/
 }
 .blog-title {
     
     font-size: 18px;
     line-height: 1.45;
-    color: #aaa !important;
+    /*colo'r: #aaa !important;*/
 }
 
 
@@ -409,7 +419,7 @@ ul.no-icon-list {
 .blog-one .blog-one-body {
     padding: 30px 25px 0 25px;
     background: #fff;
-    background-color:#fff;
+    /*background-color:#fff;*/
     overflow: hidden;
     margin-top: -25px;
     float: left;
@@ -442,7 +452,7 @@ ul.no-icon-list {
 
 
 .bg-gray-rs{
-  background-color: #f5f7f9;
+  /*background-color: #f5f7f9;*/
   height:400px;
 }
 
@@ -451,7 +461,7 @@ ul.no-icon-list {
 }
 
 .contactp{
-    font-family: 'Open Sans', sans-serif ;
+    /*font-family: 'Open Sans', sans-serif ;*/
     margin: 0 0 25px 0;
     font-size: 13px;
     line-height: 25px;
@@ -498,7 +508,7 @@ ul.no-icon-list {
 .pricesmall {
     font-size: 50%;
     opacity: .7;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
 }
 .priceicon{
     font-size: 15px;
@@ -520,7 +530,7 @@ ul.no-icon-list {
 
 .price.price-three {
     text-align: center;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding: 30px 0;
 }
 .price {
@@ -534,11 +544,11 @@ ul.no-icon-list {
 
 .price-three span {
     font-size: 80px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     line-height: 70px;
 }
 .pricecolor-green {
-    color: #b2cc71 !important;
+    /*color: #b2cc71 !important;*/
 }
 
 
@@ -557,12 +567,12 @@ ul.no-icon-list {
 }
 
 .price-three .price-body {
-    padding: 20px 0;
+    padding: 75px 0;
 }
 
 .price-body ul {
     font-size: 13px;
-    color: #747474;
+    /*color: #333;*/
     margin: 0;
     padding: 0;
     list-style: none;
@@ -573,30 +583,30 @@ ul.no-icon-list {
     line-height: 25px;
 }
 .pricebtn1,.pricebtn2,.pricebtn3,.pricebtn4{
-    background-color: #b2cc71;
+    /*background-color: #367588;*/
     border-radius: 4px;
     font-size: 10px;
     padding: 8px 20px;
-    color: #fff !important;
+    /*color: #fff !important;*/
     margin-bottom: 5px;
     line-height: 1.42857143;
     border: 1px solid transparent;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     text-transform: uppercase;
     letter-spacing: 1px;
 
 }
 .pricebtn2{
-    background-color: #5cb85c;
+    /*background-color*/: #367588;
         margin-bottom: -4px;
 
 }
 .pricebtn3{
-    background-color: #1abc9c;
+    /*background-color: #367588;*/
 
 }
 .pricebtn4{
-    background-color: #3dace1;
+    /*background-color: #367588;*/
 
 }
  .price-badge1,.price-badge2 {
@@ -604,7 +614,7 @@ ul.no-icon-list {
     width: 50%;
     font-size: 11px;
     text-transform: uppercase;
-    color: #fff;
+    /*color: #fff;*/
     padding: 5px 10px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -615,33 +625,38 @@ ul.no-icon-list {
 }
 .bg-grad-blood-mary {
     /*background: linear-gradient(-45deg, #FF512F, #DD2476);*/
-    background-color: #ffc60b;
+    /*background-color: #ffc60b;*/
+    height: 40px;
+    /*color: #333;*/
 }
 
 .pricecolor-success {
-    color: #5cb85c !important;
+    /*color: #5cb85c !important;*/
 }
 
 .pricecolor-cyan {
-    color: #1abc9c !important;
+    /*color: #1abc9c !important;*/
 }
 .pricecolor-blue {
-    color: #3dace1 !important;
+    /*color: #3dace1 !important;*/
+}
+
+.iconsize{
+    font-size: 22px!important;
 }
 
 
+.bgiogblue{
+    background-color: #367588;
+}
 
+.textcolorblue{
+    color:#367588;
+}
+.bgiogyellow{
+    background-color: #f8b739;
+}
 
-
-
-
-
-
-
-
-
-
-
-.nknk{
-    
+.textcoloryellow{
+    color:#f8b739;
 }
