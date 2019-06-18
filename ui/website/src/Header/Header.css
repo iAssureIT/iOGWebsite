@@ -17,6 +17,9 @@
   color:#fff;
   font-weight: 600;
 }
+.navbar-default .navbar-nav > li > a {
+  padding-bottom: 17px;
+}
 .navbar-default .navbar-nav > .dropdown > a .caret{
   border-top-color: #fff;
     border-bottom-color: #fff;
@@ -104,7 +107,7 @@
 
 .navPadding{
   padding-top: 10px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 .dropDownA a:hover{
   color: #fff;
