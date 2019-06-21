@@ -13,21 +13,25 @@ export default class Socialmedia extends Component {
        return(
 
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 socialblock-bg">
-              <h1>3d images gallery</h1>
-                  <div className="container">
-                    <div id="carousel">
-                      <figure><img src="http://lorempixel.com/186/116/nature/1" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/2" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/3" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/4" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/5" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/6" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/7" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/nature/8" alt=""/></figure>
-                      <figure><img src="http://lorempixel.com/186/116/people/9" alt=""/></figure>
-                    </div>
-                  </div> 
-                  </div>
+                <div className="col-lg-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-8 col-sm-8 col-xs-8">
+                    <div className="col-lg-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-8 col-sm-8 col-xs-8 socialblock">
+                        <ul>
+                          <li>
+                            <a href="#"><i className="fa fa-facebook-f icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i className="fa fa-twitter icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i className="fa fa-linkedin icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i className="fa fa-instagram icon"></i></a>
+                          </li>
+                        </ul>                    
+                     </div>
+                </div>
+            </div>
         );
   } 
 

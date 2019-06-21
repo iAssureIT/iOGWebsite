@@ -7,11 +7,12 @@
 }
 
 .block{
-	/*background-color: #ffc60b;*/
+	  background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
     padding: 32px 40px 56px;
+    z-index: 100;
 }
 
 .block h2{
@@ -176,7 +177,7 @@
     width: 766px;
     height: 766px;
 }
-.Main_Cards__Bubble {
+/*.Main_Cards__Bubble {
     pointer-events: none;
     transition: -webkit-transform 20s ease-in;
     transition: transform 20s ease-in;
@@ -186,7 +187,7 @@
     position: absolute;
     background-color: rgba(105,92,255,.05);
     border-radius: 50%;
-}
+}*/
 .havh{
   
 }

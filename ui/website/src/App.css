@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url('raleway.regular.ttf')  format('truetype'); /* Legacy iOS */
+}
 .bw{
     background-color: #abc;
 }
@@ -12,15 +15,11 @@
     
     /*background: linear-gradient(-45deg, #7474BF, #348AC7);*/
 } 
-<<<<<<< Updated upstream
-   
-=======
 .upstreamBg{
     
     /*background-color: #367588;*/
     height: 570px;
 }   
->>>>>>> Stashed changes
 .color-light {
     /*color: #555 !important;*/
     font-size: 20px;
@@ -97,12 +96,13 @@
 
 
 .footer-two{
- font-size: 13px;
- color: #fff;
+ font-size: 14px;
+ color: #000;
  /*background-color: #367588;*/
+ border-top: 1px solid #eee;
 }
 .footer-two a{
-color: #fff;
+color: #000;
 
 
 }
@@ -137,6 +137,7 @@ color: #fff;
 
 .font-montserrat{
     /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 16px;
 }
 ul.no-icon-list {
     margin: 0;
@@ -657,9 +658,23 @@ ul.no-icon-list {
     color:#367588;
 }
 .bgiogyellow{
-    background-color: #f8b739;
+    background-color: #ffbf00;
 }
 
 .textcoloryellow{
-    color:#f8b739;
+    color:#ffbf00;
 }
+
+.lightgray{
+    background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+

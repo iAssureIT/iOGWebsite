@@ -19,12 +19,16 @@ export default class Downstream extends Component {
  render(){
        return(
                 <div className="col-lg-12 contentWraper">
+                <div className="Bubble" >
+                            <div className="Main_Cards__Bubble bub1"></div>
+                            <div className="Main_Cards__Bubble bub2"></div>
+                        </div>
                     <div className="col-lg-12 textcoloryellow contentheader text-center">
                         <h1>iOG Solutions for Downstream Oil and Gas Industry</h1>
                     </div>
                     <div className="col-lg-12">
                         <div className="col-lg-10 col-lg-offset-1">
-                            <div>
+                            <div className="col-lg-12 NOpadding">
                                 <div className="col-lg-6">
                                     <div className="col-lg-12 textcolorblue block block1height">
                                         <h2>Supply Chain Management</h2>
@@ -86,10 +90,7 @@ export default class Downstream extends Component {
                             </div>
                         </div>
                     </div>
-                <div className="Bubble" >
-                    <div className="Main_Cards__Bubble bub1"></div>
-                    <div className="Main_Cards__Bubble bub2"></div>
-                </div>
+                
             </div>
         );
     } 

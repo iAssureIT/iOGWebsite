@@ -11,7 +11,7 @@ export default class Footer extends Component {
   render(){
        return(
             <div>      
-            <div id="footer" className="col-lg-12 pt20 bgiogblue footer-two">
+            <div id="footer" className="col-lg-12 pt20 footer-two">
             <div className="bb-solid-1">
                 <div className="col-lg-10 col-lg-offset-1 pb35">
                     <div className="row">
@@ -26,27 +26,27 @@ export default class Footer extends Component {
                             <ul className="no-icon-list">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Member</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Industries</a></li>
                             </ul>
                         </div>
                         
                         <div className="col-md-2 col-sm-3 col-xs-4">
-                            <h6 className="font-montserrat">Learn more</h6>
+                            <h6 className="font-montserrat">Service Arms</h6>
                             <ul className="no-icon-list">
-                                <li><a href="#">Tour</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">New Features</a></li>
-                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">iOGImplement</a></li>
+                                <li><a href="#">iOGConsult</a></li>
+                                <li><a href="#">iOGTrain</a></li>
+                                <li><a href="#">iOGStudy</a></li>
                             </ul>
                         </div>
                         
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Support</h6>
                             <ul className="no-icon-list">
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Knowledgebase</a></li>
-                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Blog</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>                        
@@ -54,12 +54,13 @@ export default class Footer extends Component {
                 </div>
             </div>
             
-            <div className="pt20">
+        </div>
+                    <div className="pt20 lightgray col-lg-12 footer-two">
                 <div className="col-lg-10 col-lg-offset-1">
                     <div className="row">
 
                         <div className="col-md-6 col-sm-6 col-xs-6 pull-left">
-                            <p>Copyright ©2016 <a href="#">Pasific Studio, LLC</a>. All rights reserved.</p>
+                            <p>Copyright ©2019 <a href="#">iAssureIT</a>. All rights reserved.</p>
                         </div>
 
                         <div className="col-md-6 col-sm-6 col-xs-6 pull-right">
@@ -73,7 +74,6 @@ export default class Footer extends Component {
                     </div>
                 </div>
             </div>
-        </div>
 
         </div>
                 
