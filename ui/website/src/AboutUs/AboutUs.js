@@ -178,18 +178,18 @@ export default class AboutUs extends Component {
                         </div> 
 
                         <div className="row">
-                        <div className="col-lg-12">
+                        <div className="col-lg-12 ">
                          <div className="col-lg-6"></div>
                               <div className=" col-lg-6">
                                   <div className="col-lg-12 block block1height b1width">
-                                      <h2 className="textcolorblue">VISION</h2>
-                                      <p className="text-justify">
+                                      <h2 className="textcolorblue vision_align1">VISION</h2>
+                                      <p className="text-justify vision_align">
                                       To be a global market leader in Intelligent Support
                                       Systems for Oil and Gas Industry.
                                        </p>
                                        </div>
-                                       <div className="col-lg-12 block block1height b1width">
-                                       <h2 className="textcolorblue">MISSION</h2>
+                                       <div className="col-lg-12 block block1height b2width">
+                                       <h2 className="textcolorblue mission_align">MISSION</h2>
                                        <p className="text-justify">
                                           Nurture a talented team of professionals to provide
                                           best-in-class consulting and implementation servic-
@@ -200,6 +200,31 @@ export default class AboutUs extends Component {
                                   </div>
                               </div>
                             </div>
+
+                        <div className="row">
+                        <div className="col-lg-12 head_spacing">
+                        <div className="col-lg-6"></div>
+                              <div className="col-lg-6">
+                                  <div className="col-lg-12 ">
+                                      <h2 className="txt-size-director textcolorblue"><b>Pankaj Zawar</b></h2>
+                                      <h1 className="txt-size-founder">Founder and Director of iOG Solutions</h1>
+                                        <p className="para_spacing text-justify pull-right">
+                                        Our Founder and Director, Pankaj Zawar is a chemical engineer from
+                                        UICT, Mumbai with 20+ years of experience in providing consulting, en-
+                                        gineering and implementation services for MES, APC and SCM solu-
+                                        tions. Pankaj has worked with Reliance at Jamnagar refinery as PIMS &
+                                        Optimization consultant. He then moved to business consulting and ex-
+                                        panded the scope to MES, APC, and SCM at Aspen Technology. He has
+                                        been at the forefront of consulting with several remarkable projects at
+                                        various national and international oil and gas majors. He has been the
+                                        distinguished recipient of prestigious President Award for Excellence
+                                        twice at Aspen Technology
+                                         </p>                                      
+                                  </div>
+                              </div>
+                              
+                            </div>
+                        </div>
                       </div> 
 
                        

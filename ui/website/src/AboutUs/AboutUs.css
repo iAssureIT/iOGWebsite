@@ -17,10 +17,11 @@
 }
 
 .block h2{
-    margin-top: 28px;
+   /* margin-top: 28px;*/
     font-size: 28px;
     line-height: 34px;
     font-weight: 600;
+    margin-top: 13px;
 }
 
 .contentheader{
@@ -97,4 +98,29 @@ width: 311px;
     padding-top: 0px;
     height: 163px;
 }
-   
+   .b2width{
+   width: 377px;
+    margin-left: 211px;
+    padding-top: 0px;
+    height: 163px;
+}
+  .vision_align{
+padding-bottom: 31px;
+  } 
+  .vision_align1{
+padding-top: 16px;
+  }
+
+  .txt-size-director{
+    font-size: 52px;
+  } 
+  .txt-size-founder{
+  font-weight: 100;
+  }
+ .head_spacing{
+margin-top: 54px;
+}
+
+ .para_spacing{ margin-top: 18px;
+    margin-bottom: 40px;
+  }
