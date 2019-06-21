@@ -52,12 +52,12 @@ class Contactpage extends Component{
                                                 <div className="row">
                                                     <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                                                       <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-map-marker contacticon2"></i></i>
+                                                          <i className="fa fa-circle contacticon1"><i class="fa fa-whatsapp  contacticon2"  aria-hidden="true"></i></i>
                                                       </div>
                                                     </div>
                                                     <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                                       <div className="row">
-                                                        <h5><strong>ADDRESS</strong></h5>
+                                                        <h5><strong>WhatsApp</strong></h5>
                                                       </div>
                                                     </div>
                                                 </div>
@@ -81,12 +81,12 @@ class Contactpage extends Component{
                                                 <div className="row">
                                                     <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                                                       <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-phone contacticon21"></i></i>
+                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-linkedin contacticon21"></i></i>
                                                       </div>
                                                     </div>
                                                     <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                                       <div className="row">
-                                                        <h5><strong>PHONE</strong></h5>
+                                                        <h5><strong>LinkedIn</strong></h5>
                                                       </div>
                                                     </div>
                                                 </div>
@@ -100,6 +100,30 @@ class Contactpage extends Component{
                                                     <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                                       <div className="row">
                                                         <p></p>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                    
+                                      </div>
+                                            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                                <div className="row">
+                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                      <div className="row">
+                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-twitter contacticon23"></i></i>
+                                                      </div>
+                                                    </div>
+                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                      <div className="row">
+                                                        <h5><strong>Twitter</strong></h5>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                                <div className="row">
+                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                      <div className="row">
                                                       </div>
                                                     </div>
                                                 </div>
@@ -129,36 +153,6 @@ class Contactpage extends Component{
                                                     <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                                       <div className="row">
                                                         <p>info@iogsolutions.com</p>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>                                    
-                                      </div>
-                                      <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><span className="glyphicon glyphicon-time contacticon23"></span></i>
-                                                          <i className=""></i>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <h5><strong>SHOWROOM HOURS</strong></h5>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <p>Monday-Friday: 10AM - 5PM</p>
                                                       </div>
                                                     </div>
                                                 </div>
