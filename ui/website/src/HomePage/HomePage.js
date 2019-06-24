@@ -19,7 +19,6 @@ export default class HomePage extends Component {
         <Upstream />
         <Contactform />
         <Socialmedia />
-        <Footer />
        <Effects />
       </div>
     );  

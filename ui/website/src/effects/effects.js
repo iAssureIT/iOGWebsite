@@ -25,9 +25,6 @@ export default class Effects extends Component {
           currdeg = currdeg + 72;
         }
         carousel.css({
-          "-webkit-transform": "rotateY("+currdeg+"deg)",
-          "-moz-transform": "rotateY("+currdeg+"deg)",
-          "-o-transform": "rotateY("+currdeg+"deg)",
           "transform": "rotateY("+currdeg+"deg)"
         });
       }

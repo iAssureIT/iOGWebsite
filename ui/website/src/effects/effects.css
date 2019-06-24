@@ -12,7 +12,7 @@
   width: 250px;
   height: 200px;
   position: relative;
-  perspective: 1000px;
+  perspective: 5171px;
 }
 
 .carousel1 {
@@ -38,23 +38,23 @@
 }
 
 .a {
-  transform: rotateY(0deg) translateZ(260px);
+  transform: rotateY(0deg) translateZ(320px);
   background: #ed1c24;
 }
 .b {
-  transform: rotateY(72deg) translateZ(260px);
+  transform: rotateY(52deg) translateZ(320px);
   background: #0072bc;
 }
 .c {
-  transform: rotateY(144deg) translateZ(260px);
+  transform: rotateY(144deg) translateZ(320px);
   background: #39b54a;
 }
 .d {
-  transform: rotateY(216deg) translateZ(260px);
+  transform: rotateY(216deg) translateZ(320px);
   background: #f26522;
 }
 .e {
-  transform: rotateY(288deg) translateZ(260px);
+  transform: rotateY(288deg) translateZ(320px);
   background: #630460;
 } 
 

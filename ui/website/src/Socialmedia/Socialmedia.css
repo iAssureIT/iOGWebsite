@@ -44,7 +44,7 @@
   z-index: 3;
 }
 
-.socialblock .socialblock ul li a:hover .icon {
+.socialblock ul li a:hover .icon {
   color: #fff;
   transform: rotateY(360deg);
 }
@@ -78,5 +78,5 @@
 }
 
 .socialblock ul li:nth-child(4) a:before {
-  background: #dd4b39;
+  background: #4EA84C;
 }

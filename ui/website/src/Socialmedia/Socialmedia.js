@@ -26,7 +26,7 @@ export default class Socialmedia extends Component {
                             <a href="#"><i className="fa fa-linkedin icon"></i></a>
                           </li>
                           <li>
-                            <a href="#"><i className="fa fa-instagram icon"></i></a>
+                            <a href="#"><i className="fa fa-whatsapp icon"></i></a>
                           </li>
                         </ul>                    
                      </div>
