@@ -1,7 +1,7 @@
 .contentWraper{
     height: auto;
     background-color: transparent;
-    padding-top: 100px;
+    padding-top: 161px;
     padding-left: 50px;
     padding-right: 50px;
     /*background-color: #fff;*/
@@ -13,9 +13,11 @@
     border-radius: 4px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
-    padding: 32px 40px 56px;
+    /*padding: 32px 40px 56px;*/
     margin-top: 58px;
-    margin: 10px;
+    text-align: center;
+ /*   margin: 10px;
+    margin-left: 43px;*/
 }
 .block:hover{
     border-radius: 4px;
@@ -25,13 +27,14 @@
     background-color: #003bb3;
     color:white;
     height: 200px;
-    top:-12px;
+    top:12px;
 
 }
 .block1height:hover{
-  /*height: 150px;
-  width: 220px;
-*/
+  height: 200px;
+  margin-bottom: 50px;
+/*  width: 220px;*/
+
 }
 
 .block h2{
@@ -54,9 +57,10 @@
 
 .block1height{
     top: 15px;
-    height: 160px;
-    width: 260px;
-    margin-left: 44px;
+    height: 186px;
+    width: 286px;
+    /*width: 260px;*/
+    /*margin-left: 44px;*/
 }
 .block2height{
   top:15px;
@@ -88,7 +92,7 @@
     text-align: justify;
 }
 .para-top{
-  margin-top: -90px;
+  margin-top: -76px;
   margin-bottom: 24px;
   font-size: 50px;
 }
@@ -101,7 +105,7 @@
 
 .iog_txt{
     margin-top: 81px;
-    margin-left: 34px;
+    /*margin-left: 34px;*/
     font-size: 20px;
     }
 /*
@@ -167,10 +171,66 @@ margin-top: 54px;
     line-height: 23px;
     letter-spacing: 1px;
 }
+.line_para1{
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+.line_para2{
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+.line_para3{
+    line-height: 23px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+.line_para4{
+    line-height: 23px;
+    letter-spacing: 1px;
+}
 .para-top3{
   font-size: 50px;
 }
 
 .alg_lft{
       margin-left: -22px;
+}
+
+.blck{
+    /*background-color: #ffc60b;*/
+    border-radius: 4px;
+    box-shadow: 0 10px 29px rgba(92,141,255,.22);
+    margin-bottom: 50px;
+    padding: 32px 40px 56px;
+    margin-top: 58px;
+    margin: 10px;
+}
+
+.blck1height{
+    top: 15px;
+    height: 196px;
+    width: 427px;
+    margin-left: 161px;
+}
+   /*.anim_box{ color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}*/
+
+.blk_ht{
+  height: 325px;
+}
+
+.line1{
+  background-color: #f19000;
+    width: 105px;
+    margin-top: -103px;
+    height: 4px;
+}
+
+.line2{
+    background-color: #f19000;
+    width: 105px;
+    margin-top: 6px;
+    height: 4px;
 }

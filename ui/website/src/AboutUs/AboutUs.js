@@ -75,6 +75,8 @@ export default class AboutUs extends Component {
                         <div className="col-lg-12">
                               <div className="col-lg-6">
                                   <div className="col-lg-12">
+                                  <div className="col-lg-2 line1">
+                                  </div>
                                       <h2 className="textcolorblue para-top"><b>Company</b> Profile</h2>
                                       <p className="text-justify ">
                                        <div className="line_subhead">iOG Solutions stands for<br></br>
@@ -98,7 +100,7 @@ export default class AboutUs extends Component {
                               <div className="col-lg-6">
                                   <div className="col-lg-12 ">
                                       <h2></h2>
-                                        <p className="line_para text-justify pull-right">
+                                        <p className="line_para1 text-justify pull-right">
                                         We have a strong team of team of motivated<br></br>
                                         and self-driven consultants with strong<br></br>
                                         domain knowledge in areas of Supply Chain<br></br>
@@ -118,36 +120,47 @@ export default class AboutUs extends Component {
                         <div className="row">
                         <div className="col-lg-12">
                                   <div className="col-lg-12 ">
+                                  <div className="col-lg-2 col-lg-offset-5 line2"></div>
                                       <h2 className="textcolorblue text-center para1-top"><b>Our</b> Engagement Model</h2>
                                       <br></br>
-                                      <p className="line_para  text-center">
+                                      <p className="line_para2  text-center">
                                           iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
                                           lege to join hands and work with you to explore every possibility of enhancing your company’s profitability.<br></br>
                                            We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
                                         </p>          
                                   </div>
                               </div>
-                              <div className="col-lg-3 block block1height">
-                              <p className="iog_txt"><b>iOG</b>Study</p>
-                              </div>
-                              <div className="col-lg-3 block block1height">
-                              <p className="iog_txt"><b>iOG</b>Implement</p>
-                              </div>
-                              <div className="col-lg-3 block block1height">
-                              <p className="iog_txt"><b>iOG</b>Consult</p>
-                              </div>
-                              <div className="col-lg-3 block block1height">
-                              <p className="iog_txt"><b>iOG</b>Train</p>
-                              </div>
                         </div>
-                       
+                        <div  className="col-lg-12 blk_ht">
+                              <div className="col-lg-3">
+                                <div className="block block1height">
+                                  <p className="iog_txt"><b>iOG</b>Study</p>
+                                </div>
+                              </div>
+                              <div className="col-lg-3">
+                                <div className="block block1height">
+                                <p className="iog_txt "><b>iOG</b>Implement</p>
+                                </div>
+                              </div>
+                              <div className="col-lg-3">
+                                <div className="block block1height">
+                                <p className="iog_txt "><b>iOG</b>Consult</p>
+                                </div>
+                              </div>
+                              <div className="col-lg-3">
+                                <div className="block block1height">
+                                <p className="iog_txt "><b>iOG</b>Train</p>
+                                </div>
+                              </div>
+                       </div>
 
                         <div className="row">
                         <div className="col-lg-12">
-                              <div className="btm_txt col-lg-6">
+                              <div className=" col-lg-6">
+                              <div className="btm_txt">
                                   <div className="col-lg-12 ">
                                       <h2></h2>
-                                      <p className="line_para text-justify">
+                                      <p className="line_para3 text-justify">
                                       Our key strength is our Team. iOG operates through a team
                                       of young and innovative consultants which has strong
                                       domain knowledge in all aspects of the O&G value chain
@@ -155,6 +168,7 @@ export default class AboutUs extends Component {
                                       add, the impact of iOG interventions and its support is directly reflected in the phenomenal growth and progress of
                                       the company engaging its services.
                                       </p>
+                                  </div>
                                   </div>
                               </div>
                               <div className="col-lg-6"></div>
@@ -165,14 +179,14 @@ export default class AboutUs extends Component {
                         <div className="col-lg-12 ">
                          <div className="col-lg-6"></div>
                               <div className=" col-lg-6">
-                                  <div className="col-lg-12 block block1height b1width">
+                                  <div className="col-lg-12 blck blck1height b1width">
                                       <h2 className="line_subhead textcolorblue vision_align1">VISION</h2>
                                       <p className="text-justify vision_align">
                                       <b>To be a global market leader in Intelligent Support
                                       Systems for Oil and Gas Industry.</b>
                                        </p>
                                        </div>
-                                       <div className="col-lg-12 block block1height b2width">
+                                       <div className="col-lg-12 blck blck1height b2width">
                                        <h2 className="line_subhead textcolorblue mission_align">MISSION</h2>
                                        <p className="text-justify">
                                           <b>Nurture a talented team of professionals to provide
@@ -198,11 +212,11 @@ export default class AboutUs extends Component {
                                         gineering and implementation services for MES, APC and SCM solutions.
                                          </p> 
                                         
-                                       <ul>
-                                      <li className="alg_lft">Strong domain knowledge in Oil and Gas industry</li>
-                                      <li className="alg_lft">Strong skills in using refinery LP and Scheduling tools 
+                                       <ul className="alg_lft">
+                                      <li className="">Strong domain knowledge in Oil and Gas industry</li>
+                                      <li className="">Strong skills in using refinery LP and Scheduling tools 
                                           for refinery production planning and scheduling.</li>
-                                      <li className="alg_lft">Led several remarkable MES and SCM projects at state-owned.<br></br>
+                                      <li className="">Led several remarkable MES and SCM projects at state-owned.<br></br>
                                           Private refineries and petrochemical plants in India, SE Asia, and the Middle East.</li>
                                       </ul>                                     
                                   </div>
