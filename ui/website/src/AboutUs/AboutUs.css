@@ -24,9 +24,8 @@
     margin-left: 43px;*/
 }
 .icn_1{
-
+    margin-top: 60px;
 }
-
 
 .aboutus_block:hover .icn1_hover{
   display: block;
@@ -39,7 +38,7 @@
 }
 
 .icn_2{
-  margin-top: 39px;
+  margin-top: 60px;
   margin-bottom: -57px;
 }
 
@@ -53,6 +52,9 @@
   display: none;
 }
 
+.icn_3{
+    margin-top: 60px;
+}
 .aboutus_block:hover .icn3_hover{
   display: block;
 }
@@ -61,6 +63,10 @@
 }
 .aboutus_block .icn3_hover{
   display: none;
+}
+
+.icn_4{
+   margin-top: 60px;
 }
 
 .aboutus_block:hover .icn4_hover{
@@ -122,7 +128,6 @@
 }
 .aboutus_block2height{
   top:15px;
-
   height: 300px;
 }
 .aboutus_block3height{
@@ -150,7 +155,7 @@
     text-align: justify;
 }
 .para-top{
-     margin-top: -124px;
+    margin-top: -60px;
     margin-bottom: 10px;
     font-size: 50px;
 }
@@ -307,16 +312,16 @@ margin-top: 54px;
   background-color: #f19000;
   width: 105px;
   height: 4px;
-  margin-top: -70px;
+  margin-top: -21px;
   margin-left: -640px;
 }
 
 .line2{
   background-color: #f19000;
-    width: 105px;
-    margin-top: 43px;
-    height: 4px;
-    margin-left: 579px;
+  width: 105px;
+  margin-top: 43px;
+  height: 4px;
+  margin-left: 579px;
 }
 
 .line_ht{
@@ -338,9 +343,9 @@ margin-top: 54px;
 
 /*****************************************************************************************/
 .intro_img{
-    width: 80%;
-    margin-top: -185px;
-    margin-left: 9px;
+    width: 68%;
+    margin-top: -156px;
+    margin-left: 64px;
   }
 .third_img{
   width: 100%;
@@ -372,9 +377,9 @@ margin-top: 54px;
   border: 9px solid #fff;
 }
 .curve_img{
-    width: 63%;
-    margin-top: -352px;
-    margin-left: 692px;
+    width: 100%;
+    margin-top: -292px;
+    margin-left: 250px;
 }
 .icon1{
   margin-top: 37px;
