@@ -39,11 +39,11 @@ openSubMenu(event){
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#"><img alt="Logo" src="/images/logo.png"/></a>
+            <a className="navbar-brand" href="/"><img alt="Logo" src="/images/logo.png"/></a>
           </div>
           <div className="navbar-collapse collapse">
             <ul className="nav navbar-nav navPadding">
-              <li><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li className="dropdown menu-large " id="aa">
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">About Us <b className="fa fa-angle-down"></b></a>          
                 <ul className="dropdown-menu megamenu row dropDownMenu">
