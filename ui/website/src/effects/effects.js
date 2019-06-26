@@ -37,11 +37,11 @@ export default class Effects extends Component {
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 socialblock-bg">
             <div className="carocontainer1">
               <div className="carousel1">
-                <div className="item1 a">A</div>
-                <div className="item1 b">B</div>
-                <div className="item1 c">C</div>
-                <div className="item1 d">D</div>
-                <div className="item1 e">E</div>
+                <figure className="item1 a">A</figure>
+                <figure className="item1 b">B</figure>
+                <figure className="item1 c">C</figure>
+                <figure className="item1 d">D</figure>
+                <figure className="item1 e">E</figure>
               </div>
             </div>
               <div className="next">Next</div>

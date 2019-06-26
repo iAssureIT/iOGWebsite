@@ -18,7 +18,6 @@ export default class HomePage extends Component {
         <Downstream />
         <Upstream />
         <Socialmedia />
-       <Effects />
       </div>
     );  
   }

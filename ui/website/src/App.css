@@ -663,7 +663,10 @@ ul.no-icon-list {
 }
 
 .lightgray{
-    background-color: #eee;
+    background-color: #eeee;
+}
+.darkgray{
+    background-color: #333333;
 }
 
 

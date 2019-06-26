@@ -30,142 +30,48 @@ class Contactpage extends Component{
   render(){
     return(
           <div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontent1-wrap">
-                        <div className="row">
-                            <div className="contactcontent text-center">
-                                <h6>CONTACT INFO</h6>
-                                <h3>GET IN TOUCH</h3>
-                                <hr/>
-                            </div>
-                        </div>
-                    </div>
-                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontent2-wrap">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontent2-wrap">
                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacticonwrap">
                               <div className="row">
-                                    <div className="contactcontbackimg">
-                                    <div className=" contacttextmargin col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                                            <h4><strong></strong></h4>
-                                    </div>    
-                                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i></i>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <h5><strong>WhatsApp</strong></h5>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <p></p>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>                                    
+                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontbackimg">
+                                    </div>
+                                    <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-3 contacticons">
+                                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                        <div className="row">
+                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i></i>
+                                        </div>
                                       </div>
-                                      <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-linkedin contacticon21"></i></i>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <h5><strong>LinkedIn</strong></h5>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <p></p>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>                                    
+                                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                        <div className="row">
+                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-linkedin contacticon21"></i></i>
+                                        </div>
                                       </div>
-                                            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-twitter contacticon23"></i></i>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <h5><strong>Twitter</strong></h5>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>                                    
+                                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                        <div className="row">
+                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-twitter contacticon23"></i></i>
+                                        </div>
                                       </div>
-                                      <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                          <i className="fa fa-circle contacticon1"><i className="fa fa-envelope contacticon22"></i></i>
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <h5><strong>EMAIL</strong></h5>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                <div className="row">
-                                                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                                      <div className="row">
-                                                      </div>
-                                                    </div>
-                                                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                                      <div className="row">
-                                                        <p>info@iogsolutions.com</p>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>                                    
+                                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                        <div className="row">
+                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-envelope contacticon22"></i></i>
+                                        </div>
                                       </div>
-                                </div>
+                                    </div>
                               </div>
                             </div>
 
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacttextmargin2">
                               <div className="row">
                                   <div className="contactpageform">
-                                  <div className=" contacttextmargin2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                      <div className="row">
+                                          <div className="contactcontent textcolorblue text-center">
+                                              <span>Contact</span><span className="us"> Us</span>
+                                          </div>
+                                      </div>
+                                   </div>
+                                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <form id="contactForm">
                                             <div className="formcontent col-lg-6">
                                               <label htmlFor="name">Name<span className="redFont">*</span></label>
@@ -225,7 +131,7 @@ class Contactpage extends Component{
                                             </div>*/}
                                             <div className="col-lg-12">
                                               <div className="col-lg-2 col-lg-offset-10">
-                                                <button className="btn  contactformbtn buttonhover"> Submit</button>
+                                                <button className="btn bgiogblue contactformbtn buttonhover"> Submit</button>
                                               </div>
                                            </div>
                                         </form>
