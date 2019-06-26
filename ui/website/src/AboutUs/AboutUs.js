@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 import './AboutUs.css';
+import Header from '../Header/Header.js';
+
 
 
 export default class AboutUs extends Component {
@@ -69,18 +71,24 @@ export default class AboutUs extends Component {
   // }
 
  render(){
-       return( 
-                <div className="col-lg-12 contentWraper">
-                    <div className="row">
-                        <div className="col-lg-12">
-                              <div className="col-lg-6">
+       return(
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                <div className="curve_img">
+                  <img src="/images/1.png" alt="" />
+                </div>
+             </div>
+                    <div className="col-lg-2 col-offset-1">
+                    <div className="line1"></div>
+                    </div>                    
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div className="col-lg-12">
-                                  <div className="col-lg-2 line1">
-                                  </div>
+                                    
                                       <h2 className="textcolorblue para-top"><b>Company</b> Profile</h2>
                                       <p className="text-justify ">
-                                       <div className="line_subhead">iOG Solutions stands for<br></br>
-                                       intelligent O&G solutions.</div>
+                                       <div className="line_subhead">iOG Solutions stands for intelligent O&G solutions.</div>
                                        <br></br>
                                        <p className="line_para">iOG Solutions is an independent and reputed <b>provider of con-<br></br>
                                        sulting and implementation services on advanced and intel-<br></br>
@@ -90,37 +98,42 @@ export default class AboutUs extends Component {
                                        </p>
                                   </div>
                               </div>
-                              <div className="col-lg-6"></div>
+                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                <div className="img1">
+                                  <img src="/images/2.png" alt="" className="intro_img" />
+                                </div>
                             </div>
                         </div>
 
                         <div className="row">
-                        <div className="col-lg-12">
-                        <div className="col-lg-6"></div>
-                              <div className="col-lg-6">
-                                  <div className="col-lg-12 ">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
+                              <img src="/images/3.png" alt="" className="third_img" />
+                          </div>
+                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                  {/*<div className="col-lg-6 col-md-16 col-sm-12 col-xs-12 ">*/}
                                       <h2></h2>
-                                        <p className="line_para1 text-justify pull-right">
-                                        We have a strong team of team of motivated<br></br>
-                                        and self-driven consultants with strong<br></br>
-                                        domain knowledge in areas of Supply Chain<br></br>
-                                        Management (SCM), Manufacturing Execu-<br></br>
-                                        tion Systems (MES), Simulation & Modeling,<br></br>
-                                        Energy Management, Asset Reliability & In-<br></br>
-                                        tegrity Management (RIM), Environmen-<br></br>
-                                        tal-Health-Safety (EHS), Enabling Technolo-<br></br>
-                                        gies and Oil & Gas E&P services.<br></br>
+                                        <p className="line_para1 text-justify ">
+                                        We have a strong team of team of motivated
+                                        and self-driven consultants with strong
+                                        domain knowledge in areas of Supply Chain
+                                        Management (SCM), Manufacturing Execution 
+                                        Systems (MES), Simulation & Modeling,
+                                        Energy Management, Asset Reliability & In
+                                        tegrity Management (RIM), Environmen
+                                        tal-Health-Safety (EHS), Enabling Technolo
+                                        gies and Oil & Gas E&P services.
                                          </p>
-                                  </div>
+                                  {/*</div>*/}
                               </div>
                               
                             </div>
                         </div>
 
                         <div className="row">
-                        <div className="col-lg-12">
-                                  <div className="col-lg-12 ">
-                                  <div className="col-lg-2 col-lg-offset-5 line2"></div>
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                  <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-lg-offset-5 line2"></div>
                                       <h2 className="textcolorblue text-center para1-top"><b>Our</b> Engagement Model</h2>
                                       <br></br>
                                       <p className="line_para2  text-center">
@@ -132,34 +145,52 @@ export default class AboutUs extends Component {
                               </div>
                         </div>
                         <div  className="col-lg-12 blk_ht">
-                              <div className="col-lg-3">
+                              <div className="col-lg-3  col-md-3 col-sm-12 col-xs-12">
                                 <div className="block block1height">
+                                <div className="icon1">
+                                <img src="/images/Icon_1.png" alt="" className="icn_1" />
+                                <img src="/images/11.png" alt="" className="icn1_hover"  />
+                                </div>
                                   <p className="iog_txt"><b>iOG</b>Study</p>
                                 </div>
                               </div>
-                              <div className="col-lg-3">
+                              <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div className="block block1height">
+                                <div className="icon2">
+                                <img src="/images/Icon_2.png" alt="" className="icn_2" />
+                                <img src="/images/12.png" alt="" className="icn2_hover"  />
+                                </div>
                                 <p className="iog_txt "><b>iOG</b>Implement</p>
                                 </div>
                               </div>
-                              <div className="col-lg-3">
+                              <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div className="block block1height">
+                                <div className="icon3">
+                                <img src="/images/Icon_3.png" alt="" className="icn_3" />
+                                <img src="/images/13.png" alt="" className="icn3_hover"  />
+                                </div>
                                 <p className="iog_txt "><b>iOG</b>Consult</p>
                                 </div>
                               </div>
-                              <div className="col-lg-3">
+                              <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div className="block block1height">
+                                <div className="icon4">
+                                <img src="/images/Icon_4.png" alt="" className="icn_3" />
+                                <img src="/images/14.png" alt="" className="icn4_hover"  />
+                                </div>
                                 <p className="iog_txt "><b>iOG</b>Train</p>
                                 </div>
                               </div>
                        </div>
 
                         <div className="row">
-                        <div className="col-lg-12">
-                              <div className=" col-lg-6">
+                        <div className="bckgrnd_curve_img  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                               <div className="btm_txt">
-                                  <div className="col-lg-12 ">
+                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <h2></h2>
+                                      <div className="col-lg-2 line_yellow">
+                                      </div>
                                       <p className="line_para3 text-justify">
                                       Our key strength is our Team. iOG operates through a team
                                       of young and innovative consultants which has strong
@@ -171,22 +202,26 @@ export default class AboutUs extends Component {
                                   </div>
                                   </div>
                               </div>
-                              <div className="col-lg-6"></div>
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                              <img src="/images/4.png" alt="" className="truck" />
+                            </div>
                             </div>
                         </div> 
 
                         <div className="row">
-                        <div className="col-lg-12 ">
-                         <div className="col-lg-6"></div>
-                              <div className=" col-lg-6">
-                                  <div className="col-lg-12 blck blck1height b1width">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 img1">
+                              <img src="/images/5.png" alt="" className="plane" />
+                        </div>
+                              <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blck blck1height b1width">
                                       <h2 className="line_subhead textcolorblue vision_align1">VISION</h2>
                                       <p className="text-justify vision_align">
                                       <b>To be a global market leader in Intelligent Support
                                       Systems for Oil and Gas Industry.</b>
                                        </p>
                                        </div>
-                                       <div className="col-lg-12 blck blck1height b2width">
+                                       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blck blck2height b2width">
                                        <h2 className="line_subhead textcolorblue mission_align">MISSION</h2>
                                        <p className="text-justify">
                                           <b>Nurture a talented team of professionals to provide
@@ -200,23 +235,25 @@ export default class AboutUs extends Component {
                             </div>
 
                         <div className="row">
-                        <div className="col-lg-12 head_spacing">
-                        <div className="col-lg-6"></div>
-                              <div className="col-lg-6">
-                                  <div className="col-lg-12 ">
+                        <div className="backgrd_curve1 col-lg-12 col-md-12 col-sm-12 col-xs-12 head_spacing">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 img1">
+                              <img src="/images/7.png" alt="" className="director_img"/>
+                        </div>
+                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                       <h2 className="para-top3 txt-size-director textcoloryellow"><b>Pankaj Zawar</b></h2>
                                       <h1 className="txt-size-founder">Founder and Director of iOG Solutions</h1>
                                         <p className="para_spacing text-justify pull-right">
                                         Our Founder and Director,<b> Pankaj Zawar</b> is a chemical engineer from
-                                        UICT, Mumbai with 20+ years of experience in providing consulting, en-
-                                        gineering and implementation services for MES, APC and SCM solutions.
+                                        UICT, Mumbai with 20+ years of experience in providing consulting,engineering
+                                        and implementation services for MES, APC and SCM solutions.
                                          </p> 
                                         
                                        <ul className="alg_lft">
-                                      <li className="">Strong domain knowledge in Oil and Gas industry</li>
-                                      <li className="">Strong skills in using refinery LP and Scheduling tools 
+                                      <li className="line_ht">Strong domain knowledge in Oil and Gas industry</li>
+                                      <li className="ln_ht">Strong skills in using refinery LP and Scheduling tools 
                                           for refinery production planning and scheduling.</li>
-                                      <li className="">Led several remarkable MES and SCM projects at state-owned.<br></br>
+                                      <li className="ln_ht2">Led several remarkable MES and SCM projects at state-owned.<br></br>
                                           Private refineries and petrochemical plants in India, SE Asia, and the Middle East.</li>
                                       </ul>                                     
                                   </div>
@@ -224,7 +261,8 @@ export default class AboutUs extends Component {
                               
                             </div>
                         </div>
-                      </div>        
+                     
+                      </div>       
 
         );
     } 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import $                  from 'jquery';
 import './Header.css';
+
 export default class Header extends Component {
   
 componentWillMount() {

@@ -1,7 +1,7 @@
 .navbar-brand>img {
   padding-top: 11px;
   width: 130px;
-  margin-left: 60px;
+  margin-left: 35px;
 }
 .navbar-brand {
     height: auto;
@@ -14,7 +14,7 @@
   background: transparent;
 }
 .navbar-default .navbar-nav > li > a{
-  color:#fff;
+  color:#000;
   font-weight: 600;
 }
 .navbar-default .navbar-nav > li > a {
@@ -25,7 +25,7 @@
     border-bottom-color: #fff;
 }
 .navbar-default .navbar-brand{
-  color:#fff;
+  color:#000;
 }
 .menu-large {
   position: static !important;
@@ -63,12 +63,12 @@
   color: #999999;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #00A7E8;
+  color: #003bb3;
 }
 .megamenu.disabled > a:hover,
 .megamenu.disabled > a:focus {
   text-decoration: none;
-  background-color: transparent;
+  background-color: #000;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed;
