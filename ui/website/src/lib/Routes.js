@@ -14,14 +14,12 @@ import Footer from '../Footer/Footer.js';
 import HomePage from '../HomePage/HomePage.js';
 import Contactpage from '../ContactPage/Contactpage.js';
 import AboutUs from '../AboutUs/AboutUs.js';
-import Careerspage from '../CareersPage/Careerspage.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
     <Route path="/" exact strict component={ HomePage } /> 
     <Route path="/contact-us" component={ Contactpage } />  
     <Route path="/about-us" component={ AboutUs } />         
-    <Route path="/careers" component={ Careerspage } />         
   </div>
 );
 

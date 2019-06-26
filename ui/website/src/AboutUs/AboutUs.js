@@ -63,6 +63,13 @@ export default class AboutUs extends Component {
             }
           ]
       }
+    
+
+
+  // xyz(){
+  //   return(0);
+  // }
+
  render(){
        return(
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
