@@ -1,0 +1,13 @@
+.iogimgblock1{
+  width: 100%;
+}
+
+.iogblock1text{
+  padding-top: 100px;
+  font-size: 15px;
+}
+
+.iogblock1text span{
+  font-size: 18px;
+  font-weight: bold;
+}

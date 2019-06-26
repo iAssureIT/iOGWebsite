@@ -4,11 +4,9 @@ import { render } from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import $ from 'jquery';
 
 
-import './Contactpage.css';
-class Contactpage extends Component{
+class Jobscomponent extends Component{
   constructor(){
     super();
      this.state={
@@ -16,6 +14,9 @@ class Contactpage extends Component{
 
   }
   
+  componentDidMount() {
+  }
+
   render(){
     return(
           <div>

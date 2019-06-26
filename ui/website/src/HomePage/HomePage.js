@@ -17,7 +17,6 @@ export default class HomePage extends Component {
         <Banner />
         <Downstream />
         <Upstream />
-        <Contactform />
         <Socialmedia />
        <Effects />
       </div>

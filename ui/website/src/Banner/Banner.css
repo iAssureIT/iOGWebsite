@@ -27,7 +27,8 @@
     height: 550px;
     margin-left: auto;
     float: left;
-    background-image: url(/images/IOG_2.png);
+    /*background-image: url(/images/IOG_2.png);*/
+    background-color: #666666;
     padding-top: 144px;
     padding-bottom: 158px;
 }

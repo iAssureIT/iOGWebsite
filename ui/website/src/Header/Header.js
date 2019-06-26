@@ -45,7 +45,7 @@ openSubMenu(event){
             <ul className="nav navbar-nav navPadding">
               <li><a href="/">Home</a></li>
               <li className="dropdown menu-large " id="aa">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown">About Us <b className="fa fa-angle-down"></b></a>          
+                <a href="/about-us" className="dropdown-toggle" data-toggle="dropdown">About Us <b className="fa fa-angle-down"></b></a>          
                 <ul className="dropdown-menu megamenu row dropDownMenu">
                   <li className="col-sm-3 col-lg-12">
                     <ul>
@@ -123,10 +123,10 @@ openSubMenu(event){
                   </li>
                 </ul>
               </li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="/careers">Careers</a></li>
               <li><a href="#">Downloads</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/contact-us">Contact Us</a></li>
             </ul>
           </div>
         </div>
