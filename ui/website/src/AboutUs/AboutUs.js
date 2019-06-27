@@ -112,10 +112,7 @@ export default class AboutUs extends Component {
                                         domain knowledge in areas of Supply Chain
                                         Management (SCM), Manufacturing Execution 
                                         Systems (MES), Simulation & Modeling,
-                                        Energy Management, Asset Reliability & In
-                                        tegrity Management (RIM), Environmen
-                                        tal-Health-Safety (EHS), Enabling Technolo
-                                        gies and Oil & Gas E&P services.
+                                        Energy Management, Asset Reliability & Integrity Management (RIM), Environmental-Health-Safety (EHS), Enabling Technolgies and Oil & Gas E&P services.
                                          </p>
                                   {/*</div>*/}
                               </div>

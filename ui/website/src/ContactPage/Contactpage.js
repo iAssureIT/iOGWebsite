@@ -29,7 +29,8 @@ class Contactpage extends Component{
 
   render(){
     return(
-          <div>    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+          <div>    
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                      <div className="contactcurve_img">
                       <img src="/images/background.png" alt="" />
                      </div>

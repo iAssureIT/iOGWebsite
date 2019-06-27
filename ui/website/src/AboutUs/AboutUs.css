@@ -155,7 +155,7 @@
     text-align: justify;
 }
 .para-top{
-    margin-top: -60px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-size: 50px;
 }
@@ -253,7 +253,8 @@ margin-top: 54px;
     line-height: 23px;
     letter-spacing: 1px;
     margin-top: 228px;
-    padding-right: 30px;
+    padding-right: 110px;
+    margin-left: 50px
 }
 
 .line_para2{
@@ -265,6 +266,7 @@ margin-top: 54px;
     letter-spacing: 1px;
     margin-top: 188px;  
     color: #fff;
+    margin-left: 115px;
   }
 .line_para4{
     line-height: 23px;
@@ -312,7 +314,7 @@ margin-top: 54px;
   background-color: #f19000;
   width: 105px;
   height: 4px;
-  margin-top: -21px;
+  margin-top: 42px;
   margin-left: -683px;
 }
 
@@ -344,7 +346,7 @@ margin-top: 54px;
 /*****************************************************************************************/
 .intro_img{
     width: 68%;
-    margin-top: -156px;
+    margin-top: -56px;
     margin-left: 64px;
   }
 .third_img{
@@ -356,7 +358,7 @@ margin-top: 54px;
   width: 105px;
   margin-top: 145px;
   height: 4px;
-  margin-left: 30px;
+  margin-left: 145px;
 }
 
 .truck{
