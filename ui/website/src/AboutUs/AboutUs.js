@@ -66,11 +66,11 @@ export default class AboutUs extends Component {
  render(){
        return(
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
-              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                <div className="curve_img">
-                  <img src="/images/background.png" alt="" />
-                </div>
-             </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                      <div className="curve_img">
+                        <img src="/images/background.png" alt="" />
+                      </div>
+                   </div>
                     <div className="col-lg-2 col-offset-1">
                     <div className="line1"></div>
                     </div>                    

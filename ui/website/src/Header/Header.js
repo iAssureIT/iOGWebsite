@@ -30,7 +30,7 @@ openSubMenu(event){
 }
 
   render() {  
-    return (
+    return (  
       <div className="navbar navbar-default navbar-static-top" id="bb">
         <div className="">
           <div className="navbar-header col-lg-3">
@@ -45,18 +45,7 @@ openSubMenu(event){
             <ul className="nav navbar-nav navPadding">
               <li><a href="/">Home</a></li>
               <li className="dropdown menu-large " id="aa">
-                <a href="/about-us" className="dropdown-toggle" data-toggle="dropdown">About Us <b className="fa fa-angle-down"></b></a>          
-                <ul className="dropdown-menu megamenu row dropDownMenu">
-                  <li className="col-sm-3 col-lg-12">
-                    <ul>
-                      {/*<li className="dropdown-header">Our Profile</li>*/}
-                      <li className="col-lg-3"><a href="#">Our Profile</a></li>
-                      <li className="col-lg-3"><a href="#">Management Team</a></li>
-                      <li className="col-lg-3"><a href="#">History</a></li>
-                      <li className="col-lg-3"><a href="#">News & Events</a></li>
-                    </ul>
-                  </li>
-                </ul>
+                <a href="/about-us">About Us </a>          
               </li>
               <li className="dropdown menu-large dropDownA">
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">Services <b className="fa fa-angle-down"></b></a>          

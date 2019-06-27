@@ -3,7 +3,7 @@
 	margin-top: 30px;
 }
 .contactcontent2-wrap{
-  margin:100px 0px;
+  margin:30px 0px;
   color: #fff;
   background-image: url("/images/contactusbg.png");
   background-size: 100% 100%;
@@ -28,8 +28,9 @@ margin-bottom: 50px;
 
 .contactcontbackimg{
   background-image: url("/images/contactussocial.png");
-  background-size: 100% 100%;
+  background-size: 90% 90%;
   height: 450px;
+  background-repeat: no-repeat;
   /*background-color: #555;*/
 }
 .contactpageform{
@@ -39,39 +40,39 @@ margin-bottom: 50px;
 }
 
 .contacticon1{
-  font-size: 45px;
+  font-size: 55px;
   cursor: pointer;
 
 }
 
 .contacticon2{
   color: #fff;
-  font-size: 27px;
+  font-size: 29px;
   position: absolute;
-  right: 44px;
-  top: 8px;
+  right: 38px;
+  top: 12px;
 
 }
 .contacticon21{
   color: #fff;
-  font-size: 25px;
+  font-size: 27px;
   position: absolute;
-  right: 44px;
-  top: 8px;
+  right: 38px;
+  top: 12px;
 
 }.contacticon22{
   color: #fff;
-  font-size: 23px;
+  font-size: 25px;
   position: absolute;
-  right: 44px;
-  top: 10px;
+  right: 38px;
+  top: 12px;
 
 }.contacticon23{
   color: #fff;
-  font-size: 25px;
+  font-size: 27px;
   position: absolute;
-  right: 44px;
-  top: 9px;
+  right: 38px;
+  top: 12px;
 
 }
 .contacttextmargin{
@@ -99,7 +100,7 @@ margin-bottom: 50px;
 }
 
 .formcontent{
-  height: 90px;
+  height: 80px;
 }
 .formcontent1{
   height: 120px;
@@ -135,9 +136,15 @@ margin-bottom: 50px;
 }
 
 .contacticonwrap{
-  margin-top: 270px;
+  margin-top: 245px;
 }
 
 .contacticons{
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+.contactcurve_img{
+    width: 100%;
+    margin-top: -122px;
+    margin-left: 250px;
 }
