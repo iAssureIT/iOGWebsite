@@ -23,9 +23,28 @@ class Headingcomponent extends Component{
   render(){
     return(
     <div>
-        <div className="container bw1">
+        <div className="contentWraper1">
             <div className="row">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                   <div className="col-lg-12">
+                   <h2 className="career_para-top">
+                   Join a fast growing
+                   financial technology
+                   company
+                   </h2>
+                   <div className="line_subhead1">Ixaris is an exciting fintech company based in<br></br>
+                    London, Malta and Belgium.<b className="colorblue_txt angularbracket">Learn more </b></div>
+                   </div>
+                 </div>
+
+                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div className="img_1">
+                      <img src="/images/career1.jpg" alt="" className="career1_img" />
+                    </div>
+                </div>
+                </div>
+            </div>
                 <div className="row">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div className="row">
@@ -105,8 +124,6 @@ class Headingcomponent extends Component{
                 </div>
               </div>
             </div>
-        </div>
-    </div>    
     );
   }
 }
