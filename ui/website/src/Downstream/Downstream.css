@@ -1,7 +1,7 @@
 .contentWraper{
 	height: auto;
 	background-color: transparent;
-	padding-top: 100px;
+	padding-top: 0px!important;
 	/*background-color: #fff;*/
 	/*padding-top: 35px;*/
 }

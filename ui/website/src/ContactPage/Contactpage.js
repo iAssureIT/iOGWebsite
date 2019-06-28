@@ -44,24 +44,16 @@ class Contactpage extends Component{
                                     </div>
                                     <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-3 contacticons">
                                       <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <div className="row">
-                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i></i>
-                                        </div>
+                                            <i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i>
                                       </div>
                                       <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <div className="row">
-                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-linkedin contacticon21"></i></i>
-                                        </div>
+                                            <i className="fa fa-linkedin contacticon2"></i>
                                       </div>
                                       <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <div className="row">
-                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-twitter contacticon23"></i></i>
-                                        </div>
+                                            <i className="fa fa-twitter contacticon2"></i>
                                       </div>
                                       <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <div className="row">
-                                            <i className="fa fa-circle textcolorblue contacticon1"><i className="fa fa-envelope contacticon22"></i></i>
-                                        </div>
+                                            <i className="fa fa-envelope contacticon2"></i>
                                       </div>
                                     </div>
                               </div>

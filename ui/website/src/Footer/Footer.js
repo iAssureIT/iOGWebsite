@@ -55,15 +55,18 @@ export default class Footer extends Component {
             </div>
             
         </div>
-                    <div className="pt20 lightgray col-lg-12 footer-two">
+                    <div className="lightgray col-lg-12 footer-two">
                 <div className="col-lg-10 col-lg-offset-1">
                     <div className="row">
 
-                        <div className="col-md-6 col-sm-6 col-xs-6 pull-left">
+                        <div className="col-md-4 col-sm-6 col-xs-6 pull-left pt20">
                             <p>Copyright ©2019 <a href="#">iAssureIT</a>. All rights reserved.</p>
                         </div>
+                        <div className="col-md-4 col-sm-6 col-xs-6 text-center footerlogo">
+                             <img alt="Logo" src="/images/logo.png"/>
+                        </div>
 
-                        <div className="col-md-6 col-sm-6 col-xs-6 pull-right">
+                        <div className="col-md-4 col-sm-6 col-xs-6 pull-right pt20">
                             <p className="text-right">
                                 <a href="#" className="mr20">Privacy Policy</a>
                                 <a href="#" className="mr20">Term of Use</a>

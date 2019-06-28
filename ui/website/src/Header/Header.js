@@ -30,7 +30,8 @@ openSubMenu(event){
 }
 
   render() {  
-    return (  
+    return (
+      <div>  
       <div className="navbar navbar-default navbar-static-top" id="bb">
         <div className="">
           <div className="navbar-header col-lg-3">
@@ -120,6 +121,7 @@ openSubMenu(event){
           </div>
         </div>
       </div>
+    </div>
     );  
   }
 }

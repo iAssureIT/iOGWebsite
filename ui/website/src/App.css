@@ -96,7 +96,7 @@
  font-size: 14px;
  color: #000;
  /*background-color: #367588;*/
- /*border-top: 1px solid #eee;*/
+ border-top: 1px solid #eee;
 }
 .footer-two a{
 color: #000;
@@ -206,7 +206,9 @@ ul.no-icon-list {
 }
 
 
-
+.footerlogo img{
+    height: 50px;
+}
 
 
 
@@ -669,7 +671,13 @@ ul.no-icon-list {
     background-color: #333333;
 }
 
+.buttonhover:hover{
+    color: #fff!important;
+    background-color: #f19000;
+    transition-duration:0.7s;
+    cursor: pointer;
 
+}
 
 
 
