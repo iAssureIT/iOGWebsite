@@ -9,12 +9,12 @@ import 'font-awesome/css/font-awesome.min.css';
 
 import App from '../App.js';
 import '../App.css';
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
-import HomePage from '../HomePage/HomePage.js';
-import Contactpage from '../ContactPage/Contactpage.js';
-import AboutUs from '../AboutUs/AboutUs.js';
-import Careerspage from '../CareersPage/Careerspage.js';
+import Header from '../common/Header/Header.js';
+import Footer from '../common/Footer/Footer.js';
+import HomePage from '../allPages/HomePage/HomePage.js';
+import Contactpage from '../allPages/ContactPage/Contactpage.js';
+import AboutUs from '../allPages/AboutUs/AboutUs.js';
+import Careerspage from '../allPages/CareersPage/Careerspage.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    

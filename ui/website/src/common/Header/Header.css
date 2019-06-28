@@ -1,7 +1,7 @@
 .navbar-brand>img {
   padding-top: 11px;
-  width: 130px;
-  margin-left: 35px;
+  width: 175px;
+  /*margin-left: 35px;*/
 }
 .navbar-brand {
     height: auto;
@@ -107,8 +107,9 @@
 
 .navPadding{
   padding-top: 10px;
-  margin-left: 128px;
+  /*margin-left: 128px;*/
     /*padding-bottom: 10px;*/
+    /*height: 250px;*/
 }
 .dropDownA a:hover{
   color: #fff;
@@ -156,7 +157,7 @@
 .headerbkimg{
   background-image: url("/images/background.png");
   background-size: 100% 100%;
-  width: 100%;
-  height: 250px;
+  /*width: 100%;*/
+  height:250px;
 }
 
