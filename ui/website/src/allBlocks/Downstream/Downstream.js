@@ -23,68 +23,83 @@ export default class Downstream extends Component {
                             <div className="Main_Cards__Bubble bub1"></div>
                             <div className="Main_Cards__Bubble bub2"></div>
                         </div>
-                    <div className="col-lg-12 textcoloryellow contentheader text-center">
-                        <h1>iOG Solutions for Downstream Oil and Gas Industry</h1>
+                    <div className="col-lg-12 textcolorblue contentheader text-center">
+                    <hr/>
+                        <h1>iOG Solutions for</h1><h2> Downstream Oil and Gas Industry</h2>
                     </div>
                     <div className="col-lg-12">
                         <div className="col-lg-10 col-lg-offset-1">
                             <div className="col-lg-12 NOpadding">
                                 <div className="col-lg-6">
-                                    <div className="col-lg-12 textcolorblue block block1height">
+                                    <div className=" textcolorblue block block1height text-center">
+                                        <img src="/images/Illustration_2.png" />
                                         <h2>Supply Chain Management</h2>
                                         <p className="text-justify">
-                                         Production Planning plays a vital role in maximizing refinery profitability while managing complexity and flexibility of the petrochemical operations.
-                                         It specifies which crude or intermediate products to purchase and which products to produce.
-                                         The planning decisions are taken based on forecast of future demand and prices over a certain time horizon.
-                                         </p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
+                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
+                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
+                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="col-lg-12 textcolorblue block block2height">
+                                    <div className=" textcolorblue block block2height text-center">
+                                        <img src="/images/Illustration_3.png" />
                                         <h2>Manufacturing Execution Systems</h2>
                                         <p className="text-justify">
-                                         Production Planning plays a vital role in maximizing refinery profitability while managing complexity and flexibility of the petrochemical operations.
-                                         It specifies which crude or intermediate products to purchase and which products to produce.
-                                         </p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
+                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
+                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
+                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="col-lg-12 textcolorblue block block3height">
+                                    <div className=" textcolorblue block block3height text-center">
+                                        <img src="/images/Illustration_4.png" />
                                         <h2>APC Services</h2>
                                         <p className="text-justify">
-                                         Production Planning plays a vital role in maximizing refinery profitability while managing complexity and flexibility of the petrochemical operations.
-                                         It specifies which crude or intermediate products to purchase and which products to produce.
-                                         The planning decisions are taken based on forecast of future demand and prices over a certain time horizon.
-                                         </p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
+                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
+                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
+                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="col-lg-12 textcolorblue block block4height">
+                                    <div className="textcolorblue block block4height text-center">
+                                        <img src="/images/Illustration_5.png" />
                                         <h2>Simulation & Modelling</h2>
                                         <p className="text-justify">
-                                         Production Planning plays a vital role in maximizing refinery profitability while managing complexity and flexibility of the petrochemical operations.
-                                         It specifies which crude or intermediate products to purchase and which products to produce.
-                                         The planning decisions are taken based on forecast of future demand and prices over a certain time horizon.
-                                         </p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
+                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
+                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
+                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="col-lg-12 textcolorblue block block5height">
+                                    <div className="textcolorblue block block5height text-center">
+                                        <img src="/images/Illustration_6.png" />
                                         <h2>Energy Management</h2>
                                         <p className="text-justify">
-                                         Production Planning plays a vital role in maximizing refinery profitability while managing complexity and flexibility of the petrochemical operations.
-                                         It specifies which crude or intermediate products to purchase and which products to produce.
-                                         The planning decisions are taken based on forecast of future demand and prices over a certain time horizon.
-                                         </p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
+                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
+                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
+                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="col-lg-12 textcolorblue block block6height">
+                                    <div className="textcolorblue block block6height text-center">
+                                        <img src="/images/Illustration_7.png" />
                                         <h2>ETRM and Pricing Tool Application</h2>
                                         <p className="text-justify">
-                                         Production Planning plays a vital role in maximizing refinery profitability while managing complexity and flexibility of the petrochemical operations.
-                                         It specifies which crude or intermediate products to purchase and which products to produce.
-                                         </p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
+                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
+                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
+                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
                                     </div>
                                 </div>
                             </div>
