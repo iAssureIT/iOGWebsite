@@ -7,21 +7,32 @@ import 'bootstrap/js/tab.js';
 import 'font-awesome/css/font-awesome.min.css';
 // import $ from 'jquery';
 
-import App from '../App.js';
 import '../App.css';
-import Header from '../common/Header/Header.js';
-import Footer from '../common/Footer/Footer.js';
-import HomePage from '../allPages/HomePage/HomePage.js';
-import Contactpage from '../allPages/ContactPage/Contactpage.js';
-import AboutUs from '../allPages/AboutUs/AboutUs.js';
-import Careerspage from '../allPages/CareersPage/Careerspage.js';
+import Header         from '../common/Header/Header.js';
+import Footer         from '../common/Footer/Footer.js';
+import HomePage       from '../allPages/HomePage/HomePage.js';
+import Contactpage    from '../allPages/ContactPage/Contactpage.js';
+import AboutUs        from '../allPages/AboutUs/AboutUs.js';
+import Careerspage    from '../allPages/CareersPage/Careerspage.js';
+import ServicesPage   from '../allPages/ServicesPage/ServicesPage.js';
+import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
+import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
+
+import Effectssec     from '../trial/effectssec/effectssec.js';
+import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
+import Effectslide     from '../trial/Effectslide/Effectslide.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
     <Route path="/" exact strict component={ HomePage } /> 
     <Route path="/contact-us" component={ Contactpage } />  
     <Route path="/about-us" component={ AboutUs } />         
-    <Route path="/careers" component={ Careerspage } />         
+    <Route path="/careers" component={ Careerspage } />
+    <Route path="/services" component={ ServicesPage } />
+    <Route path="/industries" component={ IndustriesPage } />
+    <Route path="/resource" component={ ResourcePage } />
+
+    <Route path="/trial" component={ Effectslide } />         
   </div>
 );
 

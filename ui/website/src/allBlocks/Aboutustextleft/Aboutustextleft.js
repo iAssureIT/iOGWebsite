@@ -12,7 +12,7 @@ export default class Aboutustextleft extends Component {
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-3">
-                  <div className="col-lg-7">
+                  <div className="col-lg-6">
                     <div className="line1 col-lg-1 pull-right "></div>
                   </div>                    
                 </div>                    

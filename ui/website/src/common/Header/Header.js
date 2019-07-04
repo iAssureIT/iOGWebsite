@@ -59,7 +59,7 @@ openSubMenu(event){
                               <a href="/about-us">About Us </a>          
                             </li>
                             <li className="dropdown menu-large dropDownA">
-                              <a href="#" className="dropdown-toggle" data-toggle="dropdown">Services <b className="fa fa-angle-down"></b></a>          
+                              <a href="/services">Services <b className=""></b></a>          
                               <ul className="dropdown-menu megamenu row dropDownMenu">
                                 <li className="col-sm-3 col-lg-3 col-lg-offset-3">
                                   <ul>
@@ -82,7 +82,7 @@ openSubMenu(event){
                               </ul>
                             </li>
                             <li className="dropdown menu-large">
-                              <a href="#" className="dropdown-toggle" data-toggle="dropdown">Industries <b className="fa fa-angle-down"></b></a>          
+                              <a href="/industries" >Industries <b className=""></b></a>          
                               <ul className="dropdown-menu megamenu row dropDownMenu">
                                 <li className="col-sm-3 col-lg-3 col-lg-offset-3">
                                   <ul>
@@ -98,8 +98,8 @@ openSubMenu(event){
                               </ul>
                             </li>
                             <li><a href="#">Careers</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="/resource">Resources</a></li>
+                            <li><a href="/blog">Blog</a></li>
                             <li><a href="/contact-us">Contact Us</a></li>
                           </ul>
                        </div>

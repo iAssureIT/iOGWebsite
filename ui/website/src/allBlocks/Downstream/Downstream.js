@@ -10,11 +10,61 @@ import './Downstream.css';
 
 export default class Downstream extends Component {
     
+  DownstreamData(){
+        return [
+            {
+                downstreamTitle : "Supply Chain Management",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                    
+                
+            }, 
+            {
+                downstreamTitle : "Manufacturing Execution Systems",
+                downstreamimg   : "/images/Illustration_3.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
+            {
+                downstreamTitle : "APC Services",
+                downstreamimg   : "/images/Illustration_4.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
+            {
+                downstreamTitle : "Simulation & Modelling",
+                downstreamimg   : "/images/Illustration_5.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
+            {
+                downstreamTitle : "Energy Management",
+                downstreamimg   : "/images/Illustration_6.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+             {
+                downstreamTitle : "ETRM and Pricing Tool Application",
+                downstreamimg   : "/images/Illustration_7.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+             {
+                downstreamTitle : "Digital Services",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
+            {
+                downstreamTitle : "Asset Management",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+            {
+                downstreamTitle : "Health Safety & Environment",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            } 
+            
+        ]
+    }
 
 
-  abc(){
-    return(0);
-  }
+  
 
  render(){
        return(
@@ -30,78 +80,19 @@ export default class Downstream extends Component {
                     <div className="col-lg-12">
                         <div className="col-lg-10 col-lg-offset-1">
                             <div className="col-lg-12 NOpadding">
-                                <div className="col-lg-6">
+                            {
+                              this.DownstreamData().map((data, index)=>{
+                                 return (
+                                <div key={index} className="col-lg-6">
                                     <div className=" textcolorblue block block1height text-center">
-                                        <img src="/images/Illustration_2.png" />
-                                        <h2>Supply Chain Management</h2>
-                                        <p className="text-justify">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
-                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
-                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
-                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
+                                        <img src={data.downstreamimg} />
+                                        <h2>{data.downstreamTitle}</h2>
+                                        <p className="text-justify">{data.downstreamtext}</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
-                                    <div className=" textcolorblue block block2height text-center">
-                                        <img src="/images/Illustration_3.png" />
-                                        <h2>Manufacturing Execution Systems</h2>
-                                        <p className="text-justify">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
-                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
-                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
-                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className=" textcolorblue block block3height text-center">
-                                        <img src="/images/Illustration_4.png" />
-                                        <h2>APC Services</h2>
-                                        <p className="text-justify">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
-                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
-                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
-                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="textcolorblue block block4height text-center">
-                                        <img src="/images/Illustration_5.png" />
-                                        <h2>Simulation & Modelling</h2>
-                                        <p className="text-justify">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
-                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
-                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
-                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="textcolorblue block block5height text-center">
-                                        <img src="/images/Illustration_6.png" />
-                                        <h2>Energy Management</h2>
-                                        <p className="text-justify">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
-                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
-                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
-                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="textcolorblue block block6height text-center">
-                                        <img src="/images/Illustration_7.png" />
-                                        <h2>ETRM and Pricing Tool Application</h2>
-                                        <p className="text-justify">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                        pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu
-                                        fringilla urna ante ut tellus. Cras imperdiet tristique venenatis.
-                                        Vivamus elementum enim ipsum, nec pharetra sapien ornare
-                                        eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis                                         </p>
-                                    </div>
-                                </div>
+                                 );
+                              })
+                            }
                             </div>
                         </div>
                     </div>

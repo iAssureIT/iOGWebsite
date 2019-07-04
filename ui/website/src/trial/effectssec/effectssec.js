@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import   Loadable                  from 'react-loadable';
+// import { render } from 'react-dom';
+
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import $ from "jquery";
 
-import './Upstream.css';
 
-export default class Upstream extends Component {
+import './effectssec.css';
+export default class Effectssec extends Component {
 
-     componentDidMount(){
+  componentDidMount(){
 
 const Cards = ((() => {
   window.addEventListener('DOMContentLoaded', () => {setTimeout(init,1)}, true);
@@ -83,10 +84,10 @@ const Cards = ((() => {
 })());
   }
 
-    upstreamData(){
+   upstreamData(){
         return [
             {
-                upstreamTitle : "Geology & Geophysics",
+                upstreamTitle : "Geology & Geophysics 1",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -109,7 +110,7 @@ const Cards = ((() => {
                 ]
             }, 
             {
-                upstreamTitle : "Production Management",
+                upstreamTitle : "Geology & Geophysics 2",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -132,7 +133,7 @@ const Cards = ((() => {
                 ]
             }, 
             {
-                upstreamTitle : "Reservoir Management",
+                upstreamTitle : "Geology & Geophysics 3",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -155,7 +156,7 @@ const Cards = ((() => {
                 ]
             }, 
             {
-                upstreamTitle : "Data Management Services",
+                upstreamTitle : "Geology & Geophysics 4",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -176,9 +177,9 @@ const Cards = ((() => {
                         liData : "Full Support"
                     }
                 ]
-            }, 
+            },
             {
-                upstreamTitle : "Well & Drilling Services",
+                upstreamTitle : "Geology & Geophysics 5",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -203,49 +204,38 @@ const Cards = ((() => {
         ]
     }
 
-    render(){
-        return(
-            <div className="col-lg-12 upstream-wrapper NOpadding">
-                <div id="price" className="upstreamBg col-lg-12">
-                    <div className="row">
-                        <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
-                            <hr/>
-                            <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
-                                <b>iOG Solutions for</b> Upstream Oil & Gas Industry
-                            </h1>
-                        </div>
-                    </div>
-                    <div className="col-lg-12">
-                        <div className="cards">
-                            {
-                                this.upstreamData().map((data, index)=>{
-                                 return (
-                                         <div key={index}className="card" data-card={index}>
-                                            <div className="price price-three col-lg-12">
-                                                <div className="col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
-                                                <div className="price-body col-lg-12">
-                                                    <ul>
-                                                        {
-                                                            data.upstreamLi.map((liDetail, index)=>{
-                                                                return(
-                                                                    <li key={index}>{liDetail.liData}</li>
-                                                                );
-                                                            })
-                                                        }
-                                                    </ul>
-                                                </div>
-                                                <div className="price-footer col-lg-12">
-                                                    <input type="button" className="btn pricebtn1" value="View More"/>                                    
-                                                </div>
-                                            </div>
-                                        </div>                       
-                                     );
-                                 })
-                            }
-                      </div>
-                    </div>
-                </div>                
-            </div>   
+
+  render(){
+       return(
+
+            <div className="cards">
+                {
+                    this.upstreamData().map((data, index)=>{
+                        return (
+                                <div key={index}className="card" data-card={index}>
+                                    <div className="price price-three col-lg-12">
+                                        <div className="price-badge1 bgiogyellow bg-grad-blood-mary col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
+                                        <div className="price-body col-lg-12">
+                                            <ul>
+                                                {
+                                                    data.upstreamLi.map((liDetail, index)=>{
+                                                        return(
+                                                            <li key={index}>{liDetail.liData}</li>
+                                                        );
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+                                        <div className="price-footer col-lg-12">
+                                            <input type="button" className="btn pricebtn1" value="View More"/>                                    
+                                        </div>
+                                    </div>
+                                </div>                       
+                        );
+                    })
+                }
+            </div>
         );
-    }
+  } 
+
 }

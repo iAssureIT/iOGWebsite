@@ -1,0 +1,18 @@
+.toggler, .toggled {display: block}
+.toggled {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: 
+        visibility 0s ease .6s,
+        opacity .6s ease-in 0s,
+        max-height .6s ease-out 0s;
+}
+:checked + .toggled {
+    visibility: visible;
+    opacity: 1;
+    /* Ensure max-height is sufficient at min-width */
+    max-height: 50rem;
+    transition-delay: 0s, 0s, 0s; /* unit "s" is required */
+}

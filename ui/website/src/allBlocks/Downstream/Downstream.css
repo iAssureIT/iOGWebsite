@@ -81,22 +81,22 @@
     }
 }
 .upstreamBg{
-    padding: 30px 0px;
+    padding: 150px 0px;
     background-size: 100% 100%;
     /*background-color: #367588;*/
-    background-image: url("/images/data_image_svg+xml;….svg");
-    /*height: 540px;*/
+    background-image: url("/images/6.png");
+    height: 760px;
 }
 
 .upstream-wrapper:before {
   background-image: url("/images/data_image_svg+xml;….svg");
   background-size: 100% 100%;
-      height: 560px;
+      height: 760px;
 }
 .upstream-wrapper:after {
   background-image: url("/images/data_image_svg+xml;….svg");
   background-size: 100% 100%;
-      height: 560px;
+      height: 760px;
 }
 
 .upstream-wrapper:before {
@@ -294,3 +294,6 @@
     animation: bubblea3 30s linear infinite;
 }
 
+.margin-top{
+  margin-top: 150px;
+}

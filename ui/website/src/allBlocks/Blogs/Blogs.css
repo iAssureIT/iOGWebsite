@@ -63,3 +63,11 @@
 
 
 
+.blogsimg img{
+  height: 250px;
+}
+
+.blogtext p{
+  text-align: justify;
+  padding: 10px 40px;
+}

@@ -7,6 +7,7 @@ import Banner                 from '../../allBlocks/Banner/Banner.js';
 import Downstream             from '../../allBlocks/Downstream/Downstream.js';
 import Upstream               from '../../allBlocks/Upstream/Upstream.js';
 import Socialmedia            from '../../allBlocks/Socialmedia/Socialmedia.js';
+import Blogs                  from '../../allBlocks/Blogs/Blogs.js';
 
 export default class HomePage extends Component {
   render() {  
@@ -14,7 +15,7 @@ export default class HomePage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
         <Downstream />
         <Upstream />
-        <Socialmedia />
+        <Blogs />
       </div>
     );  
   }

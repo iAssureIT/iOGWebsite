@@ -93,14 +93,23 @@
 
 
 .footer-two{
- font-size: 14px;
- color: #000;
+ font-size: 16px;
+ color: #fff;
  /*background-color: #367588;*/
- border-top: 1px solid #eee;
+ /*border-top: 1px solid #eee;*/
+ height: 250px;
+ padding-top: 75px;
 }
 .footer-two a{
-color: #000;
+color: #fff;
 
+}
+.footer-end a{
+color: #fff;
+
+}
+.footer-end{
+    height: 65px!important;
 
 }
 .footer-two ul{
@@ -115,7 +124,7 @@ color: #000;
 
 }
 .footer-two ul li a:hover{
-    /*color: #fe4530;*/
+    color: #42E8E0;
 
 }
 .footer-two p a{
@@ -126,7 +135,7 @@ color: #000;
 
 }
 .footer-two p a:hover{
-    /*color: #fe4530;*/
+    color: #42E8E0;
 }
 .bb-solid-1{
     /*border-bottom: 1px solid #eee;*/
@@ -134,7 +143,8 @@ color: #000;
 
 .font-montserrat{
     /*font-family: 'Montserrat', sans-serif;*/
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 ul.no-icon-list {
     margin: 0;
@@ -189,7 +199,7 @@ ul.no-icon-list {
     -webkit-transform: perspective(100px) rotateY(-5deg);*/
     padding: 10px 0px;
     text-align: center;
-    background-color: #fff;
+    background-color: #eee;
     /*padding: 30px 0;*/
     /*height: 300px;*/
 }
@@ -207,7 +217,8 @@ ul.no-icon-list {
 
 
 .footerlogo img{
-    height: 50px;
+    height: 80px;
+    margin-top: 30px;
 }
 
 
@@ -336,6 +347,25 @@ ul.no-icon-list {
     text-decoration: none;
     text-align: left;
 
+}
+.socialicon li a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+
+}
+.socialicon li a .fa{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px 6px;
+    background-color: #fff;
+    color: #00317F;
+    font-size: 15px;
+}
+.facebook{
+    padding: 5px 7px !important;
 }
 .footer-two ul li a:hover{
     /*color: #000;*/
@@ -679,6 +709,40 @@ ul.no-icon-list {
 
 }
 
+.lightbluebg{
+    background-color: #42E8E0;
+}
+.lightbluetext{
+    color: #42E8E0;
+}
+.darkbluebg{
+    background-color: #00317F;
+}
+.darkbluetext{
+    color: #00317F;
+}
+
+.textcolorwhite{
+    color: #fff;
+}
+
+.footeranimation img{
+    position: relative;
+    top: 54px;
+    z-index: 1;
+}
+.footeranimationtruck img{
+    position: relative;
+    top: 156px;
+    left: 1000px;
+    z-index: 1;
+}
+.footeranimationtruck2 img{
+    position: relative;
+    top: 125px;
+    left: 500px;
+    z-index: 1;
+}
 
 
 

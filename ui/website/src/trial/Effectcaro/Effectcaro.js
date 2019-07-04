@@ -4,89 +4,21 @@ import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
-import './Upstream.css';
-
-export default class Upstream extends Component {
-
-     componentDidMount(){
-
-const Cards = ((() => {
-  window.addEventListener('DOMContentLoaded', () => {setTimeout(init,1)}, true);
-
-  function init(e)
-  {
-    if(document.querySelector(".cards"))
-    {
-      let cards = document.querySelector(".cards");
-      cards.addEventListener('click', clicked, false);
-      document.querySelectorAll(".cards .card")[0].click();
-    }
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+const OwlCarousel = Loadable({
+    
+  loader: () => import('react-owl-carousel'),
+  loading() {
+    return <div className="col-sm-12 col-xs-12 col-lg-2 col-lg-offset-5 col-md-12 loadingImg"><img src="../images/loadersglms.gif" className="img-responsive" alt="loading"/></div>
   }
+});
 
-  function clicked(e)
-  {
-    let card = e.target;
-    if(card.getAttribute("data-card")){rearrange(card.getAttribute("data-card"));}
-  }
-
-  function rearrange(card)
-  {
-    let cards = document.querySelectorAll(".cards .card");
-    for(let n = 0; n < cards.length; n++)
-    {
-      cards[n].classList.remove("card--left");
-      cards[n].classList.remove("card--left-left");
-      cards[n].classList.remove("card--center");
-      cards[n].classList.remove("card--right");
-      cards[n].classList.remove("card--right-right");
-    }
-    cards[card].classList.add("card--center");
-    if(card == 0)
-    {
-      cards[3].classList.add("card--left");
-      cards[4].classList.add("card--left-left");
-      cards[1].classList.add("card--right");
-      cards[2].classList.add("card--right-right");
-    }
-    if(card == 1)
-    {
-      cards[4].classList.add("card--left");
-      cards[0].classList.add("card--left-left");
-      cards[2].classList.add("card--right");
-      cards[3].classList.add("card--right-right");    }
-    if(card == 2)
-    {
-      cards[0].classList.add("card--left");
-      cards[1].classList.add("card--left-left");
-      cards[3].classList.add("card--right");
-      cards[4].classList.add("card--right-right");    }
-    if(card == 3)
-    {
-      cards[1].classList.add("card--left");
-      cards[2].classList.add("card--left-left");
-      cards[4].classList.add("card--right");
-      cards[0].classList.add("card--right-right");
-    }
-    if(card == 4)
-    {
-      cards[2].classList.add("card--left");
-      cards[3].classList.add("card--left-left");
-      cards[0].classList.add("card--right");
-      cards[1].classList.add("card--right-right");
-    }
-  }
-
-  return {
-    init
-  }
-})());
-  }
-
+export default class Blogs extends Component {
     upstreamData(){
         return [
             {
-                upstreamTitle : "Geology & Geophysics",
+                upstreamTitle : "Geology & Geophysics 1",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -109,7 +41,7 @@ const Cards = ((() => {
                 ]
             }, 
             {
-                upstreamTitle : "Production Management",
+                upstreamTitle : "Geology & Geophysics 2",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -132,7 +64,7 @@ const Cards = ((() => {
                 ]
             }, 
             {
-                upstreamTitle : "Reservoir Management",
+                upstreamTitle : "Geology & Geophysics 3",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -155,7 +87,7 @@ const Cards = ((() => {
                 ]
             }, 
             {
-                upstreamTitle : "Data Management Services",
+                upstreamTitle : "Geology & Geophysics 4",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -176,9 +108,9 @@ const Cards = ((() => {
                         liData : "Full Support"
                     }
                 ]
-            }, 
+            },
             {
-                upstreamTitle : "Well & Drilling Services",
+                upstreamTitle : "Geology & Geophysics 5",
                 upstreamLi : [
                     {
                         liData : "Two Web Designs"
@@ -205,24 +137,31 @@ const Cards = ((() => {
 
     render(){
         return(
-            <div className="col-lg-12 upstream-wrapper NOpadding">
-                <div id="price" className="upstreamBg col-lg-12">
-                    <div className="row">
-                        <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
-                            <hr/>
-                            <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
-                                <b>iOG Solutions for</b> Upstream Oil & Gas Industry
-                            </h1>
-                        </div>
-                    </div>
+            <div className="col-lg-12 NOpadding">
+                <div id="price" className="col-lg-12">
                     <div className="col-lg-12">
-                        <div className="cards">
-                            {
-                                this.upstreamData().map((data, index)=>{
-                                 return (
-                                         <div key={index}className="card" data-card={index}>
+                        <OwlCarousel
+                        className="owl-theme"
+                        loop
+                        nav
+                        dots={false}
+                        items={3}
+                        margin={10}
+                        // slideBy={2}
+                        // navText={["<div class='fa fa-angle-left'></div>","<div class='fa fa-angle-right'></div>"]}
+                        // responsive={
+                        // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
+                        // }
+                        autoplay={true}
+                        autoplayHoverPause={true}
+                        >
+                        {
+                            this.upstreamData().map((data, index)=>{
+                                return (
+                                    <div key={index} className={"item col-lg-12 col-md-12 col-sm-12 col-xs-12  pricehover-float NOpadding index"+index}>
+                                        <div className="col-lg-12">
                                             <div className="price price-three col-lg-12">
-                                                <div className="col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
+                                                <div className="price-badge1 bgiogyellow bg-grad-blood-mary col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
                                                 <div className="price-body col-lg-12">
                                                     <ul>
                                                         {
@@ -239,10 +178,11 @@ const Cards = ((() => {
                                                 </div>
                                             </div>
                                         </div>                       
-                                     );
-                                 })
-                            }
-                      </div>
+                                    </div>
+                                );
+                            })
+                        }
+                        </OwlCarousel>
                     </div>
                 </div>                
             </div>   
