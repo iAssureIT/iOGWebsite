@@ -222,7 +222,7 @@ const Cards = ((() => {
                                  return (
                                          <div key={index}className="card" data-card={index}>
                                             <div className="price price-three col-lg-12">
-                                                <div className="col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
+                                                <h3><div className="uptitle darkbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12">
                                                     <ul>
                                                         {
@@ -235,7 +235,7 @@ const Cards = ((() => {
                                                     </ul>
                                                 </div>
                                                 <div className="price-footer col-lg-12">
-                                                    <input type="button" className="btn pricebtn1" value="View More"/>                                    
+                                                    <a className="upstreamfoot" href="/video"><input type="button" className="btn pricebtn1 darkbluebg" value="View More"/></a>                                    
                                                 </div>
                                             </div>
                                         </div>                       

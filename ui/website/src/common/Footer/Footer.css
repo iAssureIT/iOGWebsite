@@ -1,0 +1,190 @@
+.footer-two{
+ font-size: 16px;
+ color: #fff;
+ /*background-color: #367588;*/
+ /*border-top: 1px solid #eee;*/
+ height: 250px;
+ padding-top: 75px;
+}
+.footer-two a{
+color: #fff;
+
+}
+.footer-end a{
+color: #fff;
+
+}
+.footer-end{
+    height: 65px!important;
+
+}
+.footer-two ul{
+    list-style: none;
+    text-decoration: none;
+
+}
+.footer-two ul li a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+
+}
+.footer-two ul li a:hover{
+    color: #42E8E0;
+
+}
+.footer-two p a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+
+}
+.footer-two p a:hover{
+    color: #42E8E0;
+}
+.bb-solid-1{
+    /*border-bottom: 1px solid #eee;*/
+}
+
+.font-montserrat{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 18px;
+    font-weight: bold;
+}
+ul.no-icon-list {
+    margin: 0;
+    padding: 0;
+}
+.social.social-two a {
+    width: 30px;
+    height: 30px;
+    padding: 5px 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    float: left;
+    display: block;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+
+.footer-two ul{
+    list-style: none;
+    text-decoration: none;
+
+}
+.footer-two ul li a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+
+}
+.socialicon li a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+
+}
+.socialicon li a .fa{
+    border: 9px solid #fff;
+    border-radius: 50%;
+    padding: 5px 6px;
+    background-color: #fff;
+    color: #00317F;
+    font-size: 20px;
+}
+.facebook{
+    padding: 5px 9px !important;
+}
+.footer-two ul li a:hover{
+    /*color: #000;*/
+
+}
+.footer-two p a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+    /*font-family: 'Open Sans', sans-serif !important;*/
+    font-style: normal;
+
+}
+.footer-two p a:hover{
+    /*color: #000;*/
+}
+.bb-solid-1{
+    /*border-bottom: 1px solid #eee;*/
+}
+
+.font-montserrat{
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+ul.no-icon-list {
+    margin: 0;
+    padding: 0;
+}
+.social.social-two a {
+    width: 30px;
+    height: 30px;
+    padding: 5px 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    float: left;
+    display: block;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+.connectbtn{
+    background-color: #fff;
+    color: #00317F;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.footeranimation img{
+    position: relative;
+    top: 68px;
+    z-index: 1;
+    height: 176px;
+}
+.footeranimationtruck img{
+    position: relative;
+    top: 190.5px;
+    left: 1000px;
+    z-index: 1;
+    animation:  truck1 30s linear infinite;
+
+}
+.footeranimationtruck2 img{
+    position: relative;
+    top: 160px;
+    left: 500px;
+    z-index: 1;
+    animation:  truck2 30s linear infinite;
+
+}
+
+@keyframes truck1 {
+  
+  0% {
+    left:1000px ;
+  }
+  100% {
+   left:1500px ;
+  }
+  
+}
+@keyframes truck2 {
+  
+ 0% {
+    left:500px ; 
+  }
+  100% {
+   left:1500px ;
+  }
+  
+}
+

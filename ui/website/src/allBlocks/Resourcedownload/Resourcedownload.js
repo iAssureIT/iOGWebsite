@@ -10,7 +10,7 @@ import './Resourcedownload.css';
 export default class Resourcedownload extends Component {
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt100">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
                     <h2 className="textcolorblue text-center para1-top">Downloads</h2>
@@ -21,8 +21,8 @@ export default class Resourcedownload extends Component {
                          We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
                       </p>          
                 </div>
-                <div  className="col-lg-12 blk_ht">
-                        <div className="col-lg-3  col-md-3 col-sm-12 col-xs-12">
+                <div  className="col-lg-11 col-lg-offset-2 blk_ht text-center">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                           <div className="aboutus_block aboutus_block1height">
                           <div className="icon1">
                           <img src="/images/Icon_1.png" alt="" className="icn_1" />
@@ -31,7 +31,7 @@ export default class Resourcedownload extends Component {
                             <p className="iog_txt"><b>iOG</b>Study</p>
                           </div>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                           <div className="aboutus_block aboutus_block1height">
                           <div className="icon2">
                           <img src="/images/Icon_2.png" alt="" className="icn_2" />
@@ -40,22 +40,13 @@ export default class Resourcedownload extends Component {
                           <p className="iog_txt "><b>iOG</b>Implement</p>
                           </div>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                           <div className="aboutus_block aboutus_block1height">
                           <div className="icon3">
                           <img src="/images/Icon_3.png" alt="" className="icn_3" />
                           <img src="/images/13.png" alt="" className="icn3_hover"  />
                           </div>
                           <p className="iog_txt "><b>iOG</b>Consult</p>
-                          </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                          <div className="aboutus_block aboutus_block1height">
-                          <div className="icon4">
-                          <img src="/images/Icon_4.png" alt="" className="icn_3" />
-                          <img src="/images/14.png" alt="" className="icn4_hover"  />
-                          </div>
-                          <p className="iog_txt "><b>iOG</b>Train</p>
                           </div>
                         </div>
                  </div>

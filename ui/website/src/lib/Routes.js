@@ -17,6 +17,8 @@ import Careerspage    from '../allPages/CareersPage/Careerspage.js';
 import ServicesPage   from '../allPages/ServicesPage/ServicesPage.js';
 import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
 import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
+import BlogPage       from '../allPages/BlogPage/BlogPage.js';
+import VideoPage       from '../allPages/VideoPage/VideoPage.js';
 
 import Effectssec     from '../trial/effectssec/effectssec.js';
 import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
@@ -31,6 +33,8 @@ const WebLayout = () => (
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resource" component={ ResourcePage } />
+    <Route path="/blog" component={ BlogPage } />
+    <Route path="/video" component={ VideoPage } />
 
     <Route path="/trial" component={ Effectslide } />         
   </div>

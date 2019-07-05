@@ -5,6 +5,8 @@ import { render } from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
+import './Footer.css';
+
 export default class Footer extends Component {
 
 
@@ -23,12 +25,6 @@ export default class Footer extends Component {
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
                 <div className="col-lg-10 col-lg-offset-1 pb35">
                     <div className="row">
-                        <div className="col-md-3 col-sm-4 col-xs-4">
-                        <div className="footerlogo">
-                             <img alt="Logo" src="/images/iOG-white-logo.png"/>
-                        </div>
-                        </div>
-                        
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Menu</h6>
                             <ul className="no-icon-list">
@@ -58,14 +54,25 @@ export default class Footer extends Component {
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-md-3 col-sm-3 col-xs-4">
-                            <h6 className="font-montserrat">Connect</h6>
+                        <div className="col-md-3 col-sm-4 col-xs-4">
+                            <h6 className="font-montserrat col">Address</h6>
+                            <p>
+                                 iOG Solutions Pvt. Ltd.<br/>
+                                 Amanora Chambers, Office 330,<br/>
+                                 4th floor, East Block,Hadapsar,<br/>
+                                  Pune,India- 411028.<br/>
+                                 <i className="glyphicon glyphicon-phone"></i>Phone: +91 20 672 603 81/82.
+                             </p>
+                        </div> 
+                        <div className="col-md-2 col-sm-3 col-xs-4">
+                            <h6 className="font-montserrat col">Connect</h6>
                             <ul className="no-icon-list socialicon">
+                                <li><a href="#"><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                             </ul>
-                        </div>                        
+                            <a href="Contact-us"><button className="connectbtn btn">Click To Contact</button></a>
+                        </div>      
                     </div>
                 </div>            
         </div>
@@ -74,7 +81,7 @@ export default class Footer extends Component {
                     <div className="row">
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-left pt20">
-                            <p>Copyright ©2019 <a href="#">iAssureIT</a>. All rights reserved.</p>
+                            <p>Copyright ©2019 <a href="#">iOGsolutions</a>. All rights reserved.</p>
                         </div>
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-right pt20">

@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
 
-import "./Effectslide.css";
-export default class Effectslide extends Component {
+import "./BlogPagecomponent.css";
+export default class BlogPagecomponent extends Component {
 
     componentDidMount(){var accordions = document.querySelectorAll('.accordion-item');
 
@@ -62,8 +62,7 @@ for (var i = 0; i < accordions.length; i++) {
 
     render(){
         return(
-                    <div className="col-lg-12 NOpadding">
-                        <div className="container">
+                    <div className="col-lg-12 NOpadding margin-top">
                           <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         {
                           this.BlogsData().map((data, index)=>{
@@ -86,7 +85,6 @@ for (var i = 0; i < accordions.length; i++) {
                                 })
                           }
                           </div>
-                        </div>             
                     </div>   
              );
          }

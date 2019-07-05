@@ -213,9 +213,9 @@ const Cards = ((() => {
                     this.upstreamData().map((data, index)=>{
                         return (
                                 <div key={index}className="card" data-card={index}>
-                                    <div className="price price-three col-lg-12">
-                                        <div className="price-badge1 bgiogyellow bg-grad-blood-mary col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
-                                        <div className="price-body col-lg-12">
+                                    <div className="col-lg-12">
+                                        <div className="col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
+                                        <div className="col-lg-12">
                                             <ul>
                                                 {
                                                     data.upstreamLi.map((liDetail, index)=>{
@@ -226,8 +226,8 @@ const Cards = ((() => {
                                                 }
                                             </ul>
                                         </div>
-                                        <div className="price-footer col-lg-12">
-                                            <input type="button" className="btn pricebtn1" value="View More"/>                                    
+                                        <div className="col-lg-12">
+                                            <input type="button" className="btn" value="View More"/>                                    
                                         </div>
                                     </div>
                                 </div>                       

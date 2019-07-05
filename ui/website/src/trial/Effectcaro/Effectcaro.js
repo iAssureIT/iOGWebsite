@@ -4,6 +4,10 @@ import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import './Effectcaro.css';
+import $ from "jquery";
+
+
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 const OwlCarousel = Loadable({
@@ -14,7 +18,7 @@ const OwlCarousel = Loadable({
   }
 });
 
-export default class Blogs extends Component {
+export default class Effectcaro extends Component {
     upstreamData(){
         return [
             {

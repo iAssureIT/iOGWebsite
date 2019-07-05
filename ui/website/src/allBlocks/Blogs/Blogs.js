@@ -22,31 +22,31 @@ export default class Blogs extends Component {
         return [
             {
                 upstreamTitle : "iOG offerings to Set-up Centers of Excellence",
-                downstreamimg : "/images/Illustration_2.png",
+                downstreamimg : "/images/nature1.jpeg",
                 upstreamLi    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
 
             }, 
             {
                 upstreamTitle : "iOG offerings to Set-up Centers of Excellence",
-                downstreamimg : "/images/Illustration_2.png",
+                downstreamimg : "/images/nature1.jpeg",
                 upstreamLi    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
 
             }, 
             {
                 upstreamTitle : "iOG offerings to Set-up Centers of Excellence",
-                downstreamimg : "/images/Illustration_2.png",
+                downstreamimg : "/images/nature1.jpeg",
                 upstreamLi    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
 
             },
             {
                 upstreamTitle : "iOG offerings to Set-up Centers of Excellence",
-                downstreamimg : "/images/Illustration_2.png",
+                downstreamimg : "/images/nature1.jpeg",
                 upstreamLi    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
 
             },
             {
                 upstreamTitle : "iOG offerings to Set-up Centers of Excellence",
-                downstreamimg : "/images/Illustration_2.png",
+                downstreamimg : "/images/nature1.jpeg",
                 upstreamLi    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
 
             } 
@@ -56,7 +56,13 @@ export default class Blogs extends Component {
 
     render(){
         return(
-            <div className="col-lg-12 NOpadding">
+            <div className="col-lg-12 NOpadding mt100">
+                <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
+                    <hr/>
+                    <h1 className="darkbluetext latestblog">
+                        <b>Latest</b> Blogs
+                    </h1>
+                </div>
                 <div id="price" className="col-lg-12">
                     <div className="col-lg-12">
                         <OwlCarousel
@@ -67,17 +73,17 @@ export default class Blogs extends Component {
                         items={3}
                         margin={10}
                         // slideBy={2}
-                        // navText={["<div class='fa fa-angle-left'></div>","<div class='fa fa-angle-right'></div>"]}
+                        navText={["<div class='fa fa-angle-left'></div>","<div class='fa fa-angle-right'></div>"]}
                         // responsive={
                         // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
                         // }
-                        autoplay={true}
+                        autoplay={false}
                         autoplayHoverPause={true}
                         >
                         {
                             this.upstreamData().map((data, index)=>{
                                 return (
-                                    <div key={index} className={"item col-lg-12 col-md-12 col-sm-12 col-xs-12  pricehover-float NOpadding index"+index}>
+                                    <div key={index} className={"col-lg-12 col-md-12 col-sm-12 col-xs-12  pricehover-float NOpadding index"+index}>
                                         <div className="col-lg-12">
                                             <div className="price price-three col-lg-12">
                                                 <div className="col-lg-12">
@@ -86,12 +92,12 @@ export default class Blogs extends Component {
                                                   </div>
                                                 </div>
 
-                                                <div className="col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
+                                                <div className="col-lg-12"><h4>{data.upstreamTitle}</h4></div>
                                                 <div className="price-body blogtext col-lg-12">
                                                 <p>{data.upstreamLi}</p>
                                                 </div>
                                                 <div className="price-footer col-lg-12">
-                                                    <input type="button" className="btn pricebtn1" value="View More"/>                                    
+                                                    <input type="button" className="btn pricebtn1 darkbluebg" value="Read More"/>                                    
                                                 </div>
                                             </div>
                                         </div>                       

@@ -5,9 +5,9 @@ import   Loadable                  from 'react-loadable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import './Resourcevideo.css';
+import './Videocontentblock.css';
 
-export default class Resourcevideo extends Component {
+export default class Videocontentblock extends Component {
 
   VideoData(){
         return [
@@ -32,7 +32,33 @@ export default class Resourcevideo extends Component {
                 downstreamTitle : "Simulation & Modelling",
                 downstreamimg   : "/images/Illustration_5.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }
+            }, 
+            {
+                downstreamTitle : "Energy Management",
+                downstreamimg   : "/images/Illustration_6.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+             {
+                downstreamTitle : "ETRM and Pricing Tool Application",
+                downstreamimg   : "/images/Illustration_7.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+             {
+                downstreamTitle : "Digital Services",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
+            {
+                downstreamTitle : "Asset Management",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+            {
+                downstreamTitle : "Health Safety & Environment",
+                downstreamimg   : "/images/Illustration_2.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            } 
+            
         ]
     }
 
@@ -53,7 +79,7 @@ export default class Resourcevideo extends Component {
                     {
                       this.VideoData().map((data, index)=>{
                       return (
-                        <div className="col-lg-3  col-md-3 col-sm-3 col-xs-3 mt100">
+                        <div className="col-lg-3  col-md-3 col-sm-3 col-xs-3 margin-top">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">

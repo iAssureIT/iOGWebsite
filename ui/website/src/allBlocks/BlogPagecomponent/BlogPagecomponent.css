@@ -48,3 +48,7 @@
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+.panel-body{
+  color: #000;
+}
