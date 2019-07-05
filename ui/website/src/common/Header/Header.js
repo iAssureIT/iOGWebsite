@@ -97,7 +97,7 @@ openSubMenu(event){
                                 </li>
                               </ul>
                             </li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="/careers">Careers</a></li>
                             <li><a href="/resource">Resources</a></li>
                             <li><a href="/blog">Blog</a></li>
                             <li><a href="/contact-us">Contact Us</a></li>
