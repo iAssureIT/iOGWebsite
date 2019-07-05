@@ -1,0 +1,127 @@
+.contentWraper1{
+   height: auto;
+   background-color: transparent;
+   padding-top: 161px;
+/*    padding-top: 282px;
+*/ padding-left: 0px;
+   padding-right: 0px;
+    /*background-color: #fff;*/
+    /*padding-top: 35px;*/
+    /*padding: 0;*/
+}
+
+.line_1{
+  background-color: #f19000;
+  width: 105px;
+  height: 4px;
+}
+
+.career_line_subhead{
+    font-size: 30px;
+    margin-top: 34px;
+    padding-bottom: 35px;
+  }
+
+  .career_line_paraone{
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding-bottom: 46px;
+    padding-top: 10px;
+}
+
+.career_intro_img{
+    width: 68%;
+    margin-top: 38px;
+    margin-left: 64px;
+  }
+
+.butt_1 {
+    background-color: #003bb3;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    width: 136px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /*margin-left: 22px;*/
+    height: -24px;
+    border-radius: 40px;
+}
+
+
+.butt_1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.butt_1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 105px;
+  transition: 0.5s;
+}
+
+.butt_1:hover span {
+  /*padding-right: 25px;*/
+
+}
+
+.butt_1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*
+
+.career_para-top{
+    font-size: 50px;
+    font-weight: 100;
+    color: #666666;
+    padding-left: 22px;
+    margin-top: 44px;
+}
+
+.line_subhead1{
+  padding-left: 22px;
+  font-size: 20px;
+  color: #808080;
+   margin-bottom: 41px;
+   margin-top: 28px;
+}
+.iogimgblock1{
+  width: 100%;
+  padding-top: 142px;
+}
+
+.iogblock1text{
+  padding-top: 100px;
+  font-size: 15px;
+  margin-top: 142px;
+}
+
+.iogblock1text span{
+  font-size: 18px;
+  font-weight: bold;
+}*/
+
+.colorblue_txt{
+	color: #00bfff;
+}
+
+.career1_img{
+width: 100%;
+padding-right: 45px;
+}
+
+
+
+

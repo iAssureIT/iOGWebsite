@@ -8,6 +8,12 @@
 
 
 
+.NOpadding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
 .contactBg{
     
     /*background: linear-gradient(-45deg, #7474BF, #348AC7);*/

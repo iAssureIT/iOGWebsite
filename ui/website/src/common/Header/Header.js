@@ -36,7 +36,7 @@ openSubMenu(event){
         <div className="navbar navbar-default navbar-static-top" id="bb">
           <div className="col-lg-12">
             <div className="row"> 
-             <div className="col-lg-12">
+             <div className="col-lg-12 top_spacing">
               <div className="row"> 
                 <div className="col-lg-3">
                   <div className="navbar-header col-lg-8 col-lg-offset-2">

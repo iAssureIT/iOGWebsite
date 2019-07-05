@@ -4,9 +4,7 @@ import { render } from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-
-
-class Jobscomponent extends Component{
+class JobPortal extends Component{
   constructor(){
     super();
      this.state={
@@ -14,18 +12,13 @@ class Jobscomponent extends Component{
 
   }
   
-  componentDidMount() {
-  }
-
   render(){
     return(
           <div>
+            
           </div>    
     );
   }
 }
 
-export default Contactpage;
-
-
-
+export default JobPortal;
