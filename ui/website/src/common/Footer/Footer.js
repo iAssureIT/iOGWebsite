@@ -14,13 +14,13 @@ export default class Footer extends Component {
        return(
          <div>
             <div className="footeranimationtruck">
-                <img src="/images/Illustration_9.png" />
+                <img className="img-responsive" src="/images/Illustration_9.png" />
             </div>
              <div className="footeranimationtruck2">
-                <img src="/images/Illustration_9.png" />
+                <img className="img-responsive" src="/images/Illustration_9.png" />
             </div>      
             <div className="footeranimation">
-                <img src="/images/Illustration_8.png" />
+                <img className="img-responsive" src="/images/Illustration_8.png" />
             </div>      
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
                 <div className="col-lg-10 col-lg-offset-1 pb35">

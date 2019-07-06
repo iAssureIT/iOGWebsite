@@ -207,7 +207,7 @@ const Cards = ((() => {
         return(
             <div className="col-lg-12 upstream-wrapper NOpadding">
                 <div id="price" className="upstreamBg col-lg-12">
-                    <div className="row">
+                    <div className="">
                         <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">

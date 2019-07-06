@@ -4,191 +4,58 @@ import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/js/carousel.js';
 import './Effectcaro.css';
 import $ from "jquery";
 
-
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-const OwlCarousel = Loadable({
-    
-  loader: () => import('react-owl-carousel'),
-  loading() {
-    return <div className="col-sm-12 col-xs-12 col-lg-2 col-lg-offset-5 col-md-12 loadingImg"><img src="../images/loadersglms.gif" className="img-responsive" alt="loading"/></div>
-  }
-});
-
 export default class Effectcaro extends Component {
-    upstreamData(){
-        return [
-            {
-                upstreamTitle : "Geology & Geophysics 1",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            }, 
-            {
-                upstreamTitle : "Geology & Geophysics 2",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            }, 
-            {
-                upstreamTitle : "Geology & Geophysics 3",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            }, 
-            {
-                upstreamTitle : "Geology & Geophysics 4",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            },
-            {
-                upstreamTitle : "Geology & Geophysics 5",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            }
-        ]
-    }
 
+    componentDidMount(){
+        $('.carousel .item').each(function(){
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+          
+          if (next.next().length>0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+          }
+          else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+          }
+        });
+    }
+    
     render(){
         return(
             <div className="col-lg-12 NOpadding">
-                <div id="price" className="col-lg-12">
-                    <div className="col-lg-12">
-                        <OwlCarousel
-                        className="owl-theme"
-                        loop
-                        nav
-                        dots={false}
-                        items={3}
-                        margin={10}
-                        // slideBy={2}
-                        // navText={["<div class='fa fa-angle-left'></div>","<div class='fa fa-angle-right'></div>"]}
-                        // responsive={
-                        // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
-                        // }
-                        autoplay={true}
-                        autoplayHoverPause={true}
-                        >
-                        {
-                            this.upstreamData().map((data, index)=>{
-                                return (
-                                    <div key={index} className={"item col-lg-12 col-md-12 col-sm-12 col-xs-12  pricehover-float NOpadding index"+index}>
-                                        <div className="col-lg-12">
-                                            <div className="price price-three col-lg-12">
-                                                <div className="price-badge1 bgiogyellow bg-grad-blood-mary col-lg-6 col-lg-offset-3">{data.upstreamTitle}</div>
-                                                <div className="price-body col-lg-12">
-                                                    <ul>
-                                                        {
-                                                            data.upstreamLi.map((liDetail, index)=>{
-                                                                return(
-                                                                    <li key={index}>{liDetail.liData}</li>
-                                                                );
-                                                            })
-                                                        }
-                                                    </ul>
-                                                </div>
-                                                <div className="price-footer col-lg-12">
-                                                    <input type="button" className="btn pricebtn1" value="View More"/>                                    
-                                                </div>
-                                            </div>
-                                        </div>                       
-                                    </div>
-                                );
-                            })
-                        }
-                        </OwlCarousel>
+            <div className="col-md-6 col-md-offset-3">
+                    <div className="carousel slide" id="myCarousel" data-interval="1000">
+                      <div className="carousel-inner">
+                        <div className="item active">
+                          <div className="col-md-4"><a href="#"><img src="http://placehold.it/500/bbbbbb/fff&amp;text=1" className="img-responsive"/></a></div>
+                        </div>
+                        <div className="item">
+                          <div className="col-md-4"><a href="#"><img src="http://placehold.it/500/CCCCCC/fff&amp;text=2" className="img-responsive"/></a></div>
+                        </div>
+                        <div className="item">
+                          <div className="col-md-4"><a href="#"><img src="http://placehold.it/500/eeeeee/fff&amp;text=3" className="img-responsive"/></a></div>
+                        </div>
+                        <div className="item">
+                          <div className="col-md-4"><a href="#"><img src="http://placehold.it/500/f4f4f4/fff&amp;text=4" className="img-responsive"/></a></div>
+                        </div>
+                        <div className="item">
+                          <div className="col-md-4"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=5" className="img-responsive"/></a></div>
+                        </div>
+                        <div className="item">
+                          <div className="col-md-4"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" className="img-responsive"/></a></div>
+                        </div>
+                      </div>
+                      <a className="left carousel-control" href="#myCarousel" data-slide="prev"><i className="glyphicon glyphicon-chevron-left"></i></a>
+                      <a className="right carousel-control" href="#myCarousel" data-slide="next"><i className="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                </div>                
+                </div>
             </div>   
         );
     }

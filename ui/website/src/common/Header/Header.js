@@ -50,7 +50,7 @@ openSubMenu(event){
                 </div>
                 <div className="col-lg-9 headerbkimg">
                   <div className="row"> 
-                    <div className="col-lg-12 col-lg-offset-2">
+                    <div className="col-lg-8 col-lg-offset-2">
                      <div className="row"> 
                       <div className="navbar-collapse collapse"> 
                           <ul className="nav navbar-nav navPadding">

@@ -23,6 +23,7 @@ import VideoPage       from '../allPages/VideoPage/VideoPage.js';
 import Effectssec     from '../trial/effectssec/effectssec.js';
 import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
 import Effectslide     from '../trial/Effectslide/Effectslide.js';
+import Svganimation     from '../trial/Svganimation/Svganimation.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
@@ -36,7 +37,7 @@ const WebLayout = () => (
     <Route path="/blog" component={ BlogPage } />
     <Route path="/video" component={ VideoPage } />
 
-    <Route path="/trial" component={ Effectslide } />         
+    <Route path="/trial" component={ Svganimation } />         
   </div>
 );
 

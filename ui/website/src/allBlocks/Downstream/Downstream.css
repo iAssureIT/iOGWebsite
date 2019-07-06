@@ -191,10 +191,10 @@
     border-radius: 50%;
 }
 .Main_Cards__Bubble:nth-child(2) {
-    right: -200px;
+    right: 0px;
     bottom: -90px;
-    width: 766px;
-    height: 766px;
+    width: 700px;
+    height: 700px;
 }
 /*.Main_Cards__Bubble {
     pointer-events: none;
@@ -264,7 +264,7 @@
   
   0% {
        
-   bottom: 0px;  left: 1013px; transform: scale(1) ; 
+   bottom: 0px;  left: 700px; transform: scale(1) ; 
   }
   20% {
     transform: scaleY(0.95) scaleX(1.05);
@@ -275,13 +275,13 @@
   }
   68% {
     
-    transform-origin: 350px -50px; transform: scaleY(0.98) scaleX(1.02);
+    transform-origin: 550px -50px; transform: scaleY(0.98) scaleX(1.02);
   }
   80% {
     transform: scaleY(1.02) scaleX(0.98);
   }
   97%, 100% {
-   bottom:550px; left:100px;    transform: scale(1);
+   bottom:1050px; left:100px;    transform: scale(1);
   }
 }
 .bub1{
