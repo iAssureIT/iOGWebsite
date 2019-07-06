@@ -188,3 +188,7 @@ ul.no-icon-list {
   
 }
 
+.footoverflow{
+    width: 100%;
+    overflow: hidden;
+}

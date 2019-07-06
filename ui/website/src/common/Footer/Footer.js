@@ -12,7 +12,7 @@ export default class Footer extends Component {
 
   render(){
        return(
-         <div>
+         <div className="footoverflow">
             <div className="footeranimationtruck">
                 <img className="img-responsive" src="/images/Illustration_9.png" />
             </div>
