@@ -4,6 +4,7 @@
 	padding-top: 0px!important;
 	/*background-color: #fff;*/
 	/*padding-top: 35px;*/
+  overflow: hidden;
 }
 
 .block{
@@ -192,9 +193,9 @@
 }
 .Main_Cards__Bubble:nth-child(2) {
     right: 0px;
-    bottom: -90px;
-    width: 700px;
-    height: 700px;
+    bottom: 0px;
+    width: 600px;
+    height: 600px;
 }
 /*.Main_Cards__Bubble {
     pointer-events: none;
@@ -264,7 +265,7 @@
   
   0% {
        
-   bottom: 0px;  left: 700px; transform: scale(1) ; 
+   bottom: 0px;  left: 500px; transform: scale(1) ; 
   }
   20% {
     transform: scaleY(0.95) scaleX(1.05);

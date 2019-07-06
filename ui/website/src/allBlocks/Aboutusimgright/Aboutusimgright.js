@@ -10,8 +10,8 @@ import './Aboutusimgright.css';
 export default class Aboutusimgright extends Component {
     render(){
         return(
-          <div className="row">
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="row">
               <div className="bckgrnd_curve_img  col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="btm_txt">
@@ -35,7 +35,7 @@ export default class Aboutusimgright extends Component {
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         );
     }
 }
