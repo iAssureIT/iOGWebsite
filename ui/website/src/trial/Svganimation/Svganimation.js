@@ -30,7 +30,7 @@ export default class Svganimation extends Component {
               }}
               beforeInjection={svg => {
                 svg.classList.add('svg-class-name')
-                svg.setAttribute('style', 'width: 400px')
+                svg.setAttribute('style', 'width: 200px')
               }}
               evalScripts="always"
               fallback={() => <span>Error!</span>}
