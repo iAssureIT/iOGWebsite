@@ -1,33 +1,30 @@
 .banner-wrapper{
-	width: 150vw;
-	margin-top: -102px;
-	left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: relative;
+	margin-top: -110px;
+    margin-bottom: 100px;
+    overflow: hidden;
 }
 .banner{
-	border-radius: 0 0 50% 50%;
 	
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+	
+    /*position: relative;*/
+    /*z-index: 1;*/
+    /*overflow: hidden;*/
     /*background-image: linear-gradient(44deg,#8232ec,#695cff);*/
-    background: #333;
-    background-size: 100% 75%;
-    color: #fff;
-    height: 500px;
+    /*background: #333;*/
+    /*background-size: 100% 75%;*/
+    /*color: #fff;*/
+    /*height: 500px;*/
 }
 .bannerContainer {
     /* max-width: 930px; */
     /* position: relative; */
-    background-size: 100% 100%;
+    background-size: 100% ;
     width: 100%;
     margin-right: auto;
-    height: 550px;
+    height: 900px;
     margin-left: auto;
     float: left;
-    background-image: url(/images/IOG_2.png);
+    background-image: url(/images/banner.png);
     padding-top: 144px;
     padding-bottom: 158px;
 }
@@ -106,13 +103,88 @@
 }
 
 .banner-wrapper:after, .banner-wrapper:before {
-    position: absolute;
+    /*position: absolute;*/
     z-index: 0;
     bottom: -5px;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #367588;
-    border-radius: 0 0 50% 50%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: #eee;
+    /*border-radius: 0 0 50% 50%;*/
     content: "";
+}
+
+.cloud1{
+    position: absolute;
+    left: -250px;
+    animation:  cloud1 70s  infinite;
+    z-index: 100;
+
+}
+.cloud2{
+    position: absolute;
+    left: -330px;
+    top: 30px;
+    animation:  cloud2 50s linear  infinite;
+    z-index: 101;
+}
+.cloud3{
+    position: absolute;
+    left: -750px;
+    animation:  cloud3 60s linear  infinite;
+    z-index: 102;
+}
+.cloud4{
+    position: absolute;
+    left: -950px;
+    width: 100px;
+    animation:  cloud4 70s linear  infinite;
+    z-index: 103;
+
+}
+.bannersun{
+    position: absolute;
+    left: 400px;
+    z-index: 10;
+}
+
+@keyframes cloud1 {
+  
+  0% {
+    left:-250px ;
+  }
+  100% {
+   left:1500px ;
+  }
+  
+}
+@keyframes cloud2 {
+  
+  0% {
+    left:-330px ;
+  }
+  100% {
+   left:1500px ;
+  }
+  
+}
+@keyframes cloud3 {
+  
+  0% {
+    left:-750px ;
+  }
+  100% {
+   left:1500px ;
+  }
+  
+}
+@keyframes cloud4 {
+  
+  0% {
+    left:-950px ;
+  }
+  100% {
+   left:1500px ;
+  }
+  
 }

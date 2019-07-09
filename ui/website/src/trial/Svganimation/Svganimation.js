@@ -8,18 +8,20 @@ import $ from "jquery";
 import ReactSVG from 'react-svg'
 
 
-
 import './Svganimation.css';
 export default class Svganimation extends Component {
 
-  componentDidMount(){}
+  componentDidMount(){
+
+  }
 
    
 
   render(){
+
        return(
         <div>
-            <ReactSVG
+            {/*<ReactSVG
               src="/images/svg.svg"
               afterInjection={(error, svg) => {
                 if (error) {
@@ -30,7 +32,7 @@ export default class Svganimation extends Component {
               }}
               beforeInjection={svg => {
                 svg.classList.add('svg-class-name')
-                svg.setAttribute('style', 'width: 200px')
+                svg.setAttribute('style', 'width: 800px')
               }}
               evalScripts="always"
               fallback={() => <span>Error!</span>}
@@ -41,8 +43,12 @@ export default class Svganimation extends Component {
               onClick={() => {
                 console.log('wrapper onClick')
               }}
-            />        
-          </div>
+            />        */}
+
+              <ReactSVG className="wrapper" src="/images/ioglogosvg.svg" />
+        </div>
+
+
 
         );
   } 

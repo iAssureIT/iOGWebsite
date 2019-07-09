@@ -4,36 +4,13 @@ import './Header.css';
 
 export default class Header extends Component {
   
-componentWillMount() {
-  $(function(){ 
-     var navMain = $("#bs-example-navbar-collapse-1");
-     navMain.on("click", "a", null, function () {
-         navMain.collapse('hide');
-     });
- });
-}
-openSubMenu(event){
-  event.preventDefault();
-  var id = event.target.id;
-  // console.log('id',id);
-  if($("."+id).hasclassNameName("subnav-content-display")){
-    $('.NavBlue').css({"background-color":"transparent", "transition-delay": "0.6s"});
-    $(".subnav-content ").css({"display":"none"});
-  }else{
-    // console.log('false');
-    $('div').removeclassNameName('subnav-content-display');
-    $('.NavBlue').css({"background-color":"#332c81", "transform": "perspective(1px) translateZ(0)", "transition-duration": "0.5s"});
-    $('.'+id).css({"background-color":"#332c81", "margin-top": "12px", "opacity":"1", "position": "absolute", "width": "100%", "z-index": 100, "left": 0, "transform": "perspective(1px) translateZ(0)", "transition-delay": "0.5s", "transition-duration": "0.5s"});
-    $("."+id).addclassNameName('subnav-content-display');
-    // $("."+id).addclassNameName('content-display');
-  }
-}
+componentWillMount() {}
 
   render() {  
     return (
     <div className="col-lg-12"> 
       <div className="row"> 
-        <div className="navbar navbar-default navbar-static-top" id="bb">
+        <div className="navbar navbar-static-top" id="bb">
           <div className="col-lg-12">
             <div className="row"> 
              <div className="col-lg-12 top_spacing">
@@ -48,61 +25,64 @@ openSubMenu(event){
                     <a className="navbar-brand" href="/"><img alt="Logo" src="/images/logo.png"/></a>
                   </div>
                 </div>
-                <div className="col-lg-9 headerbkimg">
+                <div className="col-lg-9">
                   <div className="row"> 
-                    <div className="col-lg-8 col-lg-offset-2">
+                    <div className="col-lg-12">
                      <div className="row"> 
-                      <div className="navbar-collapse collapse"> 
-                          <ul className="nav navbar-nav navPadding">
-                            <li><a href="/">Home</a></li>
-                            <li className="dropdown menu-large " id="aa">
-                              <a href="/about-us">About Us </a>          
-                            </li>
-                            <li className="dropdown menu-large dropDownA">
-                              <a href="/services">Services <b className=""></b></a>          
-                              <ul className="dropdown-menu megamenu row dropDownMenu">
-                                <li className="col-sm-3 col-lg-3 col-lg-offset-3">
+                        <nav>
+                          <label for="drop" className="toggle">&#8801; Menu</label>
+                          <input type="checkbox" id="drop" />
+                          <ul className="menu">
+                             <li><a href="/">Home</a></li>
+                             <li><a href="/about-us">About Us</a></li>
+                                <li> 
+                                  <label for="drop-1" className="toggle">Services +</label>
+                                  <a href="/services">Services</a>
+                                  <input type="checkbox" id="drop-1"/>
                                   <ul>
-                                    <li className="dropdown-header">For Upstream</li>
-                                    <li><a href="#">iOGImplement</a></li>
-                                    <li><a href="#">iOGConsult</a></li>
-                                    <li><a href="#">iOGTrain</a></li>
-                                    <li><a href="#">iOGStudy</a></li>
+                                    <li><a href="#">Downstream</a></li>
+                                    <li><a href="#">Upstream</a></li>
+                                    <li><a href="#">Service Arms</a></li>
+                                    <li><a href="#">Digital Services</a></li>
+                                    <li><a href="#">Asset Management</a></li>
+                                    <li><a href="#">Health Safety & Environment</a></li>
                                   </ul>
-                                </li>
-                                <li className="col-sm-3 col-lg-6">
+                               </li>
+{/*                              <li>  
+                              <label for="drop-2" className="toggle">Portfolio +</label>
+                              <a href="#">Portfolio</a>
+                              <input type="checkbox" id="drop-2"/>
+                              <ul>
+                                <li><a href="#">Portfolio 1</a></li>
+                                <li><a href="#">Portfolio 2</a></li>
+                                <li> 
+                                  <label for="drop-3" className="toggle">Works +</label>
+                                  <a href="#">Works</a>
+                                  <input type="checkbox" id="drop-3"/>
                                   <ul>
-                                    <li className="dropdown-header">For Downstream</li>
-                                    <li><a href="#">iOGImplement</a></li>
-                                    <li><a href="#">iOGConsult</a></li>
-                                    <li><a href="#">iOGTrain</a></li>
-                                    <li><a href="#">iOGStudy</a></li>
+                                    <li><a href="#">HTML/CSS</a></li>
+                                    <li><a href="#">jQuery</a></li>
+                                    <li>
+                                    <label for="drop-4" className="toggle">Python +</label>
+                                    <a href="#">Python</a>
+                                    <input type="checkbox" id="drop-4"/>
+                                      <ul>
+                                        <li><a href="#">HTML/CSS</a></li>
+                                        <li><a href="#">jQuery</a></li>
+                                        <li><a href="#">Python</a></li>
+                                      </ul>
+                                    </li>
                                   </ul>
                                 </li>
                               </ul>
-                            </li>
-                            <li className="dropdown menu-large">
-                              <a href="/industries" >Industries <b className=""></b></a>          
-                              <ul className="dropdown-menu megamenu row dropDownMenu">
-                                <li className="col-sm-3 col-lg-3 col-lg-offset-3">
-                                  <ul>
-                                    <li className="col-lg-12"><a href="#">Upstream Industry</a></li>
-                                    
-                                  </ul>
-                                </li>
-                                <li className="col-sm-3 col-lg-6">
-                                  <ul>
-                                    <li className="col-lg-12"><a href="#">Downstream Industry</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
+                            </li>*/}
+                            <li><a href="/industries">Industries</a></li>
                             <li><a href="/careers">Careers</a></li>
                             <li><a href="/resource">Resources</a></li>
-                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/blog">Blogs</a></li>
                             <li><a href="/contact-us">Contact Us</a></li>
                           </ul>
-                       </div>
+                        </nav>
                       </div>
                      </div>
                     </div>
@@ -117,4 +97,3 @@ openSubMenu(event){
     );  
   }
 }
-

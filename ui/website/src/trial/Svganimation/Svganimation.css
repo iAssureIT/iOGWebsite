@@ -1,0 +1,38 @@
+svg {
+  width: 300px;
+  display: block;
+  /*position: absolute;*/
+  margin-top: 174px;
+  /*margin-bottom: 100px; */
+}
+
+.line1 {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 40;
+    animation: dash 1.5s linear alternate infinite;
+  }
+
+  .line2 {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    animation: dash2 1.5s linear alternate infinite;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 260;
+    }
+    to {
+      stroke-dashoffset: 40;
+    }
+  }
+
+
+  @keyframes dash2 {
+    from {
+      stroke-dashoffset: 280;
+    }
+    to {
+      stroke-dashoffset: -40;
+    }
+  }
