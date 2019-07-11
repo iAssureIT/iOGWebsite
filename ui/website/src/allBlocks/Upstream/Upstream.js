@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import   Loadable                  from 'react-loadable';
+// import { render } from 'react-dom';
+// import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -11,7 +11,6 @@ export default class Upstream extends Component {
 
      componentDidMount(){
 
-const Cards = ((() => {
   window.addEventListener('DOMContentLoaded', () => {setTimeout(init,1)}, true);
 
   function init(e)
@@ -80,7 +79,6 @@ const Cards = ((() => {
   return {
     init
   }
-})());
   }
 
     upstreamData(){
