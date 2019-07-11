@@ -146,13 +146,13 @@ ul.no-icon-list {
 
 .footeranimation img{
     position: relative;
-    top: 68px;
+    top: 1px;
     z-index: 1;
     height: 153px;
 }
 .footeranimationtruck img{
     position: relative;
-    top: 178px;
+    top: 166px;
     left: 1000px;
     z-index: 1;
     animation:  truck1 30s linear infinite;
@@ -160,7 +160,7 @@ ul.no-icon-list {
 }
 .footeranimationtruck2 img{
     position: relative;
-    top: 147px;
+    top: 135px;
     left: 500px;
     z-index: 1;
     animation:  truck2 30s linear infinite;

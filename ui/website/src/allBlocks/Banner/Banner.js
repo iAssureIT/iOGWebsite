@@ -26,6 +26,48 @@ export default class Banner extends Component {
                 <figure className="cloud4">
                   <img src="/images/cloud1.png"/>
                 </figure>
+                <figure className="boat">
+                  <img src="/images/boat.png"/>
+                </figure>
+                <figure className="up">
+                  <img src="/images/up1.png"/>
+                </figure>
+                <figure className="up1">
+                  <img src="/images/up2.png"/>
+                </figure>
+                <figure className="oilsign">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="anim">
+                  <img src="/images/anim.png"/>
+                </figure>
+                <figure className="tank">
+                  <img src="/images/tank.png"/>
+                </figure>
+                <figure className="car">
+                  <img src="/images/car.png"/>
+                  <img className="wheel1" src="/images/wheel1.png"/>
+                  <img className="wheel2" src="/images/wheel2.png"/>
+                </figure>
+                <div className="truckanim1">
+                  <figure className="truckanim">
+                    <img src="/images/truck.png"/>
+                    <img className="twheel1" src="/images/wheel1.png"/>
+                    <img className="twheel2" src="/images/wheel2.png"/>
+                    <img className="twheel3" src="/images/wheel2.png"/>
+                  </figure>
+                </div>
+                <div className="truckanim2">
+                  <figure className="truckanimtion">
+                    <img src="/images/truck.png"/>
+                    <img className="twheel4" src="/images/wheel1.png"/>
+                    <img className="twheel5" src="/images/wheel2.png"/>
+                    <img className="twheel6" src="/images/wheel2.png"/>
+                  </figure>
+                </div>
+                <figure className="truckfront">
+                  <img src="/images/truckfront.png"/>
+                </figure>
                 </div>
               </div>
             </div>

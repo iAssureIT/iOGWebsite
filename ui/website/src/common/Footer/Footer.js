@@ -54,12 +54,12 @@ export default class Footer extends Component {
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-md-3 col-sm-4 col-xs-4">
+                        <div className="col-md-4 col-sm-4 col-xs-4 ">
                             <h6 className="font-montserrat col">Address</h6>
                             <p>
-                                 iOG Solutions Pvt. Ltd.<br/>
-                                 Amanora Chambers, Office 330,<br/>
-                                 4th floor, East Block,Hadapsar,<br/>
+                                 iOG Solutions Pvt. Ltd.
+                                 Amanora Chambers,<br/> Office 330,
+                                 4th floor, East Block,Hadapsar,
                                   Pune,India- 411028.<br/>
                                  <i className="glyphicon glyphicon-phone"></i>Phone: +91 20 672 603 81/82.
                              </p>

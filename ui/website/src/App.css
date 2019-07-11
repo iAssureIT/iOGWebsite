@@ -136,7 +136,7 @@
     -webkit-transform: perspective(100px) rotateY(-5deg);*/
     padding: 10px 0px;
     text-align: center;
-    background-color: #eee;
+    background-color: #fff;
     /*padding: 30px 0;*/
     /*height: 300px;*/
 }
@@ -558,18 +558,18 @@
 
 
 .bgiogblue{
-    background-color: #003bb3;
+    background-color: #005b99;
 }
 
 .textcolorblue{
-    color:#003bb3;
+    color:#005b99;
 }
 .bgiogyellow{
-    background-color: #f19000;
+    background-color: #ffca00;
 }
 
 .textcoloryellow{
-    color:#f19000;
+    color:#ffca00;
 }
 
 .lightgray{
@@ -588,16 +588,16 @@
 }
 
 .lightbluebg{
-    background-color: #42E8E0;
+    background-color: #009de2;
 }
 .lightbluetext{
-    color: #42E8E0;
+    color: #009de2;
 }
 .darkbluebg{
-    background-color: #00317F;
+    background-color: #004266;
 }
 .darkbluetext{
-    color: #00317F;
+    color: #004266;
 }
 
 .textcolorwhite{

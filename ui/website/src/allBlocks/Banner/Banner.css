@@ -1,6 +1,6 @@
 .banner-wrapper{
 	margin-top: -110px;
-    margin-bottom: 100px;
+  margin-bottom: 18px;
     overflow: hidden;
 }
 .banner{
@@ -117,9 +117,124 @@
 .cloud1{
     position: absolute;
     left: -250px;
-    animation:  cloud1 70s  infinite;
+    animation:  cloud1 70s linear  infinite;
     z-index: 100;
 
+}
+.car{
+    position: absolute;
+    right: 250px;
+    top:620px;
+    animation:  car 10s linear  infinite;
+}
+.car img{
+}
+.wheel1{
+  position: absolute;
+  right: 22px;
+  top: 21px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.wheel2{
+  position: absolute;
+  right: 89px;
+  top: 21px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.truckanim1{
+    position: relative;
+    left: 803px;
+    top: 489px;
+    overflow: hidden;
+    /*background-color: red;*/
+    height: 57px;
+    width: 266px;
+}
+.truckanim{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    animation:  truckanim 10s linear  infinite;
+}
+.truckanim img{
+  margin-right:127px;
+
+
+}
+
+
+.truckanim2{
+    position: relative;
+    left: 1067px;
+    top: 553px;
+    overflow: hidden;
+    /*background-color: red;*/
+    height: 57px;
+    width: 418px;
+    z-index: 2;
+}
+.truckanimtion{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    animation:  truckanimtion 10s linear  infinite;
+}
+.truckanimtion img{
+  margin-right:645px;
+
+
+}
+
+.twheel4{
+  position: absolute;
+  right: 18px;
+  top: 34px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.twheel5{
+  position: absolute;
+  right: 72px;
+  top: 34px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.twheel6{
+  position: absolute;
+  right: 91px;
+  top: 34px;
+  animation:  wheel 0.4s linear  infinite;
+}
+
+.truckfront{
+  position: absolute;
+    right: 366px;
+    top: 505px;
+    overflow: hidden;
+    /*background-color: red;*/
+    z-index: 1;
+    height: 123px;
+}
+.truckfront img{
+  margin-top:0px;
+  animation: truckfront 10s 7s linear  infinite;
+  opacity: 0;
+}
+.twheel1{
+  position: absolute;
+  right: 18px;
+  top: 34px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.twheel2{
+  position: absolute;
+  right: 72px;
+  top: 34px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.twheel3{
+  position: absolute;
+  right: 91px;
+  top: 34px;
+  animation:  wheel 0.4s linear  infinite;
 }
 .cloud2{
     position: absolute;
@@ -147,7 +262,128 @@
     left: 400px;
     z-index: 10;
 }
+.tank{
+    position: absolute;
+    left: 772px;
+    top: 447px;
+    z-index: 11;
+}
 
+.boat{
+    position: absolute;
+    left: -250px;
+    top: 300px;
+    animation:  boat 40s linear  infinite;
+
+}
+.up{
+    position: absolute;
+    left: 48px;
+    top: 219px;
+
+}
+.up1{
+    position: absolute;
+    left: 58.5px;
+    top: 275px;
+    overflow: hidden;
+
+}
+.up1 img{
+  margin-top: -10px;
+  animation:  up1 2s linear  infinite;
+
+}
+.anim{
+    position: absolute;
+    left: 128px;
+    top: 545px;
+}
+.anim img{
+  animation:  anim 4s linear  infinite;
+
+}
+.oilsign{
+    position: absolute;
+    left: 181px;
+    top: 568px;
+    z-index: 1;
+
+}
+
+
+@keyframes truckfront {
+  
+  0% {
+    margin-top:-20px ;
+    opacity: 1;
+  }
+  100% {
+   margin-top:120px ;
+    opacity: 1;
+  }
+  
+}
+@keyframes up1 {
+  
+  0% {
+    margin-top:-10px ;
+  }
+  50% {
+   margin-top:0px ;
+  }
+  
+}
+@keyframes car {
+  
+  0% {
+    right: 250px
+  }
+  100% {
+  right: -150px;
+  }
+  
+}
+@keyframes truckanim {
+  
+  0% {
+    margin-right:127px;
+  }
+  100% {
+    margin-right: -243px;
+    opacity: 1;
+  }
+  
+}@keyframes truckanimtion {
+  
+  0% {
+    margin-right:645px;
+  }
+  100% {
+    margin-right: -793px;
+  }
+  
+}
+@keyframes anim {
+  
+  0% {
+  transform: rotate(0deg);
+  }
+  50% {
+  transform: rotate(8deg);
+  }
+  
+}
+@keyframes wheel {
+  
+  0% {
+  transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(360deg);
+  }
+  
+}
 @keyframes cloud1 {
   
   0% {
@@ -185,6 +421,16 @@
   }
   100% {
    left:1500px ;
+  }
+  
+}
+@keyframes boat {
+  
+  0% {
+    left:-250px ;
+  }
+  50% {
+   left:300px ;
   }
   
 }

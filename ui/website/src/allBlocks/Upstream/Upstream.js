@@ -205,8 +205,8 @@ const Cards = ((() => {
 
     render(){
         return(
-            <div className="col-lg-12 upstream-wrapper NOpadding">
-                <div id="price" className="upstreamBg col-lg-12">
+            <div className="col-lg-12 upstreamblock lightbluebg NOpadding">
+                <div id="price" className=" col-lg-12">
                     <div className="">
                         <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
                             <hr/>

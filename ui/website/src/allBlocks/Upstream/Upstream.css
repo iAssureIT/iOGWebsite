@@ -9,12 +9,13 @@
   align-items:center;
   justify-content:center;
   position: relative;
+  margin-top: 70px;
   
 }
 
 .card
 {
-  display:flex;
+  /*display:flex;*/
   width:380px;
   height:355px;
   border-radius:0.5rem;
@@ -28,7 +29,7 @@
   /*z-index:3;*/
   /*cursor: pointer;*/
   /*overflow:hidden;*/
-  background-color: #eee;
+  /*background-color: #eee;*/
   top:25px;
 }
 
@@ -156,5 +157,11 @@
   cursor: pointer;
 }
 
+.upstreamblock{
+  height: 800px;
+  padding: 100px 100px;
+  margin-bottom:100px;
 
+
+}
 

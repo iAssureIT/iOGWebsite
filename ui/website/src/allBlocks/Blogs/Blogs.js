@@ -60,7 +60,7 @@ export default class Blogs extends Component {
             <div className="row">
                 <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
                     <hr/>
-                    <h1 className="darkbluetext latestblog">
+                    <h1 className="lightbluetext latestblog">
                         <b>Latest</b> Blogs
                     </h1>
                 </div>
