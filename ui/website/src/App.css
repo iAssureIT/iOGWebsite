@@ -1,3 +1,8 @@
+@-ms-viewport{
+  width: device-width;
+  height: device-height;
+
+}
 
 .bw{
     background-color: #abc;
