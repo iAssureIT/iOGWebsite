@@ -16,23 +16,23 @@ export default class Servicesupblock extends Component {
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/2.png",
                 servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-                    
-                
-            } 
+           } 
                         
         ]
     }
 
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
                  {
                     this.ServicesData().map((data, index)=>{
                       return (   
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                                      <div className="img1">
-                                        <img src={data.servicesimg} alt="" className="intro_img" />
+                                      <div className="col-lg-8 col-lg-offset-2 ">
+                                        <div className="img1">
+                                          <img src={data.servicesimg} alt="" className="intro_img" />
+                                        </div>
                                       </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -42,13 +42,11 @@ export default class Servicesupblock extends Component {
                                           </div>                    
                                         </div> 
                                         <div className="col-lg-12">
-                                          <h2 className="textcolorblue para-top">{data.servicesTitle}</h2>
-                                            <p className="text-justify ">
-                                             <div className="line_subhead">{data.servicesSubTitle}</div>
-                                             <br></br>
-                                            <p className="line_para">{data.servicestext} </p>
-                                           </p>
+                                          <h2 className="lightbluetext para-top">{data.servicesTitle}</h2>
+                                            <p className="line_subhead">{data.servicesSubTitle}</p>
+                                            <p className="line_para">{data.servicestext} </p>   
                                         </div>
+                                        <a className="col-lg-4" href="Contact-us"><button className="lightbluebg servicekbtn btn">Read More <span className="servicekbtnarrow">>></span></button></a>
                                     </div>
                                 </div>
                                  );

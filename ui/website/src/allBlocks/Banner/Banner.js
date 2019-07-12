@@ -14,6 +14,18 @@ export default class Banner extends Component {
                 <figure className="bannersun">
                   <img src="/images/bannersun.png"/>
                 </figure>
+                <figure className="tree1">
+                  <img src="/images/tree1.png"/>
+                </figure>
+                <figure className="tree2">
+                  <img src="/images/tree2.png"/>
+                </figure>
+                <figure className="tree3">
+                  <img src="/images/tree3.png"/>
+                </figure>
+                <figure className="tree4">
+                  <img src="/images/tree4.png"/>
+                </figure>
                 <figure className="cloud1">
                   <img src="/images/cloud1.png"/>
                 </figure>
@@ -38,6 +50,27 @@ export default class Banner extends Component {
                 <figure className="oilsign">
                   <img src="/images/oilsign.png"/>
                 </figure>
+                <figure className="oilsign2">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign3">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign4">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign5">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign6">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign7">
+                  <img src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign8">
+                  <img src="/images/oilsign.png"/>
+                </figure>
                 <figure className="anim">
                   <img src="/images/anim.png"/>
                 </figure>
@@ -48,6 +81,9 @@ export default class Banner extends Component {
                   <img src="/images/car.png"/>
                   <img className="wheel1" src="/images/wheel1.png"/>
                   <img className="wheel2" src="/images/wheel2.png"/>
+                </figure>
+                <figure className="contanim">
+                  <img src="/images/container.png"/>
                 </figure>
                 <div className="truckanim1">
                   <figure className="truckanim">

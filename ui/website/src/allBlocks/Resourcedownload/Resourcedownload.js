@@ -13,7 +13,7 @@ export default class Resourcedownload extends Component {
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt100">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
-                    <h2 className="textcolorblue text-center para1-top">Downloads</h2>
+                    <h2 className="lightbluetext text-center para1-top">Downloads</h2>
                     <br></br>
                     <p className="line_para2  text-center">
                         iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
@@ -21,7 +21,7 @@ export default class Resourcedownload extends Component {
                          We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
                       </p>          
                 </div>
-                <div  className="col-lg-10 col-lg-offset-1 blk_ht text-center">
+                <div  className="col-lg-12 blk_ht text-center">
                   <div  className="col-lg-10 col-lg-offset-1">
                         <div className="col-lg-4 col-md-3 col-sm-3 col-xs-3">
                           <div className="aboutus_block aboutus_block1height">

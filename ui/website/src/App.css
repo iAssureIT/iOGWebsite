@@ -565,11 +565,11 @@
     color:#005b99;
 }
 .bgiogyellow{
-    background-color: #ffca00;
+    background-color: #f08f00;
 }
 
 .textcoloryellow{
-    color:#ffca00;
+    color:#f08f00;
 }
 
 .lightgray{
@@ -604,7 +604,9 @@
     color: #fff;
 }
 
-
+.margin-top{
+  margin-top: 150px;
+}
 
 
 

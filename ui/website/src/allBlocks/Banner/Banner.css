@@ -141,6 +141,14 @@ height: 150px;
 }
 .car img{
 }
+.contanim{
+    position: absolute;
+    right: 189px;
+    top: 318px;
+    animation:  contanim 10s linear  infinite;
+}
+.contanim img{
+}
 .wheel1{
   position: absolute;
   right: 22px;
@@ -274,6 +282,30 @@ height: 150px;
     left: 400px;
     z-index: 10;
 }
+.tree1{
+    position: absolute;
+    right: 269px;
+    top: 290px;
+    z-index: 10;
+}
+.tree2{
+    position: absolute;
+    right: 101px;
+    top: 294px;
+    z-index: 10;
+}
+.tree3{
+    position: absolute;
+    right: 208px;
+    top: 518px;
+    z-index: 10;
+}
+.tree4{
+    position: absolute;
+    right: 0px;
+    top: 359px;
+    z-index: 10;
+}
 .bannersun img{
 height: 90px;
 }
@@ -327,7 +359,50 @@ height: 90px;
     left: 163px;
     top: 494px;
     z-index: 1;
+    animation:  oilsign 4s linear  infinite;
 
+}
+.oilsign2{
+    position: absolute;
+    left: 444px;
+    top: 396px;
+    animation:  oilsign 4s linear  infinite;
+}
+.oilsign3{
+    position: absolute;
+    left: 376px;
+    top: 428px;
+    animation:  oilsign 4s linear  infinite;
+}
+.oilsign4{
+    position: absolute;
+    left: 781px;
+    top: 358px;
+    animation:  oilsign 4s linear  infinite;
+}
+.oilsign5{
+    position: absolute;
+    right: 225px;
+    top: 433px;
+    animation:  oilsign 4s linear  infinite;
+}
+.oilsign6{
+    position: absolute;
+    right: 82px;
+    top: 420px;
+    animation:  oilsign 4s linear  infinite;
+}
+.oilsign7{
+    position: absolute;
+    right: 230px;
+    top: 152px;
+    animation:  oilsign 4s linear  infinite;
+}
+.oilsign8{
+    position: absolute;
+    left: 720px;
+    top: 183px;
+    animation:  oilsign 4s linear  infinite;
 }
 
 
@@ -363,6 +438,16 @@ height: 90px;
   }
   
 }
+@keyframes contanim {
+  
+  0% {
+    right: 189px
+  }
+  100% {
+  right: -250px;
+  }
+  
+}
 @keyframes truckanim {
   
   0% {
@@ -393,6 +478,17 @@ height: 90px;
   }
   
 }
+@keyframes oilsign {
+  
+  0% {
+  transform: rotateY(0deg);
+  }
+  50% {
+  transform: rotateY(360deg);
+  }
+  
+}
+
 @keyframes wheel {
   
   0% {

@@ -155,12 +155,14 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 50px;
+    font-weight: 700;
 }
 
 .para1-top{
     margin-top: 56px;
     margin-bottom: -1px;
     font-size: 50px;
+    font-weight: 700;
 }
 
 .iog_txt{
@@ -234,17 +236,17 @@ margin-top: 54px;
   }
 
   .line_subhead{
-    font-weight: 600;
-    font-size: 24px;
-    margin-top: 2px;
+    /*font-weight: 600;*/
+    font-size: 28px;
+    margin-top: 25px;
+    color: #000;
   }
 
   .line_para{
-    line-height: 23px;
+    line-height: 25px;
     letter-spacing: 1px;
-     margin-top: -3px;
-
-
+    /* margin-top: -3px; */
+    font-size: 19px;
 }
 .line_para1{
     line-height: 23px;
@@ -308,8 +310,8 @@ margin-top: 54px;
 }
 
 .line1{
-  background-color: #f19000;
-  width: 105px;
+  background-color: #f08f00;
+  width: 90px;
   height: 4px;
   /*margin-top: 210px;*/
   /*margin-left: -683px;*/
@@ -343,9 +345,8 @@ margin-top: 54px;
 
 /*****************************************************************************************/
 .intro_img{
-    width: 68%;
-    margin-top: -56px;
-    margin-left: 64px;
+    width: 100%;
+    margin-top: 50px;
   }
 .third_img{
   width: 100%;
@@ -459,4 +460,18 @@ margin-top: 54px;
 }
 
 
-/********************************HEADER CSS***************************************************/
+.servicekbtn{
+   color: #fff;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+.servicekbtnarrow{
+   /* color: #fff;*/
+    font-weight: 600;
+    font-size: 18px;
+}
