@@ -22,12 +22,12 @@ componentWillMount() {}
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="/"><img alt="Logo" src="/images/logo.png"/></a>
+                    <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>
                   </div>
                 </div>
                 <div className="col-lg-9">
                   <div className="row"> 
-                    <div className="col-lg-12">
+                    <div className="col-lg-10 col-lg-offset-1">
                      <div className="row"> 
                         <nav>
                           <label htmlFor="drop" className="toggle">&#8801; Menu</label>
@@ -48,7 +48,7 @@ componentWillMount() {}
                                     <li><a href="#">Health Safety & Environment</a></li>
                                   </ul>
                                </li>
-                              <li>  
+{/*                              <li>  
                               <label htmlFor="drop-2" className="toggle">Portfolio +</label>
                               <a href="#">Portfolio</a>
                               <input type="checkbox" id="drop-2"/>
@@ -75,7 +75,7 @@ componentWillMount() {}
                                   </ul>
                                 </li>
                               </ul>
-                            </li>
+                            </li>*/}
                             <li><a href="/industries">Industries</a></li>
                             <li><a href="/careers">Careers</a></li>
                             <li><a href="/resource">Resources</a></li>

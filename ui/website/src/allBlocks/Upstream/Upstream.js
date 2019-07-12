@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import { render } from 'react-dom';
-// import   Loadable                  from 'react-loadable';
+import { render } from 'react-dom';
+import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -11,6 +11,7 @@ export default class Upstream extends Component {
 
      componentDidMount(){
 
+const Cards = ((() => {
   window.addEventListener('DOMContentLoaded', () => {setTimeout(init,1)}, true);
 
   function init(e)
@@ -79,6 +80,7 @@ export default class Upstream extends Component {
   return {
     init
   }
+})());
   }
 
     upstreamData(){
@@ -206,7 +208,7 @@ export default class Upstream extends Component {
             <div className="col-lg-12 upstreamblock lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12">
                     <div className="">
-                        <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
+                        <div className="upstreamcontentheader col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
                                 <b>iOG Solutions for</b> Upstream Oil & Gas Industry

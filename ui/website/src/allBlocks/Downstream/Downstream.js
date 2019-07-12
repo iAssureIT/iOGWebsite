@@ -65,7 +65,7 @@ export default class Downstream extends Component {
                     </div>
                     <div className="col-lg-12">
                       <div className="row">
-                        <div className="col-lg-10 col-lg-offset-1">
+                        <div className="col-lg-12">
                               <div className="row">
                                 <div className="col-lg-12">
                                     <div className="row"> 

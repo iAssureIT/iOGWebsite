@@ -35,19 +35,19 @@
 	margin-bottom:120px;
 }
 .contentheader h1{
-	font-size: 45px;
+	font-size: 41px;
     line-height: 20px;
     font-weight: 700;
     letter-spacing: -.4px;
 }
 .contentheader h2{
-  font-size: 46px;
+  font-size: 42px;
   line-height: 55px;
   letter-spacing: -1px;
 }
 .contentheader hr{
   height: 2px;
-  width: 100px;
+  width: 95px;
   border: 1px solid #f19000;
   background-color: #f19000;
   margin-bottom: 39px;

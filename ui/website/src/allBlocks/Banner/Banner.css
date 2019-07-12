@@ -21,7 +21,7 @@
     background-size: 100% ;
     width: 100%;
     margin-right: auto;
-    height: 900px;
+    height: 795px;
     margin-left: auto;
     float: left;
     background-image: url(/images/banner.png);
@@ -121,10 +121,22 @@
     z-index: 100;
 
 }
+.cloud1 img{
+height: 170px;
+}
+.cloud2 img{
+height: 140px;
+}
+.cloud3 img{
+height: 120px;
+}
+.cloud4 img{
+height: 150px;
+}
 .car{
     position: absolute;
     right: 250px;
-    top:620px;
+    top:542px;
     animation:  car 10s linear  infinite;
 }
 .car img{
@@ -143,12 +155,12 @@
 }
 .truckanim1{
     position: relative;
-    left: 803px;
-    top: 489px;
+    left: 721px;
+    top: 421px;
     overflow: hidden;
     /*background-color: red;*/
     height: 57px;
-    width: 266px;
+    width: 240px;
 }
 .truckanim{
     position: absolute;
@@ -165,10 +177,10 @@
 
 .truckanim2{
     position: relative;
-    left: 1067px;
-    top: 553px;
+    left: 959px;
+    top: 477px;
     overflow: hidden;
-    /*background-color: red;*/
+    /* background-color: red; */
     height: 57px;
     width: 418px;
     z-index: 2;
@@ -206,8 +218,8 @@
 
 .truckfront{
   position: absolute;
-    right: 366px;
-    top: 505px;
+   right: 325px;
+    top: 440px;
     overflow: hidden;
     /*background-color: red;*/
     z-index: 1;
@@ -262,30 +274,37 @@
     left: 400px;
     z-index: 10;
 }
+.bannersun img{
+height: 90px;
+}
+
 .tank{
     position: absolute;
-    left: 772px;
-    top: 447px;
+    left: 694px;
+    top: 381px;
     z-index: 11;
 }
 
 .boat{
     position: absolute;
     left: -250px;
-    top: 300px;
+    top: 240px;
     animation:  boat 40s linear  infinite;
 
 }
 .up{
     position: absolute;
-    left: 48px;
-    top: 219px;
+    left: 56px;
+    top: 198px;
 
+}
+.up img{
+  height: 160px;
 }
 .up1{
     position: absolute;
-    left: 58.5px;
-    top: 275px;
+   left: 62.5px;
+    top: 245px;
     overflow: hidden;
 
 }
@@ -296,8 +315,8 @@
 }
 .anim{
     position: absolute;
-    left: 128px;
-    top: 545px;
+    left: 109px;
+    top: 462px;
 }
 .anim img{
   animation:  anim 4s linear  infinite;
@@ -305,8 +324,8 @@
 }
 .oilsign{
     position: absolute;
-    left: 181px;
-    top: 568px;
+    left: 163px;
+    top: 494px;
     z-index: 1;
 
 }
