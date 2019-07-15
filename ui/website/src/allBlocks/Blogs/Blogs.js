@@ -56,7 +56,7 @@ export default class Blogs extends Component {
 
     render(){
         return(
-            <div className="container mt100">
+            <div className="container">
             <div className="row">
                 <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
                     <hr/>
@@ -69,12 +69,12 @@ export default class Blogs extends Component {
                         <OwlCarousel
                         className="owl-theme"
                         loop
-                        nav
+                        // nav
                         dots={false}
                         items={3}
                         margin={0}
                         // slideBy={2}
-                        navText={["<div class='fa fa-angle-left'></div>","<div class='fa fa-angle-right'></div>"]}
+                        navText={["<div class='fa fa-angle-left blogleftarrow'></div>","<div class='fa fa-angle-right'></div>"]}
                         // responsive={
                         // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
                         // }
@@ -86,27 +86,28 @@ export default class Blogs extends Component {
                                 return (
                                 <div key={index} className="col-lg-12">
                                   <div className="row">
-                                    <div className={"col-lg-12 col-md-12 col-sm-12 col-xs-12  pricehover-float NOpadding index"+index}>
-                                        <div className="col-lg-12 blogtext">
-                                            <div className="price price-three col-lg-12">
-                                                <div className="col-lg-12">
+                                    <div className={"col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding index"+index}>
+                                        <div className="col-lg-12 blogtext pricehover-float ">
+                                            <div className="col-lg-12">
+                                             <div className="blogblock col-lg-12">
+                                                <div className="">
                                                   <div className="row blogsimg">
                                                     <img src={data.downstreamimg}/>
                                                   </div>
-                                                </div>
-
-                                                <div className="col-lg-12"><h4>{data.upstreamTitle}</h4></div>
-                                                <div className=" col-lg-12">
-                                                <p>{data.upstreamLi}</p>
-                                                </div>
+                                                    <div className=""><h4>{data.upstreamTitle}</h4></div>
+                                                    <div className="">
+                                                     <p>{data.upstreamLi}</p>
+                                                    </div>
                                                 <div className="price-footer col-lg-12">
                                                     <div className="row">
                                                         <p className="col-lg-12 ">july 5,2019</p>
                                                         <div className="col-lg-12">
-                                                            <input type="button" className="col-lg-5 col-lg-offset-6 btn pricebtn1 darkbluebg" value="Read More"/>                                    
+                                                            <input type="button" className="col-lg-5 col-lg-offset-6 btn blogbtn1 lightbluebg" value="Read More"/>                                    
                                                         </div>
                                                     </div>
                                                 </div>
+                                              </div>
+                                             </div>
                                             </div>
                                         </div>                       
                                      </div>

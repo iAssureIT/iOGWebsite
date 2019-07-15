@@ -431,7 +431,7 @@ height: 90px;
 @keyframes car {
   
   0% {
-    right: 250px
+    right: 260px
   }
   100% {
   right: -150px;
@@ -456,6 +456,7 @@ height: 90px;
   100% {
     margin-right: -243px;
     opacity: 1;
+    
   }
   
 }@keyframes truckanimtion {

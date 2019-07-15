@@ -20,6 +20,12 @@ import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
 import VideoPage       from '../allPages/VideoPage/VideoPage.js';
 import FormContent    from '../allPages/FormContent/FormContent.js';
+import Downstreamservicespage       from '../allPages/Downstreamservicespage/Downstreamservicespage.js';
+import Upstreamservicespage       from '../allPages/Upstreamservicespage/Upstreamservicespage.js';
+import Digitalservicespage        from '../allPages/Digitalservicespage/Digitalservicespage.js';
+import Assetmanagementpage        from '../allPages/Assetmanagementpage/Assetmanagementpage.js';
+import Healthsaftypage        from '../allPages/Healthsaftypage/Healthsaftypage.js';
+import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.js';
 
 import Effectssec     from '../trial/effectssec/effectssec.js';
 import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
@@ -40,6 +46,12 @@ const WebLayout = () => (
     <Route path="/blog" component={ BlogPage } />
     <Route path="/video" component={ VideoPage } />
     <Route path="/form" component={ FormContent} />
+    <Route path="/downstream" component={ Downstreamservicespage } />
+    <Route path="/upstream" component={ Upstreamservicespage } />
+    <Route path="/digitalservices" component={ Digitalservicespage } />
+    <Route path="/assetmanagement" component={ Assetmanagementpage } />
+    <Route path="/Health&safty" component={ Healthsaftypage } />
+    <Route path="/servicearms" component={ Servicearmspage } />
 
     <Route path="/trial" component={ Svganimation } />         
   </div>

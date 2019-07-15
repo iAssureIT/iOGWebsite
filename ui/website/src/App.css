@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden;
+}
 .bw{
     background-color: #abc;
 }

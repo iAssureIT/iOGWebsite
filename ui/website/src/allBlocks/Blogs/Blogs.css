@@ -14,14 +14,46 @@
 
 
 .blogsimg img{
-  height: 250px;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .blogtext p{
   text-align: justify;
   padding: 10px 20px;
+  font-size: 11px;
+
+}
+.blogtext h4{
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+.blogtext {
+	height: 550px;
+	border-radius: 8px;
+	margin-top: 50px
 }
 
 .latestblog{
   margin-bottom: 50px;
+}
+
+.blogblock{
+	box-shadow: 0 10px 29px rgba(92,141,255,.22);
+	border-radius: 8px;
+
+}
+
+.blogbtn1{
+	margin-bottom: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.blogleftarrow{
+  background-color: red;
+
 }
