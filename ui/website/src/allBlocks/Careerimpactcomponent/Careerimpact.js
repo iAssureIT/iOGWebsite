@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import { render } from 'react-dom';
+import renderHTML from 'react-render-html';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -12,13 +13,115 @@ class Careerimpact extends Component{
   constructor(){
     super();
      this.state={
+                para         : "<li>Relevant work experience in petroleum industry</li><li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li><li>Thorough knowledge of drilling and work-over operations</li><li>Ability to determine data requirements for carrying out various studies,gather relevant data and proper utilization of the data.</li><li>Skilled in Landmark Software Package like WellPlan, Compass, WellCat, StressCheck, and Openwells</li><li>Experience in OLGA- Wells Management software</li><li>Good experience in designing of vertical,horizontal, multi-laterals, complex wells etc. </li><li>Experience in carrying out drilling and work-over operations</li><li>Knowledge of emerging new technology in drilling and ability to implement new solutions based on feasibility study</li><li>Independently write drilling programs, design drill strings and implements strategies</li><li>Expert in implementation of technological upgradation in drilling technology</li><li>Independently supervise and provide expert support for technically challenging projects</li><li>Expert in Well Control opertions, Blow-out prevention, knowledge of various well control equipment used in drilling operations</li><li>Knowledge of drilling muds, mud-pumps,rotary equipments, other rig equipments etc</li><li>Completion of industry recognized certified courses in Drilling Technology will be an added advantage</li>" ,
+                para1        :"<li>Experience in preparation of field development plan,field monitoring and simulation studies using industry standard numerical simulators.</li><li>Analyzing geological data and interpreting well-logging results to ascertain resource potential</li><li>Carry out fluid characterization studies and prepare black oil as well as compositional PVT and Equation of State</li><li>Estimating reserves and forecasting for property evaluations and development planning.</li><li>Carrying out reservoir simulation studies to optimize recoveries.</li><li>Predicting reserves and performance for well proposals.</li><li>Predicting and evaluating waterflood and enhanced recovery performance.</li><li>Developing and applying reservoir optimization techniques.</li><li>Developing cost-effective reservoir monitoring and surveillance programs.</li><li>Performing reservoir characterization studies and analyzing pressure transients.</li><li>Designing and coordinating petrophysical studies.</li><li>Analyzing the economics and risk assessments of major development programs.</li><li>Skilled in Numerical reservoir modelling,Production forecasting,Decline curve analysis,Well test design and interpretation,Development planning,Reservoir fluid analysis,Well design optimization,Economic modelling.</li><li>Experience using Simulators like Eclipse,IMEX,STARS,GEM,tNavigator,Forgas,COMET3,Tempest,Petrel RE or other E&P software.</li><li>Coding experience will be highly advantageous like C,C++,Fortran,Matlab,Python etc</li>",
+                
      }
 
   }
-  
-  componentDidMount() {
 
-  }
+   
+
+  
+  componentDidMount(){var accordions = document.querySelectorAll('.accordion-item');
+
+for (var i = 0; i < accordions.length; i++) {
+    accordions[i].addEventListener('click', function(e) {
+        this.querySelector('.accordion-item__content').classList.toggle('is-open');
+    });
+}
+
+ }
+
+
+
+CareersData(){
+        return [
+            {
+                careersTitle : "WELL ENGINEER",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+                careerstext  : "",
+                // para         : "<li>Relevant work experience in petroleum industry</li><li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li><li>Thorough knowledge of drilling and work-over operations</li><li>Ability to determine data requirements for carrying out various studies,gather relevant data and proper utilization of the data.</li><li>Skilled in Landmark Software Package like WellPlan, Compass, WellCat, StressCheck, and Openwells</li><li>Experience in OLGA- Wells Management software</li><li>Good experience in designing of vertical,horizontal, multi-laterals, complex wells etc. </li><li>Experience in carrying out drilling and work-over operations</li><li>Knowledge of emerging new technology in drilling and ability to implement new solutions based on feasibility study</li><li>Independently write drilling programs, design drill strings and implements strategies</li><li>Expert in implementation of technological upgradation in drilling technology</li><li>Independently supervise and provide expert support for technically challenging projects</li><li>Expert in Well Control opertions, Blow-out prevention, knowledge of various well control equipment used in drilling operations</li><li>Knowledge of drilling muds, mud-pumps,rotary equipments, other rig equipments etc</li><li>Completion of industry recognized certified courses in Drilling Technology will be an added advantage</li>" 
+            },
+            {
+                careersTitle : "RESERVOIR ENGINEER",
+                location     : "Mumbai",
+                careersimg   : "/images/Illustration_2.png",
+                    
+                
+            },
+            {
+                careersTitle : "PRODUCTION TECHNOLOGIST",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+                    
+                
+            },
+            {
+                careersTitle : "CONSULTANT-GEOPHYSICIST",
+                location     : "Banglore",
+                careersimg   : "/images/Illustration_2.png",
+            },
+            {
+                careersTitle : "CONSULTANT-GEOLOGIST",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+                    
+                
+            },
+
+            {
+                careersTitle : "CONSULTANT-DATA MANAGEMENT",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+                    
+                
+            },
+
+            {
+                careersTitle : "SUPPLY CHAIN CONSULTANT(REFINERY PLANNING)",
+                location     : "Delhi",
+                careersimg   : "/images/Illustration_2.png",
+            },
+            {
+                careersTitle : "SUPPLY CHAIN CONSULTANT(REFINERY SCHEDULING)",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+            },
+
+            {
+                careersTitle : "MES CONSULTANT",
+                location     : "Sydney",
+                careersimg   : "/images/Illustration_2.png",
+            },
+            {
+                careersTitle : "MANAGER-PROJECTS ",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+            },
+            {
+                careersTitle : "MANAGER-BUSINESS DEVELOPEMENT",
+                location     : "Rio",
+                careersimg   : "/images/Illustration_2.png",
+                
+            },
+            {
+                careersTitle : "UPSTREAM PRODUCTION OPTIMIZATION CONSULTANT",
+                location     : "Singapore",
+                careersimg   : "/images/Illustration_2.png",
+                
+            },
+            {
+                careersTitle : "APC CONSULTANT",
+                location     : "Pune",
+                careersimg   : "/images/Illustration_2.png",
+                    
+                
+            },
+            
+        ]
+    }
 
   render(){
     return(
@@ -35,116 +138,72 @@ class Careerimpact extends Component{
                  our exciting journey!
                  </h2>
             <div className="row spacing1">
-               <div className="col-xs-7">
-                  <div className="position_title_1" >
-                   <a href="/contact-us">Strategic Business<br></br>
-                                        Developement Manager<br></br>
-                  </a>
-                  </div>
-               </div>
-               <div className="col-xs-5 text-right">
-                 <div className="position_wrapper">
-                  <div className="position_content">
-                    <div className="position_department">
-                    <b>Business<br></br> 
-                    Development</b>
-                    </div>
-                    <div className="position_location">
-                    India
-                    </div>
-                  </div>
-                  <div className="position_button">
-                  <img src="" alt width="" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 first-line"></div>
-            </div>
+               <div className="col-lg-12">
+               <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        {
+                          this.CareersData().map((data, index)=>{
+                            var textPara = renderHTML(this.state.para);
+                            var textPara1 = renderHTML(this.state.para1);
 
-            <div className="row spacing2">
-               <div className="col-xs-7">
-                  <div className="position_title_2">
-                   <a href="/contact-us">Strategic Business<br></br>
-                                        Developement Manager
-                  </a>
-                  </div>
-               </div>
-               <div className="col-xs-5 text-right">
-                 <div className="position_wrapper2">
-                  <div className="position_content2">
-                    <div className="position_department2">
-                    <b>Business<br></br> 
-                    Developement<br></br>
-                    </b>
-                    </div>
-                    <div className="position_location2">
-                    United Arab Emirates
-                    </div>
-                  </div>
-                  <div className="position_button2">
-                  <img src="" alt width="" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 second-line"></div>
-            </div>
+                            console.log("textPara",textPara);
+                           return (
+                                    <div key={index} className="panel panel-default">
+                                      <div className="panel-heading" role="tab" id="headingThree">
+                                        <h4 className="panel-title">
+                                        <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree">
+                                          {data.careersTitle}
+                                        </a>
+                                      </h4>
+                                      </div>
+                                      <div id={"collapseThree"+index} className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div className="panel-body">
+                                        
+                                        <h3 className="full_head padding_zero">Title</h3>
+                                        <p>{data.careersTitle}</p>
+                                        <h3 className="full_head padding_zero">Location</h3>
+                                        <p>{data.location}</p>
+                                        <h3 className="full_head padding_zero">Job Information</h3>
+                                        <h5>ROLES AND RESPONSIBILITIES</h5>
+                                        <ul className="simple_list bottom_pad">
+                                        {textPara}
+                                        {textPara1}
+                                     
+                                        </ul>
+                                        <h5>QUALIFICATIONS AND EDUCATION REQUIREMENTS</h5>
+                                        <ul className="simple_list bottom_pad">
+                                        <li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li>
+                                        </ul>
 
-            <div className="row spacing3">
-               <div className="col-xs-7">
-                  <div className="position_title_3">
-                   <a href="/contact-us">Vertical Lead</a>
-                  </div>
-               </div>
-               <div className="col-xs-5 text-right">
-                 <div className="position_wrapper3">
-                  <div className="position_content3">
-                    <div className="position_department3">
-                    <b>Business <br></br> 
-                    Developement<br></br>
-                    </b>
-                    </div>
-                    <div className="position_location3">
-                    India
-                    </div>
-                  </div>
-                  <div className="position_button3">
-                  <img src="" alt width="" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 third-line"></div>
-            </div>
+                                        <h5>
+                                        Send CVs on 
+                                        <b>
 
-            <div className="row spacing4">
-               <div className="col-xs-7">
-                  <div className="position_title_4">
-                   <a href="/contact-us">Copywriter</a>
-                  </div>
-               </div>
-               <div className="col-xs-5 text-right">
-                 <div className="position_wrapper4">
-                  <div className="position_content4">
-                    <div className="position_department4">
-                    <b>Marketing</b>
-                    </div>
-                    <div className="position_location4">
-                    United Arab Emirates
-                    </div>
-                  </div>
-                    <div className="position_button4">
-                      <img src="" alt width="" />
-                    </div>
-                  </div>
-               </div>
-              <div className="col-lg-6 fourth-line"></div>
+                                        <a href="mailto:careers@iogsolutions.com">careers@iogsolutions.com</a>
+                                        </b>
+                                        </h5>
+                                    
+                                        {data.careerstext}
 
-              <div>
-                <button className="col-lg-6 col-lg-offset-7 button_2"><span>See all open positions</span></button>
+                                           <div>
+                                              <a href="/form" className="btn btn-primary buttonn_1 col-lg-6 col-lg-offset-8" role="button" onClick={this.handleShow}>Click here to apply</a>
+                                              
+                                              
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    );
+                                })
+                          }
+                         
                </div>
-               
+
+
+               </div>
             </div>
-             </div>
-             </div> 
+          </div>
+        </div> 
 
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                     <div className="img_2">
@@ -163,3 +222,5 @@ class Careerimpact extends Component{
 
 
 export default Careerimpact;
+
+ 

@@ -15,7 +15,7 @@ class JobPortal extends Component{
   render(){
     return(
           <div>
-            
+          <Jobscomponent />  
           </div>    
     );
   }

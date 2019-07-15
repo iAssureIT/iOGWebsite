@@ -19,11 +19,14 @@ import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
 import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
 import VideoPage       from '../allPages/VideoPage/VideoPage.js';
+import FormContent    from '../allPages/FormContent/FormContent.js';
 
 import Effectssec     from '../trial/effectssec/effectssec.js';
 import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
+
 import Effectslide     from '../trial/Effectslide/Effectslide.js';
 import Svganimation     from '../trial/Svganimation/Svganimation.js';
+
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
@@ -36,6 +39,7 @@ const WebLayout = () => (
     <Route path="/resource" component={ ResourcePage } />
     <Route path="/blog" component={ BlogPage } />
     <Route path="/video" component={ VideoPage } />
+    <Route path="/form" component={ FormContent} />
 
     <Route path="/trial" component={ Svganimation } />         
   </div>

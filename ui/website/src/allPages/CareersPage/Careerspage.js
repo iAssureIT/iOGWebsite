@@ -9,6 +9,7 @@ import Headingcomponent from '../../allBlocks/HeadingComponent/Headingcomponent.
 import JobsComponent from '../../allBlocks/JobsComponent/Jobscomponent.js';
 import Careerimpactcomponent from '../../allBlocks/Careerimpactcomponent/Careerimpact.js';
 import Maincomponent from '../../allBlocks/Maincomponent/Maincomponent.js';
+import CareerJobInfo from '../../allBlocks/CareerJobInfo/CareerJobInfo.js';
 
 class Careerspage extends Component{
   constructor(){
@@ -26,6 +27,7 @@ class Careerspage extends Component{
             <Maincomponent />
             
             <JobsComponent />
+            
           </div>    
     );
   }

@@ -65,9 +65,7 @@ class Headingcomponent extends Component{
                     </div>
                     </div>
                
-                <div>
-                    <button className="butt_1 col-lg-6  col-lg-offset-4"><span>Browse jobs</span></button>
-                </div>
+                
             </div> 
    </div> 
     );
