@@ -49,8 +49,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat">Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="#">Careers</a></li>
-                                <li><a href="#">Resources</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blogs</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>                        

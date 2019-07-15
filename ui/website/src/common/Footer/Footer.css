@@ -154,7 +154,7 @@ ul.no-icon-list {
 .footeranimationtruck img{
     position: relative;
     top: 166px;
-    left: 1000px;
+    left: -100px;
     z-index: 1;
     animation:  truck1 30s linear infinite;
 
@@ -162,7 +162,7 @@ ul.no-icon-list {
 .footeranimationtruck2 img{
     position: relative;
     top: 135px;
-    left: 500px;
+    left: -450px;
     z-index: 1;
     animation:  truck2 30s linear infinite;
 
@@ -171,7 +171,7 @@ ul.no-icon-list {
 @keyframes truck1 {
   
   0% {
-    left:1000px ;
+    left:-100px ;
   }
   100% {
    left:1500px ;
@@ -181,7 +181,7 @@ ul.no-icon-list {
 @keyframes truck2 {
   
  0% {
-    left:500px ; 
+    left:-450px ; 
   }
   100% {
    left:1500px ;
