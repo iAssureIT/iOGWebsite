@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import { render } from 'react-dom';
-// import   Loadable                  from 'react-loadable';
+import { render } from 'react-dom';
+import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -42,33 +42,33 @@ export default class Upstream extends Component {
       cards[n].classList.remove("card--right-right");
     }
     cards[card].classList.add("card--center");
-    if(card === 0)
+    if(card == 0)
     {
       cards[3].classList.add("card--left");
       cards[4].classList.add("card--left-left");
       cards[1].classList.add("card--right");
       cards[2].classList.add("card--right-right");
     }
-    if(card === 1)
+    if(card == 1)
     {
       cards[4].classList.add("card--left");
       cards[0].classList.add("card--left-left");
       cards[2].classList.add("card--right");
       cards[3].classList.add("card--right-right");    }
-    if(card === 2)
+    if(card == 2)
     {
       cards[0].classList.add("card--left");
       cards[1].classList.add("card--left-left");
       cards[3].classList.add("card--right");
       cards[4].classList.add("card--right-right");    }
-    if(card === 3)
+    if(card == 3)
     {
       cards[1].classList.add("card--left");
       cards[2].classList.add("card--left-left");
       cards[4].classList.add("card--right");
       cards[0].classList.add("card--right-right");
     }
-    if(card === 4)
+    if(card == 4)
     {
       cards[2].classList.add("card--left");
       cards[3].classList.add("card--left-left");
@@ -80,6 +80,7 @@ export default class Upstream extends Component {
   return {
     init
   }
+
   }
 
     upstreamData(){
@@ -137,7 +138,7 @@ export default class Upstream extends Component {
                                             <div className="price price-three col-lg-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12">
-                                                <img  alt="" src={data.upstreamimg  } />
+                                                <img src={data.upstreamimg  } />
                                                 </div>
                                                 <div className="price-body col-lg-12">
                                                     <p className="text-justify upstreamtext">{data.upstreamtext}</p>
