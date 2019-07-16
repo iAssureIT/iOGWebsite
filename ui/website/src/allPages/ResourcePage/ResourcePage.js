@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 
 import Resourcevideo        from '../../allBlocks/Resourcevideo/Resourcevideo.js';
 import Resourcedownload        from '../../allBlocks/Resourcedownload/Resourcedownload.js';

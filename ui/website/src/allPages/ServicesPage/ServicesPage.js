@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 
 import Servicesdownblock  from '../../allBlocks/Servicesdownblock/Servicesdownblock.js';
 import Servicesupblock  from '../../allBlocks/Servicesupblock/Servicesupblock.js';

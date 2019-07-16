@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -75,7 +75,7 @@ export default class Downstreamservicesblock extends Component {
                                                  return (
                                                 <div key={index} className="col-lg-6">
                                                     <div className=" lightbluetext block block1height text-center">
-                                                        <img src={data.downstreamimg} />
+                                                        <img alt="" src={data.downstreamimg} />
                                                         <h2>{data.downstreamTitle}</h2>
                                                     </div>
                                                 </div>

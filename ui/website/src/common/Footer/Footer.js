@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,31 +14,31 @@ export default class Footer extends Component {
        return(
       <div>
              <div className="viman">
-                <img className="img-responsive" src="/images/viman.png" />
+                <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
              <div className="footeranimationtruck">
-                <img className="img-responsive" src="/images/foot8.png" />
+                <img className="img-responsive" alt="" src="/images/foot8.png" />
             </div>
              <div className="footeranimationtruck2">
-                <img className="img-responsive" src="/images/foot6.png" />
+                <img className="img-responsive" alt="" src="/images/foot6.png" />
             </div>      
             <div className="footeranimation1">
-                <img className="img-responsive footimg1" src="/images/foot1.png" />
+                <img className="img-responsive footimg1" alt="" src="/images/foot1.png" />
             </div>      
             <div className="footeranimation">
-                <img className="img-responsive footimg2" src="/images/foot2.png" />
+                <img className="img-responsive footimg2" alt="" src="/images/foot2.png" />
             </div>      
             <div className="footeranimation">
-                <img className="img-responsive  footimg3" src="/images/foot3.png" />
+                <img className="img-responsive  footimg3" alt="" src="/images/foot3.png" />
             </div>      
             <div className="footeranimation">
-                <img className="img-responsive  footimg4" src="/images/foot4.png" />
+                <img className="img-responsive  footimg4" alt="" src="/images/foot4.png" />
             </div>      
             <div className="footeranimation">
-                <img className="img-responsive footimg5" src="/images/foot5.png" />
+                <img className="img-responsive footimg5" alt="" src="/images/foot5.png" />
             </div>      
             <div className="footeranimation">
-                <img className="img-responsive footimg7" src="/images/foot7.png" />
+                <img className="img-responsive footimg7" alt="" src="/images/foot7.png" />
             </div>      
            
          <div className="footoverflow">
@@ -48,29 +48,29 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Menu</h6>
                             <ul className="no-icon-list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Industries</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about-us">About</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/industries">Industries</a></li>
                             </ul>
                         </div>
                         
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Service Arms</h6>
                             <ul className="no-icon-list">
-                                <li><a href="#">iOGImplement</a></li>
-                                <li><a href="#">iOGConsult</a></li>
-                                <li><a href="#">iOGTrain</a></li>
-                                <li><a href="#">iOGStudy</a></li>
+                                <li><a href="/">iOGImplement</a></li>
+                                <li><a href="/">iOGConsult</a></li>
+                                <li><a href="/">iOGTrain</a></li>
+                                <li><a href="/">iOGStudy</a></li>
                             </ul>
                         </div>
                         
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Resources</h6>
                             <ul className="no-icon-list">
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Blogs</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/careers">Careers</a></li>
+                                <li><a href="/blog">Blogs</a></li>
+                                <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
                         <div className="col-md-4 col-sm-4 col-xs-4 ">
@@ -86,9 +86,9 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat col">Connect</h6>
                             <ul className="no-icon-list socialicon">
-                                <li><a href="#"><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/iogsolutions/rel-noopener" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/iOGsolutions/rel-noopener" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/iogsolutions/rel-noopener" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                             <a href="Contact-us"><button className="connectbtn btn">Click To Contact</button></a>
                         </div>      
@@ -100,14 +100,14 @@ export default class Footer extends Component {
                     <div className="row">
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-left pt20">
-                            <p>Copyright ©2019 <a href="#">iOGsolutions</a>. All rights reserved.</p>
+                            <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
                         </div>
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-right pt20">
                             <p className="text-right">
-                                <a href="#" className="mr20">Privacy Policy</a>
-                                <a href="#" className="mr20">Terms of Use</a>
-                                <a href="#" className="">Site Map</a>
+                                <a href="/" className="mr20">Privacy Policy</a>
+                                <a href="/" className="mr20">Terms of Use</a>
+                                <a href="/" className="">Site Map</a>
                             </p>
                         </div>
 

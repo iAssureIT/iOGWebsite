@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Downstreamservicespage.css';
 
 import Downstreaminfoblock                 from '../../allBlocks/Downstreaminfoblock/Downstreaminfoblock.js';

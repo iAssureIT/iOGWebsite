@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 // import { render } from 'react-dom';
 
 // import axios from 'axios';
@@ -21,7 +21,7 @@ export default class Svganimation extends Component {
 
        return(
         <div>
-            {/*<ReactSVG
+            {<ReactSVG
               src="/images/svg.svg"
               afterInjection={(error, svg) => {
                 if (error) {
@@ -43,7 +43,7 @@ export default class Svganimation extends Component {
               onClick={() => {
                 console.log('wrapper onClick')
               }}
-            />        */}
+            />        }
 
               <ReactSVG className="wrapper" src="/images/ioglogosvg.svg" />
         </div>
@@ -53,4 +53,4 @@ export default class Svganimation extends Component {
         );
   } 
 
-}
+}*/

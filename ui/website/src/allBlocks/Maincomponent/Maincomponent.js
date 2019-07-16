@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import $ from 'jquery';
+// import $ from 'jquery';
 
 
 import './Maincomponent.css';
@@ -33,7 +33,7 @@ class Maincomponent extends Component{
         <div className="row">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div className="row">
-                       <img className="iogimgblock1" src="images/iog1.png" />
+                       <img  alt="" className="iogimgblock1" src="images/iog1.png" />
                      </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -66,7 +66,7 @@ class Maincomponent extends Component{
                   
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div className="row">
-                    <img className="iogimgblock2" src="images/career2.png" />
+                    <img alt="" className="iogimgblock2" src="images/career2.png" />
                     </div>
                   </div>
 
@@ -74,7 +74,7 @@ class Maincomponent extends Component{
 
                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                    <div className="row">
-                     <img className="iogimgblock3" src="images/career3.png" />
+                     <img  alt="" className="iogimgblock3" src="images/career3.png" />
                    </div>
                    </div>
 
@@ -114,7 +114,7 @@ class Maincomponent extends Component{
                      </div>
                     <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <div className="row">
-                        <img className="iogimg_4" src="images/video1.png" />
+                        <img  alt="" className="iogimg_4" src="images/video1.png" />
                         </div>
                     </div>
                   </div>

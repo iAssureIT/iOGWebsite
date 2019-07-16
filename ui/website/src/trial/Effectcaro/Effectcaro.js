@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 import { render } from 'react-dom';
 import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
@@ -59,4 +59,4 @@ export default class Effectcaro extends Component {
             </div>   
         );
     }
-}
+}*/

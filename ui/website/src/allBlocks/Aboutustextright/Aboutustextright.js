@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -15,7 +15,6 @@ export default class Aboutustextright extends Component {
                  <img src="/images/3.png" alt="" className="third_img" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <h2></h2>
                   <p className="line_para1 text-justify ">
                   We have a strong team of team of motivated
                   and self-driven consultants with strong

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 import { render } from 'react-dom';
 import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
@@ -90,4 +90,4 @@ for (var i = 0; i < accordions.length; i++) {
                     </div>   
              );
          }
-    }
+    }*/

@@ -203,10 +203,7 @@ ul.no-icon-list {
     z-index: 100;
     animation: viman 15s linear infinite;
 }
-/*.viman img:hover{
-transform: rotateY(180deg);
-}
-*/
+
 .footeranimationtruck2 img{
     position: relative;
     top: 61px;

@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 import renderHTML from 'react-render-html';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import $ from 'jquery';
+// import $ from 'jquery';
 
 import './Careerimpact.css';
 

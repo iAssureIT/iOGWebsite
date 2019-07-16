@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Header.css';
 
 export default class Header extends Component {
@@ -44,20 +44,20 @@ componentWillMount() {}
                                   <a href="/downstream">Downstream <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
-                                    <li><a href="#">Supply Chain Management</a></li>
-                                    <li><a href="#">Manufacturing Execution System</a></li>
-                                    <li><a href="#">Simulation & Modelling</a></li>
-                                    <li><a href="#">Energy Management</a></li>
-                                    <li><a href="#">APC Services</a></li>
-                                    <li><a href="#">ETRM and Pricing Tool Application</a></li>
+                                    <li><a href="/">Supply Chain Management</a></li>
+                                    <li><a href="/">Manufacturing Execution System</a></li>
+                                    <li><a href="/">Simulation & Modelling</a></li>
+                                    <li><a href="/">Energy Management</a></li>
+                                    <li><a href="/">APC Services</a></li>
+                                    <li><a href="/">ETRM and Pricing Tool Application</a></li>
                                     <li>
                                     <label htmlFor="drop-4" className="toggle">Python +</label>
-                                    <a href="#">Python</a>
+                                    <a href="/">Python</a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="#">HTML/CSS</a></li>
-                                        <li><a href="#">jQuery</a></li>
-                                        <li><a href="#">Python</a></li>
+                                        <li><a href="/">HTML/CSS</a></li>
+                                        <li><a href="/">jQuery</a></li>
+                                        <li><a href="/">Python</a></li>
                                       </ul>
                                     </li>
                                   </ul>

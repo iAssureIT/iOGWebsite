@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import   Loadable                  from 'react-loadable';
+// import { render } from 'react-dom';
+// import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import $ from "jquery";
+// import $ from "jquery";
 
 import "./BlogPagecomponent.css";
 export default class BlogPagecomponent extends Component {

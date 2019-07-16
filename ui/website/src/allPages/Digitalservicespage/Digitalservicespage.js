@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Digitalservicespage.css';
 
 import Digitalserviceinfoblock                 from '../../allBlocks/Digitalserviceinfoblock/Digitalserviceinfoblock.js';

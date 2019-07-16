@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Healthsaftypage.css';
 
 import Healthinfoblock                 from '../../allBlocks/Healthinfoblock/Healthinfoblock.js';

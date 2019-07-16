@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,7 +42,7 @@ export default class Commonstream extends Component {
                                       <div className="col-lg-6 col-lg-offset-3"> 
                                                 <div className="col-lg-12">
                                                     <div className=" lightbluetext block block1height text-center">
-                                                        <img  src="/images/Illustration_13.png" />
+                                                        <img alt="" src="/images/Illustration_13.png" />
                                                         <h2>Health Safety & Environment</h2>
                                                     </div>
                                                 </div>
@@ -53,7 +53,7 @@ export default class Commonstream extends Component {
                                                  return (
                                                 <div key={index} className="col-lg-6">
                                                     <div className=" lightbluetext block block1height text-center">
-                                                        <img src={data.downstreamimg} />
+                                                        <img alt="" src={data.downstreamimg} />
                                                         <h2>{data.downstreamTitle}</h2>
                                                     </div>
                                                 </div>

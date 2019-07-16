@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -91,7 +91,7 @@ export default class Blogs extends Component {
                                              <div className="blogblock col-lg-12">
                                                 <div className="">
                                                   <div className="row blogsimg">
-                                                    <img src={data.downstreamimg}/>
+                                                    <img alt="" src={data.downstreamimg}/>
                                                   </div>
                                                     <div className=""><h4>{data.upstreamTitle}</h4></div>
                                                     <div className="">

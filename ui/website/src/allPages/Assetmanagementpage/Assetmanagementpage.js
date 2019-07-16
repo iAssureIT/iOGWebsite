@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Assetmanagementpage.css';
 
 import Assetinfoblock                 from '../../allBlocks/Assetinfoblock/Assetinfoblock.js';

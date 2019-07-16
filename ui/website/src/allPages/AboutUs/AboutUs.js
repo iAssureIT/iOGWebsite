@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import Aboutufounder   		from '../../allBlocks/Aboutufounder/Aboutufounder.js';
 import Aboutusimgright 		from '../../allBlocks/Aboutusimgright/Aboutusimgright.js';
 import Aboutustextcenter    from '../../allBlocks/Aboutustextcenter/Aboutustextcenter.js';
 import Aboutustextleft      from '../../allBlocks/Aboutustextleft/Aboutustextleft.js';
@@ -25,7 +24,6 @@ export default class AboutUs extends Component {
               	<Aboutustextcenter />
               	<Aboutusimgright />
               	<Aboutusvision />
-              	<Aboutufounder />
               </div>       
 
         );

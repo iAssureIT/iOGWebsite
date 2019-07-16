@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 
 import Industriesrefinery        from '../../allBlocks/Industriesrefinery/Industriesrefinery.js';
 import Industriespetrochemicals  from '../../allBlocks/Industriespetrochemicals/Industriespetrochemicals.js';

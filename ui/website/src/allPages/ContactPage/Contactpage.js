@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -117,15 +117,15 @@ class Contactpage extends Component{
                                                 <div className="caret adjustcaret"></div></button>
                                                 <ul className="dropdown-menu">
                                                   <li className="dropdown-submenu">
-                                                    <a className="test" tabIndex="-1" href="#">Services<span className="caret adjustcaret"></span></a>
+                                                    <a className="test" tabIndex="-1" href="/">Services<span className="caret adjustcaret"></span></a>
                                                     <ul className="dropdown-menu">
-                                                      <li><a tabIndex="-1" href="#">Upstream</a></li>
-                                                      <li><a tabIndex="-1" href="#">Downstream</a></li>
+                                                      <li><a tabIndex="-1" href="/">Upstream</a></li>
+                                                      <li><a tabIndex="-1" href="/">Downstream</a></li>
                                                     </ul>
                                                   </li>
-                                                  <li><a tabIndex="-1" href="#">Sales</a></li>
-                                                  <li><a tabIndex="-1" href="#">Support</a></li>
-                                                  <li><a tabIndex="-1" href="#">Consulting</a></li>
+                                                  <li><a tabIndex="-1" href="/">Sales</a></li>
+                                                  <li><a tabIndex="-1" href="/">Support</a></li>
+                                                  <li><a tabIndex="-1" href="/">Consulting</a></li>
                                                 </ul>
                                               </div>
                                             </div>

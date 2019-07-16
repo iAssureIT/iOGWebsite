@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Servicearmspage.css';
 
 import Servicearminfoblock                 from '../../allBlocks/Servicearminfoblock/Servicearminfoblock.js';

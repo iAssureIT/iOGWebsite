@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Commonimgblock.css';
 
 export default class Commonimgblock extends Component {

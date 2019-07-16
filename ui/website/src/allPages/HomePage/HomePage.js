@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './HomePage.css';
 
 import Banner                 from '../../allBlocks/Banner/Banner.js';
 import Downstream             from '../../allBlocks/Downstream/Downstream.js';
 import Upstream               from '../../allBlocks/Upstream/Upstream.js';
-import Socialmedia            from '../../allBlocks/Socialmedia/Socialmedia.js';
+// import Socialmedia            from '../../allBlocks/Socialmedia/Socialmedia.js';
 import Blogs                  from '../../allBlocks/Blogs/Blogs.js';
 import Commonstream           from '../../allBlocks/Commonstream/Commonstream.js';
-import Commonimgblock         from '../../allBlocks/Commonimgblock/Commonimgblock.js';
+// import Commonimgblock         from '../../allBlocks/Commonimgblock/Commonimgblock.js';
 
 export default class HomePage extends Component {
   render() {  

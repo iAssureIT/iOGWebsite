@@ -27,10 +27,10 @@ import Assetmanagementpage        from '../allPages/Assetmanagementpage/Assetman
 import Healthsaftypage        from '../allPages/Healthsaftypage/Healthsaftypage.js';
 import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.js';
 
-import Effectssec     from '../trial/effectssec/effectssec.js';
-import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
+// import Effectssec     from '../trial/effectssec/effectssec.js';
+// import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
 
-import Effectslide     from '../trial/Effectslide/Effectslide.js';
+// import Effectslide     from '../trial/Effectslide/Effectslide.js';
 import Svganimation     from '../trial/Svganimation/Svganimation.js';
 
 
