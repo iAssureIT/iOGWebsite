@@ -42,7 +42,7 @@ export default class Commonstream extends Component {
                                       <div className="col-lg-6 col-lg-offset-3"> 
                                                 <div className="col-lg-12">
                                                     <div className=" lightbluetext block block1height text-center">
-                                                        <img src="/images/Illustration_13.png" />
+                                                        <img  src="/images/Illustration_13.png" />
                                                         <h2>Health Safety & Environment</h2>
                                                     </div>
                                                 </div>

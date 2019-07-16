@@ -28,7 +28,7 @@ export default class Servicesarms extends Component {
                           <img src="/images/Icon_1.png" alt="" className="icn_1" />
                           <img src="/images/11.png" alt="" className="icn1_hover"  />
                           </div>
-                            <p className="iog_txt"><b>iOG</b>Study</p>
+                            <p className="iog_txt"><b>iOG</b>Implement</p>
                           </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -37,7 +37,7 @@ export default class Servicesarms extends Component {
                           <img src="/images/Icon_2.png" alt="" className="icn_2" />
                           <img src="/images/12.png" alt="" className="icn2_hover"  />
                           </div>
-                          <p className="iog_txt "><b>iOG</b>Implement</p>
+                          <p className="iog_txt "><b>iOG</b>Consult</p>
                           </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -46,7 +46,7 @@ export default class Servicesarms extends Component {
                           <img src="/images/Icon_3.png" alt="" className="icn_3" />
                           <img src="/images/13.png" alt="" className="icn3_hover"  />
                           </div>
-                          <p className="iog_txt "><b>iOG</b>Consult</p>
+                          <p className="iog_txt "><b>iOG</b>Train</p>
                           </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -55,7 +55,7 @@ export default class Servicesarms extends Component {
                           <img src="/images/Icon_4.png" alt="" className="icn_3" />
                           <img src="/images/14.png" alt="" className="icn4_hover"  />
                           </div>
-                          <p className="iog_txt "><b>iOG</b>Train</p>
+                          <p className="iog_txt "><b>iOG</b>Study</p>
                           </div>
                         </div>
                  </div>

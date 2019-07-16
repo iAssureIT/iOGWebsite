@@ -56,25 +56,24 @@ export default class Blogs extends Component {
 
     render(){
         return(
-            <div className="container">
-            <div className="row">
+            <div>
                 <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
                     <hr/>
                     <h1 className="lightbluetext latestblog">
                         <b>Latest</b> Blogs
                     </h1>
                 </div>
-                <div id="price" className="col-lg-12">
-                  <div className="row">
+                <div className="col-lg-10 col-lg-offset-1">
+                  <div>
                         <OwlCarousel
                         className="owl-theme"
                         loop
-                        // nav
+                        nav
                         dots={false}
                         items={3}
                         margin={0}
                         // slideBy={2}
-                        navText={["<div class='fa fa-angle-left blogleftarrow'></div>","<div class='fa fa-angle-right'></div>"]}
+                        navText={["<div class='fa fa-angle-left blogleftarrow'></div>","<div class='fa fa-angle-right blogrightarrow'></div>"]}
                         // responsive={
                         // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
                         // }
@@ -84,11 +83,11 @@ export default class Blogs extends Component {
                         {
                             this.upstreamData().map((data, index)=>{
                                 return (
-                                <div key={index} className="col-lg-12">
-                                  <div className="row">
-                                    <div className={"col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding index"+index}>
-                                        <div className="col-lg-12 blogtext pricehover-float ">
-                                            <div className="col-lg-12">
+                                <div className="col-lg-12" key={index}>
+                                  <div className="">
+                                    <div className={" index"+index}>
+                                        <div className=" blogtext pricehover-float ">
+                                            <div>
                                              <div className="blogblock col-lg-12">
                                                 <div className="">
                                                   <div className="row blogsimg">
@@ -100,9 +99,9 @@ export default class Blogs extends Component {
                                                     </div>
                                                 <div className="price-footer col-lg-12">
                                                     <div className="row">
-                                                        <p className="col-lg-12 ">july 5,2019</p>
-                                                        <div className="col-lg-12">
-                                                            <input type="button" className="col-lg-5 col-lg-offset-6 btn blogbtn1 lightbluebg" value="Read More"/>                                    
+                                                        <p className="col-lg-6 ">july 5,2019</p>
+                                                        <div className="col-lg-6">
+                                                            <input type="button" className="col-lg-10 btn blogbtn1 lightbluebg" value="Read More"/>                                    
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,7 +119,6 @@ export default class Blogs extends Component {
                 </div>                
               </div>                
             </div>   
-        </div>   
         );
     }
 }

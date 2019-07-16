@@ -1,4 +1,9 @@
-
+/*.headerflow{
+  position: fixed;
+  z-index: 10000;
+  background-color: #fff;
+  height: 100px;
+}*/
 
 #container {
   margin: 0 auto;

@@ -87,120 +87,34 @@ const Cards = ((() => {
         return [
             {
                 upstreamTitle : "Geology & Geophysics",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
+                upstreamimg   : "/images/upstream1.png",
+                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+                    
+                
             }, 
             {
                 upstreamTitle : "Production Management",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            }, 
+                upstreamimg   : "/images/upstream3.png",
+                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+            },  
             {
                 upstreamTitle : "Reservoir Management",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
+                upstreamimg   : "/images/upstream4.png",
+                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
             }, 
             {
                 upstreamTitle : "Data Management Services",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
-            }, 
-            {
+                upstreamimg   : "/images/upstream2.png",
+                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+            },
+             {
                 upstreamTitle : "Well & Drilling Services",
-                upstreamLi : [
-                    {
-                        liData : "Two Web Designs"
-                    },
-                    {
-                        liData : "Unlimited Revision"
-                    },
-                    {
-                        liData : "Free One Year Domain"
-                    },
-                    {
-                        liData : "Free Six Months Hosting"
-                    },
-                    {
-                        liData : "Free Installation"
-                    },
-                    {
-                        liData : "Full Support"
-                    }
-                ]
+                upstreamimg   : "/images/upstream5.png",
+                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
             }
+            
         ]
+    
     }
 
     render(){
@@ -224,15 +138,10 @@ const Cards = ((() => {
                                             <div className="price price-three col-lg-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12">
-                                                    <ul>
-                                                        {
-                                                            data.upstreamLi.map((liDetail, index)=>{
-                                                                return(
-                                                                    <li key={index}>{liDetail.liData}</li>
-                                                                );
-                                                            })
-                                                        }
-                                                    </ul>
+                                                <img src={data.upstreamimg  } />
+                                                </div>
+                                                <div className="price-body col-lg-12">
+                                                    <p className="text-justify upstreamtext">{data.upstreamtext}</p>
                                                 </div>
                                                 <div className="price-footer col-lg-12">
                                                     <a className="upstreamfoot" href="/video"><input type="button" className="btn pricebtn1 lightbluebg" value="View More"/></a>                                    

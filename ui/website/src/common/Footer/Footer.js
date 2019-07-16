@@ -12,16 +12,36 @@ export default class Footer extends Component {
 
   render(){
        return(
-         <div className="footoverflow">
-            <div className="footeranimationtruck">
-                <img className="img-responsive" src="/images/Illustration_9.png" />
+      <div>
+             <div className="viman">
+                <img className="img-responsive" src="/images/viman.png" />
+            </div>
+             <div className="footeranimationtruck">
+                <img className="img-responsive" src="/images/foot8.png" />
             </div>
              <div className="footeranimationtruck2">
-                <img className="img-responsive" src="/images/Illustration_9.png" />
+                <img className="img-responsive" src="/images/foot6.png" />
+            </div>      
+            <div className="footeranimation1">
+                <img className="img-responsive footimg1" src="/images/foot1.png" />
             </div>      
             <div className="footeranimation">
-                <img className="img-responsive" src="/images/Illustration_8.png" />
+                <img className="img-responsive footimg2" src="/images/foot2.png" />
             </div>      
+            <div className="footeranimation">
+                <img className="img-responsive  footimg3" src="/images/foot3.png" />
+            </div>      
+            <div className="footeranimation">
+                <img className="img-responsive  footimg4" src="/images/foot4.png" />
+            </div>      
+            <div className="footeranimation">
+                <img className="img-responsive footimg5" src="/images/foot5.png" />
+            </div>      
+            <div className="footeranimation">
+                <img className="img-responsive footimg7" src="/images/foot7.png" />
+            </div>      
+           
+         <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
                 <div className="col-lg-10 col-lg-offset-1 pb35">
                     <div className="row">
@@ -96,6 +116,7 @@ export default class Footer extends Component {
             </div>
 
         </div>
+    </div>
                 
 
       );

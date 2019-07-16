@@ -145,29 +145,87 @@ ul.no-icon-list {
 }
 
 
-.footeranimation img{
-    position: relative;
-    top: 1px;
+.footeranimation{
+    position: absolute;
     z-index: 1;
-    height: 153px;
+    /*top: 0px;*/
+    /*left: 0px;*/
+    /*height: 60px;*/
+}
+
+.footimg1{
+    position: relative;
+    top: 2px;
+    left: 39px;
+    height: 60px;
+}
+.footimg7{
+    position: relative;
+    bottom: 97px;
+    left: 985px;
+    height: 100px;
+}
+.footimg5{
+    position: relative;
+    bottom: 106px;
+    left: 619px;
+    height: 109px;
+}
+.footimg4{
+    position: relative;
+    bottom: 49px;
+    left: 485px;
+    height: 50px;
+}
+.footimg3{
+    position: relative;
+    bottom: 49px;
+    left: 330px;
+    height: 50px;
+}
+.footimg2{
+    position: relative;
+    bottom: 40px;
+    left: 141px;
+    height: 43px
 }
 .footeranimationtruck img{
     position: relative;
-    top: 166px;
+    top: 105px;
     left: -100px;
-    z-index: 1;
-    animation:  truck1 30s linear infinite;
-
+    z-index: 100;
+    animation: truck1 30s linear infinite;
 }
+.viman img{
+    position: relative;
+    top: 51px;
+    left: -200px;
+    z-index: 100;
+    animation: viman 15s linear infinite;
+}
+/*.viman img:hover{
+transform: rotateY(180deg);
+}
+*/
 .footeranimationtruck2 img{
     position: relative;
-    top: 135px;
+    top: 61px;
     left: -450px;
-    z-index: 1;
-    animation:  truck2 30s linear infinite;
+    z-index: 100;
+    animation:  truck2 35s linear infinite;
 
 }
 
+@keyframes viman {
+  
+  0% {
+    left:-200px ;
+  }
+  100% {
+   left:1500px ;
+  }
+  
+}
 @keyframes truck1 {
   
   0% {

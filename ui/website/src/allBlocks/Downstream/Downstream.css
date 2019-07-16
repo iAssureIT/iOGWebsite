@@ -12,11 +12,11 @@
     border-radius: 8px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
-    padding: 67px 22px 47px;
+    padding:77px 22px 55px 22px;
     height: 370px;
 }
 .block img{
-  height: 135px;
+  height: 65%!important;
 }
 
 .block h2{
