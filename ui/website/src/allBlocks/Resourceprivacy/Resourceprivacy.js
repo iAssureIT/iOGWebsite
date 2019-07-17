@@ -22,18 +22,14 @@ export default class Resourceprivacy extends Component {
                       </p>          
                 </div>
                 <div  className="col-lg-12 blk_ht">
-                        <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12 col-lg-offset-4 center_block">
-                          <div className="aboutus_block aboutus_block1height">
-                          <div className="icon1">
-                          <img src="/images/Icon_1.png" alt="" className="icn_1" />
-                          <img src="/images/11.png" alt="" className="icn1_hover"  />
+                        <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12  center_block">
+                          <div className="resource_blck blckk-ht">
+                            <p className="resource_para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis
+                            </p>
+                            <p className="resource_txt"><b>iOG</b>Policy</p>
                           </div>
-                            <p className="iog_txt"><b>iOG</b>Policy</p>
-                          </div>
-                        </div>
-                        
-                       
-                        
+                        </div>                        
                  </div>
             </div>
 
