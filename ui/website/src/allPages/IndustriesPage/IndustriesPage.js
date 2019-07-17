@@ -23,7 +23,7 @@ export default class ServicesPage extends Component {
       </div>
       </div>
 
-      <div className="industrybg1 col-lg-12">
+      <div className="industrybg2 col-lg-12">
       <div className="row">
         <Industrieslng />
         <Industriesprocessing />

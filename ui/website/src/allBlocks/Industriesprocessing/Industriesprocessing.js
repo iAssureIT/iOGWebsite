@@ -43,7 +43,7 @@ export default class Industriesprocessing extends Component {
                                                 <p className="line_subhead ">{data.servicesSubTitle}</p>
                                                 <p className="line_para">{data.servicestext} </p>   
                                             </div>
-                                            <a className="col-lg-4" href="Contact-us"><button className="lightbluebg servicekbtn btn">Read More <span className="servicekbtnarrow">>></span></button></a>
+                                            <a className="col-lg-4" href="/gasprocessing"><button className="lightbluebg servicekbtn btn">Read More <span className="servicekbtnarrow">>></span></button></a>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                                           <div className="col-lg-8 col-lg-offset-2 ">

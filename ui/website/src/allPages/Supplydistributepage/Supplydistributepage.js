@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 
 // import $                  from 'jquery';
-import './Downstreamservicespage.css';
+import './Supplydistributepage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
 import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
 
-export default class Downstreamservicespage extends Component {
+export default class Supplydistributepage extends Component {
   ServicesData(){
         return [
             {
-                servicesTitle : "Downstream",
+                servicesTitle : "Supply & Distribution",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
                 servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
@@ -26,50 +26,40 @@ export default class Downstreamservicespage extends Component {
   DownstreamData(){
         return [
             {
-                downstreamTitle : "Supply Chain Management",
+                downstreamTitle : "Demand Management",
                 downstreamimg   : "/images/Illustration_2.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             }, 
             {
-                downstreamTitle : "Manufacturing Execution Systems",
+                downstreamTitle : "Inventory Management",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "APC Services",
+                downstreamTitle : "Distribution Planning and Optimization",
                 downstreamimg   : "/images/Illustration_4.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Simulation & Modelling",
+                downstreamTitle : "Retail Automation",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }, 
-            {
-                downstreamTitle : "Energy Management",
-                downstreamimg   : "/images/Illustration_6.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            },
-             {
-                downstreamTitle : "ETRM and Pricing Tool Application",
-                downstreamimg   : "/images/Illustration_7.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
             
         ]
     }
-
+  
   render() {
 
 
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-          <div className="downstreambg1">
-              <Commoninfoblock infodata={this.ServicesData()} />
-              <Commonservicesblock servicedata={this.DownstreamData()}/>
-          </div>
+	      <div className="downstreambg1">
+		      <Commoninfoblock infodata={this.ServicesData()} />
+		      <Commonservicesblock servicedata={this.DownstreamData()}/>
+	      </div>
       </div>
     );  
   }

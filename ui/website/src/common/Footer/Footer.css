@@ -1,3 +1,9 @@
+/*.iogfooter{
+  position: relative;
+  top: 100px;
+}
+*/
+
 .footer-two{
  font-size: 16px;
  color: #fff;
@@ -240,7 +246,7 @@ ul.no-icon-list {
 
 .viman img{
     position: relative;
-    top: 51px;
+    top: 11px;
     left: -200px;
     z-index: 100;
     animation: viman 15s linear infinite;

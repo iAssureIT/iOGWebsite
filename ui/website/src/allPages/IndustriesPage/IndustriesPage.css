@@ -1,13 +1,4 @@
-.NOpadding{
-	padding-left: 0px;
-	padding-right: 0px;
-}
-body{
-  /*overflow-x: hidden;*/
-}
-div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
-	font-family: 'Raleway', sans-serif;
-}
+
 
 .industrybg1{
 	background-image: url("/images/serviceback1.png");
@@ -17,7 +8,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 }
 .industrybg2{
 	background-image: url("/images/serviceback2.png");
-	background-size: 100% 70%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	/*width: 100%;*/
 }

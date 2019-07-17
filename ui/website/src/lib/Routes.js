@@ -8,6 +8,7 @@ import 'font-awesome/css/font-awesome.min.css';
 // import $ from 'jquery';
 
 import '../App.css';
+//-----------Main Menu Rout.................//
 import Header         from '../common/Header/Header.js';
 import Footer         from '../common/Footer/Footer.js';
 import HomePage       from '../allPages/HomePage/HomePage.js';
@@ -18,14 +19,42 @@ import ServicesPage   from '../allPages/ServicesPage/ServicesPage.js';
 import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
 import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
-import VideoPage       from '../allPages/VideoPage/VideoPage.js';
-import FormContent    from '../allPages/FormContent/FormContent.js';
-import Downstreamservicespage       from '../allPages/Downstreamservicespage/Downstreamservicespage.js';
+
+//-----------Level1 Rout.................//
+
+import VideoPage                  from '../allPages/VideoPage/VideoPage.js';
+import FormContent                from '../allPages/FormContent/FormContent.js';
+import Downstreamservicespage     from '../allPages/Downstreamservicespage/Downstreamservicespage.js';
 import Upstreamservicespage       from '../allPages/Upstreamservicespage/Upstreamservicespage.js';
 import Digitalservicespage        from '../allPages/Digitalservicespage/Digitalservicespage.js';
 import Assetmanagementpage        from '../allPages/Assetmanagementpage/Assetmanagementpage.js';
-import Healthsaftypage        from '../allPages/Healthsaftypage/Healthsaftypage.js';
-import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.js';
+import Healthsaftypage            from '../allPages/Healthsaftypage/Healthsaftypage.js';
+import Servicearmspage            from '../allPages/Servicearmspage/Servicearmspage.js';
+
+//-----------Industries  Rout.................//
+
+import Industriesrefinarypage          from '../allPages/Industriesrefinarypage/Industriesrefinarypage.js';
+import Industriespetrochemicalpage     from '../allPages/Industriespetrochemicalpage/Industriespetrochemicalpage.js';
+import Industrieschemicalpage          from '../allPages/Industrieschemicalpage/Industrieschemicalpage.js';
+import Industrieslngpage               from '../allPages/Industrieslngpage/Industrieslngpage.js';
+import Industriesprocessingpage        from '../allPages/Industriesprocessingpage/Industriesprocessingpage.js';
+import Industrieseppage                from '../allPages/Industrieseppage/Industrieseppage.js';
+
+
+import Supplychainpage                from '../allPages/Supplychainpage/Supplychainpage.js';
+import Planningschedul                from '../allPages/Planningschedul/Planningschedul.js';
+import Supplydistributepage           from '../allPages/Supplydistributepage/Supplydistributepage.js';
+import Manufacturingsyspage           from '../allPages/Manufacturingsyspage/Manufacturingsyspage.js';
+import Arimanagementpage              from '../allPages/Arimanagementpage/Arimanagementpage.js';
+import Geologypage                    from '../allPages/Geologypage/Geologypage.js';
+import Riserviormanagepage            from '../allPages/Riserviormanagepage/Riserviormanagepage.js';
+import Welldrillingpage               from '../allPages/Welldrillingpage/Welldrillingpage.js';
+import Productionmanagepage           from '../allPages/Productionmanagepage/Productionmanagepage.js';
+import Datamanagepage                 from '../allPages/Datamanagepage/Datamanagepage.js';
+
+
+
+
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
 // import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
@@ -48,10 +77,26 @@ const WebLayout = () => (
     <Route path="/form" component={ FormContent} />
     <Route path="/downstream" component={ Downstreamservicespage } />
     <Route path="/upstream" component={ Upstreamservicespage } />
+    <Route path="/servicearms" component={ Servicearmspage } />
     <Route path="/digitalservices" component={ Digitalservicespage } />
     <Route path="/assetmanagement" component={ Assetmanagementpage } />
     <Route path="/Health&safty" component={ Healthsaftypage } />
-    <Route path="/servicearms" component={ Servicearmspage } />
+    <Route path="/refinery" component={ Industriesrefinarypage } />
+    <Route path="/petrochemicals" component={ Industriespetrochemicalpage } />
+    <Route path="/chemicals" component={ Industrieschemicalpage } />
+    <Route path="/lng" component={ Industrieslngpage } />
+    <Route path="/gasprocessing" component={ Industriesprocessingpage } />
+    <Route path="/oilgasep" component={ Industrieseppage } />
+    <Route path="/supplychain" component={ Supplychainpage } />
+    <Route path="/planningschedul" component={ Planningschedul } />
+    <Route path="/supplydistribute" component={ Supplydistributepage } />
+    <Route path="/manufacturesystem" component={ Manufacturingsyspage } />
+    <Route path="/arimanagement" component={ Arimanagementpage } />
+    <Route path="/geoligy" component={ Geologypage } />
+    <Route path="/reserviormanagement" component={ Riserviormanagepage } />
+    <Route path="/welldrilling" component={ Welldrillingpage } />
+    <Route path="/productionmanagement" component={ Productionmanagepage } />
+    <Route path="/datamanagement" component={ Datamanagepage } />
 
     {/*<Route path="/trial" component={ Svganimation } />         */}
   </div>

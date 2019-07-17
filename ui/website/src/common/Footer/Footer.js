@@ -12,7 +12,7 @@ export default class Footer extends Component {
 
   render(){
        return(
-      <div className="">
+      <div className="iogfooter">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
