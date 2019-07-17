@@ -12,7 +12,7 @@ export default class Footer extends Component {
 
   render(){
        return(
-      <div>
+      <div className="">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
@@ -86,9 +86,9 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat col">Connect</h6>
                             <ul className="no-icon-list socialicon">
-                                <li><a href="https://www.linkedin.com/company/iogsolutions/rel-noopener" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.facebook.com/iOGsolutions/rel-noopener" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="https://twitter.com/iogsolutions/rel-noopener" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                             <a href="Contact-us"><button className="connectbtn btn">Click To Contact</button></a>
                         </div>      

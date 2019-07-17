@@ -495,7 +495,8 @@ body{
 .pricebtn1,.pricebtn2,.pricebtn3,.pricebtn4{
     /*background-color: #367588;*/
     border-radius: 4px;
-    font-size: 10px;
+    /*font-size: 12px;*/
+    /*font-weight: 700;*/
     padding: 8px 20px;
     /*color: #fff !important;*/
     margin-bottom: 5px;

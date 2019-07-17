@@ -31,7 +31,7 @@ import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.
 // import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
 
 // import Effectslide     from '../trial/Effectslide/Effectslide.js';
-import Svganimation     from '../trial/Svganimation/Svganimation.js';
+// import Svganimation     from '../trial/Svganimation/Svganimation.js';
 
 
 const WebLayout = () => (
@@ -53,7 +53,7 @@ const WebLayout = () => (
     <Route path="/Health&safty" component={ Healthsaftypage } />
     <Route path="/servicearms" component={ Servicearmspage } />
 
-    <Route path="/trial" component={ Svganimation } />         
+    {/*<Route path="/trial" component={ Svganimation } />         */}
   </div>
 );
 
