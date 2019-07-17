@@ -15,12 +15,21 @@ export default class ServicesPage extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+      <div className="industrybg1 col-lg-12">
+      <div className="row">
         <Industriesrefinery />
         <Industriespetrochemicals />
         <Industrieschemical />
+      </div>
+      </div>
+
+      <div className="industrybg1 col-lg-12">
+      <div className="row">
         <Industrieslng />
         <Industriesprocessing />
         <Industriesep />
+      </div>
+      </div>
       </div>
     );  
   }

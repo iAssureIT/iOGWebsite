@@ -12,9 +12,13 @@ export default class ResourcePage extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+      <div className="resourcebg1 col-lg-12">
+      <div className="row">
         <Resourcevideo />
         <Resourcedownload />
         <Resourceprivacy />
+      </div>
+      </div>
       </div>
     );  
   }
