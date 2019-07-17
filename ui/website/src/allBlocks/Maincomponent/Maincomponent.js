@@ -1,3 +1,4 @@
+
 import React,{Component} from 'react';
 // import { render } from 'react-dom';
 
@@ -29,16 +30,17 @@ class Maincomponent extends Component{
 
   render(){
     return(
-    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div className="ht_top col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div className="row">
+           <div className="ht_row1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div className="row">
-                       <img  alt="" className="iogimgblock1" src="images/iog1.png" />
+                       <img className="iogimgblock1" src="images/people1.jpg" />
                      </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                      <div className="iogblock1text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_yellow">
-                      <span><b className="">Employee-centric Work Culture</b></span>
+                      <span><b className="head_firstblock">Employee-centric Work Culture</b></span>
                       <p className="firstblockk">At iOG Solutions we are passion-<br></br>
                          ately committed to a value-driven <br></br>
                          approach to do business – the <br></br>
@@ -49,11 +51,12 @@ class Maincomponent extends Component{
                          </p>
                          
                          </div>
-                     </div>
                   </div>
+             </div>
+        </div>
                
               
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div className="ht_row2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="row alignment_rw">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <div className="iogblock2text col-lg-4  col-md-4 col-sm-12 col-xs-12 bckgblck_color_blue">
@@ -66,21 +69,23 @@ class Maincomponent extends Component{
                   
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div className="row">
-                    <img alt="" className="iogimgblock2" src="images/career2.png" />
+                    <img className="iogimgblock2" src="images/mine.jpg" />
                     </div>
                   </div>
+                </div>
+            </div>
 
 
-
+              <div className="ht_row3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                   <div className="row">
-                     <img  alt="" className="iogimgblock3" src="images/career3.png" />
-                   </div>
+                    <div className="row">
+                     <img className="iogimgblock3" src="images/people8.jpg" />
+                    </div>
                    </div>
 
                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                      <div className="iogblock3text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_yellow">
-                      <span><b className="">Jack of all fields, Master of ONE</b></span>
+                      <span><b className="center_block_text">Jack of all fields, Master of ONE</b></span>
                       <p className="thirdblockk">We are team of people who do<br></br>
                          what they love, and we are doing<br></br>
                          it since our inception.iOG Solu- <br></br>
@@ -89,14 +94,16 @@ class Maincomponent extends Component{
                          the existing skillset of our em-<br></br>
                           ployees.<br></br>
                          
-                         </p>
+                        </p>
                          
-                         </div>
                      </div>
-                </div>
+                  </div>
               </div>
+               
+              
 
               <div className="row">
+                 <div className="ht_row4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                      <div className="iogblock4text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
                       <span><b className="">Honesty and Integrity Principles</b></span>
@@ -114,10 +121,12 @@ class Maincomponent extends Component{
                      </div>
                     <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <div className="row">
-                        <img  alt="" className="iogimg_4" src="images/video1.png" />
+                        <img className="iogimg_4" src="images/people5.jpg" />
+
                         </div>
                     </div>
                   </div>
+              </div>
 
                 
 

@@ -33,16 +33,16 @@ class Headingcomponent extends Component{
   render(){
     return(
     <div>
-         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+         <div className="line_headd col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
                 
-                  <div>
-                    <div className="line_1 col-lg-12 col-lg-offset-6"></div>
-                  </div>                    
+                
+                  {/* <hr></hr>*/}
+                                     
                
 
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                     <div className="img1">
-                        <img src="/images/career1.jpg" alt="" className="career_intro_img" />
+                        <img src="/images/career2.jpg" alt="" className="career_intro_img" />
                     </div>
                 </div>
                 
