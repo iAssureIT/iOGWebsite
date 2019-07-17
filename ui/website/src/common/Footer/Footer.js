@@ -16,20 +16,31 @@ export default class Footer extends Component {
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
-             <div className="footeranimationtruck">
-                <img className="img-responsive" alt="" src="/images/foot8.png" />
-            </div>
+                <figure className="footeranimationtruck">
+                  <img alt="" src="/images/foot8.png"/>
+                  <img alt="" className="foot8wheel1" src="/images/foot8wheel.png"/>
+                  <img alt="" className="foot8wheel2" src="/images/foot8wheel.png"/>
+                </figure>
              <div className="footeranimationtruck2">
                 <img className="img-responsive" alt="" src="/images/foot6.png" />
+                    <img alt="" className="foot6wheel1" src="/images/foot6wheel.png"/>
+                    <img alt="" className="foot6wheel2" src="/images/foot6wheel.png"/>
+                    <img alt="" className="foot6wheel3" src="/images/foot6wheel.png"/>
             </div>      
-            <div className="footeranimation1">
+            <div className="footeranimation">
                 <img className="img-responsive footimg1" alt="" src="/images/foot1.png" />
-            </div>      
+            <figure className="foot1anim">
+                <img alt="" src="/images/foot1anim.png"/>
+            </figure>     
+            </div> 
             <div className="footeranimation">
                 <img className="img-responsive footimg2" alt="" src="/images/foot2.png" />
             </div>      
             <div className="footeranimation">
                 <img className="img-responsive  footimg3" alt="" src="/images/foot3.png" />
+                <figure className="foot3anim">
+                  <img alt="" src="/images/foot3anim.png"/>
+                </figure>
             </div>      
             <div className="footeranimation">
                 <img className="img-responsive  footimg4" alt="" src="/images/foot4.png" />

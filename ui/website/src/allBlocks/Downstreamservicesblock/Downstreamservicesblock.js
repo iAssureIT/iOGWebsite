@@ -61,7 +61,7 @@ export default class Downstreamservicesblock extends Component {
                         </div>
                     <div className="col-lg-12 lightbluetext contentheader text-center">
                     <hr/>
-                        <h1>iOG Solutions for</h1><h2> Downstream Oil & Gas Industry</h2>
+                        <h1 className="">Services</h1>
                     </div>
                     <div className="col-lg-12">
                       <div className="row">

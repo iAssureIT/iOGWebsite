@@ -155,7 +155,7 @@ ul.no-icon-list {
 
 .footimg1{
     position: relative;
-    top: 2px;
+    bottom: 59px;
     left: 39px;
     height: 60px;
 }
@@ -189,13 +189,55 @@ ul.no-icon-list {
     left: 141px;
     height: 43px
 }
-.footeranimationtruck img{
+.footeranimationtruck{
     position: relative;
-    top: 105px;
+    top: 60px;
     left: -100px;
     z-index: 100;
-    animation: truck1 30s linear infinite;
+    animation: truck1 25s linear infinite;
 }
+
+.foot8wheel1{
+ position: relative;
+    right: 85px;
+    top: 9px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.foot8wheel2{
+  position: relative;
+    right: 42px;
+    top: 9px;
+  animation:  wheel 0.4s linear  infinite;
+}
+
+ .foot6wheel1{
+  position: relative;
+    left: 9px;
+    bottom: 14px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.foot6wheel2{
+  position: relative;
+   left: 13px;
+    bottom: 14px;
+  animation:  wheel 0.4s linear  infinite;
+}
+.foot6wheel3{
+  position: relative;
+   left: 48px;
+    bottom: 14px;
+  animation:  wheel 0.4s linear  infinite;
+}
+
+.footeranimationtruck2{
+    position: relative;
+    top: 17px;
+    left: -650px;
+    z-index: 100;
+    animation:  truck2 30s linear infinite;
+
+}
+
 .viman img{
     position: relative;
     top: 51px;
@@ -204,14 +246,51 @@ ul.no-icon-list {
     animation: viman 15s linear infinite;
 }
 
-.footeranimationtruck2 img{
+.foot1anim{
     position: relative;
-    top: 61px;
-    left: -450px;
-    z-index: 100;
-    animation:  truck2 35s linear infinite;
+   left: 38.5px;
+    bottom: 101px;
+    overflow: hidden;
 
 }
+.foot1anim img{
+  margin-top: -10px;
+  animation:  foot1anim 2s linear  infinite;
+
+}
+
+.foot3anim{
+    position: relative;
+    left: 332px;
+    bottom: 116px;
+}
+.foot3anim img{
+  animation:  foot3anim 4s linear  infinite;
+
+}
+
+@keyframes foot3anim {
+  
+  0% {
+  transform: rotate(0deg);
+  }
+  50% {
+  transform: rotate(8deg);
+  }
+  
+}
+
+@keyframes foot1anim {
+  
+  0% {
+    margin-top:-10px ;
+  }
+  50% {
+   margin-top:0px ;
+  }
+  
+}
+
 
 @keyframes viman {
   
@@ -236,7 +315,7 @@ ul.no-icon-list {
 @keyframes truck2 {
   
  0% {
-    left:-450px ; 
+    left:-650px ; 
   }
   100% {
    left:1500px ;

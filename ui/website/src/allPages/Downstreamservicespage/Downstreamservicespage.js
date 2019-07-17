@@ -10,8 +10,10 @@ export default class Downstreamservicespage extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      <Downstreaminfoblock />
-      <Downstreamservicesblock />
+	      <div className="downstreambg1">
+		      <Downstreaminfoblock />
+		      <Downstreamservicesblock />
+	      </div>
       </div>
     );  
   }
