@@ -14,6 +14,7 @@ export default class Downstream extends Component {
         return [
             {
                 downstreamTitle : "Supply Chain Management",
+                hryperlink      : "supplychain",
                 downstreamimg   : "/images/Illustration_2.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
@@ -21,26 +22,31 @@ export default class Downstream extends Component {
             }, 
             {
                 downstreamTitle : "Manufacturing Execution Systems",
+                hryperlink      : "manufacturesystem",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "APC Services",
+                hryperlink      : "supplychain",
                 downstreamimg   : "/images/Illustration_4.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Simulation & Modelling",
+                hryperlink      : "supplychain",
                 downstreamimg   : "/images/Illustration_5.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Energy Management",
+                hryperlink      : "supplychain",
                 downstreamimg   : "/images/Illustration_6.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
              {
                 downstreamTitle : "ETRM and Pricing Tool Application",
+                hryperlink      : "supplychain",
                 downstreamimg   : "/images/Illustration_7.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
@@ -73,12 +79,14 @@ export default class Downstream extends Component {
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
+                                                    <a href={"/"+data.hryperlink}>
                                                 <div key={index} className="col-lg-6">
                                                     <div className=" lightbluetext block block1height text-center">
                                                         <img alt="" src={data.downstreamimg} />
                                                         <h2>{data.downstreamTitle}</h2>
                                                     </div>
                                                 </div>
+                                                </a>
                                                  );
                                               })
                                             }

@@ -38,6 +38,7 @@ export default class Commoninfoblock extends Component {
                                                       <div className="col-lg-12">
                                                         <p className="line_para text-justify">{data.servicestext} </p>   
                                                         <p className="line_para text-justify">{data.servicestext2} </p>   
+                                                        <p className="line_para text-justify">{data.servicestext3} </p>   
                                                       </div>    
                                                   </div>    
                                                 </div>    

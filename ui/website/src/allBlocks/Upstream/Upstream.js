@@ -87,6 +87,7 @@ export default class Upstream extends Component {
         return [
             {
                 upstreamTitle : "Geology & Geophysics",
+                hryperlink    : "geoligy",
                 upstreamimg   : "/images/upstream1.png",
                 upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
                     
@@ -144,7 +145,7 @@ export default class Upstream extends Component {
                                                     <p className="text-justify upstreamtext">{data.upstreamtext}</p>
                                                 </div>
                                                 <div className="price-footer col-lg-12">
-                                                    <a className="upstreamfoot" href="/video"><input type="button" className="btn pricebtn1 lightbluebg" value="View More"/></a>                                    
+                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 lightbluebg" value="View More"/></a>                                    
                                                 </div>
                                             </div>
                                         </div>                       
