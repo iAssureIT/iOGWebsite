@@ -79,8 +79,8 @@ export default class Downstream extends Component {
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
-                                                    <a href={"/"+data.hryperlink}>
-                                                <div key={index} className="col-lg-6">
+                                                    <a key={index} href={"/"+data.hryperlink}>
+                                                <div  className="col-lg-6">
                                                     <div className=" lightbluetext block block1height text-center">
                                                         <img alt="" src={data.downstreamimg} />
                                                         <h2>{data.downstreamTitle}</h2>

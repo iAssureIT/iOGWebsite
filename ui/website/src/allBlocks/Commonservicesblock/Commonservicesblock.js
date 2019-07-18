@@ -33,18 +33,24 @@ export default class Commonservicesblock extends Component {
                                 <div className="col-lg-12">
                                     <div className="row"> 
                                         <div className="col-lg-10 col-lg-offset-1"> 
+                                          <div className="row"> 
                                             {
                                               this.props.servicedata.map((data, index)=>{
                                                  return (
                                                 <div key={index} className="col-lg-4">
-                                                    <div className="downstreamservicesblock text-center">
-                                                        <img alt="" src={data.downstreamimg} />
-                                                        <h2>{data.downstreamTitle}</h2>
+                                                  <div className="col-lg-12">
+                                                    <div className="row">
+                                                        <div className="downstreamservicesblock text-center">
+                                                            <img alt="" src={data.downstreamimg} />
+                                                            <h2>{data.downstreamTitle}</h2>
+                                                        </div>
                                                     </div>
+                                                  </div>
                                                 </div>
                                                  );
                                               })
                                             }
+                                        </div>
                                        </div>
                                    </div>
                                 </div>

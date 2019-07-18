@@ -27,24 +27,24 @@ export default class Servicearmspage extends Component {
         return [
             {
                 downstreamTitle : "iOGImplement",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Icon_2.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             }, 
             {
                 downstreamTitle : "iOGConsult",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Icon_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "iOGTrain",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Icon_4.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "iOGStudy",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Icon_1.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
         ]

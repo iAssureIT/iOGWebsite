@@ -27,19 +27,19 @@ export default class Industriesprocessingpage extends Component {
         return [
             {
                 downstreamTitle : "Digital Services",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Illustration_13.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             }, 
             {
-                downstreamTitle : "MES",
+                downstreamTitle : "Manufacturing Execution Systems",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Asset Management",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Illustration_12.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {

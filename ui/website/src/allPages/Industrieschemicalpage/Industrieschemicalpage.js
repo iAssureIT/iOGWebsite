@@ -27,19 +27,19 @@ export default class Industrieschemicalpage extends Component {
         return [
             {
                 downstreamTitle : "Digital Services, Dashboard and KPI Manager",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Illustration_13.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             }, 
             {
-                downstreamTitle : "APC",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamTitle : "APC Services",
+                downstreamimg   : "/images/Illustration_4.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "MES",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamTitle : "Manufacturing Execution Systems",
+                downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
@@ -49,12 +49,12 @@ export default class Industrieschemicalpage extends Component {
             }, 
             {
                 downstreamTitle : "HSE",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/Illustration_11.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
             {
                 downstreamTitle : "Predictive Maintenance and Preventive Monitoring",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/noimg.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
             

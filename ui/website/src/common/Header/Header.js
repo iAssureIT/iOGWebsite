@@ -44,6 +44,27 @@ componentWillMount() {}
                                   <a href="/downstream">Downstream <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
+                                    <li>
+                                    <label htmlFor="drop-4" className="toggle">Supply Chain Management</label>
+                                    <a href="/">Supply Chain Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <input type="checkbox" id="drop-4"/>
+                                      <ul>
+                                        <li><a href="/">Planning & Scheduling</a></li>
+                                        <li className="zindex"><a href="/">Supply & Distribution</a></li>
+                                      </ul>
+                                    </li>
+                                    <li className="zindex"><a href="/">Manufacturing Execution System</a></li>
+                                    <li className="zindex"><a href="/">Simulation & Modelling</a></li>
+                                    <li className="zindex"><a href="/">Energy Management</a></li>
+                                    <li className="zindex"><a href="/">APC Services</a></li>
+                                    <li className="zindex"><a href="/">ETRM and Pricing Tool Application</a></li>
+                                  </ul>
+                                </li>
+                                <li> 
+                                  <label htmlFor="drop-3" className="toggle">Upstream</label>
+                                  <a href="/upstream">Upstream <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                  <input type="checkbox" id="drop-3"/>
+                                  <ul>
                                     <li><a href="/">Supply Chain Management</a></li>
                                     <li><a href="/">Manufacturing Execution System</a></li>
                                     <li><a href="/">Simulation & Modelling</a></li>
@@ -62,7 +83,6 @@ componentWillMount() {}
                                     </li>
                                   </ul>
                                 </li>
-                                <li><a href="/upstream">Upstream</a></li>
                                 <li><a href="/servicearms">Service Arms</a></li>
                                 <li><a href="/digitalservices">Digital Services</a></li>
                                 <li><a href="/assetmanagement">Asset Management</a></li>
