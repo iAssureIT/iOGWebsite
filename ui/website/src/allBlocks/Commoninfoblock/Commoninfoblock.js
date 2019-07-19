@@ -17,7 +17,7 @@ export default class Commoninfoblock extends Component {
                  { 
                     this.props.infodata.map((data, index)=>{
                       return ( 
-                            <div>
+                            <div key="index">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                   <div className="img1 row">
                                     <img src={data.servicesimg} alt="" className="services_img" />
