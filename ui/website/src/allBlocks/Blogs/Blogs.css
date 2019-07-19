@@ -20,15 +20,23 @@
 
 .blogtext p{
   text-align: justify;
+  padding: 0px 20px;
+  font-size: 11px;
+  height: 170px;
+
+}
+.blogdate{
+  text-align: justify;
   padding: 10px 20px;
   font-size: 11px;
 
 }
 .blogtext h4{
   text-align: justify;
-  padding: 10px 20px;
+  padding: 0px 20px;
   font-size: 16px;
   font-weight: 600;
+  height: 50px;
 
 }
 .blogtext {

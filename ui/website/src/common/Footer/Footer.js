@@ -89,7 +89,7 @@ export default class Footer extends Component {
                             <p>
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
                                  Amanora Chambers,<br/> Office 330,
-                                 4th floor, East Block,Hadapsar,
+                                 3th floor, East Block,Hadapsar,
                                   Pune,India- 411028.<br/>
                                  <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 672 603 81/82.
                              </p>

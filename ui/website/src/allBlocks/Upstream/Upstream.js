@@ -89,29 +89,29 @@ export default class Upstream extends Component {
                 upstreamTitle : "Geology & Geophysics",
                 hryperlink    : "geoligy",
                 upstreamimg   : "/images/upstream1.png",
-                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+                upstreamtext  : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface."
                     
                 
             }, 
             {
                 upstreamTitle : "Production Management",
                 upstreamimg   : "/images/upstream3.png",
-                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+                upstreamtext  : "iOG solutions provide the complete range of Production Management services."
             },  
             {
                 upstreamTitle : "Reservoir Management",
                 upstreamimg   : "/images/upstream4.png",
-                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+                upstreamtext  : "iOG solutions provide end-to-end consulting services for management of reservoirs, utilizing state of the art geo-science and engineering technologies."
             }, 
             {
                 upstreamTitle : "Data Management Services",
                 upstreamimg   : "/images/upstream2.png",
-                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+                upstreamtext  : "iOG solutions provide the complete range of Production Management services."
             },
              {
                 upstreamTitle : "Well & Drilling Services",
                 upstreamimg   : "/images/upstream5.png",
-                upstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus."
+                upstreamtext  : "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
             }
             
         ]
