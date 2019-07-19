@@ -197,7 +197,7 @@ ul.no-icon-list {
 }
 .footeranimationtruck{
     position: relative;
-    top: 60px;
+    top: 59.5px;
     left: -100px;
     z-index: 100;
     animation: truck1 25s linear infinite;
