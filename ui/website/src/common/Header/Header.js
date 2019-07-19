@@ -55,12 +55,12 @@ componentWillMount() {}
                                   <ul>
                                     <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Supply Chain Management</label>
-                                    <a href="/">Supply Chain Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/supplychain">Supply Chain Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li className="zindex">
                                         <label htmlFor="drop-5" className="toggle">Planning & Scheduling</label>
-                                        <a href="/">Planning & Scheduling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <a href="/planningschedul">Planning & Scheduling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <input type="checkbox" id="drop-5"/>
                                           <ul>
                                             <li><a href="/">Production Planning </a></li>
@@ -72,7 +72,7 @@ componentWillMount() {}
                                         </li>
                                         <li className="zindex">
                                         <label htmlFor="drop-5" className="toggle">Supply & Distribution</label>
-                                        <a href="/">Supply & Distribution <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <a href="/supplydistribute">Supply & Distribution <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <input type="checkbox" id="drop-5"/>
                                           <ul>
                                             <li><a href="/">Demand Management</a></li>
@@ -89,7 +89,7 @@ componentWillMount() {}
                                     </li>
                                     <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Manufacturing Execution System</label>
-                                    <a href="/">Manufacturing Execution System <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/manufacturesystem">Manufacturing Execution System <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Production Accounting</a></li>
@@ -112,7 +112,7 @@ componentWillMount() {}
                                   <ul>
                                     <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Geology & Geophysics</label>
-                                    <a href="/">Geology & Geophysics <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/geoligy">Geology & Geophysics <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Geophysical Interpretation</a></li>
@@ -123,7 +123,7 @@ componentWillMount() {}
                                     </li>
                                      <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Reservior Management</label>
-                                    <a href="/">Reservior Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/reserviormanagement">Reservior Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Reservoir Engineering</a></li>
@@ -134,7 +134,7 @@ componentWillMount() {}
                                     </li> 
                                     <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Well & Drilling</label>
-                                    <a href="/">Well & Drilling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/welldrilling">Well & Drilling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Well Planning & Drilling</a></li>
@@ -147,7 +147,7 @@ componentWillMount() {}
                                     </li> 
                                     <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Production Management</label>
-                                    <a href="/">Production Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/productionmanagement">Production Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Production Engineering</a></li>
@@ -160,7 +160,7 @@ componentWillMount() {}
                                     </li> 
                                     <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Data Management</label>
-                                    <a href="/">Data Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/datamanagement">Data Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Seismic Data Management</a></li>
@@ -219,7 +219,7 @@ componentWillMount() {}
                                      <li className="zindex"><a href="/">Enterprise Asset Management</a></li>
                                      <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Asset Reliability & Integraity Management</label>
-                                    <a href="/">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a href="/arimanagement">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/">Asset Criticality Analysis</a></li>
