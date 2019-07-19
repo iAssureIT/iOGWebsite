@@ -187,7 +187,7 @@ componentWillMount() {}
                                 </li>
                                 <li> 
                                   <label htmlFor="drop-3" className="toggle">Health Safety & Environment</label>
-                                  <a href="/Health&safty">Health Safety & Environment <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                  <a href="/Healthsafty">Health Safety & Environment <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
                                       <li className="zindex"><a href="/">Process Safety Management</a></li> 

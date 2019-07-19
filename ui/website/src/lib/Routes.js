@@ -80,7 +80,7 @@ const WebLayout = () => (
     <Route path="/servicearms" component={ Servicearmspage } />
     <Route path="/digitalservices" component={ Digitalservicespage } />
     <Route path="/assetmanagement" component={ Assetmanagementpage } />
-    <Route path="/Health&safty" component={ Healthsaftypage } />
+    <Route path="/Healthsafty" component={ Healthsaftypage } />
     <Route path="/refinery" component={ Industriesrefinarypage } />
     <Route path="/petrochemicals" component={ Industriespetrochemicalpage } />
     <Route path="/chemicals" component={ Industrieschemicalpage } />

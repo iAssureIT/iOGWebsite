@@ -95,21 +95,25 @@ export default class Upstream extends Component {
             }, 
             {
                 upstreamTitle : "Production Management",
+                hryperlink    : "productionmanagement",
                 upstreamimg   : "/images/upstream3.png",
                 upstreamtext  : "iOG solutions provide the complete range of Production Management services."
             },  
             {
                 upstreamTitle : "Reservoir Management",
+                hryperlink    : "reserviormanagement",
                 upstreamimg   : "/images/upstream4.png",
                 upstreamtext  : "iOG solutions provide end-to-end consulting services for management of reservoirs, utilizing state of the art geo-science and engineering technologies."
             }, 
             {
                 upstreamTitle : "Data Management Services",
+                hryperlink    : "datamanagement",
                 upstreamimg   : "/images/upstream2.png",
                 upstreamtext  : "iOG solutions provide the complete range of Production Management services."
             },
              {
                 upstreamTitle : "Well & Drilling Services",
+                hryperlink    : "welldrilling",
                 upstreamimg   : "/images/upstream5.png",
                 upstreamtext  : "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
             }
