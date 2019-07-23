@@ -28,9 +28,6 @@ import Downstreamservicespage     from '../allPages/Downstreamservicespage/Downs
 import Upstreamservicespage       from '../allPages/Upstreamservicespage/Upstreamservicespage.js';
 import Digitalservicespage        from '../allPages/Digitalservicespage/Digitalservicespage.js';
 import Assetmanagementpage        from '../allPages/Assetmanagementpage/Assetmanagementpage.js';
-<<<<<<< Updated upstream
-import Healthsaftypage            from '../allPages/Healthsaftypage/Healthsaftypage.js';
-import Servicearmspage            from '../allPages/Servicearmspage/Servicearmspage.js';
 
 //-----------Industries  Rout.................//
 
