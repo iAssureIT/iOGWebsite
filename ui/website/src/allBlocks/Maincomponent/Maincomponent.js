@@ -35,7 +35,7 @@ class Maincomponent extends Component{
            <div className="ht_row1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div className="row">
-                       <img className="iogimgblock1" src="images/people1.jpg" />
+                       <img className="iogimgblock1" src="images/career_3.png" />
                      </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -69,7 +69,7 @@ class Maincomponent extends Component{
                   
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div className="row">
-                    <img className="iogimgblock2" src="images/mine.jpg" />
+                    <img className="iogimgblock2" src="images/career_6.png" />
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ class Maincomponent extends Component{
               <div className="ht_row3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div className="row">
-                     <img className="iogimgblock3" src="images/people8.jpg" />
+                     <img className="iogimgblock3" src="images/career_5.png" />
                     </div>
                    </div>
 
@@ -121,7 +121,7 @@ class Maincomponent extends Component{
                      </div>
                     <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <div className="row">
-                        <img className="iogimg_4" src="images/people5.jpg" />
+                        <img className="iogimg_4" src="images/career_4.png" />
 
                         </div>
                     </div>

@@ -236,6 +236,16 @@ componentWillMount() {}
                                     </li>
                                   </ul>
                                 </li>
+
+
+                                <li><a href="/upstream">Upstream</a></li>
+
+                                
+                                <li><a href="/servicearms">Service Arms</a></li>
+                                <li><a href="/digitalservices">Digital Services</a></li>
+                                <li><a href="/assetmanagement">Asset Management</a></li>
+                                <li><a href="/Health&safty">Health Safety & Environment</a></li>
+
                               </ul>
                             </li>
                             <li> 

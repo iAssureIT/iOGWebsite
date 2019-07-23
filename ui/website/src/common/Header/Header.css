@@ -191,5 +191,45 @@ nav ul li {
 .zindex{
 
 }
+/*#drop-5{
+  z-index: 100;
+}
+#drop-6{
+  z-index: 100;
+}
+#drop-7{
+  z-index: 100;
+}
+#drop-8{
+  z-index: 100;
+}
 
+#drop-9{
+  z-index: 100;
+}
+#drop-10{
+  z-index: 10;
+}
 
+*/
+
+dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+.geoHover:hover~ul>li{
+  z-index: 300;
+}

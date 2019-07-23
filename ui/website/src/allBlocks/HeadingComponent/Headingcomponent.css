@@ -10,6 +10,11 @@
     /*padding: 0;*/
 }
 
+.NOpadding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .line_1{
   background-color: #f19000;
   width: 105px;
@@ -17,15 +22,17 @@
 }
 
 .career_line_subhead{
-    font-size: 30px;
-    margin-top: 102px;
+    font-size: 50px;
+    margin-top: 29px;
     padding-bottom: 0px;
+    padding-left: 12px;
   }
 
   .career_line_paraone{
     padding-bottom: 46px;
     padding-top: 32px;
     font-size: 20px;
+    padding-left: 12px;
 }
 
 .career_intro_img{
@@ -113,7 +120,7 @@
 }*/
 
 .colorblue_txt{
-	color: #009de2;
+	color: #1378d4;
 }
 
 .career1_img{
@@ -129,4 +136,23 @@ padding-right: 45px;
     background-color: #f19000;
 }
 
+.lineee1 {
+    background-color: #f19000;
+    width: 105px;
+    height: 4px;
+    margin-top: 55px;
+    margin-left: 69px;
+}
+
+.rcorners1 {
+    border-radius: 32px;
+    background: #1378d4;
+    padding: 20px;
+    width: 235px;
+    height: 60px;
+    padding-left: 38px;
+    color: white;
+    font-size: 22px;
+    padding-top: 13px;
+}
 

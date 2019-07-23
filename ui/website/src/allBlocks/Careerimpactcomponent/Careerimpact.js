@@ -128,9 +128,15 @@ CareersData(){
      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		 <div className="row">
       <div>
-        <div className="lineee1 col-lg-12 col-lg-offset-6"></div>
+        <div className="lineee2 col-lg-12 col-lg-offset-6"></div>
       </div>       
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+              <div className="img_2">
+                <img src="/images/career_2.png" alt="" className="career2_img" />
+              </div>
+          </div>
+
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                <div className="col-lg-12">
                  <h2 className="career_para-top2">
@@ -205,11 +211,7 @@ CareersData(){
           </div>
         </div> 
 
-              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                    <div className="img_2">
-                      <img src="/images/career8.jpg" alt="" className="career2_img" />
-                    </div>
-                </div>
+              
 
                 
         </div>

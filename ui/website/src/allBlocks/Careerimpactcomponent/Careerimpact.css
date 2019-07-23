@@ -13,7 +13,7 @@
 .career_para-top2{
   font-size: 40px;
    /* font-weight: 100;*/
-   color: #009de2;
+   color: #1378d4;
     padding-left: 22px;
     
 }
@@ -25,10 +25,10 @@
   margin-top: 28px;
 }
 .career2_img{
-  width: 100%;
-  margin-top: 206px;
-  padding-left: 14px;
-  height: 434px;
+  width: 95%;
+    margin-top: 206px;
+    padding-left: 66px;
+    height: 434px;
 }
 
 .spacing1{
@@ -424,4 +424,10 @@ font-size: 24px;
     border-radius: 23px;
 }
 
-
+.lineee2 {
+    background-color: #f19000;
+    width: 105px;
+    height: 4px;
+    margin-top: 55px;
+    margin-left: 730px;
+}

@@ -25,9 +25,7 @@ class Careerspage extends Component{
             <Headingcomponent />
             <Careerimpactcomponent />
             <Maincomponent />
-            
             <JobsComponent />
-            
           </div>    
     );
   }

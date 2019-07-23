@@ -28,6 +28,7 @@ import Downstreamservicespage     from '../allPages/Downstreamservicespage/Downs
 import Upstreamservicespage       from '../allPages/Upstreamservicespage/Upstreamservicespage.js';
 import Digitalservicespage        from '../allPages/Digitalservicespage/Digitalservicespage.js';
 import Assetmanagementpage        from '../allPages/Assetmanagementpage/Assetmanagementpage.js';
+<<<<<<< Updated upstream
 import Healthsaftypage            from '../allPages/Healthsaftypage/Healthsaftypage.js';
 import Servicearmspage            from '../allPages/Servicearmspage/Servicearmspage.js';
 
@@ -56,6 +57,11 @@ import Datamanagepage                 from '../allPages/Datamanagepage/Datamanag
 
 
 
+
+import Healthsaftypage        from '../allPages/Healthsaftypage/Healthsaftypage.js';
+import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.js';
+import RefineryPage        from '../allPages/RefineryPage/RefineryPage.js';
+
 // import Effectssec     from '../trial/effectssec/effectssec.js';
 // import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
 
@@ -80,6 +86,7 @@ const WebLayout = () => (
     <Route path="/servicearms" component={ Servicearmspage } />
     <Route path="/digitalservices" component={ Digitalservicespage } />
     <Route path="/assetmanagement" component={ Assetmanagementpage } />
+
     <Route path="/Healthsafty" component={ Healthsaftypage } />
     <Route path="/refinery" component={ Industriesrefinarypage } />
     <Route path="/petrochemicals" component={ Industriespetrochemicalpage } />
@@ -97,6 +104,11 @@ const WebLayout = () => (
     <Route path="/welldrilling" component={ Welldrillingpage } />
     <Route path="/productionmanagement" component={ Productionmanagepage } />
     <Route path="/datamanagement" component={ Datamanagepage } />
+
+    <Route path="/Health&safty" component={ Healthsaftypage } />
+    <Route path="/servicearms" component={ Servicearmspage } />
+    <Route path="/refinery" component={ RefineryPage } />
+
 
     {/*<Route path="/trial" component={ Svganimation } />         */}
   </div>
