@@ -12,7 +12,7 @@ export default class Upstreamservicespage extends Component {
             {
                 servicesTitle : "Upstream",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Upstream_4.png",
                 servicestext  : "Oil & Gas upstream includes all the steps from the preliminary geological exploration of oil, its extraction and storage and distribution to the refineries.",
                 servicestext2 : "iOG Solutions provides best in class expertise, solution and work flow for all the disciplines throughout the Upstream Life cycle. We understand customer’s requirement and provide suitable solutions including software, consulting services and methodology to address these requirements. Our experts in Oil & Gas Upstream work in tandem with client team to give cost effective solutions and hence improved profitability for our customers."
                     

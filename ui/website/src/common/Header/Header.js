@@ -250,7 +250,7 @@ componentWillMount() {}
                             </li>
                             <li> 
                                 <label htmlFor="drop-1" className="toggle">Industries</label>
-                                <a href="/industries">Industries<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a href="/industries">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <input type="checkbox" id="drop-1"/>
                                 <ul>
                                   <li><a href="/refinery">Refinery</a></li>
