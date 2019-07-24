@@ -60,6 +60,7 @@ import RefineryPage        from '../allPages/RefineryPage/RefineryPage.js';
 
 // import Effectslide     from '../trial/Effectslide/Effectslide.js';
 // import Svganimation     from '../trial/Svganimation/Svganimation.js';
+ import Parallaxeff     from '../trial/Parallaxeff/Parallaxeff.js';
 
 
 const WebLayout = () => (
@@ -103,7 +104,7 @@ const WebLayout = () => (
     <Route path="/oilrefinery" component={ RefineryPage } />
 
 
-    {/*<Route path="/trial" component={ Svganimation } />         */}
+    <Route path="/trial" component={ Parallaxeff } />        
   </div>
 );
 

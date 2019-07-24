@@ -1,0 +1,31 @@
+.para10{
+  position: relative;
+  left:-730px;
+  transform: rotate(20deg);
+  transition-duration: 2s;
+
+}
+
+.para11{
+  position: relative;
+  left: 730px;
+  transform: rotate(-20deg);
+  transition-duration: 2s;
+
+}
+
+.paraeffect{
+  position: relative;
+  left :0px;
+  transform: rotate(0deg);
+  transition-duration: 2s;
+}
+
+.para12{
+	opacity: 0;
+	transition-duration: 2s;
+}
+.para12effect{
+	opacity: 1;
+	transition-duration: 2s;
+}

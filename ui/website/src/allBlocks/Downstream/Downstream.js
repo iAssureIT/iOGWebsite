@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { render } from 'react-dom';
 
 // import axios from 'axios';
+import $ from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -54,6 +55,43 @@ export default class Downstream extends Component {
         ]
     }
 
+    componentWillMount() {
+        $(window).scroll(function() 
+    {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 550) {
+            $(".para0").addClass("paraeff");
+        } else {
+            $(".para0").removeClass("paraeff");
+        }
+        if (scroll >= 550) {
+            $(".para1").addClass("paraeff");
+        } else {
+            $(".para1").removeClass("paraeff");
+        }
+        if (scroll >= 1000) {
+            $(".para2").addClass("paraeff");
+        } else {
+            $(".para2").removeClass("paraeff");
+        }
+        if (scroll >= 1000) {
+            $(".para3").addClass("paraeff");
+        } else {
+            $(".para3").removeClass("paraeff");
+        }
+        if (scroll >= 1250) {
+            $(".para4").addClass("paraeff");
+        } else {
+            $(".para4").removeClass("paraeff");
+        }
+        if (scroll >= 1250) {
+            $(".para5").addClass("paraeff");
+        } else {
+            $(".para5").removeClass("paraeff");
+        }
+    });
+    }
 
   
 
@@ -79,9 +117,9 @@ export default class Downstream extends Component {
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
-                                                    <a key={index} href={"/"+data.hryperlink}>
-                                                <div  className="col-lg-6">
-                                                    <div className=" lightbluetext block block1height text-center">
+                                                <a key={index} href={"/"+data.hryperlink}>
+                                                <div  className={"col-lg-6 para"+index}>
+                                                    <div className="lightbluetext block block1height text-center">
                                                         <img alt="" src={data.downstreamimg} />
                                                         <h2>{data.downstreamTitle}</h2>
                                                     </div>

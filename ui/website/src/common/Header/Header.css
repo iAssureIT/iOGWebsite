@@ -1,8 +1,16 @@
 .headerflow{
+    position: fixed;
+  z-index: 10000;
+  background-color: transparent;
+  transition-duration: 0.8s;
+}
+.headerflowscroll{
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: auto;
+  height: 100px;
+  box-shadow: 0 10px 14px rgba(92,141,255,.2);
+  transition-duration: 0.8s;
 }
 
 #container {
@@ -14,7 +22,7 @@
  display: none;
 }
 nav {
-  margin-top: 45px;
+  margin-top: 37px;
   padding: 0;
   /*background-color: #254441;*/
 }
@@ -45,7 +53,7 @@ nav ul li {
   margin: 0px;
   display: inline-block;
   float: left;
-  background-color: #fff;
+  background-color: transparent;
   width: auto;
 }
 
@@ -69,6 +77,10 @@ nav ul ul {
   display: none;
   position: absolute;
   top: 35px;
+  background-color: #fff;
+  box-shadow: 0 10px 29px rgba(92,141,255,.5);
+  height: 0px;
+
 }
 
 nav ul :hover > ul { display: inherit; }
@@ -78,6 +90,7 @@ nav ul ul li {
   float: none;
   display: list-item;
   position: relative;
+  background-color: #fff;
 }
 
 nav ul ul ul li {
@@ -85,6 +98,7 @@ nav ul ul ul li {
   position: relative;
   top: -35px;
   left: 284px;
+  background-color: #fff;
 }
 nav ul ul ul ul li {
   width:360px;
@@ -92,12 +106,14 @@ nav ul ul ul ul li {
   top: -35px;
   left: -350px;
   z-index: 100;
+  background-color: #fff;
 }
 nav ul ul ul ul ul li {
   width:310px;
   position: relative;
   top: -35px;
   left: -305px;
+  background-color: #fff;
 }
 
 /*li > a:after { content: ' +'; }*/
@@ -184,8 +200,8 @@ nav ul li {
 }
 
 .headerlogo img{
-  margin-top: 20px;
-  height: 80px;
+  margin-top: 15px;
+  height: 75px;
 }
 
 .zindex{

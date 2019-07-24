@@ -296,3 +296,52 @@
     animation: bubblea3 30s linear infinite;
 }
 
+.para0{
+  position: relative;
+  left:-730px;
+  transform: rotate(20deg);
+  transition-duration: 2s;
+
+}
+.para2{
+  position: relative;
+  left:-730px;
+  transform: rotate(20deg);
+  transition-duration: 2s;
+
+}
+.para4{
+  position: relative;
+  left:-730px;
+  transform: rotate(20deg);
+  transition-duration: 2s;
+
+}
+.para1{
+  position: relative;
+  left: 730px;
+  transform: rotate(-20deg);
+  transition-duration: 2s;
+
+}
+.para3{
+  position: relative;
+  left: 730px;
+  transform: rotate(-20deg);
+  transition-duration: 2s;
+
+}
+.para5{
+  position: relative;
+  left: 730px;
+  transform: rotate(-20deg);
+  transition-duration: 2s;
+
+}
+
+.paraeff{
+  position: relative;
+  left :0px;
+  transform: rotate(0deg);
+  transition-duration: 2s;
+}

@@ -2,13 +2,26 @@ import React, {Component} from 'react';
 // import $                  from 'jquery';
 import './Header.css';
 
+import $ from "jquery";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
 export default class Header extends Component {
   
-componentWillMount() {}
+componentWillMount() {$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".headerflow").addClass("headerflowscroll");
+    } else {
+        $(".headerflow").removeClass("headerflowscroll");
+    }
+});
+}
 
   render() {  
     return (
-    <div className="col-lg-12 headerflow"> 
+    <header className="col-lg-12 headerflow"> 
       <div className="row"> 
         <div className="navbar navbar-static-top" id="bb">
           <div className="col-lg-12">
@@ -236,16 +249,6 @@ componentWillMount() {}
                                     </li>
                                   </ul>
                                 </li>
-
-
-                                <li><a href="/upstream">Upstream</a></li>
-
-                                
-                                <li><a href="/servicearms">Service Arms</a></li>
-                                <li><a href="/digitalservices">Digital Services</a></li>
-                                <li><a href="/assetmanagement">Asset Management</a></li>
-                                <li><a href="/Health&safty">Health Safety & Environment</a></li>
-
                               </ul>
                             </li>
                             <li> 
@@ -276,7 +279,7 @@ componentWillMount() {}
           </div>
         </div>
       </div>
-    </div>
+    </header>
     );  
   }
 }

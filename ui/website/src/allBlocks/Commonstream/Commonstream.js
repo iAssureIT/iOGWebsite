@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { render } from 'react-dom';
 
 // import axios from 'axios';
+import $ from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -28,6 +29,31 @@ export default class Commonstream extends Component {
         ]
     }
 
+    componentWillMount() {
+        $(window).scroll(function() 
+    {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 2200) {
+            $(".para10").addClass("paraeffect");
+        } else {
+            $(".para10").removeClass("paraeffect");
+        }
+        if (scroll >= 2200) {
+            $(".para11").addClass("paraeffect");
+        } else {
+            $(".para11").removeClass("paraeffect");
+        }
+        if (scroll >= 2000) {
+            $(".para12").addClass("para12effect");
+        } else {
+            $(".para12").removeClass("para12effect");
+        }
+        
+    });
+    }
+
+
 
   
 
@@ -41,7 +67,7 @@ export default class Commonstream extends Component {
                               <div className="row">
                                 <div className="col-lg-12">
                                     <div className="row">
-                                      <div className="col-lg-6 col-lg-offset-3"> 
+                                      <div className="col-lg-6 col-lg-offset-3 para12"> 
                                             <a href="/Healthsafty">
                                                 <div className="col-lg-12">
                                                     <div className=" lightbluetext block block1height text-center">
@@ -56,7 +82,7 @@ export default class Commonstream extends Component {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
                                               <a key={index} href={"/"+data.hryperlink}>
-                                                <div className="col-lg-6">
+                                                <div className={"col-lg-6 para1"+index}>
                                                     <div className=" lightbluetext block block1height text-center">
                                                         <img alt="" src={data.downstreamimg} />
                                                         <h2>{data.downstreamTitle}</h2>
