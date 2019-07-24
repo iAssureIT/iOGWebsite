@@ -63,9 +63,18 @@ export default class Commonservicesblock extends Component {
                                                 <div key={index} className={classes}>
                                                   <div className="col-lg-12">
                                                     <div className="row">
-                                                        <div className="downstreamservicesblock text-center">
-                                                            <img alt="" src={data.downstreamimg} />
-                                                            <h2>{data.downstreamTitle}</h2>
+                                                        <div className="text-center">
+                                                          <div className="serflip-card">
+                                                            <div className="serflip-card-inner">
+                                                                <div className="serflip-card-front">
+                                                                  <img src={data.downstreamimg} alt=""/>
+                                                                  <h2>{data.downstreamTitle}</h2> 
+                                                                </div>
+                                                                <div className="serflip-card-back">
+                                                                    <p className="text-justify">{data.downstreamtext}</p>
+                                                                </div>
+                                                             </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                   </div>

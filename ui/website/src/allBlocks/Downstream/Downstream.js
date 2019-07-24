@@ -80,12 +80,12 @@ export default class Downstream extends Component {
         } else {
             $(".para3").removeClass("paraeff");
         }
-        if (scroll >= 1250) {
+        if (scroll >= 1300) {
             $(".para4").addClass("paraeff");
         } else {
             $(".para4").removeClass("paraeff");
         }
-        if (scroll >= 1250) {
+        if (scroll >= 1300) {
             $(".para5").addClass("paraeff");
         } else {
             $(".para5").removeClass("paraeff");
