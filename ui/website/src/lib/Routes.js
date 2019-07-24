@@ -51,10 +51,6 @@ import Productionmanagepage           from '../allPages/Productionmanagepage/Pro
 import Datamanagepage                 from '../allPages/Datamanagepage/Datamanagepage.js';
 
 
-
-
-
-
 import Healthsaftypage        from '../allPages/Healthsaftypage/Healthsaftypage.js';
 import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.js';
 import RefineryPage        from '../allPages/RefineryPage/RefineryPage.js';
@@ -102,9 +98,9 @@ const WebLayout = () => (
     <Route path="/productionmanagement" component={ Productionmanagepage } />
     <Route path="/datamanagement" component={ Datamanagepage } />
 
-    <Route path="/Health&safty" component={ Healthsaftypage } />
+   
     <Route path="/servicearms" component={ Servicearmspage } />
-    <Route path="/refinery" component={ RefineryPage } />
+    <Route path="/oilrefinery" component={ RefineryPage } />
 
 
     {/*<Route path="/trial" component={ Svganimation } />         */}

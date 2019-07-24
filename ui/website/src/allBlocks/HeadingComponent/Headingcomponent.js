@@ -62,7 +62,7 @@ class Headingcomponent extends Component{
 
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                       <div className="img1">
-                          <img src="/images/career2.jpg" alt="" className="career_intro_img" />
+                          <img src="/images/career_1.png" alt="" className="career_intro_img" />
                       </div>
                     </div>
 

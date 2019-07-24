@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-
 // import $                  from 'jquery';
 import './RefineryPage.css';
 
@@ -17,7 +16,7 @@ export default class RefineryPage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
       	<Overview />
         <Plans />
-        <Challenges />
+        <Challenges />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         <Refineryplanning />
       </div>
     );  

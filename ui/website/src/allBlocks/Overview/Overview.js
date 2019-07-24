@@ -27,7 +27,7 @@ OverviewData(){
             <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                    <div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div>
+                    <div className="line_overview col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div>
                   </div>
                    {
                     this.OverviewData().map((data, index)=>{
