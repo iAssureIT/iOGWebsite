@@ -29,7 +29,14 @@ IntroData1(){
         ]
     }
 
-
+IntroData2(){
+        return [
+            {
+                introtext2     : "Application of steady state simulation comes majorly during the conceptual phase of a project with a motive to understand how a design can be altered to get the most out of a process from both a business standpoint and an engineering perspective."
+            },         
+                        
+        ]
+    }
 
 
 
@@ -73,29 +80,68 @@ IntroData1(){
                                </div>
 
                                 {
-                    this.IntroData1().map((data, index)=>{
-                       return ( 
-                        <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              this.IntroData1().map((data, index)=>{
+                                 return ( 
+                                  <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                      <div className="col-lg-12">
+                                                  
+                                                      <p className="line_paraaaa">{data.introtext1}
+                                                      <br></br>
+                                                      </p> 
+                                                   </div>
+                                                  </div>
+                                                 </div>
+                                                </div>
+                                              </div>         
+                                            </div>
+                                               );
+                                            })
+                                         }
+
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div className="intro_list"><b>Steady state simulation</b> analysis is used to analyze the processes when the system is in equilibrium. Typical applications of steady state simulation analysis are to:</div>
+                                 <div className="intro_sublist">- Develop the heat and material balance for the process</div>
+                                 <div className="intro_sublist">- Prepare process equipment data sheets</div>
+                                 <div className="intro_sublist">- Analyze relief and flare systems</div>
+                    </div>
+
+                   {
+                     this.IntroData2().map((data, index)=>{
+                        return ( 
+                            <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div className="col-lg-12">
-                                        
-                                            <p className="line_paraaaa">{data.introtext1}
-                                            <br></br>
-                                            </p> 
-                                         </div>
-                                        </div>
+                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                          <div className="col-lg-12">
+                                      
+                                          <p className="line_paraaaa">{data.introtext2}
+                                          <br></br>
+                                          </p> 
                                        </div>
                                       </div>
-                                    </div>         
-                                  </div>
-                                     );
-                                  })
+                                     </div>
+                                    </div>
+                                  </div>         
+                                </div>
+                                   );
+                                })
                                }
 
-                              
+                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div className="intro_list"><b>Dynamic simulation</b> is an extension of steady state simulation that allows the user to predict the response of process parameters due to changes in operation with respect to time.</div>
+                                 <div className="intro_list">Some of the dynamic simulation analysis utilized in refinery and petrochemical processes to optimize the performance are:</div>
+                                 <div className="intro_sublist">- Compressor dynamic simulation</div>
+                                 <div className="intro_sublist">- Heat exchanger tube rupture analysis</div>
+                                 <div className="intro_sublist">- Transient surge analysis of a fire water system</div>
+                                 <div className="intro_sublist">- Optimization of Process control systems</div>
+                                 <div className="intro_list">Dynamic Simulation is an activity usually carried out to ensure that processes remain safe under stressful or abnormal conditions.</div>
+                       </div>
+
                           </div>
                         </div>
 

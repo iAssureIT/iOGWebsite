@@ -112,7 +112,7 @@ componentWillMount() {$(window).scroll(function() {
                                         <li><a href="/">Oil Movement Management Systems</a></li>
                                       </ul>
                                     </li>
-                                    <li className="zindex"><a href="/">Simulation & Modelling</a></li>
+                                    <li className="zindex"><a href="/simulation">Simulation & Modelling</a></li>
                                     <li className="zindex"><a href="/">Energy Management</a></li>
                                     <li className="zindex"><a href="/">APC Services</a></li>
                                     <li className="zindex"><a href="/">ETRM and Pricing Tool Application</a></li>
