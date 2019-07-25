@@ -53,7 +53,7 @@ componentWillMount() {$(window).scroll(function() {
                                 <ul>
                                   <li><a href="/about-us">Company Profile</a></li>
                                   <li><a href="/about-us">Founder's Profile</a></li>
-                                  <li><a href="/about-us">Our Journey</a></li>
+                                  <li><a href="/ourjourny">Our Journey</a></li>
                                 </ul>
                               </li>
                               <li>  

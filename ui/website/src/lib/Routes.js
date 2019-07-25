@@ -19,6 +19,7 @@ import ServicesPage   from '../allPages/ServicesPage/ServicesPage.js';
 import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
 import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
+import Ourjourny      from '../allPages/Ourjourny/Ourjourny.js';
 
 //-----------Level1 Rout.................//
 
@@ -70,6 +71,7 @@ const WebLayout = () => (
     <Route path="/" exact strict component={ HomePage } /> 
     <Route path="/contact-us" component={ Contactpage } />  
     <Route path="/about-us" component={ AboutUs } />         
+    <Route path="/ourjourny" component={ Ourjourny } />         
     <Route path="/careers" component={ Careerspage } />
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />

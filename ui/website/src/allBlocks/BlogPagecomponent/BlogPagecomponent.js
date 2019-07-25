@@ -9,7 +9,8 @@ import 'font-awesome/css/font-awesome.min.css';
 import "./BlogPagecomponent.css";
 export default class BlogPagecomponent extends Component {
 
-    componentDidMount(){var accordions = document.querySelectorAll('.accordion-item');
+    componentDidMount(){
+      var accordions = document.querySelectorAll('.accordion-item');
 
 for (var i = 0; i < accordions.length; i++) {
     accordions[i].addEventListener('click', function(e) {

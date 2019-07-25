@@ -1,0 +1,164 @@
+.journybg {
+    background-image: url(/images/journy1.png);
+    background-size: 65% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 150px;
+}
+.journybg1{
+    background-image: url(/images/journy2.png);
+    background-size: 75% 90%;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+.journybg2{
+    background-image: url(/images/journy3.png);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+.journybg3{
+    background-image: url(/images/journy7.png);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    height: 267px;
+    margin-top: 150px;
+}
+.journybg31{
+    background-image: url(/images/journy7.png);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    height: 267px;
+}
+.journybg4{
+    background-image: url(/images/journy5.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.journybg5{
+    background-image: url(/images/journy4.png);
+    background-size: 17% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.journybg6{
+    background-image: url(/images/journy6.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.journytextblock{
+  width: 70%;
+  height: 85px;
+  margin-top: 110px;
+
+}
+.journytextblock h1{
+font-size: 46px;
+color: #fff;
+}
+
+.roadjourny{
+  position: absolute;
+  z-index: 3;
+  height: 0px;
+  background: transparent;
+  overflow: hidden;
+  max-height: 1590px;
+  left: -95px;
+}
+.roadjourny img{
+  position: relative;
+}
+
+.add1{
+  position: relative;
+    left: 577px;
+    z-index: 100;
+    height: 75px;
+    top: 248px;
+    opacity: 0;
+}
+.add2{
+    position: relative;
+    right: 36px;
+    z-index: 100;
+    height: 75px;
+    top: 371px;
+    opacity: 0;
+}
+.add3{
+  position: relative;
+    left: 577px;
+    z-index: 100;
+    height: 75px;
+    top: 270px;
+    opacity: 0;
+}
+.add4{
+  position: relative;
+    right: 300px;
+    z-index: 100;
+    height: 75px;
+    top: 439px;
+    opacity: 0;
+}
+.add5{
+  position: relative;
+    right: 599px;
+    z-index: 100;
+    height: 75px;
+    top: 707px;
+    opacity: 0;
+}
+.add6{
+  position: relative;
+    left: 905px;
+    z-index: 100;
+    height: 75px;
+    top: 58px;
+    opacity: 0;
+}
+.add7{
+  position: relative;
+    left: 836px;
+    z-index: 100;
+    height: 75px;
+    top: 229px;
+    opacity: 0;
+}
+.add8{
+  position: relative;
+    right: 113px;
+    z-index: 100;
+    height: 75px;
+    top: 324px;
+    opacity: 1;
+}
+.add9{
+  position: relative;
+    left: 266px;
+    z-index: 100;
+    height: 75px;
+    top: 219px;
+    opacity: 0;
+}
+
+.addanim{
+  opacity: 1;
+  animation:  addanim 1.5s linear  ;
+
+}
+
+@keyframes addanim {
+  
+  0% {
+  transform: rotateY(0deg);
+  transform: scale(1.5);
+  }
+  50% {
+  transform: rotateY(360deg);
+  }
+  
+}
