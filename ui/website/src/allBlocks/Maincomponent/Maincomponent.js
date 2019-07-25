@@ -103,7 +103,7 @@ class Maincomponent extends Component{
               
 
               <div className="row">
-                 <div className="ht_row4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div className="ht_row4 mb_100 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                      <div className="iogblock4text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
                       <span><b className="">Honesty and Integrity Principles</b></span>

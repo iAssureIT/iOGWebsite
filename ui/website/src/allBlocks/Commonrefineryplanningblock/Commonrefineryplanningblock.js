@@ -4,9 +4,10 @@ import React, { Component } from 'react';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import './Refineryplanning.css';
 
-export default class Refineryplanning extends Component {
+import './Commonrefineryplanningblock.css';
+
+export default class Commonrefineryplanningblock extends Component {
 
 RefineryPlanningData(){
         return [

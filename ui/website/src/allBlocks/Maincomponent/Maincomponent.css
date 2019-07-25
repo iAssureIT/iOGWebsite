@@ -132,13 +132,12 @@
 }
 
 .iogblock4text{
-   padding-top: 35px;
+    padding-top: 35px;
     font-size: 15px;
-    padding-left: 86px;
-    /* margin-top: -28px; */
+    padding-left: 39px;
     margin-left: 105px;
     width: 86%;
-    padding-bottom: 35px;;
+    padding-bottom: 59px;
 }
 
 .iogblock4text span{
@@ -163,9 +162,9 @@
 }
 .secondblockk{
     padding-top: 16px;
-    }
+ }
+
 .thirdblockk{
-    
     margin-top: 17px;
 }
 
@@ -221,4 +220,8 @@
 
 .ht_top{
     margin-top: 82px;
+}
+
+.mb_100{
+    margin-bottom: 100px;
 }

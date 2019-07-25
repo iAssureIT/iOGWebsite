@@ -7,7 +7,6 @@ import 'font-awesome/css/font-awesome.min.css';
 
 // import $ from 'jquery';
 
-
 import './Headingcomponent.css';
 import '../InformationComponent/InformationComponent.css';
 import '../Careerimpactcomponent/Careerimpact.css';
@@ -20,7 +19,6 @@ class Headingcomponent extends Component{
     super();
      this.state={
      }
-
   }
   
   componentDidMount() {
@@ -32,10 +30,8 @@ class Headingcomponent extends Component{
     <div>
          <div className="line_headd col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
                   {/* <hr></hr>*/}
-
-                  <div className="lineee1 ">
+                  <div className="career_linee_1  ">
                   </div>
-
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NOpadding">
                     <div className="row">
                         <div className="col-lg-12">
@@ -44,7 +40,7 @@ class Headingcomponent extends Component{
                            <b>Today's engineering <br></br></b><b>challenges need the</b>
                            <br></br>
                            industry's best minds.<br></br>
-                          </div>
+                           </div>
                            <br></br>
                            <p className="col-lg-offset-1 career_line_paraone">
                            iOG Solutions is an exciting oil and gas consulting and<br></br>
@@ -53,11 +49,9 @@ class Headingcomponent extends Component{
                            </p>
                         </div>
                     </div>
-
                      {/*<div>
                     <p className="col-lg-offset-6 rcorners1">Browse Jobs <b> >></b></p>
                     </div>*/}
-
                     </div>
 
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -65,11 +59,8 @@ class Headingcomponent extends Component{
                           <img src="/images/career_1.png" alt="" className="career_intro_img" />
                       </div>
                     </div>
-
-                   
-
-            </div> 
-   </div> 
+          </div> 
+  </div> 
     );
   }
 }

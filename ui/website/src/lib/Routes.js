@@ -53,7 +53,9 @@ import Datamanagepage                 from '../allPages/Datamanagepage/Datamanag
 
 import Healthsaftypage        from '../allPages/Healthsaftypage/Healthsaftypage.js';
 import Servicearmspage        from '../allPages/Servicearmspage/Servicearmspage.js';
-import RefineryPage        from '../allPages/RefineryPage/RefineryPage.js';
+import RefineryPage           from '../allPages/RefineryPage/RefineryPage.js';
+import SimulationPage         from '../allPages/SimulationPage/SimulationPage.js';
+
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
 // import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
@@ -102,7 +104,7 @@ const WebLayout = () => (
    
     <Route path="/servicearms" component={ Servicearmspage } />
     <Route path="/oilrefinery" component={ RefineryPage } />
-
+    <Route path="/simulation" component={ SimulationPage } />
 
     <Route path="/trial" component={ Parallaxeff } />        
   </div>

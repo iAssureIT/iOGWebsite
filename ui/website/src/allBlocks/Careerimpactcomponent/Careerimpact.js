@@ -125,7 +125,7 @@ CareersData(){
 
   render(){
     return(
-     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+     <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		 <div className="row">
       <div>
         <div className="lineee2 col-lg-12 col-lg-offset-6"></div>
