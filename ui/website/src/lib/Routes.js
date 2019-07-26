@@ -105,7 +105,6 @@ const WebLayout = () => (
     <Route path="/datamanagement" component={ Datamanagepage } />
 
    
-    <Route path="/servicearms" component={ Servicearmspage } />
     <Route path="/oilrefinery" component={ RefineryPage } />
     <Route path="/simulation" component={ SimulationPage } />
     <Route path="/energy" component={ Energypage } />

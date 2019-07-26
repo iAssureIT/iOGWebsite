@@ -13,7 +13,7 @@ export default class Manufacturingsyspage extends Component {
                 servicesTitle : "Manufacturing Execution System",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Manufacturing-Execution-Systems.png",
-                servicestext  : "iOG understands the diversity and complexity of refinery supply chain operations. We help maximize profitability through the following services at various levels through a ‘best practice’ and ‘best fit’ approach using our enriched knowledge and experience in leading software solutions.",
+                servicestext  : "Manufacturing Execution Systems (MES) are vital tools in the smooth and efficient execution of the manufacturing process. Manufacturing Execution Systems are applications that bridge the gap between the control system (DCS) and the ERP layers and can consist of numerous modules including HSE, PCMS, and SCM. In such a situation, the MES is used in a bigger context and is synonymous to Refinery Information Systems (RIS) or Integrated RIS (IRIS).",
                     
                 
             } 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import $                  from 'jquery';
 import './Ourjournyblock.css';
+import Journycaro                     from '../Journycaro/Journycaro.js';
 
 export default class Ourjournyblock extends Component {
 
@@ -67,17 +68,248 @@ export default class Ourjournyblock extends Component {
             $(".add9").addClass("addanim");
         } else {
             $(".add9").removeClass("addanim");
+        }        
+    });
+
+     $(window).scroll(function() 
+    {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 50) {
+            $(".Journycaro1").addClass("journyanim");
+        } else {
+            $(".Journycaro1").removeClass("journyanim");
+        }
+        if (scroll >= 150) {
+            $(".Journycaro2").addClass("journyanim");
+        } else {
+            $(".Journycaro2").removeClass("journyanim");
+        }
+        if (scroll >= 200) {
+            $(".Journycaro3").addClass("journyanim");
+        } else {
+            $(".Journycaro3").removeClass("journyanim");
+        }
+        if (scroll >= 250) {
+            $(".Journycaro4").addClass("journyanim");
+        } else {
+            $(".Journycaro4").removeClass("journyanim");
+        }
+        if (scroll >= 330) {
+            $(".Journycaro5").addClass("journyanim");
+        } else {
+            $(".Journycaro5").removeClass("journyanim");
+        }
+        if (scroll >= 430) {
+            $(".Journycaro6").addClass("journyanim");
+        } else {
+            $(".Journycaro6").removeClass("journyanim");
+        }
+        if (scroll >= 630) {
+            $(".Journycaro7").addClass("journyanim");
+        } else {
+            $(".Journycaro7").removeClass("journyanim");
+        }
+        if (scroll >= 750) {
+            $(".Journycaro8").addClass("journyanim");
+        } else {
+            $(".Journycaro8").removeClass("journyanim");
+        }
+        if (scroll >= 900) {
+            $(".Journycaro9").addClass("journyanim");
+        } else {
+            $(".Journycaro9").removeClass("journyanim");
         }
         
     });
     
 }
+journyData(){
+    return [
+        {
+            journyTitle : "Apr 2013",
+            journytext  : "iOGSolutions registered itself on 17th April 2013 and starts operations with an office in Pune."   
+        },
+        {
+            journyTitle : "Feb 2014",
+            journytext  : "iOGSolutions signs support and training services with seven refineries of IOCL."   
+        }, 
+        {
+            journyTitle : "Jan 2015",
+            journytext  : "iOGSolutions establish local UAE organization “iOG IT Solution LLC” in Abu Dhabi. The office is located in the heart of the city on Hamdan Street."   
+        }
+    ]
+}
 
+journyData1(){
+    return [
+        {
+            journyTitle : "May 2013",
+            journytext  : "iOGSolutions presents a case study of the implementation of Assay Management solutions for a downstream refining organization in India at a seminar in Singapore."   
+        },
+        {
+            journyTitle : "Mar 2014",
+            journytext  : "iOGSolutions successful complete FEED consulting services for multi-site refinery organization in the Middle East."   
+        }, 
+        {
+            journyTitle : "Mar 2015",
+            journytext  : "iOGSolutions signs 3 years’ service contract with major E&P player in India for consulting and support services."   
+        } 
+        
+    ]
+}
+
+journyData2(){
+    return [
+        {
+            journyTitle : "June 2013",
+            journytext  : "iOGSolutions bags contract to provide FEED consulting services for multi-site refinery organization in the Middle East."   
+        },
+        {
+            journyTitle : "July 2014",
+            journytext  : "iOGSolutions successful complete FAT for LP implementation at five refineries."   
+        }, 
+        {
+            journyTitle : "June 2015",
+            journytext  : "iOG Solutions partners with leading IT firm and provide consulting services for a complete review of IT spending of an O&G Global Major."   
+        } 
+        
+    ]
+}
+journyData3(){
+    return [
+        {
+            journyTitle : "July 2013",
+            journytext  : "iOG Solutions signed a contract in India to provide support services for seven refineries in the area of Planning & Scheduling."   
+        },
+        {
+            journyTitle : "Oct 2014",
+            journytext  : "iOGSolutions successful complete SAT and training programs including back-casting / LP model update in Spain."   
+        }, 
+        {
+            journyTitle : "Aug 2015",
+            journytext  : "Beginning of our Upstream Oil & Gas practice."   
+        } 
+        
+    ]
+}
+journyData4(){
+    return [
+        {
+            journyTitle : "Aug 2013",
+            journytext  : "iOG Solutions provides support for the implementation of a corporate dashboard system for an O&G client in India. The project is being executed from Singapore."   
+        },
+        {
+            journyTitle : "",
+            journytext  : ""   
+        }, 
+        {
+            journyTitle : "Sep 2015",
+            journytext  : "iOG Solutions launch its new website on 9th Sep 2015."   
+        } 
+        
+    ]
+}
+journyData5(){
+    return [
+        {
+            journyTitle : "Sept 2013",
+            journytext  : "iOG Solutions signs up for 1200 sq. ft office in Pune at Amanora Chambers."   
+        },
+        {
+            journyTitle : "",
+            journytext  : ""   
+        }, 
+        {
+            journyTitle : "",
+            journytext  : ""   
+        } 
+        
+    ]
+}
+journyData6(){
+    return [
+        {
+            journyTitle : "Oct 2013",
+            journytext  : "iOG Solutions establishes a base in Abu Dhabi near Mushriff Mall."   
+        },
+        {
+            journyTitle : "",
+            journytext  : ""   
+        }, 
+        {
+            journyTitle : "",
+            journytext  : ""   
+        } 
+        
+    ]
+}
+journyData7(){
+    return [
+        {
+            journyTitle : "Nov 2013",
+            journytext  : "iOG solutions moves to new office 330 at Amanora Chambers on the auspicious day of Dhanteras on 1st Nov 2013."   
+        },
+        {
+            journyTitle : "",
+            journytext  : ""   
+        }, 
+        {
+            journyTitle : "",
+            journytext  : ""   
+        } 
+        
+    ]
+}
+journyData8(){
+    return [
+        {
+            journyTitle : "Dec 2013",
+            journytext  : "iOGSolutions bags SCM transformation project through IT Major for implementing LP tool at five refineries in Spain."   
+        },
+        {
+            journyTitle : "",
+            journytext  : ""   
+        }, 
+        {
+            journyTitle : "",
+            journytext  : ""   
+        } 
+        
+    ]
+}
 
 
   render() {  
     return (
       <div>
+                  <div className="Journycaro1">
+                    <Journycaro journyData={this.journyData()}/>
+                  </div>
+                  <div className="Journycaro2">
+                    <Journycaro journyData={this.journyData1()}/>
+                  </div>
+                  <div className="Journycaro3">
+                    <Journycaro journyData={this.journyData2()}/>
+                  </div>
+                  <div className="Journycaro4">
+                    <Journycaro journyData={this.journyData3()}/>
+                  </div>
+                  <div className="Journycaro5">
+                    <Journycaro journyData={this.journyData4()}/>
+                  </div>
+                  <div className="Journycaro6">
+                    <Journycaro journyData={this.journyData5()}/>
+                  </div>
+                  <div className="Journycaro7">
+                    <Journycaro journyData={this.journyData6()}/>
+                  </div>
+                  <div className="Journycaro8">
+                    <Journycaro journyData={this.journyData7()}/>
+                  </div>
+                  <div className="Journycaro9">
+                    <Journycaro journyData={this.journyData8()}/>
+                  </div>
               <div className="roadjourny">
                   <img alt="" src="/images/roadjourny.png" />
               </div>
