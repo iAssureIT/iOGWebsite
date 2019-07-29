@@ -24,7 +24,7 @@ StrategyData(){
         return [
             {
                
-                   strategyimg      : "/images/EnergyManagement.png",
+                   strategyimg      : "/images/Energy Management.png",
                 // strategytext     : "Improving energy efficiency in a refinery is very critical, as Oil refining is an energy-intensive activity. Factors such as more stringent oil product standards (e.g. ultra-low-sulfur diesel),increasing demand for lighter products, and heavier crude oil slates all demand increased processing, which in turn places upward pressure on the overall energy intensity for refining."
             } 
                         
