@@ -34,6 +34,25 @@ ControlLoopData(){
         ]
     }
 
+    ControlLoopData2(){
+        return [
+            {
+                 controlloopimg             : "/images/apc1.png",
+            },       
+        ]
+    }
+
+    ControlLoopData3(){
+        return [
+            {
+                 controlloopimg1             : "/images/apc2.png",
+            },       
+        ]
+    }
+
+
+
+
     
 
 
@@ -115,14 +134,64 @@ ControlLoopData(){
                                    }
 
 
+                           {
+                            this.ControlLoopData2().map((data, index)=>{
+                           return ( 
+                            <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div className="col-lg-12">
+                                                  <div className="col-lg-12">
+                                                    <div className="cl_img">
+                                                       <img className="control_loop_img" src={data.controlloopimg} alt="" />
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                             </div>
+                                           </div>
+                                          </div>
+                                        </div>         
+                                      </div>
+                                         );
+                                      })
+                                   }
+
+
+
                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div className="controlloop_list">Typical results of Loop Optimization include :</div>
                                  <li className="controlloop_sublist">Instrument Evaluation and Valve Analysis</li>
                                  <li className="controlloop_sublist">Process and instrument non-linearity</li>
                                  <li className="controlloop_sublist">Reduction in process variability by 50%</li>
                                  <li className="controlloop_sublist">Improvement in controller response time by 2X</li>
-                                 <li className="controlloop_sublist">Reduction in non-linearity to within a robust control range.</li>
+                                 <li className="controlloop_sublist apc_mb26">Reduction in non-linearity to within a robust control range.</li>
                                </div> 
+
+                               {
+                            this.ControlLoopData3().map((data, index)=>{
+                           return ( 
+                            <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div className="col-lg-12">
+                                                  <div className="col-lg-12">
+                                                    <div className="cl_img1">
+                                                       <img className="control_loop_img1" src={data.controlloopimg1} alt="" />
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                             </div>
+                                           </div>
+                                          </div>
+                                        </div>         
+                                      </div>
+                                         );
+                                      })
+                                   }
 
                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div className="controlloop_list">These results have a direct impact on the plant’s bottom-line result areas, such as:</div>
@@ -136,7 +205,7 @@ ControlLoopData(){
                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div className="controlloop_list"><b>iOG Solutions offers its services on two technologies as a part of APC services:</b></div>
                                  <div className="controlloop_sublist"> - <b> Advanced Process Control </b></div>
-                                 <div className="controlloop_sublist"> - <b>Base Control Loop Tuning </b></div>
+                                 <div className="controlloop_sublist "> - <b>Base Control Loop Tuning </b></div>
                                </div>
  
                           </div>

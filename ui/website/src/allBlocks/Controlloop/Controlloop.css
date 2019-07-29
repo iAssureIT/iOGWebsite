@@ -53,6 +53,40 @@
  .texxt-yellow{
 color: #f19000;
  }
- .opt_mb100{
-    margin-bottom: 100px;
+ 
+
+ .control_loop_img{
+    width: 59%;
+    margin-top: 59px;
  }
+
+ .cl_img{
+    width: 595px;
+    height: 299px;
+    margin-left: 243px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-bottom: 32px;
+ }
+
+ .control_loop_img1{
+    width: 59%;
+    margin-top: 26px;
+ }
+
+ .cl_img1{
+    width: 745px;
+    height: 299px;
+    margin-left: 171px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-bottom: 32px;
+}
+ 
+.apc_mb26{
+    margin-bottom: 26px;
+}
+
+.apc1_mb26{
+    margin-bottom: 26px;
+}

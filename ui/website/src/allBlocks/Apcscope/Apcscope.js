@@ -119,7 +119,7 @@ ApcscopeData(){
                                </div>
 
                                <div>
-                               <p className="apcscope_line_paraaaa4">Our experienced consultants have a strong domain knowledge and can provide support, consultation
+                               <p className="apcscope_line_paraaaa4 apc_mb100">Our experienced consultants have a strong domain knowledge and can provide support, consultation
                                   and implementation services using the following advanced solutions in the area of control loop
                                   monitoring such as Expertune Plant Triage, Aspen Watch and the Matrikon Process Doctor
                                </p>
