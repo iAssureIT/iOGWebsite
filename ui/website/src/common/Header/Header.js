@@ -114,7 +114,7 @@ componentWillMount() {$(window).scroll(function() {
                                     </li>
                                     <li className="zindex"><a href="/simulation">Simulation & Modelling</a></li>
                                     <li className="zindex"><a href="/energy">Energy Management</a></li>
-                                    <li className="zindex"><a href="/">APC Services</a></li>
+                                    <li className="zindex"><a href="/apc-services">APC Services</a></li>
                                     <li className="zindex"><a href="/">ETRM and Pricing Tool Application</a></li>
                                    </ul>
                                 </li>

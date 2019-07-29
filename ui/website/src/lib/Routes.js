@@ -57,6 +57,7 @@ import Servicearmspage                from '../allPages/Servicearmspage/Servicea
 import RefineryPage                   from '../allPages/RefineryPage/RefineryPage.js';
 import SimulationPage                 from '../allPages/SimulationPage/SimulationPage.js';
 import Energypage                     from '../allPages/Energypage/Energy.js';
+import ApcServices                    from '../allPages/ApcServices/ApcServices.js';
 
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
@@ -108,6 +109,7 @@ const WebLayout = () => (
     <Route path="/oilrefinery" component={ RefineryPage } />
     <Route path="/simulation" component={ SimulationPage } />
     <Route path="/energy" component={ Energypage } />
+    <Route path="/apc-services" component={ ApcServices } />
 
     <Route path="/trial" component={ Parallaxeff } />        
   </div>
