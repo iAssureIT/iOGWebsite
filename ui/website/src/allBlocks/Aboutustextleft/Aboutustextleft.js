@@ -14,7 +14,7 @@ export default class Aboutustextleft extends Component {
             {
                 servicesTitle : "Company Profile",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/2.png",
+                servicesimg   : "/images/companyp.png",
                 servicestext  : "iOG Solutions is an independent and reputed provider of consulting and implementation services on advanced and intelligent Software solutionsin the Oil & Gas industry. Our headquarters have been established since 2013 in Pune (India)."
                     
                 
@@ -45,7 +45,7 @@ export default class Aboutustextleft extends Component {
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                                          <div className="col-lg-8 col-lg-offset-2 ">
+                                          <div className="col-lg-12">
                                             <div className="img1">
                                               <img src={data.servicesimg} alt="" className="intro_img" />
                                           </div>

@@ -12,7 +12,7 @@ export default class Aboutusimgright extends Component {
         return(
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div className="row">
-              <div className="bckgrnd_curve_img  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="btm_txt">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -30,7 +30,9 @@ export default class Aboutusimgright extends Component {
                       </div>
                   </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <img src="/images/4.png" alt="" className="truck" />
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <img src="/images/imgrightabout.png" alt="" className="truck" />
+                  </div>
                 </div>
               </div>
             </div>

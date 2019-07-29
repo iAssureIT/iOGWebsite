@@ -19,11 +19,19 @@ export default class AboutUs extends Component {
  render(){
        return(
               <div className="">
-              	<Aboutustextleft />
-              	<Aboutustextright />
-              	<Aboutustextcenter />
-              	<Aboutusimgright />
-              	<Aboutusvision />
+                <div className="industrybg1 col-lg-12">
+                   <div className="row">
+                     <Aboutustextleft />
+                     <Aboutustextright />
+                   </div>
+                </div>
+                    <Aboutustextcenter />
+                <div className="industrybg2 col-lg-12">
+                  <div className="row">
+                    <Aboutusimgright />
+                    <Aboutusvision />
+                  </div>
+                </div>
               </div>       
 
         );

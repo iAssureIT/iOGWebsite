@@ -52,7 +52,7 @@ componentWillMount() {$(window).scroll(function() {
                                 <input type="checkbox" id="drop-1"/>
                                 <ul>
                                   <li><a href="/about-us">Company Profile</a></li>
-                                  <li><a href="/about-us">Founder's Profile</a></li>
+                                  <li><a href="/founderprofile">Founder's Profile</a></li>
                                   <li><a href="/ourjourny">Our Journey</a></li>
                                 </ul>
                               </li>

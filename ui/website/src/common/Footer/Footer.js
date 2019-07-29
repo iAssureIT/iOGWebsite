@@ -13,6 +13,7 @@ export default class Footer extends Component {
   render(){
        return(
       <div className="iogfooter">
+        <div className="animationoveflow">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
@@ -51,6 +52,7 @@ export default class Footer extends Component {
             <div className="footeranimation">
                 <img className="img-responsive footimg7" alt="" src="/images/foot7.png" />
             </div>      
+        </div>      
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">

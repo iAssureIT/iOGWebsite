@@ -1,8 +1,12 @@
-/*.iogfooter{
-  position: relative;
-  top: 100px;
+.iogfooter{
 }
-*/
+
+.animationoveflow{
+  overflow: hidden;
+  width: 100%;
+  top: 900px;
+}
+
 
 .footer-two{
  font-size: 16px;

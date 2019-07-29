@@ -70,6 +70,16 @@ export default class Ourjournyblock extends Component {
             $(".add9").removeClass("addanim");
         }        
     });
+ $(window).scroll(function() 
+    {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 50) {
+            $(".scrollwrap").addClass("scrollanim");
+        } else {
+            $(".scrollwrap").removeClass("scrollanim");
+        }        
+    });
 
      $(window).scroll(function() 
     {    
@@ -283,6 +293,12 @@ journyData8(){
   render() {  
     return (
       <div>
+                  <div className="scrollwrap">
+                    <div className="chevron"></div>
+                    <div className="chevron"></div>
+                    <div className="chevron"></div>
+                    <span className="text">Scroll down</span>
+                  </div>
                   <div className="Journycaro1">
                     <Journycaro journyData={this.journyData()}/>
                   </div>
@@ -310,9 +326,11 @@ journyData8(){
                   <div className="Journycaro9">
                     <Journycaro journyData={this.journyData8()}/>
                   </div>
-              <div className="roadjourny">
-                  <img alt="" src="/images/roadjourny.png" />
-              </div>
+                  <div className="overflowjourny">
+                    <div className="roadjourny">
+                        <img alt="" src="/images/roadjourny.png" />
+                    </div>
+                  </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 NOpadding">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock lightbluebg">

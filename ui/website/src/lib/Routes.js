@@ -20,6 +20,7 @@ import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
 import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
 import Ourjourny      from '../allPages/Ourjourny/Ourjourny.js';
+import Founderprofile from '../allPages/Founderprofile/Founderprofile.js';
 
 //-----------Level1 Rout.................//
 
@@ -104,6 +105,7 @@ const WebLayout = () => (
     <Route path="/welldrilling" component={ Welldrillingpage } />
     <Route path="/productionmanagement" component={ Productionmanagepage } />
     <Route path="/datamanagement" component={ Datamanagepage } />
+    <Route path="/founderprofile" component={ Founderprofile } />
 
    
     <Route path="/oilrefinery" component={ RefineryPage } />

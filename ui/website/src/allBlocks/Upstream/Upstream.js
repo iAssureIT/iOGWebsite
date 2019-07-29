@@ -44,34 +44,34 @@ export default class Upstream extends Component {
     cards[card].classList.add("card--center");
     if(card == 0)
     {
-      cards[3].classList.add("card--left");
-      cards[4].classList.add("card--left-left");
+      cards[4].classList.add("card--left");
+      cards[3].classList.add("card--left-left");
       cards[1].classList.add("card--right");
       cards[2].classList.add("card--right-right");
     }
     if(card == 1)
     {
-      cards[4].classList.add("card--left");
-      cards[0].classList.add("card--left-left");
+      cards[0].classList.add("card--left");
+      cards[4].classList.add("card--left-left");
       cards[2].classList.add("card--right");
       cards[3].classList.add("card--right-right");    }
     if(card == 2)
     {
-      cards[0].classList.add("card--left");
-      cards[1].classList.add("card--left-left");
+      cards[1].classList.add("card--left");
+      cards[0].classList.add("card--left-left");
       cards[3].classList.add("card--right");
       cards[4].classList.add("card--right-right");    }
     if(card == 3)
     {
-      cards[1].classList.add("card--left");
-      cards[2].classList.add("card--left-left");
+      cards[2].classList.add("card--left");
+      cards[1].classList.add("card--left-left");
       cards[4].classList.add("card--right");
       cards[0].classList.add("card--right-right");
     }
     if(card == 4)
     {
-      cards[2].classList.add("card--left");
-      cards[3].classList.add("card--left-left");
+      cards[3].classList.add("card--left");
+      cards[2].classList.add("card--left-left");
       cards[0].classList.add("card--right");
       cards[1].classList.add("card--right-right");
     }
