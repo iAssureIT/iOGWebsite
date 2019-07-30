@@ -205,7 +205,7 @@ ControlLoopData(){
                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div className="controlloop_list"><b>iOG Solutions offers its services on two technologies as a part of APC services:</b></div>
                                  <div className="controlloop_sublist"> - <b> Advanced Process Control </b></div>
-                                 <div className="controlloop_sublist "> - <b>Base Control Loop Tuning </b></div>
+                                 <div className="controlloop_sublist"> - <b>Base Control Loop Tuning </b></div>
                                </div>
  
                           </div>
