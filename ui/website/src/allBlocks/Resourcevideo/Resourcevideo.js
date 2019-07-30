@@ -2,13 +2,37 @@ import React, { Component } from 'react';
 // import { render } from 'react-dom';
 // import   Loadable                  from 'react-loadable';
 // import axios from 'axios';
+import $ from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 import './Resourcevideo.css';
 
+import ReactPlayer from 'react-player'
+
 export default class Resourcevideo extends Component {
 
+  /*componentDidMount() {
+    
+    var modal = document.getElementById('vedioModal');
+    var span = document.getElementsByClassName("vediomodalclose")[0];
+
+   span.onclick = function() {
+      modal.style.display = "none"; 
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+       modal.style.display = "none";
+     }
+   }
+     
+  }
+
+   OpenvedioModal(event){
+     $('#vedioModal').show();
+   }
+*/
   VideoData(){
         return [
             {
@@ -22,23 +46,13 @@ export default class Resourcevideo extends Component {
                 downstreamTitle : "Manufacturing Execution Systems",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }, 
-            {
-                downstreamTitle : "APC Services",
-                downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }, 
-            {
-                downstreamTitle : "Simulation & Modelling",
-                downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
         ]
     }
 
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
                     <h2 className="lightbluetext text-center para1-top">Videos</h2>
@@ -49,29 +63,27 @@ export default class Resourcevideo extends Component {
                          We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
                       </p>          
                 </div>
-                <div  className="col-lg-12">
-                    {
+
+                 <div  className="col-lg-8 col-lg-offset-2">
+                     {
                       this.VideoData().map((data, index)=>{
                       return (
-                        <div key={index} className="col-lg-3  col-md-3 col-sm-3 col-xs-3 mt100">
-                          <div className="flip-card">
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                  <img src={data.downstreamimg} alt=""/>
-                                  <h4>{data.downstreamTitle}</h4> 
-                                </div>
-                                <div className="flip-card-back">
-                                  <img className="mt70" src={data.downstreamimg} alt=""/>
-                                </div>
+                        <div key={index} className="col-lg-6  col-md-6 col-sm-6 col-xs-6 mt100">
+                        <div className="videocard1">
+                            <div className="introvideo">      
+                               <ReactPlayer url='https://www.youtube.com/watch?v=SsgIaPJ0Cl0'width='324px' height='211px' controls loop  />
+                            </div>          
+                          <div className="go-corner" href="#">
+                            <div className="go-arrow">
                             </div>
-                            </div>
+                          </div>
+                        </div>
                         </div>
                          );
                       })
                     }   
                  </div>
             </div>
-
         );
     }
 }
