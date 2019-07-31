@@ -49,7 +49,7 @@ EtrmData3(){
 EtrmImgData(){
         return [
             {
-                 etrmimg1             : "/images/apc2.png",
+                 etrmimg1             : "/images/etrm.png",
             },       
         ]
     }
