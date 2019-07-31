@@ -20,13 +20,13 @@ export default class Commonservicesblock extends Component {
   var productlength = plength % 3;
   console.log('productlength', productlength);
 
-       return(
+    return(
         <div className="col-lg-12 contentWraper mt100">
             <div className="row">
-                <div className="Bubble" >
+                    <div className="Bubble" >
                             <div className="Main_Cards__Bubble bub1"></div>
                             <div className="Main_Cards__Bubble bub2"></div>
-                        </div>
+                    </div>
                     <div className="col-lg-12 lightbluetext contentheader text-center">
                     <hr/>
                         <h1 className="">Services</h1>

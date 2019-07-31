@@ -12,27 +12,7 @@ import ReactPlayer from 'react-player'
 
 export default class Resourcevideo extends Component {
 
-  /*componentDidMount() {
-    
-    var modal = document.getElementById('vedioModal');
-    var span = document.getElementsByClassName("vediomodalclose")[0];
-
-   span.onclick = function() {
-      modal.style.display = "none"; 
-    }
-
-    window.onclick = function(event) {
-      if (event.target == modal) {
-       modal.style.display = "none";
-     }
-   }
-     
-  }
-
-   OpenvedioModal(event){
-     $('#vedioModal').show();
-   }
-*/
+  
   VideoData(){
         return [
             {
@@ -56,12 +36,12 @@ export default class Resourcevideo extends Component {
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
                     <h2 className="lightbluetext text-center para1-top">Videos</h2>
-                    <br></br>
-                    <p className="line_para2  text-center">
-                        iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
-                        lege to join hands and work with you to explore every possibility of enhancing your company’s profitability.<br></br>
-                         We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
-                      </p>          
+                      <br></br>
+                      <p className="line_para2  text-center">
+                          iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
+                          lege to join hands and work with you to explore every possibility of enhancing your company’s profitability.<br></br>
+                           We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
+                        </p>          
                 </div>
 
                  <div  className="col-lg-8 col-lg-offset-2">

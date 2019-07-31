@@ -41,6 +41,11 @@
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
+  color: #000;
+}
+.videocard h3{
+
+height: 100px;  
 }
 
 .videocard:before {

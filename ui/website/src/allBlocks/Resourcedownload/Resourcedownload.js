@@ -12,24 +12,24 @@ export default class Resourcedownload extends Component {
   VideoData(){
         return [
             {
-                downstreamTitle : "Supply Chain Management",
+                downstreamTitle : "iOG Corporate Brochure",
                 downstreamimg   : "/images/Illustration_2.png",
                 downstreamlink  : "/images/iOG Corporate Brochure.docx",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus."
                     
                 
             }, 
             {
-                downstreamTitle : "Manufacturing Execution Systems",
+                downstreamTitle : "iOG Downstream Services_rev 1_Brochure",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamlink  : "/images/iOG Downstream Services_rev 1_brochure_190615.docx",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus."
             }, 
             {
-                downstreamTitle : "APC Services",
+                downstreamTitle : "iOG Upstream Services_rev 5.4_Brochure",
                 downstreamimg   : "/images/Illustration_4.png",
                 downstreamlink  : "/images/iOG Upstream Services_rev 5.4_brochure.docx",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus."
             }
         ]
     }
@@ -54,7 +54,6 @@ export default class Resourcedownload extends Component {
                         <div key={index} className="col-lg-4  col-md-4 col-sm-4 col-xs-4 mt100">
                         <a className="videocard" href={data.downstreamlink} title="Click to Download" download>
                           <h3>{data.downstreamTitle}</h3>
-                          <p className="small">Card description with lots of great facts and interesting details.</p>
                           <div className="go-corner" href={data.downstreamlink}>
                             <div className="go-arrow">
                               →
