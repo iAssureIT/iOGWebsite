@@ -5,6 +5,7 @@ import './Arimanagementpage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
 import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Arimanagementpage extends Component {
   ServicesData(){
@@ -13,14 +14,62 @@ export default class Arimanagementpage extends Component {
                 servicesTitle : "Asset Reliability & Integraity Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
-                servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
-                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle. Looking for hydrocarbons beneath the surface involves geological, geophysical, and petrophysical analysis of subsurface terrain for probable deposits of oil and natural gas. Upon identification of potential locations of oil and gas reserves, the next step is drilling of appraisal wells to ascertain the quantity and quality of underground reserves. The data obtained from appraisal wells is then combined with G&G data to determine the number and location of wells for meeting and optimizing production requirements. After primary (natural pressure and flow) and secondary (water flooding) recovery methods well operators employ tertiary or Enhanced Oil Recovery (EOR) techniques to boost the performance of depleting wells and maximize production."
+                servicestext  : "Asset Reliability and Integrity Management (RIM) focus on ensuring that process machineries and equipment are properly designed, installed in accordance with specifications, and remains fit for use until it is retired. RIM ensures that the systematic workflows are in place, such as inspections and tests, to ensure that critical process equipment are performing under its best operating state. At an operating process plant, the asset-integrity is an integral part of daily operations with participation of operators, maintenance personnel, sub-contractors, engineers, and others involved in designing, installing, operating, or maintaining the process equipment.",
+                servicestext2 : "iOG Solutions work closely with clients to ensure that equipment are proper designed and Inspection, Test, and Preventive Maintenance (ITPM) practices are in place. This translate to cost savings by making sure that equipment is fit for service at commissioning and remains fit for service throughout its lifecycle.",
+                servicestext3 : "iOG Solutions with its excellent knowledge in asset integrity field, establish corporate standards, and promote efforts to continuously improve the safety and reliability of process equipment."
                     
                 
             } 
                         
         ]
     }
+
+    Commonleafulblock(){
+        return [
+            {
+                challengesTitle : "Our RIM services range from leading system & application selection through full implementation, integration, support and trainings including:",
+                challengestext  : "",
+                challengestext2 : "",
+                commonulliUl : [
+                    {
+                        ulData : "Asset Criticality Analysis"
+                    },
+                    {
+                        ulData : "Asset Criticality Analysis"
+                    },
+                    {
+                        ulData : "Risk Based Inspection"
+                    },
+                    {
+                        ulData : "Root Cause Analysis"
+                    },
+                    {
+                        ulData : "Failure Mode Effect Analysis"
+                    },
+                    {
+                        ulData : "Reliability Centred Maintenance"
+                    },
+                    {
+                        ulData : "Asset Strategy Management"
+                    },
+                    {
+                        ulData : "Inspection Management"
+                    },
+                    {
+                        ulData : "Calibration Management"
+                    },
+                    {
+                        ulData : "Reliability Availability & Maintainability (RAM) Modeling"
+                    },
+                    {
+                        ulData : "Spares Inventory Management and Optimisation (SIMO)"
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
   
 
   DownstreamData(){
@@ -87,6 +136,7 @@ export default class Arimanagementpage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
+              <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
               <Commonservicesblock servicedata={this.DownstreamData()}/>
           </div>
       </div>

@@ -51,11 +51,55 @@ import Riserviormanagepage            from '../allPages/Riserviormanagepage/Rise
 import Welldrillingpage               from '../allPages/Welldrillingpage/Welldrillingpage.js';
 import Productionmanagepage           from '../allPages/Productionmanagepage/Productionmanagepage.js';
 import Datamanagepage                 from '../allPages/Datamanagepage/Datamanagepage.js';
+import Oilmovementpage                from '../allPages/Oilmovementpage/Oilmovementpage.js';
 
 
 import Healthsaftypage                from '../allPages/Healthsaftypage/Healthsaftypage.js';
 import Servicearmspage                from '../allPages/Servicearmspage/Servicearmspage.js';
 import RefineryPage                   from '../allPages/RefineryPage/RefineryPage.js';
+import Refineryschedulinpage          from '../allPages/Refineryschedulinpage/Refineryschedulinpage.js';
+import Backcastingpage                from '../allPages/Backcastingpage/Backcastingpage.js';
+import Lputilitypage                  from '../allPages/Lputilitypage/Lputilitypage.js';
+import Lpconfigpage                   from '../allPages/Lpconfigpage/Lpconfigpage.js';
+import DemandmngPage                  from '../allPages/DemandmngPage/DemandmngPage.js';
+import Inventorymngpage               from '../allPages/Inventorymngpage/Inventorymngpage.js';
+import Distributeplanningpage         from '../allPages/Distributeplanningpage/Distributeplanningpage.js';
+import Retailautopage                 from '../allPages/Retailautopage/Retailautopage.js';
+import Productionaccpage              from '../allPages/Productionaccpage/Productionaccpage.js';
+import Datahistorpage                 from '../allPages/Datahistorpage/Datahistorpage.js';
+import Cropdashboardpage              from '../allPages/Cropdashboardpage/Cropdashboardpage.js';
+import Operationlogpage               from '../allPages/Operationlogpage/Operationlogpage.js';
+import Iogimplementpage               from '../allPages/Iogimplementpage/Iogimplementpage.js';
+import Iogconsultpage                 from '../allPages/Iogconsultpage/Iogconsultpage.js';
+import Iogtrainpage                   from '../allPages/Iogtrainpage/Iogtrainpage.js';
+import Iogstudypage                   from '../allPages/Iogstudypage/Iogstudypage.js';
+import Digitalstratergyroadmappage    from '../allPages/Digitalstratergyroadmappage/Digitalstratergyroadmappage.js';
+import Applicationdevppage            from '../allPages/Applicationdevppage/Applicationdevppage.js';
+import Enablingtechnologypage         from '../allPages/Enablingtechnologypage/Enablingtechnologypage.js';
+import Visualizationdashpage          from '../allPages/Visualizationdashpage/Visualizationdashpage.js';
+import Digitalassetpage               from '../allPages/Digitalassetpage/Digitalassetpage.js';
+import Enterpriseassetpage            from '../allPages/Enterpriseassetpage/Enterpriseassetpage.js';
+import Processsaftypage               from '../allPages/Processsaftypage/Processsaftypage.js';
+import Occupationhealthpage           from '../allPages/Occupationhealthpage/Occupationhealthpage.js';
+import Environmentsustainpage         from '../allPages/Environmentsustainpage/Environmentsustainpage.js';
+import Hseevalutionpage               from '../allPages/Hseevalutionpage/Hseevalutionpage.js';
+import Hsebusnesspage                 from '../allPages/Hsebusnesspage/Hsebusnesspage.js';
+import Hsesolutionimplementpage       from '../allPages/Hsesolutionimplementpage/Hsesolutionimplementpage.js';
+import Changemanagepage               from '../allPages/Changemanagepage/Changemanagepage.js';
+import Geointerpritpage               from '../allPages/Geointerpritpage/Geointerpritpage.js';
+import GeologicalinterpritPage        from '../allPages/GeologicalinterpritPage/GeologicalinterpritPage.js';
+import Petrointerpritepage            from '../allPages/Petrointerpritepage/Petrointerpritepage.js';
+import SubsurfacePage                 from '../allPages/SubsurfacePage/SubsurfacePage.js';
+import ReservoirengiPage              from '../allPages/ReservoirengiPage/ReservoirengiPage.js';
+import FielddevplanPage               from '../allPages/FielddevplanPage/FielddevplanPage.js';
+import DyanamicressimuPage            from '../allPages/DyanamicressimuPage/DyanamicressimuPage.js';
+import Reserviorcharpage              from '../allPages/Reserviorcharpage/Reserviorcharpage.js';
+import Wellplanningpage               from '../allPages/Wellplanningpage/Wellplanningpage.js';
+import Wellperformancepage            from '../allPages/Wellperformancepage/Wellperformancepage.js';
+import Wellmodlingpage                from '../allPages/Wellmodlingpage/Wellmodlingpage.js';
+import Wellloginterpage               from '../allPages/Wellloginterpage/Wellloginterpage.js';
+import Welldrillingservicepage        from '../allPages/Welldrillingservicepage/Welldrillingservicepage.js';
+
 import SimulationPage                 from '../allPages/SimulationPage/SimulationPage.js';
 import Energypage                     from '../allPages/Energypage/Energy.js';
 import ApcServices                    from '../allPages/ApcServices/ApcServices.js';
@@ -109,7 +153,51 @@ const WebLayout = () => (
     <Route path="/founderprofile" component={ Founderprofile } />
 
    
-    <Route path="/oilrefinery" component={ RefineryPage } />
+    <Route path="/refineryplanning" component={ RefineryPage } />
+    <Route path="/refineryschedule" component={ Refineryschedulinpage } />
+    <Route path="/backcasting" component={ Backcastingpage } />
+    <Route path="/lputility" component={ Lputilitypage } />
+    <Route path="/lpconfig" component={ Lpconfigpage } />
+    <Route path="/demandmanagement" component={ DemandmngPage } />
+    <Route path="/inventorymanagement" component={ Inventorymngpage } />
+    <Route path="/diatributionplanning" component={ Distributeplanningpage } />
+    <Route path="/retailautomation" component={ Retailautopage } />
+    <Route path="/productionaccounting" component={ Productionaccpage } />
+    <Route path="/datahistorian" component={ Datahistorpage } />
+    <Route path="/corporatedashboard" component={ Cropdashboardpage } />
+    <Route path="/operationlogbook" component={ Operationlogpage } />
+    <Route path="/oilmovement" component={ Oilmovementpage } />
+    <Route path="/iogimplement" component={ Iogimplementpage } />
+    <Route path="/iogconsult" component={ Iogconsultpage } />
+    <Route path="/iogtrain" component={ Iogtrainpage } />
+    <Route path="/iogstudy" component={ Iogstudypage } />
+    <Route path="/digitalstratergy" component={ Digitalstratergyroadmappage } />
+    <Route path="/applicationdevlopment" component={ Applicationdevppage } />
+    <Route path="/enablingtechnology" component={ Enablingtechnologypage } />
+    <Route path="/visualizationdashboard" component={ Visualizationdashpage } />
+    <Route path="/digitalasset" component={ Digitalassetpage } />
+    <Route path="/EAM" component={ Enterpriseassetpage } />
+    <Route path="/processsafty" component={ Processsaftypage } />
+    <Route path="/occupationhealth" component={ Occupationhealthpage } />
+    <Route path="/environmentsustain" component={ Environmentsustainpage } />
+    <Route path="/hsesystemevalution" component={ Hseevalutionpage } />
+    <Route path="/hsebusinessprocessingmapping" component={ Hsebusnesspage } />
+    <Route path="/hsesolutionsimplementation" component={ Hsesolutionimplementpage } />
+    <Route path="/changemanagement" component={ Changemanagepage } />
+    <Route path="/geophysicalinterpretation" component={ Geointerpritpage } />
+    <Route path="/geologicalinterpretation" component={ GeologicalinterpritPage } />
+    <Route path="/petrophysicalanalysis" component={ Petrointerpritepage } />
+    <Route path="/subsurfacemodeling" component={ SubsurfacePage } />
+    <Route path="/reservoirengineering" component={ ReservoirengiPage } />
+    <Route path="/fielddevelopmentplan" component={ FielddevplanPage } />
+    <Route path="/dynamicreservoirsimulation" component={ DyanamicressimuPage } />
+    <Route path="/reservoircharacterization" component={ Reserviorcharpage } />
+    <Route path="/wellplanningdrilling" component={ Wellplanningpage } />
+    <Route path="/wellperformanceanalysis" component={ Wellperformancepage } />
+    <Route path="/wellmodeling" component={ Wellmodlingpage } />
+    <Route path="/wellloginterpretation" component={ Wellloginterpage } />
+    <Route path="/welldrillingservices" component={ Welldrillingservicepage } />
+
     <Route path="/simulation" component={ SimulationPage } />
     <Route path="/energy" component={ Energypage } />
     <Route path="/apc-services" component={ ApcServices } />

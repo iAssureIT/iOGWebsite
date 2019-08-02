@@ -5,6 +5,7 @@ import './Welldrillingpage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
 import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Welldrillingpage extends Component {
   ServicesData(){
@@ -13,14 +14,50 @@ export default class Welldrillingpage extends Component {
                 servicesTitle : "Well & Drilling",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
-                servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
-                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle. Looking for hydrocarbons beneath the surface involves geological, geophysical, and petrophysical analysis of subsurface terrain for probable deposits of oil and natural gas. Upon identification of potential locations of oil and gas reserves, the next step is drilling of appraisal wells to ascertain the quantity and quality of underground reserves. The data obtained from appraisal wells is then combined with G&G data to determine the number and location of wells for meeting and optimizing production requirements. After primary (natural pressure and flow) and secondary (water flooding) recovery methods well operators employ tertiary or Enhanced Oil Recovery (EOR) techniques to boost the performance of depleting wells and maximize production."
+                servicestext  : "iOG Well & Drilling Services offer the  complete range of services addressing Well Lifecycle Management from Well Planning, Drilling, Testing and log interpretation, performance monitoring to abandonment. It covers all the well related services in each business area such as Planning, Exploration, Development, Production and Decommissioning of the well and have emerged and evolved through vast experience in Well Planning, Designing and Optimization of Drilling Activities and Well Performance Monitoring.",
+                servicestext2 : ""
                     
                 
             } 
                         
         ]
     }
+
+    Commonleafulblock(){
+        return [
+            {
+                challengesTitle : "Following are some of the reservoir management services we provide to our upstream clients",
+                challengestext  : "",
+                challengestext2 : "",
+                 commonulliUl : [
+                    {   
+                        ulData : "Well Planning & Engineering",   
+                    },
+                    {   
+                        ulData : "Well Drilling",   
+                    },
+                    {   
+                        ulData : "Well Modeling",   
+                    },
+                    {   
+                        ulData : "Well Performance Monitoring",   
+                    },
+                    {   
+                        ulData : "Well Integrity",   
+                    },
+                    {   
+                        ulData : "Well Log Interpretation",   
+                    },
+                    {   
+                        ulData : "Well Data Management",   
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
+
   
 
   DownstreamData(){
@@ -67,6 +104,7 @@ export default class Welldrillingpage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
+              <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
               <Commonservicesblock servicedata={this.DownstreamData()}/>
           </div>
       </div>

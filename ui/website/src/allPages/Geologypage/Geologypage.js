@@ -5,6 +5,8 @@ import './Geologypage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
 import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Imgleafblock                    from '../../allBlocks/Imgleafblock/Imgleafblock.js';
+import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Geologypage extends Component {
   ServicesData(){
@@ -13,8 +15,8 @@ export default class Geologypage extends Component {
                 servicesTitle : "Geology & Geophysics",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
-                servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
-                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle. Looking for hydrocarbons beneath the surface involves geological, geophysical, and petrophysical analysis of subsurface terrain for probable deposits of oil and natural gas. Upon identification of potential locations of oil and gas reserves, the next step is drilling of appraisal wells to ascertain the quantity and quality of underground reserves. The data obtained from appraisal wells is then combined with G&G data to determine the number and location of wells for meeting and optimizing production requirements. After primary (natural pressure and flow) and secondary (water flooding) recovery methods well operators employ tertiary or Enhanced Oil Recovery (EOR) techniques to boost the performance of depleting wells and maximize production."
+                servicestext  : "iOG understands the various paradigms of the subsurface ecosystem and its complexity. The domain knowledge and expertise in multiple disciplines (Geophysics, Geology, Petrophysics, and Geochemistry) enables it to understand, interpret and model the subsurface. ",
+                servicestext2 : ""
                     
                 
             } 
@@ -22,6 +24,60 @@ export default class Geologypage extends Component {
         ]
     }
   
+  imgleafblockData(){
+        return [
+            {
+                plansTitle        : "",
+                plansSubTitle1    : "",
+                plansSubTitle2    : "",
+                planstext         : "",
+                planstext1        : "",
+                planstext2        : "",
+                planstext3        : "",
+                plansimg          : "images/geophysic.png",
+
+            }
+        ]
+    }
+
+       Commonleafulblock(){
+        return [
+            {
+                challengesTitle : "Over the years, iOG’s experts have developed and optimized a strategic approach to perform subsurface modelling as illustrated below:",
+                challengestext  : "It broadly covers the three main knowledge areas:",
+                challengestext2 : "",
+                 commonulliUl : [
+                    {   ulData : "Geophysics:",
+                        commonulliLi : [
+                                            {
+                                                liData : "Designing Seismic Acquisition Programs, Geostatistical & 3D Inversion Modeling, Quantitative Analysis, Velocity Modeling"
+                                            }
+                                        ]
+                    },
+                    {   ulData : "Geology:",
+                        commonulliLi : [
+                                            {
+                                                liData : "Study of Subsurface with respect to Structure, Stratigraphy, Tectonic Activity, Facies Analysis, Sedimentology, Paleontology, Petroleum Geology and Well Log Analysis."
+                                            },
+                                            {
+                                                liData : "Pore Pressure Analysis by using Well Log & Seismic Data."
+                                            }
+                                        ]
+                    },
+                    {   ulData : "Petrophysics:",
+                        commonulliLi : [
+                                            {
+                                                liData : "Study of the characteristics of the rocks that make up the reservoir in terms of their Porosity, Permeability, etc."
+                                            }
+                                        ]
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
+
 
   DownstreamData(){
         return [
@@ -57,6 +113,8 @@ export default class Geologypage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
+              <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
+              <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
               <Commonservicesblock servicedata={this.DownstreamData()}/>
           </div>
       </div>

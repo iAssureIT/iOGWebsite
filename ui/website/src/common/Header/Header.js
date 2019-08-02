@@ -76,11 +76,11 @@ componentWillMount() {$(window).scroll(function() {
                                         <a href="/planningschedul">Planning & Scheduling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <input type="checkbox" id="drop-5"/>
                                           <ul>
-                                            <li><a href="/">Production Planning </a></li>
-                                            <li><a href="/">Production Scheduling</a></li>
-                                            <li><a href="/">Back Casting / Retro-Analysis</a></li>
-                                            <li><a href="/">LP Utilities</a></li>
-                                            <li><a href="/">LP Configuration studies</a></li>
+                                            <li><a href="/refineryplanning">Production Planning </a></li>
+                                            <li><a href="/refineryschedule">Production Scheduling</a></li>
+                                            <li><a href="/backcasting">Back Casting / Retro-Analysis</a></li>
+                                            <li><a href="/lputility">LP Utilities</a></li>
+                                            <li><a href="/lpconfig">LP Configuration studies</a></li>
                                           </ul>
                                         </li>
                                         <li className="zindex">
@@ -88,10 +88,10 @@ componentWillMount() {$(window).scroll(function() {
                                         <a href="/supplydistribute">Supply & Distribution <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <input type="checkbox" id="drop-5"/>
                                           <ul>
-                                            <li><a href="/">Demand Management</a></li>
-                                            <li><a href="/">Inventory Management</a></li>
-                                            <li><a href="/">Distribution Planning and Optimization</a></li>
-                                            <li><a href="/">Retail Automation</a></li>
+                                            <li><a href="/demandmanagement">Demand Management</a></li>
+                                            <li><a href="/inventorymanagement">Inventory Management</a></li>
+                                            <li><a href="/diatributionplanning">Distribution Planning and Optimization</a></li>
+                                            <li><a href="/retailautomation">Retail Automation</a></li>
                                           </ul>
                                         </li>
                                         <li><a href="/">&nbsp;</a></li>
@@ -105,11 +105,11 @@ componentWillMount() {$(window).scroll(function() {
                                     <a href="/manufacturesystem">Manufacturing Execution System <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="/">Production Accounting</a></li>
-                                        <li><a href="/">Real time Data Historian</a></li>
-                                        <li><a href="/">Corporate Dashboard & Analytics</a></li>
-                                        <li><a href="/">Operation Logbook & Target Dashboard</a></li>
-                                        <li><a href="/">Oil Movement Management Systems</a></li>
+                                        <li><a href="/productionaccounting">Production Accounting</a></li>
+                                        <li><a href="/datahistorian">Real time Data Historian</a></li>
+                                        <li><a href="/corporatedashboard">Corporate Dashboard & Analytics</a></li>
+                                        <li><a href="/operationlogbook">Operation Logbook & Target Dashboard</a></li>
+                                        <li><a href="/oilmovement">Oil Movement Management Systems</a></li>
                                       </ul>
                                     </li>
                                     <li className="zindex"><a href="/simulation">Simulation & Modelling</a></li>
@@ -128,10 +128,10 @@ componentWillMount() {$(window).scroll(function() {
                                     <a href="/geoligy">Geology & Geophysics <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="/">Geophysical Interpretation</a></li>
-                                        <li><a href="/">Geological Interpretation</a></li>
-                                        <li><a href="/">Petrophysical Analysis</a></li>
-                                        <li><a href="/">Subsurface Modeling</a></li>
+                                        <li><a href="/geophysicalinterpretation">Geophysical Interpretation</a></li>
+                                        <li><a href="/geologicalinterpretation">Geological Interpretation</a></li>
+                                        <li><a href="/petrophysicalanalysis">Petrophysical Analysis</a></li>
+                                        <li><a href="/subsurfacemodeling">Subsurface Modeling</a></li>
                                       </ul>
                                     </li>
                                      <li className="zindex">
@@ -139,10 +139,10 @@ componentWillMount() {$(window).scroll(function() {
                                     <a href="/reserviormanagement">Reservior Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="/">Reservoir Engineering</a></li>
-                                        <li><a href="/">Field Development Plan</a></li>
-                                        <li><a href="/">Dynamic Reservoir Simulation</a></li>
-                                        <li><a href="/">Reservoir Characterization</a></li>
+                                        <li><a href="/reservoirengineering">Reservoir Engineering</a></li>
+                                        <li><a href="/fielddevelopmentplan">Field Development Plan</a></li>
+                                        <li><a href="/dynamicreservoirsimulation">Dynamic Reservoir Simulation</a></li>
+                                        <li><a href="/reservoircharacterization">Reservoir Characterization</a></li>
                                       </ul>
                                     </li> 
                                     <li className="zindex">
@@ -150,11 +150,11 @@ componentWillMount() {$(window).scroll(function() {
                                     <a href="/welldrilling">Well & Drilling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="/">Well Planning & Drilling</a></li>
-                                        <li><a href="/">Well Performance Analysis</a></li>
-                                        <li><a href="/">Well Modeling</a></li>
-                                        <li><a href="/">Well Log Interpretation</a></li>
-                                        <li><a href="/">Well Drilling Services</a></li>
+                                        <li><a href="/wellplanningdrilling">Well Planning & Drilling</a></li>
+                                        <li><a href="/wellperformanceanalysis">Well Performance Analysis</a></li>
+                                        <li><a href="/wellmodeling">Well Modeling</a></li>
+                                        <li><a href="/wellloginterpretation">Well Log Interpretation</a></li>
+                                        <li><a href="/welldrillingservices">Well Drilling Services</a></li>
                                         <li><a href="/">Well Data Management</a></li>
                                       </ul>
                                     </li> 
@@ -191,11 +191,11 @@ componentWillMount() {$(window).scroll(function() {
                                   <a href="/digitalservices">Digital Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
-                                      <li className="zindex"><a href="/servicearms">Digital IT Strategy & Roadmaps</a></li>
-                                      <li className="zindex"><a href="/digitalservices">Application Development & Application Management (ADAM)</a></li>
-                                      <li className="zindex"><a href="/assetmanagement">Enabling Technologies</a></li>
-                                      <li className="zindex"><a href="/Health&safty">Visualization & Dashboards</a></li>                                     
-                                      <li className="zindex"><a href="/Health&safty">Digital Asset Life Cycle Management</a></li>                                     
+                                      <li className="zindex"><a href="/digitalstratergy">Digital IT Strategy & Roadmaps</a></li>
+                                      <li className="zindex"><a href="/applicationdevlopment">Application Development & Application Management (ADAM)</a></li>
+                                      <li className="zindex"><a href="/enablingtechnology">Enabling Technologies</a></li>
+                                      <li className="zindex"><a href="/visualizationdashboard">Visualization & Dashboards</a></li>                                     
+                                      <li className="zindex"><a href="/digitalasset">Digital Asset Life Cycle Management</a></li>                                     
                                   </ul>
                                 </li>
                                 <li> 
@@ -203,14 +203,13 @@ componentWillMount() {$(window).scroll(function() {
                                   <a href="/Healthsafty">Health Safety & Environment <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
-                                      <li className="zindex"><a href="/">Process Safety Management</a></li> 
-                                      <li className="zindex"><a href="/">Occupational Health And Safety Management</a></li> 
-                                      <li className="zindex"><a href="/">Environmental Consulting</a></li> 
-                                      <li className="zindex"><a href="/">Sustainability Strategy</a></li> 
-                                      <li className="zindex"><a href="/">HSE System Evaluation</a></li> 
-                                      <li className="zindex"><a href="/">HSE Business Process Framing</a></li> 
-                                      <li className="zindex"><a href="/">HSE Solutions Implementation</a></li> 
-                                      <li className="zindex"><a href="/">Change Management</a></li> 
+                                      <li className="zindex"><a href="/processsafty">Process Safety Management</a></li> 
+                                      <li className="zindex"><a href="/occupationhealth">Occupational Health And Safety Management</a></li> 
+                                      <li className="zindex"><a href="/environmentsustain">Environmental Consulting & Sustainability Management</a></li> 
+                                      <li className="zindex"><a href="/hsesystemevalution">HSE System Evaluation</a></li> 
+                                      <li className="zindex"><a href="/hsebusinessprocessingmapping">HSE Business Process Framing</a></li> 
+                                      <li className="zindex"><a href="/hsesolutionsimplementation">HSE Solutions Implementation</a></li> 
+                                      <li className="zindex"><a href="/changemanagement">Change Management</a></li> 
                                   </ul>
                                 </li>
                                  <li> 
@@ -218,10 +217,10 @@ componentWillMount() {$(window).scroll(function() {
                                   <a href="/servicearms">Service Arms <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
-                                      <li className="zindex"><a href="/">iOGImplement</a></li>  
-                                      <li className="zindex"><a href="/">iOGConsult</a></li>  
-                                      <li className="zindex"><a href="/">iOGTrain</a></li>  
-                                      <li className="zindex"><a href="/">iOGStudy</a></li>  
+                                      <li className="zindex"><a href="/iogimplement">iOGImplement</a></li>  
+                                      <li className="zindex"><a href="/iogconsult">iOGConsult</a></li>  
+                                      <li className="zindex"><a href="/iogtrain">iOGTrain</a></li>  
+                                      <li className="zindex"><a href="/iogstudy">iOGStudy</a></li>  
                                   </ul>
                                 </li>
                                   <li> 
@@ -229,7 +228,7 @@ componentWillMount() {$(window).scroll(function() {
                                   <a href="/assetmanagement">Asset Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
-                                     <li className="zindex"><a href="/">Enterprise Asset Management</a></li>
+                                     <li className="zindex"><a href="/EAM">Enterprise Asset Management</a></li>
                                      <li className="zindex">
                                     <label htmlFor="drop-4" className="toggle">Asset Reliability & Integraity Management</label>
                                     <a href="/arimanagement">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>

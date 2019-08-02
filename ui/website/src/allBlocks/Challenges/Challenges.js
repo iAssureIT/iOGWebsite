@@ -17,11 +17,14 @@ render(){
             {
               this.props.CommonleafblockData.map((data, index)=>{
                 return (     
-                         <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 grey_line1"> 
-                             <hr/>
+                         <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <p className="challenges_line_subheadd ">{data.challengesTitle2}</p>
+                                  <p className="challenges_line_paraaaa">{data.challengestext3}</p> 
                                   <p className="challenges_line_subheadd ">{data.challengesTitle}</p>
+                                  <p className="line_paraaaa">{data.challengestag}</p>
                                   <p className="challenges_line_paraaaa">{data.challengestext}</p> 
+                                  <p className="challenges_line_paraaaa">{data.challengestext5}</p> 
                                   <ul className="challenges_list">
                                       {
                                           data.commonulliUl.map((ulDetail, index)=>{
@@ -45,6 +48,10 @@ render(){
                                        }
                                   </ul>                                      
                                   <p className="challenges_line_paraaaa2">{data.challengestext2}</p>
+                                  <p className="challenges_line_paraaaa2">{data.challengestext4}</p>
+                                  <p className="challenges_line_paraaaa2">{data.challengestext6}</p>
+                                  <p className="challenges_line_paraaaa2">{data.challengestext7}</p>
+                                  <p className="challenges_line_paraaaa2">{data.challengestext8}</p>
                             </div>
                         </div>
                       );

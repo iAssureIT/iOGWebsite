@@ -5,6 +5,7 @@ import './Riserviormanagepage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
 import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Riserviormanagepage extends Component {
   ServicesData(){
@@ -13,15 +14,58 @@ export default class Riserviormanagepage extends Component {
                 servicesTitle : "Reservior Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
-                servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
-                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle. Looking for hydrocarbons beneath the surface involves geological, geophysical, and petrophysical analysis of subsurface terrain for probable deposits of oil and natural gas. Upon identification of potential locations of oil and gas reserves, the next step is drilling of appraisal wells to ascertain the quantity and quality of underground reserves. The data obtained from appraisal wells is then combined with G&G data to determine the number and location of wells for meeting and optimizing production requirements. After primary (natural pressure and flow) and secondary (water flooding) recovery methods well operators employ tertiary or Enhanced Oil Recovery (EOR) techniques to boost the performance of depleting wells and maximize production."
+                servicestext  : "iOG Solutions provides end-to-end consulting services for management of reservoirs, utilizing state-of-the-art geoscience and engineering technologies. Our distinctive competencies and cutting-edge propositions are embodied in the breadth of technical expertise and diverse experience we provide. This is specifically true in the area of integrated reservoir characterization, modeling, and management.",
+                servicestext2 : "Our extensive domain expertise   extends to aspects of reservoir behaviour and its’ properties and fluid movement in a dynamic surrounding environment with respect to fluid contact, temperature, pressure and saturation. Through this, customers are able to understand the reservoir extent, fluid flow via porous & permeable media and to arrive at estimates indicating the life of the Reservoir. "
                     
                 
             } 
                         
         ]
     }
-  
+
+  Commonleafulblock(){
+        return [
+            {
+                challengesTitle : "Following are some of the reservoir management services we provide to our upstream clients",
+                challengestext  : "",
+                challengestext2 : "",
+                 commonulliUl : [
+                    {   ulData : "Static Reservoir modeling (Characterization): To determine reservoir architecture and quality with respect to distribution of porosity, permeability and rock properties.",
+                        commonulliLi : [
+                                            {
+                                                liData : "Build Reservoir Model: 3D Structural & 3D Petrophysical Model"
+                                            },
+                                            {
+                                                liData : "Allocate Petrophysical Properties to each grid"
+                                            },
+                                            {
+                                                liData : "Connect Facies"
+                                            },
+                                            {
+                                                liData : "Enable Upscaling"
+                                            }
+                                        ]
+                    },
+                    {   ulData : "Dynamic Reservoir Modeling (Simulation): To predict the flow of fluids via Porous & Permeable Zones",
+                        commonulliLi : [
+                                            {
+                                                liData : "Dynamic Reservoir Simulation using an industry standard state-of-the-art simulator"
+                                            }
+                                        ]
+                    },
+                    {   
+                      ulData : "Reservoir Engineering:  To determine the size of extractable reserves and Production rates; identify and plan for the best recovery methods.",   
+                    },
+                    {   
+                      ulData : "Field Development Planning:  To evaluate multiple development options for a field and select the best option for integrated field development.",   
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
+
 
   DownstreamData(){
         return [
@@ -57,6 +101,7 @@ export default class Riserviormanagepage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
+              <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
               <Commonservicesblock servicedata={this.DownstreamData()}/>
           </div>
       </div>

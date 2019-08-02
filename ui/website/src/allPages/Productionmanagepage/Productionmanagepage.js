@@ -5,6 +5,7 @@ import './Productionmanagepage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
 import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Productionmanagepage extends Component {
   ServicesData(){
@@ -13,15 +14,45 @@ export default class Productionmanagepage extends Component {
                 servicesTitle : "Production Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
-                servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
-                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle. Looking for hydrocarbons beneath the surface involves geological, geophysical, and petrophysical analysis of subsurface terrain for probable deposits of oil and natural gas. Upon identification of potential locations of oil and gas reserves, the next step is drilling of appraisal wells to ascertain the quantity and quality of underground reserves. The data obtained from appraisal wells is then combined with G&G data to determine the number and location of wells for meeting and optimizing production requirements. After primary (natural pressure and flow) and secondary (water flooding) recovery methods well operators employ tertiary or Enhanced Oil Recovery (EOR) techniques to boost the performance of depleting wells and maximize production."
+                servicestext  : "iOG Solutions offers its clients the complete range of Production Management services. These include design completion and surface systems management, selection and design of the artificial lift, design and implementation of production allocation and accounting systems, monitoring production volumes and other parameters in real-time, calculating and reporting KPIs, optimization of oil/gas production rates as well as in predicting future performance. It also includes diagnosis of productivity problems and evaluation of stimulation treatments.",
+                servicestext2 : ""
                     
                 
             } 
                         
         ]
     }
-  
+  Commonleafulblock(){
+        return [
+            {
+                challengesTitle : "Our Production Management services can be broadly divided into the following categories:",
+                challengestext  : "",
+                challengestext2 : "",
+                 commonulliUl : [
+                    {   
+                        ulData : "Production Engineering",   
+                    },
+                    {   
+                        ulData : "Production Allocation & Accounting",   
+                    },
+                    {   
+                        ulData : "Production Monitoring",   
+                    },
+                    {   
+                        ulData : "Production Optimization & Integrated Asset Management",   
+                    },
+                    {   
+                        ulData : "Production Forecasting",   
+                    },
+                    {   
+                        ulData : "Well Operations",   
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
 
   DownstreamData(){
         return [
@@ -67,6 +98,7 @@ export default class Productionmanagepage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
+              <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
               <Commonservicesblock servicedata={this.DownstreamData()}/>
           </div>
       </div>
