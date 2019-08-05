@@ -94,10 +94,10 @@ componentWillMount() {$(window).scroll(function() {
                                             <li><a href="/retailautomation">Retail Automation</a></li>
                                           </ul>
                                         </li>
-                                        <li><a >&nbsp;</a></li>
-                                        <li><a >&nbsp;</a></li>
-                                        <li><a >&nbsp;</a></li>
-                                        <li><a >&nbsp;</a></li>
+                                        <li><a href="/">&nbsp;</a></li>
+                                        <li><a href="/">&nbsp;</a></li>
+                                        <li><a href="/">&nbsp;</a></li>
+                                        <li><a href="/">&nbsp;</a></li>
                                       </ul>
                                     </li>
                                     <li className="zindex">

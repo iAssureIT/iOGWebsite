@@ -68,7 +68,7 @@ export default class Blogs extends Component {
                         <OwlCarousel
                         className="owl-theme"
                         loop
-                        nav
+                        // nav
                         dots={false}
                         items={3}
                         margin={0}

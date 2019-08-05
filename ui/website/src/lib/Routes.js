@@ -118,8 +118,6 @@ import Energypage                     from '../allPages/Energypage/Energy.js';
 import ApcServices                    from '../allPages/ApcServices/ApcServices.js';
 import EtrmPage                       from '../allPages/EtrmPage/EtrmPage.js';
 
-import BlogContent                    from '../allBlocks/BlogContent/BlogContent.js';
-
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
 // import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
@@ -131,8 +129,6 @@ import BlogContent                    from '../allBlocks/BlogContent/BlogContent
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
-    <Route path="/blogs" exact strict component={ BlogContent } /> 
-
     <Route path="/" exact strict component={ HomePage } /> 
     <Route path="/contact-us" component={ Contactpage } />  
     <Route path="/about-us" component={ AboutUs } />         
@@ -228,6 +224,7 @@ const WebLayout = () => (
     <Route path="/comprehensivemasterdatamanagement" component={ Comprihensiveenppage } />
     <Route path="/comprehensivemasterdatamanagement" component={ Cloudbasemngpage } />
     <Route path="/cloudbaseddatamanagement" component={ Cloudbasemngpage } />
+
 
     <Route path="/simulation" component={ SimulationPage } />
     <Route path="/energy" component={ Energypage } />
