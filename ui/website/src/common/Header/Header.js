@@ -94,10 +94,10 @@ componentWillMount() {$(window).scroll(function() {
                                             <li><a href="/retailautomation">Retail Automation</a></li>
                                           </ul>
                                         </li>
-                                        <li><a href="/">&nbsp;</a></li>
-                                        <li><a href="/">&nbsp;</a></li>
-                                        <li><a href="/">&nbsp;</a></li>
-                                        <li><a href="/">&nbsp;</a></li>
+                                        <li><a >&nbsp;</a></li>
+                                        <li><a >&nbsp;</a></li>
+                                        <li><a >&nbsp;</a></li>
+                                        <li><a >&nbsp;</a></li>
                                       </ul>
                                     </li>
                                     <li className="zindex">
@@ -155,7 +155,7 @@ componentWillMount() {$(window).scroll(function() {
                                         <li><a href="/wellmodeling">Well Modeling</a></li>
                                         <li><a href="/wellloginterpretation">Well Log Interpretation</a></li>
                                         <li><a href="/welldrillingservices">Well Drilling Services</a></li>
-                                        <li><a href="/">Well Data Management</a></li>
+                                        <li><a href="/welldatamanagement">Well Data Management</a></li>
                                       </ul>
                                     </li> 
                                     <li className="zindex">
@@ -163,12 +163,12 @@ componentWillMount() {$(window).scroll(function() {
                                     <a href="/productionmanagement">Production Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="/">Production Engineering</a></li>
-                                        <li><a href="/">Production Monitoring and Surveillance</a></li>
-                                        <li><a href="/">Production Accounting</a></li>
-                                        <li><a href="/">Production Optimization</a></li>
-                                        <li><a href="/">Production Forecasting</a></li>
-                                        <li><a href="/">Well Testing</a></li>
+                                        <li><a href="/productionengineering">Production Engineering</a></li>
+                                        <li><a href="/productionmonitoringsurveillance">Production Monitoring and Surveillance</a></li>
+                                        <li><a href="/productionaccountingsolution">Production Accounting</a></li>
+                                        <li><a href="/productionoptimization">Production Optimization</a></li>
+                                        <li><a href="/productionforecasting">Production Forecasting</a></li>
+                                        <li><a href="/welltesting">Well Testing</a></li>
                                       </ul>
                                     </li> 
                                     <li className="zindex">
@@ -176,12 +176,12 @@ componentWillMount() {$(window).scroll(function() {
                                     <a href="/datamanagement">Data Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
-                                        <li><a href="/">Seismic Data Management</a></li>
-                                        <li><a href="/">Well Data Management </a></li>
-                                        <li><a href="/">Real-time Production Data Management</a></li>
-                                        <li><a href="/">Data Governance</a></li>
-                                        <li><a href="/">Comprehensive E & P Master Data Management</a></li>
-                                        <li><a href="/">Cloud-based Data Management</a></li>
+                                        <li><a href="/seismicdatamanagement">Seismic Data Management</a></li>
+                                        <li><a href="/welldatamanagements">Well Data Management </a></li>
+                                        <li><a href="/realtimeproductiondatamanagement">Real-time Production Data Management</a></li>
+                                        <li><a href="/datagovernance">Data Governance</a></li>
+                                        <li><a href="/comprehensivemasterdatamanagement">Comprehensive E & P Master Data Management</a></li>
+                                        <li><a href="/cloudbaseddatamanagement">Cloud-based Data Management</a></li>
                                       </ul>
                                     </li>
                                   </ul>

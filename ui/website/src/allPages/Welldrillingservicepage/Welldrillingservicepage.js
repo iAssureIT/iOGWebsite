@@ -309,7 +309,42 @@ Commonleafulblock4(){
                                             
                                         ]
 
+                    },
+                    {
+                        ulData : "Assisting directional drilling engineers in using sophisticated interpretation tools to assimilate, analyse and interpret the incoming real time data to make the best possible decisions for maximizing the hydrocarbon production.",
+                    },
+                    {
+                        ulData : "Our Geosteering services enable clients to keep wellbores in the most productive zones by identifying formation dips, bed thickness, and fractures combined with image analysis, forward modeling, and recognition of geologic boundaries while drilling.",
+                    },
+                    {
+                        ulData : "We provide integration and analysis support for the following data types to help predict the best optimal well path in the target zones:",
+                        commonulliLi : [
+                                            {
+                                                liData : "MWD"
+                                            },
+                                            {
+                                                liData : "LWD"
+                                            },
+                                            {
+                                                liData : "Image logs"
+                                            },
+                                            {
+                                                liData : "2D and 3D seismic data"
+                                            },
+                                            {
+                                                liData : "Geological models"
+                                            },
+                                            {
+                                                liData : "Real-time drilling data"
+                                            },
+                                            {
+                                                liData : "Trajectory path based on updated geological information"
+                                            }
+                                            
+                                        ]
+
                     }
+
                 ]
             }, 
                   
@@ -319,32 +354,115 @@ Commonleafulblock4(){
 Commonleafulblock5(){
         return [
             {
-                challengesTitle : "Production Log Interpretation:",
-                challengestext  : "Production Logging is a part of our cased hole services, that includes cement monitoring, corrosion monitoring, monitoring of formation fluid contacts (and saturations), perforating and plug and packer setting. Cased hole logs such as Calliper Log, (also done in Open Hole) carry information about well features such as well bore diameter and our experts can help clients in extracting interpreting thess aspects. Cement Bond Log tells about cement condition of the well and Casing Collar Locator tells about the placement of casing collar in the well.",
-                challengestext2 : "",
-                challengestext5 : "Production logs are used to allocate production on a zone by zone basis and also to diagnose production problems such as leaks or cross flow. Our Production log services span across:",
+                challengesTitle2 : "Drilling Monitoring:",
+                challengestext3  : "iOG Solutions can help its clients in enhancing the efficiency of their drilling operations by enabling them to monitor from a centralized location all their drilling operations in real time. Such real time monitoring will ensure timely support and advice to the related professionals in order to follow the most efficient procedures and mitigate any anticipated risks.",
+                challengestext5 : "Salient features:",
+                challengestext : "We assist our clients in real time evaluation of the operations data collected from the monitoring processes and develop new and timely procedures to minimize cost and maximize the efficiency of their drilling operations.",
                 challengestag   : "",
                 commonulliUl : [
                     {
-                        ulData : "Diagnosis of production problems and production allocation",
+                        ulData : "Real time monitoring and analysis of Surface Instrumentation and equipment parameters",
                     },
                     {
-                        ulData : "Cement placement monitoring",
+                        ulData : "Non-Productive Time analysis",
                     },
                     {
-                        ulData : "Corrosion monitoring",
+                        ulData : "LWD and MWD analysis",
                     },
                     {
-                        ulData : "Monitoring of reservoir fluid contacts",
+                        ulData : "Mud Log analysis",
                     },
                     {
-                        ulData : "Selection of recompletion zones",
+                        ulData : "Creation of Thresholds, cut-offs and corresponding alarms and alerts for timely notification to all the involved parties for real time control of the drilling operations",
+                    },
+                    {
+                        ulData : "Reporting of results for the different analytical assessments to concerned personnel",
+                    },
+                    {
+                        ulData : "Rig Performance assessment by plotting of relevant graphs like Depth Vs Rig time, Depth Vs Rotation time & Prognosis, Well trajectory plots, Mud parameters Vs. Depth, ROP & cost Vs Depth, etc.",
+                    },
+                    {
+                        ulData : "Monitoring of the lithology using stereoscopic microscope for estimating Porosity and oil staining possibility",
                     }
                 ]
             }, 
                   
         ]
     }
+
+    Commonleafulblock6(){
+        return [
+            {
+                challengesTitle : "",
+                challengestext  : "Our drilling monitoring services can help our clients in ensuring a more efficient and safe working procedure for their personnel. Timely monitoring, evaluation and a centralized processing facility for incoming data can help in:",
+                challengestext2 : "",
+                challengestext5 : "",
+                challengestag   : "",
+                commonulliUl : [
+                    {
+                        ulData : "Anticipation of future problems and taking timely measures for avoiding them",
+                    },
+                    {
+                        ulData : "Identification of trends that may signal deviation from efficiency or problems in the process",
+
+                    },
+                    {
+                        ulData : "Increase in efficiency and effectiveness of engineering teams",
+
+                    },
+                    {
+                        ulData : "Mitigation of risk and  decrease in operation costs",
+
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
+
+Commonleafulblock7(){
+        return [
+            {
+                challengesTitle : "Drilling Data Management",
+                challengestext  : "iOG has well-rounded experience in Aggregating and Integrating continuous Data-feeds coming from the Drilling operations, verifying their Data Quality, and developing standardised workflows. Our visualization and BI capabilities enable easy representation of complex features like formation tops or fluid contacts, caliper-based wellbore profiling, ellipses of uncertainty and offset measurement for providing a ‘big picture’ view of the entire operation, which in turn, helps in parameter correlation, geosteering, planning, and collision avoidance.",
+                challengestext2 : "",
+                challengestext5 : "iOG can help you with the following Drilling and Well-related Data Management needs:",
+                challengestag   : "",
+                commonulliUl : [
+                    {
+                        ulData : "Tracking and Managing all operated and non-operated wells in a central data repository",
+                    },
+                    {
+                        ulData : "Interactive report templates for reporting data, relevant and specific to the functions",
+
+                    },
+                    {
+                        ulData : "Visualize drilling information which helps in enhancing data quality, offering insights, and increasing collaboration",
+
+                    },
+                    {
+                        ulData : "View directional tracks (actual Vs. proposed) and 3D display of all wellbores in the well file",
+
+                    },
+                    {
+                        ulData : "Analyse the Drilling data and performance of Wells by comparing plan to actual; querying NPT events; generating well to well comparisons of cost and time.",
+
+                    },
+                    {
+                        ulData : "Perform Multi-Well analysis",
+
+                    },
+                    {
+                        ulData : "Integrate the drilling data with WITSML log object curves to analyse the data with respect to time and thus trace significant trends in data",
+
+                    }
+                ]
+            }, 
+                  
+        ]
+    }
+
  
    
 
@@ -358,6 +476,8 @@ Commonleafulblock5(){
         <Challenges   CommonleafblockData={this.Commonleafulblock3()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         <Challenges   CommonleafblockData={this.Commonleafulblock4()} />  
         <Challenges   CommonleafblockData={this.Commonleafulblock5()} /> 
+        <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> 
+        <Challenges   CommonleafblockData={this.Commonleafulblock7()} /> 
       </div>
     );  
   }

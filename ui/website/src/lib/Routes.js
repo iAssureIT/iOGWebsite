@@ -99,6 +99,19 @@ import Wellperformancepage            from '../allPages/Wellperformancepage/Well
 import Wellmodlingpage                from '../allPages/Wellmodlingpage/Wellmodlingpage.js';
 import Wellloginterpage               from '../allPages/Wellloginterpage/Wellloginterpage.js';
 import Welldrillingservicepage        from '../allPages/Welldrillingservicepage/Welldrillingservicepage.js';
+import Welldatamngpage                from '../allPages/Welldatamngpage/Welldatamngpage.js';
+import Productionenggpage             from '../allPages/Productionenggpage/Productionenggpage.js';
+import Productionmonitorpage          from '../allPages/Productionmonitorpage/Productionmonitorpage.js';
+import Productionaccountingpage       from '../allPages/Productionaccountingpage/Productionaccountingpage.js';
+import Productionoptimizpage          from '../allPages/Productionoptimizpage/Productionoptimizpage.js';
+import Productionforcastpage          from '../allPages/Productionforcastpage/Productionforcastpage.js';
+import Welltestingpage                from '../allPages/Welltestingpage/Welltestingpage.js';
+import Seismicdatamngpage             from '../allPages/Seismicdatamngpage/Seismicdatamngpage.js';
+import Welldatamanagepage             from '../allPages/Welldatamanagepage/Welldatamanagepage.js';
+import Realtimedatamngpage            from '../allPages/Realtimedatamngpage/Realtimedatamngpage.js';
+import Datagoverpage                  from '../allPages/Datagoverpage/Datagoverpage.js';
+import Comprihensiveenppage           from '../allPages/Comprihensiveenppage/Comprihensiveenppage.js';
+import Cloudbasemngpage               from '../allPages/Cloudbasemngpage/Cloudbasemngpage.js';
 
 import SimulationPage                 from '../allPages/SimulationPage/SimulationPage.js';
 import Energypage                     from '../allPages/Energypage/Energy.js';
@@ -197,6 +210,20 @@ const WebLayout = () => (
     <Route path="/wellmodeling" component={ Wellmodlingpage } />
     <Route path="/wellloginterpretation" component={ Wellloginterpage } />
     <Route path="/welldrillingservices" component={ Welldrillingservicepage } />
+    <Route path="/welldatamanagement" component={ Welldatamngpage } />
+    <Route path="/productionengineering" component={ Productionenggpage } />
+    <Route path="/productionmonitoringsurveillance" component={ Productionmonitorpage } />
+    <Route path="/productionaccountingsolution" component={ Productionaccountingpage } />
+    <Route path="/productionoptimization" component={ Productionoptimizpage } />
+    <Route path="/productionforecasting" component={ Productionforcastpage } />
+    <Route path="/welltesting" component={ Welltestingpage } />
+    <Route path="/seismicdatamanagement" component={ Seismicdatamngpage } />
+    <Route path="/welldatamanagements" component={ Welldatamanagepage } />
+    <Route path="/realtimeproductiondatamanagement" component={ Realtimedatamngpage } />
+    <Route path="/datagovernance" component={ Datagoverpage } />
+    <Route path="/comprehensivemasterdatamanagement" component={ Comprihensiveenppage } />
+    <Route path="/comprehensivemasterdatamanagement" component={ Cloudbasemngpage } />
+    <Route path="/cloudbaseddatamanagement" component={ Cloudbasemngpage } />
 
     <Route path="/simulation" component={ SimulationPage } />
     <Route path="/energy" component={ Energypage } />
