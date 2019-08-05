@@ -158,28 +158,6 @@
     margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -274,10 +252,6 @@
 /*color:#a85ad4;*/
 }
 
-
-
-
-
 .blog-one .blog-one-attrib .blog-author-name {
     font-size: 12px;
     font-weight: 600;
@@ -350,15 +324,10 @@
   margin-top: 50px;
 }
 
-
-
-
-
 .bg-gray-rs{
   /*background-color: #f5f7f9;*/
   height:400px;
 }
-
 .el-icon2x img{
   height: 40px;
 }
@@ -370,10 +339,6 @@
     line-height: 25px;
     color: #747474;
 }
-
-
-
-
 
 .pricepb30 {
     padding-bottom: 30px;
@@ -612,7 +577,15 @@
   margin-bottom:100px;
 }
 
+.errorMsg{
+    color: #f00;
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+}
+.nameSpaceUpper{
+    text-transform: capitalize;
+}
 
-
-
-
+.mt50{
+    margin-top: 50px;
+}

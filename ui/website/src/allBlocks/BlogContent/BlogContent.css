@@ -1,0 +1,10 @@
+.blogContentDiv p{
+	font-family: 'Raleway', sans-serif ;
+	font-size: 16px !important;
+	line-height: 25px;
+	color:#666;
+}
+.imgContainerInner{
+	height: auto;
+	
+}
