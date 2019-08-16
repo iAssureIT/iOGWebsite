@@ -3,7 +3,7 @@
 	/*margin-top: 30px;*/
 }
 .contactcontent2-wrap{
-  margin-top:150px;
+  margin-top:50px;
   margin-bottom: 100px;
   color: #fff;
   /*background-image: url("/images/contactusbg.png");*/
@@ -53,16 +53,17 @@ margin-bottom: 50px;
     background-color: #005b99;
     font-size: 35px;
     border: 5px solid #005b99;
-    border-radius: 50%
+    border-radius: 50%;
+    color: #fff;
 }
-.contacticon21{
-  color: #fff;
-  font-size: 27px;
-  position: absolute;
-  right: 38px;
-  top: 12px;
-
-}
+.contacticon21{  
+  padding: 5px 12px;
+    background-color: #005b99;
+    font-size: 35px;
+    border: 5px solid #005b99;
+    border-radius: 50%;
+    color: #fff;
+  }
 .contacticon22{
   color: #fff;
   font-size: 25px;

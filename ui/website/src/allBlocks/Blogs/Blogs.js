@@ -77,7 +77,7 @@ export default class Blogs extends Component {
                         // responsive={
                         // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
                         // }
-                        autoplay={true}
+                        autoplay={false}
                         autoplayHoverPause={true}
                         >
                         {

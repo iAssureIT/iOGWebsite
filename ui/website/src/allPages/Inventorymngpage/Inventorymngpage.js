@@ -91,7 +91,7 @@ export default class Inventorymngpage extends Component {
   commonulliData(){
         return [
             {
-                commonulliheading : "the inventory management scheduling model has the following features:",
+                commonulliheading : "The inventory management scheduling model has the following features:",
                 commonullisubheading : "",
                 commonullitext  : "",
                 commonulliUl : [

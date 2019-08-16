@@ -262,13 +262,13 @@ class Contactpage extends Component{
                                         <i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i>
                                   </div>
                                   <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <i className="fa fa-linkedin contacticon2"></i>
+                                      <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="fa fa-linkedin contacticon2"></i></a>
                                   </div>
                                   <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <i className="fa fa-twitter contacticon2"></i>
+                                      <a href="https://twitter.com/iogsolutions" target="_blank"><i className="fa fa-twitter contacticon2"></i></a>
                                   </div>
                                   <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <i className="fa fa-envelope contacticon2"></i>
+                                      <a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="fa fa-facebook contacticon21"></i></a>
                                   </div>
                                 </div>
                           </div>
@@ -386,7 +386,7 @@ class Contactpage extends Component{
                                           <div className="errorMsg">{this.state.errors.subject}</div>
                                         </div>
                                         <div className="formcontent1 col-lg-12">
-                                          <label htmlFor="message">Notename<span className="redFont">*</span></label>
+                                          <label htmlFor="message">Note<span className="redFont">*</span></label>
                                           <textarea rows="5" cols="1" className="form-control" id="message" name="message" value={this.state.message} onChange={this.handleChange.bind(this)}  ref="message"></textarea>
                                           <div className="errorMsg">{this.state.errors.message}</div>
                                         </div>

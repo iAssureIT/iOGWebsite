@@ -62,7 +62,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat">Menu</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/about-us">About</a></li>
+                                <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/services">Services</a></li>
                                 <li><a href="/industries">Industries</a></li>
                             </ul>
@@ -118,8 +118,8 @@ export default class Footer extends Component {
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-right pt20">
                             <p className="text-right">
-                                <a href="/" className="mr20">Privacy Policy</a>
-                                <a href="/" className="mr20">Terms of Use</a>
+                                <a href="/privacypolicy" className="mr20">Privacy Policy</a>
+                                <a href="/termsofuse" className="mr20">Terms of Use</a>
                                 <a href="/" className="">Site Map</a>
                             </p>
                         </div>

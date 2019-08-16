@@ -29,25 +29,25 @@ export default class Downstream extends Component {
             }, 
             {
                 downstreamTitle : "APC Services",
-                hryperlink      : "supplychain",
+                hryperlink      : "apc-services",
                 downstreamimg   : "/images/Illustration_4.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Simulation & Modelling",
-                hryperlink      : "supplychain",
+                hryperlink      : "simulation",
                 downstreamimg   : "/images/Illustration_5.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Energy Management",
-                hryperlink      : "supplychain",
+                hryperlink      : "apc-services",
                 downstreamimg   : "/images/Illustration_6.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
              {
                 downstreamTitle : "ETRM and Pricing Tool Application",
-                hryperlink      : "supplychain",
+                hryperlink      : "etrm",
                 downstreamimg   : "/images/Illustration_7.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }

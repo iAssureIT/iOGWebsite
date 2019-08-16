@@ -16,9 +16,7 @@ export default class Commonservicesblock extends Component {
 
  render(){
   var plength = this.props.servicedata ? this.props.servicedata.length : 0;
-  console.log('plength', plength);
   var productlength = plength % 3;
-  console.log('productlength', productlength);
 
     return(
         <div className="col-lg-12 contentWraper mt100">

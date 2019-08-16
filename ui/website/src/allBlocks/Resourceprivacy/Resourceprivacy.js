@@ -27,7 +27,7 @@ export default class Resourceprivacy extends Component {
                             <p className="resource_para">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis
                             </p>
-                            <p className="resource_txt"><b>iOG</b>Policy</p>
+                            <p className="resource_txt"><b>iOG Solutions</b>Policy</p>
                           </div>
                         </div>                        
                  </div>

@@ -117,6 +117,8 @@ import SimulationPage                 from '../allPages/SimulationPage/Simulatio
 import Energypage                     from '../allPages/Energypage/Energy.js';
 import ApcServices                    from '../allPages/ApcServices/ApcServices.js';
 import EtrmPage                       from '../allPages/EtrmPage/EtrmPage.js';
+import Termsofusepage                 from '../allPages/Termsofusepage/Termsofusepage.js';
+import Privacypolicypage              from '../allPages/Privacypolicypage/Privacypolicypage.js';
 
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
@@ -230,6 +232,8 @@ const WebLayout = () => (
     <Route path="/energy" component={ Energypage } />
     <Route path="/apc-services" component={ ApcServices } />
     <Route path="/etrm" component={ EtrmPage } />
+    <Route path="/termsofuse" component={ Termsofusepage } />
+    <Route path="/privacypolicy" component={ Privacypolicypage } />
 
     <Route path="/trial" component={ Parallaxeff } />        
   </div>

@@ -60,6 +60,9 @@
     border-radius: 20px;
     color: #fff;
 }
+.blogbtn1:focus{
+  outline: 0px auto -webkit-focus-ring-color!important;
+}
 
 .blogleftarrow{
   background-color: #009de2;

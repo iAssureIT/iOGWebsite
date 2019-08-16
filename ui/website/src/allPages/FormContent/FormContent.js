@@ -91,7 +91,7 @@ class FormContent extends Component{
 
       swal({
           title : "Congratulation....!",
-          text  : "Your response submitted sucessfully"
+          text  : "Your application have been added successfully"
         });
       this.setState({
         "name"             : "",

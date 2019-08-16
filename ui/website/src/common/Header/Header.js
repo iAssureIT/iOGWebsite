@@ -90,7 +90,7 @@ componentWillMount() {$(window).scroll(function() {
                                           <ul>
                                             <li><a href="/demandmanagement">Demand Management</a></li>
                                             <li><a href="/inventorymanagement">Inventory Management</a></li>
-                                            <li><a href="/diatributionplanning">Distribution Planning and Optimization</a></li>
+                                            <li><a href="/diatributionplanning">Distribution Planning & Optimization</a></li>
                                             <li><a href="/retailautomation">Retail Automation</a></li>
                                           </ul>
                                         </li>
@@ -115,7 +115,7 @@ componentWillMount() {$(window).scroll(function() {
                                     <li className="zindex"><a href="/simulation">Simulation & Modelling</a></li>
                                     <li className="zindex"><a href="/energy">Energy Management</a></li>
                                     <li className="zindex"><a href="/apc-services">APC Services</a></li>
-                                    <li className="zindex"><a href="/etrm">ETRM and Pricing Tool Application</a></li>
+                                    <li className="zindex"><a href="/etrm">ETRM & Pricing Tool Application</a></li>
                                    </ul>
                                 </li>
                                 <li> 
@@ -164,7 +164,7 @@ componentWillMount() {$(window).scroll(function() {
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
                                         <li><a href="/productionengineering">Production Engineering</a></li>
-                                        <li><a href="/productionmonitoringsurveillance">Production Monitoring and Surveillance</a></li>
+                                        <li><a href="/productionmonitoringsurveillance">Production Monitoring & Surveillance</a></li>
                                         <li><a href="/productionaccountingsolution">Production Accounting</a></li>
                                         <li><a href="/productionoptimization">Production Optimization</a></li>
                                         <li><a href="/productionforecasting">Production Forecasting</a></li>
@@ -204,7 +204,7 @@ componentWillMount() {$(window).scroll(function() {
                                   <input type="checkbox" id="drop-3"/>
                                   <ul>
                                       <li className="zindex"><a href="/processsafty">Process Safety Management</a></li> 
-                                      <li className="zindex"><a href="/occupationhealth">Occupational Health And Safety Management</a></li> 
+                                      <li className="zindex"><a href="/occupationhealth">Occupational Health & Safety Management</a></li> 
                                       <li className="zindex"><a href="/environmentsustain">Environmental Consulting & Sustainability Management</a></li> 
                                       <li className="zindex"><a href="/hsesystemevalution">HSE System Evaluation</a></li> 
                                       <li className="zindex"><a href="/hsebusinessprocessingmapping">HSE Business Process Framing</a></li> 
@@ -243,7 +243,7 @@ componentWillMount() {$(window).scroll(function() {
                                         <li><a href="/">Inspection Management</a></li>
                                         <li><a href="/">Calibration Management</a></li>
                                         <li><a href="/">Reliability Availability & Maintainability (RAM) Moeling</a></li>
-                                        <li><a href="/">Spares Inventory Management and Optimisation (SIMO) </a></li>
+                                        <li><a href="/">Spares Inventory Management & Optimisation (SIMO) </a></li>
                                       </ul>
                                     </li>
                                   </ul>
