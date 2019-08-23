@@ -42,7 +42,7 @@ export default class Banner extends Component {
                   <img alt="" src="/images/boat.png"/>
                 </figure>
                 <figure className="up">
-                  <img alt="" src="/images/up1.png"/>
+                  <img alt="" src="/images/37.png"/>
                 </figure>
                 <figure className="up1">
                   <img alt="" src="/images/up2.png"/>
