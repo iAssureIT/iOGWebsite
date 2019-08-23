@@ -204,10 +204,15 @@ class FormContent extends Component{
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacttextmargin2">
                   <div className="row">
                       <div className="contactpageform">
+                        <div className="col-lg-12">
+                            <div className="col-lg-2 col-lg-offset-5">
+                              <div className="line1 col-lg-1 col-lg-offset-2"></div>
+                            </div>                    
+                        </div> 
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="row">
-                                <div className="contactcontent textcolorblue text-center">
-                                    <span>Job Forum</span><span className="us"> </span>
+                                <div className="contactcontent lightbluetext text-center">
+                                    <span>Job Form</span><span className="us"> </span>
                                 </div>
                             </div>
                          </div>
@@ -318,7 +323,7 @@ class FormContent extends Component{
                                     </div>
                               <div className="col-lg-12">
                                 <div className="col-lg-2 col-lg-offset-10">
-                                  <button className="btn bgiogblue contactformbtn buttonhover" onClick={this.Submit.bind(this)}>Submit</button>
+                                  <button className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}>Submit</button>
                                 </div>
                              </div>
                             </form>

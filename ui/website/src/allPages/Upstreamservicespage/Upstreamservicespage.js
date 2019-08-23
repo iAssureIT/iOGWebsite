@@ -26,31 +26,36 @@ export default class Upstreamservicespage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/geoligy",
                 downstreamTitle : "Geology & Geophysics",
                 downstreamimg   : "/images/upstream1.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG understands the various paradigms of the subsurface ecosystem & its complexity. The domain knowledge & expertise in multiple disciplines (Geophysics, Geology, Petrophysics, & Geochemistry) enables it to understand, interpret & model the subsurface."
                     
                 
             }, 
             {
+                downstreamurl   : "/reserviormanagement",
                 downstreamTitle : "Reservior Management",
                 downstreamimg   : "/images/upstream4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions provides end-to-end consulting services for management of reservoirs, utilizing state-of-the-art geoscience & engineering technologies. Our distinctive competencies & cutting-edge propositions are embodied in the breadth of technical expertise & diverse experience we provide. This is specifically true in the area of integrated reservoir characterization, modeling, & management."
             }, 
             {
+                downstreamurl   : "/welldrilling",
                 downstreamTitle : "Well & Drilling",
                 downstreamimg   : "/images/upstream5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Well & Drilling Services offer the  complete range of services addressing Well Lifecycle Management from Well Planning, Drilling, Testing & log interpretation, performance monitoring to abandonment. It covers all the well related services in each business area such as Planning, Exploration, Development, Production, Decommissioning of the well & have emerged & evolved through vast experience in Well Planning, Designing & Optimization of Drilling Activities & Well Performance Monitoring."
             }, 
             {
+                downstreamurl   : "/productionmanagement",
                 downstreamTitle : "Production Management",
                 downstreamimg   : "/images/upstream3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions offers its clients the complete range of Production Management services. These include design completion & surface systems management, selection & design of the artificial lift, design & implementation of production allocation & accounting systems, monitoring production volumes & other parameters in real-time, calculating & reporting KPIs, optimization of oil/gas production rates as well as in predicting future performance. "
             }, 
             {
+                downstreamurl   : "/datamanagement",
                 downstreamTitle : "Data Management",
                 downstreamimg   : "/images/upstream2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions Data Management Services include capturing, processing, loading, tracking, modifying, integrating, cleaning, rectifying errors, validating & visualizing data to best address our clients’ needs.  We make the data valuable for our customers by organizing & presenting it in metrics that are key to their processes."
             }
             
         ]

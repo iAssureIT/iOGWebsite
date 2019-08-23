@@ -68,9 +68,10 @@
 .panel-group .panel+.panel{
 margin-top: 24px !important;
 }
-.panel-body{
+.panelBody{
   color: #000;
-      background-color: #fff !important;
+  background-color: #fff !important;
+  height: 1200px;
   box-shadow: 0 10px 29px rgba(92,141,255,.22);
 }
 /*PL*/
@@ -129,9 +130,12 @@ margin-top: 24px !important;
   color:#777;
   font-size: 20px;
 }
-.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panelBody{
   border: none !important;
 }
 .panel-collapse  +.panel-heading>.blogImgContainerInner{
   display:none;
+}
+.ht1100{
+  height: 1100px;
 }

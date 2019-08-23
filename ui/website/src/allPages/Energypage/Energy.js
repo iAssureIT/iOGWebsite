@@ -9,6 +9,8 @@ import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
+import Downstreamservicebanner from '../../allBlocks/Downstreamservicebanner/Downstreamservicebanner.js';
+
 // import Refineryplanning        from '../../allBlocks/Refineryplanning/Refineryplanning.js';
 
 export default class Energy extends Component {
@@ -158,12 +160,21 @@ export default class Energy extends Component {
             }
         ]
     }
+    ServicesData(){
+        return [
+            {
+                servicesimg   : "/images/.png",
+            } 
+                        
+        ]
+    }
 
    
 
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+        <Downstreamservicebanner infodata={this.ServicesData()} />
       	<Overview OverviewData={this.overviewData()} />
         <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock()} /> 

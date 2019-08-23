@@ -27,46 +27,54 @@ export default class Healthsaftypage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/processsafty",
                 downstreamTitle : "Process Safety Management",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Process-safety hazards arise because of the processing activities in a plant. Any incident in a manufacturing and processing plant may result in fatalities as well as huge asset, environmental, and reputational damage. Process safety management (PSM) deals with the identification, understanding, and control of process hazards to prevent process‐related injuries and incidents....."
                     
                 
             }, 
             {
+                downstreamurl   : "/occupationhealth",
                 downstreamTitle : "Occupational Health And Safety Management",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "A healthy and safe working environment is a foundation stone for safety management initiative in any process plant. Today, an increasing number of organizations are now focusing on the preventative measures to safeguard their employees and processes from the unseen hazards. These trends are being supported by a greater involvement from the top management....."
             }, 
             {
+                downstreamurl   : "/environmentsustain",
                 downstreamTitle : "Environmental Consulting",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "In recent times, environmental management concepts and sustainable development practices have been a focal point of rapidly evolving process organizations. This trend can be associated as an outburst of the public reactions, climate-change studies, activists, and concerns about the environment....."
             }, 
             {
+                downstreamurl   : "/environmentsustain",
                 downstreamTitle : "Sustainability Strategy",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions assists its clients to assess and mitigate environmental and sustainability risk by meticulously studying the operational and corporate level business processes, utilizing their hydrocarbon industry expertise......"
             }, 
             {
+                downstreamurl   : "/hsesystemevalution",
                 downstreamTitle : "HSE System Evaluation",
                 downstreamimg   : "/images/Illustration_6.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "With the recent advancements in the IT industry, the options available in Health, Safety and Environment (HSE) – its applications and systems are becoming a complex and overwhelming experience. HSE systems and applications make it easy to manage, track and report safety-related process data....."
             }, 
             {
+                downstreamurl   : "/hsebusinessprocessingmapping",
                 downstreamTitle : "HSE Business Process Framing",
                 downstreamimg   : "/images/Illustration_6.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Different activities related to HSE are handled readily by currently available software solutions. These HSE systems and solutions work around the standard workflows as an organization can have different and more evolved workflow as per their requirements...."
             }, 
             {
+                downstreamurl   : "/hsesolutionsimplementation",
                 downstreamTitle : "HSE Solutions Implementation",
                 downstreamimg   : "/images/Illustration_6.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "An effective HSE solution selection requires lot of efforts and brainstorming from all the HSE stakeholders. The solutions should not only meet all of client’s requirements but also should be capable enough to adjust to the future changes in policies and standards......."
             }, 
             {
+                downstreamurl   : "/changemanagement",
                 downstreamTitle : "Change Management",
                 downstreamimg   : "/images/Illustration_6.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Adapting newer technologies, processes, strategies, sophisticated software solutions and many other newer assets to the existing functional and technical configuration is a common practice adopted to improve both short and long-term business performance in today’s Oil and Gas business....."
             }
             
         ]

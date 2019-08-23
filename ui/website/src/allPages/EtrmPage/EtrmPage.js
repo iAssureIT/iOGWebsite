@@ -9,6 +9,7 @@ import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
+import Downstreamservicebanner from '../../allBlocks/Downstreamservicebanner/Downstreamservicebanner.js';
 
 export default class EtrmPage extends Component {
 
@@ -225,11 +226,20 @@ Commonleafulblock6(){
         ]
     }
     
+    ServicesData(){
+        return [
+            {
+                servicesimg   : "/images/ETRM-PricingToolApplication.png",
+            } 
+                        
+        ]
+    }
    
 
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+        <Downstreamservicebanner infodata={this.ServicesData()} />
       	<Overview OverviewData={this.overviewData()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock()} /> 
         <Imgleafblock ImgleafblockData={this.imgleafblockData()} />

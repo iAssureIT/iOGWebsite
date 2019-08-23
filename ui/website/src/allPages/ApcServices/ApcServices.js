@@ -9,6 +9,7 @@ import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
+import Downstreamservicebanner from '../../allBlocks/Downstreamservicebanner/Downstreamservicebanner.js';
 
 
 export default class ApcServices extends Component {
@@ -340,12 +341,20 @@ Commonleafulblock7(){
             }
         ]
     }
-
+    ServicesData(){
+        return [
+            {
+                servicesimg   : "/images/APC-Services.png",
+            } 
+                        
+        ]
+    }
    
 
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+        <Downstreamservicebanner infodata={this.ServicesData()} />
       	<Overview OverviewData={this.overviewData()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock()} /> 
         <Challenges   CommonleafblockData={this.Commonleafulblock2()} /> 

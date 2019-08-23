@@ -184,7 +184,7 @@ CareersData(){
                                         Send CVs on 
                                         <b>
 
-                                        <a href="mailto:careers@iogsolutions.com">careers@iogsolutions.com</a>
+                                        <a href="mailto:careers@iogsolutions.com"> careers@iogsolutions.com</a>
                                         </b>
                                         </h5>
                                     

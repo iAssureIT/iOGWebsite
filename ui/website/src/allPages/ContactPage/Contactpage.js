@@ -3,6 +3,7 @@ import swal                   from 'sweetalert';
 import $                      from 'jquery';
 // import { render } from 'react-dom';
 import Select                 from 'react-select-nested';
+import Map from '../../allBlocks/Map/Map.js';
 
 
 
@@ -277,9 +278,14 @@ class Contactpage extends Component{
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacttextmargin2">
                           <div className="row">
                               <div className="contactpageform">
+                                <div className="col-lg-12">
+                                    <div className="col-lg-2 col-lg-offset-5">
+                                      <div className="line1 col-lg-1 col-lg-offset-2"></div>
+                                    </div>                    
+                                </div> 
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                   <div className="row">
-                                      <div className="contactcontent textcolorblue text-center">
+                                      <div className="contactcontent lightbluetext  text-center">
                                           <span>Contact</span><span className="us"> Us</span>
                                       </div>
                                   </div>
@@ -397,7 +403,7 @@ class Contactpage extends Component{
                                     </div>*/}
                                     <div className="col-lg-12">
                                       <div className="col-lg-2 col-lg-offset-10">
-                                        <button className="btn bgiogblue contactformbtn buttonhover" onClick={this.Submit.bind(this)}> Submit</button>
+                                        <button className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}> Submit</button>
                                       </div>
                                    </div>
                                 </form>
@@ -406,6 +412,9 @@ class Contactpage extends Component{
                       </div>
                     </div>
                   </div>
+              </div>
+              <div>
+                <Map />
               </div>
           </div>    
     );

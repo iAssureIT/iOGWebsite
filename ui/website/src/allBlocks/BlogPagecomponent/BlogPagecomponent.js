@@ -87,8 +87,8 @@ for (var i = 0; i < accordions.length; i++) {
                                       </h4>
                                       </div>
                                       <div id={"collapseThree"+index} className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div className="panel-body">
-                                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                                        <div className="panelBody ht1100">
+                                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12 ">
                                           <div className="col-lg-12 blogImgContainerInner"><div className="col-lg-12 col-md-6 col-sm-12 col-xs-12"><img src={data.blogsimg}/></div></div>
                                         </div>
                                           <BlogContent />

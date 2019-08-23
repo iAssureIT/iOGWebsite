@@ -34,8 +34,8 @@ export default class Applicationdevppage extends Component {
 Commonleafulblock(){
         return [
             {
-                challengesTitle : "Our Application Management services include:",
-                challengestext  : "",
+                challengesTitle : "",
+                challengestext  : "Our Application Management services include:",
                 challengestext2 : "",
                 commonulliUl : [
                     {
@@ -89,9 +89,9 @@ Commonleafulblock(){
     commonulliData(){
         return [
             {
-                commonulliheading : "Our Application Development services include:",
+                commonulliheading : "",
                 commonullisubheading : "",
-                commonullitext  : "",
+                commonullitext  : "Our Application Development services include:",
                 commonulliUl : [
                     {   ulData : "Support for software version upgrades",
                         commonulliLi : [

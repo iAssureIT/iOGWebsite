@@ -26,17 +26,19 @@ export default class Supplychainpage extends Component {
 
   DownstreamData(){
         return [
-            {
+            { 
+                downstreamurl   : "/planningschedul",
                 downstreamTitle : "Planning & Scheduling",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Operating margins in the refinery are largely controlled by the feedstock costs. Because of the capital-intensive nature of refining, the margins are fairly tight, and the refiners are always looking to produce more. There are some well-established strategies to increase the bottom line for an operating refinery....."
                     
                 
             }, 
             {
+                downstreamurl   : "/supplydistribute",
                 downstreamTitle : "Supply & Distribution",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Current day market competitiveness creates a need to deploy effective solutions in the oil and gas business for managing the petroleum supply chain through timely visualization of market demand, identification of inventory pinch spots and proactive scheduling of supply chain movements with the objective of devising the most optimal distribution, exchange and inventory plan....."
             }
         ]
     }
