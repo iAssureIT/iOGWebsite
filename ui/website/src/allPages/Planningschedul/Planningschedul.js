@@ -12,7 +12,7 @@ export default class Planningschedul extends Component {
             {
                 servicesTitle : "Planning & Scheduling",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Planning-&-Scheduling_Background.png",
                 servicestext  : "Operating margins in the refinery are largely controlled by the feedstock costs. Because of the capital-intensive nature of refining, the margins are fairly tight, and the refiners are always looking to produce more. There are some well-established strategies to increase the bottom line for an operating refinery.",
                     
                 

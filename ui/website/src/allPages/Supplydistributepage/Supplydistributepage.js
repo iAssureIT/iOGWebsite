@@ -26,28 +26,31 @@ export default class Supplydistributepage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/demandmanagement",
                 downstreamTitle : "Demand Management",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Demand Management is a critical link in the entire supply chain management process essentially required to manage and forecast the demand of products to ensure high level of customer satisfaction and effective asset utilization....."
                     
                 
             }, 
             {
+                downstreamurl   : "/inventorymanagement",
                 downstreamTitle : "Inventory Management",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "End-to-end integration of the petroleum supply chain from crude movement through finished product actualization is very crucial in present market conditions.  Petroleum supply chain operational teams often struggle with limited visibility into inventory levels at a terminal, production schedules, distribution plans and product movement requirements to ensure orders are delivered in the most profitable and timely manner..... "
             }, 
             {
+                downstreamurl   : "/diatributionplanning",
                 downstreamTitle : "Distribution Planning and Optimization",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "The world’s leading integrated energy companies with extensive refining, marketing and distribution operations enhance their competitiveness through integration of their business processes. A key objective would be to improve coordination between distribution planning and operational scheduling across the supply chain and adapt the responses to rapidly changing market conditions...."
             }, 
             {
+                downstreamurl   : "/retailautomation",
                 downstreamTitle : "Retail Automation",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }
-            
+                downstreamtext  : "Brand equity of oil marketing companies (OMCs) depends a lot on customer satisfaction which in turn converts to brand loyalty. Needless to add, this is a very significant and critical contributor to enable these companies to retain market share and consequently maximize their profitability. The quality and integrity of deliverables has a direct impact on top lines and bottom lines of these corporations...."
+            }            
         ]
     }
   

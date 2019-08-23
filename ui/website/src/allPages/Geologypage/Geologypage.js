@@ -82,26 +82,30 @@ export default class Geologypage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/geophysicalinterpretation",
                 downstreamTitle : "Geophysical Interpretation",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Geophysical Interpretation is the extraction of subsurface geologic information from the data obtained using various techniques such as Seismic, Gravitational, Magnetic etc. Geophysical Interpretation is best carried out in integration with Geological Data and we combine our expertise in both to provide our clients a balanced interpretation...."
                     
                 
             }, 
             {
+                downstreamurl   : "/geologicalinterpretation",
                 downstreamTitle : "Geological Interpretation",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions is a comprehensive solution provider in the Oil and Gas industry domain. It brings to the table vast domain expertise in the oil and gas space across the entire spectrum of the domain, adapted into innovative solutions to help clients address their Geological Interpretation and related needs......"
             }, 
             {
+                downstreamurl   : "/petrophysicalanalysis",
                 downstreamTitle : "Petrophysical Analysis",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Rock Physics plays a fundamental role in all exploration & production analysis because the physical properties data form the basis for interpreting seismic data. iOG offers the services of  world´s top experts in rock physics & physical properties analysis to provide world-class petrophysical solutions. Our experts analyse the client´s well log data & use this information to perform physical properties feasibility studies for the area of interest that can be used in all aspects of geophysical work...."
             }, 
             {
+                downstreamurl   : "/subsurfacemodeling",
                 downstreamTitle : "Subsurface Modeling",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Seismic to simulation sub-surface modelling solutions are a critical input to exploration processes & decision making as regards any asset or field. iOG offers a solution that helps reduce geological uncertainty & consequent vulnerability of processes. The overall impact is to enhance production, resulting in much better return on investment (ROI).... "
             }
         ]
     }

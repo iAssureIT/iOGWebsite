@@ -30,8 +30,6 @@ export default class Downstreamservicespage extends Component {
                 downstreamTitle : "Supply Chain Management",
                 downstreamimg   : "/images/Illustration_2.png",
                 downstreamtext  : "The ever-increasing demand for chemicals & petrochemicals derived from valuable petroleum feedstock has pushed oil giants to reach more customers and increase their market share and profitability. Supply chains are growing complex by the day and the petroleum industry is finding the development and management of the same a very complex task."
-                    
-                
             }, 
             {
                 downstreamurl   : "/manufacturesystem",

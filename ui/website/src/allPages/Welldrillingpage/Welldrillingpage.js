@@ -63,36 +63,42 @@ export default class Welldrillingpage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/wellplanningdrilling",
                 downstreamTitle : "Well Planning & Drilling",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Well Planning is defined as engineering activities which follow on from the identification of a subsurface target for a well (exploration, appraisal, or development well) until the completion of that well...."
                     
                 
             }, 
             {
+                downstreamurl   : "/wellperformanceanalysis",
                 downstreamTitle : "Well Performance Analysis",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Well performance monitoring helps to identify wells where deliverability has deteriorated. iOG Solutions provides in-depth Analysis and Monitoring of wells while drilling, after drilling, after completion, after production and also for reservoir behaviour during all the phases...."
             }, 
             {
+                downstreamurl   : "/wellmodeling",
                 downstreamTitle : "Well Modeling",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "The Flow behaviour inside and adjacent to the wellbore has an important impact on the overall performance of well. We employ some of the latest technological advances and tools to model the multiphase flow inside and near the wellbore, while taking into account the factors which affect such behaviour...."
             }, 
             {
+                downstreamurl   : "/wellloginterpretation",
                 downstreamTitle : "Well Log Interpretation",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Well logs provide insight into the formations and conditions in the subsurface, aimed primarily at detection and evaluation of possibly productive horizons. In addition to these logs that are used to characterize the wellbore, formation, and fluids, a number of logging tools are available to provide information during production operations...."
             }, 
             {
+                downstreamurl   : "/welldrillingservices",
                 downstreamTitle : "Well Drilling Services",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Our Drilling experts can provide clients the capability to undertake detailed drilling design as well as the capacity to track, monitor and advice on real time drilling operations. We simulate drilling operations and let our customers know beforehand the challenges prior to starting the actual drilling operation, leading to a substantial reduction in risk and cost of drilling operations....."
             }, 
             {
+                downstreamurl   : "/welldatamanagement",
                 downstreamTitle : "Well Data Management",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG helps its client to manage well data from request-to-drill through abandonment. It uses robust schematics, flexible reporting capabilities, and query engine to track operational changes throughout the well lifecycle.  We collect, store, modify, validate and give meaningful output to our customers. We deal with all kinds of well data including Design data, Well Testing data, Well Log data, Well Integrity and real-time well performance data...."
             }
         ]
     }

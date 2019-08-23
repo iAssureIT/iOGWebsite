@@ -64,36 +64,42 @@ Commonleafulblock(){
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/seismicdatamanagement",
                 downstreamTitle : "Seismic Data Management",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Seismic data helps to get a geophysical picture of sub-surface structures. Interpretation of sub-surface structures for, seismic data is indeed a difficult task. For the evaluation of well productivity and reservoir characteristics, iOG provides well test solutions over the entire E & P cycle including Drilling, Completion and Production phases. Our team is experienced in the interpretation of data acquired from single & multi-well test, deliverability tests....."
                     
                 
             }, 
             {
+                downstreamurl   : "/welldatamanagements",
                 downstreamTitle : "Well Data Management ",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "The most important aspect of preparing the well plan, and subsequent drilling engineering, is determining the expected characteristics and problems to be encountered in the well. A well cannot be planned properly if these environments are unknown...."
             }, 
             {
+                downstreamurl   : "/realtimeproductiondatamanagement",
                 downstreamTitle : "Real-time Production Data Management",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "At iOG solutions, our objective is to help our clients track hydrocarbon-related data in real time throughout the E&P life cycle, with a high degree of automation. Our real-time data management capabilities can support the clients in ensuring that their drilling engineers, reservoir engineers and production engineers are always working on the latest data.... "
             }, 
             {
+                downstreamurl   : "/datagovernance",
                 downstreamTitle : "Data Governance",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "For iOG Solutions, data governance is one of the pillars of data management (DM) and is often considered hand-in-hand with data quality efforts and master data management programs. In exploration and production (E&P) community, initiatives to implement data governance are often seen as either organizational efforts or technology efforts and are driven from the corporate office with a top-down emphasis...."
             }, 
             {
+                downstreamurl   : "/comprehensivemasterdatamanagement",
                 downstreamTitle : "Comprehensive E & P Master Data Management",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Oil and gas enterprises handle a huge amount of data from disparate sources on a daily basis and most of it is unstructured. The upstream enterprises can address the magnitude and complexity of E & P data with a holistic data management solution...."
             }, 
             {
+                downstreamurl   : "/cloudbaseddatamanagement",
                 downstreamTitle : "Cloud-based Data Management",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Cloud based applications aims to reduce IT infrastructure and cost by outsourcing it to specialized service organizations. The reduced infrastructure and maintenance costs while improved utilization and increased flexibility help clients in meeting changing business requirements."
             }
         ]
     }

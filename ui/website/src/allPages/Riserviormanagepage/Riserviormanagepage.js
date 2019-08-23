@@ -70,26 +70,30 @@ export default class Riserviormanagepage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/reservoirengineering",
                 downstreamTitle : "Reservoir Engineering",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "We at iOG solutions help our clients during the development and production of oil and gas reservoirs by maximizing their production rates with the aim of optimizing economic Hydrocarbon recovery. Our Reservoir Engineering team works together with geologists and geophysicists to find the reserves of oil and gas relying on the basic laws of physics and chemistry that affect the behaviour of liquid and vapour phases of oil, natural gas and water in rock...."
                     
                 
             }, 
             {
+                downstreamurl   : "/fielddevelopmentplan",
                 downstreamTitle : "Field Development Plan",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Generating Field development plans (FDPs) is the process of evaluating multiple development options for a field and selecting the best option based on assessing trade-offs among multiple factors. It gives you the best technical solutions for field optimization. iOG performs detailed and comprehensive field development plans to cover all technical aspects inclusive of seismic, geological, petrophysical, reservoir engineering, production technology,......"
             }, 
             {
+                downstreamurl   : "/dynamicreservoirsimulation",
                 downstreamTitle : "Dynamic Reservoir Simulation",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Dynamic Reservoir simulation is an area of reservoir engineering in which computer models are used to predict the flow of fluids. Reservoir simulation models are used for: The Development of new fields through the identification of the number of wells required, the optimal completion of wells, the present and future needs for an artificial lift and the expected production of oil, water and gas....."
             }, 
             {
+                downstreamurl   : "/reservoircharacterization",
                 downstreamTitle : "Reservoir Characterization",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Static Reservoir modeling, also sometimes referred to as Reservoir Characterization is carried out to determine reservoir architecture and quality with respect to distribution of porosity, permeability and rock properties...... "
             }
         ]
     }

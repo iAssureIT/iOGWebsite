@@ -156,7 +156,7 @@ CareersData(){
                                     <div key={index} className="panel panel-default">
                                       <div className="panel-heading" role="tab" id="headingThree">
                                         <h4 className="panel-title">
-                                        <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree">
+                                        <a className="collapsed careerAnchorhover" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree">
                                           {data.careersTitle}
                                         </a>
                                       </h4>
@@ -191,7 +191,7 @@ CareersData(){
                                         {data.careerstext}
 
                                            <div>
-                                              <a href="/form" className="btn btn-primary buttonn_1 col-lg-6 col-lg-offset-8" role="button" onClick={this.handleShow}>Click here to apply</a>
+                                              <a href="/form" className="btn lightbluebg buttonhover buttonn_1 col-lg-6 col-lg-offset-8" role="button" onClick={this.handleShow}>Click here to apply</a>
                                               
                                               
 

@@ -12,10 +12,10 @@ export default class Industriesprocessing extends Component {
   ServicesData(){
         return [
             {
-                servicesTitle : "Gas Processing",
+                servicesTitle    : "Gas Processing",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/2.png",
-                servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicesimg      : "/images/Gas_graphics.png",
+                servicestext     : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             } 
@@ -43,7 +43,7 @@ export default class Industriesprocessing extends Component {
                                                 <p className="line_subhead ">{data.servicesSubTitle}</p>
                                                 <p className="line_para">{data.servicestext} </p>   
                                             </div>
-                                            <a className="col-lg-4" href="/gasprocessing"><button className="lightbluebg servicekbtn btn">Read More <span className="servicekbtnarrow">>></span></button></a>
+                                            <a className="col-lg-4" href="/gasprocessing"><button className="lightbluebg buttonhover servicekbtn btn">Read More <span className="servicekbtnarrow">>></span></button></a>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                                           <div className="col-lg-8 col-lg-offset-2 ">

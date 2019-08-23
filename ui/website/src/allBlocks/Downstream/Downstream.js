@@ -60,32 +60,32 @@ export default class Downstream extends Component {
     {    
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 550) {
+        if (scroll >= 300) {
             $(".para0").addClass("paraeff");
         } else {
             $(".para0").removeClass("paraeff");
         }
-        if (scroll >= 550) {
+        if (scroll >= 300) {
             $(".para1").addClass("paraeff");
         } else {
             $(".para1").removeClass("paraeff");
         }
-        if (scroll >= 1000) {
+        if (scroll >= 800) {
             $(".para2").addClass("paraeff");
         } else {
             $(".para2").removeClass("paraeff");
         }
-        if (scroll >= 1000) {
+        if (scroll >= 800) {
             $(".para3").addClass("paraeff");
         } else {
             $(".para3").removeClass("paraeff");
         }
-        if (scroll >= 1300) {
+        if (scroll >= 1200) {
             $(".para4").addClass("paraeff");
         } else {
             $(".para4").removeClass("paraeff");
         }
-        if (scroll >= 1300) {
+        if (scroll >= 1200) {
             $(".para5").addClass("paraeff");
         } else {
             $(".para5").removeClass("paraeff");

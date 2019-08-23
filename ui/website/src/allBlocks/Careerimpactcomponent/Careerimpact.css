@@ -9,7 +9,9 @@
     /*padding-top: 35px;*/
     /*padding: 0;*/
 }
-
+.careerAnchorhover:hover, .careerAnchorhover:focus{
+  text-decoration: none
+}
 .career_para-top2{
   font-size: 40px;
    /* font-weight: 100;*/

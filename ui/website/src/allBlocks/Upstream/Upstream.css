@@ -4,6 +4,12 @@
     height: 120px;
   }
 
+.price-bodyhover:hover .upbuttonhover{
+  color: #fff!important;
+  background-color: #f19000;
+  transition-duration:0.7s;
+  cursor: pointer;
+}
 
 
 .cards

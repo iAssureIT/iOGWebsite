@@ -145,11 +145,11 @@ export default class Upstream extends Component {
                                                 <div className="price-body col-lg-12">
                                                 <img src={data.upstreamimg  } />
                                                 </div>
-                                                <div className="price-body col-lg-12">
+                                                <div className="price-body  col-lg-12">
                                                     <p className="text-justify upstreamtext">{data.upstreamtext}</p>
                                                 </div>
-                                                <div className="price-footer col-lg-12">
-                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 lightbluebg" value="View More"/></a>                                    
+                                                <div className="price-footer price-bodyhover col-lg-12 ">
+                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
                                                 </div>
                                             </div>
                                         </div>                       

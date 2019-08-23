@@ -49,6 +49,7 @@ for (var i = 0; i < accordions.length; i++) {
                 blogstext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                 
             },
+            
             /*{
                 blogsTitle : "Supply Chain Management",
                 blogsimg   : "/images/Illustration_2.png",
@@ -87,7 +88,7 @@ for (var i = 0; i < accordions.length; i++) {
                                       </h4>
                                       </div>
                                       <div id={"collapseThree"+index} className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div className="panelBody ht1100">
+                                        <div className="panel-body panelBody ht1100">
                                         <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12 ">
                                           <div className="col-lg-12 blogImgContainerInner"><div className="col-lg-12 col-md-6 col-sm-12 col-xs-12"><img src={data.blogsimg}/></div></div>
                                         </div>
@@ -98,6 +99,7 @@ for (var i = 0; i < accordions.length; i++) {
                                     );
                                 })
                           }
+                          <div className="blankBox"></div>
                           </div>
                         </div>
                         </div>

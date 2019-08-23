@@ -57,36 +57,42 @@ export default class Productionmanagepage extends Component {
   DownstreamData(){
         return [
             {
+                downstreamurl   : "/productionengineering",
                 downstreamTitle : "Production Engineering",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG’s Production Engineering involves designing and selecting the equipment that will get the well to produce oil and gas after it is drilled. It is based on the reservoir and well engineering design. In production engineering, iOG selects the artificial lift method; optimizes the design of tubing string and the design of the surface gathering system..."
                     
                 
             }, 
             {
+                downstreamurl   : "/productionmonitoringsurveillance",
                 downstreamTitle : "Production Monitoring and Surveillance",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Production Monitoring is focused on identifying improvement opportunities by identifying underperforming wells or fields by real-time data capture and analysis. Ultimate purpose is to provide information which can help to maximize oil recovery, extend life of well and reduce operating cost......"
             }, 
             {
+                downstreamurl   : "/productionaccountingsolution",
                 downstreamTitle : "Production Accounting",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Production accounting helps you monitor business processes for production, transport, sales and revenue of oil and gas. By monitoring every hydrocarbon produced, transported or sold, the value of the oil and gas from different sources can be determined....."
             }, 
             {
+                downstreamurl   : "/productionoptimization",
                 downstreamTitle : "Production Optimization",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "The objective of production optimization is to maximize the total oil/gas production rate and to minimize the total cost of operation. For single wells or other small systems, simple well optimization and nodal analysis may be adequate but for large complex systems, a much more sophisticated approach is needed to predict the response accurately and to examine alternative operational scenarios efficiently...."
             }, 
             {
+                downstreamurl   : "/productionforecasting",
                 downstreamTitle : "Production Forecasting",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions provides accurate and reliable production forecasting for the management and planning of petroleum reservoirs. Our team supports clients through different optimization and analysis techniques like Decline curve analysis for providing deterministic estimates for future performance and remaining reserves..... "
             }, 
             {
+                downstreamurl   : "/welltesting",
                 downstreamTitle : "Well Testing",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Well Test is a tool for reservoir evaluation and characterization which investigates a much larger volume of the reservoir than cores or logs, provides estimate of permeability under in-situ conditions, near-wellbore condition and distances to boundaries. Well test helps in defining reservoir limits (distances to boundaries, drainage area), estimate average drainage area pressure, characterize reservoir, diagnose productivity problems..."
             }
         ]
     }
