@@ -259,9 +259,9 @@ class Contactpage extends Component{
                                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 contactcontbackimg">
                                 </div>
                                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-3 contacticons">
-                                  <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                 {/* <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                                         <i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i>
-                                  </div>
+                                  </div>*/}
                                   <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                                       <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="fa fa-linkedin contacticon2"></i></a>
                                   </div>

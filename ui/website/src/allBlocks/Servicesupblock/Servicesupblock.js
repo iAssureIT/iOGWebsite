@@ -15,7 +15,7 @@ export default class Servicesupblock extends Component {
                 servicesTitle : "Upstream",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/services5.png",
-                servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicestext  : "Oil & Gas upstream includes all the steps from the preliminary geological exploration of oil, its extraction and storage and distribution to the refineries. iOG Solutions provides best in class expertise, solution and work flow for all the disciplines throughout the Upstream Life cycle."
            } 
                         
         ]

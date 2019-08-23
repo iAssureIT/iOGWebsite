@@ -26,7 +26,7 @@ export default class BlogContent extends Component {
               <div className="col-lg-12" key={index}>
                 <div className="">
                   <div className={" index"+index}>
-                      <div className=" blogtext">
+                      <div className=" blogcontenttext">
                            <div className=" col-lg-12">
                             {/*  <div className="row blogsimg">
                                 <img alt="" src={data.BlogImg}/>

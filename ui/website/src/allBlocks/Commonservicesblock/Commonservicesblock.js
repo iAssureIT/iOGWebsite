@@ -71,7 +71,7 @@ export default class Commonservicesblock extends Component {
                                                     <h2>{data.downstreamTitle}</h2> 
                                                   </div>
                                                   <div className="serflip-card-back">
-                                                      <p className="text-justify">{data.downstreamtext}</p>
+                                                      <p className="text-left">{data.downstreamtext}</p>
                                                   </div>
                                                </div>
                                               </div>

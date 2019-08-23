@@ -12,7 +12,7 @@ export default class Supplydistributepage extends Component {
             {
                 servicesTitle : "Supply & Distribution",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Supply-&-Distribution_background.png",
                 servicestext  : "Current day market competitiveness creates a need to deploy effective solutions in the oil and gas business for managing the petroleum supply chain through timely visualization of market demand, identification of inventory pinch spots and proactive scheduling of supply chain movements with the objective of devising the most optimal distribution, exchange and inventory plan.",
                 servicestext2 : "Understanding the means to improve the quality of the logistics and transport systems and to reduce costs at the same time can be ensured with the use of information technology solutions in the sector of the supply chain.."
                     

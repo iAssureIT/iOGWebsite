@@ -37,7 +37,7 @@ export default class Supplychainpage extends Component {
             {
                 downstreamurl   : "/supplydistribute",
                 downstreamTitle : "Supply & Distribution",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Graphic.png",
                 downstreamtext  : "Current day market competitiveness creates a need to deploy effective solutions in the oil and gas business for managing the petroleum supply chain through timely visualization of market demand, identification of inventory pinch spots and proactive scheduling of supply chain movements with the objective of devising the most optimal distribution, exchange and inventory plan....."
             }
         ]

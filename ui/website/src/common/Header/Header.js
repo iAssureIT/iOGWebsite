@@ -45,10 +45,10 @@ componentWillMount() {$(window).scroll(function() {
                           <label htmlFor="drop" className="toggle">&#8801; Menu</label>
                           <input type="checkbox" id="drop" />
                           <ul className="menu">
-                             <li><a href="/">Home</a></li>
+                             <li><a href="/" className="headerTitle">Home</a></li>
                              <li> 
                                 <label htmlFor="drop-1" className="toggle">About Us</label>
-                                <a href="/about-us">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a href="/about-us" className="headerTitle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <input type="checkbox" id="drop-1"/>
                                 <ul>
                                   <li><a href="/about-us">Company Profile</a></li>
@@ -58,7 +58,7 @@ componentWillMount() {$(window).scroll(function() {
                               </li>
                               <li>  
                               <label htmlFor="drop-2" className="toggle">Services</label>
-                              <a href="/services">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <a href="/services" className="headerTitle">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                               <input type="checkbox" id="drop-2"/>
                               <ul>
                                 <li> 
@@ -117,6 +117,57 @@ componentWillMount() {$(window).scroll(function() {
                                     <li className="zindex"><a href="/apc-services">APC Services</a></li>
                                     <li className="zindex"><a href="/etrm">ETRM & Pricing Tool Application</a></li>
                                    </ul>
+                                </li>
+                                <li> 
+                                  <label htmlFor="drop-3" className="toggle">Digital Services</label>
+                                  <a href="/digitalservices">Digital Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                  <input type="checkbox" id="drop-3"/>
+                                  <ul>
+                                      <li className="zindex"><a href="/digitalstratergy">Digital IT Strategy & Roadmaps</a></li>
+                                      <li className="zindex"><a href="/applicationdevlopment">Application Development & Application Management (ADAM)</a></li>
+                                      <li className="zindex"><a href="/enablingtechnology">Enabling Technologies</a></li>
+                                      <li className="zindex"><a href="/visualizationdashboard">Visualization & Dashboards</a></li>                                     
+                                      <li className="zindex"><a href="/digitalasset">Digital Asset Life Cycle Management</a></li>                                     
+                                  </ul>
+                                </li>
+                                <li> 
+                                  <label htmlFor="drop-3" className="toggle">Asset Management</label>
+                                  <a href="/assetmanagement">Asset Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                  <input type="checkbox" id="drop-3"/>
+                                  <ul>
+                                     <li className="zindex"><a href="/EAM">Enterprise Asset Management</a></li>
+                                     <li className="zindex">
+                                      <label htmlFor="drop-4" className="toggle">Asset Reliability & Integraity Management</label>
+                                      <a href="/arimanagement">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                      <input type="checkbox" id="drop-4"/>
+                                        <ul>
+                                          <li><a href="/">Asset Criticality Analysis</a></li>
+                                          <li><a href="/">Risk Based Inspection</a></li>
+                                          <li><a href="/">Root Cause Analysis</a></li>
+                                          <li><a href="/">Failure Mode Effect Analysis</a></li>
+                                          <li><a href="/">Reliability Centered Maintenance</a></li>
+                                          <li><a href="/">Asset Strategy Management</a></li>
+                                          <li><a href="/">Inspection Management</a></li>
+                                          <li><a href="/">Calibration Management</a></li>
+                                          <li><a href="/">Reliability Availability & Maintainability (RAM) Moeling</a></li>
+                                          <li><a href="/">Spares Inventory Management & Optimisation (SIMO) </a></li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li> 
+                                  <label htmlFor="drop-3" className="toggle">Health Safety & Environment</label>
+                                  <a href="/Healthsafty">Health Safety & Environment <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                  <input type="checkbox" id="drop-3"/>
+                                  <ul>
+                                      <li className="zindex"><a href="/processsafty">Process Safety Management</a></li> 
+                                      <li className="zindex"><a href="/occupationhealth">Occupational Health & Safety Management</a></li> 
+                                      <li className="zindex"><a href="/environmentsustain">Environmental Consulting & Sustainability Management</a></li> 
+                                      <li className="zindex"><a href="/hsesystemevalution">HSE System Evaluation</a></li> 
+                                      <li className="zindex"><a href="/hsebusinessprocessingmapping">HSE Business Process Framing</a></li> 
+                                      <li className="zindex"><a href="/hsesolutionsimplementation">HSE Solutions Implementation</a></li> 
+                                      <li className="zindex"><a href="/changemanagement">Change Management</a></li> 
+                                  </ul>
                                 </li>
                                 <li> 
                                   <label htmlFor="drop-3" className="toggle">Upstream</label>
@@ -187,32 +238,6 @@ componentWillMount() {$(window).scroll(function() {
                                   </ul>
                                 </li>
                                  <li> 
-                                  <label htmlFor="drop-3" className="toggle">Digital Services</label>
-                                  <a href="/digitalservices">Digital Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                      <li className="zindex"><a href="/digitalstratergy">Digital IT Strategy & Roadmaps</a></li>
-                                      <li className="zindex"><a href="/applicationdevlopment">Application Development & Application Management (ADAM)</a></li>
-                                      <li className="zindex"><a href="/enablingtechnology">Enabling Technologies</a></li>
-                                      <li className="zindex"><a href="/visualizationdashboard">Visualization & Dashboards</a></li>                                     
-                                      <li className="zindex"><a href="/digitalasset">Digital Asset Life Cycle Management</a></li>                                     
-                                  </ul>
-                                </li>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Health Safety & Environment</label>
-                                  <a href="/Healthsafty">Health Safety & Environment <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                      <li className="zindex"><a href="/processsafty">Process Safety Management</a></li> 
-                                      <li className="zindex"><a href="/occupationhealth">Occupational Health & Safety Management</a></li> 
-                                      <li className="zindex"><a href="/environmentsustain">Environmental Consulting & Sustainability Management</a></li> 
-                                      <li className="zindex"><a href="/hsesystemevalution">HSE System Evaluation</a></li> 
-                                      <li className="zindex"><a href="/hsebusinessprocessingmapping">HSE Business Process Framing</a></li> 
-                                      <li className="zindex"><a href="/hsesolutionsimplementation">HSE Solutions Implementation</a></li> 
-                                      <li className="zindex"><a href="/changemanagement">Change Management</a></li> 
-                                  </ul>
-                                </li>
-                                 <li> 
                                   <label htmlFor="drop-3" className="toggle">Service Arms</label>
                                   <a href="/servicearms">Service Arms <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
@@ -223,36 +248,11 @@ componentWillMount() {$(window).scroll(function() {
                                       <li className="zindex"><a href="/iogstudy">iOGStudy</a></li>  
                                   </ul>
                                 </li>
-                                  <li> 
-                                  <label htmlFor="drop-3" className="toggle">Asset Management</label>
-                                  <a href="/assetmanagement">Asset Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                     <li className="zindex"><a href="/EAM">Enterprise Asset Management</a></li>
-                                     <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Asset Reliability & Integraity Management</label>
-                                    <a href="/arimanagement">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/">Asset Criticality Analysis</a></li>
-                                        <li><a href="/">Risk Based Inspection</a></li>
-                                        <li><a href="/">Root Cause Analysis</a></li>
-                                        <li><a href="/">Failure Mode Effect Analysis</a></li>
-                                        <li><a href="/">Reliability Centered Maintenance</a></li>
-                                        <li><a href="/">Asset Strategy Management</a></li>
-                                        <li><a href="/">Inspection Management</a></li>
-                                        <li><a href="/">Calibration Management</a></li>
-                                        <li><a href="/">Reliability Availability & Maintainability (RAM) Moeling</a></li>
-                                        <li><a href="/">Spares Inventory Management & Optimisation (SIMO) </a></li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
                               </ul>
                             </li>
                             <li> 
                                 <label htmlFor="drop-1" className="toggle">Industries</label>
-                                <a href="/industries">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a href="/industries" className="headerTitle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <input type="checkbox" id="drop-1"/>
                                 <ul>
                                   <li><a href="/refinery">Refinery</a></li>
@@ -263,10 +263,10 @@ componentWillMount() {$(window).scroll(function() {
                                   <li><a href="/oilgasep">Oil & Gas E&P</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/careers">Careers</a></li>
-                            <li><a href="/resource">Resources</a></li>
-                            <li><a href="/blog">Blogs</a></li>
-                            <li><a href="/contact-us">Contact Us</a></li>
+                            <li><a href="/careers" className="headerTitle">Careers</a></li>
+                            <li><a href="/resource" className="headerTitle">Resources</a></li>
+                            <li><a href="/blog" className="headerTitle">Blogs</a></li>
+                            <li><a href="/contact-us" className="headerTitle">Contact Us</a></li>
                           </ul>
                         </nav>
                      </div>

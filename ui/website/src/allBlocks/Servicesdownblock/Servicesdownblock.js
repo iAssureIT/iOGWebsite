@@ -15,7 +15,7 @@ export default class Servicesdownblock extends Component {
                 servicesTitle : "Downstream",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/services1.png",
-                servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicestext  : "Oil & Gas downstream includes procurement and supply of Crude oil, refining operations, product blending, storage and distribution of finished products. The midstream operations such as trading, risk management, supply & distribution are also included in downstream verticals at iOG. In addition, it includes Petrochemicals and LNG facilities."
                     
                 
             } 

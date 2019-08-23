@@ -15,7 +15,7 @@ export default class Industriespetrochemicals extends Component {
                 servicesTitle : "Petrochemicals",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/industries2.png",
-                servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicestext  : "The petrochemical industry has seen substantial rapid growth during the past several years due to its higher value addition in recent volatile oil market. Multiple oil & gas downstream majors are now transforming from stand-alone refineries to integrated refining and petrochemical complex. Such an integrated configuration provides flexibility to refiners to tackle price volatility of crude oil and shrinking refining margins, thus ensuring enhanced and stable cash flows. "
                     
                 
             } 

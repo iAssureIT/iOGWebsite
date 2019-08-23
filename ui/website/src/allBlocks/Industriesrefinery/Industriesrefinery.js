@@ -15,7 +15,7 @@ export default class Industriesrefinery extends Component {
                 servicesTitle : "Refinery",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/industries1.png",
-                servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicestext  : "The refining industry is rapidly evolving and adapting to the new cutting-edge technologies. The global markets for refined products, the world refining capacity utilization are increasing day by day. Refining industry nowadays faces never seen before challenges that significantly hinders the business growth."
                     
                 
             } 

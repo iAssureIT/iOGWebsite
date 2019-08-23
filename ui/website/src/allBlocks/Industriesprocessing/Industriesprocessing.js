@@ -15,7 +15,7 @@ export default class Industriesprocessing extends Component {
                 servicesTitle    : "Gas Processing",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg      : "/images/Gas_graphics.png",
-                servicestext     : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicestext     : "Natural Gas Processing is in most aspects less complicated than the refining and processing crude oil, but its importance is as equal as crude oil. By separating all non-methane components and fluids from natural gas, we get pipeline-quality dry natural gas. This is done in Natural Gas Processing Plants which employs complex industrial process to get this impurity free dry natural gas."
                     
                 
             } 

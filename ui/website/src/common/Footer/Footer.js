@@ -71,10 +71,10 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Service Arms</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/">iOGImplement</a></li>
-                                <li><a href="/">iOGConsult</a></li>
-                                <li><a href="/">iOGTrain</a></li>
-                                <li><a href="/">iOGStudy</a></li>
+                                <li><a href="/iogimplement">iOGImplement</a></li>
+                                <li><a href="/iogconsult">iOGConsult</a></li>
+                                <li><a href="/iogtrain">iOGTrain</a></li>
+                                <li><a href="/iogstudy">iOGStudy</a></li>
                             </ul>
                         </div>
                         
@@ -91,7 +91,7 @@ export default class Footer extends Component {
                             <p>
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
                                  Amanora Chambers,<br/> Office 330,
-                                 3th floor, East Block,Hadapsar,
+                                 3<sup>rd</sup> floor, East Block,Hadapsar,
                                   Pune,India- 411028.<br/>
                                  <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 672 603 81/82.
                              </p>

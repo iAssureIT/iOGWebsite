@@ -119,6 +119,7 @@ import ApcServices                    from '../allPages/ApcServices/ApcServices.
 import EtrmPage                       from '../allPages/EtrmPage/EtrmPage.js';
 import Termsofusepage                 from '../allPages/Termsofusepage/Termsofusepage.js';
 import Privacypolicypage              from '../allPages/Privacypolicypage/Privacypolicypage.js';
+import Sitemap                        from '../allBlocks/Map/Map.js';
 
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
@@ -234,6 +235,7 @@ const WebLayout = () => (
     <Route path="/etrm" component={ EtrmPage } />
     <Route path="/termsofuse" component={ Termsofusepage } />
     <Route path="/privacypolicy" component={ Privacypolicypage } />
+    <Route path="/sitemap" component={ Sitemap } />
 
     <Route path="/trial" component={ Parallaxeff } />        
   </div>

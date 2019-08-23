@@ -29,7 +29,7 @@ export default class Founderprofile extends Component {
             }
         ]
     
-    }
+    }/*
         founder2(){
                 return [
                     {
@@ -52,7 +52,7 @@ export default class Founderprofile extends Component {
                     }
                 ]
             
-            }
+            }*/
 
           
   render() {
@@ -62,7 +62,7 @@ export default class Founderprofile extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="">
               <Aboutufounder founderData={this.founder1()} />
-              <Aboutufounder founderData={this.founder2()} />
+           { /*  <Aboutufounder founderData={this.founder2()} />*/}
           </div>
       </div>
     );  

@@ -15,7 +15,7 @@ export default class Industrieschemical extends Component {
                 servicesTitle : "Chemicals",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/industries3.png",
-                servicestext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                servicestext  : "Commodity Chemicals or Bulk Chemicals are manufactured on a very large scale to meet the ever-increasing global demand. The distinctive characteristic of the chemical industry is that manufacturing unit producing different but related products are placed in close clusters."
                     
                 
             } 

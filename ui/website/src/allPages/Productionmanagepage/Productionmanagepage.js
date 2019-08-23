@@ -73,7 +73,7 @@ export default class Productionmanagepage extends Component {
             {
                 downstreamurl   : "/productionaccountingsolution",
                 downstreamTitle : "Production Accounting",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/production-accounting.png",
                 downstreamtext  : "Production accounting helps you monitor business processes for production, transport, sales and revenue of oil and gas. By monitoring every hydrocarbon produced, transported or sold, the value of the oil and gas from different sources can be determined....."
             }, 
             {
