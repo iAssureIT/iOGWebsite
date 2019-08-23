@@ -35,25 +35,25 @@ export default class Manufacturingsyspage extends Component {
             {
                 downstreamurl   : "/datahistorian",
                 downstreamTitle : "Real time Data Historian",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Real-ime-data-historian.png",
                 downstreamtext  : "A Data Historian or Process Historian or Operational Historian is a software program that records and retrieves production and process data by time; it stores the information in a time series database that uses minimal disk space and enables fast retrieval. Time series information is often displayed in a trend or as tabular data over a time range...."
             }, 
             {
                 downstreamurl   : "/corporatedashboard",
                 downstreamTitle : "Corporate Dashboard & Analytics",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Corporate-dashboard-analytics.png",
                 downstreamtext  : "Corporate dashboards provide an integrated and visual representation of the complete oil business right from crude procurement all the way down to product distribution. It gives executives a quick and easy way to view and analyze the performance of the organization in real time....."
             }, 
             {
                 downstreamurl   : "/operationlogbook",
                 downstreamTitle : "Operation Logbook & Target Dashboard",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/operations-logbook-target-dashboard.png",
                 downstreamtext  : "The Operator Logbook is an application that logs, tracks events and operations data for use in daily and shift reports. It facilitates daily/weekly operations meetings by the recording comments and observations and enables other refinery staff to access and analyze operations data and reports in a consistent and reliable fashion. It also automates the operating instructions workflow, exchange of data with external systems....."
             }, 
             {
                 downstreamurl   : "/oilmovement",
                 downstreamTitle : "Oil Movement Management Systems",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/oil-movement-management-systems.png",
                 downstreamtext  : "An oil movement system (OMS) manages all pipelines, crude oil, and product storage tanks in the tank farm area and controls the movement of all intermediate components and finished products. It is also known as the Off-site Area Management Application and closes the loop between basic control systems and IT systems. OMS provides a collaborative environment for the offsite operations and provides an overview of all important events, tasks, data, instructions, and activities within this area...."
             }
         ]
