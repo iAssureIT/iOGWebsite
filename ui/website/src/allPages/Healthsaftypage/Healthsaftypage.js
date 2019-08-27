@@ -29,7 +29,7 @@ export default class Healthsaftypage extends Component {
             {
                 downstreamurl   : "/processsafty",
                 downstreamTitle : "Process Safety Management",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Process_safety_Management.png",
                 downstreamtext  : "Process-safety hazards arise because of the processing activities in a plant. Any incident in a manufacturing and processing plant may result in fatalities as well as huge asset, environmental, and reputational damage. Process safety management (PSM) deals with the identification, understanding, and control of process hazards to prevent process‐related injuries and incidents....."
                     
                 
@@ -37,25 +37,25 @@ export default class Healthsaftypage extends Component {
             {
                 downstreamurl   : "/occupationhealth",
                 downstreamTitle : "Occupational Health And Safety Management",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Occupational_health_&_safety_management.png",
                 downstreamtext  : "A healthy and safe working environment is a foundation stone for safety management initiative in any process plant. Today, an increasing number of organizations are now focusing on the preventative measures to safeguard their employees and processes from the unseen hazards. These trends are being supported by a greater involvement from the top management....."
             }, 
             {
                 downstreamurl   : "/environmentsustain",
                 downstreamTitle : "Environmental Consulting",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Environmental_Consulting.png",
                 downstreamtext  : "In recent times, environmental management concepts and sustainable development practices have been a focal point of rapidly evolving process organizations. This trend can be associated as an outburst of the public reactions, climate-change studies, activists, and concerns about the environment....."
             }, 
             {
                 downstreamurl   : "/environmentsustain",
                 downstreamTitle : "Sustainability Strategy",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Sustainability_Strategy.png",
                 downstreamtext  : "iOG Solutions assists its clients to assess and mitigate environmental and sustainability risk by meticulously studying the operational and corporate level business processes, utilizing their hydrocarbon industry expertise......"
             }, 
             {
                 downstreamurl   : "/hsesystemevalution",
                 downstreamTitle : "HSE System Evaluation",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/HSC_System_Evaluation.png",
                 downstreamtext  : "With the recent advancements in the IT industry, the options available in Health, Safety and Environment (HSE) – its applications and systems are becoming a complex and overwhelming experience. HSE systems and applications make it easy to manage, track and report safety-related process data....."
             }, 
             {
@@ -73,7 +73,7 @@ export default class Healthsaftypage extends Component {
             {
                 downstreamurl   : "/changemanagement",
                 downstreamTitle : "Change Management",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/Change_Management.png",
                 downstreamtext  : "Adapting newer technologies, processes, strategies, sophisticated software solutions and many other newer assets to the existing functional and technical configuration is a common practice adopted to improve both short and long-term business performance in today’s Oil and Gas business....."
             }
             

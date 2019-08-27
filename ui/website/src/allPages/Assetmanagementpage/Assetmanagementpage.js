@@ -29,7 +29,7 @@ export default class Assetmanagementpage extends Component {
             {
                 downstreamurl   : "/EAM",
                 downstreamTitle : "Enterprise Asset Management",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Enterprise_Asset_Management.png",
                 downstreamtext  : "A successful enterprise asset management (EAM) solution helps to achieve lowest maintenance costs, maintain equipment reliability, showcase integrity and bring world-class production standards. It brings integrated business processes that deliver maximum life-cycle profits from the operational assets...."
                     
                 
@@ -37,7 +37,7 @@ export default class Assetmanagementpage extends Component {
             {
                 downstreamurl   : "/arimanagement",
                 downstreamTitle : "Asset Reliability & Integraity Management",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Asset_Reliability_&_Integraity_Management.png",
                 downstreamtext  : "Asset Reliability and Integrity Management (RIM) focus on ensuring that process machineries and equipment are properly designed, installed in accordance with specifications, and remains fit for use until it is retired. RIM ensures that the systematic workflows are in place, such as inspections and tests, to ensure that critical process equipment are performing under its best operating state..."
             }
         ]

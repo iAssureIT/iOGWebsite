@@ -14,7 +14,7 @@ export default class Geologypage extends Component {
             {
                 servicesTitle : "Geology & Geophysics",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Geology__Geophysics.png",
                 servicestext  : "iOG understands the various paradigms of the subsurface ecosystem and its complexity. The domain knowledge and expertise in multiple disciplines (Geophysics, Geology, Petrophysics, and Geochemistry) enables it to understand, interpret and model the subsurface. ",
                 servicestext2 : ""
                     
