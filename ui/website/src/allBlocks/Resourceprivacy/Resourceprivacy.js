@@ -16,18 +16,20 @@ export default class Resourceprivacy extends Component {
                     <h2 className="lightbluetext text-center para1-top">Privacy Policy</h2>
                     <br></br>
                     <p className="line_para2  text-center">
-                        iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
-                        lege to join hands and work with you to explore every possibility of enhancing your company’s profitability.<br></br>
-                         We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
-                      </p>          
+                        The privacy and security of the personal information that we hold about you are very important to us and is an important part<br></br>
+                        of our relationship with our clients. The following privacy policy applies to all clients of iOG Solutions Pvt. Ltd. It is designed <br></br>to assist you in understanding how we collect and deal with your personal information. By dealing with us, you consent to  <br></br>the collection, use, and disclosure of your personal information as described in this privacy policy.<br></br>
+                    </p>          
                 </div>
                 <div  className="col-lg-12 blk_ht">
                         <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12  center_block">
                           <div className="resource_blck blckk-ht">
                             <p className="resource_para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis
+                            In the course of providing high end O&G software services, it is necessary for us to collect personal information. We will not use or disclose personal information for a purpose other than that for which it was collected
                             </p>
-                            <p className="resource_txt"><b>iOG Solutions</b>Policy</p>
+                            <p className="resource_txt"><b>iOG Solutions</b>Policy</p>                            
+                            <div className="price-footer price-bodyhover col-lg-12 ">
+                                <a className="upstreamfoot" href="/privacypolicy"><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="Read More"/></a>                                    
+                            </div>
                           </div>
                         </div>                        
                  </div>

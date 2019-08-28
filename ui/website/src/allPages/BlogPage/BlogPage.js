@@ -36,6 +36,7 @@ class BlogPage extends Component{
                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12 mt50">
                                 <BlogPagecomponent />
+                                // <div className="blankblock "></div>
                             </div>
 
                       </div>

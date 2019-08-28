@@ -12,13 +12,15 @@
     margin-bottom: 50px;
     margin-top: 58px;
     text-align: center;
+    padding: 8px;
 }
 
 .resource_txt{
-    margin-top: 56px;
+    margin-top: 40px;
     font-size: 20px;
 }
 
 .resource_para{
-	    padding-top: 73px;
+	padding-top: 60px;
+    font-size: 18px;
 }

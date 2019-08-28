@@ -46,7 +46,7 @@
     content: "\2212";
     margin-right: 50px;
     padding: 35px;
-    margin-top: -95px;
+    margin-top: 95px;
     border-radius: 5px;
     background-color: #0076d8;
     color:#fff;
@@ -117,7 +117,10 @@ margin-top: 24px !important;
 
 }
 .blogTitle{
-  font-size: 25px;
+  font-weight: bold;  
+  font-size: 21px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   color: #0076d8 !important;
 }
 .likeDiv{
@@ -139,5 +142,5 @@ margin-top: 24px !important;
   height: 1100px;
 }
 .blankBox{
-  height: 100px;
+  height: 50px;
 }

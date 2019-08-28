@@ -34,12 +34,12 @@ export default class Commonstream extends Component {
     {    
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 2000) {
+        if (scroll >= 1800) {
             $(".para10").addClass("paraeffect");
         } else {
             $(".para10").removeClass("paraeffect");
         }
-        if (scroll >= 2000) {
+        if (scroll >= 1800) {
             $(".para11").addClass("paraeffect");
         } else {
             $(".para11").removeClass("paraeffect");

@@ -13,7 +13,7 @@ export default class Datamanagepage extends Component {
             {
                 servicesTitle : "Data Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/data_Management.png",
                 servicestext  : "iOG Solutions Data Management Services include capturing, processing, loading, tracking, modifying, integrating, cleaning, rectifying errors, validating and visualizing data to best address our clients’ needs.  We make the data valuable for our customers by organizing and presenting it in metrics that are key to their processes.",
                 servicestext2 : "At iOG, we transform raw data into information, which leads to knowledge for our customers. Having the right knowledge, our customers can visualize and analyse the results and hence make business decisions more effective, easy, quick, confident and profitable, translating into real time economic advantages in challenging business environments. "
                     

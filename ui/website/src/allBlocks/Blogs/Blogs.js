@@ -101,7 +101,9 @@ export default class Blogs extends Component {
                                                     <div className="row">
                                                         <div className="col-lg-6 blogdate">july 5,2019</div>
                                                         <div className="col-lg-6">
-                                                            <input type="button" className="col-lg-10 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
+                                                            <a class="" href="/blog">
+                                                                <input type="button" className="col-lg-10 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
