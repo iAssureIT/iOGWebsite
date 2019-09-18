@@ -11,7 +11,7 @@ export default class Riserviormanagepage extends Component {
   ServicesData(){
         return [
             {
-                servicesTitle : "Reservior Management",
+                servicesTitle : "Reservoir Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Downstreaminfoblock.png",
                 servicestext  : "iOG Solutions provides end-to-end consulting services for management of reservoirs, utilizing state-of-the-art geoscience and engineering technologies. Our distinctive competencies and cutting-edge propositions are embodied in the breadth of technical expertise and diverse experience we provide. This is specifically true in the area of integrated reservoir characterization, modeling, and management.",

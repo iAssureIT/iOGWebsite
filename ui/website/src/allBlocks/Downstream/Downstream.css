@@ -12,13 +12,19 @@
     border-radius: 8px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
-    padding:77px 22px 55px 22px;
-    height: 370px;
+    padding:30px 12px 10px 12px;
+    height: 300px;
 }
 .block img{
-  height: 65%!important;
+  height: 55%;
 }
-
+.block img:hover
+{
+  transform: scale(0.8,0.8);
+  overflow-wrap: hidden;
+  /*transition-delay: 0.10s;*/
+  transition-duration: 0.20s;
+}
 .block h2{
 	/*margin-top: 70px;*/
 	font-size: 26px;
@@ -79,7 +85,7 @@
     
     to{
        
-        -webkit-transform: perspective(100px) rotateY(10deg);
+        -webkit-transform: perspective(100px) rotateY(0deg);
     }
 }
 .upstreamBg{
@@ -298,50 +304,70 @@
 
 .para0{
   position: relative;
-  left:-730px;
-  transform: rotate(20deg);
-  transition-duration: 2s;
+  top: 730px;
+  transform: rotate(0deg);
+  transition-duration: 1s;
 
 }
 .para2{
   position: relative;
-  left:-730px;
-  transform: rotate(20deg);
+  top: 730px;
+  transform: rotate(0deg);
   transition-duration: 2s;
 
 }
 .para4{
   position: relative;
-  left:-730px;
-  transform: rotate(20deg);
+  top: 730px;
+  transform: rotate(0deg);
   transition-duration: 2s;
 
 }
 .para1{
   position: relative;
-  left: 730px;
-  transform: rotate(-20deg);
-  transition-duration: 2s;
+  top: 730px;
+  transform: rotate(0deg);
+  transition-duration: 1s;
 
 }
 .para3{
   position: relative;
-  left: 730px;
-  transform: rotate(-20deg);
+  top: 730px;
+  transform: rotate(0deg);
   transition-duration: 2s;
 
 }
 .para5{
   position: relative;
-  left: 730px;
-  transform: rotate(-20deg);
+  top: 730px;
+  transform: rotate(0deg);
   transition-duration: 2s;
 
 }
 
 .paraeff{
   position: relative;
-  left :0px;
+  top :0px;
   transform: rotate(0deg);
   transition-duration: 1.2s;
+  margin-inline-start: 45px;
+  margin-inline-end: 40px;
+}
+
+.paraeff1{
+  position: relative;
+  top :0px;
+  transform: rotate(0deg);
+  transition-duration: 1.2s;
+  transition-delay: 0.5s
+}
+
+.border{
+  /*border: 1px solid*/
+}
+.downTitle{
+  font-size: 25px;
+}
+.streamImg{
+  margin-bottom: 15px;
 }

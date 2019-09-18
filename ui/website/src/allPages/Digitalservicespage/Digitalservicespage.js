@@ -26,7 +26,7 @@ export default class Digitalservicespage extends Component {
                 downstreamurl   : "/digitalstratergy",
                 downstreamTitle : "Digital IT Strategy & Roadmaps",
                 downstreamimg   : "/images/Digital-IT_strategy_&_roadmap.png",
-                downstreamtext  : "In recent years, the oil and gas industry has seen a number of initiatives to explore new digital technologies and to exploit their benefits. Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures and management concepts. The exploitation and integration of digital technologies often affect large parts of the oil business and impacts end products, business processes, distribution channels, and supply chains....."
+                downstreamtext  : "In recent years, the oil and gas industry has seen a number of initiatives to explore new digital technologies and to exploit their benefits. Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures and management concepts......"
                     
                 
             }, 

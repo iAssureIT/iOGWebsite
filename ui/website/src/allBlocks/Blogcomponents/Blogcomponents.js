@@ -7,11 +7,11 @@ import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
 
 import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
-import "./BlogPagecomponent.css";
+import "./Blogcomponents.css";
 import BlogContent from "../BlogContent/BlogContent.js";
-export default class BlogPagecomponent extends Component {
+export default class Blogcomponents extends Component {
 
-    componentDidMount(){
+componentDidMount(){
       var accordions = document.querySelectorAll('.accordion-item');
 
 for (var i = 0; i < accordions.length; i++) {
@@ -37,7 +37,7 @@ for (var i = 0; i < accordions.length; i++) {
           BlogSubImg1      : "/images/blog1.2.jpg",
           BlogSubImg2      : "/images/blog1.3.jpg",  
 
-        },
+        }, 
         {
           BlogSubImg1      : "/images/blog2.2.jpg",
           BlogSubImg2      : "/images/blog2.3.jpg",
@@ -90,12 +90,7 @@ for (var i = 0; i < accordions.length; i++) {
                         ulData : "offers the potential for better automated collection of data which would reduce the labour-intensive aspects of inspections. In Oil and Gas Sector - many companies today have begun to move toward Smart Connected Assets.",   
                     }
                 ],
-          /*BlogContent3     : "Asset Reliability and Integrity management (RIM) focuses on all assets to ensure that these assets deliver the required functions and performance in a sustainable manner over its entire lifecycle. Each asset is first analysed from criticality perspectives based on the worst-case scenario and prepare overall risk ranking. Then maintenance strategy such as RCM, RBI or Run to Failure are evaluated for asset type and implemented through execution tools such as EAM (ex: IBM Maximo or SAP PM).",
-          BlogContent4     : "The connectivity, integration and analytics capabilities being afforded by the IIoT are helping O&G customers to achieve new and higher levels of reliability.",
-          BlogContent5     : "For example, drones are great at monitoring and surveillance of remote facilities such as oil wells, storage tank and flare stack inspections etc. ",
-          BlogContent6     : "The digitizing oil and gas pipelines, refineries, infrastructure, field and exploration site, brings all the related data on a single platform which can detect and convey data such as movements, vibrations, leakages, corrosion, and others. Using data analytics tools, it helps in converting field/market data into actionable data within the oil and gas companies that can detect patterns and get insights into potential defects or failures.",
-          BlogContent7     : "Today, the biggest trend in oil and gas companies is utilizing in-house or external expertise to analyze their data.",
-         */ 
+        
           BlogText4     : "The connectivity, integration and analytics capabilities being afforded by the IIoT are helping O&G customers to achieve new and higher levels of reliability.",
           BlogContent9     : "Leading RIM solutions offers a seamless transition from the design-and-construct phase for a large capital project in asset-intensive industries to the operate-and-maintain phase. In order to operate efficiently with setting up and planning maintenance, clients must have knowledge of the equipment, maintenance and operational procedures in the industry. The software solutions utilize these inputs to calculate the reliability and availability of an individual asset based on a reliability model.",
           BlogContent10    : "At iOG Solutions, we specialize in consulting services to Oil and Gas industry to establish best practices, capabilities and solutions. Our Asset Management services typically focus on Asset Management Strategy, Asset monitoring, Reliability & Integrity Management, Asset Analytics, Predictive and Prescriptive Maintenance etc. ",
@@ -176,43 +171,48 @@ for (var i = 0; i < accordions.length; i++) {
     BlogsData(){
         return [
             {
-                id : "0",
-                blogDate  : "June 28 ,2019",
+                id : "Blog1",
+                blogDate   : "June 28, 2019",
                 numOfLike  : "209",
                 blogsTitle : "How oil and gas industry is embracing new age technologies?",
                 blogsimg   : "/images/blog1.1.jpg",
+                BlogContent1     : "As we come to the middle of 2019, oil and gas companies worldwide are facing constant changes.....",
               
             },
             {
-                id : "1",
-                blogDate  : "June 20 ,2019",
+                id : "Blog2",
+                blogDate   : "June 20, 2019",
                 numOfLike  : "158",
                 blogsTitle : "EHS Applications in Oil & Gas",
                 blogsimg   : "/images/blog2.1.jpg",
+                BlogContent1     : "EHS software solutions facilitates streamlining all aspects environmental, health and safety programs in organization. ....",
                
             },
             {
-                id : "2",
-                blogDate  : "July 28 ,2019",
+                id : "Blog3",
+                blogDate   : "July 28, 2019",
                 numOfLike  : "250",
                 blogsTitle : "Asset Reliability and Integrity Management Today",
                 blogsimg   : "/images/blog3.1.jpg",
+                BlogContent1     : "Process industries are asset-intensive and are witnessing many improvement opportunities as owner-operators.....",
 
             },
             {
-                id : "3",
-                blogDate  : "July 28 ,2019",
+                id : "Blog4",
+                blogDate   : "July 28, 2019",
                 numOfLike  : "200",
                 blogsTitle : "Energy Management in Refineries and Petrochemicals Complex",
                 blogsimg   : "/images/blog4.1.jpg",
+                BlogContent1     : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality.....",
 
             },
             {
-                id : "4",
-                blogDate  : "July 28 ,2019",
+                id : "Blog5",
+                blogDate   : "July 28, 2019",
                 numOfLike  : "170",
                 blogsTitle : "Leveraging Machine Learning to add value to the Oil & Gas business.",
                 blogsimg   : "/images/blog5.1.jpg",
+                BlogContent1     : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality.....",
 
             },
            
@@ -243,47 +243,35 @@ for (var i = 0; i < accordions.length; i++) {
     }*/
    
 
-    render(){
-        return(
-                    <div className="col-lg-12 NOpadding ">
-                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12  ">
-                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12  ">
-                          <div className="panel-group customPanel" id="accordion" role="tablist" aria-multiselectable="true">
-                        {
-                          this.BlogsData().map((data, index)=>{
-                            return (
-                              <div key={index} className="panel panel-default customDefaultPanel">
-                                <div className="panel-heading" role="tab" id="headingThree">
-                                  <h4 className="panel-title">
-                                  <a className="collapsed customPanel" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree" >
-                                  <div className="col-lg-4 blogImgContainer"><img src={data.blogsimg} /></div>
-                                  <div className="col-lg-8">
-                                    <label className="mt80 blogDate col-lg-8">{data.blogDate}</label><br/>
-                                    <label className="blogTitle col-lg-9">{data.blogsTitle}</label><br/>
-                                    <label className="likeDiv col-lg-12"><i className="fa fa-thumbs-up"></i> &nbsp;&nbsp;{data.numOfLike}</label><br/>
-                                  </div>
-                                  </a>
-                                </h4>
-                                </div>
+  render(){
+    return(
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+        {
+          this.BlogsData().map((data, index)=>{
+            return (
+            <div key={index} className="col-lg-4 col-md-6 col-sm-12 col-xs-12  customDefaultPanel">
+              <div className="panel-heading" role="tab" id="headingThree">
+                <a className=" customPanel" id="" role="button" data-parent="#" href={"/blogs/"+data.id}  aria-controls="" >
+                  
 
-                                <div id={"collapseThree"+index} className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                  <div className="panel-body panelBody ht1100">
-                                  <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12 ">
-                                    <div className="col-lg-12 blogImgContainerInner"><div className="col-lg-12 col-md-6 col-sm-12 col-xs-12"><img src={data.blogsimg}/></div></div>
-                                  </div>
-
-                                    <BlogContent infoId={data.id} infodata={this.BlogsText()} />
-                                  </div>
-                                </div>
-                              </div>
-                              );
-                            })
-                          }                        
-                          </div>
-                        {/*  <div className="blankblock "></div>*/}
-                        </div>
-                        </div>
-                    </div>   
-             );
-         }
-    }
+                  <div className="col-lg-12 blogImgContainer"><img src={data.blogsimg} /></div>
+                  <div className="NOpadding">
+                    <label className="blogDate ">{data.blogDate}</label>
+                    <label className="likeDiv pull-right"><i className="fa fa-thumbs-up"></i> &nbsp;&nbsp;{data.numOfLike}</label><br/>
+                    <div className="blogTitle">{data.blogsTitle}</div>
+                    <div className="blogContent">{data.BlogContent1}</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+            {  /*  <BlogContent infoId={data.id} infodata={this.BlogsText()} />*/}
+              </div>
+            </div>
+       
+            );
+          })
+        }                        
+      </div>
+    );
+  }
+}

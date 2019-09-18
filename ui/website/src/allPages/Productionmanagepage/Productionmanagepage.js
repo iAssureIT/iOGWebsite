@@ -13,7 +13,7 @@ export default class Productionmanagepage extends Component {
             {
                 servicesTitle : "Production Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Production_Management.png",
                 servicestext  : "iOG Solutions offers its clients the complete range of Production Management services. These include design completion and surface systems management, selection and design of the artificial lift, design and implementation of production allocation and accounting systems, monitoring production volumes and other parameters in real-time, calculating and reporting KPIs, optimization of oil/gas production rates as well as in predicting future performance. It also includes diagnosis of productivity problems and evaluation of stimulation treatments.",
                 servicestext2 : ""
                     

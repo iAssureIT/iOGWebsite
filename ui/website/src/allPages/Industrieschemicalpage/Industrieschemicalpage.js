@@ -12,7 +12,7 @@ export default class Industrieschemicalpage extends Component {
             {
                 servicesTitle : "Chemicals",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Chemicals.png",
                 servicestext  : "Commodity Chemicals or Bulk Chemicals are manufactured on a very large scale to meet the ever-increasing global demand. The distinctive characteristic of the chemical industry is that manufacturing unit producing different but related products are placed in close clusters.",
                 servicestext2 : "Unpredictable raw material prices, strict government and regulatory compliances, highest quality management standards, outdating process plants and machinery, data overload caused by leveraging new age technologies, higher utilities bill irrespective of location etc have always been a major headache to chemical manufacturers. Adding to this the producers have been always reluctant to digitization initiatives because it seems too intimidating. Some producers who take up this initiative don’t have any clear roadmaps to finish their digital journey."
                     

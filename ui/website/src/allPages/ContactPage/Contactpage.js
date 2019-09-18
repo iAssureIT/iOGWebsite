@@ -138,14 +138,14 @@ class Contactpage extends Component{
         formIsValid = false;
         errors["companyName"] = "This field is required.";
       }
-      if (!fields["designation"]) {
-        formIsValid = false;
-        errors["designation"] = "This field is required.";
-      }
-      if (!fields["country"]) {
-          formIsValid = false;
-          errors["country"] = "This field is required.";
-      }
+      // if (!fields["designation"]) {
+      //   formIsValid = false;
+      //   errors["designation"] = "This field is required.";
+      // }
+      // if (!fields["country"]) {
+      //     formIsValid = false;
+      //     errors["country"] = "This field is required.";
+      // }
       if (!fields["email"]) {
         formIsValid = false;
         errors["email"] = "This field is required.";
@@ -154,18 +154,18 @@ class Contactpage extends Component{
         formIsValid = false;
         errors["message"] = "This field is required.";
       }          
-      if (!fields["subject"]) {
-        formIsValid = false;
-        errors["subject"] = "This field is required.";
-      }  
+      // if (!fields["subject"]) {
+      //   formIsValid = false;
+      //   errors["subject"] = "This field is required.";
+      // }  
        if (!fields["contactNumber"]) {
         formIsValid = false;
         errors["contactNumber"] = "This field is required.";
       }
-    /*   if (!fields["enquiry"]) {
+     if (!fields["enquiry"]) {
         formIsValid = false;
         errors["enquiry"] = "This field is required.";
-      } */         
+      }         
       this.setState({
         errors: errors
       });
@@ -328,7 +328,7 @@ class Contactpage extends Component{
                                           <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
                                           <div className="input-group">
                                             <span className="input-group-addon"><i className="fa fa-mobile" aria-hidden="true"></i></span>
-                                            <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder="Enter Contact Number"/>
+                                            <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder="Enter Contact Number"/>
                                           </div>
                                           <div className="errorMsg">{this.state.errors.contactNumber}</div>
                                         </div>

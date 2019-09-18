@@ -19,6 +19,7 @@ import ServicesPage   from '../allPages/ServicesPage/ServicesPage.js';
 import IndustriesPage from '../allPages/IndustriesPage/IndustriesPage.js';
 import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
+import BlogContent    from '../allBlocks/BlogContent/BlogContent.js';
 import Ourjourny      from '../allPages/Ourjourny/Ourjourny.js';
 import Founderprofile from '../allPages/Founderprofile/Founderprofile.js';
 
@@ -141,6 +142,7 @@ const WebLayout = () => (
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resource" component={ ResourcePage } />
     <Route path="/blog" component={ BlogPage } />
+    <Route path="/blogs/:id" component={ BlogContent } />
     <Route path="/video" component={ VideoPage } />
     <Route path="/form" component={ FormContent} />
     <Route path="/downstream" component={ Downstreamservicespage } />

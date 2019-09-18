@@ -13,7 +13,7 @@ export default class Welldrillingpage extends Component {
             {
                 servicesTitle : "Well & Drilling",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Well__drilling.png",
                 servicestext  : "iOG Well & Drilling Services offer the  complete range of services addressing Well Lifecycle Management from Well Planning, Drilling, Testing and log interpretation, performance monitoring to abandonment. It covers all the well related services in each business area such as Planning, Exploration, Development, Production and Decommissioning of the well and have emerged and evolved through vast experience in Well Planning, Designing and Optimization of Drilling Activities and Well Performance Monitoring.",
                 servicestext2 : ""
                     

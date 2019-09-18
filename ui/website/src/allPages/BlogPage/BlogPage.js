@@ -6,7 +6,8 @@ import 'font-awesome/css/font-awesome.min.css';
 
 import $ from 'jquery';
 
-import BlogPagecomponent     from '../../allBlocks/BlogPagecomponent/BlogPagecomponent.js';
+// import BlogPagecomponent     from '../../allBlocks/BlogPagecomponent/BlogPagecomponent.js';
+import Blogcomponents     from '../../allBlocks/Blogcomponents/Blogcomponents.js';
 
 
 import './BlogPage.css';
@@ -34,9 +35,9 @@ class BlogPage extends Component{
           <div>    
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogPage-wrap">
                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12 mt50">
-                                <BlogPagecomponent />
-                                // <div className="blankblock "></div>
+                            <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                                <Blogcomponents />
+                            {/*    <BlogPagecomponent />*/}
                             </div>
 
                       </div>

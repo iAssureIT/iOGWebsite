@@ -12,7 +12,7 @@ export default class Industriesrefinarypage extends Component {
             {
                 servicesTitle : "Refinery",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Refinery.png",
                 servicestext  : "The refining industry is rapidly evolving and adapting to the new cutting-edge technologies. The global markets for refined products, the world refining capacity utilization are increasing day by day. Refining industry nowadays faces never seen before challenges that significantly hinders the business growth.",
                 servicestext2 : "Ever changing feedstocks and crude variability, broken supply chains, environmental aspects of refining processes, stringent product quality regulations and standards, drive for the cleaner and higher-quality transportation fuels with emphasis on lower-sulphur concentrations, race to boost equipment uptime to increase refinery bottom line, reduce operational risks and maintain system reliability, keeping up with the IT technological advancements and making sense out of IT investments are few of the many challenges of modern refining businesses."
                     

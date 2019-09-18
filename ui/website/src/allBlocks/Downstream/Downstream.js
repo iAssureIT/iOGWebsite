@@ -14,7 +14,8 @@ export default class Downstream extends Component {
   DownstreamData(){
         return [
             {
-                downstreamTitle : "Supply Chain Management",
+                downstreamTitle : "Supply Chain",
+                downstreamTitle1 : "Management",
                 hryperlink      : "supplychain",
                 downstreamimg   : "/images/Illustration_2.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
@@ -22,31 +23,36 @@ export default class Downstream extends Component {
                 
             }, 
             {
-                downstreamTitle : "Manufacturing Execution Systems",
+                downstreamTitle : "Manufacturing Execution",
+                downstreamTitle1 : "Systems",
                 hryperlink      : "manufacturesystem",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "APC Services",
+                downstreamTitle : "APC",
+                downstreamTitle1 : "Services",
                 hryperlink      : "apc-services",
                 downstreamimg   : "/images/Illustration_4.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Simulation & Modelling",
+                downstreamTitle : "Simulation &",
+                downstreamTitle1 : "Modelling",
                 hryperlink      : "simulation",
                 downstreamimg   : "/images/Illustration_5.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Energy Management",
+                downstreamTitle : "Energy ",
+                downstreamTitle1 : " Management",
                 hryperlink      : "apc-services",
                 downstreamimg   : "/images/Illustration_6.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
              {
-                downstreamTitle : "ETRM and Pricing Tool Application",
+                downstreamTitle : "ETRM and Pricing ",
+                downstreamTitle1 : "Tool Application",
                 hryperlink      : "etrm",
                 downstreamimg   : "/images/Illustration_7.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
@@ -113,15 +119,18 @@ export default class Downstream extends Component {
                               <div className="row">
                                 <div className="col-lg-12">
                                     <div className="row"> 
-                                        <div className="col-lg-10 col-lg-offset-1"> 
+                                        <div className="col-lg-10 col-lg-offset-1 border"> 
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
                                                 <a key={index} href={"/"+data.hryperlink}>
-                                                <div  className={"col-lg-6 para"+index}>
+                                                <div  className={"col-lg-5 para"+index}>
                                                     <div className="lightbluetext block block1height text-center">
-                                                        <img alt="" src={data.downstreamimg} />
-                                                        <h2>{data.downstreamTitle}</h2>
+                                                        <img alt="" className="streamImg" src={data.downstreamimg} />
+                                                        <br/>
+                                                        <label className="downTitle">{data.downstreamTitle}</label>
+                                                        <br/>
+                                                        <label className="downTitle">{data.downstreamTitle1}</label>
                                                     </div>
                                                 </div>
                                                 </a>

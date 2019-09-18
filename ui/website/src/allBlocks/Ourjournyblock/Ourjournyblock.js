@@ -26,48 +26,30 @@ export default class Ourjournyblock extends Component {
 
         if (scroll >= 50) {
             $(".add1").addClass("addanim");
-        } else {
-            $(".add1").removeClass("addanim");
-        }
+        } 
         if (scroll >= 150) {
             $(".add2").addClass("addanim");
-        } else {
-            $(".add2").removeClass("addanim");
-        }
+        } 
         if (scroll >= 200) {
             $(".add3").addClass("addanim");
-        } else {
-            $(".add3").removeClass("addanim");
-        }
+        } 
         if (scroll >= 250) {
             $(".add4").addClass("addanim");
-        } else {
-            $(".add4").removeClass("addanim");
-        }
+        } 
         if (scroll >= 330) {
             $(".add5").addClass("addanim");
-        } else {
-            $(".add5").removeClass("addanim");
-        }
+        } 
         if (scroll >= 430) {
             $(".add6").addClass("addanim");
-        } else {
-            $(".add6").removeClass("addanim");
-        }
+        } 
         if (scroll >= 630) {
             $(".add7").addClass("addanim");
-        } else {
-            $(".add7").removeClass("addanim");
-        }
+        } 
         if (scroll >= 750) {
             $(".add8").addClass("addanim");
-        } else {
-            $(".add8").removeClass("addanim");
-        }
+        } 
         if (scroll >= 900) {
             $(".add9").addClass("addanim");
-        } else {
-            $(".add9").removeClass("addanim");
         }        
     });
  $(window).scroll(function() 
@@ -76,8 +58,6 @@ export default class Ourjournyblock extends Component {
 
         if (scroll >= 50) {
             $(".scrollwrap").addClass("scrollanim");
-        } else {
-            $(".scrollwrap").removeClass("scrollanim");
         }        
     });
 
@@ -87,48 +67,30 @@ export default class Ourjournyblock extends Component {
 
         if (scroll >= 50) {
             $(".Journycaro1").addClass("journyanim");
-        } else {
-            $(".Journycaro1").removeClass("journyanim");
         }
         if (scroll >= 150) {
             $(".Journycaro2").addClass("journyanim");
-        } else {
-            $(".Journycaro2").removeClass("journyanim");
         }
         if (scroll >= 200) {
             $(".Journycaro3").addClass("journyanim");
-        } else {
-            $(".Journycaro3").removeClass("journyanim");
         }
         if (scroll >= 250) {
             $(".Journycaro4").addClass("journyanim");
-        } else {
-            $(".Journycaro4").removeClass("journyanim");
-        }
+        } 
         if (scroll >= 330) {
             $(".Journycaro5").addClass("journyanim");
-        } else {
-            $(".Journycaro5").removeClass("journyanim");
-        }
+        } 
         if (scroll >= 430) {
             $(".Journycaro6").addClass("journyanim");
-        } else {
-            $(".Journycaro6").removeClass("journyanim");
         }
         if (scroll >= 630) {
             $(".Journycaro7").addClass("journyanim");
-        } else {
-            $(".Journycaro7").removeClass("journyanim");
         }
         if (scroll >= 750) {
             $(".Journycaro8").addClass("journyanim");
-        } else {
-            $(".Journycaro8").removeClass("journyanim");
         }
         if (scroll >= 900) {
             $(".Journycaro9").addClass("journyanim");
-        } else {
-            $(".Journycaro9").removeClass("journyanim");
         }
         
     });
@@ -140,14 +102,14 @@ journyData(){
             journyTitle : "Apr 2013",
             journytext  : "iOGSolutions registered itself on 17th April 2013 and starts operations with an office in Pune."   
         },
-        {
+       /* {
             journyTitle : "Feb 2014",
             journytext  : "iOGSolutions signs support and training services with seven refineries of IOCL."   
         }, 
         {
             journyTitle : "Jan 2015",
             journytext  : "iOGSolutions establish local UAE organization “iOG IT Solution LLC” in Abu Dhabi. The office is located in the heart of the city on Hamdan Street."   
-        }
+        }*/
     ]
 }
 
@@ -157,14 +119,14 @@ journyData1(){
             journyTitle : "May 2013",
             journytext  : "iOGSolutions presents a case study of the implementation of Assay Management solutions for a downstream refining organization in India at a seminar in Singapore."   
         },
-        {
+   /*     {
             journyTitle : "Mar 2014",
             journytext  : "iOGSolutions successful complete FEED consulting services for multi-site refinery organization in the Middle East."   
         }, 
         {
             journyTitle : "Mar 2015",
             journytext  : "iOGSolutions signs 3 years’ service contract with major E&P player in India for consulting and support services."   
-        } 
+        } */
         
     ]
 }
@@ -175,14 +137,14 @@ journyData2(){
             journyTitle : "June 2013",
             journytext  : "iOGSolutions bags contract to provide FEED consulting services for multi-site refinery organization in the Middle East."   
         },
-        {
+   /*     {
             journyTitle : "July 2014",
             journytext  : "iOGSolutions successful complete FAT for LP implementation at five refineries."   
         }, 
         {
             journyTitle : "June 2015",
             journytext  : "iOG Solutions partners with leading IT firm and provide consulting services for a complete review of IT spending of an O&G Global Major."   
-        } 
+        }*/ 
         
     ]
 }
@@ -192,14 +154,14 @@ journyData3(){
             journyTitle : "July 2013",
             journytext  : "iOG Solutions signed a contract in India to provide support services for seven refineries in the area of Planning & Scheduling."   
         },
-        {
+ /*       {
             journyTitle : "Oct 2014",
             journytext  : "iOGSolutions successful complete SAT and training programs including back-casting / LP model update in Spain."   
         }, 
         {
             journyTitle : "Aug 2015",
             journytext  : "Beginning of our Upstream Oil & Gas practice."   
-        } 
+        } */
         
     ]
 }
@@ -209,14 +171,14 @@ journyData4(){
             journyTitle : "Aug 2013",
             journytext  : "iOG Solutions provides support for the implementation of a corporate dashboard system for an O&G client in India. The project is being executed from Singapore."   
         },
-        {
+    /*    {
             journyTitle : "",
             journytext  : ""   
         }, 
         {
             journyTitle : "Sep 2015",
             journytext  : "iOG Solutions launch its new website on 9th Sep 2015."   
-        } 
+        } */
         
     ]
 }
@@ -226,7 +188,7 @@ journyData5(){
             journyTitle : "Sept 2013",
             journytext  : "iOG Solutions signs up for 1200 sq. ft office in Pune at Amanora Chambers."   
         },
-        {
+   /*     {
             journyTitle : "",
             journytext  : ""   
         }, 
@@ -234,7 +196,7 @@ journyData5(){
             journyTitle : "",
             journytext  : ""   
         } 
-        
+        */
     ]
 }
 journyData6(){
@@ -243,14 +205,14 @@ journyData6(){
             journyTitle : "Oct 2013",
             journytext  : "iOG Solutions establishes a base in Abu Dhabi near Mushriff Mall."   
         },
-        {
+  /*      {
             journyTitle : "",
             journytext  : ""   
         }, 
         {
             journyTitle : "",
             journytext  : ""   
-        } 
+        } */
         
     ]
 }
@@ -260,14 +222,14 @@ journyData7(){
             journyTitle : "Nov 2013",
             journytext  : "iOG solutions moves to new office 330 at Amanora Chambers on the auspicious day of Dhanteras on 1st Nov 2013."   
         },
-        {
+      /*  {
             journyTitle : "",
             journytext  : ""   
         }, 
         {
             journyTitle : "",
             journytext  : ""   
-        } 
+        } */
         
     ]
 }
@@ -277,14 +239,14 @@ journyData8(){
             journyTitle : "Dec 2013",
             journytext  : "iOGSolutions bags SCM transformation project through IT Major for implementing LP tool at five refineries in Spain."   
         },
-        {
+/*        {
             journyTitle : "",
             journytext  : ""   
         }, 
         {
             journyTitle : "",
             journytext  : ""   
-        } 
+        } */
         
     ]
 }
@@ -334,7 +296,7 @@ journyData8(){
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 NOpadding">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock lightbluebg">
-              <h1 className="col-lg-8 col-lg-offset-2"><b>Our</b> Journey</h1>
+              <h1 className="col-lg-10 col-lg-offset-2"><b>Our</b> Journey</h1>
               </div>
                 <img className="add1" src="/images/add1.png" />
               </div>
@@ -373,3 +335,10 @@ journyData8(){
     );  
   }
 }
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@ export default class Industrieslngpage extends Component {
             {
                 servicesTitle : "Liquified Natural Gas",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/LNG.png",
                 servicestext  : "The LNG value chain aggregately comprises of E&P, Liquefaction, Shipping, Re-gasification, and Storage. This simplified value chain poses have many hidden challenges for a typical LNG plant and its relative components. The global LNG industry has always been tipped towards excess demand as compared to supplies. The industry is expected to see several major hurdles as many countries have put a block on LNG exports to fullfill their domestic demand.",
                 servicestext2 : "Though Gas is clearly gaining energy market share as once held by Coal, the challenges before LNG operations are still standing. Today, the biggest challenges face by LNG industry are integrated modelling between the utility system and liquefaction process, process and capacity selection for liquefcation, optimal utilization of LNG fuel, using BOG as the row material for other industries, and large scale LNG cold recovery at industrial sites. Scheduling and Operations Planning applications support the operations team in supply chain network of LNG liquefaction and other process through best optimised detailed scheduling to execution."
                     

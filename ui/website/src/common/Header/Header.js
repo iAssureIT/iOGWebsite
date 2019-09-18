@@ -62,6 +62,17 @@ componentWillMount() {$(window).scroll(function() {
                               <input type="checkbox" id="drop-2"/>
                               <ul>
                                 <li> 
+                                  <label htmlFor="drop-3" className="toggle">Service Arms</label>
+                                  <a href="/servicearms">Service Arms <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                  <input type="checkbox" id="drop-3"/>
+                                  <ul>
+                                      <li className="zindex"><a href="/iogimplement">iOGImplement</a></li>  
+                                      <li className="zindex"><a href="/iogconsult">iOGConsult</a></li>  
+                                      <li className="zindex"><a href="/iogtrain">iOGTrain</a></li>  
+                                      <li className="zindex"><a href="/iogstudy">iOGStudy</a></li>  
+                                  </ul>
+                                </li>
+                                <li> 
                                   <label htmlFor="drop-3" className="toggle">Downstream</label>
                                   <a href="/downstream">Downstream <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                   <input type="checkbox" id="drop-3"/>
@@ -186,7 +197,7 @@ componentWillMount() {$(window).scroll(function() {
                                       </ul>
                                     </li>
                                      <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Reservior Management</label>
+                                    <label htmlFor="drop-4" className="toggle">Reservoir Management</label>
                                     <a href="/reserviormanagement">Reservior Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <input type="checkbox" id="drop-4"/>
                                       <ul>
@@ -235,17 +246,6 @@ componentWillMount() {$(window).scroll(function() {
                                         <li><a href="/cloudbaseddatamanagement">Cloud-based Data Management</a></li>
                                       </ul>
                                     </li>
-                                  </ul>
-                                </li>
-                                 <li> 
-                                  <label htmlFor="drop-3" className="toggle">Service Arms</label>
-                                  <a href="/servicearms">Service Arms <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                      <li className="zindex"><a href="/iogimplement">iOGImplement</a></li>  
-                                      <li className="zindex"><a href="/iogconsult">iOGConsult</a></li>  
-                                      <li className="zindex"><a href="/iogtrain">iOGTrain</a></li>  
-                                      <li className="zindex"><a href="/iogstudy">iOGStudy</a></li>  
                                   </ul>
                                 </li>
                               </ul>

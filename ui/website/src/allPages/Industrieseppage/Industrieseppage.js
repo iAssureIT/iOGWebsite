@@ -41,7 +41,7 @@ export default class Industrieseppage extends Component {
                 downstreamurl   : "/welldrilling",
                 downstreamTitle : "Well & Drilling",
                 downstreamimg   : "/images/upstream5.png",
-                downstreamtext  : "iOG Well & Drilling Services offer the  complete range of services addressing Well Lifecycle Management from Well Planning, Drilling, Testing & log interpretation, performance monitoring to abandonment. It covers all the well related services in each business area such as Planning, Exploration, Development, Production, Decommissioning of the well & have emerged & evolved through vast experience in Well Planning, Designing & Optimization of Drilling Activities & Well Performance Monitoring....."
+                downstreamtext  : "iOG Well & Drilling Services offer the  complete range of services addressing Well Lifecycle Management from Well Planning, Drilling, Testing & log interpretation, performance monitoring to abandonment. It covers all the well related services in each business area such as Planning, Exploration, Development, Production, Decommissioning of the well....."
             }, 
             {
                 downstreamurl   : "/productionmanagement",
