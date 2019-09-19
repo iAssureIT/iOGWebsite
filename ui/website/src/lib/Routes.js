@@ -130,11 +130,13 @@ import Sitemap                        from '../allBlocks/Map/Map.js';
 // import Svganimation     from '../trial/Svganimation/Svganimation.js';
  import Parallaxeff     from '../trial/Parallaxeff/Parallaxeff.js';
 
+import ContactUsModal    from '../allBlocks/ContactUsModal/ContactUsModal.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
     <Route path="/" exact strict component={ HomePage } /> 
     <Route path="/contact-us" component={ Contactpage } />  
+    <Route path="/contactUsModal" component={ ContactUsModal } />  
     <Route path="/about-us" component={ AboutUs } />         
     <Route path="/ourjourny" component={ Ourjourny } />         
     <Route path="/careers" component={ Careerspage } />

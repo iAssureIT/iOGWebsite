@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 // import $                  from 'jquery';
-import './Header.css';
-
-import $ from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import $ from "jquery";
+import './Header.css';
+import 'bootstrap/js/modal.js';
+
+import ContactUsModal    from '../../allBlocks/ContactUsModal/ContactUsModal.js';
 
 export default class Header extends Component {
   
@@ -277,6 +279,15 @@ componentWillMount() {$(window).scroll(function() {
            </div>
           </div>
         </div>
+      </div>
+      <div className="row"> 
+        <button className="contactBar" data-toggle="modal" data-target="#contactUsModal">
+          <div className="fixedContactBar">
+            <i className="fa fa-envelope-o" aria-hidden="true"></i>
+          </div>
+          <div className="hovertext">Contact Us Now</div>
+          <ContactUsModal /*getData={this.getData.bind(this)*/ />
+        </button>
       </div>
     </header>
     );  

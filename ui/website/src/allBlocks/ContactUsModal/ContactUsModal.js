@@ -1,20 +1,18 @@
 import React,{Component}      from 'react';
 import swal                   from 'sweetalert';
 import $                      from 'jquery';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/js/modal.js';
+
 // import { render } from 'react-dom';
 import Select                 from 'react-select-nested';
-import Map from '../../allBlocks/Map/Map.js';
 import ContactUsform from '../../allBlocks/ContactUsform/ContactUsform.js';
 
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
-
-
-
-import './Contactpage.css';
-class Contactpage extends Component{
+import './ContactUsModal.css';
+class ContactUsModal extends Component{
   constructor(){
     super();
      this.state={
@@ -252,62 +250,35 @@ class Contactpage extends Component{
       ];
  
     return(
-          <div>    
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontent2-wrap">
-                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacticonwrap">
-                          <div className="row">
-                                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 contactcontbackimg">
-                                </div>
-                                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-3 contacticons">
-                                 {/* <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                        <i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i>
-                                  </div>*/}
-                                  <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                      <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="fa fa-linkedin contacticon2"></i></a>
-                                  </div>
-                                  <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                      <a href="https://twitter.com/iogsolutions" target="_blank"><i className="fa fa-twitter contacticon2"></i></a>
-                                  </div>
-                                  <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                      <a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="fa fa-facebook contacticon21"></i></a>
-                                  </div>
-                                </div>
-                          </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacttextmargin2">
-                          <div className="row">
-                              <div className="contactpageform">
-                                <div className="col-lg-12">
-                                    <div className="col-lg-2 col-lg-offset-5">
-                                      <div className="line1 col-lg-1 col-lg-offset-2"></div>
-                                    </div>                    
-                                </div> 
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                  <div className="row">
-                                      <div className="contactcontent lightbluetext  text-center">
-                                          <span>Contact</span><span className="us"> Us</span>
-                                      </div>
-                                  </div>
-                               </div>
-                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <ContactUsform />                               
-                              </div>    
-                         </div>
-                      </div>
+      <div className="modal fade" id="contactUsModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-lg " role="document">
+          <div className="modal-content ContactmodalContent  ">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <div className="row">
+                    <div className="contactText lightbluetext  text-center">
+                        <span>Contact</span><span className="us"> Us</span>
                     </div>
-                  </div>
+                </div>
               </div>
-              <div>
-                <Map />
-              </div>
-          </div>    
+            </div>
+            <div class="modal-body">
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <ContactUsform />                               
+              </div>   
+            </div>        
+          </div>
+        </div>
+      </div>
+     
+              
+       
     );
   }
 }
 
-export default Contactpage;
+export default ContactUsModal;
 
 
 

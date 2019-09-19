@@ -253,17 +253,17 @@ class BlogContent extends Component {
                                   <img alt=""  src={data.blogsimg}/> 
                                   <div className="middle">
                                     <div className="blogfb">
-                                      <a href="https://www.facebook.com/iOGsolutions/" target="_blank">
+                                      <a href="https://www.facebook.com/iOGsolutions/" target="_blank" title="Share on Facebook">
                                         <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
                                       </a>
                                     </div>
                                     <div className="blogtwit">
-                                      <a href="https://twitter.com/iogsolutions" target="_blank">
+                                      <a href="https://twitter.com/iogsolutions" target="_blank"  title="Share on Twitter">
                                         <i class="col-lg-12 fa fa-twitter" aria-hidden="true"></i>
                                       </a>
                                     </div>
                                     <div className="blogLin">
-                                      <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank">
+                                      <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank"  title="Share on Linked In">
                                         <i class="col-lg-12 fa fa-linkedin" aria-hidden="true"></i>
                                       </a>
                                     </div>
@@ -277,13 +277,13 @@ class BlogContent extends Component {
                               </div>
                               </div>  
                             }
-                              <div className="blogContentDiv">
+                            <div className="blogContentDiv col-lg-10 col-lg-offset-1 col-md-10 col-sm-12 col-xs-12">
                               {
                                 data.BlogContent1 || data.BlogContent2 || data.BlogText1 || data.BlogContent11 ||  data.BlogContent12?
                                   <div>  
-                                    <p className="text-justify" id="blogContentDiv" >{data.BlogContent1}</p>
-                                    <p className="text-justify">{data.BlogContent2}</p>
-                                    <p className="text-justify"><b>{data.BlogText1}</b></p>
+                                    <p className="" id="blogContentDiv" >{data.BlogContent1}</p>
+                                    <p className="">{data.BlogContent2}</p>
+                                    <p className=""><b className="">{data.BlogText1}</b></p>
                                   </div>
                               :null
                               }
@@ -293,7 +293,7 @@ class BlogContent extends Component {
 
                                       return(
                                         <div className=""  key={index}>
-                                            <p><b>{ulDetail.ulTitle}</b></p>
+                                            <p><b className="">{ulDetail.ulTitle}</b></p>
                                             <p>{ ulDetail.ulData}</p>                                              
                                         </div> 
                                       );
@@ -307,18 +307,18 @@ class BlogContent extends Component {
                                   <div className="row">
                                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img className="blogSubImg" src={data.BlogSubImg1} /></div>
                                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                                      <p className="text-justify">{data.BlogContent3}</p>
-                                      <p className="text-justify">{data.BlogText2}</p>
-                                      <p className="text-justify"><b>{data.BlogContent4}</b></p>
-                                      <p className="text-justify">{data.BlogContent5}</p>
+                                      <p className="">{data.BlogContent3}</p>
+                                      <p className="">{data.BlogText2}</p>
+                                      <p className=""><b className="">{data.BlogContent4}</b></p>
+                                      <p className="">{data.BlogContent5}</p>
                                     </div>
                                   </div> 
                                   <br/>
                                   <div className="row">
                                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                                     <p className="text-justify"><b>{data.BlogContent6}</b></p>
-                                     <p className="text-justify">{data.BlogText3}</p>
-                                     <p className="text-justify">{data.BlogContent7}</p>
+                                     <p className=""><b className="">{data.BlogContent6}</b></p>
+                                     <p className="">{data.BlogText3}</p>
+                                     <p className="">{data.BlogContent7}</p>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img className="blogSubImg" src={data.BlogSubImg2} /></div>
                                   </div><br/>
@@ -328,12 +328,12 @@ class BlogContent extends Component {
                               {
                                 data.BlogContent8 || data.BlogText4 || data.BlogContent9 || data.BlogContent10 || data.BlogContent11 ||  data.BlogContent12?
                                   <div>  
-                                    <p className="text-justify"><b>{data.BlogContent8}</b></p>
-                                    <p className="text-justify">{data.BlogText4}</p>
-                                    <p className="text-justify">{data.BlogContent9}</p>
-                                    <p className="text-justify">{data.BlogContent10}</p>
-                                    <p className="text-justify">{data.BlogContent11}</p>
-                                    <p className="text-justify"><b>{data.BlogContent12}</b></p>
+                                    <p className=""><b className="">{data.BlogContent8}</b></p>
+                                    <p className="">{data.BlogText4}</p>
+                                    <p className="">{data.BlogContent9}</p>
+                                    <p className="">{data.BlogContent10}</p>
+                                    <p className="">{data.BlogContent11}</p>
+                                    <p className=""><b className="">{data.BlogContent12}</b></p>
                                   </div>
                               :null
                               }
@@ -343,7 +343,7 @@ class BlogContent extends Component {
                                       return(
                                         <ul className=""  key={index}>
                                           <li className="" key={index}>
-                                            <div><b>{ulDetail.ulTitle}</b></div>
+                                            <div><b className="">{ulDetail.ulTitle}</b></div>
                                             <p>{ ulDetail.ulData}</p>
                                           </li>
                                         </ul> 
@@ -355,8 +355,8 @@ class BlogContent extends Component {
                               {
                                 data.BlogContent13 || data.BlogContent14  ?
                                   <div>  
-                                    <p className="text-justify">{data.BlogContent13}<br/></p>
-                                    <p className="text-justify">{data.BlogContent14}<br/></p>
+                                    <p className="">{data.BlogContent13}<br/></p>
+                                    <p className="">{data.BlogContent14}<br/></p>
                                   </div>
                                 :null
                               }

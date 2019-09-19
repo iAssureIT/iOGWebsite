@@ -13,7 +13,7 @@ export default class Arimanagementpage extends Component {
             {
                 servicesTitle : "Asset Reliability & Integraity Management",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
-                servicesimg   : "/images/Downstreaminfoblock.png",
+                servicesimg   : "/images/Asset-Reliability__Integraity_Management.png",
                 servicestext  : "Asset Reliability and Integrity Management (RIM) focus on ensuring that process machineries and equipment are properly designed, installed in accordance with specifications, and remains fit for use until it is retired. RIM ensures that the systematic workflows are in place, such as inspections and tests, to ensure that critical process equipment are performing under its best operating state. At an operating process plant, the asset-integrity is an integral part of daily operations with participation of operators, maintenance personnel, sub-contractors, engineers, and others involved in designing, installing, operating, or maintaining the process equipment.",
                 servicestext2 : "iOG Solutions work closely with clients to ensure that equipment are proper designed and Inspection, Test, and Preventive Maintenance (ITPM) practices are in place. This translate to cost savings by making sure that equipment is fit for service at commissioning and remains fit for service throughout its lifecycle.",
                 servicestext3 : "iOG Solutions with its excellent knowledge in asset integrity field, establish corporate standards, and promote efforts to continuously improve the safety and reliability of process equipment."
@@ -76,54 +76,54 @@ export default class Arimanagementpage extends Component {
         return [
             {
                 downstreamTitle : "Asset Criticality Analysis",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Asset_criticality_analysis.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             }, 
             {
                 downstreamTitle : "Risk Based Inspection",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Risk_based_inspection.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Root Cause Analysis",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Root_cause_analysis.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Failure Mode Effect Analysis",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Failure_mode_effect_analysis.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Reliability Centered Maintenance",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/Reliability_centered_maintenance.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Asset Strategy Management",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/Asset_strategy_management.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Inspection Management",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/Inspection_management.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Calibration Management",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/Calibration_management.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Reliability Availability & Maintainability (RAM) Moeling",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/RAM.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Spares Inventory Management and Optimisation (SIMO)",
-                downstreamimg   : "/images/Illustration_6.png",
+                downstreamimg   : "/images/SIMO.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
         ]

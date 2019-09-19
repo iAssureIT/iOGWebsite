@@ -1,6 +1,13 @@
-
+.ContactmodalContent{
+  background: #fff;
+  height: 770px;
+}
+.contactText{
+  font-size: 35px;
+  font-weight: bold;
+}
 .contactcontent1-wrap{
-	/*margin-top: 30px;*/
+  /*margin-top: 30px;*/
 }
 .contactcontent2-wrap{
   margin-top:100px;
