@@ -58,7 +58,7 @@ export default class Industrieschemicalpage extends Component {
             {
                 downstreamurl   : "/Healthsafty",
                 downstreamTitle : "Predictive Maintenance and Preventive Monitoring",
-                downstreamimg   : "/images/noimg.png",
+                downstreamimg   : "/images/Predictive_Maintenance_&_Preventive_Monitoring..png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }
             

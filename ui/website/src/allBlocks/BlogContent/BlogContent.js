@@ -194,7 +194,7 @@ class BlogContent extends Component {
     }
   scrollDown(){
     console.log("infuncbjkb");
-    window.scrollTo(0, 470);
+    window.scrollTo(0, 475);
   }
  handleChange(event){
     event.preventDefault();
@@ -246,18 +246,38 @@ class BlogContent extends Component {
                   <div className={" index"+index}>
                       <div className=" blogcontenttext">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            {  
-                              <div className="blogImgContainerInner">
-                                <img alt="" src={data.blogsimg}/>
-                                <div className="middle">
-                                  <div className="col-lg-12 blogimgtext">{data.blogsTitle}</div>
-                                </div>
-                                <div  className="header-scrolldown style-light" onClick={this.scrollDown.bind(this)}>
-                                  <i className="fa fa-angle-down"></i>
+                            { 
+                              <div>
+                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogImgContainerInner miniDiv1Filter">
+                                <div className="row">
+                                  <img alt=""  src={data.blogsimg}/> 
+                                  <div className="middle">
+                                    <div className="blogfb">
+                                      <a href="https://www.facebook.com/iOGsolutions/" target="_blank">
+                                        <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
+                                      </a>
+                                    </div>
+                                    <div className="blogtwit">
+                                      <a href="https://twitter.com/iogsolutions" target="_blank">
+                                        <i class="col-lg-12 fa fa-twitter" aria-hidden="true"></i>
+                                      </a>
+                                    </div>
+                                    <div className="blogLin">
+                                      <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank">
+                                        <i class="col-lg-12 fa fa-linkedin" aria-hidden="true"></i>
+                                      </a>
+                                    </div>
+                                    <div className="col-lg-12 blogimgtext">{data.blogsTitle}</div>
+                                    <div className="col-lg-12 blogdatetext">{data.blogDate}</div>
+                                  </div>
+                                  <div  className="header-scrolldown style-light" onClick={this.scrollDown.bind(this)}>
+                                    <i className="fa fa-angle-down"></i>
+                                  </div>                                
                                 </div>
                               </div>
+                              </div>  
                             }
-                            <div className="blogContentDiv">
+                              <div className="blogContentDiv">
                               {
                                 data.BlogContent1 || data.BlogContent2 || data.BlogText1 || data.BlogContent11 ||  data.BlogContent12?
                                   <div>  
@@ -346,21 +366,17 @@ class BlogContent extends Component {
                           <form id="contactForm" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
                             <div className="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <label htmlFor="comment">Add Comment<span className="redFont">*</span></label>
                                 <div className="">
-                                  <input className="form-control nameSpaceUpper  col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment" type="text" name="comment" value={this.state.comment} onChange={this.handleChange.bind(this)} onKeyDown={this.isTextKey.bind(this)} ref="comment" placeholder=""/>
                                 </div>
+                              </div>
+                              <div class="commentBox col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label htmlFor="comment">Add Comment<span className="redFont"></span></label>
+                                <textarea class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="5" id="comment"></textarea>
                               </div>
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="userName">Name<span className="redFont">*</span></label>
                                 <div className="">
                                   <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12" id="userName" type="text" name="userName"  ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} onKeyDown={this.isTextKey.bind(this)}  placeholder=""/>
-                                </div>
-                              </div>
-                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
-                                <div className="">
-                                  <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder=""/>
                                 </div>
                               </div>
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -370,7 +386,14 @@ class BlogContent extends Component {
                                 </div>
                               </div>
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <button className="btn lightbluebg contactformbtn buttonhover">Post Comment</button>
+                                <label htmlFor="contactNumber">Website<span className="redFont"></span></label>
+                                <div className="">
+                                  <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder=""/>
+                                </div>
+                              </div>
+                              
+                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <button className="btn lightbluebg commentBoxbtn buttonhover">Post Comment</button>
                               </div>
                             </div>
                           </form>

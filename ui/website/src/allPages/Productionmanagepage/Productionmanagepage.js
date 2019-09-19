@@ -59,7 +59,7 @@ export default class Productionmanagepage extends Component {
             {
                 downstreamurl   : "/productionengineering",
                 downstreamTitle : "Production Engineering",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Production_Engineering.png",
                 downstreamtext  : "iOG’s Production Engineering involves designing and selecting the equipment that will get the well to produce oil and gas after it is drilled. It is based on the reservoir and well engineering design. In production engineering, iOG selects the artificial lift method; optimizes the design of tubing string and the design of the surface gathering system..."
                     
                 
@@ -79,19 +79,19 @@ export default class Productionmanagepage extends Component {
             {
                 downstreamurl   : "/productionoptimization",
                 downstreamTitle : "Production Optimization",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Production_Optimization.png",
                 downstreamtext  : "The objective of production optimization is to maximize the total oil/gas production rate and to minimize the total cost of operation. For single wells or other small systems, simple well optimization and nodal analysis may be adequate but for large complex systems, a much more sophisticated approach is needed to predict the response accurately and to examine alternative operational scenarios efficiently...."
             }, 
             {
                 downstreamurl   : "/productionforecasting",
                 downstreamTitle : "Production Forecasting",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Production_Forecasting.png",
                 downstreamtext  : "iOG Solutions provides accurate and reliable production forecasting for the management and planning of petroleum reservoirs. Our team supports clients through different optimization and analysis techniques like Decline curve analysis for providing deterministic estimates for future performance and remaining reserves..... "
             }, 
             {
                 downstreamurl   : "/welltesting",
                 downstreamTitle : "Well Testing",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Well_testing.png",
                 downstreamtext  : "Well Test is a tool for reservoir evaluation and characterization which investigates a much larger volume of the reservoir than cores or logs, provides estimate of permeability under in-situ conditions, near-wellbore condition and distances to boundaries. Well test helps in defining reservoir limits (distances to boundaries, drainage area), estimate average drainage area pressure, characterize reservoir, diagnose productivity problems..."
             }
         ]

@@ -101,7 +101,7 @@ margin-top: 24px !important;
 
 .blogImgContainer {
   position: relative;
-  background-color: #555; 
+  background-color: #000; 
 
 }
 .blogImgContainer img{
@@ -179,12 +179,25 @@ margin-top: 24px !important;
   font-size: 15px;
   color: #777;
   font-weight: normal;
-  /*overflow-wrap: normal !important;*/
   text-align: justify;
   margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 
+.blogImageContainer{
+  overflow: hidden;
+}
+.blogImageContainer:hover img{
+  cursor: pointer;
+  transition-duration: 0.2s;
+  overflow: hidden;
+  animation: scale 5s ;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
 
+@keyframes blogScale {
+  from {transform: scale(0.9)}
+  to {transform: scale(0.8)}
+}

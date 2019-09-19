@@ -203,7 +203,7 @@ for (var i = 0; i < accordions.length; i++) {
                 numOfLike  : "200",
                 blogsTitle : "Energy Management in Refineries and Petrochemicals Complex",
                 blogsimg   : "/images/blog4.1.jpg",
-                BlogContent1     : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality.....",
+                BlogContent1     : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities....",
 
             },
             {
@@ -212,7 +212,7 @@ for (var i = 0; i < accordions.length; i++) {
                 numOfLike  : "170",
                 blogsTitle : "Leveraging Machine Learning to add value to the Oil & Gas business.",
                 blogsimg   : "/images/blog5.1.jpg",
-                BlogContent1     : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality.....",
+                BlogContent1     : "Machine learning provides information systems the ability to automatically learn and improve from the experience.....",
 
             },
            
@@ -254,7 +254,7 @@ for (var i = 0; i < accordions.length; i++) {
                 <a className=" customPanel" id="" role="button" data-parent="#" href={"/blogs/"+data.id}  aria-controls="" >
                   
 
-                  <div className="col-lg-12 blogImgContainer"><img src={data.blogsimg} /></div>
+                  <div className="col-lg-12 blogImgContainer blogImageContainer"><img src={data.blogsimg} /></div>
                   <div className="NOpadding">
                     <label className="blogDate ">{data.blogDate}</label>
                     <label className="likeDiv pull-right"><i className="fa fa-thumbs-up"></i> &nbsp;&nbsp;{data.numOfLike}</label><br/>
