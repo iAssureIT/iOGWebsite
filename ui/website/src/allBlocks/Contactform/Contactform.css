@@ -1,0 +1,30 @@
+.cuformWall{
+	height: 500px;
+	/*background-color: #aaa;*/
+}
+.cuformWall h1, .cuformWall h3, .cuformWall p{
+    color: #555;
+}
+.bt30{
+		margin-bottom:  10px;
+	}
+.sbtn{
+    /*background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);*/
+    height: 50px;
+    background-color: #009de2 !important;
+    border-radius: 25px !important;
+    color: #FFF!important;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.sbtn:focus{    
+    border: none;
+}.form-control{
+	height: 44px!important;
+}
+.ContactmodalContent{
+  background-image: linear-gradient(to bottom right, #f19000, #f19000cf);
+  margin-top: 5%;
+  height: 480px;
+}

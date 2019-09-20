@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import './Planningschedul.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
-import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Commonservicesleafpageblock     from '../../allBlocks/Commonservicesblock/Commonservicesleafpageblock.js';
+/*import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';*/
 
 export default class Planningschedul extends Component {
   ServicesData(){
@@ -48,7 +49,7 @@ export default class Planningschedul extends Component {
                 downstreamurl   : "/lputility",
                 downstreamTitle : "LP Utilities",
                 downstreamimg   : "/images/Illustration_5.png",
-                downstreamtext  : "It is a common problem in the refinery planning world that process unit yields and stream properties do not match with the actual plant performance because of poorly maintained and infrequently audited LP models. The problem gets further magnified when the LP model is used to make decisions from a global perspective as the unit inter-dependency plays a major role and the accuracy of the data in the individual sub-models is the key to take the right decisions in such situations....."
+                downstreamtext  : "It is a common problem in the refinery planning world that process unit yields and stream properties do not match with the actual plant performance because of poorly maintained and infrequently audited LP models. The problem gets further magnified when the LP model is used to make decisions from a global perspective as the unit inter-dependency plays a major role....."
             }, 
             {
                 downstreamurl   : "/lpconfig",
@@ -67,7 +68,8 @@ export default class Planningschedul extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
         <div className="downstreambg1">
           <Commoninfoblock infodata={this.ServicesData()} />
-          <Commonservicesblock servicedata={this.DownstreamData()}/>
+{/*          <Commonservicesblock servicedata={this.DownstreamData()}/>*/}
+          <Commonservicesleafpageblock servicedata={this.DownstreamData()}/>
         </div>
       </div>
     );  

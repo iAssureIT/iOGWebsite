@@ -6,6 +6,7 @@ import $ from "jquery";
 import './Header.css';
 import 'bootstrap/js/modal.js';
 
+import Contactform     from '../../allBlocks/Contactform/Contactform.js';
 import ContactUsModal    from '../../allBlocks/ContactUsModal/ContactUsModal.js';
 
 export default class Header extends Component {
@@ -286,8 +287,19 @@ componentWillMount() {$(window).scroll(function() {
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
-          <ContactUsModal /*getData={this.getData.bind(this)*/ />
         </button>
+        <div className="modal fade" id="contactUsModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-lg " role="document">
+            <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
+{/*              <button type="button" class="close closeButton" data-dismiss="modal">&times;</button>*/}
+              <div className="modal-body ">
+               <div className="">
+                  <Contactform />                               
+                </div>   
+              </div>        
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     );  

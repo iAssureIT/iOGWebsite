@@ -201,13 +201,8 @@ class BlogContent extends Component {
     this.setState({
       "userName"         : this.refs.userName.value,
       "companyName"      : this.refs.companyName.value,
-      "designation"      : this.refs.designation.value,
-      "country"          : this.refs.country.value,
       "email"            : this.refs.email.value,
       "message"          : this.refs.message.value,
-      "contactNumber"    : this.refs.contactNumber.value,
-      "subject"          : this.refs.subject.value,
-      "enquiry"          : this.state.enquiry,
      
     });
 

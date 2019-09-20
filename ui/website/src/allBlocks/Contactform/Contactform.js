@@ -1,103 +1,170 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
+import "./Contactform.css";
+import axios from 'axios';
+import swal from 'sweetalert2';
 
-// import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
+const formValid = formerrors=>{
+  console.log("formerrors",formerrors);
+  let valid = true;
+  Object.values(formerrors).forEach(val=>{
+    val.length>0 && (valid = false);
+  })
+  return valid;
+}
 
-export default class Contactform extends Component {
+const clientnameRegex = RegExp(/^[A-za-z']+( [A-Za-z']+)*$/);
+const emailRegex = RegExp (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
-    
+export default class ContactUsForm extends React.Component {
 
+    constructor(props) {
+    super(props);
+        this.state={
+          "name"      : "",
+          "email"   : "",
+          "Subject"   : "",
+          "message"     : "",
+          "formerrors" :{
+              clientName  : " ",
+              clientEmail : " ",       
+            },
+          };
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(event){
+        event.preventDefault();
+        const datatype = event.target.getAttribute('data-text');
+        const {name,value} = event.target;
+        const formerrors = this.state.formerrors;
+        console.log("datatype",datatype);
+        switch (datatype){
+        case 'clientName' :
+           formerrors.clientName = clientnameRegex.test(value)? '' : "Please enter valid name";
+           break;
+        case 'clientEmail' :
+          formerrors.clientEmail = emailRegex.test(value)? '' : "Please enter valid mail address";
+          break;  
+          default :
+          break;
+        }
+        this.setState({
+            formerrors,
+            [name]:value,
+            "name"         : this.refs.name.value,
+            "email"        : this.refs.email.value,
+            "Subject"      : this.refs.Subject.value,
+            "message"      : this.refs.message.value,
+        });
+    }
+    Submit(event){
+        event.preventDefault();
+        // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
+        var adminEmail = "";
+        const formValues1 = {
+            "email"         : this.state.email ,
+            "subject"       : "Your Query/Feedback is sent successfully to www..com!",
+            "message"       : "",
+            "mail"          : 'Dear' + this.state.name + ', <br/><br/>'+
+                             
+                              "<b>Your Email: </b>"  + this.state.email + '<br/><br/>'+
+                              "Your following message has been successfully delivered to the admin! We will get back to you shortly. <br/> <br/> " +
+                              "===============================  <br/> <br/> " +
+                              "<pre> " + this.state.message+ "</pre>" +
+                              " <br/> <br/> =============================== " +
+                              "<br/><br/> Thank You, <br/> Support Team, <br/> www..com " ,
+        };
+        console.log("notification",formValues1);
+        axios
+        .post('/send-email',formValues1)
+        .then((res)=>{
+            if(res.status === 200){
+                swal("Thank you for contacting us. We will get back to you shortly.")
+                }
+        })
+        .catch((error)=>{
+          console.log("error = ", error);
+         
+        })
+        const formValues2 = {
+            "email"         : adminEmail ,
+            "subject"       : "New query/feedback arrived from Website!",
+            "message"          : "",
+            "mail"          : 'Dear Admin, <br/>'+
+                              "Following new query/feedback came from website! <br/> <br/> " +
+                              "============================  <br/> <br/> " +
+                              "<b>Client Name: </b>"   + this.state.name + '<br/>'+
+                             
+                              "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
 
-  
-  render(){
-       return(
-        <div>         
-            <div id="contact" className="col-lg-12 pt100 pb100 contactext">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="row">
-                            
-                            <div className="col-md-12 mb50">
-                                <h1  className="font-size-normal unih1 color-light">
-                                    <small className="color-light">Contact Us</small><br/>
-                                    Drop Us a Message
-                                </h1>               
-                                <h5 className="color-light">Please feel free to say anything to us. Our staff will reply any message<br/>as soon as possible.</h5>                        
-                            </div>
-                            
-                            <div className="col-md-3 col-sm-3 col-xs-12">
-                                <span className="el-icon2x"><i className="fa fa-map-marker iconsize" aria-hidden="true"></i></span>
-                                <h5 className="color-light"><strong>Address</strong></h5>
-                                <p className="color-light contactp">Address Business 123 London, UK.</p>
-                            </div>
-                    
-                            <div className="col-md-3 col-sm-3 col-xs-6">
-                                <span className="el-icon2x"><i className="fa fa-mobile iconsize" aria-hidden="true"></i></span>
-                                <h5 className="color-light"><strong>Phone</strong></h5>
-                                <p className="color-light contactp">123-456-789</p>
-                            </div>
-                            
-                            <div className="col-md-3 col-sm-3 col-xs-6">
-                               <span className="el-icon2x"><i className="fa fa-envelope iconsize" aria-hidden="true"></i></span>
-                                <h5 className="color-light"><strong>Email</strong></h5>
-                                <p className="color-light contactp">email@domain.com</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div className="col-md-6">
-                        <div className="contact contact-us-one bgiogyellow">
-                            <div className="col-sm-12 col-xs-12 text-center mb20">
-                                <h4 className="pb25 bb-solid-1 text-uppercase">
-                                    Get in Touch<br/>
-                                    <small className="text-lowercase">Please complete the form and we will get back to you.</small>
-                                </h4>
-                            </div>
-                            <form name="contactform" id="contactForm" method="post" action="assets/php/send.php" className="positioned">
-                                
-                                <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="senderName" id="senderName" className="input-md input-rounded form-control" placeholder="fullname" maxLength="100" required=""/>
-                                </div>                                           
-                                
-                                <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" name="senderEmail" id="senderEmail" className="input-md input-rounded form-control" placeholder="email address" maxLength="100" required=""/>
-                                </div>                                        
-                                
-                                <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="url" name="senderWebsite" id="senderWebsite" className="input-md input-rounded form-control" placeholder="http://" maxLength="100"/>
-                                </div>                                             
-                                
-                                <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="senderHuman" id="senderHuman" className="input-md input-rounded form-control" placeholder="6 + 9 = ?" required=""/>
-                                    <input type="hidden" name="checkHuman_a" id="checkHuman_a" value="6"/>
-                                    <input type="hidden" name="checkHuman_b" id="checkHuman_b" value="9"/>
-                                </div>                                      
-                                
-                                <div className="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <textarea className="form-control" name="message" id="message" rows="7" cols="40" required=""></textarea>
-                                </div>
-                                
-                                <div className="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <button type="submit" name="sendMessage" id="sendMessage" className=" contactbutton-md contactbutton-block bgiogblue contactbutton-grad-stellar">Send Message</button>
-                                </div>
+                              "<pre> " + this.state.message + "</pre>" +
+                              "<br/><br/> ============================ " +
+                              "<br/><br/> This is a system generated email! " ,
+        };
+        console.log("notification",formValues2);
+     
+        axios
+        .post('/send-email',formValues2)
+        .then((res)=>{
+            if(res.status === 200){
+                console.log("Mail Sent TO ADMIN successfully!")
+            }
+        })
+        .catch((error)=>{
+          console.log("error = ", error);
+        });
+        this.refs.name.value  = "";
+        this.refs.email.value = "";
+        this.refs.Subject.value = "";
+        this.refs.message.value = "";
+    }
 
-                            </form>
-                        </div>
-                    </div>
-                    
+    render() {
+        const {formerrors} = this.state;
+        return (
+            <div className="cuformWall">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h1 ><b>Contact</b> Us</h1>
+                    <p className="">We're here to help! Email us through the secure form below, or log in to see our phone number.
+                                            When sending us a message, please share the email address you use for<b> iOG Solutions</b>.</p>
                 </div>
-            </div>            
-        </div>
-
-
-        </div>
-                
-
-      );
-  } 
-
+                <div className="">
+                    <form className=" row conatctform">
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
+                            <h3 className="text-center"> Drop Us a Line</h3>
+                        </div>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                {/*<label class="col-md-4 col-lg-4 col-xs-4 col-sm-4 nopadding">Your Name</label>*/}
+                                <input className="form-control" name="from" type="text" ref="name" placeholder="Your name" value={this.state.name} onChange={this.handleChange.bind(this)}/>
+                            </div>
+                        </div>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
+                            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                                {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Your Email address</label>*/}
+                                <input className="form-control" name="from" type="email" data-text="clientEmail" placeholder="Your@email.com" ref="email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
+                                {this.state.formerrors.clientEmail &&(
+                                                              <span className="text-danger">{formerrors.clientEmail}</span>
+                                                      )}
+                            </div>
+                            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                                {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Phone No</label>*/}
+                                <input className="form-control" name="from" type="text" placeholder="Subject" ref="Subject" value={this.state.Subject} onChange={this.handleChange.bind(this)} />
+                            </div>
+                        </div>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Message</label>*/}
+                                <textarea className="form-control" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
+                            </div>
+                        </div>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                <button type="button" className="btn sbtn col-lg-4 col-lg-offset-4" onClick={this.Submit.bind(this)}>Send Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        );
+    }
 }

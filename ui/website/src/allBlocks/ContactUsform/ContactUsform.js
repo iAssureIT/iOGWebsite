@@ -278,7 +278,7 @@ class ContactUsform extends Component{
                   </div>
                   <div className="errorMsg">{this.state.errors.designation}</div>
                 </div>
-                <div className="formcontent col-lg-6">
+                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="country">Country<span className="redFont">*</span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
@@ -286,15 +286,15 @@ class ContactUsform extends Component{
                   </div>
                   <div className="errorMsg">{this.state.errors.country}</div>
                 </div>
-                <div className="formcontent col-lg-6">
+                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
                   <div className="input-group">
-                    <span className="input-group-addon addonColor"><i className="fa fa-mobile" aria-hidden="true"></i></span>
+                    <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
                     <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder="Enter Contact Number"/>
                   </div>
                   <div className="errorMsg">{this.state.errors.contactNumber}</div>
                 </div>
-                <div className="formcontent col-lg-6">
+                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="email">Email<span className="redFont">*</span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-envelope" aria-hidden="true"></i></span>
@@ -302,7 +302,7 @@ class ContactUsform extends Component{
                   </div>
                   <div className="errorMsg">{this.state.errors.email}</div>
                 </div>
-                <div className="formcontent col-lg-6">
+                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div className="form-group">
                       <label htmlFor="enquiry">Enquiry<span className="redFont">*</span></label>
                       <div className="input-group">
@@ -321,31 +321,7 @@ class ContactUsform extends Component{
                       <div className="errorMsg">{this.state.errors.enquiry}</div>
                   </div>  
                 </div>
-                  {/* <div className="formcontent col-lg-6">
-                      <label htmlFor="enquiry">Enquiry<span className="redFont">*</span></label>
-                      <div className="input-group">
-                        <span className="input-group-addon addonColor"><i className="fa fa-handshake-o" aria-hidden="true"></i></span>
-                        <div className="dropdown">
-                      </div>
-                        <button className="text-left fullwidth btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">-Select Enquiry-
-                        <div className="caret adjustcaret"></div></button>
-                        <ul className="dropdown-menu">
-                          <li className="dropdown-submenu">
-                            <a className="test" tabIndex="-1" href="/">Services<span className="caret adjustcaret"></span></a>
-                            <ul className="dropdown-menu">
-                              <li><a tabIndex="-1" href="/">Upstream</a></li>
-                              <li><a tabIndex="-1" href="/">Downstream</a></li>
-                            </ul>
-                          </li>
-                          <li><a tabIndex="-1" href="/">Sales</a></li>
-                          <li><a tabIndex="-1" href="/">Support</a></li>
-                          <li><a tabIndex="-1" href="/">Consulting</a></li>
-                        </ul>
-                      </div>
-                      <div className="errorMsg">{this.state.errors.enquiry}</div>
-
-                    </div>*/}
-                <div className="formcontent col-lg-6">
+                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="subject">Subject<span className="redFont">*</span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>
@@ -353,17 +329,12 @@ class ContactUsform extends Component{
                   </div>
                   <div className="errorMsg">{this.state.errors.subject}</div>
                 </div>
-                <div className="formcontent1 col-lg-12">
+                <div className="formcontent1 col-lg-12  col-md-12 col-sm-12 col-xs-12">
                   <label htmlFor="message">Note<span className="redFont">*</span></label>
                   <textarea rows="5" cols="1" className="form-control" id="message" name="message" value={this.state.message} onChange={this.handleChange.bind(this)}  ref="message"></textarea>
                   <div className="errorMsg">{this.state.errors.message}</div>
                 </div>
-                {/* <div className="checkbox">
-                  <label><input type="checkbox" name="remember"/>I agree that my submitted data is being collected and stored.
-
-                  </label>
-                </div>*/}
-                <div className="col-lg-12">
+                <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-2 col-lg-offset-10">
                     <button className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}> Submit</button>
                   </div>

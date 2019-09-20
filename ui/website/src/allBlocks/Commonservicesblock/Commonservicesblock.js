@@ -11,10 +11,7 @@ import './Commonservicesblock.css';
 export default class Commonservicesblock extends Component {
     
   
-
-  
-
-  render(){
+ render(){
   var plength = this.props.servicedata ? this.props.servicedata.length : 0;
   var productlength = plength % 3;
 
