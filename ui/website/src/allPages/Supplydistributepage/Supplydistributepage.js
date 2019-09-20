@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import './Supplydistributepage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
-import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+/*import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';*/
+import Commonservicesleafpageblock     from '../../allBlocks/Commonservicesblock/Commonservicesleafpageblock.js';
 
 export default class Supplydistributepage extends Component {
   ServicesData(){
@@ -28,7 +29,7 @@ export default class Supplydistributepage extends Component {
             {
                 downstreamurl   : "/demandmanagement",
                 downstreamTitle : "Demand Management",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Demand_management.png",
                 downstreamtext  : "Demand Management is a critical link in the entire supply chain management process essentially required to manage and forecast the demand of products to ensure high level of customer satisfaction and effective asset utilization....."
                     
                 
@@ -36,19 +37,19 @@ export default class Supplydistributepage extends Component {
             {
                 downstreamurl   : "/inventorymanagement",
                 downstreamTitle : "Inventory Management",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Inventory_management.png",
                 downstreamtext  : "End-to-end integration of the petroleum supply chain from crude movement through finished product actualization is very crucial in present market conditions.  Petroleum supply chain operational teams often struggle with limited visibility into inventory levels at a terminal, production schedules, distribution plans and product movement requirements to ensure orders are delivered in the most profitable and timely manner..... "
             }, 
             {
                 downstreamurl   : "/diatributionplanning",
                 downstreamTitle : "Distribution Planning and Optimization",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Distribution_planning_&_optimization.png",
                 downstreamtext  : "The world’s leading integrated energy companies with extensive refining, marketing and distribution operations enhance their competitiveness through integration of their business processes. A key objective would be to improve coordination between distribution planning and operational scheduling across the supply chain and adapt the responses to rapidly changing market conditions...."
             }, 
             {
                 downstreamurl   : "/retailautomation",
                 downstreamTitle : "Retail Automation",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Retail_automation.png",
                 downstreamtext  : "Brand equity of oil marketing companies (OMCs) depends a lot on customer satisfaction which in turn converts to brand loyalty. Needless to add, this is a very significant and critical contributor to enable these companies to retain market share and consequently maximize their profitability. The quality and integrity of deliverables has a direct impact on top lines and bottom lines of these corporations...."
             }            
         ]
@@ -61,7 +62,8 @@ export default class Supplydistributepage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 	      <div className="downstreambg1">
 		      <Commoninfoblock infodata={this.ServicesData()} />
-		      <Commonservicesblock servicedata={this.DownstreamData()}/>
+{/*              <Commonservicesblock servicedata={this.DownstreamData()}/>*/}
+              <Commonservicesleafpageblock servicedata={this.DownstreamData()}/>
 	      </div>
       </div>
     );  

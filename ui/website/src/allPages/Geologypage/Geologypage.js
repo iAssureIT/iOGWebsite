@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import './Geologypage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
-import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+/*import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';*/
+import Commonservicesleafpageblock             from '../../allBlocks/Commonservicesblock/Commonservicesleafpageblock.js';
 import Imgleafblock                    from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
@@ -84,7 +85,7 @@ export default class Geologypage extends Component {
             {
                 downstreamurl   : "/geophysicalinterpretation",
                 downstreamTitle : "Geophysical Interpretation",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Geophysical_interpretation.png",
                 downstreamtext  : "Geophysical Interpretation is the extraction of subsurface geologic information from the data obtained using various techniques such as Seismic, Gravitational, Magnetic etc. Geophysical Interpretation is best carried out in integration with Geological Data and we combine our expertise in both to provide our clients a balanced interpretation...."
                     
                 
@@ -92,19 +93,19 @@ export default class Geologypage extends Component {
             {
                 downstreamurl   : "/geologicalinterpretation",
                 downstreamTitle : "Geological Interpretation",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Geological_interpretation.png",
                 downstreamtext  : "iOG Solutions is a comprehensive solution provider in the Oil and Gas industry domain. It brings to the table vast domain expertise in the oil and gas space across the entire spectrum of the domain, adapted into innovative solutions to help clients address their Geological Interpretation and related needs......"
             }, 
             {
                 downstreamurl   : "/petrophysicalanalysis",
                 downstreamTitle : "Petrophysical Analysis",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Petrophysical_analysis.png",
                 downstreamtext  : "Rock Physics plays a fundamental role in all exploration & production analysis because the physical properties data form the basis for interpreting seismic data. iOG offers the services of  world´s top experts in rock physics & physical properties analysis to provide world-class petrophysical solutions. Our experts analyse the client´s well log data & use this information to perform physical properties feasibility studies for the area of interest that can be used in all aspects of geophysical work...."
             }, 
             {
                 downstreamurl   : "/subsurfacemodeling",
                 downstreamTitle : "Subsurface Modeling",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Subsurface_modeling.png",
                 downstreamtext  : "Seismic to simulation sub-surface modelling solutions are a critical input to exploration processes & decision making as regards any asset or field. iOG offers a solution that helps reduce geological uncertainty & consequent vulnerability of processes. The overall impact is to enhance production, resulting in much better return on investment (ROI).... "
             }
         ]
@@ -119,7 +120,7 @@ export default class Geologypage extends Component {
               <Commoninfoblock infodata={this.ServicesData()} />
               <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
               <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-              <Commonservicesblock servicedata={this.DownstreamData()}/>
+              <Commonservicesleafpageblock servicedata={this.DownstreamData()}/>
           </div>
       </div>
     );  

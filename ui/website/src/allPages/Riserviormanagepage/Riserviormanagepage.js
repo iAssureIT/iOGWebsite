@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import './Riserviormanagepage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
-import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+/*import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';*/
+import Commonservicesleafpageblock     from '../../allBlocks/Commonservicesblock/Commonservicesleafpageblock.js';
 import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Riserviormanagepage extends Component {
@@ -72,7 +73,7 @@ export default class Riserviormanagepage extends Component {
             {
                 downstreamurl   : "/reservoirengineering",
                 downstreamTitle : "Reservoir Engineering",
-                downstreamimg   : "/images/Illustration_2.png",
+                downstreamimg   : "/images/Reservoir_engineering.png",
                 downstreamtext  : "We at iOG solutions help our clients during the development and production of oil and gas reservoirs by maximizing their production rates with the aim of optimizing economic Hydrocarbon recovery. Our Reservoir Engineering team works together with geologists and geophysicists to find the reserves of oil and gas relying on the basic laws of physics and chemistry that affect the behaviour of liquid and vapour phases of oil, natural gas and water in rock...."
                     
                 
@@ -80,19 +81,19 @@ export default class Riserviormanagepage extends Component {
             {
                 downstreamurl   : "/fielddevelopmentplan",
                 downstreamTitle : "Field Development Plan",
-                downstreamimg   : "/images/Illustration_3.png",
+                downstreamimg   : "/images/Field_development_plan.png",
                 downstreamtext  : "Generating Field development plans (FDPs) is the process of evaluating multiple development options for a field and selecting the best option based on assessing trade-offs among multiple factors. It gives you the best technical solutions for field optimization. iOG performs detailed and comprehensive field development plans to cover all technical aspects inclusive of seismic, geological, petrophysical, reservoir engineering, production technology,......"
             }, 
             {
                 downstreamurl   : "/dynamicreservoirsimulation",
                 downstreamTitle : "Dynamic Reservoir Simulation",
-                downstreamimg   : "/images/Illustration_4.png",
+                downstreamimg   : "/images/Dynamic_reservoir_simulation.png",
                 downstreamtext  : "Dynamic Reservoir simulation is an area of reservoir engineering in which computer models are used to predict the flow of fluids. Reservoir simulation models are used for: The Development of new fields through the identification of the number of wells required, the optimal completion of wells, the present and future needs for an artificial lift and the expected production of oil, water and gas....."
             }, 
             {
                 downstreamurl   : "/reservoircharacterization",
                 downstreamTitle : "Reservoir Characterization",
-                downstreamimg   : "/images/Illustration_5.png",
+                downstreamimg   : "/images/Reservoir_characterization.png",
                 downstreamtext  : "Static Reservoir modeling, also sometimes referred to as Reservoir Characterization is carried out to determine reservoir architecture and quality with respect to distribution of porosity, permeability and rock properties...... "
             }
         ]
@@ -106,7 +107,7 @@ export default class Riserviormanagepage extends Component {
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
               <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-              <Commonservicesblock servicedata={this.DownstreamData()}/>
+              <Commonservicesleafpageblock servicedata={this.DownstreamData()}/>
           </div>
       </div>
     );  

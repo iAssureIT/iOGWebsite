@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import './Productionmanagepage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
-import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+// import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+import Commonservicesleafpageblock     from '../../allBlocks/Commonservicesblock/Commonservicesleafpageblock.js';
 import Challenges                      from '../../allBlocks/Challenges/Challenges.js';
 
 export default class Productionmanagepage extends Component {
@@ -105,7 +106,7 @@ export default class Productionmanagepage extends Component {
           <div className="downstreambg1">
               <Commoninfoblock infodata={this.ServicesData()} />
               <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-              <Commonservicesblock servicedata={this.DownstreamData()}/>
+              <Commonservicesleafpageblock servicedata={this.DownstreamData()}/>
           </div>
       </div>
     );  

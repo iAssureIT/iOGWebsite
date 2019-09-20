@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import './Manufacturingsyspage.css';
 
 import Commoninfoblock                 from '../../allBlocks/Commoninfoblock/Commoninfoblock.js';
-import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';
+/*import Commonservicesblock             from '../../allBlocks/Commonservicesblock/Commonservicesblock.js';*/
+import Commonservicesleafpageblock             from '../../allBlocks/Commonservicesblock/Commonservicesleafpageblock.js';
 
 export default class Manufacturingsyspage extends Component {
   ServicesData(){
@@ -66,7 +67,7 @@ export default class Manufacturingsyspage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
           <div className="">
               <Commoninfoblock infodata={this.ServicesData()} />
-              <Commonservicesblock servicedata={this.DownstreamData()}/>
+              <Commonservicesleafpageblock servicedata={this.DownstreamData()}/>
           </div>
       </div>
     );  

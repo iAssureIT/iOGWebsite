@@ -1,3 +1,15 @@
+
+.leafModalBody{
+  height: 415px;
+}
+.leafModalFooter{
+  border: none !important;
+}
+.skipText{
+  color: #fff;
+  font-size: 15px;    
+  text-align: center;
+}
 .contentWraper{
 	height: auto;
 	background-color: transparent;

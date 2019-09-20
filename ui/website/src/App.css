@@ -591,3 +591,6 @@ body{
 .mt50{
     margin-top: 50px;
 }
+.modalZindex{
+    z-index: 10000;
+}

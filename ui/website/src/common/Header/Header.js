@@ -6,21 +6,21 @@ import $ from "jquery";
 import './Header.css';
 import 'bootstrap/js/modal.js';
 
-import Contactform     from '../../allBlocks/Contactform/Contactform.js';
+import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 import ContactUsModal    from '../../allBlocks/ContactUsModal/ContactUsModal.js';
 
 export default class Header extends Component {
   
-componentWillMount() {$(window).scroll(function() {    
+  componentWillMount() {$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
-        $(".headerflow").addClass("headerflowscroll");
-    } else {
-        $(".headerflow").removeClass("headerflowscroll");
-    }
-});
-}
+      if (scroll >= 100) {
+          $(".headerflow").addClass("headerflowscroll");
+      } else {
+          $(".headerflow").removeClass("headerflowscroll");
+      }
+    });
+  }
 
   render() {  
     return (
