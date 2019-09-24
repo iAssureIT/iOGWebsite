@@ -1,0 +1,16 @@
+.userImgB{
+  height: 80px;
+}
+.commentBox{
+  height: 125px !important;
+  margin-bottom: 10px;
+}
+.commentBoxText{
+  height: 90px !important;
+}
+.commentBoxbtn {
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+  margin-top: 10px;
+}

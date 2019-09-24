@@ -163,7 +163,7 @@ export default class Energy extends Component {
     ServicesData(){
         return [
             {
-                servicesimg   : "/images/.png",
+                servicesimg   : "/images/Energy_Management.png",
             } 
                         
         ]

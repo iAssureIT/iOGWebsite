@@ -4,8 +4,8 @@ import {Route, withRouter} from 'react-router-dom';
 import $                      from 'jquery';
 import './BlogContent.css';
 
-/*import Commonoverviewblock  from '../../allBlocks/Commonoverviewblock/Commonoverviewblock.js';
-*/
+import CommentBlock  from '../../allBlocks/CommentBlock/CommentBlock.js';
+
 class BlogContent extends Component {
   constructor(props){
     super(props);
@@ -357,41 +357,8 @@ class BlogContent extends Component {
                               }
                             </div>
                           </div>
-                          <hr className="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12"/ >
-                          <form id="contactForm" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-                            <div className="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
-                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div className="">
-                                </div>
-                              </div>
-                              <div class=" commentBox col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <label htmlFor="comment">Add Comment<span className="redFont"></span></label>
-                                <textarea class="form-control commentBoxText col-lg-12 col-md-12 col-sm-12 col-xs-12" cols="4" rows="8" id="comment"></textarea>
-                              </div> 
-                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <label htmlFor="userName">Name<span className="redFont">*</span></label>
-                                <div className="">
-                                  <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12" id="userName" type="text" name="userName"  ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} onKeyDown={this.isTextKey.bind(this)}  placeholder=""/>
-                                </div>
-                              </div>
-                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <label htmlFor="email">Email<span className="redFont">*</span></label>
-                                <div className="">
-                                  <input className="form-control" id="email" type="text" name="email" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}  placeholder=""/>
-                                </div>
-                              </div>
-                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <label htmlFor="contactNumber">Website<span className="redFont"></span></label>
-                                <div className="">
-                                  <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder=""/>
-                                </div>
-                              </div>
-                              
-                              <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <button className="btn lightbluebg commentBoxbtn buttonhover">Post Comment</button>
-                              </div>
-                            </div>
-                          </form>
+                          <hr className="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" />
+                          <CommentBlock />
                       </div>                       
                    </div>
                 </div>   
