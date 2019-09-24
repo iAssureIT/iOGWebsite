@@ -10,7 +10,7 @@ export default class Map extends Component {
   
     render(){
         return(
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 sitemap">
             <div className="row mapouter">
               <div className="gmap_canvas">
                 <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=iog%20magarpatta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>

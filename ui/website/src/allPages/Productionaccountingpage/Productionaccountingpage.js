@@ -286,7 +286,7 @@ export default class Productionaccountingpage extends Component {
                 planstext1        : "",
                 planstext2        : "",
                 planstext3        : "",
-                plansimg          : "images/noimg.png",
+                plansimg          : "images/Production-(-Accounting-Solution.png",
 
             }
         ]

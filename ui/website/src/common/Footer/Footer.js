@@ -120,7 +120,7 @@ export default class Footer extends Component {
                             <p className="text-right">
                                 <a href="/privacypolicy" className="mr20">Privacy Policy</a>
                                 <a href="/termsofuse" className="mr20">Terms of Use</a>
-                                <a href="/" className="">Site Map</a>
+                                <a href="/sitemap" className="">Site Map</a>
                             </p>
                         </div>
 

@@ -1,4 +1,8 @@
-
+.dwstmTitle{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 2px;
+}
 .leafModalBody{
   height: 415px;
 }
@@ -57,7 +61,7 @@
   color: black;
   border-radius: 15px;
   border-radius: 15px;
-  padding: 75px 22px 47px;
+  padding: 60px 22px 47px;
 
 
 }
@@ -82,7 +86,8 @@
     height: 300px;
 }
 .serflip-card img{
-  height: 100px;
+  height: 130px;
+  margin-bottom: 15px;
 }
 
 .serflip-card h2{

@@ -120,7 +120,7 @@ import ApcServices                    from '../allPages/ApcServices/ApcServices.
 import EtrmPage                       from '../allPages/EtrmPage/EtrmPage.js';
 import Termsofusepage                 from '../allPages/Termsofusepage/Termsofusepage.js';
 import Privacypolicypage              from '../allPages/Privacypolicypage/Privacypolicypage.js';
-import Sitemap                        from '../allBlocks/Map/Map.js';
+import Sitemap                        from '../allPages/Sitemap/Sitemap.js';
 
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';

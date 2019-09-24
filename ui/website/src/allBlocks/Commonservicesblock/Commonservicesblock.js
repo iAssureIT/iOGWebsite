@@ -17,7 +17,7 @@ export default class Commonservicesblock extends Component {
 
     return(
       
-        <div className="col-lg-12 contentWraper mt100">
+        <div className="col-lg-12 contentWraper">
           <div className="row">
             <div className="Bubble" >
               <div className="Main_Cards__Bubble bub1"></div>
@@ -25,7 +25,7 @@ export default class Commonservicesblock extends Component {
             </div>
             <div className="col-lg-12 lightbluetext contentheader text-center">
               <hr/>
-              <h1 className="">Services</h1>
+              <h1 className="lightbluetext">Services</h1>
             </div>
             <div className="col-lg-12">
               <div className="row">
@@ -65,7 +65,8 @@ export default class Commonservicesblock extends Component {
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front">
                                                     <img src={data.downstreamimg} alt=""/>
-                                                    <h2>{data.downstreamTitle}</h2> 
+                                                    <div className="dwstmTitle">{data.downstreamTitle}</div> 
+                                                    <div className="dwstmTitle">{data.downstreamTitle1}</div> 
                                                   </div>
                                                   <div className="serflip-card-back">
                                                       <p className="text-left">{data.downstreamtext}</p>

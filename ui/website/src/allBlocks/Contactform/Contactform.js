@@ -154,12 +154,12 @@ export default class ContactUsForm extends React.Component {
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                 {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Message</label>*/}
-                                <textarea className="form-control" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
+                                <textarea className="form-control padd10" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                <button type="button" className="btn sbtn col-lg-4 col-lg-offset-4" onClick={this.Submit.bind(this)}>Send Request</button>
+                                <button type="button" className="btn sbtn lightbluebg contactformbtn buttonhover col-lg-4 col-lg-offset-4" onClick={this.Submit.bind(this)}>Send Request</button>
                             </div>
                         </div>
                     </form>

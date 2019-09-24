@@ -74,7 +74,8 @@ export default class Commonservicesleafpageblock extends Component {
                                                 <div className="serflip-card-inner">
                                                     <div className="serflip-card-front">
                                                       <img src={data.downstreamimg} alt=""/>
-                                                      <h2>{data.downstreamTitle}</h2> 
+                                                      <div className="dwstmTitle">{data.downstreamTitle}</div> 
+                                                      <div className="dwstmTitle">{data.downstreamTitle1}</div> 
                                                     </div>
                                                     <div className="serflip-card-back">
                                                         <p className="text-left">{data.downstreamtext}</p>
@@ -116,7 +117,8 @@ export default class Commonservicesleafpageblock extends Component {
                                                 <div className="serflip-card-inner">
                                                     <div className="serflip-card-front">
                                                       <img src={data.downstreamimg} alt=""/>
-                                                      <h2>{data.downstreamTitle}</h2> 
+                                                      <div className="dwstmTitle">{data.downstreamTitle}</div> 
+                                                      <div className="dwstmTitle">{data.downstreamTitle1}</div> 
                                                     </div>
                                                     <div className="serflip-card-back">
                                                         <p className="text-left">{data.downstreamtext}</p>

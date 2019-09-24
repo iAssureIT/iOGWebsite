@@ -165,10 +165,16 @@ color: #fff;
   z-index: 3;
   height: 0px;
   background: transparent;
-  /*overflow: hidden;*/
+  overflow: hidden;
   max-height: 1590px;
   /*left: -95px;*/
   right: 0px;
+}
+.roadjournyoverflow{
+  overflow: none!important;
+  height: 1590px!important;
+  transition-duration: 10s;
+
 }
 .roadjourny img{
   position: relative;

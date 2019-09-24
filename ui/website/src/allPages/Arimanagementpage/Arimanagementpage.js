@@ -76,54 +76,64 @@ export default class Arimanagementpage extends Component {
   DownstreamData(){
         return [
             {
-                downstreamTitle : "Asset Criticality Analysis",
+                downstreamTitle : "Asset Criticality ",
+                downstreamTitle1 : "Analysis",
                 downstreamimg   : "/images/Asset_criticality_analysis.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
                     
                 
             }, 
             {
-                downstreamTitle : "Risk Based Inspection",
+                downstreamTitle : "Risk Based ",
+                downstreamTitle1 : "Inspection",
                 downstreamimg   : "/images/Risk_based_inspection.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Root Cause Analysis",
+                downstreamTitle : "Root Cause ",
+                downstreamTitle1 : "Analysis",
                 downstreamimg   : "/images/Root_cause_analysis.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Failure Mode Effect Analysis",
+                downstreamTitle : "Failure Mode Effect ",
+                downstreamTitle1 : "Analysis",
                 downstreamimg   : "/images/Failure_mode_effect_analysis.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Reliability Centered Maintenance",
+                downstreamTitle : "Reliability Centered ",
+                downstreamTitle1 : "Maintenance",
                 downstreamimg   : "/images/Reliability_centered_maintenance.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Asset Strategy Management",
+                downstreamTitle : "Asset Strategy ",
+                downstreamTitle1 : "Management",
                 downstreamimg   : "/images/Asset_strategy_management.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Inspection Management",
+                downstreamTitle : "Inspection ",
+                downstreamTitle1 : " Management",
                 downstreamimg   : "/images/Inspection_management.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Calibration Management",
+                downstreamTitle : "Calibration ",
+                downstreamTitle1 : "Management",
                 downstreamimg   : "/images/Calibration_management.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Reliability Availability & Maintainability (RAM) Moeling",
+                downstreamTitle : "Reliability Availability & ",
+                downstreamTitle1 : "Maintainability (RAM) Modeling",
                 downstreamimg   : "/images/RAM.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle : "Spares Inventory Management and Optimisation (SIMO)",
+                downstreamTitle : "Spares Inventory Management",
+                downstreamTitle1 : "and Optimisation (SIMO)",
                 downstreamimg   : "/images/SIMO.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }

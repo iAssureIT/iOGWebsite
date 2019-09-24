@@ -11,7 +11,7 @@
     border-radius: 4px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
-    margin-top: 58px;
+    margin-top: 30px;
     text-align: center;
     padding: 8px;
 }
@@ -22,6 +22,6 @@
 }
 
 .resource_para{
-	padding-top: 60px;
+	padding-top: 10px;
     font-size: 18px;
 }

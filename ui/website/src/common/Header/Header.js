@@ -282,13 +282,13 @@ export default class Header extends Component {
         </div>
       </div>
       <div className="row"> 
-        <button className="contactBar" data-toggle="modal" data-target="#contactUsModal">
+        <button className="contactBar" data-toggle="modal" data-target="#headerModal">
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
-        <div className="modal fade" id="contactUsModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="headerModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-lg " role="document">
             <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
 {/*              <button type="button" class="close closeButton" data-dismiss="modal">&times;</button>*/}

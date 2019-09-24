@@ -150,10 +150,10 @@ CareersData(){
                           this.CareersData().map((data, index)=>{
                             var textPara = renderHTML(this.state.para);
                             var textPara1 = renderHTML(this.state.para1);
-
+ 
                             console.log("textPara",textPara);
                            return (
-                                    <div key={index} className="panel panel-default">
+                                    <div key={index} className="panel panel-default blockdefault">
                                       <div className="panel-heading" role="tab" id="headingThree">
                                         <h4 className="panel-title">
                                         <a className="collapsed careerAnchorhover" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree">

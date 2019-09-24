@@ -9,11 +9,24 @@ export default class Ourjournyblock extends Component {
     $(document).ready(function(){
     $(window).scroll(function(){
    var windowtop =$(window).scrollTop();
+   var windowheight =$(window).height();;
   
 
   var nb1t = (2*windowtop)+"px";
+  var nbtheight = 200;
+  var nbtnull = (0)+"px";
+    // alert(windowheight);
+
+  if(windowheight == 669){
+    $(".roadjourny").addClass("roadjournyoverflow");
   
-  $(".roadjourny").css("height",nb1t);
+  }
+  else{
+      $(".roadjourny").css("height",nb1t);
+
+  }
+
+
 
 });
 

@@ -24,7 +24,8 @@ export default class Digitalservicespage extends Component {
         return [
             {
                 downstreamurl   : "/digitalstratergy",
-                downstreamTitle : "Digital IT Strategy & Roadmaps",
+                downstreamTitle : "Digital IT Strategy ",
+                downstreamTitle1 : "& Roadmaps",
                 downstreamimg   : "/images/Digital-IT_strategy_&_roadmap.png",
                 downstreamtext  : "In recent years, the oil and gas industry has seen a number of initiatives to explore new digital technologies and to exploit their benefits. Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures and management concepts......"
                     
@@ -32,25 +33,29 @@ export default class Digitalservicespage extends Component {
             }, 
             {
                 downstreamurl   : "/applicationdevlopment",
-                downstreamTitle : "Application Development & Application Management (ADAM)",
+                downstreamTitle : "Application Development & ",
+                downstreamTitle1 : "Application Management (ADAM)",
                 downstreamimg   : "/images/Application_development.png",
                 downstreamtext  : "Maintenance and enhancement of advanced applications for oil and gas companies consume a major portion of the total life-cycle cost of any IT system. Oil and gas industry features applications across all functional departments that inherently focus on features and functionalities. However, the digital transformation has forced organizations to change and adapt quickly, and legacy application management must change accordingly...."
             }, 
             {
                 downstreamurl   : "/enablingtechnology",
-                downstreamTitle : "Enabling Technologies",
+                downstreamTitle : "Enabling",
+                downstreamTitle1 : "Technologies",
                 downstreamimg   : "/images/enabling_technologies.png",
                 downstreamtext  : "New technologies that either alone or in combination with associated technologies, provide the means to drive radical changes in performance and capabilities of end-users and are defined as Enabling Technologies. The basic objective of Enabling Technologies is to help in the rapid development of tools and systems for analyzing and transforming legacy systems....."
             }, 
             {
                 downstreamurl   : "/visualizationdashboard",
-                downstreamTitle : "Visualization & Dashboards",
+                downstreamTitle : "Visualization & ",
+                downstreamTitle1 : " Dashboards",
                 downstreamimg   : "/images/Visulization_&_dashboards.png",
                 downstreamtext  : "Dashboards provide an integrated and visual representation of the complete oil business right from crude procurement all the way down to product distribution. And with the advent of industry 4.0 wave, corporate dashboards are among the most important technologies that are strategic to any Business Intelligence....."
             }, 
             {
                 downstreamurl   : "/digitalasset",
-                downstreamTitle : "Digital Asset Life Cycle Management",
+                downstreamTitle : "Digital Asset Life",
+                downstreamTitle1 : "Cycle Management",
                 downstreamimg   : "/images/Digital_Asset.png",
                 downstreamtext  : "Assets throughout their life cycle go through many phases which begins by acquiring the assets, continue through maintaining & operating, and ends by decommissioning/retiring. In the context of the oil and gas industry, the specialized equipment and related complex systems make it a very challenging task to maintain and manage assets and thus remain a pain area for decision makers....."
             }

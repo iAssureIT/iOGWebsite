@@ -299,7 +299,7 @@ class Contactpage extends Component{
                     </div>
                   </div>
               </div>
-              <div>
+              <div id="mapRedirect">
                 <Map />
               </div>
           </div>    
