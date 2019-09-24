@@ -1,4 +1,6 @@
-.iogfooter{
+.whatsupIcon{
+  font-size: 27px !important;
+  padding: 1px 3px !important;
 }
 
 .animationoveflow{
@@ -13,8 +15,9 @@
  color: #fff;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
- height: 200px;
+ height: 210px;
  padding-top: 30px;
+ padding-bottom: 10px;
 }
 .footer-two a{
 color: #fff;
@@ -96,7 +99,7 @@ ul.no-icon-list {
     text-decoration: none;
     text-align: left;
     float: left;
-    margin-left: 10px;
+    margin-right: 11px;
 
 }
 .socialicon li a .fa{
