@@ -33,15 +33,20 @@ class BlogPage extends Component{
   render(){
     return(
           <div>    
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogPage-wrap">
-                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12">
-                                <Blogcomponents />
-                            {/*    <BlogPagecomponent />*/}
-                            </div>
-
-                      </div>
-                  </div>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogPage-wrap">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
+                  <hr/>
+                  <h1 className="lightbluetext latestblog">
+                      <b>Blogs</b> 
+                  </h1>
+                </div>
+                <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                    <Blogcomponents />
+                {/*    <BlogPagecomponent />*/}
+                </div>
+              </div>
+            </div>
           </div>    
     );
   }

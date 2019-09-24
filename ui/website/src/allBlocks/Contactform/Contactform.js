@@ -159,7 +159,7 @@ export default class ContactUsForm extends React.Component {
                         </div>
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                <button type="button" className="btn sbtn lightbluebg contactformbtn buttonhover col-lg-4 col-lg-offset-4" onClick={this.Submit.bind(this)}>Send Request</button>
+                                <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-4 col-lg-offset-4" onClick={this.Submit.bind(this)}>Send Request</button>
                             </div>
                         </div>
                     </form>

@@ -4,10 +4,19 @@
   padding: 0px;
   border-radius: 0px !important;
   margin-top: 15px;
+  box-shadow: 0px 11px 15px 1px #ccc;
   /*box-shadow: 0 10px 29px rgba(92,141,255,.22);*/
 
 }
+.blogsText{
+  padding: 0px 15px;
+  text-decoration: none !important;
 
+}
+.All1blog1 a:hover{
+  text-decoration: none !important;
+  
+}
 .customDefaultPanel>.panel-heading {
   color: #333;
   background-color: #fff;
@@ -91,12 +100,12 @@ margin-top: 24px !important;
   text-decoration: none !important;
 }
 .blogImgContainer{
-  height: 220px;
-  /*border-radius: 10px;*/
-  margin-top: 15px;
+  height: 180px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  /*margin-top: 15px;*/
   margin-bottom: 15px;
   padding: 0px;
-
 }
 
 .blogImgContainer {
@@ -138,18 +147,21 @@ margin-top: 24px !important;
 }
 .blogTitle{
   font-weight: normal;  
-  font-size: 16px;
+  font-size: 15px;
   overflow-wrap: break-word;
   word-wrap: break-word;
   color: #303133 !important;
   /*color: #0076d8 !important;*/
-  padding: 0px;
   margin-top: 5px;
+  text-decoration: none;
+
 }
 .blogTitle:hover{
   color: #f19000 !important;
   transition-duration: 0.7s;
   cursor: pointer;
+  text-decoration: none;
+
 }
 .likeDiv{
   color:#404444;
@@ -162,6 +174,7 @@ margin-top: 24px !important;
   font-size: 12px;
   font-weight: bold;
   margin-top: 5px;
+
 }
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
   border: none !important;
@@ -200,4 +213,66 @@ margin-top: 24px !important;
 @keyframes blogScale {
   from {transform: scale(0.9)}
   to {transform: scale(0.8)}
+}
+
+.AllBlogsBox{
+  background-color: #f6f6f6;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+}
+/*.mtop75{
+  margin-top: 75px; 
+
+}*/
+.blogTitle{
+  margin: 5px 0px;
+}
+.AllblogImgB{
+  height: 173px!important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+.Allblog{
+  /*background-color: #888;*/
+  
+}
+.All1blog1{
+  height: 375px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 11px 15px 1px #ccc;
+}
+.p10{
+  padding-left:  25px;
+  padding-right: 10px;
+}
+.imgRoundrb{
+  border-radius: 100%;
+  height: 50px !important;
+  width: 50px !important;
+  position: relative;
+  padding: 0px;
+    top: 4%;
+    left: 8%;
+}
+.r1blog1 hr{
+  margin-bottom: 0px!important;
+}
+
+.mtop10{
+  margin-top: 10px;
+}
+
+.mtop20{
+  margin-top: 20px;
+}
+.graycolor{
+  color:#777;
+}
+
+.z50{
+  position: relative;
+  top: -75px;
 }

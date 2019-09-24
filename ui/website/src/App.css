@@ -594,3 +594,6 @@ body{
 .modalZindex{
     z-index: 10000;
 }
+.fs15{
+    font-size: 15px;
+}

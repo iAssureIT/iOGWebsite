@@ -21,7 +21,11 @@ export default class Header extends Component {
       }
     });
   }
-
+  modalClickEvent(){
+    console.log("click event")
+    $('#modalId').addClass('in');
+    $('#modalId').css('display','block');
+  }
   render() {  
     return (
     <header className="col-lg-12 headerflow"> 
@@ -98,9 +102,9 @@ export default class Header extends Component {
                                           </ul>
                                         </li>
                                         <li className="zindex">
-                                        <label htmlFor="drop-5" className="toggle">Supply & Distribution</label>
-                                        <a href="/supplydistribute">Supply & Distribution <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                        <input type="checkbox" id="drop-5"/>
+                                          <label htmlFor="drop-5" className="toggle">Supply & Distribution</label>
+                                          <a href="/supplydistribute">Supply & Distribution <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                          <input type="checkbox" id="drop-5"/>
                                           <ul>
                                             <li><a href="/demandmanagement">Demand Management</a></li>
                                             <li><a href="/inventorymanagement">Inventory Management</a></li>
@@ -108,10 +112,8 @@ export default class Header extends Component {
                                             <li><a href="/retailautomation">Retail Automation</a></li>
                                           </ul>
                                         </li>
-                                        <li><a href="/">&nbsp;</a></li>
-                                        <li><a href="/">&nbsp;</a></li>
-                                        <li><a href="/">&nbsp;</a></li>
-                                        <li><a href="/">&nbsp;</a></li>
+                                        
+
                                       </ul>
                                     </li>
                                     <li className="zindex">
@@ -282,13 +284,13 @@ export default class Header extends Component {
         </div>
       </div>
       <div className="row"> 
-        <button className="contactBar" data-toggle="modal" data-target="#headerModal">
+        <button className="contactBar" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
-        <div className="modal fade" id="headerModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="modalId" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-lg " role="document">
             <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
 {/*              <button type="button" class="close closeButton" data-dismiss="modal">&times;</button>*/}

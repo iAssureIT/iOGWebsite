@@ -13,8 +13,8 @@
  color: #fff;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
- height: 250px;
- padding-top: 75px;
+ height: 200px;
+ padding-top: 30px;
 }
 .footer-two a{
 color: #fff;
@@ -37,6 +37,7 @@ color: #fff;
     line-height: 25px;
     text-decoration: none;
     text-align: left;
+    font-size: 15px;
 
 }
 .footer-two ul li a:hover{
@@ -95,7 +96,7 @@ ul.no-icon-list {
     text-decoration: none;
     text-align: left;
     float: left;
-    margin-left: 3px;
+    margin-left: 10px;
 
 }
 .socialicon li a .fa{
@@ -152,6 +153,7 @@ ul.no-icon-list {
     margin-top: 15px;
     width: 100%;
     border-radius: 20px;
+    font-weight: 700;
 }
 
 

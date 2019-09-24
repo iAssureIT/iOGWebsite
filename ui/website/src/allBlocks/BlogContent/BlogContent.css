@@ -133,9 +133,12 @@
 }
 
 .commentBox{
-  height: 160px;
+  height: 125px !important;
+  margin-bottom: 10px;
 }
-
+.commentBoxText{
+  height: 90px !important;
+}
 .commentBoxbtn {
   font-weight: 600;
   padding: 10px 20px;

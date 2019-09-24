@@ -86,9 +86,9 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-md-4 col-sm-4 col-xs-4 ">
+                        <div className="col-md-3 col-sm-4 col-xs-4 ">
                             <h6 className="font-montserrat col">Address</h6>
-                            <p>
+                            <p className="fs15">
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
                                  Amanora Chambers,<br/> Office 330,
                                  3<sup>rd</sup> floor, East Block,Hadapsar,
@@ -96,12 +96,14 @@ export default class Footer extends Component {
                                  <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 672 603 81/82.
                              </p>
                         </div> 
-                        <div className="col-md-2 col-sm-3 col-xs-4">
+                        <div className="col-md-3 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat col">Connect</h6>
                             <ul className="no-icon-list socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                                
                             </ul>
                             <a href="Contact-us"><button className="connectbtn btn">Click To Contact</button></a>
                         </div>      
@@ -112,7 +114,7 @@ export default class Footer extends Component {
                 <div className="col-lg-10 col-lg-offset-1">
                     <div className="row">
 
-                        <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-left pt20">
+                        <div className="textcolorwhite col-md-5 col-sm-6 col-xs-6 pull-left pt20">
                             <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
                         </div>
 

@@ -77,8 +77,8 @@ export default class Commonstream extends Component {
                                                         <img alt="" className="streamImg" src="/images/Illustration_11.png" />
                                                        {/* <h2>Health Safety & Environment</h2>*/}
                                                         <br/>
-                                                        <label className="downTitle">Health Safety & </label>
                                                         <br/>
+                                                        <label className="downTitle">Health Safety & </label>
                                                         <label className="downTitle">Environment</label>
                                                     </div>
                                                 </div>
@@ -96,8 +96,8 @@ export default class Commonstream extends Component {
                                                     <div className=" lightbluetext block block1height text-center">
                                                         <img alt="" className="streamImg" src={data.downstreamimg} />
                                                         <br/>
-                                                        <label className="downTitle">{data.downstreamTitle}</label>
                                                         <br/>
+                                                        <label className="downTitle">{data.downstreamTitle}</label>
                                                         <label className="downTitle">{data.downstreamTitle1}</label>
                                                     </div>
                                                   </div>

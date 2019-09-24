@@ -364,10 +364,10 @@ class BlogContent extends Component {
                                 <div className="">
                                 </div>
                               </div>
-                              <div class="commentBox col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <div class=" commentBox col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="comment">Add Comment<span className="redFont"></span></label>
-                                <textarea class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="5" id="comment"></textarea>
-                              </div>
+                                <textarea class="form-control commentBoxText col-lg-12 col-md-12 col-sm-12 col-xs-12" cols="4" rows="8" id="comment"></textarea>
+                              </div> 
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="userName">Name<span className="redFont">*</span></label>
                                 <div className="">

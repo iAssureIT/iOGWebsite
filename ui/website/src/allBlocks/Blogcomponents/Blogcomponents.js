@@ -249,25 +249,36 @@ for (var i = 0; i < accordions.length; i++) {
         {
           this.BlogsData().map((data, index)=>{
             return (
-            <div key={index} className="col-lg-4 col-md-6 col-sm-12 col-xs-12  customDefaultPanel">
-              <div className="panel-heading" role="tab" id="headingThree">
-                <a className=" customPanel" id="" role="button" data-parent="#" href={"/blogs/"+data.id}  aria-controls="" >
-                  
-
-                  <div className="col-lg-12 blogImgContainer blogImageContainer"><img src={data.blogsimg} /></div>
-                  <div className="NOpadding">
-                    <label className="blogDate ">{data.blogDate}</label>
-                    <label className="likeDiv pull-right"><i className="fa fa-thumbs-up"></i> &nbsp;&nbsp;{data.numOfLike}</label><br/>
-                    <div className="blogTitle">{data.blogsTitle}</div>
-                    <div className="blogContent">{data.BlogContent1}</div>
-                  </div>
-                </a>
+            <div key={index} >
+              <div className="col-lg-3 Allblog">
+                <div className="All1blog1 pricehover-float">
+                  <a className="" id="" role="button" data-parent="#" href={"/blogs/"+data.id}  aria-controls="" >
+                    <img className="img-responsive AllblogImgB" src={data.blogsimg} alt="Bannerpng"/>
+                    <label className="blogDate blogsText mtop20 graycolor">{data.blogDate}</label>
+                    <label className="blogDate blogsText mtop20 graycolor pull-right"><i className="fa fa-thumbs-up"></i> &nbsp;{data.numOfLike}</label><br/>
+                    <h4 className="blogTitle blogsText"><b>{data.blogsTitle}</b></h4>
+                    <p className="blogPara blogsText graycolor">{data.BlogContent1}</p>
+                  </a>
+                </div>                               
               </div>
-              <div>
-            {  /*  <BlogContent infoId={data.id} infodata={this.BlogsText()} />*/}
-              </div>
+             {/*   <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12  customDefaultPanel">
+                       <div className="panel-heading" role="tab" id="headingThree">
+                         <a className=" customPanel" id="" role="button" data-parent="#" href={"/blogs/"+data.id}  aria-controls="" >
+                           <div className="col-lg-12 blogImgContainer blogImageContainer">
+                             <img src={data.blogsimg} />
+                           </div>
+                           <div className="NOpadding">
+                             <label className="blogDate ">{data.blogDate}</label>
+                             <label className="likeDiv pull-right"><i className="fa fa-thumbs-up"></i> &nbsp;&nbsp;{data.numOfLike}</label><br/>
+                             <div className="blogTitle">{data.blogsTitle}</div>
+                             <div className="blogContent">{data.BlogContent1}</div>
+                           </div>
+                         </a>
+                       </div>
+                     <div>
+                   </div>
+                   </div>*/}
             </div>
-       
             );
           })
         }                        
