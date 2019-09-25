@@ -140,6 +140,7 @@ import InspectionManagementPage       from '../allPages/InspectionManagementPage
 // import Effectslide     from '../trial/Effectslide/Effectslide.js';
 // import Svganimation     from '../trial/Svganimation/Svganimation.js';
  import Parallaxeff     from '../trial/Parallaxeff/Parallaxeff.js';
+ import facebook     from '../allBlocks/facebook/facebook.js';
 
 
 const WebLayout = () => (
@@ -263,6 +264,7 @@ const WebLayout = () => (
     <Route path="/inspectionManagement" component={ InspectionManagementPage } />
     
     <Route path="/trial" component={ Parallaxeff } />        
+    <Route path="/facebook" component={ facebook } />        
   </div>
 );
 

@@ -11,6 +11,7 @@
     "mdbootstrap": "^4.8.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-facebook": "^8.0.4",
     "react-loadable": "^5.5.0",
     "react-owl-carousel": "^2.3.1",
     "react-player": "^1.11.1",

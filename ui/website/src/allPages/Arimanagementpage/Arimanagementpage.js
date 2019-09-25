@@ -77,70 +77,70 @@ export default class Arimanagementpage extends Component {
                 downstreamTitle : "Asset Criticality ",
                 downstreamTitle1 : "Analysis",
                 downstreamimg   : "/images/Asset_criticality_analysis.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions consider Asset Criticality Analysis as one of the important parts which help the industry to discover and analyse their assets and it’s various associated criticality factors based on the risk of failure associated with the equipment along with knowing how reliable and durable it is going to be in the longer run of the plant...."
             }, 
             {
                 downstreamurl   : "/riskBasedInspection",
                 downstreamTitle : "Risk Based ",
                 downstreamTitle1 : "Inspection",
                 downstreamimg   : "/images/Risk_based_inspection.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Risk-Based Inspection is a process that detects, evaluates and maps industrial risks, which can compromise equipment integrity in both pressurized equipment and structural elements...."
             }, 
             {
                 downstreamurl   : "/RootCauseAnalysis",
                 downstreamTitle : "Root Cause ",
                 downstreamTitle1 : "Analysis",
                 downstreamimg   : "/images/Root_cause_analysis.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "At iOG Solutions, we provide solutions to analyse the failure causes which refers to the specific technical deficiency which is responsible for failure of equipment. The failure cause may lie in the process, design, or the operation itself....."
             }, 
             {
                 downstreamurl   : "/failureModeEffect",
                 downstreamTitle : "Failure Mode Effect ",
                 downstreamTitle1 : "Analysis",
                 downstreamimg   : "/images/Failure_mode_effect_analysis.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Failure Mode Effect Analysis is one of the parts of Criticality Analysis which indicates the possibility of equipment which can fail and inspects for the effects that will follow on it’s failure and so on....."
             }, 
             {
                 downstreamurl   : "/reliabilityCentredMaintenance",
                 downstreamTitle : "Reliability Centered ",
                 downstreamTitle1 : "Maintenance",
                 downstreamimg   : "/images/Reliability_centered_maintenance.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "At iOG solutions, we help our clients in understanding their assets and the risk associated with it. Reliability Centred Management involves analysing the assets to understands its criticality and associated downtime that can be caused by them....."
             }, 
             {
                 downstreamurl   : "/assetStrategyManagement",
                 downstreamTitle : "Asset Strategy ",
                 downstreamTitle1 : "Management",
                 downstreamimg   : "/images/Asset_strategy_management.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "This modern approach of analysis and data collection helps companies in developing new techniques resulting in greater efficiency, less unplanned downtime, improved safety, less operational risk, better yields, and increased flexibility of production..."
             }, 
             {
                 downstreamurl   : "/inspectionManagement",
                 downstreamTitle : "Inspection ",
                 downstreamTitle1 : " Management",
                 downstreamimg   : "/images/Inspection_management.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions provide inspection management services that help to ensure that you are prepared with the information and data you need to focus efforts on value-adding interference....."
             }, 
             {
                 downstreamurl   : "/calibrationManagement",
                 downstreamTitle : "Calibration ",
                 downstreamTitle1 : "Management",
                 downstreamimg   : "/images/Calibration_management.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions provide consultancy and training in terms of setting up the calibration system in the plant which envelops all the assets, and based on its functionality they have to be calibrated in order to avoid any critical risks from occurring and the plant remains reliable and active for the longer time period...."
             }, 
             {
                 downstreamurl   : "/RAMModelling",
                 downstreamTitle : "Reliability Availability & ",
                 downstreamTitle1 : "Maintainability (RAM) Modeling",
                 downstreamimg   : "/images/RAM.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Reliability, Availability and Maintainability (RAM) are one of those tools which have a substantial impact on the lifecycle cost and performance of the industrial equipment and systems....."
             }, 
             {
                 downstreamurl   : "/simo",
                 downstreamTitle : "Spares Inventory Management",
                 downstreamTitle1 : "and Optimisation (SIMO)",
                 downstreamimg   : "/images/SIMO.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "iOG Solutions trains and consult in managing the plants spares inventory costs at the same time as reducing stock-out and sustaining spares needs for production availability. In addition, it can help to summarise the status of current asset management from spares consumption point of view....."
             }
         ]
     }
