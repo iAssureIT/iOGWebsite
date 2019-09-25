@@ -9,14 +9,6 @@ import './Footer.css';
 
 export default class Footer extends Component {
 
-getLinkWhatsapp(number, message) {
-    var yourNumber  = "{{ 9075374537}}";
-    var yourMessage = "{{ your message in string  }}";
-    number  = this.yourNumber;
-    message = this.yourMessage;
-
-    return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
-}
 
   render(){
        return(
@@ -111,7 +103,6 @@ getLinkWhatsapp(number, message) {
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href={"https://api.whatsapp.com/send?phone="+ 919075374537} target="_blank"><i className="col-lg-12 fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
-{/*                                <li onClick={this.getLinkWhatsapp.bind(this)}><div><i className="col-lg-12 fa fa-whatsapp" aria-hidden="true"></i></div></li>*/}
                                 
                             </ul>
                             <a href="Contact-us"><button className="connectbtn btn">Click To Contact</button></a>

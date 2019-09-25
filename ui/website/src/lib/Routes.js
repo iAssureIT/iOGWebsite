@@ -122,6 +122,17 @@ import Termsofusepage                 from '../allPages/Termsofusepage/Termsofus
 import Privacypolicypage              from '../allPages/Privacypolicypage/Privacypolicypage.js';
 import Sitemap                        from '../allPages/Sitemap/Sitemap.js';
 
+import AssetCriticalAnalysisPage      from '../allPages/AssetCriticalAnalysisPage/AssetCriticalAnalysisPage.js';
+import RiskBasedInspectionPage        from '../allPages/RiskBasedInspectionPage/RiskBasedInspectionPage.js';
+import RootCauseAnalysisPage          from '../allPages/RootCauseAnalysisPage/RootCauseAnalysisPage.js';
+import FailureModeEffectAnalysisPage  from '../allPages/FailureModeEffectAnalysisPage/FailureModeEffectAnalysisPage.js';
+import ReliabilityCentredMaintenance  from '../allPages/ReliabilityCentredMaintenance/ReliabilityCentredMaintenance.js';
+import AssetStrategyManagement        from '../allPages/AssetStrategyManagement/AssetStrategyManagement.js';
+import RAMModellingPage               from '../allPages/RAMModellingPage/RAMModellingPage.js';
+import SIMOPage                       from '../allPages/SIMOPage/SIMOPage.js';
+import CalibrationManagement          from '../allPages/CalibrationManagement/CalibrationManagement.js';
+import InspectionManagementPage       from '../allPages/InspectionManagementPage/InspectionManagementPage.js';
+
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
 // import Effectcaro     from '../trial/Effectcaro/Effectcaro.js';
@@ -240,6 +251,17 @@ const WebLayout = () => (
     <Route path="/privacypolicy" component={ Privacypolicypage } />
     <Route path="/sitemap" component={ Sitemap } />
 
+    <Route path="/assetCriticalAnalysis" component={ AssetCriticalAnalysisPage } />
+    <Route path="/riskBasedInspection" component={ RiskBasedInspectionPage } />
+    <Route path="/RootCauseAnalysis" component={ RootCauseAnalysisPage } />
+    <Route path="/failureModeEffect" component={ FailureModeEffectAnalysisPage } />
+    <Route path="/reliabilityCentredMaintenance" component={ ReliabilityCentredMaintenance } />
+    <Route path="/assetStrategyManagement" component={ AssetStrategyManagement } />
+    <Route path="/RAMModelling" component={ RAMModellingPage } />
+    <Route path="/simo" component={ SIMOPage } />
+    <Route path="/calibrationManagement" component={ CalibrationManagement } />
+    <Route path="/inspectionManagement" component={ InspectionManagementPage } />
+    
     <Route path="/trial" component={ Parallaxeff } />        
   </div>
 );

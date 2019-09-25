@@ -10,9 +10,11 @@
   border: none !important;
 }
 .skipText{
-  color: #fff;
+  color: #555;
   font-size: 15px;    
   text-align: center;
+  cursor: pointer;
+  font-weight: 900
 }
 .contentWraper{
 	height: auto;

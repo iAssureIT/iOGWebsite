@@ -157,16 +157,16 @@ export default class Header extends Component {
                                       <a href="/arimanagement">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                       <input type="checkbox" id="drop-4"/>
                                         <ul>
-                                          <li><a href="/">Asset Criticality Analysis</a></li>
-                                          <li><a href="/">Risk Based Inspection</a></li>
-                                          <li><a href="/">Root Cause Analysis</a></li>
-                                          <li><a href="/">Failure Mode Effect Analysis</a></li>
-                                          <li><a href="/">Reliability Centered Maintenance</a></li>
-                                          <li><a href="/">Asset Strategy Management</a></li>
-                                          <li><a href="/">Inspection Management</a></li>
-                                          <li><a href="/">Calibration Management</a></li>
-                                          <li><a href="/">Reliability Availability & Maintainability (RAM) Moeling</a></li>
-                                          <li><a href="/">Spares Inventory Management & Optimisation (SIMO) </a></li>
+                                          <li><a href="/assetCriticalAnalysis">Asset Criticality Analysis</a></li>
+                                          <li><a href="/riskBasedInspection">Risk Based Inspection</a></li>
+                                          <li><a href="/RootCauseAnalysis">Root Cause Analysis</a></li>
+                                          <li><a href="/failureModeEffect">Failure Mode Effect Analysis</a></li>
+                                          <li><a href="/reliabilityCentredMaintenance">Reliability Centered Maintenance</a></li>
+                                          <li><a href="/assetStrategyManagement">Asset Strategy Management</a></li>
+                                          <li><a href="/inspectionManagement">Inspection Management</a></li>
+                                          <li><a href="/calibrationManagement">Calibration Management</a></li>
+                                          <li><a href="/RAMModelling">Reliability Availability & Maintainability (RAM) Modeling</a></li>
+                                          <li><a href="/simo">Spares Inventory Management & Optimisation (SIMO) </a></li>
                                         </ul>
                                     </li>
                                   </ul>
