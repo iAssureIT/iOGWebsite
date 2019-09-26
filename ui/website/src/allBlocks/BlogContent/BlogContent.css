@@ -52,7 +52,9 @@
 }
 
 
-
+.blogfb{
+  /*background-color: #f00;*/
+}
 .blogImgContainerInner:hover .blogimgtext {
   /*opacity: 1;*/
 }
