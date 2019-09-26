@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Route, withRouter} from 'react-router-dom';
-// import $                  from 'jquery';
+import { FacebookProvider, ShareButton } from 'react-facebook';
 import $                      from 'jquery';
 import './BlogContent.css';
 
@@ -248,9 +248,16 @@ class BlogContent extends Component {
                                   <img alt=""  src={data.blogsimg}/> 
                                   <div className="middle">
                                     <div className="blogfb">
-                                      <a href="https://www.facebook.com/iOGsolutions/" target="_blank" title="Share on Facebook">
+                                      <div className="fb">
+                                       {/*
+                                        <a href="https://www.facebook.com/iOGsolutions/" target="_blank" title="Share on Facebook">
+                                                                             </a>*/}
+                                        <FacebookProvider appId="2384256901838973">
+                                          <ShareButton className="fbBtn" href="http://www.facebook.com">
                                         <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
-                                      </a>
+                                          </ShareButton>
+                                        </FacebookProvider>
+                                      </div>
                                     </div>
                                     <div className="blogtwit">
                                       <a href="https://twitter.com/iogsolutions" target="_blank"  title="Share on Twitter">
