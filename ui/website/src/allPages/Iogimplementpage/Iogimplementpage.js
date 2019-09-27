@@ -81,7 +81,7 @@ export default class Iogimplementpage extends Component {
                                                 liData : "Implementation of Planning, Scheduling Solution"
                                             },
                                             {
-                                                liData : "Leverage Assay Management solutions for better and updated LP inputs."
+                                               liData : "Leverage Assay Management solutions for better and updated LP inputs."
                                             },
                                             {
                                                 liData : "Upgrade of LP yield shift vectors using rigorous kinetic models"
@@ -181,7 +181,7 @@ export default class Iogimplementpage extends Component {
                 planstext1        : "",
                 planstext2        : "",
                 planstext3        : "",
-                plansimg          : "images/noimg.png",
+                plansimg          : "images/iOGImplement.png",
 
             }
         ]

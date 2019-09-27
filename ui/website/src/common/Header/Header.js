@@ -292,7 +292,7 @@ export default class Header extends Component {
         <div className="modal fade" id="modalId" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-lg " role="document">
             <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
-{/*              <button type="button" class="close closeButton" data-dismiss="modal">&times;</button>*/}
+{/*              <button type="button" className="close closeButton" data-dismiss="modal">&times;</button>*/}
               <div className="modal-body contactModalBody row ">
                <div className="">
                   <Contactform />                               

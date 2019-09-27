@@ -124,7 +124,7 @@ export default class ContactUsForm extends React.Component {
             <div className="cuformWall">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactHeader lightbluebg text-center">
                     <label ><b>Contact</b> Us</label>
-                    <button type="button" class="close closeBtn" data-dismiss="modal">&times;</button>
+                    <button type="button" className="close closeBtn" data-dismiss="modal">&times;</button>
                 </div>
                 <div className="">
                     <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">

@@ -127,7 +127,7 @@ class FormContent extends Component{
     });
 
 
-    /*let fields = this.state.fields;
+    let fields = this.state.fields;
     fields[event.target.name] = event.target.value;
     this.setState({
       fields
@@ -138,7 +138,7 @@ class FormContent extends Component{
       this.setState({
         errors: errors
       });
-    }*/
+    }
   }
     positionhandleChange(event){
       
@@ -189,7 +189,7 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
-      axios.post("/api", dataArray)
+      axios.post("/api/", dataArray)
         .then((response)=>{
           console.log("response",response);
           swal({
@@ -264,6 +264,14 @@ class FormContent extends Component{
       if (!fields["position"]) {
         formIsValid = false;
         errors["position"] = "This field is required.";
+      }        
+      if (!fields["curr_ctc"]) {
+        formIsValid = false;
+        errors["curr_ctc"] = "This field is required.";
+      }          
+      if (!fields["exp_ctc"]) {
+        formIsValid = false;
+        errors["exp_ctc"] = "This field is required.";
       }          
     
        if (!fields["contactNumber"]) {
@@ -362,12 +370,12 @@ class FormContent extends Component{
                               </div>
                               <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                 <div className="form-group ">
-                                    <label htmlFor="noticePeriod">Positions<span className="redFont">*</span></label>
+                                    <label htmlFor="position">Positions<span className="redFont">*</span></label>
                                     <div className="input-group dropZindex">
                                        <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                       <ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" margin-top={"40px"} options={this.state.positionlevel} onChange={this.positionhandleChange.bind(this)}/>
                                     </div>
-                                    <div className="errorMsg">{this.state.errors.noticePeriod}</div>
+                                    <div className="errorMsg">{this.state.errors.position}</div>
                                 </div>  
                               </div>   
                             {/*  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formht" >
@@ -400,7 +408,7 @@ class FormContent extends Component{
                                 </div>  
                               </div>*/}
                                   
-                                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                    <label htmlFor="name">Name<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-user" aria-hidden="true"></i></span>
@@ -408,7 +416,7 @@ class FormContent extends Component{
                                     </div>
                                    <div className="errorMsg">{this.state.errors.name}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="email">Email<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-envelope" aria-hidden="true"></i></span>
@@ -416,7 +424,7 @@ class FormContent extends Component{
                                     </div>
                                     <div className="errorMsg">{this.state.errors.email}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
@@ -424,7 +432,7 @@ class FormContent extends Component{
                                     </div>
                                     <div className="errorMsg">{this.state.errors.contactNumber}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="city">City<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
@@ -432,7 +440,7 @@ class FormContent extends Component{
                                     </div>
                                    <div className="errorMsg">{this.state.errors.city}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="state">State<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
@@ -440,7 +448,7 @@ class FormContent extends Component{
                                     </div>
                                    <div className="errorMsg">{this.state.errors.state}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="country">Country<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
@@ -448,7 +456,7 @@ class FormContent extends Component{
                                     </div>
                                     <div className="errorMsg">{this.state.errors.country}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="education">Highest Education<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-book" aria-hidden="true"></i></span>
@@ -456,7 +464,7 @@ class FormContent extends Component{
                                     </div>
                                     <div className="errorMsg">{this.state.errors.education}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="college">College / University<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-university" aria-hidden="true"></i></span>
@@ -464,7 +472,7 @@ class FormContent extends Component{
                                     </div>
                                     <div className="errorMsg">{this.state.errors.college}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="year">Year of Passing<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
@@ -472,7 +480,7 @@ class FormContent extends Component{
                                     </div>
                                     <div className="errorMsg">{this.state.errors.year}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6 formht">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
                                         <label htmlFor="experience">Work Experience<span className="redFont">*</span></label>
                                         <div className="input-group">
@@ -482,7 +490,7 @@ class FormContent extends Component{
                                         <div className="errorMsg">{this.state.errors.experience}</div>
                                     </div>  
                                   </div>
-                                  <div className="formcontent col-lg-6 formht">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
                                         <label htmlFor="curr_ctc">Current CTC<span className="redFont">*</span></label>
                                         <div className="input-group">
@@ -492,7 +500,7 @@ class FormContent extends Component{
                                         <div className="errorMsg">{this.state.errors.curr_ctc}</div>
                                     </div>  
                                   </div>
-                                  <div className="formcontent col-lg-6 formht">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
                                         <label htmlFor="exp_ctc">Expected CTC<span className="redFont">*</span></label>
                                         <div className="input-group">
@@ -502,7 +510,7 @@ class FormContent extends Component{
                                         <div className="errorMsg">{this.state.errors.exp_ctc}</div>
                                     </div>  
                                   </div>
-                                  <div className="formcontent col-lg-6 formht">
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
                                         <label htmlFor="noticePeriod">Notice Period<span className="redFont">*</span></label>
                                         <div className="input-group">

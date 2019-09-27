@@ -188,7 +188,7 @@ export default class Iogconsultpage extends Component {
                 planstext1        : "",
                 planstext2        : "",
                 planstext3        : "",
-                plansimg          : "images/noimg.png",
+                plansimg          : "images/iOGConsult.png",
 
             }
         ]
