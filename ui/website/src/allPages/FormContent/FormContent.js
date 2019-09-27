@@ -2,6 +2,7 @@ import React,{Component}  from 'react';
 import axios              from "axios";
 import swal               from 'sweetalert';
 import $                  from 'jquery';
+import ReactMultiSelectCheckboxes from 'react-multiselect-checkboxes';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -17,13 +18,22 @@ class FormContent extends Component{
       "fields"        : {},
       "errors"        : {},
       "name"          : "",
-      "companyName"   : "",
-      "designation"   : "",
+      "city"          : "",
+      "state"          : "",
       "country"       : "",
+      "education"     : "",
+      "college"       : "",
+      "year"          : "",
+      "experience"    : "",
+      "curr_ctc"      : "",
+      "exp_ctc"       : "",
       "contactNumber" : "",
       "email"         : "",
       "position"      : "",
       "experience"    : "",
+      "shown"         : true,
+      positionDataArray       :[],
+      "positionlevel" : [],
      }
   }
 
@@ -35,21 +45,89 @@ class FormContent extends Component{
         e.preventDefault();
       });
     });
+    var positionlevel = [
+          {
+              value: 0,
+              label: 'Well Engineer',
+          },
+          {
+              value: 1,
+              label: 'Reservoir Engineer'
+          },  
+          {
+              value: 2,
+              label: 'Production Technologist'
+          },  {
+              value: 3, 
+              label: 'Consultant-Geophysicist'
+          },
+          {
+              value: 4,
+              label: 'Consultant-Geologist'
+          }, 
+           {
+              value: 5, 
+              label: 'Consultant-Data Management'
+          },
+          {
+              value: 6,
+              label: 'Supply Chain Consultant(Refinery Planning) '
+          }, 
+           {
+              value: 7, 
+              label: 'Supply Chain Consultant(Refinery Scheduling) '
+          },
+          {
+              value: 8,
+              label: 'MES Consultant'
+          },  
+          {
+              value: 9, 
+              label: 'Manager-Projects'
+          },
+          {
+              value: 10,
+              label: 'Manager Business Developement'
+          },  
+          {
+              value: 11, 
+              label: 'Upstream Production Optimization Consultant'
+          },
+          {
+              value: 12, 
+              label: 'APC Consultant'
+          },
+      ];
+     this.setState({
+      "positionlevel" :positionlevel,
+    },()=>{
+        console.log("positionlevel",positionlevel)
+      });
+
   }
 
   handleChange(event){
+  
 
     this.setState({
       "name"             : this.refs.name.value,
-      "companyName"      : this.refs.companyName.value,
-      "designation"      : this.refs.designation.value,
+      "city"             : this.refs.city.value,
+      "state"            : this.refs.state.value,
       "country"          : this.refs.country.value,
+      "education"        : this.refs.education.value,
+      "college"          : this.refs.college.value,
+      "year"             : this.refs.year.value,
+      "experience"       : this.refs.experience.value,
+      "curr_ctc"         : this.refs.curr_ctc.value,
+      "exp_ctc"          : this.refs.exp_ctc.value,
       "email"            : this.refs.email.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "position"         : this.refs.position.value,
       "experience"       : this.refs.experience.value,
     });
-       let fields = this.state.fields;
+
+
+    /*let fields = this.state.fields;
     fields[event.target.name] = event.target.value;
     this.setState({
       fields
@@ -60,44 +138,84 @@ class FormContent extends Component{
       this.setState({
         errors: errors
       });
+    }*/
+  }
+    positionhandleChange(event){
+      
+      var positionDataArray = [];
+      event.map((data,index)=>{
+        console.log("data",data)
+        positionDataArray.push(data.label);
+      },()=>{
+      })
+
+      this.setState({positionDataArray : positionDataArray});
     }
 
-  }
   Submit(event){
     event.preventDefault();
     if (this.validateForm() && this.validateFormReq()) {
      
       var dataArray={
-       "name"            : this.refs.name.value,
-      "companyName"      : this.refs.companyName.value,
-      "designation"      : this.refs.designation.value,
+      "name"            : this.refs.name.value,
+      "city"             : this.refs.city.value,
+      "state"            : this.refs.state.value,
       "country"          : this.refs.country.value,
+      "education"        : this.refs.education.value,
+      "college"          : this.refs.college.value,
+      "year"             : this.refs.year.value,
+      "experience"       : this.refs.experience.value,
+      "curr_ctc"         : this.refs.curr_ctc.value,
+      "exp_ctc"          : this.refs.exp_ctc.value,
       "email"            : this.refs.email.value,
       "contactNumber"    : this.refs.contactNumber.value,
-      "position"         : this.refs.position.value,
+      "position"         : this.state.positionDataArray,
       "experience"       : this.refs.experience.value,
-/*      "enquiry"          : this.refs.enquiry.value,
-*/     
     }
       let fields = {};
       fields["name"]            = "";
-      fields["companyName"]     = "";
-      fields["designation"]     = "";
+      fields["state"]           = "";
+      fields["city"]            = "";
       fields["country"]         = "";
+
+      fields["education"]       = "";
+      fields["college"]         = "";
+      fields["year"]            = "";
+      fields["experience"]      = "";
+      fields["curr_ctc"]        = "";
+      fields["exp_ctc"]         = "";
       fields["email"]           = "";
       fields["contactNumber"]   = "";
       fields["position"]        = "";
       fields["experience"]      = "";
 
-      swal({
-          title : "Congratulation....!",
-          text  : "Your application have been added successfully"
-        });
+      axios.post("/api", dataArray)
+        .then((response)=>{
+          console.log("response",response);
+          swal({
+            title : "Congratulation....!",
+            text  : "Your data added successfully"
+          });
+         /* swal({
+            title : response.data.message,
+            text  : response.data.message
+          });*/
+        })
+        .catch(function(error){
+          console.log("error", error);
+      });
+      
       this.setState({
         "name"             : "",
-        "companyName"      : "",
-        "designation"      : "",
+        "city"             : "",
+        "state"            : "",
         "country"          : "",
+        "education"        : "",
+        "college"          : "",
+        "year"             : "",
+        "experience"       : "",
+        "curr_ctc"         : "",
+        "exp_ctc"          : "",
         "email"            : "",
         "position"         : "",
         "contactNumber"    : "",
@@ -114,18 +232,30 @@ class FormContent extends Component{
       if (!fields["name"]) {
         formIsValid = false;
         errors["name"] = "This field is required.";
-      }     
-      if (!fields["companyName"]) {
+      }   
+      if (!fields["city"]) {
         formIsValid = false;
-        errors["companyName"] = "This field is required.";
+        errors["city"] = "This field is required.";
       }
-      if (!fields["designation"]) {
+      if (!fields["state"]) {
         formIsValid = false;
-        errors["designation"] = "This field is required.";
+        errors["state"] = "This field is required.";
       }
       if (!fields["country"]) {
           formIsValid = false;
           errors["country"] = "This field is required.";
+      }
+      if (!fields["education"]) {
+        formIsValid = false;
+        errors["education"] = "This field is required.";
+      }
+      if (!fields["college"]) {
+        formIsValid = false;
+        errors["college"] = "This field is required.";
+      }
+      if (!fields["year"]) {
+          formIsValid = false;
+          errors["year"] = "This field is required.";
       }
       if (!fields["email"]) {
         formIsValid = false;
@@ -196,136 +326,198 @@ class FormContent extends Component{
     }
   }
 
+  toglehidden(){   
+    this.setState({
+     shown: !this.state.shown
+    },()=>{
+      // console.log('shown', this.state.shown, !this.state.shown);
+    });
+  }
   render(){
+    
+    var hidden = {
+      display: this.state.shown ? "none" : "block"
+    }
     return(
         <div>    
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontent2-wrap">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formcontent-wrap">
              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacttextmargin2">
                   <div className="row">
-                      <div className="contactpageform">
-                        <div className="col-lg-12">
-                            <div className="col-lg-2 col-lg-offset-5">
-                              <div className="line1 col-lg-1 col-lg-offset-2"></div>
-                            </div>                    
-                        </div> 
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <div className="row">
-                                <div className="contactcontent lightbluetext text-center">
-                                    <span>Job Form</span><span className="us"> </span>
+                      <div className="">
+                       
+                        <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 jobpageform">
+                            <form id="contactForm" >
+                              <div className="col-lg-12">
+                                <div className="col-lg-2 col-lg-offset-5">
+                                  <div className="line1 col-lg-1 col-lg-offset-2"></div>
+                                </div>                    
+                              </div> 
+                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                  <div className="row">
+                                      <div className="contactcontent jobformcontent lightbluetext text-center">
+                                          <span>Job Form</span><span className="us"> </span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
+                                <div className="form-group ">
+                                    <label htmlFor="noticePeriod">Positions<span className="redFont">*</span></label>
+                                    <div className="input-group dropZindex">
+                                       <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                      <ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" margin-top={"40px"} options={this.state.positionlevel} onChange={this.positionhandleChange.bind(this)}/>
+                                    </div>
+                                    <div className="errorMsg">{this.state.errors.noticePeriod}</div>
+                                </div>  
+                              </div>   
+                            {/*  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formht" >
+                                <div className="row" >
+                                  <label className="col-lg-2 col-md-4 col-sm-6 col-xs-12" htmlFor="position">Positions<span className="redFont">*</span></label>
                                 </div>
-                            </div>
-                         </div>
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <form id="contactForm">
+                                <div className="form-group">
+                                  <div className="input-group">
+                                  <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+
+                                  <select title="Please select district." className="inputBox-main distSelected  areaStaes form-control" ref="position" value={this.state.position} name="position" id="position"  onChange={this.handleChange.bind(this)} >
+                                    <option >-Select Position-</option>
+                                   
+                                    <option > Well Engineer</option>
+                                    <option > Reservoir Engineer</option>
+                                    <option > Production Technologist</option>
+                                    <option > Consultant-Geophysicist</option>
+                                    <option > Consultant-Geologist</option>
+                                    <option > Consultant-Data Management</option>
+                                    <option > Supply Chain Consultant(Refinery Planning) </option>
+                                    <option > Supply Chain Consultant(Refinery Scheduling) </option>
+                                    <option > MES Consultant </option>
+                                    <option > Manager-Projects </option>
+                                    <option > Manager Business Developement</option>
+                                    <option > Upstream Production Optimization Consultant </option>
+                                    <option > APC Consultant </option>
+                                  </select>
+                                  </div>
+                                  <div className="errorMsg">{this.state.errors.position}</div>
+                                </div>  
+                              </div>*/}
+                                  
                                   <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                    <label htmlFor="name">Name<span className="redFont">*</span></label>
                                     <div className="input-group">
-                                      <span className="input-group-addon"><i className="fa fa-user" aria-hidden="true"></i></span>
+                                      <span className="input-group-addon addonColor"><i className="fa fa-user" aria-hidden="true"></i></span>
                                       <input className="form-control nameSpaceUpper" id="name" type="text" name="name" ref="name" value={this.state.name} onKeyDown={this.isTextKey.bind(this)} placeholder="Enter Your Name" onChange={this.handleChange.bind(this)}/>
                                     </div>
                                    <div className="errorMsg">{this.state.errors.name}</div>
                                   </div>
-                                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label htmlFor="companyName">Company Name<span className="redFont">*</span></label>
+                                  <div className="formcontent col-lg-6">
+                                    <label htmlFor="email">Email<span className="redFont">*</span></label>
                                     <div className="input-group">
-                                      <span className="input-group-addon"><i className="fa fa-industry" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="companyName" type="text" name="companyName" ref="companyName" value={this.state.companyName} onKeyDown={this.isTextKey.bind(this)}  placeholder="Enter Company Name" onChange={this.handleChange.bind(this)}/>
+                                      <span className="input-group-addon addonColor"><i className="fa fa-envelope" aria-hidden="true"></i></span>
+                                      <input className="form-control" id="email" type="text" name="email" ref="email" value={this.state.email} placeholder="Enter Email" onChange={this.handleChange.bind(this)}/>
                                     </div>
-                                    <div className="errorMsg">{this.state.errors.companyName}</div>
+                                    <div className="errorMsg">{this.state.errors.email}</div>
+                                  </div>
+                                  <div className="formcontent col-lg-6">
+                                    <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
+                                    <div className="input-group">
+                                      <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
+                                      <input className="form-control" id="contactNumber" type="text" name="contactNumber" ref="contactNumber"value={this.state.contactNumber} onKeyDown={this.isNumberKey.bind(this)}   placeholder="Enter Contact Number" onChange={this.handleChange.bind(this)}/>
+                                    </div>
+                                    <div className="errorMsg">{this.state.errors.contactNumber}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label htmlFor="designation">Designation<span className="redFont">*</span></label>
+                                    <label htmlFor="city">City<span className="redFont">*</span></label>
                                     <div className="input-group">
-                                      <span className="input-group-addon"><i className="fa fa-briefcase" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="designation" type="text" name="designation" ref="designation"  value={this.state.designation} placeholder="Enter Designation" onChange={this.handleChange.bind(this)}/>
+                                      <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                      <input className="form-control nameSpaceUpper" id="city" type="text" name="city" ref="city"  value={this.state.city} placeholder="Enter City" onChange={this.handleChange.bind(this)}/>
                                     </div>
-                                   <div className="errorMsg">{this.state.errors.designation}</div>
+                                   <div className="errorMsg">{this.state.errors.city}</div>
+                                  </div>
+                                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label htmlFor="state">State<span className="redFont">*</span></label>
+                                    <div className="input-group">
+                                      <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                      <input className="form-control nameSpaceUpper" id="state" type="text" name="state" ref="state"  value={this.state.state} placeholder="Enter State" onChange={this.handleChange.bind(this)}/>
+                                    </div>
+                                   <div className="errorMsg">{this.state.errors.state}</div>
                                   </div>
                                   <div className="formcontent col-lg-6">
                                     <label htmlFor="country">Country<span className="redFont">*</span></label>
                                     <div className="input-group">
-                                      <span className="input-group-addon"><i className="fa fa-globe" aria-hidden="true"></i></span>
+                                      <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
                                       <input className="form-control nameSpaceUpper" id="country" type="text" name="country" ref="country" value={this.state.country} placeholder="Enter Country" onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="errorMsg">{this.state.errors.country}</div>
                                   </div>
                                   <div className="formcontent col-lg-6">
-                                    <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
+                                    <label htmlFor="education">Highest Education<span className="redFont">*</span></label>
                                     <div className="input-group">
-                                      <span className="input-group-addon"><i className="fa fa-mobile" aria-hidden="true"></i></span>
-                                      <input className="form-control" id="contactNumber" type="text" name="contactNumber" ref="contactNumber"value={this.state.contactNumber} onKeyDown={this.isNumberKey.bind(this)}   placeholder="Enter Contact Number" onChange={this.handleChange.bind(this)}/>
+                                      <span className="input-group-addon addonColor"><i className="fa fa-book" aria-hidden="true"></i></span>
+                                      <input className="form-control nameSpaceUpper" id="education" type="text" name="education" ref="education" value={this.state.education} onChange={this.handleChange.bind(this)}/>
                                     </div>
-                                    <div className="errorMsg">{this.state.errors.contactNumber}</div>
+                                    <div className="errorMsg">{this.state.errors.education}</div>
                                   </div>
                                   <div className="formcontent col-lg-6">
-                                    <label htmlFor="email">Email<span className="redFont">*</span></label>
+                                    <label htmlFor="college">College / University<span className="redFont">*</span></label>
                                     <div className="input-group">
-                                      <span className="input-group-addon"><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                                      <input className="form-control" id="email" type="text" name="email" ref="email" value={this.state.email} placeholder="Enter Email" onChange={this.handleChange.bind(this)}/>
+                                      <span className="input-group-addon addonColor"><i className="fa fa-university" aria-hidden="true"></i></span>
+                                      <input className="form-control nameSpaceUpper" id="college" type="text" name="college" ref="college" value={this.state.college} onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}/>
                                     </div>
-                                    <div className="errorMsg">{this.state.errors.email}</div>
+                                    <div className="errorMsg">{this.state.errors.college}</div>
                                   </div>
-                                    <div className="formcontent col-lg-6 formht">
-                                      <div className="form-group">
-                                          <label htmlFor="position">Position<span className="redFont">*</span></label>
-                                          <div className="input-group">
-                                          <span className="input-group-addon"><i className="fa fa-handshake-o" aria-hidden="true"></i></span>
-
-                                          <select title="Please select district." className="inputBox-main distSelected  areaStaes form-control" ref="position" value={this.state.position} name="position" id="position"  onChange={this.handleChange.bind(this)} >
-                                            <option >-Select Position-</option>
-                                            <option > Well Engineer</option>
-                                            <option > Reservoir Engineer</option>
-                                            <option > Production Technologist</option>
-                                            <option > Consultant-Geophysicist</option>
-                                            <option > Consultant-Geologist</option>
-                                            <option > Consultant-Data Management</option>
-                                            <option > Supply Chain Consultant(Refinery Planning) </option>
-                                            <option > Supply Chain Consultant(Refinery Scheduling) </option>
-                                            <option > MES Consultant </option>
-                                            <option > Manager-Projects </option>
-                                            <option > Manager Business Developement</option>
-                                            <option > Upstream Production Optimization Consultant </option>
-                                            <option > APC Consultant </option>
-                                        
-                                             {/*} {this.state.district.map((data, index)=>{
-                                                      return( 
-                                                    <option key={index}>{data.districtName}</option>
-                                                  );
-                                                  })} */}
-                                          </select>
-                                          </div>
-                                          <div className="errorMsg">{this.state.errors.position}</div>
-                                      </div>  
+                                  <div className="formcontent col-lg-6">
+                                    <label htmlFor="year">Year of Passing<span className="redFont">*</span></label>
+                                    <div className="input-group">
+                                      <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
+                                      <input className="form-control nameSpaceUpper" id="year" type="text" name="year" ref="year" value={this.state.year} onChange={this.handleChange.bind(this)}/>
                                     </div>
-
-
-                                    <div className="formcontent col-lg-6 formht">
-                                      <div className="form-group">
-                                          <label htmlFor="experience">Experience<span className="redFont">*</span></label>
-                                          <div className="input-group">
-                                          <span className="input-group-addon"><i className="fa fa-handshake-o" aria-hidden="true"></i></span>
-
-                                          <select title="Please select district." className="inputBox-main distSelected  areaStaes form-control" ref="experience" value={this.state.experience} name="experience" id="experience" onChange={this.handleChange.bind(this)} >
-                                            <option >-Select Experience-</option>
-                                            <option > 1 Year</option>
-                                            <option > 2-3 Years</option>
-                                            <option > 4-5 Years</option>
-                                             {/*} {this.state.district.map((data, index)=>{
-                                                      return( 
-                                                    <option key={index}>{data.districtName}</option>
-                                                  );
-                                                  })} */}
-                                          </select>
-                                          </div>
-                                          <div className="errorMsg">{this.state.errors.experience}</div>
-                                      </div>  
+                                    <div className="errorMsg">{this.state.errors.year}</div>
+                                  </div>
+                                  <div className="formcontent col-lg-6 formht">
+                                    <div className="form-group">
+                                        <label htmlFor="experience">Work Experience<span className="redFont">*</span></label>
+                                        <div className="input-group">
+                                          <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
+                                          <input className="form-control nameSpaceUpper" id="experience" type="text" name="experience" ref="experience" value={this.state.experience}  onChange={this.handleChange.bind(this)}/>
+                                        </div>
+                                        <div className="errorMsg">{this.state.errors.experience}</div>
+                                    </div>  
+                                  </div>
+                                  <div className="formcontent col-lg-6 formht">
+                                    <div className="form-group">
+                                        <label htmlFor="curr_ctc">Current CTC<span className="redFont">*</span></label>
+                                        <div className="input-group">
+                                          <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                          <input className="form-control nameSpaceUpper" id="curr_ctc" type="text" name="curr_ctc" ref="curr_ctc" value={this.state.curr_ctc}  onChange={this.handleChange.bind(this)}/>
+                                        </div>
+                                        <div className="errorMsg">{this.state.errors.curr_ctc}</div>
+                                    </div>  
+                                  </div>
+                                  <div className="formcontent col-lg-6 formht">
+                                    <div className="form-group">
+                                        <label htmlFor="exp_ctc">Expected CTC<span className="redFont">*</span></label>
+                                        <div className="input-group">
+                                          <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                          <input className="form-control nameSpaceUpper" id="exp_ctc" type="text" name="exp_ctc" ref="exp_ctc" value={this.state.exp_ctc}  onChange={this.handleChange.bind(this)}/>
+                                        </div>
+                                        <div className="errorMsg">{this.state.errors.exp_ctc}</div>
+                                    </div>  
+                                  </div>
+                                  <div className="formcontent col-lg-6 formht">
+                                    <div className="form-group">
+                                        <label htmlFor="noticePeriod">Notice Period<span className="redFont">*</span></label>
+                                        <div className="input-group">
+                                          <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                          <input className="form-control nameSpaceUpper" id="noticePeriod" type="text" name="noticePeriod" ref="noticePeriod" value={this.state.noticePeriod}  onChange={this.handleChange.bind(this)}/>
+                                        </div>
+                                        <div className="errorMsg">{this.state.errors.noticePeriod}</div>
+                                    </div>  
+                                  </div>
+                                                               
+                                  <div className="">
+                                    <div className="col-lg-12">
+                                      <button className="btn col-lg-2 col-lg-offset-10 lightbluebg contactformbtn buttonhover">Submit</button>
                                     </div>
-                              <div className="col-lg-12">
-                                <div className="col-lg-2 col-lg-offset-10">
-                                  <button className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}>Submit</button>
-                                </div>
-                             </div>
+                                  </div>
                             </form>
                         </div>    
                      </div>

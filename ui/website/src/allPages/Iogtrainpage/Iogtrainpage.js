@@ -7,7 +7,7 @@ import './Iogtrainpage.css';
 
 import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
-import Challenges              from '../../allBlocks/Challenges/Challenges.js';
+// import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
 
 export default class Iogtrainpage extends Component {

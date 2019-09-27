@@ -253,7 +253,7 @@ class ContactUsform extends Component{
  
     return(
         <div>    
-            <form id="contactForm">
+            <form id="contactForm ">
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <label htmlFor="userName">Name<span className="redFont">*</span></label>
                       <div className="input-group">

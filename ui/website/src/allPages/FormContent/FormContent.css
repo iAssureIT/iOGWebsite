@@ -1,0 +1,30 @@
+.addform{
+	font-size: 25px;
+	cursor: pointer;
+	padding: 0px;
+}
+.formcontent-wrap{
+	margin-top:60px;
+	margin-bottom: 50px;
+	color: #fff;
+	background-size: 100% 100%;
+	height: auto;
+}
+.jobpageform{
+	box-shadow: 01px 1px 15px 1px #ccc;
+	height: auto;
+	padding: 40px;
+    color: #555;
+}
+.jobformcontent{
+	margin-bottom: 30px !important;
+}
+.dropZindex{
+	z-index: 10;
+}
+.css-1r4vtzz, .css-48ayfv, .css-1pcexqc-container{
+	min-width: 100%!important;
+	border: 1px solid #ccc !important;
+	box-shadow: none !important;
+
+}

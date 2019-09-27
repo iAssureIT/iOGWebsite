@@ -8,7 +8,7 @@ import './Energy.css';
 import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges              from '../../allBlocks/Challenges/Challenges.js';
-import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
+// import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
 import Downstreamservicebanner from '../../allBlocks/Downstreamservicebanner/Downstreamservicebanner.js';
 
 // import Refineryplanning        from '../../allBlocks/Refineryplanning/Refineryplanning.js';

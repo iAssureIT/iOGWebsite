@@ -238,7 +238,8 @@ margin-top: 24px !important;
   
 }
 .All1blog1{
-  height: 375px;
+  min-height: 280px;
+  /*height: 375px;*/
   margin-bottom: 50px;
   background-color: #fff;
   border-radius: 5px;

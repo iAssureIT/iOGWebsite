@@ -11,8 +11,9 @@ body{
     background-color: #bcd;
 }
 
-
-
+.fs12{
+    font-size: 12px;
+}
 .NOpadding{
     padding-left: 0px;
     padding-right: 0px;

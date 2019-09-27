@@ -1,3 +1,10 @@
+.contactHeader{
+  color: #fff;
+  font-size: 25px;   
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
 .contactformBtn{
   font-weight: 600;
   padding: 10px 20px;
@@ -23,10 +30,12 @@
     box-shadow: none !important;
 }
 .ContactmodalContent{
-  /*background-image: linear-gradient(to bottom right, #f19000, #f19000cf);*/
-  background-image: linear-gradient(to bottom right,#f19000d9,rgba(241, 144, 0, 0.45)); 
-  margin-top: 10%;
-  height: 490px;
+  /*background-image: linear-gradient(to bottom right,#f19000d9,rgba(241, 144, 0, 0.45)); */
+  margin-top: 5%;
+  background: #fff;
+  border-radius: 04px;
+  border :none;
+  height: 550px;
   z-index: 15000;
 }
 .padd10{
@@ -38,3 +47,18 @@
 }
 
 
+.inputtextContent{
+  border: 1px solid #ccc;    
+}
+.closeBtn{
+  font-size: 35px;
+  padding-right: 15px !important;
+  color: #000;
+}
+
+.cancelBtn{
+  background-color: #999;
+}
+.cancelBtn:hover{
+  background-color: #666;
+}

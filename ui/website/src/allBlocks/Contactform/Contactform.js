@@ -22,7 +22,7 @@ export default class ContactUsForm extends React.Component {
         this.state={
           "name"      : "",
           "email"   : "",
-          "Subject"   : "",
+          "subject"   : "",
           "message"     : "",
           "formerrors" :{
               clientName  : " ",
@@ -52,7 +52,7 @@ export default class ContactUsForm extends React.Component {
             [name]:value,
             "name"         : this.refs.name.value,
             "email"        : this.refs.email.value,
-            "Subject"      : this.refs.Subject.value,
+            "subject"      : this.refs.subject.value,
             "message"      : this.refs.message.value,
         });
     }
@@ -114,7 +114,7 @@ export default class ContactUsForm extends React.Component {
         });
         this.refs.name.value  = "";
         this.refs.email.value = "";
-        this.refs.Subject.value = "";
+        this.refs.subject.value = "";
         this.refs.message.value = "";
     }
 
@@ -122,45 +122,50 @@ export default class ContactUsForm extends React.Component {
         const {formerrors} = this.state;
         return (
             <div className="cuformWall">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <h1 ><b>Contact</b> Us</h1>
-                    <p className="">We're here to help! Email us through the secure form below, or log in to see our phone number.
-                                            When sending us a message, please share the email address you use for<b> iOG Solutions</b>.</p>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactHeader lightbluebg text-center">
+                    <label ><b>Contact</b> Us</label>
+                    <button type="button" class="close closeBtn" data-dismiss="modal">&times;</button>
                 </div>
                 <div className="">
-                    <form className=" row conatctform">
-                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                            <h3 className="text-center"> Drop Us a Line</h3>
+                    <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
+                            <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">We're here to help! Email us through the secure form below, or log in to see our phone number.
+                                When sending us a message, please share the email address  you use for<b> iOG Solutions</b>.</p>
+                            <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b> Drop Us a Line</b></h4>
                         </div>
-                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                {/*<label class="col-md-4 col-lg-4 col-xs-4 col-sm-4 nopadding">Your Name</label>*/}
-                                <input className="form-control" name="from" type="text" ref="name" placeholder="Your name" value={this.state.name} onChange={this.handleChange.bind(this)}/>
-                            </div>
-                        </div>
-                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                                {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Your Email address</label>*/}
-                                <input className="form-control" name="from" type="email" data-text="clientEmail" placeholder="Your@email.com" ref="email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
-                                {this.state.formerrors.clientEmail &&(
-                                                              <span className="text-danger">{formerrors.clientEmail}</span>
-                                                      )}
-                            </div>
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                                {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Phone No</label>*/}
-                                <input className="form-control" name="from" type="text" placeholder="Subject" ref="Subject" value={this.state.Subject} onChange={this.handleChange.bind(this)} />
+                        <div className="formcontent col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+                          <label htmlFor="name">Name<span className="redFont">*</span></label>
+                            <div className="input-group">
+                              <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>
+                              <input className="form-control inputtextContent nameSpaceUpper" id="name" type="text" name="name"  ref="name" value={this.state.name} onChange={this.handleChange.bind(this)} placeholder="Enter Your Name"/>
                             </div>
                         </div>
-                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                {/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Message</label>*/}
-                                <textarea className="form-control padd10" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
-                            </div>
+                        <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <label htmlFor="email">Email<span className="redFont">*</span></label>
+                          <div className="input-group">
+                            <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input className="form-control inputtextContent" id="email" type="email" name="email" data-text="clientEmail" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}   placeholder="Your@email.com" />
+                          </div>
+                            {this.state.formerrors.clientEmail &&(
+                                    <span className="text-danger">{formerrors.clientEmail}</span>
+                            )}
                         </div>
+                        
+                        <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <label htmlFor="subject">Subject<span className="redFont">*</span></label>
+                          <div className="input-group">
+                            <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <input className="form-control inputtextContent nameSpaceUpper" id="subject" type="text" name="subject" value={this.state.subject} onChange={this.handleChange.bind(this)}  ref="subject" placeholder="Enter Subject"/>
+                          </div>
+                        </div>
+                        <div className="commentBox col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+                          <label htmlFor="subject">Note<span className="redFont"></span></label>
+                            <textarea className="form-control inputtextContent padd10" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
+                        </div>
+                        
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-4 col-lg-offset-4" onClick={this.Submit.bind(this)}>Send Request</button>
-                            </div>
+                          <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal">Cancel</button>
+                          <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-2 col-lg-offset-8" onClick={this.Submit.bind(this)}>Submit</button>
                         </div>
                     </form>
                 </div>
