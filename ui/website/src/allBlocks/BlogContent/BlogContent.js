@@ -252,7 +252,7 @@ class BlogContent extends Component {
                                        {/*
                                         <a href="https://www.facebook.com/iOGsolutions/" target="_blank" title="Share on Facebook">
                                                                              </a>*/}
-                                        <FacebookProvider appId="323633174635634">{/*appId="2384256901838973"*/}
+                                        <FacebookProvider appId="2384256901838973">{/*appId="2384256901838973"*/}
                                           <ShareButton className="fbBtn" href="http://www.facebook.com">
                                         <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
                                           </ShareButton>
