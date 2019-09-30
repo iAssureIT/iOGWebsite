@@ -4,6 +4,7 @@
 .commentBox{
   height: 125px !important;
   margin-bottom: 10px;
+  text-align: left;
 }
 .commentBoxText{
   height: 90px !important;

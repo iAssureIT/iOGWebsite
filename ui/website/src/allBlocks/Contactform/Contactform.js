@@ -126,7 +126,7 @@ export default class ContactUsForm extends React.Component {
                     <label ><b>Contact</b> Us</label>
                     <button type="button" className="close closeBtn" data-dismiss="modal">&times;</button>
                 </div>
-                <div className="">
+                <div className="contactpageform">
                     <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
                             <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">We're here to help! Email us through the secure form below, or log in to see our phone number.

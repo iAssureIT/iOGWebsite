@@ -5,6 +5,7 @@
 }
 .leafModalBody{
   height: 415px;
+  padding: 0px;
 }
 .leafModalFooter{
   border: none !important;

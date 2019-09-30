@@ -56,7 +56,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
-                <div className="col-lg-10 col-lg-offset-1 pb35">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb35">
                     <div className="row">
                         <div className="col-md-2 col-sm-3 col-xs-4">
                             <h6 className="font-montserrat">Menu</h6>
@@ -103,9 +103,14 @@ export default class Footer extends Component {
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank"><i className="col-lg-12 fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
-                                
                             </ul>
-                            <a href="Contact-us"><button className="connectbtn btn">Click To Contact</button></a>
+                            <div className=" subscribeBox">
+                                <h6 className="font-montserrat col">Newsletter Subscription</h6>
+                                <div className="NOpadding col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" className="form-control subscribeMail" placeholder="Enter your Email" />
+                                </div>
+                                <a href="Contact-us" className="NOpadding col-lg-1 col-md-3 col-sm-12 col-xs-12"><button className="subscribeBtn btn">Subscribe</button></a>
+                            </div>      
                         </div>      
                     </div>
                 </div>            

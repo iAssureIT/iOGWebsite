@@ -15,7 +15,7 @@
  color: #fff;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
- height: 210px;
+ height: 225px;
  padding-top: 30px;
  padding-bottom: 10px;
 }
@@ -150,16 +150,27 @@ ul.no-icon-list {
     margin-right: 5px;
     border-radius: 2px;
 }
-.connectbtn{
-    background-color: #fff;
-    color: #00317F;
-    margin-top: 15px;
+.subscribeMail{
+  border-radius: 0px;
+  padding-left:5px;
+  color: #555;
+}
+.subscribeBox{
+    /*background-color: #fff;*/
+    color: #fff;
+    margin-top: 70px;
     width: 100%;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     font-weight: 700;
+    padding: 1px 5px;
+    height: 80px;
 }
 
-
+.subscribeBtn{
+  border-radius: 0px;
+  font-weight: 700;
+  background-color: #00317F;
+}
 .footeranimation{
     position: absolute;
     z-index: 1;

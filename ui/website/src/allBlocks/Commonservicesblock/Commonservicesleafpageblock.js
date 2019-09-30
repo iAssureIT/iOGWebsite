@@ -91,7 +91,7 @@ export default class Commonservicesleafpageblock extends Component {
                                         <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
                             {/*              <button type="button" class="close closeButton" data-dismiss="modal">&times;</button>*/}
                                           <div className="modal-body  leafModalBody">
-                                           <div className="">
+                                           <div className="row">
                                               <Contactform />                               
                                             </div>   
                                           </div>

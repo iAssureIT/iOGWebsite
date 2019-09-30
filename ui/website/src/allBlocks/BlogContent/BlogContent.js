@@ -260,9 +260,16 @@ class BlogContent extends Component {
                                       </div>
                                     </div>
                                     <div className="blogtwit">
-                                      <a href="https://twitter.com/iogsolutions" target="_blank"  title="Share on Twitter">
-                                        <i class="col-lg-12 fa fa-twitter" aria-hidden="true"></i>
-                                      </a>
+                                    <div className="fb">
+                                  
+                                    {/*<a class="twitter-timeline" href="https://twitter.com/iOGSolutions?ref_src=twsrc%5Etfw">Tweets by iOGSolutions</a>
+                                                                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>*/}
+                                    <a href="https://twitter.com/iOGSolutions?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="true">
+                                                                             <i class="col-lg-12 fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                     {/* <a href="https://twitter.com/iogsolutions" target="_blank"  title="Share on Twitter">
+                                                                           </a>*/}
+                                    </div>
                                     </div>
                                     <div className="blogLin">
                                       <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank"  title="Share on Linked In">
