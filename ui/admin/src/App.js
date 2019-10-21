@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React 				from 'react';
+import axios   				from 'axios';
+import Layout  				from './coreAdmin/Layout/Layout.js';
+import SignIn  				from './coreAdmin/Layout/SignIn.js';
+import LayoutSystemSecurity from './coreAdmin/LayoutSystemSecurity/LayoutSystemSecurity.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './lib/router.js';
 import './App.css';
+
+// axios.defaults.baseURL = 'http://uatapi.coffic.com/';
+// axios.defaults.baseURL = 'http://cofficapi.iassureit.com/';api.wealthyvia.com
+/*axios.defaults.baseURL = 'http://prodapi.coffic.com/';*/
+axios.defaults.baseURL = 'http://api.wealthyvia.com';
+// axios.defaults.baseURL = 'http://localhost:5012/';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Layout />
     </div>
-  );
-}
-
+  );  
+} 
 export default App;
