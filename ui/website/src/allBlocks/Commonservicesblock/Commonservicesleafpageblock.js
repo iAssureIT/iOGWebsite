@@ -78,7 +78,7 @@ export default class Commonservicesleafpageblock extends Component {
                                                       <div className="dwstmTitle">{data.downstreamTitle1}</div> 
                                                     </div>
                                                     <div className="serflip-card-back">
-                                                        <p className="text-left">{data.downstreamtext}</p>
+                                                        <p className="text-justify">{data.downstreamtext}</p>
                                                     </div>
                                                  </div>
                                                 </div>

@@ -24,8 +24,8 @@ export default class Commonservicesblock extends Component {
               <div className="Main_Cards__Bubble bub2"></div>
             </div>
             <div className="col-lg-12 lightbluetext contentheader text-center">
-              <hr/>
-              <h1 className="lightbluetext">Services</h1>
+           {/*   <hr/>
+              <h1 className="lightbluetext">Services</h1>*/}
             </div>
             <div className="col-lg-12">
               <div className="row">
@@ -69,7 +69,7 @@ export default class Commonservicesblock extends Component {
                                                     <div className="dwstmTitle">{data.downstreamTitle1}</div> 
                                                   </div>
                                                   <div className="serflip-card-back">
-                                                      <p className="text-left">{data.downstreamtext}</p>
+                                                      <p className="text-justify">{data.downstreamtext}</p>
                                                   </div>
                                                </div>
                                               </div>
