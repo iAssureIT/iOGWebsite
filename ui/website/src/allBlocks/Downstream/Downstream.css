@@ -12,8 +12,8 @@
     border-radius: 8px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
-    padding:50px 12px 10px 12px;
-    height: 300px;
+    padding:13px 12px 10px 12px;
+    height: 260px;
 }
 .block img{
   height: 55%;
@@ -349,7 +349,7 @@
   position: relative;
   top :0px;
   transform: rotate(0deg);
-  transition-duration: 1.2s;
+  transition-duration: 0.5s;
   margin-inline-start: 45px;
   margin-inline-end: 40px;
 }

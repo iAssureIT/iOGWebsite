@@ -53,13 +53,13 @@ export default class Banner extends Component {
                 <figure className="oilsign2">
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
-                <figure className="oilsign3">
+               {/* <figure className="oilsign3">
                   <img alt="" src="/images/oilsign.png"/>
-                </figure>
+                </figure>*/}
                 <figure className="oilsign4">
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
-                <figure className="oilsign5">
+               <figure className="oilsign5">
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
                 <figure className="oilsign6">
@@ -85,14 +85,14 @@ export default class Banner extends Component {
                 <figure className="contanim">
                   <img alt="" src="/images/container.png"/>
                 </figure>
-                <div className="truckanim1">
+               {/* <div className="truckanim1">
                   <figure className="truckanim">
                     <img alt="" src="/images/truck.png"/>
                     <img alt="" className="twheel1" src="/images/wheel1.png"/>
                     <img alt="" className="twheel2" src="/images/wheel2.png"/>
                     <img alt="" className="twheel3" src="/images/wheel2.png"/>
                   </figure>
-                </div>
+                </div>*/}
                 <div className="truckanim2">
                   <figure className="truckanimtion">
                     <img alt="" src="/images/truck.png"/>

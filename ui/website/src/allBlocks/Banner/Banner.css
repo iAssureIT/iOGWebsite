@@ -27,6 +27,7 @@
     background-image: url(/images/banner.png);
     padding-top: 144px;
     padding-bottom: 158px;
+    margin-top: -60px;
 }
 .lead {
     font-size: 18px;
@@ -261,14 +262,14 @@ height: 150px;
     position: absolute;
     left: -330px;
     /*top: 0px;*/
-    animation:  cloud2 50s linear  infinite;
+    animation:  cloud2 110s linear  infinite;
     z-index: 101;
     bottom: 15px;
 }
 .cloud3{
     position: absolute;
     left: -750px;
-    animation:  cloud3 60s linear  infinite;
+    animation:  cloud3 140s linear  infinite;
     z-index: 102;
     bottom: 15px;
 }
@@ -276,7 +277,7 @@ height: 150px;
     position: absolute;
     left: -950px;
     width: 100px;
-    animation:  cloud4 70s linear  infinite;
+    animation:  cloud4 165s linear  infinite;
     z-index: 103;
     bottom: 15px;
 
@@ -326,7 +327,7 @@ height: 90px;
     position: absolute;
     left: -250px;
     top: 170px;
-    animation:  boat 40s linear  infinite;
+    animation:  boat 101s linear  infinite;
 
 }
 .up{
@@ -387,14 +388,14 @@ height: 90px;
 }
 .oilsign5{
     position: absolute;
-    right: 225px;
-    top: 344px;
+    left: 136px;
+    top: 89px;
     animation:   4s linear  infinite;
 }
 .oilsign6{
     position: absolute;
-    right: 82px;
-    top: 332px;
+    right: 227px;
+    top: 345px;
     animation:   4s linear  infinite;
 }
 .oilsign7{
