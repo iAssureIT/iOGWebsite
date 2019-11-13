@@ -41,7 +41,7 @@ export default class Industriespetrochemicalpage extends Component {
                 downstreamurl   : "/apc-services",
                 downstreamTitle : "APC Services",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Advanced Process Control (APC) technologies helps to improve operation stability, push operations closer to quality or equipment limits and improve the capability of process units to handle disturbances. Our APC consulting services help customers specify, justify, and apply APC technologies such as multivariable predictive control, neural net inferential modeling, and fuzzy logic controllers that will significantly improve plant performance."
+                downstreamtext  : "Advanced Process Control (APC) technologies helps to improve operation stability, push operations closer to quality or equipment limits and improve the capability of process units to handle disturbances."
             }, 
             {
                 downstreamurl   : "/simulation",
@@ -53,13 +53,13 @@ export default class Industriespetrochemicalpage extends Component {
                 downstreamurl   : "/digitalservices",
                 downstreamTitle : "Digital Services, Dashboard and KPI Managers",
                 downstreamimg   : "/images/Illustration_13.png",
-                downstreamtext  : "In recent years, the oil & gas industry has seen a number of initiatives to explore new digital technologies & to exploit their benefits. Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures & management concepts...."
+                downstreamtext  : "Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures & management concepts...."
             },
             {
                 downstreamurl   : "/Healthsafty",
                 downstreamTitle : "HSE & EHS",
                 downstreamimg   : "/images/Illustration_11.png",
-                downstreamtext  : "The Oil and gas industry has always faced a moral dilemma related to environmental sustenance and it has seen some of the major disasters and accidents which have contributed to vast safety and environmental problems in the past....."
+                downstreamtext  : "The Oil and gas industry has always faced a moral dilemma related to environmental sustenance."
             }
             
         ]
@@ -69,12 +69,31 @@ export default class Industriespetrochemicalpage extends Component {
 
 
     return (
+
+      <div>
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 takeleft">
+        <div className=" col-lg-4 ">
+         <div class="container">
+          <div class="moduletable">           
+          <ul class="breadcrumb breadcrumb1 breadcrumb4">
+          <li class="active">&nbsp;</li><li>
+          <a href="/" class="pathway">Home</a>
+          <span class="divider">
+          <img src="/media/system/images/arrow.png" alt=""/></span></li>
+          <li><a href="/industries" class="pathway">Industries</a>
+          <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
+          <li class="active"><span>Pectrochemical</span></li></ul>
+            </div>
+        </div>
+       </div> 
+     </div>  
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
         <div className="downstreambg1">
           <Commoninfoblock infodata={this.ServicesData()} />
           <Commonservicesblock servicedata={this.DownstreamData()}/>
         </div>
       </div>
+      </div> 
     );  
   }
 }

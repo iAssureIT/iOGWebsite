@@ -25,6 +25,8 @@ export default class Industriespetrochemicals extends Component {
 
     render(){
         return(
+          <div>
+        
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
                  {
                     this.ServicesData().map((data, index)=>{
@@ -54,7 +56,8 @@ export default class Industriespetrochemicals extends Component {
                                  );
                               })
                             }
-                     </div>   
+                     </div> 
+                   </div>    
         );
     }
 }

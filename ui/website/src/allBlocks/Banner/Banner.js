@@ -93,17 +93,17 @@ export default class Banner extends Component {
                     <img alt="" className="twheel3" src="/images/wheel2.png"/>
                   </figure>
                 </div>*/}
-                <div className="truckanim2">
-                  <figure className="truckanimtion">
-                    <img alt="" src="/images/truck.png"/>
-                    <img alt="" className="twheel4" src="/images/wheel1.png"/>
-                    <img alt="" className="twheel5" src="/images/wheel2.png"/>
-                    <img alt="" className="twheel6" src="/images/wheel2.png"/>
+                <div className="">
+                  <figure className="">
+                    <img alt="" src=""/>
+                    <img alt="" className="" src=""/>
+                    <img alt="" className="" src=""/>
+                    <img alt="" className="twheel6" src=""/>
                   </figure>
                 </div>
-                <figure className="truckfront">
+                {/*<figure className="truckfront">
                   <img alt="" src="/images/truckfront.png"/>
-                </figure>
+                </figure>*/}
                 </div>
               </div>
             </div>

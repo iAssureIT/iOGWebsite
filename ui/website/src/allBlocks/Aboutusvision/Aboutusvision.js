@@ -11,6 +11,21 @@ export default class Aboutusvision extends Component {
     render(){
         return(
           
+          <div>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="container">
+                <div class="moduletable">           
+                 <ul class="breadcrumb">
+                  <li class="active">&nbsp;</li><li>
+                  <a href="/" class="pathway">Home</a>
+                  <span class="divider">
+                  <img src="/media/system/images/arrow.png" alt=""/></span></li>
+                  <li><a href="/about-us" class="pathway">About Us</a>
+                  <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
+                  <li class="active"><span>Management Team</span></li></ul>
+                    </div>
+                </div>
+             </div> 
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -33,11 +48,15 @@ export default class Aboutusvision extends Component {
                                   es improving the profitability of our valued clients
                                   across the globe.</b>
                                </p>
-                               </div>                                       
+                               </div>                                    
                           </div>
                       </div>
+                       
                 </div>
             </div>
+           </div> 
         );
     }
 }
+
+

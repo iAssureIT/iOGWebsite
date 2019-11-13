@@ -29,13 +29,13 @@ export default class Industriesrefinarypage extends Component {
                 downstreamurl   : "/supplychain",
                 downstreamTitle : "Supply Chain Management",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamtext  : "The ever-increasing demand for chemicals & petrochemicals derived from valuable petroleum feedstock has pushed oil giants to reach more customers and increase their market share and profitability. Supply chains are growing complex by the day and the petroleum industry is finding the development and management of the same a very complex task."
+                downstreamtext  : "Supply chains are growing complex by the day and the petroleum industry is finding the development and management of the same a very complex task."
             }, 
             {
                 downstreamurl   : "/manufacturesystem",
                 downstreamTitle : "Manufacturing Execution Systems",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Manufacturing Execution Systems are vital tools in the smooth and efficient execution of the manufacturing process. Manufacturing Execution Systems are applications that bridge the gap between the control system (DCS) & the ERP layers & can consist of numerous modules including HSE, PCMS, and SCM. In such a situation, the MES is used in a bigger context & is synonymous to Refinery Information Systems or Integrated RIS ."
+                downstreamtext  : "Manufacturing Execution Systems are vital tools in the smooth and efficient execution of the manufacturing process."
             }, 
             {
                 downstreamurl   : "/simulation",
@@ -47,13 +47,13 @@ export default class Industriesrefinarypage extends Component {
                 downstreamurl   : "/assetmanagement",
                 downstreamTitle : "Asset Management",
                 downstreamimg   : "/images/Illustration_12.png",
-                downstreamtext  : "Oil & Gas is an asset-intensive industry with capital assets ranging from drilling rigs, offshore platforms, and wells in the upstream segment, to pipelines, LNG terminals in the midstream segment, and refineries, petrochemical plants, and utility facilities in the downstream segment. These assets go through various phases such as design, build, operate, maintain and retire in their entire life span....."
+                downstreamtext  : "Oil & Gas is an asset-intensive industry with capital assets ranging from drilling rigs, offshore platforms, and wells in the upstream segment, to pipelines, LNG terminals in the midstream segment. "
             }, 
             {
                 downstreamurl   : "/digitalservices",
                 downstreamTitle : "Digital Services",
                 downstreamimg   : "/images/Illustration_13.png",
-                downstreamtext  : "In recent years, the oil & gas industry has seen a number of initiatives to explore new digital technologies & to exploit their benefits. Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures & management concepts...."
+                downstreamtext  : " Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures & management concepts...."
             }
             
         ]
@@ -63,12 +63,30 @@ export default class Industriesrefinarypage extends Component {
 
 
     return (
+      <div> 
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 takeleft">
+        <div className=" col-lg-4 ">
+         <div class="container">
+          <div class="moduletable">           
+          <ul class="breadcrumb breadcrumb1 breadcrumb4">
+          <li class="active">&nbsp;</li><li>
+          <a href="/" class="pathway">Home</a>
+          <span class="divider">
+          <img src="/media/system/images/arrow.png" alt=""/></span></li>
+          <li><a href="/industries" class="pathway">Industries</a>
+          <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
+          <li class="active"><span>Refinery</span></li></ul>
+            </div>
+        </div>
+       </div> 
+     </div> 
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
         <div className="downstreambg1">
           <Commoninfoblock infodata={this.ServicesData()} />
           <Commonservicesblock servicedata={this.DownstreamData()}/>
         </div>
       </div>
+     </div>  
     );  
   }
 }

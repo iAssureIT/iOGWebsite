@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+axios.defaults.baseURL = 'http://iogapi.iassureit.com';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+
 function App() {
   return (
     <div className="App">

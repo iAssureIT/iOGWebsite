@@ -23,7 +23,7 @@ export default class Founderprofile extends Component {
                         liData : "Strong skills in using refinery LP and Scheduling tools for refinery production planning and scheduling."
                     },
                     {
-                        liData : "Led several remarkable MES and SCM projects at state-owned.Private refineries and petrochemical plants in India, SE Asia, and the Middle East."
+                        liData : "Led several remarkable MES and SCM projects at state-owned. Private refineries and petrochemical plants in India, SE Asia, and the Middle East."
                     }
                 ]
             }
@@ -63,7 +63,20 @@ export default class Founderprofile extends Component {
           <div className="">
               <Aboutufounder founderData={this.founder1()} />
            { /*  <Aboutufounder founderData={this.founder2()} />*/}
+           {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div className="col-lg-4 col-md-7">
+               <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+
+                  <li class="breadcrumb-item"><a href="#">Home </a></li>
+                  <li class="breadcrumb-item"><a href="/about-us">About Us</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Founder's Profile</li>
+                </ol>
+              </nav>
+               </div>
+            </div> */}
           </div>
+
       </div>
     );  
   }

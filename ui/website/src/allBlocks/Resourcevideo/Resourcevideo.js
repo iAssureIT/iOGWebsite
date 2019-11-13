@@ -51,7 +51,7 @@ export default class Resourcevideo extends Component {
                         <div key={index} className="col-lg-6  col-md-6 col-sm-6 col-xs-6 mt100">
                         <div className="videocard1">
                             <div className="introvideo">      
-                               <ReactPlayer url='https://www.youtube.com/watch?v=SsgIaPJ0Cl0'width='324px' height='211px' controls loop  />
+                               <ReactPlayer url='https://iogsolutions-my.sharepoint.com/:v:/r/personal/anurag_shinde_iogsolutions_com/Documents/Marketing%20Activities/Website%20Revamp/Videos/01%20iOG%20Consult.mp4?csf=1&e=vaB0ev'width='324px' height='211px' controls loop  />
                             </div>          
                           <div className="go-corner" href="#">
                             <div className="go-arrow">

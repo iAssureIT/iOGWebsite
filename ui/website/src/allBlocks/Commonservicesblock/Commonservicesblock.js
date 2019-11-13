@@ -69,7 +69,7 @@ export default class Commonservicesblock extends Component {
                                                     <div className="dwstmTitle">{data.downstreamTitle1}</div> 
                                                   </div>
                                                   <div className="serflip-card-back">
-                                                      <p className="text-justify">{data.downstreamtext}</p>
+                                                      <p className="text-justify downstreamtxt">{data.downstreamtext}</p>
                                                   </div>
                                                </div>
                                               </div>

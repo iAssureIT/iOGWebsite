@@ -344,6 +344,18 @@ journyData8(){
               <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
               </div>
           </div>
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div className="col-lg-4 col-md-7">
+               <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+
+                  <li class="breadcrumb-item"><a href="#">Home </a></li>
+                  <li class="breadcrumb-item"><a href="/about-us">About Us</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Our Profile</li>
+                </ol>
+              </nav>
+               </div>
+            </div> 
       </div>
     );  
   }

@@ -18,7 +18,9 @@ body{
     padding-left: 0px;
     padding-right: 0px;
 }
-
+.minHeight{
+    min-height: 600px;
+}
 
 .contactBg{
     

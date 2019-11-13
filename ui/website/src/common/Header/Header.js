@@ -25,6 +25,12 @@ export default class Header extends Component {
     $('#modalId').addClass('in');
     $('#modalId').css('display','block');
   }
+  
+ /* googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 
+  'google_translate_element');
+} 
+*/
   render() {  
     return (
     <header className="col-lg-12 headerflow"> 
@@ -32,6 +38,14 @@ export default class Header extends Component {
         <div className="navbar navbar-static-top" id="bb">
           <div className="col-lg-12">
             <div className="row"> 
+           {/* <div id="languages">
+              <p>
+                <a href="?lang=en" rel="en">English</a> / <a href="?lang=es" rel="es">Spanish</a> / <a href="?lang=it" rel="it">Italian</a> /
+                <a href="?lang=fr" rel="fr">French</a>
+              </p>
+            </div>*/}
+
+            {/* <div className="col-lg-12"><button className="pull-right"onClick={this.googleTranslateElementInit.bind(this)}>Hindi</button></div>*/}
              <div className="col-lg-12 top_spacing">
               <div className="row"> 
                 <div className="col-lg-3">

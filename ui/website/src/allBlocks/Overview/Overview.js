@@ -11,12 +11,14 @@ export default class Overview extends Component {
 
 render(){
       return(
-            <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+
+            <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">  
                {
                 this.props.OverviewData.map((data, index)=>{
                    return ( 
                     <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
                           <div className="line_overview col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-5"></div>
                         </div>
                         <h2 className="bluetext text-center paraaa-top">{data.overviewTitle}</h2>

@@ -37,12 +37,12 @@ class BlogPage extends Component{
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
                   <hr/>
-                  <h1 className="lightbluetext latestblog">
+                  <h1 className="lightbluetext latestblog latestblog1">
                       <b>Blogs</b> 
                   </h1>
                 </div>
                 <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12">
-                    <Blogcomponents />
+                    {<Blogcomponents />}
                 {/*    <BlogPagecomponent />*/}
                 </div>
               </div>

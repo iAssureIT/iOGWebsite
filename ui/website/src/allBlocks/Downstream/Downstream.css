@@ -8,12 +8,13 @@
 }
 
 .block{
+
 	  background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
     padding:13px 12px 10px 12px;
-    height: 260px;
+    height: 200px;
 }
 .block img{
   height: 55%;
@@ -363,6 +364,7 @@
 }
 
 .border{
+  padding-top: 75px;
   /*border: 1px solid*/
 }
 .downTitle{

@@ -364,7 +364,7 @@ Commonleafulblock7(){
         <Imgleafblock ImgleafblockData={this.imgleafblockData2()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock5()} /> 
         <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock7()} /> 
+        <Challenges      CommonleafblockData={this.Commonleafulblock7()} /> 
         <Commonulliblock CommonulliData={this.commonulliData()} />
       </div>
     );  

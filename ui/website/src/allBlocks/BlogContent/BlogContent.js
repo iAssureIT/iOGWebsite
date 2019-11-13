@@ -6,13 +6,40 @@ import './BlogContent.css';
 
 import CommentBlock  from '../../allBlocks/CommentBlock/CommentBlock.js';
 
-class BlogContent extends Component {
-  constructor(props){
+export default class BlogContent extends Component {
+
+  constructor(props) {
     super(props);
     this.state = {
-      blogsText:[],
-    }
+      "user": [
+            {
+              userimg:"https://wealthyvia.s3.ap-south-1.amazonaws.com/website/user1.png",
+              userName:"Joan Doe",
+              UserDes:"Based in New York, Uncode is a blog by John Doe. His posts explore modern web design and development through photos and quotes by influential architects, engineers, and creatives."
+            }
+          ]
+    };
   }
+
+  render() {
+
+    return (
+            <div className="container-fluid" style={{padding:"0px"}}>
+              <div className="col-lg-12  mt40">
+                <div  className="col-lg-8 col-lg-offset-2 hidden-xs hidden-sm blogBox">
+                    <div dangerouslySetInnerHTML={ { __html: this.props.blogContent } }></div>
+                </div>
+                <div  className="col-sm-12 col-xs-12 hidden-lg hidden-md ">
+                    <div className="blogBoxSmall" dangerouslySetInnerHTML={ { __html: this.props.blogContent } }></div>
+                </div>
+              </div>
+            </div>
+    );
+  }
+}
+
+
+  /*
   componentDidMount(){
     console.log(this.props.match.params.id);
     var infoID = this.props.match.params.id;
@@ -251,8 +278,8 @@ class BlogContent extends Component {
                                       <div className="fb">
                                        {/*
                                         <a href="https://www.facebook.com/iOGsolutions/" target="_blank" title="Share on Facebook">
-                                                                             </a>*/}
-                                        <FacebookProvider appId="679723582437310">{/*appId="2384256901838973"*/}
+                                                                             </a>
+                                        <FacebookProvider appId="679723582437310">appId="2384256901838973"
                                           <ShareButton className="fbBtn" href="http://www.facebook.com">
                                         <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
                                           </ShareButton>
@@ -262,13 +289,13 @@ class BlogContent extends Component {
                                     <div className="blogtwit">
                                     <div className="fb">
                                   
-                                    {/*<a class="twitter-timeline" href="https://twitter.com/iOGSolutions?ref_src=twsrc%5Etfw">Tweets by iOGSolutions</a>
-                                                                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>*/}
+                                    <a class="twitter-timeline" href="https://twitter.com/iOGSolutions?ref_src=twsrc%5Etfw">Tweets by iOGSolutions</a>
+                                                                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                     <a href="https://twitter.com/iOGSolutions?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="true">
                                                                              <i class="col-lg-12 fa fa-twitter" aria-hidden="true"></i>
                                     </a>
                                      {/* <a href="https://twitter.com/iogsolutions" target="_blank"  title="Share on Twitter">
-                                                                           </a>*/}
+                                                                           </a>
                                     </div>
                                     </div>
                                     <div className="blogLin">
@@ -387,5 +414,5 @@ class BlogContent extends Component {
     );  
   }
 }
-
-export default withRouter(BlogContent);
+*/
+// export default withRouter(BlogContent);

@@ -25,12 +25,32 @@ export default class Aboutustextleft extends Component {
 
     render(){
         return(
+           
+           <div>
+            
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
-                <div className="col-lg-2">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 takeleft">
+                <div className=" col-lg-4 ">
+                 <div class="container">
+                  <div class="moduletable">           
+                  <ul class="breadcrumb breadcrumb1">
+                  <li class="active">&nbsp;</li><li>
+                  <a href="/" class="pathway">Home</a>
+                  <span class="divider">
+                  <img src="/media/system/images/arrow.png" alt=""/></span></li>
+                  <li><a href="/about-us" class="pathway">About Us</a>
+                  <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
+                  <li class="active"><span>Company Profile</span></li></ul>
+                    </div>
+                </div>
+               </div> 
+             </div>
+              <div className="col-lg-2">
                   <div className="col-lg-11">
                     <div className="line1 col-lg-1 pull-right "></div>
                   </div>                    
                 </div> 
+               
                  {
                     this.ServicesData().map((data, index)=>{
                       return (   
@@ -57,7 +77,8 @@ export default class Aboutustextleft extends Component {
                                  );
                               })
                             }
-                     </div>   
+                     </div>
+                    </div>    
         );
     }
 }

@@ -286,7 +286,8 @@ height: 150px;
     position: absolute;
     left: 400px;
     z-index: 10;
-    bottom: 90px;
+    bottom: 0px;
+    right:20px;
 }
 .tree1{
     position: absolute;

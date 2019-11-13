@@ -10,6 +10,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import '../App.css';
 //-----------Main Menu Rout.................//
 import Header         from '../common/Header/Header.js';
+// import NewHeader      from '../common/MegaMenuHeader/NewHeader.js';
 import Footer         from '../common/Footer/Footer.js';
 import HomePage       from '../allPages/HomePage/HomePage.js';
 import Contactpage    from '../allPages/ContactPage/Contactpage.js';
@@ -120,6 +121,7 @@ import ApcServices                    from '../allPages/ApcServices/ApcServices.
 import EtrmPage                       from '../allPages/EtrmPage/EtrmPage.js';
 import Termsofusepage                 from '../allPages/Termsofusepage/Termsofusepage.js';
 import Privacypolicypage              from '../allPages/Privacypolicypage/Privacypolicypage.js';
+import Map                            from '../allPages/Map/Map.js';
 import Sitemap                        from '../allPages/Sitemap/Sitemap.js';
 
 import AssetCriticalAnalysisPage      from '../allPages/AssetCriticalAnalysisPage/AssetCriticalAnalysisPage.js';
@@ -132,6 +134,15 @@ import RAMModellingPage               from '../allPages/RAMModellingPage/RAMMode
 import SIMOPage                       from '../allPages/SIMOPage/SIMOPage.js';
 import CalibrationManagement          from '../allPages/CalibrationManagement/CalibrationManagement.js';
 import InspectionManagementPage       from '../allPages/InspectionManagementPage/InspectionManagementPage.js';
+
+
+/*blogs*/
+
+import SingleBlogPage                 from '../allPages/SingleBlogPage/SingleBlogPage.js';
+import AllBlog                       from '../allPages/AllBlog/AllBlog.js';
+import Blogcomponents                from '../allBlocks/Blogcomponents/Blogcomponents.js';
+
+
 
 
 // import Effectssec     from '../trial/effectssec/effectssec.js';
@@ -155,6 +166,8 @@ const WebLayout = () => (
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resource" component={ ResourcePage } />
     <Route path="/blog" component={ BlogPage } />
+
+    <Route path="/AllBlog" component={AllBlog}  />
     <Route path="/blogs/:id" component={ BlogContent } />
     <Route path="/video" component={ VideoPage } />
     <Route path="/form" component={ FormContent} />
@@ -264,7 +277,10 @@ const WebLayout = () => (
     <Route path="/inspectionManagement" component={ InspectionManagementPage } />
     
     <Route path="/trial" component={ Parallaxeff } />        
-    <Route path="/facebook" component={ facebook } />        
+    <Route path="/facebook" component={ facebook } />    
+
+
+     <Route path="/blog/:selectedUrl" component={ SingleBlogPage }  />    
   </div>
 );
 
@@ -296,7 +312,9 @@ function Routes() {
   return (
     <div>
       <Router>
+
         <Header />
+      {/* <NewHeader />*/}
         <Switch>
           <Route path="/" component={ WebLayout } />
         </Switch>
