@@ -5,7 +5,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
 import './Header.css';
 import 'bootstrap/js/modal.js';
-
+import './Megamenu.js'
 import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
 export default class Header extends Component {
@@ -66,220 +66,145 @@ export default class Header extends Component {
                           <input type="checkbox" id="drop" />
                           <ul className="menu">
                              <li><a href="/" className="headerTitle">Home</a></li>
-                             <li> 
+                             <li>
+                                <div class="dropdown1"> 
                                 <label htmlFor="drop-1" className="toggle">About Us</label>
                                 <a href="/about-us" className="headerTitle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="col-lg-12 menudivider"></div>
+                                 <div class="col-lg-offset-3 dropdown-content servicedropdown aboutusdrop ">
+                                  <div class="col-lg-12 row">
+                                   <div class="Servicecolumn columnmenu">
+                                    <a href="/about-us">Company Profile</a>
+                                    <a href="/founderprofile">Founder's Profile</a>
+                                    <a href="/ourjourny">Our Journey</a>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div> 
                                 <input type="checkbox" id="drop-1"/>
-                                <ul>
+                               {/* <ul>
                                   <li><a href="/about-us">Company Profile</a></li>
                                   <li><a href="/founderprofile">Founder's Profile</a></li>
                                   <li><a href="/ourjourny">Our Journey</a></li>
-                                </ul>
+                                </ul>*/}
                               </li>
-                              <li>  
+                              <li> 
+                              <div class="dropdown1 ">  
                               <label htmlFor="drop-2" className="toggle">Services</label>
-                              <a href="/services" className="headerTitle">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <a href="/services" className="headerTitle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <div class="col-lg-12 menudivider"></div>  
+                              <div class="col-lg-offset-4 dropdown-content servicedropdown1 ">
+                               <div class="col-lg-12 row">
+                                <div class="Servicecolumn columnmenu">
+                                    <a href="/iogimplement">iOGImplement</a>
+                                    <a href="/iogconsult">iOGCunsult</a>
+                                    <a href="/iogtrain">iOGTrain</a>
+                                    <a href="/iogstudy">iOGStudy</a>
+                                  </div>
+                             </div>
+                            </div>
+                            </div>
                               <input type="checkbox" id="drop-2"/>
-                              <ul>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Service Arms</label>
-                                  <a href="/servicearms">Service Arms <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                      <li className="zindex"><a href="/iogimplement">iOGImplement</a></li>  
-                                      <li className="zindex"><a href="/iogconsult">iOGConsult</a></li>  
-                                      <li className="zindex"><a href="/iogtrain">iOGTrain</a></li>  
-                                      <li className="zindex"><a href="/iogstudy">iOGStudy</a></li>  
-                                  </ul>
-                                </li>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Downstream</label>
-                                  <a href="/downstream">Downstream <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                    <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Supply Chain Management</label>
-                                    <a href="/supplychain">Supply Chain Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li className="zindex">
-                                        <label htmlFor="drop-5" className="toggle">Planning & Scheduling</label>
-                                        <a href="/planningschedul">Planning & Scheduling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                        <input type="checkbox" id="drop-5"/>
-                                          <ul>
-                                            <li><a href="/refineryplanning">Production Planning </a></li>
-                                            <li><a href="/refineryschedule">Production Scheduling</a></li>
-                                            <li><a href="/backcasting">Back Casting / Retro-Analysis</a></li>
-                                            <li><a href="/lputility">LP Utilities</a></li>
-                                            <li><a href="/lpconfig">LP Configuration studies</a></li>
-                                          </ul>
-                                        </li>
-                                        <li className="zindex">
-                                          <label htmlFor="drop-5" className="toggle">Supply & Distribution</label>
-                                          <a href="/supplydistribute">Supply & Distribution <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                          <input type="checkbox" id="drop-5"/>
-                                          <ul>
-                                            <li><a href="/demandmanagement">Demand Management</a></li>
-                                            <li><a href="/inventorymanagement">Inventory Management</a></li>
-                                            <li><a href="/diatributionplanning">Distribution Planning & Optimization</a></li>
-                                            <li><a href="/retailautomation">Retail Automation</a></li>
-                                          </ul>
-                                        </li>
-                                        
-
-                                      </ul>
-                                    </li>
-                                    <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Manufacturing Execution System</label>
-                                    <a href="/manufacturesystem">Manufacturing Execution System <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/productionaccounting">Production Accounting</a></li>
-                                        <li><a href="/datahistorian">Real time Data Historian</a></li>
-                                        <li><a href="/corporatedashboard">Corporate Dashboard & Analytics</a></li>
-                                        <li><a href="/operationlogbook">Operation Logbook & Target Dashboard</a></li>
-                                        <li><a href="/oilmovement">Oil Movement Management Systems</a></li>
-                                      </ul>
-                                    </li>
-                                    <li className="zindex"><a href="/simulation">Simulation & Modelling</a></li>
-                                    <li className="zindex"><a href="/energy">Energy Management</a></li>
-                                    <li className="zindex"><a href="/apc-services">APC Services</a></li>
-                                    <li className="zindex"><a href="/etrm">ETRM & Pricing Tool Application</a></li>
-                                   </ul>
-                                </li>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Digital Services</label>
-                                  <a href="/digitalservices">Digital Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                      <li className="zindex"><a href="/digitalstratergy">Digital IT Strategy & Roadmaps</a></li>
-                                      <li className="zindex"><a href="/applicationdevlopment">Application Development & Application Management (ADAM)</a></li>
-                                      <li className="zindex"><a href="/enablingtechnology">Enabling Technologies</a></li>
-                                      <li className="zindex"><a href="/visualizationdashboard">Visualization & Dashboards</a></li>                                     
-                                      <li className="zindex"><a href="/digitalasset">Digital Asset Life Cycle Management</a></li>                                     
-                                  </ul>
-                                </li>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Asset Management</label>
-                                  <a href="/assetmanagement">Asset Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                     <li className="zindex"><a href="/EAM">Enterprise Asset Management</a></li>
-                                     <li className="zindex">
-                                      <label htmlFor="drop-4" className="toggle">Asset Reliability & Integraity Management</label>
-                                      <a href="/arimanagement">Asset Reliability & Integraity Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                      <input type="checkbox" id="drop-4"/>
-                                        <ul>
-                                          <li><a href="/assetCriticalAnalysis">Asset Criticality Analysis</a></li>
-                                          <li><a href="/riskBasedInspection">Risk Based Inspection</a></li>
-                                          <li><a href="/RootCauseAnalysis">Root Cause Analysis</a></li>
-                                          <li><a href="/failureModeEffect">Failure Mode Effect Analysis</a></li>
-                                          <li><a href="/reliabilityCentredMaintenance">Reliability Centered Maintenance</a></li>
-                                          <li><a href="/assetStrategyManagement">Asset Strategy Management</a></li>
-                                          <li><a href="/inspectionManagement">Inspection Management</a></li>
-                                          <li><a href="/calibrationManagement">Calibration Management</a></li>
-                                          <li><a href="/RAMModelling">Reliability Availability & Maintainability (RAM) Modeling</a></li>
-                                          <li><a href="/simo">Spares Inventory Management & Optimisation (SIMO) </a></li>
-                                        </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Health Safety & Environment</label>
-                                  <a href="/Healthsafty">Health Safety & Environment <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                      <li className="zindex"><a href="/processsafty">Process Safety Management</a></li> 
-                                      <li className="zindex"><a href="/occupationhealth">Occupational Health & Safety Management</a></li> 
-                                      <li className="zindex"><a href="/environmentsustain">Environmental Consulting & Sustainability Management</a></li> 
-                                      <li className="zindex"><a href="/hsesystemevalution">HSE System Evaluation</a></li> 
-                                      <li className="zindex"><a href="/hsebusinessprocessingmapping">HSE Business Process Framing</a></li> 
-                                      <li className="zindex"><a href="/hsesolutionsimplementation">HSE Solutions Implementation</a></li> 
-                                      <li className="zindex"><a href="/changemanagement">Change Management</a></li> 
-                                  </ul>
-                                </li>
-                                <li> 
-                                  <label htmlFor="drop-3" className="toggle">Upstream</label>
-                                  <a href="/upstream">Upstream <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                  <input type="checkbox" id="drop-3"/>
-                                  <ul>
-                                    <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Geology & Geophysics</label>
-                                    <a href="/geoligy">Geology & Geophysics <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/geophysicalinterpretation">Geophysical Interpretation</a></li>
-                                        <li><a href="/geologicalinterpretation">Geological Interpretation</a></li>
-                                        <li><a href="/petrophysicalanalysis">Petrophysical Analysis</a></li>
-                                        <li><a href="/subsurfacemodeling">Subsurface Modeling</a></li>
-                                      </ul>
-                                    </li>
-                                     <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Reservoir Management</label>
-                                    <a href="/reserviormanagement">Reservior Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/reservoirengineering">Reservoir Engineering</a></li>
-                                        <li><a href="/fielddevelopmentplan">Field Development Plan</a></li>
-                                        <li><a href="/dynamicreservoirsimulation">Dynamic Reservoir Simulation</a></li>
-                                        <li><a href="/reservoircharacterization">Reservoir Characterization</a></li>
-                                      </ul>
-                                    </li> 
-                                    <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Well & Drilling</label>
-                                    <a href="/welldrilling">Well & Drilling <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/wellplanningdrilling">Well Planning & Drilling</a></li>
-                                        <li><a href="/wellperformanceanalysis">Well Performance Analysis</a></li>
-                                        <li><a href="/wellmodeling">Well Modeling</a></li>
-                                        <li><a href="/wellloginterpretation">Well Log Interpretation</a></li>
-                                        <li><a href="/welldrillingservices">Well Drilling Services</a></li>
-                                        <li><a href="/welldatamanagement">Well Data Management</a></li>
-                                      </ul>
-                                    </li> 
-                                    <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Production Management</label>
-                                    <a href="/productionmanagement">Production Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/productionengineering">Production Engineering</a></li>
-                                        <li><a href="/productionmonitoringsurveillance">Production Monitoring & Surveillance</a></li>
-                                        <li><a href="/productionaccountingsolution">Production Accounting</a></li>
-                                        <li><a href="/productionoptimization">Production Optimization</a></li>
-                                        <li><a href="/productionforecasting">Production Forecasting</a></li>
-                                        <li><a href="/welltesting">Well Testing</a></li>
-                                      </ul>
-                                    </li> 
-                                    <li className="zindex">
-                                    <label htmlFor="drop-4" className="toggle">Data Management</label>
-                                    <a href="/datamanagement">Data Management <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <input type="checkbox" id="drop-4"/>
-                                      <ul>
-                                        <li><a href="/seismicdatamanagement">Seismic Data Management</a></li>
-                                        <li><a href="/welldatamanagements">Well Data Management </a></li>
-                                        <li><a href="/realtimeproductiondatamanagement">Real-time Production Data Management</a></li>
-                                        <li><a href="/datagovernance">Data Governance</a></li>
-                                        <li><a href="/comprehensivemasterdatamanagement">Comprehensive E & P Master Data Management</a></li>
-                                        <li><a href="/cloudbaseddatamanagement">Cloud-based Data Management</a></li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
                             </li>
-                            <li> 
-                                <label htmlFor="drop-1" className="toggle">Industries</label>
-                                <a href="/industries" className="headerTitle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                             <li>
+                            <div class="dropdown1 "> 
+                            <label htmlFor="drop-1" className="toggle">Expertise</label>
+                            <a href="/about-us" className="headerTitle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="col-lg-12 menudivider"></div>
+                             <div class="col-lg-12 menudivider"></div>    
+                          <div class="dropdown-content expertcontrnt">
+                            <div class="col-lg-12 row">
+                              <div class=" column columnmenu columnmenu1">
+                                <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
+                                <a href="/refineryplanning">Prod Planning </a>
+                                <a href="/refineryschedule">Prod Schedule</a>
+                                <a href="/backcasting">Back Casting / Retro-Analysis</a>
+                                <a href="/lputility">LP Utilities</a>
+                                <a href="/lpconfig">LP Configuration studies</a>
+                                
+                              </div>
+                          <div class=" column columnmenu columnmenu2">
+                            <h5 className="columnhead"><a href="/supplydistribute" className="columnhead">Supply & Distribution</a></h5>
+                            <a href="/demandmanagement">Demand Mgmt</a>
+                            <a href="/inventorymanagement">Inventory Mgmt</a>
+                            <a href="/diatributionplanning">Distribution Planning & Optimization</a>
+                            <a href="/retailautomation">Retail Automation</a><br/>
+                             <h5 className="columnhead"><a href="/energy"className="columnhead">Digital Services</a></h5>
+                            <a href="#">Digital Transformation</a>
+                            <a href="#">Application Support</a>
+                            <a href="#">Application Integration</a>
+                            <a href="#">Visualization & Dashboards</a>
+                            <a href="#">Industry 4.0 Initiatives</a>
+                          </div>
+                           <div class=" column columnmenu thirdcolumn columnmenu3">
+                            <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
+                            <a href="/productionaccounting">Prod Accounting</a>
+                            <a href="/datahistorian">Realtime Data Historian</a>
+                            <a href="/corporatedashboard">Corporate Dashboard & Analytics</a>
+                            <a href="/operationlogbook">Operation Logbook</a>
+                            <a href="/oilmovement">Oil Movement Mgmt Systems</a>
+                             <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Env</a></h5>
+                            <a href="#">Occupational Health Mgmt</a>
+                            <a href="#">Process Safety Mgmt</a>
+                            <a href="#">Environment Mgmt</a>
+                          </div>
+                          <div class=" column columnmenu columnmenu3 columnmenu2">
+                            <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
+                            <a href="/simulation">Steady State Simulation </a>
+                            <a href="">Dynamic Simulation</a>
+                            <a href="">Operator Training</a>
+                            <a href="/etrm">ETRM</a>
+                            <h5 className="columnhead"><a href="#" className="columnhead">Other Services</a></h5>
+                            <a href="/apc-services">APC Services</a>
+                            <a href="/etrm">ETRM</a>
+                          </div>
+                          <div class="column columnmenu">
+                            <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
+                            <a href="">Util Network Optimiz</a>
+                            <a href="">Equipment Monitoring</a>
+                            <a href="">Energy Accounting</a>
+                            <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
+                            <a href="/assetCriticalAnalysis">Asset Criticality Anls</a>
+                            <a href="/riskBasedInspection">Asset Lifecycle Mgmt</a>
+                            <a href="/assetStrategyMgmt">Asset Strategy Mgmt</a>
+                            <a href="#">Inspection & Callibration Mgmt</a>
+                          </div>
+                        </div>
+                      </div>
+                                </div> 
                                 <input type="checkbox" id="drop-1"/>
-                                <ul>
+                               {/* <ul>
+                                  <li><a href="/about-us">Company Profile</a></li>
+                                  <li><a href="/founderprofile">Founder's Profile</a></li>
+                                  <li><a href="/ourjourny">Our Journey</a></li>
+                                </ul>*/}
+                              </li>
+                            <li>
+                               <div class="dropdown"> 
+                                <label htmlFor="drop-1" className="toggle">Industries</label>
+                                <a href="/industries" className="headerTitle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
+                                 <div class="col-lg-offset-6 dropdown-content servicedropdown2">
+                                   <div class="col-lg-12 row">
+                                     <div class="Servicecolumn columnmenu">
+                                      <a href="/refinery">Refinery</a>
+                                      <a href="/petrochemicals">Petrochemicals</a>
+                                      <a href="/chemicals">Chemicals</a>
+                                      <a href="/lng">LNG</a>
+                                      <a href="/gasprocessing">Gas Precessing</a>
+                                      <a href="/oilgasep">oil & Gas E & P</a>
+                                    </div>
+                                   </div>
+                                 </div>
+                                </div> 
+                                <input type="checkbox" id="drop-1"/>
+                               {/* <ul>
                                   <li><a href="/refinery">Refinery</a></li>
                                   <li><a href="/petrochemicals">Petrochemicals</a></li>
                                   <li><a href="/chemicals">Chemicals</a></li>
                                   <li><a href="/lng">LNG</a></li>
                                   <li><a href="/gasprocessing">Gas Processing</a></li>
                                   <li><a href="/oilgasep">Oil & Gas E&P</a></li>
-                                </ul>
+                                </ul>*/}
                             </li>
                             <li><a href="/careers" className="headerTitle">Careers</a></li>
                             <li><a href="/resource" className="headerTitle">Resources</a></li>

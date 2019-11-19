@@ -47,32 +47,46 @@ export default class Banner extends Component {
                 <figure className="up1">
                   <img alt="" src="/images/up2.png"/>
                 </figure>
-                <figure className="oilsign">
-                  <img alt="" src="/images/oilsign.png"/>
+                <figure className="oilsign hoveroilsign">
+                  <img alt="" src="/images/oilsign.png" className="dataonHover1"/>
+                  <div className="triangle-down"></div>
+                  <div className="dataonHover"></div>
                 </figure>
-                <figure className="oilsign2">
+                <figure className="oilsign2 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
+                  <div className="triangle-down"></div>
+                  <div className="dataonHover"></div>
                 </figure>
                {/* <figure className="oilsign3">
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>*/}
-                <figure className="oilsign4">
+                <figure className="oilsign4 hoveroilsign">
+                  <img alt="" src="/images/oilsign.png"/>
+                   <div className="triangle-down"></div>
+                  <div className="dataonHover"></div>
+                </figure>
+               <figure className="oilsign5 hoveroilsign">
+                  <img alt="" src="/images/oilsign.png"/>
+                  <div className="triangle-down"></div>
+                  <div className="dataonHover"></div>
+                </figure>
+                <figure className="oilsign6 hoveroilsign1">
+                  <div className="triangle-down1"></div>
+                  <div className="dataonHover1"></div>
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
-               <figure className="oilsign5">
+                <figure className="oilsign7 ">
                   <img alt="" src="/images/oilsign.png"/>
+                  <div className="dataonHover"></div>
                 </figure>
-                <figure className="oilsign6">
-                  <img alt="" src="/images/oilsign.png"/>
-                </figure>
-                <figure className="oilsign7">
-                  <img alt="" src="/images/oilsign.png"/>
-                </figure>
-                <figure className="oilsign8">
-                  <img alt="" src="/images/oilsign.png"/>
-                </figure>
-                <figure className="anim">
+                <div className="hoveroilsign">
+                  <figure className="oilsign8 ">
+                    <img alt="" src="/images/oilsign.png"/>
+                     <div className="dataonHover"></div>
+                  </figure>
+                </div>
                   <img alt="" src="/images/anim.png"/>
+                <figure className="anim">
                 </figure>
                 <figure className="tank">
                   <img alt="" src="/images/tank.png"/>

@@ -19,9 +19,9 @@ render(){
                     <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                          <div className="line_overview col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-5"></div>
+                          <div className="line_overview line_overview1 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-5"></div>
                         </div>
-                        <h2 className="bluetext text-center paraaa-top">{data.overviewTitle}</h2>
+                        <h2 className="bluetext text-center paraaa-top newparaaa-top">{data.overviewTitle}</h2>
                         <p className="line_subheadd ">{data.overviewSubTitle}</p>
                         <p className="line_paraaaa">{data.overviewtext1}</p>
                         <p className="line_paraaaa">{data.overviewtext2}</p>

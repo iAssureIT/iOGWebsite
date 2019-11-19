@@ -84,7 +84,7 @@ export default class NewHeader extends Component {
                      <a href="/services" class="dropbtn headerTitle">Services 
                      <i class="fa fa-angle-down downarrow1" aria-hidden="true"></i></a>
                       <div class="col-lg-12 menudivider"></div>  
-                      <div class="col-lg-offset-4 dropdown-content servicedropdown ">
+                      <div class="col-lg-offset-4 dropdown-content servicedropdown1 ">
                        <div class="col-lg-12 row">
                         <div class="Servicecolumn columnmenu">
                             <h5 className="columnhead">Service Arms</h5>
@@ -104,7 +104,7 @@ export default class NewHeader extends Component {
                         <i className="fa fa-chevron-down downarrow1"></i>
                       </button>*/}
                       <div class="col-lg-12 menudivider"></div>    
-                      <div class="dropdown-content">
+                      <div class="dropdown-content expertcontrnt">
                         <div class="col-lg-12 row">
                           <div class="col-lg-2 column columnmenu">
                             <h5 className="columnhead">Planning & Scheduling</h5>
@@ -121,7 +121,7 @@ export default class NewHeader extends Component {
                             <a href="/diatributionplanning">Distribution Planning & Optimization</a>
                             <a href="/retailautomation">Retail Automation</a>
                           </div>
-                           <div class="col-lg-2 column columnmenu">
+                           <div class="col-lg-2 column columnmenu thirdcolumn">
                             <h5 className="columnhead">Manufacturing Execution System</h5>
                             <a href="#">Retail Automation</a>
                             <a href="/datahistorian">Real time Data Historian</a>
@@ -197,25 +197,12 @@ export default class NewHeader extends Component {
                         <div>
                     <div class="dropdown">
                      <a href="/services" class="dropbtn headerTitle">careers 
-                     <i class="fa fa-angle-down downarrow1" aria-hidden="true"></i></a> 
-                      <div class="col-lg-4 menudivider"></div>    
-                       <div class="col-lg-offset-6 dropdown-content servicedropdown">
-                         <div class="col-lg-12 row">
-                           <div class="Servicecolumn columnmenu">
-                            <a href="#">Refinery</a>
-                            <a href="#">Petrochemicals</a>
-                            <a href="#">Chemicals</a>
-                            <a href="#">LNG</a>
-                            <a href="#">Gas Precessing</a>
-                            <a href="#">oil & Gas E & P</a>
-                          </div>
-                         </div>
-                       </div>
+                    </a> 
                        </div>
                         <div>
                     <div class="dropdown">
                      <a href="/services" class="dropbtn headerTitle">resources 
-                     <i class="fa fa-angle-down downarrow1" aria-hidden="true"></i></a> 
+                    </a> 
                       <div class="col-lg-4 menudivider"></div>    
                        <div class="col-lg-offset-6 dropdown-content servicedropdown">
                          <div class="col-lg-12 row">
@@ -233,7 +220,7 @@ export default class NewHeader extends Component {
                         <div>
                       <div class="dropdown">
                        <a href="/services" class="dropbtn headerTitle">blogs 
-                       <i class="fa fa-angle-down downarrow1" aria-hidden="true"></i></a> 
+                        </a> 
                         <div class="col-lg-4 menudivider"></div>    
                          <div class="col-lg-offset-6 dropdown-content servicedropdown">
                            <div class="col-lg-12 row">
@@ -251,7 +238,7 @@ export default class NewHeader extends Component {
                           <div>
                           <div class="dropdown">
                            <a href="/services" class="dropbtn headerTitle">contact us 
-                           <i class="fa fa-angle-down downarrow1" aria-hidden="true"></i></a> 
+                           </a> 
                             <div class="col-lg-4 menudivider"></div>    
                              <div class="col-lg-offset-6 dropdown-content servicedropdown">
                                <div class="col-lg-12 row">

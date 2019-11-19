@@ -4,6 +4,11 @@
     font-weight: 700;
     margin-top: 32px;
 }
+.newparaaa-top{
+    
+    margin-top: 150px;
+}
+
 
 .line_paraaaa{
     line-height: 30px;
@@ -27,4 +32,8 @@
     height: 4px;
     /* margin-left: 500px; */
     text-align: center;
+}
+.line_overview1{
+    margin-top: 234px;
+
 }

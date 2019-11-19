@@ -1,10 +1,12 @@
 import React from 'react';
 import SingleBlogBanner      from "../../allBlocks/SingleBlogBanner/SingleBlogBanner.js";
 import BlogContent           from "../../allBlocks/BlogContent/BlogContent.js";
+import * as jsPDF from 'jspdf'
 // import RelatedBlogs          from "../../allBlocks/RelatedBlogs/RelatedBlogs.js";
 // import Moment                from 'react-moment';
 //import MetaTags              from 'react-meta-tags';
 // import ShareLink          from 'react-facebook-share-link'
+import ReactToPdf from "react-to-pdf";
 
 import BlogComment           from "../../allBlocks/BlogComment/BlogComment.js";
 import { FacebookProvider, Share } from 'react-facebook';
@@ -83,9 +85,11 @@ export default class SingleBlogPage extends React.Component {
 
 	render() {
     console.log('CurrentUrl',this.state.CurrentUrl);
+    const ref = React.createRef();
+
 		return (
-      
-      	<div className="container-fluid" style={{padding:"0px"}}>
+      <div>
+      	<div className="container-fluid" style={{padding:"0px"}} ref={ref}>
       		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
             <div className="mt40 col-lg-10"><label className="blogDateSBP pull-right"><b>Date :</b> {this.state.createdAt}</label></div>
       		  <BlogContent blogContent={this.state.blogContent}/>
@@ -97,11 +101,22 @@ export default class SingleBlogPage extends React.Component {
               <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
               <i class="fa fa-linkedin"></i></a>
             </div>
-            <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">
+            
+           {/* <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">
               <span className="countNumberLike">{this.state.viewCount} views</span>
+            </div>*/}
+                <ReactToPdf targetRef={ref} filename="iogBlog.pdf" x={0} y={0}>
+                    {({toPdf}) => (
+                        <button className="iogpdfbtn" onClick={toPdf}>Generate pdf</button>
+                    )}
+                </ReactToPdf>
+                    <div style={{width: 0, height: 0}}/>
+
             </div>
+            <BlogComment/>
 			  </div>
 	   	);
 	}
 }
+
 

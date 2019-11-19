@@ -210,9 +210,9 @@ export default class Iogconsultpage extends Component {
               <span class="divider">
                <img src="/media/system/images/arrow.png" alt=""/></span></li>
                <li><a href="/services" class="pathway">Services</a>
-              <span class="divider">
+             {/* <span class="divider">
                <img src="/media/system/images/arrow.png" alt=""/></span></li>
-                <li><a href="/servicearms" class="pathway">Service Arms</a>
+                <li><a href="/servicearms" class="pathway">Service Arms</a>*/}
                 <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
                 <li class="active"><span>iOGConsult</span></li></ul>
             </div>

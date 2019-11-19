@@ -97,15 +97,15 @@ export default class Iogtrainpage extends Component {
        <div className=" col-lg-4 ">
          <div class="container">
           <div class="moduletable takelftconsult">           
-           <ul class="breadcrumb breadcrumb2">
+           <ul class="breadcrumb breadcrumbtrain">
             <li class="active">&nbsp;</li><li>
              <a href="/" class="pathway">Home</a>
               <span class="divider">
                <img src="/media/system/images/arrow.png" alt=""/></span></li>
                <li><a href="/services" class="pathway">Services</a>
-              <span class="divider">
+              {/*<span class="divider">
                <img src="/media/system/images/arrow.png" alt=""/></span></li>
-                <li><a href="/servicearms" class="pathway">Service Arms</a>
+                <li><a href="/servicearms" class="pathway">Service Arms</a>*/}
                 <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
                 <li class="active"><span>iOGTrain</span></li></ul>
             </div>

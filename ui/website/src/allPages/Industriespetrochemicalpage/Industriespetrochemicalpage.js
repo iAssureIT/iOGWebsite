@@ -13,8 +13,8 @@ export default class Industriespetrochemicalpage extends Component {
                 servicesTitle : "Petrochemical",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Petrochemicals.png",
-                servicestext  : "The petrochemical industry has seen substantial rapid growth during the past several years due to its higher value addition in recent volatile oil market. Multiple oil & gas downstream majors are now transforming from stand-alone refineries to integrated refining and petrochemical complex. Such an integrated configuration provides flexibility to refiners to tackle price volatility of crude oil and shrinking refining margins, thus ensuring enhanced and stable cash flows.",
-                servicestext2 : "Petrochemical units have complex processes such as multiple grades, grade transitions, product sequencing, multiple bagging & transportation options, the variable cost of feedstocks etc. Therefore, it is of vital importance to enable petrochemical businesses to handle such complexities through new age advance solutions."
+                servicestext  : "The petrochemical industry has seen substantial rapid growth during the past several years due to its higher value addition in recent volatile oil market.",
+                servicestext2 : "Petrochemical units have complex processes such as multiple grades, grade transitions, product sequencing, multiple bagging & transportation options, the variable cost of feedstocks etc. "
                     
                 
             } 
@@ -28,14 +28,14 @@ export default class Industriespetrochemicalpage extends Component {
             {
                 downstreamTitle : "Petrochemical Planning",
                 downstreamimg   : "/images/Petrochemical_planning.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. "
                     
                 
             }, 
             {
                 downstreamTitle : "Petrochemical Scheduling",
                 downstreamimg   : "/images/Petrochemical_scheduling.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+                downstreamtext  : "Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus."
             }, 
             {
                 downstreamurl   : "/apc-services",

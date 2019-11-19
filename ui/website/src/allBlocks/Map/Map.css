@@ -10,3 +10,104 @@
 	background:none!important;
 	height:500px;width:100%;
 }
+.left_h2{
+	padding-left: 215px;
+	padding-bottom: 30px;
+}
+.left_h21{
+	/*padding-left: 215px;*/
+	
+}
+.left_h21txt{
+	border-bottom:  1px solid #000;
+
+}
+.subdata{
+	padding-left: 22px;
+}
+.Aboutuslink{
+	color:#2B2B2B;
+	margin-bottom: 40px;
+	margin-left: 33px;
+	font-weight: 700;
+}
+.Aboutuslink1{
+	margin-bottom: 40px;
+	font-weight: 600;
+}
+.mainpages{
+	margin-bottom: 10px;
+}
+..mainpages1{
+	margin-bottom: 30px;
+}
+.maindiv12{
+	margin-top: 100px;
+}
+.submenu{
+	line-height: 23px;
+	padding-left: 7px;
+	color:#2F2F2F;
+}
+.submenu a{
+	color:#2F2F2F;
+	font-size:13px;
+}
+.sitemapimg{
+	height: 100px;
+	width: 100px;
+	background-size: 100% 100%;
+	margin-top: 100px;
+}
+.bottomlinksraquo1{
+	padding-left: 35px;
+}
+.bottomlinksraquo2{
+	padding-left: 25px;
+	margin-top: 20px;
+}
+.expetisesubdiv{
+	margin-top: 15px;
+}
+.servicediv{
+	padding-left: 40px;
+}
+.maindiv123{
+	margin-top: 30px;
+}
+.submenu1{
+	line-height: 27px;
+    padding-left: 20px;
+}
+.cirlriconsitemap{
+	font-size: 7px;
+    padding: 4px 5px 3px 4px;
+}
+.maindivleft{
+	margin-top: 40px;
+}
+.maindiv1234{
+	margin-top: 30px;
+}
+
+
+
+.sitemapline{
+	border-bottom: 1px solid #DDDDDD;
+    margin-left: 31px;
+    padding-bottom: 6px;
+	}   
+.submenuindustries
+ {
+
+	}
+.link1expertise{
+	border-bottom:1px solid #eee;
+}
+.sitemapheading{
+	padding-top: 25px;
+	font-weight: 700;
+}
+.sitemapheading1{
+	border-bottom:3px solid #aaf;
+}

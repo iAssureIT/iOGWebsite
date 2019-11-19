@@ -86,35 +86,35 @@ handleChange(event){
                                 <div className="">
                                 </div>
                               </div>
-                              <div class="commentBox col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <div class="commentBox newcommentbox col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="comment">Add Comment<span className="redFont"></span></label>
-                                <textarea class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="5" id="comment" disabled></textarea>
+                                <textarea class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12  newcommentboxArea" rows="5" id="comment" ></textarea>
                               </div>
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="userName">Name<span className="redFont">*</span></label>
                                 <div className="">
-                                  <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12" id="userName" type="text" name="userName"  ref="userName" value={this.state.userName}	 placeholder="" disabled/>
+                                  <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12 newcommentboxArea" id="userName" type="text" name="userName"  ref="userName" value={this.state.userName}	 placeholder="" disabled/>
                                 </div>
                               </div>
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="email">Email<span className="redFont">*</span></label>
                                 <div className="">
-                                  <input className="form-control" id="email" type="text" name="email" ref="email"  value={this.state.email} placeholder="" disabled/>
+                                  <input className="form-control newcommentboxArea" id="email" type="text" name="email" ref="email"  value={this.state.email} placeholder="" />
                                 </div>
                               </div>
                               <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <label htmlFor="contactNumber">Website<span className="redFont"></span></label>
                                 <div className="">
-                                  <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}   ref="contactNumber" placeholder="" disabled/>
+                                  <input className="form-control" id="contactNumber newcommentboxArea" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}   ref="contactNumber" placeholder="" />
                                 </div>
                               </div>
                              
                               <div className="formcontent col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <button className="btn lightbluebg commentBoxbtn buttonhover">Post Comment</button>
+                                <button className="btn lightbluebg commentBoxbtn buttonhover newbtncommentbox">Post Comment</button>
                               </div>
                             </div>
-        </form>
-			</div>
+                       </form>
+			            </div>
 		);
 	}
 }

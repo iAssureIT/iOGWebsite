@@ -1,7 +1,7 @@
 import React 			 from 'react';
 import axios       		 from 'axios';
 import swal              from 'sweetalert';
-// import Moment 			 from 'react-moment';
+import Moment from 'react-moment';
 
 import './AllBlogsList.css';
 
@@ -15,7 +15,7 @@ export default class AllBlogsList extends React.Component {
 
 						  
 	};
-	}
+	} 
 deleteBlog(event){
 	event.preventDefault();
 	var id= event.target.id;
@@ -75,24 +75,20 @@ render() {
    		const token = localStorage.getItem("user_ID");
 		return (
 			<div className="container-fluid AllBlogsBox" style={{padding:"0px"}}>
-          		<div className="col-lg-12">
+          		<div className="col-lg-offset-1 col-lg-11">
 	          		{
             		Allblogs && Allblogs.length > 0 ?
 	      				Allblogs.map((data, index)=>{
             					return(
-				          			<div className="col-lg-3 Allblog">
+				          			<div className=" pricehover-float col-lg-3 Allblog">
 				          				<div className="All1blog1 z50">
 											<img className="img-responsive AllblogImgB" src={data.bannerImage ? data.bannerImage.path : ""} alt="Bannerpng"/>
-											<a href={"/blog/"+data.blogURL}>
-												<p className="blogDate blogSummeryp10 mtop20 graycolor">{data.createdAt}</p>
+											<a href={"/singleblog/"+data.blogURL}>
+												<p className="blogDate blogsText mtop20 graycolor"><Moment format=" MMMM D YYYY ">{data.createdAt}</Moment></p>
 												<h4 className="blogTitle blogSummeryp10"><b>{data ? data.blogTitle : ""}</b></h4>
-												<p className="blogPara blogSummeryp10 graycolor">{data ? data.summary: "" }</p>
-											</a>
-												
-											
-				          				
+												{/*<p className="blogPara blogSummeryp10 graycolor">{data ? data.summary: "" }</p>*/}
+											</a>			
 										</div>
-
 				          			</div>
 				          			);
         					})

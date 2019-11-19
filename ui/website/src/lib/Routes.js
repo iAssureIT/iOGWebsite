@@ -10,6 +10,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import '../App.css';
 //-----------Main Menu Rout.................//
 import Header         from '../common/Header/Header.js';
+import Megamenu       from '../common/Header/Megamenu.js';
 // import NewHeader      from '../common/MegaMenuHeader/NewHeader.js';
 import Footer         from '../common/Footer/Footer.js';
 import HomePage       from '../allPages/HomePage/HomePage.js';
@@ -141,6 +142,7 @@ import InspectionManagementPage       from '../allPages/InspectionManagementPage
 import SingleBlogPage                 from '../allPages/SingleBlogPage/SingleBlogPage.js';
 import AllBlog                       from '../allPages/AllBlog/AllBlog.js';
 import Blogcomponents                from '../allBlocks/Blogcomponents/Blogcomponents.js';
+import AllBlogsList                from '../allBlocks/AllBlogsList/AllBlogsList.js';
 
 
 
@@ -157,6 +159,8 @@ import Blogcomponents                from '../allBlocks/Blogcomponents/Blogcompo
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
     <Route path="/" exact strict component={ HomePage } /> 
+    <Route path="/megamenu" component={ Megamenu } />  
+
     <Route path="/contact-us" component={ Contactpage } />  
 {/*    <Route path="/contactUsModal" component={ ContactUsModal } />  */}
     <Route path="/about-us" component={ AboutUs } />         
@@ -165,7 +169,7 @@ const WebLayout = () => (
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resource" component={ ResourcePage } />
-    <Route path="/blog" component={ BlogPage } />
+    <Route path="/blog" component={ AllBlogsList } /> 
 
     <Route path="/AllBlog" component={AllBlog}  />
     <Route path="/blogs/:id" component={ BlogContent } />
@@ -280,7 +284,7 @@ const WebLayout = () => (
     <Route path="/facebook" component={ facebook } />    
 
 
-     <Route path="/blog/:selectedUrl" component={ SingleBlogPage }  />    
+     <Route path="/singleblog/:selectedUrl" component={ SingleBlogPage }  />   
   </div>
 );
 
@@ -314,7 +318,7 @@ function Routes() {
       <Router>
 
         <Header />
-      {/* <NewHeader />*/}
+        {/*<NewHeader />*/}
         <Switch>
           <Route path="/" component={ WebLayout } />
         </Switch>

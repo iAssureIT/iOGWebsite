@@ -25,18 +25,85 @@ export default class AssetStrategyManagement extends Component {
                 overviewtext5  : "",
               
 
-            } 
+            },
+            {
+             overviewTitle    : "Risk Based Inspection",
+                overviewSubTitle : "Overview",
+                overviewimg    : "/images/2.png",
+                overviewtext1  : "Risk-Based Inspection is a process that detects, evaluates and maps industrial risks, which can compromise equipment integrity in both pressurized equipment and structural elements. Risk-Based Inspection reports risks that can be controlled through proper inspections and investigation.",
+                overviewtext2  : "During the Risk-Based Inspection process, engineers design examination strategies (what, when, and how to inspect) that most proficiently match forecasted or observed degradation mechanisms.",
+                overviewtext3  : "With the help of an APM solution, you can not only optimize your delivery but also cut down on unnecessary scheduled maintenance as well as unplanned downtime. Here is how an Asset Performance Management program helps the Oil and Gas Industry.",
+                overviewtext4  : "",
+                overviewtext5  : "",
+            }
                         
+        ]
+    }
+    Commonleafulblock1(){
+        return [
+            {
+                challengesTitle : "",
+                challengesTitle2: "",
+                challengestext  : "Operators of heavy-duty industrial facilities implementing Risk-Based Inspection can benefit from the following:",
+                challengestext2 : "",
+                challengestext3 : "The key benefits of Risk-Based Inspection:",
+                commonulliUl : [
+                    {
+                        ulData : "Improved knowledge of equipment which may carry a potential risk;"
+                    },
+                    {
+                        ulData : "More reliable equipment and plant operation;"
+                    },
+                    {   
+                        ulData : "Increased process and equipment safety;"
+                    },
+                    {   
+                        ulData : "Cost optimization through swapping to non-repetitive inspection techniques;"
+                    },
+                    {   
+                        ulData : "Possibility to modify the shutdown period;"
+                    },
+                    {   
+                        ulData : "Option to extend run lengths where applicable national regulations permit it;"
+                    },
+                    {   
+                        ulData : "Increased teamwork during the implementation process"
+                    },
+                  
+                ]
+            }, 
+                  
         ]
     }
 
 
 
+
+
   render() {  
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      	<Overview OverviewData={this.overviewData()} />
-      </div>
+      <div>
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimplmntbrdCrm">
+        <div className=" col-lg-4 ">
+         <div class="container">
+          <div class="moduletable">           
+           <ul class="breadcrumb breadcrumb2">
+            <li class="active">&nbsp;</li><li>
+             <a href="/" class="pathway">Home</a>
+              <span class="divider">
+               <img src="/media/system/images/arrow.png" alt=""/></span></li>
+               <li><a href="/services" class="pathway">Services</a>
+                <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
+                <li class="active"><span>Asset Strategy</span></li></ul>
+            </div>
+          </div>
+        </div> 
+       </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+        	<Overview OverviewData={this.overviewData()} />
+           <Challenges   CommonleafblockData={this.Commonleafulblock1()} />   
+        </div>
+      </div> 
     );  
   }
 }

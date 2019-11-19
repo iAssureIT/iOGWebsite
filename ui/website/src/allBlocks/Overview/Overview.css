@@ -3,7 +3,13 @@
     font-size: 50px;
     font-weight: 700;
     margin-top: 32px;
+    margin-bottom: 30px;
 }
+.newparaaa-top{
+    
+    margin-top: 85px;
+}
+
 
 .line_paraaaa{
     line-height: 30px;
@@ -23,8 +29,8 @@
 .line_overview {
     background-color: #f19000;
     width: 105px;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    margin-top: 32px;
+    margin-bottom: 41px;
     height: 4px;
     /* margin-left: 500px; */
     text-align: center;

@@ -1,0 +1,56 @@
+  .assetimgtxt{
+    position: absolute;
+    z-index: 999;
+    bottom: 1356px;
+    font-weight: 700;
+    left: 84px;
+}
+.assetimg{
+	width: 100%;
+	height: 100%;
+	margin-top: -190px;
+}
+.criticalitytext{
+	margin-top: 50px;
+}
+.assetTxticon{
+	height: 50px;
+}
+.criticalitytext1{
+	font-size: 20px;
+}
+.criticalitytext123{
+	font-size: 18px ! important ;
+	text-align: justify;
+}
+.criticalitytext12{
+	font-size: 20px;
+	margin-top: -11px;
+	text-align: justify;
+}
+.assetlisticon{
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	box-shadow: 1px 0px 5px 1px;
+	padding-left: 9px;
+	border-radius: 4px;
+	margin-top: 6px;
+}
+.iconcircle{
+	height: 15px;
+	width: 15px;
+	border-radius: 100px;
+	background-color: #1FBED6;
+	margin-top: 8px;
+}
+.listposition{
+	margin-top: 20px;
+}
+.img2ndasset{
+	background-size: 100% 100%
+}
+.image2ndasset{
+	height: 350px;
+
+}

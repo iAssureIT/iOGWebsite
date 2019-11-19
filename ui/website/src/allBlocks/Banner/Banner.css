@@ -358,7 +358,7 @@ height: 90px;
     top: 377px;
 }
 .anim img{
-  animation:  anim 4s linear  infinite;
+  animation:  anim 8s linear  infinite;
 
 }
 .oilsign{
@@ -366,50 +366,55 @@ height: 90px;
     left: 163px;
     top: 405px;
     z-index: 1;
-    animation:   4s linear  infinite;
+    animation:   8s linear  infinite;
 
 }
 .oilsign2{
     position: absolute;
     left: 444px;
     top: 307px;
-    animation:   4s linear  infinite;
+    animation:   8s linear  infinite;
 }
 .oilsign3{
     position: absolute;
     left: 374px;
     top: 338px;
-    animation:  4s linear  infinite;
+    animation:  8s linear  infinite;
 }
 .oilsign4{
     position: absolute;
     left: 781px;
     top: 270px;
-    animation:   4s linear  infinite;
+    animation:   8s linear  infinite;
 }
 .oilsign5{
     position: absolute;
     left: 136px;
     top: 89px;
-    animation:   4s linear  infinite;
+    animation:   8s linear  infinite;
 }
 .oilsign6{
     position: absolute;
     right: 227px;
     top: 345px;
-    animation:   4s linear  infinite;
+    animation:   8s linear  infinite;
 }
 .oilsign7{
     position: absolute;
     right: 230px;
     top: 65px;
-    animation:  oilsign 4s linear  infinite;
+    animation:  oilsign 8s linear  infinite;
 }
 .oilsign8{
     position: absolute;
     left: 720px;
     top: 94px;
-    animation:  oilsign 4s linear  infinite;
+    animation:  oilsign 8s linear  infinite;
+}
+.other{
+    position: absolute;
+    left: 720px;
+    top: 94px;
 }
 
 
@@ -557,3 +562,64 @@ height: 90px;
   }
   
 }
+
+
+
+
+.hoveroilsign:hover .dataonHover  {
+  display: block ! important;
+  cursor: pointer;
+}
+.hoveroilsign:hover .triangle-down  {
+  display: block ! important;
+  cursor: pointer;
+}
+.hoveroilsign1:hover .triangle-down1  {
+  display: block ! important;
+  cursor: pointer;
+}
+.hoveroilsign1:hover .dataonHover1  {
+  display: block ! important;
+  cursor: pointer;
+}
+
+.dataonHover{
+  display: none;
+  height: 60px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: -33px;
+  margin-top: -98px;
+  position: absolute;
+}
+.dataonHover1{
+  display: none;
+  height: 60px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: -33px;
+  margin-top: -73px;
+  position: absolute;
+}
+ .triangle-down {
+      position: absolute;
+      display: none;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #ffffff;
+      margin-top: -43px
+    }
+.triangle-down1 {
+      position: absolute;
+      display: none;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #ffffff;
+      margin-top: -17px
+    }

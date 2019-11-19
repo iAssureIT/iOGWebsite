@@ -1,7 +1,9 @@
 .commentBox {
-
 height: 160px;
 
+}
+.newcommentbox{
+	margin-bottom: 25px;
 }
 
 .formcontent {
@@ -24,4 +26,10 @@ textarea.form-control {
 }
 .graycolor{
 	color:#777;
+}
+.newcommentboxArea{
+	background-color: #ffffff ! important;
+}
+.newbtncommentbox{
+	background-color: #009de2;
 }

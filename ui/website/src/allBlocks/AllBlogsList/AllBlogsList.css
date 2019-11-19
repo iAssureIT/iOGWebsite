@@ -1,4 +1,4 @@
-/*.AllBlogsBox{
+.AllBlogsBox{
 	background-color: #f6f6f6;
 	border: 1px solid #eaeaea;
 	padding: 20px;
@@ -32,7 +32,7 @@
 }
 .All1blog1{
 	position: relative;
-	height: 400px;
+	height: 252px;
 	overflow: hidden;
 	margin-bottom: 50px;
 	background-color: #fff;
@@ -118,4 +118,17 @@
 	  color: #333;
 	  font-size: 16px;
 
-}*/
+}
+.Allblog{
+	margin-top: 240px ! important;
+
+}
+.pricehover-float:hover{
+	transform: translateY(-6px);
+}
+.AllblogImgB {
+    height: 173px!important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
