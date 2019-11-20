@@ -74,7 +74,14 @@ render() {
 		var subscribed = false;
    		const token = localStorage.getItem("user_ID");
 		return (
+
+			<div>
+			
 			<div className="container-fluid AllBlogsBox" style={{padding:"0px"}}>
+			 <div class="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">
+			  <h1 class="lightbluetext latestblog blogtext1"><b>Blogs</b>
+              </h1>
+			</div>
           		<div className="col-lg-offset-1 col-lg-11">
 	          		{
             		Allblogs && Allblogs.length > 0 ?
@@ -98,6 +105,7 @@ render() {
 	          		
           		</div>
 			</div>
+		</div>	
 		);
 	}
 }

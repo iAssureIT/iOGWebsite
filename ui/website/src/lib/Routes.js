@@ -23,7 +23,15 @@ import ResourcePage   from '../allPages/ResourcePage/ResourcePage.js';
 import BlogPage       from '../allPages/BlogPage/BlogPage.js';
 import BlogContent    from '../allBlocks/BlogContent/BlogContent.js';
 import Ourjourny      from '../allPages/Ourjourny/Ourjourny.js';
+import Eventblock1    from '../allPages/Ourjourny/Eventblock1.js';
 import Founderprofile from '../allPages/Founderprofile/Founderprofile.js';
+
+
+
+/*eventpage*/
+
+import Eventblock    from '../allBlocks/Eventblock/Eventblock.js';
+
 
 //-----------Level1 Rout.................//
 
@@ -165,6 +173,7 @@ const WebLayout = () => (
 {/*    <Route path="/contactUsModal" component={ ContactUsModal } />  */}
     <Route path="/about-us" component={ AboutUs } />         
     <Route path="/ourjourny" component={ Ourjourny } />         
+    <Route path="/eventblock1" component={ Eventblock1 } />         
     <Route path="/careers" component={ Careerspage } />
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
@@ -282,6 +291,11 @@ const WebLayout = () => (
     
     <Route path="/trial" component={ Parallaxeff } />        
     <Route path="/facebook" component={ facebook } />    
+
+
+ {/*eventblock*/}
+
+    <Route path="/eventpage" component={ Eventblock } />    
 
 
      <Route path="/singleblog/:selectedUrl" component={ SingleBlogPage }  />   

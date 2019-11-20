@@ -334,7 +334,7 @@ height: 90px;
 .up{
     position: absolute;
     left: 64px;
-    top: 112px;
+    top: 139px;
 
 }
 .up img{
@@ -350,6 +350,15 @@ height: 90px;
 .up1 img{
   margin-top: -10px;
   animation:  up1 2s linear  infinite;
+
+}
+.animnewimg{
+  top: 387px;
+    left: 103px;
+    position: absolute;
+}
+.animnewimg img{
+  animation:  anim 8s linear  infinite;
 
 }
 .anim{
@@ -377,9 +386,9 @@ height: 90px;
 }
 .oilsign3{
     position: absolute;
-    left: 374px;
-    top: 338px;
-    animation:  8s linear  infinite;
+    left: 164px;
+    top: 405px;
+    animation: 8s linear infinite;
 }
 .oilsign4{
     position: absolute;
@@ -390,7 +399,7 @@ height: 90px;
 .oilsign5{
     position: absolute;
     left: 136px;
-    top: 89px;
+    top: 114px;
     animation:   8s linear  infinite;
 }
 .oilsign6{
@@ -603,6 +612,16 @@ height: 90px;
   margin-top: -73px;
   position: absolute;
 }
+.dataonHover2{
+  display: none;
+  height: 86px;
+  width: 110px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 45px;
+  margin-top: -51px;
+  position: absolute;
+}
  .triangle-down {
       position: absolute;
       display: none;
@@ -623,3 +642,24 @@ height: 90px;
       border-top: 15px solid #ffffff;
       margin-top: -17px
     }
+    .triangle-left {
+      position: absolute;
+      display: none;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #ffffff;
+      border-bottom: 15px solid transparent;
+      left:31px;
+      top:-2px;
+    }
+    .hoveroilsign2:hover .dataonHover2  {
+      display: block ! important;
+      cursor: pointer;
+}
+.hoveroilsign2:hover .triangle-left  {
+  display: block ! important;
+  cursor: pointer;
+}
+
+  

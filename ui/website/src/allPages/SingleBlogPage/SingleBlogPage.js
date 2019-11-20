@@ -1,12 +1,12 @@
 import React from 'react';
 import SingleBlogBanner      from "../../allBlocks/SingleBlogBanner/SingleBlogBanner.js";
 import BlogContent           from "../../allBlocks/BlogContent/BlogContent.js";
-import * as jsPDF from 'jspdf'
+import jsPDF from 'jspdf';
 // import RelatedBlogs          from "../../allBlocks/RelatedBlogs/RelatedBlogs.js";
-// import Moment                from 'react-moment';
+import Moment                from 'react-moment';
 //import MetaTags              from 'react-meta-tags';
 // import ShareLink          from 'react-facebook-share-link'
-import ReactToPdf from "react-to-pdf";
+// import ReactToPdf from "react-to-pdf";
 
 import BlogComment           from "../../allBlocks/BlogComment/BlogComment.js";
 import { FacebookProvider, Share } from 'react-facebook';
@@ -30,6 +30,8 @@ export default class SingleBlogPage extends React.Component {
 		};
 	}
   componentDidMount(){
+   
+
     var url = this.props.location.pathname;
     localStorage.setItem("lastUrl",url);
     this.setState({
@@ -79,6 +81,28 @@ export default class SingleBlogPage extends React.Component {
 	}
 
 
+
+
+printTicket(event){
+
+
+// window.print();
+
+  var printContents = document.getElementById('pdfWrap').innerHTML;
+
+  var originalContents = document.body.innerHTML;
+
+  document.body.innerHTML = printContents;
+
+  window.print();
+
+  document.body.innerHTML = originalContents;
+
+}
+
+
+
+
   handleClick(){
     return true;
   }
@@ -89,9 +113,9 @@ export default class SingleBlogPage extends React.Component {
 
 		return (
       <div>
-      	<div className="container-fluid" style={{padding:"0px"}} ref={ref}>
+      	<div className="container-fluid" style={{padding:"0px"}} id="pdfWrap" iref={ref}>
       		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
-            <div className="mt40 col-lg-10"><label className="blogDateSBP pull-right"><b>Date :</b> {this.state.createdAt}</label></div>
+            <div className="mt40 col-lg-10"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
       		  <BlogContent blogContent={this.state.blogContent}/>
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
@@ -105,12 +129,8 @@ export default class SingleBlogPage extends React.Component {
            {/* <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">
               <span className="countNumberLike">{this.state.viewCount} views</span>
             </div>*/}
-                <ReactToPdf targetRef={ref} filename="iogBlog.pdf" x={0} y={0}>
-                    {({toPdf}) => (
-                        <button className="iogpdfbtn" onClick={toPdf}>Generate pdf</button>
-                    )}
-                </ReactToPdf>
-                    <div style={{width: 0, height: 0}}/>
+                    <button className="iogpdfbtn" onClick={this.printTicket.bind(this)}>Generate pdf</button>
+                    <div style={{width:0, height: 0}}></div>
 
             </div>
             <BlogComment/>

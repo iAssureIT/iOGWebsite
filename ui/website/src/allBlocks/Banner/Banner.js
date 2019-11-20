@@ -57,18 +57,20 @@ export default class Banner extends Component {
                   <div className="triangle-down"></div>
                   <div className="dataonHover"></div>
                 </figure>
-               {/* <figure className="oilsign3">
+                <figure className="oilsign3 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
-                </figure>*/}
+                   <div className="triangle-down"></div>
+                  <div className="dataonHover"></div>
+                </figure>
                 <figure className="oilsign4 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
                    <div className="triangle-down"></div>
                   <div className="dataonHover"></div>
                 </figure>
-               <figure className="oilsign5 hoveroilsign">
+               <figure className="oilsign5 hoveroilsign2">
                   <img alt="" src="/images/oilsign.png"/>
-                  <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
+                  <div className="triangle-left"></div>
+                  <div className="dataonHover2"></div>
                 </figure>
                 <figure className="oilsign6 hoveroilsign1">
                   <div className="triangle-down1"></div>
@@ -85,7 +87,7 @@ export default class Banner extends Component {
                      <div className="dataonHover"></div>
                   </figure>
                 </div>
-                  <img alt="" src="/images/anim.png"/>
+                  <img alt="" src="/images/anim.png" className="animnewimg"/>
                 <figure className="anim">
                 </figure>
                 <figure className="tank">
