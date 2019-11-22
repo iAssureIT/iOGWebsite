@@ -12,8 +12,8 @@ export default class Footer extends Component {
 
   render(){
        return(
-      <div className="iogfooter">
-        <div className="animationoveflow">
+      <div className="iogfooter col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className="animationoveflow col-lg-12 col-md-12 col-sm-12 col-xs-12">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
@@ -58,7 +58,7 @@ export default class Footer extends Component {
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb35">
                     <div className="row">
-                        <div className="col-md-2 col-sm-3 col-xs-4">
+                        <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             <h6 className="font-montserrat">Menu</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
@@ -68,7 +68,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-md-2 col-sm-3 col-xs-4">
+                        <div className="col-md-2 col-sm-2 col-xs-2">
                             <h6 className="font-montserrat">Service Arms</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/iogimplement">iOGImplement</a></li>
@@ -86,7 +86,7 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-md-3 col-sm-4 col-xs-4 ">
+                        <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
@@ -116,14 +116,14 @@ export default class Footer extends Component {
                 </div>            
         </div>
                     <div className="darkbluebg col-lg-12 footer-end">
-                <div className="col-lg-10 col-lg-offset-1">
+                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1">
                     <div className="row">
 
-                        <div className="textcolorwhite col-md-5 col-sm-6 col-xs-6 pull-left pt20">
+                        <div className="textcolorwhite col-md-5 col-sm-6 col-xs-12 pull-left pt20">
                             <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
                         </div>
 
-                        <div className="textcolorwhite col-md-4 col-sm-6 col-xs-6 pull-right pt20">
+                        <div className="textcolorwhite col-md-4 col-sm-6 col-xs-12 pull-right pt20">
                             <p className="text-right">
                                 <a href="/privacypolicy" className="mr20">Privacy Policy</a>
                                 <a href="/termsofuse" className="mr20">Terms of Use</a>

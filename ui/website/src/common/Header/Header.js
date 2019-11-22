@@ -33,10 +33,10 @@ export default class Header extends Component {
 */
   render() {  
     return (
-    <header className="col-lg-12 headerflow"> 
+    <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow"> 
       <div className="row"> 
         <div className="navbar navbar-static-top" id="bb">
-          <div className="col-lg-12">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div className="row"> 
            {/* <div id="languages">
               <p>
@@ -46,10 +46,10 @@ export default class Header extends Component {
             </div>*/}
 
             {/* <div className="col-lg-12"><button className="pull-right"onClick={this.googleTranslateElementInit.bind(this)}>Hindi</button></div>*/}
-             <div className="col-lg-12 top_spacing">
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 top_spacing">
               <div className="row"> 
-                <div className="col-lg-3">
-                  <div className="navbar-header col-lg-8 col-lg-offset-2">
+                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div className="navbar-header col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
@@ -58,21 +58,20 @@ export default class Header extends Component {
                     <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>
                   </div>
                 </div>
-                <div className="col-lg-9">
+                <div className="col-lg-9 col-md-9 col-sm-3 col-xs-3">
                   <div className="row"> 
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <nav>
                           <label htmlFor="drop" className="toggle">&#8801; Menu</label>
                           <input type="checkbox" id="drop" />
                           <ul className="menu">
                              <li><a href="/" className="headerTitle">Home</a></li>
                              <li>
-                                <div class="dropdown1"> 
-                                <label htmlFor="drop-1" className="toggle">About Us</label>
-                                <a href="/about-us" className="headerTitle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <div class="col-lg-12 menudivider"></div>
+                              <div class="dropdown1"> 
+                                <a href="/about-us" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                                  <div class="col-lg-offset-3 dropdown-content servicedropdown aboutusdrop ">
-                                  <div class="col-lg-12 row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                    <div class="Servicecolumn columnmenu">
                                     <a href="/about-us">Company Profile</a>
                                     <a href="/founderprofile">Founder's Profile</a>
@@ -90,11 +89,10 @@ export default class Header extends Component {
                               </li>
                               <li> 
                               <div class="dropdown1 ">  
-                              <label htmlFor="drop-2" className="toggle">Services</label>
-                              <a href="/services" className="headerTitle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                              <div class="col-lg-12 menudivider"></div>  
+                              <a href="/services" className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>  
                               <div class="col-lg-offset-4 dropdown-content servicedropdown1 ">
-                               <div class="col-lg-12 row">
+                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                 <div class="Servicecolumn columnmenu">
                                     <a href="/iogimplement">iOGImplement</a>
                                     <a href="/iogconsult">iOGCunsult</a>
@@ -108,12 +106,12 @@ export default class Header extends Component {
                             </li>
                              <li>
                             <div class="dropdown1 "> 
-                            <label htmlFor="drop-1" className="toggle">Expertise</label>
-                            <a href="/about-us" className="headerTitle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <div class="col-lg-12 menudivider"></div>
-                             <div class="col-lg-12 menudivider"></div>    
+                            
+                            <a href="/about-us" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
                           <div class="dropdown-content expertcontrnt">
-                            <div class="col-lg-12 row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                               <div class=" column columnmenu columnmenu1">
                                 <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
                                 <a href="/refineryplanning">Prod Planning </a>
@@ -181,8 +179,8 @@ export default class Header extends Component {
                               </li>
                             <li>
                                <div class="dropdown"> 
-                                <label htmlFor="drop-1" className="toggle">Industries</label>
-                                <a href="/industries" className="headerTitle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
+                              
+                                <a href="/industries" className="headerTitle toggle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
                                  <div class="col-lg-offset-6 dropdown-content servicedropdown2">
                                    <div class="col-lg-12 row">
                                      <div class="Servicecolumn columnmenu">
@@ -206,10 +204,10 @@ export default class Header extends Component {
                                   <li><a href="/oilgasep">Oil & Gas E&P</a></li>
                                 </ul>*/}
                             </li>
-                            <li><a href="/careers" className="headerTitle">Careers</a></li>
-                            <li><a href="/resource" className="headerTitle">Resources</a></li>
-                            <li><a href="/blog" className="headerTitle">Blogs</a></li>
-                            <li><a href="/contact-us" className="headerTitle">Contact Us</a></li>
+                            <li><a href="/careers" className="headerTitle toggle">Careers</a></li>
+                            <li><a href="/resource" className="headerTitle toggle">Resources</a></li>
+                            <li><a href="/blog" className="headerTitle toggle">Blogs</a></li>
+                            <li><a href="/contact-us" className="headerTitle toggle">Contact Us</a></li>
                           </ul>
                         </nav>
                      </div>
@@ -220,14 +218,15 @@ export default class Header extends Component {
            </div>
           </div>
         </div>
-      </div>
-      <div className="row"> 
-        <button className="contactBar" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
+         <button className="contactBar" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
+      </div>
+      <div className="row"> 
+       
         <div className="modal fade" id="modalId" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-lg " role="document">
             <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
@@ -242,6 +241,8 @@ export default class Header extends Component {
         </div>
       </div>
     </header>
+
+
     );  
   }
 }

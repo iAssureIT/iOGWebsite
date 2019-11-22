@@ -83,12 +83,12 @@ export default class Blogs extends Component {
                         {
                             this.upstreamData().map((data, index)=>{
                                 return (
-                                <div className="col-lg-12" key={index}>
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}>
                                   <div className="">
                                     <div className={" index"+index}>
                                         <div className=" blogtext pricehover-float ">
                                             <div>
-                                             <div className="blogblock col-lg-12">
+                                             <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="">
                                                   <div className="row blogsimg">
                                                     <img alt="" src={data.downstreamimg}/>
@@ -97,12 +97,12 @@ export default class Blogs extends Component {
                                                     <div className="">
                                                      <p>{data.upstreamLi}</p>
                                                     </div>
-                                                <div className="price-footer col-lg-12">
+                                                <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <div className="row">
-                                                        <div className="col-lg-6 blogdate">july 5,2019</div>
-                                                        <div className="col-lg-6">
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">july 5,2019</div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                             <a className="" href="/blog">
-                                                                <input type="button" className="col-lg-10 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
+                                                                <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>
                                                         </div>
                                                     </div>

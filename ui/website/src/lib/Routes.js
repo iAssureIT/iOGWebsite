@@ -295,7 +295,7 @@ const WebLayout = () => (
 
  {/*eventblock*/}
 
-    <Route path="/eventpage" component={ Eventblock } />    
+    <Route path="/eventpage" component={ Eventblock1 } />    
 
 
      <Route path="/singleblog/:selectedUrl" component={ SingleBlogPage }  />   

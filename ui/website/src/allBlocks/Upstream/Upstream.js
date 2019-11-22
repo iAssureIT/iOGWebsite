@@ -32,7 +32,7 @@ export default class Upstream extends Component {
 
   function rearrange(card)
   {
-    let cards = document.querySelectorAll(".cards .card");
+    /*let cards = document.querySelectorAll(".cards .card");
     for(let n = 0; n < cards.length; n++)
     {
       cards[n].classList.remove("card--left");
@@ -48,8 +48,8 @@ export default class Upstream extends Component {
       cards[3].classList.add("card--left-left");
       cards[1].classList.add("card--right");
       cards[2].classList.add("card--right-right");
-    }
-    if(card == 1)
+    }*/
+ /*   if(card == 1)
     {
       cards[0].classList.add("card--left");
       cards[4].classList.add("card--left-left");
@@ -74,7 +74,7 @@ export default class Upstream extends Component {
       cards[2].classList.add("card--left-left");
       cards[0].classList.add("card--right");
       cards[1].classList.add("card--right-right");
-    }
+    }*/
   }
 
   return {
@@ -93,7 +93,7 @@ export default class Upstream extends Component {
                     
                 
             }, 
-            {
+            /*{
                 upstreamTitle : "Production Management",
                 hryperlink    : "productionmanagement",
                 upstreamimg   : "/images/upstream3.png",
@@ -116,7 +116,7 @@ export default class Upstream extends Component {
                 hryperlink    : "welldrilling",
                 upstreamimg   : "/images/upstream5.png",
                 upstreamtext  : "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
-            }
+            }*/
             
         ]
     
@@ -124,31 +124,31 @@ export default class Upstream extends Component {
 
     render(){
         return(
-            <div className="col-lg-12 upstreamblock lightbluebg NOpadding">
-                <div id="price" className=" col-lg-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 upstreamblock lightbluebg NOpadding">
+                <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
-                        <div className="upstreamcontentheader col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
+                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
                                 <b>iOG Solutions for</b> Upstream Oil & Gas Industry
                             </h1>
                         </div>
                     </div>
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="cards">
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
                                          <div key={index}className="card" data-card={index}>
-                                            <div className="price price-three col-lg-12">
+                                            <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
-                                                <div className="price-body col-lg-12">
+                                                <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <img src={data.upstreamimg  } />
                                                 </div>
-                                                <div className="price-body  col-lg-12">
+                                                <div className="price-body  col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <p className="text-justify upstreamtext">{data.upstreamtext}</p>
                                                 </div>
-                                                <div className="price-footer price-bodyhover col-lg-12 ">
+                                                <div className="price-footer price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                                     <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
                                                 </div>
                                             </div>

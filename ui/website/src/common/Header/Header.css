@@ -221,6 +221,18 @@ nav { margin: 0; }
   text-decoration: none;
   border: none;
 }
+.toggle1 {
+      display: block;
+    background-color: #254441;
+    padding: 7px 5px;
+    color: #ffffff ! important;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 17px;
+    text-decoration: none;
+    border: none;
+    height: 43px;
+}
 
 .toggle:hover { background-color: #000000; }
 
