@@ -32,7 +32,7 @@ export default class Upstream extends Component {
 
   function rearrange(card)
   {
-    /*let cards = document.querySelectorAll(".cards .card");
+    let cards = document.querySelectorAll(".cards .card");
     for(let n = 0; n < cards.length; n++)
     {
       cards[n].classList.remove("card--left");
@@ -48,8 +48,8 @@ export default class Upstream extends Component {
       cards[3].classList.add("card--left-left");
       cards[1].classList.add("card--right");
       cards[2].classList.add("card--right-right");
-    }*/
- /*   if(card == 1)
+    }
+    if(card == 1)
     {
       cards[0].classList.add("card--left");
       cards[4].classList.add("card--left-left");
@@ -74,7 +74,7 @@ export default class Upstream extends Component {
       cards[2].classList.add("card--left-left");
       cards[0].classList.add("card--right");
       cards[1].classList.add("card--right-right");
-    }*/
+    }
   }
 
   return {
@@ -93,7 +93,7 @@ export default class Upstream extends Component {
                     
                 
             }, 
-            /*{
+            {
                 upstreamTitle : "Production Management",
                 hryperlink    : "productionmanagement",
                 upstreamimg   : "/images/upstream3.png",
@@ -116,7 +116,7 @@ export default class Upstream extends Component {
                 hryperlink    : "welldrilling",
                 upstreamimg   : "/images/upstream5.png",
                 upstreamtext  : "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
-            }*/
+            }
             
         ]
     
