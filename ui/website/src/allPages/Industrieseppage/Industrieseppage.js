@@ -14,7 +14,7 @@ export default class Industrieseppage extends Component {
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Oil__Gas_EP.png",
                 servicestext  : "The upstream segment of oil & gas industry, also known as Exploration and Production (E&P), encompasses activities related to prospecting for oil and gas fields, drilling of exploratory, appraisal and production wells, analysis of wells for production and economic viability, and the operation of viable wells to bring crude oil and raw natural gas to the surface.",
-                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle. Looking for hydrocarbons beneath the surface involves geological, geophysical, and petrophysical analysis of subsurface terrain for probable deposits of oil and natural gas. Upon identification of potential locations of oil and gas reserves, the next step is drilling of appraisal wells to ascertain the quantity and quality of underground reserves. The data obtained from appraisal wells is then combined with G&G data to determine the number and location of wells for meeting and optimizing production requirements. After primary (natural pressure and flow) and secondary (water flooding) recovery methods well operators employ tertiary or Enhanced Oil Recovery (EOR) techniques to boost the performance of depleting wells and maximize production."
+                servicestext2 : "Each of the activities in the upstream value chain involves amalgamation of a wide variety of technical expertise and domain-specific knowledge for effectively managing E&P life cycle."
                     
                  
             } 
@@ -35,7 +35,7 @@ export default class Industrieseppage extends Component {
                 downstreamurl   : "/reserviormanagement",
                 downstreamTitle : "Reservior Management",
                 downstreamimg   : "/images/upstream4.png",
-                downstreamtext  : "iOG Solutions provides end-to-end consulting services for management of reservoirs, utilizing state-of-the-art geoscience & engineering technologies. Our distinctive competencies & cutting-edge propositions are embodied in the breadth of technical expertise & diverse experience we provide. This is specifically true in the area of integrated reservoir characterization, modeling, & management....."
+                downstreamtext  : "iOG Solutions provides end-to-end consulting services for management of reservoirs, utilizing state-of-the-art geoscience & engineering technologies. Our distinctive competencies & cutting-edge propositions are embodied in the breadth of technical expertise & diverse experience we provide."
             }, 
             {
                 downstreamurl   : "/welldrilling",
@@ -47,7 +47,7 @@ export default class Industrieseppage extends Component {
                 downstreamurl   : "/productionmanagement",
                 downstreamTitle : "Production Management",
                 downstreamimg   : "/images/upstream3.png",
-                downstreamtext  : "iOG Solutions offers its clients the complete range of Production Management services. These include design completion & surface systems management, selection & design of the artificial lift, design & implementation of production allocation & accounting systems, monitoring production volumes & other parameters in real-time, calculating & reporting KPIs, optimization of oil/gas production rates as well as in predicting future performance...."
+                downstreamtext  : "iOG Solutions offers its clients the complete range of Production Management services. These include design completion & surface systems management, selection & design of the artificial lift allocation & accounting systems, monitoring production volumes & other parameters in real-time, calculating & reporting KPIs ."
             }, 
             {
                 downstreamurl   : "/datamanagement",

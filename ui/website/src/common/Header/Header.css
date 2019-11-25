@@ -377,7 +377,7 @@ dropdown-submenu {
   overflow: hidden;
   background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 37px;
+  margin-top: 14px;
 }
 .navbar a {
     float: left;
@@ -567,6 +567,7 @@ dropdown-submenu {
 .servicedropdown1{
   width: 150px;
   height: 179px;
+  margin-left: 497px;
 
 }
 .servicedropdown1 a{
@@ -587,6 +588,7 @@ dropdown-submenu {
   /*padding-left: 20px ! important;*/
   border-radius: 5px;
   border-top: 3px solid #66f;
+  margin-left: 391px;
 }
 .servicedropdown2{
   height: 232px;
@@ -594,6 +596,7 @@ dropdown-submenu {
   border-radius: 5px;
   border-top: 3px solid #66f;
   margin-top: 23px;
+  margin-left: 723px;
 }
 .Servicecolumn{
   width:150px;
@@ -642,6 +645,26 @@ dropdown-submenu {
 }
 .Servicecolumn a{
   text-align: left;
+}
+.customNavBar{
+  background-color: #ffffff ! important;
+}
+.dropdownresponsive{
+  width: 348px ! important;
+  background-color: #777;
+}
+.dropdownresponsive a{
+  background-color: #777 ! important;
+  color:#fff ! important;
+  border: none ! important;
+}
+.responsiveNavBar{
+  width:348px !important;
+}
+.customDropdown a{
+  background-color: #FAFAFA! important;
+  width:348px;
+  color:#333 ! important;
 }
 /*.Servicecolumn{
   float: left;

@@ -102,6 +102,15 @@ ul.no-icon-list {
     margin-right: 11px;
 
 }
+.socialicon1 li a{
+    line-height: 25px;
+    text-decoration: none;
+    text-align: left;
+    float: right;
+    margin-right: 11px;
+    margin-top: 15px;
+
+}
 .socialicon li a .fa{
     border: 9px solid #fff;
     border-radius: 50%;
@@ -352,4 +361,29 @@ ul.no-icon-list {
 .footoverflow{
     width: 100%;
     overflow: hidden;
+}
+
+
+/*mob view*/
+.responsivefooter{
+  height: 520px;
+
+}
+.resicons{
+  margin-left: 35px;
+}
+.resNewsLetter{
+  font-size: 15px ! important;
+  padding-left: 161px ! important;
+  padding-top: 94px ! important; 
+}
+.ressubscribeMail{
+  margin-left: 35px;
+}
+.ressubscribeBtn{
+  margin-left: 54px;
+}
+.resfooterend{
+  position: absolute;
+  width: 345px;
 }

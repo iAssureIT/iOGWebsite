@@ -25,7 +25,7 @@
     margin-left: auto;
     float: left;
     background-image: url(/images/banner.png);
-    padding-top: 144px;
+    padding-top: 195px;
     padding-bottom: 158px;
     margin-top: -60px;
 }
@@ -288,7 +288,7 @@ height: 150px;
     z-index: 10;
     bottom: 0px;
     right: 20px;
-    top: 12px;
+    top: -40px;
 }
 .tree1{
     position: absolute;

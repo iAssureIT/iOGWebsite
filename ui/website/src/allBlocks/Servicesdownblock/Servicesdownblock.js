@@ -35,10 +35,8 @@ export default class Servicesdownblock extends Component {
                     this.ServicesData().map((data, index)=>{
                       return (   
                                 <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <div className="col-lg-12">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                               <h2 className="lightbluetext para-top">{data.servicesTitle}</h2>
                                                 <p className="line_subhead ">{data.servicesSubTitle}</p>
                                                 <p className="line_para">{data.servicestext} </p>   
@@ -53,8 +51,6 @@ export default class Servicesdownblock extends Component {
                                         </div>
                                         </div>
                                     </div>
-                                  </div>
-                                </div>
                                  );
                               })
                             }

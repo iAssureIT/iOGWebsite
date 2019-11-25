@@ -23,10 +23,10 @@ export default class Commoninfoblock extends Component {
                         <img src={data.servicesimg} alt="" className="services_img" />
                       </div>
                     </div>
-                    <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt100">
+                    <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt100 NOPadding">
                                 <div className="col-lg-12">
                                       <div className="col-lg-2 col-lg-offset-5">
                                         <div className="line1 col-lg-1 col-lg-offset-2"></div>

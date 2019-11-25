@@ -13,7 +13,7 @@ export default class Industrieschemicalpage extends Component {
                 servicesTitle : "Chemicals",
                 servicesSubTitle : "iOG Solutions stands for intelligent O&G solutions.",
                 servicesimg   : "/images/Chemicals.png",
-                servicestext  : "Commodity Chemicals or Bulk Chemicals are manufactured on a very large scale to meet the ever-increasing global demand. The distinctive characteristic of the chemical industry is that manufacturing unit producing different but related products are placed in close clusters.",
+                servicestext  : "The distinctive characteristic of the chemical industry is that manufacturing unit producing different but related products are placed in close clusters.",
                 servicestext2 : "Unpredictable raw material prices, strict government and regulatory compliances, highest quality management standards, outdating process plants and machinery, data overload caused by leveraging new age technologies, higher utilities bill irrespective of location etc have always been a major headache to chemical manufacturers. Adding to this the producers have been always reluctant to digitization initiatives because it seems too intimidating. Some producers who take up this initiative don’t have any clear roadmaps to finish their digital journey."
                     
                 
@@ -29,19 +29,19 @@ export default class Industrieschemicalpage extends Component {
                 downstreamurl   : "/digitalservices",
                 downstreamTitle : "Digital Services, Dashboard and KPI Managers",
                 downstreamimg   : "/images/Illustration_13.png",
-                downstreamtext  : "In recent years, the oil & gas industry has seen a number of initiatives to explore new digital technologies & to exploit their benefits. Digital transformation frequently involves transformations of key business processes, operations, as well as organizational structures & management concepts...."
+                downstreamtext  : "In recent years, the oil & gas industry has seen a number of initiatives to explore new digital technologies & to exploit their benefits. Digital transformation frequently involves transformations of key business processes."
             }, 
             {
                 downstreamurl   : "/apc-services",
                 downstreamTitle : "APC Services",
                 downstreamimg   : "/images/Illustration_4.png",
-                downstreamtext  : "Advanced Process Control (APC) technologies helps to improve operation stability, push operations closer to quality or equipment limits and improve the capability of process units to handle disturbances. Our APC consulting services help customers specify, justify, and apply APC technologies such as multivariable predictive control, neural net inferential modeling, and fuzzy logic controllers that will significantly improve plant performance."
+                downstreamtext  : "Our APC consulting services help customers specify, justify, and apply APC technologies such as multivariable predictive control, neural net inferential modeling, and fuzzy logic controllers that will significantly improve plant performance."
             }, 
             {
                 downstreamurl   : "/manufacturesystem",
                 downstreamTitle : "Manufacturing Execution Systems",
                 downstreamimg   : "/images/Illustration_3.png",
-                downstreamtext  : "Manufacturing Execution Systems are vital tools in the smooth and efficient execution of the manufacturing process. Manufacturing Execution Systems are applications that bridge the gap between the control system (DCS) & the ERP layers & can consist of numerous modules including HSE, PCMS, and SCM. In such a situation, the MES is used in a bigger context & is synonymous to Refinery Information Systems or Integrated RIS ."
+                downstreamtext  : "Manufacturing Execution Systems are vital tools in the smooth and efficient execution of the manufacturing process. "
             }, 
             {
                 downstreamurl   : "/simulation",

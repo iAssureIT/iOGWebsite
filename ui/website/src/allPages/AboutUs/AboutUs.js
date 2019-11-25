@@ -22,16 +22,16 @@ export default class AboutUs extends Component {
                 <div className="industrybg1 col-lg-12 col-xs-12">
                    <div className="row">
                      <Aboutustextleft />
-                     {/*<Aboutustextright />*/}
+                     <Aboutustextright />
                    </div>
                 </div>
-                    {/*<Aboutustextcenter />*/}
-                {/*<div className="industrybg2 col-lg-12">
+                    <Aboutustextcenter />
+              <div className="industrybg2 col-lg-12">
                   <div className="row">
                     <Aboutusimgright />
                     <Aboutusvision />
                   </div>
-                </div>*/}
+                </div>
               </div>       
 
         );

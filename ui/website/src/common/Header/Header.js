@@ -58,11 +58,11 @@ export default class Header extends Component {
                     <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>
                   </div>
                 </div>
-                <div className="col-lg-9 col-md-9 col-sm-3 col-xs-3">
+                <div className="col-lg-9 col-md-9 col-sm-3 col-xs-3 hidden-sm hidden-xs">
                   <div className="row"> 
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <nav>
-                          <label htmlFor="drop" className="toggle">&#8801; Menu</label>
+                          <label htmlFor="drop" className=""></label>
                           <input type="checkbox" id="drop" />
                           <ul className="menu">
                              <li><a href="/" className="headerTitle">Home</a></li>
@@ -70,7 +70,7 @@ export default class Header extends Component {
                               <div class="dropdown1"> 
                                 <a href="/about-us" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
-                                 <div class="col-lg-offset-3 dropdown-content servicedropdown aboutusdrop ">
+                                 <div class="col-lg-offset-2 dropdown-content servicedropdown aboutusdrop ">
                                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                    <div class="Servicecolumn columnmenu">
                                     <a href="/about-us">Company Profile</a>
@@ -89,9 +89,9 @@ export default class Header extends Component {
                               </li>
                               <li> 
                               <div class="dropdown1 ">  
-                              <a href="/services" className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <a href="/servicearms" className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>  
-                              <div class="col-lg-offset-4 dropdown-content servicedropdown1 ">
+                              <div class="col-lg-offset-5 dropdown-content servicedropdown1 ">
                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                 <div class="Servicecolumn columnmenu">
                                     <a href="/iogimplement">iOGImplement</a>
@@ -107,15 +107,15 @@ export default class Header extends Component {
                              <li>
                             <div class="dropdown1 "> 
                             
-                            <a href="/about-us" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <a href="/services" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
                           <div class="dropdown-content expertcontrnt">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                               <div class=" column columnmenu columnmenu1">
                                 <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
-                                <a href="/refineryplanning">Prod Planning </a>
-                                <a href="/refineryschedule">Prod Schedule</a>
+                                <a href="/refineryplanning">Production Planning </a>
+                                <a href="/refineryschedule">Production Schedule</a>
                                 <a href="/backcasting">Back Casting / Retro-Analysis</a>
                                 <a href="/lputility">LP Utilities</a>
                                 <a href="/lpconfig">LP Configuration studies</a>
@@ -127,7 +127,7 @@ export default class Header extends Component {
                             <a href="/inventorymanagement">Inventory Mgmt</a>
                             <a href="/diatributionplanning">Distribution Planning & Optimization</a>
                             <a href="/retailautomation">Retail Automation</a><br/>
-                             <h5 className="columnhead"><a href="/energy"className="columnhead">Digital Services</a></h5>
+                             <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
                             <a href="#">Digital Transformation</a>
                             <a href="#">Application Support</a>
                             <a href="#">Application Integration</a>
@@ -136,15 +136,15 @@ export default class Header extends Component {
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
-                            <a href="/productionaccounting">Prod Accounting</a>
+                            <a href="/productionaccounting">Production Accounting</a>
                             <a href="/datahistorian">Realtime Data Historian</a>
                             <a href="/corporatedashboard">Corporate Dashboard & Analytics</a>
                             <a href="/operationlogbook">Operation Logbook</a>
                             <a href="/oilmovement">Oil Movement Mgmt Systems</a>
                              <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Env</a></h5>
-                            <a href="#">Occupational Health Mgmt</a>
-                            <a href="#">Process Safety Mgmt</a>
-                            <a href="#">Environment Mgmt</a>
+                            <a href="#">Occupational Health Management</a>
+                            <a href="#">Process Safety Management</a>
+                            <a href="#">Environment Management</a>
                           </div>
                           <div class=" column columnmenu columnmenu3 columnmenu2">
                             <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
@@ -158,13 +158,13 @@ export default class Header extends Component {
                           </div>
                           <div class="column columnmenu">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
-                            <a href="">Util Network Optimiz</a>
+                            <a href="">Util Network Optimization</a>
                             <a href="">Equipment Monitoring</a>
                             <a href="">Energy Accounting</a>
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
-                            <a href="/assetCriticalAnalysis">Asset Criticality Anls</a>
-                            <a href="/riskBasedInspection">Asset Lifecycle Mgmt</a>
-                            <a href="/assetStrategyMgmt">Asset Strategy Mgmt</a>
+                            <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
+                            <a href="/riskBasedInspection">Asset Lifecycle Management</a>
+                            <a href="/assetStrategyMgmt">Asset Strategy Management</a>
                             <a href="#">Inspection & Callibration Mgmt</a>
                           </div>
                         </div>
@@ -181,7 +181,7 @@ export default class Header extends Component {
                                <div class="dropdown"> 
                               
                                 <a href="/industries" className="headerTitle toggle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
-                                 <div class="col-lg-offset-6 dropdown-content servicedropdown2">
+                                 <div class="col-lg-offset-7 dropdown-content servicedropdown2">
                                    <div class="col-lg-12 row">
                                      <div class="Servicecolumn columnmenu">
                                       <a href="/refinery">Refinery</a>
@@ -213,6 +213,125 @@ export default class Header extends Component {
                      </div>
                     </div>
                  </div>
+                 <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 hidden-lg hidden-md">
+                  <nav className="navbar marginZero customNavBar navbar-default">
+                                <div className="container-fluid">
+                                  <div className="navbar-header1">
+                                    <a className="navbar-brand webSiteNameOther colorWhite hidden-lg hidden-md col-lg-1 col-md-1 col-sm-1 col-xs-1" href="/">iOGSolutions</a>
+
+                                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false" >
+                                      <span className="sr-only">Toggle navigation</span>
+                                      <span className="icon-bar"></span>
+                                      <span className="icon-bar"></span>
+                                      <span className="icon-bar"></span>
+                                    </button>
+
+                                  </div>
+
+                                  <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
+                                    <ul className="nav navbar-nav navbar-right customUl width50">
+
+                                     
+                                      <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            HOME <span className="caret"></span>
+                                          </a>                      
+                                         
+                                      </li>
+                                       <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             ABOUT US <span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                      <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             SERVICES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/iogimplement">iOGImplement</a>
+                                            <a className="dropdown-item" href="/iogonsult">iOGConsult</a>
+                                            <a className="dropdown-item" href="/iogtrain">iOGTrain</a>
+                                            <a className="dropdown-item" href="/iogstudy">iOGStudy</a> 
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             EXPERTISE<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             INDUSTRIES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             CAREERS<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             RESOURCES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             BLOGS<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             CONTACT US<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                          
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                </div>
                </div>
              </div>
            </div>

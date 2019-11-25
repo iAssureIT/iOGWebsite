@@ -30,10 +30,24 @@ export default class Aboutustextleft extends Component {
             
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 takeleft">
-                <div className=" col-lg-4 ">
+                <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
                  <div class="container">
                   <div class="moduletable">           
                   <ul class="breadcrumb breadcrumb1">
+                  <li class="active">&nbsp;</li><li>
+                  <a href="/" class="pathway">Home</a>
+                  <span class="divider">
+                  <img src="/media/system/images/arrow.png" alt=""/></span></li>
+                  <li><a href="/about-us" class="pathway">About Us</a>
+                  <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
+                  <li class="active"><span>Company Profile</span></li></ul>
+                    </div>
+                </div>
+               </div> 
+                 <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-lg hidden-md">
+                 <div class="container">
+                  <div class="moduletable">           
+                  <ul class="breadcrumb breadcrumb1responsive">
                   <li class="active">&nbsp;</li><li>
                   <a href="/" class="pathway">Home</a>
                   <span class="divider">
