@@ -27,7 +27,7 @@
     background-image: url(/images/banner.png);
     padding-top: 139px;
     padding-bottom: 158px;
-    margin-top: -60px;
+    /*margin-top: -60px;*/
 }
 .lead {
     font-size: 18px;
@@ -146,7 +146,7 @@ height: 150px;
 .contanim{
     position: absolute;
     right: 5em;
-    top: 16em;
+    top: 15em;
     animation:  contanim 10s linear  infinite;
 }
 .contanim img{
