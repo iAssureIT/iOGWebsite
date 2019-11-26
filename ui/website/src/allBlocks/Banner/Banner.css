@@ -25,7 +25,7 @@
   /*  margin-left: auto;*/
     /*float: left;*/
     background-image: url(/images/banner.png);
-    padding-top: 10em;
+    /*padding-top: 10em;*/
     /*padding-bottom: 158px;*/
     /*margin-top: -60px;*/
 }
@@ -138,7 +138,7 @@ height: 150px;
 .car{
     position: absolute;
     right: 5em;
-    top: 32em;
+    top: 42em;
     animation:  car 10s linear  infinite;
 }
 .car img{
@@ -146,7 +146,7 @@ height: 150px;
 .contanim{
     position: absolute;
     right: 5em;
-    top: 15em;
+    top: 26em;
     animation:  contanim 10s linear  infinite;
 }
 .contanim img{
@@ -288,30 +288,30 @@ height: 150px;
     z-index: 10;
     bottom: 0px;
     right: 20px;
-    top: -40px;
+    top: 120px;
 }
 .tree1{
     position: absolute;
     right: 269px;
-    top: 222px;
+    top: 367px;
     z-index: 10;
 }
 .tree2{
     position: absolute;
     right: 101px;
-    top: 227px;
+    top: 375px;
     z-index: 10;
 }
 .tree3{
     position: absolute;
     right: 208px;
-    top: 444px;
+    top: 587px;
     z-index: 10;
 }
 .tree4{
     position: absolute;
     right: 0px;
-    top: 276px;
+    top: 421px;
     z-index: 10;
 }
 .bannersun img{
@@ -320,22 +320,22 @@ height: 90px;
 
 .tank{
     position: absolute;
-    left: 56em;
-    top: 26em;
+    left: 49em;
+    top: 36em;
     z-index: 11;
 }
 
 .boat{
     position: absolute;
     left: -250px;
-    top: 170px;
+    top: 300px;
     animation:  boat 101s linear  infinite;
 
 }
 .up{
     position: absolute;
     left: 64px;
-    top: 139px;
+    top: 300px;
 
 }
 .up img{
@@ -344,7 +344,7 @@ height: 90px;
 .up1{
     position: absolute;
    left: 62.5px;
-    top: 157px;
+    top: 350px;
     overflow: hidden;
 
 }
@@ -354,9 +354,9 @@ height: 90px;
 
 }
 .animnewimg{
-  top: 28.5em;
+  top: 38.5em;
   left: 8em;
-    position: absolute;
+  position: absolute;
 }
 .animnewimg img{
   animation:  anim 8s linear  infinite;
@@ -382,43 +382,43 @@ height: 90px;
 .oilsign2{
     position: absolute;
     left: 31.7em;
-    top: 22em;
+    top: 32em;
     animation:   8s linear  infinite;
 }
 .oilsign3{
     position: absolute;
     left: 11.6em;
-    top: 29.4em;
+    top: 39.4em;
     animation: 8s linear infinite;
 }
 .oilsign4{
     position: absolute;
-    right: 30em;
-    top: 24.5em;
+    right: 37em;
+    top: 34.5em;
     animation:   8s linear  infinite;
 }
 .oilsign5{
     position: absolute;
     left: 9.6em;
-    top: 8.3em;
+    top: 20.3em;
     animation:   8s linear  infinite;
 }
 .oilsign6{
     position: absolute;
     right: 16em;
-    top: 25em;
+    top: 35em;
     animation:   8s linear  infinite;
 }
 .oilsign7{
     position: absolute;
     right: 16.5em;
-    top: 3em;
+    top: 15em;
     animation:  oilsign 8s linear  infinite;
 }
 .oilsign8 {
     position: absolute;
     right: 41em;
-    top: 5em;
+    top: 17em;
     animation: oilsign 8s linear infinite;
 }
 .other{
