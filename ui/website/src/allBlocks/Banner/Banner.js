@@ -1,14 +1,38 @@
 import React, {Component} from 'react';
-// import $                  from 'jquery';
+import $                  from 'jquery';
 import './Banner.css';
 
 export default class Banner extends Component {
-  render() {  
+  render() { 
+  var y = 330;
+    var h = y + 'px';
+
+    var x = $(window).height();  
+    var z = 0;
+    var winHeight =(x-z) + 'px';
+    var winHeight1 =(x-z) ;
+    // console.log('x',$(window).height());
+    // console.log('winHeight',winHeight1);
+
+    var innerheight = winHeight1-60 + 'px';
+    var innerheight1 = winHeight1-100 ;
+  
+    var margin = parseInt( innerheight1-y );
+    var margint = (margin/2);
+    // console.log('margint',margint);
+    // console.log('margin',margin);
+    var windowWidth = $(window).width();
+    // console.log('ww',windowWidth);
+    if(windowWidth>=320&&windowWidth<=992){
+    var backImage = "visible-xs col-xs-12 visible-sm col-sm-12 noBackImage"
+    }else{
+    var backImage = "signUpBackground hidden-xs hidden-sm"
+    } 
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-wrapper NOpadding ">
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner">
           <div className="row">
-            <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{"height": winHeight}}>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="row">
                 <figure className="bannersun">
