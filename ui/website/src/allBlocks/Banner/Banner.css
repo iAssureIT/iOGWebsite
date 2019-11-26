@@ -25,7 +25,7 @@
     margin-left: auto;
     float: left;
     background-image: url(/images/banner.png);
-    padding-top: 195px;
+    padding-top: 139px;
     padding-bottom: 158px;
     margin-top: -60px;
 }
@@ -382,13 +382,13 @@ height: 90px;
 .oilsign2{
     position: absolute;
     left: 444px;
-    top: 253px;
+    top: 307px;
     animation:   8s linear  infinite;
 }
 .oilsign3{
     position: absolute;
     left: 164px;
-    top: 354px;
+    top: 405px;
     animation: 8s linear infinite;
 }
 .oilsign4{
@@ -406,7 +406,7 @@ height: 90px;
 .oilsign6{
     position: absolute;
     right: 227px;
-    top: 292px;
+    top: 345px;
     animation:   8s linear  infinite;
 }
 .oilsign7{
@@ -418,7 +418,7 @@ height: 90px;
 .oilsign8{
     position: absolute;
     left: 720px;
-    top: 42px;
+    top: 99px;
     animation:  oilsign 8s linear  infinite;
 }
 .other{
