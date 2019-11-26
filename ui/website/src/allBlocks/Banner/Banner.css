@@ -21,12 +21,12 @@
     background-size: 100% ;
     width: 100%;
   /*  margin-right: auto;*/
-    /*height: 695px;*/
+    height: 100%;
   /*  margin-left: auto;*/
-    float: left;
+    /*float: left;*/
     background-image: url(/images/banner.png);
-    padding-top: 12em;
-    padding-bottom: 158px;
+    padding-top: 10em;
+    /*padding-bottom: 158px;*/
     /*margin-top: -60px;*/
 }
 .lead {
@@ -393,8 +393,8 @@ height: 90px;
 }
 .oilsign4{
     position: absolute;
-    left: 56em;
-    top: 19.2em;
+    right: 30em;
+    top: 24.5em;
     animation:   8s linear  infinite;
 }
 .oilsign5{
