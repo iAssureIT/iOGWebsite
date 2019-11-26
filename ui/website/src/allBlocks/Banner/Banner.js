@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import $                  from 'jquery';
+import $                  from 'jquery';
 import './Banner.css';
 
 export default class Banner extends Component {
