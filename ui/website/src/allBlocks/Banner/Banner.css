@@ -25,7 +25,7 @@
     margin-left: auto;
     float: left;
     background-image: url(/images/banner.png);
-    padding-top: 139px;
+    padding-top: 12em;
     padding-bottom: 158px;
     /*margin-top: -60px;*/
 }
@@ -417,8 +417,8 @@ height: 90px;
 }
 .oilsign8 {
     position: absolute;
-    left: 51.5em;
-    top: 7em;
+    left: 58em;
+    top: 8em;
     animation: oilsign 8s linear infinite;
 }
 .other{
