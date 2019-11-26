@@ -1,11 +1,11 @@
 .banner-wrapper{
-	margin-top: 0px;
+  margin-top: 0px;
   margin-bottom: 18px;
     overflow: hidden;
 }
 .banner{
-	
-	
+  
+  
     /*position: relative;*/
     /*z-index: 1;*/
     /*overflow: hidden;*/
@@ -25,9 +25,9 @@
     margin-left: auto;
     float: left;
     background-image: url(/images/banner.png);
-    padding-top: 12em;
+    padding-top: 144px;
     padding-bottom: 158px;
-    /*margin-top: -60px;*/
+    margin-top: -60px;
 }
 .lead {
     font-size: 18px;
@@ -47,7 +47,7 @@
     margin-right: 20px;
 }
 .btn--fill {
-	border-radius: 28px;
+  border-radius: 28px;
     background-color: #37cd8f;
     color: #fff;
 }
@@ -55,7 +55,7 @@
     box-shadow: 0 10px 25px 0 rgba(65,54,181,.45);
 }
 .btn-style{
-	display: inline-block;
+  display: inline-block;
     border: 2px solid transparent;
     border-radius: 28px;
     cursor: pointer;
@@ -69,13 +69,13 @@
     transition: background-color .2s,color .2s,box-shadow .2s;
 }
 .btn-style:hover{
-	color: #fff !important;
+  color: #fff !important;
 }
 .btn-style:focus{
-	color: #fff !important;
+  color: #fff !important;
 }
 .btn--stroke-white {
-	background: transparent;
+  background: transparent;
     border-color: #fff;
     color: #fff;
 }
@@ -137,16 +137,16 @@ height: 150px;
 }
 .car{
     position: absolute;
-    right: 5em;
-    top: 32em;
+    right: 250px;
+    top:453px;
     animation:  car 10s linear  infinite;
 }
 .car img{
 }
 .contanim{
     position: absolute;
-    right: 5em;
-    top: 15em;
+    right: 189px;
+    top: 229px;
     animation:  contanim 10s linear  infinite;
 }
 .contanim img{
@@ -284,11 +284,10 @@ height: 150px;
 }
 .bannersun{
     position: absolute;
-    left: 419px;
+    left: 400px;
     z-index: 10;
     bottom: 0px;
-    right: 20px;
-    top: -40px;
+    right:20px;
 }
 .tree1{
     position: absolute;
@@ -335,7 +334,7 @@ height: 90px;
 .up{
     position: absolute;
     left: 64px;
-    top: 139px;
+    top: 112px;
 
 }
 .up img{
@@ -353,22 +352,13 @@ height: 90px;
   animation:  up1 2s linear  infinite;
 
 }
-.animnewimg{
-  top: 28.5em;
-  left: 8em;
-    position: absolute;
-}
-.animnewimg img{
-  animation:  anim 8s linear  infinite;
-
-}
 .anim{
     position: absolute;
     left: 109px;
     top: 377px;
 }
 .anim img{
-  animation:  anim 8s linear  infinite;
+  animation:  anim 4s linear  infinite;
 
 }
 .oilsign{
@@ -376,55 +366,50 @@ height: 90px;
     left: 163px;
     top: 405px;
     z-index: 1;
-    animation:   8s linear  infinite;
+    animation:   4s linear  infinite;
 
 }
 .oilsign2{
     position: absolute;
-    left: 31.7em;
-    top: 22em;
-    animation:   8s linear  infinite;
+    left: 444px;
+    top: 307px;
+    animation:   4s linear  infinite;
 }
 .oilsign3{
     position: absolute;
-    left: 11.6em;
-    top: 29.4em;
-    animation: 8s linear infinite;
+    left: 374px;
+    top: 338px;
+    animation:  4s linear  infinite;
 }
 .oilsign4{
     position: absolute;
-    left: 56em;
-    top: 19.2em;
-    animation:   8s linear  infinite;
+    left: 781px;
+    top: 270px;
+    animation:   4s linear  infinite;
 }
 .oilsign5{
     position: absolute;
-    left: 9.6em;
-    top: 8.3em;
-    animation:   8s linear  infinite;
+    left: 136px;
+    top: 89px;
+    animation:   4s linear  infinite;
 }
 .oilsign6{
     position: absolute;
-    right: 16em;
-    top: 25em;
-    animation:   8s linear  infinite;
+    right: 227px;
+    top: 345px;
+    animation:   4s linear  infinite;
 }
 .oilsign7{
     position: absolute;
-    left: 76em;
-    top: 5em;
-    animation:  oilsign 8s linear  infinite;
+    right: 230px;
+    top: 65px;
+    animation:  oilsign 4s linear  infinite;
 }
-.oilsign8 {
-    position: absolute;
-    left: 58em;
-    top: 8em;
-    animation: oilsign 8s linear infinite;
-}
-.other{
+.oilsign8{
     position: absolute;
     left: 720px;
     top: 94px;
+    animation:  oilsign 4s linear  infinite;
 }
 
 
@@ -572,95 +557,3 @@ height: 90px;
   }
   
 }
-
-
-
-
-.hoveroilsign:hover .dataonHover  {
-  display: block ! important;
-  cursor: pointer;
-}
-.hoveroilsign:hover .triangle-down  {
-  display: block ! important;
-  cursor: pointer;
-}
-.hoveroilsign1:hover .triangle-down1  {
-  display: block ! important;
-  cursor: pointer;
-}
-.hoveroilsign1:hover .dataonHover1  {
-  display: block ! important;
-  cursor: pointer;
-}
-
-.dataonHover{
-  display: none;
-  height: 60px;
-  width: 100px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-left: -33px;
-  margin-top: -98px;
-  position: absolute;
-}
-.dataonHover1{
-  display: none;
-  height: 60px;
-  width: 100px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-left: -33px;
-  margin-top: -73px;
-  position: absolute;
-}
-.dataonHover2{
-  display: none;
-  height: 86px;
-  width: 110px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-left: 45px;
-  margin-top: -51px;
-  position: absolute;
-}
- .triangle-down {
-      position: absolute;
-      display: none;
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid #ffffff;
-      margin-top: -43px
-    }
-.triangle-down1 {
-      position: absolute;
-      display: none;
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid #ffffff;
-      margin-top: -17px
-    }
-    .triangle-left {
-      position: absolute;
-      display: none;
-      width: 0;
-      height: 0;
-      border-top: 15px solid transparent;
-      border-right: 15px solid #ffffff;
-      border-bottom: 15px solid transparent;
-      left:31px;
-      top:-2px;
-    }
-    .hoveroilsign2:hover .dataonHover2  {
-      display: block ! important;
-      cursor: pointer;
-}
-.hoveroilsign2:hover .triangle-left  {
-  display: block ! important;
-  cursor: pointer;
-}
-
-  

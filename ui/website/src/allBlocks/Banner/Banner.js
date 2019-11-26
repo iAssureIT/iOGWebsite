@@ -1,38 +1,14 @@
 import React, {Component} from 'react';
-import $                  from 'jquery';
+// import $                  from 'jquery';
 import './Banner.css';
 
 export default class Banner extends Component {
   render() {  
-    var y = 330;
-    var h = y + 'px';
-
-    var x = $(window).height();  
-    var z = 0;
-    var winHeight =(x-z) + 'px';
-    var winHeight1 =(x-z) ;
-    // console.log('x',$(window).height());
-    // console.log('winHeight',winHeight1);
-
-    var innerheight = winHeight1-60 + 'px';
-    var innerheight1 = winHeight1-100 ;
-  
-    var margin = parseInt( innerheight1-y );
-    var margint = (margin/2);
-    // console.log('margint',margint);
-    // console.log('margin',margin);
-    var windowWidth = $(window).width();
-    // console.log('ww',windowWidth);
-    if(windowWidth>=320&&windowWidth<=992){
-    var backImage = "visible-xs col-xs-12 visible-sm col-sm-12 noBackImage"
-    }else{
-    var backImage = "signUpBackground hidden-xs hidden-sm"
-    }
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-wrapper NOpadding ">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner ">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner">
           <div className="row">
-            <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{"height": winHeight}}>
+            <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="row">
                 <figure className="bannersun">
@@ -71,48 +47,32 @@ export default class Banner extends Component {
                 <figure className="up1">
                   <img alt="" src="/images/up2.png"/>
                 </figure>
-                <figure className="oilsign hoveroilsign">
-                  <img alt="" src="/images/oilsign.png" className="dataonHover1"/>
-                  <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
-                </figure>
-                <figure className="oilsign2 hoveroilsign">
-                  <img alt="" src="/images/oilsign.png"/>
-                  <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
-                </figure>
-                <figure className="oilsign3 hoveroilsign">
-                  <img alt="" src="/images/oilsign.png"/>
-                   <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
-                </figure>
-                <figure className="oilsign4 hoveroilsign">
-                  <img alt="" src="/images/oilsign.png"/>
-                   <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
-                </figure>
-               <figure className="oilsign5 hoveroilsign2">
-                  <img alt="" src="/images/oilsign.png"/>
-                  <div className="triangle-left"></div>
-                  <div className="dataonHover2"></div>
-                </figure>
-                <figure className="oilsign6 hoveroilsign1">
-                  <div className="triangle-down1"></div>
-                  <div className="dataonHover1"></div>
+                <figure className="oilsign">
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
-                <figure className="oilsign7 ">
+                <figure className="oilsign2">
                   <img alt="" src="/images/oilsign.png"/>
-                  <div className="dataonHover"></div>
                 </figure>
-                <div className="hoveroilsign">
-                  <figure className="oilsign8 ">
-                    <img alt="" src="/images/oilsign.png"/>
-                     <div className="dataonHover"></div>
-                  </figure>
-                </div>
-                  <img alt="" src="/images/anim.png" className="animnewimg"/>
+               {/* <figure className="oilsign3">
+                  <img alt="" src="/images/oilsign.png"/>
+                </figure>*/}
+                <figure className="oilsign4">
+                  <img alt="" src="/images/oilsign.png"/>
+                </figure>
+               <figure className="oilsign5">
+                  <img alt="" src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign6">
+                  <img alt="" src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign7">
+                  <img alt="" src="/images/oilsign.png"/>
+                </figure>
+                <figure className="oilsign8">
+                  <img alt="" src="/images/oilsign.png"/>
+                </figure>
                 <figure className="anim">
+                  <img alt="" src="/images/anim.png"/>
                 </figure>
                 <figure className="tank">
                   <img alt="" src="/images/tank.png"/>
@@ -149,11 +109,6 @@ export default class Banner extends Component {
             </div>
           </div>
         </div>
-        
-
-
-
-
       </div>
     );  
   }
