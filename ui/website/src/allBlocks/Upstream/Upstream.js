@@ -16,7 +16,7 @@ export default class Upstream extends Component {
 
   function init(e)
   {
-   /* if(document.querySelector(".cards"))
+    if(document.querySelector(".cards"))
     {
       let cards = document.querySelector(".cards");
       cards.addEventListener('click', clicked, false);
@@ -75,7 +75,7 @@ export default class Upstream extends Component {
       cards[0].classList.add("card--right");
       cards[1].classList.add("card--right-right");
     }
-*/  }
+ }
 
   return {
     init

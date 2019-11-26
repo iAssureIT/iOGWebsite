@@ -13,7 +13,7 @@ export default class Footer extends Component {
   render(){
        return(
     <div> 
-      <div className="iogfooter col-lg-12 col-md-12  hidden-sm hidden-xs">
+      <div className="iogfooter col-lg-12 col-md-12 NOpadding hidden-sm hidden-xs">
         <div className="animationoveflow col-lg-12 col-md-12 col-sm-12 col-xs-12">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
@@ -141,7 +141,7 @@ export default class Footer extends Component {
 
 {/*  */}
 
-      <div className="iogfooter col-xs-12 col-sm-12  hidden-lg hidden-md">
+      <div className="iogfooter col-xs-12 col-sm-12 NOpadding hidden-lg hidden-md">
         <div className="animationoveflow col-sm-12 col-xs-12">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
@@ -250,26 +250,23 @@ export default class Footer extends Component {
                 </div>            
         </div>
             <div className="darkbluebg col-sm-12 col-xs-12 footer-end resfooterend">
-                <div className="col-sm-9 col-xs-9">
+                <div className="col-sm-12 col-xs-12">
                     <div className="row">
-
-                        <div className="textcolorwhite  col-sm-12 col-xs-12 pull-left pt20">
-                            <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
-                         </div>
-                        </div>
-                        <div className="textcolorwhite col-sm-3 col-xs-3 pull-right pt20">
-                            <p className="text-right">
-                                <a href="/privacypolicy" className="mr20">Privacy Policy</a>
-                                <a href="/termsofuse" className="mr20">Terms of Use</a>
-                                <a href="/sitemap" className="">Site Map</a>
-                            </p>
-                        </div>
-
+                    <div className="textcolorwhite  col-sm-12 col-xs-12 pull-left pt20">
+                        <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
+                     </div>
                     </div>
-            </div>
-        </div>
-    </div>
-        
+                    </div> 
+                    <div className="textcolorwhite col-sm-12 col-xs-12 pull-right pt20">
+                    <p className="">
+                        <a href="/privacypolicy" className="mr20 resmr20 ">Privacy Policy</a>
+                        <a href="/termsofuse" className=" mr20 resmr20">Terms of Use</a>
+                        <a href="/sitemap" className="resmr20">Site Map</a>
+                    </p>
+                  </div>
+              </div>
+          </div>
+       </div> 
    </div> 
                 
 

@@ -107,7 +107,7 @@ ul.no-icon-list {
     text-decoration: none;
     text-align: left;
     float: right;
-    margin-right: 11px;
+    margin-right: 25px;
     margin-top: 15px;
 
 }
@@ -385,5 +385,9 @@ ul.no-icon-list {
 }
 .resfooterend{
   position: absolute;
-  width: 345px;
+  height: 125px ! important;
+  /*width: 345px;*/
+}
+.resmr20{
+  /*font-size: 11px ! important;*/
 }
