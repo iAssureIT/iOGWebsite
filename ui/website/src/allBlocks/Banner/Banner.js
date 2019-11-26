@@ -31,7 +31,7 @@ export default class Banner extends Component {
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-wrapper NOpadding ">
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner ">
-          <div className="row" style={{'height':'700px'}}>
+          <div className="row">
             <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="row">
