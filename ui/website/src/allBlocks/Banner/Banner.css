@@ -120,7 +120,7 @@
     left: -250px;
     animation:  cloud1 70s linear  infinite;
     z-index: 100;
-    bottom: 15px;
+    top: 3px;
 
 }
 .cloud1 img{
@@ -264,14 +264,14 @@ height: 150px;
     /*top: 0px;*/
     animation:  cloud2 110s linear  infinite;
     z-index: 101;
-    bottom: 15px;
+    top: 3px;
 }
 .cloud3{
     position: absolute;
     left: -750px;
     animation:  cloud3 140s linear  infinite;
     z-index: 102;
-    bottom: 15px;
+    top: 3px;
 }
 .cloud4{
     position: absolute;
@@ -279,7 +279,7 @@ height: 150px;
     width: 100px;
     animation:  cloud4 165s linear  infinite;
     z-index: 103;
-    bottom: 15px;
+    top: 3px;
 
 }
 .bannersun{
@@ -343,8 +343,8 @@ height: 90px;
 }
 .up1{
     position: absolute;
-   left: 62.5px;
-    top: 350px;
+    left: 62.5px;
+    top: 345px;
     overflow: hidden;
 
 }

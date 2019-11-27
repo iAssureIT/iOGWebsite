@@ -24,9 +24,9 @@ export default class Banner extends Component {
     var windowWidth = $(window).width();
     // console.log('ww',windowWidth);
     if(windowWidth>=320&&windowWidth<=992){
-    var backImage = "visible-xs col-xs-12 visible-sm col-sm-12 noBackImage"
+    // var backImage = "visible-xs col-xs-12 visible-sm col-sm-12 noBackImage"
     }else{
-    var backImage = "signUpBackground hidden-xs hidden-sm"
+    // var backImage = "signUpBackground hidden-xs hidden-sm"
     }
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-wrapper NOpadding ">

@@ -216,17 +216,16 @@ export default class Footer extends Component {
                             </ul>
                         </div> 
                         <div className="col-sm-12 col-xs-12">                       
-                         <div className=" col-sm-4 col-xs-4 ">
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
-                                 Amanora Chambers,<br/> Office 330,
+                                 Amanora Chambers, Office 330,
                                  3<sup>rd</sup> floor, East Block,Hadapsar,
-                                  Pune,India- 411028.<br/>
+                                  Pune,India- 411028.
                                  <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 672 603 81/82.
                              </p>
-                        </div> 
-                        <div className="col-sm-8 col-xs-8">
+                        </div>
+                        <div className="col-sm-12 col-xs-12">
                             <h6 className="font-montserrat col resicons">Connect us on</h6>
                             <ul className="no-icon-list socialicon socialicon1 ">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -235,21 +234,20 @@ export default class Footer extends Component {
                                 <li><a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank"><i className="col-lg-12 fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
                             </ul>
                         </div> 
-                         <div className=" subscribeBox">
-                                <h6 className="font-montserrat col resNewsLetter">Newsletter Subscription</h6>
+                        <div className="col-sm-12 col-xs-12"> 
+                         <div className=" subscribeBox subscribeBox1">
+                                <h6 className="font-montserrat col ">Newsletter Subscription</h6>
                                 <div className="NOpadding  col-sm-7 col-xs-7">
-                                    <input type="text" className="form-control subscribeMail ressubscribeMail" placeholder="Enter your Email" />
+                                    <input type="text" className="form-control subscribeMail " placeholder="Enter your Email" />
                                 </div>
-                                <div className="col-sm-7 col-xs-7">
                                 <a href="Contact-us" className="NOpadding  col-sm-1 col-xs-1">
-                                 <button className="subscribeBtn  ressubscribeBtn btn">Subscribe</button></a>
-                                </div>
+                                 <button className="subscribeBtn   btn">Subscribe</button></a>
                             </div> 
-                       </div>      
+                         </div>
                     </div>
                 </div>            
         </div>
-            <div className="darkbluebg col-sm-12 col-xs-12 footer-end resfooterend">
+            <div className="darkbluebg col-sm-12 col-xs-12 footer-end resfooterend NOpadding">
                 <div className="col-sm-12 col-xs-12">
                     <div className="row">
                     <div className="textcolorwhite  col-sm-12 col-xs-12 pull-left pt20">
@@ -257,7 +255,7 @@ export default class Footer extends Component {
                      </div>
                     </div>
                     </div> 
-                    <div className="textcolorwhite col-sm-12 col-xs-12 pull-right pt20">
+                    <div className="textcolorwhite col-sm-12 col-xs-12 pull-right ">
                     <p className="">
                         <a href="/privacypolicy" className="mr20 resmr20 ">Privacy Policy</a>
                         <a href="/termsofuse" className=" mr20 resmr20">Terms of Use</a>

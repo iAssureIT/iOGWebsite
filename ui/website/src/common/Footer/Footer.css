@@ -94,6 +94,9 @@ ul.no-icon-list {
     text-align: left;
 
 }
+.socialicon1 {
+  margin-right: 34px ! important;
+}
 .socialicon li a{
     line-height: 25px;
     text-decoration: none;
@@ -174,7 +177,9 @@ ul.no-icon-list {
     padding: 1px 5px;
     height: 80px;
 }
-
+.subscribeBox1{
+  margin-top: 0px ! important;
+}
 .subscribeBtn{
   border-radius: 0px;
   font-weight: 700;
@@ -370,7 +375,7 @@ ul.no-icon-list {
 
 }
 .resicons{
-  margin-left: 35px;
+  /*margin-left: 35px;*/
 }
 .resNewsLetter{
   font-size: 15px ! important;
@@ -385,7 +390,7 @@ ul.no-icon-list {
 }
 .resfooterend{
   position: absolute;
-  height: 125px ! important;
+  height: 81px ! important;
   /*width: 345px;*/
 }
 .resmr20{
