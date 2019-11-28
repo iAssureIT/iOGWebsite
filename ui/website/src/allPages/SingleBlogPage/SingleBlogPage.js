@@ -7,6 +7,7 @@ import Moment                from 'react-moment';
 //import MetaTags              from 'react-meta-tags';
 // import ShareLink          from 'react-facebook-share-link'
 // import ReactToPdf from "react-to-pdf";
+import '../Sitemap/Sitemap.css';
 
 import BlogComment           from "../../allBlocks/BlogComment/BlogComment.js";
 import { FacebookProvider, Share } from 'react-facebook';
@@ -115,7 +116,7 @@ printTicket(event){
       <div>
       	<div className="container-fluid" style={{padding:"0px"}} id="pdfWrap" iref={ref}>
       		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
-            <div className="mt40 col-lg-10"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
+            <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
       		  <BlogContent blogContent={this.state.blogContent}/>
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
@@ -133,7 +134,7 @@ printTicket(event){
                     <div style={{width:0, height: 0}}></div>
 
             </div>
-            <BlogComment/>
+            {/*<BlogComment/>*/}
 			  </div>
 	   	);
 	}

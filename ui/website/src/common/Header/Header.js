@@ -125,7 +125,7 @@ export default class Header extends Component {
                             <h5 className="columnhead"><a href="/supplydistribute" className="columnhead">Supply & Distribution</a></h5>
                             <a href="/demandmanagement">Demand Mgmt</a>
                             <a href="/inventorymanagement">Inventory Mgmt</a>
-                            <a href="/diatributionplanning">Distribution Planning & Optimization</a>
+                            <a href="/diatributionplanning">Distribution Planning</a>
                             <a href="/retailautomation">Retail Automation</a><br/>
                              <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
                             <a href="#">Digital Transformation</a>
@@ -142,7 +142,7 @@ export default class Header extends Component {
                             <a href="/operationlogbook">Operation Logbook</a>
                             <a href="/oilmovement">Oil Movement Mgmt Systems</a>
                              <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Env</a></h5>
-                            <a href="#">Occupational Health Management</a>
+                            <a href="#">Occupational Health Mgmnt</a>
                             <a href="#">Process Safety Management</a>
                             <a href="#">Environment Management</a>
                           </div>
@@ -229,7 +229,7 @@ export default class Header extends Component {
                                   <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
                                     <ul className="nav navbar-nav navbar-right customUl width50">
 
-            
+          
                                       <li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             HOME <span className="caret"></span>
