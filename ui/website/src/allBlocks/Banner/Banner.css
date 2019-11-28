@@ -662,5 +662,10 @@ height: 90px;
   display: block ! important;
   cursor: pointer;
 }
+.pinhoverdata{
+  color: #333;
+  font-size: 12px;
+  padding-top: 10px;
+}
 
   

@@ -69,11 +69,11 @@ export default class Resourcevideo extends Component {
                         </p>          
                 </div>
 
-                 <div  className="col-lg-12">
+                 <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      {
                       this.VideoData().map((data, index)=>{
                       return (
-                        <div key={index} className="col-lg-4  col-md-4 col-sm-4 col-xs-6 mt100">
+                        <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
                         <div className="videocard1">
                             <div className="introvideo">      
                              {/* <video width="320" height="240" controls>
@@ -91,11 +91,11 @@ export default class Resourcevideo extends Component {
                       })
                     }   
                  </div>
-                  <div  className="col-lg-8 col-lg-offset-2">
+                  <div  className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
                      {
                       this.VideoData1().map((data, index)=>{
                       return (
-                        <div key={index} className="col-lg-6  col-md-4 col-sm-6 col-xs-6 mt100">
+                        <div key={index} className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt100">
                         <div className="videocard1">
                             <div className="introvideo">      
                              {/* <video width="320" height="240" controls>

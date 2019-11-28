@@ -254,7 +254,7 @@ class Contactpage extends Component{
     return(
           <div>    
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactcontent2-wrap">
-                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 rescontacticonwrap ">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacticonwrap">
                           <div className="row">
                                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 contactcontbackimg">
@@ -301,9 +301,9 @@ class Contactpage extends Component{
                     </div>
                   </div>
               </div>
-              <div id="mapRedirect">
+              {/*<div id="mapRedirect">
                 <Map />
-              </div>
+              </div>*/}
           </div>    
     );
   }

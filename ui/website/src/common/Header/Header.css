@@ -647,7 +647,7 @@ dropdown-submenu {
   text-align: left;
 }
 .customNavBar{
-  background-color: #ffffff ! important;
+  background-color: transparent ! important;
 }
 .dropdownresponsive{
   width: 348px ! important;
@@ -665,6 +665,9 @@ dropdown-submenu {
   background-color: #FAFAFA! important;
   width:348px;
   color:#333 ! important;
+}
+.resmenubar{
+  float: left ! important;
 }
 /*.Servicecolumn{
   float: left;

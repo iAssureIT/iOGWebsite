@@ -47,11 +47,11 @@ export default class Resourcedownload extends Component {
                          We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
                       </p>          
                 </div>
-                 <div  className="col-lg-10 col-lg-offset-1">
+                 <div  className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1">
                      {
                       this.VideoData().map((data, index)=>{
                       return (
-                        <div key={index} className="col-lg-4  col-md-4 col-sm-4 col-xs-4 mt100">
+                        <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
                         <a className="videocard" href={data.downstreamlink} title="Click to Download" download>
                           <h3>{data.downstreamTitle}</h3>
                           <div className="go-corner" href={data.downstreamlink}>

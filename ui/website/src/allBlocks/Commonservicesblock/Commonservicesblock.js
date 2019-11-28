@@ -33,7 +33,7 @@ export default class Commonservicesblock extends Component {
                   <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div className="row"> 
-                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1"> 
+                        <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1"> 
                           <div className="row"> 
                             {
                               this.props.servicedata.map((data, index)=>{
@@ -42,18 +42,18 @@ export default class Commonservicesblock extends Component {
                                     var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center";
+                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
                                  
                                 }
                                 }else if(productlength == 1){
                                   // console.log('productlength')
                                   if(plength === index+1){
-                                    var classes = "webpageshopcont col-lg-4 col-xs-12 col-lg-offset-4 col-xs-offset-1  text-center";                                   
+                                    var classes = "webpageshopcont col-lg-4 col-xs-12 col-lg-offset-4   text-center";                                   
                                   }else{
-                                    var classes="webpageshopcont col-lg-4 col-md-4 col-xs-4 col-sm-4 col-xs-12 col-xs-offset-1 text-center";                                 
+                                    var classes="webpageshopcont col-lg-4 col-md-4  col-sm-12 col-xs-12  text-center";                                 
                                 }
                                 }else{
-                                  var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4 col-xs-12 col-xs-offset-1 text-center";                               
+                                  var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               
                                 }
                                  return (
                                 <div key={index} className={classes}>

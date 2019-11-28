@@ -157,6 +157,12 @@
     font-size: 50px;
     font-weight: 700;
 }
+.respara-top{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
 
 .para1-top{
     margin-top: 56px;
@@ -337,8 +343,8 @@ margin-top: 100px;
   background-color: #f08f00;
   width: 90px;
   height: 4px;
-  /*margin-top: 210px;*/
-  /*margin-left: -683px;*/
+  margin-top: 40px;
+  margin-left: 60px;
 }
 
 .line2{
@@ -348,6 +354,15 @@ margin-top: 100px;
   height: 4px;
   /*margin-left: 500px;*/
   text-align: center;
+}
+.resline2{
+   background-color: #f19000;
+  width: 105px;
+  margin-top: 35px;
+  height: 4px;
+  margin-left: 100px;
+  text-align: center;
+
 }
 
 .line_ht{

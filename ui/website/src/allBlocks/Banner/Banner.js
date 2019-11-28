@@ -74,36 +74,49 @@ export default class Banner extends Component {
                 <figure className="oilsign hoveroilsign">
                   <img alt="" src="/images/oilsign.png" className="dataonHover1"/>
                   <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
+                  <div className="dataonHover">
+
+                  </div>
                 </figure>
                 <figure className="oilsign2 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
                   <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
+                  <div className="dataonHover">
+                   <p className="pinhoverdata text-center">Some sample Text</p>
+                  </div>
                 </figure>
                 <figure className="oilsign3 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
                    <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
+                  <div className="dataonHover">
+                    <p className="pinhoverdata text-center">Some sample Text</p>
+                  </div>
                 </figure>
                 <figure className="oilsign4 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
                    <div className="triangle-down"></div>
-                  <div className="dataonHover"></div>
+                  <div className="dataonHover">
+                    <p className="pinhoverdata text-center">Some sample Text</p>
+                  </div>
                 </figure>
                <figure className="oilsign5 hoveroilsign2">
                   <img alt="" src="/images/oilsign.png"/>
                   <div className="triangle-left"></div>
-                  <div className="dataonHover2"></div>
+                  <div className="dataonHover2">
+                    <p className="pinhoverdata text-center">Some sample Text</p>
+                  </div>
                 </figure>
                 <figure className="oilsign6 hoveroilsign1">
                   <div className="triangle-down1"></div>
-                  <div className="dataonHover1"></div>
+                  <div className="dataonHover1">
+                    <p className="pinhoverdata text-center">Some sample Text</p>
+                  </div>
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
                 <figure className="oilsign7 ">
                   <img alt="" src="/images/oilsign.png"/>
-                  <div className="dataonHover"></div>
+                  <div className="dataonHover">
+                  </div>
                 </figure>
                 <div className="hoveroilsign">
                   <figure className="oilsign8 ">
