@@ -48,9 +48,9 @@ export default class Header extends Component {
             {/* <div className="col-lg-12"><button className="pull-right"onClick={this.googleTranslateElementInit.bind(this)}>Hindi</button></div>*/}
              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 top_spacing">
               <div className="row"> 
-                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                  <div className="navbar-header col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
-                    <button type="button" className="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+                <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 NOPadding">
+                  <div className="navbar-header col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 ">
+                    <button type="button" className="navbar-toggle responsivetoggle " data-toggle="collapse" data-target=".navbar-collapse">
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
@@ -203,7 +203,7 @@ export default class Header extends Component {
                                   <li><a href="/gasprocessing">Gas Processing</a></li>
                                   <li><a href="/oilgasep">Oil & Gas E&P</a></li>
                                 </ul>*/}
-                            </li>
+                             </li>
                             <li><a href="/careers" className="headerTitle toggle">Careers</a></li>
                             <li><a href="/resource" className="headerTitle toggle">Resources</a></li>
                             <li><a href="/blog" className="headerTitle toggle">Blogs</a></li>
@@ -212,39 +212,35 @@ export default class Header extends Component {
                         </nav>
                      </div>
                     </div>
-                 </div>
-                 <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 hidden-lg hidden-md">
-                  <nav className=" marginZero customNavBar navbar-default">
-                                <div className="container-fluid">
-                                  <div className="navbar-header1">
-                                    <button type="button" className="navbar-toggle resmenubar collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false" >
-                                      <span className="sr-only">Toggle navigation</span>
-                                      <span className="icon-bar"></span>
-                                      <span className="icon-bar"></span>
-                                      <span className="icon-bar"></span>
-                                    </button>
-
-                                  </div>
-
-                                  <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
-                                    <ul className="nav navbar-nav navbar-right customUl width50">
-
-          
-                                      <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            HOME <span className="caret"></span>
-                                          </a>                    
-                                      </li>
-                                       <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="/about-us" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                             ABOUT US <span className="caret"></span>
-                                          </a>
-                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a  className="dropdown-item" href="/about-us">Company Profile</a>
-                                            <a className="dropdown-item" href="/founderprofile">Founder's Profile</a>
-                                            <a className="dropdown-item" href="/ourjourny">Our Journey</a>  
-                                          </ul>
-                                        </li>
+                     </div>
+                     <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 hidden-lg hidden-md ">
+                      <nav className=" marginZero customNavBar navbar-default">
+                        <div className="container-fluid NOPadding">
+                          <div className="navbar-header1">
+                            {/*<button type="button" className="navbar-toggle resmenubar collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false" >
+                              <span className="sr-only">Toggle navigation</span>
+                              <span className="icon-bar"></span>
+                              <span className="icon-bar"></span>
+                              <span className="icon-bar"></span>
+                            </button>*/}
+                          </div>
+                          <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
+                            <ul className="nav navbar-nav navbar-right customUl width50">
+                              <li className="nav-item dropdown dropdownresponsive">
+                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  HOME <span className="caret"></span>
+                                </a>                    
+                               </li>
+                                 <li className="nav-item dropdown dropdownresponsive">
+                                    <a className="nav-link dropdown-toggle" href="/about-us" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       ABOUT US <span className="caret"></span>
+                                    </a>
+                                    <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                      <a  className="dropdown-item" href="/about-us">Company Profile</a>
+                                      <a className="dropdown-item" href="/founderprofile">Founder's Profile</a>
+                                      <a className="dropdown-item" href="/ourjourny">Our Journey</a>  
+                                    </ul>
+                                  </li>
                                       <li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              SERVICES<span className="caret"></span>
@@ -308,7 +304,7 @@ export default class Header extends Component {
            </div>
           </div>
         </div>
-         <button className="contactBar" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
+         <button className="contactBar hidden-sm hidden-xs" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>

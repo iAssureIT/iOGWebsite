@@ -23,6 +23,22 @@
   transition: width 1s;
   border: none;
 }
+.rescontactBar{
+  position: absolute;
+  right: 5px;
+  top:156px;
+  background-color: #f19000;
+  width: 35px;
+  height: 30px;
+  color: #fff;
+  padding: 6px 8px 6px 6px ;
+  border-radius: 3px;
+  text-align: right;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  transition: width 1s;
+  border: none;
+}
 .hovertext{
   cursor: pointer;
   color: #fff;
@@ -653,6 +669,10 @@ dropdown-submenu {
   width: 348px ! important;
   background-color: #777;
 }
+.dropdownresponsive li{
+  width:300px ! important;
+
+}
 .dropdownresponsive a{
   background-color: #777 ! important;
   color:#fff ! important;
@@ -660,6 +680,7 @@ dropdown-submenu {
 }
 .responsiveNavBar{
   width:348px !important;
+  /*margin-left: 25px ! important;*/
 }
 .customDropdown a{
   background-color: #FAFAFA! important;
@@ -668,6 +689,15 @@ dropdown-submenu {
 }
 .resmenubar{
   float: left ! important;
+  background-color: #333 ! important;
+}
+.icon-bar{
+  background-color: #ffffff;
+}
+.responsivetoggle{
+  background-color: #333;
+  margin-right: 0px ! important;
+  margin-top: 21px;
 }
 /*.Servicecolumn{
   float: left;
