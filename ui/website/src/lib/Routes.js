@@ -114,6 +114,12 @@ import Welldatamngpage                from '../allPages/Welldatamngpage/Welldata
 import Productionenggpage             from '../allPages/Productionenggpage/Productionenggpage.js';
 import Productionmonitorpage          from '../allPages/Productionmonitorpage/Productionmonitorpage.js';
 import Productionaccountingpage       from '../allPages/Productionaccountingpage/Productionaccountingpage.js';
+
+/*NewTemplate*/
+import NewProductionaccountingpage    from '../allPages/NewProductionaccountingpage/NewProductionaccountingpage.js';
+
+
+
 import Productionoptimizpage          from '../allPages/Productionoptimizpage/Productionoptimizpage.js';
 import Productionforcastpage          from '../allPages/Productionforcastpage/Productionforcastpage.js';
 import Welltestingpage                from '../allPages/Welltestingpage/Welltestingpage.js';
@@ -258,6 +264,13 @@ const WebLayout = () => (
     <Route path="/productionengineering" component={ Productionenggpage } />
     <Route path="/productionmonitoringsurveillance" component={ Productionmonitorpage } />
     <Route path="/productionaccountingsolution" component={ Productionaccountingpage } />
+
+
+ {/*New templates*/}
+    <Route path="/NewProductionaccountingpage" component={ NewProductionaccountingpage } />
+
+
+
     <Route path="/productionoptimization" component={ Productionoptimizpage } />
     <Route path="/productionforecasting" component={ Productionforcastpage } />
     <Route path="/welltesting" component={ Welltestingpage } />

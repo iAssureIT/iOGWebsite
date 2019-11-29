@@ -81,7 +81,7 @@ export default class Map extends Component {
                
                </div> 
              </div>
-             <div className=" col-lg-12 col-md-col-sm-12 col-xs-12   ">
+             <div className=" col-lg-12 col-md-col-sm-12 col-xs-12 NOPadding  ">
               
                <div className=" col-lg-12 col-md-12 col-xs-12  ">
                 <div className=" servicediv col-lg-3 "> 

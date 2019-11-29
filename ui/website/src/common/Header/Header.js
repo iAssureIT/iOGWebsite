@@ -95,7 +95,7 @@ export default class Header extends Component {
                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                 <div class="Servicecolumn columnmenu">
                                     <a href="/iogimplement">iOGImplement</a>
-                                    <a href="/iogconsult">iOGCunsult</a>
+                                    <a href="/iogconsult">iOGConsult</a>
                                     <a href="/iogtrain">iOGTrain</a>
                                     <a href="/iogstudy">iOGStudy</a>
                                   </div>

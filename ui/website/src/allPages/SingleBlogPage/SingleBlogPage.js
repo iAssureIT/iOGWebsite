@@ -120,11 +120,12 @@ printTicket(event){
       		  <BlogContent blogContent={this.state.blogContent}/>
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
-              <i className="fa fa-facebook" href=""></i></a>
+                <i className="fa fa-facebook mar10" href=""></i>
+              </a>
               <a href={"https://twitter.com/home?status=" + this.state.CurrentUrl} target="_blank">
-              <i className="fa fa-twitter" ></i></a>
+              <i className="fa fa-twitter mar10" ></i></a>
               <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
-              <i class="fa fa-linkedin"></i></a>
+              <i class="fa fa-linkedin mar10"></i></a>
             </div>
             
            {/* <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">
