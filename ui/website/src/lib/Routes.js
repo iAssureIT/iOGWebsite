@@ -117,6 +117,7 @@ import Productionaccountingpage       from '../allPages/Productionaccountingpage
 
 /*NewTemplate*/
 import NewProductionaccountingpage    from '../allPages/NewProductionaccountingpage/NewProductionaccountingpage.js';
+import OldiOGConsultPage              from '../allPages/OldiOGConsultPage/OldiOGConsultPage.js';
 
 
 
@@ -231,7 +232,7 @@ const WebLayout = () => (
     <Route path="/operationlogbook" component={ Operationlogpage } />
     <Route path="/oilmovement" component={ Oilmovementpage } />
     <Route path="/iogimplement" component={ Iogimplementpage } />
-    <Route path="/iogconsult" component={ Iogconsultpage } />
+    <Route path="/newiogconsult" component={ Iogconsultpage } />
     <Route path="/iogtrain" component={ Iogtrainpage } />
     <Route path="/iogstudy" component={ Iogstudypage } />
     <Route path="/digitalstratergy" component={ Digitalstratergyroadmappage } />
@@ -268,6 +269,7 @@ const WebLayout = () => (
 
  {/*New templates*/}
     <Route path="/NewProductionaccountingpage" component={ NewProductionaccountingpage } />
+    <Route path="/oldiOGConsultPage" component={ OldiOGConsultPage } />
 
 
 

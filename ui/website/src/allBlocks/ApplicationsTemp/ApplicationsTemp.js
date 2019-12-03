@@ -21,6 +21,7 @@ export default class ApplicationsTemp extends React.Component {
                             {
 								featureTitle:"App1",
 								featureText:"Accurate production data inflow for Refinery profitability assessment ",
+								icon        :"images/star.png"
 								
 							},	
 
@@ -28,7 +29,7 @@ export default class ApplicationsTemp extends React.Component {
 							{
 								featureTitle:"App2",
 								featureText:" Precise classification and reporting of accounted and unaccounted losses",
-								
+								icon        :"images/star.png"
 							},
 						
 						  ],
@@ -37,14 +38,14 @@ export default class ApplicationsTemp extends React.Component {
 							{
 								featureTitle:"App4",
 								featureText:"The best source of input on production metrics to do an Actual Vs Plan LP retro analysis",
-								
+								icon        :"images/star.png"
 							},	
 						
 							{
 
 								featureTitle:"App6",
 								featureText:"Facilitate traders in accurately positioning the crude and product opening inventory position in the market.",
-                                featureicon:"/img/laptop.png"
+                                icon        :"images/star.png"
 							},	
 							
 
@@ -83,8 +84,8 @@ export default class ApplicationsTemp extends React.Component {
 								<div className=" col-lg-10 col-md-12">
 								 <div className="col-lg-12">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2  B2T_iconcircle pull-right">
-								    <i className="fa fa-star B3T_star"></i>
+								   <div className="col-lg-2  pull-right">
+								   <img src={data.icon} className="iconclass"/>					    
 								   </div>
 							    </div>
 								 <h3 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{data.featureTitle}</h3>
@@ -102,7 +103,7 @@ export default class ApplicationsTemp extends React.Component {
 	                     }
 	                     </div>
 	                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-	                      <img src="/images/1.png" className="B3t_img"/>
+	                      <img src="/images/apps.png" className="B3t_img"/>
 	                     </div>
 	                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						 {
@@ -113,8 +114,8 @@ export default class ApplicationsTemp extends React.Component {
 								<div className=" col-lg-10 col-md-12">
 								 <div className="col-lg-12 NOpadding">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2  B2T_iconcircle">
-								    <i className="fa fa-star B3T_star"></i>
+								   <div className="col-lg-2">
+								    <img src={data1.icon} className="iconclass"/>
 								   </div>
 							     </div>
 								 <h3 className="featuretitle text-left col-lg-9 NOpadding">{data1.featureTitle}</h3>

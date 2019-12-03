@@ -8,7 +8,8 @@ import './NewProductionaccountingpage.css';
 import TemplateBanner          from '../../allBlocks/TemplateBanner/TemplateBanner.js';
 import TemplateOverview        from '../../allBlocks/TemplateOverview/TemplateOverview.js';
 import ApplicationsTemp        from '../../allBlocks/ApplicationsTemp/ApplicationsTemp.js';
-import ChallengesTemp        from '../../allBlocks/ChallengesTemp/ChallengesTemp.js';
+import ChallengesTemp          from '../../allBlocks/ChallengesTemp/ChallengesTemp.js';
+import ServicesOffered         from '../../allBlocks/ServicesOffered/ServicesOffered.js';
 
 export default class NewProductionaccountingpage extends Component {
 
@@ -19,6 +20,7 @@ export default class NewProductionaccountingpage extends Component {
       <TemplateOverview />
       <ApplicationsTemp/>
       <ChallengesTemp/>
+      <ServicesOffered/>
       	
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
       </div>

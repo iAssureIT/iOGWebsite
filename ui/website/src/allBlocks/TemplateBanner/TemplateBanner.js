@@ -12,7 +12,7 @@ export default class TemplateBanner extends Component {
         return [
              {
                 bannerTitle : "Production Accounting",
-                bannerimg   : "/images/6.png",
+                bannerimg   : "/images/acc.png",
                
             }           
         ]

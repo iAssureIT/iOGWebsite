@@ -94,10 +94,11 @@ export default class Header extends Component {
                               <div class="col-lg-offset-5 dropdown-content servicedropdown1 ">
                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                 <div class="Servicecolumn columnmenu">
+                                     <a href="/oldiOGConsultPage">iOGConsult(Old)</a>
+                                     <a href="/newiogconsult">iOGConsult(New)</a>
                                     <a href="/iogimplement">iOGImplement</a>
-                                    <a href="/iogconsult">iOGConsult</a>
                                     <a href="/iogtrain">iOGTrain</a>
-                                    <a href="/iogstudy">iOGStudy</a>
+                                    {/*<a href="/iogstudy">iOGStudy</a>*/}
                                   </div>
                              </div>
                             </div>
@@ -123,8 +124,8 @@ export default class Header extends Component {
                               </div>
                           <div class=" column columnmenu columnmenu2">
                             <h5 className="columnhead"><a href="/supplydistribute" className="columnhead">Supply & Distribution</a></h5>
-                            <a href="/demandmanagement">Demand Mgmt</a>
-                            <a href="/inventorymanagement">Inventory Mgmt</a>
+                            <a href="/demandmanagement">Demand Management</a>
+                            <a href="/inventorymanagement">Inventory Management</a>
                             <a href="/diatributionplanning">Distribution Planning</a>
                             <a href="/retailautomation">Retail Automation</a><br/>
                              <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
@@ -136,12 +137,13 @@ export default class Header extends Component {
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
-                            <a href="/productionaccounting">Production Accounting</a>
+                            <a href="/productionaccounting">Production Accounting(old)</a>
+                            <a href="/NewProductionaccountingpage">Production Accounting(New)</a>
                             <a href="/datahistorian">Realtime Data Historian</a>
                             <a href="/corporatedashboard">Corporate Dashboard & Analytics</a>
                             <a href="/operationlogbook">Operation Logbook</a>
                             <a href="/oilmovement">Oil Movement Mgmt Systems</a>
-                             <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Env</a></h5>
+                             <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
                             <a href="#">Occupational Health Mgmnt</a>
                             <a href="#">Process Safety Management</a>
                             <a href="#">Environment Management</a>
@@ -158,14 +160,14 @@ export default class Header extends Component {
                           </div>
                           <div class="column columnmenu">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
-                            <a href="">Util Network Optimization</a>
+                            <a href="">Utility Network Optimization</a>
                             <a href="">Equipment Monitoring</a>
                             <a href="">Energy Accounting</a>
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
                             <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
                             <a href="/riskBasedInspection">Asset Lifecycle Management</a>
                             <a href="/assetStrategyMgmt">Asset Strategy Management</a>
-                            <a href="#">Inspection & Callibration Mgmt</a>
+                            <a href="#">Inspection & Callibration Management</a>
                           </div>
                         </div>
                       </div>
@@ -247,7 +249,6 @@ export default class Header extends Component {
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
                                             <a  className="dropdown-item" href="/iogimplement">iOGImplement</a>
-                                            <a className="dropdown-item" href="/iogonsult">iOGConsult</a>
                                             <a className="dropdown-item" href="/iogtrain">iOGTrain</a>
                                             <a className="dropdown-item" href="/iogstudy">iOGStudy</a> 
                                           </ul>

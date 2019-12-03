@@ -1,0 +1,27 @@
+ .innerBlock5tepmlate{
+ 	height: 700px;
+ }
+ .B4T_ServicesDiv{
+    top: 135px;
+    box-shadow: 0px 0px 3px 0px #eee;
+    margin-left: 76px;
+    margin-bottom: 20px;
+  }
+  .B5T_img{
+  	/*width: 185px;*/
+    padding: 11px;
+  }
+  .B5T_txt{
+  	font-weight: 600;
+  }
+  .innerServiceDiv{
+  	padding-left: 45px;
+  }
+  .B2T_serviceTitle{
+	top: 53px;
+    left: 563px;
+    position: absolute;
+    color: #009de2;
+    font-size: 35px;
+    font-weight: 600;
+}

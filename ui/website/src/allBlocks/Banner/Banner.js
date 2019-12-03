@@ -3,6 +3,16 @@ import $                  from 'jquery';
 import './Banner.css';
 
 export default class Banner extends Component {
+
+componentDidMount(){
+  $(document).ready(function(){
+      $("dataonHover1").hide();
+
+  $("oilsign8").hover(function(){
+      $("dataonHover1").show();
+  });
+});
+}  
   render() {  
     var y = 330;
     var h = y + 'px';
@@ -72,45 +82,47 @@ export default class Banner extends Component {
                   <img alt="" src="/images/up2.png"/>
                 </figure>
                 <figure className="oilsign hoveroilsign">
-                  <img alt="" src="/images/oilsign.png" className="dataonHover1"/>
-                  <div className="triangle-down"></div>
+                  <img alt="" src="/images/oilsign.png" className=""/>
+                 {/* <div className="triangle-down"></div>
                   <div className="dataonHover">
-
-                  </div>
+                  </div>*/}
                 </figure>
                 <figure className="oilsign2 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
-                  <div className="triangle-down"></div>
+                 {/* <div className="triangle-down"></div>
                   <div className="dataonHover">
                    <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>
+                  </div>*/}
                 </figure>
                 <figure className="oilsign3 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
-                   <div className="triangle-down"></div>
+                   {/*<div className="triangle-down"></div>
                   <div className="dataonHover">
                     <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>
+                  </div>*/}
                 </figure>
                 <figure className="oilsign4 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
-                   <div className="triangle-down"></div>
+                   {/*<div className="triangle-down"></div>
                   <div className="dataonHover">
                     <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>
+                  </div>*/}
                 </figure>
                <figure className="oilsign5 hoveroilsign2">
                   <img alt="" src="/images/oilsign.png"/>
-                  <div className="triangle-left"></div>
+                  <div className="triangle-down2">
+                    <div className="triangle-down21"></div>
+                  </div>
                   <div className="dataonHover2">
-                    <p className="pinhoverdata text-center">Some sample Text</p>
+                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas  <span className="Hoverreadmore">Read More</span></p>
+
                   </div>
                 </figure>
                 <figure className="oilsign6 hoveroilsign1">
-                  <div className="triangle-down1"></div>
+                 {/* <div className="triangle-down1"></div>
                   <div className="dataonHover1">
                     <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>
+                  </div>*/}
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
                 <figure className="oilsign7 ">
@@ -118,12 +130,16 @@ export default class Banner extends Component {
                   <div className="dataonHover">
                   </div>
                 </figure>
-                <div className="hoveroilsign">
-                  <figure className="oilsign8 ">
+                <figure className="oilsign8 ">
                     <img alt="" src="/images/oilsign.png"/>
-                     <div className="dataonHover"></div>
-                  </figure>
-                </div>
+                    
+                  </figure> 
+                  <div className="dataonHover1">
+                     <div className="triangle-down1"></div>
+                      <p className="pinhoverdata text-center">Some sample Text</p>
+                    </div> 
+                <div className="hoveroilsign8">
+                </div> 
                   <img alt="" src="/images/anim.png" className="animnewimg"/>
                 <figure className="anim">
                 </figure>
@@ -162,11 +178,6 @@ export default class Banner extends Component {
             </div>
           </div>
         </div>
-        
-
-
-
-
       </div>
     );  
   }

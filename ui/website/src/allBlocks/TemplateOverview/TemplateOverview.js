@@ -12,7 +12,7 @@ export default class TemplateOverview extends Component {
         return [
              {
                 overviewTitle : "Overview",
-                bannerimg   : "/images/career10.jpg",
+                bannerimg   : "/images/block1.png",
                 overviewtext:"The Production accounting application performs reconciliation of the measured raw data and provides accurate data for daily production accounting and performance reporting. It provides reconciled data for daily, weekly and monthly reporting and provides key inputs for fiscal / revenue accounting. It also provides other tangible and nontangible benefits such as loss minimization, quality giveaway minimization, etc.",
                
             }           

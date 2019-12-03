@@ -336,3 +336,6 @@
     position: absolute;
     font-size: 11px;
   }
+  .iconclass{
+    margin-left: -40px;
+  }

@@ -3,25 +3,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 // import $                  from 'jquery';
-import './Iogconsultpage.css';
+// import './Iogconsultpage.css';
 
 import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
-import IogconsultTxtRight      from '../../allBlocks/IogconsultTxtRight/IogconsultTxtRight.js';
-import ConsultingServices      from '../../allBlocks/ConsultingServices/ConsultingServices.js';
-import ConsultDownstream      from '../../allBlocks/ConsultDownstream/ConsultDownstream.js';
 
-export default class Iogconsultpage extends Component {
+export default class oldiOGconsultpage extends Component {
 
      overviewData(){
         return [
             {
-                
+                overviewTitle       : "iOGConsult",
                 overviewSubTitle    : "Overview",
                 overviewimg         : "",
-                overviewtext1       : "iOG provides expert consulting services to improve a client’s business process & raising them up to the best practices in the industry iOGConsult is our service arm through which we provide extensive or specific consultation by our domain experts. Our consultants help clients in assessing their current business processes, identifying gaps and opportunities for improvement. Utilizing our strong knowledge and experience in the various aspects of the global Oil and Gas value chain, we help our clients in filling up their operational gaps and eventually unlocking hidden value delivery opportunities.",
+                overviewtext1       : "iOG provides expert consulting services to improve a client’s business process & raising them up to the best practices in the industry.",
+                overviewtext2       : "iOGConsult is our service arm through which we provide extensive or specific consultation by our domain experts. Our consultants help clients in assessing their current business processes, identifying gaps and opportunities for improvement. Utilizing our strong knowledge and experience in the various aspects of the global Oil and Gas value chain, we help our clients in filling up their operational gaps and eventually unlocking hidden value delivery opportunities.",
                 overviewtext3       : "",
                 
 
@@ -30,7 +28,7 @@ export default class Iogconsultpage extends Component {
         ]
     }
 
-   /* Commonleafulblock(){
+    Commonleafulblock(){
         return [
             {
                 challengesTitle : "Our Consulting Service differentiators:",
@@ -194,7 +192,7 @@ export default class Iogconsultpage extends Component {
 
             }
         ]
-    }*/
+    }
 
    
 
@@ -202,20 +200,16 @@ export default class Iogconsultpage extends Component {
 
     return (
       <div>
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimplmntbrdCrm">
+       
+       </div>   
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-        <img src="/images/concultback.png" className="consultMainImg"/>  
-      </div>  
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      	<Overview OverviewData={this.overviewData()} />
-        <IogconsultTxtRight/>
-        <ConsultingServices/>
-        <ConsultDownstream/>
-        {/*<Imgleafblock ImgleafblockData={this.imgleafblockData()} />
+        <Overview OverviewData={this.overviewData()} />
+        <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-        <Commonulliblock CommonulliData={this.commonulliData()} />*/}
+        <Commonulliblock CommonulliData={this.commonulliData()} />
       </div>
      </div> 
     );  
   }
 }
-
