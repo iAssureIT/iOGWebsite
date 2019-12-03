@@ -144,7 +144,7 @@ export default class Header extends Component {
                             <a href="/operationlogbook">Operation Logbook</a>
                             <a href="/oilmovement">Oil Movement Mgmt Systems</a>
                              <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
-                            <a href="#">Occupational Health Mgmnt</a>
+                            <a href="#">Occupational Health Management</a>
                             <a href="#">Process Safety Management</a>
                             <a href="#">Environment Management</a>
                           </div>
@@ -167,7 +167,7 @@ export default class Header extends Component {
                             <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
                             <a href="/riskBasedInspection">Asset Lifecycle Management</a>
                             <a href="/assetStrategyMgmt">Asset Strategy Management</a>
-                            <a href="#">Inspection & Callibration Management</a>
+                           
                           </div>
                         </div>
                       </div>
