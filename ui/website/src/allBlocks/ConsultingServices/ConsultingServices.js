@@ -80,13 +80,13 @@ export default class ConsultingServices extends Component {
        </div>
         <h1 className="text-center"><b>Our Consulting<br/>
                             Service differentiators</b></h1>
-        <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
          
         {
           this.ChallengesData().map((data,index)=>{
             return(
-             
-               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 BT3_dataDiv">
+             <div>
+               <div className=" col-lg-3 col-md-3 col-sm-12 col-xs-12 BT3_dataDiv">
                <div className="col-lg-12 col-md-12">
                 <div className="BT4_imgBack col-lg-offset-5"></div>
                  <img src={data.bannerimg} className="BT3_img"/>
@@ -96,7 +96,7 @@ export default class ConsultingServices extends Component {
                  <p className="BT4_txt">{data.overviewtext}</p>
                 </div>
                </div>
-             
+             </div>
               );
 
           })
