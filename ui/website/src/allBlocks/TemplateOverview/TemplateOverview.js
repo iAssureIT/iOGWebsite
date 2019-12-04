@@ -8,17 +8,7 @@ import './TemplateOverview.css';
 
 export default class TemplateOverview extends Component {
 
- TemplateOverviewData(){
-        return [
-             {
-                overviewTitle : "Overview",
-                bannerimg   : "/images/block1.png",
-                overviewtext:"The Production accounting application performs reconciliation of the measured raw data and provides accurate data for daily production accounting and performance reporting. It provides reconciled data for daily, weekly and monthly reporting and provides key inputs for fiscal / revenue accounting. It also provides other tangible and nontangible benefits such as loss minimization, quality giveaway minimization, etc.",
-               
-            }           
-        ]
-    }
-
+ 
 
   render() {  
     return (
@@ -29,7 +19,7 @@ export default class TemplateOverview extends Component {
         </div>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         {
-          this.TemplateOverviewData().map((data,index)=>{
+          this.props.templateOverviewData.map((data,index)=>{
             return(
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <h3 className="B2T_overviewTitle text-center">{data.overviewTitle}</h3>

@@ -8,54 +8,7 @@ import './ServicesOffered.css';
 
 export default class ServicesOffered extends Component {
 
- ChallengesData(){
-        return [
-            
-            {
-                
-                bannerimg      : "/images/s1.png",
-                serviceTitle   : "Service1",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
-               
-            }, 
-            {
-               
-                bannerimg      : "/images/s2.png",
-                serviceTitle   : "Service2",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
-               
-            },  
-            {
-               
-                bannerimg   : "/images/s3.png",
-                serviceTitle   : "Service3",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
-
-            },  
-            {
-               
-                bannerimg   : "/images/s4.png",
-                serviceTitle   : "Service4",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
-
-            },    
-            {
-               
-                bannerimg   : "/images/s5.png",
-                serviceTitle   : "Service5",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
-
-            },
-            {
-               
-                bannerimg   : "/images/s6.png",
-                serviceTitle   : "Service6",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
-
-            },            
-               
-        ]
-    }
+ 
 
 
   render() {  
@@ -65,11 +18,18 @@ export default class ServicesOffered extends Component {
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
          </div>
         </div>
-        <h1 className="B2T_serviceTitle">Services Offered</h1>
+        {
+          this.props.servicesOffered.map((data,index)=>{
+            return(
+               <h1 className="B2T_serviceTitle">{data.servicepageTitle}</h1>
+              );
+          })
+         } 
+       
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
          
         {
-          this.ChallengesData().map((data,index)=>{
+          this.props.servicesOffered.map((data,index)=>{
             return(
 
               <div>

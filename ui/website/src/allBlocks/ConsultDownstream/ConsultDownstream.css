@@ -11,10 +11,10 @@
     font-weight: 600;
 }
 .downimg_p_txt{
-	position: absolute;
+	  position: absolute;
     top: 12.5em;
     left: 13em;
-    /* text-align: center; */
+    text-align: justify; 
     font-size: 20px
 }
 #consultdown_data0{

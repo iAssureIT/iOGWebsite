@@ -8,54 +8,6 @@ import './ConsultDownstream.css';
 
 export default class ConsultingServices extends Component {
 
- Downstreamdata(){
-        return [
-            
-            {
-                ConsultDown    : "BUSINESS PROCESS MAPPING",
-                imageText      : "Design Efficient FEED that strikes the right balance of IT investments and the business",
-               
-            }, 
-            {
-                ConsultDown    : "FEED FOR INTEGRATED",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-               
-            },  
-             {
-                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
-                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
-               
-            },  
-            {
-                ConsultDown    : "OPTIMIZE THE OF EXISTING",
-                imageText      : "Finding simplification opportunities to reduce the cost of application support",
-               
-            }, 
-            {
-                ConsultDown    : "BUSINESS CASE",
-                imageText      : "Devise structured ap-proach to transition and manage applications to",
-               
-            },  
-            {
-                ConsultDown    : "REVIEW OF AREAS NEEDING",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-               
-            },
-            {
-                ConsultDown    : "ESTABLISHING INDUSTRY",
-                imageText      : "Ensure process streamlining & standardization and efficiency improvements thereof",
-               
-            },  
-            {
-                ConsultDown    : "ASSESSMENT OF READINESS",
-                imageText      : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
-               
-            },    
-                  
-               
-        ]
-    }
-
 
   render() {  
     return (
@@ -66,14 +18,20 @@ export default class ConsultingServices extends Component {
          <div class="Main_Cards__Bubble1 bub21">
         </div>
        </div>
-        <h1 className="downimgtext text-center">iOGConsult for Downstream</h1>
-        <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as 
-           unique as our clients’ requirements.<br/>Following is a partial list
-           of our consulting services under our iOGConsult service arm</p>
+       {
+          this.props.consultdownstream.map((data,index)=>{
+           return( 
+             <div>
+                <h1 className="downimgtext text-center">{data.cosultheading}</h1>
+                <p className="downimg_p_txt">{data.cosultsubheading}</p>
+              </div>  
+           );
+         })
+        } 
         <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
          
        {
-          this.Downstreamdata().map((data,index)=>{
+          this.props.consultdownstream.map((data,index)=>{
             return(
              
                <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 " id={"consultdown_data"+index}>

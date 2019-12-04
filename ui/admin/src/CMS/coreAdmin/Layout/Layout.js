@@ -136,7 +136,7 @@ componentDidMount(){
   }
 
   render(){
-    if(this.state.loggedIn && !this.state.logout){
+    /*if(this.state.loggedIn && !this.state.logout){*/
       return(
           <Router>
             <div className="App container-fluid">
@@ -237,7 +237,7 @@ componentDidMount(){
           </Router>
       
          ); 
-         }else{
+      /*   }else{
        return(
         <div>
           <Router>
@@ -254,7 +254,7 @@ componentDidMount(){
           </Router>
         </div>
       );
-    }  
+    }  */
            
   }
 }

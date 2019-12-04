@@ -30,171 +30,133 @@ export default class Iogconsultpage extends Component {
         ]
     }
 
-   /* Commonleafulblock(){
+    txtRightData(){
         return [
-            {
-                challengesTitle : "Our Consulting Service differentiators:",
-                challengestext  : "",
-                challengestext2 : "",
-                commonulliUl : [
-                    {
-                        ulData : "Strong domain knowledge of refining, petrochemicals and other process industries."
-                    },
-                    {
-                        ulData : "World-class technical expertise in all the leading advanced software solutions in the industry."
-                    },
-                    {   
-                        ulData : "The unparalleled combination of domain-experts and subject matter experts, that are qualified to meet our clients’ needs and expectations."
-                    },
-                    {   
-                        ulData : "End-to-end Implementation and Integration skills"
-                    },
-                    {   
-                        ulData : "Extensive experience both on business and software applications"
-                    },
-                    {   
-                        ulData : "Ability to review problems independently and bring fresh perspectives to clients."
-                    },
-                    {   
-                        ulData : "An open mind and consultative approach to evolving best solutions that meet client requirements"
-                    },
-                    {   
-                        ulData : "Proprietary analysis, structured consulting and decision-making approaches"
-                    },
-                    {   
-                        ulData : "Focus on value creation and ensuring a good return on investments"
-                    }
-                ]
+            
+                
+               {
+                Consultservive : "Our Approach",
+                bannerimg   : "/images/consultrightimg.png",
+                overviewtext:"iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
+               
             }, 
+
+            
+                        
+        ]
+    }
+
+
+    consultingservices(){
+       return [
+
+          {
+                servicetitle   : "Our Consulting Service differentiators",
+                Consultservive : "Strong domain",
+                bannerimg      : "/images/consultsrvice.png",
+                overviewtext   :"Strong domain knowledge of refining, petrochemicals & other process industries",
+               
+            }, 
+            {
+                Consultservive : "Technical Expertise",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"World-class technical expertise in all the leading advanced software solutions in the industries",
+               
+            },  
+            {
+               Consultservive : "Domain Experts",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"The unparalleled combination ofdomain-experts & subjectmatter experts, that are qualified to meet our clients’ needs and expectations."
+            },  
+            {
+                Consultservive : "Implementation",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"End-to-end Implementation and Integration skills",
+               
+            },  
+             {
+                Consultservive : "Extensive",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Extensive experience  on  software applications",
+               
+            },
+             {
+                Consultservive : "Ability",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Ability to review problems independently and bring fresh perspectives to clients.",
+               
+            },     
+            {
+                Consultservive : "Consultative",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"An open mind and consultative approach to evolving best solutions that meet client requirements",
+               
+            },  
+             {
+                Consultservive : "Proprietary Analysis",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Proprietary analysis,structured consulting and decision-making approaches",
+               
+            },
+             {
+                Consultservive : "Value creation",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Focus on value creation and ensuring a good return on investments",
+               
+            },          
+        ]
+    }
+
+    consultdownstream(){
+        return[
+
+
+           {
+                cosultheading    : "iOGConsult for Downstream",
+                cosultsubheading : "We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm",
+                ConsultDown      : "BUSINESS PROCESS MAPPING",
+                imageText        : "Design Efficient FEED that strikes the right balance of IT investments and the business",
+               
+            }, 
+            {
+                ConsultDown    : "FEED FOR INTEGRATED",
+                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+               
+            },  
+             {
+                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
+                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
+               
+            },  
+            {
+                ConsultDown    : "OPTIMIZE THE OF EXISTING",
+                imageText      : "Finding simplification opportunities to reduce the cost of application support",
+               
+            }, 
+            {
+                ConsultDown    : "BUSINESS CASE",
+                imageText      : "Devise structured ap-proach to transition and manage applications to",
+               
+            },  
+            {
+                ConsultDown    : "REVIEW OF AREAS NEEDING",
+                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+               
+            },
+            {
+                ConsultDown    : "ESTABLISHING INDUSTRY",
+                imageText      : "Ensure process streamlining & standardization and efficiency improvements thereof",
+               
+            },  
+            {
+                ConsultDown    : "ASSESSMENT OF READINESS",
+                imageText      : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
+               
+            },    
                   
         ]
+
     }
-
-
-  
-  commonulliData(){
-        return [
-            {
-                commonulliheading       : "iOGConsult for Downstream",
-                commonullisubheading    : "Following is a partial list of our consulting services under our iOGConsult service arm.",
-                commonullitext          : "We at iOG Solutions believe in providing solutions that are as unique as our clients’ requirements. Every situation is different and comes with its own specific set of constraints and our consultants can help you in identifying and addressing them in ways designed specifically to address the problem.",
-                commonullitext2         : "The list offers only an overview of the typical problems we address for our clients. Do you have something specific to discuss? Connect with us now.",
-                commonulliUl            : [
-                    {   ulData          : "Business Process Mapping (As-Is, To-Be & Gap Analysis)",
-                        commonulliLi    : [
-                                            {
-                                                liData : "Detailed Analysis of Business Processes and Client requirement"
-                                            },
-                                            {
-                                                liData : "Reengineering processes to align with applications and industry best practices"
-                                            },
-                                            {
-                                                liData : "Design organization charts for role clarity"
-                                            },
-                                            {
-                                                liData : "Fostering of end-to-end process excellence through improvisation of inter-departmental activities"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Downstream Oil & Gas Expert Consulting & PMC services",
-                        commonulliLi : [
-                                            {
-                                                liData : "Assessment of the business requirements, analyze and enhance the Downstream Value chain of activities comprising of Production Planning & Scheduling, Supply-Distribution, Yield accounting, Simulation, etc. through our SME services"
-                                            },
-                                            {
-                                                liData : "Assessment of the requirements for technological and functional architecture design for an integrated solution which allows seamless flow of information between applications"
-                                            },
-                                            {
-                                                liData : "Technology Assessment of all downstream applications"
-                                            },
-                                            {
-                                                liData : "Value-added consulting in core areas of the downstream value chain such as Application Understanding, Domain Knowledge, Productivity Improvement opportunities related to it, Performance tuning, etc."
-                                            },
-                                            {
-                                                liData : "Innovative dug-out of potential profit improvement areas through supporting the implementation of effective KPI’s"
-                                            },
-                                            {
-                                                liData : "Support interface development activities"
-                                            },
-                                            {
-                                                liData : "Introduction of new business processes to track operational gaps and enablement of sustained business excellence"
-                                            },
-                                            {
-                                                liData : "PMC and Change Management services"
-                                            }
-                                        ]
-                    },
-                    {   
-                        ulData : "Review of areas needing Application Integration",   
-                    },
-                    {   ulData : "Establishing industry-wide best practices",
-                        commonulliLi : [
-                                            {
-                                                liData : "Ensure process streamlining and standardization and efficiency improvements thereof"
-                                            },
-                                            {
-                                                liData : "Guidance to the client on domain knowledge and expertise in refinery applications"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Assessment of Readiness for Advanced Downstream Value Chain solutions",
-                        commonulliLi : [
-                                            {
-                                                liData : "Review of performance on key metrics"
-                                            },
-                                            {
-                                                liData : "Identification of opportunities for Infrastructure Rationalization"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Business Case (development & presentation)",
-                        commonulliLi : [
-                                            {
-                                                liData : "Devise structured approach to transition and manage applications to arrive at Go/No-Go decisions and to decommission sunset applications"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Optimize the use of existing applications and suggest new packages to increase profitability.",
-                        commonulliLi : [
-                                            {
-                                                liData : "Finding simplification opportunities to reduce the cost of application support while still retaining desired service levels"
-                                            },
-                                            {
-                                                liData : "Identification of key challenges and opportunities for improvement"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "FEED for Integrated Refinery Information System",
-                        commonulliLi : [
-                                            {
-                                                liData : "Design Efficient FEED that strikes the right balance of IT investments and the business benefits of the new best-of-breed, state-of-the-art technology"
-                                            },
-                                            {
-                                                liData : "Devise RIS FEED both for green-field refinery and brown-field expansion projects that assess the existing applications/system, evaluate client’s requirements and develop application functional and architecture specifications along with cost estimates."
-                                            }
-                                        ]
-                    }
-
-                ]
-            }                        
-        ]
-    }
-
-    imgleafblockData(){
-        return [
-            {
-                plansTitle        : "Our Approach",
-                plansSubTitle1    : "",
-                plansSubTitle2    : "",
-                planstext         : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
-                planstext1        : "",
-                planstext2        : "",
-                planstext3        : "",
-                plansimg          : "images/iOGConsult.png",
-
-            }
-        ]
-    }*/
 
    
 
@@ -207,9 +169,9 @@ export default class Iogconsultpage extends Component {
       </div>  
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
       	<Overview OverviewData={this.overviewData()} />
-        <IogconsultTxtRight/>
-        <ConsultingServices/>
-        <ConsultDownstream/>
+        <IogconsultTxtRight txtRightData={this.txtRightData()}/>
+        <ConsultingServices consultingservices={this.consultingservices()}/>
+        <ConsultDownstream  consultdownstream={this.consultdownstream()}/>
         {/*<Imgleafblock ImgleafblockData={this.imgleafblockData()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         <Commonulliblock CommonulliData={this.commonulliData()} />*/}

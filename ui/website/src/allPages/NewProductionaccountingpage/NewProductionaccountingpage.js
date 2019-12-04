@@ -14,15 +14,149 @@ import AccountingUI            from '../../allBlocks/AccountingUI/AccountingUI.j
 
 export default class NewProductionaccountingpage extends Component {
 
+  tempalebannerData(){
+        return [
+             {
+                bannerTitle : "Production Accounting",
+                bannerimg   : "/images/acc.png",
+               
+            }           
+        ]
+    }
+    templateOverviewData(){
+        return [
+             {
+                overviewTitle : "Overview",
+                bannerimg   : "/images/block1.png",
+                overviewtext:"The Production accounting application performs reconciliation of the measured raw data and provides accurate data for daily production accounting and performance reporting. It provides reconciled data for daily, weekly and monthly reporting and provides key inputs for fiscal / revenue accounting. It also provides other tangible and nontangible benefits such as loss minimization, quality giveaway minimization, etc.",
+               
+            }           
+        ]
+    }
+
+    applicationsright (){
+
+     
+      return  [     
+              {
+                featureTitle :"App4",
+                featureText  :"The best source of input on production metrics to do an Actual Vs Plan LP retro analysis",
+                icon         :"images/star.png"
+              },  
+            
+              {
+
+                featureTitle :"App6",
+                featureText  :"Facilitate traders in accurately positioning the crude and product opening inventory position in the market.",
+                icon         :"images/star.png"
+              },  
+              
+
+              ]     
+        }
+
+    challengesData(){
+        return [
+            
+            {
+                ChallengeTitle : "Challenges",
+                bannerimg   : "/images/ch1.png",
+                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+               
+            }, 
+            {
+              
+                bannerimg   : "/images/ch2.png",
+                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+               
+            },  
+            {
+                ChallengeTitle : "Challenges",
+                bannerimg   : "/images/ch3.png",
+                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+               
+            },  
+            {
+                ChallengeTitle : "Challenges",
+                bannerimg   : "/images/ch4.png",
+                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+               
+            },  
+             {
+                ChallengeTitle : "Challenges",
+                bannerimg   : "/images/ch5.png",
+                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+               
+            },
+             {
+                ChallengeTitle : "Challenges",
+                bannerimg   : "/images/ch6.png",
+                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+               
+            },          
+               
+        ]
+    }
+
+    servicesOffered(){
+        return [
+            
+            {
+                servicepageTitle   :"Services Offered",
+                bannerimg          : "/images/s1.png",
+                serviceTitle       : "Service1",
+                serviceText        : "Accuracy in data imported as garbage-in garbage-out",
+               
+            }, 
+            {
+               
+                bannerimg      : "/images/s2.png",
+                serviceTitle   : "Service2",
+                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+               
+            },  
+            {
+               
+                bannerimg   : "/images/s3.png",
+                serviceTitle   : "Service3",
+                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+
+            },  
+            {
+               
+                bannerimg   : "/images/s4.png",
+                serviceTitle   : "Service4",
+                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+
+            },    
+            {
+               
+                bannerimg   : "/images/s5.png",
+                serviceTitle   : "Service5",
+                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+
+            },
+            {
+               
+                bannerimg   : "/images/s6.png",
+                serviceTitle   : "Service6",
+                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+
+            },            
+               
+        ]
+    }
+
+
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      <TemplateBanner />
-      <TemplateOverview />
-      <ApplicationsTemp/>
-      <ChallengesTemp/>
+      <TemplateBanner    tempalebannerData={this.tempalebannerData()} />
+      <TemplateOverview  templateOverviewData={this.templateOverviewData()}/>
+      <ApplicationsTemp  applicationsright={this.applicationsright()}/>
+      <ChallengesTemp challengesData={this.challengesData()}/>
       <AccountingUI/>
-      <ServicesOffered/>
+      <ServicesOffered servicesOffered={this.servicesOffered()}/>
       
       	
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

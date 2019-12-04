@@ -8,15 +8,7 @@ import './TemplateBanner.css';
 
 export default class TemplateBanner extends Component {
 
- TempalebannerData(){
-        return [
-             {
-                bannerTitle : "Production Accounting",
-                bannerimg   : "/images/acc.png",
-               
-            }           
-        ]
-    }
+ 
 
 
   render() {  
@@ -28,7 +20,7 @@ export default class TemplateBanner extends Component {
         </div>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
         {
-        	this.TempalebannerData().map((data,index)=>{
+        	this.props.tempalebannerData.map((data,index)=>{
         		return(
         		  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
         		   <h2 className="BT1_bannerTitle">{data.bannerTitle}</h2>
