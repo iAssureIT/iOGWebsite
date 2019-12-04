@@ -81,12 +81,7 @@ componentDidMount(){
                 <figure className="up1">
                   <img alt="" src="/images/up2.png"/>
                 </figure>
-                <figure className="oilsign hoveroilsign">
-                  <img alt="" src="/images/oilsign.png" className=""/>
-                 {/* <div className="triangle-down"></div>
-                  <div className="dataonHover">
-                  </div>*/}
-                </figure>
+                
                 <figure className="oilsign2 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
                  {/* <div className="triangle-down"></div>

@@ -106,8 +106,8 @@ export default class Map extends Component {
                  <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu">
-                  <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"               className="">Demand Mgmt</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/inventoryMgmt"            className="">Inventory Mgmt</a><br/>
+                  <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"               className="">Demand Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/inventoryMgmt"            className="">Inventory Management</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/diatributionplanning"     className="">Distribution Planning & Optimization</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/retailautomation"         className="">Retail Automation</a><br/>
                 </div>
@@ -150,7 +150,7 @@ export default class Map extends Component {
                  <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu">
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Util Network Optimiz</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Utility Network Optimization</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Equipment Monitoring</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Energy Accounting</a><br/><br/>
                 </div>
@@ -163,10 +163,10 @@ export default class Map extends Component {
                 </div> 
                 <div className="submenu submenuindustries">
                <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"               className="">Prod Accounting</a><br/>
-                   <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Criticality Anls</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Lifecycle Mgmt</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Strategy Mgmt</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Inspection & Callibration Mgmt</a><br/>
+                   <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Criticality Analysis</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Lifecycle Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Strategy Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Inspection & Callibration Management</a><br/>
                </div>
               </div>
                <div className=" servicediv col-lg-3 "> 
@@ -176,10 +176,10 @@ export default class Map extends Component {
                   <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Occupational Health Mgmt</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Process Safety Mgmt</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Process Safety Mgmt</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Environment Mgmt</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Occupational Health Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Process Safety Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Process Safety Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Environment Management</a><br/>
                 </div>
               </div>
               <div className=" servicediv col-lg-3">

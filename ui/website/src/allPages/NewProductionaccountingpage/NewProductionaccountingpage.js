@@ -40,14 +40,14 @@ export default class NewProductionaccountingpage extends Component {
       return  [     
               {
                 featureTitle :"App4",
-                featureText  :"The best source of input on production metrics to do an Actual Vs Plan LP retro analysis",
+                featureText  :"Accurate production data inflow for Refinery profitability assessment",
                 icon         :"images/star.png"
               },  
             
               {
 
                 featureTitle :"App6",
-                featureText  :"Facilitate traders in accurately positioning the crude and product opening inventory position in the market.",
+                featureText  :"Precise classification and reporting of accounted and unaccounted losses",
                 icon         :"images/star.png"
               },  
               
@@ -67,25 +67,25 @@ export default class NewProductionaccountingpage extends Component {
             {
               
                 bannerimg   : "/images/ch2.png",
-                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+                overviewtext:"Man hours wasted in tracking and resolving gross errors",
                
             },  
             {
                 ChallengeTitle : "Challenges",
                 bannerimg   : "/images/ch3.png",
-                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+                overviewtext:"Ineffective communication between the yield accounting engineer and with other concerned staff.",
                
             },  
             {
                 ChallengeTitle : "Challenges",
                 bannerimg   : "/images/ch4.png",
-                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+                overviewtext:"Achieve tangible benefits for acceptance of the oil accounting system",
                
             },  
              {
                 ChallengeTitle : "Challenges",
                 bannerimg   : "/images/ch5.png",
-                overviewtext:"Accuracy in data imported as garbage-in garbage-out",
+                overviewtext:"Application/scope of Oil accounting on the refinery-wide or unit-wide basis.",
                
             },
              {

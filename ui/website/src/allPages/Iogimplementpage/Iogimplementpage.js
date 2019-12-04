@@ -9,6 +9,10 @@ import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
 import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
+import IogconsultTxtRight      from '../../allBlocks/IogconsultTxtRight/IogconsultTxtRight.js';
+import ConsultingServices      from '../../allBlocks/ConsultingServices/ConsultingServices.js';
+import ConsultDownstream      from '../../allBlocks/ConsultDownstream/ConsultDownstream.js';
+
 
 export default class Iogimplementpage extends Component {
 
@@ -27,192 +31,147 @@ export default class Iogimplementpage extends Component {
                         
         ]
     }
-
-    Commonleafulblock(){
+    
+    txtRightData(){
         return [
-            {
-                challengesTitle : "Our differentiators:",
-                challengestext  : "",
-                challengestext2 : "",
-                commonulliUl : [
-                    {
-                        ulData : "Extensive cross-sector expertise with strong domain knowledge of both the Upstream and Downstream Verticals"
-                    },
-                    {
-                        ulData : "World-class technical expertise in some of the most advanced solutions in the industry"
-                    },
-                    {   
-                        ulData : "The unparalleled combination of domain-experts in our teams. The teams are built keeping in mind our clients’ requirements and needs."
-                    },
-                    {   
-                        ulData : "End-to-end Implementation skills and experience on leading-market solutions"
-                    },
-                    {   
-                        ulData : "Customization of solutions so as to cater to your specific situation"
-                    },
-                    {   
-                        ulData : "Provision of independent consulting on process-centric applications widely used across the world"
-                    },
-                    {   
-                        ulData : "A young, dynamic and confident team armed with a solution and goal-oriented approach."
-                    },
-                    {   
-                        ulData : "Learning through sharing from our experience gained through interaction with different clients."
-                    }
-                ]
+            
+                
+               {
+                Consultservive : "Our Approach",
+                bannerimg   : "/images/consultrightimg.png",
+                overviewtext:"iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",            
             }, 
+
+            
+                        
+        ]
+    }
+
+
+    consultingservices(){
+       return [
+
+          {
+                servicetitle   : "Our differentiators",
+                Consultservive : "Strong domain",
+                bannerimg      : "/images/consultsrvice.png",
+                overviewtext   :"Extensive cross-sector expertise with strong domain knowledge of both the Upstream and Downstream Verticals",
+               
+            }, 
+            {
+                Consultservive : "Technical Expertise",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"World-class technical expertise in some of the most advanced solutions in the industry",
+               
+            },  
+            {
+               Consultservive : "Domain Experts",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"The unparalleled combination of domain-experts in our teams. The teams are built keeping in mind our clients’ requirements and needs."
+            },  
+            {
+                Consultservive : "Implementation",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"End-to-end Implementation skills and experience on leading-market solutions",
+               
+            },  
+             {
+                Consultservive : "Extensive",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Customization of solutions so as to cater to your specific situation",
+               
+            },
+             {
+                Consultservive : "Ability",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Provision of independent consulting on process-centric applications widely used across the world",
+               
+            },     
+            {
+                Consultservive : "Consultative",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"A young, dynamic and confident team armed with a solution and goal-oriented approach.",
+               
+            },  
+             {
+                Consultservive : "Proprietary Analysis",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Learning through sharing from our experience gained through interaction with different clients.",
+               
+            },
+             {
+                Consultservive : "Value creation",
+                bannerimg   : "/images/consultsrvice.png",
+                overviewtext:"Focus on value creation and ensuring a good return on investments",
+               
+            },          
+        ]
+    }
+
+    consultdownstream(){
+        return[
+
+
+           {
+                cosultheading    : "iOGImplement for Downstream",
+                cosultsubheading : "We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm",
+                ConsultDown      : "Refinery Planning & Scheduling",
+                imageText        : "Implementation of Planning, Scheduling Solution Leverage Assay Management solutions for better and updated LP inputs.",
+               
+            }, 
+            {
+                ConsultDown    : "Supply and Distribution",
+                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+               
+            },  
+             {
+                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
+                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
+               
+            },  
+            {
+                ConsultDown    : "OPTIMIZE THE OF EXISTING",
+                imageText      : "Finding simplification opportunities to reduce the cost of application support",
+               
+            }, 
+            {
+                ConsultDown    : "BUSINESS CASE",
+                imageText      : "Devise structured ap-proach to transition and manage applications to",
+               
+            },  
+            {
+                ConsultDown    : "REVIEW OF AREAS NEEDING",
+                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+               
+            },
+            {
+                ConsultDown    : "ESTABLISHING INDUSTRY",
+                imageText      : "Ensure process streamlining & standardization and efficiency improvements thereof",
+               
+            },  
+            {
+                ConsultDown    : "ASSESSMENT OF READINESS",
+                imageText      : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
+               
+            },    
                   
         ]
+
     }
-
-
-  
-  commonulliData(){
-        return [
-            {
-                commonulliheading       : "",
-                commonullisubheading    : "",
-                commonullitext          : "Following is a partial list of the Downstream O& G Business process areas and related software solutions for which we provide Implementation services to our clients:",
-                commonullitext2         : "The list offers only an overview of the typical implementation landscapes we handle. Have something specific to discuss? Connect with us now.",
-                commonulliUl            : [
-                    {   ulData          : "Refinery Planning & Scheduling",
-                        commonulliLi    : [
-                                            {
-                                                liData : "Implementation of Planning, Scheduling Solution"
-                                            },
-                                            {
-                                               liData : "Leverage Assay Management solutions for better and updated LP inputs."
-                                            },
-                                            {
-                                                liData : "Upgrade of LP yield shift vectors using rigorous kinetic models"
-                                            },
-                                            {
-                                                liData : "Implementation of  new unit models/ revamp of existing LP models"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Supply and Distribution",
-                        commonulliLi : [
-                                            {
-                                                liData : "Build/re-vamp supply chain demand & distribution planning models"
-                                            },
-                                            {
-                                                liData : "Implementation Retail automation solutions"
-                                            },
-                                            {
-                                                liData : "Deployment of effective Sales and Operations Planning (S&OP) and Inventory Management modules"
-                                            },
-                                            {
-                                                liData : "Integration of Supply distribution tools with Refinery Production planning and scheduling tools"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Manufacturing execution systems (MES)",
-                        commonulliLi : [
-                                            {
-                                                liData : "Implementation of MES tools for operation management and development of procedures to aid aspects of transparency, repeatability and enable the gaining of refinery-wide acceptance"
-                                            },
-                                            {
-                                                liData : "Management of oil accounting systems to reduce daily and monthly imbalances to tolerant levels"
-                                            },
-                                            {
-                                                liData : "Development of  real-time performance monitoring tools"
-                                            },
-                                            {
-                                                liData : "Implementation of  KPI’s and Profit trackers for continuous performance monitoring"
-                                            },
-                                            {
-                                                liData : "Implementation of customized dashboard and analytics for holistic visualization and drill-down analysis all through the supply chain"
-                                            },
-                                            {
-                                                liData : "Development of  customized applications and interfaces to fit client-specific requirements"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Advanced Process Control",
-                        commonulliLi : [
-                                            {
-                                                liData : "Implementation of Base Control Loop tuning"
-                                            },
-                                            {
-                                                liData : "Project execution/Support services to implement recommended or specified advanced process control applications"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Dynamic and Steady-State Simulation",
-                        commonulliLi : [
-                                            {
-                                                liData : "Development of dynamic/steady state simulation models"
-                                            },
-                                            {
-                                                liData : "Modification/maintenance of dynamic/steady state simulation models"
-                                            },
-                                            {
-                                                liData : "Development of user-defined modules on Simulation platforms for proprietary calculations"
-                                            }
-                                        ]
-                    },
-                    {   ulData : "Rigorous Reactor Modeling",
-                        commonulliLi : [
-                                            {
-                                                liData : "Build flowsheets, calibrate and validate reactor models"
-                                            },
-                                            {
-                                                liData : "Setup of Model Prediction cases and validation of yields across reactor and process units"
-                                            },
-                                            {
-                                                liData : "Identify dependent and independent variables, formulate cases and generate base/shift LP vectors for LP update"
-                                            }
-                                        ]
-                    }
-
-                ]
-            }                        
-        ]
-    }
-
-    imgleafblockData(){
-        return [
-            {
-                plansTitle        : "Our Approach",
-                plansSubTitle1    : "",
-                plansSubTitle2    : "",
-                planstext         : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
-                planstext1        : "",
-                planstext2        : "",
-                planstext3        : "",
-                plansimg          : "images/iOGImplement.png",
-
-            }
-        ]
-    }
-
-   
-
   render() {  
     return (
       <div> 
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimplmntbrdCrm">
-       <div className=" col-lg-4 ">
-         <div class="container">
-          <div class="moduletable">           
-           <ul class="breadcrumb breadcrumb2">
-            <li class="active">&nbsp;</li><li>
-             <a href="/" class="pathway">Home</a>
-              <span class="divider">
-               <img src="/media/system/images/arrow.png" alt=""/></span></li>
-               <li><a href="/services" class="pathway">Services</a>
-                <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
-                <li class="active"><span>iOGImplement</span></li></ul>
-            </div>
-          </div>
-        </div> 
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+       <img src="/images/concultback.png" className="consultMainImg"/>  
        </div> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
       	 <Overview OverviewData={this.overviewData()} />
-         <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
+         <IogconsultTxtRight txtRightData={this.txtRightData()}/>
+        <ConsultingServices consultingservices={this.consultingservices()}/>
+        <ConsultDownstream  consultdownstream={this.consultdownstream()}/>
+       {/*  <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
          <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-         <Commonulliblock CommonulliData={this.commonulliData()} />
+         <Commonulliblock CommonulliData={this.commonulliData()} />*/}
        </div>
      </div> 
     );  

@@ -94,11 +94,11 @@ export default class Header extends Component {
                               <div class="col-lg-offset-5 dropdown-content servicedropdown1 ">
                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                 <div class="Servicecolumn columnmenu">
-                                     <a href="/oldiOGConsultPage">iOGConsult(Old)</a>
-                                     <a href="/newiogconsult">iOGConsult(New)</a>
+                                     {/*<a href="/oldiOGConsultPage">iOGConsult(Old)</a>*/}
+                                     <a href="/newiogconsult">iOGConsult</a>
                                     <a href="/iogimplement">iOGImplement</a>
                                     <a href="/iogtrain">iOGTrain</a>
-                                    {/*<a href="/iogstudy">iOGStudy</a>*/}
+                                    {<a href="/iogstudy">iOGStudy</a>}
                                   </div>
                              </div>
                             </div>
@@ -137,8 +137,8 @@ export default class Header extends Component {
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
-                            <a href="/productionaccounting">Production Accounting(old)</a>
-                            <a href="/NewProductionaccountingpage">Production Accounting(New)</a>
+               {/*             <a href="/productionaccounting">Production Accounting(old)</a>*/}
+                            <a href="/NewProductionaccountingpage">Production Accounting</a>
                             <a href="/datahistorian">Realtime Data Historian</a>
                             <a href="/corporatedashboard">Corporate Dashboard & Analytics</a>
                             <a href="/operationlogbook">Operation Logbook</a>
