@@ -1,3 +1,32 @@
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.wrapper{
+  height: 500px;
+  background-color: #999;
+}
+.wrapper1{
+  height: 300px;
+  background-color: #ff5500;
+}
+.nopadd{
+  padding: 0px;
+}
 @font-face{
   font-family:'Montserrat-Regular';
   src: url("/fonts/Montserrat-Regular.ttf");

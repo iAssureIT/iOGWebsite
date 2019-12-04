@@ -1,0 +1,330 @@
+import React, { Component, Suspense } from 'react';
+import CircleMenuBars from '../circlemenubars.js';
+import axios from 'axios';
+import {Route, withRouter} from 'react-router-dom';
+import CmsBlock from "../createnewblock/Cmsblock.js"
+
+import swal from 'sweetalert';
+
+
+class Viewpage extends React.Component {
+	constructor(props) {
+		super(props);
+   		var id = this.props.match.params.url;
+		this.state = {
+			Newpagecomponent: "",
+			urlId:id,
+	   		blocks:"",
+	   		Blocks:[],
+	   		ListOfBlocks:{},
+	        addedBlocks:[],
+	   		listOfBlocks:false,
+	   		urlParam:"",
+	   		block_id:"",
+	   		pageData	:""
+		}
+	}
+
+
+
+	getAllBlockList(){
+		axios
+				.get('/api/blocks/get/list')
+				.then((response)=>{
+						        // console.log("AllBlogs=",response.data);
+						      	this.setState({
+					      			ListOfBlocks:response.data
+					      		},()=>{
+					      				console.log(this.state.ListOfBlocks);
+					      		});
+					      	})
+			  	.catch(function (error) {
+			    // handle error
+			    	console.log(error);
+			  	});
+	}
+	componentDidMount(){
+			// console.log("pageUrl = ",pageUrl);
+			this.getAllBlockList();
+			var pageUrl = window.location.pathname;;
+			// console.log("pageUrl = ",pageUrl);
+			let a = pageUrl ? pageUrl.split('/') : "";
+	        console.log("a==>",a[1]); 
+	        const urlParam =a[2];
+	        this.setState({
+					      			urlParam:urlParam
+					      		});
+
+			axios
+			.get('http://iogapi.iassureit.com/api/pages/get/page_block/'+urlParam)
+	        .then((response)=>{
+	        	console.log("data in page=",response.data);
+	      		if (response.data) {
+			      	this.setState({
+			      		pageData:response.data,
+			      	});
+
+    			/*var blockFromPage = response.data.pageBlocks;
+		    	// console.log("Page = ",response.data);
+			    for (var i = 0; i < blockFromPage.length; i++) 
+			    {
+			    	{
+			   		 axios
+				        .get('http://iogapi.iassureit.com/api/blocks/get/'+ blockFromPage[i].block_id)
+				        .then((response)=>{
+					        var blocks = this.state.Blocks;
+					        blocks.push(response.data);
+					      	this.setState({
+				      			Blocks:blocks
+				      		});
+				      	})
+				      	.catch(function(error){
+				        	console.log(error);
+				          	if(error.message === "Request failed with status code 401")
+		              		{
+		                   		swal("Your session is expired! Please login again.","", "error");
+		              		}
+		     			})
+	    			}
+	 			}*/
+			}
+	    })
+	      .catch(function(error){
+	        console.log(error);
+	          if(error.message === "Request failed with status code 401")
+	              {
+	                   swal("Your session is expired! Please login again.","", "error");
+	              }
+	      })
+   	}
+   		handleChange(event)
+	{
+		var attaribute_Value = event.target.getAttribute('data_id');
+		// console.log("attaribute_Value",attaribute_Value);
+		this.state.addedBlocks.push(attaribute_Value)
+	}
+	addBlock(event){
+		// var urlParam = window.location.pathname;
+  //      console.log('urlParam=>',urlParam);
+		var pageUrl = window.location.pathname;;
+		// console.log("pageUrl = ",pageUrl);
+		let a = pageUrl ? pageUrl.split('/') : "";
+        const urlParam =a[2];
+		var attaribute_addBlock = event.target.id;
+		var AttachmentValues ={    
+			"block_id"	: attaribute_addBlock,											
+   		}
+		axios
+			.patch('api/pages/patch/blocks/add/'+urlParam,AttachmentValues)
+		  	.then(function (response) {
+		    	window.location.reload();
+		    	// console.log(response);
+		  	})
+		  	.catch(function (error) {
+		    	console.log(error);
+		  	});
+
+	}
+	submitData(event){
+		var AttachmentValues =this.state.addedBlocks;
+		// console.log("ids =",this.state.addedBlocks);
+		axios
+			.post('api/pages/patch/blocks/add/about-page',AttachmentValues)
+		  	.then(function (response) {
+		    	console.log(response);
+		  	})
+		  	.catch(function (error) {
+		    	console.log(error);
+		  	});
+	}
+	editBlock(event){
+		var block_id = event.currentTarget.id;
+		// console.log("block_id=",block_id);
+		this.setState({block_id: block_id});
+	}
+	deleteBlocks(event){
+		let urlParam=this.state.urlParam;
+		// console.log("this.state.urlParam  ",urlParam);
+		event.preventDefault();
+		var URL= event.target.id;
+		console.log("delet id ",URL);
+		var deleteValues ={
+	      "pageBlocks_id":URL
+	}
+		console.log("id delet", this.state.urlParam, deleteValues);
+		 swal({
+	          title: "Are you sure you want to delete this Page ?",
+	          text: "Once deleted, you will not be able to recover this Page!",
+	          icon: "warning",
+	          buttons: true,
+	          dangerMode: true,
+	        })
+	        .then((success) => {
+	        	console.log(success);
+	            if (success) {
+	            	axios
+				    .patch('/api/pages/patch/blocks/remove/'+this.state.urlParam,deleteValues)
+				    .then((response)=>{
+				     	// this.getListOfPages();
+				       swal("Your Page is deleted!");
+				       window.location.reload();
+				    })
+				    .catch((error)=>{
+				       console.log("error = ", error);              
+				    });  
+	            } else {
+	            swal("Your Block is safe!");
+	          }
+	        }); 
+	}
+	onclickEvent(){
+		this.setState({
+	      			listOfBlocks:true
+	      		});
+		}
+
+   render() {
+    	// var data = this.state.ListOfBlocks;
+    	console.log("block id in render=",this.state.pageData.pageBlocks);
+    	var listBlock = this.state.pageData.pageBlocks;
+    	// console.log("data blocks in render",data);
+        return (
+        		<div>	
+					<div className="contentWrapper">
+						<div className="box-body">
+							<div className="row">
+								<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h2 className="text-center">Create New Page </h2>
+								</div>
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<CircleMenuBars />
+								</div>
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									{/*<Cmspage id={this.state.urlId}/>*/}
+								
+									{
+										listBlock && listBlock.length>0?
+											listBlock.map((result, index)=>{
+												
+												var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
+												
+												const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'.js'));
+												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
+												var Block_id=result.block_id._id;
+												var block_id=result._id;
+
+												return(
+													<Suspense fallback={<div>Loading...</div>} key={index}>
+														<i className="fa fa-trash deletbtnIcon pull-right" id={block_id} onClick={this.deleteBlocks.bind(this)}></i>
+														<i className="fa fa-pencil editIcon pull-right" id={Block_id} onClick={this.editBlock.bind(this)} data-toggle="modal" data-target="#editBlockForm"></i>
+											    		<NewPageComponent block_id={Block_id}/>
+											    	</Suspense>
+										    	);
+											})
+										:
+										null
+									}
+									<button type="button" className=" col-lg-4 col-lg-offset-4 btn b1 success btn-lg" onClick={() => this.onclickEvent()}>
+										Add new Block
+									</button>
+									{
+										this.state.listOfBlocks == true ?
+										<section>
+											<div className="row">
+												<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+													<div className="noPadLR  selectBox col-lg-12 col-md-12 col-xs-12 col-sm-12">
+														<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 noPadLR">
+
+						                					<div className="panel panel-default bgcolorO">
+															    <div className="panel-heading bgPanelHead">
+															        <h4 className="panel-title">
+																        <button className="btn btn-primary">
+																         	<a href="/viewpage1">Back</a>
+																        </button>
+																        <button className="btn btn-primary pull-right" id="cnBlock">
+																        <a className="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+																        + Create New Block</a>
+																        </button>
+															        </h4>
+															    </div>
+															    <div id="collapse1" className="panel-collapse collapse">
+															      	<div className="panel-body">
+															      		<CmsBlock/>
+															        </div>
+															    </div>
+															</div>  
+						                				</div>
+									                		{
+																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
+																	this.state.ListOfBlocks.map((result, index)=>{
+																		
+																		var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
+																		const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'.js'));
+																		
+
+																		var block_id=result._id;
+																		return(
+													                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectDiv1 designList">
+													                				<div className="checkbox">
+																				        <label>
+																				        	<input type="checkbox" className="pull-right" onChange={this.handleChange.bind(this)} data_id={block_id}/> Select Multiple Blocks
+																				        </label>
+									                            						<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right AddBlockbtn" onClick={this.addBlock.bind(this)} id={block_id} >Add Block</button>
+
+																				    </div>
+																					<Suspense fallback={<div>Loading...</div>} key={index}>
+																			    		<NewPageComponent block_id={block_id}/>
+																			    	</Suspense>
+																			    </div>	
+																    	)
+																	})
+																:
+																null
+															}	
+															<div className="savetemp col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									                            <button  type="submit" className="col-lg-3 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn AddBlockbtn" onClick={() => this.submitData()} >Add Multiple Blocks</button>
+									                        </div>			
+													</div> 
+										       	</div>
+											</div>
+										</section>	
+										:
+											null
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					{/*<!-- Modal -->*/}
+					<div id="editBlockForm" className="modal fade" role="dialog">
+					  <div className="modal-dialog">
+
+					    {/*<!-- Modal content-->*/}
+					    <div className="modal-content">
+					      <div className="modal-header">
+					        <button type="button" className="close" data-dismiss="modal">&times;</button>
+					        <h4 className="modal-title">Edit Block</h4>
+					      </div>
+					      <div className="modal-body">
+					      {/*console.log("in modal",this.state.block_id)*/}
+					        <CmsBlock Blockid={this.state.block_id}/>
+					      </div>
+					      <div className="modal-footer">
+					        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+
+
+					
+				</div>
+            
+        );
+    }
+}
+
+export default withRouter(Viewpage);

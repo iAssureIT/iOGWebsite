@@ -1,0 +1,11 @@
+.listHeading{
+	padding: 5px;
+	text-align: center;
+}
+.clrwht{
+	color: #fff;
+}
+.deletIcon:hover{
+	color: #f00;
+	cursor: pointer;
+}

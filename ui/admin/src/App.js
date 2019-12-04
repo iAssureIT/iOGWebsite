@@ -1,24 +1,24 @@
-import React 				from 'react';
+import React, { Component, Suspense,lazy } from 'react';
+/*import Sample from './Sample.js';*/
+// import Layout from './CMS/layout/Layout.js';
 import axios   				from 'axios';
-import Layout  				from './coreAdmin/Layout/Layout.js';
-import SignIn  				from './coreAdmin/Layout/SignIn.js';
-import LayoutSystemSecurity from './coreAdmin/LayoutSystemSecurity/LayoutSystemSecurity.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './lib/router.js';
-import './App.css';
 
-// axios.defaults.baseURL = 'http://uatapi.coffic.com/';
-// axios.defaults.baseURL = 'http://cofficapi.iassureit.com/';api.wealthyvia.com
-/*axios.defaults.baseURL = 'http://prodapi.coffic.com/';*/
-axios.defaults.baseURL = 'http://api.wealthyvia.com';
+import Layout  				from './CMS/coreAdmin/Layout/Layout.js';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './App.css';
+//const NewPageComponent = React.lazy(() => import('./Sample.js'));
+axios.defaults.baseURL = 'http://iogapi.iassureit.com';
 // axios.defaults.baseURL = 'http://localhost:5012/';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
-
 function App() {
   return (
-    <div>
-      <Layout />
+    <div className="App">
+     {/*   <Sample />*/}
+     <Layout/>
     </div>
-  );  
-} 
+  );
+}
+
 export default App;

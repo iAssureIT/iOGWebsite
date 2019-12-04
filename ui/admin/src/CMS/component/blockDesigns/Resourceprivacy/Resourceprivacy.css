@@ -1,0 +1,27 @@
+.center_block{
+	padding-left: 78px;
+}
+
+.blckk-ht{
+	height: 400px;
+    margin-bottom: 10px;
+}
+
+.resource_blck{
+    border-radius: 4px;
+    box-shadow: 0 10px 29px rgba(92,141,255,.22);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 8px;
+}
+
+.resource_txt{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.resource_para{
+	padding-top: 10px;
+    font-size: 18px;
+}

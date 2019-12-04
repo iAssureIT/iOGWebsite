@@ -1,0 +1,90 @@
+.upstreamcontentheader h1{
+  font-size: 40px;
+}
+
+.upstreamcontentheader hr{
+  height: 2px;
+  width: 100px;
+  border: 1px solid #f19000;
+  background-color: #f19000;
+}
+
+
+
+
+
+.blogsimg img{
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.blogtext p{
+  text-align: justify;
+  padding: 0px 20px;
+  font-size: 11px;
+  height: 170px;
+
+}
+.blogdate{
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 11px;
+
+}
+.blogtext h4{
+  text-align: justify;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+
+}
+.blogtext {
+	height: 550px;
+	border-radius: 8px;
+	margin-top: 50px
+}
+
+.latestblog{
+  margin-bottom: 50px;
+}
+
+.blogblock{
+	box-shadow: 0 10px 29px rgba(92,141,255,.22);
+	border-radius: 8px;
+
+}
+
+.blogbtn1{
+	margin-bottom: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+.blogbtn1:focus{
+  outline: 0px auto -webkit-focus-ring-color!important;
+}
+
+.blogleftarrow{
+  background-color: #009de2;
+    border: 10px solid #009de2;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 13px;
+    font-size: 25px;
+    left: -80px;
+    top: 280px;
+    position: absolute;
+
+}
+.blogrightarrow{
+  background-color: #009de2;
+    border: 10px solid #009de2;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 13px;
+    font-size: 25px;
+    right: -80px;
+    top: 280px;
+    position: absolute;
+
+}

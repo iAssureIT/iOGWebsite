@@ -1,0 +1,51 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="360" height="120"  viewBox="-10 10 360 55">
+  <path d="M-1,1.499h83c0,0,10.5,1,10.5,11.25s-10.25,12.25-10.25,12.25h-43.5c0,0-10.75,0.75-11.75,11.5s9.75,12.25,9.75,12.25H343.5"
+        stroke="#529fd9" stroke-width="2" fill="none" id="wire"></path>
+  <circle cx="" cy="" r="8" fill="#529fd9">
+    <animateMotion dur="5.6s" repeatCount="indefinite">
+      <mpath xlink:href="#wire"></mpath>
+    </animateMotion>
+  </circle>
+</svg>
+ -->
+
+
+ <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion -->
+
+<svg width="420" height="420" viewBox="0 0 420 420"
+    xmlns="http://www.w3.org/2000/svg" version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <style type="text/css">
+    	.logo{margin: 50px;}
+	
+</style>
+
+  <!-- Draw the outline of the motion path in grey, along
+       with 2 small circles at key points -->
+  <path class="circle1" d="M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0"
+      stroke="#000" stroke-width="2" 
+      fill="none" id="theMotionPath" transform='skewX(-30) skewY(-30) translate(50 90)'/>
+  <path class="circle2" d="M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0"
+      stroke="#000" stroke-width="2" 
+      fill="none" id="theMotionPath2" transform='skewX(30) skewY(30) translate(-80 0)'/>
+  <!-- Red circle which will be moved along the motion path. -->
+<!--   <circle cx="" cy="" r="5" fill="red">
+  	    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath xlink:href="#theMotionPath2"/>
+    </animateMotion>
+  </circle>
+ -->
+<!--   <circle cx="" cy="" r="10" fill="red">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath xlink:href="#theMotionPath"/>
+    </animateMotion>
+  </circle> -->
+</svg>

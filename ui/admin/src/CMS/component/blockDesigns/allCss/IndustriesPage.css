@@ -1,0 +1,22 @@
+
+
+.industrybg1{
+	background-image: url("/images/serviceback1.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/*width: 100%;*/
+}
+.industrybg2{
+	background-image: url("/images/serviceback2.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/*width: 100%;*/
+}
+.servicekbtn{
+	margin-bottom: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+.servicekbtn:focus{
+  outline: 0px auto -webkit-focus-ring-color!important;
+}

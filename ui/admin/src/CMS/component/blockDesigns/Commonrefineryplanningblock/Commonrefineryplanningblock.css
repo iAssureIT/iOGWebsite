@@ -1,0 +1,42 @@
+.rp_line_paraaaa{
+    line-height: 30px;
+    font-size: 19px;
+    color: #7b6f6f;
+}
+
+.rp_line_subheadd{
+    /*font-weight: 600;*/
+    font-size: 33px;
+    color: #3a3737;
+    font-weight: bold;
+  }
+
+  .rp_line_subsubheadd{
+    font-weight: 700;
+    font-size: 23px;
+    color: #3a3737;
+ }
+
+ .grey_line1{
+    width: 86%;
+    margin-left: 74px;
+    background-color: #808080;
+  }
+
+ .refinery_list{
+    font-size: 19px;
+    color: #7b6f6f;
+    background-repeat: no-repeat;
+    margin-left: 78px;
+  }
+
+.refinery_sublist{
+  margin-left: 88px;
+    font-size: 19px;
+    line-height: 28px;
+    color: #7b6f6f;
+ }
+
+.mb100{
+    margin-bottom: 100px;
+}

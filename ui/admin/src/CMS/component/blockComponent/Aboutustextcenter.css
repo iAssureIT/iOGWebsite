@@ -1,0 +1,15 @@
+.truck{
+	width: 100%;
+}
+.posRel{
+	position: relative;
+	padding: 50px 0px;
+}
+.blk_ht img{
+	width: 75px !important;
+	padding: 10px;
+	height: 75px;
+}
+.mtop50{
+	margin-top: 50px;
+}
