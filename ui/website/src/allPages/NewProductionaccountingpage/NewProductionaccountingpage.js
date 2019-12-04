@@ -10,6 +10,7 @@ import TemplateOverview        from '../../allBlocks/TemplateOverview/TemplateOv
 import ApplicationsTemp        from '../../allBlocks/ApplicationsTemp/ApplicationsTemp.js';
 import ChallengesTemp          from '../../allBlocks/ChallengesTemp/ChallengesTemp.js';
 import ServicesOffered         from '../../allBlocks/ServicesOffered/ServicesOffered.js';
+import AccountingUI            from '../../allBlocks/AccountingUI/AccountingUI.js';
 
 export default class NewProductionaccountingpage extends Component {
 
@@ -20,7 +21,9 @@ export default class NewProductionaccountingpage extends Component {
       <TemplateOverview />
       <ApplicationsTemp/>
       <ChallengesTemp/>
+      <AccountingUI/>
       <ServicesOffered/>
+      
       	
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
       </div>
