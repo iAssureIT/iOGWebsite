@@ -81,7 +81,7 @@ componentDidMount(){
               });
 }
     render(){
-      console.log("------------>",this.state.blocks.repeatedBlocks);
+      // console.log("------------>",this.state.blocks.repeatedBlocks);
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

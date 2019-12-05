@@ -1,6 +1,9 @@
 .nopadd{
 	padding: 0px;
 }
+.create-basic-block-wrapper{
+	padding: 25px;
+}
 .m20{
 	margin-top: 20px;
 	margin-bottom: 20px;

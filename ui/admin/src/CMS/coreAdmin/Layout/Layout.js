@@ -50,11 +50,13 @@ import BlockDesignMaster from '../../component/blockdesignmaster/blockdesignmast
 import SelectBlockDesign  from '../../component/selectblockdesign/selectblockdesign.js';
 /*createnewblock*/
 import ViewBlock_1 from '../../component/createnewblock/viewblock1.js';
+import CmsBlock from '../../component/createnewblock/Cmsblock.js';
+
 // import ViewBlock_2 from '../../component/createnewblock/viewblock2.js';
 import Staticblocks from '../../component/createnewblock/Staticblocks.js';
 
 
-//import MasterPage from '../../component/MasterPage/MasterPage.js';
+import MasterPage from '../../component/MasterPage/MasterPage.js';
 
 
 //===========  BlockDesignsList  ==========
@@ -136,7 +138,11 @@ componentDidMount(){
   }
 
   render(){
+<<<<<<< Updated upstream
     /*if(this.state.loggedIn && !this.state.logout){*/
+=======
+   /* if(this.state.loggedIn && !this.state.logout){*/
+>>>>>>> Stashed changes
       return(
           <Router>
             <div className="App container-fluid">
@@ -208,13 +214,14 @@ componentDidMount(){
                             <Route path = "/selectblockdesign" exact component = { SelectBlockDesign } />
                             <Route path = "/viewblock1" exact component = { ViewBlock_1 } />
                             {/*<Route path = "/viewblock2" exact component = { ViewBlock_2 } />*/}
+                            <Route path = "/create-new-block" exact component = { CmsBlock } />
                             <Route path = "/viewpage2" exact component = { Viewpage } />
 
                             <Route path = "/viewpage2/:pageUrl" exact component = { Viewpage } />
                             {/*
                             <Route path = "/viewblock1/:pageUrl" exact component = { ViewBlock_1 } />*/}
 
-                            {/*<Route path = "/:pageUrl" exact component = { MasterPage } />*/}
+                            <Route path = "/list-of-blocks" exact component = { MasterPage } />
                             <Route path = "/static-block-list" exact component = { Staticblocks } />
                             
                             <Route path = "/block-designs-list" exact component = { BlockDesignsList } />
@@ -237,7 +244,11 @@ componentDidMount(){
           </Router>
       
          ); 
+<<<<<<< Updated upstream
       /*   }else{
+=======
+         /*}else{
+>>>>>>> Stashed changes
        return(
         <div>
           <Router>
@@ -254,7 +265,11 @@ componentDidMount(){
           </Router>
         </div>
       );
+<<<<<<< Updated upstream
     }  */
+=======
+    } */ 
+>>>>>>> Stashed changes
            
   }
 }

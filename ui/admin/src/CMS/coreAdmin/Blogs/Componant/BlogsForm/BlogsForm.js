@@ -104,7 +104,7 @@ this.state={
          
           const config = {
                             bucketName      : response.data.bucket,
-                            dirName         : "wealthyvia",
+                            dirName         : "iOG",
                             region          : response.data.region,
                             accessKeyId     : response.data.key,
                             secretAccessKey : response.data.secret,

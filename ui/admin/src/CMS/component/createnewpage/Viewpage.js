@@ -206,9 +206,9 @@ class Viewpage extends React.Component {
 										listBlock && listBlock.length>0?
 											listBlock.map((result, index)=>{
 												
-												var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
+												var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Block1Sample';
 												
-												const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'.js'));
+												const NewPageComponent = React.lazy(() => import('../blockComponent/'+componentTemp+'.js'));
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
 												var Block_id=result.block_id._id;
 												var block_id=result._id;
@@ -258,8 +258,8 @@ class Viewpage extends React.Component {
 																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
 																	this.state.ListOfBlocks.map((result, index)=>{
 																		
-																		var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
-																		const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'.js'));
+																		var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
+																		const NewPageComponent = React.lazy(() => import('../blockComponent/'+component+'.js'));
 																		
 
 																		var block_id=result._id;

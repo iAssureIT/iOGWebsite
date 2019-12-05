@@ -9,7 +9,7 @@ export default class Typecomponent1 extends React.Component {
       blocks: {
         blockTitle : "This is Block Title",
         blockDescription : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        bgImage: "/images/bgimage1.jpg",
+        fgImage: "/images/bgimage1.jpg",
       },
       blockID:"",
       block_id:""
@@ -43,20 +43,19 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel"
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
-                 data-field3="bgImage" 
+                 data-field3="fgImage" 
             >
                 <div className="col-lg-2">
-                  <div className="col-lg-11">
+                  <div className="col-lg-11 col-lg-offset-1">
                     <div className="line1 col-lg-1 pull-right "></div>
                   </div>                    
                 </div> 
                
-                <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -67,13 +66,12 @@ componentDidMount(){
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
-                              <img src={this.state.blocks.bgImage} alt="" className="intro_img" hight="250" width="400" />
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="400" />
                           </div>
                         </div>
                         </div>
                     </div>
-                  </div>
-                </div>            
+                          
             </div>   
         );
     }

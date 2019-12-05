@@ -1,4 +1,4 @@
-{/*import React, { Component, Suspense } from 'react';
+import React, { Component, Suspense } from 'react';
 
 import {Route, withRouter} from 'react-router-dom';
 
@@ -15,7 +15,8 @@ class MasterPage extends React.Component {
 		this.state = {
 			pageData:{},
 			Blocks:[],
-			blocks:""
+			blocks:"",
+			ListOfBlocks : ""
 		}; 
 	}
 componentDidMount(){
@@ -27,73 +28,40 @@ componentDidMount(){
         // console.log("a==>",a[1]); 
         const urlParam =a[1];
         // console.log("urlParam  == ",urlParam);
-	axios
-        .get('http://iogapi.iassureit.com/api/pages/get/'+urlParam)
-        .then((response)=>{
-      		if (response) {
-      			console.log("response.data",response.data);
-		      	this.setState({
-		      		pageData:response.data,
-		      	});
-
-    			var blockFromPage = response.data.pageBlocks;
-		    	console.log("blockFromPage = ",blockFromPage);
-			    for (var i = 0; i < blockFromPage.length; i++) 
-			    {
-			    	{
-			   		 axios
-				        .get('http://iogapi.iassureit.com/api/blocks/get/'+ blockFromPage[i].block_id)
-				        .then((response)=>{
-					        var blocks = this.state.Blocks;
-					        blocks.push(response.data);
-					        console.log("re",response.data);
-					      	this.setState({
-				      			Blocks:blocks
-				      		});
-				      	})
-				      	.catch(function(error){
-				        	console.log(error);
-				          	if(error.message === "Request failed with status code 401")
-		              		{
-		                   		swal("Your session is expired! Please login again.","", "error");
-		              		}
-		     			})
-	    			}
-	 			}
-			}
-	    })
-	      .catch(function(error){
-	        console.log(error);
-	          if(error.message === "Request failed with status code 401")
-	              {
-	                   swal("Your session is expired! Please login again.","", "error");
-	              }
-	      })
+	
+        axios
+				.get('/api/blocks/get/list')
+				.then((response)=>{
+						        // console.log("AllBlogs=",response.data);
+						      	this.setState({
+					      			ListOfBlocks:response.data
+					      		},()=>{
+					      				console.log("======>",this.state.ListOfBlocks);
+					      		});
+					      	})
+			  	.catch(function (error) {
+			    // handle error
+			    	console.log(error);
+			  	});
    		}
 
 	render() {
 		var data= this.state.pageData;
-		console.log("sss",this.state.Blocks)
+		console.log("ListOfBlocks",this.state.ListOfBlocks)
 		console.log('pageData = ', data);
 		// console.log("block Data => ",data.pageBlocks);	
 		return (
 			<div className="pageHgt">
+				
 				{
-					this.state.pageData.pageHead 
+					this.state.ListOfBlocks && this.state.ListOfBlocks.length> 0
 					?
-						<PageHead pageHeadData={this.state.pageData.pageHead} />
-					:
-						null
-				}
-				{
-					this.state.Blocks && this.state.Blocks.length> 0
-					?
-						this.state.Blocks.map((result, index)=>{
-							console.log(" block_id",result);
-							var component = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
-							console.log("component ===> > >",component);
-							const NewPageComponent = React.lazy(() => import('../BlockTemplate/'+component+'/'+component+'.js'));
-							console.log("NewPageComponent==>",NewPageComponent);
+						this.state.ListOfBlocks.map((result, index)=>{
+							// console.log(" block_id",result);
+							var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
+							// console.log("component ===> > >",component);
+							const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
+							// console.log("NewPageComponent==>",NewPageComponent);
 							var block_id=result._id;
 							// console.log("block_id",block_id);
 							return(
@@ -110,4 +78,3 @@ componentDidMount(){
 	}
 }
 export default withRouter(MasterPage);
-*/}

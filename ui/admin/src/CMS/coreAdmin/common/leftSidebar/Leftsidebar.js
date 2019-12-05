@@ -103,7 +103,7 @@ export default class Leftsidebar extends Component{
 
                             <li><Link to="/viewpage1"><i className="fa fa-database"></i>Create Page</Link></li>
                             <li><Link to="/static-block-list"><i className="fa fa-database"></i>Static Blocks</Link></li>
-                            <li><Link to="/samplepage"><i className="fa fa-database"></i>Page</Link></li>
+                            <li><Link to="/list-of-blocks"><i className="fa fa-database"></i>list of Blocks</Link></li>
 
 
 
