@@ -5,14 +5,27 @@ import './Banner.css';
 export default class Banner extends Component {
 
 componentDidMount(){
+  
   $(document).ready(function(){
-      $("dataonHover1").hide();
+      $(".dataonHover1").hide();
 
-  $("oilsign8").hover(function(){
-      $("dataonHover1").show();
+  $(".oilsign8").hover(function(){
+      $(".dataonHover1").show();
+      
+
+  });
+});
+  $(document).ready(function(){
+      $(".dataonHover").hide();
+
+  $(".oilsign7").hover(function(){
+      $(".dataonHover").show();
+
   });
 });
 }  
+
+
   render() {  
     var y = 330;
     var h = y + 'px';
@@ -122,19 +135,30 @@ componentDidMount(){
                 </figure>
                 <figure className="oilsign7 ">
                   <img alt="" src="/images/oilsign.png"/>
-                  <div className="dataonHover">
-                  </div>
-                </figure>
+                  </figure>
+                {/*  <div className="dataonHover">
+                   
+                      <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
+                      heating, gas and light fuel formation and heavy oil
+                       sedimentation and the entire process of refining takes place here<br/>
+                       <span className="Hoverreadmore">Read More</span>
+                       </p>
+                  </div>*/}
+                
                 <figure className="oilsign8 ">
-                    <img alt="" src="/images/oilsign.png"/>
-                    
+                    <img alt="" src="/images/oilsign.png"/>   
                   </figure> 
-                  <div className="dataonHover1">
+                 
+                  {/*<div className="dataonHover1">   
                      <div className="triangle-down1"></div>
-                      <p className="pinhoverdata text-center">Some sample Text</p>
-                    </div> 
-                <div className="hoveroilsign8">
-                </div> 
+                      <div className="triangle-down211"></div>
+                      <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
+                      heating, gas and light fuel formation and heavy oil
+                       sedimentation and the entire process of refining takes place here<br/>
+                       <span className="Hoverreadmore">Read More</span>
+                       </p>
+                    </div> */}
+                 
                   <img alt="" src="/images/anim.png" className="animnewimg"/>
                 <figure className="anim">
                 </figure>

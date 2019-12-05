@@ -82,15 +82,15 @@ render() {
 			  <h1 class="lightbluetext latestblog blogtext1"><b>Blogs</b>
               </h1>
 			</div>
-          		<div className="col-lg-offset-1 col-lg-11">
+          		<div className=" col-lg-11 col-md-11 col-sm-12 col-xs-12 bloglist_margin">
 	          		{
             		Allblogs && Allblogs.length > 0 ?
 	      				Allblogs.map((data, index)=>{
             					return(
-				          			<div className=" pricehover-float col-lg-3 Allblog">
+				          			<div className=" pricehover-float col-lg-3 Allblog"><a href={"/singleblog/"+data.blogURL}></a>
 				          				<div className="All1blog1 z50">
+				          				   <a href={"/singleblog/"+data.blogURL}>
 											<img className="img-responsive AllblogImgB" src={data.bannerImage ? data.bannerImage.path : ""} alt="Bannerpng"/>
-											<a href={"/singleblog/"+data.blogURL}>
 												<p className="blogDate blogsText mtop20 graycolor"><Moment format=" MMMM D YYYY ">{data.createdAt}</Moment></p>
 												<h4 className="blogTitle blogSummeryp10"><b>{data ? data.blogTitle : ""}</b></h4>
 												{/*<p className="blogPara blogSummeryp10 graycolor">{data ? data.summary: "" }</p>*/}

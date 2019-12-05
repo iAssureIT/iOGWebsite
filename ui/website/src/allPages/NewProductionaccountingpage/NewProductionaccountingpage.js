@@ -105,42 +105,42 @@ export default class NewProductionaccountingpage extends Component {
                 servicepageTitle   :"Services Offered",
                 bannerimg          : "/images/s1.png",
                 serviceTitle       : "Service1",
-                serviceText        : "Accuracy in data imported as garbage-in garbage-out",
+                serviceText        : "Consulting services to study the oil accounting system “As-is” and provide best-in-class solutions to improve instrumentation reliability and network infrastructure robustness.",
                
             }, 
             {
                
                 bannerimg      : "/images/s2.png",
                 serviceTitle   : "Service2",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+                serviceText    : "Provide solutions for auditing the oil accounting system and develop procedures to aid transparency and repeatability and gain refinery-wide acceptance",
                
             },  
             {
                
                 bannerimg   : "/images/s3.png",
                 serviceTitle   : "Service3",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+                serviceText    : "Design and establish “best-practice” standardized and customized reports",
 
             },  
             {
                
                 bannerimg   : "/images/s4.png",
                 serviceTitle   : "Service4",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+                serviceText    : "Implementation and support of production accounting tool",
 
             },    
             {
                
                 bannerimg   : "/images/s5.png",
                 serviceTitle   : "Service5",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+                serviceText    : "Deploy expert solutions to track and mitigate gross errors in complicated networks",
 
             },
             {
                
                 bannerimg   : "/images/s6.png",
                 serviceTitle   : "Service6",
-                serviceText    : "Accuracy in data imported as garbage-in garbage-out",
+                serviceText    : "Tuning and maintenance of oil accounting systems to reduce daily and monthly imbalances to tolerant levels",
 
             },            
                

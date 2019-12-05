@@ -594,6 +594,10 @@ height: 90px;
 .hoveroilsign1:hover{
   cursor: pointer;
 }
+/*.oilsign9:hover .dataonHover1{
+  display: block;
+  cursor: pointer;
+}*/
 .hoveroilsign8{
     /*display: none;*/
     height: 50px;
@@ -601,33 +605,48 @@ height: 90px;
     width: 50px;
     top: 213px;
     left: 709px;
-    /*background-color: #333;*/
+    background-color: #333;
     z-index: 999;
 }
-/*.hoveroilsign8:hover .dataonHover1 {
-  display: block !important;
+.oilsign8:hover .triangle-down1 {
+  display: block;
   cursor: pointer;
-}*/
+}
+.oilsign8:hover .triangle-down211 {
+  display: block;
+  cursor: pointer;
+}
+.oilsign7:hover .triangle-down1_oil7 {
+  display: block;
+  cursor: pointer;
+}
+.oilsign7:hover .triangle-down211_oil7 {
+  display: block;
+  cursor: pointer;
+}
 .dataonHover{
-  display: none;
-  height: 60px;
-  width: 100px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-left: -33px;
-  margin-top: -98px;
-  position: absolute;
+    display: none;
+    height: 113px;
+    width: 233px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    left: 58.4em;
+    top: 11.4em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
 }
 .dataonHover1{
-  /*display: none;*/
-  background-color: #444;
-  height: 60px;
-  width: 100px;
+ 
+  height: 117px;
+  width: 241px;
   border-radius: 5px;
-  background-color: #ffffff;
-  margin-left: -33px;
-  margin-top: -73px;
   position: absolute;
+  left: 44.2em;
+  top: 7.2em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+  
+  
 }
 .dataonHover2 {
     display: none;
@@ -653,13 +672,25 @@ height: 90px;
     }
 .triangle-down1 {
       position: absolute;
-      display: none;
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid #ffffff;
-      margin-top: -17px
+    /* display: none; */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(0, 0, 0, 0.1);
+    top: 117px;
+    left: 99px;
+    }
+    .triangle-down1_oil7 {
+      position: absolute;
+    /* display: none; */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(0, 0, 0, 0.1);
+    top: 142px;
+    left: 73px;
     }
     .triangle-down21 {
       position: absolute;
@@ -671,6 +702,28 @@ height: 90px;
       border-top: 15px solid #fff;
       margin-top: -17px;
       right: -15px;
+    }
+    .triangle-down211 {
+      position: absolute;
+      /*display: none;*/
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #fff;
+      margin-top: 114px;
+      right: 112px;
+    }
+    .triangle-down211_oil7 {
+      position: absolute;
+      /*display: none;*/
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #fff;
+      margin-top: 114px;
+      right: 112px;
     }
     .triangle-down2 {
       position: absolute;

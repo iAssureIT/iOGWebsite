@@ -19,7 +19,7 @@ export default class Iogimplementpage extends Component {
      overviewData(){
         return [
             {
-                overviewTitle       : "iOGImplement",
+            
                 overviewSubTitle    : "Overview",
                 overviewimg         : "",
                 overviewtext1       : "iOGImpement is a specialized solution focused on addressing the implementation requirements across the entire chain of downstream operations. iOG Solutions provides expert implementation services of advanced software solutions to meet our client’s requirements. iOG consultants come with a wealth of experience in implementing advanced software solutions across the entire Oil & Gas industry. This enables us to help our clients implement new software solutions in the areas of the downstream value chain as well as in upgrading and streamlining existing systems.",
@@ -38,7 +38,7 @@ export default class Iogimplementpage extends Component {
                 
                {
                 Consultservive : "Our Approach",
-                bannerimg   : "/images/consultrightimg.png",
+                bannerimg   : "/images/iOGImplement.png",
                 overviewtext:"iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",            
             }, 
 
@@ -162,7 +162,7 @@ export default class Iogimplementpage extends Component {
     return (
       <div> 
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
-       <img src="/images/concultback.png" className="consultMainImg"/>  
+       <img src="/images/iogimpl.png" className="consultMainImg"/>  
        </div> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
       	 <Overview OverviewData={this.overviewData()} />

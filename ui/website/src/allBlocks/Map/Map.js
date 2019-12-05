@@ -119,11 +119,11 @@ export default class Map extends Component {
                  <div className="col-lg-6 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">
-               <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"               className="">Prod Accounting</a><br/>
+               <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"                    className="">Production Accounting</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/inventoryMgmt"            className="">Realtime Data Historian</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/corporatedashboard"       className="">Corporate Dashboard & Analytics</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/operationlogbook"         className="">Operation Logbook & Target Dashboard</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/oilmovement"              className="">Oil Movement Mgmt Systems</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/oilmovement"              className="">Oil Movement Management Systems</a><br/>
                </div>
               </div>
                <div className=" servicediv col-lg-3 "> 
@@ -162,17 +162,17 @@ export default class Map extends Component {
                  <div className="col-lg-6 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">
-               <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"               className="">Prod Accounting</a><br/>
+               <span class="bottomlinksraquo  subdata"></span> <a href="/demandMgmt"               className="">Production Accounting</a><br/>
                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Criticality Analysis</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Lifecycle Management</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Asset Strategy Management</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Inspection & Callibration Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="#"      className="">Inspection  Management</a><br/>
                </div>
               </div>
                <div className=" servicediv col-lg-3 "> 
                <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21 "></span> 
-                 <a href="/about-us" className="Aboutuslink">Health Safety & Env</a><br/>
+                 <a href="/about-us" className="Aboutuslink">Health Safety & Environment</a><br/>
                   <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
