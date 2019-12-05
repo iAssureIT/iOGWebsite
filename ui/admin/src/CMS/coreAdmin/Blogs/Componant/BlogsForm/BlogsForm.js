@@ -97,7 +97,6 @@ this.state={
     // this.edit();
   }
   componentDidMount(){
-    this.edit();
       axios
         .get('/api/projectsettings/get/S3')
         .then((response)=>{
@@ -113,6 +112,7 @@ this.state={
           this.setState({
             config : config
           })
+          console.log("config",this.state.config);
 
         })
         .catch(function(error){
@@ -123,6 +123,8 @@ this.state={
                      this.props.history.push("/");
                 }
         })
+           // this.edit();
+
     }
 
   handleChange(event){
@@ -512,9 +514,9 @@ return (
                     <div className="">
                     <div className="dropdown">
                     <select className="form-control" id="sel1" ref="typeOfBlog" value={this.state.typeOfBlog} onChange={this.handleChange.bind(this)}>
-          <option>Regular</option>
-          <option>Premium</option>
-        </select>
+                      <option>Regular</option>
+                      <option>Premium</option>
+                    </select>
                       </div>
                     </div>
                   </div>

@@ -138,11 +138,7 @@ componentDidMount(){
   }
 
   render(){
-<<<<<<< Updated upstream
-    /*if(this.state.loggedIn && !this.state.logout){*/
-=======
-   /* if(this.state.loggedIn && !this.state.logout){*/
->>>>>>> Stashed changes
+
       return(
           <Router>
             <div className="App container-fluid">
@@ -244,33 +240,7 @@ componentDidMount(){
           </Router>
       
          ); 
-<<<<<<< Updated upstream
-      /*   }else{
-=======
-         /*}else{
->>>>>>> Stashed changes
-       return(
-        <div>
-          <Router>
-            <Switch>
-            
-              <Route path="/"               exact strict component={ Login } />
-              <Route path="/login"          exact strict component={ Login } />
-              <Route path="/signup"         exact strict component={ SignUp } />
-              <Route path="/forgot-pwd"     exact strict component={ ForgotPassword } />
-              <Route path="/reset-pwd"      exact strict component={ ResetPassword } />
-              <Route path="/verify-account" exact strict component={ VerifyAccount } />
-              <Route path="/confirm-otp"    exact strict component={ ConfirmOtp } />
-            </Switch>        
-          </Router>
-        </div>
-      );
-<<<<<<< Updated upstream
-    }  */
-=======
-    } */ 
->>>>>>> Stashed changes
-           
+      
   }
 }
 export default Layout;
