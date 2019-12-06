@@ -1,10 +1,14 @@
 import React from 'react';
 
-import Typecomponent1 from "../blockTemplate/Typecomponent1/Typecomponent1.js";
-import Typecomponent2 from "../blockTemplate/Typecomponent2/Typecomponent2.js";
-import Typecomponent3 from "../blockTemplate/Typecomponent3/Typecomponent3.js";
-import Typecomponent4 from "../blockTemplate/Typecomponent4/Typecomponent4.js";
-import Typecomponent5 from "../blockTemplate/Typecomponent5/Typecomponent5.js";
+import Typecomponent1     from "../blockTemplate/Typecomponent1/Typecomponent1.js";
+import Typecomponent2     from "../blockTemplate/Typecomponent2/Typecomponent2.js";
+import Typecomponent3     from "../blockTemplate/Typecomponent3/Typecomponent3.js";
+import Typecomponent4     from "../blockTemplate/Typecomponent4/Typecomponent4.js";
+import Typecomponent5     from "../blockTemplate/Typecomponent5/Typecomponent5.js";
+import Servicesoverview   from "../blockTemplate/ServicesOverview/ServicesOverview.js";
+import IogconsultTxtRight from "../blockTemplate/IogconsultTxtRight/IogconsultTxtRight.js";
+import ConsultingServices from "../blockTemplate/ConsultingServices/ConsultingServices.js";
+import ConsultDownstream  from "../blockTemplate/ConsultDownstream/ConsultDownstream.js";
 
 import './Staticblocks.css';
 
@@ -126,15 +130,54 @@ export default class Staticblocks extends React.Component {
 		            </button>
 					<Typecomponent3 />
 				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
-		            <button id="Typecomponent4" 
+				
+				 <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ServicesOverview" 
 							data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription" 
-							data-fgImage="fgImage" 
 		                	onClick={this.selectComponent.bind(this)} > 
 		                	Select this Block 
 		            </button>
-					<Typecomponent4 />
+					<Servicesoverview />
+				</section>
+				 <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="IogconsultTxtRight" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	data-fgImage="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<IogconsultTxtRight />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ConsultingServices" 
+							data-blockTitle         ="blockTitle" 
+							data-RepetedBlock       ="RepetedBlock" 
+							data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksImage       ="rBlocksImage" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksLink        ="rBlocksLink" 
+
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ConsultingServices />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ConsultDownstream" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	data-fgImage="fgImage" 
+		                	data-rBlocksTitle       ="rBlocksTitle"
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-bgImage ="bgImage" 
+							data-RepetedBlock="RepetedBlock" 
+
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ConsultDownstream />
 				</section>
 				{/*<Typecomponent5 />*/}
 
