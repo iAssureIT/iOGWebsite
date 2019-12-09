@@ -131,10 +131,10 @@ componentDidMount(){
          <div class="Main_Cards__Bubble1 bub21">
         </div>
        </div>
-             <div>
-                <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
-                <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
-              </div>  
+       <div>
+          <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
+          <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
+        </div>  
         <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
          { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
@@ -143,7 +143,7 @@ componentDidMount(){
               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 " id={"consultdown_data"+index}>
                 <div className="col-lg-12 col-md-12">
                  <h3 id={"downimg_text"+index}>{result.Title}</h3>
-                 <p id="downimg_p_text">{result.Description}</p>
+                 <p id="downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
               );

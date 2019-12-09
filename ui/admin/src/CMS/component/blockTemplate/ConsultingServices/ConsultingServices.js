@@ -144,7 +144,7 @@ componentDidMount(){
                 </div>
                 <div className="col-lg-12 col-md-12">
                  <h4 className="BT3_subhead text-center">{result.Title}</h4>
-                 <p className="BT4_txt">{result.Description}</p>
+                 <p className="BT4_txt"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
              </div>

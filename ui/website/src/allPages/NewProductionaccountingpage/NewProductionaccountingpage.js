@@ -14,7 +14,7 @@ import AccountingUI            from '../../allBlocks/AccountingUI/AccountingUI.j
 
 export default class NewProductionaccountingpage extends Component {
 
-  tempalebannerData(){
+  /*tempalebannerData(){
         return [
              {
                 bannerTitle : "Production Accounting",
@@ -32,7 +32,7 @@ export default class NewProductionaccountingpage extends Component {
                
             }           
         ]
-    }
+    }*/
 
     applicationsright (){
 
@@ -151,8 +151,8 @@ export default class NewProductionaccountingpage extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      <TemplateBanner    tempalebannerData={this.tempalebannerData()} />
-      <TemplateOverview  templateOverviewData={this.templateOverviewData()}/>
+      <TemplateBanner     />
+      <TemplateOverview  />
       <ApplicationsTemp  applicationsright={this.applicationsright()}/>
       <ChallengesTemp challengesData={this.challengesData()}/>
       <AccountingUI/>

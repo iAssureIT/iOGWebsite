@@ -3,28 +3,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 // import $                  from 'jquery';
-// import './Iogtrainpage.css';
+import './Iogstudypage.css';
 
 import Overview                from '../../allBlocks/Overview/Overview.js';
 import Imgleafblock            from '../../allBlocks/Imgleafblock/Imgleafblock.js';
-// import Challenges              from '../../allBlocks/Challenges/Challenges.js';
+import Challenges              from '../../allBlocks/Challenges/Challenges.js';
 import Commonulliblock         from '../../allBlocks/Commonulliblock/Commonulliblock.js';
-import IogconsultTxtRight      from '../../allBlocks/IogconsultTxtRight/IogconsultTxtRight.js';
-import ConsultingServices      from '../../allBlocks/ConsultingServices/ConsultingServices.js';
-import ConsultDownstream      from '../../allBlocks/ConsultDownstream/ConsultDownstream.js';
-
-
-
 
 export default class Iogstudypage extends Component {
 
      overviewData(){
         return [
             {
-                overviewTitle       : "iOGTrain",
+                overviewTitle       : "iOGStudy",
                 overviewSubTitle    : "Overview",
                 overviewimg         : "",
-                overviewtext1       : "iOGTrain is a dedicated training and orientation solution providing expert training services on downstream process technologies, advanced software applications, and the various Oil & Gas business processes. Rapid developments in the field of advanced solutions demand to impart the workforce with the necessary skills and competencies.",
+                overviewtext1       : "iOGStudy is a specialized service provided by iOG, leveraging state-of-the-art software solutions and utilizing industry expertise. In these studies, iOG’s team of consultants have strong domain knowledge in upstream and downstream Oil & Gas industry as well as leading software solutions along with a blend of its best process and practices to deliver specialized studies to clients.",
+                overviewtext2       : "iOGStudy differs from consultancy services in the application of domain knowledge and the use of advanced software tools. At iOG, consultants with their strong Oil & Gas cross-domain expertise are equipped to perform in-depth as well as holistic Profit-Improvement studies for assessing a client’s business processes and systems. The hidden potential is unlocked in the existing configuration for profit improvement and performance augmentation to arrive at ways and means that can be immensely useful in the fast-changing and volatile Oil and Gas markets.",
+                overviewtext3       : "At iOG Solutions, the consultants can help clients in undertaking Technology Evaluation and Configuration studies for assessing the economic and operational viability of the latest cutting-edge technologies in the refining and petrochemical sector. iOG employs in-depth subject matter expertise in the Downstream Oil & Gas domain to evaluate software solutions for multi-location facilities and develop business suites for application integration.",
+                overviewtext4       : "",
                 
 
             } 
@@ -33,137 +30,142 @@ export default class Iogstudypage extends Component {
     }
 
   
-  
-
-    txtRightData(){
+  commonulliData(){
         return [
-            
-                
-               {
-                Consultservive : "Our Approach",
-                bannerimg   : "/images/consultrightimg.png",
-                overviewtext:"iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
-               
-            }, 
-
-            
-                        
+            {
+                commonulliheading       : "",
+                commonullisubheading    : "",
+                commonullitext          : "Following is a partial list of the analysis studies iOG helps clients with:",
+                commonullitext2         : "The list offers only a few of the studies iOG undertakes for their clients. Connect with iOG Solutions to discuss the problems your business is facing. Connect with us (Link).",
+                commonulliUl            : [
+                    {   ulData          : "Profit improvement studies",
+                        commonulliLi    : [
+                                            {
+                                                liData : "Crude basket optimization"
+                                            },
+                                            {
+                                                liData : "High-Value product maximization"
+                                            },
+                                            {
+                                                liData : "Evaluation of Alternate product routings and Process Unit feedstock"
+                                            },
+                                            {
+                                                liData : "New product introduction and break-even price evaluation"
+                                            },
+                                            {
+                                                liData : "Quality give-away minimization"
+                                            },
+                                            {
+                                                liData : "Shut-down vs Catalyst life"
+                                            }
+                                        ]
+                    },
+                    {   ulData          : "LP Configuration Studies",
+                        commonulliLi    : [
+                                            {
+                                                liData : "LP Evaluation of leading and upcoming refinery technologies"
+                                            },
+                                            {
+                                                liData : "Refinery specific studies to evaluate additional configurations/technologies to meet desired product demand"
+                                            },
+                                            {
+                                                liData : "Evaluation of the  capacity requirement and feasible/optimal modes of operation of process units"
+                                            }
+                                        ]
+                    },
+                    {   ulData          : "Energy Management",
+                        commonulliLi    : [
+                                            {
+                                                liData : "Execution of specialized studies to understand the energy usage pattern, assess energy performance and energy efficiencies and benchmark the performance"
+                                            },
+                                            {
+                                                liData : "Pinch Analysis to analyse utility systems and identify potential areas of energy recovery"
+                                            },
+                                            {
+                                                liData : "Energy optimization studies to boost profitability"
+                                            },
+                                            {
+                                                liData : "Identification of  short term, medium term, and long term energy conservation opportunities"
+                                            },
+                                            {
+                                                liData : "Steam Network optimization studies"
+                                            }
+                                        ]
+                    },
+                    {   
+                        ulData : "Identify need and areas for Base Control Loop Tuning",   
+                    },
+                    {   ulData          : "Hydrogen management",
+                        commonulliLi    : [
+                                            {
+                                                liData : "Study production, consumption, and purity of Hydrogen in the network and advise optimum reformer severity operation"
+                                            },
+                                            {
+                                                liData : "Performance of Buy vs Make analysis to meet the hydro-treating needs in a refinery"
+                                            }
+                                        ]
+                    },
+                    {   
+                        ulData : "Study and recommend viable Energy Trading opportunities taking into account the risks inherent to trading",   
+                    },
+                    {   
+                        ulData : "Study the impact of pricing on “Make-Buy-Sell” and inventory stock hold-up/deplete decisions inside the refinery",   
+                    }
+                ]
+            }                        
         ]
     }
-
-
-    consultingservices(){
-       return [
-
-          {
-                servicetitle   : "Our differentiators:",
-                Consultservive : "Refinery Planning & Scheduling",
-                bannerimg      : "/images/consultsrvice.png",
-                overviewtext   :"Customized training programs such as Conceptual training for Sr. Management, Best Modelling/ Model Maintenance practices and solution analysis",
-               
+Commonleafulblock(){
+        return [
+            {
+                challengesTitle : "Our differentiators:",
+                challengestext  : "",
+                challengestext2 : "",
+                commonulliUl : [
+                    {
+                        ulData : "Extensive cross-sector expertise with strong domain knowledge of both the Upstream and Downstream Verticals"
+                    },
+                    {
+                        ulData : "World-class technical expertise in some of the most advanced solutions in the industry"
+                    },
+                    {   
+                        ulData : "The unparalleled combination of domain-experts in our teams. The teams are built keeping in mind our clients’ requirements and needs."
+                    },
+                    {   
+                        ulData : "End-to-end Implementation skills and experience on leading-market solutions"
+                    },
+                    {   
+                        ulData : "Customization of solutions so as to cater to your specific situation"
+                    },
+                    {   
+                        ulData : "Provision of independent consulting on process-centric applications widely used across the world"
+                    },
+                    {   
+                        ulData : "A young, dynamic and confident team armed with a solution and goal-oriented approach."
+                    },
+                    {   
+                        ulData : "Learning through sharing from our experience gained through interaction with different clients."
+                    }
+                ]
             }, 
-            {
-                Consultservive : "Supply and Distribution",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"World-class technical expertise in all the leading advanced software solutions in the industries",
-               
-            },  
-            {
-               Consultservive : "Manufacturing Execution Systems ",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"The unparalleled combination ofdomain-experts & subjectmatter experts, that are qualified to meet our clients’ needs and expectations."
-            },  
-            {
-                Consultservive : "Dynamic and Steady-State Simulation",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"End-to-end Implementation and Integration skills",
-               
-            },  
-             {
-                Consultservive : "Rigorous Reactor Modelling",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"Extensive experience  on  software applications",
-               
-            },
-             {
-                Consultservive : "Advanced Process Control",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"Ability to review problems independently and bring fresh perspectives to clients.",
-               
-            },     
-                
-        ]
-    }
-
-    consultdownstream(){
-        return[
-
-
-           {
-                cosultheading    : "iOGConsult for Downstream",
-                cosultsubheading : "We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm",
-                ConsultDown      : "BUSINESS PROCESS MAPPING",
-                imageText        : "Design Efficient FEED that strikes the right balance of IT investments and the business",
-               
-            }, 
-            {
-                ConsultDown    : "FEED FOR INTEGRATED",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-               
-            },  
-             {
-                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
-                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
-               
-            },  
-            {
-                ConsultDown    : "OPTIMIZE THE OF EXISTING",
-                imageText      : "Finding simplification opportunities to reduce the cost of application support",
-               
-            }, 
-            {
-                ConsultDown    : "BUSINESS CASE",
-                imageText      : "Devise structured ap-proach to transition and manage applications to",
-               
-            },  
-            {
-                ConsultDown    : "REVIEW OF AREAS NEEDING",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-               
-            },
-            {
-                ConsultDown    : "ESTABLISHING INDUSTRY",
-                imageText      : "Ensure process streamlining & standardization and efficiency improvements thereof",
-               
-            },  
-            {
-                ConsultDown    : "ASSESSMENT OF READINESS",
-                imageText      : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
-               
-            },    
                   
         ]
-
     }
 
- render() {
+  
 
+  render() {  
     return (
-      <div>
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-        <img src="/images/concultback.png" className="consultMainImg"/>  
-      </div>  
+      <div> 
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimplmntbrdCrm">
+       
+       </div>    
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
         <Overview OverviewData={this.overviewData()} />
-        <IogconsultTxtRight txtRightData={this.txtRightData()}/>
-        <ConsultingServices consultingservices={this.consultingservices()}/>
-        <ConsultDownstream  consultdownstream={this.consultdownstream()}/>
-        {/*<Imgleafblock ImgleafblockData={this.imgleafblockData()} />
         <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-        <Commonulliblock CommonulliData={this.commonulliData()} />*/}
+        <Commonulliblock CommonulliData={this.commonulliData()} />
       </div>
      </div> 
     );  
   }
 }
-
