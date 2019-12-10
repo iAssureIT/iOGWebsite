@@ -2,3 +2,9 @@
 	width        : 262px;
 	border-radius: 100px;
 }
+.mainpagetxt{
+	position: absolute;
+    left: 19%;
+    top: 49%;
+    font-weight: 600;
+}

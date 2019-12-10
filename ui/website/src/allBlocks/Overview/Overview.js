@@ -12,7 +12,7 @@ export default class Overview extends Component {
 render(){
       return(
 
-            <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">  
+            <div className="col-lg-11 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 blockContent">  
                {
                 this.props.OverviewData.map((data, index)=>{
                    return ( 

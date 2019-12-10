@@ -121,6 +121,7 @@ import OldiOGConsultPage              from '../allPages/OldiOGConsultPage/OldiOG
 
 
 
+
 import Productionoptimizpage          from '../allPages/Productionoptimizpage/Productionoptimizpage.js';
 import Productionforcastpage          from '../allPages/Productionforcastpage/Productionforcastpage.js';
 import Welltestingpage                from '../allPages/Welltestingpage/Welltestingpage.js';
@@ -154,10 +155,18 @@ import InspectionManagementPage       from '../allPages/InspectionManagementPage
 
 /*blogs*/
 
-import SingleBlogPage                 from '../allPages/SingleBlogPage/SingleBlogPage.js';
-import AllBlog                       from '../allPages/AllBlog/AllBlog.js';
-import Blogcomponents                from '../allBlocks/Blogcomponents/Blogcomponents.js';
-import AllBlogsList                from '../allBlocks/AllBlogsList/AllBlogsList.js';
+import SingleBlogPage                   from '../allPages/SingleBlogPage/SingleBlogPage.js';
+import AllBlog                          from '../allPages/AllBlog/AllBlog.js';
+import Blogcomponents                   from '../allBlocks/Blogcomponents/Blogcomponents.js';
+import AllBlogsList                     from '../allBlocks/AllBlogsList/AllBlogsList.js';
+
+
+//============     Test    ============
+
+import IogConsultPage            from '../allPages/_staticPages/IogConsultPage/IogConsultPage.js';
+import IogImplementPage          from '../allPages/_staticPages/IogImplementPage/IogImplementPage.js';
+import IogTrainPage              from '../allPages/_staticPages/IogTrainPage/IogTrainPage.js';
+import IogStudyPage              from '../allPages/_staticPages/IogStudyPage/IogStudyPage.js';
 
 
 
@@ -306,6 +315,14 @@ const WebLayout = () => (
     
     <Route path="/trial" component={ Parallaxeff } />        
     <Route path="/facebook" component={ facebook } />    
+    
+
+    {/* ======= Test ======= */}
+
+    <Route path="/testiogconsult" component={ IogConsultPage } />    
+    <Route path="/testiogimplement" component={ IogImplementPage } />    
+    <Route path="/testiogtrain" component={ IogTrainPage } />    
+    <Route path="/testiogstudy" component={ IogStudyPage } />    
 
 
  {/*eventblock*/}

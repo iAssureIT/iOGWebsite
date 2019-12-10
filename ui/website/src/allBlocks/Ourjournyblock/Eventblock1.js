@@ -67,7 +67,7 @@ export default class Eventblock1 extends Component {
 
      
        axios
-       .post('http://jsonplaceholder.typicode.com/posts',{submitcategoryValuePost})
+       .post('/posts',{submitcategoryValuePost})
        .then (function (response){
       console.log(response);
       swal("Good job!", "Details Submited!", "success")

@@ -11,10 +11,6 @@ import UMAddRolRow from './UMAddRolRow.jsx';
 import UMSelectRoleUsers from './UMSelectRoleUsers.jsx';
 
 
-axios.defaults.baseURL = 'http://cofficapi.iassureit.com/';
-// axios.defaults.baseURL = 'http://localhost:5012/';
-// axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
 

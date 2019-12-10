@@ -42,7 +42,7 @@ export default class SingleBlogPage extends React.Component {
     console.log("id --->",id);
 
 		axios
-      .get('http://iogapi.iassureit.com/api/blogs/get/'+id)
+      .get('/api/blogs/get/'+id)
       .then((response)=>{
         console.log("===>",response.data);
         this.setState({

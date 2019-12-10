@@ -12,6 +12,7 @@ import './App.css';
 axios.defaults.baseURL = 'http://iogapi.iassureit.com';
 // axios.defaults.baseURL = 'http://localhost:5012/';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
+
 function App() {
   return (
     <div className="App">

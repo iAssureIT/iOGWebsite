@@ -7,8 +7,6 @@ import $                    from "jquery";
 import S3FileUpload               from 'react-s3';
 import { deleteFile }             from 'react-s3';
 import './UploadStatement.css';
-axios.defaults.baseURL = 'http://api.wealthyvia.com';
-axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
 class UploadStatement extends Component{

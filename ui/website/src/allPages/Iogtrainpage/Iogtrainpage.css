@@ -6,3 +6,9 @@
 	border-radius: 100px;
 	margin-left: 20px;
 }
+.mainpagetxt{
+	position: absolute;
+    left: 19%;
+    top: 49%;
+    font-weight: 600;
+}

@@ -411,6 +411,7 @@ dropdown-submenu {
   float: left;
   overflow: hidden;
   width: 127px;
+  margin-top:12px; 
 }
 
 .dropdown .dropbtn {
@@ -652,6 +653,7 @@ dropdown-submenu {
   padding: 0;
 }
 .dropdown1 {
+  margin-top: 12px;
   float: left;
   overflow: hidden;
   width: 108px;
@@ -706,3 +708,8 @@ dropdown-submenu {
     background-color: #fff;
     height: 500px;
 }*/
+
+
+.blockContent{
+  text-align: justify;
+}

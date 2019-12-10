@@ -160,20 +160,20 @@ export default class Iogimplementpage extends Component {
     }
   render() {  
     return (
-      <div> 
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
-       <img src="/images/iogimpl.png" className="consultMainImg"/>  
-       </div> 
+    <div> 
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+            <img src="/images/iogimpl.png" className="consultMainImg"/>  
+        </div> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      	 <Overview OverviewData={this.overviewData()} />
-         <IogconsultTxtRight txtRightData={this.txtRightData()}/>
-        <ConsultingServices consultingservices={this.consultingservices()}/>
-        <ConsultDownstream  consultdownstream={this.consultdownstream()}/>
-       {/*  <Imgleafblock ImgleafblockData={this.imgleafblockData()} />
-         <Challenges   CommonleafblockData={this.Commonleafulblock()} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-         <Commonulliblock CommonulliData={this.commonulliData()} />*/}
-       </div>
-     </div> 
+      	    <Overview OverviewData={this.overviewData()} />
+
+            <IogconsultTxtRight txtRightData={this.txtRightData()}/>
+
+            <ConsultingServices consultingservices={this.consultingservices()}/>
+
+            <ConsultDownstream  consultdownstream={this.consultdownstream()}/>
+        </div>
+    </div> 
     );  
   }
 }

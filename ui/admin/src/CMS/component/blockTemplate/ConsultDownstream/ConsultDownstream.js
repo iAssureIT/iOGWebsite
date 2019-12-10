@@ -125,12 +125,12 @@ componentDidMount(){
     console.log('kghjgjgj',this.state.blocks.bgImage);
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
-        <div class="Bubble">
+       {/* <div class="Bubble">
          <div class="Main_Cards__Bubble1 bub11">
        </div>
          <div class="Main_Cards__Bubble1 bub21">
         </div>
-       </div>
+       </div>*/}
        <div>
           <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
           <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>

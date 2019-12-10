@@ -11,6 +11,7 @@ import ConsultingServices    from "../blockTemplate/ConsultingServices/Consultin
 import ConsultDownstream     from "../blockTemplate/ConsultDownstream/ConsultDownstream.js";
 import TemplateBanner        from "../blockTemplate/TemplateBanner/TemplateBanner.js";
 import TemplateOverview      from "../blockTemplate/TemplateOverview/TemplateOverview.js";
+import ServiceImage          from "../blockTemplate/ServiceImage/ServiceImage.js";
 
 import './Staticblocks.css';
 
@@ -199,6 +200,15 @@ export default class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<TemplateOverview />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ServiceImage" 
+							  
+							data-fgImage   ="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ServiceImage />
 				</section>
 				{/*<Typecomponent5 />*/}
 

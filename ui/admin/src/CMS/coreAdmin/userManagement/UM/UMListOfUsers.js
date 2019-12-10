@@ -13,8 +13,6 @@ import  UMDelRolRow from './UMDelRolRow.jsx';
 import  UMAddRolRow from './UMAddRolRow.jsx';
 import  UMSelectRoleUsers from './UMSelectRoleUsers.jsx';
 
-axios.defaults.baseURL = '';
-axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 class UMListOfUsers extends Component {
 	constructor(props){
