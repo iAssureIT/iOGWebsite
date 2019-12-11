@@ -167,7 +167,7 @@ export default class Iogconsultpage extends Component {
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
         <img src="/images/concultback.png" className="consultMainImg"/>  
       </div>  
-      <div className="col-lg-11  col-md-12 col-sm-12 col-xs-12 NOpadding">
+      <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12 NOpadding">
       	<Overview OverviewData={this.overviewData()} />
 
         <IogconsultTxtRight txtRightData={this.txtRightData()}/>

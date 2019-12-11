@@ -124,7 +124,7 @@ componentDidMount(){
   render() {  
     console.log('kghjgjgj',this.state.blocks.bgImage);
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+      <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
        {/* <div class="Bubble">
          <div class="Main_Cards__Bubble1 bub11">
        </div>
@@ -135,7 +135,7 @@ componentDidMount(){
           <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
           <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
         </div>  
-        <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">     
          { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
             this.state.blocks.repeatedBlocks.map((result, index)=>{

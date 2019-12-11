@@ -184,7 +184,7 @@ export default class Iogstudypage extends Component {
                 servicetitle   : "Our differentiators:",
                 Consultservive : "Refinery Planning & Scheduling",
                 bannerimg      : "/images/consultsrvice.png",
-                overviewtext   :"Customized training programs such as Conceptual training for Sr. Management, Best Modelling/ Model Maintenance practices and solution analysis",
+                overviewtext   :"Customized training programs such as Conceptual training for Sr. Management.",
                
             }, 
             {
