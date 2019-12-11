@@ -3,7 +3,7 @@ import CircleMenuBars from '../circlemenubars.js';
 import axios from 'axios';
 import {Route, withRouter} from 'react-router-dom';
 import CmsBlock from "../createnewblock/Cmsblock.js"
-
+import 'bootstrap/js/modal.js';
 import swal from 'sweetalert';
 
 
@@ -16,7 +16,7 @@ class Viewpage extends React.Component {
 			urlId:id,
 	   		blocks:"",
 	   		Blocks:[],
-	   		ListOfBlocks:{},
+	   		ListOfBlocks:"",
 	        addedBlocks:[],
 	   		listOfBlocks:false,
 	   		urlParam:"",
@@ -139,7 +139,7 @@ class Viewpage extends React.Component {
 	}
 	editBlock(event){
 		var block_id = event.currentTarget.id;
-		// console.log("block_id=",block_id);
+		console.log("block_id=",block_id);
 		this.setState({block_id: block_id});
 	}
 	deleteBlocks(event){
@@ -186,7 +186,7 @@ class Viewpage extends React.Component {
    render() {
     	// var data = this.state.ListOfBlocks;
     	console.log("block id in render=",this.state.pageData.pageBlocks);
-    	var listBlock = this.state.pageData.pageBlocks;
+    	const listBlock = this.state.pageData.pageBlocks;
     	// console.log("data blocks in render",data);
         return (
         		<div>	
@@ -203,12 +203,15 @@ class Viewpage extends React.Component {
 									{/*<Cmspage id={this.state.urlId}/>*/}
 								
 									{
-										listBlock && listBlock.length>0?
-											listBlock.map((result, index)=>{
+										this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length>0?
+											this.state.pageData.pageBlocks.map((result, index)=>{
+											var componentTemp = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
+											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
 												
-												var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Block1Sample';
-												
+<<<<<<< Updated upstream
 												const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
+=======
+>>>>>>> Stashed changes
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
 												var Block_id=result.block_id._id;
 												var block_id=result._id;
@@ -258,11 +261,22 @@ class Viewpage extends React.Component {
 																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
 																	this.state.ListOfBlocks.map((result, index)=>{
 																		
+<<<<<<< Updated upstream
 																		var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
 																		const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 																		
+=======
+																	/*	var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
+																		const NewPageComponent = React.lazy(() => import('../blockComponent/'+component+'.js'));
+																	*/	
+																	var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
+
+																	const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
+
+>>>>>>> Stashed changes
 
 																		var block_id=result._id;
+																		console.log("block_id",block_id);
 																		return(
 													                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectDiv1 designList">
 													                				<div className="checkbox">
@@ -298,8 +312,8 @@ class Viewpage extends React.Component {
 
 
 					{/*<!-- Modal -->*/}
-					<div id="editBlockForm" className="modal fade" role="dialog">
-					  <div className="modal-dialog">
+					<div id="editBlockForm" className="modal" role="dialog">
+					  <div className="modal-dialog modal-lg">
 
 					    {/*<!-- Modal content-->*/}
 					    <div className="modal-content">

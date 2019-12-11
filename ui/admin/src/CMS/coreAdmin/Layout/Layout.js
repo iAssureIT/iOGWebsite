@@ -51,8 +51,9 @@ import SelectBlockDesign  from '../../component/selectblockdesign/selectblockdes
 /*createnewblock*/
 import ViewBlock_1 from '../../component/createnewblock/viewblock1.js';
 import CmsBlock from '../../component/createnewblock/Cmsblock.js';
+import ViewBlock_2 from '../../component/createnewblock/ViewBlock_2.js';
 
-// import ViewBlock_2 from '../../component/createnewblock/viewblock2.js';
+import ViewBlock_3 from '../../component/createnewblock/ViewBlock_3.js';
 import Staticblocks from '../../component/createnewblock/Staticblocks.js';
 
 
@@ -209,7 +210,8 @@ componentDidMount(){
                             <Route path = "/blockdesignmaster" exact component = { BlockDesignMaster } />
                             <Route path = "/selectblockdesign" exact component = { SelectBlockDesign } />
                             <Route path = "/viewblock1" exact component = { ViewBlock_1 } />
-                            {/*<Route path = "/viewblock2" exact component = { ViewBlock_2 } />*/}
+                            <Route path = "/viewblock2" exact component = { ViewBlock_2 } />
+                            <Route path = "/viewblock3" exact component = { ViewBlock_3 } />
                             <Route path = "/create-new-block" exact component = { CmsBlock } />
                             <Route path = "/viewpage2" exact component = { Viewpage } />
 
@@ -240,7 +242,12 @@ componentDidMount(){
           </Router>
       
          ); 
+<<<<<<< Updated upstream
       
+=======
+
+           
+>>>>>>> Stashed changes
   }
 }
 export default Layout;

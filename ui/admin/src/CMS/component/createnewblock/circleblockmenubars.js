@@ -33,7 +33,7 @@ export default class CircleBlockMenuBars extends Component{
                                             <i className="fa fa-object-group fa-stack-1x circleIcon"></i>
                                         </span>
                                     </Link>
-                                    <div className="wizardNote ">Select Design</div>
+                                    <div className="wizardNote ">Select Block Design</div>
                                 </li>
                                 <li role="presentation" className={urlParam === "/viewblock2"? "active":urlParam === "/viewblock3"?"tab-done" : ""}>
                                     <Link to="/viewblock2" title="viewblock2">
@@ -41,15 +41,15 @@ export default class CircleBlockMenuBars extends Component{
                                             <i className="fa  fa-info fa-stack-1x circleIcon"></i>
                                         </span>
                                     </Link>
-                                    <div className="wizardNote">Enter Data</div>
+                                    <div className="wizardNote"> Enter Data</div>
                                 </li>
                                <li role="presentation" >{/*className={urlParam == "viewpage3"? "active" : ""}*/}
-                                    <Link to="" title="viewpage3">
+                                    <Link to="/viewblock3" title="viewpage3">
                                         <span className="round-tab  circleSpan">
                                             <i className="fa fa-file fa-stack-1x circleIcon circleIconReceipt"></i>
                                         </span>
                                     </Link>
-                                    <div className="wizardNote">View Block</div>
+                                    <div className="wizardNote">View Blocks List</div>
                                 </li>
                             </ul>
                         </div>

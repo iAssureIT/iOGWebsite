@@ -4,7 +4,7 @@ import Routes from './lib/Routes';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-axios.defaults.baseURL = 'http://iogapi.iassureit.com';
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 function App() {
 return (

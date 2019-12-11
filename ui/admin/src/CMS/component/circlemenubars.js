@@ -46,7 +46,7 @@ export default class CircleMenuBars extends Component{
                                             <i className="fa  fa-info fa-stack-1x circleIcon"></i>
                                         </span>
                                     </Link>
-                                    <div className="wizardNote">Create Block</div>
+                                    <div className="wizardNote">Add Block</div>
                                 </li>
                                <li role="presentation" >{/*className={urlParam == "viewpage3"? "active" : ""}*/}
                                     <Link to="" title="viewpage3">

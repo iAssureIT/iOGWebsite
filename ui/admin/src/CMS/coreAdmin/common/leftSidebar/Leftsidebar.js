@@ -68,7 +68,7 @@ export default class Leftsidebar extends Component{
               <nav id="sidebar">
                 <div className="sidebar-header">
                    <div className="logoTxt">iOG Admin</div>
-                   {/* <img id="imgSidebar" className="marLeft25" src="/images/logoW.jpg" alt="Logo_img" height="50%" width="50%"/>*/}
+                    <img id="imgSidebar" className="marLeft25" src="/images/logoW.jpg" alt="Logo_img" height="50%" width="50%"/>
                 </div>
                 <ul className="list-unstyled components">
                     <li className="add active" onClick={this.eventclk.bind(this)}>
@@ -102,8 +102,10 @@ export default class Leftsidebar extends Component{
                   
 
                             <li><Link to="/viewpage1"><i className="fa fa-database"></i>Create Page</Link></li>
+                            <li><Link to="/viewblock1"><i className="fa fa-database"></i>Create Block</Link></li>
+                            {/*<li><Link to="/viewblock1"><i className="fa fa-database"></i>Select Block</Link></li>*/}
                             <li><Link to="/static-block-list"><i className="fa fa-database"></i>Static Blocks</Link></li>
-                            <li><Link to="/list-of-blocks"><i className="fa fa-database"></i>list of Blocks</Link></li>
+                            {/*<li><Link to="/list-of-blocks"><i className="fa fa-database"></i>list of Blocks</Link></li>*/}
 
 
 

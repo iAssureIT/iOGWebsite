@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Route, withRouter} from 'react-router-dom';
 import CKEditor from 'ckeditor4-react';
 import './cmsblock.css';
 import axios from 'axios';
@@ -562,7 +563,7 @@ class CmsBlock extends Component {
                             <h1 className="ctext text-center">Create Block</h1>     
                         </div>
                         <form className="newTemplateForm">  
-            							<div className="inputrow">
+            							<div className="">
             							  { this.state.parsed.blockTitle == ""
         											? null
         											:
@@ -619,7 +620,7 @@ class CmsBlock extends Component {
               			                </div>
             					              }
             			          {/*</div>*/}
-              							<div className="row inputrow">
+              							<div className="row ">
               								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               { this.state.parsed.blockDescription == ""
                                 ? null
@@ -657,7 +658,7 @@ class CmsBlock extends Component {
               									this.state.groupRepetedBlocks == true 
               										?
               										<div className="col-lg-12 col-md-12 repGBlock">
-              											<div className="row inputrow">
+              											<div className="row ">
               														{ this.state.parsed.rBlocksTitle == ""
               															? null
               															:
@@ -728,7 +729,7 @@ class CmsBlock extends Component {
                                             { this.state.parsed.rBlocksDescription == ""
                                              ? null
                                              :
-                        											<div className="row inputrow marginTop17">
+                        											<div className="row  marginTop17">
                         												<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginTop17">
                         												    <label className="label-category marginTop17">Block Content<span className="astrick"></span></label>
                         												    {/*<textarea className="form-control" rows="5" id="comment"></textarea>*/}
@@ -783,7 +784,7 @@ class CmsBlock extends Component {
 {/*====================================== /Related Group Block==================================*/}							
 {/*=============================================================================================*/}							
 
-                        	<div className="row inputrow ">
+                        	<div className="row  ">
 	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	                                <div className="" id="fileuploadelem">
 	                                	<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -812,7 +813,7 @@ class CmsBlock extends Component {
   									              </div>
 	                            </div>
 	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	                                <div className="row inputrow" id="fileupload">
+	                                <div className="row " id="fileupload">
 		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		                                    <div className="form-group">
 		                                    	{ this.state.parsed.bgImage == ""
@@ -839,7 +840,7 @@ class CmsBlock extends Component {
 									                </div>
 	                            </div>
                             </div>
-                            <div className="row inputrow ">
+                            <div className="row  ">
                             	{/*<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	                              	<div className="" id="fileuploadelem">
 		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -853,14 +854,14 @@ class CmsBlock extends Component {
 		                                	}
 		                                </div>
 	                                </div>
-		                            <div className="row inputrow imgId">
+		                            <div className="row  imgId">
 		                                <div className="col-lg-6">
 											
 										</div>
 		                            </div>
                             	</div>
 	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	                                <div className="row inputrow" id="fileupload">
+	                                <div className="row " id="fileupload">
 		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		                                    { this.state.bgVideo == null
 												? null
@@ -872,7 +873,7 @@ class CmsBlock extends Component {
 			                                }    
 		                                </div>
 	                                </div>
-	                                <div className="row inputrow bgimgId">
+	                                <div className="row  bgimgId">
 	                                   <div className="col-lg-6">
 											
 										</div>
@@ -897,4 +898,4 @@ class CmsBlock extends Component {
     }
 }
 
-export default CmsBlock;
+export default withRouter(CmsBlock);

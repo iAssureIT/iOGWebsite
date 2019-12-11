@@ -40,7 +40,7 @@ componentDidMount(){var accordions = document.querySelectorAll('.accordion-item'
         }
          {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/

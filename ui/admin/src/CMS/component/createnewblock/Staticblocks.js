@@ -1,21 +1,34 @@
 import React from 'react';
+import {Route, withRouter} from 'react-router-dom';
 
+<<<<<<< Updated upstream
 import Typecomponent1        from "../blockTemplate/Typecomponent1/Typecomponent1.js";
 import Typecomponent2        from "../blockTemplate/Typecomponent2/Typecomponent2.js";
 import Typecomponent3        from "../blockTemplate/Typecomponent3/Typecomponent3.js";
 import Typecomponent4        from "../blockTemplate/Typecomponent4/Typecomponent4.js";
 import Typecomponent5        from "../blockTemplate/Typecomponent5/Typecomponent5.js";
+=======
+import Typecomponent1 from "../blockTemplate/Typecomponent1/Typecomponent1.js";
+import Typecomponent2 from "../blockTemplate/Typecomponent2/Typecomponent2.js";
+import Typecomponent3 from "../blockTemplate/Typecomponent3/Typecomponent3.js";
+import Typecomponent4 from "../blockTemplate/Typecomponent4/Typecomponent4.js";
+import Typecomponent5 from "../blockTemplate/Typecomponent5/Typecomponent5.js";
+>>>>>>> Stashed changes
 import Servicesoverview      from "../blockTemplate/ServicesOverview/ServicesOverview.js";
 import IogconsultTxtRight    from "../blockTemplate/IogconsultTxtRight/IogconsultTxtRight.js";
 import ConsultingServices    from "../blockTemplate/ConsultingServices/ConsultingServices.js";
 import ConsultDownstream     from "../blockTemplate/ConsultDownstream/ConsultDownstream.js";
 import TemplateBanner        from "../blockTemplate/TemplateBanner/TemplateBanner.js";
 import TemplateOverview      from "../blockTemplate/TemplateOverview/TemplateOverview.js";
+<<<<<<< Updated upstream
 import ServiceImage          from "../blockTemplate/ServiceImage/ServiceImage.js";
+=======
+
+>>>>>>> Stashed changes
 
 import './Staticblocks.css';
 
-export default class Staticblocks extends React.Component {
+class Staticblocks extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -92,7 +105,7 @@ export default class Staticblocks extends React.Component {
 							+"&rBlocksImage="+rBlocksImage
 							+"&rBlocksLink="+rBlocksLink;
 		
-		this.props.history.push('/create-new-block?'+queryString);
+		this.props.history.push('/viewblock2?'+queryString);
 	}
 
 	render() {
@@ -154,6 +167,7 @@ export default class Staticblocks extends React.Component {
 					<IogconsultTxtRight />
 				</section>
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+<<<<<<< Updated upstream
 		            <button id="ConsultingServices" 
 							data-blockTitle         ="blockTitle" 
 							data-RepetedBlock       ="RepetedBlock" 
@@ -209,10 +223,79 @@ export default class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<ServiceImage />
+=======
+		            <button id="ServicesOverview" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Servicesoverview />
 				</section>
-				{/*<Typecomponent5 />*/}
+				 <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="IogconsultTxtRight" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	data-fgImage="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<IogconsultTxtRight />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ConsultingServices" 
+							data-blockTitle         ="blockTitle" 
+							data-RepetedBlock       ="RepetedBlock" 
+							data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksImage       ="rBlocksImage" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksLink        ="rBlocksLink" 
+
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ConsultingServices />
+>>>>>>> Stashed changes
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ConsultDownstream" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	data-fgImage="fgImage" 
+		                	data-rBlocksTitle       ="rBlocksTitle"
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-bgImage ="bgImage" 
+							data-RepetedBlock="RepetedBlock" 
+
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ConsultDownstream />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="TemplateBanner" 
+							data-blockTitle="blockTitle"  
+							data-fgImage   ="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<TemplateBanner />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="TemplateOverview" 
+							data-blockTitle="blockTitle" 
+							data-blockDescription="blockDescription"  
+							data-fgImage   ="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<TemplateOverview />
+				</section>
+			
 
 			</div>
 		);
 	}
 }
+
+export default withRouter(Staticblocks);

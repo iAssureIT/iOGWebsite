@@ -30,7 +30,11 @@ componentDidMount(){
 // console.log("==>",this.props.block_id);
           {
              axios
+<<<<<<< Updated upstream
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+=======
+                .get('/api/blocks/get/'+this.props.block_id)
+>>>>>>> Stashed changes
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/

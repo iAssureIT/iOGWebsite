@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 //const NewPageComponent = React.lazy(() => import('./Sample.js'));
-axios.defaults.baseURL = 'http://iogapi.iassureit.com';
-// axios.defaults.baseURL = 'http://localhost:5012/';
+
+axios.defaults.baseURL =   process.env.REACT_APP_BASE_URL;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 function App() {

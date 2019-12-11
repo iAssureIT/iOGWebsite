@@ -28,7 +28,7 @@ import axios from 'axios';
 */
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/

@@ -53,7 +53,7 @@
 
 // 	getAllBlockList(){
 // 	axios
-// 			.get('http://iogapi.iassureit.com/api/blocks/get/list')
+// 			.get('/api/blocks/get/list')
 // 			.then((response)=>{
 // 					        console.log("AllBlogs=",response.data);
 // 					       /* var blocks = this.state.ListOfBlocks;

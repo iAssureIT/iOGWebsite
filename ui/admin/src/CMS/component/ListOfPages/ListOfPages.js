@@ -153,7 +153,7 @@ submitData(){
 		  	.then((response)=>{
 		    // handle success
 		   		console.log("response",response.data);
-		    	this.props.history.push("/viewpage2/");/*+response.data.pageURL*/
+		    	this.props.history.push("/viewpage2/"+response.data.pageURL);/*+response.data.pageURL*/
 		  	})
 		  	.catch(function (error) {
 		    // handle error
