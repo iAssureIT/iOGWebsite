@@ -167,7 +167,7 @@ export default class Iogtrainpage extends Component {
                {
                 Consultservive : "Our Approach",
                 bannerimg   : "/images/train.png",
-                overviewtext:"iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
+                overviewtext:"OG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
                
             }, 
 
@@ -182,38 +182,38 @@ export default class Iogtrainpage extends Component {
 
           {
                 servicetitle   : "Our differentiators:",
-                Consultservive : "Refinery Planning & Scheduling",
+                Consultservive : "skill-enhancement",
                 bannerimg      : "/images/consultsrvice.png",
-                overviewtext   :"Customized training programs such as Conceptual training for Sr. Management, Best Modelling.",
+                overviewtext   :"We provide onsite skill-enhancement training workshops .",
                
             }, 
             {
-                Consultservive : "Supply and Distribution",
+                Consultservive : "Customized modules",
                 bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"World-class technical expertise in all the leading advanced software solutions in the industries",
+                overviewtext:"Customized modules that focus on the actual application of those skills to meet the client’s need ",
                
             },  
             {
-               Consultservive : "Manufacturing Execution Systems ",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"The unparalleled combination ofdomain-experts & subjectmatter experts, that are qualified to meet our clients’ needs and expectations."
+               Consultservive : "Highest Standards Delivered",
+                bannerimg     : "/images/consultsrvice.png",
+                overviewtext  :"Facilitates clients in order to run the business effectively with the highest standards of deliveries  "
             },  
             {
-                Consultservive : "Dynamic and Steady-State Simulation",
+                Consultservive : "extensive experience",
                 bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"End-to-end Implementation and Integration skills",
+                overviewtext:"Posses extensive experience in delivering advanced software solutions throughout the downstream Oil & Gas value chain ",
                
             },  
              {
-                Consultservive : "Rigorous Reactor Modelling",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"Extensive experience  on  software applications",
+                Consultservive : "Cross-Domain iOG team",
+                bannerimg      : "/images/consultsrvice.png",
+                overviewtext   :"Strong Cross-Domain iOG team can help clients in training their frontline, operational, technical and management personnel ",
                
             },
              {
-                Consultservive : "Advanced Process Control",
+                Consultservive : "custom designed training programs",
                 bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"Ability to review problems independently and bring fresh perspectives to clients.",
+                overviewtext:"Most relevant & custom designed training programs, certified by the International Certification Agencies ",
                
             },     
                 
@@ -225,35 +225,35 @@ export default class Iogtrainpage extends Component {
 
 
            {
-                cosultheading    : "iOGConsult for Downstream",
-                cosultsubheading : "We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm",
-                ConsultDown      : "BUSINESS PROCESS MAPPING",
-                imageText        : "Design Efficient FEED that strikes the right balance of IT investments and the business",
+                cosultheading    : "Our Training Services: ",
+                cosultsubheading : "iOG Solutions offers standard & customized training programs on most of leading industry software solutions in the following core areas of Oil & Gas downstream:  ",
+                ConsultDown      : "Refinery Planning & Scheduling ",
+                imageText        : "Best practices training on how to carry out Planning, Scheduling and Retro-analysis BP’s ",
                
             }, 
             {
-                ConsultDown    : "FEED FOR INTEGRATED",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+                ConsultDown    : "Supply and Distribution ",
+                imageText      : "Order Management and Retail Automation contributing directly to commercial benefits ",
                
             },  
              {
-                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
-                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
+                ConsultDown    : "Manufacturing Execution Systems (MES) ",
+                imageText      : "Production Accounting & Operations Management to attan operational excellence ",
                
             },  
             {
-                ConsultDown    : "OPTIMIZE THE OF EXISTING",
-                imageText      : "Finding simplification opportunities to reduce the cost of application support",
+                ConsultDown    : "Simulation & Modelling ",
+                imageText      : "Dynamic and Steady-State Simulation for the actual plant ",
                
             }, 
             {
-                ConsultDown    : "BUSINESS CASE",
-                imageText      : "Devise structured ap-proach to transition and manage applications to",
+                ConsultDown    : "Asset Integrity & Reliability ",
+                imageText      : "Asset strategy management techniques for Plant & Asset reliability  ",
                
             },  
             {
-                ConsultDown    : "REVIEW OF AREAS NEEDING",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+                ConsultDown    : "Health Safety & Environment ",
+                imageText      : "Use of tools for process safety and Emmision management to secure plant ecosystem  ",
                
             },
             {

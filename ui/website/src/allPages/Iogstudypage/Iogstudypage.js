@@ -181,42 +181,23 @@ export default class Iogstudypage extends Component {
        return [
 
           {
-                servicetitle   : "Our differentiators:",
-                Consultservive : "Refinery Planning & Scheduling",
+                servicetitle   : "At iOG Solutions, the consultants:",
+                Consultservive : "Technology Evaluation and Configuration",
                 bannerimg      : "/images/consultsrvice.png",
-                overviewtext   :"Customized training programs such as Conceptual training for Sr. Management.",
-               
+                overviewtext   :"Helps the client in undertaking Technology Evaluation and Configuration studies for assessing the economic "
             }, 
             {
-                Consultservive : "Supply and Distribution",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"World-class technical expertise in all the leading advanced software solutions in the industries",
+                Consultservive : "operational viability",
+                bannerimg      : "/images/consultsrvice.png",
+                overviewtext   : "Analyse the operational viability of the latest cutting-edge technologies in the refining and petrochemical sectors. ",
                
             },  
             {
-               Consultservive : "Manufacturing Execution Systems ",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"The unparalleled combination ofdomain-experts & subjectmatter experts, that are qualified to meet our clients’ needs and expectations."
+               Consultservive : "subject matter expertise",
+                bannerimg     : "/images/consultsrvice.png",
+                overviewtext  : "In-depth subject matter expertise in the Downstream Oil & Gas domain to evaluate software solutions for multi-location facilities and develop business suites for application integration. "
             },  
-            {
-                Consultservive : "Dynamic and Steady-State Simulation",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"End-to-end Implementation and Integration skills",
-               
-            },  
-             {
-                Consultservive : "Rigorous Reactor Modelling",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"Extensive experience  on  software applications",
-               
-            },
-             {
-                Consultservive : "Advanced Process Control",
-                bannerimg   : "/images/consultsrvice.png",
-                overviewtext:"Ability to review problems independently and bring fresh perspectives to clients.",
-               
-            },     
-                
+            
         ]
     }
 
@@ -225,47 +206,55 @@ export default class Iogstudypage extends Component {
 
 
            {
-                cosultheading    : "iOGConsult for Downstream",
-                cosultsubheading : "We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm",
-                ConsultDown      : "BUSINESS PROCESS MAPPING",
-                imageText        : "Design Efficient FEED that strikes the right balance of IT investments and the business",
+                cosultheading    : " ",
+                cosultsubheading : "Following is a partial list of the analysis studies iOGStudy helps clients with:",
+                ConsultDown      : "Profit improvement studies ",
+                imageText        : "1. Crude basket optimization",
+                imageText1       : "2. High-Value product maximization",
+                imageText2       : "3. New product introduction and break-even price evaluation ",
                
             }, 
             {
-                ConsultDown    : "FEED FOR INTEGRATED",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-               
-            },  
-             {
-                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
-                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
+                ConsultDown    : "LP Configuration Studies D",
+                imageText      : "1.Refinery specific studies to evaluate additional configurations/technologies to meet desired product demand ",
+                imageText1     : "2.Evaluation of the  capacity requirement and feasible/optimal modes of operation of process units ",
                
             },  
             {
-                ConsultDown    : "OPTIMIZE THE OF EXISTING",
-                imageText      : "Finding simplification opportunities to reduce the cost of application support",
+                ConsultDown    : "Hydrogen management  ",
+                imageText      : "1.Study production, consumption, and purity of Hydrogen in the network and advise optimum reformer severity operation  ",
+                imageText1     : "2.Performance of Buy vs Make analysis to meet the hydro-treating needs in a refinery   ",
                
             }, 
             {
-                ConsultDown    : "BUSINESS CASE",
-                imageText      : "Devise structured ap-proach to transition and manage applications to",
+                ConsultDown    : "Energy Management ",
+                imageText      : "1. Specialized studies to understand the energy usage pattern, assess energy performance and energy efficiencies and benchmark the performance ",
+                imageText1     : "2. Pinch Analysis to analyse utility systems and identify potential areas of energy recovery  ",
+                // imageText2     : "3. Energy & Steam optimization studies to boost profitability ",
                
             },  
+
             {
-                ConsultDown    : "REVIEW OF AREAS NEEDING",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+                ConsultDown    : "Study and recommend viable Energy Trading opportunities taking into account the risks inherent to trading",
+                imageText      : " ",
                
-            },
+            }, 
             {
-                ConsultDown    : "ESTABLISHING INDUSTRY",
-                imageText      : "Ensure process streamlining & standardization and efficiency improvements thereof",
+                ConsultDown    : "Study the impact of pricing on “Make-Buy-Sell” and inventory stock hold-up/deplete decisions inside the refinery ",
+                imageText      : "",
                
             },  
-            {
-                ConsultDown    : "ASSESSMENT OF READINESS",
-                imageText      : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
                
-            },    
+            
+            {
+                ConsultDown    : "Identify need and areas for Base Control Loop Tuning ",
+                imageText      : "",
+               
+            }, 
+             
+            
+            
+            
                   
         ]
 

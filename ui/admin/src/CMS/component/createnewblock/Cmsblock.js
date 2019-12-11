@@ -141,7 +141,7 @@ class CmsBlock extends Component {
 			.post('/api/blocks/post',formValues)
 		  	.then(function (response) {
 		    // handle success
-		    	console.log(response);
+		    	console.log("========",response);
 		    	swal("Thank you. Your Block is Created.");
 		    	 window.location.reload();
 		  	})

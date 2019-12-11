@@ -24,7 +24,7 @@ export default class ConsultingServices extends Component {
            return( 
              <div>
                 <h1 className="downimgtext text-center">{data.cosultheading}</h1>
-                <p className="downimg_p_txt">{data.cosultsubheading}</p>
+                <p className="col-lg-9 col-md-9 downimg_p_txt">{data.cosultsubheading}</p>
               </div>  
            );
          })
@@ -37,8 +37,10 @@ export default class ConsultingServices extends Component {
              
                <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 " id={"consultdown_data"+index}>
                  <div className="col-lg-12 col-md-12">
-                 <h3 id={"downimg_text"+index}>{data.ConsultDown}</h3>
+                 <h4 id={"downimg_text"+index}>{data.ConsultDown}</h4>
                  <p id="downimg_p_text">{data.imageText}</p>
+                 <p id="downimg_p_text">{data.imageText1}</p>
+                 <p id="downimg_p_text">{data.imageText2}</p>
                 </div>
                </div>
               );

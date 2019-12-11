@@ -1,12 +1,12 @@
 .innerBlocktepmlate3{
- height: 830px;
+ height: auto;
 }
 .BT3_dataDiv{
 	top:25px;
 	/*width: 277px;*/
 	/*margin-left: 82px;*/
 	margin-bottom: 20px;
-  min-height: 280px;
+  min-height: 240px;
 
 }
 .BT3_innerBlock{

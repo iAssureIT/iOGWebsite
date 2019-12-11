@@ -59,7 +59,7 @@ componentDidMount(){
 									this.state.ListOfBlocks && this.state.ListOfBlocks.length> 0
 									?
 										this.state.ListOfBlocks.map((result, index)=>{
-											var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
+											var component = result.blockComponentName ? result.blockComponentName : "TitleDesc";
 											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 											var block_id=result._id;
 											return(

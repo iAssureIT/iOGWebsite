@@ -1,5 +1,5 @@
 .innerBlocktepmlate3{
- height: 830px;
+ height: auto;
 }
 .innerBlocktepmlate3_res{
   height: 2400px;
@@ -9,7 +9,7 @@
 	/*width: 277px;*/
 	margin-left: 82px;
 	margin-bottom: 20px;
-  min-height: 280px;
+  min-height: 240px;
 
 }
 .BT3_dataDiv_res{

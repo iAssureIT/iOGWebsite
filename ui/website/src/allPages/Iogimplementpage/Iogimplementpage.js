@@ -32,13 +32,13 @@ export default class Iogimplementpage extends Component {
         ]
     }
     
-    txtRightData(){
+    /*txtRightData(){
         return [
             
                 
                {
                 Consultservive : "Our Approach",
-                bannerimg   : "/images/iOGImplement.png",
+                bannerimg   : "/images/iogimplmnt.jpg",
                 overviewtext:"iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",            
             }, 
 
@@ -46,7 +46,7 @@ export default class Iogimplementpage extends Component {
                         
         ]
     }
-
+*/
 
     consultingservices(){
        return [
@@ -113,47 +113,52 @@ export default class Iogimplementpage extends Component {
 
 
            {
-                cosultheading    : "iOGImplement for Downstream",
-                cosultsubheading : "We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm",
+                cosultheading    : "",
+                cosultsubheading : "Following is a partial list of the Downstream O& G Business process areas and related software solutions for which we provide Implementation services to our clients: ",
                 ConsultDown      : "Refinery Planning & Scheduling",
-                imageText        : "Implementation of Planning, Scheduling Solution Leverage Assay Management solutions for better and updated LP inputs.",
-               
+                imageText        : "1.Implementation of Planning, Scheduling Solution",
+                imageText1       :" 2.Leverage Assay Management solutions for better and updated LP inputs.",
+                imageText2       :" 3.Upgrade of LP yield shift vectors using rigorous kinetic mod",
+                imageText3       :" 4.Implementation of  new unit models/ revamp of existing LP models  .",
+                 
             }, 
             {
                 ConsultDown    : "Supply and Distribution",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-               
+                imageText      : "1.Build/re-vamp supply chain demand & distribution planning models.  ",
+                imageText1     : "2.Implementation Retail automation solutions",
+                imageText2     : "3.Deployment of effective Sales and Operations Planning (S&OP) and Inventory Management modules ",
             },  
              {
-                ConsultDown    : "DOWNSTREAM OIL & EXPERT",
-                imageText      : "Assessment of the business requirements, analyze and enhance the Downstream",
+                ConsultDown    : "Manufacturing execution systems (MES) ",
+                imageText       : "1.Development of  real-time performance monitoring tools ",
+                imageText1      : "2.Implementation of  KPI’s and Profit trackers for continuous performance monitoring ",
+                imageText2      : "3.Development of  customized applications and interfaces to fit client-specific requirements ",
                
             },  
             {
-                ConsultDown    : "OPTIMIZE THE OF EXISTING",
-                imageText      : "Finding simplification opportunities to reduce the cost of application support",
+                ConsultDown    : "Advanced Process Control ",
+                imageText      : "1.Implementation of Base Control Loop tuning ",
+                imageText1      : "2.Project execution/Support services to implement recommended or specified advanced process control applications ",
+            
                
             }, 
             {
-                ConsultDown    : "BUSINESS CASE",
-                imageText      : "Devise structured ap-proach to transition and manage applications to",
+                ConsultDown    : "Dynamic and Steady-State Simulation ",
+                imageText      : "1.Development of dynamic/steady state simulation models ",
+                imageText1      : "2.Modification/maintenance of dynamic/steady state simulation models  ",
+                imageText2      : "3.Development of user-defined modules on Simulation platforms for proprietary calculations ",
                
             },  
             {
-                ConsultDown    : "REVIEW OF AREAS NEEDING",
-                imageText      : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+                ConsultDown    : "Rigorous Reactor Modeling ",
+                imageText      : "1.Build flowsheets, calibrate and validate reactor models ",
+                imageText1      : "2.Setup of Model Prediction cases and validation of yields across reactor and process units ",
+                imageText2      : "3.Identify dependent and independent variables, formulate cases and generate base/shift LP vectors for LP update  ",
+               
+               
                
             },
-            {
-                ConsultDown    : "ESTABLISHING INDUSTRY",
-                imageText      : "Ensure process streamlining & standardization and efficiency improvements thereof",
-               
-            },  
-            {
-                ConsultDown    : "ASSESSMENT OF READINESS",
-                imageText      : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
-               
-            },    
+             
                   
         ]
 
@@ -166,10 +171,18 @@ export default class Iogimplementpage extends Component {
         </div> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
       	    <Overview OverviewData={this.overviewData()} />
+            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+             <h2 className=""><b>Our Approach</b></h2>
+             <p className="line_paraaaa">iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps
+              and blueprints and finally implement the solution. </p>
+             <div className=" col-lg-9 col-md-12 col-sm-12 col-xs-12">
+             <img src="/images/iogimplmnt.jpg" className="implementimage"/>
+             </div>
+            </div>
 
-            <IogconsultTxtRight txtRightData={this.txtRightData()}/>
+           {/* <IogconsultTxtRight txtRightData={this.txtRightData()}/>*/}
 
-            <ConsultingServices consultingservices={this.consultingservices()}/>
+           {/* <ConsultingServices consultingservices={this.consultingservices()}/>*/}
 
             <ConsultDownstream  consultdownstream={this.consultdownstream()}/>
         </div>
