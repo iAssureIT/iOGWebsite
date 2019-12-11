@@ -4,10 +4,10 @@ import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
 
 // import $                  from 'jquery';
-import './ServicesOverview.css';
+import './ServiceOverview.css';
 
 
-export default class ServicesOverview extends Component {
+export default class TitleDesc extends Component {
     constructor(props) {
     super(props);
     this.state = {

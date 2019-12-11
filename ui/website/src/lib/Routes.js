@@ -167,6 +167,11 @@ import IogConsultPage            from '../allPages/_staticPages/IogConsultPage/I
 import IogImplementPage          from '../allPages/_staticPages/IogImplementPage/IogImplementPage.js';
 import IogTrainPage              from '../allPages/_staticPages/IogTrainPage/IogTrainPage.js';
 import IogStudyPage              from '../allPages/_staticPages/IogStudyPage/IogStudyPage.js';
+
+
+
+
+import MasterPage                from '../MasterPage/MasterPage.js';
 // import ProductionAccountingPage  from '../allPages/_staticPages/ProductionAccountingPage/ProductionAccountingPage.js';
 
 
@@ -323,7 +328,14 @@ const WebLayout = () => (
     <Route path="/testiogconsult"     component={ IogConsultPage } />    
     <Route path="/testiogimplement"   component={ IogImplementPage } />    
     <Route path="/testiogtrain"       component={ IogTrainPage } />    
-    <Route path="/testiogstudy"       component={ IogStudyPage } />    
+    <Route path="/testiogstudy"       component={ IogStudyPage } /> 
+
+
+
+    <Route path="/masterpage/:pageurl"       component={ MasterPage } /> 
+
+
+
    {/* <Route path="/testprodaccounting" component={ ProductionAccountingPage } />    
 */}
 

@@ -1,12 +1,19 @@
 import React from 'react';
 import {Route, withRouter} from 'react-router-dom';
 
+/*<<<<<<< Updated upstream
 import Typecomponent1 from "../blockTemplate/Typecomponent1/Typecomponent1.js";
 import Typecomponent2 from "../blockTemplate/Typecomponent2/Typecomponent2.js";
 import Typecomponent3 from "../blockTemplate/Typecomponent3/Typecomponent3.js";
 import Typecomponent4 from "../blockTemplate/Typecomponent4/Typecomponent4.js";
 import Typecomponent5 from "../blockTemplate/Typecomponent5/Typecomponent5.js";
-import Servicesoverview      from "../blockTemplate/ServicesOverview/ServicesOverview.js";
+import Servicesoverview      from "../blockTemplate/ServicesOverview/ServicesOverview.js";*/
+import Typecomponent1        from "../blockTemplate/Typecomponent1/Typecomponent1.js";
+import Typecomponent2        from "../blockTemplate/Typecomponent2/Typecomponent2.js";
+import Typecomponent3        from "../blockTemplate/Typecomponent3/Typecomponent3.js";
+import Typecomponent4        from "../blockTemplate/Typecomponent4/Typecomponent4.js";
+import Typecomponent5        from "../blockTemplate/Typecomponent5/Typecomponent5.js";
+import ServiceOverview       from "../blockTemplate/ServiceOverview/ServiceOverview.js";
 import IogconsultTxtRight    from "../blockTemplate/IogconsultTxtRight/IogconsultTxtRight.js";
 import ConsultingServices    from "../blockTemplate/ConsultingServices/ConsultingServices.js";
 import ConsultDownstream     from "../blockTemplate/ConsultDownstream/ConsultDownstream.js";
@@ -134,14 +141,15 @@ class Staticblocks extends React.Component {
 		            </button>
 					<Typecomponent3 />
 				</section>
+
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="ServicesOverview" 
-							data-blockTitle="blockTitle" 
+	data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription" 
 		                	onClick={this.selectComponent.bind(this)} > 
 		                	Select this Block 
 		            </button>
-					<Servicesoverview />
+					<ServiceOverview />
 				</section>
 				 <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="IogconsultTxtRight" 
