@@ -242,12 +242,7 @@ componentDidMount(){
           </Router>
       
          ); 
-<<<<<<< Updated upstream
-      
-=======
 
-           
->>>>>>> Stashed changes
   }
 }
 export default Layout;

@@ -208,10 +208,6 @@ class Viewpage extends React.Component {
 											var componentTemp = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
 											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
 												
-<<<<<<< Updated upstream
-												const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
-=======
->>>>>>> Stashed changes
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
 												var Block_id=result.block_id._id;
 												var block_id=result._id;
@@ -261,11 +257,6 @@ class Viewpage extends React.Component {
 																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
 																	this.state.ListOfBlocks.map((result, index)=>{
 																		
-<<<<<<< Updated upstream
-																		var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
-																		const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
-																		
-=======
 																	/*	var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
 																		const NewPageComponent = React.lazy(() => import('../blockComponent/'+component+'.js'));
 																	*/	
@@ -273,7 +264,6 @@ class Viewpage extends React.Component {
 
 																	const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 
->>>>>>> Stashed changes
 
 																		var block_id=result._id;
 																		console.log("block_id",block_id);
