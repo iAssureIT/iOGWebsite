@@ -1,28 +1,15 @@
 import React from 'react';
 import {Route, withRouter} from 'react-router-dom';
 
-/*<<<<<<< Updated upstream
-import Typecomponent1 from "../blockTemplate/Typecomponent1/Typecomponent1.js";
-import Typecomponent2 from "../blockTemplate/Typecomponent2/Typecomponent2.js";
-import Typecomponent3 from "../blockTemplate/Typecomponent3/Typecomponent3.js";
-import Typecomponent4 from "../blockTemplate/Typecomponent4/Typecomponent4.js";
-import Typecomponent5 from "../blockTemplate/Typecomponent5/Typecomponent5.js";
-import Servicesoverview      from "../blockTemplate/ServicesOverview/ServicesOverview.js";*/
 
 
+import TitleDesc                     from "../blockTemplate/TitleDesc/TitleDesc.js";
+import ImgTitle                      from "../blockTemplate/ImgTitle/ImgTitle.js";
+import TemplateOverview              from "../blockTemplate/TemplateOverview/TemplateOverview.js";
+import TitleRrpeatedImgGrp           from "../blockTemplate/TitleRrpeatedImgGrp/TitleRrpeatedImgGrp.js";
+import ExpertiseServicesOffered      from "../blockTemplate/ExpertiseServicesOffered/ExpertiseServicesOffered.js";
 
-/*import Typecomponent1        from "../blockTemplate/Typecomponent1/Typecomponent1.js";
-import Typecomponent2        from "../blockTemplate/Typecomponent2/Typecomponent2.js";
-import Typecomponent3        from "../blockTemplate/Typecomponent3/Typecomponent3.js";
-import Typecomponent4        from "../blockTemplate/Typecomponent4/Typecomponent4.js";
-import Typecomponent5        from "../blockTemplate/Typecomponent5/Typecomponent5.js";*/
-import TitleDesc             from "../blockTemplate/TitleDesc/TitleDesc.js";
-/*import IogconsultTxtRight    from "../blockTemplate/IogconsultTxtRight/IogconsultTxtRight.js";
-import ConsultingServices    from "../blockTemplate/ConsultingServices/ConsultingServices.js";
-import ConsultDownstream     from "../blockTemplate/ConsultDownstream/ConsultDownstream.js";
-import TemplateBanner        from "../blockTemplate/TemplateBanner/TemplateBanner.js";
-import TemplateOverview      from "../blockTemplate/TemplateOverview/TemplateOverview.js";
-*/
+
 
 import './Staticblocks.css';
 
@@ -44,7 +31,8 @@ class Staticblocks extends React.Component {
 		var rBlocksDescription 	= "";
 		var rBlocksImage 		= "";
 		var rBlocksLink         = "";
-		var RepetedBlock         = "";
+		var RepetedBlock        = "";
+	   
 
 		var componentName = event.target.id;
 		var element = document.getElementById("id");
@@ -89,6 +77,8 @@ class Staticblocks extends React.Component {
 			RepetedBlock = event.currentTarget.getAttribute("data-RepetedBlock");
 		}
 
+	
+
 		var queryString = 	"componentName="+componentName
 							+"&blockTitle="+blockTitle
 							+"&blocksubTitle="+blocksubTitle
@@ -101,7 +91,9 @@ class Staticblocks extends React.Component {
 							+"&rBlocksSubTitle="+rBlocksSubTitle
 							+"&rBlocksDescription="+rBlocksDescription
 							+"&rBlocksImage="+rBlocksImage
-							+"&rBlocksLink="+rBlocksLink;
+							+"&rBlocksLink="+rBlocksLink
+
+							
 		
 		this.props.history.push('/viewblock2?'+queryString);
 	}
@@ -145,7 +137,7 @@ class Staticblocks extends React.Component {
 					<Typecomponent3 />
 				</section>
 */}
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+				{/*<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TitleDesc" 
 	                        data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription" 
@@ -153,55 +145,7 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<TitleDesc />
-				</section>
-				 {/*<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
-		            <button id="IogconsultTxtRight" 
-							data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-		                	data-fgImage="fgImage" 
-		                	onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<IogconsultTxtRight />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
-		            <button id="ConsultingServices" 
-							data-blockTitle         ="blockTitle" 
-							data-RepetedBlock       ="RepetedBlock" 
-							data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksImage       ="rBlocksImage" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksLink        ="rBlocksLink" 
-
-		                	onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ConsultingServices />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
-		            <button id="ConsultDownstream" 
-							data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-		                	data-fgImage="fgImage" 
-		                	data-rBlocksTitle       ="rBlocksTitle"
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-bgImage ="bgImage" 
-							data-RepetedBlock="RepetedBlock" 
-
-		                	onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ConsultDownstream />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
-		            <button id="TemplateBanner" 
-							data-blockTitle="blockTitle"  
-							data-fgImage   ="fgImage" 
-		                	onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<TemplateBanner />
-				</section>
+				</section>*/}
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TemplateOverview" 
 							data-blockTitle="blockTitle" 
@@ -211,7 +155,44 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<TemplateOverview />
-				</section>*/}
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ImgTitle" 
+	                        data-blockTitle="blockTitle" 
+		                	data-bgImage="bgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ImgTitle />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="TitleRrpeatedImgGrp" 
+							data-blockTitle   		="blockTitle"
+							data-fgImage      		="fgImage" 
+							data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksImage 		="rBlocksImage" 
+							data-rBlocksLink  		="rBlocksLink" 
+							data-RepetedBlock 		="RepetedBlock" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<TitleRrpeatedImgGrp />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ExpertiseServicesOffered" 
+							data-blockTitle   		="blockTitle"
+							data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksImage 		="rBlocksImage" 
+							data-rBlocksLink  		="rBlocksLink" 
+							data-RepetedBlock 		="RepetedBlock"
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ExpertiseServicesOffered />
+				</section>
+				
 			
 
 			</div>

@@ -263,8 +263,6 @@ class Viewpage extends React.Component {
 																	var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
 
 																	const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
-
-
 																		var block_id=result._id;
 																		console.log("block_id",block_id);
 																		return(

@@ -3,7 +3,7 @@
   	width: 90px;
   	height: 4px;
   	top: 211px;
-    left: -23px;
+    left: 60px;
   	position: absolute;
   	z-index: 999
   }
@@ -21,8 +21,11 @@
   	color: #fff;
   	font-size: 43px;
     font-weight: 600;
-    left: 273px;
+    left: 460px;
     top: 215px;
+  }
+  .HistorianTitle{
+    color: #333;
   }
 
    

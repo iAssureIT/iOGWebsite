@@ -65,13 +65,10 @@ componentDidMount(){
 					this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length> 0
 					?
 						this.state.pageData.pageBlocks.map((result, index)=>{
-							console.log(" blockComponentName",result.block_id.blockComponentName);
-							var component = result.blockComponentName ? result.block_id.blockComponentName : "TitleDesc";
-							console.log("component ===> > >",component);
+							var component = result._id ? result.block_id.blockComponentName : "TitleDesc";
+							console.log("mani component ===> > >",result, result.block_id.blockComponentName);
 							const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
-							console.log("NewPageComponent==>",NewPageComponent);
 							var block_id=result.block_id._id;
-							console.log("block_id",block_id);
 							return(
 								<Suspense fallback={<div>Loading...</div>} key={index}>
 						    		<NewPageComponent block_id={block_id}/>

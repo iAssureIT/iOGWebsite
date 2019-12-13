@@ -5,12 +5,13 @@ import 'font-awesome/css/font-awesome.min.css';
 // import $                  from 'jquery';
 import './NewProductionaccountingpage.css';
 
-import TemplateBanner          from '../../allBlocks/TemplateBanner/TemplateBanner.js';
-import TemplateOverview        from '../../allBlocks/TemplateOverview/TemplateOverview.js';
-import ApplicationsTemp        from '../../allBlocks/ApplicationsTemp/ApplicationsTemp.js';
-import ChallengesTemp          from '../../allBlocks/ChallengesTemp/ChallengesTemp.js';
-import ServicesOffered         from '../../allBlocks/ServicesOffered/ServicesOffered.js';
-import AccountingUI            from '../../allBlocks/AccountingUI/AccountingUI.js';
+// import ExpertiseTemplateBanner          from '../../allBlocks/ExpertiseTemplateBanner/ExpertiseTemplateBanner.js';
+import TemplateOverview                 from '../../allBlocks/TemplateOverview/TemplateOverview.js';
+import ApplicationsTemp                 from '../../allBlocks/ApplicationsTemp/ApplicationsTemp.js';
+import ChallengesTemp                   from '../../allBlocks/ChallengesTemp/ChallengesTemp.js';
+import ServicesOffered                  from '../../allBlocks/ServicesOffered/ServicesOffered.js';
+import AccountingUI                     from '../../allBlocks/AccountingUI/AccountingUI.js';
+import ExpertiseTemplateBanner           from '../../allBlocks/ExpertiseTemplateBanner/ExpertiseTemplateBanner.js';
 
 export default class NewProductionaccountingpage extends Component {
 
@@ -146,13 +147,24 @@ export default class NewProductionaccountingpage extends Component {
                
         ]
     }
+    componentDidMount(){
+       /* var length = this.servicesOffered().length;
+        var split = parseInt(length/2);
+        var indexToSplit = this.servicesOffered().indexOf(split);
+        console.log("indexToSplit",indexToSplit+1)
+
+        var first = this.servicesOffered().slice(0, split);
+        var second = this.servicesOffered().slice(split,length);
+        
+        console.log("first",first,second)*/
+}
 
 
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      <TemplateBanner     />
-      <TemplateOverview  />
+      <ExpertiseTemplateBanner/>
+      <TemplateOverview />
       <ApplicationsTemp  applicationsright={this.applicationsright()}/>
       <ChallengesTemp challengesData={this.challengesData()}/>
       <AccountingUI/>

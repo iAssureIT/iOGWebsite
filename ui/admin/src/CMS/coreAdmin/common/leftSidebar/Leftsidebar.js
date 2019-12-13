@@ -68,7 +68,7 @@ export default class Leftsidebar extends Component{
               <nav id="sidebar">
                 <div className="sidebar-header">
                    <div className="logoTxt">iOG Admin</div>
-                    <img id="imgSidebar" className="marLeft25" src="/images/logoW.jpg" alt="Logo_img" height="50%" width="50%"/>
+                    <img id="imgSidebar" className="marLeft25" src="/images/logo.png" alt="Logo_img" height="50%" width="50%"/>
                 </div>
                 <ul className="list-unstyled components">
                     <li className="add active" onClick={this.eventclk.bind(this)}>
