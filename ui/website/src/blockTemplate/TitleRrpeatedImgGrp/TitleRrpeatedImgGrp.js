@@ -11,6 +11,8 @@ constructor(props) {
     	element1  :[],
     	element2  :[],
     	element3  :[],
+    	element0_txt  :"",
+    	element0_title:"",
         blocks:{
         "blockTitle"     	 : "Applications",
         "fgImage   "      	 : "/images/dataHistorian.png",
@@ -70,11 +72,10 @@ componentDidMount(){
 	    var element0 =this.state.blocks.repeatedBlocks[0];
 	    var element1 =this.state.blocks.repeatedBlocks[1];
 		var element2 =this.state.blocks.repeatedBlocks[2];
-		var element3 =this.state.blocks.repeatedBlocks[3];
+		var element3 =this.state.blocks.repeatedBlocks[3];		
 		
-
-		
-		
+		 // var element0_txt =this.state.blocks.repeatedBlocks[0].Description;
+		 var element0_title =this.state.blocks.repeatedBlocks[0].Title;
 	/*	
 	    var length   = this.state.blocks.repeatedBlocks;
 	    
@@ -87,6 +88,12 @@ componentDidMount(){
 		this.setState({
                 element0:this.state.element0
               });
+		this.setState({
+                element0_txt:this.state.element0_txt
+              });
+		this.setState({
+                element0_title:this.state.element0_title
+              });
          this.setState({
                 element1:this.state.element1
               });
@@ -97,6 +104,16 @@ componentDidMount(){
                 element3:this.state.element3
               });
 
+
+      /*  var indexToSplit = this.state.blocks.blocksrepeatedBlocks.indexOf(split);
+        console.log("indexToSplit",indexToSplit+1)
+
+        var first = this.state.blocks.repeatedBlocks.slice(0, split);
+        var second = this.state.blocks.repeatedBlocks.slice(split,length);
+        
+        console.log("first",first,second)
+         */
+// console.log("==>",this.props.block_id);
 
 
 
@@ -124,7 +141,12 @@ componentDidMount(){
 }
 
 	render() {
-		console.log("in application comp")
+		var element0 =this.state.blocks.repeatedBlocks[0];
+	    var element1 =this.state.blocks.repeatedBlocks[1];
+		var element2 =this.state.blocks.repeatedBlocks[2];
+		var element3 =this.state.blocks.repeatedBlocks[3];
+		 var element0_title =this.state.blocks.repeatedBlocks[0].Title;
+		
 		
 		return (
 		
@@ -146,7 +168,7 @@ componentDidMount(){
 								   <img src={this.state.element0.Image} className="iconclass"/>					    
 								   </div>
 							    </div>
-								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{this.state.element0.Title}</h4>
+								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{this.state.element0_title.Title}</h4>
 								</div> 
 								 <div className><p className="text-right featuretext" dangerouslySetInnerHTML={ { __html: this.state.element0.Description } }  ></p>
 								 </div>
@@ -163,7 +185,7 @@ componentDidMount(){
 								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{this.state.element1.Title}</h4>
 								</div> 
 								 <div className>
-								 {console.log("text====>",this.state.element2.Description)}
+								 {console.log("text====>",this.state.element1.Description)}
 								  <p className="text-right featuretext"dangerouslySetInnerHTML={ { __html: this.state.element1.Description } }></p>
 								 </div>
 								</div>		
