@@ -149,12 +149,6 @@ componentDidMount(){
 }
 
 	render() {
-		var element0   =this.state.blocks.repeatedBlocks[0];
-	    var element1   =this.state.blocks.repeatedBlocks[1];
-		var element2   =this.state.blocks.repeatedBlocks[2];
-		var element3     =this.state.blocks.repeatedBlocks[3];
-		var element0_txt   =this.state.blocks.repeatedBlocks[0].Description;
-		var element0_title =this.state.blocks.repeatedBlocks[0].Title;
 		
 		
 		return (
@@ -176,7 +170,7 @@ componentDidMount(){
 							  <div className="col-lg-12">
 							  
 								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12">
+								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-right">
 								   <img src={result.Image} className="iconclass"/>					    
@@ -185,7 +179,7 @@ componentDidMount(){
 								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>
 								</div> 
 								 <div className>
-								   <p className="text-right featuretext" dangerouslySetInnerHTML={{ __html: this.state.blocks.fgImage } }  ></p>
+								   <p className="text-right featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		
 							</div>	
@@ -206,7 +200,7 @@ componentDidMount(){
 						   	this.state.blocks.repeatedBlocks ?
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
             			     return(
-							   <div className="col-lg-12">
+							   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 								<div className=" col-lg-10 col-md-12">
 								 <div className="col-lg-12">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
@@ -217,7 +211,7 @@ componentDidMount(){
 								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
 								</div> 
 								 <div className>
-								   <p className="text-left featuretext" dangerouslySetInnerHTML={{ __html: this.state.blocks.fgImage } }  ></p>
+								   <p className="text-left featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		
 							</div>	

@@ -23,17 +23,19 @@ export default class TemplateOverview extends Component {
     
   }
 componentDidMount(){
-/*console.log("==>",this.props.block_id);*/
+console.log("==>",this.props.block_id);
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
                           blocks:response.data
                       });
+                      
                     }                  
-                  })           
+                  },()=>{console.log("Hello",response.data)}
+                  )           
                 .catch(function(error){
                   console.log(error);
                     if(error.message === "Request failed with status code 401")
@@ -42,9 +44,10 @@ componentDidMount(){
                       }
               })
             }
-      this.setState({
+            this.setState({
                 block_id:this.props.block_id
               });
+      
 }
  
 
@@ -53,6 +56,7 @@ componentDidMount(){
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate1 NOPadding">
+          {console.log(".blockDescription",this.state.blockDescription)}
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
          </div>

@@ -99,10 +99,14 @@ export default class Header extends Component {
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                  <div class=" column columnmenu columnmenu1">
                                 <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
-                                <a href="/refineryplanning">Production Planning </a>
-                                <a href="/refineryschedule">Production Schedule</a>
-                                <a href="/backcasting">Back Casting / Retro-Analysis</a>
-                                <a href="/lputility">LP Utilities</a>
+                                {/*<a href="/refineryplanning">Production Planning </a>*/}
+                                <a href="/masterpage/prodplanningpage">Production Planning </a>
+                               {/* <a href="/refineryschedule">Production Schedule</a>*/}
+                                <a href="/masterpage/refineryscheduling">Production Schedule</a>
+                               {/* <a href="/backcasting">Back Casting / Retro-Analysis</a>*/}
+                                <a href="/masterpage/retroanalysispage">Back Casting / Retro-Analysis</a>
+                                {/*<a href="/lputility">LP Utilities</a>*/}
+                                <a href="/masterpage/lputilities">LP Utilities</a>
                                 <a href="/lpconfig">LP Configuration studies</a>
                               </div>
                           <div class=" column columnmenu columnmenu2">
@@ -122,10 +126,14 @@ export default class Header extends Component {
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
                            {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
                             <a href="/NewProductionaccountingpage">Production Accounting</a>
-                            <a href="/datahistorian">Realtime Data Historian</a>
-                            <a href="/corporatedashboard">Corporate Dashboard & Analytics</a>
-                            <a href="/operationlogbook">Operation Logbook</a>
-                            <a href="/oilmovement">Oil Movement Management Systems</a>
+                           {/* <a href="/datahistorian">Realtime Data Historian</a>*/}
+                            <a href="/masterpage/datahistoriapage">Realtime Data Historian</a>
+                            {/*<a href="/corporatedashboard">Corporate Dashboard & Analytics</a>*/}
+                            <a href="/masterpage/corpdashboardspage">Corporate Dashboard & Analytics</a>
+                          {/*  <a href="/operationlogbook">Operation Logbook</a>*/}
+                            <a href="/masterpage/operationlogbookpage">Operation Logbook</a>
+                            {/*<a href="/oilmovement">Oil Movement Management</a>*/}
+                            <a href="/masterpage/oilmovementpage">Oil Movement Management</a>
                              <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
                             <a href="#">Occupational Health Management</a>
                             <a href="#">Process Safety Management</a>

@@ -339,3 +339,11 @@
   .iconclass{
     margin-left: -40px;
   }
+  .B3T_overviewTitle{
+    top: 53px;
+    left: 606px;
+    position: absolute;
+    color: #009de2;
+    font-size: 35px;
+    font-weight: 600;
+}

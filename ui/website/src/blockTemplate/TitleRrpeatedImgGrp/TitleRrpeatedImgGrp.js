@@ -1,9 +1,9 @@
 import React from 'react';
-// import './ApplicationsTemp.css';
 import axios from 'axios';
 
+var first = 0;
+var second = 0;
 export default class TitleRrpeatedImgGrp extends React.Component {
-
 constructor(props) {
     super(props);
     this.state = {
@@ -11,8 +11,7 @@ constructor(props) {
     	element1  :[],
     	element2  :[],
     	element3  :[],
-    	element0_txt  :"",
-    	element0_title:"",
+    	
         blocks:{
         "blockTitle"     	 : "Applications",
         "fgImage   "      	 : "/images/dataHistorian.png",
@@ -36,20 +35,20 @@ constructor(props) {
 		                          "Image"       : "/images/star.png",
 		                          "Link"        : "/abc"
 		                      },
-		                          {
-                        "Title"         : "Heavy Equipment monitoring ",
-                          "SubTitle"    : "",
-                          "Description" : "recording of run hours, instrument and equipment readings for predictive maintenance ",
-                          "Image"       : "/images/star.png",
-                          "Link"        : "/xyz"
-                      },
-                      {
-                        "Title"         : "Environmental monitoring",
-                          "SubTitle"    : "",
-                          "Description" : "weather, sea level, atmospheric conditions, groundwater contamination",
-                          "Image"       : "/images/star.png",
-                          "Link"        : "/abc"
-                      }
+		                    {
+	                        	"Title"         : "Heavy Equipment monitoring ",
+	                          	"SubTitle"    : "",
+	                          	"Description" : "recording of run hours, instrument and equipment readings for predictive maintenance ",
+	                          	"Image"       : "/images/star.png",
+	                          	"Link"        : "/xyz"
+                      		},
+		                    {
+		                        "Title"       : "Environmental monitoring",
+		                        "SubTitle"    : "",
+		                        "Description" : "weather, sea level, atmospheric conditions, groundwater contamination",
+		                        "Image"       : "/images/star.png",
+		                        "Link"        : "/abc"
+		                    }
 
 		                    
                      
@@ -69,23 +68,29 @@ constructor(props) {
   }
 componentDidMount(){
 
-	    var element0 =this.state.blocks.repeatedBlocks[0];
+	console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks);
+	for(var i=0;i<this.state.blocks.repeatedBlocks.length;i++)
+	{
+		console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks[i].Title)
+	}
+
+
+	   /* var element0 =this.state.blocks.repeatedBlocks[0];
 	    var element1 =this.state.blocks.repeatedBlocks[1];
 		var element2 =this.state.blocks.repeatedBlocks[2];
 		var element3 =this.state.blocks.repeatedBlocks[3];		
 		
-		 // var element0_txt =this.state.blocks.repeatedBlocks[0].Description;
-		 var element0_title =this.state.blocks.repeatedBlocks[0].Title;
+		 var element0_txt =this.state.blocks.repeatedBlocks[0].Description;
+		 var element0_title =this.state.blocks.repeatedBlocks[0].Title;*/
 	/*	
 	    var length   = this.state.blocks.repeatedBlocks;
 	    
-        var split    = parseInt(length/2);
 
 		var first  = length.slice(0,2);
 	
 		var second = length.slice(2,4);
 		*/
-		this.setState({
+		/*this.setState({
                 element0:this.state.element0
               });
 		this.setState({
@@ -102,17 +107,20 @@ componentDidMount(){
               });
          this.setState({
                 element3:this.state.element3
-              });
+              });*/
 
 
-      /*  var indexToSplit = this.state.blocks.blocksrepeatedBlocks.indexOf(split);
+		var length = this.state.blocks.repeatedBlocks.length;
+      var split    = parseInt(length/2);
+		console.log("split",split);
+       	/*var indexToSplit = this.state.blocks.blocksrepeatedBlocks.indexOf(split);
         console.log("indexToSplit",indexToSplit+1)
 
-        var first = this.state.blocks.repeatedBlocks.slice(0, split);
-        var second = this.state.blocks.repeatedBlocks.slice(split,length);
-        
         console.log("first",first,second)
-         */
+        */
+         first = this.state.blocks.repeatedBlocks.slice(0, split).length;
+         second = this.state.blocks.repeatedBlocks.length;
+        
 // console.log("==>",this.props.block_id);
 
 
@@ -121,6 +129,7 @@ componentDidMount(){
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                	console.log("response----->>",response);
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
                 this.setState({
@@ -141,89 +150,80 @@ componentDidMount(){
 }
 
 	render() {
-		var element0 =this.state.blocks.repeatedBlocks[0];
-	    var element1 =this.state.blocks.repeatedBlocks[1];
-		var element2 =this.state.blocks.repeatedBlocks[2];
-		var element3 =this.state.blocks.repeatedBlocks[3];
-		 var element0_title =this.state.blocks.repeatedBlocks[0].Title;
 		
 		
 		return (
 		
 			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-				  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
+			  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
 		           <div class="B2T1_line col-lg-1 col-lg-offset-2">
-		         </div>
+		        </div>
+		        {console.log("second",second)}
 		        </div>
 		         <h2 className="B2T_overviewTitle">{this.state.blocks.blockTitle}</h2>		
 					<div className="mtop25">
-						<div className="col-lg-12 col-md-12 B3T_AppDiv ">
+					   <div className="col-lg-12 col-md-12 B3T_AppDiv ">
 						 <div className="col-lg-4 col-md-12">
-						
-							   <div className="col-lg-12">
-								<div className=" col-lg-10 col-md-12">
+						 {
+					   	this.state.blocks.repeatedBlocks ?
+					   	this.state.blocks.repeatedBlocks.slice(0,first).map((result, index)=>{
+            			return(
+							  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+							  
+								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12">
 								 <div className="col-lg-12">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-right">
-								   <img src={this.state.element0.Image} className="iconclass"/>					    
+								   <img src={result.Image} className="iconclass"/>					    
 								   </div>
 							    </div>
-								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{this.state.element0_title.Title}</h4>
-								</div> 
-								 <div className><p className="text-right featuretext" dangerouslySetInnerHTML={ { __html: this.state.element0.Description } }  ></p>
-								 </div>
-								</div>		
-							</div>	
-							<div className="col-lg-12">
-								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12">
-								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2  pull-right">
-								   <img src={this.state.element1.Image} className="iconclass"/>					    
-								   </div>
-							    </div>
-								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{this.state.element1.Title}</h4>
+								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>
 								</div> 
 								 <div className>
-								 {console.log("text====>",this.state.element1.Description)}
-								  <p className="text-right featuretext"dangerouslySetInnerHTML={ { __html: this.state.element1.Description } }></p>
+								   <p className="text-right featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		
 							</div>	
+							
+							);
+
+        				  })
+	                    :
+	                    null
+	                	}	
 	                    </div>
-	                     <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+	      
+	                	<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 	                      <img src={this.state.blocks.fgImage} className="B3t_img"/>
 	                     </div>
-	                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						    <div className="col-lg-12 col-sm-12 col-xs-12">
+						 <div className="col-lg-4 col-md-12">
+						  {
+						   	this.state.blocks.repeatedBlocks ?
+						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
+            			     return(
+							   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12 NOpadding">
+								 <div className="col-lg-12">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2 ">
-								    <img src={this.state.element2.Image} className="iconclass"/>
+								   <div className="col-lg-2  pull-left">
+								   <img src={result.Image} className="iconclass"/>					    
 								   </div>
-							     </div>
-								 <h4 className="featuretitle text-left col-lg-9 NOpadding">{this.state.element2.Title}</h4>
+							    </div>
+								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
 								</div> 
-								 <div className><p className="text-left featuretext"dangerouslySetInnerHTML={ { __html: this.state.element2.Description } }></p>
+								 <div className>
+								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
-								</div>	
-                             </div>	
-							   <div className="col-lg-12 col-sm-12 col-xs-12">
-								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12 NOpadding">
-								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2">
-								    <img src={this.state.element3.Image} className="iconclass"/>
-								   </div>
-							     </div>
-								 <h4 className="featuretitle text-left col-lg-9 NOpadding">{this.state.element3.Title}</h4>
-								</div> 
-								 <div className><p className="text-left featuretext" dangerouslySetInnerHTML={ { __html: this.state.element3.Description } }></p>
-								 </div>
-								</div>	
-                             </div>	
-                             </div>
+								</div>		
+							</div>	
+							
+							 );
+
+        			   	  })
+	                    :
+	                    null
+	                	}
+	                       </div>
 	                     </div>
 						</div>
 					</div>

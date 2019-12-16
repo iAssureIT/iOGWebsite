@@ -17,13 +17,13 @@
 
   }
   .BT1_bannerTitle{
-  	/*position: absolute;*/
-  	color: #333;
+  	position: absolute;
+  	color: #ffffff;
   	font-size: 43px;
     font-weight: 600;
-    margin-top: 120px;
-   /* left: 460px;
-    top: 215px*/;
+    /*margin-top: 120px;*/
+    left: 542px;
+    top: 94px;
   }
 
    

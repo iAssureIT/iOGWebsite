@@ -33,8 +33,8 @@ export default class ExpertiseServicesOffered extends Component {
                           "Link"        : "/abc"
                       },
                       {
-                        "Title"         : "",
-                          "SubTitle"    : "upgradation",
+                        "Title"         : "upgradation",
+                          "SubTitle"    : "",
                           "Description" : "Upgrade your existing Data Historian architecture to utilize high availability, interface redundancy and the application of critical updates to all the modules.",
                           "Image"       : "/images/s3.png",
                           "Link"        : "/xyz"
@@ -47,7 +47,7 @@ export default class ExpertiseServicesOffered extends Component {
                           "Link"        : "/abc"
                       },
                       {
-                        "Title"         : "customized Applications",
+                        "Title"         : "Customized Applications",
                           "SubTitle"    : "",
                           "Description" : "Develop customized applications and interfaces to fit your unique requirements",
                           "Image"       : "/images/s5.png",

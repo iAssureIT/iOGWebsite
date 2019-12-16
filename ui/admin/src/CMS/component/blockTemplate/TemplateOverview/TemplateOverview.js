@@ -23,11 +23,13 @@ export default class TemplateOverview extends Component {
     
   }
 componentDidMount(){
-/*console.log("==>",this.props.block_id);*/
+  console.log("in componentdidmount;;;;;;;");
+  console.log("iddd ==>",this.props.block_id);
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                  console.log("Overview response",response);
                     if(response.data){
                       this.setState({
                           blocks:response.data

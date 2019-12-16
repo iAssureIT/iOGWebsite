@@ -14,7 +14,7 @@ export default class ImgTitle extends Component {
     this.state = {
       blocks: {
         blockTitle : "Data Historian",
-        /*bgImage    : "/images/images/acc.png",*/
+        bgImage    : "/images/images/acc.png",
       },
       blockID:"",
       block_id:""
@@ -26,7 +26,7 @@ componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -63,6 +63,7 @@ componentDidMount(){
         		  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
         		   <h2 className="BT1_bannerTitle text-center HistorianTitle">{this.state.blocks.blockTitle}</h2>
                    {/*<img src={this.state.blocks.bgImage} className="BT1_img"/>*/}
+                   <img src="/images/acc.png" className="BT1_img"/>
         		  </div>
     
         </div>
