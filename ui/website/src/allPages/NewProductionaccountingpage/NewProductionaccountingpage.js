@@ -15,7 +15,7 @@ import ExpertiseTemplateBanner           from '../../allBlocks/ExpertiseTemplate
 
 export default class NewProductionaccountingpage extends Component {
 
-  /*tempalebannerData(){
+  tempalebannerData(){
         return [
              {
                 bannerTitle : "Production Accounting",
@@ -24,7 +24,7 @@ export default class NewProductionaccountingpage extends Component {
             }           
         ]
     }
-    templateOverviewData(){
+    /*templateOverviewData(){
         return [
              {
                 overviewTitle : "Overview",
@@ -163,7 +163,7 @@ export default class NewProductionaccountingpage extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      <ExpertiseTemplateBanner/>
+      <ExpertiseTemplateBanner tempalebannerData={this.tempalebannerData()}/>
       <TemplateOverview />
       <ApplicationsTemp  applicationsright={this.applicationsright()}/>
       <ChallengesTemp challengesData={this.challengesData()}/>

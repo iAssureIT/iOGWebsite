@@ -160,10 +160,9 @@ componentDidMount(){
 		        </div>
 		        {console.log("second",second)}
 		        </div>
-		         <h2 className="B2T_overviewTitle">{this.state.blocks.blockTitle}</h2>		
-					<div className="mtop25">
-					   <div className="col-lg-12 col-md-12 B3T_AppDiv ">
-						 <div className="col-lg-4 col-md-12">
+		         <h2 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h2>		
+					<div className="col-lg-12 col-md-12 B3T_AppDiv ">
+					   <div className="col-lg-4 col-md-12">
 						 {
 					   	this.state.blocks.repeatedBlocks ?
 					   	this.state.blocks.repeatedBlocks.slice(0,first).map((result, index)=>{
@@ -225,7 +224,6 @@ componentDidMount(){
 	                	}
 	                       </div>
 	                     </div>
-						</div>
 					</div>
 							
 			

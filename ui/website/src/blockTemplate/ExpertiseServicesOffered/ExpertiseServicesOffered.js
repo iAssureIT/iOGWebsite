@@ -109,7 +109,7 @@ componentDidMount(){
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
          </div>
         </div>
-          <h1 className="B2T_serviceTitle">{this.state.blocks.blockTitle}</h1>
+          <h1 className="B2T_serviceTitle text-center">{this.state.blocks.blockTitle}</h1>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?

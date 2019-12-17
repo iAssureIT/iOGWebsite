@@ -11,23 +11,25 @@
 	height: auto;
 }
 .B2T_overviewTitle{
-	  top: 53px;
+	  /*top: 53px;
     left: 419px;
-    position: absolute;
+    position: absolute;*/
     color: #009de2;
     font-size: 35px;
     font-weight: 600;
+    margin-top: 76px;
+    margin-top: 90px;
 }
 
 .B2T_p{
-	position: absolute;
-    top: 154px;
+	/*position: absolute;
+    top: 154px;*/
     font-size: 17px;
     text-align: justify;
 }
 .B2T_overviewTxt{
 	height: 260px;
-	margin-top: 150px;
+	/*margin-top: 150px;*/
 }
 .B2T_btn{
  position: absolute;
@@ -39,4 +41,7 @@
     top: 360px;
     left: 130px;
     color: #ffffff;
+}
+.websiteclass{
+  padding-top: 40px;
 }

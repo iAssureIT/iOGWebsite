@@ -21,7 +21,7 @@ export default class ServicesOffered extends Component {
         {
           this.props.servicesOffered.map((data,index)=>{
             return(
-               <h1 className="B2T_serviceTitle">{data.servicepageTitle}</h1>
+               <h1 className="B2T_serviceTitle text-center">{data.servicepageTitle}</h1>
               );
           })
          } 

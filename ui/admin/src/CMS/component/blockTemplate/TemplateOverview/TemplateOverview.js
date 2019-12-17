@@ -63,14 +63,14 @@ componentDidMount(){
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <h3 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h3>
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-6 col-md col-sm-12 col-xs">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <p className="B2T_p" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                   {/*<div>
                   <input type="button" className="col-lg-3 col-md-3 col-sm-8 col-xs-8 btn blogbtn1 lightbluebg buttonhover B2T_btn" value="Read More"/>
                    <i className=" col-lg-1 readmore fa fa-angle-double-right"></i>
                   </div>*/}
                 </div>
-                <div className="col-lg-6 col-md col-sm-12 col-xs">
+                <div className="col-lg-6 col-md-6  col-sm-12 col-xs-12">
                   <img src={this.state.blocks.fgImage}className="col-lg-offset-4 B2T_overviewTxt"/>
                 </div>
                </div>

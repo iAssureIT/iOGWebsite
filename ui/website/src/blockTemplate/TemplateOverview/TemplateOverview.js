@@ -34,7 +34,7 @@ console.log("==>",this.props.block_id);
                       });
                       
                     }                  
-                  },()=>{console.log("Hello",response.data)}
+                  }
                   )           
                 .catch(function(error){
                   console.log(error);
@@ -64,7 +64,7 @@ console.log("==>",this.props.block_id);
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <h3 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h3>
-               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 websiteclass ">
                 <div className="col-lg-6 col-md col-sm-12 col-xs">
                   <p className="B2T_p" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                   {/*<div>

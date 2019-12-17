@@ -53,7 +53,7 @@ export default class ApplicationsTemp extends React.Component {
 		        { 
 		        	data2.map((data2,index)=>{
 		        	return(
-		        		<h2 className="B2T_overviewTitle">{data2.ApplicationTitle}</h2>
+		        		<h2 className="B2T_overviewTitle text-center">{data2.ApplicationTitle}</h2>
 		        		);
 		        })
 		    }
