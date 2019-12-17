@@ -19,12 +19,10 @@ export default class ExpertiseTemplateBanner extends Component {
          </div>
         </div>*/}
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
-
-        		  <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding ">
-        		   <h2 className="BT1_bannerTitle text-center HistorianTitle">Production Accounting</h2>
-                   <img src="/images/acc.png" className="BT1_img"/>
-        		  </div>
-    
+        	 <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding ">
+        		  <h2 className="BT1_bannerTitle text-center HistorianTitle">Production Accounting</h2>
+                <img src="/images/acc.png" className="BT1_img"/>
+        		</div>
         </div>
        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     );  

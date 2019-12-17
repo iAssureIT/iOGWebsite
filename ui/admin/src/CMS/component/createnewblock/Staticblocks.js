@@ -8,6 +8,7 @@ import ImgTitle                      from "../blockTemplate/ImgTitle/ImgTitle.js
 import TemplateOverview              from "../blockTemplate/TemplateOverview/TemplateOverview.js";
 import TitleRrpeatedImgGrp           from "../blockTemplate/TitleRrpeatedImgGrp/TitleRrpeatedImgGrp.js";
 import ExpertiseServicesOffered      from "../blockTemplate/ExpertiseServicesOffered/ExpertiseServicesOffered.js";
+import ChallengesTemp                from "../blockTemplate/ChallengesTemp/ChallengesTemp.js";
 
 
 
@@ -191,6 +192,18 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<ExpertiseServicesOffered />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="ChallengesTemp" 
+							data-blockTitle   		="blockTitle" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksImage 		="rBlocksImage" 
+							data-rBlocksLink  		="rBlocksLink" 
+							data-RepetedBlock 		="RepetedBlock"
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ChallengesTemp />
 				</section>
 				
 			

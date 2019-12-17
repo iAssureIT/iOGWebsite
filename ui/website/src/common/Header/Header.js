@@ -111,15 +111,18 @@ export default class Header extends Component {
                               </div>
                           <div class=" column columnmenu columnmenu2">
                             <h5 className="columnhead"><a href="/supplydistribute" className="columnhead">Supply & Distribution</a></h5>
-                            <a href="/demandmanagement">Demand Management</a>
-                            <a href="/inventorymanagement">Inventory Management</a>
+                            {/*<a href="/demandmanagement">Demand Management</a>*/}
+                            <a href="/masterpage/demandmanagement">Demand Management</a>
+                           {/* <a href="/inventorymanagement">Inventory Management</a>*/}
+                            {/*<a href="/inventorymanagement">Inventory Management</a>*/}
+                            <a href="/masterpage/invetorymgntpage">Inventory Management</a>
                             <a href="/diatributionplanning">Distribution Planning</a>
                             <a href="/retailautomation">Retail Automation</a><br/>
                              <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
                             <a href="#">Digital Transformation</a>
                             <a href="#">Application Support</a>
                             <a href="#">Application Integration</a>
-                            <a href="#">Visualization & Dashboards</a>
+                            <a href="/visualizationdashboard">Visualization & Dashboards</a>
                             <a href="#">Industry 4.0 Initiatives</a>
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
@@ -135,14 +138,14 @@ export default class Header extends Component {
                             {/*<a href="/oilmovement">Oil Movement Management</a>*/}
                             <a href="/masterpage/oilmovementpage">Oil Movement Management</a>
                              <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
-                            <a href="#">Occupational Health Management</a>
-                            <a href="#">Process Safety Management</a>
-                            <a href="#">Environment Management</a>
+                            <a href="occupationhealth">Occupational Health Management</a>
+                            <a href="/processsafty">Process Safety Management</a>
+                            <a href="/environmentsustain">Environment Management</a>
                           </div>
                           <div class=" column columnmenu columnmenu3 columnmenu2">
                             <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
                             <a href="/simulation">Steady State Simulation </a>
-                            <a href="">Dynamic Simulation</a>
+                            <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>
                             <a href="">Operator Training</a>
                             <a href="/etrm">ETRM</a>
                             <h5 className="columnhead"><a href="#" className="columnhead">Other Services</a></h5>
@@ -151,9 +154,9 @@ export default class Header extends Component {
                           </div>
                           <div class="column columnmenu">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
-                            <a href="">Utility Network Optimization</a>
-                            <a href="">Equipment Monitoring</a>
-                            <a href="">Energy Accounting</a>
+                            <a href="#">Utility Network Optimization</a>
+                            <a href="#">Equipment Monitoring</a>
+                            <a href="#">Energy Accounting</a>
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
                             <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
                             <a href="/riskBasedInspection">Asset Lifecycle Management</a>

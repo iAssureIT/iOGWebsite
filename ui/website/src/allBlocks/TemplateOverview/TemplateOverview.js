@@ -14,8 +14,8 @@ export default class TemplateOverview extends Component {
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate1 NOPadding">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
-           <div class="B2T1_line col-lg-1 col-lg-offset-2">
-         </div>
+          {/* <div class="B2T1_line col-lg-1 col-lg-offset-2">
+         </div>*/}
         </div>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

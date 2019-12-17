@@ -118,6 +118,7 @@ import Productionaccountingpage       from '../allPages/Productionaccountingpage
 /*NewTemplate*/
 import NewProductionaccountingpage    from '../allPages/NewProductionaccountingpage/NewProductionaccountingpage.js';
 import OldiOGConsultPage              from '../allPages/OldiOGConsultPage/OldiOGConsultPage.js';
+import News_Events                    from '../allPages/News_Events/News_Events.js';
 
 
 
@@ -329,6 +330,9 @@ const WebLayout = () => (
     <Route path="/testiogimplement"   component={ IogImplementPage } />    
     <Route path="/testiogtrain"       component={ IogTrainPage } />    
     <Route path="/testiogstudy"       component={ IogStudyPage } /> 
+
+
+    <Route path="/newseventspage"       component={ News_Events } /> 
 
 
 

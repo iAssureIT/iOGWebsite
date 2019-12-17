@@ -169,16 +169,16 @@ componentDidMount(){
             			return(
 							  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 							  
-								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12">
-								 <div className="col-lg-12">
+								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOPadding">
+								 
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-right">
 								   <img src={result.Image} className="iconclass"/>					    
 								   </div>
 							    </div>
 								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>
-								</div> 
-								 <div className>
+								
+								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 								   <p className="text-right featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		
@@ -201,16 +201,14 @@ componentDidMount(){
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
             			     return(
 							   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
-								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12">
+								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-left">
 								   <img src={result.Image} className="iconclass"/>					    
 								   </div>
 							    </div>
 								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
-								</div> 
-								 <div className>
+								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		

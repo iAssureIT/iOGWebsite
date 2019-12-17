@@ -218,10 +218,10 @@
   font-weight: 600;
 }
 .featuretext{
-    line-height: 23px;
-    font-size: 16px;
-    color: #333;
-    margin-right: 15px;
+    line-height : 23px;
+    font-size   : 16px;
+    color       : #333;
+    margin-left : 15px;
   }
   .textboxposition{
     margin-top: 20px;
@@ -337,5 +337,5 @@
     font-size: 11px;
   }
   .iconclass{
-    margin-left: -40px;
+    margin-left: -15px;
   }
