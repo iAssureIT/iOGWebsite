@@ -114,15 +114,17 @@ export default class Header extends Component {
                             {/*<a href="/demandmanagement">Demand Management</a>*/}
                             <a href="/masterpage/demandmanagement">Demand Management</a>
                            {/* <a href="/inventorymanagement">Inventory Management</a>*/}
-                            {/*<a href="/inventorymanagement">Inventory Management</a>*/}
                             <a href="/masterpage/invetorymgntpage">Inventory Management</a>
-                            <a href="/diatributionplanning">Distribution Planning</a>
-                            <a href="/retailautomation">Retail Automation</a><br/>
-                             <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
-                            <a href="#">Digital Transformation</a>
+                           {/* <a href="/diatributionplanning">Distribution Planning</a>*/}
+                            <a href="/masterpage/distributionplpage">Distribution Planning</a>
+                          {/*  <a href="/retailautomation">Retail Automation</a><br/>*/}
+                            <a href="/masterpage/retailautopage">Retail Automation</a><br/>
+
+                            <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
+                            <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
                             <a href="#">Application Support</a>
                             <a href="#">Application Integration</a>
-                            <a href="/visualizationdashboard">Visualization & Dashboards</a>
+                            <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
                             <a href="#">Industry 4.0 Initiatives</a>
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">

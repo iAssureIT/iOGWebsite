@@ -192,10 +192,10 @@ color: #fff;
 }
 .add2{
     position: relative;
-    right: 36px;
+    right: 120px;
     z-index: 100;
     height: 75px;
-    top: 371px;
+    top: 430px;
     opacity: 0;
 }
 .add3{
@@ -336,6 +336,35 @@ color: #fff;
     left: 372px;
     opacity: 0;
 }
+.Journycaro10{
+    z-index: 1000;
+    position: absolute;
+    top: 1683px;
+    left: 808px;
+    opacity: 0;
+}
+.Journycaro11{
+    z-index: 1000;
+    position: absolute;
+    top: 1883px;
+    left: 808px;
+    opacity: 0;
+}
+.Journycaro12{
+    z-index: 1000;
+    position: absolute;
+    top: 2083px;
+    left: 808px;
+    opacity: 0;
+}
+.Journycaro13{
+    z-index: 1000;
+    position: absolute;
+    top: 2283px;
+    left: 808px;
+    opacity: 0;
+}
+
 
 .journyanim{
   opacity: 1;

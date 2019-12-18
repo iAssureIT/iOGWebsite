@@ -12,12 +12,12 @@ export default class Ourjournyblock extends Component {
    var windowheight =$(window).height();;
   
 
-  var nb1t = (2*windowtop)+"px";
+  var nb1t = (3*windowtop)+"px";
   var nbtheight = 200;
   var nbtnull = (0)+"px";
     // alert(windowheight);
 
-  if(windowheight == 669){
+  if(windowheight == 3000){
     $(".roadjourny").addClass("roadjournyoverflow");
   
   }
@@ -63,7 +63,20 @@ export default class Ourjournyblock extends Component {
         } 
         if (scroll >= 900) {
             $(".add9").addClass("addanim");
-        }        
+        }  
+         if (scroll >= 1020) {
+            $(".add9").addClass("addanim");
+        } 
+         if (scroll >= 1220) {
+            $(".add9").addClass("addanim");
+        }  
+        if (scroll >= 1280) {
+            $(".add9").addClass("addanim");
+        }  
+        if (scroll >= 1320) {
+            $(".add9").addClass("addanim");
+        }  
+
     });
  $(window).scroll(function() 
     {    
@@ -105,6 +118,22 @@ export default class Ourjournyblock extends Component {
         if (scroll >= 900) {
             $(".Journycaro9").addClass("journyanim");
         }
+         if (scroll >= 1020) {
+            $(".Journycaro9").addClass("journyanim");
+        }
+        if (scroll >= 1220) {
+            $(".Journycaro10").addClass("journyanim");
+        }
+         if (scroll >= 1280) {
+            $(".Journycaro11").addClass("journyanim");
+        }
+         if (scroll >= 1320) {
+            $(".Journycaro12").addClass("journyanim");
+        }
+         if (scroll >= 1520) {
+            $(".Journycaro13").addClass("journyanim");
+        }
+      
         
     });
     
@@ -129,8 +158,8 @@ journyData(){
 journyData1(){
     return [
         {
-            journyTitle : "May 2013",
-            journytext  : "iOGSolutions presents a case study of the implementation of Assay Management solutions for a downstream refining organization in India at a seminar in Singapore."   
+            journyTitle : "Nov 2013",
+            journytext  : "iOG solutions move to new office 330 at Amanora Chambers on the auspicious day of Dhanteras on 1st Nov 2013. "   
         },
    /*     {
             journyTitle : "Mar 2014",
@@ -147,8 +176,8 @@ journyData1(){
 journyData2(){
     return [
         {
-            journyTitle : "June 2013",
-            journytext  : "iOGSolutions bags contract to provide FEED consulting services for multi-site refinery organization in the Middle East."   
+            journyTitle : "Mar 2014",
+            journytext  : "Successful completion of the first FEED project for a multi-site refinery organization in the Middle East. "   
         },
    /*     {
             journyTitle : "July 2014",
@@ -164,8 +193,8 @@ journyData2(){
 journyData3(){
     return [
         {
-            journyTitle : "July 2013",
-            journytext  : "iOG Solutions signed a contract in India to provide support services for seven refineries in the area of Planning & Scheduling."   
+            journyTitle : "Oct 2014",
+            journytext  : " Successful completion of the first SCM Transformation project with SAT and training programs including the back-casting / LP model update in Spain.  "   
         },
  /*       {
             journyTitle : "Oct 2014",
@@ -181,8 +210,8 @@ journyData3(){
 journyData4(){
     return [
         {
-            journyTitle : "Aug 2013",
-            journytext  : "iOG Solutions provides support for the implementation of a corporate dashboard system for an O&G client in India. The project is being executed from Singapore."   
+            journyTitle : "June 2015",
+            journytext  : "iOG Solutions partners with leading IT firm and provide consulting services for a complete review of IT spending of an O&G Global Major. "   
         },
     /*    {
             journyTitle : "",
@@ -198,8 +227,8 @@ journyData4(){
 journyData5(){
     return [
         {
-            journyTitle : "Sept 2013",
-            journytext  : "iOG Solutions signs up for 1200 sq. ft office in Pune at Amanora Chambers."   
+            journyTitle : "Sep 2015",
+            journytext  : "iOG Solutions launch its new website on 9th Sep 2015. "   
         },
    /*     {
             journyTitle : "",
@@ -215,51 +244,69 @@ journyData5(){
 journyData6(){
     return [
         {
-            journyTitle : "Oct 2013",
-            journytext  : "iOG Solutions establishes a base in Abu Dhabi near Mushriff Mall."   
+            journyTitle : "Sept 2017",
+            journytext  : " Joined hands with Leading Simulation company in South East Asia to develop the LP Model for a Refinery. "   
         },
-  /*      {
-            journyTitle : "",
-            journytext  : ""   
-        }, 
-        {
-            journyTitle : "",
-            journytext  : ""   
-        } */
-        
+ 
     ]
 }
 journyData7(){
     return [
         {
-            journyTitle : "Nov 2013",
-            journytext  : "iOG solutions moves to new office 330 at Amanora Chambers on the auspicious day of Dhanteras on 1st Nov 2013."   
+            journyTitle : "Apr 2018",
+            journytext  : " Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry.  "   
         },
-      /*  {
-            journyTitle : "",
-            journytext  : ""   
-        }, 
-        {
-            journyTitle : "",
-            journytext  : ""   
-        } */
+ 
         
     ]
 }
 journyData8(){
     return [
         {
-            journyTitle : "Dec 2013",
-            journytext  : "iOGSolutions bags SCM transformation project through IT Major for implementing LP tool at five refineries in Spain."   
+            journyTitle : "Mar 2019",
+            journytext  : "Successful Delivery and Go-Live of Petrochemical Scheduling, Mass Balance and Energy Management Systems for a Greenfield Refinery and Petrochemical Complex in the Asia Pacific.  "   
         },
-/*        {
-            journyTitle : "",
-            journytext  : ""   
-        }, 
+ 
+        
+    ]
+}
+journyData9(){
+    return [
         {
-            journyTitle : "",
-            journytext  : ""   
-        } */
+            journyTitle : "June 2019",
+            journytext  : "  Conducted Value Discovery Workshop for multiple refineries to identify significant opportunities for improvement.  "   
+        },
+ 
+        
+    ]
+}
+journyData10(){
+    return [
+        {
+            journyTitle : "Apr 2018",
+            journytext  : " Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry.  "   
+        },
+ 
+        
+    ]
+   } 
+    journyData11(){
+    return [
+        {
+            journyTitle : "Aug 2019",
+            journytext  : "Providing support services for a Gas Producing Facility in the Middle East for ensuring uptime of Implemented PI System. "   
+        },
+ 
+        
+    ]
+}
+journyData12(){
+    return [
+        {
+            journyTitle : "Nov 2019",
+            journytext  : " iOG Solutions moved to its new office space in #7090, Marvel Feugo, Pune with a grand inaugural ceremony. "   
+        },
+ 
         
     ]
 }
@@ -301,6 +348,30 @@ journyData8(){
                   <div className="Journycaro9">
                     <Journycaro journyData={this.journyData8()}/>
                   </div>
+                 {/* <div className="Journycaro10">
+                    <Journycaro journyData={this.journyData9()}/>
+                  </div>
+                  <div className="Journycaro11">
+                    <Journycaro journyData={this.journyData10()}/>
+                  </div>
+                  <div className="Journycaro12">
+                    <Journycaro journyData={this.journyData11()}/>
+                  </div>
+                  <div className="Journycaro13">
+                    <Journycaro journyData={this.journyData12()}/>
+                  </div>*/}
+
+
+                  
+                  {/*<div className="Journycaro13">
+                    <Journycaro journyData={this.journyData13()}/>
+                  </div>
+                  <div className="Journycaro14">
+                    <Journycaro journyData={this.journyData14()}/>
+                  </div>
+                  <div className="Journycaro15">
+                    <Journycaro journyData={this.journyData15()}/>
+                  </div>*/}
                   <div className="overflowjourny">
                     <div className="roadjourny">
                         <img alt="" src="/images/roadjourny.png" />
@@ -344,7 +415,7 @@ journyData8(){
               <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
               </div>
           </div>
-           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <div className="col-lg-4 col-md-7">
                <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -355,7 +426,7 @@ journyData8(){
                 </ol>
               </nav>
                </div>
-            </div> 
+            </div> */}
       </div>
     );  
   }
