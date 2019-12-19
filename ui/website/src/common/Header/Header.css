@@ -713,3 +713,11 @@ dropdown-submenu {
 .blockContent{
   text-align: justify;
 }
+
+.dataneeded a{
+  color: #f00 ! important;
+}
+.dataneeded{
+  color: #f00 ! important;
+
+}

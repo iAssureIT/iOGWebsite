@@ -102,7 +102,7 @@ export default class Header extends Component {
                                 {/*<a href="/refineryplanning">Production Planning </a>*/}
                                 <a href="/masterpage/prodplanningpage">Production Planning </a>
                                {/* <a href="/refineryschedule">Production Schedule</a>*/}
-                                <a href="/masterpage/refineryscheduling">Production Schedule</a>
+                                <a href="/masterpage/refineryschedulingpage">Production Schedule</a>
                                {/* <a href="/backcasting">Back Casting / Retro-Analysis</a>*/}
                                 <a href="/masterpage/retroanalysispage">Back Casting / Retro-Analysis</a>
                                 {/*<a href="/lputility">LP Utilities</a>*/}
@@ -122,10 +122,10 @@ export default class Header extends Component {
 
                             <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
                             <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
-                            <a href="#">Application Support</a>
-                            <a href="#">Application Integration</a>
+                            <a href="/masterpage/applicationsupportpage">Application Support</a>
+                            <a href="/masterpage/applicationintegrationpage">Application Integration</a>
                             <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
-                            <a href="#">Industry 4.0 Initiatives</a>
+                            <a href="#" className="dataneeded">Industry 4.0 Initiatives</a>
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
@@ -140,30 +140,34 @@ export default class Header extends Component {
                             {/*<a href="/oilmovement">Oil Movement Management</a>*/}
                             <a href="/masterpage/oilmovementpage">Oil Movement Management</a>
                              <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
-                            <a href="occupationhealth">Occupational Health Management</a>
-                            <a href="/processsafty">Process Safety Management</a>
-                            <a href="/environmentsustain">Environment Management</a>
+                          {/*  <a href="/occupationhealth">Occupational Health Management</a>*/}
+                            <a href="/masterpage/occuhealthpage">Occupational Health Management</a>
+                        {/*    <a href="/processsafty">Process Safety Management</a>*/}
+                            <a href="/masterpage/processsafetypage">Process Safety Management</a>
+                        {/*    <a href="/environmentsustain">Environment Management</a>*/}
+                            <a href="/masterpage/envmanagementpage">Environment Management</a>
                           </div>
-                          <div class=" column columnmenu columnmenu3 columnmenu2">
+                          <div class=" column columnmenu columnmenu3 columnmenu2 dataneeded">
                             <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
-                            <a href="/simulation">Steady State Simulation </a>
+                            <a href="/simulation" className="red">Steady State Simulation</a>
                             <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>
                             <a href="">Operator Training</a>
-                            <a href="/etrm">ETRM</a>
-                            <h5 className="columnhead"><a href="#" className="columnhead">Other Services</a></h5>
+                           {/* <a href="/etrm">ETRM</a>*/}
+                            <h5 className="columnhead dataneeded"><a href="#" className="columnhead">Other Services</a></h5>
                             <a href="/apc-services">APC Services</a>
                             <a href="/etrm">ETRM</a>
                           </div>
-                          <div class="column columnmenu">
+                          <div class="column columnmenu dataneeded">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
                             <a href="#">Utility Network Optimization</a>
                             <a href="#">Equipment Monitoring</a>
                             <a href="#">Energy Accounting</a>
-                            <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
-                            <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
-                            <a href="/riskBasedInspection">Asset Lifecycle Management</a>
-                            <a href="/assetStrategyMgmt">Asset Strategy Management</a>
-                           
+                            <div>
+                              <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
+                             {/* <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
+                              <a href="/riskBasedInspection">Asset Lifecycle Management</a>*/}
+                              <a href="/AssetStrategyManagement">Asset Strategy Management</a>
+                           </div>
                           </div>
                         </div>
                       </div>
