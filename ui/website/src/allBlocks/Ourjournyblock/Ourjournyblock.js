@@ -359,7 +359,7 @@ journyData12(){
                   </div>
                   <div className="Journycaro13">
                     <Journycaro journyData={this.journyData12()}/>
-                  </div>*/}
+                  </div>
 
 
                   

@@ -6,40 +6,43 @@ export default class Banner extends Component {
 
 componentDidMount(){
   
+  
+ 
+} 
+onHover(event){
   $(document).ready(function(){
-      $(".dataonHover1").hide();
+        $(".dataonHover1").hide();
 
-  $(".oilsign8").hover(function(){
-      $(".dataonHover1").show();
-      
+    $(".oilsign8").hover(function(){
+        $(".dataonHover1").show();
 
+    });
   });
-});
+} 
+onHoverOut(event)
+{
   $(document).ready(function(){
-      $(".dataonHover").hide();
+        $(".dataonHover1").hide();
 
-  $(".oilsign7").hover(function(){
-      $(".dataonHover").show();
+    $(".oilsign8").hover(function(){
+        $(".dataonHover1").hide();
 
+    });
   });
-});
-}  
+}
 
 
   render() {  
     var y = 330;
     var h = y + 'px';
-
     var x = $(window).height();  
     var z = 0;
     var winHeight =(x-z) + 'px';
     var winHeight1 =(x-z) ;
     // console.log('x',$(window).height());
     // console.log('winHeight',winHeight1);
-
     var innerheight = winHeight1-60 + 'px';
-    var innerheight1 = winHeight1-100 ;
-  
+    var innerheight1 = winHeight1-100 ;  
     var margin = parseInt( innerheight1-y );
     var margint = (margin/2);
     // console.log('margint',margint);
@@ -94,7 +97,6 @@ componentDidMount(){
                 <figure className="up1">
                   <img alt="" src="/images/up2.png"/>
                 </figure>
-                
                 <figure className="oilsign2 hoveroilsign">
                   <img alt="" src="/images/oilsign.png"/>
                  {/* <div className="triangle-down"></div>
@@ -123,7 +125,6 @@ componentDidMount(){
                   </div>
                   <div className="dataonHover2">
                     <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas  <span className="Hoverreadmore">Read More</span></p>
-
                   </div>
                 </figure>
                 <figure className="oilsign6 hoveroilsign1">
@@ -136,29 +137,25 @@ componentDidMount(){
                 <figure className="oilsign7 ">
                   <img alt="" src="/images/oilsign.png"/>
                   </figure>
-                {/*  <div className="dataonHover">
-                   
+                  <div className="dataonHover">
                       <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
                       heating, gas and light fuel formation and heavy oil
                        sedimentation and the entire process of refining takes place here<br/>
                        <span className="Hoverreadmore">Read More</span>
                        </p>
-                  </div>*/}
-                
-                <figure className="oilsign8 ">
+                  </div>
+                <figure className="oilsign8  " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut.bind(this)}>
                     <img alt="" src="/images/oilsign.png"/>   
                   </figure> 
-                 
-                  {/*<div className="dataonHover1">   
+                   <div className="dataonHover1">   
                      <div className="triangle-down1"></div>
                       <div className="triangle-down211"></div>
                       <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
-                      heating, gas and light fuel formation and heavy oil
+                       heating, gas and light fuel formation and heavy oil
                        sedimentation and the entire process of refining takes place here<br/>
                        <span className="Hoverreadmore">Read More</span>
                        </p>
-                    </div> */}
-                 
+                    </div>
                   <img alt="" src="/images/anim.png" className="animnewimg"/>
                 <figure className="anim">
                 </figure>

@@ -3,6 +3,13 @@ import {Route, withRouter} from 'react-router-dom';
 
 
 
+import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
+import Typecomponent2                from "../blockTemplate/Typecomponent2/Typecomponent2.js";
+import Typecomponent3                from "../blockTemplate/Typecomponent3/Typecomponent3.js";
+import Aboutusimgright               from "../blockTemplate/Aboutusimgright/Aboutusimgright.js";
+import Aboutusvision                 from "../blockTemplate/Aboutusvision/Aboutusvision.js";
+import Commoninfoblock               from "../blockTemplate/Commoninfoblock/Commoninfoblock.js";
+// import Commonservicesblock           from "../blockTemplate/Commonservicesblock/Commonservicesblock.js";
 import TitleDesc                     from "../blockTemplate/TitleDesc/TitleDesc.js";
 import ImgTitle                      from "../blockTemplate/ImgTitle/ImgTitle.js";
 import TemplateOverview              from "../blockTemplate/TemplateOverview/TemplateOverview.js";
@@ -103,7 +110,7 @@ class Staticblocks extends React.Component {
 		return (
 			<div>
 
-				{/*<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="Typecomponent1" 
 							data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription" 
@@ -115,15 +122,14 @@ class Staticblocks extends React.Component {
 				</section>
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="Typecomponent2" 
-							data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription" 
 							data-fgImage="fgImage" 
-						
 		                	onClick={this.selectComponent.bind(this)} > 
 		                	Select this Block 
 		            </button>
 					<Typecomponent2 />
 				</section>
+
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="Typecomponent3" 
 							data-blockTitle="blockTitle" 
@@ -137,8 +143,56 @@ class Staticblocks extends React.Component {
 		            </button>
 					<Typecomponent3 />
 				</section>
-*/}
-				{/*<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="Aboutusimgright" 
+	                        data-bgImage="bgImage" 
+		                	data-blockDescription="blockDescription" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Aboutusimgright />
+				</section>
+
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="Aboutusvision" 
+	                        data-fgImage="fgImage" 
+		                	data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksDescription ="rBlocksDescription"  
+							data-RepetedBlock 		="RepetedBlock" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Aboutusvision />
+				</section>
+
+
+
+
+                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="Commoninfoblock" 
+		                	data-blockDescription="blockDescription" 
+							data-fgImage="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Commoninfoblock />
+				</section>
+
+				 {/*<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="Commonservicesblock" 
+		                	data-blockDescription="blockDescription" 
+							data-fgImage="fgImage" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Commonservicesblock />
+				</section>*/}
+              
+
+
+
+			   <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TitleDesc" 
 	                        data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription" 
@@ -146,7 +200,7 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<TitleDesc />
-				</section>*/}
+				</section>
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TemplateOverview" 
 							data-blockTitle="blockTitle" 

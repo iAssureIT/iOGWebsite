@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 // import { render } from 'react-dom';
-// import   Loadable                  from 'react-loadable';
+
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import './Typecomponent4.css';
+import './Commoninfoblock.css';
 
-export default class Typecomponent4 extends Component {
+
+export default class Commoninfoblock extends Component {
    constructor(props) {
     super(props);
     this.state = {
       blocks: {
-       
+        blockTitle : "This is Block Title",
         blockDescription : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         fgImage: "/images/bgimage1.jpg",
       },
@@ -46,25 +47,34 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
+
+  
     render(){
         return(
-          <div className="container-fluid g_blockOuterWrapper">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 g_blockInnerWrapper">
-                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blockTextWrapper">
-                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <div className="col-lg-2"> </div>
-                          <p className="l_BT1_para text-justify"dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
-                      </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div className="">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                      <img src={this.state.blocks.fgImage} alt="" className="truck" />
+                      <div className="img1 row">
+                        <img src={this.state.blocks.fgImage} alt="" className="services_img" />
+                      </div>
                     </div>
-                  </div>
-              </div>
-            </div>
-          </div>
+                    <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt100 NOPadding">
+                        <div className="col-lg-12">
+                          <div className="col-lg-2 col-lg-offset-5">
+                            <div className="line1 col-lg-1 col-lg-offset-2"></div>
+                          </div>                    
+                        </div> 
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <p className="line_para text-justify">{this.state.blocks.blockDescription} </p>   
+                                          </div>       
+                                    </div>    
+                                </div>
+                            </div>
+                       </div>
+                  </div>   
         );
     }
 }

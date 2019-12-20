@@ -149,7 +149,8 @@ export default class Header extends Component {
                           </div>
                           <div class=" column columnmenu columnmenu3 columnmenu2 dataneeded">
                             <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
-                            <a href="/simulation" className="red">Steady State Simulation</a>
+                           {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
+                            <a href="/masterpage/steadystatepage" className="red">Steady State Simulation</a>
                             <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>
                             <a href="">Operator Training</a>
                            {/* <a href="/etrm">ETRM</a>*/}

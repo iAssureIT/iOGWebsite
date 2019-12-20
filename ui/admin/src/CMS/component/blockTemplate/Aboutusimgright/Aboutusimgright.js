@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-// import { render } from 'react-dom';
-// import   Loadable                  from 'react-loadable';
-import axios from 'axios';
+import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import axios from 'axios';
 
-import './Typecomponent4.css';
+import './Aboutusimgright.css';
 
-export default class Typecomponent4 extends Component {
+export default class Aboutusimgright extends React.Component  {
+
    constructor(props) {
     super(props);
     this.state = {
       blocks: {
-       
-        blockDescription : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        fgImage: "/images/bgimage1.jpg",
+        blockDescription : "Our key strength is our Team. iOG operates through a team of young and innovative consultants which has strong domain knowledge in all aspects of the O&G value chain and expertise in all leading software solutions. Needless to add, the impact of iOG interventions and its support is directly reflected in the phenomenal growth and progress of the company engaging its services.",
+        fgImage: "/images/imgrightabout.png",
       },
       blockID:"",
       block_id:""
@@ -22,7 +20,7 @@ export default class Typecomponent4 extends Component {
 
     
   }
-componentDidMount(){
+  componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
@@ -46,6 +44,7 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
+
     render(){
         return(
           <div className="container-fluid g_blockOuterWrapper">
@@ -54,7 +53,7 @@ componentDidMount(){
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blockTextWrapper">
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div className="col-lg-2"> </div>
-                          <p className="l_BT1_para text-justify"dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                          <p className="l_BT1_para text-justify"> {this.state.blocks.blockDescription } </p>
                       </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">

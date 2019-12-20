@@ -338,6 +338,8 @@
   }
   .iconclass{
     margin-left: -40px;
+    width:40px;
+    margin-top: 40px;
   }
   .B3T_overviewTitle{
     top: 53px ! important;
@@ -349,4 +351,7 @@
 }
 .rightapplications{
   margin-left: 20px ! important;
+}
+.websiteDivPos{
+  margin-top: 40px ! important;
 }
