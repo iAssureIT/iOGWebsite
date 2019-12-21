@@ -147,27 +147,28 @@ export default class Header extends Component {
                         {/*    <a href="/environmentsustain">Environment Management</a>*/}
                             <a href="/masterpage/envmanagementpage">Environment Management</a>
                           </div>
-                          <div class=" column columnmenu columnmenu3 columnmenu2 dataneeded">
+                          <div class=" column columnmenu columnmenu3 columnmenu2 ">
                             <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
                            {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
                             <a href="/masterpage/steadystatepage" className="red">Steady State Simulation</a>
-                            <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>
-                            <a href="">Operator Training</a>
+                           {/* <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>*/}
+                            <a href="/masterpage/dynamicpage">Dynamic Simulation</a>
+                            <a href="/masterpage/operatortrainingpage">Operator Training</a>
                            {/* <a href="/etrm">ETRM</a>*/}
                             <h5 className="columnhead dataneeded"><a href="#" className="columnhead">Other Services</a></h5>
                             <a href="/apc-services">APC Services</a>
                             <a href="/etrm">ETRM</a>
                           </div>
-                          <div class="column columnmenu dataneeded">
+                          <div class="column columnmenu ">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
-                            <a href="#">Utility Network Optimization</a>
-                            <a href="#">Equipment Monitoring</a>
-                            <a href="#">Energy Accounting</a>
+                            <a href="/masterpage/energyoptpage">Utility Network Optimization</a>
+                            <a href="/masterpage/equipmonitoringpage">Equipment Monitoring</a>
+                            <a href="/masterpage/energyaccpage">Energy Accounting</a>
                             <div>
-                              <h5 className="columnhead"><a href="/energy"className="columnhead">Asset Management</a> </h5>
+                              <h5 className="columnhead"><a href="/energy"className="columnhead dataneeded">Asset Management</a> </h5>
                              {/* <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
                               <a href="/riskBasedInspection">Asset Lifecycle Management</a>*/}
-                              <a href="/AssetStrategyManagement">Asset Strategy Management</a>
+                              <a href="/AssetStrategyManagement" className="">Asset Strategy Management</a>
                            </div>
                           </div>
                         </div>
