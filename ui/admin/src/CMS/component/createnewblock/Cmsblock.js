@@ -62,6 +62,8 @@ class CmsBlock extends Component {
   }
   handleChange(event){
 		event.preventDefault();
+      console.log("handleChange===>in Componant===>",this.state.parsed.componentName);
+
     	this.setState({
        		"blockTitle"       : this.state.parsed.blockTitle ? this.refs.blockTitle.value : "",
 			    "blocksubTitle"    : this.state.parsed.blocksubTitle ? this.refs.blocksubTitle.value :"",
@@ -129,7 +131,7 @@ class CmsBlock extends Component {
   		blockTitle 			   : this.state.blockTitle,
   		blockSubTitle 		 : this.state.blocksubTitle,
   		blockDescription 	 : this.state.blockDescription,
-  		blockComponentName : this.state.componentName,
+  		blockComponentName : this.state.parsed.componentName,
   		blockType 			   : this.state.blockType,
   		fgImage 			     : this.state.imgbPath.path,
   		bgImage 			     : this.state.bgImage,
@@ -141,9 +143,9 @@ class CmsBlock extends Component {
 			.post('/api/blocks/post',formValues)
 		  	.then(function (response) {
 		    // handle success
-		    	console.log("========",response);
+		    	console.log("data in block========",response.data);
 		    	swal("Thank you. Your Block is Created.");
-		    	 window.location.reload();
+		    	 // window.location.reload();
 		  	})
 		  	.catch(function (error) {
 		    // handle error
@@ -555,7 +557,9 @@ class CmsBlock extends Component {
   }
 
     render() {
-      console.log("parsed===>in render===>",this.state.parsed);
+     /* console.log("parsed===>in render===>",this.state.parsed);
+      console.log("parsed===>in Componant===>",this.state.parsed.componentName);
+*/
         return (
         		<div className="">
                     <div className="create-basic-block-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">

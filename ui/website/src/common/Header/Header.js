@@ -155,9 +155,11 @@ export default class Header extends Component {
                             <a href="/masterpage/dynamicpage">Dynamic Simulation</a>
                             <a href="/masterpage/operatortrainingpage">Operator Training</a>
                            {/* <a href="/etrm">ETRM</a>*/}
-                            <h5 className="columnhead dataneeded"><a href="#" className="columnhead">Other Services</a></h5>
-                            <a href="/apc-services">APC Services</a>
-                            <a href="/etrm">ETRM</a>
+                            <h5 className="columnhead "><a href="#" className="columnhead">Other Services</a></h5>
+                           {/* <a href="/apc-services">APC Services</a>*/}
+                            <a href="/masterpage/apcpage">APC Services</a>
+                            {/*<a href="/etrm">ETRM</a>*/}
+                            <a href="/masterpage/etrmpage">ETRM</a>
                           </div>
                           <div class="column columnmenu ">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>

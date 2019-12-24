@@ -634,6 +634,7 @@ height: 90px;
     top: 11.4em;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: absolute;
+    z-index: 200;
 }
 .dataonHover1{
   display: none;

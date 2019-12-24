@@ -16,7 +16,7 @@ constructor(props) {
         "blockTitle"      : "About US right",
         "fgImage"   : "/images/10.png",
         "blockDescription"  : "",
-        "blockComponentName"  : "Aboutustextright",
+        "blockComponentName"  : "Aboutusvision",
         "blockType"       : "simple",
         "repeatedBlocks"    : [
                       {

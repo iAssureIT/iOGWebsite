@@ -12,7 +12,7 @@ constructor(props) {
         "blockTitle"      : "About US right",
         "blockSubTitle"   : "",
         "blockDescription"  : ".Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "blockComponentName"  : "Aboutustextright",
+        "blockComponentName"  : "Typecomponent3",
         "blockType"       : "simple",
         "repeatedBlocks"    : [
                       {
@@ -90,7 +90,7 @@ componentDidMount(){
                     </h2>
                         
                     <div>
-                     <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                     <p className="col-lg-offset-2 col-lg-10 col-md-10 col-sm-12 col-xs-12 type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
 
                 </div>

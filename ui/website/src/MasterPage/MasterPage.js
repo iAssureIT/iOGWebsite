@@ -54,10 +54,7 @@ componentDidMount(){
    	}
 
 	render() {
-		var data= this.state.pageData;
-		// console.log("ListOfBlocks",this.state.ListOfBlocks)
-		// console.log('pageData = ', data);
-		// console.log("block Data => ",data.pageBlocks);	
+		var data= this.state.pageData;	
 		return (
 			<div className="pageHgt">
 				

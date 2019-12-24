@@ -11,21 +11,20 @@ constructor(props) {
     super(props);
     this.state = {
       blocks:{
-        "blockTitle"      : "About US right",
-        "fgImage"   : "/images/10.png",
-        "blockDescription"  : "",
-        "blockComponentName"  : "Aboutustextright",
+        
+        "fgImage"   : "/images/visionabout.png",
+        "blockComponentName"  : "Aboutusvision",
         "blockType"       : "simple",
         "repeatedBlocks"    : [
                       {
-                        "Title"     : "VISION",
+                          "Title"     : "VISION",
                           "SubTitle"    : "",
                           "Description" : "To be a global market leader in Intelligent Support Systems for Oil and Gas Industry.",
                           "Image"     : "",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"     : "MISSION",
+                          "Title"     : "MISSION",
                           "SubTitle"    : "",
                           "Description" : "Nurture a talented team of professionals to provide best-in-class consulting and implementation servic- es improving the profitability of our valued clients across the globe.",
                           "Image"     : "",

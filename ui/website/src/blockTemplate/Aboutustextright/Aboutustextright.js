@@ -1,16 +1,20 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+// import { render } from 'react-dom';
+// import   Loadable                  from 'react-loadable';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import axios from 'axios';
 
 import './Aboutusimgright.css';
 
-export default class Aboutusimgright extends React.Component  {
+export default class Aboutusimgright extends Component {
 
    constructor(props) {
     super(props);
     this.state = {
       blocks: {
+       "blockComponentName"  : "Aboutustextright",
+        "blockType"       : "simple",
         blockDescription : "Our key strength is our Team. iOG operates through a team of young and innovative consultants which has strong domain knowledge in all aspects of the O&G value chain and expertise in all leading software solutions. Needless to add, the impact of iOG interventions and its support is directly reflected in the phenomenal growth and progress of the company engaging its services.",
         fgImage: "/images/imgrightabout.png",
       },
@@ -20,7 +24,7 @@ export default class Aboutusimgright extends React.Component  {
 
     
   }
-  componentDidMount(){
+componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
@@ -44,7 +48,6 @@ export default class Aboutusimgright extends React.Component  {
                 block_id:this.props.block_id
               });
 }
-
     render(){
         return(
           <div className="container-fluid g_blockOuterWrapper">

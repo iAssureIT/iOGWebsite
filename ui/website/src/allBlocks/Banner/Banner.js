@@ -9,7 +9,7 @@ componentDidMount(){
   
  
 } 
-onHover(event){
+onHoverOut(event){
   $(document).ready(function(){
         $(".dataonHover1").hide();
 
@@ -19,16 +19,26 @@ onHover(event){
     });
   });
 } 
-onHoverOut(event)
-{
+onHoverOut1(event){
   $(document).ready(function(){
+        $(".dataonHover").hide();
+
+    $(".oilsign7").hover(function(){
+        $(".dataonHover").show();
+
+    });
+  });
+} 
+onHover(event)
+{
+  /*$(document).ready(function(){
         $(".dataonHover1").hide();
 
     $(".oilsign8").hover(function(){
         $(".dataonHover1").hide();
 
     });
-  });
+  });*/
 }
 
 
@@ -124,7 +134,8 @@ onHoverOut(event)
                     <div className="triangle-down21"></div>
                   </div>
                   <div className="dataonHover2">
-                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas  <span className="Hoverreadmore">Read More</span></p>
+                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas 
+                     <span className="Hoverreadmore">Read More</span></p>
                   </div>
                 </figure>
                 <figure className="oilsign6 hoveroilsign1">
@@ -134,7 +145,7 @@ onHoverOut(event)
                   </div>*/}
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
-                <figure className="oilsign7 ">
+                <figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut1={this.onHoverOut1.bind(this)}>
                   <img alt="" src="/images/oilsign.png"/>
                   </figure>
                   <div className="dataonHover">
@@ -144,7 +155,7 @@ onHoverOut(event)
                        <span className="Hoverreadmore">Read More</span>
                        </p>
                   </div>
-                <figure className="oilsign8  " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut.bind(this)}>
+                <figure className="oilsign8" onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut.bind(this)}>
                     <img alt="" src="/images/oilsign.png"/>   
                   </figure> 
                    <div className="dataonHover1">   

@@ -14,42 +14,40 @@ export default class Commonservicesblock extends Component {
     super(props);
     this.state = {
       blocks:{
-        "blockTitle"      : "",
-        "blockSubTitle"   : "",
-        "blockDescription"  : "",
-        "blockComponentName"  : "",
-        "blockType"       : "simple",
+        
+        "blockComponentName"  : "Commonservicesblock",
+        "blockType"           : "simple",
         "repeatedBlocks"    : [
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                          "Title"     : "Geology &amp; Geophysics",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
                           "Link"      : "/iogstudy"
                       },
                       {
-                        "Title"     : "Geology",
+                          "Title"     : "Geology",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
                           "Link"      : "/iogimplement"
                       },
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                          "Title"     : "Geology &amp; Geophysics",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
                           "Link"      : "/iogtrain"
                       },
                       {
-                        "Title"     : "Geology",
+                          "Title"     : "Geology",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
                           "Link"      : "/iogstudy"
                       },
                        {
-                        "Title"     : "Geology",
+                          "Title"     : "Geology",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
@@ -95,7 +93,8 @@ componentDidMount(){
     
   
  render(){
-  var plength = this.props.servicedata ? this.props.servicedata.length : 0;
+  var plength = this.state.blocks.repeatedBlocks ? this.state.blocks.repeatedBlocks.length : 0;
+  console.log("plength....",plength);
   var productlength = plength % 3;
 
     return(
@@ -107,7 +106,6 @@ componentDidMount(){
               <div className="Main_Cards__Bubble bub2"></div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
-          
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="row">
@@ -118,7 +116,7 @@ componentDidMount(){
                         <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1"> 
                           <div className="row"> 
                             {
-                              this.props.servicedata.map((data, index)=>{
+                              this.state.blocks.repeatedBlocks.map((data, index)=>{
                                 if(productlength == 2){
                                   if(plength === index+2){
                                     var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
@@ -146,12 +144,12 @@ componentDidMount(){
                                             <div className="serflip-card">
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front">
-                                                    <img src={data.downstreamimg} alt=""/>
-                                                    <div className="dwstmTitle">{data.downstreamTitle}</div> 
-                                                    <div className="dwstmTitle">{data.downstreamTitle1}</div> 
+                                                    <img src={data.Image} alt=""/>
+                                                    <div className="dwstmTitle">{data.Title}</div> 
+                                                  
                                                   </div>
                                                   <div className="serflip-card-back">
-                                                      <p className="text-justify downstreamtxt">{data.downstreamtext}</p>
+                                                      <p className="text-justify downstreamtxt">{data.Description}</p>
                                                   </div>
                                                </div>
                                               </div>

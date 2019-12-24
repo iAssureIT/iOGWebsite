@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import { render } from 'react-dom';
+
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
-import './Typecomponent1.css';
+import './Commoninfoblock.css';
 
-export default class Typecomponent1 extends React.Component {
 
-  constructor(props) {
+export default class Commoninfoblock extends Component {
+   constructor(props) {
     super(props);
     this.state = {
       blocks: {
-        "blockComponentName"  : "Typecomponent1",
+        "blockComponentName"  : "Commoninfoblock",
         "blockType"       : "simple",
-        blockTitle : "This is Block Title",
+         blockTitle : "This is Block Title",
         blockDescription : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         fgImage: "/images/bgimage1.jpg",
       },
@@ -45,36 +49,34 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
+
+  
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover"
-                 id="Type1Component" 
-                 data-field1="blockTitle" 
-                 data-field2="blockDescription" 
-                 data-field3="fgImage">         
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <div className="col-lg-11 col-lg-offset-1">
-                    <div className="line1 col-lg-1 pull-right "></div>
-                  </div>                    
-                </div> 
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
-                        <div>
-                          <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
-                        </div>   
-                      </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+            <div className="">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                      <div className="img1">
-                        <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="400" />
+                      <div className="img1 row">
+                        <img src={this.state.blocks.fgImage} alt="" className="services_img" />
+                      </div>
                     </div>
-                  </div>
-                  </div>
-                </div>          
-            </div>   
+                    <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt100 NOPadding">
+                        <div className="col-lg-12">
+                          <div className="col-lg-2 col-lg-offset-5">
+                            <div className="line1 col-lg-1 col-lg-offset-2"></div>
+                          </div>                    
+                        </div> 
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <p className="line_para text-justify">{this.state.blocks.blockDescription} </p>   
+                                          </div>       
+                                    </div>    
+                                </div>
+                            </div>
+                       </div>
+                  </div>   
         );
     }
 }
