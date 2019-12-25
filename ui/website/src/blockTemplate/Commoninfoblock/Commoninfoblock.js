@@ -25,8 +25,8 @@ export default class Commoninfoblock extends Component {
 
     
   }
-componentDidMount(){
-/*console.log("==>",this.props.block_id);*/
+componentWillReceiveProps(){
+console.log("==>",this.props.block_id);
           {
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
@@ -52,6 +52,7 @@ componentDidMount(){
 
   
     render(){
+      console.log("========",this.state.blocks.fgImage);
         return(
             <div className="">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -70,7 +71,7 @@ componentDidMount(){
                                   <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <p className="line_para text-justify">{this.state.blocks.blockDescription} </p>   
+                                            <p className="line_para text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>   
                                           </div>       
                                     </div>    
                                 </div>

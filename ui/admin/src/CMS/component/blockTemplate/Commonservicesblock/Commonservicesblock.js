@@ -74,6 +74,7 @@ componentDidMount(){
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
+                console.log("response in Commonservicesblock===",response);
                 this.setState({
                   blocks:response.data
                   });
@@ -97,8 +98,7 @@ componentDidMount(){
   console.log("plength....",plength);
   var productlength = plength % 3;
 
-    return(
-      
+  return(
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
           <div className="row">
             <div className="Bubble" >
@@ -117,6 +117,7 @@ componentDidMount(){
                           <div className="row"> 
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
+                                console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
                                     var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
@@ -146,10 +147,9 @@ componentDidMount(){
                                                   <div className="serflip-card-front">
                                                     <img src={data.Image} alt=""/>
                                                     <div className="dwstmTitle">{data.Title}</div> 
-                                                  
                                                   </div>
                                                   <div className="serflip-card-back">
-                                                      <p className="text-justify downstreamtxt">{data.Description}</p>
+                                                      <p className="text-justify downstreamtxt" dangerouslySetInnerHTML={ { __html: data.Description } }></p>
                                                   </div>
                                                </div>
                                               </div>

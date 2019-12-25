@@ -205,9 +205,9 @@ class Viewpage extends React.Component {
 									{
 										this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length>0?
 											this.state.pageData.pageBlocks.map((result, index)=>{
-											var componentTemp = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
+											var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
 											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
-												
+												console.log("componentTemp=======in viewpage=",componentTemp);
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
 												var Block_id=result.block_id._id;
 												var block_id=result._id;

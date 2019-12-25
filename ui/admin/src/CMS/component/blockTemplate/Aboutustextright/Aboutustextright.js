@@ -55,7 +55,7 @@ export default class Aboutustextright extends React.Component  {
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blockTextWrapper">
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div className="col-lg-2"> </div>
-                          <p className="l_BT1_para text-justify"> {this.state.blocks.blockDescription } </p>
+                          <p className="l_BT1_para text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                       </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">

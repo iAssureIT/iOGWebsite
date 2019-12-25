@@ -184,12 +184,18 @@ export default class Header extends Component {
                      <div class="col-lg-offset-7 dropdown-content servicedropdown2">
                        <div class="col-lg-12 row">
                          <div class="Servicecolumn columnmenu">
-                          <a href="/refinery">Refinery</a>
-                          <a href="/petrochemicals">Petrochemicals</a>
-                          <a href="/chemicals">Chemicals</a>
-                          <a href="/lng">LNG</a>
-                          <a href="/gasprocessing">Gas Precessing</a>
-                          <a href="/oilgasep">oil & Gas E & P</a>
+                        {/*  <a href="/refinery">Refinery</a>*/}
+                          <a href="/masterpage/refinerypage">Refinery</a>
+                          {/*<a href="/petrochemicals">Petrochemicals</a>*/}
+                          <a href="/masterpage/petrochemicalpage">Petrochemicals</a>
+                    {/*      <a href="/chemicals">Chemicals</a>*/}
+                          <a href="/masterpage/chemicalspage">Chemicals</a>
+                        {/*  <a href="/lng">LNG</a>*/}
+                          <a href="/masterpage/lngpage">LNG</a>
+                         {/* <a href="/gasprocessing">Gas Precessing</a>*/}
+                          <a href="/masterpage/gasprocessingpage">Gas Precessing</a>
+                          {/*<a href="/oilgasep">oil & Gas E & P</a>*/}
+                          <a href="/masterpage/oilgaseppage">oil & Gas E & P</a>
                         </div>
                        </div>
                      </div>

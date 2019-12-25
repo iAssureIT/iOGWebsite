@@ -15,7 +15,7 @@ export default class Commonservicesblock extends Component {
     this.state = {
       blocks:{
         "blockComponentName"  : "Commonservicesblock",
-        "blockType"       : "simple",
+        "blockType"           : "simple",
         "repeatedBlocks"    : [
                       {
                         "Title"     : "Geology &amp; Geophysics",
@@ -148,7 +148,7 @@ componentDidMount(){
                                                   
                                                   </div>
                                                   <div className="serflip-card-back">
-                                                      <p className="text-justify downstreamtxt">{data.Description}</p>
+                                                      <p className="text-justify downstreamtxt" dangerouslySetInnerHTML={ { __html: data.Description } }></p>
                                                   </div>
                                                </div>
                                               </div>

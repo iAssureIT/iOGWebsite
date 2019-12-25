@@ -133,7 +133,7 @@ class CmsBlock extends Component {
   		blockDescription 	 : this.state.blockDescription,
   		blockComponentName : this.state.parsed.componentName,
   		blockType 			   : this.state.blockType,
-  		fgImage 			     : this.state.imgbPath.path,
+  		fgImage 			     : this.state.imgbPath ? this.state.imgbPath.path: "",
   		bgImage 			     : this.state.bgImage,
   		repeatedBlocks 		 : this.state.repetedGroup,				
 		};

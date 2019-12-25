@@ -30,7 +30,7 @@ constructor(props) {
                           "Link"      : "/iogimplement"
                       },
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                         "Title"     : "Geology &amp; Geophysics",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
