@@ -326,7 +326,7 @@ const WebLayout = () => (
 
     {/* ======= Test ======= */}
 
-    <Route path="/testiogconsult"     component={ IogConsultPage } />    
+   {/* <Route path="/testiogconsult"     component={ IogConsultPage } />   */} 
     <Route path="/testiogimplement"   component={ IogImplementPage } />    
     <Route path="/testiogtrain"       component={ IogTrainPage } />    
     <Route path="/testiogstudy"       component={ IogStudyPage } /> 

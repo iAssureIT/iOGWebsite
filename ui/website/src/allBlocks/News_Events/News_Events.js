@@ -14,21 +14,29 @@ export default class News_Events extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate4 NOPadding">  
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maindivNews">
          
         {
           this.props.News_Events.map((data,index)=>{
             return(
-             
-               <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12 B3T_NewsDiv">
-               <div className="col-lg-12 col-md-12">
-                 <img src={data.bannerimg} className="news_img"/>
+             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+               
+              <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2 yearbox">
+              {data.Newsyear}
+              </div>
+               <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                <div className="">
+                 <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg" src={data.bannerimg}/>          
                 </div>
                 <div className="col-lg-12 col-md-12">
-                 <p className="B4T_txt">{data.overviewtext}</p>
+                 <h4 className=" newsheading ">{data.NewsHeading}</h4>
+                 
+                </div>
+                <div className="col-lg-12 col-md-12">
+                 <p className="text-justify">{data.overviewtext}</p>
                 </div>
                </div>
-             
+             </div>
               );
 
           })

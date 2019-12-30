@@ -10,6 +10,7 @@ import Aboutustextright              from "../blockTemplate/Aboutustextright/Abo
 import Aboutusvision                 from "../blockTemplate/Aboutusvision/Aboutusvision.js";
 import Commoninfoblock               from "../blockTemplate/Commoninfoblock/Commoninfoblock.js";
 import Commonservicesblock           from "../blockTemplate/Commonservicesblock/Commonservicesblock.js";
+import CommonservicesblockTitle      from "../blockTemplate/CommonservicesblockTitle/CommonservicesblockTitle.js";
 import TitleDesc                     from "../blockTemplate/TitleDesc/TitleDesc.js";
 import ImgTitle                      from "../blockTemplate/ImgTitle/ImgTitle.js";
 import TemplateOverview              from "../blockTemplate/TemplateOverview/TemplateOverview.js";
@@ -183,6 +184,21 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<Commonservicesblock />
+				</section>
+
+
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="CommonservicesblockTitle"
+		                    data-blockTitle         ="blockTitle"  
+		                	data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksImage 		="rBlocksImage" 
+							data-rBlocksLink  		="rBlocksLink" 
+							data-RepetedBlock 		="RepetedBlock" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<CommonservicesblockTitle />
 				</section>
 			   <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TitleDesc" 

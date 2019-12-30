@@ -49,7 +49,7 @@ export default class Healthsaftypage extends Component {
                 downstreamimg   : "/images/Environmental_Consulting.png",
                 downstreamtext  : "In recent times, environmental management concepts and sustainable development practices have been a focal point of rapidly evolving process organizations. This trend can be associated as an outburst of the public reactions, climate-change studies, activists, and concerns about the environment....."
             }, 
-            {
+          /*  {
                 downstreamurl   : "/environmentsustain",
                 downstreamTitle : "Sustainability",
                 downstreamTitle1 : " Strategy",
@@ -83,7 +83,7 @@ export default class Healthsaftypage extends Component {
                 downstreamTitle1 : "Management",
                 downstreamimg   : "/images/Change_Management.png",
                 downstreamtext  : "Adapting newer technologies, processes, strategies, sophisticated software solutions and many other newer assets to the existing functional and technical configuration is a common practice adopted to improve both short and long-term business performance in today’s Oil and Gas business....."
-            }
+            }*/
             
         ]
     }

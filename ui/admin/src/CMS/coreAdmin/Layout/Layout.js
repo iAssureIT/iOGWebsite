@@ -32,19 +32,19 @@ import AdminContent       from '../dashboard/DashboardNew.js';
 
 /*import Rightsidebar     from '../common/rightSidebar/Rightsidebar.js';*/
 import BlogsFormPage    from "../Blogs/BlogsForm/BlogsFormPage.js";
-import AllBlogs                                  from "../Blogs/AllBlogs/AllBlogs.js";
+import AllBlogs          from "../Blogs/AllBlogs/AllBlogs.js";
 
 
-import SingleBlogPage      from "../Blogs/SingleBlogPage/SingleBlogPage.js";
+import SingleBlogPage    from "../Blogs/SingleBlogPage/SingleBlogPage.js";
 /* =====================================cms=============================*/
-import CircleMenuBars from '../../component/circlemenubars.js';
-import Cmspage from '../../component/cmspage.js';
-import Awsfile from '../../component/Awsfile.js';
+import CircleMenuBars    from '../../component/circlemenubars.js';
+import Cmspage           from '../../component/cmspage.js';
+import Awsfile           from '../../component/Awsfile.js';
 // import DesignPageMaster from '../../component/designpagemaster/designpagemaster.js';
 // import Selectpagedesign from '../../component/selectpagedesign/selectpagedesign.js';
 
-import ViewPage1 from '../../component/createnewpage/ViewPage1.js';
-import Viewpage from '../../component/createnewpage/Viewpage.js';
+import ViewPage1         from '../../component/createnewpage/ViewPage1.js';
+import Viewpage          from '../../component/createnewpage/Viewpage.js';
 import BlockDesignMaster from '../../component/blockdesignmaster/blockdesignmaster.js';
 /*selectblockdesign*/
 import SelectBlockDesign  from '../../component/selectblockdesign/selectblockdesign.js';

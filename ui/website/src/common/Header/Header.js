@@ -55,13 +55,13 @@ export default class Header extends Component {
                           <ul className="menu navbar-nav navbar-right ">
                              <li><a href="/" className="headerTitle">Home</a></li>
                              <li>
-                              <div class="dropdown1"> 
+                              <div className="dropdown1"> 
                                 <a href="/about-us" className="nav-link dropdown-toggle headerTitle toggle" id="navbarDropdownMenuLink"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us
                                  <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
-                                 <div class="col-lg-offset-2 dropdown-content servicedropdown aboutusdrop ">
-                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-                                   <div class="Servicecolumn columnmenu">
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
+                                 <div className="col-lg-offset-2 dropdown-content servicedropdown aboutusdrop ">
+                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                                   <div className="Servicecolumn columnmenu">
                                     <a href="/about-us">Company Profile</a>
                                     <a href="/founderprofile">Founder's Profile</a>
                                     <a href="/ourjourny">Our Journey</a>
@@ -72,13 +72,13 @@ export default class Header extends Component {
                                 <input type="checkbox" id="drop-1"/>
                               </li>
                               <li> 
-                              <div class="dropdown1 ">  
+                              <div className="dropdown1 ">  
                               <a href="/servicearms" className="headerTitle toggle NOPadding"className="nav-link dropdown-toggle headerTitle toggle" id="navbarDropdownMenuLink"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services 
                                <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>  
-                              <div class="col-lg-offset-5 dropdown-content servicedropdown1 ">
-                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-                                <div class="Servicecolumn columnmenu">
+                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>  
+                              <div className="col-lg-offset-5 dropdown-content servicedropdown1 ">
+                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                                <div className="Servicecolumn columnmenu">
                                      {/*<a href="/oldiOGConsultPage">iOGConsult(Old)</a>*/}
                                      <a href="/newiogconsult">iOGConsult</a>
                                      <a href="/iogimplement">iOGImplement</a>
@@ -91,13 +91,13 @@ export default class Header extends Component {
                               <input type="checkbox" id="drop-2"/>
                             </li>
                              <li>
-                            <div class="dropdown1 ">  
+                            <div className="dropdown1 ">  
                              <a href="/services" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
-                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
-                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
-                               <div class="dropdown-content expertcontrnt">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-                                 <div class=" column columnmenu columnmenu1">
+                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
+                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
+                               <div className="dropdown-content expertcontrnt">
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                                 <div className=" column columnmenu columnmenu1">
                                 <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
                                 {/*<a href="/refineryplanning">Production Planning </a>*/}
                                 <a href="/masterpage/prodplanningpage">Production Planning </a>
@@ -107,9 +107,10 @@ export default class Header extends Component {
                                 <a href="/masterpage/retroanalysispage">Back Casting / Retro-Analysis</a>
                                 {/*<a href="/lputility">LP Utilities</a>*/}
                                 <a href="/masterpage/lputilities">LP Utilities</a>
-                                <a href="/lpconfig">LP Configuration studies</a>
+                               {/* <a href="/lpconfig">LP Configuration studies</a>*/}
+                                <a href="/masterpage/lpconfigurationpage">LP Configuration studies</a>
                               </div>
-                          <div class=" column columnmenu columnmenu2">
+                          <div className=" column columnmenu columnmenu2">
                             <h5 className="columnhead"><a href="/supplydistribute" className="columnhead">Supply & Distribution</a></h5>
                             {/*<a href="/demandmanagement">Demand Management</a>*/}
                             <a href="/masterpage/demandmanagement">Demand Management</a>
@@ -125,9 +126,9 @@ export default class Header extends Component {
                             <a href="/masterpage/applicationsupportpage">Application Support</a>
                             <a href="/masterpage/applicationintegrationpage">Application Integration</a>
                             <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
-                            <a href="#" className="dataneeded">Industry 4.0 Initiatives</a>
+                            <a href="/masterpage/industry4-0" className="">Industry 4.0 Initiatives</a>
                           </div>
-                           <div class=" column columnmenu thirdcolumn columnmenu3">
+                           <div className=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
                            {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
                             <a href="/NewProductionaccountingpage">Production Accounting</a>
@@ -139,7 +140,7 @@ export default class Header extends Component {
                             <a href="/masterpage/operationlogbookpage">Operation Logbook</a>
                             {/*<a href="/oilmovement">Oil Movement Management</a>*/}
                             <a href="/masterpage/oilmovementpage">Oil Movement Management</a>
-                             <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
+                             <h5 className="columnhead"><a href="/Healthsafty"className="columnhead">Health Safety & Environment</a></h5>
                           {/*  <a href="/occupationhealth">Occupational Health Management</a>*/}
                             <a href="/masterpage/occuhealthpage">Occupational Health Management</a>
                         {/*    <a href="/processsafty">Process Safety Management</a>*/}
@@ -147,7 +148,7 @@ export default class Header extends Component {
                         {/*    <a href="/environmentsustain">Environment Management</a>*/}
                             <a href="/masterpage/envmanagementpage">Environment Management</a>
                           </div>
-                          <div class=" column columnmenu columnmenu3 columnmenu2 ">
+                          <div className=" column columnmenu columnmenu3 columnmenu2 ">
                             <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
                            {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
                             <a href="/masterpage/steadystatepage" className="red">Steady State Simulation</a>
@@ -161,7 +162,7 @@ export default class Header extends Component {
                             {/*<a href="/etrm">ETRM</a>*/}
                             <a href="/masterpage/etrmpage">ETRM</a>
                           </div>
-                          <div class="column columnmenu ">
+                          <div className="column columnmenu ">
                             <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
                             <a href="/masterpage/energyoptpage">Utility Network Optimization</a>
                             <a href="/masterpage/equipmonitoringpage">Equipment Monitoring</a>
@@ -179,11 +180,11 @@ export default class Header extends Component {
                       <input type="checkbox" id="drop-1"/>
                     </li>
                   <li>
-                   <div class="dropdown"> 
+                   <div className="dropdown"> 
                     <a href="/industries" className="headerTitle toggle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
-                     <div class="col-lg-offset-7 dropdown-content servicedropdown2">
-                       <div class="col-lg-12 row">
-                         <div class="Servicecolumn columnmenu">
+                     <div className="col-lg-offset-7 dropdown-content servicedropdown2">
+                       <div className="col-lg-12 row">
+                         <div className="Servicecolumn columnmenu">
                         {/*  <a href="/refinery">Refinery</a>*/}
                           <a href="/masterpage/refinerypage">Refinery</a>
                           {/*<a href="/petrochemicals">Petrochemicals</a>*/}
