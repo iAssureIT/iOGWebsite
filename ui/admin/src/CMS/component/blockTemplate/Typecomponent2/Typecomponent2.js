@@ -8,12 +8,12 @@ export default class Typecomponent2 extends React.Component {
     super(props);
     this.state = {
       blocks: {
-<<<<<<< Updated upstream
+
         "blockComponentName"  : "Typecomponent2",
         "blockType"           : "simple",
-=======
+
         blockTitle : "This is Block Title",
->>>>>>> Stashed changes
+
         blockDescription : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         fgImage: "/images/bgimage1.jpg",
       },

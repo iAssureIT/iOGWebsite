@@ -689,13 +689,7 @@ editReDBlock(event){
     }
 }
     render() {
-<<<<<<< Updated upstream
-     /* console.log("parsed===>in render===>",this.state.parsed);
-      console.log("parsed===>in Componant===>",this.state.parsed.componentName);
-*/
-=======
-      // console.log("parsed===>in render===>",this.state.parsed);
->>>>>>> Stashed changes
+
         return (
         		<div className="">
                     <div className="create-basic-block-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
