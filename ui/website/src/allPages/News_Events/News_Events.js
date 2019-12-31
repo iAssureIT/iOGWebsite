@@ -36,7 +36,7 @@ export default class News_Events_Page extends Component {
                 overviewtext   :"iOG Solutions signed a contract in India to provide support services for seven refineries in the area of Planning & Scheduling. ",
                
             },  
-            {
+           /* {
                 ChallengeTitle : "Challenges",
                 Newsyear       : "Aug 2013",
                 NewsHeading    : "Newsletter Aug 2013",
@@ -51,7 +51,7 @@ export default class News_Events_Page extends Component {
                 NewsHeading    : "Newsletter May 2019",
                 overviewtext:"Achieve tangible benefits for acceptance of the oil accounting system",
                
-            },  
+            },*/  
             /* {
                 ChallengeTitle : "Challenges",
                 bannerimg   : "/images/ch5.png",

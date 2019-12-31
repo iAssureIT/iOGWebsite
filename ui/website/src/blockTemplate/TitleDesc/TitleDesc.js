@@ -14,7 +14,7 @@ export default class TitleDesc extends Component {
       blocks: {
         blockTitle : "",
         blockDescription : "",
-        fgImage: "/images/bgimage1.jpg",
+     
       },
       blockID:"",
       block_id:""

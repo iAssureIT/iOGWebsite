@@ -19,10 +19,10 @@ export default class News_Events extends Component {
         {
           this.props.News_Events.map((data,index)=>{
             return(
-             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 maindivNews">
                
               <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2 yearbox">
-              {data.Newsyear}
+               {data.Newsyear}
               </div>
                <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                 <div className="">

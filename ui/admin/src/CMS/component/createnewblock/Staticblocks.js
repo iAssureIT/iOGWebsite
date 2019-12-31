@@ -11,7 +11,9 @@ import Aboutusvision                 from "../blockTemplate/Aboutusvision/Aboutu
 import Commoninfoblock               from "../blockTemplate/Commoninfoblock/Commoninfoblock.js";
 import Commonservicesblock           from "../blockTemplate/Commonservicesblock/Commonservicesblock.js";
 import CommonservicesblockTitle      from "../blockTemplate/CommonservicesblockTitle/CommonservicesblockTitle.js";
+import News_Events                   from "../blockTemplate/News_Events/News_Events.js";
 import TitleDesc                     from "../blockTemplate/TitleDesc/TitleDesc.js";
+import TitleDescription              from "../blockTemplate/TitleDescription/TitleDescription.js";
 import ImgTitle                      from "../blockTemplate/ImgTitle/ImgTitle.js";
 import TemplateOverview              from "../blockTemplate/TemplateOverview/TemplateOverview.js";
 import TitleRrpeatedImgGrp           from "../blockTemplate/TitleRrpeatedImgGrp/TitleRrpeatedImgGrp.js";
@@ -200,6 +202,35 @@ class Staticblocks extends React.Component {
 		            </button>
 					<CommonservicesblockTitle />
 				</section>
+                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="News_Events"  
+		                	data-rBlocksTitle       ="rBlocksTitle" 
+		                	data-rBlocksSubTitle    ="rBlocksSubTitle" 
+							data-rBlocksDescription ="rBlocksDescription" 
+							data-rBlocksImage 		="rBlocksImage" 
+							data-rBlocksLink  		="rBlocksLink" 
+							data-RepetedBlock 		="RepetedBlock" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<News_Events />
+				</section>
+
+
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="TitleDescription" 
+	                        data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<TitleDescription />
+				</section>
+
+
+
+
+
 			   <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TitleDesc" 
 	                        data-blockTitle="blockTitle" 
@@ -209,6 +240,7 @@ class Staticblocks extends React.Component {
 		            </button>
 					<TitleDesc />
 				</section>
+
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="TemplateOverview" 
 							data-blockTitle="blockTitle" 
