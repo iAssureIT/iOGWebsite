@@ -1,11 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+// import { render } from 'react-dom';
+// import   Loadable                  from 'react-loadable';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import axios from 'axios';
 
 import './Aboutusimgright.css';
 
+<<<<<<< Updated upstream:ui/admin/src/CMS/component/blockTemplate/Aboutustextright/Aboutustextright.js
 export default class Aboutustextright extends React.Component  {
+=======
+export default class Aboutusimgright extends Component {
+>>>>>>> Stashed changes:ui/admin/src/CMS/component/blockTemplate/Aboutusimgright/Aboutusimgright.js
 
    constructor(props) {
     super(props);
@@ -22,7 +28,7 @@ export default class Aboutustextright extends React.Component  {
 
     
   }
-  componentDidMount(){
+componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
@@ -46,9 +52,14 @@ export default class Aboutustextright extends React.Component  {
                 block_id:this.props.block_id
               });
 }
+<<<<<<< Updated upstream:ui/admin/src/CMS/component/blockTemplate/Aboutustextright/Aboutustextright.js
 
     render(){     
        return(
+=======
+    render(){
+        return(
+>>>>>>> Stashed changes:ui/admin/src/CMS/component/blockTemplate/Aboutusimgright/Aboutusimgright.js
           <div className="container-fluid g_blockOuterWrapper">
             <div className="row">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 g_blockInnerWrapper">

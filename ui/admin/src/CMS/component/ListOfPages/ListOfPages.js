@@ -163,6 +163,13 @@ submitData(){
    		// console.log("AttachmentValues =>",AttachmentValues);
 
 }
+urlPage(event){
+	var id = event.target.id;
+	this.props.history.push("/masterpage/"+id);/*+response.data.pageURL*/
+		    	 window.location.reload();
+
+
+}
 	render() {
 		// console.log("ListOfPages",this.state.ListOfPages)
 		return (
@@ -262,7 +269,7 @@ submitData(){
 											    <tr key={index}>
 											      <td>{index+1}</td>
 											      <td>{result.pageTitle}</td>
-											      <td>{result.pageURL}</td>
+											      <td id={result.pageURL} className="onHoverClick" onClick={this.urlPage.bind(this)}>{result.pageURL}</td>
 											      <td><i className="fa fa-edit deletIcon" id={result.pageURL} data-toggle="collapse" data-parent="#accordion" href="#collapse1" onClick={this.editPage.bind(this)}></i>&nbsp;&nbsp;&nbsp;&nbsp;
 											      		<i className="fa fa-trash deletIcon" id={result.pageURL} onClick={this.deletePage.bind(this)}></i>&nbsp;&nbsp;&nbsp;&nbsp;
 											      		{/*<i className="fa fa-eye"></i>*/}

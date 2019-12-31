@@ -3,8 +3,8 @@
   	width: 90px;
   	height: 4px;
   	top: 54px;
-    left: 60px;
-  	position: absolute;
+    /*left: 60px;*/
+  	/*position: absolute;*/
   	z-index: 999	
 }
 .innerBlocktepmlate1{
@@ -17,17 +17,19 @@
     color: #009de2;
     font-size: 35px;
     font-weight: 600;
+    margin-top: 76px;
+    margin-top: 90px;
 }
 
 .B2T_p{
-	position: absolute;
-    top: 154px;
+	/*position: absolute;
+    top: 154px;*/
     font-size: 17px;
     text-align: justify;
 }
 .B2T_overviewTxt{
 	height: 260px;
-	margin-top: 150px;
+	/*margin-top: 150px;*/
 }
 .B2T_btn{
  position: absolute;
@@ -39,4 +41,7 @@
     top: 360px;
     left: 130px;
     color: #ffffff;
+}
+.websiteclass{
+  padding-top: 40px;
 }

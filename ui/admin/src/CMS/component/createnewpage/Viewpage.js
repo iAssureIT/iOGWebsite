@@ -2,10 +2,12 @@ import React, { Component, Suspense } from 'react';
 import CircleMenuBars from '../circlemenubars.js';
 import axios from 'axios';
 import {Route, withRouter} from 'react-router-dom';
-import CmsBlock from "../createnewblock/Cmsblock.js"
+import CmsBlock from "../createnewblock/Cmsblock.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/js/modal.js';
-import swal from 'sweetalert';
+import 'bootstrap/js/collapse.js';
 
+import swal from 'sweetalert';
 
 class Viewpage extends React.Component {
 	constructor(props) {
@@ -24,9 +26,6 @@ class Viewpage extends React.Component {
 	   		pageData	:""
 		}
 	}
-
-
-
 	getAllBlockList(){
 		axios
 				.get('/api/blocks/get/list')
@@ -35,7 +34,7 @@ class Viewpage extends React.Component {
 						      	this.setState({
 					      			ListOfBlocks:response.data
 					      		},()=>{
-					      				console.log(this.state.ListOfBlocks);
+					      				// console.log(this.state.ListOfBlocks);
 					      		});
 					      	})
 			  	.catch(function (error) {
@@ -46,10 +45,10 @@ class Viewpage extends React.Component {
 	componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			this.getAllBlockList();
-			var pageUrl = window.location.pathname;;
+			var pageUrl = window.location.pathname;
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
-	        console.log("a==>",a[1]); 
+	        // console.log("a==>",a[1]); 
 	        const urlParam =a[2];
 	        this.setState({
 					      			urlParam:urlParam
@@ -129,7 +128,7 @@ class Viewpage extends React.Component {
 		var AttachmentValues =this.state.addedBlocks;
 		// console.log("ids =",this.state.addedBlocks);
 		axios
-			.post('api/pages/patch/blocks/add/about-page',AttachmentValues)
+			.post('api/pages/patch/blocks/add/'+this.state.urlParam,AttachmentValues)
 		  	.then(function (response) {
 		    	console.log(response);
 		  	})
@@ -139,7 +138,7 @@ class Viewpage extends React.Component {
 	}
 	editBlock(event){
 		var block_id = event.currentTarget.id;
-		console.log("block_id=",block_id);
+		// console.log("block_id=",block_id);
 		this.setState({block_id: block_id});
 	}
 	deleteBlocks(event){
@@ -147,7 +146,7 @@ class Viewpage extends React.Component {
 		// console.log("this.state.urlParam  ",urlParam);
 		event.preventDefault();
 		var URL= event.target.id;
-		console.log("delet id ",URL);
+		// console.log("delet id ",URL);
 		var deleteValues ={
 	      "pageBlocks_id":URL
 	}
@@ -160,7 +159,7 @@ class Viewpage extends React.Component {
 	          dangerMode: true,
 	        })
 	        .then((success) => {
-	        	console.log(success);
+	        	// console.log(success);
 	            if (success) {
 	            	axios
 				    .patch('/api/pages/patch/blocks/remove/'+this.state.urlParam,deleteValues)
@@ -205,17 +204,23 @@ class Viewpage extends React.Component {
 									{
 										this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length>0?
 											this.state.pageData.pageBlocks.map((result, index)=>{
+<<<<<<< Updated upstream
 											var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
 											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
 												console.log("componentTemp=======in viewpage=",componentTemp);
+=======
+											console.log("this.state.pageData.pageBlocks",this.state.pageData.pageBlocks);
+											var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
+											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
+>>>>>>> Stashed changes
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
 												var Block_id=result.block_id._id;
 												var block_id=result._id;
-
+												console.log("componentTemp",componentTemp);
 												return(
 													<Suspense fallback={<div>Loading...</div>} key={index}>
 														<i className="fa fa-trash deletbtnIcon pull-right" id={block_id} onClick={this.deleteBlocks.bind(this)}></i>
-														<i className="fa fa-pencil editIcon pull-right" id={Block_id} onClick={this.editBlock.bind(this)} data-toggle="modal" data-target="#editBlockForm"></i>
+														<i className="fa fa-pencil editIcon pull-right" id={Block_id} onClick={this.editBlock.bind(this)} data-toggle="modal" data-target="#editBlockFormM"></i>
 											    		<NewPageComponent block_id={Block_id}/>
 											    	</Suspense>
 										    	);
@@ -264,7 +269,7 @@ class Viewpage extends React.Component {
 
 																	const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 																		var block_id=result._id;
-																		console.log("block_id",block_id);
+																		// console.log("block_id",block_id);
 																		return(
 													                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectDiv1 designList">
 													                				<div className="checkbox">
@@ -300,9 +305,8 @@ class Viewpage extends React.Component {
 
 
 					{/*<!-- Modal -->*/}
-					<div id="editBlockForm" className="modal" role="dialog">
+					<div id="editBlockFormM" className="modal" role="dialog">
 					  <div className="modal-dialog modal-lg">
-
 					    {/*<!-- Modal content-->*/}
 					    <div className="modal-content">
 					      <div className="modal-header">
@@ -311,7 +315,7 @@ class Viewpage extends React.Component {
 					      </div>
 					      <div className="modal-body">
 					      {/*console.log("in modal",this.state.block_id)*/}
-					        <CmsBlock Blockid={this.state.block_id}/>
+					        <CmsBlock block_id={this.state.block_id}/>
 					      </div>
 					      <div className="modal-footer">
 					        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>

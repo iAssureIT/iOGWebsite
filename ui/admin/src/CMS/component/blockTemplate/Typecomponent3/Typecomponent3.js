@@ -87,12 +87,14 @@ componentDidMount(){
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
                     <h2 className="lightbluetext text-center para1-top">{this.state.blocks.blockTitle}
-                    </h2>   
+                    </h2>
+                        
                     <div>
                      <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
+
                 </div>
-                  <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blk_ht">
+                  <div  className="col-lg-12 blk_ht">
                   { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{

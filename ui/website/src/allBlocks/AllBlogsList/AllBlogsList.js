@@ -53,7 +53,7 @@ deleteBlog(event){
 }
 getBlogData(){
 	axios
-      .get('/api/blogs/get/all/list')
+      .get('http://iogapi.iassureit.com/api/blogs/get/all/list')
       .then((response)=>{
        console.log("===>",response.data);
       	this.setState({

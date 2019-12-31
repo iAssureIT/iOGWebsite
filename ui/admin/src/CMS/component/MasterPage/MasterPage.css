@@ -14,3 +14,30 @@
 .inputrow{
 	padding: 5px 15px;
 }
+
+.editStrip{
+	height: 60px;
+	background-color: #aaa;
+	/*position: fixed;
+	z-index: 5;*/
+}
+.btn{
+	margin: 10px;
+}
+.btnCss{
+	font-size: 15px;
+	margin: 5px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.btnCss:hover{
+	color: #f00;
+}
+.bdermodal(){
+	border: 2px solid #999;
+}
+.create-basic-block-wrapper {
+    
+    border: 1px solid #aaa;
+}

@@ -116,7 +116,9 @@ body{
 .paddingZeroWrapper{
   padding: 0px,
 }
-
+.NOPadding{
+  padding: 0px;
+}
 /*****Input Field ******/
 /*form common css*/
 .buttontAddEdit, .buttontAddEdit:hover, .buttontAddEdit:focus{

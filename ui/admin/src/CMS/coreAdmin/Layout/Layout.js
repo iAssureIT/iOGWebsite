@@ -91,6 +91,7 @@ class Layout extends Component{
    
 componentDidMount(){
     // console.log('this.props',this.props);
+    
 
     $(document).ready(function () {
        $('#sidebarCollapse').on('click', function () {
@@ -139,8 +140,18 @@ componentDidMount(){
   }
 
   render(){
-
-      return(
+      var pageUrl = window.location.pathname;
+      console.log("pageUrl in layout = ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+      console.log("a==>",a[1]); 
+      if(a[1] == "masterpage"){
+        return(
+          <Router>
+            <Route path="/masterpage/:pageurl"  component={ MasterPage } />
+          </Router> 
+        );
+      }else{
+        return(
           <Router>
             <div className="App container-fluid">
               <div className="row">
@@ -224,6 +235,7 @@ componentDidMount(){
                             
                             <Route path = "/block-designs-list" exact component = { BlockDesignsList } />
 
+
                         </Switch>        
                       </div>
                     </div>
@@ -237,11 +249,12 @@ componentDidMount(){
                     <Leftsidebar />
                   </div>
                 </div>
+
               </div>
             </div> 
           </Router>
-      
          ); 
+      }
 
   }
 }

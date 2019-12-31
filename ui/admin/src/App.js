@@ -4,8 +4,11 @@ import React, { Component, Suspense,lazy } from 'react';
 import axios   				from 'axios';
 
 import Layout  				from './CMS/coreAdmin/Layout/Layout.js';
+// import router from './lib/router.js';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.js';
 
 import './App.css';
 //const NewPageComponent = React.lazy(() => import('./Sample.js'));

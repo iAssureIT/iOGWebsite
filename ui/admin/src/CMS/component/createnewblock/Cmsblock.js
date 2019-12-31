@@ -30,6 +30,7 @@ class CmsBlock extends Component {
       			buttonText		        : "Submit",
       			blockDescription   		: "",
       			repBlockContent   	  : "",
+          /*  blockContent          : "",*/
       			typeOfBlock			      : "",
       			block_id			        : "",
       			bgImage 			        : "",
@@ -44,13 +45,28 @@ class CmsBlock extends Component {
       			repGBlocksubTitle 	  : "",
       			repetedLink			      : "",
       			repetedGroup 		      : [],
-            parsed                : ""
+            rep_idEdit            : "",
+            parsed                : {
+                                    blockTitle       : "",
+                                    blocksubTitle    :"",
+                                    componentName    :"",
+                                    blockType        :"",
+                                    fgImage          : "",
+                                    bgImage          :"",
+                                    bgVideo          :"",
+                                    fgVideo          :"",
+                                    blockDescription :"",
+                                    repGBlockTitle        : "",
+                                    repGBlocksubTitle     : "",
+                                    repetedLink           : "",
+                                    RepetedBlock     : ""
+            }
 		    };
 
 		 this.onEditorChange = this.onEditorChange.bind( this );
     }
 
-      onEditorChange( evt ) {
+  onEditorChange( evt ) {
       this.setState( {
           blockDescription: evt.editor.getData()
       } );
@@ -83,11 +99,14 @@ class CmsBlock extends Component {
 		event.preventDefault();
     	this.setState({
      
-			"repGBlockTitle"	      : this.state.parsed.rBlocksTitle ? this.refs.repGBlockTitle.value : "",
+			/*"repGBlockTitle"	      : this.state.parsed.rBlocksTitle ? this.refs.repGBlockTitle.value : "",
 			"repGBlocksubTitle"	    : this.state.parsed.rBlocksSubTitle ? this.refs.repGBlocksubTitle.value : "",
 			"repetedLink"		        : this.state.parsed.rBlocksLink ? this.refs.repetedLink.value : "",
-			 
-
+			 */
+      "repGBlockTitle"        : this.refs.repGBlockTitle.value,
+      "repGBlocksubTitle"     : this.refs.repGBlocksubTitle.value,
+      "repetedLink"           : this.refs.repetedLink.value,
+       
 			// "blockBody"	 : this.refs.blockBody.value,
 			/*"componentName"		 : this.props.blockDetailsID ? this.props.blockDetailsID.componentName : null, 
 			"blockType"			 : this.props.blockDetailsID ? this.props.blockDetailsID.blockType : null,*/ 
@@ -103,8 +122,8 @@ class CmsBlock extends Component {
 	
 		Title 			: this.state.repGBlockTitle,
 		SubTitle 		: this.state.repGBlocksubTitle,
-		Link 			: this.state.repetedLink,
-		Description 	: this.state.repBlockContent,
+		Link 			  : this.state.repetedLink,
+		Description : this.state.repBlockContent,
 		Image 			: this.state.rbPath.path,		
 		};
                     swal("Thank you.Your Block is Created.");
@@ -123,7 +142,44 @@ class CmsBlock extends Component {
 							rbPath : "",
 						}) 
 	}
-
+  updtaeRepBlockInfo(event){
+    event.preventDefault();
+    if (this.state.rep_idEdit){
+        // console.log('this.state.repetedGroup',this.state.repetedGroup)
+        var array = this.state.repetedGroup
+        var index = array.findIndex(x=>x._id===this.state.rep_idEdit)
+        if(index>=0){
+          array[index] = {
+            _id : this.state.rep_idEdit,
+            Title          : this.state.repGBlockTitle,
+            SubTitle       : this.state.repGBlocksubTitle,
+            Link           : this.state.repetedLink,
+            Description    : this.state.repBlockContent,
+            Image          : this.state.rbPath.path, 
+          }
+        }
+        // console.log('array',array);
+        this.setState({'repetedGroup':array})
+        // for (var i = 0; i < this.state.repetedGroup.length; i++) {
+        //   if (this.state.repetedGroup[i]._id == this.state.rep_idEdit) {
+        //     var ArrayRepetedGroup = this.state.repetedGroup;
+        //     var formValues = {
+        //     this.setState({
+        //       repetedGroup:{
+        //           Title          : this.state.repGBlockTitle,
+        //           SubTitle       : this.state.repGBlocksubTitle,
+        //           Link           : this.state.repetedLink,
+        //           Description    : this.state.repBlockContent,
+        //           Image          : this.state.rbPath.path, 
+        //         }
+        //       })  
+        //     };
+        //     swal("Thank you.Your Block is updated.");
+        //     console.log("repetedGroup",this.state.repetedGroup);
+        //   }
+        // }
+            } 
+  }
 
 	submitcmsBlockInfo(event){
 		event.preventDefault();		
@@ -154,11 +210,13 @@ class CmsBlock extends Component {
    		console.log("formValues =>",formValues);	
 	}
 
-  componentDidMount(){		  
+  componentDidMount(){	
+    var block_id= this.props.block_id;
+    // console.log("zzzzz  block_id  zzzzzzz",block_id);	  
     // console.log("location.search = ",this.props.location.search);
     const parsed = queryString.parse(this.props.location.search);
     // console.log("parsed = ",parsed);
-
+    this.getBlockData(block_id);
     this.setState({ 
         /*componentName         :   parsed.componentName,
         blockTitle            :   parsed.blockTitle       ? " " : "", 
@@ -180,7 +238,8 @@ class CmsBlock extends Component {
         backgroundImage       : "",
         groupRepetedBlocks    : false,
         repGBlockTitle        : "",
-        repGBlocksubTitle     : "",*/
+        repGBlocksubTitle     : "",*/             
+        block_id              : block_id,
         parsed                : parsed
         /*repetedLink           : "",
         repetedGroup          : []*/
@@ -209,28 +268,80 @@ class CmsBlock extends Component {
                        swal("Your session is expired! Please login again.","", "error");
                        this.props.history.push("/");
                   }
-          })
+          });
+  }
+  getBlockData(block_id){
+    axios
+      .get("/api/blocks/get/"+block_id)
+      .then((response)=>{
+        // console.log("componentDidMount  ReceiveProps===>",response.data);
+        this.setState({
+          parsed :{
+                  blockTitle     : response.data.blockTitle,
+                  blocksubTitle  : response.data.blockSubTitle,
+                  // blockBody    : response.data.,
+                  componentName  : response.data.blockComponentName,
+                  blockType      : response.data.blockType,
+                  fgImage        : response.data.fgImage,
+                  bgImage        : response.data.bgImage,
+                  bgVideo        : response.data.bgVideo,
+                  fgVideo        : response.data.fgVideo,
+
+                  blockDescription      : response.data.blockDescription,
+                  block_id      : block_id
+            }
+          
+        });
+      })
+      .catch((error)=>{
+         console.log("error = ", error);              
+      });
 
   }
-  componentWillReceiveProps(nextProps){
-	var block_id= nextProps.Blockid;
+componentWillReceiveProps(nextProps){
+	  var block_id= nextProps.block_id;  
     axios
       .get("/api/blocks/get/"+block_id)
       .then((response)=>{
         // console.log("componentWillReceiveProps===>",response.data);
         this.setState({
-			blockTitle 	   : response.data.blockTitle,
-			blocksubTitle  : response.data.blockSubTitle,
-			// blockBody		: response.data.,
-			componentName	 : response.data.blockComponentName,
-			blockType			 : response.data.blockType,
-			fgImage 			 : response.data.fgImage,
-			bgImage 			 : response.data.bgImage,
-			bgVideo 			 : response.data.bgVideo,
-			fgVideo				 : response.data.fgVideo,
-
-			blockDescription   		: response.data.blockDescription,
-			block_id			: block_id,
+            parsed :{
+              			blockTitle 	     : response.data.blockTitle,
+              			blocksubTitle    : response.data.blockSubTitle,
+              			// blockBody		: response.data.,
+              			componentName	   : response.data.blockComponentName,
+              			blockType			   : response.data.blockType,
+              			fgImage 			   : response.data.fgImage,
+              			bgImage 			   : response.data.bgImage,
+              			bgVideo 			   : response.data.bgVideo,
+              			fgVideo				   : response.data.fgVideo,
+                    repetedGroup     : response.data.repeatedBlocks,
+              			blockDescription : response.data.blockDescription,
+                    repGBlockTitle   : response.data.repeatedBlocks.Title,
+                    repGBlocksubTitle: response.data.repeatedBlocks.SubTitle,
+                    repetedLink      : response.data.repeatedBlocks.Link,
+                  },
+      			block_id			   : block_id,
+            blockTitle       : response.data.blockTitle,
+            blocksubTitle    : response.data.blockSubTitle,
+            // blockBody    : response.data.,
+            componentName    : response.data.blockComponentName,
+            blockType        : response.data.blockType,
+            fgImage          : response.data.fgImage,
+            bgImage          : response.data.bgImage,
+            bgVideo          : response.data.bgVideo,
+            fgVideo          : response.data.fgVideo,
+            repetedGroup     : response.data.repeatedBlocks,
+            blockDescription : response.data.blockDescription,
+            repGBlockTitle   : response.data.repeatedBlocks.Title,
+            repGBlocksubTitle: response.data.repeatedBlocks.SubTitle,
+            repetedLink      : response.data.repeatedBlocks.Link,
+            imgbPath         : {
+                                   "path"    : response.data.fgImage,
+                                },
+            imgbackPath      : {
+                                  "path"    : response.data.bgImage,
+                                },
           
         });
       })
@@ -239,17 +350,19 @@ class CmsBlock extends Component {
       });
   }
   UpdateBlockInfo(event){
-	console.log("in up");
+	    console.log("in up");
 			event.preventDefault();
-		
-		var formValues = {
-			blockTitle 			   :  this.state.blockTitle, 	
-			blockSubTitle		   :  this.state.blocksubTitle, 	
-			blockDescription   :  this.state.blockContent, 
-			blockType			     :  this.state.blockType,
-			blockComponentName :  this.state.componentName,			
-		};
-		// console.log("formValues=blocks>",formValues);
+  		var formValues = {
+  			blockTitle 			   :  this.state.blockTitle, 	
+  			blockSubTitle		   :  this.state.blocksubTitle, 	
+  			blockDescription   :  this.state.blockDescription, 
+  			blockType			     :  this.state.blockType,
+  			blockComponentName :  this.state.componentName,		
+        fgImage            :  this.state.imgbPath.path,
+        bgImage            :  this.state.bgImage,
+        repeatedBlocks     :  this.state.repetedGroup,   	
+  		};
+		console.log("formValues=blocks>",formValues);
 		axios
 			.patch('/api/blocks/patch/'+this.state.block_id,formValues)
 		  	.then(function (response) {
@@ -555,11 +668,34 @@ class CmsBlock extends Component {
   	      			groupRepetedBlocks:true
   	      		});
   }
+editReDBlock(event){
+   var id = event.target.id;
+    console.log("id od index------",id);
+    for (var i = 0; i < this.state.repetedGroup.length; i++) {
+      if (this.state.repetedGroup[i]._id == id) {
+        // console.log("=====>>>>>>",this.state.repetedGroup[i]);
+        this.setState({
+              repGBlockTitle      : this.state.repetedGroup[i].Title,
+              repGBlocksubTitle   : this.state.repetedGroup[i].SubTitle,
+              repetedLink         : this.state.repetedGroup[i].Link,
+              repBlockContent     : this.state.repetedGroup[i].Description, 
+              rep_idEdit          : id,           
+              rbPath              : {
+                                      "path"    : this.state.repetedGroup[i].Image,
+                                    }
 
+        });
+      }
+    }
+}
     render() {
+<<<<<<< Updated upstream
      /* console.log("parsed===>in render===>",this.state.parsed);
       console.log("parsed===>in Componant===>",this.state.parsed.componentName);
 */
+=======
+      // console.log("parsed===>in render===>",this.state.parsed);
+>>>>>>> Stashed changes
         return (
         		<div className="">
                     <div className="create-basic-block-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -570,7 +706,7 @@ class CmsBlock extends Component {
             							<div className="">
             							  { this.state.parsed.blockTitle == ""
         											? null
-        											:
+        											: 
               								<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NOpadding">
               											<div className="form-group">
               												<label className="label-category">Block Title<span className="astrick"></span></label>
@@ -603,7 +739,7 @@ class CmsBlock extends Component {
                                   }
                                 </div>
             								</div>*/}
-  			                    	    { this.state.parsed.blockType == ""
+  			                    	{ this.state.parsed.blockType == ""
             											? null
             											: 
                     								<div className="col-lg-6 NOpadding">
@@ -622,7 +758,7 @@ class CmsBlock extends Component {
                                             </div>
               			                  </div>
               			                </div>
-            					              }
+            					          }
             			          {/*</div>*/}
               							<div className="row ">
               								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -654,14 +790,15 @@ class CmsBlock extends Component {
                               this.state.parsed.RepetedBlock == ""
                                 ? null
                                 :
-                      								<button type="button" className=" col-lg-4  btn  btn-lg mbottm20" onClick={this.onclickEvent.bind(this)}>
+                      								<button type="button" className="btn  btn-lg mbottm20" onClick={this.onclickEvent.bind(this)}>
                       									Create Repeated Group <i className="fa fa-sort-desc" aria-hidden="true"></i>
                       								</button>
                             }
-              								{
+              								{ 
               									this.state.groupRepetedBlocks == true 
               										?
               										<div className="col-lg-12 col-md-12 repGBlock">
+                                  
               											<div className="row ">
               														{ this.state.parsed.rBlocksTitle == ""
               															? null
@@ -746,7 +883,13 @@ class CmsBlock extends Component {
                         												</div>
                         											</div>
                                             }
-              	                            <button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn" onClick={this.submitRepBlockInfo.bind(this)}>Submit</button>
+                                            {
+                                              this.state.rep_idEdit
+                                              ?
+                                                <button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn" onClick={this.updtaeRepBlockInfo.bind(this)}>Update</button>
+                                              :
+              	                                <button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn" onClick={this.submitRepBlockInfo.bind(this)}>Submit</button>
+                                            }
               										       </div>
               										      : null
               								         }
@@ -755,14 +898,15 @@ class CmsBlock extends Component {
               	                		{
                     											this.state.repetedGroup && this.state.repetedGroup.length>0?
                     											this.state.repetedGroup.map((data, index)=>{
-                    												console.log("re===>",data);
+                    												// console.log("re===>",data);
               												return(
-              						          				<div className="col-lg-4 Allblog">
+              						          				<div className="col-lg-4 Allblog" key={index}>
               						          					{
               				                					data ? 
               							          					<div className="All1block1">
                     															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image:" "} alt="Bannerpng"/>
-                    															<div className="middle">    
+                    															<div className="middle">
+                                                      <i className="fa fa-pencil rclr hoverbbk" onClick={this.editReDBlock.bind(this)} id={data._id}></i>    
                     															    <i className="fa fa-trash rclr hoverbbk" ></i>{/*id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)}*/}
                     															</div>
                     															<a href={"/block/"+data.Link}>

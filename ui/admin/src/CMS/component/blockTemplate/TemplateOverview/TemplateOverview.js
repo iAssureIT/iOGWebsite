@@ -23,19 +23,19 @@ export default class TemplateOverview extends Component {
     
   }
 componentDidMount(){
-  console.log("in componentdidmount;;;;;;;");
-  console.log("iddd ==>",this.props.block_id);
+console.log("==>",this.props.block_id);
           {
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
-                  console.log("Overview response",response);
                     if(response.data){
                       this.setState({
                           blocks:response.data
                       });
+                      
                     }                  
-                  })           
+                  }
+                  )           
                 .catch(function(error){
                   console.log(error);
                     if(error.message === "Request failed with status code 401")
@@ -44,9 +44,10 @@ componentDidMount(){
                       }
               })
             }
-      this.setState({
+            this.setState({
                 block_id:this.props.block_id
               });
+      
 }
  
 
@@ -55,6 +56,7 @@ componentDidMount(){
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate1 NOPadding">
+          {console.log(".blockDescription",this.state.blockDescription)}
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
          </div>
@@ -62,15 +64,15 @@ componentDidMount(){
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <h3 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h3>
-               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 websiteclass ">
+                <div className="col-lg-6 col-md col-sm-12 col-xs">
                   <p className="B2T_p" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                   {/*<div>
                   <input type="button" className="col-lg-3 col-md-3 col-sm-8 col-xs-8 btn blogbtn1 lightbluebg buttonhover B2T_btn" value="Read More"/>
                    <i className=" col-lg-1 readmore fa fa-angle-double-right"></i>
                   </div>*/}
                 </div>
-                <div className="col-lg-6 col-md-6  col-sm-12 col-xs-12">
+                <div className="col-lg-6 col-md col-sm-12 col-xs">
                   <img src={this.state.blocks.fgImage}className="col-lg-offset-4 B2T_overviewTxt"/>
                 </div>
                </div>

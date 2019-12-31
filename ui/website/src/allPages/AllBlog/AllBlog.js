@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 import AllBlogsBanner      from "../../allBlocks/AllBlogsBanner/AllBlogsBanner.js";
-import SingleBlogPage      from "../SingleBlogPage/SingleBlogPage.js";
-
+import AllBlogsList      from "../../allBlocks/AllBlogsList/AllBlogsList.js";
+/*import SingleBlogPage      from "../SingleBlogPage/SingleBlogPage.js";
+import AllBlogsList      from "../SingleBlogPage/SingleBlogPage.js";
+*/
 export default class AllBlog extends Component {
 		constructor(props){
     super(props);
@@ -19,7 +21,8 @@ export default class AllBlog extends Component {
 		return (
 			<div>
 				<AllBlogsBanner/>
-				<SingleBlogPage/>
+				{/*<SingleBlogPage/>*/}
+				<AllBlogsList/>
 			</div>
 		);
 	}

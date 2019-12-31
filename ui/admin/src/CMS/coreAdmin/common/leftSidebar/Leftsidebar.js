@@ -67,7 +67,7 @@ export default class Leftsidebar extends Component{
             <div className="">{/*wrapper*/}
               <nav id="sidebar">
                 <div className="sidebar-header">
-                   <div className="logoTxt">iOG Admin</div>
+                   {/*<div className="logoTxt">iOG Admin</div>*/}
                     <img id="imgSidebar" className="marLeft25" src="/images/logo.png" alt="Logo_img" height="50%" width="50%"/>
                 </div>
                 <ul className="list-unstyled components">

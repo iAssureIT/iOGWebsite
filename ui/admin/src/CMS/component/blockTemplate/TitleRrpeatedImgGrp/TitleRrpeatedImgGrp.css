@@ -221,7 +221,7 @@
     line-height: 23px;
     font-size: 16px;
     color: #333;
-    margin-right: 15px;
+    margin-left: 15px;
   }
   .textboxposition{
     margin-top: 20px;
@@ -236,7 +236,7 @@
     margin-top: 36px;
   }
   .B3T_AppDiv{
-    margin-top: 130px;
+    margin-top: 25px;
   }
   .featuretitleleft{
     padding-right: 0px;
@@ -338,12 +338,20 @@
   }
   .iconclass{
     margin-left: -40px;
+    width:40px;
+    margin-top: 40px;
   }
   .B3T_overviewTitle{
-    top: 53px;
-    left: 606px;
+    top: 53px ! important;
+    left: 606px ! important;
     position: absolute;
-    color: #009de2;
-    font-size: 35px;
-    font-weight: 600;
+    color: #009de2 ! important;
+    font-size: 35px ! important;
+    font-weight: 600 ! important ;
+}
+.rightapplications{
+  margin-left: 20px ! important;
+}
+.websiteDivPos{
+  margin-top: 40px ! important;
 }

@@ -129,6 +129,7 @@ componentDidMount(){
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                	console.log("response----->>",response);
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
                 this.setState({
@@ -159,26 +160,25 @@ componentDidMount(){
 		        </div>
 		        {console.log("second",second)}
 		        </div>
-		         <h2 className="B2T_overviewTitle">{this.state.blocks.blockTitle}</h2>		
-					<div className="mtop25">
-					   <div className="col-lg-12 col-md-12 B3T_AppDiv ">
-						 <div className="col-lg-4 col-md-12">
+		         <h2 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h2>		
+					<div className="col-lg-12 col-md-12 B3T_AppDiv ">
+					   <div className="col-lg-4 col-md-12">
 						 {
 					   	this.state.blocks.repeatedBlocks ?
 					   	this.state.blocks.repeatedBlocks.slice(0,first).map((result, index)=>{
             			return(
-							  <div className="col-lg-12">
+							  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 							  
-								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOPadding">
+								 
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-right">
 								   <img src={result.Image} className="iconclass"/>					    
 								   </div>
 							    </div>
 								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>
-								</div> 
-								 <div className>
+								
+								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 								   <p className="text-right featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		
@@ -201,17 +201,15 @@ componentDidMount(){
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
             			     return(
 							   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
-								<div className=" col-lg-10 col-md-12">
-								 <div className="col-lg-12">
+								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-left">
 								   <img src={result.Image} className="iconclass"/>					    
 								   </div>
 							    </div>
 								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
-								</div> 
-								 <div className>
-								   <p className="text-left featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
+								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
 								</div>		
 							</div>	
@@ -224,7 +222,6 @@ componentDidMount(){
 	                	}
 	                       </div>
 	                     </div>
-						</div>
 					</div>
 							
 			

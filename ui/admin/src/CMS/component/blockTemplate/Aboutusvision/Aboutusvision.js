@@ -1,11 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+// import { render } from 'react-dom';
+// import   Loadable                  from 'react-loadable';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import axios from 'axios';
 
 import './Aboutusvision.css';
 
-export default class Aboutusvision extends React.Component  {
+export default class Aboutusvision extends Component {
 
 constructor(props) {
     super(props);

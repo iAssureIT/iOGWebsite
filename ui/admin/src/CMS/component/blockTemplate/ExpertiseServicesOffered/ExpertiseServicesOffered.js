@@ -33,8 +33,8 @@ export default class ExpertiseServicesOffered extends Component {
                           "Link"        : "/abc"
                       },
                       {
-                        "Title"         : "upgradation",
-                          "SubTitle"    : "",
+                        "Title"         : "",
+                          "SubTitle"    : "upgradation",
                           "Description" : "Upgrade your existing Data Historian architecture to utilize high availability, interface redundancy and the application of critical updates to all the modules.",
                           "Image"       : "/images/s3.png",
                           "Link"        : "/xyz"
@@ -47,7 +47,7 @@ export default class ExpertiseServicesOffered extends Component {
                           "Link"        : "/abc"
                       },
                       {
-                        "Title"         : "Customized Applications",
+                        "Title"         : "customized Applications",
                           "SubTitle"    : "",
                           "Description" : "Develop customized applications and interfaces to fit your unique requirements",
                           "Image"       : "/images/s5.png",
@@ -102,14 +102,16 @@ componentDidMount(){
 
 
   render() { 
-  console.log('khj', this.state.blocks); 
+  // console.log('khj', this.state.blocks); 
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlock5tepmlate NOPadding">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
          </div>
         </div>
-          <h1 className="B2T_serviceTitle">{this.state.blocks.blockTitle}</h1>
+         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 className="B2T_serviceTitle text-center">{this.state.blocks.blockTitle}</h1>
+         </div> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?

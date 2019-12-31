@@ -30,9 +30,7 @@ componentDidMount(){
 // console.log("==>",this.props.block_id);
           {
              axios
-
                 .get('/api/blocks/get/'+this.props.block_id)
-
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
