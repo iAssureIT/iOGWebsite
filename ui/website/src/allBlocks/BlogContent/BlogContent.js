@@ -50,6 +50,8 @@ export default class BlogContent extends Component {
     const ref = React.createRef();
 
     return (
+
+           <div>
             <div className="container-fluid" style={{padding:"0px"}} id="pdfWrap" iref={ref}>
               <div className="col-lg-12  mt40">
                 <div  className="col-lg-8 col-lg-offset-2 hidden-xs hidden-sm blogBox">
@@ -59,9 +61,11 @@ export default class BlogContent extends Component {
                     <div className="blogBoxSmall" dangerouslySetInnerHTML={ { __html: this.props.blogContent } }></div>
                 </div>
               </div>
-              <button className="iogpdfbtn" onClick={this.printTicket.bind(this)}>Generate pdf</button>
-                    <div style={{width:0, height: 0}}></div>
+             
             </div>
+             <button className="btn iogpdfbtn pull-right" onClick={this.printTicket.bind(this)}>Generate pdf</button>
+              <div style={{width:0, height: 0}}></div>
+             </div> 
     );
   }
 }

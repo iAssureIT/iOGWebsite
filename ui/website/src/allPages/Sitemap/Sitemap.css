@@ -7,8 +7,9 @@
 	background-color: #009de2;
 	border-radius: 4px;
 	font-weight: 600;
-	margin-left: -122px;
+	/*margin-left: -122px;*/
 	height: 31px;
     border: none;
     width: 113px;
+    margin-right: 70px;
 }
