@@ -131,7 +131,7 @@ export default class Header extends Component {
                            <div className=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
                            {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
-                            <a href="/NewProductionaccountingpage">Production Accounting</a>
+                            <a href="/masterpage/productionaccpage">Production Accounting</a>
                            {/* <a href="/datahistorian">Realtime Data Historian</a>*/}
                             <a href="/masterpage/datahistoriapage">Realtime Data Historian</a>
                             {/*<a href="/corporatedashboard">Corporate Dashboard & Analytics</a>*/}

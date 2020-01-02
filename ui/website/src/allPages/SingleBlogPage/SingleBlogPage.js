@@ -114,10 +114,10 @@ printTicket(event){
 
 		return (
       <div>
-      	<div className="container-fluid" style={{padding:"0px"}} id="pdfWrap" iref={ref}>
+      	<div className="container-fluid" >
       		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
             <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
-      		  <BlogContent blogContent={this.state.blogContent}/>
+      		  <BlogContent blogContent={this.state.blogContent} style={{padding:"0px"}} id="pdfWrap" iref={ref}/>
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
                 <i className="fa fa-facebook mar10" href=""></i>

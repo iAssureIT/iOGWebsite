@@ -3,7 +3,7 @@ import {Route, withRouter} from 'react-router-dom';
 import { FacebookProvider, ShareButton } from 'react-facebook';
 import $                      from 'jquery';
 import './BlogContent.css';
-
+import jsPDF from 'jspdf';
 import CommentBlock  from '../../allBlocks/CommentBlock/CommentBlock.js';
 
 export default class BlogContent extends Component {
@@ -20,11 +20,37 @@ export default class BlogContent extends Component {
           ]
     };
   }
+  printTicket(event){
+
+
+// window.print();
+
+  var printContents = document.getElementById('pdfWrap').innerHTML;
+
+  var originalContents = document.body.innerHTML;
+
+  document.body.innerHTML = printContents;
+
+  window.print();
+
+  document.body.innerHTML = originalContents;
+
+}
+
+
+
+
+  handleClick(){
+    return true;
+  }
+
 
   render() {
+    console.log('CurrentUrl',this.state.CurrentUrl);
+    const ref = React.createRef();
 
     return (
-            <div className="container-fluid" style={{padding:"0px"}}>
+            <div className="container-fluid" style={{padding:"0px"}} id="pdfWrap" iref={ref}>
               <div className="col-lg-12  mt40">
                 <div  className="col-lg-8 col-lg-offset-2 hidden-xs hidden-sm blogBox">
                     <div dangerouslySetInnerHTML={ { __html: this.props.blogContent } }></div>
@@ -33,6 +59,8 @@ export default class BlogContent extends Component {
                     <div className="blogBoxSmall" dangerouslySetInnerHTML={ { __html: this.props.blogContent } }></div>
                 </div>
               </div>
+              <button className="iogpdfbtn" onClick={this.printTicket.bind(this)}>Generate pdf</button>
+                    <div style={{width:0, height: 0}}></div>
             </div>
     );
   }
