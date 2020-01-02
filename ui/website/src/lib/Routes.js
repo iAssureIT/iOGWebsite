@@ -159,7 +159,7 @@ import InspectionManagementPage       from '../allPages/InspectionManagementPage
 import SingleBlogPage                   from '../allPages/SingleBlogPage/SingleBlogPage.js';
 import AllBlog                          from '../allPages/AllBlog/AllBlog.js';
 import Blogcomponents                   from '../allBlocks/Blogcomponents/Blogcomponents.js';
-import AllBlogsList                     from '../allBlocks/AllBlogsList/AllBlogsList.js';
+// import AllBlogsList                     from '../allBlocks/AllBlogsList/AllBlogsList.js';
 
 
 //============     Test    ============
@@ -191,7 +191,6 @@ const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
     <Route path="/" exact strict component={ HomePage } /> 
     <Route path="/megamenu" component={ Megamenu } />  
-
     <Route path="/contact-us" component={ Contactpage } />  
 {/*    <Route path="/contactUsModal" component={ ContactUsModal } />  */}
     <Route path="/about-us" component={ AboutUs } />         
@@ -201,7 +200,7 @@ const WebLayout = () => (
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resource" component={ ResourcePage } />
-    <Route path="/blog" component={ AllBlogsList } /> 
+    <Route path="/blog" component={ AllBlog } /> 
 
     <Route path="/AllBlog" component={AllBlog}  />
     <Route path="/blogs/:id" component={ BlogContent } />

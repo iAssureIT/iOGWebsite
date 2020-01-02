@@ -4,7 +4,7 @@ import axios        from 'axios';
 import swal from 'sweetalert';
 // import Modal from 'react-modal';
 import CmsBlock from "../createnewblock/Cmsblock.js";
-import $ from "jquery";
+// import $ from "jquery";
 
 // import PageHead from "../PageHead/PageHead.js";
 import './MasterPage.css';
@@ -20,7 +20,8 @@ class MasterPage extends React.Component {
 			blocks 		: "",
 			ListOfBlocks: "",
 			block_id 	: "",
-			modalIsOpen : false
+			modalIsOpen : false,
+			editbtnclick 	:false
 		};
 	}
 
@@ -40,15 +41,7 @@ componentWillReceiveProps(){
 }
 
 componentDidMount(){
-	$(document).ready(function(){
-
-		$("hideBtn").hide();
-
-	});
-	$("#editPageBtn").click(function(){
-	  $("hideBtn").show();
-	});
-
+/**/
 			// console.log("pageUrl = ",pageUrl);
 			// this.getAllBlockList();
 			var pageUrl = window.location.pathname;;
@@ -89,7 +82,9 @@ componentDidMount(){
 
 	}
 	editbtn(){
-		
+		this.setState({
+		      		editbtnclick : true,
+		      	});
 	}
 	backbtn(){
 		this.props.history.push("/viewpage1");/*+response.data.pageURL*/
@@ -133,8 +128,14 @@ componentDidMount(){
 							var Block_id = result._id;
 							return(
 								<Suspense fallback={<div>Loading...</div>} key={index}>
-									<i className="fa fa-trash btnCss deletbtnIcon pull-right hideBtn" id={Block_id}></i>
-									<i className="fa fa-pencil btnCss editIcon pull-right hideBtn" id={block_id} onClick={this.editModal.bind(this)} data-toggle="modal" data-target="#myModal"></i>
+									{
+										this.state.editbtnclick === true ?
+										<div>
+											<i className="fa fa-trash btnCss deletbtnIcon pull-right hideBtn" id={Block_id}></i>
+											<i className="fa fa-pencil btnCss editIcon pull-right hideBtn" id={block_id} onClick={this.editModal.bind(this)} data-toggle="modal" data-target="#myModal"></i>
+						    			</div>
+						    		:""
+						    		}
 						    		<NewPageComponent block_id={block_id}/>
 						    	</Suspense>
 					    	)

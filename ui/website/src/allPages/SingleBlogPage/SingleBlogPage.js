@@ -42,7 +42,7 @@ export default class SingleBlogPage extends React.Component {
     console.log("id --->",id);
 
 		axios
-      .get('/api/blogs/get/'+id)
+      .get('http://iogapi.iassureit.com/api/blogs/get/'+id)
       .then((response)=>{
         console.log("===>",response.data);
         this.setState({
@@ -66,7 +66,7 @@ export default class SingleBlogPage extends React.Component {
       var blogURL = this.props.match.params.selectedUrl;
 
       axios
-      .get('/api/blogs/get/count/url/'+blogURL)
+      .get('http://iogapi.iassureit.com/api/blogs/get/count/url/'+blogURL)
       .then((response)=>{
         this.setState({
             viewCount: response.data.count,

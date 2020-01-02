@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import {Route, withRouter} from 'react-router-dom';
 import CKEditor from 'ckeditor4-react';
-import './cmsblock.css';
 import axios from 'axios';
 import S3FileUpload from 'react-s3';
-
 import swal from 'sweetalert';
+import './cmsblock.css';
 
 const queryString = require('query-string');
-
 class CmsBlock extends Component {
 
     constructor(props) {
@@ -20,12 +18,10 @@ class CmsBlock extends Component {
             uploadedbackImage     : [],
             rBImage 			        : "",
             imgbackPath           : {},
-
       			blockTitle 	          : "",
       			blocksubTitle         : "",
       			blockBody		          : "",
       			componentName		      : "",
-
       			blockType			        : "",
       			buttonText		        : "Submit",
       			blockDescription   		: "",
@@ -47,19 +43,19 @@ class CmsBlock extends Component {
       			repetedGroup 		      : [],
             rep_idEdit            : "",
             parsed                : {
-                                    blockTitle       : "",
-                                    blocksubTitle    :"",
-                                    componentName    :"",
-                                    blockType        :"",
-                                    fgImage          : "",
-                                    bgImage          :"",
-                                    bgVideo          :"",
-                                    fgVideo          :"",
-                                    blockDescription :"",
-                                    repGBlockTitle        : "",
-                                    repGBlocksubTitle     : "",
-                                    repetedLink           : "",
-                                    RepetedBlock     : ""
+                                    blockTitle          : "",
+                                    blocksubTitle       : "",
+                                    componentName       : "",
+                                    blockType           : "",
+                                    fgImage             : "",
+                                    bgImage             : "",
+                                    bgVideo             : "",
+                                    fgVideo             : "",
+                                    blockDescription    : "",
+                                    repGBlockTitle      : "",
+                                    repGBlocksubTitle   : "",
+                                    repetedLink         : "",
+                                    RepetedBlock        : ""
             }
 		    };
 
@@ -98,14 +94,15 @@ class CmsBlock extends Component {
   handle1Change(event){
 		event.preventDefault();
     	this.setState({
+        [event.target.name]:event.target.value
      
 			/*"repGBlockTitle"	      : this.state.parsed.rBlocksTitle ? this.refs.repGBlockTitle.value : "",
 			"repGBlocksubTitle"	    : this.state.parsed.rBlocksSubTitle ? this.refs.repGBlocksubTitle.value : "",
 			"repetedLink"		        : this.state.parsed.rBlocksLink ? this.refs.repetedLink.value : "",
 			 */
-      "repGBlockTitle"        : this.refs.repGBlockTitle.value,
+/*      "repGBlockTitle"        : this.refs.repGBlockTitle.value,
       "repGBlocksubTitle"     : this.refs.repGBlocksubTitle.value,
-      "repetedLink"           : this.refs.repetedLink.value,
+      "repetedLink"           : this.refs.repetedLink.value,*/
        
 			// "blockBody"	 : this.refs.blockBody.value,
 			/*"componentName"		 : this.props.blockDetailsID ? this.props.blockDetailsID.componentName : null, 
@@ -119,15 +116,14 @@ class CmsBlock extends Component {
 		event.preventDefault();
 		var ArrayRepetedGroup = this.state.repetedGroup;
 		var formValues = {
-	
-		Title 			: this.state.repGBlockTitle,
-		SubTitle 		: this.state.repGBlocksubTitle,
-		Link 			  : this.state.repetedLink,
-		Description : this.state.repBlockContent,
-		Image 			: this.state.rbPath.path,		
+    		Title 			: this.state.repGBlockTitle,
+    		SubTitle 		: this.state.repGBlocksubTitle,
+    		Link 			  : this.state.repetedLink,
+    		Description : this.state.repBlockContent,
+    		Image 			: this.state.rbPath.path,		
 		};
-                    swal("Thank you.Your Block is Created.");
-                    ArrayRepetedGroup.push(formValues);
+        swal("Thank you.Your Block is Created.");
+        ArrayRepetedGroup.push(formValues);
                     this.setState({
 			            repetedGroup : ArrayRepetedGroup,
 			            groupRepetedBlocks : false
