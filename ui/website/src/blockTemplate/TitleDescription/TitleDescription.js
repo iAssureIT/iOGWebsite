@@ -36,7 +36,7 @@ componentDidMount(){
                   console.log(error);
                     if(error.message === "Request failed with status code 401")
                       {
-                          // swal("Your session is expired! Please login again.","", "error");
+                       
                       }
               })
             }
@@ -44,18 +44,17 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
-    render(){
+    render()
+    {
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover">
-               
-           
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
-                              <div dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></div>   
-                            </div>
-                        </div>
-                    </div>
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                  <div dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></div>   
+                </div>
+              </div>
+          </div>
    
         );
     }

@@ -125,7 +125,7 @@ export default class Header extends Component {
                             <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
                             <a href="/masterpage/applicationsupportpage">Application Support</a>
                             <a href="/masterpage/applicationintegrationpage">Application Integration</a>
-                            <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
+                            <a href="/masterpage/industriesv4page">Visualization & Dashboards</a>
                             <a href="/masterpage/industry4-0" className="">Industry 4.0 Initiatives</a>
                           </div>
                            <div className=" column columnmenu thirdcolumn columnmenu3">

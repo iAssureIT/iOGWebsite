@@ -1,5 +1,6 @@
 .innerBlocktepmlate6{
 	height: auto;
+  padding:0px;
 }
 .B3T_NewsDiv {
     /*top: 130px;*/
@@ -38,7 +39,7 @@
     box-shadow: -3px 1px 6px 5px #f3f3f3;
     width: 63px;
     height: 47px;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
 
     color:#009de2;
 }

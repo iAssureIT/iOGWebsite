@@ -8,6 +8,7 @@ import Typecomponent2                from "../blockTemplate/Typecomponent2/Typec
 import Typecomponent3                from "../blockTemplate/Typecomponent3/Typecomponent3.js";
 import Aboutustextright              from "../blockTemplate/Aboutustextright/Aboutustextright.js";
 import Aboutusvision                 from "../blockTemplate/Aboutusvision/Aboutusvision.js";
+import Aboutufounder                 from "../blockTemplate/Aboutufounder/Aboutufounder.js";
 import Commoninfoblock               from "../blockTemplate/Commoninfoblock/Commoninfoblock.js";
 import Commonservicesblock           from "../blockTemplate/Commonservicesblock/Commonservicesblock.js";
 import CommonservicesblockTitle      from "../blockTemplate/CommonservicesblockTitle/CommonservicesblockTitle.js";
@@ -144,6 +145,20 @@ class Staticblocks extends React.Component {
 		            </button>
 					<Typecomponent3 />
 				</section>
+
+                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
+		            <button id="Aboutufounder" 
+							data-blockTitle  ="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+							data-blocksubTitle="blocksubTitle" 
+							data-fgImage="fgImage" 
+							data-RepetedBlock="RepetedBlock" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Aboutufounder  />
+				</section>
+
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover">	
 		            <button id="Aboutustextright" 
 	                        data-fgImage="fgImage" 

@@ -94,13 +94,18 @@ class CmsBlock extends Component {
   handle1Change(event){
 		event.preventDefault();
     	this.setState({
+
         [event.target.name]:event.target.value
      
 			/*"repGBlockTitle"	      : this.state.parsed.rBlocksTitle ? this.refs.repGBlockTitle.value : "",
 			"repGBlocksubTitle"	    : this.state.parsed.rBlocksSubTitle ? this.refs.repGBlocksubTitle.value : "",
 			"repetedLink"		        : this.state.parsed.rBlocksLink ? this.refs.repetedLink.value : "",
 			 */
+
 /*      "repGBlockTitle"        : this.refs.repGBlockTitle.value,
+=======
+      /*"repGBlockTitle"        : this.refs.repGBlockTitle.value,
+>>>>>>> Stashed changes
       "repGBlocksubTitle"     : this.refs.repGBlocksubTitle.value,
       "repetedLink"           : this.refs.repetedLink.value,*/
        
