@@ -13,19 +13,22 @@
   .BT1_img{
   	height: 200px;
   	width: 100%;
-  	margin-top: 140px;
+  	margin-top: 30px;
 
   }
   .BT1_bannerTitle{
-  	position: absolute;
+  	position: relative;
   	color: #fff;
   	font-size: 43px;
     font-weight: 600;
-    left: 500px;
-    top: 215px;
+    /*left: 500px;*/
+    top: 151px;
   }
   .HistorianTitle{
     color: #fff;
+  }
+  .dynamicpageimg{
+    background-image: url("/images/acc.png");
   }
 
    

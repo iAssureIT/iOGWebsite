@@ -5,7 +5,10 @@ import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
 import './Header.css';
 import 'bootstrap/js/modal.js';
-import './Megamenu.js'
+import 'bootstrap/js/collapse.js';
+import './Megamenu.js';
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
 export default class Header extends Component {
@@ -46,7 +49,7 @@ export default class Header extends Component {
                     <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>
                   </div>
                 </div>
-                <div className="col-lg-9 col-md-9 col-sm-3 col-xs-3 collapse navbar-collapse" id="navBar ">
+                <div className="col-lg-9 col-md-9 col-sm-3 col-xs-3 collapse navbar-collapse" id="navBar">
                   <div className="row"> 
                     <nav className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       
@@ -126,8 +129,8 @@ export default class Header extends Component {
                             <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
                             <a href="/masterpage/applicationsupportpage">Application Support</a>
                             <a href="/masterpage/applicationintegrationpage">Application Integration</a>
-                            <a href="/masterpage/industriesv4page">Visualization & Dashboards</a>
-                            <a href="/masterpage/industry4-0" className="">Industry 4.0 Initiatives</a>
+                            <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
+                            <a href="/masterpage/industriesv4page" className="">Industry 4.0 Initiatives</a>
                           </div>
                            <div className=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>

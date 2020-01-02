@@ -355,3 +355,12 @@
 .websiteDivPos{
   margin-top: 40px ! important;
 }
+
+
+@media screen and (max-width: 600px) {
+  .iconclass {
+    background-color: olive;
+    color: white;
+    width: 300px;
+  }
+}
