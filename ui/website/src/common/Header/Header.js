@@ -64,6 +64,7 @@ export default class Header extends Component {
                                    <div className="Servicecolumn columnmenu">
                                     <a href="/about-us">Company Profile</a>
                                     <a href="/founderprofile">Founder's Profile</a>
+                                    <a href="/masterpage/newseventspage">News & Events</a>
                                     <a href="/ourjourny">Our Journey</a>
                                    </div>
                                   </div>
