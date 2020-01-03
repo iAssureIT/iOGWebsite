@@ -1,13 +1,14 @@
 .innerBlocktepmlate4{
-	height: 640px;
+	height: auto;
 }
 .B3T_challengesDiv {
-    top: 130px;
+    top: 25px;
     height: 190px;
-    width: 303px;
+    /*width: 303px;*/
     box-shadow: 3px 6px 4px 2px #eee;
-    margin-left: 100px;
+    /*margin-left: 32px;*/
     margin-bottom: 40px;
+    
 }
 .B4T_img{
 	margin-left: 77px;
@@ -28,9 +29,9 @@
   	z-index: 999	
 }
 .B2T_challengesTitle{
-	top: 53px;
+	/*top: 53px;
     left: 563px;
-    position: absolute;
+    position: absolute;*/
     color: #009de2;
     font-size: 35px;
     font-weight: 600;

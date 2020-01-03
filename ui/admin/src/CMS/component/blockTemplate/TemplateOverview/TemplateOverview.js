@@ -73,7 +73,7 @@ console.log("==>",this.props.block_id);
                   </div>*/}
                 </div>
                 <div className="col-lg-6 col-md col-sm-12 col-xs">
-                  <img src={this.state.blocks.fgImage}className="col-lg-offset-4 B2T_overviewTxt"/>
+                  <img src={this.state.blocks.fgImage}className="col-lg-offset-3 B2T_overviewTxt"/>
                 </div>
                </div>
               </div> 

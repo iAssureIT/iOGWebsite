@@ -12,9 +12,9 @@ export default class TitleDesc extends Component {
     super(props);
     this.state = {
       blocks: {
-        "blockTitle" : "*** Overview ***",
-        "blockDescription" : "iOG provides expert consulting services to improve a client’s business process & raising them up to the best practices in the industry iOGConsult is our service arm through which we provide extensive or specific consultation by our domain experts. Our consultants help clients in assessing their current business processes, identifying gaps and opportunities for improvement. Utilizing our strong knowledge and experience in the various aspects of the global Oil and Gas value chain, we help our clients in filling up their operational gaps and eventually unlocking hidden value delivery opportunities.",
-       
+        blockTitle : "",
+        blockDescription : "",
+     
       },
       blockID:"",
       block_id:""

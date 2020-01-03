@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 import './Aboutusvision.css';
 
-export default class Aboutusvision extends Component {
+export default class Aboutusvision extends React.Component  {
 
 constructor(props) {
     super(props);
@@ -71,6 +71,7 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
+
     render(){
         return(
           

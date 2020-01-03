@@ -156,28 +156,25 @@ componentDidMount(){
 		
 			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 			  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
-		           <div class="B2T1_line col-lg-1 col-lg-offset-2">
+		        <div class="B2T1_line col-lg-1 col-lg-offset-2">
 		        </div>
 		        {console.log("second",second)}
 		        </div>
 		         <h2 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h2>		
-					<div className="col-lg-12 col-md-12 B3T_AppDiv ">
-					   <div className="col-lg-4 col-md-12">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 B3T_AppDiv ">
+					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						 {
 					   	this.state.blocks.repeatedBlocks ?
 					   	this.state.blocks.repeatedBlocks.slice(0,first).map((result, index)=>{
             			return(
-							  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
-							  
-								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOPadding">
-								 
+							  <div>
+							    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding"> 
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2  pull-right">
-								   <img src={result.Image} className="iconclass"/>					    
+								   <div className="col-lg-2   pull-right">
+								     <img src={result.Image} className="iconclass"/>					    
 								   </div>
-							    </div>
-								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>
-								
+							     </div>
+								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>	
 								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
 								   <p className="text-right featuretext" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>
@@ -192,27 +189,26 @@ componentDidMount(){
 	                	}	
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-	                      <img src={this.state.blocks.fgImage} className="B3t_img"/>
-	                     </div>
-						 <div className="col-lg-4 col-md-12">
+	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs hidden-sm">
+	                      <img src={this.state.blocks.fgImage} className="B3t_img" />
+	                    </div>
+						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						  {
 						   	this.state.blocks.repeatedBlocks ?
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
             			     return(
-							   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
-								<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <div className="col-lg-2  pull-left">
+							   <div>
+								<div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+								 <div className="col-lg-2  pull-left">
 								   <img src={result.Image} className="iconclass"/>					    
-								   </div>
+								 </div>
 							    </div>
 								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
 								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
-								 </div>
-								</div>		
-							</div>	
+								 </div>		
+				              </div>			
+					
 							
 							 );
 
@@ -220,9 +216,9 @@ componentDidMount(){
 	                    :
 	                    null
 	                	}
-	                       </div>
-	                     </div>
-					</div>
+	                    </div>
+	                </div>
+		    </div>
 							
 			
 

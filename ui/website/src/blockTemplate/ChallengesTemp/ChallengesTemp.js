@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
-
-
 // import $                  from 'jquery';
 import './ChallengesTemp.css';
 
@@ -107,12 +105,12 @@ componentDidMount(){
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate4 NOPadding">
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4  col-lg-offset-5">
            <div class="B4T_line col-lg-1 col-lg-offset-2">
          </div>
         </div>
-             <h1 className="B2T_challengesTitle">{this.state.blocks.blockTitle}</h1>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <h1 className=" text-center B2T_challengesTitle">{this.state.blocks.blockTitle}</h1>
+        <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
          
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
@@ -120,10 +118,10 @@ componentDidMount(){
             return(
              
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 B3T_challengesDiv">
-               <div className="col-lg-12 col-md-12">
+               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  <img src={result.Image} className="B4T_img"/>
                 </div>
-                <div className="col-lg-12 col-md-12">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  <p className="B4T_txt"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
                 </div>
                </div>

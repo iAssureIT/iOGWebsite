@@ -89,7 +89,7 @@ componentDidMount(){
 
   render() {  
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate4 NOPadding">  
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate6 NOPadding">  
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maindivNews">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
@@ -99,7 +99,7 @@ componentDidMount(){
               <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2 yearbox">
                {result.Title}
               </div>
-               <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+               <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 NOPadding">
                 <div className="">
                  <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg" src={result.Image}/>          
                 </div>
@@ -108,7 +108,7 @@ componentDidMount(){
                  
                 </div>
                 <div className="col-lg-12 col-md-12">
-                 <p className="text-justify"  dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                 <p className="text-justify" dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
              </div>

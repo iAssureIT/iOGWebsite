@@ -10,7 +10,7 @@ export default class TitleDescription extends React.Component {
       blocks: {
         "blockComponentName"    : "TitleDescription",
         "blockType"             : "simple",
-        "blockTitle"            : "This is Block Title11",
+        "blockTitle"            : "",
         "blockDescription"      : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
        
       },
@@ -26,7 +26,6 @@ componentDidMount(){
              axios
                 .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
-                  console.log("admin response---->",response);
                     if(response.data){
                       this.setState({
                           blocks:response.data
@@ -37,7 +36,7 @@ componentDidMount(){
                   console.log(error);
                     if(error.message === "Request failed with status code 401")
                       {
-                          // swal("Your session is expired! Please login again.","", "error");
+                       
                       }
               })
             }
@@ -45,7 +44,8 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
-    render(){
+    render()
+    {
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -54,7 +54,7 @@ componentDidMount(){
                   <div dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></div>   
                 </div>
               </div>
-            </div>
+          </div>
    
         );
     }

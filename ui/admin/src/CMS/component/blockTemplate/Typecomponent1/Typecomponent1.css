@@ -2,10 +2,13 @@
     color: #009de2;
 }
 .onselecthover{
-  height: 450px;
-  padding-top: 5%;
+  height: auto;
+  /*padding-top: 5%;*/
   
 
+}
+.righttextaboutus{
+	margin-top: 90px;
 }
 /*.onselecthover:hover{
   cursor: pointer;

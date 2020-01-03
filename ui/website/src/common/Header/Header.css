@@ -411,7 +411,7 @@ dropdown-submenu {
   float: left;
   overflow: hidden;
   width: 127px;
-  margin-top:12px; 
+  /*margin-top:12px; */
 }
 
 .dropdown .dropbtn {
@@ -567,10 +567,11 @@ dropdown-submenu {
 .columnmenu a{
   font-size:13px ! important;
 }
-.navbar1 a{
+.navbar1 li>a{
   font-size: 16px;
   padding:0px;
   line-height: 0px ! important;
+  color:#ffffff ! important;
 }
 .menudivider{
   height: 20px;
@@ -653,7 +654,7 @@ dropdown-submenu {
   padding: 0;
 }
 .dropdown1 {
-  margin-top: 12px;
+  /*margin-top: 12px;*/
   float: left;
   overflow: hidden;
   width: 108px;
@@ -720,4 +721,19 @@ dropdown-submenu {
 .dataneeded{
   color: #f00 ! important;
 
+}
+.responsiveMenubar{
+  background-color: #333;
+  height: 500px;
+}
+#navbar{
+  border: 1px solid #333;
+  height: 300px;
+}
+.responsiveMenubar-nav>ul>li>a{
+  color: #ffffff ! important;
+  z-index:999 ! important;
+}
+.navbar1-nav>ul>li>a{
+  color: #ffffff;
 }

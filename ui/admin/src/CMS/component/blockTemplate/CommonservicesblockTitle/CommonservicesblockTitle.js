@@ -20,11 +20,11 @@ export default class CommonservicesblockTitle extends Component {
         "blockType"           : "simple",
         "repeatedBlocks"    : [
                       {
-                          "Title"     : "Geology &amp; Geophysics",
+                          "Title"       : "Geology &amp; Geophysics",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"     : "/images/Icon_1.png",
-                          "Link"      : "/iogstudy"
+                          "Image"       : "/images/Icon_1.png",
+                          "Link"        : "/iogstudy"
                       },
                       {
                           "Title"     : "Geology",
@@ -120,7 +120,7 @@ componentDidMount(){
                             <div className="col-lg-2 col-lg-offset-5">
                              <div className="line1 col-lg-1 col-lg-offset-2"></div>
                           </div> 
-                            <h2 className="text-center">{this.state.blocks.blockTitle}</h2>                   
+                            <h2 className="text-center lightbluetext para-top_website">{this.state.blocks.blockTitle}</h2>                   
                       </div> 
                           <div className="row"> 
                             {

@@ -30,7 +30,7 @@ constructor(props) {
                           "Link"      : "/iogimplement"
                       },
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                         "Title"     : "Geology &amp; Geophysics",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
@@ -90,7 +90,7 @@ componentDidMount(){
                     </h2>
                         
                     <div>
-                     <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                     <p className="col-lg-offset-2 col-lg-10 col-md-10 col-sm-12 col-xs-12 type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
 
                 </div>

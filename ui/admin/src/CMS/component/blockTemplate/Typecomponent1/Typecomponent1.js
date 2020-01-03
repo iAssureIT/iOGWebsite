@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import './Typecomponent1.css';
+
 export default class Typecomponent1 extends React.Component {
     constructor(props) {
     super(props);
