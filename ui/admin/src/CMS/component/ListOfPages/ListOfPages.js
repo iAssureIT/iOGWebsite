@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, withRouter} from 'react-router-dom';
+import $                  from 'jquery';
 
 import axios from 'axios';
 import swal from 'sweetalert';
@@ -42,6 +43,44 @@ handleChange(event){
 			});
 }
 componentDidMount(){
+	axios.defaults.headers.common['Authorization'] = 'Bearer '+ localStorage.getItem("token");
+   /* $.validator.addMethod("regxtypeofCenter", function(value, element, regexpr) {        
+      return regexpr.test(value);
+    }, "Please enter valid Sub-Activity Name.");
+*/
+
+    $("#newTemplateForm").validate({
+      rules: {
+        basicPageName: {
+          required: true,
+        }, 
+       /* unit: {
+          required: true,
+        },
+        activityName: {
+          required: true,
+        },
+        subActivityName: {
+          required: true,
+          regxtypeofCenter: /^[A-za-z']+( [A-Za-z']+)*$/,
+        },*/
+      },
+      errorPlacement: function(error, element) {
+        if (element.attr("name") == "basicPageName"){
+          error.insertAfter("#pageTitle");
+        }
+       /* if (element.attr("name") == "activityName"){
+          error.insertAfter("#activityNameError");
+        }
+        if (element.attr("name") == "unit"){
+          error.insertAfter("#unitError");
+        }
+        if (element.attr("name") == "subActivityName"){
+          error.insertAfter("#subActivityNameError");
+        }*/
+      }
+    });
+    
 	this.getListOfPages();
 
 }
@@ -135,7 +174,8 @@ updatePageData(){
 
 }
 submitData(){
-	var AttachmentValues = {    
+	if($('#newTemplateForm').valid()){
+		var AttachmentValues = {    
 					  	// "componentName"			: this.state.pageDesigns ? this.state.pageDesigns.componentName : null,
      					// "pagediscription" 		: this.refs.cmspageDescription.value,
 						"pageTitle"				: this.refs.pageTitle.value,
@@ -161,7 +201,7 @@ submitData(){
 		  	});
 
    		// console.log("AttachmentValues =>",AttachmentValues);
-
+   	}
 }
 urlPage(event){
 	var id = event.target.id;
@@ -186,14 +226,14 @@ urlPage(event){
 							        	<h4 className="panel-title">
 								        List Of Pages
 								       
-								        <a className="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-								        + Create New Page</a>
+								        <a className="pull-right CNPBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+								        	<button type="button" class="btn btn-primary">Create New Page </button></a>
 							        	</h4>
 							       
 							    </div>
 							    <div id="collapse1" className="panel-collapse collapse">
 							      	<div className="panel-body">
-							      		<div className="row inputrow">
+							      		{/*<div className="row inputrow">
 			                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			                                    <div className="form-group">
 			                                    	<label className="label-category">Page Title<span className="astrick"> </span></label>
@@ -206,9 +246,23 @@ urlPage(event){
 			                                        <input type="text" ref="pageUrl" id="basicPageName" value={this.state.pageUrl} name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} disabled/>
 			                                    </div>
 			                                </div>
-			                            </div>
+			                            </div>*/}
 				                        <div className="headContent">
-				                        	<form className="newTemplateForm">
+				                        	<form className="newTemplateForm" id="newTemplateForm">
+						                        <div className="row inputrow">
+					                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					                                    <div className="form-group" id="pageTitle">
+					                                    	<label className="label-category">Page Title<span className="astrick"> </span></label><span className="asterix">*</span>
+					                                        <input type="text" ref="pageTitle" value={this.state.pageTitle} id="basicPageName" name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} />
+					                                    </div>
+					                                </div>
+					                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					                                    <div className="form-group">
+					                                    	<label className="label-category">Page URL<span className="astrick"></span></label>
+					                                        <input type="text" ref="pageUrl" id="basicPageName" value={this.state.pageUrl} name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} disabled/>
+					                                    </div>
+					                                </div>
+					                            </div>
 				                        		<div className="row inputrow">
 					                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					                                  <div className="form-group">
@@ -237,7 +291,6 @@ urlPage(event){
 				                            { this.state.UrlId
 				                            	?
 			                           				<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn" onClick={() => this.updatePageData()} >Update</button>
-
 				                            	:
 			                            			<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn" onClick={() => this.submitData()} >Submit</button>
 				                            }
@@ -268,10 +321,10 @@ urlPage(event){
 											return(
 											    <tr key={index}>
 											      <td>{index+1}</td>
-											      <td>{result.pageTitle}</td>
-											      <td id={result.pageURL} className="onHoverClick" onClick={this.urlPage.bind(this)}>{result.pageURL}</td>
-											      <td><i className="fa fa-edit deletIcon" id={result.pageURL} data-toggle="collapse" data-parent="#accordion" href="#collapse1" onClick={this.editPage.bind(this)}></i>&nbsp;&nbsp;&nbsp;&nbsp;
-											      		<i className="fa fa-trash deletIcon" id={result.pageURL} onClick={this.deletePage.bind(this)}></i>&nbsp;&nbsp;&nbsp;&nbsp;
+											      <td >{result.pageTitle}</td>
+											      <td id={result.pageURL} className="onHoverClick" onClick={this.urlPage.bind(this)} data-placement="top" title="Click here to view Page">{result.pageURL}</td>
+											      <td><i className="fa fa-edit deletIcon" id={result.pageURL} data-toggle="collapse" data-parent="#accordion" href="#collapse1" onClick={this.editPage.bind(this)} data-placement="top" title="Edit Page"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+											      		<i className="fa fa-trash deletIcon" id={result.pageURL} onClick={this.deletePage.bind(this)} data-placement="top" title="Delete page"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 											      		{/*<i className="fa fa-eye"></i>*/}
 											      </td>
 											    </tr>

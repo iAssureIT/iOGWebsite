@@ -4,6 +4,10 @@
 .ocTitle{
 	
 }
+.fgImageSize{
+  height: 350px !important;
+  width: 100% !important;
+}
 .newocTitle{
     color: #376bff;
     line-height: 1.5;

@@ -38,7 +38,7 @@ constructor(props) {
         ],
         "bgImage"       : "",
         "bgVideo"       : "",
-        "fgImage"       : "",
+        /*"fgImage"       : "",*/
         "fgVideo"       : ""
 
       },
@@ -73,6 +73,7 @@ componentDidMount(){
 }
 
     render(){
+      console.log("this.state.blocks=",this.state.blocks);
         return(
           
           <div>

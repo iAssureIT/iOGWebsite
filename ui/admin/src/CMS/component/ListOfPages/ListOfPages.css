@@ -13,3 +13,11 @@
 	color: #f00;
 	cursor: pointer;
 }
+.CNPBtn{
+	position: relative;
+	top: -8px;
+	margin: 0px !important;
+}
+.CNPBtn .btn{
+	margin: 0px !important;
+}

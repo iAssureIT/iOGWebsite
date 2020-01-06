@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './TitleRrpeatedImgGrp';
 
 var first = 0;
 var second = 0;
@@ -14,9 +15,9 @@ constructor(props) {
     	
         blocks:{
         "blockTitle"     	 : "Applications",
-        "fgImage   "      	 : "/images/dataHistorian.png",
+        "fgImage"      	 	 : "/images/dataHistorian.png",
         "blockSubTitle"      : "",
-        "blockDescription"   : " ",
+        "blockDescription"   : "",
         "blockComponentName" : "DataHistorian",
         "blockType"          : "simple",
         "repeatedBlocks"     : 
@@ -57,7 +58,6 @@ constructor(props) {
          
 			        "bgImage"       : "",
 			        "bgVideo"       : "",
-			        "fgImage"       : "",
 			        "fgVideo"       : ""
 
       },
@@ -68,10 +68,10 @@ constructor(props) {
   }
 componentDidMount(){
 
-	console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks);
+	// console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks);
 	for(var i=0;i<this.state.blocks.repeatedBlocks.length;i++)
 	{
-		console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks[i].Title)
+		// console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks[i].Title)
 	}
 
 
@@ -112,7 +112,7 @@ componentDidMount(){
 
 		var length = this.state.blocks.repeatedBlocks.length;
       var split    = parseInt(length/2);
-		console.log("split",split);
+		// console.log("split",split);
        	/*var indexToSplit = this.state.blocks.blocksrepeatedBlocks.indexOf(split);
         console.log("indexToSplit",indexToSplit+1)
 
@@ -150,7 +150,7 @@ componentDidMount(){
 }
 
 	render() {
-		
+		{console.log("this.state.blocks.fgImage",this.state.blocks)}
 		
 		return (
 		
@@ -158,7 +158,7 @@ componentDidMount(){
 			  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
 		        <div class="B2T1_line col-lg-1 col-lg-offset-2">
 		        </div>
-		        {console.log("second",second)}
+		        
 		        </div>
 		         <h2 className="B2T_overviewTitle text-center">{this.state.blocks.blockTitle}</h2>		
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 B3T_AppDiv ">
@@ -189,29 +189,29 @@ componentDidMount(){
 	                	}	
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs hidden-sm">
-	                      <img src={this.state.blocks.fgImage} className="B3t_img" />
+	                	<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 fgImageSize">
+	                       <img src={this.state.blocks.fgImage} className="img-responsive" style={{"height":"350px"}}/>
 	                    </div>
-						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div className="col-lg-4 col-md-12">
 						  {
 						   	this.state.blocks.repeatedBlocks ?
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
-            			     return(
-							   <div>
-								<div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								 <div className="col-lg-2  pull-left">
-								   <img src={result.Image} className="iconclass"/>					    
-								 </div>
-							    </div>
-								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
-								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
-								 </div>		
-				              </div>			
-					
-							
-							 );
+            			    return(
+							    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+									<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOpadding">
+										<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+										    <div className="col-lg-2  pull-left">
+										   		<img src={result.Image} className="iconclass"/>					    
+										    </div>
+							    		</div>
+								 		<h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
+								 		<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+								    		<p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
+								 		</div>
+									</div>		
+								</div>			
 
+							 );
         			   	  })
 	                    :
 	                    null

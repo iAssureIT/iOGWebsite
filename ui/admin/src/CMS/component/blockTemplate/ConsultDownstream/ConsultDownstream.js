@@ -84,7 +84,7 @@ export default class ConsultDownstream extends Component {
                       
 
         ],
-        "bgImage"       : "",
+        
         "bgVideo"       : "",
         "fgImage"       : "",
         "fgVideo"       : ""
@@ -122,7 +122,7 @@ componentDidMount(){
 
 
   render() {  
-    // console.log('kghjgjgj',this.state.blocks.bgImage);
+    console.log('kghjgjgj',this.state.blocks.bgImage);
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
         <div class="Bubble">

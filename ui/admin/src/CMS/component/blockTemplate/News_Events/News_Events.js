@@ -19,28 +19,28 @@ export default class News_Events extends Component {
         "blockType"       : "simple",
         "repeatedBlocks"    : [
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                        "Title"     : "Geo",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
                           "Link"      : "/iogstudy"
                       },
                       {
-                        "Title"     : "Geology",
+                        "Title"     : "Geo",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
                           "Link"      : "/iogimplement"
                       },
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                        "Title"     : "Geo",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
                           "Link"      : "/iogtrain"
                       },
                       {
-                        "Title"     : "Geology",
+                        "Title"     : "Geo",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
@@ -89,7 +89,9 @@ componentDidMount(){
 
   render() {  
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate6 NOPadding">  
+
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOPadding">  
+
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maindivNews">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?

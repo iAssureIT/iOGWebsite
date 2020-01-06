@@ -8,6 +8,7 @@ import 'bootstrap/js/modal.js';
 import 'bootstrap/js/collapse.js';
 
 import swal from 'sweetalert';
+import './viewpage.css';
 
 class Viewpage extends React.Component {
 	constructor(props) {
@@ -23,7 +24,8 @@ class Viewpage extends React.Component {
 	   		listOfBlocks:false,
 	   		urlParam:"",
 	   		block_id:"",
-	   		pageData	:""
+	   		pageData	:"",
+	   		ListOfPages :""
 		}
 	}
 	getAllBlockList(){
@@ -42,9 +44,25 @@ class Viewpage extends React.Component {
 			    	console.log(error);
 			  	});
 	}
+	getListOfPages(){
+	/*/get/list*/
+	axios
+			.get('/api/pages/get/list')
+			.then((response)=>{        
+			      	this.setState({
+		      			ListOfPages:response.data
+		      		});
+				})
+		  	.catch(function (error) {
+		    // handle error
+		    	console.log(error);
+		  	});
+}
+  
 	componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			this.getAllBlockList();
+			this.getListOfPages();
 			var pageUrl = window.location.pathname;
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
@@ -149,7 +167,7 @@ class Viewpage extends React.Component {
 		// console.log("delet id ",URL);
 		var deleteValues ={
 	      "pageBlocks_id":URL
-	}
+			}
 		console.log("id delet", this.state.urlParam, deleteValues);
 		 swal({
 	          title: "Are you sure you want to delete this Page ?",
@@ -184,8 +202,9 @@ class Viewpage extends React.Component {
 
    render() {
     	// var data = this.state.ListOfBlocks;
-    	console.log("block id in render=",this.state.pageData.pageBlocks);
+    	// console.log("block id in render=",this.state.pageData.pageBlocks);
     	const listBlock = this.state.pageData.pageBlocks;
+    	// console.log("ListOfPages==>",this.state.ListOfPages);
     	// console.log("data blocks in render",data);
         return (
         		<div>	
@@ -207,13 +226,13 @@ class Viewpage extends React.Component {
 
 											var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
 											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
-												console.log("componentTemp=======in viewpage=",componentTemp);
+												// console.log("componentTemp=======in viewpage=",componentTemp);
 
 
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
 												var Block_id=result.block_id._id;
 												var block_id=result._id;
-												console.log("componentTemp",componentTemp);
+												// console.log("componentTemp",componentTemp);
 												return(
 													<Suspense fallback={<div>Loading...</div>} key={index}>
 														<i className="fa fa-trash deletbtnIcon pull-right" id={block_id} onClick={this.deleteBlocks.bind(this)}></i>
@@ -253,8 +272,36 @@ class Viewpage extends React.Component {
 															      		<CmsBlock/>
 															        </div>
 															    </div>
-															</div>  
+															</div>
+															<div className="col-lg-12">
+																<div className="col-lg-6">
+                                                				<label htmlFor="email">Block Type<span className="redFont">*</span></label>
+									                				<select name="cars" className="col-lg-12">
+																	    		<option>HomePage</option>
+                            			  								        <option>Blog</option>
+                            			  								        <option>About Us</option>
+                            			  								        <option>Services</option>
+                            			  								        <option>Contact Us</option>
+																	</select>
+																</div>
+																<div className="col-lg-6">
+                                                				<label htmlFor="email">Block On Page<span className="redFont">*</span></label>
+																	<select name="" className="col-lg-12">
+																	{ this.state.ListOfPages ?
+																		this.state.ListOfPages.map((result, index)=>{
+																			return(
+																	    		<option value="" key={index}>{result.pageTitle}</option>
+																	    		);
+																		})
+																		:
+																		""
+																	}
+
+																	</select>
+																</div>
+														</div>  
 						                				</div>
+						                				
 									                		{
 																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
 																	this.state.ListOfBlocks.map((result, index)=>{

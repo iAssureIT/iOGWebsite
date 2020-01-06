@@ -81,10 +81,52 @@ componentDidMount(){
 				      	});
 
 	}
+	deleteBlocks(event){
+		let urlParam=this.state.urlParam;
+		// console.log("this.state.urlParam  ",urlParam);
+		event.preventDefault();
+		var URL= event.target.id;
+		// console.log("delet id ",URL);
+		var deleteValues ={
+	      "pageBlocks_id":URL
+			}
+		console.log("id delet", this.state.urlParam, deleteValues);
+		 swal({
+	          title: "Are you sure you want to delete this Page ?",
+	          text: "Once deleted, you will not be able to recover this Page!",
+	          icon: "warning",
+	          buttons: true,
+	          dangerMode: true,
+	        })
+	        .then((success) => {
+	        	// console.log(success);
+	            if (success) {
+	            	axios
+				    .patch('/api/pages/patch/blocks/remove/'+this.state.urlParam,deleteValues)
+				    .then((response)=>{
+				     	// this.getListOfPages();
+				       swal("Your Page is deleted!");
+				       window.location.reload();
+				    })
+				    .catch((error)=>{
+				       console.log("error = ", error);              
+				    });  
+	            } else {
+	            swal("Your Block is safe!");
+	          }
+	        }); 
+	}
 	editbtn(){
+		if (this.state.editbtnclick == false) {
 		this.setState({
 		      		editbtnclick : true,
 		      	});
+		}
+		else{
+			this.setState({
+		      		editbtnclick : false,
+		      	});
+		}
 	}
 	backbtn(){
 		this.props.history.push("/viewpage1");/*+response.data.pageURL*/
@@ -131,8 +173,8 @@ componentDidMount(){
 									{
 										this.state.editbtnclick === true ?
 										<div>
-											<i className="fa fa-trash btnCss deletbtnIcon pull-right hideBtn" id={Block_id}></i>
-											<i className="fa fa-pencil btnCss editIcon pull-right hideBtn" id={block_id} onClick={this.editModal.bind(this)} data-toggle="modal" data-target="#myModal"></i>
+											<i className="fa fa-trash btnCss deletbtnIcon pull-right hideBtn" id={Block_id} onClick={this.deleteBlocks.bind(this)} title="Delete Block from this page"></i>
+											<i className="fa fa-pencil btnCss editIcon pull-right hideBtn" id={block_id} onClick={this.editModal.bind(this)} data-toggle="modal" data-target="#myModal" title="Edit block"></i>
 						    			</div>
 						    		:""
 						    		}

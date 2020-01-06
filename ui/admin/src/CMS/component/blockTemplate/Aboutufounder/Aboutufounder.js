@@ -62,14 +62,14 @@ componentDidMount(){
                 <div  className="backgrd_curve1 col-lg-12 col-md-12 col-sm-12 col-xs-12 head_spacing">
                   <div className="col-lg-3 col-lg-offset-1 col-md-3 col-sm-3 col-xs-3">
                       <a href="" target="_blank">
-                        <img src={this.state.blocks.fgImage} alt="" className="director_img"/></a>
+                        <img src={this.state.blocks.fgImage} alt="" className="director_img img-responsive" style={{"height":"350px","width":"100%"}}/></a>
                     </div>
                       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-1">
                         <div className="row">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                               <h2 className="para-top3 txt-size-director textcoloryellow"><b>{this.state.blocks.blockTitle}</b></h2>
-                              <h1 className="txt-size-founder lightbluetext" dangerouslySetInnerHTML={ { __html: this.state.blocks.blocksubTitle}}></h1>
-                                <p className="para_spacing text-justify pull-right foundertext" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription}}></p>                                      
+                              <h1 className="txt-size-founder lightbluetext">{this.state.blocks.blocksubTitle}</h1>
+                              <p className="para_spacing text-justify pull-right" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription}}></p>                                      
                           </div>
                         </div>
                       </div>

@@ -73,6 +73,9 @@ componentDidMount(){
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
+
+                // console.log("response in Commonservicesblock===",response);
+
                 this.setState({
                   blocks:response.data
                   });
@@ -93,7 +96,7 @@ componentDidMount(){
   
  render(){
   var plength = this.state.blocks.repeatedBlocks ? this.state.blocks.repeatedBlocks.length : 0;
-  console.log("plength....",plength);
+  // console.log("plength....",plength);
   var productlength = plength % 3;
 
     return(
@@ -116,6 +119,7 @@ componentDidMount(){
                           <div className="row"> 
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
+                                // console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
                                     var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";

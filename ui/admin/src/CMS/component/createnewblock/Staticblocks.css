@@ -8,3 +8,14 @@
 	cursor: pointer;
 	background-color: #ffa;
 }
+.m10{
+	margin: 10px;
+	overflow: hidden;
+}
+.zIndexmtop{
+	z-index: 1;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	
+}
