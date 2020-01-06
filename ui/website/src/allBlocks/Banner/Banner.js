@@ -66,7 +66,7 @@ onHover(event)
     }
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-wrapper NOpadding ">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner ">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner hidden-sm hidden-xs ">
           <div className="row">
             <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -205,6 +205,7 @@ onHover(event)
             </div>
           </div>
         </div>
+        <div className="resbanner hidden-lg hidden-md"></div>
       </div>
     );  
   }

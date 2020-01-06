@@ -799,4 +799,10 @@ height: 90px;
   }
   .result_hover {
     border: 1px solid #fff;
+  }
+  .resbanner{
+    background-image: url("/images/iogbanner.png");
+    background-size: 100% 100%;
+    height: 250px;
+    background-repeat: no-repeat;
   }  

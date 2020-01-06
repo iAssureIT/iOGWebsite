@@ -20,6 +20,16 @@ export default class Header extends Component {
       }
     });
   }
+  responsivemenubar(event){
+  $(document).ready(function(){
+        $(".dataonHover1").hide();
+
+    $(".oilsign8").hover(function(){
+        $(".dataonHover1").show();
+
+    });
+  });
+} 
   modalClickEvent(){
     console.log("click event")
     $('#modalId').addClass('in');
@@ -139,8 +149,9 @@ export default class Header extends Component {
                             <a href="/masterpage/distributionplpage">Distribution Planning</a>
                           {/*  <a href="/retailautomation">Retail Automation</a><br/>*/}
                             <a href="/masterpage/retailautopage">Retail Automation</a><br/>
-                             <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
-                             <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
+
+                          <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
+                            <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
                             <a href="/masterpage/applicationsupportpage">Application Support</a>
                             <a href="/masterpage/applicationintegrationpage">Application Integration</a>
                             <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
@@ -148,7 +159,7 @@ export default class Header extends Component {
                            <div class=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
                                           {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
-                            <a href="/NewProductionaccountingpage">Production Accounting</a>
+                            <a href="/masterpage/productionaccpage">Production Accounting</a>
                            {/* <a href="/datahistorian">Realtime Data Historian</a>*/}
                             <a href="/masterpage/datahistoriapage">Realtime Data Historian</a>
                             {/*<a href="/corporatedashboard">Corporate Dashboard & Analytics</a>*/}
@@ -157,7 +168,8 @@ export default class Header extends Component {
                             <a href="/masterpage/operationlogbookpage">Operation Logbook</a>
                             {/*<a href="/oilmovement">Oil Movement Management</a>*/}
                             <a href="/masterpage/oilmovementpage">Oil Movement Management</a>
-                             <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
+
+                          <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
                              {/*  <a href="/occupationhealth">Occupational Health Management</a>*/}
                             <a href="/masterpage/occuhealthpage">Occupational Health Management</a>
                         {/*    <a href="/processsafty">Process Safety Management</a>*/}
@@ -256,7 +268,7 @@ export default class Header extends Component {
                           <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
                             <ul className="nav navbar-nav navbar-right customUl width50">
                               <li className="nav-item dropdown dropdownresponsive">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   HOME <span className="caret"></span>
                                 </a>                    
                                </li>
@@ -282,30 +294,113 @@ export default class Header extends Component {
                                             <a href="/iogstudy">iOGStudy</a>
                                           </ul>
                                         </li>
+
+
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                             EXPERTISE<span className="caret"></span>
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             PLANNING & SCHEDULING<span className="caret"></span>
                                           </a>
-                                         {/*<h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>*/}
-                                          {/*<a href="/refineryplanning">Production Planning </a>*/}
-                                          <a href="/masterpage/prodplanningpage">Production Planning </a>
-                                         {/* <a href="/refineryschedule">Production Schedule</a>*/}
-                                          <a href="/masterpage/refineryschedulingpage">Production Schedule</a>
-                                         {/* <a href="/backcasting">Back Casting / Retro-Analysis</a>*/}
-                                          <a href="/masterpage/retroanalysispage">Back Casting / Retro-Analysis</a>
-                                          {/*<a href="/lputility">LP Utilities</a>*/}
-                                          <a href="/masterpage/lputilities">LP Utilities</a>
-                                         {/* <a href="/lpconfig">LP Configuration studies</a>*/}
-                                          <a href="/masterpage/lpconfigurationpage">LP Configuration studies</a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                              <a href="/masterpage/demandmanagement">Demand Management</a>
+                                              <a href="/masterpage/invetorymgntpage">Inventory Management</a>
+                                              <a href="/masterpage/distributionplpage">Distribution Planning</a>
+                                              <a href="/masterpage/retailautopage">Retail Automation</a><br/>
+                                          </ul>
                                         </li>
+
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            SUPPLY & DISTRIBUTION<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                              <a href="/masterpage/prodplanningpage">Production Planning </a>
+                                              <a href="/masterpage/refineryschedulingpage">Production Schedule</a>
+                                              <a href="/masterpage/retroanalysispage">Back Casting / Retro-Analysis</a>
+                                              <a href="/masterpage/lputilities">LP Utilities</a>
+                                              <a href="/masterpage/lpconfigurationpage">LP Configuration studies</a>
+                                          </ul>
+                                        </li>
+
+                                         <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           DIGITAL SERVICES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                              <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
+                                              <a href="/masterpage/applicationsupportpage">Application Support</a>
+                                              <a href="/masterpage/applicationintegrationpage">Application Integration</a>
+                                              <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
+                                          </ul>
+                                        </li>
+
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           MANUFACTURING EXEC SYSTEM<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a href="/masterpage/productionaccpage">Production Accounting</a>
+                                            <a href="/masterpage/datahistoriapage">Realtime Data Historian</a>
+                                            <a href="/masterpage/corpdashboardspage">Corporate Dashboard & Analytics</a>
+                                            <a href="/masterpage/operationlogbookpage">Operation Logbook</a>
+                                            <a href="/masterpage/oilmovementpage">Oil Movement Management</a>                                         
+                                         </ul>
+                                        </li>
+
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           HEALTH SAFETY & ENVIRONMENT<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a href="/masterpage/occuhealthpage">Occupational Health Management</a>
+                                            <a href="/masterpage/processsafetypage">Process Safety Management</a>
+                                            <a href="/masterpage/envmanagementpage">Environment Management</a>
+                                          </ul>
+                                        </li>
+
+                                         <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           SIMULATION & MODELING <span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a href="/masterpage/steadystatepage" className="red">Steady State Simulation</a>
+                                            <a href="/masterpage/dynamicpage">Dynamic Simulation</a>
+                                            <a href="/masterpage/operatortrainingpage">Operator Training</a>
+                                          </ul>
+                                        </li>
+
+                                         <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           OTHER SERVICES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                           <a href="/masterpage/apcpage">APC Services</a>
+                                           <a href="/masterpage/etrmpage">ETRM</a>
+                                          </ul>
+                                        </li>
+
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           ENERGY MANAGEMENT<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a href="/masterpage/energyoptpage">Utility Network Optimization</a>
+                                            <a href="/masterpage/equipmonitoringpage">Equipment Monitoring</a>
+                                            <a href="/masterpage/energyaccpage">Energy Accounting</a>
+                                          </ul>
+                                        </li>
+
+                                       
                                         <li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              INDUSTRIES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
-                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
-                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                            <a href="/masterpage/refinerypage">Refinery</a>
+                                            <a href="/masterpage/petrochemicalpage">Petrochemicals</a>
+                                            <a href="/masterpage/chemicalspage">Chemicals</a>
+                                            <a href="/masterpage/lngpage">LNG</a>
+                                            <a href="/masterpage/gasprocessingpage">Gas Precessing</a>
+                                            <a href="/masterpage/oilgaseppage">oil & Gas E & P</a>
                                           
                                           </ul>
                                         </li>
