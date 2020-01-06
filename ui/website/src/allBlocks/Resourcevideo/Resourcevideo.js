@@ -33,11 +33,7 @@ export default class Resourcevideo extends Component {
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis",
                  link           : 'https://www.youtube.com/watch?v=Ra7HPPaql5s', 
-            }
-        ]
-    }
-  VideoData1(){
-        return [
+            },
             {
                 downstreamTitle : "Supply Chain Management",
                 downstreamimg   : "/images/Illustration_2.png",
@@ -49,8 +45,19 @@ export default class Resourcevideo extends Component {
                 downstreamTitle : "Manufacturing Execution Systems",
                 downstreamimg   : "/images/Illustration_3.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis",
-                 link           : 'https://www.youtube.com/channel/UCDMmcwbVtH32u6RC31CseDw?app=desktop', 
+                 link           : 'https://www.youtube.com/watch?v=u6H1M6C8nJM', 
             },
+            {
+                downstreamTitle : "Manufacturing Execution Systems",
+                downstreamimg   : "/images/Illustration_3.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis",
+                 link           : 'https://www.youtube.com/watch?v=srwlxhbyB3s', 
+            },
+        ]
+    }
+  VideoData1(){
+        return [
+            
            
         ]
     }
@@ -74,28 +81,6 @@ export default class Resourcevideo extends Component {
                       this.VideoData().map((data, index)=>{
                       return (
                         <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
-                        <div className="videocard1">
-                            <div className="introvideo">      
-                             {/* <video width="320" height="240" controls>
-                                <source src={data.link} />
-                              </video>*/}
-                               <ReactPlayer url={data.link} width='324px' height='211px' controls loop  />
-                            </div>          
-                          <div className="go-corner" href="#">
-                            <div className="go-arrow">
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                         );
-                      })
-                    }   
-                 </div>
-                  <div  className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2">
-                     {
-                      this.VideoData1().map((data, index)=>{
-                      return (
-                        <div key={index} className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt100">
                         <div className="videocard1">
                             <div className="introvideo">      
                              {/* <video width="320" height="240" controls>

@@ -170,7 +170,7 @@ export default class Header extends Component {
                             {/*<a href="/oilmovement">Oil Movement Management</a>*/}
                             <a href="/masterpage/oilmovementpage">Oil Movement Management</a>
 
-                          <h5 className="columnhead"><a href="/energy"className="columnhead">Health Safety & Environment</a></h5>
+                          <h5 className="columnhead"><a href="/Healthsafty"className="columnhead">Health Safety & Environment</a></h5>
                              {/*  <a href="/occupationhealth">Occupational Health Management</a>*/}
                             <a href="/masterpage/occuhealthpage">Occupational Health Management</a>
                         {/*    <a href="/processsafty">Process Safety Management</a>*/}
@@ -197,8 +197,10 @@ export default class Header extends Component {
                            <a href="/masterpage/energyoptpage">Utility Network Optimization</a>
                             <a href="/masterpage/equipmonitoringpage">Equipment Monitoring</a>
                             <a href="/masterpage/energyaccpage">Energy Accounting</a>
-                            <h5 className="columnhead"><a href="/energy"className="columnhead dataneeded">Asset Management</a> </h5>
-                            <a href="/assetCriticalAnalysis">Asset Criticality Analysis</a>
+                            <h5 className="columnhead"><a href="/assetmanagement"className="columnhead ">Asset Management</a> </h5>
+                            <a href="/masterpage/aseet-criticality">Asset Criticality Analysis </a>
+                            <a href="/masterpage/asset-lifecycle">Asset LifeCycle </a>
+                            <a href="/masterpage/inspection-&-calibration">Inspection & Calibration</a>
                             {/*<a href="/riskBasedInspection">Asset Lifecycle Management</a>
                             <a href="/assetStrategyMgmt">Asset Strategy Management</a>*/}
                            

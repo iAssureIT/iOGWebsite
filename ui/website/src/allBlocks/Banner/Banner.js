@@ -19,6 +19,16 @@ onHoverOut(event){
     });
   });
 } 
+onHoverOut7(event){
+  $(document).ready(function(){
+        $(".dataonHover").hide();
+
+    $(".oilsign7").hover(function(){
+        $(".dataonHover").show();
+
+    });
+  });
+} 
 onHoverOut1(event){
   $(document).ready(function(){
         $(".dataonHover").hide();
@@ -145,17 +155,17 @@ onHover(event)
                   </div>*/}
                   <img alt="" src="/images/oilsign.png"/>
                 </figure>
-                <figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut1={this.onHoverOut1.bind(this)}>
+                <figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut7.bind(this)}>
                   <img alt="" src="/images/oilsign.png"/>
                   </figure>
                   <div className="dataonHover">
-                      <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
-                      heating, gas and light fuel formation and heavy oil
-                       sedimentation and the entire process of refining takes place here<br/>
+                   <div className="arrow-right"></div>
+                      <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications.  <br/>
                        <span className="Hoverreadmore">Read More</span>
                        </p>
                   </div>
-                <figure className="oilsign8" onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut.bind(this)}>
+                <figure className="oilsign8" onMouseOver={this.onHover.bind(this)}
+                             onMouseOut={this.onHoverOut.bind(this)}>
                     <img alt="" src="/images/oilsign.png"/>   
                   </figure> 
                    <div className="dataonHover1">   

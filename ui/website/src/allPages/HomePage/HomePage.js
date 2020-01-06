@@ -20,7 +20,7 @@ export default class HomePage extends Component {
         <Commonstream />
         <Upstream />
         <Blogs />
-      </div>
+     </div>
     );  
   }
 }

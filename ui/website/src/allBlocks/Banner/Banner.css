@@ -620,7 +620,7 @@ height: 90px;
   display: block;
   cursor: pointer;
 }
-.oilsign7:hover .triangle-down211_oil7 {
+.oilsign7:hover .dataonHover  {
   display: block;
   cursor: pointer;
 }
@@ -684,7 +684,7 @@ height: 90px;
     }
     .triangle-down1_oil7 {
       position: absolute;
-    /* display: none; */
+     display: none; 
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
@@ -805,4 +805,14 @@ height: 90px;
     background-size: 100% 100%;
     height: 250px;
     background-repeat: no-repeat;
-  }  
+  } 
+  .arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  left: 233px;
+  top: 42px;
+  position: absolute;
+  border-left: 15px solid #ffffff;
+} 
