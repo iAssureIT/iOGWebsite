@@ -24,7 +24,7 @@ componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -50,7 +50,7 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                  <h4 className="lightbluetext para-top new-para-top">{this.state.blocks.blockTitle}</h4>
                   <div dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></div>   
                 </div>
               </div>

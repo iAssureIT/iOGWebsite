@@ -126,7 +126,7 @@ export default class Header extends Component {
                           <div class="dropdown-content expertcontrnt">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                               <div class=" column columnmenu columnmenu1">
-                                <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
+                                <h5 className="columnhead"><a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
                                 {/*<a href="/refineryplanning">Production Planning </a>*/}
                                 <a href="/masterpage/prodplanningpage">Production Planning </a>
                                {/* <a href="/refineryschedule">Production Schedule</a>*/}
@@ -151,14 +151,14 @@ export default class Header extends Component {
                           {/*  <a href="/retailautomation">Retail Automation</a><br/>*/}
                             <a href="/masterpage/retailautopage">Retail Automation</a><br/>
 
-                          <h5 className="columnhead"><a href="/digitalservices"className="columnhead">Digital Services</a></h5>
+                          <h5 className="columnhead"><a href="/masterpage/digital-services"className="columnhead">Digital Services</a></h5>
                             <a href="/masterpage/digitaltransformpage">Digital Transformation</a>
                             <a href="/masterpage/applicationsupportpage">Application Support</a>
                             <a href="/masterpage/applicationintegrationpage">Application Integration</a>
                             <a href="/masterpage/industryv4page">Visualization & Dashboards</a>
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
-                            <h5 className="columnhead"><a href="/manufacturesystem" className="columnhead">Manufacturing Exec System</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Exec System</a></h5>
                                           {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
                             <a href="/masterpage/productionaccpage">Production Accounting</a>
                            {/* <a href="/datahistorian">Realtime Data Historian</a>*/}
@@ -179,7 +179,7 @@ export default class Header extends Component {
                             <a href="/masterpage/envmanagementpage">Environment Management</a>
                           </div>
                           <div class=" column columnmenu columnmenu3 columnmenu2">
-                            <h5 className="columnhead"><a href="/simulation" className="columnhead">Simulation & Modeling</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/simulation-modelling" className="columnhead">Simulation & Modeling</a></h5>
                            {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
                             <a href="/masterpage/steadystatepage" className="red">Steady State Simulation</a>
                            {/* <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>*/}
@@ -193,13 +193,14 @@ export default class Header extends Component {
                             <a href="/masterpage/etrmpage">ETRM</a>
                           </div>
                           <div class="column columnmenu">
-                            <h5 className="columnhead"><a href="/energy"className="columnhead">Energy Management</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/energy-management"className="columnhead">Energy Management</a></h5>
                            <a href="/masterpage/energyoptpage">Utility Network Optimization</a>
                             <a href="/masterpage/equipmonitoringpage">Equipment Monitoring</a>
                             <a href="/masterpage/energyaccpage">Energy Accounting</a>
-                            <h5 className="columnhead"><a href="/assetmanagement"className="columnhead ">Asset Management</a> </h5>
+                            <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Management</a> </h5>
                             <a href="/masterpage/aseet-criticality">Asset Criticality Analysis </a>
                             <a href="/masterpage/asset-lifecycle">Asset LifeCycle </a>
+                            <a href="/masterpage/asset-strategy-management">Asset Strategy </a>
                             <a href="/masterpage/inspection-&-calibration">Inspection & Calibration</a>
                             {/*<a href="/riskBasedInspection">Asset Lifecycle Management</a>
                             <a href="/assetStrategyMgmt">Asset Strategy Management</a>*/}

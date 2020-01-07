@@ -282,8 +282,8 @@ class Contactpage extends Component{
                           <div className="row">
                               <div className="contactpageform">
                                 <div className="col-lg-12">
-                                    <div className="col-lg-2 col-lg-offset-5">
-                                      <div className="line1 col-lg-1 col-lg-offset-2"></div>
+                                    <div className="col-lg-2 col-lg-offset-4">
+                                      <div className="line1 col-lg-1"></div>
                                     </div>                    
                                 </div> 
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">

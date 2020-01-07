@@ -51,7 +51,7 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
                  <img src={this.state.blocks.fgImage} alt="" className="third_img" />

@@ -333,7 +333,7 @@ uploadBlogImage(event){
          };
      if (this.validateForm() && this.validateFormReq()) {
       axios
-        .post('/api/blogs/post',formValues)
+        .post('http://iogapi.iassureit.com/api/blogs/post',formValues)
         .then((res)=>{
           console.log('res', res.data);
                     swal("Thank you .Your Blog Created.");

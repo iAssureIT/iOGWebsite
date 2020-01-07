@@ -4,87 +4,92 @@ import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
 
 // import $                  from 'jquery';
-import './ConsultDownstream.css';
+import './ConsultingServices.css';
 
 
-export default class ConsultDownstream extends Component {
 
-  constructor(props) {
+export default class ConsultingServices extends Component {
+ constructor(props) {
     super(props);
     this.state = {
-      "blocks":{
-        "blockTitle"         : "Our Consulting Service differentiators",
-        "blockSubTitle"      : "",
-        "blockDescription"   : "",
-        "blockComponentName" : "",
-        "bgImage"            : "/images/consultdown.png",
-        "blockType"          : "simple",
+      blocks:{
+        "blockTitle"      : "Our Consulting Service differentiators",
+        "blockSubTitle"   : "",
+        "blockDescription"  : "",
+        "blockComponentName"  : "",
+        "blockType"       : "simple",
         "repeatedBlocks"    : [
                       {
-                         "Title"         : "BUSINESS PROCESS MAPPING",
+                        "Title"         : "Strong domain",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Design Efficient FEED that strikes the right balance of IT investments and the business",
+                          "Description" : "Strong domain knowledge of refining, petrochemicals & other process industries",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "FEED FOR INTEGRATED",
+                        "Title"         : "Technical Expertise",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+                          "Description" : "World-class technical expertise in all the leading advanced software solutions in the industries",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "DOWNSTREAM OIL & EXPERT",
+                        "Title"         : "Domain Experts",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Assessment of the business requirements, analyze and enhance the Downstream",
+                          "Description" : "The unparalleled combination ofdomain-experts & subjectmatter experts, that are qualified to meet our clients’ needs and expectations.",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                      
                       {
-                        "Title"         : "OPTIMIZE THE OF EXISTING",
+                        "Title"         : "Extensive",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Finding simplification opportunities to reduce the cost of application support",
+                          "Description" : "Extensive experience on software applications",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "BUSINESS CASE",
+                        "Title"         : "Implementation",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Device structured ap-proach to transition and manage applications",
+                          "Description" : "End-to-end Implementation and Integration skills",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       
                       {
-                        "Title"         : "REVIEW OF AREAS NEEDING",
+                        "Title"         : "Ability",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
+                          "Description" : "Ability to review problems independently and bring fresh perspectives to clients.",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                          "Title"         : "ESTABLISHING INDUSTRY",
+                        "Title"         : "Consultative",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Ensure process streamlining & standardization and efficiency improvements",
+                          "Description" : "An open mind and consultative approach to evolving best solutions that meet client requirements",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                          "Title"         : "ASSESSMENT OF READINESS",
+                        "Title"         : "Proprietary Analysis",
                           "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
+                          "Description" : "Proprietary analysis,structured consulting and decision-making approachess",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
-                     
+                      {
+                        "Title"         : "Value creation",
+                          "SubTitle"    : "iOG understands the various paradigms",
+                          "Description" : "Focus on value creation and ensuring a good return on investments",
+                          "Image"     : "/images/consultsrvice.png",
+                          "Link"      : "/xyz"
+                      },
                       
                       
                       
 
         ],
-        
+        "bgImage"       : "",
         "bgVideo"       : "",
         "fgImage"       : "",
         "fgVideo"       : ""
@@ -99,7 +104,7 @@ componentDidMount(){
 // console.log("==>",this.props.block_id);
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
@@ -119,38 +124,35 @@ componentDidMount(){
                 block_id:this.props.block_id
               });
 }
-
-
   render() {  
-    console.log('kghjgjgj',this.state.blocks.bgImage);
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
-        <div class="Bubble">
-         <div class="Main_Cards__Bubble1 bub11">
-       </div>
-         <div class="Main_Cards__Bubble1 bub21">
-        </div>
-       </div>
-       <div>
-          <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
-          <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
-        </div>  
-        <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
-         { 
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate3 NOPadding">
+         <div>
+            <h1 className="text-center"><b>{this.state.blocks.blockTitle}</b></h1>
+         </div>
+          <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
             this.state.blocks.repeatedBlocks.map((result, index)=>{
+              console.log("repeatedBlocks from consultsrvice=",result);
             return(
-              <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 " id={"consultdown_data"+index}>
+              <div>
+               <div className=" col-lg-3 col-md-3 col-sm-12 col-xs-12 BT3_dataDiv">
+               <div className="col-lg-12 col-md-12">
+                <div className="BT4_imgBack col-lg-offset-5"></div>
+                 <img src={result.Image}className="BT3_img"/>
+                </div>
                 <div className="col-lg-12 col-md-12">
-                 <h3 id={"downimg_text"+index}>{result.Title}</h3>
-                 <p id="downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                 <h4 className="BT3_subhead text-center">{result.Title}</h4>
+                 <p className="BT4_txt"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
-              );
-          })
+             </div>
+             );
+            })
             :
             null
-        }
+          }
         </div>
        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     );  
