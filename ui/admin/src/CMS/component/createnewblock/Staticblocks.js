@@ -26,6 +26,7 @@ import IogconsultTxtRight            from "../blockTemplate/IogconsultTxtRight/I
 import ConsultOverview               from "../blockTemplate/ConsultOverview/ConsultOverview.js";
 import ImgBlock                      from "../blockTemplate/ImgBlock/ImgBlock.js";
 import Maincomponent            	 from "../blockTemplate/Maincomponent/Maincomponent.js";
+import Careerimpact            	 	 from "../blockTemplate/Careerimpact/Careerimpact.js";
 
 
 
@@ -393,6 +394,22 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<Maincomponent />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="Careerimpact" 
+							data-blockTitle   		="blockTitle" 
+		                	data-blockDescription   ="blockDescription" 
+							data-fgImage   			="fgImage" 
+							
+							data-rBlocksTitle       ="rBlocksTitle" 
+		                	data-rBlocksSubTitle    ="rBlocksSubTitle" 
+
+							
+							data-RepetedBlock 		="RepetedBlock" 
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Careerimpact />
 				</section>
 				
 			
