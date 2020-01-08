@@ -4,19 +4,19 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import './IogconsultTxtRight.css';
+import './ConsultOverview.css';
 
-export default class IogconsultTxtRight extends Component {
+export default class ConsultOverview extends Component {
 
  constructor(props) {
     super(props);
     this.state = {
       blocks: {
-        "blockComponentName"  : "IogconsultTxtRight",
+        "blockComponentName"  : "ConsultOverview",
         "blockType"           : "simple",
-        "blockTitle"          : "Our Approach",
-        "blockDescription"    : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
-        "fgImage"             : "/images/consultrightimg.png",
+        "blockTitle"            : "Our Approach",
+        "blockDescription"      : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
+     
       },
       blockID:"",
       block_id:""
@@ -28,7 +28,7 @@ componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -54,16 +54,12 @@ componentDidMount(){
     render(){
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            
-                  <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_innerBlock">
-                    <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
-                     <img src={this.state.blocks.fgImage} alt="" className="BT3_iogconsult col-lg-offset-2" />
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BT3_text1">
-                    <h1><b>{this.state.blocks.blockTitle}</b></h1>
-                      <p className="BT3_text text-justify "dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
-                    </div>
-                  </div>
+              <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_innerBlock">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_text1">
+                <h1><b>{this.state.blocks.blockTitle}</b></h1>
+                  <p className="BT3_text text-justify "dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                </div>
+              </div>
             </div>   
         );
     }

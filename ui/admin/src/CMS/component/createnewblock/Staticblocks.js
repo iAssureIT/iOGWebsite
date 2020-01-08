@@ -22,6 +22,9 @@ import ExpertiseServicesOffered      from "../blockTemplate/ExpertiseServicesOff
 import ChallengesTemp                from "../blockTemplate/ChallengesTemp/ChallengesTemp.js";
 import ConsultDownstream             from "../blockTemplate/ConsultDownstream/ConsultDownstream.js";
 import ConsultingServices            from "../blockTemplate/ConsultingServices/ConsultingServices.js";
+import IogconsultTxtRight            from "../blockTemplate/IogconsultTxtRight/IogconsultTxtRight.js";
+import ConsultOverview               from "../blockTemplate/ConsultOverview/ConsultOverview.js";
+import ImgBlock                      from "../blockTemplate/ImgBlock/ImgBlock.js";
 
 
 
@@ -170,6 +173,34 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<Aboutustextright />
+				</section>
+
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="IogconsultTxtRight" 
+	                        data-fgImage="fgImage" 
+	                        data-blockTitle="blockTitle"  
+		                	data-blockDescription="blockDescription" 
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<IogconsultTxtRight />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="ConsultOverview" 
+	                        data-blockTitle="blockTitle"  
+		                	data-blockDescription="blockDescription" 
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ConsultOverview />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="ImgBlock" 
+	                        data-fgImage="fgImage"  
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<ImgBlock />
 				</section>
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 		            <button id="Aboutusvision" 

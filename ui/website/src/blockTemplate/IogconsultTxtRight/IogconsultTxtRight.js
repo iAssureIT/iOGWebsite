@@ -14,9 +14,9 @@ export default class IogconsultTxtRight extends Component {
       blocks: {
         "blockComponentName"  : "IogconsultTxtRight",
         "blockType"           : "simple",
-        "blockTitle"          : "Our Approach",
-        "blockDescription"    : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
-        "fgImage"             : "/images/consultrightimg.png",
+        blockTitle : "Our Approach",
+        blockDescription : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
+        fgImage: "/images/consultrightimg.png",
       },
       blockID:"",
       block_id:""
@@ -53,7 +53,7 @@ componentDidMount(){
 
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
             
                   <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_innerBlock">
                     <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">

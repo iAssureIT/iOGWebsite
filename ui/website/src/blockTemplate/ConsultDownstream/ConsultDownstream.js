@@ -124,7 +124,7 @@ componentDidMount(){
   render() {  
     console.log('kghjgjgj',this.state.blocks.bgImage);
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
         <div class="Bubble">
          <div class="Main_Cards__Bubble1 bub11">
        </div>
@@ -133,7 +133,7 @@ componentDidMount(){
        </div>
        <div>
           <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
-          <p className="downimg_p_txt">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
+          <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt ">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
         </div>  
         <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
          { 
@@ -143,7 +143,7 @@ componentDidMount(){
               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 " id={"consultdown_data"+index}>
                 <div className="col-lg-12 col-md-12">
                  <h3 id={"downimg_text"+index}>{result.Title}</h3>
-                 <p id="downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                 <p id=" downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
               );
