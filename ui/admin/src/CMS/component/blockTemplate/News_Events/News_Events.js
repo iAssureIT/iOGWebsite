@@ -67,6 +67,7 @@ componentDidMount(){
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
+                console.log("response=-=-=-=->",response.data);
                 this.setState({
                   blocks:response.data
                   });

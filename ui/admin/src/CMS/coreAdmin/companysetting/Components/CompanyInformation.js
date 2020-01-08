@@ -72,7 +72,7 @@ class CompanyInformation extends Component{
         // console.log("s3_response.............",response);
         const config = {
                             bucketName      : response.data.bucket,
-                            dirName         : "wealthyvia",
+                            dirName         : "iOG",
                             region          : response.data.region,
                             accessKeyId     : response.data.key,
                             secretAccessKey : response.data.secret,

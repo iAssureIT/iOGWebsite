@@ -20,14 +20,14 @@ export default class ContactUsForm extends React.Component {
     constructor(props) {
     super(props);
         this.state={
-          "name"      : "",
-          "email"   : "",
-          "subject"   : "",
-          "message"     : "",
-          "formerrors" :{
-              clientName  : " ",
-              clientEmail : " ",       
-            },
+          "name"          : "",
+          "email"         : "",
+          "subject"       : "",
+          "message"       : "",
+          "formerrors"    :{
+                            clientName  : " ",
+                            clientEmail : " ",       
+                          },
           };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -59,7 +59,7 @@ export default class ContactUsForm extends React.Component {
     Submit(event){
         event.preventDefault();
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "";
+        var adminEmail = "ashish.chavan@iassureit.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -75,7 +75,7 @@ export default class ContactUsForm extends React.Component {
         };
         console.log("notification",formValues1);
         axios
-        .post('/send-email',formValues1)
+        .post('http://iogapi.iassureit.com/send-email',formValues1)
         .then((res)=>{
             if(res.status === 200){
                 swal("Thank you for contacting us. We will get back to you shortly.")
@@ -88,7 +88,7 @@ export default class ContactUsForm extends React.Component {
         const formValues2 = {
             "email"         : adminEmail ,
             "subject"       : "New query/feedback arrived from Website!",
-            "message"          : "",
+            "text"          : "",
             "mail"          : 'Dear Admin, <br/>'+
                               "Following new query/feedback came from website! <br/> <br/> " +
                               "============================  <br/> <br/> " +
@@ -103,7 +103,7 @@ export default class ContactUsForm extends React.Component {
         console.log("notification",formValues2);
      
         axios
-        .post('/send-email',formValues2)
+        .post('http://iogapi.iassureit.com/send-email',formValues2)
         .then((res)=>{
             if(res.status === 200){
                 console.log("Mail Sent TO ADMIN successfully!")

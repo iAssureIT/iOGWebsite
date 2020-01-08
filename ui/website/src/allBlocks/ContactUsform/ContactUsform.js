@@ -5,14 +5,9 @@ import $                      from 'jquery';
 import Select                 from 'react-select-nested';
 import Map from '../../allBlocks/Map/Map.js';
 import  '../../allPages/ContactPage/Contactpage.css';
-
-
-
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
-
-
 // import './Contactpage.css';
 class ContactUsform extends Component{
   constructor(){
@@ -63,7 +58,7 @@ class ContactUsform extends Component{
 
   handleChangeSelect(itemValue){
 
-    console.log("selectValue",itemValue)
+    // console.log("selectValue",itemValue)
     var itemLabel = itemValue.label;
     this.setState({
        "enquiry" :  itemLabel,
@@ -98,6 +93,7 @@ class ContactUsform extends Component{
       "enquiry"          : this.state.enquiry,
      
     }
+    // console.log("dataArray==>",dataArray);
       let fields = {};
       fields["userName"]      = "";
       fields["companyName"]   = "";
@@ -109,6 +105,60 @@ class ContactUsform extends Component{
       fields["subject"]       = "";
 /*      fields["enquiry"]       = "";
 */
+        // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
+        var adminEmail = "ashish.chavan@iassureit.com";
+        const formValues1 = {
+            "email"         : this.state.email ,
+            "subject"       : "Your Query/Feedback is sent successfully to www..com!",
+            "message"       : "",
+            "mail"          : 'Dear' + this.state.name + ', <br/><br/>'+
+                             
+                              "<b>Your Email: </b>"  + this.state.email + '<br/><br/>'+
+                              "Your following message has been successfully delivered to the admin! We will get back to you shortly. <br/> <br/> " +
+                              "===============================  <br/> <br/> " +
+                              "<pre> " + this.state.message+ "</pre>" +
+                              " <br/> <br/> =============================== " +
+                              "<br/><br/> Thank You, <br/> Support Team, <br/> www..com " ,
+        };
+        // console.log("notification",formValues1);
+        axios
+        .post('http://iogapi.iassureit.com/send-email',formValues1)
+        .then((res)=>{
+            if(res.status === 200){
+                swal("Thank you for contacting us. We will get back to you shortly.")
+                }
+        })
+        .catch((error)=>{
+          console.log("error = ", error);
+         
+        })
+        const formValues2 = {
+            "email"         : adminEmail ,
+            "subject"       : "New query/feedback arrived from Website!",
+            "message"          : "",
+            "mail"          : 'Dear Admin, <br/>'+
+                              "Following new query/feedback came from website! <br/> <br/> " +
+                              "============================  <br/> <br/> " +
+                              "<b>Client Name: </b>"   + this.state.name + '<br/>'+
+                             
+                              "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
+
+                              "<pre> " + this.state.message + "</pre>" +
+                              "<br/><br/> ============================ " +
+                              "<br/><br/> This is a system generated email! " ,
+        };
+        // console.log("notification",formValues2);
+     
+        axios
+        .post('http://iogapi.iassureit.com/send-email',formValues2)
+        .then((res)=>{
+            if(res.status === 200){
+                console.log("Mail Sent TO ADMIN successfully!")
+            }
+        })
+        .catch((error)=>{
+          console.log("error = ", error);
+        });
       swal({
           title : "Congratulation....!",
           text  : "Your response submitted sucessfully"
@@ -163,10 +213,10 @@ class ContactUsform extends Component{
         formIsValid = false;
         errors["contactNumber"] = "This field is required.";
       }
-     if (!fields["enquiry"]) {
+     /*if (!fields["enquiry"]) {
         formIsValid = false;
         errors["enquiry"] = "This field is required.";
-      }         
+      }   */      
       this.setState({
         errors: errors
       });

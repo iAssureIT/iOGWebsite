@@ -32,7 +32,7 @@ class Contactpage extends Component{
      }
 
   }
-    handleChange(event){
+/*    handleChange(event){
     event.preventDefault();
     this.setState({
       "userName"         : this.refs.userName.value,
@@ -60,8 +60,8 @@ class Contactpage extends Component{
       });
     }
   }
-
-  handleChangeSelect(itemValue){
+*/
+/*  handleChangeSelect(itemValue){
 
     console.log("selectValue",itemValue)
     var itemLabel = itemValue.label;
@@ -70,19 +70,19 @@ class Contactpage extends Component{
     });
     
   }
-
+*/
   
   componentDidMount() {
-    $(document).ready(function(){
+/*    $(document).ready(function(){
     $('.dropdown-submenu a.test').on("click", function(e){
       $(this).next('ul').toggle();
       e.stopPropagation();
       e.preventDefault();
     });
-  });
+  });*/
 
   }
-  Submit(event){
+/*  Submit(event){
     event.preventDefault();
     if (this.validateForm() && this.validateFormReq()) {
      
@@ -107,8 +107,8 @@ class Contactpage extends Component{
       fields["message"]       = "";
       fields["contactNumber"] = "";
       fields["subject"]       = "";
-/*      fields["enquiry"]       = "";
-*/
+   /*   fields["enquiry"]       = "";
+
       swal({
           title : "Congratulation....!",
           text  : "Your response submitted sucessfully"
@@ -126,8 +126,8 @@ class Contactpage extends Component{
         "fields"           : fields
       });
     }
-  }
-  validateFormReq() {
+  }*/
+/*  validateFormReq() {
     let fields = this.state.fields;
     let errors = {};
     let formIsValid = true;
@@ -163,10 +163,10 @@ class Contactpage extends Component{
         formIsValid = false;
         errors["contactNumber"] = "This field is required.";
       }
-     if (!fields["enquiry"]) {
-        formIsValid = false;
-        errors["enquiry"] = "This field is required.";
-      }         
+     // if (!fields["enquiry"]) {
+     //    formIsValid = false;
+     //    errors["enquiry"] = "This field is required.";
+     //  }         
       this.setState({
         errors: errors
       });
@@ -217,7 +217,7 @@ class Contactpage extends Component{
     else{
       return true;
     }
-  }
+  }*/
   render(){
     const fruit = [
           {

@@ -25,6 +25,7 @@ import ConsultingServices            from "../blockTemplate/ConsultingServices/C
 import IogconsultTxtRight            from "../blockTemplate/IogconsultTxtRight/IogconsultTxtRight.js";
 import ConsultOverview               from "../blockTemplate/ConsultOverview/ConsultOverview.js";
 import ImgBlock                      from "../blockTemplate/ImgBlock/ImgBlock.js";
+import Maincomponent            	 from "../blockTemplate/Maincomponent/Maincomponent.js";
 
 
 
@@ -374,6 +375,20 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<ConsultDownstream />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="Maincomponent" 
+							data-blockTitle   		="blockTitle" 
+		                	data-blockDescription   ="blockDescription" 
+							data-fgImage   			="fgImage" 
+							data-rBlocksTitle       ="rBlocksTitle" 
+							data-rBlocksDescription ="rBlocksDescription"
+							data-rBlocksImage 		="rBlocksImage"
+							data-RepetedBlock 		="RepetedBlock" 
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Maincomponent />
 				</section>
 				
 			

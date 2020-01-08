@@ -29,6 +29,7 @@ this.state={
       "imgInTextPath"     : {},
       "blog1Img"          : [],
       "blogContent"       : '',
+      "editUrl"           : '',
       "formerrors"        :{
           "clientName"    : " ",
           "clientEmail"   : " ",
@@ -55,22 +56,29 @@ this.state={
       } );
   }
   edit(e){
-    var blogURL = this.props.match.params.blogURL;
-    console.log("blogURL = ",blogURL);
+    
+    var pageUrl = window.location.pathname;
+      console.log("pageUrl in blog = ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+          console.log("a==>",a[3]); 
+          this.setState( {
+              editUrl: a[3]
+          });
+        
     axios
-      .get("/api/blogs/get/"+blogURL)
+      .get("/api/blogs/get/"+a[3])
       .then((response)=>{
         console.log("===>",response.data);
         this.setState({
-          "blogTitle":response.data.blogTitle,
-          "pageUrl"  :response.data.blogURL,
-          "summary":response.data.summary,
-          "typeOfBlog":response.data.typeOfBlog,
-          "blogContent":response.data.blogContent,
-          "updateID": response.data._id,
-          "imgbPath":{
-            path:response.data.bannerImage.path
-          },
+          "blogTitle"     :response.data.blogTitle,
+          "pageUrl"       :response.data.blogURL,
+          "summary"       :response.data.summary,
+          "typeOfBlog"    :response.data.typeOfBlog,
+          "blogContent"   :response.data.blogContent,
+          "updateID"      : response.data._id,
+          "imgbPath"      :{
+                              path:response.data.bannerImage.path
+                            },
         });
       })
       .catch((error)=>{
@@ -82,6 +90,7 @@ this.state={
     // this.edit();
   }
   componentDidMount(){
+    this.edit();
       axios
         .get('/api/projectsettings/get/S3')
         .then((response)=>{
@@ -97,7 +106,7 @@ this.state={
           this.setState({
             config : config
           })
-          console.log("config",this.state.config);
+          // console.log("config",this.state.config);
 
         })
         .catch(function(error){
@@ -339,28 +348,25 @@ uploadBlogImage(event){
                     swal("Thank you .Your Blog Created.");
                      this.props.history.push("/"+this.state.pageUrl);
                      console.log("response = ", res.data);
-
                 })
                 .catch((error)=>{
                   console.log("error = ", error);
                 });
 
           let fields = {};
-          fields["blogTitle"]        = "";        
-          fields["summary"]          = "";        
-          fields["bannerImg"]        = "";        
-       
-             this.setState({
-         
-            "summary"          : "",
-            "blogTitle"        : "",
-            "bannerImg"        : "",
-            "fields"           : fields
-          });
+            fields["blogTitle"]        = "";        
+            fields["summary"]          = "";        
+            fields["bannerImg"]        = "";        
+            this.setState({
+                "summary"          : "",
+                "blogTitle"        : "",
+                "bannerImg"        : "",
+                "fields"           : fields
+              });
       }
 
   }
-   deleteBlogTextimage(event){
+  deleteBlogTextimage(event){
     event.preventDefault();
     swal({
           title: "Are you sure you want to delete this image?",
@@ -629,7 +635,7 @@ return (
                   </div>
                   <div className="formcontent col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     {
-                        this.state.editId ?
+                        this.state.editUrl ?
                         <button onClick={this.update.bind(this)} className="btn lightbluebg commentBoxbtn buttonhover">Update</button>
                         :
                         <button onClick={this.Submit.bind(this)}  className="btn lightbluebg commentBoxbtn buttonhover">Submit</button>
