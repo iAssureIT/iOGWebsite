@@ -154,6 +154,7 @@ class Staticblocks extends React.Component {
 				</section>
 
                 <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+
 		            <button id="Aboutufounder" 
 							data-blockTitle  ="blockTitle" 
 		                	data-blockDescription="blockDescription" 
@@ -161,12 +162,15 @@ class Staticblocks extends React.Component {
 							data-fgImage="fgImage"  
 							data-RepetedBlock="RepetedBlock" 
 		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+
 		                	Select this Block 
 		            </button>
 					<Aboutufounder  />
 				</section>
 
+
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+
 		            <button id="Aboutustextright" 
 	                        data-fgImage="fgImage"  
 		                	data-blockDescription="blockDescription" 

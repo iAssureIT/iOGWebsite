@@ -106,6 +106,9 @@ class CmsBlock extends Component {
 =======
       /*"repGBlockTitle"        : this.refs.repGBlockTitle.value,
 >>>>>>> Stashed changes
+=======
+      /*"repGBlockTitle"        : this.refs.repGBlockTitle.value,
+>>>>>>> Stashed changes
       "repGBlocksubTitle"     : this.refs.repGBlocksubTitle.value,
       "repetedLink"           : this.refs.repetedLink.value,*/
        
