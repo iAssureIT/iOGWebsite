@@ -5,3 +5,6 @@
 .BT3_text1{
 	margin-top: 40px;
 }
+.new_BT3_innerBlock{
+	height: auto ! important;
+}

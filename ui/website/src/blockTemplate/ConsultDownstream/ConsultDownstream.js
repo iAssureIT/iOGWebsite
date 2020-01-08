@@ -17,7 +17,7 @@ export default class ConsultDownstream extends Component {
         "blockSubTitle"      : "",
         "blockDescription"   : "",
         "blockComponentName" : "",
-        "bgImage"            : "/images/consultdown.png",
+        "fgImage"            : "/images/consultdown.png",
         "blockType"          : "simple",
         "repeatedBlocks"    : [
                       {
@@ -99,7 +99,7 @@ componentDidMount(){
 // console.log("==>",this.props.block_id);
           {
              axios
-                .get('/api/blocks/get/'+this.props.block_id)
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
@@ -122,9 +122,9 @@ componentDidMount(){
 
 
   render() {  
-    console.log('kghjgjgj',this.state.blocks.bgImage);
+    console.log('kghjgjgj',this.state.blocks.fgImage);
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
         <div class="Bubble">
          <div class="Main_Cards__Bubble1 bub11">
        </div>

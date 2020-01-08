@@ -24,7 +24,7 @@ export default class CommonservicesblockTitle extends Component {
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"       : "/images/Icon_1.png",
-                          "Link"        : "/iogstudy"
+                          "Link"        : "/"
                       },
                       {
                           "Title"     : "Geology",
@@ -146,7 +146,7 @@ componentDidMount(){
                                 }
                                  return (
                                 <div key={index} className={classes}>
-                                  <a href ={data.downstreamurl} data-toggle="tooltip" title="Click me to read more!">
+                                  <a href ={"/masterpage/"+data.Link} data-toggle="tooltip" title="Click me to read more!">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="row">
                                           <div className="text-center">

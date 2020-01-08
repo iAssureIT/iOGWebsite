@@ -374,7 +374,7 @@ class Staticblocks extends React.Component {
 							data-rBlocksDescription ="rBlocksDescription" 
 							data-rBlocksLink  		="rBlocksLink" 
 							data-RepetedBlock 		="RepetedBlock"
-							data-bgImage      		="bgImage" 
+							data-fgImage      		="fgImage" 
 		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
 		                	Select this Block 
 		            </button>
