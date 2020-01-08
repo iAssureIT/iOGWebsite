@@ -154,6 +154,7 @@ export default class Header extends Component {
                            {/* <a href="/diatributionplanning">Distribution Planning</a>*/}
                             <a href="/masterpage/distribution-planning">Distribution Planning</a>
                           {/*  <a href="/retailautomation">Retail Automation</a><br/>*/}
+
                             <a href="/masterpage/retail-automation">Retail Automation</a><br/>
 
                           <h5 className="columnhead"><a href="/masterpage/digital-services"className="columnhead">Digital Services</a></h5>
@@ -163,7 +164,6 @@ export default class Header extends Component {
 
                             <a href="/masterpage/visualization-&-dashboards">Visualization & Dashboards</a>
                             <a href="/masterpage/industries-v4" className="">Industry 4.0 Initiatives</a>
-
                           </div>
                            <div class=" column columnmenu thirdcolumn columnmenu3">
                             <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Exec System</a></h5>
@@ -187,7 +187,7 @@ export default class Header extends Component {
                             <a href="/masterpage/environment-management">Environment Management</a>
                           </div>
                           <div class=" column columnmenu columnmenu3 columnmenu2">
-                            <h5 className="columnhead"><a href="/masterpage/simulation-modelling" className="columnhead">Simulation & Modeling</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
                            {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
                             <a href="/masterpage/steady-state" className="red">Steady State Simulation</a>
                            {/* <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>*/}

@@ -51,7 +51,9 @@ componentDidMount(){
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
+
                   <h4 className="lightbluetext para-top new-para-top">{this.state.blocks.blockTitle}</h4>
+
 
                   <div dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></div>   
                 </div>

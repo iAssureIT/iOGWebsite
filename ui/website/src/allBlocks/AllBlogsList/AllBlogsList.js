@@ -47,6 +47,7 @@ event.preventDefault();
 }
 getBlogData(){
 	axios
+
       	.get('http://iogapi.iassureit.com/api/blogs/get/all/list')
       	.then((response)=>{
        	console.log("===>",response.data);
@@ -57,6 +58,7 @@ getBlogData(){
       		.catch(function(error){
         	console.log(error);
           	if(error.message === "Request failed with status code 401")
+
 
               {
                    swal("Your session is expired! Please login again.","", "error");
