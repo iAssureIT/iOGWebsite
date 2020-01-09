@@ -57,13 +57,13 @@ export default class Blogs extends Component {
     render(){
         return(
             <div>
-                <div className="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">                        
+                <div className="upstreamcontentheader col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 text-center ">                        
                     <hr/>
                     <h1 className="lightbluetext latestblog">
                         <b>Latest</b> Blogs
                     </h1>
                 </div>
-                <div className="col-lg-10 col-lg-offset-1">
+                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1">
                   <div>
                         <OwlCarousel
                         className="owl-theme"
@@ -82,25 +82,25 @@ export default class Blogs extends Component {
                         >
                         {
                             this.upstreamData().map((data, index)=>{
-                                return (
+                            return (
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}>
                                   <div className="">
                                     <div className={" index"+index}>
                                         <div className=" blogtext pricehover-float ">
-                                            <div>
+                                          <div>
                                              <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="">
                                                   <div className="row blogsimg">
                                                     <img alt="" src={data.downstreamimg}/>
                                                   </div>
-                                                    <div className=""><h4>{data.upstreamTitle}</h4></div>
-                                                    <div className="">
+                                                  <div className=""><h4>{data.upstreamTitle}</h4></div>
+                                                     <div className="">
                                                      <p>{data.upstreamLi}</p>
                                                     </div>
-                                                <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div className="row">
+                                                    <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                      <div className="row">
                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">july 5,2019</div>
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                             <a className="" href="/blog">
                                                                 <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>

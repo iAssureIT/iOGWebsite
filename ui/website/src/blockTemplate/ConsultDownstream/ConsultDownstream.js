@@ -13,7 +13,7 @@ export default class ConsultDownstream extends Component {
     super(props);
     this.state = {
       "blocks":{
-        "blockTitle"         : "Our Consulting Service differentiators",
+        "blockTitle"         : "iOG Consult for downstream",
         "blockSubTitle"      : "",
         "blockDescription"   : "",
         "blockComponentName" : "",
@@ -132,7 +132,7 @@ componentDidMount(){
         </div>
        </div>
        <div>
-          <h1 className="downimgtext text-center">iOGConsult for Downstream </h1>
+          <h1 className="downimgtext text-center">{this.state.blocks.blockTitle}</h1>
           <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt ">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
         </div>  
         <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
