@@ -313,7 +313,7 @@ export default class BlogContent extends Component {
                                                                              </a>
                                         <FacebookProvider appId="679723582437310">appId="2384256901838973"
                                           <ShareButton className="fbBtn" href="http://www.facebook.com">
-                                        <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
+                                          <i class="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i>
                                           </ShareButton>
                                         </FacebookProvider>
                                       </div>
