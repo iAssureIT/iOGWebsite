@@ -65,8 +65,8 @@ export default class Blogs extends Component {
                 </div>
                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1">
                   <div>
-                        <OwlCarousel
-                        className="owl-theme"
+                        <OwlCarousel 
+                        className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
                         loop
                         // nav
                         dots={false}

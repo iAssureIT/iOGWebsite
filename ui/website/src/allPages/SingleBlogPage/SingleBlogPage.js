@@ -30,9 +30,16 @@ export default class SingleBlogPage extends React.Component {
 
 		};
 	}
-  componentDidMount(){
-   
 
+componentDidUpdate(prevProps, prevState){
+    console.log('prevProps, prevState',prevProps, prevState)
+    if(prevState.bannerImage.length!==this.state.bannerImage.length){
+      this.setState({
+      bannerImage:this.state.bannerImage
+      });
+    }
+  }
+  componentDidMount(){
     var url = this.props.location.pathname;
     localStorage.setItem("lastUrl",url);
     this.setState({
@@ -122,8 +129,11 @@ printTicket(event){
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
                 <i className="fa fa-facebook mar10" href=""></i>
               </a>
-              <a href={"https://twitter.com/home?status=" + this.state.CurrentUrl} target="_blank">
-              <i className="fa fa-twitter mar10" ></i></a>
+              <a className="twitter-share-button" href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl} target="_blank"  rel="noopener noreferrer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              {/*<a href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl}  target="_blank"  rel="noopener noreferrer">
+              <i className="fa fa-twitter mar10" ></i></a>*/}
               <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
               <i class="fa fa-linkedin mar10"></i></a>
             </div>
