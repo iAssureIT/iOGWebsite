@@ -116,25 +116,23 @@ printTicket(event){
   }
 
 	render() {
-
     console.log('CurrentUrl',this.state.CurrentUrl);
-    console.log('Imageee',encodeURI(this.state.bannerImage));
     const ref = React.createRef();
 
 		return (
       <div>
       	<div className="container-fluid" >
-      		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={encodeURI(this.state.bannerImage)}/>
-            <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
+      		<SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={encodeURI(this.state.bannerImage)}/>
+           <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
       		  <BlogContent blogContent={this.state.blogContent} style={{padding:"0px"}} />
-            <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
+             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
                 <i className="fa fa-facebook mar10" href=""></i>
               </a>
               {/*<a className="twitter-share-button" href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl} target="_blank"  rel="noopener noreferrer">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>*/}
-              <meta property="og:image" content={this.state.bannerImage} />
+              <meta property="og:image" content={encodeURI(this.state.bannerImage)} />
               <meta property="og:image:width" content= "280" />
               <meta property="og:image:height" content= "480" />
               <a href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl}  target="_blank"  rel="noopener noreferrer">
