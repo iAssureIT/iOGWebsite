@@ -84,7 +84,8 @@ componentDidMount(){
                 <span className="countNumberLike">{this.state.viewCount} views</span>
               </div>*/}
           		{/*<RelatedBlogs/>
-          		<BlogComment/>*/}
+          		*/}
+              <BlogComment/>
 
           		
 			</div>

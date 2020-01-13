@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 import CmsBlock from "../createnewblock/Cmsblock.js";
 // import $ from "jquery";
 
-// import PageHead from "../PageHead/PageHead.js";
+import PageHead from "../PageHead/PageHead.js";
 import './MasterPage.css';
 // import 'bootstrap/dist/js/bootstrap.js';
 
@@ -21,7 +21,12 @@ class MasterPage extends React.Component {
 			ListOfBlocks: "",
 			block_id 	: "",
 			modalIsOpen : false,
-			editbtnclick 	:false
+			editbtnclick 	:false,
+			pageHead : {
+				pageAuthor		: "",
+				pageDescription	: "",
+				pageWords		: [""],
+			}
 		};
 	}
 
@@ -62,7 +67,13 @@ componentDidMount(){
 	      		if (response.data) {
 			      	this.setState({
 			      		pageData:response.data,
+			      		pageHead:{
+									pageAuthor		: response.data.pageHead.pageAuthor,
+									pageDescription	: response.data.pageHead.pageDescription,
+									pageWords		: response.data.pageHead.pageWords,
+								},
 			      	});
+			      
 			}
 	    })
 	      .catch(function(error){
@@ -92,8 +103,8 @@ componentDidMount(){
 			}
 		console.log("id delet", this.state.urlParam, deleteValues);
 		 swal({
-	          title: "Are you sure you want to delete this Page ?",
-	          text: "Once deleted, you will not be able to recover this Page!",
+	          title: "Are you sure you want to delete block from this Page ?",
+	          text: "",
 	          icon: "warning",
 	          buttons: true,
 	          dangerMode: true,
@@ -105,7 +116,7 @@ componentDidMount(){
 				    .patch('/api/pages/patch/blocks/remove/'+this.state.urlParam,deleteValues)
 				    .then((response)=>{
 				     	// this.getListOfPages();
-				       swal("Your Page is deleted!");
+				       swal("Your block is deleted from page!");
 				       window.location.reload();
 				    })
 				    .catch((error)=>{
@@ -158,6 +169,25 @@ componentDidMount(){
 
 				  </div>
 				</div>
+			{/*title*/}
+			{/*  this.state.pageData.pageTitle 
+				? 
+				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate NOPadding">
+			        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+			        	<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+			        		   <h2 className="BT1_bannerTitle text-center HistorianTitle">{this.state.pageData.pageTitle}</h2>
+			                   // <img src={this.state.blocks.bgImage} className="BT1_img"/>
+			                   <div className="dynamicpageimg BT1_img"></div>
+			        	</div>
+			        </div>
+			    </div> 
+			    :
+			    ""*/
+			}
+			{/*Title*/
+				console.log("==>log hed",this.state.pageHead)
+			}
+			<PageHead pageHeadData={this.state.pageHead}/>
 				{
 					this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length> 0
 					?

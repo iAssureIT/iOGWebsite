@@ -11,10 +11,11 @@ export default class ViewBlock_3 extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			pageData:{},
-			Blocks:[],
-			blocks:"",
-			ListOfBlocks : ""
+			pageData 	 : {},
+			Blocks 		 : [],
+			blocks 		 : "",
+			ListOfBlocks : "",
+			ListOfpages  : ""
 		}; 
 	}
 componentDidMount(){
@@ -38,36 +39,132 @@ componentDidMount(){
 			    // handle error
 			    	console.log(error);
 			  	});
+
+			axios
+				.get('/api/pages/get/list')
+				.then((response)=>{
+						        // console.log("AllBlogs=",response.data);
+						      	this.setState({
+					      			ListOfpages:response.data
+					      		},()=>{
+					      				console.log("======>",this.state.ListOfBlocks);
+					      		});
+					      	})
+			  	.catch(function (error) {
+			    // handle error
+			    	console.log(error);
+			  	});
 }
 deleteblock(event){
 	event.preventDefault();
 	var URL= event.target.id;
-	console.log("id delet", URL);
-	swal({
-	          title: "Are you sure you want to delete this Block ?",
-	          text: "Once deleted, you will not be able to recover this Block!",
+	var idArray =[];
+	// console.log("ListOfpages", this.state.ListOfpages );
+
+	let filteredBlocks = this.state.ListOfpages.filter( function (user) {
+		return user.pageBlocks.filter((child)=>{
+			if(URL == child.block_id){idArray.push(child._id)}
+			return URL == child.block_id
+		}).length != 0
+       
+    });
+    //console.log('idArray',idArray);
+    console.log('filteredBlocks',filteredBlocks);
+    var titleArray = [];
+    filteredBlocks.map((data,index)=>{
+    	titleArray.push(data.pageTitle);
+    })
+    var urlArray = [];
+    filteredBlocks.map((data,index)=>{
+    	urlArray.push(data.pageURL);
+    })
+    var deleteValues ={
+	      "pageBlocks_id":idArray[0]
+			}
+
+    //console.log('titleArray',titleArray)
+    
+    if (filteredBlocks.length>0) {
+    	swal({
+	          title: "You can not delete this block as it is present in following pages",
+	          text: "* "+titleArray.join(', '),
 	          icon: "warning",
 	          buttons: true,
 	          dangerMode: true,
 	        })
-	        .then((success) => {
+    		.then((success) => {
+
+		            if (success) {
+		            	axios
+					    .patch('/api/pages/patch/blocks/remove/'+urlArray[0],deleteValues)
+					    .then((response)=>{
+					     	// this.getListOfPages();
+					     	swal({
+						          title: "Are you sure you want to delete this Block",
+						          text: "..",
+						          icon: "warning",
+						          buttons: true,
+						          dangerMode: true,
+						        })
+					    		.then((success) => {
+									axios
+									   .delete("/api/blocks/delete/"+URL)
+									   .then((response)=>{
+									    // this.getListOfPages();
+									      swal("Your block is deleted");
+									      window.location.reload();
+									   })
+									   .catch((error)=>{
+									      console.log("error = ", error);              
+									   });
+									// swal("Your block is deleted from page ");
+					    			});
+					    		 
+					       	 
+					    })
+					    .catch((error)=>{
+					       console.log("error = ", error);              
+					    });
+
+		           
+		           
+		             
+		            } else {
+		            swal("Your Block is safe!");
+		          }
+		        });
+    	}
+    	else{
+    	swal({
+	          title: "Are you sure you want to delete this Block is present in some pages?",
+	          text: "Once deleted, you will not be able to recover this Block!",
+
+	          icon: "warning",
+	          buttons: true,
+	          dangerMode: true,
+	        })
+    	.then((success) => {
+
 	            if (success) {
 	            axios
-	   .delete("/api/blocks/delete/"+URL)
-	   .then((response)=>{
-	    // this.getListOfPages();
-	      swal("Your Page is deleted!");
-	      window.location.reload();
-	   })
-	   .catch((error)=>{
-	      console.log("error = ", error);              
-	   });
+				   .delete("/api/blocks/delete/"+URL)
+				   .then((response)=>{
+				    // this.getListOfPages();
+				      swal("Your Page is deleted!");
+				      window.location.reload();
+				   })
+				   .catch((error)=>{
+				      console.log("error = ", error);              
+				   });
 	           
 	             
 	            } else {
 	            swal("Your Block is safe!");
 	          }
 	        });
+	
+    	}
+
 	}
 	render() {
 		var data= this.state.pageData;

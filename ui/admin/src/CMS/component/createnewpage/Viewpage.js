@@ -6,7 +6,6 @@ import CmsBlock from "../createnewblock/Cmsblock.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/js/modal.js';
 import 'bootstrap/js/collapse.js';
-
 import swal from 'sweetalert';
 import './viewpage.css';
 
@@ -28,6 +27,7 @@ class Viewpage extends React.Component {
 	   		ListOfPages :""
 		}
 	}
+	
 	getAllBlockList(){
 		axios
 				.get('/api/blocks/get/list')
@@ -44,6 +44,7 @@ class Viewpage extends React.Component {
 			    	console.log(error);
 			  	});
 	}
+
 	getListOfPages(){
 	/*/get/list*/
 	axios
@@ -57,7 +58,7 @@ class Viewpage extends React.Component {
 		    // handle error
 		    	console.log(error);
 		  	});
-}
+	}
   
 	componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
@@ -69,8 +70,8 @@ class Viewpage extends React.Component {
 	        // console.log("a==>",a[1]); 
 	        const urlParam =a[2];
 	        this.setState({
-					      			urlParam:urlParam
-					      		});
+			      			urlParam:urlParam
+			      		});
 
 			axios
 			.get('http://iogapi.iassureit.com/api/pages/get/page_block/'+urlParam)
@@ -254,7 +255,6 @@ class Viewpage extends React.Component {
 												<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
 													<div className="noPadLR  selectBox col-lg-12 col-md-12 col-xs-12 col-sm-12">
 														<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 noPadLR">
-
 						                					<div className="panel panel-default bgcolorO">
 															    <div className="panel-heading bgPanelHead">
 															        <h4 className="panel-title">
@@ -273,7 +273,7 @@ class Viewpage extends React.Component {
 															        </div>
 															    </div>
 															</div>
-															<div className="col-lg-12">
+															{/*<div className="col-lg-12">
 																<div className="col-lg-6">
                                                 				<label htmlFor="email">Block Type<span className="redFont">*</span></label>
 									                				<select name="cars" className="col-lg-12">
@@ -299,39 +299,34 @@ class Viewpage extends React.Component {
 
 																	</select>
 																</div>
-														</div>  
+															</div> */ }
 						                				</div>
-						                				
 									                		{
 																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
 																	this.state.ListOfBlocks.map((result, index)=>{
-																		
 																	/*	var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
-																		const NewPageComponent = React.lazy(() => import('../blockComponent/'+component+'.js'));
-																	*/	
+																		const NewPageComponent = React.lazy(() => import('../blockComponent/'+component+'.js'));*/	
 																	var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
-
 																	const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
-																		var block_id=result._id;
+																	var block_id=result._id;
 																		// console.log("block_id",block_id);
-																		return(
-													                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectDiv1 designList">
-													                				<div className="checkbox">
-																				        <label>
-																				        	<input type="checkbox" className="pull-right" onChange={this.handleChange.bind(this)} data_id={block_id}/> Select Multiple Blocks
-																				        </label>
-									                            						<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right AddBlockbtn" onClick={this.addBlock.bind(this)} id={block_id} >Add Block</button>
-
-																				    </div>
-																					<Suspense fallback={<div>Loading...</div>} key={index}>
-																			    		<NewPageComponent block_id={block_id}/>
-																			    	</Suspense>
-																			    </div>	
-																    	)
-																	})
-																:
-																null
-															}	
+																	return(
+												                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectDiv1 designList">
+												                				<div className="checkbox">
+																			        <label>
+																			        	<input type="checkbox" className="pull-right" onChange={this.handleChange.bind(this)} data_id={block_id}/> Select Multiple Blocks
+																			        </label>
+								                            						<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right AddBlockbtn" onClick={this.addBlock.bind(this)} id={block_id} >Add Block</button>
+																			    </div>
+																				<Suspense fallback={<div>Loading...</div>} key={index}>
+																		    		<NewPageComponent block_id={block_id}/>
+																		    	</Suspense>
+																		    </div>	
+																	    	)
+																		})
+																	:
+																	null
+																}	
 															<div className="savetemp col-lg-12 col-md-12 col-sm-12 col-xs-12">
 									                            <button  type="submit" className="col-lg-3 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn AddBlockbtn" onClick={() => this.submitData()} >Add Multiple Blocks</button>
 									                        </div>			
@@ -340,39 +335,33 @@ class Viewpage extends React.Component {
 											</div>
 										</section>	
 										:
-											null
+										null
 									}
 								</div>
 							</div>
 						</div>
 					</div>
 
-
 					{/*<!-- Modal -->*/}
 					<div id="editBlockFormM" className="modal" role="dialog">
-					  <div className="modal-dialog modal-lg">
+					 	<div className="modal-dialog modal-lg">
 					    {/*<!-- Modal content-->*/}
-					    <div className="modal-content">
-					      <div className="modal-header">
-					        <button type="button" className="close" data-dismiss="modal">&times;</button>
-					        <h4 className="modal-title">Edit Block</h4>
-					      </div>
-					      <div className="modal-body">
-					      {/*console.log("in modal",this.state.block_id)*/}
-					        <CmsBlock block_id={this.state.block_id}/>
-					      </div>
-					      <div className="modal-footer">
-					        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-					      </div>
+					    	<div className="modal-content">
+						        <div className="modal-header">
+							        <button type="button" className="close" data-dismiss="modal">&times;</button>
+							        <h4 className="modal-title">Edit Block</h4>
+						      	</div>
+						     	<div className="modal-body">
+						      		{/*console.log("in modal",this.state.block_id)*/}
+						        	<CmsBlock block_id={this.state.block_id}/>
+						      	</div>
+						      	<div className="modal-footer">
+						        	<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+						      	</div>
+					    	</div>
 					    </div>
-
-					  </div>
 					</div>
-
-
-					
-				</div>
-            
+				</div> 
         );
     }
 }

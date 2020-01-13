@@ -48,9 +48,9 @@ export default class SingleBlogBanner extends React.Component {
         }); 
 }
 	render() {
-		{console.log(" img path ===>", this.props.bannerImage)}
+		{console.log(" img path ===>",encodeURI(this.props.bannerImage))}
 		return (
-			<div className="col-lg-12 nopadding sbbannerWall" style={{backgroundImage:'url('+this.props.bannerImage+')'}}>
+			<div className="col-lg-12 nopadding sbbannerWall" style={{backgroundImage:'url('+encodeURI(this.props.bannerImage)+')'}}>
 				<div className="middle">									    
 			    	<a href={"/blogsform/url/"+this.props.blogURL} className="hoverbk"><i className="fa fa-pencil wclr"></i></a>
 			    	<i className="fa fa-trash rclr hoverbbk" url={this.props.blogURL} onClick={this.deleteBlog.bind(this)}></i>

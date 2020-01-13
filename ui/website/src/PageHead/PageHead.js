@@ -34,11 +34,15 @@ render(){
 			<div> 
 				<Helmet>
 					<meta charset="UTF-8" />
-					<meta name="description" content={pageHeadData.pageDescription} />
-					<meta name="keywords" content={pageHeadData.pageWords[0]} />
+					<meta name="description" content={pageHeadData? pageHeadData.pageDescription:""} />
+					<meta name="keywords" content={pageHeadData? pageHeadData.pageWords :""} />
 					<meta name="author" content={pageHeadData.pageAuthor} />
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-					
+
+					<meta name="og:title" property="og:title" content={pageHeadData.ogtitle} />
+					<meta name="og:image" property="og:image" content={pageHeadData.ogimage} />
+					{/*<meta name="og:url"   property="og:url" content={pageHeadData.ogdescription} />*/}
+					<meta name="og:description" property="og:description" content={pageHeadData.ogdescription} />
 					<title>{pageHeadData.pageAuthor}</title>
 				</Helmet>
 			</div>

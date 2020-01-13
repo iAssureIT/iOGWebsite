@@ -8,6 +8,7 @@ import Moment                from 'react-moment';
 // import ShareLink          from 'react-facebook-share-link'
 // import ReactToPdf from "react-to-pdf";
 import '../Sitemap/Sitemap.css';
+import PageHead from "../../PageHead/PageHead.js";
 
 import BlogComment           from "../../allBlocks/BlogComment/BlogComment.js";
 import { FacebookProvider, Share } from 'react-facebook';
@@ -27,9 +28,16 @@ export default class SingleBlogPage extends React.Component {
 		      "blogContent"       : "",
           "bannerImage"       : {},
           "viewCount"         : "",
+          "pageHead"          : {
+                                  ogtitle        : "",
+                                  ogimage        : "",
+                                  ogurl          : "",
+                                  ogdescription  : "",
+                                }
 
 		};
 	}
+
 
 componentDidUpdate(prevProps, prevState){
     console.log('prevProps, prevState',prevProps, prevState)
@@ -40,18 +48,20 @@ componentDidUpdate(prevProps, prevState){
     }
   }
   componentDidMount(){
+   
+
     var url = this.props.location.pathname;
     localStorage.setItem("lastUrl",url);
     this.setState({
       CurrentUrl:window.location.href
     })
     id = this.props.match.params.selectedUrl;
-    console.log("id --->",id);
+    // console.log("id --->",id);
 
 		axios
       .get('http://iogapi.iassureit.com/api/blogs/get/'+id)
       .then((response)=>{
-        console.log("===>",response.data);
+        // console.log("===>",response.data);
         this.setState({
 
         "blogTitle"		:response.data.blogTitle,
@@ -59,8 +69,12 @@ componentDidUpdate(prevProps, prevState){
         "typeOfBlog"	:response.data.typeOfBlog,
         "blogContent"	:response.data.blogContent,
         "bannerImage" :response.data.bannerImage.path,
-        "createdAt"   :response.data.createdAt
-
+        "createdAt"   :response.data.createdAt,
+        "pageHead"    :{
+                          ogtitle        : response.data.blogTitle,
+                          ogimage        : response.data.bannerImage.path,
+                          ogdescription  : response.data.summary,
+                       }
           
         })
       })
@@ -122,23 +136,22 @@ printTicket(event){
 		return (
       <div>
       	<div className="container-fluid" >
-      		<SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={encodeURI(this.state.bannerImage)}/>
-           <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
+
+            <PageHead pageHeadData={this.state.pageHead}/>
+      		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
+            <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
       		  <BlogContent blogContent={this.state.blogContent} style={{padding:"0px"}} />
              <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
               <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
                 <i className="fa fa-facebook mar10" href=""></i>
               </a>
-              {/*<a className="twitter-share-button" href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl} target="_blank"  rel="noopener noreferrer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>*/}
-              <meta property="og:image" content={encodeURI(this.state.bannerImage)} />
-              <meta property="og:image:width" content= "280" />
-              <meta property="og:image:height" content= "480" />
-              <a href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl}  target="_blank"  rel="noopener noreferrer">
-                <i className="fa fa-twitter mar10" ></i></a>
+
+              <a href={"https://twitter.com/home?status=" + this.state.CurrentUrl} target="_blank">
+                <i className="fa fa-twitter mar10" ></i>
+              </a>
               <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
-              <i class="fa fa-linkedin mar10"></i></a>
+                <i class="fa fa-linkedin mar10"></i>
+              </a>
             </div>
             
            {/* <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">

@@ -5,7 +5,7 @@ import {Route, withRouter} from 'react-router-dom';
 import axios        from 'axios';
 import swal from 'sweetalert';
 
-// import PageHead from "../PageHead/PageHead.js";
+import PageHead from "../PageHead/PageHead.js";
 import './MasterPage.css';
 
 
@@ -16,7 +16,12 @@ class MasterPage extends React.Component {
 			pageData:{},
 			Blocks:[],
 			blocks:"",
-			ListOfBlocks : ""
+			ListOfBlocks : "",
+			pageHead : {
+				pageAuthor		: "",
+				pageDescription	: "",
+				pageWords		: [""],
+			}
 		}; 
 	}
 componentDidMount(){
@@ -39,6 +44,11 @@ componentDidMount(){
 	      		if (response.data) {
 			      	this.setState({
 			      		pageData:response.data,
+			      		pageHead:{
+									pageAuthor		: response.data.pageHead.pageAuthor,
+									pageDescription	: response.data.pageHead.pageDescription,
+									pageWords		: response.data.pageHead.pageWords,
+								},
 			      	});
 
     			
@@ -59,6 +69,7 @@ componentDidMount(){
 
 			
 			<div className="pageHgt">
+			<PageHead pageHeadData={this.state.pageHead}/>
 				
 				{
 					this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length> 0

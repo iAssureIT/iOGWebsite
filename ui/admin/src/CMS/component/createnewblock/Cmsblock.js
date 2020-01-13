@@ -209,7 +209,7 @@ class CmsBlock extends Component {
 		    // handle success
 		    	console.log("data in block========",response.data);
 		    	swal("Thank you. Your Block is Created.");
-		    	 // window.location.reload();
+		    	 window.location.reload();
 		  	})
 		  	.catch(function (error) {
 		    // handle error
