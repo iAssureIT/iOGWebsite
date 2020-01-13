@@ -124,7 +124,8 @@ export default class Upstream extends Component {
 
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 upstreamblock lightbluebg NOpadding">
+          <div>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs upstreamblock lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
                         <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
@@ -135,7 +136,7 @@ export default class Upstream extends Component {
                         </div>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="cards">
+                        <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
@@ -156,10 +157,49 @@ export default class Upstream extends Component {
                                      );
                                  })
                             }
-                      </div>
+                       </div>
                     </div>
                 </div>                
-            </div>   
+            </div> 
+             {/*responsive*/}
+               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md upstreamblock_new lightbluebg NOpadding">
+                <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div className="">
+                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
+                            <hr/>
+                            <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
+                                <b>iOG Solutions for</b> Upstream Oil & Gas Industry
+                            </h1>
+                        </div>
+                    </div>
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            {
+                                this.upstreamData().map((data, index)=>{
+                                 return (
+                                         <div key={index}className="" data-card={index}>
+                                            <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
+                                                <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <img src={data.upstreamimg  } />
+                                                </div>
+                                                <div className="price-body  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <p className="text-justify upstreamtext">{data.upstreamtext}</p>
+                                                </div>
+                                                <div className="price-footer price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
+                                                </div>
+                                            </div>
+                                        </div>                       
+                                     );
+                                 })
+                            }
+                       </div>
+                    </div>
+                </div>                
+            </div> 
+             {/*responsive end*/}  
+          </div> 
         );
     }
 }

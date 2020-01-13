@@ -78,6 +78,7 @@ componentDidUpdate(prevProps, prevState){
           
         })
       })
+
       .catch(function(error){
           if(error.message === "Request failed with status code 401")
               {
@@ -132,7 +133,8 @@ printTicket(event){
 	render() {
     console.log('CurrentUrl',this.state.CurrentUrl);
     const ref = React.createRef();
-
+     /*var content= (encodeURI(this.state.bannerImage));
+     console.log("content image",content);*/
 		return (
       <div>
       	<div className="container-fluid" >
@@ -146,9 +148,13 @@ printTicket(event){
                 <i className="fa fa-facebook mar10" href=""></i>
               </a>
 
-              <a href={"https://twitter.com/home?status=" + this.state.CurrentUrl} target="_blank">
+
+            {/*  <a href={"https://twitter.com/home?status=" + this.state.CurrentUrl} target="_blank">
                 <i className="fa fa-twitter mar10" ></i>
-              </a>
+              </a>*/}
+
+              <a href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl}  target="_blank"  rel="noopener noreferrer">
+                <i className="fa fa-twitter mar10" ></i></a>
               <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
                 <i class="fa fa-linkedin mar10"></i>
               </a>
@@ -157,9 +163,8 @@ printTicket(event){
            {/* <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">
               <span className="countNumberLike">{this.state.viewCount} views</span>
             </div>*/}
-                   {/* <button className="iogpdfbtn" onClick={this.printTicket.bind(this)}>Generate pdf</button>*/}
-                    <div style={{width:0, height: 0}}></div>
-
+          {/* <button className="iogpdfbtn" onClick={this.printTicket.bind(this)}>Generate pdf</button>*/}
+            <div style={{width:0, height: 0}}></div>
             </div>
             {/*<BlogComment/>*/}
 			  </div>
