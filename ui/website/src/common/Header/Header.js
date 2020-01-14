@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
+
+// import $                  from 'jquery';
 import 'bootstrap/js/modal.js';
 import 'bootstrap/js/collapse.js';
-// import $                  from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
 import './Header.css';
-import 'bootstrap/js/modal.js';
 import './Megamenu.js';
-import 'bootstrap/js/collapse.js';
 import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
 export default class Header extends Component {

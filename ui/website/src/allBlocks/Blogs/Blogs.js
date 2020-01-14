@@ -143,66 +143,46 @@ export default class Blogs extends Component {
                 </div>                
               </div>   
               {/*res*/}
-               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 hidden-lg hidden-md">
+               {/*<div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 hidden-lg hidden-md">
                   <div>
-                        <OwlCarousel 
-                        className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                        loop
-                        // nav
-                        dots={false}
-                        items={3}
-                        margin={0}
-                        responsiveClass =  {true}
-                        // slideBy={2}
-                        navText={["<div class='fa fa-angle-left blogleftarrow'></div>","<div class='fa fa-angle-right blogrightarrow'></div>"]}
-                        // responsive={
-                        // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
-                        // }
-                        autoplay={true}
-                        autoplayHoverPause={true}
-                        >
-                        {
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                      <div class="carousel-inner">
+                      {
                             this.upstreamData().map((data, index)=>{
                             return (
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}>
-                                  <div className="">
-                                    <div className={" index"+index}>
-                                        <div className=" blogtext pricehover-float ">
-                                          <div>
-                                             <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div className="">
-                                                  <div className="row blogsimg">
-                                                    <img alt="" src={data.downstreamimg}/>
-                                                  </div>
-                                                  <div className=""><h4>{data.upstreamTitle}</h4></div>
-                                                     <div className="">
-                                                     <p>{data.upstreamLi}</p>
-                                                    </div>
-                                                    <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                      <div className="row">
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">july 5,2019</div>
-                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <a className="" href="/blog">
-                                                                <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                              </div>
-                                             </div>
-                                            </div>
-                                        </div>                       
-                                     </div>
-                                  </div>
-                                </div>
-                                );
+                             <div class="item active">
+                              <img src={data.downstreamimg} alt="Los Angeles" style="width:100%;"/>
+                              <div className="">
+                               <h4>{data.upstreamTitle}</h4>
+                              </div>
+                              <div className="">
+                                <p>{data.upstreamLi}</p>
+                              </div>
+                           </div>
+                               );
                             })
                         }
-                    </OwlCarousel>
-                </div>                
-              </div>  
+
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
+                 </div>       */}
               {/*end res*/}             
-            </div>   
+            
+            </div>  
         );
     }
 }
