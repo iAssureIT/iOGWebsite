@@ -124,7 +124,8 @@ componentDidMount(){
   render() {  
     console.log('kghjgjgj',this.state.blocks.fgImage);
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
+     <div> 
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding hidden-sm hidden-xs" style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
         <div class="Bubble">
          <div class="Main_Cards__Bubble1 bub11">
        </div>
@@ -152,7 +153,36 @@ componentDidMount(){
             null
         }
         </div>
-       </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+       </div> 
+
+      {/*res*/}
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult_new NOPadding hidden-lg hidden-md">
+       
+       <div>
+          <h1 className="downimgtext_new text-center">{this.state.blocks.blockTitle}</h1>
+          <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt_new text-center ">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
+        </div>  
+        <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
+         { 
+            this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+            this.state.blocks.repeatedBlocks.map((result, index)=>{
+            return(
+              <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 " id={"consultdown_data_new"+index}>
+                <div className="col-lg-12 col-md-12">
+                 <h3 id={"downimg_text_new"+index}>{result.Title}</h3>
+                 <p id="downimg_p_text_new"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                </div>
+               </div>
+              );
+          })
+            :
+            null
+        }
+        </div>
+       </div> 
+      
+    {/*end res*/}
+    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     );  
   }
 }

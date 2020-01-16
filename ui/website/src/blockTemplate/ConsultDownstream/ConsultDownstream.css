@@ -3,6 +3,12 @@
 	/*background-image: url("/images/consultdown.png");*/
 	background-size: 100% 100%;
 }
+.innerBlocktConsult_new{
+  height: 1700px;
+  /*background-image: url("/images/consultdown.png");*/
+  background-size: 100% 100%;
+}
+
 .downimgtext{
 	  position: absolute;
     top: 5em;
@@ -10,10 +16,25 @@
     color: #009de2;
     font-weight: 600;
 }
+.downimgtext_new{
+   /* position: absolute;
+    top: 5em;
+    left: 13em;*/
+    color: #009de2;
+    font-weight: 600;
+}
+
 .downimg_p_txt{
 	  position: absolute;
     top: 12.5em;
     left: 9em;
+    /*text-align: justify; */
+    font-size: 20px
+}
+.downimg_p_txt_new{
+    /*position: absolute;
+    top: 12.5em;
+    left: 9em;*/
     /*text-align: justify; */
     font-size: 20px
 }
@@ -77,6 +98,69 @@
     width: 294px;
     text-align: right;
 }
+/*responsive*/
+
+#consultdown_data_new0{
+   /*position: absolute;
+   top: 29em;
+   left: 54em;*/
+   width: 294px;
+
+}
+#consultdown_data1{
+   position: absolute;
+   top: 36em;
+   right:52em;
+   width: 294px;
+   text-align: right;
+
+}
+#consultdown_data2{
+    position: absolute;
+    top: 47em;
+    left: 54em;
+    width: 294px;
+    text-align: left;
+
+}
+#consultdown_data3{
+    position: absolute;
+    top: 56em;
+    right:52em;
+    width: 294px;
+    text-align: right;
+
+}
+#consultdown_data4{
+   position: absolute;
+    top: 66em;
+    left: 54em;
+    width: 294px;
+    text-align: left;
+
+}
+#consultdown_data5{
+  position: absolute;
+    top: 74em;
+    right:52em;
+    width: 294px;
+    text-align: right;
+}
+#consultdown_data6{
+  position: absolute;
+    top: 83em;
+    left: 54em;
+    width: 294px;
+    text-align: left;
+}
+#consultdown_data7{
+  position: absolute;
+    top: 91em;
+    right:72em;
+    width: 294px;
+    text-align: right;
+}
+
 #downimg_text0,#downimg_text4,#downimg_text6{
 	font-weight: 600;
 

@@ -116,7 +116,7 @@ export default class Header extends Component {
                                      <a href="/masterpage/iog-implement">iOGImplement</a>
                                     {/* <a href="/iogtrain">iOGTrain</a>*/}
                                      <a href="/masterpage/iog-train">iOGTrain</a>
-                                     <a href="/iogstudy">iOGStudy</a>
+                                     <a href="/masterpage/iog-study">iOGStudy</a>
                                   </div>
                              </div>
                             </div>

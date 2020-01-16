@@ -43,6 +43,11 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 3px 1px;
 }
+@media screen and (max-width: 992px) {
+  .BT4_imgBack {
+    opacity:0;
+  }
+}
 .Main_Cards__Bubble1:first-child {
     top: 270px;
     left: -75px;
