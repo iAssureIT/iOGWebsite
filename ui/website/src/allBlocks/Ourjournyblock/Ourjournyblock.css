@@ -165,11 +165,12 @@ color: #fff;
   z-index: 3;
   height: 0px;
   background: transparent;
-  overflow: hidden;
+  /*overflow: hidden;*/
   max-height: 1590px;
   /*left: -95px;*/
   right: 0px;
 }
+
 .roadjournyoverflow{
   overflow: none!important;
   height: 1590px!important;
@@ -200,18 +201,19 @@ color: #fff;
 }
 .add3{
     position: relative;
-    left: 427px;
+    left: 552px;
     z-index: 100;
     height: 75px;
-    top: 270px;
-    opacity: 0;
+    top: -357px;
+    /*opacity: 0;*/
+
 }
 .add4{
     position: relative;
-    right: 264px;
+   right: 264px;
     z-index: 100;
     height: 75px;
-    top: 439px;
+    top: -227px;
     opacity: 0;
 }
 .add5{
@@ -219,40 +221,77 @@ color: #fff;
     right: 416px;
     z-index: 100;
     height: 75px;
-    top: 681px;
+    top: 88px;
 }
 .add6{
     position: relative;
     left: 892px;
     z-index: 100;
     height: 75px;
-    top: 144px;
+    top: -449px;
     opacity: 0;
 }
 .add7{
   position: relative;
-    left: 747px;
+    left: 438px;
     z-index: 100;
     height: 75px;
-    top: 270px;
+    top: -379px;
     opacity: 0;
 }
 .add8{
     position: relative;
-    right: 113px;
+    left: 371px;
     z-index: 100;
     height: 75px;
-    top: 325px;
+    top: -340px;
     opacity: 0;
 }
 .add9{
     position: relative;
-    left: 296px;
+    left: 311px;
     z-index: 100;
     height: 75px;
-    top: 219px;
+    bottom: 420px;
     opacity: 0;
 }
+.add10{
+    position: relative;
+    left: 596px;
+    z-index: 100;
+    height: 75px;
+    bottom: 420px;
+    opacity: 0;
+}
+.add11{
+    position: relative;
+    left: 1150px;
+    z-index: 100;
+    height: 75px;
+    bottom: 579px;
+    opacity: 0;
+}
+.add12{
+    position: relative;
+    left: 1101px;
+    z-index: 100;
+    height: 75px;
+    bottom: 567px;
+    opacity: 0;
+}
+.add13{
+    position: relative;
+    left: 472px;
+    z-index: 100;
+    height: 75px;
+    bottom: 801px;
+    opacity: 0;
+}
+.ourjourney_page{
+  height: 800px
+}
+
+
 
 .addanim{
   opacity: 1;
@@ -297,14 +336,14 @@ color: #fff;
     z-index: 1000;
     position: absolute;
     top: 754px;
-    left: 265px;
+    left: 230px;
     opacity: 0;
 }
 .Journycaro5{
    z-index: 1000;
     position: absolute;
     top: 1031px;
-    left: 486px;
+    left: 508px;
     opacity: 0;
 }
 .Journycaro6{
@@ -331,15 +370,15 @@ color: #fff;
 .Journycaro9{
     z-index: 1000;
     position: absolute;
-    top: 1438px;
-    left: 372px;
+    top: 1480px;
+    left: 359px;
     opacity: 0;
 }
 .Journycaro10{
     z-index: 1000;
     position: absolute;
-    top: 1683px;
-    left: 808px;
+    top: 1648px;
+    left: 637px;
     opacity: 0;
 }
 .Journycaro11{
@@ -352,15 +391,15 @@ color: #fff;
 .Journycaro12{
     z-index: 1000;
     position: absolute;
-    top: 2083px;
-    left: 808px;
+    top: 2164px;
+    left: 741px;
     opacity: 0;
 }
 .Journycaro13{
     z-index: 1000;
     position: absolute;
-    top: 2283px;
-    left: 808px;
+    top: 2147px;
+    left: 143px;
     opacity: 0;
 }
 
@@ -382,6 +421,7 @@ color: #fff;
   height: 70px ! important;
 
 }
+
 
 
 /*previous toggle*/

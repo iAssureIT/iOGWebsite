@@ -80,7 +80,7 @@ export default class Header extends Component {
                              <li><a href="/" className="headerTitle">Home</a></li>
                              <li>
                               <div className="dropdown1"> 
-                                <a href="/about-us" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a href="" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                                  <div className="col-lg-offset-2 dropdown-content servicedropdown aboutusdrop ">
                                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
@@ -286,7 +286,7 @@ export default class Header extends Component {
                                 </a>                    
                                </li>
                                  <li className="nav-item dropdown dropdownresponsive">
-                                    <a className="nav-link dropdown-toggle" href="/about-us" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                        ABOUT US <span className="caret"></span>
                                     </a>
                                     <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">

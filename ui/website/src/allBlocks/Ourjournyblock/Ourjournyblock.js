@@ -65,16 +65,16 @@ export default class Ourjournyblock extends Component {
             $(".add9").addClass("addanim");
         }  
          if (scroll >= 1020) {
-            $(".add9").addClass("addanim");
+            $(".add10").addClass("addanim");
         } 
          if (scroll >= 1220) {
-            $(".add9").addClass("addanim");
+            $(".add11").addClass("addanim");
         }  
         if (scroll >= 1280) {
-            $(".add9").addClass("addanim");
+            $(".add12").addClass("addanim");
         }  
-        if (scroll >= 1320) {
-            $(".add9").addClass("addanim");
+        if (scroll >= 1620) {
+            $(".add13").addClass("addanim");
         }  
 
     });
@@ -119,19 +119,19 @@ export default class Ourjournyblock extends Component {
             $(".Journycaro9").addClass("journyanim");
         }
          if (scroll >= 1020) {
-            $(".Journycaro9").addClass("journyanim");
-        }
-        if (scroll >= 1220) {
             $(".Journycaro10").addClass("journyanim");
         }
-         if (scroll >= 1280) {
+        if (scroll >= 1220) {
             $(".Journycaro11").addClass("journyanim");
         }
-         if (scroll >= 1320) {
+         if (scroll >= 1280) {
             $(".Journycaro12").addClass("journyanim");
         }
-         if (scroll >= 1520) {
+         if (scroll >= 1320) {
             $(".Journycaro13").addClass("journyanim");
+        }
+         if (scroll >= 1520) {
+            $(".Journycaro14").addClass("journyanim");
         }
       
         
@@ -315,51 +315,51 @@ journyData12(){
   render() {  
     return (
       <div>
-                  <div className="scrollwrap">
-                    <div className="chevron"></div>
-                    <div className="chevron"></div>
-                    <div className="chevron"></div>
-                    <span className="text">Scroll down</span>
-                  </div>
-                  <div className="Journycaro1">
-                    <Journycaro journyData={this.journyData()}/>
-                  </div>
-                  <div className="Journycaro2">
-                    <Journycaro journyData={this.journyData1()}/>
-                  </div>
-                  <div className="Journycaro3">
-                    <Journycaro journyData={this.journyData2()}/>
-                  </div>
-                  <div className="Journycaro4">
-                    <Journycaro journyData={this.journyData3()}/>
-                  </div>
-                  <div className="Journycaro5">
-                    <Journycaro journyData={this.journyData4()}/>
-                  </div>
-                  <div className="Journycaro6">
-                    <Journycaro journyData={this.journyData5()}/>
-                  </div>
-                  <div className="Journycaro7">
-                    <Journycaro journyData={this.journyData6()}/>
-                  </div>
-                  <div className="Journycaro8">
-                    <Journycaro journyData={this.journyData7()}/>
-                  </div>
-                  <div className="Journycaro9">
-                    <Journycaro journyData={this.journyData8()}/>
-                  </div>
-                 {/* <div className="Journycaro10">
-                    <Journycaro journyData={this.journyData9()}/>
-                  </div>
-                  <div className="Journycaro11">
-                    <Journycaro journyData={this.journyData10()}/>
-                  </div>
-                  <div className="Journycaro12">
-                    <Journycaro journyData={this.journyData11()}/>
-                  </div>
-                  <div className="Journycaro13">
-                    <Journycaro journyData={this.journyData12()}/>
-                  </div>
+        <div className="scrollwrap">
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+           <span className="text">Scroll down</span>
+        </div>
+        <div className="Journycaro1">
+          <Journycaro journyData={this.journyData()}/>
+        </div>
+        <div className="Journycaro2">
+          <Journycaro journyData={this.journyData1()}/>
+        </div>
+        <div className="Journycaro3">
+          <Journycaro journyData={this.journyData2()}/>
+        </div>
+        <div className="Journycaro4">
+          <Journycaro journyData={this.journyData3()}/>
+        </div>
+        <div className="Journycaro5">
+          <Journycaro journyData={this.journyData4()}/>
+        </div>
+        <div className="Journycaro6">
+          <Journycaro journyData={this.journyData5()}/>
+        </div>
+        <div className="Journycaro7">
+          <Journycaro journyData={this.journyData6()}/>
+        </div>
+        <div className="Journycaro8">
+          <Journycaro journyData={this.journyData7()}/>
+        </div>
+        <div className="Journycaro9">
+          <Journycaro journyData={this.journyData8()}/>
+        </div>
+       <div className="Journycaro10">
+          <Journycaro journyData={this.journyData9()}/>
+        </div>
+        <div className="Journycaro11">
+          <Journycaro journyData={this.journyData10()}/>
+        </div>
+        <div className="Journycaro12">
+          <Journycaro journyData={this.journyData11()}/>
+        </div>
+        <div className="Journycaro13">
+          <Journycaro journyData={this.journyData12()}/>
+        </div>
 
 
                   
@@ -374,10 +374,10 @@ journyData12(){
                   </div>*/}
                   <div className="overflowjourny">
                     <div className="roadjourny">
-                        <img alt="" src="/images/roadjourny.png" />
+                       <img alt="" src="/images/new_road.png" />
                     </div>
                   </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ourjourney_page NOpadding">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 NOpadding">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock lightbluebg">
               <h1 className="col-lg-10 col-lg-offset-2"><b>Our</b> Journey</h1>
@@ -411,6 +411,34 @@ journyData12(){
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 journybg5">
               <img className="add9" src="/images/add1.png" />
+              </div>
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
+              </div>
+          </div>
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 journybg5">
+              <img className="add10" src="/images/add1.png" />
+              </div>
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
+              </div>
+          </div>
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 journybg5">
+              <img className="add11" src="/images/add1.png" />
+              </div>
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
+              </div>
+          </div>
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 journybg5">
+              <img className="add12" src="/images/add1.png" />
+              </div>
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
+              </div>
+          </div>
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 journybg5">
+              <img className="add13" src="/images/add1.png" />
               </div>
               <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
               </div>
