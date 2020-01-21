@@ -103,15 +103,20 @@ componentDidMount(){
     render() {
      
        
+       var length=this.state.blocks.repeatedBlocks.length;
+        console.log("result length--------->",length);
 
         console.log("this.state.urlParam",this.state.urlParam);
-            return (
+        if(length>4){
+           return (
                     <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
+
                           return(
+                           
                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
@@ -137,7 +142,84 @@ componentDidMount(){
                         </div>
                     </div>
                 );
-            }
+             }
+             else if(length<4){
+              return(
+                     
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return(
+                           
+                           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={"/masterpage/"+result.Link}>
+                                    <div className="new_connecting-line"></div>
+
+                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                            
+                                        </span>
+                                   
+                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+                );
+
+             }   
+             else{
+               return(
+                     
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return(
+                           
+                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={"/masterpage/"+result.Link}>
+                                    <div className="new_connecting-line"></div>
+
+                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                            
+                                        </span>
+                                   
+                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+                );
+
+             }
+          }
         }
 
 

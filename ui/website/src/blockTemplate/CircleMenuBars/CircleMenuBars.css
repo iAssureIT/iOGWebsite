@@ -26,9 +26,17 @@
     height: 100px;
     color: #fff;
     margin: 45px 0px;
-
     padding-top: 35px;
     background: #004266;
+
+ }
+ .new_wizard_length{
+    height: 100px;
+    color: #fff;
+    margin: 45px 0px;
+    padding-top: 35px;
+    background: #004266;
+    margin-left: 20px;
 
  }
 
