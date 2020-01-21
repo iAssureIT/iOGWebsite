@@ -117,56 +117,28 @@ onHover(event)
                 <figure className="up1">
                   <img alt="" src="/images/up2.png"/>
                 </figure>
-                <figure className="oilsign2 hoveroilsign">
-                  <img alt="" src="/images/oilsign.png"/>
-                 {/* <div className="triangle-down"></div>
-                  <div className="dataonHover">
-                   <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>*/}
-                </figure>
-                <figure className="oilsign3 hoveroilsign">
-                  <img alt="" src="/images/oilsign.png"/>
-                   {/*<div className="triangle-down"></div>
-                  <div className="dataonHover">
-                    <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>*/}
-                </figure>
-                <figure className="oilsign4 hoveroilsign">
-                  <img alt="" src="/images/oilsign.png"/>
-                   {/*<div className="triangle-down"></div>
-                  <div className="dataonHover">
-                    <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>*/}
-                </figure>
                <figure className="oilsign5 hoveroilsign2">
-                  <img alt="" src="/images/oilsign.png"/>
+                  <a href="/masterpage/refinery-mainpage"><img alt="" title="Click Here To read more"  href="" src="/images/oilsign.png"/></a>
                   <div className="triangle-down2">
                     <div className="triangle-down21"></div>
                   </div>
                   <div className="dataonHover2">
                     <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas 
-                     <span className="Hoverreadmore">Read More</span></p>
+                    </p>
                   </div>
                 </figure>
-                <figure className="oilsign6 hoveroilsign1">
-                 {/* <div className="triangle-down1"></div>
-                  <div className="dataonHover1">
-                    <p className="pinhoverdata text-center">Some sample Text</p>
-                  </div>*/}
-                  <img alt="" src="/images/oilsign.png"/>
-                </figure>
                 <figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut7.bind(this)}>
-                  <img alt="" src="/images/oilsign.png"/>
+                  <a href="/masterpage/petrochemical-mainpage"><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
                   </figure>
                   <div className="dataonHover">
                    <div className="arrow-right"></div>
                       <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications.  <br/>
-                       <span className="Hoverreadmore">Read More</span>
+                       
                        </p>
                   </div>
                 <figure className="oilsign8" onMouseOver={this.onHover.bind(this)}
                              onMouseOut={this.onHoverOut.bind(this)}>
-                    <img alt="" src="/images/oilsign.png"/>   
+                    <a href="/masterpage/refinery-mainpage"><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
                   </figure> 
                    <div className="dataonHover1">   
                      <div className="triangle-down1"></div>
@@ -174,7 +146,7 @@ onHover(event)
                       <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
                        heating, gas and light fuel formation and heavy oil
                        sedimentation and the entire process of refining takes place here<br/>
-                       <span className="Hoverreadmore">Read More</span>
+                       
                        </p>
                     </div>
                   <img alt="" src="/images/anim.png" className="animnewimg"/>

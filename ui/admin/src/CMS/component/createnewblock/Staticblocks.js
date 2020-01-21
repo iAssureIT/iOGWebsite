@@ -27,6 +27,7 @@ import ConsultOverview               from "../blockTemplate/ConsultOverview/Cons
 import ImgBlock                      from "../blockTemplate/ImgBlock/ImgBlock.js";
 import Maincomponent            	 from "../blockTemplate/Maincomponent/Maincomponent.js";
 import Careerimpact            	 	 from "../blockTemplate/Careerimpact/Careerimpact.js";
+import CircleMenuBars            	 from "../blockTemplate/CircleMenuBars/CircleMenuBars.js";
 
 
 
@@ -407,6 +408,18 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>
 					<Careerimpact />
+				</section>
+				
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="CircleMenuBars" 
+							data-blockTitle   		="blockTitle"  
+							data-rBlocksTitle       ="rBlocksTitle" 
+		                	data-rBlocksLink  		="rBlocksLink" 				
+							data-RepetedBlock 		="RepetedBlock" 
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<CircleMenuBars />
 				</section>
 				
 			

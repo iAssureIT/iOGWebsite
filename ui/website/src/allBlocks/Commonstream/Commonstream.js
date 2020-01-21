@@ -16,14 +16,14 @@ export default class Commonstream extends Component {
              {
                 downstreamTitle : "Digital",
                 downstreamTitle1: "Services",
-                hryperlink      : "digitalservices",
+                hryperlink      : "masterpage/digital-services",
                 downstreamimg   : "/images/Illustration_13.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
                 downstreamTitle : "Asset",
                 downstreamTitle1: "Management",
-                hryperlink      : "assetmanagement",
+                hryperlink      : "masterpage/asset-management",
                 downstreamimg   : "/images/Illustration_12.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             } 
@@ -71,7 +71,7 @@ export default class Commonstream extends Component {
                                     <div className="">
                                       <div className="col-lg-5 col-lg-offset-3 para12"> 
                                         <div className="row">
-                                            <a href="/Healthsafty">
+                                            <a href="/masterpage/health-safety-environment">
                                                 <div className="col-lg-12">
                                                     <div className=" lightbluetext block block1height text-center">
                                                         <img alt="" className="streamImg" src="/images/Illustration_11.png" />

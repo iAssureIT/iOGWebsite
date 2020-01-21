@@ -76,7 +76,7 @@ componentDidMount(){
 					?
 						this.state.pageData.pageBlocks.map((result, index)=>{
 							var component = result._id ? result.block_id.blockComponentName : "TitleDesc";
-							console.log("mani component ===> > >",component, result.block_id.blockComponentName);
+							// console.log("mani component ===> > >",component, result.block_id.blockComponentName);
 							const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 							var block_id=result.block_id._id;
 							return(

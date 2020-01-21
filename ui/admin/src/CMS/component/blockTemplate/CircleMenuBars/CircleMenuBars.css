@@ -1,0 +1,49 @@
+.new_connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 100% ! important;
+    margin: 0 auto;
+    left: 0;
+    right: 640px ! important;
+    top: 32%;
+    z-index: 1;
+}
+.new_tab{
+	border: none ! important;  
+}
+.new_wizardNote
+ {
+    /* border: 1px solid; */
+    text-align: center;
+    margin-right: 0px;
+    position: relative;
+    top: 31px;
+    right: 15px;
+ }
+ .new_wizard{
+ 	height: 100px;
+ 	margin: auto;
+    background: #004266;
+
+ }
+
+ span.new_round-tab {
+    width: 20px;
+    margin-left: 29%;
+    height: 20px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #f1f1f1;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+.nopadding{
+	padding: 0px;
+}
