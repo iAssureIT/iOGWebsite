@@ -23,7 +23,7 @@
     color: #ffffff;
  }
  .new_wizard{
-    height: 100px;
+    height: 115px;
     color: #fff;
     margin: 45px 0px;
     padding-top: 35px;
@@ -65,4 +65,41 @@
 .active{
     background-color: #a8a;
    
+}
+.navigation_img{
+    height: 20px;
+    width: 100%;
+}
+.navigation_tab{
+    width: 143px;
+}
+#new_wizardNote_new0{
+    width: 147px;
+    color: #ffffff;
+    position: relative;
+    top: 24px;
+    right: 21px;
+
+}
+#new_wizardNote_new1{
+    width: 147px;
+    color: #ffffff;
+    position: relative;
+    bottom: 27px;
+    right: 21px;
+
+}
+#new_wizardNote_new2{
+    color: #ffffff;
+    width: 216px;
+    top: 24px;
+    position: relative;
+    right: 21px;
+}
+#new_wizardNote_new3{
+    color: #ffffff;
+    position: relative;
+    bottom: 27px;
+    width: 183px;
+    right: 20px;
 }

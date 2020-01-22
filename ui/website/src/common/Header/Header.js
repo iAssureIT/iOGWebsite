@@ -147,7 +147,7 @@ export default class Header extends Component {
                                 
                               </div>
                           <div className=" column columnmenu columnmenu2">
-                            <h5 className="columnhead"><a href="masterpage/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
             {/*<a href="/demandmanagement">Demand Management</a>*/}
                             <a href="/masterpage/demand-management">Demand Management</a>
                            {/* <a href="/inventorymanagement">Inventory Management</a>*/}
@@ -195,7 +195,7 @@ export default class Header extends Component {
                             <a href="/masterpage/dynamic-simulation">Dynamic Simulation</a>
                             <a href="/masterpage/operator-training">Operator Training</a>
                            {/* <a href="/etrm">ETRM</a>*/}
-                            <h5 className="columnhead"><a href="#" className="columnhead">Other Services</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/other-services" className="columnhead">Other Services</a></h5>
                              {/* <a href="/apc-services">APC Services</a>*/}
                             <a href="/masterpage/apc-services">APC Services</a>
                             {/*<a href="/etrm">ETRM</a>*/}
@@ -243,7 +243,7 @@ export default class Header extends Component {
                                      {/* <a href="/gasprocessing">Gas Precessing</a>*/}
                                       <a href="/masterpage/gas-processing">Gas Precessing</a>
                                       {/*<a href="/oilgasep">oil & Gas E & P</a>*/}
-                                      <a href="/masterpage/oil-&-gas-e-&-p">oil & Gas E & P</a>
+                                      <a href="/masterpage/oil-&-gas-e-&-p">Oil & Gas E & P</a>
                                     </div>
                                    </div>
                                  </div>

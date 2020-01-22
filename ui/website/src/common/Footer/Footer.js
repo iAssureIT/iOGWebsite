@@ -57,7 +57,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb35">
+                <div className="col-lg-offset-1 col-lg-11 col-md-11 col-sm-11 col-xs-11 pb35">
                     <div className="row">
                         <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <h6 className="font-montserrat">Menu</h6>
@@ -192,7 +192,7 @@ export default class Footer extends Component {
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/services">Services</a></li>
+                                <li><a href="/services">Expertise</a></li>
                                 <li><a href="/industries">Industries</a></li>
                             </ul>
                         </div>
@@ -251,7 +251,7 @@ export default class Footer extends Component {
                 <div className="col-sm-12 col-xs-12">
                     <div className="row">
                     <div className="textcolorwhite  col-sm-12 col-xs-12 pull-left pt20">
-                        <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
+                        <p>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                      </div>
                     </div>
                     </div> 

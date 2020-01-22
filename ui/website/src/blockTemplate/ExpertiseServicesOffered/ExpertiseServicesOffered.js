@@ -104,7 +104,7 @@ componentDidMount(){
   render() { 
   // console.log('khj', this.state.blocks); 
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlock5tepmlate NOPadding">
+      <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 innerBlock5tepmlate NOPadding">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
          </div>
@@ -118,7 +118,7 @@ componentDidMount(){
           this.state.blocks.repeatedBlocks.map((result, index)=>{
             return(
               <div>
-               <div className="col-lg-offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12 B4T_ServicesDiv">
+               <div className=" col-lg-5 col-md-5 col-sm-12 col-xs-12 B4T_ServicesDiv">
                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 NOPadding">
                  <img src={result.Image} className="B5T_img"/>
                 </div>

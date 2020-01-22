@@ -107,11 +107,13 @@ componentDidMount(){
         console.log("result length--------->",length);
 
         console.log("this.state.urlParam",this.state.urlParam);
-        if(length>4){
+        if(length>4 && length<6){
            return (
-                    <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
-                            { 
+                <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
+                  <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
+                    
+                    { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
 
@@ -121,7 +123,7 @@ componentDidMount(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
-                                    <div className="new_connecting-line"></div>
+                                    
 
                                         <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
@@ -147,7 +149,8 @@ componentDidMount(){
               return(
                      
                  <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
+                    <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -158,9 +161,7 @@ componentDidMount(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
-                                    <div className="new_connecting-line"></div>
-
-                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
                                    
@@ -180,27 +181,65 @@ componentDidMount(){
                     </div>
                 );
 
-             }   
-             else{
-               return(
+             }  
+
+
+             else if(length>6){
+              return(
                      
                  <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
+                    <div className="wizard-inner col-lg-12  col-md-12 col-xs-12 col-sm-12">
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
 
                           return(
                            
-                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                           <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding navigation_tab">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
-                                    <div className="new_connecting-line"></div>
-
-                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
+                                   
+                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+                );
+
+             } 
+
+
+             else{
+               return(
+                     
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
+                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return( 
+                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                              <div role="presentation" className="">
+                                <a href={"/masterpage/"+result.Link}> 
+                                  <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                  </span>
                                    
                                     <div className="new_wizardNote ">{result.Title}</div>
                                     </a>

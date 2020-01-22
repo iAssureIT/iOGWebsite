@@ -10,34 +10,34 @@ componentDidMount(){
  
 } 
 onHoverOut(event){
-  $(document).ready(function(){
+ /* $(document).ready(function(){
         $(".dataonHover1").hide();
 
     $(".oilsign8").hover(function(){
         $(".dataonHover1").show();
 
     });
-  });
+  });*/
 } 
 onHoverOut7(event){
-  $(document).ready(function(){
+  /*$(document).ready(function(){
         $(".dataonHover").hide();
 
     $(".oilsign7").hover(function(){
         $(".dataonHover").show();
 
     });
-  });
+  });*/
 } 
 onHoverOut1(event){
-  $(document).ready(function(){
+  /*$(document).ready(function(){
         $(".dataonHover").hide();
 
     $(".oilsign7").hover(function(){
         $(".dataonHover").show();
 
     });
-  });
+  });*/
 } 
 onHover(event)
 {
@@ -118,25 +118,48 @@ onHover(event)
                   <img alt="" src="/images/up2.png"/>
                 </figure>
                <figure className="oilsign5 hoveroilsign2">
-                  <a href="/masterpage/refinery-mainpage"><img alt="" title="Click Here To read more"  href="" src="/images/oilsign.png"/></a>
+                 <img alt="" href="" src="/images/oilsign.png"/>
                   <div className="triangle-down2">
                     <div className="triangle-down21"></div>
                   </div>
-                  <div className="dataonHover2">
-                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas 
+                   <div className="dataonHover2">
+                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
+                     <a href="/masterpage/oil-&-gas-e-&-p"><span className="Hoverreadmore">Read More</span> </a> 
                     </p>
                   </div>
+                
                 </figure>
-                <figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut7.bind(this)}>
-                  <a href="/masterpage/petrochemical-mainpage"><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
+
+                <figure className="oilsign7 hoveroilsign4">
+                 <img alt=""  href="" src="/images/oilsign.png"/>
+                    <div className="arrow-right"></div>
+                   <div className="dataonHover">
+                    <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications. <br/> 
+                     <a href="/masterpage/petrochemical-mainpage"><span className="Hoverreadmore">Read More</span> </a> 
+                    </p>
+                  </div>
+                
+                </figure>
+                {/*<figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut7.bind(this)}>
+                  <a href=""><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
                   </figure>
                   <div className="dataonHover">
                    <div className="arrow-right"></div>
                       <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications.  <br/>
-                       
                        </p>
+                  </div>*/}
+                <figure className="oilsign8 hoveroilsign3">
+                  <img alt=""   href="" src="/images/oilsign.png"/>
+                  <div className="triangle-down1">
+                    <div className="triangle-down211"></div>
                   </div>
-                <figure className="oilsign8" onMouseOver={this.onHover.bind(this)}
+                   <div className="dataonHover1">
+                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
+                     <a href="/masterpage/refinery-mainpage"><span className="Hoverreadmore">Read More</span> </a> 
+                    </p>
+                  </div>
+                </figure>
+                {/*<figure className="oilsign8" onMouseOver={this.onHover.bind(this)}
                              onMouseOut={this.onHoverOut.bind(this)}>
                     <a href="/masterpage/refinery-mainpage"><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
                   </figure> 
@@ -148,8 +171,8 @@ onHover(event)
                        sedimentation and the entire process of refining takes place here<br/>
                        
                        </p>
-                    </div>
-                  <img alt="" src="/images/anim.png" className="animnewimg"/>
+                    </div>*/}
+                  {/*<img alt="" src="/images/anim.png" className="animnewimg"/>*/}
                 <figure className="anim">
                 </figure>
                 <figure className="tank">

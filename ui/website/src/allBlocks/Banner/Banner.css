@@ -413,13 +413,13 @@ height: 90px;
     position: absolute;
     right: 16.5em;
     top: 15em;
-    animation:  oilsign 8s linear  infinite;
+    /*animation:  oilsign 8s linear  infinite;*/
 }
 .oilsign8 {
     position: absolute;
     right: 40.9em;
     top: 16.7em;
-    animation: oilsign 8s linear infinite;
+    /*animation: oilsign 8s linear infinite;*/
     z-index: 1;
 }
 .other{
@@ -640,6 +640,7 @@ height: 90px;
   display: none;
   height: 117px;
   width: 241px;
+  background-color: #ffffff;
   border-radius: 5px;
   position: absolute;
   left: 44.2em;
@@ -748,6 +749,16 @@ height: 90px;
       left:31px;
       top:-2px;
     }
+
+.hoveroilsign4:hover .dataonHover  {
+      display: block ! important;
+      cursor: pointer;
+}
+.hoveroilsign4:hover .arrow-right  {
+  display: block ! important;
+  cursor: pointer;
+}
+
 .hoveroilsign2:hover .dataonHover2  {
       display: block ! important;
       cursor: pointer;

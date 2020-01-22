@@ -12,13 +12,14 @@ export default class CircleMenuBars extends Component{
     constructor(props) {
     super(props);
     this.state = {
-      blocks:{
+      urlParam                : "",
+      blocks                  :{
         "blockTitle"          : "Challenges",
         "blockSubTitle"       : "",
         "blockDescription"    : "",
         "blockComponentName"  : "CircleMenuBars",
         "blockType"           : "simple",
-        "repeatedBlocks"    : [
+        "repeatedBlocks"      : [
                       {
                         "Title"         : "Page1",
                           "SubTitle"    : "",
@@ -65,6 +66,15 @@ export default class CircleMenuBars extends Component{
        
 componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
+          var pageUrl = window.location.pathname;;
+      console.log("pageUrl = ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+          console.log("a==>",a[1]); 
+          const urlParam =a[2];
+          console.log("urlparam.-",urlParam);
+          this.setState({
+                      urlParam:urlParam
+                    });
           {
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
@@ -93,26 +103,34 @@ componentDidMount(){
     render() {
      
        
+       var length=this.state.blocks.repeatedBlocks.length;
+        console.log("result length--------->",length);
 
-        console.log("this.state.urlParam",this.state.url);
-            return (
-                   <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
-                           { 
+        console.log("this.state.urlParam",this.state.urlParam);
+        if(length>4){
+           return (
+                <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
+                  <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
+                    
+                    { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
-                          return(
-                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
-                            <div className="nav nav-tabs new_tab" role="tablist">
-                                <div role="presentation" className={this.state.url ==="/viewpage1" ? "active": this.state.url ==="/viewpage2" || this.state.url ==="/viewpage3" ? "tab-done" : ""}>
-                                    <Link to="/viewpage1" title="viewpage1">
-                                    <div className="new_connecting-line"></div>
 
-                                        <span className="new_round-tab circleSpan">
+                          return(
+                           
+                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={"/masterpage/"+result.Link}>
+                                    
+
+                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
-                                    </Link>
+                                   
                                     <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
                                 </div>
                                
                             </div>
@@ -126,7 +144,84 @@ componentDidMount(){
                         </div>
                     </div>
                 );
-            }
+             }
+             else if(length<4){
+              return(
+                     
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return(
+                           
+                           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={"/masterpage/"+result.Link}>
+                                    <div className="new_connecting-line"></div>
+
+                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                            
+                                        </span>
+                                   
+                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+                );
+
+             }   
+             else{
+               return(
+                     
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return(
+                           
+                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={"/masterpage/"+result.Link}>
+                                    <div className="new_connecting-line"></div>
+
+                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                            
+                                        </span>
+                                   
+                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+                );
+
+             }
+          }
         }
 
 
