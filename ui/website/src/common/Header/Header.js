@@ -22,7 +22,7 @@ export default class Header extends Component {
       }
     });
   }
-  responsivemenubar(event){
+  /*responsivemenubar(event){
   $(document).ready(function(){
         $(".dataonHover1").hide();
 
@@ -31,11 +31,15 @@ export default class Header extends Component {
 
     });
   });
-} 
+} */
   modalClickEvent(){
     console.log("click event")
     $('#modalId').addClass('in');
     $('#modalId').css('display','block');
+    
+    // $('#modalId').modal('hide');
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
   }
   
  /* googleTranslateElementInit() {
@@ -228,7 +232,7 @@ export default class Header extends Component {
                             <li>
                                <div className="dropdown"> 
                               
-                                <a href="/industries" className="headerTitle toggle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
+                                <a href="/masterpage/industries" className="headerTitle toggle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
                                  <div className="col-lg-offset-7 dropdown-content servicedropdown2">
                                    <div className="col-lg-12 row">
                                      <div className="Servicecolumn columnmenu">

@@ -4,9 +4,12 @@ import {Route, withRouter} from 'react-router-dom';
 
 
 import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
+import Typecomponent1_btn            from "../blockTemplate/Typecomponent1_btn/Typecomponent1_btn.js";
 import Typecomponent2                from "../blockTemplate/Typecomponent2/Typecomponent2.js";
+import Typecomponent2_btn            from "../blockTemplate/Typecomponent2_btn/Typecomponent2_btn.js";
 import Typecomponent3                from "../blockTemplate/Typecomponent3/Typecomponent3.js";
 import Aboutustextright              from "../blockTemplate/Aboutustextright/Aboutustextright.js";
+import Aboutustextright_btn          from "../blockTemplate/Aboutustextright_btn/Aboutustextright_btn.js";
 import Aboutusvision                 from "../blockTemplate/Aboutusvision/Aboutusvision.js";
 import Aboutufounder                 from "../blockTemplate/Aboutufounder/Aboutufounder.js";
 import Commoninfoblock               from "../blockTemplate/Commoninfoblock/Commoninfoblock.js";
@@ -169,7 +172,6 @@ class Staticblocks extends React.Component {
 				</section>
 
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-
 		            <button id="Aboutustextright" 
 	                        data-fgImage="fgImage"  
 		                	data-blockDescription="blockDescription" 
@@ -421,6 +423,40 @@ class Staticblocks extends React.Component {
 		            </button>
 					<CircleMenuBars />
 				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="Typecomponent1_btn" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+		                	data-blocksubTitle="blocksubTitle" 
+							data-fgImage="fgImage" 
+		                	className="btn zIndexmtop pull-right" 
+		                	onClick={this.selectComponent.bind(this)} >  
+		                	
+		                	Select this Block 
+		            </button>
+					<Typecomponent1_btn />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="Typecomponent2_btn" 
+		                	data-blockDescription="blockDescription"
+		                	data-blocksubTitle="blocksubTitle"  
+							data-fgImage="fgImage"  
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Typecomponent2_btn />
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="Aboutustextright_btn" 
+	                        data-fgImage="fgImage"
+	                        data-blocksubTitle="blocksubTitle"    
+		                	data-blockDescription="blockDescription" 
+		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>
+					<Aboutustextright_btn />
+				</section>
+				
 				
 			
 

@@ -2,6 +2,7 @@ import React from 'react';
 import "./Contactform.css";
 import axios from 'axios';
 import swal from 'sweetalert2';
+import $                  from 'jquery';
 
 const formValid = formerrors=>{
   console.log("formerrors",formerrors);
@@ -12,6 +13,7 @@ const formValid = formerrors=>{
   return valid;
 }
 
+ 
 const clientnameRegex = RegExp(/^[A-za-z']+( [A-Za-z']+)*$/);
 const emailRegex = RegExp (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
@@ -31,6 +33,13 @@ export default class ContactUsForm extends React.Component {
           };
         this.handleChange = this.handleChange.bind(this);
     }
+    /*modalClickEvent(){
+    
+    
+    $('#modalId').modal('hide');
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
+  }*/
     handleChange(event){
         event.preventDefault();
         const datatype = event.target.getAttribute('data-text');
@@ -126,7 +135,7 @@ export default class ContactUsForm extends React.Component {
                     <label ><b>Contact</b> Us</label>
                     <button type="button" className="close closeBtn" data-dismiss="modal">&times;</button>
                 </div>
-                <div className="contactpageform">
+                <div className="contactpageform" >
                     <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
                             <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">We're here to help! Email us through the secure form below, or log in to see our phone number.
@@ -164,7 +173,7 @@ export default class ContactUsForm extends React.Component {
                         </div>
                         
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                          <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal">Cancel</button>
+                          <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal" >Cancel</button>
                           <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-2 col-lg-offset-8" onClick={this.Submit.bind(this)}>Submit</button>
                         </div>
                     </form>

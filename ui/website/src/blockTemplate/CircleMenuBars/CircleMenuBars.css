@@ -6,7 +6,7 @@
     margin: 0 auto;
     left: 0;
     right: 640px ! important;
-    top: 39%;
+    top: 55%;
     z-index: 1;
 }
 .new_tab{
@@ -18,12 +18,12 @@
     text-align: center;
     margin-right: 0px;
     position: relative;
-    top: 31px;
+    top: 72px;
     right: 15px;
     color: #ffffff;
  }
  .new_wizard{
-    height: 115px;
+    height: 160px;
     color: #fff;
     margin: 45px 0px;
     padding-top: 35px;
@@ -55,6 +55,7 @@
     text-align: center;
     font-size: 18px;
     color: #000;
+    top:44px;
 }
 .nopadding{
     padding: 0px;
@@ -102,4 +103,12 @@
     bottom: 27px;
     width: 183px;
     right: 20px;
+}
+.navigationTitle{
+    color: #ffffff;
+    position: absolute; 
+    bottom: 4px;
+    left: 254px;
+    font-weight: 600;
+    
 }

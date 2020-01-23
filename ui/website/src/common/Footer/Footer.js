@@ -64,7 +64,7 @@ export default class Footer extends Component {
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/services">Services</a></li>
+                                <li><a href="/services">Expertise</a></li>
                                 <li><a href="/industries">Industries</a></li>
                             </ul>
                         </div>
@@ -90,11 +90,18 @@ export default class Footer extends Component {
                         <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6 ">
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
+
+                             
+                             7090, 7th Floor, Marvel Fuego, Magarpatta Road,
+Opp Seasons Mall, Hadapsar,
+Pune, Maharashtra 411028
+
+
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
-                                 Amanora Chambers,<br/> Office 330,
-                                 3<sup>rd</sup> floor, East Block,Hadapsar,
+                                 7090, 7th Floor,<br/>  Marvel Fuego,
+                                 <sup></sup>Magarpatta Road, Opp Seasons Mall,Hadapsar 
                                   Pune,India- 411028.<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 672 603 81/82.
+                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 2951 0500
                              </p>
                         </div> 
                         <div className="col-md-3 col-sm-3 col-xs-12">
@@ -121,7 +128,7 @@ export default class Footer extends Component {
                     <div className="row">
 
                         <div className="textcolorwhite col-md-5 col-sm-6 col-xs-12 pull-left pt20">
-                            <p>Copyright ©2019 <a href="/">iOGsolutions</a>. All rights reserved.</p>
+                            <p>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                         </div>
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-12 pull-right pt20">

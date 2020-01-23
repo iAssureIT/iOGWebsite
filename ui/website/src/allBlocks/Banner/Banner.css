@@ -420,7 +420,19 @@ height: 90px;
     right: 40.9em;
     top: 16.7em;
     /*animation: oilsign 8s linear infinite;*/
-    z-index: 1;
+    /*z-index: 1;*/
+}
+.oilsign8 img:hover .dataonHover1 {
+      display: block !important;
+      cursor: pointer;
+}
+.oilsign8 img:hover .triangle-down1  {
+  display: block ! important;
+  cursor: pointer;
+}
+.oilsign8 img:hover .triangle-down211  {
+  display: block ! important;
+  cursor: pointer;
 }
 .other{
     position: absolute;
@@ -574,18 +586,8 @@ height: 90px;
   
 }
 
-.hoveroilsign:hover .dataonHover  {
-  display: block ! important;
-  cursor: pointer;
-}
-.hoveroilsign:hover .triangle-down  {
-  display: block ! important;
-  cursor: pointer;
-}
-.hoveroilsign1:hover .triangle-down1  {
-  display: block ! important;
-  cursor: pointer;
-}
+
+
 /*.hoveroilsign1:hover .dataonHover1  {
   display: block ! important;
   cursor: pointer;
@@ -607,14 +609,6 @@ height: 90px;
     left: 709px;
     background-color: #333;
     z-index: 999;
-}
-.oilsign8:hover .triangle-down1 {
-  display: block;
-  cursor: pointer;
-}
-.oilsign8:hover .triangle-down211 {
-  display: block;
-  cursor: pointer;
 }
 .oilsign7:hover .triangle-down1_oil7 {
   display: block;
@@ -646,8 +640,6 @@ height: 90px;
   left: 44.2em;
   top: 7.2em;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  z-index: 200;
-  
   
 }
 .dataonHover2 {
@@ -673,15 +665,15 @@ height: 90px;
       margin-top: -43px
     }
 .triangle-down1 {
-      position: absolute;
-    /* display: none; */
+    position: absolute;
+     display: none; 
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 15px solid rgba(0, 0, 0, 0.1);
-    top: 117px;
-    left: 99px;
+    top: 219px;
+    left: 721px;
     }
     .triangle-down1_oil7 {
       position: absolute;
@@ -707,14 +699,16 @@ height: 90px;
     }
     .triangle-down211 {
       position: absolute;
-      /*display: none;*/
+      display: none;
       width: 0;
       height: 0;
       border-left: 15px solid transparent;
       border-right: 15px solid transparent;
       border-top: 15px solid #fff;
       margin-top: 114px;
-      right: 112px;
+    right: 112px;
+    left: -14px;
+    bottom: 2px;
     }
     .triangle-down211_oil7 {
       position: absolute;
@@ -772,18 +766,23 @@ height: 90px;
   cursor: pointer;
 }
 
-.hoveroilsign3:hover .dataonHover1  {
-      display: block ! important;
-      cursor: pointer;
+.New_hoverdiv{
+   /* height: 50px;
+    width: 50px;
+    background-color: #333;
+    position: absolute;
+    left: 51em;
+    top: 16em;
+    z-index: 2;*/
+
 }
-.hoveroilsign3:hover .triangle-down2  {
-  display: block ! important;
+.New_hoverdiv:hover .dataonHover2{
   cursor: pointer;
+  display: block;
 }
-.hoveroilsign3:hover .triangle-down21  {
-  display: block ! important;
-  cursor: pointer;
-}
+
+
+
 .pinhoverdata{
   color: #333;
   font-size: 12px;
@@ -818,12 +817,13 @@ height: 90px;
     background-repeat: no-repeat;
   } 
   .arrow-right {
+  display: none; 
   width: 0; 
   height: 0; 
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  left: 233px;
-  top: 42px;
+  right: 255px;
+  top: 201px;
   position: absolute;
   border-left: 15px solid #ffffff;
 } 
