@@ -65,7 +65,7 @@ export default class Footer extends Component {
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/services">Expertise</a></li>
-                                <li><a href="/industries">Industries</a></li>
+                                <li><a href="/masterpage/industries">Industries</a></li>
                             </ul>
                         </div>
                         
@@ -82,7 +82,7 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-3 col-xs-6">
                             <h6 className="font-montserrat">Resources</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/careers">Careers</a></li>
+                                <li><a href="/masterpage/careers">Careers</a></li>
                                 <li><a href="/blog">Blogs</a></li>
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
@@ -193,7 +193,7 @@ export default class Footer extends Component {
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/services">Expertise</a></li>
-                                <li><a href="/industries">Industries</a></li>
+                                <li><a href="/masterpage/industries">Industries</a></li>
                             </ul>
                         </div>
                         
