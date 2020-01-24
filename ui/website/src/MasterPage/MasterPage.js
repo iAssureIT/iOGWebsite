@@ -1,10 +1,8 @@
 import React, { Component, Suspense } from 'react';
-
 import {Route, withRouter} from 'react-router-dom';
-
+import $    from 'jquery';
 import axios        from 'axios';
 import swal from 'sweetalert';
-
 import PageHead from "../PageHead/PageHead.js";
 import './MasterPage.css';
 
@@ -24,6 +22,16 @@ class MasterPage extends React.Component {
 			}
 		}; 
 	}
+
+modalClickEvent(){
+    console.log("click event")
+    $('#modalId').addClass('in');
+    $('#modalId').css('display','block');
+    
+    // $('#modalId').modal('hide');
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
+  }
 componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			// this.getAllBlockList();
