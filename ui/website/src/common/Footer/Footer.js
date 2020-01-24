@@ -87,7 +87,7 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6 ">
+                        <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6 NOpadding ">
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
 
