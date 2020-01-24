@@ -91,17 +91,10 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
 
-                             
-                             7090, 7th Floor, Marvel Fuego, Magarpatta Road,
-Opp Seasons Mall, Hadapsar,
-Pune, Maharashtra 411028
-
-
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
-                                 7090, 7th Floor,<br/>  Marvel Fuego,
-                                 <sup></sup>Magarpatta Road, Opp Seasons Mall,Hadapsar 
+                                 7090, 7th Floor,<br/>  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
                                   Pune,India- 411028.<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 2951 0500
+                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 2029510500
                              </p>
                         </div> 
                         <div className="col-md-3 col-sm-3 col-xs-12">
