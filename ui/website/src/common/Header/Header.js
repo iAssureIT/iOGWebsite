@@ -451,7 +451,7 @@ export default class Header extends Component {
            </div>
           </div>
         </div>
-         <button className="contactBar hidden-sm hidden-xs" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
+         <button className="contactBar hidden-sm hidden-xs" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>

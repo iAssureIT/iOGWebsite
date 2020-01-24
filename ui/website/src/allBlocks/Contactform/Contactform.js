@@ -1,8 +1,11 @@
 import React from 'react';
 import "./Contactform.css";
 import axios from 'axios';
-import swal from 'sweetalert2';
+import swal from 'sweetalert';
 import $                  from 'jquery';
+/*import 'bootstrap/dist/css/bootstrap.min.css';*/
+import 'bootstrap/js/modal.js';
+import 'bootstrap/js/collapse.js';
 
 const formValid = formerrors=>{
   console.log("formerrors",formerrors);
@@ -86,7 +89,7 @@ export default class ContactUsForm extends React.Component {
         axios
         .post('http://iogapi.iassureit.com/send-email',formValues1)
         .then((res)=>{
-            if(res.status === 200){
+            if(res.status === 200 ){
                 swal("Thank you for contacting us. We will get back to you shortly.")
                 }
         })
@@ -127,13 +130,17 @@ export default class ContactUsForm extends React.Component {
         this.refs.message.value = "";
     }
 
+    closeModal(){
+      window.location.reload()
+    }
+
     render() {
         const {formerrors} = this.state;
         return (
             <div className="cuformWall">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactHeader lightbluebg text-center">
                     <label ><b>Contact</b> Us</label>
-                    <button type="button" className="close closeBtn" data-dismiss="modal">&times;</button>
+                    <button type="button" className="close closeBtn" data-dismiss="modal" onClick={this.closeModal.bind(this)}>&times;</button>
                 </div>
                 <div className="contactpageform" >
                     <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -173,7 +180,7 @@ export default class ContactUsForm extends React.Component {
                         </div>
                         
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                          <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal" >Cancel</button>
+                          <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal" onClick={this.closeModal.bind(this)} >Cancel</button>
                           <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-2 col-lg-offset-8" onClick={this.Submit.bind(this)}>Submit</button>
                         </div>
                     </form>

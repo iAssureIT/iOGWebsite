@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import 'bootstrap/js/modal.js';
-import 'bootstrap/js/collapse.js';
+// import 'bootstrap/js/modal.js';
+// import 'bootstrap/js/collapse.js';
 import Routes from './lib/Routes';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 // axios.defaults.baseURL = 'http://iogapi.iassureit.com';
