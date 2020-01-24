@@ -72,10 +72,10 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-2 col-xs-6">
                             <h6 className="font-montserrat">Service Arms</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/iogimplement">iOGImplement</a></li>
-                                <li><a href="/iogconsult">iOGConsult</a></li>
-                                <li><a href="/iogtrain">iOGTrain</a></li>
-                                <li><a href="/iogstudy">iOGStudy</a></li>
+                                <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
+                                <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
+                                <li><a href="/masterpage/iog-train">iOGTrain</a></li>
+                                <li><a href="/masterpage/iog-study">iOGStudy</a></li>
                             </ul>
                         </div>
                         
