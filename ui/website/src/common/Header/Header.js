@@ -206,7 +206,7 @@ export default class Header extends Component {
                             <a href="/masterpage/etrm">ETRM</a>
                           </div>
                           <div className="column columnmenu">
-                            <h5 className="columnhead"><a href="/masterpage/energy-management"className="columnhead">Energy Management</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
                            <a href="/masterpage/energy-optimization">Utility Network Optimization</a>
                             <a href="/masterpage/equipment-monitoring">Equipment Monitoring</a>
                             <a href="/masterpage/energy-accounting">Energy Accounting</a>
