@@ -74,6 +74,9 @@
 .navigation_tab{
     width: 143px;
 }
+.navigation_tab_for6{
+    width: 215px;
+}
 #new_wizardNote_new0{
     width: 147px;
     color: #ffffff;
@@ -133,7 +136,7 @@
     bottom:14px;
 
 }
-.navigationTitle_for2{
+.navigationTitle_for6{
     color: #ffffff;
     position: absolute; 
     top: -12px;
@@ -142,4 +145,13 @@
     font-size: 23px;
     bottom:14px;
 
+}
+
+.navigationTitle_for6
+{   
+    font-size: 23px;
+    font-weight: 600;
+    left: 595px;
+    bottom: 14px;
+    position: absolute;
 }
