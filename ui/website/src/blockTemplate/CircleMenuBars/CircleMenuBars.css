@@ -110,5 +110,26 @@
     bottom: 4px;
     left: 254px;
     font-weight: 600;
+    font-size: 23px;
     
+}
+.new_navigationTitle{
+    color: #ffffff;
+    position: absolute; 
+    bottom: 4px;
+    left: 578px;
+    font-weight: 600;
+    font-size: 23px;
+    bottom:14px;
+
+}
+.navigationTitle_for5{
+    color: #ffffff;
+    position: absolute; 
+    top: -12px;
+    left: 351px;
+    font-weight: 600;
+    font-size: 23px;
+    bottom:14px;
+
 }

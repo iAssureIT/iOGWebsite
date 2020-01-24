@@ -112,7 +112,7 @@ componentDidMount(){
                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                   <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
-                     <h4 className="navigationTitle">You May Also Visit</h4>
+                     <h4 className="navigationTitle_for5">You May Also Visit</h4>
                     { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -192,7 +192,7 @@ componentDidMount(){
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                     
                     <div className="wizard-inner col-lg-12  col-md-12 col-xs-12 col-sm-12">
-                    <h4 className="navigationTitle">You May Also Visit</h4>
+                    <h4 className="new_navigationTitle">You May Also Visit</h4>
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
