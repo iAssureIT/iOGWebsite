@@ -1,10 +1,15 @@
 import React, { Component, Suspense } from 'react';
-import {Route, withRouter} from 'react-router-dom';
-import $    from 'jquery';
-import axios        from 'axios';
-import swal from 'sweetalert';
-import PageHead from "../PageHead/PageHead.js";
+import {Route, withRouter}            from 'react-router-dom';
+import $                              from 'jquery';
+import axios                          from 'axios';
+import swal                           from 'sweetalert';
+import Contactform                    from '../allBlocks/Contactform/Contactform.js';
+import PageHead                       from "../PageHead/PageHead.js";
 import './MasterPage.css';
+import 'bootstrap/js/modal.js';
+import 'bootstrap/js/collapse.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 class MasterPage extends React.Component {

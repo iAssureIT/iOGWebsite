@@ -219,10 +219,9 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
-                                 Amanora Chambers, Office 330,
-                                 3<sup>rd</sup> floor, East Block,Hadapsar,
-                                  Pune,India- 411028.
-                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 20 672 603 81/82.
+                                 7090, 7th Floor,<br/>  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
+                                  Pune,India- 411028.<br/>
+                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 2029510500
                              </p>
                         </div>
                         <div className="col-sm-12 col-xs-12">

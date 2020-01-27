@@ -14,3 +14,17 @@
 .inputrow{
 	padding: 5px 15px;
 }
+.contactBar:hover .hovertext{
+  display: block;
+  cursor: pointer;
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.hovertext{
+  cursor: pointer;
+  color: #fff;
+  width : 100px;
+  right: 5px;
+  display: none;
+}
