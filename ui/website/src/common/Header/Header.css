@@ -670,7 +670,13 @@ dropdown-submenu {
 }
 .dropdownresponsive{
   width: 348px ! important;
-  background-color: #777;
+  background-color: #ffffff;
+}
+#navbarDropdownMenuLink{
+  font-size: 12px;
+  background: #ffffff ! important;
+    /* color: #000; */
+    color: #333 ! important;
 }
 .dropdownresponsive li{
   width:300px ! important;
@@ -688,6 +694,7 @@ dropdown-submenu {
 .customDropdown a{
   background-color: #FAFAFA! important;
   width:348px;
+  font-size: 12px ! important;
   color:#333 ! important;
 }
 .resmenubar{
@@ -736,4 +743,7 @@ dropdown-submenu {
 }
 .navbar1-nav>ul>li>a{
   color: #ffffff;
+}
+.customDropdown a{
+  text-align: right;
 }

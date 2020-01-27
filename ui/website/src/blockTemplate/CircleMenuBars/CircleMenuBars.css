@@ -18,7 +18,7 @@
     text-align: center;
     margin-right: 0px;
     position: relative;
-    top: 72px;
+    top: 35px;
     right: 15px;
     color: #ffffff;
  }
@@ -55,7 +55,7 @@
     text-align: center;
     font-size: 18px;
     color: #000;
-    top:44px;
+    /*top:44px;*/
 }
 .nopadding{
     padding: 0px;
@@ -109,7 +109,7 @@
 }
 .navigationTitle{
     color: #ffffff;
-    position: absolute; 
+    /*position: absolute; */
     bottom: 4px;
     left: 254px;
     font-weight: 600;
@@ -118,7 +118,7 @@
 }
 .new_navigationTitle{
     color: #ffffff;
-    position: absolute; 
+    /*position: absolute; */
     bottom: 4px;
     left: 578px;
     font-weight: 600;
@@ -128,9 +128,6 @@
 }
 .navigationTitle_for5{
     color: #ffffff;
-    position: absolute; 
-    top: -12px;
-    left: 351px;
     font-weight: 600;
     font-size: 23px;
     bottom:14px;

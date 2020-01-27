@@ -282,15 +282,15 @@ export default class Header extends Component {
                               <span className="icon-bar"></span>
                             </button>*/}
                           </div>
-                          <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
+                          <div className="collapse navbar-collapse responsiveNavBar pull-right" id="navBar">
                             <ul className="nav navbar-nav navbar-right customUl width50">
                               <li className="nav-item dropdown dropdownresponsive">
-                                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle pull-right" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   HOME <span className="caret"></span>
                                 </a>                    
                                </li>
                                  <li className="nav-item dropdown dropdownresponsive">
-                                    <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle pull-right" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                        ABOUT US <span className="caret"></span>
                                     </a>
                                     <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -301,7 +301,7 @@ export default class Header extends Component {
                                     </ul>
                                   </li>
                                       <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              SERVICES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -314,10 +314,11 @@ export default class Header extends Component {
 
 
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="planning-&-scheduling" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="planning-&-scheduling" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              PLANNING & SCHEDULING<span className="caret"></span>
                                           </a>
-                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                          <ul className="dropdown-menu customDropdown  " aria-labelledby="navbarDropdownMenuLink">
+                                              <a href="planning-&-scheduling">Plnanning & Scheduling</a>
                                               <a href="/masterpage/demand-management">Demand Management</a>
                                               <a href="/masterpage/invetory-management">Inventory Management</a>
                                               <a href="/masterpage/distribution-planning">Distribution Planning</a>
@@ -326,7 +327,7 @@ export default class Header extends Component {
                                         </li>
 
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="supply-&-distribution" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="supply-&-distribution" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             SUPPLY & DISTRIBUTION<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -339,7 +340,7 @@ export default class Header extends Component {
                                         </li>
 
                                          <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                            DIGITAL SERVICES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -351,7 +352,7 @@ export default class Header extends Component {
                                         </li>
 
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                            MANUFACTURING EXEC SYSTEM<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -364,7 +365,7 @@ export default class Header extends Component {
                                         </li>
 
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                            HEALTH SAFETY & ENVIRONMENT<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -375,7 +376,7 @@ export default class Header extends Component {
                                         </li>
 
                                          <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                            SIMULATION & MODELING <span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -386,7 +387,7 @@ export default class Header extends Component {
                                         </li>
 
                                          <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                            OTHER SERVICES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -396,7 +397,7 @@ export default class Header extends Component {
                                         </li>
 
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                            ENERGY MANAGEMENT<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -408,7 +409,7 @@ export default class Header extends Component {
 
                                        
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              INDUSTRIES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
@@ -422,22 +423,22 @@ export default class Header extends Component {
                                           </ul>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              CAREERS<span className="caret"></span>
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              RESOURCES<span className="caret"></span>
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              BLOGS<span className="caret"></span>
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              CONTACT US<span className="caret"></span>
                                           </a>
                                         </li>        
@@ -451,7 +452,7 @@ export default class Header extends Component {
            </div>
           </div>
         </div>
-         <button className="contactBar hidden-sm hidden-xs" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
+         <button className="contactBar " data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
