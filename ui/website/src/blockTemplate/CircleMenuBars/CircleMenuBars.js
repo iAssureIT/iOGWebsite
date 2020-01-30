@@ -249,7 +249,7 @@ componentDidMount(){
                                             
                                         </span>
                                    
-                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    <div className="new_wizardNote_for6 ">{result.Title}</div>
                                     </a>
                                 </div>
                                

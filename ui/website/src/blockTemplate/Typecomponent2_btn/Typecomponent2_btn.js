@@ -56,11 +56,16 @@ componentDidMount(){
                  <img src={this.state.blocks.fgImage} alt="" className="third_img" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                 
+                  <div className="col-lg-11">
+                    <div className="line1 "></div>
+                  </div>                    
+          
                    {/*<h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>*/}
                    <div>
                      <p className="righttextaboutus"  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                    </div>
-                   <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
+                   <a class="col-lg-4 services_title" href={this.state.blocks.blockSubTitle}>
                     <button class="lightbluebg buttonhover servicekbtn btn">Read More 
                      <span class="servicekbtnarrow">&gt;&gt;</span>
                    </button>

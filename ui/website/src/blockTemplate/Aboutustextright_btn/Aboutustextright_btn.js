@@ -55,12 +55,14 @@ componentDidMount(){
             <div className="row">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 g_blockInnerWrapper">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blockTextWrapper">
+                    
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                         
                           <div className="col-lg-2"> </div>
                           <p className="l_BT1_para text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                       </div>
                       <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
-                    <button class="lightbluebg buttonhover servicekbtn btn">Read More 
+                    <button class="lightbluebg buttonhover servicekbtn btn servicekbtn_new">Read More 
                      <span class="servicekbtnarrow">&gt;&gt;</span>
                    </button>
                   </a>

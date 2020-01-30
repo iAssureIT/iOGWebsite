@@ -126,7 +126,7 @@ export default class Downstream extends Component {
                         </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
                     <hr/>
-                        <h1>iOG Solutions for</h1><h2> Downstream Oil & Gas Industry</h2>
+                     <h2><b>Downstream Oil & Gas Industry</b></h2>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div className="row">

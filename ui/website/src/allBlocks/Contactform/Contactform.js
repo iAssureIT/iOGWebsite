@@ -71,7 +71,7 @@ export default class ContactUsForm extends React.Component {
     Submit(event){
         event.preventDefault();
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "ashish.chavan@iassureit.com";
+        var adminEmail = "info@iogsolutions.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",

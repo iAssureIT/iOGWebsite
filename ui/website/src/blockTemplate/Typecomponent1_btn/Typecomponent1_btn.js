@@ -56,7 +56,7 @@ componentDidMount(){
                  
                 <div className="col-lg-2">
                   <div className="col-lg-11 col-lg-offset-1">
-                    <div className="line1 col-lg-1 pull-right "></div>
+                    <div className="line1 col-lg-1 "></div>
                   </div>                    
                 </div> 
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

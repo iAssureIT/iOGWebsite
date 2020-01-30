@@ -128,7 +128,7 @@ componentDidMount(){
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate3 servivesblockIog NOPadding">
          <div>
-            <h1 className="text-center"><b>{this.state.blocks.blockTitle}</b></h1>
+            <h1 className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></h1>
          </div>
           <div className="col-lg-offset-2 col-lg-10 col-md-10 col-sm-10 col-xs-10">
            { 

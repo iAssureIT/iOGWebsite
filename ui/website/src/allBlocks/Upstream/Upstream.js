@@ -131,7 +131,7 @@ export default class Upstream extends Component {
                         <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
-                                <b>iOG Solutions for</b> Upstream Oil & Gas Industry
+                                <b>Upstream Oil & Gas Industry</b>
                             </h1>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ export default class Upstream extends Component {
                         <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
-                                <b>iOG Solutions for</b> Upstream Oil & Gas Industry
+                                 Upstream Oil & Gas Industry
                             </h1>
                         </div>
                     </div>

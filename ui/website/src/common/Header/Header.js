@@ -84,7 +84,7 @@ export default class Header extends Component {
                              <li><a href="/" className="headerTitle">Home</a></li>
                              <li>
                               <div className="dropdown1"> 
-                                <a href="" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a href="/masterpage/about-us" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                                  <div className="col-lg-offset-2 dropdown-content servicedropdown aboutusdrop ">
                                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
@@ -108,7 +108,7 @@ export default class Header extends Component {
                               </li>
                               <li> 
                               <div className="dropdown1 ">  
-                              <a href="/servicearms" className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <a href="/masterpage/service-arms" className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>  
                               <div className="col-lg-offset-5 dropdown-content servicedropdown1 ">
                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
@@ -130,7 +130,7 @@ export default class Header extends Component {
                              <li>
                             <div className="dropdown1 "> 
                             
-                            <a href="/services" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <a href="/masterpage/expertise-main-page" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
                           <div className="dropdown-content expertcontrnt">

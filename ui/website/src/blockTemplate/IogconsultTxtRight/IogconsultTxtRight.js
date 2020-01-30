@@ -60,7 +60,7 @@ componentDidMount(){
                      <img src={this.state.blocks.fgImage} alt="" className="BT3_iogconsult col-lg-offset-2" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BT3_text1">
-                    <h1><b>{this.state.blocks.blockTitle}</b></h1>
+                    <h1 className="services_title"><b>{this.state.blocks.blockTitle}</b></h1>
                       <p className="BT3_text text-justify "dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
                   </div>

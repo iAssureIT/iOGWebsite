@@ -57,9 +57,9 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
-                <div className="col-lg-offset-1 col-lg-11 col-md-11 col-sm-11 col-xs-11 pb35">
+                <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 pb35 pb351">
                     <div className="row">
-                        <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                        <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
                             <h6 className="font-montserrat">Menu</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
@@ -69,7 +69,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-md-2 col-sm-2 col-xs-6">
+                        <div className="col-md-2 col-sm-2 col-xs-6 footerdivs">
                             <h6 className="font-montserrat">Service Arms</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
@@ -79,7 +79,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-md-2 col-sm-3 col-xs-6">
+                        <div className="col-md-2 col-sm-3 col-xs-6 footerdivs">
                             <h6 className="font-montserrat">Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/careers">Careers</a></li>
@@ -87,14 +87,16 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6 NOpadding ">
+                        <div className="col-lg-4 col-md-4 col-sm-2 col-xs-6 NOpadding ">
                             <h6 className="font-montserrat col">Address</h6>
                             <p className="fs15">
 
-                                 <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
-                                 7090, 7th Floor,<br/>  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
+                                 <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.,
+                                 7090,7th Floor,  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar,<br/>
                                   Pune,India- 411028.<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 2029510500
+                                   <i class="fa fa-envelope footermailicon"></i>Mail: info@iogsolutions.com<br/>
+                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 2029510500 
+                                
                              </p>
                         </div> 
                         <div className="col-md-3 col-sm-3 col-xs-12">
@@ -185,7 +187,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue responsivefooter col-lg-12 footer-two">
-                <div className=" col-sm-12 col-xs-12 pb35">
+                <div className=" col-sm-12 col-xs-12 pb35 pb351">
                     <div className="row">
                         <div className=" col-sm-4 col-xs-4">
                             <h6 className="font-montserrat">Menu</h6>
