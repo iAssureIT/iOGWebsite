@@ -18,7 +18,7 @@ class Careerimpact extends Component{
 
                 
       blocks: {
-        "blockTitle"          : "<b>Be a part of</b><br/>our exciting journey!",
+        "blockTitle"          : "<b>Be a part of our exciting journey!</b>",
         "blockDescription"    : "<li>Relevant work experience in petroleum industry</li><li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li><li>Thorough knowledge of drilling and work-over operations</li><li>Ability to determine data requirements for carrying out various studies,gather relevant data and proper utilization of the data.</li><li>Skilled in Landmark Software Package like WellPlan, Compass, WellCat, StressCheck, and Openwells</li><li>Experience in OLGA- Wells Management software</li><li>Good experience in designing of vertical,horizontal, multi-laterals, complex wells etc. </li><li>Experience in carrying out drilling and work-over operations</li><li>Knowledge of emerging new technology in drilling and ability to implement new solutions based on feasibility study</li><li>Independently write drilling programs, design drill strings and implements strategies</li><li>Expert in implementation of technological upgradation in drilling technology</li><li>Independently supervise and provide expert support for technically challenging projects</li><li>Expert in Well Control opertions, Blow-out prevention, knowledge of various well control equipment used in drilling operations</li><li>Knowledge of drilling muds, mud-pumps,rotary equipments, other rig equipments etc</li><li>Completion of industry recognized certified courses in Drilling Technology will be an added advantage</li> <li>Experience in preparation of field development plan,field monitoring and simulation studies using industry standard numerical simulators.</li><li>Analyzing geological data and interpreting well-logging results to ascertain resource potential</li><li>Carry out fluid characterization studies and prepare black oil as well as compositional PVT and Equation of State</li><li>Estimating reserves and forecasting for property evaluations and development planning.</li><li>Carrying out reservoir simulation studies to optimize recoveries.</li><li>Predicting reserves and performance for well proposals.</li><li>Predicting and evaluating waterflood and enhanced recovery performance.</li><li>Developing and applying reservoir optimization techniques.</li><li>Developing cost-effective reservoir monitoring and surveillance programs.</li><li>Performing reservoir characterization studies and analyzing pressure transients.</li><li>Designing and coordinating petrophysical studies.</li><li>Analyzing the economics and risk assessments of major development programs.</li><li>Skilled in Numerical reservoir modelling,Production forecasting,Decline curve analysis,Well test design and interpretation,Development planning,Reservoir fluid analysis,Well design optimization,Economic modelling.</li><li>Experience using Simulators like Eclipse,IMEX,STARS,GEM,tNavigator,Forgas,<br/>COMET3,Tempest,Petrel RE or other E&P software.</li><li>Coding experience will be highly advantageous like C,C++,Fortran,Matlab,Python etc</li>" ,
        
         "blockComponentName"  : "Careerimpact",
@@ -28,18 +28,21 @@ class Careerimpact extends Component{
                             {
                               "Title"       : "WELL ENGINEER",
                               "SubTitle"    : "Pune",
+                              "Description" : "Implementation of the Data Historian Tool",
                               
                               
                           },
                           {
                             "Title"         : "RESERVOIR ENGINEER",
                               "SubTitle"    : "Mumbai",
+                              "Description" : "Implementation of the Data Historian Tool",
                               
                              
                           },
                           {
                               "Title"       : "PRODUCTION TECHNOLOGIST",
                               "SubTitle"    : "Pune",
+                              "Description" : "Implementation of the Data Historian Tool",
                             
                           }
         ],
@@ -175,14 +178,15 @@ CareersData(){
     }*/
 
   render(){
-    console.log("CareersData ==",this.state.blocks)
+    console.log("CareersData ==",this.state.blocks.repeatedBlocks[0].Description)
     return(
      <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
      <div className="row">
       <div>
-        <div className="lineee2 col-lg-12 col-lg-offset-6"></div>
+       {/* <div className="lineee2 col-lg-12 col-lg-offset-6"></div>*/}
       </div>       
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 className="career_para-top2 text-center"dangerouslySetInnerHTML={{ __html: this.state.blocks.blockTitle}} ></h2>
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
               <div className="img_2">
                 <img src={this.state.blocks.fgImage} alt="" className="career2_img" />
@@ -191,7 +195,7 @@ CareersData(){
 
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                <div className="col-lg-12">
-                 <h2 className="career_para-top2"dangerouslySetInnerHTML={{ __html: this.state.blocks.blockTitle}} ></h2>
+                
             <div className="row spacing1">
                 <div className="col-lg-12">
                   <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -218,7 +222,7 @@ CareersData(){
                                           <p>{data.SubTitle}</p>
                                           <h3 className="full_head padding_zero">Job Information</h3>
                                           <h5>ROLES AND RESPONSIBILITIES</h5>
-                                          <ul className="simple_list bottom_pad" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks.Description}}></ul>
+                                          <ul className="simple_list bottom_pad" dangerouslySetInnerHTML={{ __html: data.Description}}></ul>
                                           <h5>QUALIFICATIONS AND EDUCATION REQUIREMENTS</h5>
                                           <ul className="simple_list bottom_pad">
                                             <li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li>

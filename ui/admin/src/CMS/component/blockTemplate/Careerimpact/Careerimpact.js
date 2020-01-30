@@ -28,18 +28,21 @@ class Careerimpact extends Component{
                             {
                               "Title"       : "WELL ENGINEER",
                               "SubTitle"    : "Pune",
+                              "Description" : "Implementation of the Data Historian Tool",
                               
                               
                           },
                           {
                             "Title"         : "RESERVOIR ENGINEER",
                               "SubTitle"    : "Mumbai",
+                              "Description" : "Implementation of the Data Historian Tool",
                               
                              
                           },
                           {
                               "Title"       : "PRODUCTION TECHNOLOGIST",
                               "SubTitle"    : "Pune",
+                              "Description" : "Implementation of the Data Historian Tool",
                             
                           }
         ],
@@ -218,7 +221,7 @@ CareersData(){
                                           <p>{data.SubTitle}</p>
                                           <h3 className="full_head padding_zero">Job Information</h3>
                                           <h5>ROLES AND RESPONSIBILITIES</h5>
-                                          <ul className="simple_list bottom_pad" dangerouslySetInnerHTML={{ __html: this.state.blocks.blockDescription}}></ul>
+                                          <ul className="simple_list bottom_pad" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks.Description}}></ul>
                                           <h5>QUALIFICATIONS AND EDUCATION REQUIREMENTS</h5>
                                           <ul className="simple_list bottom_pad">
                                             <li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li>

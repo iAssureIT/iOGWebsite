@@ -273,17 +273,26 @@ class ContactUsform extends Component{
           {
               val: 0,
               label: 'Services',
-              items: [{parentVal: 1, val: 7, label: 'Upstream'},{parentVal: 1, val: 8, label: 'Downstream'},{parentVal: 1, val: 9, label: 'Health safty & Environment '},{parentVal: 1, val: 10, label: 'Asset Management'},{parentVal: 1, val: 11, label: 'Digital Services'}]
+              items: [{parentVal: 1, val: 7, label: 'iOGImplement'},{parentVal: 1, val: 8, label: 'iOGConsult'},{parentVal: 1, val: 9, label: 'iOGTrain '},{parentVal: 1, val: 10, label: 'iOGStudy'}]
           },
+          
           {
               val: 1,
-              label: 'Sales'
-          },  {
+              label: 'Expertise',
+              items: [{parentVal: 2, val: 11, label: 'Planning & Scheduling'},{parentVal: 2, val: 12, label: 'Supply & Distribution'},{parentVal: 2, val: 13, label: 'Digital Services '},
+                      {parentVal: 2, val: 13, label: 'Manufacturing Execution System'},{parentVal: 2, val: 14, label: 'Health & Safety Environment'},
+                      {parentVal: 2, val: 15, label: 'Simulation & Modeling'},{parentVal: 2, val: 16, label: 'Energy Management'},
+                      {parentVal: 2, val: 17, label: 'Asset Management'},{parentVal: 2, val: 18, label: 'Other Services'}]
+          } ,
+          {
               val: 2,
-              label: 'Support'
-          },  {
+              label: 'Sales',
+          }, 
+          {
               val: 3,
-              label: 'Consulting'
+              label: 'Industries',
+              items: [{parentVal: 3, val: 11, label: 'Refinery'},{parentVal: 3, val: 12, label: 'Petrochemicals'},{parentVal: 3, val: 13, label: 'Chemicals '},
+                      {parentVal: 3, val: 13, label: 'LNG'},{parentVal: 3, val: 14, label: 'Gas Processing'},{parentVal: 3, val: 14, label: 'Oil & Gas E & P'}]
           },
         /*  {
               val: 2,
@@ -352,7 +361,7 @@ class ContactUsform extends Component{
                   </div>
                   <div className="errorMsg">{this.state.errors.email}</div>
                 </div>
-                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12">
                   <div className="form-group">
                       <label htmlFor="enquiry">Enquiry<span className="redFont">*</span></label>
                       <div className="input-group">
@@ -371,7 +380,7 @@ class ContactUsform extends Component{
                       <div className="errorMsg">{this.state.errors.enquiry}</div>
                   </div>  
                 </div>
-                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12">
                   <label htmlFor="subject">Subject<span className="redFont">*</span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>

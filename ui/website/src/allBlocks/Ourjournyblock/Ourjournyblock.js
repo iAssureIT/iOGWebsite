@@ -251,14 +251,14 @@ journyData6(){
     ]
 }
 journyData7(){
-    return [
+    /*return [
         {
             journyTitle : "Apr 2018",
             journytext  : " Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry.  "   
         },
  
         
-    ]
+    ]*/
 }
 journyData8(){
     return [
@@ -343,7 +343,7 @@ journyData12(){
           <Journycaro journyData={this.journyData6()}/>
         </div>
         <div className="Journycaro8">
-          <Journycaro journyData={this.journyData7()}/>
+          {/*<Journycaro journyData={this.journyData7()}/>*/}
         </div>
         <div className="Journycaro9">
           <Journycaro journyData={this.journyData8()}/>
@@ -402,7 +402,7 @@ journyData12(){
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg2">
-              <img className="add7" src="/images/add1.png" />
+              <img className="add7" src="" />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 journybg31">
                 <img className="add8" src="/images/add1.png" />
