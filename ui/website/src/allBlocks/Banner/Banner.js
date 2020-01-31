@@ -138,7 +138,23 @@ onHover(event)
                     </p>
                   </div>
                 </figure>
-                <figure className="oilsign8 hoveroilsign3 "onClick={this.pinclick.bind(this)}>
+                <figure className="oilsign8 hoveroilsign2">
+                 <img alt="" href="" src="/images/oilsign.png"/>
+                  <div className="triangle-down2">
+                    <div className="triangle-down21"></div>
+                  </div>
+                   <div className="dataonHover2">
+                    <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
+                       heating, gas and light fuel formation and heavy oil
+                       sedimentation and the entire process of refining takes place here<br/> 
+                     <a href="/masterpage/refinery-mainpage">
+                       <span className="Hoverreadmore">Read More
+                       </span> 
+                      </a> 
+                    </p>
+                  </div>
+                </figure>
+                {/*<figure className="oilsign8 hoveroilsign3 "onClick={this.pinclick.bind(this)}>
                   <img alt="" src="/images/oilsign.png" className="hoveroilsign3"/>
                  </figure>  
                   <div className="triangle-down1">
@@ -150,18 +166,23 @@ onHover(event)
                        sedimentation and the entire process of refining takes place here<br/> 
                      <a href="/masterpage/refinery-mainpage"><span className="Hoverreadmore">Read More</span> </a> 
                     </p>
-                  </div>
+                  </div>*/}
                
 
-                <figure className="oilsign7 hoveroilsign4 "onClick={this.pin7click.bind(this)}>
-                 <img alt=""  href="" src="/images/oilsign.png"/>
-                </figure> 
-                    <div className="arrow-right"></div>
-                   <div className="dataonHover">
-                    <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications. <br/> 
-                     <a href="/masterpage/petrochemical-mainpage"><span className="Hoverreadmore">Read More</span> </a> 
+                <figure className="oilsign7 hoveroilsign2">
+                 <img alt="" href="" src="/images/oilsign.png"/>
+                  <div className="triangle-down2">
+                    <div className="triangle-down21"></div>
+                  </div>
+                   <div className="dataonHover2">
+                    <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications.<br/> 
+                     <a href="/masterpage/petrochemical-mainpage">
+                       <span className="Hoverreadmore">Read More
+                       </span> 
+                      </a> 
                     </p>
                   </div>
+                </figure>
                 
                 
                 {/*<figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut7.bind(this)}>
@@ -169,7 +190,7 @@ onHover(event)
                   </figure>
                   <div className="dataonHover">
                    <div className="arrow-right"></div>
-                      <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications.  <br/>
+                      <p className="pinhoverdata text-center">  <br/>
                        </p>
                   </div>*/}
                 

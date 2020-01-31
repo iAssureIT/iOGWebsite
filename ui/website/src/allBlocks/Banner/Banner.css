@@ -413,13 +413,13 @@ height: 90px;
     position: absolute;
     right: 16.5em;
     top: 15em;
-    /*animation:  oilsign 8s linear  infinite;*/
+    animation:  8s linear  infinite;
 }
 .oilsign8 {
     position: absolute;
     right: 40.9em;
     top: 16.7em;
-    /*animation: oilsign 8s linear infinite;*/
+    animation:  8s linear infinite;
     /*z-index: 1;*/
 }
 .oilsign8 img:hover .dataonHover1 {
@@ -644,12 +644,12 @@ height: 90px;
 }
 .dataonHover2 {
     display: none;
-    height: 90px;
-    width: 180px;
+    height: 105px;
+    width: 233px;
     border-radius: 5px;
     background-color: #ffffff;
-    margin-left: -76px;
-    margin-top: -133px;
+    margin-left: -101px;
+    margin-top: -147px;
     position: absolute;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   
