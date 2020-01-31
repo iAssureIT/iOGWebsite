@@ -25,6 +25,7 @@ class ContactUsform extends Component{
       "fields"        : {},
       "errors"        : {},
      }
+     this.handleChange = this.handleChange.bind(this);
 
   }
     handleChange(event){
@@ -93,7 +94,7 @@ class ContactUsform extends Component{
       "enquiry"          : this.state.enquiry,
      
     }
-    // console.log("dataArray==>",dataArray);
+    console.log("dataArray======>",dataArray);
       let fields = {};
       fields["userName"]      = "";
       fields["companyName"]   = "";
@@ -141,7 +142,11 @@ class ContactUsform extends Component{
                               "============================  <br/> <br/> " +
                               "<b>Client Name: </b>"   + this.state.name + '<br/>'+
                              
-                              "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
+                              "<b>Client Company Name: </b>"  + this.state.companyName + '<br/><br/>'+
+
+                              "<b>Designation: </b>"  + this.state.designation + '<br/><br/>'+
+
+                               "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
 
                               "<pre> " + this.state.message + "</pre>" +
                               "<br/><br/> ============================ " +
@@ -280,9 +285,9 @@ class ContactUsform extends Component{
               val: 1,
               label: 'Expertise',
               items: [{parentVal: 2, val: 11, label: 'Planning & Scheduling'},{parentVal: 2, val: 12, label: 'Supply & Distribution'},{parentVal: 2, val: 13, label: 'Digital Services '},
-                      {parentVal: 2, val: 13, label: 'Manufacturing Execution System'},{parentVal: 2, val: 14, label: 'Health & Safety Environment'},
-                      {parentVal: 2, val: 15, label: 'Simulation & Modeling'},{parentVal: 2, val: 16, label: 'Energy Management'},
-                      {parentVal: 2, val: 17, label: 'Asset Management'},{parentVal: 2, val: 18, label: 'Other Services'}]
+                      {parentVal: 2, val: 14, label: 'Manufacturing Execution System'},{parentVal: 2, val: 15, label: 'Health & Safety Environment'},
+                      {parentVal: 2, val: 16, label: 'Simulation & Modeling'},{parentVal: 2, val: 17, label: 'Energy Management'},
+                      {parentVal: 2, val: 18, label: 'Asset Management'},{parentVal: 2, val: 19, label: 'Other Services'}]
           } ,
           {
               val: 2,
@@ -291,8 +296,8 @@ class ContactUsform extends Component{
           {
               val: 3,
               label: 'Industries',
-              items: [{parentVal: 3, val: 11, label: 'Refinery'},{parentVal: 3, val: 12, label: 'Petrochemicals'},{parentVal: 3, val: 13, label: 'Chemicals '},
-                      {parentVal: 3, val: 13, label: 'LNG'},{parentVal: 3, val: 14, label: 'Gas Processing'},{parentVal: 3, val: 14, label: 'Oil & Gas E & P'}]
+              items: [{parentVal: 3, val: 20, label: 'Refinery'},{parentVal: 3, val: 21, label: 'Petrochemicals'},{parentVal: 3, val: 22, label: 'Chemicals '},
+                      {parentVal: 3, val: 23, label: 'LNG'},{parentVal: 3, val: 24, label: 'Gas Processing'},{parentVal: 3, val: 25, label: 'Oil & Gas E & P'}]
           },
         /*  {
               val: 2,
@@ -330,20 +335,20 @@ class ContactUsform extends Component{
                   <div className="errorMsg">{this.state.errors.companyName}</div>
                 </div>
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="designation">Designation<span className="redFont">*</span></label>
+                  <label htmlFor="designation">Designation<span className="redFont"></span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-briefcase" aria-hidden="true"></i></span>
                     <input className="form-control nameSpaceUpper" id="designation" type="text" name="designation" value={this.state.designation} onChange={this.handleChange.bind(this)}  ref="designation" placeholder="Enter Designation"/>
                   </div>
-                  <div className="errorMsg">{this.state.errors.designation}</div>
+                  <div className="errorMsg"></div>
                 </div>
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="country">Country<span className="redFont">*</span></label>
+                  <label htmlFor="country">Country<span className="redFont"></span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
                     <input className="form-control nameSpaceUpper" id="country" type="text" name="country" ref="country" value={this.state.country} onChange={this.handleChange.bind(this)}  placeholder="Enter Country"/>
                   </div>
-                  <div className="errorMsg">{this.state.errors.country}</div>
+                  {/*<div className="errorMsg">{this.state.errors.country}</div>*/}
                 </div>
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
@@ -389,9 +394,9 @@ class ContactUsform extends Component{
                   <div className="errorMsg">{this.state.errors.subject}</div>
                 </div>
                 <div className="formcontent1 col-lg-12  col-md-12 col-sm-12 col-xs-12">
-                  <label htmlFor="message">Note<span className="redFont">*</span></label>
+                  <label htmlFor="message">Note<span className="redFont"></span></label>
                   <textarea rows="5" cols="1" className="form-control" id="message" name="message" value={this.state.message} onChange={this.handleChange.bind(this)}  ref="message"></textarea>
-                  <div className="errorMsg">{this.state.errors.message}</div>
+                  {/*<div className="errorMsg">{this.state.errors.message}</div>*/}
                 </div>
                 <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-2 col-lg-offset-10">

@@ -32,7 +32,7 @@ class Viewpage extends React.Component {
 		axios
 				.get('/api/blocks/get/list')
 				.then((response)=>{
-						        // console.log("AllBlogs=",response.data);
+						        console.log("AllBlogs=",response.data);
 						      	this.setState({
 					      			ListOfBlocks:response.data
 					      		},()=>{

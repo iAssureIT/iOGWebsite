@@ -1,19 +1,18 @@
 import React from 'react';
 import axios from 'axios';
 
-import './Typecomponent1_btn.css';
+import './Typecomponent1Img.css';
 
-export default class Typecomponent1 extends React.Component {
+export default class Typecomponent1Img extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
       blocks: {
-        "blockComponentName"  : "Typecomponent1_btn",
-        "blockType"           : "simple",
-        "blocksubTitle"       : "",
-        blockTitle            : "This is Block Title",
-        blockDescription      : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        fgImage               : "/images/bgimage1.jpg",
+        "blockComponentName"  : "Typecomponent1Img",
+        "blockType"       : "simple",
+        blockTitle : "This is Block Title",
+        blockDescription : "This is a Description. Some text goes here. You can replace the text as per your choice.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        fgImage: "/images/bgimage1.jpg",
       },
       blockID:"",
       block_id:""
@@ -46,9 +45,8 @@ componentDidMount(){
               });
 }
     render(){
-      console.log("this.state.blocks.blocksubTitle",this.state.blocks.blockSubTitle);
         return(
-            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover"
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -56,24 +54,19 @@ componentDidMount(){
                  
                 <div className="col-lg-2">
                   <div className="col-lg-11 col-lg-offset-1">
-                    <div className="line1 col-lg-1 "></div>
+                    <div className="line1 col-lg-1 pull-right "></div>
                   </div>                    
                 </div> 
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
                               <div> 
                                 <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
-                            <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
-                              <div class="lightbluebg buttonhover servicekbtn btn">Read More 
-                               <span class="servicekbtnarrow">&gt;&gt;</span>
-                             </div>
-                            </a>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
                               <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="400" />

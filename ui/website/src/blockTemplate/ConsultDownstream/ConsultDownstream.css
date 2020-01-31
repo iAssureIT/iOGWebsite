@@ -2,6 +2,7 @@
 	height: 1700px;
 	/*background-image: url("/images/consultdown.png");*/
 	background-size: 100% 100%;
+  margin-top: 70px;
 }
 .innerBlocktConsult_new{
   height: 1700px;
@@ -12,7 +13,7 @@
 .downimgtext{
 	  position: absolute;
     top: 5em;
-    left: 17em;
+    left: 16em;
     color: #009de2;
     font-weight: 600;
 }
@@ -27,9 +28,10 @@
 .downimg_p_txt{
 	  position: absolute;
     top: 12.5em;
-    left: 9em;
+    left: 13em;
     /*text-align: justify; */
-    font-size: 20px
+    font-size: 20px;
+    padding-right:135px;
 }
 .downimg_p_txt_new{
     /*position: absolute;

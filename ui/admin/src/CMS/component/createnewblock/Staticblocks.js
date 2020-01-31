@@ -4,6 +4,7 @@ import {Route, withRouter} from 'react-router-dom';
 
 
 import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
+import Typecomponent1Img             from "../blockTemplate/Typecomponent1Img/Typecomponent1Img.js";
 import Typecomponent1_btn            from "../blockTemplate/Typecomponent1_btn/Typecomponent1_btn.js";
 import Typecomponent2                from "../blockTemplate/Typecomponent2/Typecomponent2.js";
 import Typecomponent2_btn            from "../blockTemplate/Typecomponent2_btn/Typecomponent2_btn.js";
@@ -134,6 +135,17 @@ class Staticblocks extends React.Component {
 		                	Select this Block 
 		            </button>		            
 					<Typecomponent1 /> 
+				</section>
+				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+		            <button id="Typecomponent1Img" 
+							data-blockTitle="blockTitle" 
+		                	data-blockDescription="blockDescription" 
+							data-fgImage="fgImage" 
+		                	className="btn zIndexmtop pull-right" 
+		                	onClick={this.selectComponent.bind(this)} > 
+		                	Select this Block 
+		            </button>		            
+					<Typecomponent1Img /> 
 				</section>
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 		            <button id="Typecomponent2" 
@@ -438,6 +450,7 @@ class Staticblocks extends React.Component {
 				</section>
 				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 		            <button id="Typecomponent2_btn" 
+		                    data-blockTitle="blockTitle" 
 		                	data-blockDescription="blockDescription"
 		                	data-blocksubTitle="blocksubTitle"  
 							data-fgImage="fgImage"  

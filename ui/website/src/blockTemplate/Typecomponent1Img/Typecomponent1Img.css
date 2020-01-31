@@ -8,10 +8,7 @@
 
 }
 .righttextaboutus{
-	margin-top: 45px;
-}
-.energypagedata{
-	font-size: 20px;
+	margin-top: 90px;
 }
 /*.onselecthover:hover{
   cursor: pointer;
@@ -20,3 +17,6 @@
   
 
 }*/
+.padding_approach{
+	padding-left: 110px;
+}

@@ -134,7 +134,7 @@ componentDidMount(){
        </div>
        <div>
            <h1 className="downimgtext text-center">{this.state.blocks.blockTitle}</h1>
-          <p className="downimg_p_txt"dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription } }></p>
+          <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt" dangerouslySetInnerHTML={{ __html:this.state.blocks.blockDescription}}></p>
         </div>  
         <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
          { 
