@@ -38,6 +38,27 @@ export default class ApplicationsTemp extends React.Component {
 	      };
 	}
 
+   applicationsright (){
+
+     
+      return  [     
+              {
+                featureTitle :"App4",
+                featureText  :"Accurate production data inflow for Refinery profitability assessment",
+                icon         :"images/star.png"
+              },  
+            
+              {
+
+                featureTitle :"App6",
+                featureText  :"Precise classification and reporting of accounted and unaccounted losses",
+                icon         :"images/star.png"
+              },  
+              
+
+              ]     
+        }
+
 
 	render() {
 		var data1  = this.state.Applications;
@@ -93,7 +114,7 @@ export default class ApplicationsTemp extends React.Component {
 	                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						 {
 		                	
-				      		this.props.applicationsright.map((data, index)=>{
+				      		this.state.applicationsright.map((data, index)=>{
 	                	   return(
 							   <div className="col-lg-12 col-sm-12 col-xs-12">
 								<div className=" col-lg-10 col-md-12">

@@ -171,7 +171,7 @@ export default class Header extends Component {
                             <a href="/masterpage/industries-v4" className="">Industry 4.0 Initiatives</a>
                           </div>
                            <div className=" column columnmenu thirdcolumn columnmenu3">
-                            <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Exec System</a></h5>
+                            <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
                                           {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
                             <a href="/masterpage/production-accounting">Production Accounting</a>
                            {/* <a href="/datahistorian">Realtime Data Historian</a>*/}
@@ -210,9 +210,9 @@ export default class Header extends Component {
                            <a href="/masterpage/energy-optimization">Utility Network Optimization</a>
                             <a href="/masterpage/equipment-monitoring">Equipment Monitoring</a>
                             <a href="/masterpage/energy-accounting">Energy Accounting</a>
-                            <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Management</a> </h5>
+                            <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
                             <a href="/masterpage/aseet-criticality">Asset Criticality Analysis </a>
-                            <a href="/masterpage/asset-lifecycle">Asset LifeCycle </a>
+                            <a href="/masterpage/asset-lifecycle">Asset Lifecycle </a>
                             <a href="/masterpage/asset-strategy-management">Asset Strategy </a>
                             <a href="/masterpage/inspection-&-calibration">Inspection & Calibration</a>
                             {/*<a href="/riskBasedInspection">Asset Lifecycle Management</a>
@@ -353,7 +353,7 @@ export default class Header extends Component {
 
                                         <li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                           MANUFACTURING EXEC SYSTEM<span className="caret"></span>
+                                           MANUFACTURING EXECUTION SYSTEM<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
                                             <a href="/masterpage/production-accounting">Production Accounting</a>

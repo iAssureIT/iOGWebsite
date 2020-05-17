@@ -398,7 +398,7 @@ dropdown-submenu {
 .navbar a {
     float: left;
     display: block;
-    padding: 0 8px;
+    padding: 0 7px;
     color: #000;
     font-size: 15px;
     line-height: 23px;
@@ -746,4 +746,7 @@ dropdown-submenu {
 }
 .customDropdown a{
   text-align: right;
+}
+.columnmenu3{
+  width: 20% ! important;
 }
