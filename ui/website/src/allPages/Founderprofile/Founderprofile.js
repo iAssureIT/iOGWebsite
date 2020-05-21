@@ -12,7 +12,7 @@ export default class Founderprofile extends Component {
             {
                 foundername : "Pankaj Zawar",
                 founderlink : "/",
-                founderimg  : "/images/7.png",
+                founderimg  : "",
                 foundertag  : "Founder and Director of iOG Solutions." ,         
                 foundertext : "Our Founder and Director,Pankaj Zawar is a chemical engineer from UICT, Mumbai with 20+ years of experience in providing consulting,engineering  and implementation services for MES, APC and SCM solutions." ,         
                 founderli   : [

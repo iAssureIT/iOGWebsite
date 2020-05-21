@@ -146,6 +146,46 @@ componentDidMount(){
                     </div>
                 );
              }
+               else if(length==3){
+              return(
+                     
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div> 
+                      <h4 className="navigationTitle text-center">You May Also Visit</h4>
+                    <div className="wizard-inner col-lg-9 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                    
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return(
+                           
+                           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={"/masterpage/"+result.Link}>
+                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                            
+                                        </span>
+                                   
+                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+                );
+
+             }  
+
              else if(length<=4){
               return(
                      
