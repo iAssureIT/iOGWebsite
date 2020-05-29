@@ -80,7 +80,7 @@ class ContactUsform extends Component{
   }
   Submit(event){
     event.preventDefault();
-    if (this.validateForm() && this.validateFormReq()) {
+    if (this.validateForm()) {
      
       var dataArray={
       "userName"         : this.refs.userName.value,

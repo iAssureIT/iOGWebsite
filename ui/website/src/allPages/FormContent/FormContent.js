@@ -110,20 +110,20 @@ class FormContent extends Component{
   
 
     this.setState({
-      "name"             : this.refs.name.value,
-      "city"             : this.refs.city.value,
-      "state"            : this.refs.state.value,
-      "country"          : this.refs.country.value,
-      "education"        : this.refs.education.value,
-      "college"          : this.refs.college.value,
-      "year"             : this.refs.year.value,
-      "experience"       : this.refs.experience.value,
-      "curr_ctc"         : this.refs.curr_ctc.value,
-      "exp_ctc"          : this.refs.exp_ctc.value,
-      "email"            : this.refs.email.value,
-      "contactNumber"    : this.refs.contactNumber.value,
-      "position"         : this.refs.position.value,
-      "experience"       : this.refs.experience.value,
+      "name"             : this.state.name,
+      "city"             : this.state.city,
+      "state"            : this.state.value,
+      "country"          : this.state.country,
+      "education"        : this.state.education,
+      "college"          : this.state.college,
+      "year"             : this.state.year,
+      "experience"       : this.state.experience,
+      "curr_ctc"         : this.state.curr_ctc,
+      "exp_ctc"          : this.state.exp_ctc,
+      "email"            : this.state.email,
+      "contactNumber"    : this.state.contactNumber,
+      "position"         : this.state.position,
+      "experience"       : this.state.experience,
     });
 
 
@@ -157,7 +157,7 @@ class FormContent extends Component{
     if (this.validateForm() && this.validateFormReq()) {
      
       var dataArray={
-      "name"            : this.refs.name.value,
+      "name"             : this.refs.name.value,
       "city"             : this.refs.city.value,
       "state"            : this.refs.state.value,
       "country"          : this.refs.country.value,
@@ -193,7 +193,7 @@ class FormContent extends Component{
         .then((response)=>{
           console.log("response",response);
           swal({
-            title : "Congratulation....!",
+            title : "Congratulations....!",
             text  : "Your data added successfully"
           });
          /* swal({

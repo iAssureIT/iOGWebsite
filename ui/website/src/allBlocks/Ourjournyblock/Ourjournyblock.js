@@ -264,7 +264,7 @@ journyData8(){
     return [
         {
             journyTitle : "Mar 2019",
-            journytext  : "Successful Delivery and Go-Live of Petrochemical Scheduling, Mass Balance and Energy Management Systems for a Greenfield Refinery and Petrochemical Complex in the Asia Pacific.  "   
+            journytext  : "Successful Delivery and Go-Live of Petrochemical Scheduling, Mass Balance for a Greenfield Refinery and Petrochemical Complex in the Asia Pacific.  "   
         },
  
         
@@ -272,20 +272,23 @@ journyData8(){
 }
 journyData9(){
     return [
-        {
-            journyTitle : "June 2019",
-            journytext  : "  Conducted Value Discovery Workshop for multiple refineries to identify significant opportunities for improvement.  "   
+
+         {
+            journyTitle : "Apr 2018",
+            journytext  : " Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry.  "   
         },
  
+       
         
     ]
 }
 journyData10(){
     return [
-        {
-            journyTitle : "Apr 2018",
-            journytext  : " Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry.  "   
+       {
+            journyTitle : "June 2019",
+            journytext  : "  Conducted Value Discovery Workshop for multiple refineries to identify significant opportunities for improvement.  "   
         },
+ 
  
         
     ]

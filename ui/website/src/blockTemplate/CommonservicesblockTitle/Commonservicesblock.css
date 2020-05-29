@@ -33,6 +33,7 @@
     height: 300px; 
      perspective: 1000px;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
 .serflip-card-inner {
@@ -375,6 +376,6 @@
 .para-top_website{
     margin-top: 55px;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
 }

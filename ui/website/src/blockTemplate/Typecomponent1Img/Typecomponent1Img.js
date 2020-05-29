@@ -46,7 +46,7 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover"
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel onselecthover"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -61,7 +61,7 @@ componentDidMount(){
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top text-center">{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } } className="implementApproach"></p>
                               </div>   
                             </div>
                         </div>
