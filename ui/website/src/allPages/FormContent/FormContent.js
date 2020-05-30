@@ -3,7 +3,7 @@ import axios              from "axios";
 import swal               from 'sweetalert';
 import $                  from 'jquery';
 import ReactMultiSelectCheckboxes from 'react-multiselect-checkboxes';
-
+import PhoneInput               from 'react-phone-input-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -17,9 +17,9 @@ class FormContent extends Component{
       "formContent"   : [],
       "fields"        : {},
       "errors"        : {},
-      "name"          : "",
+      "name1"         : "",
       "city"          : "",
-      "state"          : "",
+      "state1"        : "",
       "country"       : "",
       "education"     : "",
       "college"       : "",
@@ -35,6 +35,9 @@ class FormContent extends Component{
       positionDataArray       :[],
       "positionlevel" : [],
      }
+     this.handleChangeCountry      = this.handleChangeCountry.bind(this);
+     this.camelCase                = this.camelCase.bind(this)
+    this.handleChangeState        = this.handleChangeState.bind(this);
   }
 
   componentDidMount() {
@@ -105,27 +108,35 @@ class FormContent extends Component{
       });
 
   }
+  handleChangeState(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+    const target = event.target;
+    const stateCode = $(target).val();
+    const countryCode = $("#countryVal").val();
+    // this.getDistrict(stateCode, countryCode);
+
+  }
+   camelCase(str) {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
 
   handleChange(event){
+     event.preventDefault();
+
+      // const datatype = event.target.getAttribute('data-text');
+      const {name,value} = event.target;
+
+      this.setState({ 
+        [name]:value,
+ 
+      } );
   
-
-    this.setState({
-      "name"             : this.state.name,
-      "city"             : this.state.city,
-      "state"            : this.state.value,
-      "country"          : this.state.country,
-      "education"        : this.state.education,
-      "college"          : this.state.college,
-      "year"             : this.state.year,
-      "experience"       : this.state.experience,
-      "curr_ctc"         : this.state.curr_ctc,
-      "exp_ctc"          : this.state.exp_ctc,
-      "email"            : this.state.email,
-      "contactNumber"    : this.state.contactNumber,
-      "position"         : this.state.position,
-      "experience"       : this.state.experience,
-    });
-
 
     let fields = this.state.fields;
     fields[event.target.name] = event.target.value;
@@ -154,12 +165,12 @@ class FormContent extends Component{
 
   Submit(event){
     event.preventDefault();
-    if (this.validateForm() && this.validateFormReq()) {
+    if (this.validateForm()) {
      
       var dataArray={
-      "name"             : this.refs.name.value,
+      "name1"            : this.refs.name1.value,
       "city"             : this.refs.city.value,
-      "state"            : this.refs.state.value,
+      "state1"           : this.refs.state1.value,
       "country"          : this.refs.country.value,
       "education"        : this.refs.education.value,
       "college"          : this.refs.college.value,
@@ -169,12 +180,14 @@ class FormContent extends Component{
       "exp_ctc"          : this.refs.exp_ctc.value,
       "email"            : this.refs.email.value,
       "contactNumber"    : this.refs.contactNumber.value,
-      "position"         : this.state.positionDataArray,
+      "position"         : this.refs.position.value,
       "experience"       : this.refs.experience.value,
+      "noticePeriod"     : this.refs.noticePeriod.value,
     }
+    console.log("data",dataArray);
       let fields = {};
-      fields["name"]            = "";
-      fields["state"]           = "";
+      fields["name1"]            = "";
+      fields["state1"]           = "";
       fields["city"]            = "";
       fields["country"]         = "";
 
@@ -189,7 +202,7 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
-      axios.post("/api/", dataArray)
+      axios.post("/api/jobform/post", dataArray)
         .then((response)=>{
           console.log("response",response);
           swal({
@@ -206,7 +219,7 @@ class FormContent extends Component{
       });
       
       this.setState({
-        "name"             : "",
+        "name1"             : "",
         "city"             : "",
         "state"            : "",
         "country"          : "",
@@ -229,9 +242,9 @@ class FormContent extends Component{
     let fields = this.state.fields;
     let errors = {};
     let formIsValid = true;
-      if (!fields["name"]) {
+      if (!fields["name1"]) {
         formIsValid = false;
-        errors["name"] = "This field is required.";
+        errors["name1"] = "This field is required.";
       }   
       if (!fields["city"]) {
         formIsValid = false;
@@ -322,6 +335,35 @@ class FormContent extends Component{
       return true;
     }
   }
+  changeMobile(event){ 
+    this.setState({
+      companyPhone : event
+    },()=>{ 
+      if(this.state.companyPhone){
+        this.setState({
+          companyPhoneError : this.state.companyPhone === "+" ? 'Please enter valid mobile number.' : ""
+        })
+      } 
+    })
+  }
+   handleChangeCountry(event) {
+    const target = event.target;
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+    this.getStates(event.target.value.split('|')[0])
+  }
+  getStates(StateCode) {
+    axios.get("http://locations2.iassureit.com/api/states/get/list/" + StateCode)
+      .then((response) => {
+        this.setState({
+          stateArray: response.data
+        })
+        $('#state').val(this.state.states);
+      })
+      .catch((error) => {
+      })
+  }
   isTextKey(evt)  {
    var charCode = (evt.which) ? evt.which : evt.keyCode;
    if (charCode!=189 && charCode > 32 && (charCode < 65 || charCode > 90) )
@@ -373,7 +415,25 @@ class FormContent extends Component{
                                     <label htmlFor="position">Positions<span className="redFont">*</span></label>
                                     <div className="input-group dropZindex">
                                        <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                      <ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" margin-top={"40px"} options={this.state.positionlevel} onChange={this.positionhandleChange.bind(this)}/>
+
+                                         <select id="vendor" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" value={this.state.position} ref="position" name="position" onChange={this.handleChange.bind(this)}>
+                                            <option>--Select Position--</option>
+                                            <option>Well Engineer</option>
+                                            <option>Reservoir Engineer</option>
+                                            <option>Production Technologist</option>
+                                            <option>Consultant-Geophysicist</option>
+                                            <option>Consultant-Geologist</option>
+                                            <option>Consultant-Data Management</option>
+                                            <option>Supply Chain Consultant(Refinery Planning)</option>
+                                            <option>Supply Chain Consultant(Refinery Scheduling)</option>
+                                            <option>MES Consultant</option>
+                                            <option>Manager-Projects</option>
+                                            <option>Manager Business Developement</option>
+                                            <option>Upstream Production Optimization Consultant</option>
+                                            <option>APC Consultant</option>
+      
+                                        </select>
+                                      {/*<ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" name="positionlevel" margin-top={"40px"}ref="positionlevel" options={this.state.positionlevel} onChange={this.positionhandleChange.bind(this)}/>*/}
                                     </div>
                                     <div className="errorMsg">{this.state.errors.position}</div>
                                 </div>  
@@ -412,15 +472,15 @@ class FormContent extends Component{
                                    <label htmlFor="name">Name<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-user" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="name" type="text" name="name" ref="name" value={this.state.name} onKeyDown={this.isTextKey.bind(this)} placeholder="Enter Your Name" onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control nameSpaceUpper" id="name1" type="text" name="name1" ref="name1" value={this.state.name1} onKeyDown={this.isTextKey.bind(this)} placeholder="Enter Your Name" onChange={this.handleChange.bind(this)}/>
                                     </div>
-                                   <div className="errorMsg">{this.state.errors.name}</div>
+                                   <div className="errorMsg">{this.state.errors.name1}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="email">Email<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                                      <input className="form-control" id="email" type="text" name="email" ref="email" value={this.state.email} placeholder="Enter Email" onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control" id="email" type="text" name="email" ref="email" value={this.state.email} placeholder="Enter Email" name="email" onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="errorMsg">{this.state.errors.email}</div>
                                   </div>
@@ -428,39 +488,67 @@ class FormContent extends Component{
                                     <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
-                                      <input className="form-control" id="contactNumber" type="text" name="contactNumber" ref="contactNumber"value={this.state.contactNumber} onKeyDown={this.isNumberKey.bind(this)}   placeholder="Enter Contact Number" onChange={this.handleChange.bind(this)}/>
+                                      <PhoneInput
+                                        country={'in'}
+                                        ref="contactNumber"
+                                        value={this.state.contactNumber}
+                                        name="contactNumber"
+                                        inputProps={{
+                                          name: 'contactNumber',
+                                          required: true
+                                        }}
+                                        onChange={this.changeMobile.bind(this)}
+                                      />
+                                     
                                     </div>
                                     <div className="errorMsg">{this.state.errors.contactNumber}</div>
-                                  </div>
-                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="city">City<span className="redFont">*</span></label>
-                                    <div className="input-group">
-                                      <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="city" type="text" name="city" ref="city"  value={this.state.city} placeholder="Enter City" onChange={this.handleChange.bind(this)}/>
-                                    </div>
-                                   <div className="errorMsg">{this.state.errors.city}</div>
-                                  </div>
-                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="state">State<span className="redFont">*</span></label>
-                                    <div className="input-group">
-                                      <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="state" type="text" name="state" ref="state"  value={this.state.state} placeholder="Enter State" onChange={this.handleChange.bind(this)}/>
-                                    </div>
-                                   <div className="errorMsg">{this.state.errors.state}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="country">Country<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="country" type="text" name="country" ref="country" value={this.state.country} placeholder="Enter Country" onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}/>
+                                        <select className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            ref="country" name="country" id="country" value={this.state.country} onChange={this.handleChangeCountry} >
+                                            <option selected={true}>-- Select --</option>
+                                            <option value="IN|India">India</option>
+                                          </select>
+                                       </div>
                                     </div>
-                                    <div className="errorMsg">{this.state.errors.country}</div>
+                                    <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <label htmlFor="state">State<span className="redFont">*</span></label>
+                                    <div className="input-group">
+                                      <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                      <select className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                        ref="state1" value={this.state.state1} name="state1" onChange={this.handleChangeState} >
+                                        <option selected={true} disabled={true}>-- Select --</option>
+                                        {
+                                          this.state.stateArray && this.state.stateArray.length > 0 ?
+                                            this.state.stateArray.map((stateData, index) => {
+                                              return (
+                                                <option key={index} value={stateData.stateName}>{this.camelCase(stateData.stateName)}</option>
+                                              );
+                                            }) : ''
+                                        }
+                                      </select>
+                                    </div>
+                                   <div className="errorMsg">{this.state.errors.state}</div>
                                   </div>
+                                  <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <label htmlFor="city">City<span className="redFont">*</span></label>
+                                    <div className="input-group">
+                                      <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                      <input className="form-control nameSpaceUpper" id="city" type="text" name="city" ref="city"  value={this.state.city} placeholder="Enter City" name="city" onChange={this.handleChange.bind(this)}/>
+                                    </div>
+                                   <div className="errorMsg">{this.state.errors.city}</div>
+                                  </div>
+                                  
+                                  
+                                    <div className="errorMsg">{this.state.errors.country}</div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="education">Highest Education<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-book" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="education" type="text" name="education" ref="education" value={this.state.education} onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control nameSpaceUpper" id="education" type="text" name="education" ref="education" value={this.state.education}  onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="errorMsg">{this.state.errors.education}</div>
                                   </div>
@@ -468,7 +556,7 @@ class FormContent extends Component{
                                     <label htmlFor="college">College / University<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-university" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="college" type="text" name="college" ref="college" value={this.state.college} onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control nameSpaceUpper" id="college" type="text" name="college" ref="college" value={this.state.college}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="errorMsg">{this.state.errors.college}</div>
                                   </div>
@@ -476,7 +564,7 @@ class FormContent extends Component{
                                     <label htmlFor="year">Year of Passing<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="year" type="text" name="year" ref="year" value={this.state.year} onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control nameSpaceUpper" id="year" type="text" name="year" ref="year" value={this.state.year}  onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="errorMsg">{this.state.errors.year}</div>
                                   </div>
@@ -485,7 +573,7 @@ class FormContent extends Component{
                                         <label htmlFor="experience">Work Experience<span className="redFont">*</span></label>
                                         <div className="input-group">
                                           <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
-                                          <input className="form-control nameSpaceUpper" id="experience" type="text" name="experience" ref="experience" value={this.state.experience}  onChange={this.handleChange.bind(this)}/>
+                                          <input className="form-control nameSpaceUpper" id="experience" type="text" name="experience" ref="experience" value={this.state.experience}   onChange={this.handleChange.bind(this)}/>
                                         </div>
                                         <div className="errorMsg">{this.state.errors.experience}</div>
                                     </div>  
@@ -495,7 +583,7 @@ class FormContent extends Component{
                                         <label htmlFor="curr_ctc">Current CTC<span className="redFont">*</span></label>
                                         <div className="input-group">
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                          <input className="form-control nameSpaceUpper" id="curr_ctc" type="text" name="curr_ctc" ref="curr_ctc" value={this.state.curr_ctc}  onChange={this.handleChange.bind(this)}/>
+                                          <input className="form-control nameSpaceUpper" id="curr_ctc" type="text" name="curr_ctc" ref="curr_ctc" value={this.state.curr_ctc}   onChange={this.handleChange.bind(this)}/>
                                         </div>
                                         <div className="errorMsg">{this.state.errors.curr_ctc}</div>
                                     </div>  
@@ -515,7 +603,7 @@ class FormContent extends Component{
                                         <label htmlFor="noticePeriod">Notice Period<span className="redFont">*</span></label>
                                         <div className="input-group">
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                          <input className="form-control nameSpaceUpper" id="noticePeriod" type="text" name="noticePeriod" ref="noticePeriod" value={this.state.noticePeriod}  onChange={this.handleChange.bind(this)}/>
+                                          <input className="form-control nameSpaceUpper" id="noticePeriod" type="text" name="noticePeriod" ref="noticePeriod"  value={this.state.noticePeriod}  onChange={this.handleChange.bind(this)}/>
                                         </div>
                                         <div className="errorMsg">{this.state.errors.noticePeriod}</div>
                                     </div>  
@@ -523,7 +611,7 @@ class FormContent extends Component{
                                                                
                                   <div className="">
                                     <div className="col-lg-12">
-                                      <button className="btn col-lg-2 col-lg-offset-10 lightbluebg contactformbtn buttonhover">Submit</button>
+                                      <button className="btn col-lg-2 col-lg-offset-10 lightbluebg contactformbtn buttonhover"  onClick={this.Submit.bind(this)}>Submit</button>
                                     </div>
                                   </div>
                             </form>

@@ -57,7 +57,7 @@ componentDidMount(){
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                    {/*<h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>*/}
                    <div>
-                     <p className="righttextaboutus"  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                     <p className="righttextaboutus" style={{fontsize:"17px"}}  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                    </div>
                 </div>
               </div>

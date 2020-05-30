@@ -7,6 +7,7 @@ import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
+console.log("process.env.REACT_APP_BASE_URL:",process.env.REACT_APP_BASE_URL);
 // axios.defaults.baseURL = 'http://iogapi.iassureit.com';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 function App() {

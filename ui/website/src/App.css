@@ -587,7 +587,7 @@ body{
 
 .errorMsg{
     color: #f00;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size:12px;
 }
 .nameSpaceUpper{
@@ -608,4 +608,10 @@ body{
 }
 .sxSelectHeader__Xlz5r{
     height: 40px;
+}
+.ServiceTxt{
+    font-size: 15px ! important;
+}
+.righttextaboutus{
+    font-size: 17px ! important;
 }
