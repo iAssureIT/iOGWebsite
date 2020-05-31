@@ -12,7 +12,7 @@ export default class Footer extends Component {
 
   render(){
        return(
-    <div> 
+    <div className="footerText"> 
       <div className="iogfooter col-lg-12 col-md-12 NOpadding hidden-sm hidden-xs">
         <div className="animationoveflow col-lg-12 col-md-12 col-sm-12 col-xs-12">
              <div className="viman">
@@ -60,7 +60,7 @@ export default class Footer extends Component {
                 <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 pb35 pb351">
                     <div className="row">
                         <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
-                            <h6 className="font-montserrat">Menu</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/masterpage/about-us">About Us</a></li>
@@ -70,7 +70,7 @@ export default class Footer extends Component {
                         </div>
                         
                         <div className="col-md-2 col-sm-2 col-xs-6 footerdivs">
-                            <h6 className="font-montserrat">Service Arms</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
                                 <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
@@ -80,7 +80,7 @@ export default class Footer extends Component {
                         </div>
                         
                         <div className="col-md-2 col-sm-3 col-xs-6 footerdivs">
-                            <h6 className="font-montserrat">Resources</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/careers">Careers</a></li>
                                 <li><a href="/blog">Blogs</a></li>
@@ -88,8 +88,8 @@ export default class Footer extends Component {
                             </ul>
                         </div>                        
                         <div className="col-lg-4 col-md-4 col-sm-2 col-xs-6 NOpadding ">
-                            <h6 className="font-montserrat col">Address</h6>
-                            <p className="fs15">
+                            <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
+                            <p className="fs15"style={{color:"#ffffff"}}>
 
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.,
                                  7090,7th Floor,  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar,<br/>
@@ -100,7 +100,7 @@ export default class Footer extends Component {
                              </p>
                         </div> 
                         <div className="col-md-3 col-sm-3 col-xs-12">
-                            <h6 className="font-montserrat col">Connect us on</h6>
+                            <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Connect us on</h6>
                             <ul className="no-icon-list socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -108,7 +108,7 @@ export default class Footer extends Component {
                                 <li><a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank"><i className="col-lg-12 fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
                             </ul>
                             <div className=" subscribeBox">
-                                <h6 className="font-montserrat col">Newsletter Subscription</h6>
+                                <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Newsletter Subscription</h6>
                                 <div className="NOpadding col-lg-8 col-md-6 col-sm-12 col-xs-12">
                                     <input type="text" className="form-control subscribeMail" placeholder="Enter your Email" />
                                 </div>
@@ -123,7 +123,7 @@ export default class Footer extends Component {
                     <div className="row">
 
                         <div className="textcolorwhite col-md-5 col-sm-6 col-xs-12 pull-left pt20">
-                            <p>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
+                            <p style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                         </div>
 
                         <div className="textcolorwhite col-md-4 col-sm-6 col-xs-12 pull-right pt20">
@@ -218,8 +218,8 @@ export default class Footer extends Component {
                             </ul>
                         </div> 
                         <div className="col-sm-12 col-xs-12">                       
-                            <h6 className="font-montserrat col">Address</h6>
-                            <p className="fs15">
+                            <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
+                            <p className="fs15" style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
                                  7090, 7th Floor,<br/>  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
                                   Pune,India- 411028.<br/>

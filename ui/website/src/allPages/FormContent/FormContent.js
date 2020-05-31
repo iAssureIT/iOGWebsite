@@ -32,7 +32,7 @@ class FormContent extends Component{
       "position"      : "",
       "experience"    : "",
       "shown"         : true,
-      positionDataArray       :[],
+      positionDataArray :[],
       "positionlevel" : [],
      }
      this.handleChangeCountry      = this.handleChangeCountry.bind(this);
@@ -181,7 +181,6 @@ class FormContent extends Component{
       "email"            : this.refs.email.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "position"         : this.refs.position.value,
-      "experience"       : this.refs.experience.value,
       "noticePeriod"     : this.refs.noticePeriod.value,
     }
     console.log("data",dataArray);
@@ -233,6 +232,7 @@ class FormContent extends Component{
         "position"         : "",
         "contactNumber"    : "",
         "experience"       : "",
+        "noticePeriod"     : "",
         "fields"           : fields
       });
     }

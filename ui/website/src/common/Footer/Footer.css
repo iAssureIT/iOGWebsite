@@ -12,7 +12,7 @@
 
 .footer-two{
  font-size: 16px;
- color: #fff;
+ color: #fff ! important;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
  height: 225px;
@@ -408,4 +408,7 @@ ul.no-icon-list {
 }
 .footerdiv1{
   width:140px;
+}
+.footerText{
+  color:#ffffff ! important;
 }
