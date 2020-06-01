@@ -165,6 +165,7 @@
 .upstreamfoot{
   pointer-events: auto!important;
   cursor: pointer;
+  background: #f19000;  
 }
 
 .upstreamblock{
