@@ -615,3 +615,6 @@ body{
 .righttextaboutus{
     font-size: 17px ! important;
 }
+.fa{
+    font-family: FontAwesome !important;
+   }
