@@ -107,7 +107,7 @@ class ContactUsform extends Component{
 /*      fields["enquiry"]       = "";
 */
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "ashish.chavan@iassureit.com";
+        var adminEmail = "karuna.khandale@iassureit.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -123,7 +123,7 @@ class ContactUsform extends Component{
         };
         // console.log("notification",formValues1);
         axios
-        .post('http://iogapi.iassureit.com/send-email',formValues1)
+        .post('/send-email',formValues1)
         .then((res)=>{
             if(res.status === 200){
                 swal("Thank you for contacting us. We will get back to you shortly.")
@@ -140,7 +140,7 @@ class ContactUsform extends Component{
             "mail"          : 'Dear Admin, <br/>'+
                               "Following new query/feedback came from website! <br/> <br/> " +
                               "============================  <br/> <br/> " +
-                              "<b>Client Name: </b>"   + this.state.name + '<br/>'+
+                              "<b>Client Name: </b>"   + this.state.userName + '<br/>'+
                              
                               "<b>Client Company Name: </b>"  + this.state.companyName + '<br/><br/>'+
 
@@ -155,7 +155,7 @@ class ContactUsform extends Component{
         // console.log("notification",formValues2);
      
         axios
-        .post('http://iogapi.iassureit.com/send-email',formValues2)
+        .post('/send-email',formValues2)
         .then((res)=>{
             if(res.status === 200){
                 console.log("Mail Sent TO ADMIN successfully!")
@@ -165,8 +165,9 @@ class ContactUsform extends Component{
           console.log("error = ", error);
         });
       swal({
-          title : "Congratulation....!",
-          text  : "Your response submitted sucessfully"
+          title : "Thank You....!",
+          text  : "",
+          buttons: false,
         });
       this.setState({
         "userName"         : "",

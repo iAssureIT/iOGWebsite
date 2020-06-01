@@ -8,6 +8,13 @@
     margin-bottom: 20px;
     min-height: 150px;
   }
+  .B4T_ServicesDiv_mob{
+    top: 45px;
+    box-shadow: 0px 0px 3px 0px #eee;
+    /*margin-left: 50px;*/
+    margin-bottom: 20px;
+    min-height: 150px;
+  }
   .B5T_img{
   	/*width: 185px;*/
     padding: 11px;

@@ -325,8 +325,21 @@ export default class Header extends Component {
                                               <a href="/masterpage/retail-automation">Retail Automation</a><br/>
                                           </ul>
                                         </li>
-
                                         <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle pull-right" href="planning-&-scheduling" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             SUPPLY & DISTRIBUTION<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown  " aria-labelledby="navbarDropdownMenuLink">
+                                              <a href="planning-&-scheduling">Supply & Distribution</a>
+                                              <a href="/masterpage/production-plannning">Production Planning</a>
+                                              <a href="/masterpage/refinery-scheduling">Production Schedule</a>
+                                              <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
+                                              <a href="/masterpage/lp-utilities">LP Utilities</a><br/>
+                                              <a href="/masterpage/lp-configuration">LP Configuration studies</a><br/>
+                                          </ul>
+                                        </li>
+
+                                        {/*<li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle pull-right" href="supply-&-distribution" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             SUPPLY & DISTRIBUTION<span className="caret"></span>
                                           </a>
@@ -337,7 +350,7 @@ export default class Header extends Component {
                                               <a href="/masterpage/lp-utilities">LP Utilities</a>
                                               <a href="/masterpage/lp-configuration">LP Configuration studies</a>
                                           </ul>
-                                        </li>
+                                        </li>*/}
 
                                          <li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -454,7 +467,7 @@ export default class Header extends Component {
         </div>
          <button className="contactBar " data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
-            <i className="fa fa-envelope-o" aria-hidden="true"></i>
+            <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>

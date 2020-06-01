@@ -28,3 +28,8 @@
   right: 5px;
   display: none;
 }
+.NewLoader{
+            background-image: url("/images/spin-Preloader.gif");
+            background-repeat: no-repeat;
+            background-size: 98% 100%;
+}

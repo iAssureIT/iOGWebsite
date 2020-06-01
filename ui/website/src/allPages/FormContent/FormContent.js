@@ -160,7 +160,9 @@ class FormContent extends Component{
       },()=>{
       })
 
-      this.setState({positionDataArray : positionDataArray});
+      this.setState({
+        positionDataArray : positionDataArray
+      });
     }
 
   Submit(event){
@@ -168,22 +170,22 @@ class FormContent extends Component{
     if (this.validateForm()) {
      
       var dataArray={
-      "name1"            : this.refs.name1.value,
-      "city"             : this.refs.city.value,
-      "state1"           : this.refs.state1.value,
-      "country"          : this.refs.country.value,
-      "education"        : this.refs.education.value,
-      "college"          : this.refs.college.value,
-      "year"             : this.refs.year.value,
-      "experience"       : this.refs.experience.value,
-      "curr_ctc"         : this.refs.curr_ctc.value,
-      "exp_ctc"          : this.refs.exp_ctc.value,
-      "email"            : this.refs.email.value,
-      "contactNumber"    : this.refs.contactNumber.value,
-      "position"         : this.refs.position.value,
-      "noticePeriod"     : this.refs.noticePeriod.value,
+      "name1"            : this.state.name1,
+      "city"             : this.state.city,
+      "state1"           : this.state.state1,
+      "country"          : this.state.country,
+      "education"        : this.state.education,
+      "college"          : this.state.college,
+      "year"             : this.state.year,
+      "experience"       : this.state.experience,
+      "curr_ctc"         : this.state.curr_ctc,
+      "exp_ctc"          : this.state.exp_ctc,
+      "email"            : this.state.email,
+      "contactNumber"    : this.state.contactNumber,
+      "position"         : this.state.positionDataArray,
+      "noticePeriod"     : this.state.noticePeriod,
     }
-    console.log("data",dataArray);
+    console.log("data0000",dataArray);
       let fields = {};
       fields["name1"]            = "";
       fields["state1"]           = "";
@@ -201,13 +203,71 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
+        var adminEmail = "kkhandalekaruna@gmail.com";
+        const formValues1 = {
+            "email"         : this.state.email ,
+            "subject"       : "Your Query/Feedback is sent successfully to www..com!",
+            "message"       : "",
+            "mail"          : 'Dear' + this.state.name1 + ', <br/><br/>'+
+                             
+                              "<b>Your Email: </b>"  + this.state.email + '<br/><br/>'+
+                              "Your job Application has been sent Successfully to the admin! We will get back to you shortly. <br/> <br/> " +
+                              "===============================  <br/> <br/> " +
+                              "<pre> " + /*this.state.message*/+ "</pre>" +
+                              " <br/> <br/> =============================== " +
+                              "<br/><br/> Thank You, <br/> Support Team, <br/> www..com " ,
+        };
+
+        axios
+        .post('/send-email',formValues1)
+        .then((res)=>{
+            if(res.status === 200){
+                swal("Thank you for contacting us. We will get back to you shortly.")
+                }
+        })
+        .catch((error)=>{
+          console.log("error = ", error);
+         
+        })
+         const formValues2 = {
+            "email"         : adminEmail ,
+            "subject"       : "New Job Application has been received..!",
+            "message"          : "",
+            "mail"          : 'Dear Admin, <br/>'+
+                              "New Job Application has been received! <br/> <br/> " +"<b>For the Post of : </b>"  + this.state.position + '<br/><br/>'+
+                              "============================  <br/> <br/> " +
+                              "<b>Applicant Name: </b>"   + this.state.name1 + '<br/>'+
+                             
+                             /* "<b>Client Company Name: </b>"  + this.state.companyName + '<br/><br/>'+*/
+
+                            /*  "<b>Designation: </b>"  + this.state.position + '<br/><br/>'+*/
+
+                               "<b>Applicant Email: </b>"  + this.state.email + '<br/><br/>'+
+
+                             /* "<pre> " + this.state.message + "</pre>" +*/
+                              "<br/><br/> ============================ " +
+                              "<br/><br/> This is a system generated email! " ,
+        };
+
+         axios
+        .post('/send-email',formValues2)
+        .then((res)=>{
+            if(res.status === 200){
+                console.log("Mail Sent TO ADMIN successfully!")
+            }
+        })
+        .catch((error)=>{
+          console.log("error = ", error);
+        });
+
       axios.post("/api/jobform/post", dataArray)
         .then((response)=>{
           console.log("response",response);
           swal({
-            title : "Congratulations....!",
-            text  : "Your data added successfully"
+            title : "Data Submitted Successfully..!",
+            text  : "you will be contacted soon..."
           });
+
          /* swal({
             title : response.data.message,
             text  : response.data.message
@@ -415,8 +475,8 @@ class FormContent extends Component{
                                     <label htmlFor="position">Positions<span className="redFont">*</span></label>
                                     <div className="input-group dropZindex">
                                        <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-
-                                         <select id="vendor" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" value={this.state.position} ref="position" name="position" onChange={this.handleChange.bind(this)}>
+                                         {/*<ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" value={this.state.positionDataArray} margin-top={"40px"} options={this.state.positionlevel}  onChange={this.positionhandleChange.bind(this)}/>*/}
+                                          <select id="vendor" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" value={this.state.position} ref="position" name="position" onChange={this.handleChange.bind(this)}>
                                             <option>--Select Position--</option>
                                             <option>Well Engineer</option>
                                             <option>Reservoir Engineer</option>
@@ -488,17 +548,7 @@ class FormContent extends Component{
                                     <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
-                                      <PhoneInput
-                                        country={'in'}
-                                        ref="contactNumber"
-                                        value={this.state.contactNumber}
-                                        name="contactNumber"
-                                        inputProps={{
-                                          name: 'contactNumber',
-                                          required: true
-                                        }}
-                                        onChange={this.changeMobile.bind(this)}
-                                      />
+                                      <input className="form-control" ref="contactNumber"  value={this.state.contactNumber}name="contactNumber"onChange={this.handleChange.bind(this)}/>
                                      
                                     </div>
                                     <div className="errorMsg">{this.state.errors.contactNumber}</div>
@@ -507,29 +557,17 @@ class FormContent extends Component{
                                     <label htmlFor="country">Country<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
-                                        <select className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                                            ref="country" name="country" id="country" value={this.state.country} onChange={this.handleChangeCountry} >
-                                            <option selected={true}>-- Select --</option>
-                                            <option value="IN|India">India</option>
-                                          </select>
+                                        <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            ref="country" name="country" id="country" value={this.state.country} onChange={this.handleChange.bind(this)} />
+                                           
                                        </div>
                                     </div>
                                     <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="state">State<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                      <select className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                                        ref="state1" value={this.state.state1} name="state1" onChange={this.handleChangeState} >
-                                        <option selected={true} disabled={true}>-- Select --</option>
-                                        {
-                                          this.state.stateArray && this.state.stateArray.length > 0 ?
-                                            this.state.stateArray.map((stateData, index) => {
-                                              return (
-                                                <option key={index} value={stateData.stateName}>{this.camelCase(stateData.stateName)}</option>
-                                              );
-                                            }) : ''
-                                        }
-                                      </select>
+                                      <input className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                        ref="state1" value={this.state.state1} name="state1" onChange={this.handleChange.bind(this)} />
                                     </div>
                                    <div className="errorMsg">{this.state.errors.state}</div>
                                   </div>
@@ -564,7 +602,7 @@ class FormContent extends Component{
                                     <label htmlFor="year">Year of Passing<span className="redFont">*</span></label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="year" type="text" name="year" ref="year" value={this.state.year}  onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control nameSpaceUpper" id="year" type="date" name="year" ref="year" value={this.state.year}  onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="errorMsg">{this.state.errors.year}</div>
                                   </div>

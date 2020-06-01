@@ -91,11 +91,11 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
 
-                                 <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.,
+                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.,
                                  7090,7th Floor,  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar,<br/>
                                   Pune,India- 411028.<br/>
-                                   <i class="fa fa-envelope footermailicon"></i>Mail: info@iogsolutions.com<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 2029510500 
+                                   <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"}}></i>Mail: info@iogsolutions.com<br/>
+                                 <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
                                 
                              </p>
                         </div> 

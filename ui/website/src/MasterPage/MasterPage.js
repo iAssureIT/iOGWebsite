@@ -93,7 +93,7 @@ componentDidMount(){
 							const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 							var block_id=result.block_id._id;
 							return(
-								<Suspense fallback={<div>Loading...</div>} key={index}>
+								<Suspense fallback={<div className="NewLoader"><img src="/images/spin-Preloader.gif"/></div>} key={index}>
 						    		<NewPageComponent block_id={block_id}/>
 						    	</Suspense>
 					    	)

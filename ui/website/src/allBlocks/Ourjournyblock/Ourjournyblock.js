@@ -261,17 +261,9 @@ journyData7(){
     ]*/
 }
 journyData8(){
+   
     return [
-        {
-            journyTitle : "Mar 2019",
-            journytext  : "Successful Delivery and Go-Live of Petrochemical Scheduling, Mass Balance for a Greenfield Refinery and Petrochemical Complex in the Asia Pacific.  "   
-        },
- 
-        
-    ]
-}
-journyData9(){
-    return [
+
 
          {
             journyTitle : "Apr 2018",
@@ -281,6 +273,17 @@ journyData9(){
        
         
     ]
+}
+journyData9(){
+   return [
+        {
+            journyTitle : "Mar 2019",
+            journytext  : "Successful Delivery and Go-Live of Petrochemical Scheduling, Mass Balance for a Greenfield Refinery and Petrochemical Complex in the Asia Pacific.  "   
+        },
+ 
+        
+    ]
+   
 }
 journyData10(){
     return [

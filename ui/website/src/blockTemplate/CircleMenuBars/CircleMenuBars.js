@@ -231,7 +231,7 @@ componentDidMount(){
                  <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div> 
                       <h4 className="navigationTitle text-center">You May Also Visit</h4>
-                    <div className="wizard-inner col-lg-9 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
+                    <div className="wizard-inner col-lg-8 col-lg-offset-4 col-md-12 col-xs-12 col-sm-12">
                     
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
@@ -239,7 +239,7 @@ componentDidMount(){
 
                           return(
                            
-                           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
@@ -312,8 +312,8 @@ componentDidMount(){
                  <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12 hidden-sm hidden-xs">
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                     
-                    <div className="wizard-inner  col-lg-12  col-md-12 col-xs-12 col-sm-12">
                     <h4 className="navigationTitle_for6">You May Also Visit</h4>
+                    <div className="wizard-inner col-lg-offset-1  col-lg-11  col-md-11 col-xs-12 col-sm-12">
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
