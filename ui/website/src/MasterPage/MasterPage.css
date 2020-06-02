@@ -29,7 +29,9 @@
   display: none;
 }
 .NewLoader{
-            background-image: url("/images/spin-Preloader.gif");
+            /*background-image: url("/images/spin-Preloader.gif");*/
             background-repeat: no-repeat;
             background-size: 98% 100%;
+            height: 500px;
+            width: 100%;
 }
