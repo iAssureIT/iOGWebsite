@@ -1,8 +1,7 @@
 import React, { Component }     from 'react';
-import EditNotificationModal    from '../EditNotificationModal.js';
+import EditNotificationModal    from '../EditNotificationModal.jsx';
 import axios 					from 'axios';
-import swal                 from 'sweetalert';
-
+import swal                     	from 'sweetalert';
 
 export default class AllSMSTemplateRow extends Component{
 
@@ -14,15 +13,15 @@ export default class AllSMSTemplateRow extends Component{
 			content         : '',
 		};
       	this.editSMSModal = this.editSMSModal.bind(this);
+      	this.smsGetData    = this.smsGetData.bind(this);
     }
 
     editSMSModal(event){
 		event.preventDefault();
 		var id = event.target.id;
-		// console.log('id',id);
-		axios.get(' /api/masternotifications/list/get'+id)
+		axios.get('/api/masternotifications/get/'+id)
 		.then((response)=> {
-	    	// console.log('delete response',response);
+	    	
 	    	this.setState({
 				'templateType' 		: response.data.templateType,
 				'templateName'		: response.data.templateName,
@@ -30,64 +29,61 @@ export default class AllSMSTemplateRow extends Component{
 			});
 		}).catch((error)=> {
 		    // handle error
-		    console.log(error);
-		      if(error.message === "Request failed with status code 401")
-              {
-                   swal("Your session is expired! Please login again.","", "error");
-                   this.props.history.push("/");
-              }
 		});
 	}
 
 	deleteTemplate(event){
 		event.preventDefault();
 		var id = event.target.id;
-		// console.log('id',id);
 		axios.delete('/api/masternotifications/delete/'+id)
 		.then((response)=> {
-	    	// console.log('delete response',response);
+			
+			swal({
+				title: "Template deleted successfully",
+				text: "Template deleted successfully",
+			});
+	    	this.props.deleteData("SMS",id);
+	    	window.location.reload();
 		}).catch((error)=> {
 		    // handle error
-		    console.log(error);
-		      if(error.message === "Request failed with status code 401")
-              {
-                   swal("Your session is expired! Please login again.","", "error");
-                   this.props.history.push("/");
-              }
 		});
 	}
+
+	smsGetData =(id)=>{
+    this.props.getSmsData(id);
+	}
+
+
 	render() {
 		var text= this.props.smstemplateValues.content ? this.props.smstemplateValues.content : 'abc';
 		var regex = new RegExp(/(<([^>]+)>)/ig);
 		text = text.replace(regex, '');
-		// console.log('smstemplateValues',this.props.smstemplateValues);
 		if(this.props.smstemplateValues.content){
-			
 	        return (
 	       		<div className="contentBox col-lg-12">
 		       		<div className="pull-right actionBtn">
 		       			<div className="dropdown ">
 						  	<button className="dropbtn"><i className="fa fa-ellipsis-h" aria-hidden="true"></i></button>
 					  		<div className="dropdown-content">
-								<span className="editTemp">
-									<div className="deleteNotif" data-toggle="modal" onClick={this.editSMSModal.bind(this)} data-target={"#editNotifyModal-"+this.props.smstemplateValues._id} id={this.props.smstemplateValues._id}>
-										<i className="fa fa-pencil editPencil" aria-hidden="true" id={this.props.smstemplateValues._id}></i>
-										<span className="">&nbsp;&nbsp;&nbsp; Edit</span>
+								<div className="editTemp">
+									<div className="deleteNotif  col-lg-12" data-toggle="modal" onClick={this.editSMSModal.bind(this)} data-target={"#editNotifyModal-"+this.props.smstemplateValues._id} id={this.props.smstemplateValues._id}>
+										<i className="fa fa-pencil editPencil col-lg-2" aria-hidden="true" id={this.props.smstemplateValues._id}></i>
+										<div className="col-lg-6">&nbsp;&nbsp;&nbsp; Edit</div>
 									</div>
-								</span>
-								<span className="">
-									<div className="deleteNotif" data-toggle="modal" data-target={`#${this.props.smstemplateValues._id}-rm`} id={this.props.smstemplateValues._id}>
-										<span>
-											<i className="fa fa-trash deleteEM" aria-hidden="true" id={this.props.smstemplateValues._id}></i>
-											<span>&nbsp;&nbsp;&nbsp; Delete</span>
-										</span>
+								</div>
+								
+									<div className="deleteNotif col-lg-12" data-toggle="modal" data-target={`#${this.props.smstemplateValues._id}-rm`} id={this.props.smstemplateValues._id}>
+										<div>
+											<i className="fa fa-trash deleteEM col-lg-2" aria-hidden="true" id={this.props.smstemplateValues._id}></i>
+											<div className="col-lg-6">&nbsp;&nbsp;&nbsp; Delete</div>
+										</div>
 									</div>
-								</span>
+							
 							</div>
 						</div>
 
 					</div>
-					<EditNotificationModal emailNot={this.props.smstemplateValues._id} data={this.props.smstemplateValues}/>
+					<EditNotificationModal emailNot={this.props.smstemplateValues._id} smsGetData={this.smsGetData.bind(this)} data={this.props.smstemplateValues}/>
 					<div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={`${this.props.smstemplateValues._id}-rm`}  role="dialog">
 	                    <div className=" modal-dialog adminModal adminModal-dialog">
 	                         <div className="modal-content adminModal-content col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
@@ -115,11 +111,26 @@ export default class AllSMSTemplateRow extends Component{
 	                         </div>
 	                    </div>
 	               </div>
-					<div className="inputrow">
+	               <div className="col-md-12 NOpadding divStyle">
+						<div className="col-md-4">
+							<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Role</label>
+							<p className="subject noBorderBox col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.props.smstemplateValues.role}</p>
+						</div>
+						<div className="col-md-4">
+							<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Status</label>
+							<p className="subject noBorderBox col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.props.smstemplateValues.status}</p>
+						</div>
+						<div className="col-md-4">
+							<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Company</label>
+							<p className="subject noBorderBox col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.props.company}</p>
+						</div>
+					</div>
+
+					<div className="inputrow col-md-12">
 						<div className="col-lg-10 col-md-12 col-sm-12 col-xs-12">
 							<div className="form-group">
 								<label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Message:</label>     						
-								<p className="textAreaBox">{text}</p>
+								 <p  dangerouslySetInnerHTML={{ __html:text}} className="textAreaBox"></p>
 							</div>	
 						</div>
 					</div>

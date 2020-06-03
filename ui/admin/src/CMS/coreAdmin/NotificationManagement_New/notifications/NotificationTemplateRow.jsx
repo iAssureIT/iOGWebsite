@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import $ 					from 'jquery';
 import axios 				from 'axios';
-export default class TemplateRow extends Component{
+
+export default class NotificationTemplateRow extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			emailTemplates : []
+			notificationTemplates : []
 		}
 	}
-	getTemplate(event){
+	getnotifTemplate(event){
 		event.preventDefault();
-		$('.defaultMsg').css({'display':'none'});
+		$('.defaultNotification').css({'display':'none'});
 		$('.inputrow').css({'display':'block'});
 		$('.actionBtn').css({'display':'block'});
 
@@ -19,8 +20,8 @@ export default class TemplateRow extends Component{
 			$(event.target).closest( "li" ).addClass('tempactive');
 		}
 
-		var id = $(event.target).attr('id');
-		this.props.getId(id);
+		var id = event.target.id;
+		this.props.getNotificationId(id);
 		
 		if($(window).width() < 780){
 			$('.showTemplate').css({'display':'none'});
@@ -28,25 +29,27 @@ export default class TemplateRow extends Component{
 		      $(".templateLibraryHeader").text("Expand Template Library");
 		    }
 		}
-	}
+	}	
 	render(){ 
-		console.log('emailTemplatesList in template Row',this.props.emailTemplatesList)
 		return(
 			<ul className="templateLibrary">
 				<div className="showTemplate">
 				{
-					this.props.emailTemplatesList && this.props.emailTemplatesList.length>0?
-						this.props.emailTemplatesList.map((templateData, index)=>{
-						return (
-							<li key={index} onClick={this.getTemplate.bind(this)} className="tempCategory col-lg-12" id={templateData._id}>
-								<span className="col-lg-2 NOpadding">
-									<i className="fa fa-book iconCss " aria-hidden="true"></i>
-								</span>  
-								<span className="col-lg-10 emailSpan" id={templateData._id}>
-									{templateData.templateName}
-								</span>
-							</li>
-						);
+					this.props.notificationTemplatesList && this.props.notificationTemplatesList.length>0?
+						this.props.notificationTemplatesList.map((templateData, index)=>{
+							if(templateData){
+								return (
+									<li key={index} onClick={this.getnotifTemplate.bind(this)} className="tempCategory col-lg-12" id={templateData._id}>
+										<span className="col-lg-2 NOpadding">
+											<i className="fa fa-book iconCss " aria-hidden="true"></i>
+										</span>  
+										<span className="col-lg-10 emailSpan" id={templateData._id}>
+											{templateData.role} - {templateData.event}
+										</span>
+									</li>
+								);
+							}
+						
 					})
 					:
 					<li className="tempCategory col-lg-12">

@@ -6,6 +6,7 @@ import ReactMultiSelectCheckboxes from 'react-multiselect-checkboxes';
 import PhoneInput               from 'react-phone-input-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import S3FileUpload from 'react-s3';
 
 import './FormContent.css';
 
@@ -15,6 +16,7 @@ class FormContent extends Component{
      this.state={
       "action"        :'Submit',
       "formContent"   : [],
+       "resume"       : '',
       "fields"        : {},
       "errors"        : {},
       "name1"         : "",
@@ -170,20 +172,22 @@ class FormContent extends Component{
     if (this.validateForm()) {
      
       var dataArray={
-      "name1"            : this.state.name1,
-      "city"             : this.state.city,
-      "state1"           : this.state.state1,
-      "country"          : this.state.country,
-      "education"        : this.state.education,
-      "college"          : this.state.college,
-      "year"             : this.state.year,
-      "experience"       : this.state.experience,
-      "curr_ctc"         : this.state.curr_ctc,
-      "exp_ctc"          : this.state.exp_ctc,
-      "email"            : this.state.email,
-      "contactNumber"    : this.state.contactNumber,
-      "position"         : this.state.positionDataArray,
-      "noticePeriod"     : this.state.noticePeriod,
+      "name1"            : this.refs.name1.value,
+      "city"             : this.refs.city.value,
+      "state1"           : this.refs.state1.value,
+      "country"          : this.refs.country.value,
+      "education"        : this.refs.education.value,
+      "college"          : this.refs.college.value,
+      "year"             : this.refs.year.value,
+      "experience"       : this.refs.experience.value,
+      "curr_ctc"         : this.refs.curr_ctc.value,
+      "exp_ctc"          : this.refs.exp_ctc.value,
+      "email"            : this.refs.email.value,
+      "contactNumber"    : this.refs.contactNumber.value,
+      "position"         : this.refs.position.value,
+      "resume"           : this.refs.resume.value,
+      "skills"           : this.refs.skills.value,
+      "noticePeriod"     : this.refs.noticePeriod.value,
     }
     console.log("data0000",dataArray);
       let fields = {};
@@ -233,16 +237,20 @@ class FormContent extends Component{
             "email"         : adminEmail ,
             "subject"       : "New Job Application has been received..!",
             "message"          : "",
-            "mail"          : 'Dear Admin, <br/>'+
-                              "New Job Application has been received! <br/> <br/> " +"<b>For the Post of : </b>"  + this.state.position + '<br/><br/>'+
-                              "============================  <br/> <br/> " +
-                              "<b>Applicant Name: </b>"   + this.state.name1 + '<br/>'+
+            "mail"          : 'Dear  Recruiter, <br/>'+
+                              "This is in response to your job advertised on Naukri.com for " +"<b></b>"  + this.state.position + "I would like to present my candidature for the same. Here are some of my details:" +'<br/><br/>' +
+                              "----------------------------------------------------------------------<br/> <br/> " +
+                              "<b> Name: </b>"               + this.state.name1 + '<br/><br/>'+
                              
-                             /* "<b>Client Company Name: </b>"  + this.state.companyName + '<br/><br/>'+*/
+                              "<b>Work Experience: </b>"     + this.state.experience + '<br/><br/>'+
 
-                            /*  "<b>Designation: </b>"  + this.state.position + '<br/><br/>'+*/
+                               "<b>Current CTC: </b>"        + this.state.curr_ctc + '<br/><br/>'+
 
-                               "<b>Applicant Email: </b>"  + this.state.email + '<br/><br/>'+
+                               "<b>Current Location: </b>"   + this.state.city + '<br/><br/>'+
+
+                               "<b>Key Skills: </b>"         + this.state.city + '<br/><br/>'+
+
+                               "<b>Highest Education: </b>"  + this.state.education + '<br/><br/>'+
 
                              /* "<pre> " + this.state.message + "</pre>" +*/
                               "<br/><br/> ============================ " +
@@ -435,6 +443,106 @@ class FormContent extends Component{
       return true;
     }
   }
+    docBrowseSingle(event) {
+    event.preventDefault();
+    var name = event.target.name
+    var docBrowse = [];
+    if (event.currentTarget.files && event.currentTarget.files[0]) {
+      for (var i = 0; i < event.currentTarget.files.length; i++) {
+        var file = event.currentTarget.files[i];
+        if (file) {
+          var fileName = file.name;
+          var ext = fileName.split('.').pop();
+          if (ext === "jpg" || ext === "png" || ext === "jpeg" || ext === "pdf" || ext === "JPG" || ext === "PNG" || ext === "JPEG" || ext === "PDF") {
+            if (file) {
+              var objTitle = { fileInfo: file }
+              docBrowse.push(objTitle);
+
+            } else {
+              swal("Photo not uploaded");
+            }//file
+          } else {
+            swal("Allowed images formats are (jpg,png,jpeg, pdf)");
+          }//file types
+        }//file
+      }//for 
+
+      if (event.currentTarget.files) {
+         this.setState({
+                    ["gotImage"+name]: true
+
+                })
+        main().then(formValues => {
+          var docBrowse = this.state[name];
+          this.setState({
+            [name]: formValues[0].docBrowse
+          }, () => {
+            console.log("name", [name])
+          })
+        });
+
+        async function main() {
+          var formValues = [];
+          for (var j = 0; j < docBrowse.length; j++) {
+            var config = await getConfig();
+            var s3url = await s3upload(docBrowse[j].fileInfo, config, this);
+            const formValue = {
+              "docBrowse": s3url,
+              "status": "New"
+            };
+            formValues.push(formValue);
+          }
+          return Promise.resolve(formValues);
+        }
+
+
+        function s3upload(image, configuration) {
+
+          return new Promise(function (resolve, reject) {
+            S3FileUpload
+              .uploadFile(image, configuration)
+              .then((Data) => {
+                console.log("Ds3 data",Data);
+                resolve(Data.location);
+              })
+              .catch((error) => {
+              })
+          })
+        }
+        function getConfig() {
+          console.log("hiiiii");
+          return new Promise(function (resolve, reject) {
+            axios
+              .get('/api/projectsettings/get/S3')
+              .then((response) => {
+                console.log("s3 response",response);
+                const config = {
+                  bucketName: response.data.bucket,
+                  dirName: 'iOG',
+                  region: response.data.region,
+                  accessKeyId: response.data.key,
+                  secretAccessKey: response.data.secret,
+                }
+                resolve(config);
+              })
+              .catch(function (error) {
+              })
+          })
+        }
+      }
+    }
+  }
+  deleteDocSingle(event) {
+    event.preventDefault();
+    var name = event.target.getAttribute("name");
+
+    this.setState({
+      [name]: "",
+      ["gotImage"+name]: false
+
+
+    })
+  }
 
   toglehidden(){   
     this.setState({
@@ -443,6 +551,22 @@ class FormContent extends Component{
       // console.log('shown', this.state.shown, !this.state.shown);
     });
   }
+  getDriverData() {
+        // var entityname =this.state.pathname;
+        var entityname = 'vehicle';
+        console.log('entityname==>>', entityname);
+        axios.get('/api/documentlistmaster/get/list/' + entityname)
+            .then((response) => {
+                var DocumentsDetails = response.data
+                console.log('response of driver data==>>', DocumentsDetails);
+                this.setState({
+                    DocumentsDetails: DocumentsDetails,
+                    documentindex: DocumentsDetails.length,
+                })
+            })
+            .catch((error) => {
+            })
+    }
   render(){
     
     var hidden = {
@@ -646,7 +770,62 @@ class FormContent extends Component{
                                         <div className="errorMsg">{this.state.errors.noticePeriod}</div>
                                     </div>  
                                   </div>
-                                                               
+                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
+                                    <div className="form-group">
+                                        <label htmlFor="noticePeriod">Key Skills<span className="redFont">*</span></label>
+                                        <div className="input-group">
+                                          <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                          <input className="form-control nameSpaceUpper" id="skills" type="text" name="skills" ref="skills"  value={this.state.skills}  onChange={this.handleChange.bind(this)}/>
+                                        </div>
+                                        <div className="errorMsg">{this.state.errors.noticePeriod}</div>
+                                    </div>  
+                                  </div>
+                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht NOpadding">
+                                     <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 uploadImage nopadding ">
+                                        <div className="col-lg-12 col-md-2 col-sm-12 col-xs-12 driver employee guest person nopadding ">
+                                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding marginsBottom" id="hide">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 profileImageDiv" id="LogoImageUpEmployee">
+                                               <label htmlFor="noticePeriod">Upload Resume<span className="redFont">*</span></label>
+                                               <div className="input-group">
+                                                <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
+                                                    <input onChange={this.docBrowseSingle.bind(this)} id="LogoImageUp" type="file" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" title="" name="resume"  ref="resume"/>
+                                                  </div>
+                                                </div>  
+
+                                            {
+                                              this.state.resume ?
+                                                <div className="col-lg-12 col-md-2 col-sm-12 col-xs-12 nopadding CustomImageUpload">
+                                                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding marginsBottom" id="hide">
+                                                    <label className="labelform deletelogo col-lg-12 col-md-12 col-sm-12 col-xs-12" id={this.state.resume} ref="resume" data-toggle="tooltip" title="Delete Image" name="resume" onClick={this.deleteDocSingle.bind(this)}>x</label>
+                                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 brdlogosPM" id="profilePhoto">
+
+                                                      {
+                                                        this.state.resume ?
+                                                          <img src={this.state.resume} className="img-responsive profileImageDivlogoStyle2" />
+                                                          :
+                                                          <img src="/images/login.png" className="img-responsive profileImageDivlogoStyle2" />
+                                                      }
+
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                :
+                                                 ( this.state.gotImageprofilePhoto  ?
+                                                    <div className="col-lg-12 col-md-2 col-sm-12 col-xs-12 nopadding CustomImageUpload">
+                                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding marginsBottom" id="hide">
+                                                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 brdlogosPM" id="profilePhoto">
+                                                                <img src="/images/loading.gif" className="img-responsive profileImageDivlogoStyle2"/>
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                                :
+                                                null)
+
+                                            }
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>                           
                                   <div className="">
                                     <div className="col-lg-12">
                                       <button className="btn col-lg-2 col-lg-offset-10 lightbluebg contactformbtn buttonhover"  onClick={this.Submit.bind(this)}>Submit</button>

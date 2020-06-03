@@ -39,7 +39,7 @@
 .notifTab li.active a {
     background: transparent;
     border: 1px solid var(--waikawagrey-background) !important;
-    color: #333 !important;
+    color: #fff !important;
 }
 
 .notifTab li a:before {
@@ -1056,7 +1056,7 @@
     font-size: 12px;
     margin-top: 5px;
     text-align: center;
-    color: #333;
+    color: #fff;
     border-radius: 3px;
     background: var(--blue-color );
     border: 1px solid var(--blue-color );

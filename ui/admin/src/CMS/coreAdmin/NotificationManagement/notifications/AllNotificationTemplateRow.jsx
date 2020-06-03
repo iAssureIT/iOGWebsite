@@ -1,9 +1,7 @@
 import React, { Component } 	from 'react';
-import EditNotificationModal    from '../EditNotificationModal.js';
-import swal                 from 'sweetalert';
+import EditNotificationModal    from '../EditNotificationModal.jsx';
 import axios 					from 'axios';
-
-
+import swal                     	from 'sweetalert';
 
 class AllNotificationTemplateRow extends Component{
 
@@ -12,59 +10,48 @@ class AllNotificationTemplateRow extends Component{
         this.state = {
 	    templateType    : '',
 	    templateName    : '',
-	    content         : '',
-	    subject         : '',
-		createdBy	    : null,
-		createdAt	    : null,
-		_id             : null,	   
+	    content         : '',	   
 	  };
 
       this.editNotificationModal = this.editNotificationModal.bind(this);
+      this.notiGetData    = this.notiGetData.bind(this);
+    
     }
+    
 	editNotificationModal(event){
 		event.preventDefault();
 		var id = event.target.id;
-		console.log('id',id);
 		axios.get('/api/masternotifications/get/'+id)
 		.then((response)=> {
-	    	console.log('delete response',response);
+			
 	    	this.setState({
 				'templateType' 		: response.data.templateType,
 				'templateName'		: response.data.templateName,
-				 'subject'          : response.data.subject,
 				'content'			: response.data.content,
-				'createdBy'			: null,
-				'createdAt'			: null,
-				'_id'               : null,
 			});
 		}).catch((error)=> {
-		    // handle error
-		    console.log(error);
-		      if(error.message === "Request failed with status code 401")
-              {
-                   swal("Your session is expired! Please login again.","", "error");
-                   this.props.history.push("/");
-              }
 		});
 	}
 
 	deleteTemplate(event){
 		event.preventDefault();
 		var id = event.target.id;
-		console.log('id',id);
 		axios.delete('/api/masternotifications/delete/'+id)
 		.then((response)=> {
-	    	// console.log('delete response',response);
+	    	swal({
+				title: "Template deleted successfully",
+				text: "Template deleted successfully",
+			});
+	    	this.props.deleteData("Notification",id);
+	    	window.location.reload();
 		}).catch((error)=> {
-		    // handle error
-		    console.log(error);
-		      if(error.message === "Request failed with status code 401")
-              {
-                   swal("Your session is expired! Please login again.","", "error");
-                   this.props.history.push("/");
-              }
 		});
 	}
+
+	notiGetData =(id)=>{
+    this.props.getNotiData(id);
+	}
+
 	render() {
 		var text= this.props.notificationtemplateValues.content ? this.props.notificationtemplateValues.content : 'abc';
 		var regex = new RegExp(/(<([^>]+)>)/ig);
@@ -76,29 +63,29 @@ class AllNotificationTemplateRow extends Component{
 	       			<div className="dropdown ">
 					  	<button className="dropbtn"><i className="fa fa-ellipsis-h" aria-hidden="true"></i></button>
 			  			<div className="dropdown-content">
-							<span className="editTemp">
-								<div className="deleteNotif" data-toggle="modal" onClick={this.editNotificationModal.bind(this)} data-target={"#editNotifyModal-"+this.props.notificationtemplateValues._id} id={this.props.notificationtemplateValues._id}>
-									<i className="fa fa-pencil editPencil"  aria-hidden="true" id={this.props.notificationtemplateValues._id}></i>
-									<span className="">&nbsp;&nbsp;&nbsp; Edit</span>
+							<div className="editTemp">
+								<div className="deleteNotif col-lg-12" data-toggle="modal" onClick={this.editNotificationModal.bind(this)} data-target={"#editNotifyModal-"+this.props.notificationtemplateValues._id} id={this.props.notificationtemplateValues._id}>
+									<i className="fa fa-pencil editPencil col-lg-2"  aria-hidden="true" id={this.props.notificationtemplateValues._id}></i>
+									<div className="col-lg-6">&nbsp;&nbsp;&nbsp; Edit</div>
 								</div>
-							</span>
-							<span  className="">
-								<div className="deleteNotif" data-toggle="modal" data-target={`#${this.props.notificationtemplateValues._id}-rm`}>
-									<span>
-									<i className="fa fa-trash deleteEM" aria-hidden="true" id={this.props.notificationtemplateValues._id}></i>
-									<span>&nbsp;&nbsp;&nbsp; Delete</span>
-									</span>
+							</div>
+							
+								<div className="deleteNotif col-lg-12" data-toggle="modal" data-target={`#${this.props.notificationtemplateValues._id}-rm`}>
+									<div>
+									<i className="fa fa-trash deleteEM col-lg-2" aria-hidden="true" id={this.props.notificationtemplateValues._id}></i>
+									<div className="col-lg-6">&nbsp;&nbsp;&nbsp; Delete</div>
+									</div>
 								</div>
-							</span>
+							
 						</div>
 					</div>
 				</div>
-				<EditNotificationModal emailNot={this.props.notificationtemplateValues._id} data={this.props.notificationtemplateValues} />
-				<div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={`${this.props.notificationtemplateValues._id}-rm`}  role="dialog">
+				<EditNotificationModal emailNot={this.props.notificationtemplateValues._id} notiGetData={this.notiGetData.bind(this)} data={this.props.notificationtemplateValues} />
+				<div className="modal col-lg-12 col-md-12 col-sm-12 col-xs-12" id={`${this.props.notificationtemplateValues._id}-rm`}  role="dialog">
 	                    <div className=" modal-dialog adminModal adminModal-dialog">
 	                         <div className="modal-content adminModal-content col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 	                                <div className="modal-header adminModal-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						        		{/*<h4 className="CreateTempModal col-lg-11 col-md-11 col-sm-11 col-xs-11" id="exampleModalLabel"></h4>*/}
+						        		<h4 className="CreateTempModal col-lg-11 col-md-11 col-sm-11 col-xs-11" id="exampleModalLabel"></h4>
 						        		<div className="adminCloseCircleDiv pull-right  col-lg-1 col-md-1 col-sm-1 col-xs-1 NOpadding-left NOpadding-right">
 									        <button type="button" className="adminCloseButton" data-dismiss="modal" aria-label="Close">
 									          <span aria-hidden="true">&times;</span>
@@ -121,11 +108,25 @@ class AllNotificationTemplateRow extends Component{
 	                         </div>
 	                    </div>
 	               </div>
-				<div className="inputrow">
+	               <div className="col-md-12 NOpadding divStyle">
+						<div className="col-md-4">
+							<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Role</label>
+							<p className="subject noBorderBox col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.props.notificationtemplateValues.role}</p>
+						</div>
+						<div className="col-md-4">
+							<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Status</label>
+							<p className="subject noBorderBox col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.props.notificationtemplateValues.status}</p>
+						</div>
+						<div className="col-md-4">
+							<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Company</label>
+							<p className="subject noBorderBox col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.props.company}</p>
+						</div>
+					</div>
+				<div className="inputrow col-md-12">
 					<div className="col-lg-10 col-md-12 col-sm-12 col-xs-12">
 						<div className="form-group">
 						 <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Message:</label>     						
-						 <p className="textAreaBox">{text}</p>
+						 <p  dangerouslySetInnerHTML={{ __html:text}} className="textAreaBox"></p>
 						</div>	
 					</div>
 				</div>

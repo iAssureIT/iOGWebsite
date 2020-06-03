@@ -10,7 +10,6 @@ export default class NotificationTemplateRow extends Component{
 		}
 	}
 	getnotifTemplate(event){
-		// console.log('getnotifTemplate');
 		event.preventDefault();
 		$('.defaultNotification').css({'display':'none'});
 		$('.inputrow').css({'display':'block'});
@@ -18,12 +17,10 @@ export default class NotificationTemplateRow extends Component{
 
 		if($(window).width() > 780){
 			$('.tempCategory').removeClass('tempactive');
-			// $(event.target).addClass('tempactive');
 			$(event.target).closest( "li" ).addClass('tempactive');
 		}
 
 		var id = event.target.id;
-		// Session.set("notiftemplateId",id);
 		this.props.getNotificationId(id);
 		
 		if($(window).width() < 780){
@@ -40,16 +37,19 @@ export default class NotificationTemplateRow extends Component{
 				{
 					this.props.notificationTemplatesList && this.props.notificationTemplatesList.length>0?
 						this.props.notificationTemplatesList.map((templateData, index)=>{
-						return (
-							<li key={index} onClick={this.getnotifTemplate.bind(this)} className="tempCategory col-lg-12" id={templateData._id}>
-								<span className="col-lg-2 NOpadding">
-									<i className="fa fa-book iconCss " aria-hidden="true"></i>
-								</span>  
-								<span className="col-lg-10 emailSpan" id={templateData._id}>
-									{templateData.templateName}
-								</span>
-							</li>
-						);
+							if(templateData){
+								return (
+									<li key={index} onClick={this.getnotifTemplate.bind(this)} className="tempCategory col-lg-12" id={templateData._id}>
+										<span className="col-lg-2 NOpadding">
+											<i className="fa fa-book iconCss " aria-hidden="true"></i>
+										</span>  
+										<span className="col-lg-10 emailSpan" id={templateData._id}>
+											{templateData.role} - {templateData.event}
+										</span>
+									</li>
+								);
+							}
+						
 					})
 					:
 					<li className="tempCategory col-lg-12">
