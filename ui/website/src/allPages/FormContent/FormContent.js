@@ -16,6 +16,7 @@ class FormContent extends Component{
      this.state={
       "action"        :'Submit',
       "formContent"   : [],
+      "fileurl"       :"",
        "resume"       : '',
       "fields"        : {},
       "errors"        : {},
@@ -169,6 +170,9 @@ class FormContent extends Component{
 
   Submit(event){
     event.preventDefault();
+     const fileurl = localStorage.getItem('Fileurl');
+      console.log("fileurlNew---",fileurl)
+
     if (this.validateForm()) {
      
       var dataArray={
@@ -189,6 +193,7 @@ class FormContent extends Component{
       "skills"           : this.refs.skills.value,
       "noticePeriod"     : this.refs.noticePeriod.value,
     }
+    console.log("this.refs.resume.value",this.state.resume);
     console.log("data0000",dataArray);
       let fields = {};
       fields["name1"]            = "";
@@ -238,20 +243,24 @@ class FormContent extends Component{
             "subject"       : "New Job Application has been received..!",
             "message"          : "",
             "mail"          : 'Dear  Recruiter, <br/>'+
-                              "This is in response to your job advertised on Naukri.com for " +"<b></b>"  + this.state.position + "I would like to present my candidature for the same. Here are some of my details:" +'<br/><br/>' +
+                              "This is in response to your job advertised on Naukri.com for " +"<b></b>"  + this.state.position +'<br/>'+ "I would like to present my candidature for the same. Here are some of my details:" +'<br/><br/>' +
                               "----------------------------------------------------------------------<br/> <br/> " +
                               "<b> Name: </b>"               + this.state.name1 + '<br/><br/>'+
                              
                               "<b>Work Experience: </b>"     + this.state.experience + '<br/><br/>'+
 
-                               "<b>Current CTC: </b>"        + this.state.curr_ctc + '<br/><br/>'+
+                              "<b>Current CTC: </b>"        + this.state.curr_ctc + '<br/><br/>'+
 
-                               "<b>Current Location: </b>"   + this.state.city + '<br/><br/>'+
+                              "<b>Current Location: </b>"   + this.state.city + '<br/><br/>'+
 
-                               "<b>Key Skills: </b>"         + this.state.city + '<br/><br/>'+
+                              "<b>Key Skills: </b>"         + this.state.city + '<br/><br/>'+
 
-                               "<b>Highest Education: </b>"  + this.state.education + '<br/><br/>'+
-
+                              "<b>Highest Education: </b>"  + this.state.education + '<br/><br/>'+
+                              
+          /*"attachments.filename"   :               
+          "attachments.contentType":               
+          "attachments.content"    :               
+*/
                              /* "<pre> " + this.state.message + "</pre>" +*/
                               "<br/><br/> ============================ " +
                               "<br/><br/> This is a system generated email! " ,
@@ -443,7 +452,7 @@ class FormContent extends Component{
       return true;
     }
   }
-    docBrowseSingle(event) {
+  docBrowseSingle(event) {
     event.preventDefault();
     var name = event.target.name
     var docBrowse = [];
@@ -501,21 +510,37 @@ class FormContent extends Component{
           return new Promise(function (resolve, reject) {
             S3FileUpload
               .uploadFile(image, configuration)
-              .then((Data) => {
-                console.log("Ds3 data",Data);
-                resolve(Data.location);
+              .then((URL) => {
+                console.log("s3 data",URL);
+                 if (URL) {
+                  const Fileurl=URL.location;
+                  this.setState({
+                    Fileurl:URL.location
+
+                  })
+                   const fileurl=localStorage.setItem("fileurl",this.state.Fileurl);
+                  // const fileurl = localStorage.getItem('Fileurl');
+                    console.log("fileurl>>>",fileurl)
+                   
+
+                }else{
+                  swal("data invalid")
+
+                 }
+                resolve(URL.location);
+                
+                 
               })
               .catch((error) => {
               })
           })
         }
         function getConfig() {
-          console.log("hiiiii");
           return new Promise(function (resolve, reject) {
             axios
               .get('/api/projectsettings/get/S3')
               .then((response) => {
-                console.log("s3 response",response);
+                // console.log("s3 response",response);
                 const config = {
                   bucketName: response.data.bucket,
                   dirName: 'iOG',
@@ -543,7 +568,6 @@ class FormContent extends Component{
 
     })
   }
-
   toglehidden(){   
     this.setState({
      shown: !this.state.shown
@@ -551,22 +575,7 @@ class FormContent extends Component{
       // console.log('shown', this.state.shown, !this.state.shown);
     });
   }
-  getDriverData() {
-        // var entityname =this.state.pathname;
-        var entityname = 'vehicle';
-        console.log('entityname==>>', entityname);
-        axios.get('/api/documentlistmaster/get/list/' + entityname)
-            .then((response) => {
-                var DocumentsDetails = response.data
-                console.log('response of driver data==>>', DocumentsDetails);
-                this.setState({
-                    DocumentsDetails: DocumentsDetails,
-                    documentindex: DocumentsDetails.length,
-                })
-            })
-            .catch((error) => {
-            })
-    }
+ 
   render(){
     
     var hidden = {
@@ -846,3 +855,36 @@ class FormContent extends Component{
 export default FormContent;
 
 
+
+{/*<div class="zmAttDivision">
+ <div class="zmPAtt">
+  <div class="zmAttHdr">
+   <i class="msi-zmPle"></i>
+    <b><span id="count">1 Attachment</span></b>
+     <span class="zmSDot"></span>
+      <span class="zmLink" data-msg="downloadall">Download as Zip</span>
+       </div>
+       <div class="zmAttGrp">
+        <div data-refid="1381037144777802201591078795816110001" class="zmL zmAch " data-detail="0">
+         <div class="zmLst">
+          <div class="zmDtl">
+           <div data-msg="imgView" class="zmImg">
+            <i class="msi-attpdf zm-attIcn" data-msg="imgView"></i>
+             </div>
+              <div class="zmFrm">
+               <span title="syedarkan3007@gmail.com.pdf" class="zmAttTitle">
+                <span data-msg="view"> syedarkan3007@gmail.com </span>
+                 <span data-msg="view"> .pdf </span>
+                  </span>
+                   </div>
+                    <div class="zmSub">
+                     <span data-msg="download">Download</span>
+                      <span data-msg="view">View</span>
+                       <i class="msi-action" data-msg="showMore" title="More" data-showfrom="5"></i>
+                        </div><div class="zmSze">
+                         <span class="sum">127.4 KB</span>
+                          </div>
+                           <span class="SC_ldot zm_lbl">
+                            <i class="msi-label" title="Add tag" data-msg="addTag">
+                             </i><div class="zmLblGrp zmViewLtdLbl">
+                              </div></span></div></div></div></div></div></div>*/}

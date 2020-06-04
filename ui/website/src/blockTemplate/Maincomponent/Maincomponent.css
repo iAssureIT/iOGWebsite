@@ -137,9 +137,9 @@
 .iogblock4text{
     padding-top: 35px;
     font-size: 15px;
-    padding-left: 39px;
-    margin-left: 105px;
-    width: 86%;
+    /*padding-left: 39px;*/
+    margin-left: 25px;
+    width: 100%;
     padding-bottom: 59px;
 }
 

@@ -117,11 +117,14 @@ componentDidMount(){
                       <div className="row"> 
                         <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1"> 
                           <div className="col-lg-12">
-                            {/*<div className="col-lg-2 col-lg-offset-5">
-                             <div className="line1 col-lg-1 col-lg-offset-2"></div>
-                          </div> */}
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                             <div class="col-lg-2 col-lg-offset-5">
+                              <div class="line4 col-lg-1 col-lg-offset-1">
+                              </div>
+                            </div>
+                          </div>
                             <h2 className="text-center lightbluetext para-top_website">{this.state.blocks.blockTitle}</h2>                   
-                      </div> 
+                        </div> 
                           <div className="row"> 
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{

@@ -58,8 +58,8 @@ componentDidMount(){
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                  
-                  <div className="col-lg-11">
-                    <div className="line1 "></div>
+                  <div className="col-lg-12 NOpadding">
+                    <div className="line2 "></div>
                   </div>                    
           
                    <h2 className="lightbluetext para-topType">{this.state.blocks.blockTitle}</h2>
@@ -68,7 +68,7 @@ componentDidMount(){
                    </div>
                    <a class="col-lg-4 services_title" href={this.state.blocks.blockSubTitle}>
                     <button class="lightbluebg buttonhover servicekbtn btn">Read More 
-                     <span class="servicekbtnarrow">&gt;&gt;</span>
+                     <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
                    </button>
                   </a>
                 </div>

@@ -53,12 +53,9 @@ componentDidMount(){
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
-                 
-                <div className="col-lg-2">
-                  <div className="col-lg-11 col-lg-offset-1">
-                    <div className="line1 col-lg-1 "></div>
+                  <div className="col-lg-12 ">
+                    <div className="line3 col-lg-1 "></div>
                   </div>                    
-                </div> 
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -69,14 +66,14 @@ componentDidMount(){
                             </div>
                             <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
                               <div class="lightbluebg buttonhover servicekbtn btn">Read More 
-                               <span class="servicekbtnarrow">&gt;&gt;</span>
+                               <span class="servicekbtnarrow"style={{color:"#fff"}}>&gt;&gt;</span>
                              </div>
                             </a>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div className="col-lg-6 col-md-6 hidden-sm hidden-xs">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="400" />
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="300" />
                           </div>
                         </div>
                         </div>

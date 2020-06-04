@@ -190,7 +190,7 @@ export default class Footer extends Component {
                 <div className=" col-sm-12 col-xs-12 pb35">
                     <div className="row">
                         <div className=" col-sm-4 col-xs-4">
-                            <h6 className="font-montserrat">Menu</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
@@ -200,7 +200,7 @@ export default class Footer extends Component {
                         </div>
                         
                         <div className=" col-sm-4 col-xs-4">
-                            <h6 className="font-montserrat">Service Arms</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/iogimplement">iOGImplement</a></li>
                                 <li><a href="/iogconsult">iOGConsult</a></li>
@@ -210,7 +210,7 @@ export default class Footer extends Component {
                         </div>
                         
                         <div className="col-sm-4 col-xs-4">
-                            <h6 className="font-montserrat">Resources</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/careers">Careers</a></li>
                                 <li><a href="/blog">Blogs</a></li>
@@ -220,14 +220,14 @@ export default class Footer extends Component {
                         <div className="col-sm-12 col-xs-12">                       
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
                             <p className="fs15" style={{color:"#ffffff"}}>
-                                 <i className="fa fa-map-marker" aria-hidden="true"></i> iOG Solutions Pvt. Ltd.
+                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.
                                  7090, 7th Floor,<br/>  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
                                   Pune,India- 411028.<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"></i> Phone: +91 2029510500
+                                 <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500
                              </p>
                         </div>
                         <div className="col-sm-12 col-xs-12">
-                            <h6 className="font-montserrat col resicons">Connect us on</h6>
+                            <h6 className="font-montserrat col resicons"style={{color:"#ffffff"}}>Connect us on</h6>
                             <ul className="no-icon-list socialicon socialicon1 ">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -237,7 +237,7 @@ export default class Footer extends Component {
                         </div> 
                         <div className="col-sm-12 col-xs-12"> 
                          <div className=" subscribeBox subscribeBox1">
-                                <h6 className="font-montserrat col ">Newsletter Subscription</h6>
+                                <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Newsletter Subscription</h6>
                                 <div className="NOpadding  col-sm-7 col-xs-7">
                                     <input type="text" className="form-control subscribeMail " placeholder="Enter your Email" />
                                 </div>
@@ -252,7 +252,7 @@ export default class Footer extends Component {
                 <div className="col-sm-12 col-xs-12">
                     <div className="row">
                     <div className="textcolorwhite  col-sm-12 col-xs-12 pull-left pt20">
-                        <p>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
+                        <p style={{color:"#ffffff"}}style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                      </div>
                     </div>
                     </div> 

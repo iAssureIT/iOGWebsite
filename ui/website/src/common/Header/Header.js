@@ -294,8 +294,8 @@ export default class Header extends Component {
                                        ABOUT US <span className="caret"></span>
                                     </a>
                                     <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                       <a href="/about-us">Company Profile</a>
-                                       <a href="/founderprofile">Founder's Profile</a>
+                                       <a href="/masterpage/about-us">Company Profile</a>
+                                       <a href="/masterpage/foundersprofilepage">Founder's Profile</a>
                                         <a href="/masterpage/news-&-events">News & Events</a>
                                        <a href="/ourjourny">Our Journey</a>
                                     </ul>
@@ -319,10 +319,15 @@ export default class Header extends Component {
                                           </a>
                                           <ul className="dropdown-menu customDropdown  " aria-labelledby="navbarDropdownMenuLink">
                                               <a href="planning-&-scheduling">Plnanning & Scheduling</a>
-                                              <a href="/masterpage/demand-management">Demand Management</a>
-                                              <a href="/masterpage/invetory-management">Inventory Management</a>
-                                              <a href="/masterpage/distribution-planning">Distribution Planning</a>
-                                              <a href="/masterpage/retail-automation">Retail Automation</a><br/>
+                                              <a href="/masterpage/production-plannning">Production Planning </a>
+                                               {/* <a href="/refineryschedule">Production Schedule</a>*/}
+                                                <a href="/masterpage/refinery-scheduling">Production Schedule</a>
+                                               {/* <a href="/backcasting">Back Casting / Retro-Analysis</a>*/}
+                                                <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
+                                                {/*<a href="/lputility">LP Utilities</a>*/}
+                                                <a href="/masterpage/lp-utilities">LP Utilities</a>
+                                               {/* <a href="/lpconfig">LP Configuration studies</a>*/}
+                                                <a href="/masterpage/lp-configuration">LP Configuration studies</a>
                                           </ul>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
@@ -330,27 +335,17 @@ export default class Header extends Component {
                                              SUPPLY & DISTRIBUTION<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown  " aria-labelledby="navbarDropdownMenuLink">
-                                              <a href="planning-&-scheduling">Supply & Distribution</a>
-                                              <a href="/masterpage/production-plannning">Production Planning</a>
-                                              <a href="/masterpage/refinery-scheduling">Production Schedule</a>
-                                              <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
-                                              <a href="/masterpage/lp-utilities">LP Utilities</a><br/>
-                                              <a href="/masterpage/lp-configuration">LP Configuration studies</a><br/>
+                                              <a href="/masterpage/supply-&-distribution">Supply & Distribution</a>
+                                             <a href="/masterpage/demand-management">Demand Management</a>
+                                             {/* <a href="/inventorymanagement">Inventory Management</a>*/}
+                                              <a href="/masterpage/invetory-management">Inventory Management</a>
+                                             {/* <a href="/diatributionplanning">Distribution Planning</a>*/}
+                                              <a href="/masterpage/distribution-planning">Distribution Planning</a>
+                                            {/*  <a href="/retailautomation">Retail Automation</a><br/>*/}
+
+                                              <a href="/masterpage/retail-automation">Retail Automation</a><br/>
                                           </ul>
                                         </li>
-
-                                        {/*<li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="supply-&-distribution" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            SUPPLY & DISTRIBUTION<span className="caret"></span>
-                                          </a>
-                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                              <a href="/masterpage/production-plannning">Production Planning </a>
-                                              <a href="/masterpage/refinery-scheduling">Production Schedule</a>
-                                              <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
-                                              <a href="/masterpage/lp-utilities">LP Utilities</a>
-                                              <a href="/masterpage/lp-configuration">LP Configuration studies</a>
-                                          </ul>
-                                        </li>*/}
 
                                          <li className="nav-item dropdown dropdownresponsive">
                                           <a className="nav-link dropdown-toggle pull-right" href="servicearms" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -436,7 +431,7 @@ export default class Header extends Component {
                                           </ul>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="/masterpage/careers" id="navbarDropdownMenuLink" role="button" >
                                              CAREERS<span className="caret"></span>
                                           </a>
                                         </li>
@@ -446,12 +441,12 @@ export default class Header extends Component {
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="/blog" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              BLOGS<span className="caret"></span>
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="/contact-us" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                              CONTACT US<span className="caret"></span>
                                           </a>
                                         </li>        

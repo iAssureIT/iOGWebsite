@@ -89,7 +89,7 @@ componentDidMount(){
     return(
       <div className="ht_top col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div className="row">
-           <div className="ht_row1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <div className="ht_row1 col-lg-12 col-md-12 hidden-sm hidden-xs">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div className="row">
                        <img className="iogimgblock1" src={this.state.blocks.fgImage} />
@@ -103,7 +103,7 @@ componentDidMount(){
                   </div>
              </div>
         </div>
-        <div className="ht_row2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className="ht_row2 col-lg-12 col-md-12 hidden-sm hidden-xs">
             <div className="row alignment_rw">
               <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
               <div className="iogblock2text col-lg-4  col-md-4 col-sm-12 col-xs-12 bckgblck_color_white">
@@ -119,7 +119,7 @@ componentDidMount(){
               </div>
             </div>
         </div>
-        <div className="ht_row3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className="ht_row3 col-lg-12 col-md-12 hidden-sm hidden-xs">
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div className="row">
                 <img className="iogimgblock3" src={this.state.blocks.repeatedBlocks[1].Image} />
@@ -134,10 +134,10 @@ componentDidMount(){
         </div>
         <div className="row">
           <div className="ht_row4 mb_100 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <div className="iogblock4text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_white">
+            <div className="col-lg-offset-1 col-lg-3 col-md-3 col-sm-11 col-xs-11">
+              <div className="iogblock4text col-lg-10 col-md-10 col-sm-10 col-xs-10 bckgblck_color_white">
                 <span><b className=""></b>{this.state.blocks.repeatedBlocks[2].Title}</span> 
-                <p className="fourthblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
+                <p className="fourthblockk col-lg-offset-1" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
               </div>
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">

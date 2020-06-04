@@ -79,7 +79,7 @@ export default class Commonstream extends Component {
                                                         <br/>
                                                         <br/>
                                                         <label className="downTitle">Health Safety & </label>
-                                                        <label className="downTitle">Environment</label>
+                                                        <label className="downTitle">&nbsp;Environment</label>
                                                     </div>
                                                 </div>
                                             </a>     
@@ -98,7 +98,7 @@ export default class Commonstream extends Component {
                                                         <br/>
                                                         <br/>
                                                         <label className="downTitle">{data.downstreamTitle}</label>
-                                                        <label className="downTitle">{data.downstreamTitle1}</label>
+                                                        <label className="downTitle">&nbsp;{data.downstreamTitle1}</label>
                                                     </div>
                                                   </div>
                                                 </div>
