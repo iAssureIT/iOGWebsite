@@ -18,7 +18,7 @@
     text-align: center;
     margin-right: 0px;
     position: relative;
-    top: 35px;
+    top: 31px;
     right: 15px;
     color: #ffffff;
  }
@@ -165,4 +165,18 @@
    left: 506px;
     top: 24px;
     position: absolute;
+}
+#NavposFor51{
+    top:-32px ! important;
+
+}
+#NavposFor53{
+    top:-32px ! important;
+
+}
+.lineFor5{
+    margin-top: 26px;
+}
+.innerdivFor5{
+    margin-top: 24px;
 }

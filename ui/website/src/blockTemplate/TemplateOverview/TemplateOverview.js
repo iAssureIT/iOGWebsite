@@ -55,7 +55,7 @@ console.log("==>",this.props.block_id);
 
   render() {  
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate1 NOPadding">
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid innerBlocktepmlate1 NOPadding">
           {console.log(".blockDescription",this.state.blockDescription)}
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
            <div class="B2T1_line col-lg-1 col-lg-offset-2">
@@ -73,7 +73,7 @@ console.log("==>",this.props.block_id);
                   </div>*/}
                 </div>
                 <div className="col-lg-6 col-md col-sm-12 col-xs-12">
-                  <img src={this.state.blocks.fgImage}className=" col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 B2T_overviewTxt"/>
+                  <img src={this.state.blocks.fgImage}className=" col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 img-responsive B2T_overviewTxt"/>
                 </div>
             </div>
           </div> 

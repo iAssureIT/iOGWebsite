@@ -238,7 +238,7 @@ CareersData(){
                                               <a href="/form" className="btn lightbluebg buttonhover buttonn_1 col-lg-6 col-lg-offset-8" role="button" onClick={this.handleShow}>Click here to apply</a>
                                           </div>
                                         </div>
-                                        }
+                                        
                                       </div>
                                     </div>
                                     );

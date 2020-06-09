@@ -109,9 +109,9 @@ componentDidMount(){
         console.log("this.state.urlParam",this.state.urlParam);
         if(length>4 && length<6){
            return (
-                <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12 hidden-sm hidden-xs">
-                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
+                <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
                   <h4 className="navigationTitle_for5 text-center">You May Also Visit</h4>
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                   <div className="wizard-inner col-lg-10 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
                     
                     { 
@@ -160,7 +160,7 @@ componentDidMount(){
 
                           return(
                            
-                           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                           <div className="col-lg-3 col-md-3 col-sm-4 col-xs-4 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
@@ -199,7 +199,7 @@ componentDidMount(){
 
                           return(
                            
-                           <div className="col-lg-4 col-md-4 col-sm-3 col-xs-3 nopadding">
+                           <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>

@@ -120,7 +120,7 @@ constructor(){
     getItems(dataGroup){
         return dataGroup.map((item,i)=>{
             return(
-                <div key={"item-"+i} className="col-lg-4 col-md-4 col-sm-12 col-xs-12 BT3_dataDiv">
+                <div key={"item-"+i} className="col-lg-4 col-md-4 col-sm-12 col-xs-12 container-fluid BT3_dataDiv">
                     <div className="col-lg-12 col-md-12">
                         <div className="BT4_imgBack col-lg-offset-5"></div>
                         <img src={item.bannerimg} className="BT3_img"/>

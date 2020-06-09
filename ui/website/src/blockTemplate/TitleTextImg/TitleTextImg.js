@@ -50,7 +50,7 @@ componentDidMount(){
                  data-field2="blockDescription" 
                  data-field3="fgImage" 
             >
-                <div className="col-lg-2">
+                <div className="col-lg-2 hidden-sm hidden-xs">
                   <div className="col-lg-11 col-lg-offset-1">
                     <div className="line1 col-lg-1 pull-right "></div>
                   </div>                    

@@ -126,25 +126,27 @@ componentDidMount(){
 }
   render() {  
     return (
+     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid"> 
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate3 servivesblockIog NOPadding">
          <div>
             <h1 className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></h1>
          </div>
-          <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+          <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 servivesblockIog">
            { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
             this.state.blocks.repeatedBlocks.map((result, index)=>{
               console.log("repeatedBlocks from consultsrvice=",result);
             return(
               <div>
-               <div className=" col-lg-3 col-md-3 col-sm-12 col-xs-12 BT3_dataDiv">
+               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                <div className="col-lg-12 col-md-12">
-                <div className="BT4_imgBack col-lg-offset-5"></div>
-                 <img src={result.Image}className="BT3_img"/>
+                <div className="BT4_imgBack col-lg-offset-5">
+                  <img src={result.Image}className="BT3_img1"/>
+                 </div>
                 </div>
                 <div className="col-lg-12 col-md-12">
                  <h4 className="BT3_subhead text-center">{result.Title}</h4>
-                 <p className="BT4_txt"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                 <p className="BT4_txt col-sm-12 col-xs-12"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
              </div>
@@ -154,7 +156,8 @@ componentDidMount(){
             null
           }
         </div>
-       </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+       </div>  
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     );  
   }
 }

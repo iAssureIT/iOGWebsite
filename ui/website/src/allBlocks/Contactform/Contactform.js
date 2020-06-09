@@ -137,7 +137,7 @@ export default class ContactUsForm extends React.Component {
     render() {
         const {formerrors} = this.state;
         return (
-            <div className="cuformWall">
+            <div className="cuformWall col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactHeader lightbluebg text-center">
                     <label ><b>Contact</b> Us</label>
                     <button type="button" className="close closeBtn" data-dismiss="modal" onClick={this.closeModal.bind(this)}>&times;</button>

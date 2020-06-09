@@ -49,7 +49,8 @@ export default class Header extends Component {
 */
   render() {  
     return (
-    <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow"> 
+   
+    <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12  headerflow"> 
       <div className="row"> 
         <div className="navbar navbar-static-top" id="bb">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -120,7 +121,8 @@ export default class Header extends Component {
                                      <a href="/masterpage/iog-implement">iOGImplement</a>
                                     {/* <a href="/iogtrain">iOGTrain</a>*/}
                                      <a href="/masterpage/iog-train">iOGTrain</a>
-                                     <a href="/masterpage/iog-study">iOGStudy</a>
+                                     <a href="/masterpage/iog-study
+                                     ">iOGStudy</a>
                                   </div>
                              </div>
                             </div>
@@ -308,7 +310,7 @@ export default class Header extends Component {
                                             <a href="/masterpage/iog-consult">iOGConsult</a>
                                             <a href="/masterpage/iog-implement">iOGImplement</a>
                                             <a href="/masterpage/iog-train">iOGTrain</a>
-                                            <a href="/masterpage/iOGStudy">iOGStudy</a>
+                                            <a href="/masterpage/iog-study">iOGStudy</a>
                                           </ul>
                                         </li>
 
@@ -436,17 +438,17 @@ export default class Header extends Component {
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="/resource" id="navbarDropdownMenuLink" role="button">
                                              RESOURCES<span className="caret"></span>
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="/blog" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="/blog" id="navbarDropdownMenuLink" role="button">
                                              BLOGS<span className="caret"></span>
                                           </a>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
-                                          <a className="nav-link dropdown-toggle pull-right" href="/contact-us" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <a className="nav-link dropdown-toggle pull-right" href="/contact-us" id="navbarDropdownMenuLink" role="button">
                                              CONTACT US<span className="caret"></span>
                                           </a>
                                         </li>        
