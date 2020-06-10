@@ -234,7 +234,7 @@ export default class Header extends Component {
                             <li>
                                <div className="dropdown"> 
                               
-                                <a href="/masterpage/industries" className="headerTitle toggle">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
+                                <a href="/masterpage/industries" className="headerTitle toggle servicedropdown2_pos ">Industries <i className="fa fa-angle-down" aria-hidden="true"></i></a>  
                                  <div className="col-lg-offset-7 dropdown-content servicedropdown2">
                                    <div className="col-lg-12 row">
                                      <div className="Servicecolumn columnmenu">
@@ -462,12 +462,20 @@ export default class Header extends Component {
            </div>
           </div>
         </div>
-         <button className="contactBar " data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
+         <button className="contactBar hidden-sm hidden-xs" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
+        <a href="/contact-us">
+         <button className="contactBar hidden-lg hidden-md" >
+          <div className="fixedContactBar">
+            <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
+          </div>
+          <div className="hovertext">Contact Us Now</div>
+        </button>
+       </a> 
       </div>
       <div className="row"> 
        

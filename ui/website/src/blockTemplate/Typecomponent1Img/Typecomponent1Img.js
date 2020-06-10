@@ -52,11 +52,11 @@ componentDidMount(){
                  data-field2="blockDescription" 
                  data-field3="fgImage">
                  
-                <div className="col-lg-12 col-md-12 hidden-sm hidden-xs ">
-                    <div className="line1 col-lg-1 col-lg-offset-6 "></div>
-                  </div>                    
+                {/*<div className="col-lg-5 col-md-5 col-lg-offset-6 hidden-sm hidden-xs ">
+                    <div className="line1 col-lg-1  "></div>
+                  </div>       */}             
           
-                    <div className="col-lg-offset-1 col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                    <div className="col-lg-offset-1 col-lg-11 col-md-12 col-sm-12 col-xs-12 marginTop_70">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top text-center">{this.state.blocks.blockTitle}</h2>

@@ -54,7 +54,7 @@ console.log("inside==>",this.props.block_id);
         return(
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid ">
                 <div className="img1 row">
-                  <img src={this.state.blocks.fgImage} alt="" className="services_img img-responsive" />
+                  <img src={this.state.blocks.fgImage} alt="" className="services_img " />
                 </div>
               </div>
         

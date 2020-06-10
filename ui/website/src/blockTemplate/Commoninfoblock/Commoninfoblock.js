@@ -54,7 +54,7 @@ console.log("inside==>",this.props.block_id);
     render(){
       console.log("========",this.state.blocks.fgImage);
         return(
-            <div className="container-fluid">
+            <div className="">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                 <div className="img1 row">
                   <img src={this.state.blocks.fgImage} alt="" className="services_img img-responsive" />
