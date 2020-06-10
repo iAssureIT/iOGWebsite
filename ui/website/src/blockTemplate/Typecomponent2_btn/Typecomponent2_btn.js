@@ -50,19 +50,19 @@ componentDidMount(){
 
     render(){
         return(
-          <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 margin-top posRel">
+          <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img" />
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img typebtn_img" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                  
-                  <div className="col-lg-12 NOpadding">
+                  <div className="col-lg-12  NOpadding">
                     <div className="line2 "></div>
                   </div>                    
           
-                   <h2 className="lightbluetext para-topType">{this.state.blocks.blockTitle}</h2>
+                   <h2 className="lightbluetext"><b>{this.state.blocks.blockTitle}</b></h2>
                    <div>
                      <p className="righttextaboutus"  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                    </div>

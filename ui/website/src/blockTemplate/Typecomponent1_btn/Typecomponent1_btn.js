@@ -7,6 +7,7 @@ export default class Typecomponent1 extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
+
       blocks: {
         "blockComponentName"  : "Typecomponent1_btn",
         "blockType"           : "simple",
@@ -27,6 +28,10 @@ componentDidMount(){
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                  console.log("response btn",this.props.block_id);
+                  if(this.state.blocks.blocksubTitle=="refinery-mainpage"){
+
+                  }
                     if(response.data){
                       this.setState({
                           blocks:response.data
@@ -47,8 +52,10 @@ componentDidMount(){
 }
     render(){
       console.log("this.state.blocks.blocksubTitle",this.state.blocks.blockSubTitle);
+      if(this.state.blocks.blockSubTitle=="refinery-mainpage")
         return(
-            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover"
+
+            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel onselecthover industries_imgDiv"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -81,5 +88,41 @@ componentDidMount(){
                           
             </div>   
         );
+      else{
+        return(
+           <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel onselecthover"
+                 id="Type1Component" 
+                 data-field1="blockTitle" 
+                 data-field2="blockDescription" 
+                 data-field3="fgImage">
+                  <div className="col-lg-12 ">
+                    <div className="line3 col-lg-1 "></div>
+                  </div>                    
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                              <div> 
+                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                              </div>   
+                            </div>
+                            <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
+                              <div class="lightbluebg buttonhover servicekbtn btn">Read More 
+                               <span class="servicekbtnarrow"style={{color:"#fff"}}>&gt;&gt;</span>
+                             </div>
+                            </a>
+                        </div>
+                        <div className="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <div className="img1">
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img typebtn_img" hight="250" width="300" />
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                          
+            </div>
+          );
+      }
     }
 }
