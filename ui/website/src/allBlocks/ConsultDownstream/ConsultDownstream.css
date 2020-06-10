@@ -1,11 +1,11 @@
-.innerBlocktConsult{
+/*.innerBlocktConsult{
 	height: 1700px;
 	background-image: url("/images/consultdown.png");
 	background-size: 100% 100%;
 }
 .innerBlocktConsult_res{
   height: 1500px;
-  /*background-image: url("/images/consultdown.png");*/
+  
   background-size: 100% 100%;
 }
 .downimgtext{
@@ -16,9 +16,7 @@
     font-weight: 600;
 }
 .downimgtext_res{
-  /*position: absolute;
-    top: 5em;
-    left: 13em;*/
+  
     color: #009de2;
     font-weight: 600;
 }
@@ -26,14 +24,12 @@
 	  position: absolute;
     top: 12.5em;
     left: 9em;
-    /*text-align: justify; */
+   
     font-size: 20px;
     padding-right:135px;
 }
 .downimg_p_txt_res{
-    /*position: absolute;
-    top: 12.5em;
-    left: 13em;*/
+    
     text-align: justify; 
     font-size: 18px
 }
@@ -44,9 +40,7 @@
    width: 400px;
 
 }#consultdown_data0_res,#consultdown_data1_res,#consultdown_data2_res,#consultdown_data3_res{
-   /*position: absolute;
-   top: 29em;
-   left: 54em;*/
+  
    width: 400px;
    font-weight: 600;
 
@@ -104,7 +98,7 @@
     width: 400px;
     text-align: right;
 }*/
-#downimg_text0,#downimg_text4,#downimg_text6{
+/*#downimg_text0,#downimg_text4,#downimg_text6{
 	font-weight: 600;
 
 }
@@ -127,4 +121,4 @@
 #downimg_p_text2, #downimg_p_text3{
 	font-size: 17px;
 
-}
+}*/

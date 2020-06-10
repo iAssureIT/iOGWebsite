@@ -126,6 +126,7 @@ componentDidMount(){
     return (
      <div> 
       <div className="container-fluid">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding hidden-sm hidden-xs " style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
           <div class="Bubble">
            <div class="Main_Cards__Bubble1 bub11">
@@ -137,7 +138,8 @@ componentDidMount(){
              <h1 className="downimgtext text-center">{this.state.blocks.blockTitle}</h1>
             <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt" dangerouslySetInnerHTML={{ __html:this.state.blocks.blockDescription}}></p>
           </div>  
-          <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
+          <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 container">  
+           <div className="row">
            { 
               this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
               this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -153,8 +155,10 @@ componentDidMount(){
               :
               null
           }
+           </div>
           </div>
          </div> 
+        </div> 
        </div>  
 
       {/*res*/}

@@ -43,38 +43,23 @@
 #consultdown_data0{
    position: absolute;
    top: 29em;
-   left: 57%;
+   right: 12%;
    width: 294px;
 
 }
 #consultdown_data1{
    position: absolute;
    top: 36em;
-   right:52%;
+   left:12%;
    width: 294px;
    text-align: right;
 
 }
-#consultdown_data2{
-    position: absolute;
-    top: 47em;
-    left: 54%;
-    width: 294px;
-    text-align: left;
 
-}
-#consultdown_data3{
-    position: absolute;
-    top: 56em;
-    right:52%;
-    width: 294px;
-    text-align: right;
-
-}
 #consultdown_data4{
 	 position: absolute;
     top: 66em;
-    left: 54%;
+    right: 12%;
     width: 294px;
     text-align: left;
 
@@ -82,21 +67,21 @@
 #consultdown_data5{
 	position: absolute;
     top: 74em;
-    right:52%;
+    left:12%;
     width: 294px;
     text-align: right;
 }
 #consultdown_data6{
 	position: absolute;
     top: 83em;
-    left: 54%;
+    right: 12%;
     width: 294px;
     text-align: left;
 }
 #consultdown_data7{
 	position: absolute;
     top: 91em;
-    right:73%;
+    left:10%;
     width: 294px;
     text-align: right;
 }
@@ -109,18 +94,11 @@
    width: 294px;
 
 }
-#consultdown_data1{
-   position: absolute;
-   top: 36em;
-   right:52em;
-   width: 294px;
-   text-align: right;
 
-}
 #consultdown_data2{
     position: absolute;
     top: 47em;
-    left: 54em;
+    right: 11%;
     width: 294px;
     text-align: left;
 
@@ -128,39 +106,10 @@
 #consultdown_data3{
     position: absolute;
     top: 56em;
-    right:52em;
+    left:12%;
     width: 294px;
     text-align: right;
 
-}
-#consultdown_data4{
-   position: absolute;
-    top: 66em;
-    left: 54em;
-    width: 294px;
-    text-align: left;
-
-}
-#consultdown_data5{
-  position: absolute;
-    top: 74em;
-    right:52em;
-    width: 294px;
-    text-align: right;
-}
-#consultdown_data6{
-  position: absolute;
-    top: 83em;
-    left: 54em;
-    width: 294px;
-    text-align: left;
-}
-#consultdown_data7{
-  position: absolute;
-    top: 91em;
-    right:73%;
-    width: 294px;
-    text-align: right;
 }
 
 #downimg_text0,#downimg_text4,#downimg_text6{

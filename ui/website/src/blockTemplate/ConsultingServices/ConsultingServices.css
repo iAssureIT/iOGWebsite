@@ -20,7 +20,7 @@
 .BT3_subhead{
   margin-top: 20px;
 	font-weight: 600;
-	/*margin-left: 18px;*/
+	margin-left: 40px;
 }
 .BT3_img1{
     margin-top: 9px;
@@ -37,6 +37,7 @@
     text-overflow: ellipsis;
 }
 .BT4_imgBack{
+
     height: 60px;
     width: 60px;
     background-color: #ffffff;

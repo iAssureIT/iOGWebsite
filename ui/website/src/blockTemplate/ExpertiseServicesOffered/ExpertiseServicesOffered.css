@@ -6,14 +6,14 @@
     box-shadow: 0px 0px 3px 0px #eee;
     margin-left: 50px;
     margin-bottom: 20px;
-    min-height: 150px;
+    min-height: 181px;
   }
   .B4T_ServicesDiv_mob{
     top: 45px;
     box-shadow: 0px 0px 3px 0px #eee;
     /*margin-left: 50px;*/
     margin-bottom: 20px;
-    min-height: 150px;
+    min-height: 181px;
   }
   .B5T_img{
   	/*width: 185px;*/
@@ -36,4 +36,14 @@
 }
 .services_block{
   margin-top: 30px;
+}
+.B2T1_line1{
+  margin-left: 14px ! important;
+  background-color: #f08f00;
+    width: 90px;
+    height: 4px;
+    top: 36px;
+    /* left: 60px; */
+    /* position: absolute; */
+    z-index: 999;
 }
