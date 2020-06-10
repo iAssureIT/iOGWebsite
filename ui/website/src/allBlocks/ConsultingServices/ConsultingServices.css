@@ -31,7 +31,7 @@
 
 .BT3_subhead{
 	font-weight: 600;
-	margin-left: 18px;
+	/*margin-left: 18px;*/
 }
 .BT3_subhead_res{
   margin-top: 85px;
@@ -46,7 +46,7 @@
 }
 .BT4_txt {
     margin-top: 17px;
-    margin-left: 54px;
+    /*margin-left: 54px;*/
     font-size: 15px;
     height: auto;
     font-size: 15px;

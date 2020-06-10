@@ -131,7 +131,7 @@ componentDidMount(){
          <div>
             <h1 className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></h1>
          </div>
-          <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 servivesblockIog">
+          <div className=" col-lg-12 col-md-12 col-sm-10 col-xs-10 servivesblockIog">
            { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
             this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -139,14 +139,14 @@ componentDidMount(){
             return(
               <div>
                <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-               <div className="col-lg-12 col-md-12">
-                <div className="BT4_imgBack col-lg-offset-5">
+               <div className="col-lg-offset-4 col-lg-2 col-md-2">
+                <div className="BT4_imgBack">
                   <img src={result.Image}className="BT3_img1"/>
                  </div>
                 </div>
                 <div className="col-lg-12 col-md-12">
                  <h4 className="BT3_subhead text-center">{result.Title}</h4>
-                 <p className="BT4_txt col-sm-12 col-xs-12"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                 <p className="BT4_txt text-center col-lg-offset-1 col-lg-10 col-md-10"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                 </div>
                </div>
              </div>
