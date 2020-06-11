@@ -134,12 +134,12 @@ export default class Downstream extends Component {
                               <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div className="row"> 
-                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 border"> 
+                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-2 border"> 
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
                                                 <a key={index} href={"/"+data.hryperlink}>
-                                                <div  className={"col-lg-5 col-md-5 col-sm-12 col-xs-12 para"+index}>
+                                                <div  className={"col-lg-5 col-md-8 col-sm-12 col-xs-12 para"+index}>
                                                     <div className="lightbluetext block block1height text-center">
                                                         <img alt="" className="streamImg" src={data.downstreamimg} />
                                                         <br/>

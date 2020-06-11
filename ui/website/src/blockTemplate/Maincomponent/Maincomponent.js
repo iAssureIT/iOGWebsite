@@ -23,7 +23,6 @@ class Maincomponent extends Component{
     this.state = {
       blocks: {
         "blockTitle"          : "Employee-centric Work Culture",
-       
         "blockComponentName"  : "Maincomponent",
         "blockType"           : "simple",
         "blockDescription"    : "At iOG Solutions we are passionately committed to a value-driven approach to do business – the journey is as important as the  destination. We are committed to creating a world-class workplace for all employees. ",
@@ -90,16 +89,16 @@ componentDidMount(){
       <div className="ht_top col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div className="row">
            <div className="ht_row1 col-lg-12 col-md-12 hidden-sm hidden-xs">
-                  <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                     <div className="row">
-                       <img className="iogimgblock1" src={this.state.blocks.fgImage} />
-                     </div>
+              <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                 <div className="row">
+                   <img className="iogimgblock1" src={this.state.blocks.fgImage} />
                   </div>
+                </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                      <div className="iogblock1text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
-                          <span><b className="head_firstblock">{this.state.blocks.blockTitle}</b></span>
-                          <p className="firstblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.blockDescription}}></p>
-                      </div>
+                    <div className="iogblock1text col-lg-10 col-md-10 col-sm-12 col-xs-12 bckgblck_color_blue">
+                        <span><b className="head_firstblock">{this.state.blocks.blockTitle}</b></span>
+                        <p className="firstblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.blockDescription}}></p>
+                    </div>
                   </div>
              </div>
         </div>

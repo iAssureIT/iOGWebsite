@@ -57,7 +57,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
-                <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 pb35 pb351">
+                <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11  pb351">
                     <div className="row">
                         <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
@@ -79,7 +79,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-md-2 col-sm-3 col-xs-6 footerdivs">
+                        <div className="col-lg-2 col-md-2 col-sm-3 col-xs-6 footerdivs">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/careers">Careers</a></li>
@@ -87,7 +87,7 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-lg-4 col-md-4 col-sm-2 col-xs-6 NOpadding ">
+                        <div className="col-lg-4 col-md-3 col-sm-2 col-xs-6 NOpadding ">
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
 
@@ -99,7 +99,7 @@ export default class Footer extends Component {
                                 
                              </p>
                         </div> 
-                        <div className="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Connect us on</h6>
                             <ul className="no-icon-list socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -118,15 +118,15 @@ export default class Footer extends Component {
                     </div>
                 </div>            
         </div>
-                    <div className="darkbluebg col-lg-12 footer-end">
+                    <div className="darkbluebg col-lg-12 col-md-12 footer-end">
                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1">
                     <div className="row">
 
-                        <div className="textcolorwhite col-lg-5 col-md-3 col-sm-6 col-xs-12 pull-left pt20">
+                        <div className="textcolorwhite col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-left pt20">
                             <p style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                         </div>
 
-                        <div className="textcolorwhite col-md-4 col-sm-6 col-xs-12 pull-right pt20">
+                        <div className="textcolorwhite col-md-5 col-sm-6 col-xs-12 pull-right pt20">
                             <p className="text-right">
                                 <a href="/privacypolicy" className="mr20">Privacy Policy</a>
                                 <a href="/termsofuse" className="mr20">Terms of Use</a>

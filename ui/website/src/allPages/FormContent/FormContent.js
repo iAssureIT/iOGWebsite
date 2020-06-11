@@ -592,7 +592,7 @@ class FormContent extends Component{
                         <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 jobpageform">
                             <form id="contactForm" >
                               <div className="col-lg-12">
-                                <div className="col-lg-2 col-lg-offset-5">
+                                <div className="col-lg-2 col-lg-offset-5 col-md-offset-5">
                                   <div className="line1 col-lg-1 col-lg-offset-2"></div>
                                 </div>                    
                               </div> 
@@ -791,7 +791,7 @@ class FormContent extends Component{
                                   </div>
                                    <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht NOpadding">
                                      <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 uploadImage nopadding ">
-                                        <div className="col-lg-12 col-md-2 col-sm-12 col-xs-12 driver employee guest person nopadding ">
+                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 driver employee guest person nopadding ">
                                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding marginsBottom" id="hide">
                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 profileImageDiv" id="LogoImageUpEmployee">
                                                <label htmlFor="noticePeriod">Upload Resume<span className="redFont">*</span></label>

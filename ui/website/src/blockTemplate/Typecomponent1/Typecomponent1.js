@@ -57,7 +57,7 @@ componentDidMount(){
                     <div className="line1 col-lg-1 pull-right "></div>
                   </div>                    
                 </div> */}
-                    <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    <div className="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
