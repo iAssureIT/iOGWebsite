@@ -115,11 +115,11 @@ componentDidMount(){
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       
                       <div className="row"> 
-                        <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1"> 
+                        <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"> 
                           <div className="col-lg-12">
                             <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
-                             <div class="col-lg-2 col-lg-offset-5">
-                              <div class="line4 col-lg-1 col-lg-offset-1">
+                             <div class="col-lg-2 col-md-2 col-md-offset-5 col-lg-offset-5">
+                              <div class="line4 col-lg-1 col-md-1  col-lg-offset-1">
                               </div>
                             </div>
                           </div>
@@ -131,21 +131,21 @@ componentDidMount(){
                                 console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
+                                    var classes = "col-lg-offset-2  col-lg-4 col-md-6 col-sm-6 col-xs-6";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
+                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-6 col-xs-6 text-center";
                                  
                                 }
                                 }else if(productlength == 1){
                                   // console.log('productlength')
                                   if(plength === index+1){
-                                    var classes = "webpageshopcont col-lg-4 col-xs-12 col-lg-offset-4   text-center";                                   
+                                    var classes = "webpageshopcont col-lg-4 col-md-6 col-xs-6 col-lg-offset-4   text-center";                                   
                                   }else{
-                                    var classes="webpageshopcont col-lg-4 col-md-4  col-sm-12 col-xs-12  text-center";                                 
+                                    var classes="webpageshopcont col-lg-4 col-md-6  col-sm-6 col-xs-6  text-center";                                 
                                 }
                                 }else{
-                                  var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               
+                                  var classes="webpageshopcont col-lg-4 col-md-6 col-sm-8 col-xs-8   text-center";                               
                                 }
                                  return (
                                 <div key={index} className={classes}>

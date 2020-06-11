@@ -99,7 +99,7 @@ export default class Footer extends Component {
                                 
                              </p>
                         </div> 
-                        <div className="col-md-3 col-sm-3 col-xs-12">
+                        <div className="col-lg-3 col-md-2 col-sm-3 col-xs-12">
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Connect us on</h6>
                             <ul className="no-icon-list socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -122,7 +122,7 @@ export default class Footer extends Component {
                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1">
                     <div className="row">
 
-                        <div className="textcolorwhite col-md-5 col-sm-6 col-xs-12 pull-left pt20">
+                        <div className="textcolorwhite col-lg-5 col-md-3 col-sm-6 col-xs-12 pull-left pt20">
                             <p style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                         </div>
 

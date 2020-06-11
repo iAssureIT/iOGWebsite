@@ -144,7 +144,7 @@ export default class Header extends Component {
                                {/* <a href="/refineryschedule">Production Schedule</a>*/}
                                 <a href="/masterpage/refinery-scheduling">Production Schedule</a>
                                {/* <a href="/backcasting">Back Casting / Retro-Analysis</a>*/}
-                                <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
+                                <a href="/masterpage/retro-analysis">Retro-Analysis</a>
                                 {/*<a href="/lputility">LP Utilities</a>*/}
                                 <a href="/masterpage/lp-utilities">LP Utilities</a>
                                {/* <a href="/lpconfig">LP Configuration studies</a>*/}
@@ -193,7 +193,7 @@ export default class Header extends Component {
                         {/*    <a href="/environmentsustain">Environment Management</a>*/}
                             <a href="/masterpage/environment-management">Environment Management</a>
                           </div>
-                          <div className=" column columnmenu columnmenu3 columnmenu2">
+                          <div className=" column columnmenu  columnmenu2">
                             <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
                            {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
                             <a href="/masterpage/steady-state" className="red">Steady State Simulation</a>
@@ -207,11 +207,12 @@ export default class Header extends Component {
                             {/*<a href="/etrm">ETRM</a>*/}
                             <a href="/masterpage/etrm">ETRM</a>
                           </div>
-                          <div className="column columnmenu">
+                          <div className="column columnmenu columnmenu3">
                             <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
                            <a href="/masterpage/energy-optimization">Utility Network Optimization</a>
                             <a href="/masterpage/equipment-monitoring">Equipment Monitoring</a>
                             <a href="/masterpage/energy-accounting">Energy Accounting</a>
+
                             <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
                             <a href="/masterpage/aseet-criticality">Asset Criticality Analysis </a>
                             <a href="/masterpage/asset-lifecycle">Asset Lifecycle </a>

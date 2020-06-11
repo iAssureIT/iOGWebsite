@@ -28,8 +28,8 @@
     text-align: justify;
 }
 .B2T_overviewTxt{
-	/*height: 260px;*/
-	/*margin-top: 150px;*/
+	height: 260px;
+	width:  260px;
 }
 .B2T_btn{
  position: absolute;

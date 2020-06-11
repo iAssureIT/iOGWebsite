@@ -85,7 +85,7 @@
     width: 100%;
 }
 .navigation_tab{
-    width: 128px;
+    width: 112px;
 }
 .navigation_tab_for6{
     width: 165px;
@@ -179,4 +179,13 @@
 }
 .innerdivFor5{
     margin-top: 24px;
+}
+@media only screen and (max-width : 736px)
+{
+  .navigation_tab
+  {
+   width:112px;
+  }
+
+  
 }

@@ -66,7 +66,7 @@ componentDidMount(){
                    <div>
                      <p className="righttextaboutus"  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                    </div>
-                   <a class="col-lg-4 services_title" href={this.state.blocks.blockSubTitle}>
+                   <a class="col-lg-4 col-md-6 services_title" href={this.state.blocks.blockSubTitle}>
                     <button class="lightbluebg buttonhover servicekbtn btn">Read More 
                      <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
                    </button>

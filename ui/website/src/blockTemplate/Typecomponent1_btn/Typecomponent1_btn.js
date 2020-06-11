@@ -51,11 +51,11 @@ componentDidMount(){
               });
 }
     render(){
-      console.log("this.state.blocks.blocksubTitle",this.state.blocks.blockSubTitle);
+      console.log("this.state.blocks.blocksubTitle---",this.state.blocks.blockSubTitle);
       if(this.state.blocks.blockSubTitle=="refinery-mainpage")
         return(
 
-            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel onselecthover industries_imgDiv"
+            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel  industries_imgDiv"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -71,7 +71,7 @@ componentDidMount(){
                                 <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
-                            <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
+                            <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
                               <div class="lightbluebg buttonhover servicekbtn btn">Read More 
                                <span class="servicekbtnarrow"style={{color:"#fff"}}>&gt;&gt;</span>
                              </div>
@@ -106,7 +106,7 @@ componentDidMount(){
                                 <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
-                            <a class="col-lg-4" href={this.state.blocks.blockSubTitle}>
+                            <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
                               <div class="lightbluebg buttonhover servicekbtn btn">Read More 
                                <span class="servicekbtnarrow"style={{color:"#fff"}}>&gt;&gt;</span>
                              </div>

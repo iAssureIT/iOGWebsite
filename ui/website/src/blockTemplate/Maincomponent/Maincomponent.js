@@ -134,7 +134,7 @@ componentDidMount(){
         </div>
         <div className="row">
           <div className="ht_row4 mb_100 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div className="col-lg-offset-1 col-lg-3 col-md-3 col-sm-11 col-xs-11">
+            <div className="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3 col-sm-11 col-xs-11">
               <div className="iogblock4text col-lg-10 col-md-10 col-sm-10 col-xs-10 bckgblck_color_white">
                 <span><b className=""></b>{this.state.blocks.repeatedBlocks[2].Title}</span> 
                 <p className="fourthblockk col-lg-offset-1" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
