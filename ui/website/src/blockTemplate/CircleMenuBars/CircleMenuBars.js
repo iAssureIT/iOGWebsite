@@ -313,7 +313,7 @@ componentDidMount(){
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                     
                     <h4 className="navigationTitle_for6">You May Also Visit</h4>
-                    <div className="wizard-inner col-lg-offset-1  col-lg-11  col-md-11 col-xs-12 col-sm-12">
+                    <div className="wizard-inner col-lg-offset-1 col-md-offset-1 col-lg-11  col-md-11 col-xs-12 col-sm-12">
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
