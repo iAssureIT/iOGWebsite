@@ -86,7 +86,7 @@ export default class Blogs extends Component {
                         <b>Latest</b> Blogs
                     </h1>
                 </div>
-                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 hidden-sm hidden-xs">
+                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-lg-offset-1 hidden-sm hidden-xs">
                   <div>
                         <OwlCarousel 
                         className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
@@ -124,9 +124,9 @@ export default class Blogs extends Component {
                                                     <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">july 5,2019</div>
-                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                         <div className="col-lg-6 col-md-8 col-sm-12 col-xs-12">
                                                             <a className="" href="/blog">
-                                                                <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
+                                                                <input type="button" className="col-lg-10 col-md-12 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>
                                                         </div>
                                                     </div>
