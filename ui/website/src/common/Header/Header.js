@@ -135,7 +135,7 @@ export default class Header extends Component {
                             <a href="/masterpage/expertise-main-page" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
-                          <div className="dropdown-content expertcontrnt">
+                          <div className="dropdown-content expertcontrnt col-lg-12 col-md-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                               <div className=" column columnmenu columnmenu1">
                                 <h5 className="columnhead"><a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
@@ -149,11 +149,8 @@ export default class Header extends Component {
                                 <a href="/masterpage/lp-utilities">LP Utilities</a>
                                {/* <a href="/lpconfig">LP Configuration studies</a>*/}
                                 <a href="/masterpage/lp-configuration">LP Configuration studies</a>
-
                                 
-                              </div>
-                          <div className=" column columnmenu columnmenu2">
-                            <h5 className="columnhead"><a href="/masterpage/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
+                                 <h5 className="columnhead"><a href="/masterpage/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
             {/*<a href="/demandmanagement">Demand Management</a>*/}
                             <a href="/masterpage/demand-management">Demand Management</a>
                            {/* <a href="/inventorymanagement">Inventory Management</a>*/}
@@ -164,15 +161,9 @@ export default class Header extends Component {
 
                             <a href="/masterpage/retail-automation">Retail Automation</a><br/>
 
-                          <h5 className="columnhead"><a href="/masterpage/digital-services"className="columnhead">Digital Services</a></h5>
-                            <a href="/masterpage/digital-transformation">Digital Transformation</a>
-                            <a href="/masterpage/application-support">Application Support</a>
-                            <a href="/masterpage/application-integration">Application Integration</a>
-
-                            <a href="/masterpage/visualization-&-dashboards">Visualization & Dashboards</a>
-                            <a href="/masterpage/industries-v4" className="">Industry 4.0 Initiatives</a>
-                          </div>
-                           <div className=" column columnmenu thirdcolumn columnmenu3">
+                                
+                              </div>
+                          <div className=" column columnmenu columnmenu2">
                             <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
                                           {/* <a href="/productionaccounting">Production Accounting(old)</a>*/}
                             <a href="/masterpage/production-accounting">Production Accounting</a>
@@ -185,6 +176,23 @@ export default class Header extends Component {
                             {/*<a href="/oilmovement">Oil Movement Management</a>*/}
                             <a href="/masterpage/oil-movement">Oil Movement Management</a>
 
+                          <h5 className="columnhead"><a href="/masterpage/digital-services"className="columnhead">Digital Services</a></h5>
+                            <a href="/masterpage/digital-transformation">Digital Transformation</a>
+                            <a href="/masterpage/application-support">Application Support</a>
+                            <a href="/masterpage/application-integration">Application Integration</a>
+
+                            <a href="/masterpage/visualization-&-dashboards">Visualization & Dashboards</a>
+                            <a href="/masterpage/industries-v4" className="">Industry 4.0 Initiatives</a>
+                          </div>
+
+                           <div className=" column columnmenu thirdcolumn columnmenu3">
+                           <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
+                           {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
+                            <a href="/masterpage/steady-state" className="red">Steady State Simulation</a>
+                           {/* <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>*/}
+                            <a href="/masterpage/dynamic-simulation">Dynamic Simulation</a>
+                            <a href="/masterpage/operator-training">Operator Training</a>     
+                      
                           <h5 className="columnhead"><a href="/masterpage/health-safety-environment"className="columnhead">Health Safety & Environment</a></h5>
                              {/*  <a href="/occupationhealth">Occupational Health Management</a>*/}
                             <a href="/masterpage/occupational-health">Occupational Health Management</a>
@@ -192,21 +200,15 @@ export default class Header extends Component {
                             <a href="/masterpage/process-safety">Process Safety Management</a>
                         {/*    <a href="/environmentsustain">Environment Management</a>*/}
                             <a href="/masterpage/environment-management">Environment Management</a>
-                          </div>
-                          <div className=" column columnmenu  columnmenu2">
-                            <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
-                           {/* <a href="/simulation" className="red">Steady State Simulation</a>*/}
-                            <a href="/masterpage/steady-state" className="red">Steady State Simulation</a>
-                           {/* <a href="/dynamicreservoirsimulation">Dynamic Simulation</a>*/}
-                            <a href="/masterpage/dynamic-simulation">Dynamic Simulation</a>
-                            <a href="/masterpage/operator-training">Operator Training</a>
-                           {/* <a href="/etrm">ETRM</a>*/}
-                            <h5 className="columnhead"><a href="/masterpage/other-services" className="columnhead">Other Services</a></h5>
+
+                             <h5 className="columnhead"><a href="/masterpage/other-services" className="columnhead">Other Services</a></h5>
                              {/* <a href="/apc-services">APC Services</a>*/}
                             <a href="/masterpage/apc-services">APC Services</a>
                             {/*<a href="/etrm">ETRM</a>*/}
                             <a href="/masterpage/etrm">ETRM</a>
                           </div>
+
+                         
                           <div className="column columnmenu columnmenu3">
                             <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
                            <a href="/masterpage/energy-optimization">Utility Network Optimization</a>
@@ -308,10 +310,10 @@ export default class Header extends Component {
                                              SERVICES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a href="/masterpage/iog-consult">iOGConsult</a>
-                                            <a href="/masterpage/iog-implement">iOGImplement</a>
-                                            <a href="/masterpage/iog-train">iOGTrain</a>
-                                            <a href="/masterpage/iog-study">iOGStudy</a>
+                                            <a className="navbarNewa" href="/masterpage/iog-consult">iOGConsult</a>
+                                            <a className="navbarNewa" href="/masterpage/iog-implement">iOGImplement</a>
+                                            <a className="navbarNewa" href="/masterpage/iog-train">iOGTrain</a>
+                                            <a className="navbarNewa" href="/masterpage/iog-study">iOGStudy</a>
                                           </ul>
                                         </li>
 
@@ -321,16 +323,16 @@ export default class Header extends Component {
                                              PLANNING & SCHEDULING<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown  " aria-labelledby="navbarDropdownMenuLink">
-                                              <a href="planning-&-scheduling">Plnanning & Scheduling</a>
-                                              <a href="/masterpage/production-plannning">Production Planning </a>
+                                              <a className="navbarNewa" href="planning-&-scheduling">Plnanning & Scheduling</a>
+                                              <a className="navbarNewa" href="/masterpage/production-plannning">Production Planning </a>
                                                {/* <a href="/refineryschedule">Production Schedule</a>*/}
-                                                <a href="/masterpage/refinery-scheduling">Production Schedule</a>
+                                                <a className="navbarNewa" href="/masterpage/refinery-scheduling">Production Schedule</a>
                                                {/* <a href="/backcasting">Back Casting / Retro-Analysis</a>*/}
-                                                <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
+                                                <a className="navbarNewa" href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
                                                 {/*<a href="/lputility">LP Utilities</a>*/}
-                                                <a href="/masterpage/lp-utilities">LP Utilities</a>
+                                                <a className="navbarNewa" href="/masterpage/lp-utilities">LP Utilities</a>
                                                {/* <a href="/lpconfig">LP Configuration studies</a>*/}
-                                                <a href="/masterpage/lp-configuration">LP Configuration studies</a>
+                                                <a className="navbarNewa" href="/masterpage/lp-configuration">LP Configuration studies</a>
                                           </ul>
                                         </li>
                                         <li className="nav-item dropdown dropdownresponsive">
@@ -338,15 +340,15 @@ export default class Header extends Component {
                                              SUPPLY & DISTRIBUTION<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown  " aria-labelledby="navbarDropdownMenuLink">
-                                              <a href="/masterpage/supply-&-distribution">Supply & Distribution</a>
-                                             <a href="/masterpage/demand-management">Demand Management</a>
+                                              <a className="navbarNewa" href="/masterpage/supply-&-distribution">Supply & Distribution</a>
+                                             <a className="navbarNewa" href="/masterpage/demand-management">Demand Management</a>
                                              {/* <a href="/inventorymanagement">Inventory Management</a>*/}
-                                              <a href="/masterpage/invetory-management">Inventory Management</a>
+                                              <a className="navbarNewa" href="/masterpage/invetory-management">Inventory Management</a>
                                              {/* <a href="/diatributionplanning">Distribution Planning</a>*/}
-                                              <a href="/masterpage/distribution-planning">Distribution Planning</a>
+                                              <a className="navbarNewa" href="/masterpage/distribution-planning">Distribution Planning</a>
                                             {/*  <a href="/retailautomation">Retail Automation</a><br/>*/}
 
-                                              <a href="/masterpage/retail-automation">Retail Automation</a><br/>
+                                              <a className="navbarNewa" href="/masterpage/retail-automation">Retail Automation</a><br/>
                                           </ul>
                                         </li>
 
@@ -355,10 +357,10 @@ export default class Header extends Component {
                                            DIGITAL SERVICES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                              <a href="/masterpage/digital-transformation">Digital Transformation</a>
-                                              <a href="/masterpage/application-support">Application Support</a>
-                                              <a href="/masterpage/application-integration">Application Integration</a>
-                                              <a href="/masterpage/industries-v4">Visualization & Dashboards</a>
+                                              <a className="navbarNewa" href="/masterpage/digital-transformation">Digital Transformation</a>
+                                              <a className="navbarNewa" href="/masterpage/application-support">Application Support</a>
+                                              <a className="navbarNewa" href="/masterpage/application-integration">Application Integration</a>
+                                              <a className="navbarNewa" href="/masterpage/industries-v4">Visualization & Dashboards</a>
                                           </ul>
                                         </li>
 
@@ -367,11 +369,11 @@ export default class Header extends Component {
                                            MANUFACTURING EXECUTION SYSTEM<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a href="/masterpage/production-accounting">Production Accounting</a>
-                                            <a href="/masterpage/data-historian">Realtime Data Historian</a>
-                                            <a href="/masterpage/corporate-dashboard">Corporate Dashboard & Analytics</a>
-                                            <a href="/masterpage/operation-logbook">Operation Logbook</a>
-                                            <a href="/masterpage/oil-movement">Oil Movement Management</a>                                         
+                                            <a className="navbarNewa" href="/masterpage/production-accounting">Production Accounting</a>
+                                            <a className="navbarNewa" href="/masterpage/data-historian">Realtime Data Historian</a>
+                                            <a className="navbarNewa" href="/masterpage/corporate-dashboard">Corporate Dashboard & Analytics</a>
+                                            <a className="navbarNewa" href="/masterpage/operation-logbook">Operation Logbook</a>
+                                            <a className="navbarNewa" href="/masterpage/oil-movement">Oil Movement Management</a>                                         
                                          </ul>
                                         </li>
 
@@ -380,9 +382,9 @@ export default class Header extends Component {
                                            HEALTH SAFETY & ENVIRONMENT<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a href="/masterpage/occupational-health">Occupational Health Management</a>
-                                            <a href="/masterpage/process-safety">Process Safety Management</a>
-                                            <a href="/masterpage/environment-management">Environment Management</a>
+                                            <a className="navbarNewa" href="/masterpage/occupational-health">Occupational Health Management</a>
+                                            <a className="navbarNewa" href="/masterpage/process-safety">Process Safety Management</a>
+                                            <a className="navbarNewa" href="/masterpage/environment-management">Environment Management</a>
                                           </ul>
                                         </li>
 
@@ -391,9 +393,9 @@ export default class Header extends Component {
                                            SIMULATION & MODELING <span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a href="/masterpage/steady-state" className="red">Steady State Simulation</a>
-                                            <a href="/masterpage/dynamic-simulation">Dynamic Simulation</a>
-                                            <a href="/masterpage/operator-training">Operator Training</a>
+                                            <a className="navbarNewa" href="/masterpage/steady-state">Steady State Simulation</a>
+                                            <a className="navbarNewa" href="/masterpage/dynamic-simulation">Dynamic Simulation</a>
+                                            <a className="navbarNewa" href="/masterpage/operator-training">Operator Training</a>
                                           </ul>
                                         </li>
 
@@ -402,8 +404,8 @@ export default class Header extends Component {
                                            OTHER SERVICES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                           <a href="/masterpage/apc-services">APC Services</a>
-                                           <a href="/masterpage/etrm">ETRM</a>
+                                           <a className="navbarNewa" href="/masterpage/apc-services">APC Services</a>
+                                           <a className="navbarNewa" href="/masterpage/etrm">ETRM</a>
                                           </ul>
                                         </li>
 
@@ -412,9 +414,9 @@ export default class Header extends Component {
                                            ENERGY MANAGEMENT<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a href="/masterpage/energy-optimization">Utility Network Optimization</a>
-                                            <a href="/masterpage/equipment-monitoring">Equipment Monitoring</a>
-                                            <a href="/masterpage/energy-accounting">Energy Accounting</a>
+                                            <a className="navbarNewa" href="/masterpage/energy-optimization">Utility Network Optimization</a>
+                                            <a className="navbarNewa" href="/masterpage/equipment-monitoring">Equipment Monitoring</a>
+                                            <a className="navbarNewa" href="/masterpage/energy-accounting">Energy Accounting</a>
                                           </ul>
                                         </li>
 
@@ -424,12 +426,12 @@ export default class Header extends Component {
                                              INDUSTRIES<span className="caret"></span>
                                           </a>
                                           <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
-                                            <a href="/masterpage/refinery-mainpage">Refinery</a>
-                                            <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
-                                            <a href="/masterpage/chemicals-mainpage">Chemicals</a>
-                                            <a href="/masterpage/lng">LNG</a>
-                                            <a href="/masterpage/gas-processing">Gas Precessing</a>
-                                            <a href="/masterpage/oil-&-gas-e-&-p">oil & Gas E & P</a>
+                                            <a className="navbarNewa" href="/masterpage/refinery-mainpage">Refinery</a>
+                                            <a className="navbarNewa" href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
+                                            <a className="navbarNewa" href="/masterpage/chemicals-mainpage">Chemicals</a>
+                                            <a className="navbarNewa" href="/masterpage/lng">LNG</a>
+                                            <a className="navbarNewa" href="/masterpage/gas-processing">Gas Precessing</a>
+                                            <a className="navbarNewa" href="/masterpage/oil-&-gas-e-&-p">oil & Gas E & P</a>
                                           
                                           </ul>
                                         </li>

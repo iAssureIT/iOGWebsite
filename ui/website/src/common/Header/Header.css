@@ -405,6 +405,9 @@ dropdown-submenu {
     /*text-transform: capitalize;*/
     /*font-weight: 700;*/
 }
+.navbarNewa{
+  float: left;
+}
 
 .dropdown {
   float: left;
@@ -466,7 +469,7 @@ dropdown-submenu {
   z-index: 999;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   margin-top: 10px;
   border-radius: 5px;
   border-top: 3px solid #aaf;
@@ -490,7 +493,7 @@ dropdown-submenu {
 }
 .column {
   float: left;
-  width: 17%;
+  width: 25%;
   padding: 10px;
   background-color:#fff;
   height: 430px;
@@ -642,6 +645,7 @@ dropdown-submenu {
 }
 .expertcontrnt{
   margin-left: 34px;
+  padding-left: 65px;
 
 }
 .expertcontrnt a{

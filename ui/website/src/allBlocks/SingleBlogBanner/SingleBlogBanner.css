@@ -6,7 +6,7 @@
 	position: relative;
   text-align: center;
   color: white;
-  	/*background-image: url("/images/blogBack.jpg");*/
+  	/*background-image: url("/images/bannerback.jpeg");*/
   background-size: 100% 100%;
 
 }
@@ -22,8 +22,12 @@
 }
 .sbcentered {
   background-color: #191818ba;
+  background-image: url("/images/bannerback1.png");
   padding: 0px !important;
+  background-repeat: no-repeat;
   height: 535px;
+  background-size: 100% 100%;
+  padding:0;
 
 
 }
@@ -39,6 +43,9 @@
 .fs72{
   font-weight: 600;
   font-size: 72px;
+}
+.newblogTxt{
+  font-size: 40px ! important;
 }
 .fs24{
   font-size: 22px;

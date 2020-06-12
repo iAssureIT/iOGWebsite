@@ -60,17 +60,25 @@ export default class News_Events extends Component {
     };    
   }
 componentDidMount(){
-// console.log("==>",this.props.block_id);
+console.log("==>",this.props.block_id);
           {
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                  console.log("eventsresponse--",response.data);
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
                 this.setState({
                   blocks:response.data
                   });
+                this.setState({
+                  blocksrepeat:response.data.repeatedBlocks.reverse()
+                  });
+
+
+
                 })
+                
                 .catch(function(error){
                   console.log(error);
                     if(error.message === "Request failed with status code 401")
@@ -92,8 +100,8 @@ componentDidMount(){
       <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 innerBlocktepmlate6 NOPadding">  
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maindivNews">
         { 
-          this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
-          this.state.blocks.repeatedBlocks.map((result, index)=>{
+          this.state.blocksrepeat && this.state.blocksrepeat.length>0?
+          this.state.blocksrepeat.map((result, index)=>{
             return(
              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 maindivNews"> 
               <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2 yearbox">

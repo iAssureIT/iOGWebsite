@@ -80,10 +80,10 @@ export default class Blogs extends Component {
     render(){
         return(
             <div>
-                <div className="upstreamcontentheader col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 text-center ">                        
+                <div className="upstreamcontentheader col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 text-center ">                        
                     <hr/>
                     <h1 className="lightbluetext latestblog">
-                        <b>Latest</b> Blogs
+                        <b>Latest Blogs</b>
                     </h1>
                 </div>
                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-lg-offset-1 hidden-sm hidden-xs">

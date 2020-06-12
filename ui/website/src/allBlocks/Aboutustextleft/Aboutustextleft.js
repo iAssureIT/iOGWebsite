@@ -62,10 +62,10 @@ export default class Aboutustextleft extends Component {
                                                 <p className="line_para">{data.servicestext} </p>   
                                             </div>
                                         </div>
-                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <div className="col-lg-6 col-md-6 hidden-sm hidden-xs ">
                                           <div className="col-lg-12">
                                             <div className="img1">
-                                              <img src={data.servicesimg} alt="" className="intro_img" />
+                                              <img src={data.servicesimg} alt="" className="intro_img img-responsive" />
                                           </div>
                                         </div>
                                         </div>
