@@ -2,10 +2,30 @@ import React, {Component} from 'react';
 import $                  from 'jquery';
 import './Banner.css';
 
-export default class Banner extends Component {
+export default class newbanner extends Component {
 
 componentDidMount(){
-  
+
+  $(document).ready(function(){
+    $(".waterimg").hover(function(){
+       // $(".bannerContainer1").css("opacity", "0.3");
+        // $(".bannerContainer1").toggleClass(".onhoverimages");
+        // $(".bannerContainer1").toggleClass(".onhoverimages");
+        $("#backimage1").toggleClass(".onhoverBackgImg");
+
+    })
+ 
+});
+  /*
+
+ $(".waterimg").mouseover(function(){
+    $(".bannerContainer1").css("opacity", "0.3");
+    $("new_HoverDiv").css("opacity", "1");
+  });
+  $("waterimg").mouseout(function(){
+    $(".bannerContainer1").css("opacity", "1");
+  });
+  */
   
  
 } 
@@ -81,168 +101,71 @@ onHover(event)
     var backImage = "signUpBackground hidden-xs hidden-sm"
     }
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner-wrapper NOpadding ">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner hidden-sm hidden-xs ">
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-wrapper NOpadding full-height"style={{overflow:"hidden"}}>
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner  NOpadding"style={{overflow:"hidden"}}>
           <div className="row">
-            <div className="bannerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="row">
-                <figure className="bannersun">
-                  <img alt="" src="/images/bannersun.png"/>
+            <div id="backimage1"className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{overflow:"hidden"}}>
+            {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
+              <div className="row"style={{overflow:"hidden"}}>
+                <figure className="oilimage"style={{overflow:"hidden"}}>
+                 <img alt="" src="/images/newbanner_img13.png"style={{width:"250px"}}/>
                 </figure>
-                <figure className="tree1">
-                  <img alt="" src="/images/tree1.png"/>
+                <figure className="gasimage"style={{overflow:"hidden"}}>
+                 <img alt="" src="/images/newbanner_img8.png"style={{width:"250px"}}/>
                 </figure>
-                <figure className="tree2">
-                  <img alt="" src="/images/tree2.png"/>
+                <figure className="nexttogasimage">
+                 <div className="new_HoverDiv5"> </div>
+                 <img alt="" src="/images/newbanner_img9.png"style={{width:"250px"}}/>
                 </figure>
-                <figure className="tree3">
-                  <img alt="" src="/images/tree3.png"/>
+                <figure className="petrolimage"style={{overflow:"hidden"}}>
+                 <img alt="" src="/images/newbanner_img10.png"style={{width:"250px"}}/>
                 </figure>
-                <figure className="tree4">
-                  <img alt="" src="/images/tree4.png"/>
+                <figure className="petrolimage1">
+                 <div className="new_HoverDiv2">
+                  <div style={{width:"155px"}}>
+                   <p className="newhovertxt"> Entire process of refining takes place here. </p>
+                   <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1" style={{color:"#000"}}>&gt;&gt;</span></a>
+                  </div>  
+                 </div>
+                 <img alt="" className="img-responsive"src="/images/newbanner_img5.png"style={{width:"350px"}}/>
                 </figure>
-                <figure className="cloud1">
-                  <img alt="" src="/images/cloud1.png"/>
+                 <figure className="plantimage1">
+                  <div className="new_HoverDiv3"> </div>
+                 <img alt="" className="img-responsive"src="/images/newbanner_img6.png"style={{width:"350px"}}/>
                 </figure>
-                <figure className="cloud2">
-                  <img alt="" src="/images/cloud2.png"/>
-                </figure> 
-                <figure className="cloud3">
-                  <img alt="" src="/images/cloud2.png"/>
+                <figure className="plantimage11">
+                 <div className="new_HoverDiv4"> 
+                 </div>
+                 <img alt="" className="img-responsive"src="/images/newbanner_img7.png"style={{width:"350px"}}/>
                 </figure>
-                <figure className="cloud4">
-                  <img alt="" src="/images/cloud1.png"/>
-                </figure>
-                <figure className="boat">
-                  <img alt="" src="/images/boat.png"/>
-                </figure>
-                <figure className="up">
-                  <img alt="" src="/images/37.png"/>
-                </figure>
-                <figure className="up1">
-                  <img alt="" src="/images/up2.png"/>
-                </figure>
-                <div className="New_hoverdiv"></div>
-               <figure className="oilsign5 hoveroilsign2">
-                 <img alt="" href="" src="/images/oilsign.png"/>
-                  <div className="triangle-down2">
-                    <div className="triangle-down21"></div>
-                  </div>
-                   <div className="dataonHover2">
-                    <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
-                     <a href="/masterpage/oil-&-gas-e-&-p">
-                       <span className="Hoverreadmore">Read More
-                       </span> 
-                      </a> 
-                    </p>
-                  </div>
-                </figure>
-                <figure className="oilsign8 hoveroilsign2">
-                 <img alt="" href="" src="/images/oilsign.png"/>
-                  <div className="triangle-down2">
-                    <div className="triangle-down21"></div>
-                  </div>
-                   <div className="dataonHover2">
-                    <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
-                       heating, gas and light fuel formation and heavy oil
-                       sedimentation and the entire process of refining takes place here<br/> 
-                     <a href="/masterpage/refinery-mainpage">
-                       <span className="Hoverreadmore">Read More
-                       </span> 
-                      </a> 
-                    </p>
-                  </div>
-                </figure>
-                {/*<figure className="oilsign8 hoveroilsign3 "onClick={this.pinclick.bind(this)}>
-                  <img alt="" src="/images/oilsign.png" className="hoveroilsign3"/>
-                 </figure>  
-                  <div className="triangle-down1">
-                    <div className="triangle-down211"></div>
-                  </div>
-                   <div className="dataonHover1">
-                    <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
-                       heating, gas and light fuel formation and heavy oil
-                       sedimentation and the entire process of refining takes place here<br/> 
-                     <a href="/masterpage/refinery-mainpage"><span className="Hoverreadmore">Read More</span> </a> 
-                    </p>
-                  </div>*/}
-               
+                <figure className="waterimg">
+                  <div className="new_HoverDiv"> </div>
+                   <img alt="" className="img-responsive  "src="/images/newbanner_img1.png"style={{width:"100px"}}/> 
+                    {/*  <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
+                       <a href="/masterpage/oil-&-gas-e-&-p">
 
-                <figure className="oilsign7 hoveroilsign2">
-                 <img alt="" href="" src="/images/oilsign.png"/>
-                  <div className="triangle-down2">
-                    <div className="triangle-down21"></div>
+                        </a> 
+                      </p>*/}
+                </figure>
+                 <figure className="boat_img"style={{overflow:"hidden"}}>
+                 <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"200px"}}/>
+                </figure>
+                 <figure className="boat_img2">
+                  <div className="new_HoverDiv1"> </div>
+                   <img alt="" className="img-responsive"src="/images/newbanner_img2.png"style={{width:"300px"}}/>
+                </figure>
+                <figure className="waterimg2">
+                 <div className="new_HoverDiv6">
+                 <div style={{width:"139px"}}>
+                   <p className="newhovertxt">Merchandising different types of oil and gas</p>
+                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow1" style={{color:"#000"}}>&gt;&gt;</span></a>
                   </div>
-                   <div className="dataonHover2">
-                    <p className="pinhoverdata text-center">Conversion of petroleum and natural resources such as natural gas, ores and minerals into chemical products for a wide range of applications.<br/> 
-                     <a href="/masterpage/petrochemical-mainpage">
-                       <span className="Hoverreadmore">Read More
-                       </span> 
-                      </a> 
-                    </p>
                   </div>
+                 <img alt="" className="img-responsive"src="/images/newbanner_img4.png"style={{width:"150px"}}/>
                 </figure>
-                
-                
-                {/*<figure className="oilsign7 " onMouseOver={this.onHover.bind(this)} onMouseOut={this.onHoverOut7.bind(this)}>
-                  <a href=""><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
-                  </figure>
-                  <div className="dataonHover">
-                   <div className="arrow-right"></div>
-                      <p className="pinhoverdata text-center">  <br/>
-                       </p>
-                  </div>*/}
-                
-                {/*<figure className="oilsign8" onMouseOver={this.onHover.bind(this)}
-                             onMouseOut={this.onHoverOut.bind(this)}>
-                    <a href="/masterpage/refinery-mainpage"><img alt="" title="Click Her to read more" src="/images/oilsign.png"/></a>   
-                  </figure> 
-                   <div className="dataonHover1">   
-                     <div className="triangle-down1"></div>
-                      <div className="triangle-down211"></div>
-                      <p className="pinhoverdata text-center">Crude oil distillation, fractionation, 
-                       heating, gas and light fuel formation and heavy oil
-                       sedimentation and the entire process of refining takes place here<br/>
-                       
-                       </p>
-                    </div>*/}
-                  {/*<img alt="" src="/images/anim.png" className="animnewimg"/>*/}
-                <figure className="anim">
-                </figure>
-                <figure className="tank">
-                  <img alt="" src="/images/tank.png"/>
-                </figure>
-                <figure className="car">
-                  <img alt="" src="/images/car.png"/>
-                  <img alt="" className="wheel1" src="/images/wheel1.png"/>
-                  <img alt="" className="wheel2" src="/images/wheel2.png"/>
-                </figure>
-                <figure className="contanim">
-                  <img alt="" src="/images/container.png"/>
-                </figure>
-               {/* <div className="truckanim1">
-                  <figure className="truckanim">
-                    <img alt="" src="/images/truck.png"/>
-                    <img alt="" className="twheel1" src="/images/wheel1.png"/>
-                    <img alt="" className="twheel2" src="/images/wheel2.png"/>
-                    <img alt="" className="twheel3" src="/images/wheel2.png"/>
-                  </figure>
-                </div>*/}
-                <div className="">
-                  <figure className="">
-                    <img alt="" src=""/>
-                    <img alt="" className="" src=""/>
-                    <img alt="" className="" src=""/>
-                    <img alt="" className="twheel6" src=""/>
-                  </figure>
-                </div>
-                {/*<figure className="truckfront">
-                  <img alt="" src="/images/truckfront.png"/>
-                </figure>*/}
-                </div>
-              </div>
-            </div>
+               </div> 
+               </div> 
+
           </div>
         </div>
         <div className="resbanner hidden-lg hidden-md"></div>

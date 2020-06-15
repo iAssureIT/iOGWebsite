@@ -18,6 +18,7 @@
     /*color: #fff;*/
     /*height: 500px;*/
 }.bannerContainer1{
+  opacity: 1;
   /*height: 500px;*/
   background-size: 100% 100% ;
     width: 100%;
@@ -869,7 +870,7 @@ height: 90px;
   right: 259px;
   top: 187px;
   height: 168px;
-
+  opacity: 0.9;
 }
 .petrolimage{
   position: absolute;
@@ -885,6 +886,7 @@ height: 90px;
   right: 669px;
   top: 118px;
   height: 221px;
+   /*opacity: 0.7;*/
 
 }
 .plantimage1{
@@ -893,6 +895,7 @@ height: 90px;
   right: 424px;
   top: 267px;
   height: 221px;
+  opacity: 0.8;
 
 }
 .plantimage11{
@@ -901,14 +904,16 @@ height: 90px;
   right: 146px;
   top: 395px;
   height: 221px;
+  opacity: 0.8;
 
 }
 .waterimg{
   position: absolute;
   bottom: 0px;
   left: 49px;
-  top: 169px;
+  top: 224px;
   height: 221px;
+  opacity:0.7;
 }
 .boat_img{
   position: absolute;
@@ -924,6 +929,7 @@ height: 90px;
   left: 29px;
   top: 372px;
   height: 221px;
+  opacity: 0.7
 
 }
 .waterimg2{
@@ -931,5 +937,176 @@ height: 90px;
   top: 77%;
   left: 29%;
   height: 221px;
+  opacity: 0.9;
 
 }
+.new_HoverDiv {
+    display: none;
+    height: 217px;
+    width: 217px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: -40px;
+    margin-top: -147px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}.waterimg:hover{
+  opacity: 1;
+}
+.petrolimage1:hover{
+  opacity: 1;
+}
+.waterimg:hover .new_HoverDiv  {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
+}
+.boat_img2:hover  {
+      opacity: 1;
+}
+.plantimage1:hover  {
+      opacity: 1;
+}
+.nexttogasimage:hover{
+  opacity: 1;
+
+}
+.waterimg2:hover{
+  opacity: 1;
+
+}
+
+.plantimage11:hover  {
+      opacity: 1;
+}
+.new_HoverDiv1 {
+    display: none;
+    height: 217px;
+    width: 217px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: 73px;
+    margin-top: -94px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.new_HoverDiv5 {
+    display: none;
+    height: 217px;
+    width: 217px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: 27px;
+    margin-top: -156px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.new_HoverDiv2 {
+    display: none;
+    height: 217px;
+    width: 229px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: 73px;
+    margin-top: -78px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.new_HoverDiv3 {
+    display: none;
+    height: 217px;
+    width: 217px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: 73px;
+    margin-top: -105px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.new_HoverDiv4 {
+    display: none;
+    height: 217px;
+    width: 217px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: 73px;
+    margin-top: -143px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.new_HoverDiv6 {
+    display: none;
+    height: 217px;
+    width: 217px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: -18px;
+    margin-top: -152px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.boat_img2:hover .new_HoverDiv1  {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
+}
+.plantimage1:hover .new_HoverDiv3  {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
+}
+.nexttogasimage:hover .new_HoverDiv5 {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
+}
+.plantimage11:hover .new_HoverDiv4  {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
+}
+.petrolimage1:hover .new_HoverDiv2{
+   display: block ! important;
+   cursor: pointer;
+  opacity: 1;
+
+}
+.waterimg2:hover .new_HoverDiv6{
+   display: block ! important;
+   cursor: pointer;
+   opacity: 1;
+
+}
+.waterimg:hover .bannerContainer1{
+  opacity: 0.7;
+}
+.onhoverimages{
+  opacity: 0.7;
+
+}
+.onhoverBackgImg{
+  opacity: 0.3;
+}
+.newhovertxt{
+  margin-top: 70px;
+  margin-left: 53px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.servicekbtnarrow1{
+    margin-left: 96px;
+    color: #000;
+    margin-top: -9px;
+    font-size: 13px;
+    position: absolute;
+}
+
+
+

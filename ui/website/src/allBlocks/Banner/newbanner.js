@@ -5,7 +5,27 @@ import './Banner.css';
 export default class newbanner extends Component {
 
 componentDidMount(){
-  
+
+  $(document).ready(function(){
+    $(".waterimg").hover(function(){
+       // $(".bannerContainer1").css("opacity", "0.3");
+        // $(".bannerContainer1").toggleClass(".onhoverimages");
+        // $(".bannerContainer1").toggleClass(".onhoverimages");
+        $("#backimage1").toggleClass(".onhoverBackgImg");
+
+    })
+ 
+});
+  /*
+
+ $(".waterimg").mouseover(function(){
+    $(".bannerContainer1").css("opacity", "0.3");
+    $("new_HoverDiv").css("opacity", "1");
+  });
+  $("waterimg").mouseout(function(){
+    $(".bannerContainer1").css("opacity", "1");
+  });
+  */
   
  
 } 
@@ -84,7 +104,7 @@ onHover(event)
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-wrapper NOpadding full-height"style={{overflow:"hidden"}}>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner  NOpadding"style={{overflow:"hidden"}}>
           <div className="row">
-            <div className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{overflow:"hidden"}}>
+            <div id="backimage1"className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{overflow:"hidden"}}>
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className="row"style={{overflow:"hidden"}}>
                 <figure className="oilimage"style={{overflow:"hidden"}}>
@@ -93,35 +113,59 @@ onHover(event)
                 <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img8.png"style={{width:"250px"}}/>
                 </figure>
-                <figure className="nexttogasimage"style={{overflow:"hidden"}}>
+                <figure className="nexttogasimage">
+                 <div className="new_HoverDiv5"> </div>
                  <img alt="" src="/images/newbanner_img9.png"style={{width:"250px"}}/>
                 </figure>
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"style={{width:"250px"}}/>
                 </figure>
-                <figure className="petrolimage1"style={{overflow:"hidden"}}>
+                <figure className="petrolimage1">
+                 <div className="new_HoverDiv2">
+                  <div style={{width:"155px"}}>
+                   <p className="newhovertxt"> Entire process of refining takes place here. </p>
+                   <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1" style={{color:"#000"}}>&gt;&gt;</span></a>
+                  </div>  
+                 </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img5.png"style={{width:"350px"}}/>
                 </figure>
-                 <figure className="plantimage1"style={{overflow:"hidden"}}>
+                 <figure className="plantimage1">
+                  <div className="new_HoverDiv3"> </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img6.png"style={{width:"350px"}}/>
                 </figure>
-                <figure className="plantimage11"style={{overflow:"hidden"}}>
+                <figure className="plantimage11">
+                 <div className="new_HoverDiv4"> 
+                 </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img7.png"style={{width:"350px"}}/>
                 </figure>
-                <figure className="waterimg"style={{overflow:"hidden"}}>
-                 <img alt="" className="img-responsive"src="/images/newbanner_img1.png"style={{width:"150px"}}/>
+                <figure className="waterimg">
+                  <div className="new_HoverDiv"> </div>
+                   <img alt="" className="img-responsive  "src="/images/newbanner_img1.png"style={{width:"100px"}}/> 
+                    {/*  <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
+                       <a href="/masterpage/oil-&-gas-e-&-p">
+
+                        </a> 
+                      </p>*/}
                 </figure>
                  <figure className="boat_img"style={{overflow:"hidden"}}>
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"200px"}}/>
                 </figure>
-                 <figure className="boat_img2"style={{overflow:"hidden"}}>
-                 <img alt="" className="img-responsive"src="/images/newbanner_img2.png"style={{width:"300px"}}/>
+                 <figure className="boat_img2">
+                  <div className="new_HoverDiv1"> </div>
+                   <img alt="" className="img-responsive"src="/images/newbanner_img2.png"style={{width:"300px"}}/>
                 </figure>
-                <figure className="waterimg2"style={{overflow:"hidden"}}>
+                <figure className="waterimg2">
+                 <div className="new_HoverDiv6">
+                 <div style={{width:"139px"}}>
+                   <p className="newhovertxt">Merchandising different types of oil and gas</p>
+                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow1" style={{color:"#000"}}>&gt;&gt;</span></a>
+                  </div>
+                  </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img4.png"style={{width:"150px"}}/>
                 </figure>
                </div> 
                </div> 
+
           </div>
         </div>
        {/* <div className="resbanner hidden-lg hidden-md"></div>*/}
