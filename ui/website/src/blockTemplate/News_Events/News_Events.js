@@ -99,8 +99,9 @@ console.log("==>",this.props.block_id);
     return (
       <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 innerBlocktepmlate6 NOPadding">  
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maindivNews">
+
         { 
-          this.state.blocksrepeat && this.state.blocksrepeat.length>0?
+          this.state.blocksrepeat && this.state.blocksrepeat.length>0 ?
           this.state.blocksrepeat.map((result, index)=>{
             return(
              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 maindivNews"> 

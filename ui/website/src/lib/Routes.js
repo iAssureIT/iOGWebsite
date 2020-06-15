@@ -15,6 +15,7 @@ import Megamenu       from '../common/Header/Megamenu.js';
 import Footer         from '../common/Footer/Footer.js';
 import HomePage       from '../allPages/HomePage/HomePage.js';
 import Contactpage    from '../allPages/ContactPage/Contactpage.js';
+import newbanner      from '../allBlocks/Banner/newbanner.js';
 import AboutUs        from '../allPages/AboutUs/AboutUs.js';
 import Careerspage    from '../allPages/CareersPage/Careerspage.js';
 import ServicesPage   from '../allPages/ServicesPage/ServicesPage.js';
@@ -200,6 +201,7 @@ const WebLayout = () => (
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resource" component={ ResourcePage } />
+    <Route path="/newbanner" component={ newbanner } />
     <Route path="/blog" component={ AllBlog } /> 
 
     <Route path="/AllBlog" component={AllBlog}  />

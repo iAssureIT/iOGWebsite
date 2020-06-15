@@ -3,6 +3,9 @@
   margin-bottom: 18px;
     overflow: hidden;
 }
+.full-height {
+  height: 100%;
+  }
 .banner{
 	
 	
@@ -14,11 +17,21 @@
     /*background-size: 100% 75%;*/
     /*color: #fff;*/
     /*height: 500px;*/
+}.bannerContainer1{
+  /*height: 500px;*/
+  background-size: 100% 100% ;
+    width: 100%;
+  /*  margin-right: auto;*/
+    height: 43em;
+  /*  margin-left: auto;*/
+    /*float: left;*/
+    background-image: url(/images/newbanner_1.png);
+
 }
 .bannerContainer {
     /* max-width: 930px; */
     /* position: relative; */
-    background-size: 100% ;
+    background-size: 100% 100% ;
     width: 100%;
   /*  margin-right: auto;*/
     height: 48em;
@@ -28,6 +41,11 @@
     /*padding-top: 10em;*/
     /*padding-bottom: 158px;*/
     /*margin-top: -60px;*/
+}
+.resbannerimg{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("/images/newbanner_1.png");
 }
 .lead {
     font-size: 18px;
@@ -827,3 +845,91 @@ height: 90px;
   position: absolute;
   border-left: 15px solid #ffffff;
 } 
+.oilimage{
+  position: absolute;
+  /*left: 968px;*/
+  bottom: 0px;
+  right: 75px; 
+  top: 125px;
+  height: 168px;
+}
+.gasimage{
+  position: absolute;
+   /*left: 968px;*/
+  bottom: 0px;
+  right: 410px; 
+  top: 95px;
+  height: 168px;
+
+}
+.nexttogasimage{
+   position: absolute;
+   /*left: 968px;*/
+  bottom: 0px;
+  right: 259px;
+  top: 187px;
+  height: 168px;
+
+}
+.petrolimage{
+  position: absolute;
+  bottom: 0px;
+  right: 85px;
+  top: 286px;
+  height: 221px;
+
+}
+.petrolimage1{
+  position: absolute;
+  bottom: 0px;
+  right: 669px;
+  top: 118px;
+  height: 221px;
+
+}
+.plantimage1{
+  position: absolute;
+  bottom: 0px;
+  right: 424px;
+  top: 267px;
+  height: 221px;
+
+}
+.plantimage11{
+  position: absolute;
+  bottom: 0px;
+  right: 146px;
+  top: 395px;
+  height: 221px;
+
+}
+.waterimg{
+  position: absolute;
+  bottom: 0px;
+  left: 49px;
+  top: 169px;
+  height: 221px;
+}
+.boat_img{
+  position: absolute;
+  bottom: 0px;
+  left: 218px;
+  top: 267px;
+  height: 221px;
+
+}
+.boat_img2{
+  position: absolute;
+  bottom: 0px;
+  left: 29px;
+  top: 372px;
+  height: 221px;
+
+}
+.waterimg2{
+  position: absolute;
+  top: 77%;
+  left: 29%;
+  height: 221px;
+
+}
