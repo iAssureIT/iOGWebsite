@@ -107,14 +107,25 @@ onHover(event)
             <div id="backimage1"className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{overflow:"hidden"}}>
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className="row"style={{overflow:"hidden"}}>
-                <figure className="oilimage"style={{overflow:"hidden"}}>
+                <figure className="oilimage">
+                 <div className="new_HoverDiv7">
+                  <div style={{width:"177px"}}>
+                   <p className="newhovertxt"> iOG Solutions helps clients define a road map for sustainable Health and Safety practices.</p>
+                   <a href="/masterpage/health-safety-environment"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div>  
+                 </div>
                  <img alt="" src="/images/newbanner_img13.png"style={{width:"250px"}}/>
                 </figure>
                 <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img8.png"style={{width:"250px"}}/>
                 </figure>
                 <figure className="nexttogasimage">
-                 <div className="new_HoverDiv5"> </div>
+                 <div className="new_HoverDiv5">
+                  <div style={{width:"165px"}}>
+                   <p className="newhovertxt_8"> Entire process of chemicals takes place here. </p>
+                   <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div>  
+                 </div>
                  <img alt="" src="/images/newbanner_img9.png"style={{width:"250px"}}/>
                 </figure>
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
@@ -130,16 +141,30 @@ onHover(event)
                  <img alt="" className="img-responsive"src="/images/newbanner_img5.png"style={{width:"350px"}}/>
                 </figure>
                  <figure className="plantimage1">
-                  <div className="new_HoverDiv3"> </div>
+                  <div className="new_HoverDiv3">
+                   <div style={{width:"188px"}}>
+                   <p className="newhovertxt_ptrchemical">Petrochemical industry & its higher value addition in recent volatile oil market.</p>
+                   <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div> 
+                  </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img6.png"style={{width:"350px"}}/>
                 </figure>
                 <figure className="plantimage11">
                  <div className="new_HoverDiv4"> 
+                  <div style={{width:"165px"}}>
+                     <p className="newhovertxt_4">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
+                   <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div>
                  </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img7.png"style={{width:"350px"}}/>
                 </figure>
                 <figure className="waterimg">
-                  <div className="new_HoverDiv"> </div>
+                  <div className="new_HoverDiv">
+                   <div style={{width:"165px"}}>
+                     <p className="newhovertxt_1">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
+                   <a href="/masterpage/lng"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div>
+                   </div>
                    <img alt="" className="img-responsive  "src="/images/newbanner_img1.png"style={{width:"100px"}}/> 
                     {/*  <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
                        <a href="/masterpage/oil-&-gas-e-&-p">
@@ -151,7 +176,12 @@ onHover(event)
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"200px"}}/>
                 </figure>
                  <figure className="boat_img2">
-                  <div className="new_HoverDiv1"> </div>
+                  <div className="new_HoverDiv1">
+                   <div style={{width:"171px"}}>
+                   <p className="newhovertxt_e_p">The upstream segment of oil & gas industry, also known as Exploration and Production (E&P)</p>
+                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div> 
+                  </div>
                    <img alt="" className="img-responsive"src="/images/newbanner_img2.png"style={{width:"300px"}}/>
                 </figure>
                 <figure className="waterimg2">
@@ -170,6 +200,7 @@ onHover(event)
         </div>
         <div className="resbanner hidden-lg hidden-md"></div>
       </div>
+      
     );  
   }
 }

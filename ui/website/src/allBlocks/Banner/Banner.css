@@ -853,6 +853,7 @@ height: 90px;
   right: 75px; 
   top: 125px;
   height: 168px;
+  opacity: 0.9;
 }
 .gasimage{
   position: absolute;
@@ -942,12 +943,12 @@ height: 90px;
 }
 .new_HoverDiv {
     display: none;
-    height: 217px;
-    width: 217px;
+    height: 250px;
+    width: 250px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: -40px;
-    margin-top: -147px;
+    margin-left: -51px;
+    margin-top: -162px;
     position: absolute;
     background-size: 100% 100%;
     
@@ -972,6 +973,10 @@ height: 90px;
   opacity: 1;
 
 }
+.oilimage:hover{
+  opacity: 1;
+
+}
 .waterimg2:hover{
   opacity: 1;
 
@@ -982,24 +987,24 @@ height: 90px;
 }
 .new_HoverDiv1 {
     display: none;
-    height: 217px;
-    width: 217px;
+    height: 240px;
+    width: 250px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: 73px;
-    margin-top: -94px;
+    margin-left: 59px;
+    margin-top: -105px;
     position: absolute;
     background-size: 100% 100%;
     
 }
 .new_HoverDiv5 {
     display: none;
-    height: 217px;
-    width: 217px;
+    height: 224px;
+    width: 228px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
     margin-left: 27px;
-    margin-top: -156px;
+    margin-top: -120px;
     position: absolute;
     background-size: 100% 100%;
     
@@ -1018,20 +1023,20 @@ height: 90px;
 }
 .new_HoverDiv3 {
     display: none;
-    height: 217px;
-    width: 217px;
+    height: 267px;
+    width: 274px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: 73px;
-    margin-top: -105px;
+    margin-left: 49px;
+    margin-top: -161px;
     position: absolute;
     background-size: 100% 100%;
     
 }
 .new_HoverDiv4 {
     display: none;
-    height: 217px;
-    width: 217px;
+    height: 250px;
+    width: 250px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
     margin-left: 73px;
@@ -1046,11 +1051,28 @@ height: 90px;
     width: 240px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: -18px;
-    margin-top: -152px;
+    margin-left: -24px;
+    margin-top: -166px;
     position: absolute;
     background-size: 100% 100%;
     
+}
+.new_HoverDiv7 {
+    display: none;
+    height: 274px;
+    width: 260px;
+    border-radius: 5px;
+    background-image: url(/images/newbanner_img14.png);
+    margin-left: 16px;
+    margin-top: -128px;
+    position: absolute;
+    background-size: 100% 100%;
+    
+}
+.oilimage:hover .new_HoverDiv7  {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
 }
 .boat_img2:hover .new_HoverDiv1  {
       display: block ! important;
@@ -1108,6 +1130,49 @@ height: 90px;
   padding-left: 10px;
   text-align: center;
 }
+.newhovertxt_8{
+  margin-top: 79px;
+    margin-left: 38px;
+    font-size: 11px;
+    padding-left: 10px;
+    text-align: center;
+}
+.newhovertxt_1{
+  margin-top: 78px;
+  margin-left: 62px;
+  font-size: 11px;
+  padding-left: 10px;
+  text-align: center;
+}
+.newhovertxt_4{
+    margin-top: 77px;
+    margin-left: 65px;
+    font-size: 11px;
+    /* padding-left: 10px; */
+    text-align: center;
+}
+.newhovertxt_5{
+  margin-top: 78px;
+  margin-left: 62px;
+  font-size: 11px;
+  padding-left: 10px;
+  text-align: center;
+}
+.newhovertxt_e_p{
+  margin-top: 67px;
+  margin-left: 49px;
+  font-size: 11px;
+  padding-left: 10px;
+  text-align: center;
+
+}
+.newhovertxt_ptrchemical{
+    margin-top: 81px;
+    margin-left: 67px;
+    font-size: 11px;
+    padding-left: 10px;
+    text-align: center;
+}
 .servicekbtnarrow1{
     margin-left: 107px;
     color: #000;
@@ -1119,6 +1184,41 @@ height: 90px;
     margin-left: 98px;
     color: #000;
     margin-top: -7px;
+    font-size: 13px;
+    position: absolute;
+}
+.servicekbtnarrow3 {
+    margin-left: 108px;
+    color: #000;
+    margin-top: -9px;
+    font-size: 13px;
+    position: absolute;
+}
+.servicekbtnarrow4 {
+    margin-left: 108px;
+    color: #000;
+    margin-top: -7px;
+    font-size: 13px;
+    position: absolute;
+}
+.servicekbtnarrow5 {
+    margin-left: 119px;
+    color: #000;
+    margin-top: -10px;
+    font-size: 13px;
+    position: absolute;
+}
+.servicekbtnarrow7{
+    margin-left: 113px;
+    color: #000;
+    margin-top: -8px;
+    font-size: 13px;
+    position: absolute;
+}
+.servicekbtnarrow8 {
+    margin-left: 96px;
+    color: #000;
+    margin-top: -4px;
     font-size: 13px;
     position: absolute;
 }
