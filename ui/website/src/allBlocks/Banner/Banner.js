@@ -122,9 +122,9 @@ onHover(event)
                 </figure>
                 <figure className="petrolimage1">
                  <div className="new_HoverDiv2">
-                  <div style={{width:"155px"}}>
+                  <div style={{width:"165px"}}>
                    <p className="newhovertxt"> Entire process of refining takes place here. </p>
-                   <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1" style={{color:"#000"}}>&gt;&gt;</span></a>
+                   <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img5.png"style={{width:"350px"}}/>
@@ -157,8 +157,8 @@ onHover(event)
                 <figure className="waterimg2">
                  <div className="new_HoverDiv6">
                  <div style={{width:"139px"}}>
-                   <p className="newhovertxt">Merchandising different types of oil and gas</p>
-                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow1" style={{color:"#000"}}>&gt;&gt;</span></a>
+                   <p className="newhovertxt_6">Merchandising different types of oil and gas</p>
+                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                   </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img4.png"style={{width:"150px"}}/>

@@ -1006,8 +1006,8 @@ height: 90px;
 }
 .new_HoverDiv2 {
     display: none;
-    height: 217px;
-    width: 229px;
+    height: 240px;
+    width: 248px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
     margin-left: 73px;
@@ -1042,8 +1042,8 @@ height: 90px;
 }
 .new_HoverDiv6 {
     display: none;
-    height: 217px;
-    width: 217px;
+    height: 240px;
+    width: 240px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
     margin-left: -18px;
@@ -1095,15 +1095,30 @@ height: 90px;
   opacity: 0.3;
 }
 .newhovertxt{
-  margin-top: 70px;
-  margin-left: 53px;
-  font-size: 13px;
+  margin-top: 86px;
+  margin-left: 54px;
+  font-size: 11px;
   padding-left: 10px;
+  text-align: center;
+}
+.newhovertxt_6{
+  margin-top: 78px;
+  margin-left: 62px;
+  font-size: 11px;
+  padding-left: 10px;
+  text-align: center;
 }
 .servicekbtnarrow1{
-    margin-left: 96px;
+    margin-left: 107px;
     color: #000;
-    margin-top: -9px;
+    margin-top: -1px;
+    font-size: 13px;
+    position: absolute;
+}
+.servicekbtnarrow2{
+    margin-left: 98px;
+    color: #000;
+    margin-top: -7px;
     font-size: 13px;
     position: absolute;
 }
