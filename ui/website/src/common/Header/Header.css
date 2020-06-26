@@ -52,7 +52,6 @@
   background: red;
   transition: width 2s;
 }
-
 div:hover {
   width: 300px;
 }
@@ -318,14 +317,12 @@ nav ul li {
 #drop-8{
   z-index: 100;
 }
-
 #drop-9{
   z-index: 100;
 }
 #drop-10{
   z-index: 10;
 }
-
 */
 
 dropdown-submenu {

@@ -26,7 +26,7 @@
     height: 43em;
   /*  margin-left: auto;*/
     /*float: left;*/
-    background-image: url(/images/newbanner_1.png);
+    background-image: url(/images/Banner3_.png);
 
 }
 .bannerContainer {
@@ -850,17 +850,15 @@ height: 90px;
   position: absolute;
   /*left: 968px;*/
   bottom: 0px;
-  right: 75px; 
-  top: 125px;
+  right: 71px;
+  top: 100px;
   height: 168px;
   opacity: 0.9;
 }
 .gasimage{
   position: absolute;
-   /*left: 968px;*/
-  bottom: 0px;
-  right: 410px; 
-  top: 95px;
+  right: 153px;
+    top: 429px;
   height: 168px;
 
 }
@@ -868,24 +866,23 @@ height: 90px;
    position: absolute;
    /*left: 968px;*/
   bottom: 0px;
-  right: 259px;
-  top: 187px;
+  right: 562px;
+  top: 449px;
   height: 168px;
   opacity: 0.9;
 }
 .petrolimage{
   position: absolute;
   bottom: 0px;
-  right: 85px;
-  top: 286px;
+  right: 126px;
+  top: 247px;
   height: 221px;
 
 }
 .petrolimage1{
   position: absolute;
-  bottom: 0px;
-  right: 669px;
-  top: 118px;
+  right: 323px;
+  top: 332px;
   height: 221px;
    /*opacity: 0.7;*/
 
@@ -893,8 +890,8 @@ height: 90px;
 .plantimage1{
   position: absolute;
   bottom: 0px;
-  right: 424px;
-  top: 267px;
+  right: 493px;
+  top: 232px;
   height: 221px;
   opacity: 0.8;
 
@@ -902,8 +899,8 @@ height: 90px;
 .plantimage11{
   position: absolute;
   bottom: 0px;
-  right: 146px;
-  top: 395px;
+  right: 320px;
+  top: 159px;
   height: 221px;
   opacity: 0.8;
 
@@ -911,7 +908,7 @@ height: 90px;
 .waterimg{
   position: absolute;
   bottom: 0px;
-  left: 49px;
+  left: 65px;
   top: 224px;
   height: 221px;
   opacity:0.7;
@@ -919,16 +916,16 @@ height: 90px;
 .boat_img{
   position: absolute;
   bottom: 0px;
-  left: 218px;
-  top: 267px;
+  left: 221px;
+  top: 127px;
   height: 221px;
 
 }
 .boat_img2{
   position: absolute;
   bottom: 0px;
-  left: 29px;
-  top: 372px;
+  left: 297px;
+  top: 320px;
   height: 221px;
   opacity: 0.7
 
@@ -936,7 +933,7 @@ height: 90px;
 .waterimg2{
   position: absolute;
   top: 77%;
-  left: 29%;
+  left: 13%;
   height: 221px;
   opacity: 0.9;
 
@@ -947,8 +944,8 @@ height: 90px;
     width: 250px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: -51px;
-    margin-top: -162px;
+    margin-left: -41px;
+    margin-top: -175px;
     position: absolute;
     background-size: 100% 100%;
     
@@ -991,8 +988,8 @@ height: 90px;
     width: 250px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: 59px;
-    margin-top: -105px;
+    margin-left: 28px;
+    margin-top: -128px;
     position: absolute;
     background-size: 100% 100%;
     
@@ -1015,8 +1012,8 @@ height: 90px;
     width: 248px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: 73px;
-    margin-top: -78px;
+    margin-left: 6px;
+    margin-top: -101px;
     position: absolute;
     background-size: 100% 100%;
     
@@ -1027,8 +1024,8 @@ height: 90px;
     width: 274px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: 49px;
-    margin-top: -161px;
+    margin-left: -26px;
+    margin-top: -130px;
     position: absolute;
     background-size: 100% 100%;
     
@@ -1039,7 +1036,7 @@ height: 90px;
     width: 250px;
     border-radius: 5px;
     background-image: url(/images/newbanner_img14.png);
-    margin-left: 73px;
+    margin-left: 11px;
     margin-top: -143px;
     position: absolute;
     background-size: 100% 100%;
