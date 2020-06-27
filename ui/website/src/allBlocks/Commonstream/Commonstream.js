@@ -15,7 +15,7 @@ export default class Commonstream extends Component {
         return [
              {
                 downstreamTitle : "Digital",
-                downstreamTitle1: "Services",
+                downstreamTitle1: "",
                 hryperlink      : "masterpage/digital-services",
                 downstreamimg   : "/images/Illustration_13.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
@@ -67,7 +67,7 @@ export default class Commonstream extends Component {
                     <div className="row">
                        <div className="col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1">
                           <div className="row">
-                             <div className="col-lg-5 col-md-5 col-sm-5 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 para12"> 
+                             <div className="col-lg-5 col-md-8 col-sm-5 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 para12"> 
                                 <div className="row">
                                   <a href="/masterpage/health-safety-environment">
                                       <div className="col-lg-12 col-md-12 col-sm-12">
@@ -89,7 +89,7 @@ export default class Commonstream extends Component {
                                   this.DownstreamData().map((data, index)=>{
                                      return (
                                   <a key={index} href={"/"+data.hryperlink}>
-                                    <div className={"col-lg-5 col-md-5 col-sm-8 para1"+index}>
+                                    <div className={"col-lg-5 col-md-8 col-sm-8 para1"+index}>
                                       <div className="row">
                                         <div className="col-lg-12 col-md-12 col-sm-12 lightbluetext block block1height text-center">
                                             <img alt="" className="streamImg" src={data.downstreamimg} />

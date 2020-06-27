@@ -53,14 +53,6 @@ export default class Header extends Component {
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top NOPadding" id="bb">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
             <div className="row"> 
-           {/* <div id="languages">
-              <p>
-                <a href="?lang=en" rel="en">English</a> / <a href="?lang=es" rel="es">Spanish</a> / <a href="?lang=it" rel="it">Italian</a> /
-                <a href="?lang=fr" rel="fr">French</a>
-              </p>
-            </div>*/}
-
-            {/* <div className="col-lg-12"><button className="pull-right"onClick={this.googleTranslateElementInit.bind(this)}>Hindi</button></div>*/}
              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 top_spacing NOPadding">
               <div className="row"> 
                 <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 NOPadding">
@@ -83,14 +75,12 @@ export default class Header extends Component {
                              <li><a href="/" className="headerTitle">Home</a></li>
                              <li>
                               <div className="dropdown1"> 
-                                <a href="/masterpage/about-us" className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a  className="headerTitle toggle">About Us <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                                  <div className="col-lg-offset-2 dropdown-content servicedropdown aboutusdrop ">
                                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                    <div className="Servicecolumn columnmenu">
-                                   {/* <a href="/about-us">Company Profile</a>*/}
                                     <a href="/masterpage/about-us">Company Profile</a>
-                                    {/*<a href="/founderprofile">Founder's Profile</a>*/}
                                     <a href="/masterpage/foundersprofilepage">Founder's Profile</a>
                                      <a href="/masterpage/news-&-events">News & Events</a>
                                     <a href="/ourjourny">Our Journey</a>
@@ -99,15 +89,10 @@ export default class Header extends Component {
                                  </div>
                                 </div> 
                                 <input type="checkbox" id="drop-1"/>
-                               {/* <ul>
-                                  <li><a href="/about-us">Company Profile</a></li>
-                                  <li><a href="/founderprofile">Founder's Profile</a></li>
-                                  <li><a href="/ourjourny">Our Journey</a></li>
-                                </ul>*/}
                               </li>
                               <li> 
                               <div className="dropdown1 ">  
-                              <a href="/masterpage/service-arms" className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                              <a  className="headerTitle toggle NOPadding">Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>  
                               <div className="col-lg-offset-5 dropdown-content servicedropdown1 ">
                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
@@ -119,8 +104,7 @@ export default class Header extends Component {
                                      <a href="/masterpage/iog-implement">iOGImplement</a>
                                     {/* <a href="/iogtrain">iOGTrain</a>*/}
                                      <a href="/masterpage/iog-train">iOGTrain</a>
-                                     <a href="/masterpage/iog-study
-                                     ">iOGStudy</a>
+                                     <a href="/masterpage/iog-study">iOGStudy</a>
                                   </div>
                              </div>
                             </div>
@@ -130,7 +114,7 @@ export default class Header extends Component {
                              <li>
                             <div className="dropdown1 "> 
                             
-                            <a href="/masterpage/expertise-main-page" className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <a  className="headerTitle toggle">Expertise<i className="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>
                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 menudivider"></div>    
                           <div className="dropdown-content expertcontrnt col-lg-12 col-md-12">
@@ -262,7 +246,92 @@ export default class Header extends Component {
                     </nav>
                  </div>
                 </div>
-                 </div>   
+                 </div>  
+                        <div className=" col-xs-12 hidden-lg hidden-md hidden-sm ">
+                      <nav className=" marginZero customNavBar navbar-default">
+                        <div className="container-fluid NOPadding">
+                          <div className="navbar-header1">
+                            {/*<button type="button" className="navbar-toggle resmenubar collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false" >
+                              <span className="sr-only">Toggle navigation</span>
+                              <span className="icon-bar"></span>
+                              <span className="icon-bar"></span>
+                              <span className="icon-bar"></span>
+                            </button>*/}
+                          </div>
+                          <div className="collapse navbar-collapse responsiveNavBar" id="navBar">
+                            <ul className="nav navbar-nav navbar-right customUl width50">
+                              <li className="nav-item dropdown dropdownresponsive">
+                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  HOME <span className="caret"></span>
+                                </a>                    
+                               </li>
+                                 <li className="nav-item dropdown dropdownresponsive">
+                                    <a className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       ABOUT US <span className="caret"></span>
+                                    </a>
+                                    <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                      <a  className="dropdown-item" href="/about-us">Company Profile</a>
+                                      <a className="dropdown-item" href="/founderprofile">Founder's Profile</a>
+                                      <a className="dropdown-item" href="/ourjourny">Our Journey</a>  
+                                    </ul>
+                                  </li>
+                                      <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             SERVICES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/iogimplement">iOGImplement</a>
+                                            <a className="dropdown-item" href="/iogtrain">iOGTrain</a>
+                                            <a className="dropdown-item" href="/iogstudy">iOGStudy</a> 
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             EXPERTISE<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             INDUSTRIES<span className="caret"></span>
+                                          </a>
+                                          <ul className="dropdown-menu customDropdown " aria-labelledby="navbarDropdownMenuLink">
+                                            <a  className="dropdown-item" href="/#5gcpm">Company Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenMoats">Founder's Profile</a>
+                                            <a className="dropdown-item" href="/#safeHeavenAlpha">Our Journey</a>
+                                          
+                                          </ul>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             CAREERS<span className="caret"></span>
+                                          </a>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             RESOURCES<span className="caret"></span>
+                                          </a>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             BLOGS<span className="caret"></span>
+                                          </a>
+                                        </li>
+                                        <li className="nav-item dropdown dropdownresponsive">
+                                          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             CONTACT US<span className="caret"></span>
+                                          </a>
+                                        </li>        
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                </div> 
                </div>
              </div>
            </div>

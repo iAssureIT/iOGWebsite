@@ -114,10 +114,10 @@ onHover(event)
                    <a href="/masterpage/health-safety-environment"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_11.png"style={{width:"250px"}}/>
+                 <img alt="" src="/images/Banner3_11.png"className="tabimage"style={{width:"250px"}}/>
                 </figure>
                 <figure className="gasimage"style={{overflow:"hidden"}}>
-                 <img alt="" src="/images/Banner3_8.png"style={{width:"250px"}}/>
+                 <img alt="" src="/images/Banner3_8.png" className="tabimage"style={{width:"250px"}}/>
                 </figure>
                 <figure className="nexttogasimage">
                  <div className="new_HoverDiv5">
@@ -129,7 +129,7 @@ onHover(event)
                  <img alt="" src="/images/Banner3_5.png"style={{width:"200px"}}/>
                 </figure>
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
-                 <img alt="" src="/images/newbanner_img10.png"style={{width:"250px"}}/>
+                 <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"250px"}}/>
                 </figure>
                 <figure className="petrolimage1">
                  <div className="new_HoverDiv2">
@@ -138,16 +138,16 @@ onHover(event)
                    <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" className="img-responsive"src="/images/newbanner_img5.png"style={{width:"250px"}}/>
+                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img5.png"style={{width:"250px"}}/>
                 </figure>
-                 <figure className="plantimage1 hidden-sm">
+                 <figure className="plantimage1">
                   <div className="new_HoverDiv3">
                    <div style={{width:"188px"}}>
                    <p className="newhovertxt_ptrchemical">Petrochemical industry & its higher value addition in recent volatile oil market.</p>
                    <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                 <img alt="" className="img-responsive"src="/images/Banner3_6.png"style={{width:"250px"}}/>
+                 <img alt="" className="img-responsive"src="/images/Banner3_6.png"className="tabimage"style={{width:"250px"}}/>
                 </figure>
                 <figure className="plantimage11">
                  <div className="new_HoverDiv4"> 
@@ -156,7 +156,7 @@ onHover(event)
                    <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
-                 <img alt="" className="img-responsive"src="/images/newbanner_img7.png"style={{width:"250px"}}/>
+                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img7.png"style={{width:"250px"}}/>
                 </figure>
                 <figure className="waterimg">
                   <div className="new_HoverDiv">
@@ -175,14 +175,14 @@ onHover(event)
                  <figure className="boat_img"style={{overflow:"hidden"}}>
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
                 </figure>
-                 <figure className="boat_img2 hidden-sm">
+                 <figure className="boat_img2">
                   <div className="new_HoverDiv1">
                    <div style={{width:"171px"}}>
                    <p className="newhovertxt_e_p">The upstream segment of oil & gas industry, also known as Exploration and Production (E&P)</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive"src="/images/Banner3_4.png"style={{width:"250px"}}/>
+                   <img alt="" className="img-responsive tabimage"src="/images/Banner3_4.png"style={{width:"250px"}}/>
                 </figure>
                 <figure className="waterimg2">
                  <div className="new_HoverDiv6">

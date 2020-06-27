@@ -80,13 +80,13 @@ export default class Blogs extends Component {
     render(){
         return(
             <div>
-                <div className="upstreamcontentheader col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 text-center ">                        
+                <div className="upstreamcontentheader col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-sm-offset-2 col-md-offset-2 text-center ">                        
                     <hr/>
                     <h1 className="lightbluetext latestblog">
                         <b>Latest Blogs</b>
                     </h1>
                 </div>
-                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-lg-offset-1 hidden-sm hidden-xs">
+                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs">
                   <div>
                         <OwlCarousel 
                         className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
@@ -145,7 +145,7 @@ export default class Blogs extends Component {
                 </div>                
               </div>   
               {/*res*/}
-              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 hidden-lg hidden-md">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 hidden-lg hidden-md">
                   <div>
                         <OwlCarousel 
                         className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"

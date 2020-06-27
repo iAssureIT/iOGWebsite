@@ -855,10 +855,63 @@ height: 90px;
   height: 168px;
   opacity: 0.9;
 }
+@media only screen and (max-width: 768px) {
+.oilimage{
+  right: 27px;
+  top: 62px;
+}
+.tabimage{
+  width: 170px ! important;
+}
+.plantimage11{
+  right: 134px ! important;
+    top: 117px ! important;
+ }
+ .petrolimage{
+    right: 25px ! important;
+    top: 167px ! important;
+ }
+ .boat_img{
+    left: 137px ! important;
+    top: 93px ! important;
+ }
+ .plantimage1{
+    right: 259px !important;
+    top: 162px ! important;
+ }
+ .petrolimage1{
+  right: 156px ! important;
+  top: 232px ! important;
+ }
+ .boat_img2{
+  left: 238px ! important;
+  top: 265px ! important;
+ }
+ .gasimage{
+  right: 34px !important;
+  top: 296px ! important;
+ }
+ .nexttogasimage{
+  right: 193px !important;
+  top: 368px ! important;
+ }
+ .waterimg2{
+  top: 67% ! important;
+  left: 23% ! important;
+ }
+ .new_HoverDiv1{
+    margin-left: -18px ! important;
+    margin-top: -143px !important;
+ }
+ .new_HoverDiv5{
+  margin-left: -11px ! important;
+  margin-top: -115px ! important;
+ }
+}
 .gasimage{
   position: absolute;
   right: 153px;
-    top: 429px;
+  top: 429px;
   height: 168px;
 
 }
@@ -960,9 +1013,10 @@ height: 90px;
       cursor: pointer;
       opacity: 1;
 }
-.boat_img2:hover  {
+.boat_img2:hover .  {
       opacity: 1;
 }
+
 .plantimage1:hover  {
       opacity: 1;
 }

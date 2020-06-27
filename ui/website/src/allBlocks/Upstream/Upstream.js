@@ -140,7 +140,7 @@ export default class Upstream extends Component {
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
-                                         <div key={index}className="card" data-card={index}>
+                                         <div key={index}className="col-md-4 card" data-card={index}>
                                             <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -173,11 +173,11 @@ export default class Upstream extends Component {
                         </div>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{overflow:"hidden"}}>
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
-                                         <div key={index}className="" data-card={index}>
+                                         <div key={index}className="col-sm-4" data-card={index}>
                                             <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
