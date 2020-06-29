@@ -128,7 +128,7 @@ export default class Upstream extends Component {
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs upstreamblock lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
-                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
+                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-sm-offset-1 col-md-10 col-md-offset-1 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
                                 <b>Upstream Oil & Gas Industry</b>
@@ -165,7 +165,7 @@ export default class Upstream extends Component {
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md upstreamblock_new lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
-                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
+                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-sm-offset-1 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
                             <hr/>
                             <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
                                  Upstream Oil & Gas Industry
@@ -173,11 +173,11 @@ export default class Upstream extends Component {
                         </div>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{overflow:"hidden"}}>
+                        <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
-                                         <div key={index}className="col-sm-4" data-card={index}>
+                                         <div key={index}className="" data-card={index}>
                                             <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
