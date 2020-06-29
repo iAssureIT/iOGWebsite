@@ -619,3 +619,7 @@ body{
 .fa{
     font-family: FontAwesome !important;
    }
+
+.NOPadding{
+    padding: 0;
+}  

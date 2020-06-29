@@ -22,6 +22,11 @@
   transition-duration: 0.7s;
   transition: width 1s;
   border: none;
+  z-index: 100000;
+  top:70px;
+}
+.navbar-static-top{
+  padding-top: 20px;
 }
 .rescontactBar{
   position: absolute;
@@ -195,6 +200,9 @@
   height: 68px ! important;
 
 }
+.setlogo{
+  padding-left: 0 ! important;
+}
 .expertiesdropdown{
   margin-left: -276px ! important;
 }
@@ -274,6 +282,35 @@
   background-color:#fff;
   /*height: 430px;*/
   padding:0px;
+}
+.setlogo{
+  padding-left: 120px;
+}
+.contactBar{
+  position: absolute;
+  right: 0px;
+  background-color: #f19000;
+  width: 35px;
+  height: 30px;
+  color: #fff;
+  padding: 6px 8px 6px 6px ;
+  border-radius: 3px;
+  text-align: right;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  transition: width 1s;
+  border: none;
+}
+.fixedContactBar i{
+  font-weight: bolder;
+  font-size: 20px;
+}
+.contactBar:hover i{
+  display: none;
+  font-size: 50px;
+}
+.contactBar:hover{
+  width: 130px;
 }
 
 

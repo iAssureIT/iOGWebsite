@@ -44,12 +44,12 @@ export default class Header extends Component {
     <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow"> 
       <div className="row"> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top" id="bb">
-        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 setlogo">
            <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>         
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-9">
            <div class="topnav" id="myTopnav">
-            <a href="/" class="active">HOME</a>
+            <a href="/">HOME</a>
             <div class="dropdown">
               <button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down"></i>
@@ -160,20 +160,28 @@ export default class Header extends Component {
                 <a href="/masterpage/gas-processing">Gas Precessing</a>
               </div>
             </div> 
-             <a href="/masterpage/careers" class="active">CAREERS</a>
-             <a href="/resource" class="active">RESOURCES</a>
-             <a href="/blog" class="active">BLOGS</a>
-             <a href="/contact-us" class="active">CONTACT US</a>
+             <a href="/masterpage/careers">CAREERS</a>
+             <a href="/resource" >RESOURCES</a>
+             <a href="/blog" >BLOGS</a>
+             <a href="/contact-us" >CONTACT US</a>
             <a href="javascript:void(0);" class="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>
           </div>
           </div>
         </div>
-         <button className="contactBar hidden-sm hidden-xs" data-toggle="modal" data-target="#modalId"  onClick={this.modalClickEvent.bind(this)}>
+         <button className="contactBar hidden-xs" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
-            <i className="fa fa-envelope-o" aria-hidden="true"></i>
+            <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
+        <a href="/contact-us">
+         <button className="contactBar hidden-lg hidden-md" >
+          <div className="fixedContactBar">
+            <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
+          </div>
+          <div className="hovertext">Contact Us Now</div>
+        </button>
+       </a> 
       </div>
       <div className="row"> 
        
