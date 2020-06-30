@@ -67,11 +67,11 @@ export default class Commonstream extends Component {
                     <div className="row">
                        <div className="col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1">
                           <div className="row">
-                             <div className="col-lg-5 col-md-8 col-sm-5 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 para12"> 
+                             <div className="col-lg-5 col-md-8 col-sm-4 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 para12"> 
                                 <div className="row">
                                   <a href="/masterpage/health-safety-environment">
                                       <div className="col-lg-12 col-md-12 col-sm-12">
-                                          <div className="lightbluetext block block1height text-center">
+                                          <div className="lightbluetext block block1height text-center divinsm">
                                               <img alt="" className="streamImg" src="/images/Illustration_11.png" />
                                              {/* <h2>Health Safety & Environment</h2>*/}
                                               <br/>
@@ -89,7 +89,7 @@ export default class Commonstream extends Component {
                                   this.DownstreamData().map((data, index)=>{
                                      return (
                                   <a key={index} href={"/"+data.hryperlink}>
-                                    <div className={"col-lg-5 col-md-8 col-sm-8 para1"+index}>
+                                    <div className={"col-lg-5 col-md-8 col-sm-4 para1"+index}>
                                       <div className="row">
                                         <div className="col-lg-12 col-md-12 col-sm-12 lightbluetext block block1height text-center">
                                             <img alt="" className="streamImg" src={data.downstreamimg} />

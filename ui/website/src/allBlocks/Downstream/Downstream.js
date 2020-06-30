@@ -52,7 +52,7 @@ export default class Downstream extends Component {
             },
              {
                 downstreamTitle  : "ETRM & Pricing ",
-                downstreamTitle1 : "Tool Application",
+                downstreamTitle1 : "Tool",
                 hryperlink       : "masterpage/etrm",
                 downstreamimg    : "/images/Illustration_7.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
@@ -134,12 +134,12 @@ export default class Downstream extends Component {
                               <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div className="row"> 
-                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-2 col-sm-offset-2"> 
+                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 "> 
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
                                                 <a key={index} href={"/"+data.hryperlink}>
-                                                <div  className={"col-lg-5 col-md-8 col-sm-12 col-xs-12 para"+index}>
+                                                <div  className={"col-lg-5 col-md-5 col-sm-4 col-xs-12 para"+index}>
                                                     <div className="lightbluetext block block1height text-center">
                                                         <img alt="" className="streamImg" src={data.downstreamimg} />
                                                         <br/>
