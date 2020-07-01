@@ -29,6 +29,7 @@ export default class Header extends Component {
   }
 }
   modalClickEvent(){
+    
     console.log("click event")
     $('#modalId').addClass('in');
     $('#modalId').css('display','block');
@@ -52,7 +53,7 @@ export default class Header extends Component {
             <a href="/">HOME</a>
             <div class="dropdown">
               <button class="dropbtn">ABOUT US 
-                 <i className="fa fa-angle-down"></i>
+                 <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
                  <a href="/masterpage/about-us">Company Profile</a>
@@ -64,7 +65,7 @@ export default class Header extends Component {
             </div>  
             <div class="dropdown">
               <button class="dropbtn">SERVICES 
-                <i className="fa fa-angle-down"></i>
+                <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
                  <a href="/masterpage/iog-consult">iOGConsult</a>
@@ -75,7 +76,7 @@ export default class Header extends Component {
             </div> 
             <div class="dropdown ">
               <button class="dropbtn">EXPERTIES 
-                 <i className="fa fa-angle-down"></i>
+                 <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="col-lg-12 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -151,7 +152,7 @@ export default class Header extends Component {
             </div> 
              <div class="dropdown">
               <button class="dropbtn">INDUSTRIES 
-                 <i className="fa fa-angle-down"></i>
+                 <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
                 <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>

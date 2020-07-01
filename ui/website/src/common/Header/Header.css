@@ -284,7 +284,7 @@
   padding:0px;
 }
 .setlogo{
-  padding-left: 120px;
+  padding-left: 60px;
 }
 .contactBar{
   position: absolute;
@@ -311,6 +311,9 @@
 }
 .contactBar:hover{
   width: 130px;
+}
+.Headerdownarraow{
+  margin-left: 4px;
 }
 
 

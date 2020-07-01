@@ -134,7 +134,7 @@ export default class Downstream extends Component {
                               <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div className="row"> 
-                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 "> 
+                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 "> 
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
