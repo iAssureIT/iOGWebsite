@@ -64,7 +64,7 @@ console.log("==>",this.props.block_id);
                   </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <img src={this.state.blocks.bgImage} alt="" className="truck" width="400"/>
+                    <img src={this.state.blocks.bgImage} alt="" className="truck img-responsive" width="400"/>
                   </div>
                 </div>
               </div>

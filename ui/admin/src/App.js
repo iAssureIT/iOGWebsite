@@ -3,7 +3,8 @@ import React, { Component, Suspense,lazy } from 'react';
 // import Layout from './CMS/layout/Layout.js';
 import axios   				from 'axios';
 
-import Layout  				from './CMS/coreAdmin/Layout/Layout.js';
+// import Layout  				from './CMS/coreAdmin/Layout/Layout.js';
+import CmsLayout  				from './CMS/CmsLayout.js';
 // import router from './lib/router.js';
 
 
@@ -21,7 +22,8 @@ function App() {
   return (
     <div className="App">
      {/*   <Sample />*/}
-     <Layout/>
+    {/* <Layout/>*/}
+     <CmsLayout/>
     </div>
   );
 }

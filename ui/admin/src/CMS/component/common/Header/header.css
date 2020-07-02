@@ -1,6 +1,23 @@
 .headerComp{
 	height: 50px;
-	background-color: #2A88BC;
+	background-color: #337ab7;
 	
     margin-right: 0px;
+}
+.clrwhtbgtp{
+	color: #fff;
+	background-color: transparent;
+	margin-bottom: 0px !important;
+}
+.clrwhtbgtp .navbar-nav{
+font-size: 13px;
+
+}
+.clrwhtbgtp ul li :hover{
+	color: #111;
+	background-color: transparent;
+}
+.clrwhtbgtp ul li a{
+	color: #fff;
+	background-color: transparent;
 }

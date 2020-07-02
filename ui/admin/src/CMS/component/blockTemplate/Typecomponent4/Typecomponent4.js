@@ -59,7 +59,7 @@ componentDidMount(){
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                      <img src={this.state.blocks.fgImage} alt="" className="truck" />
+                      <img src={this.state.blocks.fgImage} alt="" className="truck img-responsive" />
                     </div>
                   </div>
               </div>

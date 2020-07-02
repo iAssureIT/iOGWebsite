@@ -53,7 +53,7 @@ componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
 	        console.log("a==>",a[1]); 
-	        const urlParam =a[2];
+	        const urlParam =a[3];
 	        // console.log("urlparam..",urlParam);
 	        this.setState({
 					      			urlParam:urlParam,
@@ -61,7 +61,7 @@ componentDidMount(){
 					      		});
 
 			axios
-			.get('http://iogapi.iassureit.com/api/pages/get/page_block/'+urlParam)
+			.get('/api/pages/get/page_block/'+urlParam)
 	        .then((response)=>{
 	        	console.log("data in page=",response.data);
 	      		if (response.data) {
@@ -128,7 +128,7 @@ componentDidMount(){
 	        }); 
 	}
 	editbtn(){
-		if (this.state.editbtnclick == false) {
+		if (this.state.editbtnclick === false) {
 		this.setState({
 		      		editbtnclick : true,
 		      	});
@@ -147,12 +147,12 @@ componentDidMount(){
 			console.log("in render id mp",this.state.block_id);
 		return (
 			<div className="pageHgt">
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 editStrip NOPadding">
+				{/*<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 editStrip NOPadding">
 					<button type="button" className="btn" onClick={this.backbtn.bind(this)}>Back</button>
 					<button type="button" className="btn pull-right" onClick={this.editbtn.bind(this)} id="editPageBtn">Edit</button>
-					{/*<button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>*/}
+					//<button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-				</div>
+				</div>*/}
 				{/*<!-- Trigger the modal with a button -->*/}
 
 				{/*<!-- Modal -->*/}
@@ -187,16 +187,16 @@ componentDidMount(){
 			{/*Title*/
 				console.log("==>log hed",this.state.pageHead)
 			}
-			<PageHead pageHeadData={this.state.pageHead}/>
+			{/*<PageHead pageHeadData={this.state.pageHead}/>*/}
 				{
 					this.state.pageData.pageBlocks && this.state.pageData.pageBlocks.length> 0
 					?
 						this.state.pageData.pageBlocks.map((result, index)=>{
 							var component = result._id ? result.block_id.blockComponentName : "TitleDesc";
-							// console.log("mani component ===> > >",result, result.block_id.blockComponentName);
+							console.log("mani component ===> > >",result, result.block_id.blockComponentName);
 							const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 							var block_id=result.block_id._id;
-							// console.log("block_id ==",block_id);
+							console.log("block_id ==",block_id);
 							var Block_id = result._id;
 							return(
 								<Suspense fallback={<div>Loading...</div>} key={index}>

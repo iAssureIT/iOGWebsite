@@ -14,6 +14,8 @@ class CmsBlock extends Component {
         this.state = {
            	uploadedImage         : [],
             imgbPath          	  : {},
+            videobPath            : {},
+            rvideobPath            : {},
             rbPath          	    : {},
             uploadedbackImage     : [],
             rBImage 			        : "",
@@ -42,6 +44,7 @@ class CmsBlock extends Component {
       			repetedLink			      : "",
       			repetedGroup 		      : [],
             rep_idEdit            : "",
+            repeteddemoimg        : "/images/Back_casting_or_retro_analysis.png",
             parsed                : {
                                     blockTitle          : "",
                                     blocksubTitle       : "",
@@ -51,6 +54,7 @@ class CmsBlock extends Component {
                                     bgImage             : "",
                                     bgVideo             : "",
                                     fgVideo             : "",
+                                    rBlocksVideo        : "",
                                     blockDescription    : "",
                                     repGBlockTitle      : "",
                                     repGBlocksubTitle   : "",
@@ -74,7 +78,7 @@ class CmsBlock extends Component {
   }
   handleChange(event){
 		event.preventDefault();
-      console.log("handleChange===>in Componant===>",this.state.parsed.componentName);
+      // console.log("handleChange===>in Componant===>",this.state.parsed);
 
     	this.setState({
        		"blockTitle"       : this.state.parsed.blockTitle ? this.refs.blockTitle.value : "",
@@ -95,31 +99,7 @@ class CmsBlock extends Component {
 		event.preventDefault();
     	this.setState({
 
-        [event.target.name]:event.target.value
-     
-			/*"repGBlockTitle"	      : this.state.parsed.rBlocksTitle ? this.refs.repGBlockTitle.value : "",
-			"repGBlocksubTitle"	    : this.state.parsed.rBlocksSubTitle ? this.refs.repGBlocksubTitle.value : "",
-			"repetedLink"		        : this.state.parsed.rBlocksLink ? this.refs.repetedLink.value : "",
-			 */
-
-
-/*      "repGBlockTitle"        : this.refs.repGBlockTitle.value,
-=======
-      /*"repGBlockTitle"        : this.refs.repGBlockTitle.value,
->>>>>>> Stashed changes
-=======
-      /*"repGBlockTitle"        : this.refs.repGBlockTitle.value,
->>>>>>> Stashed changes
-=======
-      /*"repGBlockTitle"        : this.refs.repGBlockTitle.value,
->>>>>>> Stashed changes
-      "repGBlocksubTitle"     : this.refs.repGBlocksubTitle.value,
-      "repetedLink"           : this.refs.repetedLink.value,*/
-       
-			// "blockBody"	 : this.refs.blockBody.value,
-			/*"componentName"		 : this.props.blockDetailsID ? this.props.blockDetailsID.componentName : null, 
-			"blockType"			 : this.props.blockDetailsID ? this.props.blockDetailsID.blockType : null,*/ 
-			
+        [event.target.name]:event.target.value	
     	});
 	}
 
@@ -133,6 +113,8 @@ class CmsBlock extends Component {
     		Link 			  : this.state.repetedLink,
     		Description : this.state.repBlockContent,
     		Image 			: this.state.rbPath.path,		
+        Video       : this.state.rvideobPath.path, 
+
 		};
         swal("Thank you.Your Block is Created.");
         ArrayRepetedGroup.push(formValues);
@@ -140,7 +122,7 @@ class CmsBlock extends Component {
 			            repetedGroup : ArrayRepetedGroup,
 			            groupRepetedBlocks : false
 			          },()=>{
-			          	console.log("formValues=blocks>",this.state.repetedGroup);
+			          	// console.log("formValues=blocks>",this.state.repetedGroup);
 			          })
 						this.setState({
 							repGBlockTitle : "",
@@ -164,28 +146,13 @@ class CmsBlock extends Component {
             Link           : this.state.repetedLink,
             Description    : this.state.repBlockContent,
             Image          : this.state.rbPath.path, 
+            Video          : this.state.rvideobPath.path, 
           }
+        swal("Thank you.Your Block is Updated.");
+
         }
         // console.log('array',array);
         this.setState({'repetedGroup':array})
-        // for (var i = 0; i < this.state.repetedGroup.length; i++) {
-        //   if (this.state.repetedGroup[i]._id == this.state.rep_idEdit) {
-        //     var ArrayRepetedGroup = this.state.repetedGroup;
-        //     var formValues = {
-        //     this.setState({
-        //       repetedGroup:{
-        //           Title          : this.state.repGBlockTitle,
-        //           SubTitle       : this.state.repGBlocksubTitle,
-        //           Link           : this.state.repetedLink,
-        //           Description    : this.state.repBlockContent,
-        //           Image          : this.state.rbPath.path, 
-        //         }
-        //       })  
-        //     };
-        //     swal("Thank you.Your Block is updated.");
-        //     console.log("repetedGroup",this.state.repetedGroup);
-        //   }
-        // }
             } 
   }
 
@@ -198,24 +165,26 @@ class CmsBlock extends Component {
   		blockComponentName : this.state.parsed.componentName,
   		blockType 			   : this.state.blockType,
   		fgImage 			     : this.state.imgbPath ? this.state.imgbPath.path: "",
-  		bgImage 			     : this.state.bgImage,
+  		bgImage 			     : this.state.imgbackPath ? this.state.imgbackPath.path: "" ,
+      bgVideo            : this.state.videobPath ? this.state.videobPath.path: "" ,
   		repeatedBlocks 		 : this.state.repetedGroup,				
 		};
 
-		console.log("formValues=blocks>",formValues);
+		// console.log("formValues=blocks>",formValues);
 		axios
 			.post('/api/blocks/post',formValues)
-		  	.then(function (response) {
+		  	.then( (response)=> {
 		    // handle success
-		    	console.log("data in block========",response.data);
+		    	// console.log("data in block========",response.data);
+          this.props.history.push("/cms/view-blocks");
 		    	swal("Thank you. Your Block is Created.");
-		    	 window.location.reload();
+		    	 
 		  	})
 		  	.catch(function (error) {
 		    // handle error
 		    	console.log(error);
 		  	});
-   		console.log("formValues =>",formValues);	
+   		// console.log("formValues =>",formValues);	
 	}
 
   componentDidMount(){	
@@ -226,37 +195,16 @@ class CmsBlock extends Component {
     // console.log("parsed = ",parsed);
     this.getBlockData(block_id);
     this.setState({ 
-        /*componentName         :   parsed.componentName,
-        blockTitle            :   parsed.blockTitle       ? " " : "", 
-        blockDescription      :   parsed.blockDescription ? " " : "",
-        bgImage               :   parsed.bgImage          ? " " : "", 
-
-        blockType             :   parsed.blockType        ? " " : "", 
-        buttonText            : "Submit",
-       
-        repBlockContent       : "",
-        typeOfBlock           : "",
-        block_id              : "",
-        
-        fgImage               : "",
-        bgVideo               : "",
-        fgVideo               : "",
-        config                : "",
-        foreGImage            : "",
-        backgroundImage       : "",
-        groupRepetedBlocks    : false,
-        repGBlockTitle        : "",
-        repGBlocksubTitle     : "",*/             
+                    
         block_id              : block_id,
         parsed                : parsed
-        /*repetedLink           : "",
-        repetedGroup          : []*/
+        
     });
 
     axios
-          .get('/api/projectsettings/get/S3')
+          .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
           .then((response)=>{
-            
+            // console.log("response",response);
             const config = {
                               bucketName      : response.data.bucket,
                               dirName         : "iOG",
@@ -323,11 +271,13 @@ componentWillReceiveProps(nextProps){
               			bgImage 			   : response.data.bgImage,
               			bgVideo 			   : response.data.bgVideo,
               			fgVideo				   : response.data.fgVideo,
+                    rBlocksVideo     : response.data.rBlocksVideo,
                     repetedGroup     : response.data.repeatedBlocks,
               			blockDescription : response.data.blockDescription,
                     repGBlockTitle   : response.data.repeatedBlocks.Title,
                     repGBlocksubTitle: response.data.repeatedBlocks.SubTitle,
                     repetedLink      : response.data.repeatedBlocks.Link,
+                    RepetedBlock     : response.data.repeatedBlocks.Title || response.data.repeatedBlocks.SubTitle ? response.data.repeatedBlocks.Title : "",
                   },
       			block_id			   : block_id,
             blockTitle       : response.data.blockTitle,
@@ -339,6 +289,7 @@ componentWillReceiveProps(nextProps){
             bgImage          : response.data.bgImage,
             bgVideo          : response.data.bgVideo,
             fgVideo          : response.data.fgVideo,
+            rBlocksVideo     : response.data.rBlocksVideo,
             repetedGroup     : response.data.repeatedBlocks,
             blockDescription : response.data.blockDescription,
             repGBlockTitle   : response.data.repeatedBlocks.Title,
@@ -358,7 +309,7 @@ componentWillReceiveProps(nextProps){
       });
   }
   UpdateBlockInfo(event){
-	    console.log("in up");
+	    // console.log("in up");
 			event.preventDefault();
   		var formValues = {
   			blockTitle 			   :  this.state.blockTitle, 	
@@ -370,12 +321,14 @@ componentWillReceiveProps(nextProps){
         bgImage            :  this.state.bgImage,
         repeatedBlocks     :  this.state.repetedGroup,   	
   		};
-		console.log("formValues=blocks>",formValues);
+		// console.log("formValues=blocks>",formValues);
 		axios
 			.patch('/api/blocks/patch/'+this.state.block_id,formValues)
 		  	.then(function (response) {
 		    // handle success
 		    	// console.log(response);
+        swal("Thank you.Your Block is Updated.");
+
 		    	window.location.reload();
 		    	
 		  	})
@@ -386,7 +339,7 @@ componentWillReceiveProps(nextProps){
    		/*console.log("formValues =>",formValues);*/
   } 
   uploadforeGImg(event){
-    console.log("upload =",event.target.files[0]);
+    // console.log("upload =",event.target.files[0]);
     var file = event.target.files[0];
     if(file){
       var ext = file.name.split('.').pop();
@@ -398,7 +351,7 @@ componentWillReceiveProps(nextProps){
            S3FileUpload
             .uploadFile(file,this.state.config)
             .then((Data)=>{
-                console.log('Data.location', Data.location);
+                // console.log('Data.location', Data.location);
               this.setState({
                 imgbPath : {
                   "path"    : Data.location,
@@ -421,12 +374,13 @@ componentWillReceiveProps(nextProps){
             swal("","Something went wrong","error"); 
           } 
   }
-  uploadforeGImg(event){
-    console.log("upload =",event.target.files[0]);
+
+  uploadbgVideo(event){
+    // console.log("upload =",event.target.files[0]);
     var file = event.target.files[0];
     if(file){
       var ext = file.name.split('.').pop();
-      if(ext=="jpg" || ext=="png" || ext=="jpeg" || ext=="JPG" || ext=="PNG" || ext=="JPEG"){ 
+      if(ext=="mp4" || ext=="3gp" || ext=="avi" || ext=="flv" ||  ext=="MP4" || ext=="3GP" || ext=="AVI" || ext=="FLV"){ 
         this.setState({
           uploadedbackImage: event.target.files[0]
           },()=>{
@@ -434,9 +388,46 @@ componentWillReceiveProps(nextProps){
            S3FileUpload
             .uploadFile(file,this.state.config)
             .then((Data)=>{
-                console.log('Data.location', Data.location);
+                // console.log('Data.location', Data.location);
               this.setState({
-                imgbPath : {
+                videobPath : {
+                  "path"    : Data.location,
+                }
+              })
+          })
+          .catch((error)=>{
+            console.log(error);
+          })
+        })
+      }else{
+        swal("Format is incorrect","Only Upload images format (jpg,png,jpeg)","warning"); 
+         this.setState({
+              imgbPath : {
+                "path"    : "",
+              }
+          }) 
+        }
+      }else{         
+            swal("","Something went wrong","error"); 
+          } 
+  }
+
+  uploadrbgVideo(event){
+    // console.log("upload =",event.target.files[0]);
+    var file = event.target.files[0];
+    if(file){
+      var ext = file.name.split('.').pop();
+      if(ext=="mp4" || ext=="3gp" || ext=="avi" || ext=="flv" ||  ext=="MP4" || ext=="3GP" || ext=="AVI" || ext=="FLV"){ 
+        this.setState({
+          uploadedbackImage: event.target.files[0]
+          },()=>{
+          console.log("uploadToS3 =",this.state.uploadedImage);
+           S3FileUpload
+            .uploadFile(file,this.state.config)
+            .then((Data)=>{
+                // console.log('Data.location', Data.location);
+              this.setState({
+                rvideobPath : {
                   "path"    : Data.location,
                 }
               })
@@ -471,7 +462,7 @@ componentWillReceiveProps(nextProps){
            S3FileUpload
             .uploadFile(file,this.state.config)
             .then((Data)=>{
-                console.log('Data.location', Data.location);
+                // console.log('Data.location', Data.location);
               this.setState({
                 imgbackPath : {
                   "path"    : Data.location,
@@ -495,7 +486,7 @@ componentWillReceiveProps(nextProps){
           } 
   }
   uploadrepetGImg(event){
-    console.log("upload =",event.target.files[0]);
+    // console.log("upload =",event.target.files[0]);
     var file = event.target.files[0];
     if(file){
       var ext = file.name.split('.').pop();
@@ -504,6 +495,7 @@ componentWillReceiveProps(nextProps){
           uploadedImage: event.target.files[0]
           },()=>{
           console.log("uploadToS3 =",this.state.uploadedImage);
+          console.log("this.state.config =",this.state.config);
            S3FileUpload
             .uploadFile(file,this.state.config)
             .then((Data)=>{
@@ -562,15 +554,6 @@ componentWillReceiveProps(nextProps){
                 console.log(error);
               })
 
-            // var objTitle={  
-            //   fileInfo :newFile
-            // }
-            // // var imgTitleArrayWS = [];
-            // imgTitleArrayWS.push(objTitle);
-            // this.setState({
-            //   imageTitleArrayWS : imgTitleArrayWS
-            // })
-            //  console.log('imgArrayWS = ',imgTitleArrayWS);
           }else{         
             swal("File not uploaded","Something went wrong","error"); 
           }
@@ -598,6 +581,47 @@ componentWillReceiveProps(nextProps){
               })
             } else {
             swal("Your image is safe!");
+          }
+        });
+  }
+
+  deleteBlockvideo(event){
+    event.preventDefault();
+    swal({
+          title: "Are you sure you want to delete this Video?",
+          text: "Once deleted, you will not be able to recover this Video!",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((success) => {
+            if (success) {
+              swal("Your Video is deleted!");
+              this.setState({
+                videobPath : ""
+              })
+            } else {
+            swal("Your Video is safe!");
+          }
+        });
+  }
+  deleterBlockvideo(event){
+    event.preventDefault();
+    swal({
+          title: "Are you sure you want to delete this Video?",
+          text: "Once deleted, you will not be able to recover this Video!",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((success) => {
+            if (success) {
+              swal("Your Video is deleted!");
+              this.setState({
+                videobPath : ""
+              })
+            } else {
+            swal("Your Video is safe!");
           }
         });
   }
@@ -647,7 +671,7 @@ componentWillReceiveProps(nextProps){
     var filePath = e.target.getAttribute('data-id');
     var data = filePath.split("/");
     var imageName = data[4];
-    console.log("imageName==",imageName);
+    // console.log("imageName==",imageName);
 
     if(index){
       swal({
@@ -677,10 +701,11 @@ componentWillReceiveProps(nextProps){
   	      		});
   }
 editReDBlock(event){
+  event.preventDefault();
    var id = event.target.id;
-    console.log("id od index------",id);
+    // console.log("id od index------",id);
     for (var i = 0; i < this.state.repetedGroup.length; i++) {
-      if (this.state.repetedGroup[i]._id == id) {
+      if (this.state.repetedGroup[i]._id === id) {
         // console.log("=====>>>>>>",this.state.repetedGroup[i]);
         this.setState({
               repGBlockTitle      : this.state.repetedGroup[i].Title,
@@ -696,60 +721,55 @@ editReDBlock(event){
       }
     }
 }
+
     render() {
 
         return (
-        		<div className="">
+        		<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <div className="  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                      <h2 className="text-center">Create Your Block</h2>
+                </div>
+              </div>
+              <div className="boxItem1CBlock">
                     <div className="create-basic-block-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="modalBlockHeading">
-                            <h1 className="ctext text-center">Create Block</h1>     
+                            {/*<h1 className="ctext text-center">Create Block</h1>  */}   
                         </div>
                         <form className="newTemplateForm">  
-            							<div className="">
-            							  { this.state.parsed.blockTitle == ""
+            							
+            							  { this.state.parsed.blockTitle === ""
         											? null
         											: 
-              								<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NOpadding">
+              								<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOpadding">
               											<div className="form-group">
-              												<label className="label-category">Block Title<span className="astrick"></span></label>
-              												<input type="text" ref="blockTitle" id="basicBlockName" value={this.state.blockTitle} name="blockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)}/>
+              												<label className="label-category labelform">Block Title<span className="astrick"></span></label>
+              												<input type="text" ref="blockTitle" id="basicBlockName" value={this.state.blockTitle} name="blockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)}/>
               											</div>
               								</div>
             								}
-            								{ this.state.parsed.blocksubTitle == ""
+            								{ this.state.parsed.blocksubTitle === ""
         											? null
         											:
-            								    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            								    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             										    <div className="form-group">
-            										   		<label className="label-category">Sub Title<span className="astrick"></span></label>
-            										        <input type="text" ref="blocksubTitle" id="blocksubTitle" value={this.state.blocksubTitle} name="blocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)}/>
+            										   		<label className="label-category labelform">Sub Title<span className="astrick"></span></label>
+            										        <input type="text" ref="blocksubTitle" id="blocksubTitle" value={this.state.blocksubTitle} name="blocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)}/>
             										    </div>
             								    </div>
             								}
-            							</div>
-            							{/*<div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12 mt20">*/}
-                           {/* <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadd">
-            								    <div className="form-group">
-                                { this.state.componentName == ""
-                                  ? null
-                                  :
-                                  <div>
-            								   		 <label className="label-category">Componant Name<span className="astrick"></span></label>
-            								   		
-            								        <input type="text" ref="componentName" id="componentName" value={this.state.componentName} name="componentName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)}/>
-            								      </div>
-                                  }
-                                </div>
-            								</div>*/}
-  			                    	{ this.state.parsed.blockType == ""
+            							
+            							 {/*<div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12 mt20">*/}
+                           
+  			                    	{ this.state.parsed.blockType === ""
             											? null
             											: 
-                    								<div className="col-lg-6 NOpadding">
+                    								<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOpadding">
           			                    	<div className="">
                                           <div>
-                                                <label htmlFor="email">Block Type<span className="redFont">*</span></label>
+                                                <label htmlFor="email" className="labelform">Block Type<span className="redFont">*</span></label>
                     					                    	<div className="dropdown col-lg-12 nopadd">
-                    					                    		  <select className="form-control" id="sel1" ref="blockType" value={this.state.blockType} onChange={this.handleChange.bind(this)} >
+                    					                    		  <select className="form-control hinput30" id="sel1" ref="blockType" value={this.state.blockType} onChange={this.handleChange.bind(this)} >
                             			  								        <option>HomePage</option>
                             			  								        <option>Blog</option>
                             			  								        <option>About Us</option>
@@ -761,14 +781,14 @@ editReDBlock(event){
               			                  </div>
               			                </div>
             					          }
-            			          {/*</div>*/}
-              							<div className="row ">
-              								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              { this.state.parsed.blockDescription == ""
+            			           {/*</div>*/}
+              							
+                              { this.state.parsed.blockDescription === ""
                                 ? null
                                 :
+              								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
                                   <div>
-              								      <label className="label-category">Block Description<span className="astrick"></span></label>
+              								      <label className="label-category labelform">Block Description<span className="astrick"></span></label>
               								      {/*<textarea className="form-control" rows="5" id="comment"></textarea>*/}
               								      {/*<textarea  ref="blockBody" id="blockBody" name="blockBody" value={this.state.blockBody} className="subject bcolor col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="6" onChange={this.handleChange.bind(this)}/>*/}
               								      <div className="">
@@ -779,74 +799,79 @@ editReDBlock(event){
                                           />
               		                      </div>
                                   </div>
-                                }
-              								</div>
-              							</div>
+              								  </div>
+                              }
+              							
 
-{/*============================================================================================*/}
-{/*====================================== Related Group Block==================================*/}							
-{/*============================================================================================*/}
+                            {/*============================================================================================*/}
+                            {/*====================================== Related Group Block==================================*/}							
+                            {/*============================================================================================*/}
 							
-              							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m20">
-                            {
-                              this.state.parsed.RepetedBlock == ""
-                                ? null
-                                :
-                      								<button type="button" className="btn  btn-lg mbottm20" onClick={this.onclickEvent.bind(this)}>
-                      									Create Repeated Group <i className="fa fa-sort-desc" aria-hidden="true"></i>
-                      								</button>
-                            }
+              							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m20 NOpadding">
+                                {console.log("this.state.parsed.RepetedBlock",this.state.parsed.RepetedBlock)}
+                              {
+                                this.state.parsed.RepetedBlock === "" 
+                                  ? null
+                                  :
+                                      <div>
+                        								<button type="button" className="btn  btn-lg mbottm20" onClick={this.onclickEvent.bind(this)}>
+                        									Create Repeated Group <i className="fa fa-sort-desc" aria-hidden="true"></i>
+                        								</button>
+                                        <label className="label-category labelform">Click here for enter repeted block</label>
+                                      </div>
+                              }
               								{ 
-              									this.state.groupRepetedBlocks == true 
+              									this.state.groupRepetedBlocks === true 
               										?
               										<div className="col-lg-12 col-md-12 repGBlock">
                                   
-              											<div className="row ">
-              														{ this.state.parsed.rBlocksTitle == ""
+              											
+              														{ this.state.parsed.rBlocksTitle === ""
               															? null
               															:
-                    												<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    												<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     															<div className="form-group">
-                    																<label className="label-category">Repeated Block Title<span className="astrick"></span></label>
-                    																<input type="text" ref="repGBlockTitle" id="repGBlockTitle" value={this.state.repGBlockTitle} name="repGBlockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handle1Change.bind(this)} />
+                    																<label className="label-category labelform">Repeated Block Title<span className="astrick"></span></label>
+                    																<input type="text" ref="repGBlockTitle" id="repGBlockTitle" value={this.state.repGBlockTitle} name="repGBlockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)} />
                     															</div>
                     												</div>
               														}
-              												    { this.state.parsed.rBlocksSubTitle == ""
+              												    { this.state.parsed.rBlocksSubTitle === ""
               															? null
               															:
-                    												<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    														    <div className="form-group">
-                    														   		<label className="label-category">Repeated Sub Title<span className="astrick"></span></label>
-                    														        <input type="text" ref="repGBlocksubTitle" id="repGBlocksubTitle" value={this.state.repGBlocksubTitle} name="repGBlocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handle1Change.bind(this)}/>
+                    												<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    														    <div className="form-group ">
+                    														   		<label className="label-category labelform">Repeated Sub Title<span className="astrick"></span></label>
+                    														        <input type="text" ref="repGBlocksubTitle" id="repGBlocksubTitle" value={this.state.repGBlocksubTitle} name="repGBlocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
                     														    </div>
                     												</div>
               														}
-              											</div>
-              											<div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12 mt20">
-              							              { this.state.parsed.rBlocksLink == ""
+              											
+              											
+              							              { this.state.parsed.rBlocksLink === ""
                                             ? null
                                             :
-                                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadd">
+                                              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 nopadd">
                       												    <div className="form-group">
-                      												   		<label className="label-category">Repeated Link<span className="astrick"></span></label>
-                      										        		<input type="text" ref="repetedLink" id="repetedLink" value={this.state.repetedLink} name="repetedLink"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handle1Change.bind(this)}/>
+                      												   		<label className="label-category labelform">Repeated Link<span className="astrick"></span></label>
+                      										        		<input type="text" ref="repetedLink" id="repetedLink" value={this.state.repetedLink} name="repetedLink"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
                       												    </div>
                       												</div>
                                           }
-                                          { this.state.parsed.rBlocksImage ==  ""
+                                          { this.state.parsed.rBlocksImage ===  ""
                                             ? null
                                             :
-              												        <div className="col-lg-6">
-              							                    	<label htmlFor="email">Repeated Block Image<span className="redFont">*</span></label>
-              							                    	<div className="col-lg-12 nopadd">
-              							                    	    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              												        <div className="">
+              							                    	{/*<label htmlFor="email" className="labelform">Repeated Block Image<span className="redFont">*</span></label>*/}
+              							                    	<div className="">
+              							                    	    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NOpadding">
               							                                <div className="" id="fileuploadelem">
-              							                                	<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              							                                	<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="fileuploadelemrBImage">
               								                                    
               									                                    <div className="form-group">
-              										                                    {/*<label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Block Image:</label>*/}
-              										                                    <input type="file" ref="rBImage" id="rBImage" name="rBImage"   className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12" onChange={this.uploadrepetGImg.bind(this)} />
+                                                                      <label htmlFor="email" className="labelform">Repeated Block Image<span className="redFont">*</span></label>
+              										                                    
+              										                                    <input type="file" ref="rBImage" id="rBImage" name="rBImage"   className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12 hinput30 form-control" onChange={this.uploadrepetGImg.bind(this)} />
               									                                    </div>
               								                                	
               							                                	</div>
@@ -867,14 +892,43 @@ editReDBlock(event){
               														              </div>
               							                      	</div>
               							                    </div>
+                                            }
+              							               
+                                            { this.state.parsed.rBlocksVideo === ""
+                                                ? null
+                                                :
+                                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div className="row " id="fileupload">
+                                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="fileuploadelemrBImage">
+                                                            
+                                                            <div className="form-group">
+                                                              <div>
+                                                                  <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category labelform">Repeated Video:</label>{/**/}
+                                                                  <input type="file" ref="backgroundImage" id="backgroundImage" name="backgroundImage"  className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12 hinput30 form-control" onChange={this.uploadrbgVideo.bind(this)}  />
+                                                                </div>
+                                                             </div>
+                                                            
+                                                      </div>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                                                      { this.state.rvideobPath!=="" && this.state.rvideobPath.path ? 
+                                                        <div>
+                                                          <label className="pull-right custFaTimes" title="Delete"  onClick={this.deleterBlockvideo.bind(this)}>X</label>{/*data-id={this.state.imgbPath}*/}
+                                                          <video controls src={this.state.rvideobPath.path} width="150" height="100" type="video/mp4" alt="video"/>
+                                                        </div>
+                                                        : <div> </div>
+                                                      }
+                                                     </div>
+                                                    </div>
+                                                </div>
                                               }
-              							                </div>
-                                            { this.state.parsed.rBlocksDescription == ""
+                                            { this.state.parsed.rBlocksDescription === ""
                                              ? null
                                              :
-                        											<div className="row  marginTop17">
+                        											<div className="marginTop17">
                         												<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginTop17">
-                        												    <label className="label-category marginTop17">Block Content<span className="astrick"></span></label>
+                        												    <label className="label-category marginTop17 labelform">Block Content<span className="astrick"></span></label>
                         												    {/*<textarea className="form-control" rows="5" id="comment"></textarea>*/}
                         												    {/*<textarea  ref="blockBody" id="blockBody" name="blockBody" value={this.state.blockBody} className="subject bcolor col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="6" onChange={this.handleChange.bind(this)}/>*/}
                         												    <div className="">
@@ -906,7 +960,7 @@ editReDBlock(event){
               						          					{
               				                					data ? 
               							          					<div className="All1block1">
-                    															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image:" "} alt="Bannerpng"/>
+                    															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image: this.state.repeteddemoimg } alt="Bannerpng"/>
                     															<div className="middle">
                                                       <i className="fa fa-pencil rclr hoverbbk" onClick={this.editReDBlock.bind(this)} id={data._id}></i>    
                     															    <i className="fa fa-trash rclr hoverbbk" ></i>{/*id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)}*/}
@@ -927,26 +981,27 @@ editReDBlock(event){
               										:
               										null
               									}
-              			          			</div> 	
+              			          </div> 	
               							</div>
 
-{/*=============================================================================================*/}
-{/*====================================== /Related Group Block==================================*/}							
-{/*=============================================================================================*/}							
+                            {/*=============================================================================================*/}
+                            {/*====================================== /Related Group Block==================================*/}							
+                            {/*=============================================================================================*/}							
 
-                        	<div className="row  ">
-	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        	  <div className="row  ">
+                            { this.state.parsed.fgImage === ""
+                                ? null
+                                : 
+	                              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	                                <div className="" id="fileuploadelem">
-	                                	<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		                                  { this.state.parsed.fgImage == ""
-                    											? null
-                    											: 
-			                                    <div className="form-group">
-				                                    <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Block foreground Image:</label>
-				                                    <input type="file" ref="foreGImage" id="foreGImage" name="foreGImage"   className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12" onChange={this.uploadforeGImg.bind(this)} />
-			                                    </div>
-		                                	}
-	                                	</div>
+		                                  
+	                                	      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  			                                    <div className="form-group">
+  				                                    <label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Block foreground Image:</label>
+  				                                    <input type="file" ref="foreGImage" id="foreGImage" name="foreGImage"   className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12 hinput30 form-control" onChange={this.uploadforeGImg.bind(this)} />
+  			                                    </div>
+  	                                	    </div>
+		                                	
 	                                </div>
   		                            <div className="col-lg-6 col-md-6 col-xs-12  col-sm-2 marginTop17">
   										
@@ -955,81 +1010,76 @@ editReDBlock(event){
   					                          <div>
   					                            <label className="pull-right custFaTimes" title="Delete image"  onClick={this.deleteBlockimage.bind(this)}>X</label>{/*data-id={this.state.imgbPath}*/}
   					                            <img src={this.state.imgbPath.path} width="150" height="100"/>
-  					                          </div>
+  					                           </div>
   					                          : <div> </div>
   					                        }
   					                        </div>
   					                      
   									              </div>
-	                            </div>
-	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	                                <div className="row " id="fileupload">
-		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		                                    <div className="form-group">
-		                                    	{ this.state.parsed.bgImage == ""
-                													? null
-                													:
-                													<div>
-					                                   	<label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Background Image:</label>{/**/}
-					                                    <input type="file" ref="backgroundImage" id="backgroundImage" name="backgroundImage"  className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12" onChange={this.uploadbackGImg.bind(this)}  />
-			                                  		</div>
-			                                  	}
-		                                    </div>
-		                                </div>
-	                                </div>
-	                              	<div className="col-lg-6">
-										                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-  					                        { this.state.imgbackPath!=="" && this.state.imgbackPath.path ? 
-  					                          <div>
-  					                            <label className="pull-right custFaTimes" title="Delete image"  onClick={this.deleteBlockimage.bind(this)}>X</label>{/*data-id={this.state.imgbPath}*/}
-  					                            <img src={this.state.imgbackPath.path} width="150" height="100"/>
-  					                          </div>
-  					                          : <div> </div>
-  					                        }
-					                         </div>
-									                </div>
-	                            </div>
+	                              </div>
+                              }
+                              { this.state.parsed.bgImage === ""
+                                ? null
+                                :
+  	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  	                                <div className="row " id="fileupload">
+  		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  		                                    	
+  		                                      <div className="form-group">
+                    													<div>
+    					                                   	<label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Background Image:</label>{/**/}
+    					                                    <input type="file" ref="backgroundImage" id="backgroundImage" name="backgroundImage"  className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12 hinput30 form-control" onChange={this.uploadbackGImg.bind(this)}  />
+    			                                  		</div>
+  		                                       </div>
+  			                                  	
+  		                                </div>
+  	                                </div>
+  	                              	<div className="col-lg-6">
+  										                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+    					                        { this.state.imgbackPath!=="" && this.state.imgbackPath.path ? 
+    					                          <div>
+    					                            <label className="pull-right custFaTimes" title="Delete image"  onClick={this.deleteBlockimage.bind(this)}>X</label>{/*data-id={this.state.imgbPath}*/}
+    					                            <img src={this.state.imgbackPath.path} width="150" height="100"/>
+    					                          </div>
+    					                          : <div> </div>
+    					                        }
+  					                         </div>
+  									                </div>
+  	                            </div>
+                              }
+                              { this.state.parsed.bgVideo === ""
+                                ? null
+                                :
+                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div className="" id="fileupload">
+                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            
+                                            <div className="form-group">
+                                              <div>
+                                                  <label className="labelform col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Background Video:</label>{/**/}
+                                                  <input type="file" ref="backgroundImage" id="backgroundImage" name="backgroundImage"  className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12 hinput30 form-control" onChange={this.uploadbgVideo.bind(this)}  />
+                                                </div>
+                                             </div>
+                                            
+                                      </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                                      { this.state.videobPath!=="" && this.state.videobPath.path ? 
+                                        <div>
+                                          <label className="pull-right custFaTimes" title="Delete image"  onClick={this.deleteBlockvideo.bind(this)}>X</label>{/*data-id={this.state.imgbPath}*/}
+                                          <video controls src={this.state.videobPath.path} width="150" height="100" type="video/mp4" alt="video"/>
+                                        </div>
+                                        : <div> </div>
+                                      }
+                                     </div>
+                                    </div>
+                                </div>
+                              }
+
+
                             </div>
-                            <div className="row  ">
-                            	{/*<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	                              	<div className="" id="fileuploadelem">
-		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		                                    { this.state.fgVideo == null
-											? null
-											:
-			                                    <div className="form-group">
-				                                    <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Block Video:</label>
-				                                    <input type="file" ref="basicPageImage" id="basicPageImage" name="basicPageImage"   className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12" />
-			                                    </div>
-		                                	}
-		                                </div>
-	                                </div>
-		                            <div className="row  imgId">
-		                                <div className="col-lg-6">
-											
-										</div>
-		                            </div>
-                            	</div>
-	                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	                                <div className="row " id="fileupload">
-		                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		                                    { this.state.bgVideo == null
-												? null
-												:
-			                                    <div className="form-group">
-				                                    <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 label-category">Background Video:</label>
-				                                    <input type="file" ref="backgroundVideo" id="backgroundVideo" name="backgroundVideo"  className="subject col-lg-12 col-md-12 col-sm-12 col-xs-12" />
-			                                    </div>
-			                                }    
-		                                </div>
-	                                </div>
-	                                <div className="row  bgimgId">
-	                                   <div className="col-lg-6">
-											
-										</div>
-	                                </div>
-	                            </div>*/}
-                            </div>
+                         
                           	<div className="savetemp col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	                          	{ this.state.block_id 
 	                          		?
@@ -1041,7 +1091,8 @@ editReDBlock(event){
 							
                         </form>
                       </div>
-                	</div>
+                	  </div>
+                  </div>
 				
             
         );

@@ -25,6 +25,9 @@ class Viewpage extends React.Component {
 	   		block_id:"",
 	   		pageData	:"",
 	   		ListOfPages :""
+
+	   		/* "blockGroup": null,
+        "blockAppearOnPage": null*/
 		}
 	}
 	
@@ -36,7 +39,7 @@ class Viewpage extends React.Component {
 						      	this.setState({
 					      			ListOfBlocks:response.data
 					      		},()=>{
-					      				// console.log(this.state.ListOfBlocks);
+					      				console.log("===================result==",this.state.ListOfBlocks);
 					      		});
 					      	})
 			  	.catch(function (error) {
@@ -59,22 +62,22 @@ class Viewpage extends React.Component {
 		    	console.log(error);
 		  	});
 	}
-  
-	componentDidMount(){
-			// console.log("pageUrl = ",pageUrl);
-			this.getAllBlockList();
-			this.getListOfPages();
-			var pageUrl = window.location.pathname;
+	componentWillReceiveProps(nextProps){
+
+	
+	}
+	pageAddBlock(){
+		var pageUrl = window.location.pathname;
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
 	        // console.log("a==>",a[1]); 
-	        const urlParam =a[2];
+	        const urlParam =a[3];
 	        this.setState({
 			      			urlParam:urlParam
 			      		});
 
 			axios
-			.get('http://iogapi.iassureit.com/api/pages/get/page_block/'+urlParam)
+			.get('/api/pages/get/page_block/'+urlParam)
 	        .then((response)=>{
 	        	console.log("data in page=",response.data);
 	      		if (response.data) {
@@ -105,49 +108,79 @@ class Viewpage extends React.Component {
 		     			})
 	    			}
 	 			}*/
-			}
-	    })
-	      .catch(function(error){
-	        console.log(error);
-	          if(error.message === "Request failed with status code 401")
-	              {
-	                   swal("Your session is expired! Please login again.","", "error");
-	              }
-	      })
+					}
+			    })
+			    .catch(function(error){
+			        console.log(error);
+			          if(error.message === "Request failed with status code 401")
+			              {
+			                   swal("Your session is expired! Please login again.","", "error");
+			              }
+			      })
+
+	}
+  
+	componentDidMount(){
+			// console.log("pageUrl = ",pageUrl);
+			
+			this.getListOfPages();
+			this.getAllBlockList();
+			this.pageAddBlock();
+			var pageUrl = window.location.pathname;
+			// console.log("pageUrl = ",pageUrl);
+			let a = pageUrl ? pageUrl.split('/') : "";
+	        // console.log("a==>",a[1]); 
+	        const urlParam =a[3];
+	        this.setState({
+			      			urlParam:urlParam
+			      		});
+
+		
    	}
-   		handleChange(event)
-	{
+   	handleChange(event){
 		var attaribute_Value = event.target.getAttribute('data_id');
 		// console.log("attaribute_Value",attaribute_Value);
 		this.state.addedBlocks.push(attaribute_Value)
 	}
+
+
 	addBlock(event){
 		// var urlParam = window.location.pathname;
-  //      console.log('urlParam=>',urlParam);
+        //      console.log('urlParam=>',urlParam);
 		var pageUrl = window.location.pathname;;
-		// console.log("pageUrl = ",pageUrl);
+		console.log("pageUrl = ",pageUrl);
 		let a = pageUrl ? pageUrl.split('/') : "";
-        const urlParam =a[2];
+        const urlParam =a[3];
+		console.log("urlParam = ",urlParam);
+
 		var attaribute_addBlock = event.target.id;
+		// console.log("attaribute_addBlock = ",attaribute_addBlock);
+		
+
 		var AttachmentValues ={    
 			"block_id"	: attaribute_addBlock,											
    		}
 		axios
 			.patch('api/pages/patch/blocks/add/'+urlParam,AttachmentValues)
-		  	.then(function (response) {
-		    	window.location.reload();
-		    	// console.log(response);
+		  	.then( (response)=> {
+		    	// window.location.reload();
+		    	this.getAllBlockList();
+				this.pageAddBlock();
+	            swal("Block added in your page");
+
+		    	console.log(response);
 		  	})
 		  	.catch(function (error) {
 		    	console.log(error);
 		  	});
 
 	}
+
 	submitData(event){
 		var AttachmentValues =this.state.addedBlocks;
 		// console.log("ids =",this.state.addedBlocks);
 		axios
-			.post('api/pages/patch/blocks/add/'+this.state.urlParam,AttachmentValues)
+			.post('/api/pages/patch/blocks/add/'+this.state.urlParam,AttachmentValues)
 		  	.then(function (response) {
 		    	console.log(response);
 		  	})
@@ -155,11 +188,13 @@ class Viewpage extends React.Component {
 		    	console.log(error);
 		  	});
 	}
+
 	editBlock(event){
 		var block_id = event.currentTarget.id;
 		// console.log("block_id=",block_id);
 		this.setState({block_id: block_id});
 	}
+
 	deleteBlocks(event){
 		let urlParam=this.state.urlParam;
 		// console.log("this.state.urlParam  ",urlParam);
@@ -171,9 +206,8 @@ class Viewpage extends React.Component {
 			}
 		console.log("id delet", this.state.urlParam, deleteValues);
 		 swal({
-	          title: "Are you sure you want to delete this Page ?",
-	          text: "Once deleted, you will not be able to recover this Page!",
-	          icon: "warning",
+	          title: "Are you sure you want to delete this block ?",
+	         
 	          buttons: true,
 	          dangerMode: true,
 	        })
@@ -184,8 +218,10 @@ class Viewpage extends React.Component {
 				    .patch('/api/pages/patch/blocks/remove/'+this.state.urlParam,deleteValues)
 				    .then((response)=>{
 				     	// this.getListOfPages();
-				       swal("Your Page is deleted!");
-				       window.location.reload();
+				       swal("block is deleted!");
+				       this.getAllBlockList();
+						this.pageAddBlock();
+				       
 				    })
 				    .catch((error)=>{
 				       console.log("error = ", error);              
@@ -203,22 +239,27 @@ class Viewpage extends React.Component {
 
    render() {
     	// var data = this.state.ListOfBlocks;
-    	// console.log("block id in render=",this.state.pageData.pageBlocks);
+    	console.log("block id in render=",this.state.pageData);
     	const listBlock = this.state.pageData.pageBlocks;
     	// console.log("ListOfPages==>",this.state.ListOfPages);
     	// console.log("data blocks in render",data);
         return (
         		<div>	
-					<div className="contentWrapper">
-						<div className="box-body">
-							<div className="row">
-								<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<h2 className="text-center">Create New Page </h2>
-								</div>
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<CircleMenuBars />
-								</div>
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div className="  ">
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bglightgclr">
+								
+						<CircleMenuBars />
+						</div>
+						<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div className="  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                <h2 className="text-center"> Add new blocks in your page</h2>
+                            </div>
+                        </div>
+							
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+							<div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+
+								<div className="BoxLaoutAddblock1">
 									{/*<Cmspage id={this.state.urlId}/>*/}
 								
 									{
@@ -227,7 +268,7 @@ class Viewpage extends React.Component {
 
 											var componentTemp = result.block_id.blockComponentName ? result.block_id.blockComponentName : 'Typecomponent1';
 											const NewPageComponent = React.lazy(() => import('../blockTemplate/'+componentTemp+'/'+componentTemp+'.js'));
-												// console.log("componentTemp=======in viewpage=",componentTemp);
+												console.log("componentTemp=======in viewpage=",componentTemp);
 
 
 												//const NewPageComponent = loadable(() => import('../blockTemplate/'+componentTemp));
@@ -245,23 +286,26 @@ class Viewpage extends React.Component {
 										:
 										null
 									}
-									<button type="button" className=" col-lg-4 col-lg-offset-4 btn b1 success btn-lg" onClick={() => this.onclickEvent()}>
-										Add new Block
+									<button type="button" className=" col-lg-4 col-lg-offset-4 b1 success btn-lg" onClick={() => this.onclickEvent()}>
+										 { this.state.pageData && this.state.pageData.pageBlocks.length > 0 
+										 	?
+										 	"Add Another Block"
+										 	: " Add New Block" }
 									</button>
 									{
-										this.state.listOfBlocks == true ?
+										this.state.listOfBlocks === true ?
 										<section>
-											<div className="row">
-												<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-													<div className="noPadLR  selectBox col-lg-12 col-md-12 col-xs-12 col-sm-12">
-														<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 noPadLR">
-						                					<div className="panel panel-default bgcolorO">
+											<div className="">
+												
+													<div className="selectBox col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+														<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+						                					<div className="panel panel-default bgcolorO" id="collaspePanelID">
 															    <div className="panel-heading bgPanelHead">
 															        <h4 className="panel-title">
-																        <button className="btn btn-primary">
-																         	<a href="/viewpage1">Back</a>
+																        <button className="cloneBtn btn-primary">
+																         	<a href="/cms/create-new-page">Back</a>
 																        </button>
-																        <button className="btn btn-primary pull-right" id="cnBlock">
+																        <button className="cloneBtn btn-primary pull-right" id="cnBlock">
 																        <a className="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
 																        + Create New Block</a>
 																        </button>
@@ -304,6 +348,8 @@ class Viewpage extends React.Component {
 									                		{
 																this.state.ListOfBlocks && this.state.ListOfBlocks.length>0?
 																	this.state.ListOfBlocks.map((result, index)=>{
+																		// console.log("========result in viewpage 2=============",result);
+
 																	/*	var component = result.blockComponentName ? result.blockComponentName : 'Block1Sample';
 																		const NewPageComponent = React.lazy(() => import('../blockComponent/'+component+'.js'));*/	
 																	var component = result.blockComponentName ? result.blockComponentName : 'Typecomponent1';
@@ -311,16 +357,19 @@ class Viewpage extends React.Component {
 																	var block_id=result._id;
 																		// console.log("block_id",block_id);
 																	return(
-												                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectDiv1 designList">
-												                				<div className="checkbox">
-																			        <label>
+												                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bottomBorder2px NOpadding">
+								                            					<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right AddBlockbtn" onClick={this.addBlock.bind(this)} id={block_id} >Add this block</button>
+												                				<div className="checkbox ml15">
+																			        <label className="fs15">
 																			        	<input type="checkbox" className="pull-right" onChange={this.handleChange.bind(this)} data_id={block_id}/> Select Multiple Blocks
 																			        </label>
-								                            						<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right AddBlockbtn" onClick={this.addBlock.bind(this)} id={block_id} >Add Block</button>
 																			    </div>
-																				<Suspense fallback={<div>Loading...</div>} key={index}>
-																		    		<NewPageComponent block_id={block_id}/>
-																		    	</Suspense>
+																				<br/>
+																				<div className="compBorderPadd5">
+																					<Suspense fallback={<div>Loading...</div>} key={index}>
+																			    		<NewPageComponent block_id={block_id}/>
+																			    	</Suspense>
+																		    	</div>
 																		    </div>	
 																	    	)
 																		})
@@ -331,12 +380,13 @@ class Viewpage extends React.Component {
 									                            <button  type="submit" className="col-lg-3 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn AddBlockbtn" onClick={() => this.submitData()} >Add Multiple Blocks</button>
 									                        </div>			
 													</div> 
-										       	</div>
+										       
 											</div>
 										</section>	
 										:
 										null
 									}
+
 								</div>
 							</div>
 						</div>

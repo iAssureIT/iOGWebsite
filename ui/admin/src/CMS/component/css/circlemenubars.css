@@ -5,14 +5,13 @@
     margin-top: 10px;
 }
 .wizard {
-    margin: auto;
-    background: #fff;
+
 }
 
 .wizard .nav-tabs {
     position: relative;
     margin-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: none !important;
     padding-bottom: 10px;
 }
 
@@ -95,8 +94,8 @@ span.round-tab:hover {
 }
 
 .wizard .nav-tabs > li a {
-    width: 47px;
-    height: 36px;
+    width: 41px;
+    height: 40px;
     margin: 20px auto;
     border-radius: 100%;
     padding: 0;
@@ -124,3 +123,52 @@ span.round-tab:hover {
 }
 /*=========== wizard==========*/
 /* =============== =================================== */
+
+/*.bgoftitle{
+    height: 174px;
+    background: #a2632c!important;
+    background: linear-gradient(90deg,#0e2a3b 0,#34306b);
+    opacity: 0.3;
+    color: #111;
+}
+.bgImgTitleBox{
+    background-image: url("/images/furniture-logo1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+.bgoftitle {
+  position: relative;
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.bgoftitle .bgImgTitleBox {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  /*padding: 20px;  Some padding */
+}
+.boxItem1CPage{
+    height: 135px;
+    background-color: #fff;
+    margin: 20px 15px;
+    padding-top: 10px;
+    margin: 20px 15px;
+    border: 1px solid #e1e1e1;
+        box-shadow: 0px 0px 10px 7px #e1e1e1;
+}
+.boxItem1CMBlock{
+    height: 135px;
+    background-color: #fff;
+    margin: 20px 15px;
+    padding-top: 10px;
+    margin: 20px 15px;
+    border: 1px solid #e1e1e1;
+        box-shadow: 0px 0px 10px 7px #e1e1e1;
+    
+}

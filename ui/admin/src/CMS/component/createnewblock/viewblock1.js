@@ -12,16 +12,15 @@ class ViewBlock_1 extends Component {
 
     render() {
         return (
-				<div className="contentWrapper">
-					<div className="box-body">
-						<div className="row">
-							<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<h2 className="text-center">Select Required Block from Following list </h2>
+				<div className="  ">
+					<div className="br20">
+						<div className="">
+							
+							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bglightgclr">
+								<CircleBlockMenuBars />
 							</div>
-							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								{<CircleBlockMenuBars />}
-							</div>
-							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							
+							<div className=" ">
 								<Staticblocks />
 							</div>
 						</div>
@@ -31,6 +30,5 @@ class ViewBlock_1 extends Component {
         );
     }
 }
-
 
 export default withRouter(ViewBlock_1);

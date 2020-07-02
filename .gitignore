@@ -1,6 +1,6 @@
 /ui/admin/node_modules
 /ui/admin/.env
-
+/node_modules
 /ui/website/node_modules
 /ui/website/.env
 

@@ -1,6 +1,5 @@
-import React from 'react';
-import {Route, withRouter} from 'react-router-dom';
-
+import React 						from 'react';
+import {Route, withRouter} 			from 'react-router-dom';
 
 
 import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
@@ -35,7 +34,9 @@ import CircleMenuBars            	 from "../blockTemplate/CircleMenuBars/CircleM
 
 
 
-import './Staticblocks.css';
+import 									 './Staticblocks.css';
+
+
 
 class Staticblocks extends React.Component {
 
@@ -48,12 +49,15 @@ class Staticblocks extends React.Component {
 		var blocksubTitle 		= "";
 		var blockDescription 	= "";
 		var blockType 			= "";
+		var blockLink 			= "";
 		var bgImage 			= "";
+		var bgVideo 			= "";
 		var fgImage 			= "";
 		var rBlocksTitle 		= "";
 		var rBlocksSubTitle 	= "";
 		var rBlocksDescription 	= "";
 		var rBlocksImage 		= "";
+		var rBlocksVideo 		= "";
 		var rBlocksLink         = "";
 		var RepetedBlock        = "";
 	   
@@ -80,7 +84,14 @@ class Staticblocks extends React.Component {
 		if(event.target.getAttribute("data-bgImage")){
 			bgImage = event.currentTarget.getAttribute("data-bgImage");
 			console.log("bgImage  =>",bgImage);
-
+		}
+		if(event.target.getAttribute("data-bgVideo")){
+			bgVideo = event.currentTarget.getAttribute("data-bgVideo");
+			console.log("bgVideo  =>",bgVideo);
+		}
+		if(event.target.getAttribute("data-blockLink")){
+			blockLink = event.currentTarget.getAttribute("data-blockLink");
+			console.log("blockLink  =>",blockLink);
 		}
 		if(event.target.getAttribute("data-rBlocksTitle")){
 			rBlocksTitle = event.currentTarget.getAttribute("data-rBlocksTitle");
@@ -93,6 +104,9 @@ class Staticblocks extends React.Component {
 		}
 		if(event.target.getAttribute("data-rBlocksImage")){
 			rBlocksImage = event.currentTarget.getAttribute("data-rBlocksImage");
+		}
+		if(event.target.getAttribute("data-rBlocksVideo")){
+			rBlocksVideo = event.currentTarget.getAttribute("data-rBlocksVideo");
 		}
 		if(event.target.getAttribute("data-rBlocksLink")){
 			rBlocksLink = event.currentTarget.getAttribute("data-rBlocksLink");
@@ -110,369 +124,392 @@ class Staticblocks extends React.Component {
 							+"&blockType="+blockType
 							+"&fgImage="+fgImage
 							+"&bgImage="+bgImage
+							+"&bgVideo="+bgVideo
+							+"&blockLink="+blockLink
 							+"&RepetedBlock="+RepetedBlock
 							+"&rBlocksTitle="+rBlocksTitle
 							+"&rBlocksSubTitle="+rBlocksSubTitle
 							+"&rBlocksDescription="+rBlocksDescription
 							+"&rBlocksImage="+rBlocksImage
+							+"&rBlocksVideo="+rBlocksVideo
 							+"&rBlocksLink="+rBlocksLink
 
 							
 		
-		this.props.history.push('/viewblock2?'+queryString);
+		this.props.history.push('/cms/create-new-block?'+queryString);
 	}
 
 	render() {
 		return (
-			<div>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Typecomponent1" 
-							data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-							data-fgImage="fgImage" 
-		                	className="btn zIndexmtop pull-right" 
-		                	onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>		            
-					<Typecomponent1 /> 
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Typecomponent1Img" 
-							data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-							data-fgImage="fgImage" 
-		                	className="btn zIndexmtop pull-right" 
-		                	onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>		            
-					<Typecomponent1Img /> 
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Typecomponent2" 
-		                	data-blockDescription="blockDescription" 
-							data-fgImage="fgImage"  
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Typecomponent2 />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Typecomponent3" 
-							data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-							data-rBlocksTitle="rBlocksTitle" 
-							data-rBlocksImage="rBlocksImage" 
-							data-rBlocksLink="rBlocksLink" 
-							data-RepetedBlock="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Typecomponent3 />
-				</section>
+			<div className="">
 
-                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Aboutufounder" 
-							data-blockTitle  ="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-							data-blocksubTitle="blocksubTitle" 
-							data-fgImage="fgImage"  
-							data-RepetedBlock="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Aboutufounder  />
-				</section>
+				<div className="boxItem1Statickblocks ">
+				<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div className="  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Aboutustextright" 
-	                        data-fgImage="fgImage"  
-		                	data-blockDescription="blockDescription" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Aboutustextright />
-				</section>
+                    	<h2 className="text-center">Select Required Design from Following list </h2>
+            		</div>
+            	</div>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Typecomponent1" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Typecomponent1 /> 
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Typecomponent1Img" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Typecomponent1Img /> 
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Typecomponent2" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage"  
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Typecomponent2 />
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Typecomponent3" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-rBlocksTitle="rBlocksTitle" 
+								data-rBlocksImage="rBlocksImage" 
+								data-rBlocksLink="rBlocksLink" 
+								data-RepetedBlock="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Typecomponent3 />
+					</section>
 
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="IogconsultTxtRight" 
-	                        data-fgImage="fgImage" 
-	                        data-blockTitle="blockTitle"  
-		                	data-blockDescription="blockDescription" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<IogconsultTxtRight />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ConsultOverview" 
-	                        data-blockTitle="blockTitle"  
-		                	data-blockDescription="blockDescription" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ConsultOverview />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ImgBlock" 
-	                        data-fgImage="fgImage"  
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ImgBlock />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Aboutusvision" 
-	                        data-fgImage="fgImage"  
-		                	data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription"  
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Aboutusvision />
-				</section>
-                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Commoninfoblock"
-		                    data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-							data-fgImage="fgImage"  
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Commoninfoblock />
-				</section>
+	                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Aboutufounder" 
+								data-blockTitle  ="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-blocksubTitle="blocksubTitle" 
+								data-fgImage="fgImage"  
+								data-RepetedBlock="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Aboutufounder  />
+					</section>
 
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Commonservicesblock" 
-		                	data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Commonservicesblock />
-				</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Aboutustextright" 
+		                        data-fgImage="fgImage"  
+			                	data-blockDescription="blockDescription" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Aboutustextright />
+					</section>
 
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="IogconsultTxtRight" 
+		                        data-fgImage="fgImage" 
+		                        data-blockTitle="blockTitle"  
+			                	data-blockDescription="blockDescription" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<IogconsultTxtRight />
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ConsultOverview" 
+		                        data-blockTitle="blockTitle"  
+			                	data-blockDescription="blockDescription" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ConsultOverview />
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ImgBlock" 
+		                        data-fgImage="fgImage"  
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ImgBlock />
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Aboutusvision" 
+		                        data-fgImage="fgImage"  
+			                	data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription"  
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Aboutusvision />
+					</section>
 
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="CommonservicesblockTitle"
-		                    data-blockTitle         ="blockTitle"  
-		                	data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<CommonservicesblockTitle />
-				</section>
-                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="News_Events"  
-		                	data-rBlocksTitle       ="rBlocksTitle" 
-		                	data-rBlocksSubTitle    ="rBlocksSubTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<News_Events />
-				</section>
+	                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Commoninfoblock"
+			                    data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage"  
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Commoninfoblock />
+					</section>
 
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Commonservicesblock" 
+			                	data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Commonservicesblock />
+					</section>
 
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="TitleDescription" 
-	                        data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<TitleDescription />
-				</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="CommonservicesblockTitle"
+			                    data-blockTitle         ="blockTitle"  
+			                	data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<CommonservicesblockTitle />
+					</section>
 
+	                <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="News_Events"  
+			                	data-rBlocksTitle       ="rBlocksTitle" 
+			                	data-rBlocksSubTitle    ="rBlocksSubTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<News_Events />
+					</section>
 
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="TitleDescription" 
+		                        data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<TitleDescription />
+					</section>
 
+				   {/*	<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="TitleDesc" 
+		                        data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<TitleDesc />
+					</section>*/}
 
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="TemplateOverview" 
+								data-blockTitle="blockTitle" 
+								data-blockDescription="blockDescription"  
+								data-fgImage   ="fgImage" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<TemplateOverview />
+					</section>
 
-			   <section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="TitleDesc" 
-	                        data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<TitleDesc />
-				</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ImgTitle" 
+		                        data-blockTitle="blockTitle" 
+			                	data-bgImage="bgImage" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ImgTitle />
+					</section>
 
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="TemplateOverview" 
-							data-blockTitle="blockTitle" 
-							data-blockDescription="blockDescription"  
-							data-fgImage   ="fgImage" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<TemplateOverview />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ImgTitle" 
-	                        data-blockTitle="blockTitle" 
-		                	data-bgImage="bgImage" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ImgTitle />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="TitleRrpeatedImgGrp" 
-							data-blockTitle   		="blockTitle"
-							data-fgImage      		="fgImage" 
-							data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<TitleRrpeatedImgGrp />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ExpertiseServicesOffered" 
-							data-blockTitle   		="blockTitle"
-							data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock"
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ExpertiseServicesOffered />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ChallengesTemp" 
-							data-blockTitle   		="blockTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock"
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ChallengesTemp />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ConsultingServices" 
-							data-blockTitle   		="blockTitle" 
-							data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksImage 		="rBlocksImage" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock"
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ConsultingServices />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="ConsultDownstream" 
-							data-blockTitle   		="blockTitle" 
-		                	data-blockDescription   ="blockDescription" 
-							data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription" 
-							data-rBlocksLink  		="rBlocksLink" 
-							data-RepetedBlock 		="RepetedBlock"
-							data-fgImage      		="fgImage" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<ConsultDownstream />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Maincomponent" 
-							data-blockTitle   		="blockTitle" 
-		                	data-blockDescription   ="blockDescription" 
-							data-fgImage   			="fgImage" 
-							data-rBlocksTitle       ="rBlocksTitle" 
-							data-rBlocksDescription ="rBlocksDescription"
-							data-rBlocksImage 		="rBlocksImage"
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Maincomponent />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Careerimpact" 
-							data-blockTitle   		="blockTitle" 
-		                	data-rBlocksDescription ="rBlocksDescription"
-							data-fgImage   			="fgImage" 
-							
-							data-rBlocksTitle       ="rBlocksTitle" 
-		                	data-rBlocksSubTitle    ="rBlocksSubTitle" 
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="TitleRrpeatedImgGrp" 
+								data-blockTitle   		="blockTitle"
+								data-fgImage      		="fgImage" 
+								data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<TitleRrpeatedImgGrp />
+					</section>
 
-							
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Careerimpact />
-				</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ExpertiseServicesOffered" 
+								data-blockTitle   		="blockTitle"
+								data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock"
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ExpertiseServicesOffered />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ChallengesTemp" 
+								data-blockTitle   		="blockTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock"
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ChallengesTemp />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ConsultingServices" 
+								data-blockTitle   		="blockTitle" 
+								data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksImage 		="rBlocksImage" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock"
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ConsultingServices />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ConsultDownstream" 
+								data-blockTitle   		="blockTitle" 
+			                	data-blockDescription   ="blockDescription" 
+								data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription" 
+								data-rBlocksLink  		="rBlocksLink" 
+								data-RepetedBlock 		="RepetedBlock"
+								data-fgImage      		="fgImage" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<ConsultDownstream />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Maincomponent" 
+								data-blockTitle   		="blockTitle" 
+			                	data-blockDescription   ="blockDescription" 
+								data-fgImage   			="fgImage" 
+								data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksDescription ="rBlocksDescription"
+								data-rBlocksImage 		="rBlocksImage"
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Maincomponent />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Careerimpact" 
+								data-blockTitle   		="blockTitle" 
+			                	data-rBlocksDescription ="rBlocksDescription"
+								data-fgImage   			="fgImage" 
+								
+								data-rBlocksTitle       ="rBlocksTitle" 
+			                	data-rBlocksSubTitle    ="rBlocksSubTitle" 
+
+								
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Careerimpact />
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="CircleMenuBars" 
+								data-blockTitle   		="blockTitle"  
+								data-rBlocksTitle       ="rBlocksTitle" 
+			                	data-rBlocksLink  		="rBlocksLink" 				
+								data-RepetedBlock 		="RepetedBlock" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<CircleMenuBars />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Typecomponent1_btn" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+			                	data-blocksubTitle="blocksubTitle" 
+								data-fgImage="fgImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} >  
+			                	
+			                	Select this Design
+			            </button>
+						<Typecomponent1_btn />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Typecomponent2_btn" 
+			                    data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription"
+			                	data-blocksubTitle="blocksubTitle"  
+								data-fgImage="fgImage"  
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Typecomponent2_btn />
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Aboutustextright_btn" 
+		                        data-fgImage="fgImage"
+		                        data-blocksubTitle="blocksubTitle"    
+			                	data-blockDescription="blockDescription" 
+			                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>
+						<Aboutustextright_btn />
+					</section>
 				
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="CircleMenuBars" 
-							data-blockTitle   		="blockTitle"  
-							data-rBlocksTitle       ="rBlocksTitle" 
-		                	data-rBlocksLink  		="rBlocksLink" 				
-							data-RepetedBlock 		="RepetedBlock" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<CircleMenuBars />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Typecomponent1_btn" 
-							data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription" 
-		                	data-blocksubTitle="blocksubTitle" 
-							data-fgImage="fgImage" 
-		                	className="btn zIndexmtop pull-right" 
-		                	onClick={this.selectComponent.bind(this)} >  
-		                	
-		                	Select this Block 
-		            </button>
-					<Typecomponent1_btn />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Typecomponent2_btn" 
-		                    data-blockTitle="blockTitle" 
-		                	data-blockDescription="blockDescription"
-		                	data-blocksubTitle="blocksubTitle"  
-							data-fgImage="fgImage"  
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Typecomponent2_btn />
-				</section>
-				<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-		            <button id="Aboutustextright_btn" 
-	                        data-fgImage="fgImage"
-	                        data-blocksubTitle="blocksubTitle"    
-		                	data-blockDescription="blockDescription" 
-		                	className="btn zIndexmtop pull-right" onClick={this.selectComponent.bind(this)} > 
-		                	Select this Block 
-		            </button>
-					<Aboutustextright_btn />
-				</section>
-				
-				
-			
 
+				</div>
 			</div>
 		);
 	}
