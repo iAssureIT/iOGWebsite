@@ -71,7 +71,7 @@ export default class Commonstream extends Component {
                                 <div className="row">
                                   <a href="/masterpage/health-safety-environment">
                                       <div className="col-lg-12 col-md-12 col-sm-12">
-                                          <div className="lightbluetext block block1height text-center divinsm"style={{width:"540px"}}>
+                                          <div className="lightbluetext block block1height text-center divinsm divinportrait"style={{width:"540px"}}>
                                               <img alt="" className="streamImg" src="/images/Illustration_11.png" />
                                              {/* <h2>Health Safety & Environment</h2>*/}
                                               <br/>

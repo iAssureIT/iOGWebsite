@@ -224,8 +224,11 @@
 }
 .dropdown .dropbtn {
     font-size: 9px;
-    padding: 14px 3px;
+    padding: 14px 2px;
     
+}
+.contactBar{
+  display: none;
 }
 .headerlogo img{
   height: 68px ! important;

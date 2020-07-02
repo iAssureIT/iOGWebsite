@@ -155,6 +155,8 @@ export default class Header extends Component {
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
+                <a href="/masterpage/refinery-mainpage">Refinery</a>
+                <a href="/masterpage/lng">LNG</a>
                 <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
                 <a href="/masterpage/chemicals-mainpage">Chemicals</a>
                 <a href="/masterpage/lng">LNG</a>

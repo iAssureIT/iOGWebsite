@@ -49,3 +49,9 @@
 .streamImg{
   margin-bottom: 5px;
 }
+@media screen and (max-width: 768px) {
+ 
+  .divinportrait{
+    width:200px ! important;
+  }
+}

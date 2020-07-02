@@ -194,10 +194,10 @@ pin3click(event){
                    <a href="/masterpage/health-safety-environment"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_11.png"className="tabimage"style={{width:"250px"}}/>
+                 <img alt="" src="/images/Banner3_11.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="gasimage"style={{overflow:"hidden"}}>
-                 <img alt="" src="/images/Banner3_8.png" className="tabimage"style={{width:"250px"}}/>
+                 <img alt="" src="/images/Banner3_8.png" className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="nexttogasimage">
                  <div className="new_HoverDiv5">
@@ -206,10 +206,10 @@ pin3click(event){
                    <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_5.png"style={{width:"200px"}}/>
+                 <img alt="" src="/images/Banner3_5.png"clasName="tabimage_1"style={{width:"200px"}}/>
                 </figure>
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
-                 <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"250px"}}/>
+                 <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="petrolimage1">
                  <div className="new_HoverDiv2">
@@ -218,10 +218,10 @@ pin3click(event){
                    <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img5.png"style={{width:"250px"}}/>
+                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img5.png"style={{width:"241px"}}/>
                 </figure>
                  <figure className="plantimage1">
-                   {/*<div className="ripplediv">
+                   <div className="ripplediv">
                      <div className=" ripplebox2" onClick={this.pin3click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -229,7 +229,7 @@ pin3click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>*/}
+                   </div>
                   <div className="new_HoverDiv3">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"188px"}}>
@@ -238,7 +238,7 @@ pin3click(event){
                    <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                 <img alt="" className="img-responsive"src="/images/Banner3_6.png"className="tabimage"style={{width:"250px"}}/>
+                 <img alt="" className="img-responsive"src="/images/Banner3_6.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="plantimage11">
                  <div className="new_HoverDiv4"> 
@@ -247,7 +247,7 @@ pin3click(event){
                    <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
-                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img7.png"style={{width:"250px"}}/>
+                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img7.png"style={{width:"241px"}}/>
                 </figure>
                 <figure className="waterimg">
                   <div className="ripplediv">
@@ -262,7 +262,7 @@ pin3click(event){
                   <div className="new_HoverDiv"onClick={this.pinremoveclick.bind(this)}>
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"165px"}}>
-                   {/* <div><i className="fa fa-times hover_close"></i></div>*/}
+                   { <div><i className="fa fa-times hover_close"></i></div>}
                      <p className="newhovertxt_1">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
                       <a href="/masterpage/lng">
                        <span className="servicekbtnarrow3">
@@ -283,7 +283,7 @@ pin3click(event){
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
                 </figure>
                  <figure className="boat_img2">
-                  {/*<div className="ripplediv">
+                  <div className="ripplediv">
                      <div className=" ripplebox1" onClick={this.pin2click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -291,7 +291,7 @@ pin3click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>*/}
+                   </div>
                   <div className="new_HoverDiv1">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
@@ -300,7 +300,7 @@ pin3click(event){
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive tabimage"src="/images/Banner3_4.png"style={{width:"250px"}}/>
+                   <img alt="" className="img-responsive tabimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
                 </figure>
                 <figure className="waterimg2">
                  <div className="new_HoverDiv6">

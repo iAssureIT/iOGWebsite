@@ -856,6 +856,51 @@ height: 90px;
   height: 168px;
   opacity: 0.9;
 }
+@media only screen (min-width: 1920px) {
+  .bannerContainer1{
+    height: 55em ! important;
+  }
+  .tabimage{
+    width: 350px ! important;
+  }
+  .tabimage_1{
+    width: 300px ! important;
+  }
+  .plantimage1{
+    right: 712px ! important;
+    top: 245px ! important;
+  }
+   .nexttogasimage{
+    left: 865px ! important;
+    top: 578px ! important;
+    width: 300px ! important;
+  }
+  .petrolimage1{
+    right: 516px ! important;
+    top: 392px ! important;
+  }
+  .gasimage{
+    right: 264px ! important;
+    top: 538px ! important;
+  }
+  .plantimage11 {
+    right: 509px ! important;
+    top: 159px ! important;
+  }
+  .petrolimage {
+    right: 225px ! important;
+    top: 296px ! important;
+  }
+  .oilimage {
+    right: 196px ! important;
+    top: 78px ! important;
+  }
+  .boat_img2 {
+    left: 447px ! important;
+    top: 377px ! important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 .oilimage{
   right: 27px;
@@ -1408,7 +1453,7 @@ height: 90px;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 121px;
+    left: 115px;
     top: 24px;
   }
   .ripplebox2 {
@@ -1427,7 +1472,7 @@ height: 90px;
   background:rgba(255,140,0,0.50); 
   /*border:2px solid rgb(255,69,0);*/
   border-radius: 50%;
-  animation: animate 2s linear infinite;
+  animation: animate 6s linear infinite;
   animation-delay: calc(-1.5s * var(--i));
 }
 .ripplebox1 span{
@@ -1436,7 +1481,7 @@ height: 90px;
   background:rgba(255,140,0,0.50); 
   /*border:2px solid rgb(255,69,0);*/
   border-radius: 50%;
-  animation: animate 5s linear infinite;
+  animation: animate 6s linear infinite;
   animation-delay: calc(-1.5s * var(--i));
 }
 .ripplebox2 span{
@@ -1445,7 +1490,7 @@ height: 90px;
   background:rgba(255,140,0,0.50); 
   /*border:2px solid rgb(255,69,0);*/
   border-radius: 50%;
-  animation: animate 5s linear infinite;
+  animation: animate 6s linear infinite;
   animation-delay: calc(-1.5s * var(--i));
 }
 @keyframes animate{
@@ -1461,15 +1506,22 @@ height: 90px;
     height: 40px;
   }
 }
-.hover_close{position: absolute;
-    top: 27px;
-    left: 183px;
-    background-color: #fff;
+.hover_close
+{
+    position: absolute;
+    top: 25px;
+    left: 195px;
+    /* background-color: #fff; */
     border-radius: 15px;
     width: 19px;
     height: 19px;
+    color: #fff;
+    font-size: 25px;
     padding-top: 2px;
     padding-left: 3px;
+  }
+  .hover_close:hover{
+    cursor: pointer;
   }
 
 
