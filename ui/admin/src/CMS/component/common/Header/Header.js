@@ -142,7 +142,7 @@ class Header extends React.Component {
                 <nav className="navbar clrwhtbgtp">
                   <div className="container-fluid">
                     <div className="navbar-header">
-                      <a className="navbar-brand clrwhtbgtp" href="/cms/dashboard"><b>iOG CMS</b></a>
+                      <a className="navbar-brand clrwhtbgtp" href="/"><b>iOG CMS</b></a>
                     </div>
                     <ul className="nav navbar-nav">
                       <li><a href="/cms/select-new-block">Blocks</a></li>

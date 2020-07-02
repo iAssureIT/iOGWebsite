@@ -66,7 +66,7 @@ export default class CmsLayout extends React.Component {
                 	<div>
                         <Route path="/cms/masterpage/:pageurl"              component={ MasterPage } /> 
                                                 
-                        <Route path="/cms/dashboard"                      exact strict component={CmsDashBoard}  />
+                        <Route path="/"                      exact strict component={CmsDashBoard}  />
                         <Route path="/cms/create-new-page"                         exact strict component={ViewPage_1}  />
                         <Route path="/cms/new-page-add-block"                         exact strict component={ViewPage_2}  />
                         <Route path="/cms/new-page-add-block/:id"                     exact strict component={ViewPage_2}  />
