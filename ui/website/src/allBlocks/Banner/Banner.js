@@ -221,7 +221,7 @@ pin3click(event){
                  <img alt="" className="img-responsive tabimage"src="/images/newbanner_img5.png"style={{width:"250px"}}/>
                 </figure>
                  <figure className="plantimage1">
-                   <div className="ripplediv">
+                   {/*<div className="ripplediv">
                      <div className=" ripplebox2" onClick={this.pin3click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -229,7 +229,7 @@ pin3click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>
+                   </div>*/}
                   <div className="new_HoverDiv3">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"188px"}}>
@@ -259,10 +259,10 @@ pin3click(event){
                       <span style={{"--i":"5"}}></span>
                      </div>
                    </div>
-                  <div className="new_HoverDiv">
+                  <div className="new_HoverDiv"onClick={this.pinremoveclick.bind(this)}>
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"165px"}}>
-                    <div><i className="fa fa-times hover_close"onClick={this.pinremoveclick.bind(this)}></i></div>
+                   {/* <div><i className="fa fa-times hover_close"></i></div>*/}
                      <p className="newhovertxt_1">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
                       <a href="/masterpage/lng">
                        <span className="servicekbtnarrow3">
@@ -283,7 +283,7 @@ pin3click(event){
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
                 </figure>
                  <figure className="boat_img2">
-                  <div className="ripplediv">
+                  {/*<div className="ripplediv">
                      <div className=" ripplebox1" onClick={this.pin2click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -291,7 +291,7 @@ pin3click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>
+                   </div>*/}
                   <div className="new_HoverDiv1">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>

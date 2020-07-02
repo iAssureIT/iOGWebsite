@@ -1298,7 +1298,8 @@ height: 90px;
 .servicekbtnarrow5 {
     margin-left: 139px;
     color: #000;
-    margin-top: -105px;
+    margin-top: -105
+    px;
     font-size: 13px;
     position: absolute;
 }
@@ -1426,8 +1427,8 @@ height: 90px;
   background:rgba(255,140,0,0.50); 
   /*border:2px solid rgb(255,69,0);*/
   border-radius: 50%;
-  animation: animate 5s linear infinite;
-  animation-delay: calc(-1.5s * var(--i));
+  animation: animate 17s linear infinite;
+  animation-delay: calc(7.5s * var(--i));
 }
 .ripplebox1 span{
   position: absolute;
@@ -1435,8 +1436,8 @@ height: 90px;
   background:rgba(255,140,0,0.50); 
   /*border:2px solid rgb(255,69,0);*/
   border-radius: 50%;
-  animation: animate 5s linear infinite;
-  animation-delay: calc(-1.5s * var(--i));
+  animation: animate 17s linear infinite;
+  animation-delay: calc(-7.5s * var(--i));
 }
 .ripplebox2 span{
   position: absolute;
@@ -1444,8 +1445,8 @@ height: 90px;
   background:rgba(255,140,0,0.50); 
   /*border:2px solid rgb(255,69,0);*/
   border-radius: 50%;
-  animation: animate 5s linear infinite;
-  animation-delay: calc(-1.5s * var(--i));
+  animation: animate 17s linear infinite;
+  animation-delay: calc(7.5s * var(--i));
 }
 @keyframes animate{
   0%{
