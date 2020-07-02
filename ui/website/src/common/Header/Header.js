@@ -176,7 +176,7 @@ export default class Header extends Component {
           <div className="hovertext">Contact Us Now</div>
         </button>
         <a href="/contact-us">
-         <button className="contactBar hidden-lg hidden-md" >
+         <button className="contactBarres hidden-lg hidden-md" >
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
           </div>

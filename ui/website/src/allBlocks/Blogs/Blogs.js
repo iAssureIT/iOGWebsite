@@ -123,7 +123,7 @@ export default class Blogs extends Component {
                                                     </div>
                                                     <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">july 5,2019</div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">July 5,2019</div>
                                                          <div className="col-lg-6 col-md-8 col-sm-12 col-xs-12">
                                                             <a className="" href="/blog">
                                                                 <input type="button" className="col-lg-10 col-md-12 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
