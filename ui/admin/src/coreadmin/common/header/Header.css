@@ -438,6 +438,7 @@ padding: 5px 5px !important;
 }
 .onHoverEffect:hover{
   background-color: #fefefe !important;
+  color: #222;
 
 }
 @media only screen and (width: 1400px) {
@@ -531,3 +532,62 @@ padding: 5px 5px !important;
 }
 
 
+.headerbgcolor{
+  background-color: #337ab7;
+}
+
+.clrwhtbgtp ul li a{
+  color: #fff;
+  background-color: transparent;
+}
+.whtclrHeaderBrand{
+  color: #fff;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+      color: #333;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 105px !important;
+    height: 65px;
+    left: 0px;
+    top:48px;
+    text-align: center;
+    box-shadow: none !important;
+    z-index: 1;
+    /*padding: 15px;*/
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #1b1a1a;
+}
+.dropbtn:hover .dropdown-content{
+      display: block;
+}
+.dropdown-content li a{
+  color: #333 !important;
+  text-align: center!important;
+  margin:5px;
+  padding: 15px !important;
+}
+#blogbtnid{
+  background: transparent !important;
+  /*color: #fff;*/
+  border: none;
+}
+
+#blogbtnidA :hover a{
+  /*background: transparent !important;*/
+  color: #333;
+}
+.dpdnBoxLi{
+  height: 28px;
+  padding-top: 5px;
+}
+.dpdnBoxLi:hover{
+  background-color: #ddd;
+}

@@ -64,7 +64,7 @@ componentDidMount(){
       }
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -188,7 +188,7 @@ CareersData(){
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
               <div className="img_2">
-                <img src={this.state.blocks.fgImage} alt="" className="career2_img" />
+                <img src={this.state.blocks.fgImage} alt="" className="career2_img img-responsive" />
               </div>
           </div>
 

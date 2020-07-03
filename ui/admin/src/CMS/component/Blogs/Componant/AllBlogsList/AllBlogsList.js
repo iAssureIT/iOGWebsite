@@ -94,14 +94,14 @@ componentDidMount(){
 													}<img className="img-responsive AllblogImgB" src={data.bannerImage?data.bannerImage.path:" "} alt="Bannerpng"/>
 														<div className="middle">
 														    
-														    <a href={"/cms-pages/blogs-form/"+data.blogURL} className="hoverbk"><i className="fa fa-pencil wclr"></i></a>
+														    <a href={"/cms/blogs-form/"+data.blogURL} className="hoverbk"><i className="fa fa-pencil wclr"></i></a>
 														    <i className="fa fa-trash rclr hoverbbk" id={data.blogURL} onClick={this.deleteBlog.bind(this)}></i>
 														  </div>
-														<a href={"/cms-pages/singleblog/"+data.blogURL}>
+														
 															<p className="blogDate p10 mtop20 graycolor">{data.createdAt}</p>
 															<h4 className="blogTitle p10"><b>{data.blogTitle}</b></h4>
 															<p className="blogPara p10 graycolor">{data.summary}</p>
-														</a>
+														
 														</div>
 							          				
 							          			</div>

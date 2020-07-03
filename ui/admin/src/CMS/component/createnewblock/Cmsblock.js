@@ -254,7 +254,7 @@ class CmsBlock extends Component {
       });
 
   }
-componentWillReceiveProps(nextProps){
+  componentWillReceiveProps(nextProps){
 	  var block_id= nextProps.block_id;  
     axios
       .get("/api/blocks/get/"+block_id)
@@ -277,7 +277,7 @@ componentWillReceiveProps(nextProps){
                     repGBlockTitle   : response.data.repeatedBlocks.Title,
                     repGBlocksubTitle: response.data.repeatedBlocks.SubTitle,
                     repetedLink      : response.data.repeatedBlocks.Link,
-                    RepetedBlock     : response.data.repeatedBlocks.Title || response.data.repeatedBlocks.SubTitle ? response.data.repeatedBlocks.Title : "",
+                    RepetedBlock     : response.data.repeatedBlocks.Title === "" || response.data.repeatedBlocks.SubTitle === "" ? response.data.repeatedBlocks.Title : "",
                   },
       			block_id			   : block_id,
             blockTitle       : response.data.blockTitle,
@@ -319,11 +319,12 @@ componentWillReceiveProps(nextProps){
   			blockComponentName :  this.state.componentName,		
         fgImage            :  this.state.imgbPath.path,
         bgImage            :  this.state.bgImage,
-        repeatedBlocks     :  this.state.repetedGroup,   	
+        repeatedBlocks     :  this.state.repetedGroup, 
+
   		};
-		// console.log("formValues=blocks>",formValues);
-		axios
-			.patch('/api/blocks/patch/'+this.state.block_id,formValues)
+		  // console.log("formValues=blocks>",formValues);
+		  axios
+			  .patch('/api/blocks/patch/'+this.state.block_id,formValues)
 		  	.then(function (response) {
 		    // handle success
 		    	// console.log(response);
@@ -336,7 +337,7 @@ componentWillReceiveProps(nextProps){
 		    // handle error
 		    	console.log(error);
 		  	});
-   		/*console.log("formValues =>",formValues);*/
+   		   /*console.log("formValues =>",formValues);*/
   } 
   uploadforeGImg(event){
     // console.log("upload =",event.target.files[0]);
@@ -700,30 +701,35 @@ componentWillReceiveProps(nextProps){
   	      			groupRepetedBlocks:true
   	      		});
   }
-editReDBlock(event){
-  event.preventDefault();
-   var id = event.target.id;
-    // console.log("id od index------",id);
-    for (var i = 0; i < this.state.repetedGroup.length; i++) {
-      if (this.state.repetedGroup[i]._id === id) {
-        // console.log("=====>>>>>>",this.state.repetedGroup[i]);
-        this.setState({
-              repGBlockTitle      : this.state.repetedGroup[i].Title,
-              repGBlocksubTitle   : this.state.repetedGroup[i].SubTitle,
-              repetedLink         : this.state.repetedGroup[i].Link,
-              repBlockContent     : this.state.repetedGroup[i].Description, 
-              rep_idEdit          : id,           
-              rbPath              : {
-                                      "path"    : this.state.repetedGroup[i].Image,
-                                    }
+  editReDBlock(event){
+    event.preventDefault();
+      var id = event.target.id;
+      console.log("id od index------",id);
+      for (var i = 0; i < this.state.repetedGroup.length; i++) {
+        if (this.state.repetedGroup[i]._id === id) {
+          console.log("=====>>>>>>",this.state.repetedGroup[i]);
+          console.log("=====>>>>>>",this.state.rBlocksSubTitle);
+          this.setState({
+                groupRepetedBlocks :  true,
+                repGBlockTitle      : this.state.repetedGroup[i].Title,
+                repGBlocksubTitle   : this.state.repetedGroup[i].SubTitle,
+                repetedLink         : this.state.repetedGroup[i].Link,
+                repBlockContent     : this.state.repetedGroup[i].Description, 
+                rep_idEdit          : id,           
+                rbPath              : {
+                                        "path"    : this.state.repetedGroup[i].Image,
+                                      },
 
-        });
+                rvideobPath         : {
+                                        "path"    : this.state.repetedGroup[i].Image,
+                                      }
+
+          });
+        }
       }
-    }
-}
+  }
 
-    render() {
-
+  render() {
         return (
         		<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -783,7 +789,7 @@ editReDBlock(event){
             					          }
             			           {/*</div>*/}
               							
-                              { this.state.parsed.blockDescription === ""
+                              { this.state.parsed.blockDescription === "" ||  this.state.parsed.blockDescription === null
                                 ? null
                                 :
               								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
@@ -808,9 +814,9 @@ editReDBlock(event){
                             {/*============================================================================================*/}
 							
               							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m20 NOpadding">
-                                {console.log("this.state.parsed.RepetedBlock",this.state.parsed.RepetedBlock)}
+                                {console.log("this.state.parsed.RepetedBlock",this.state.parsed)}
                               {
-                                this.state.parsed.RepetedBlock === "" 
+                                this.state.parsed.RepetedBlock === "" || this.state.parsed.RepetedBlock === null
                                   ? null
                                   :
                                       <div>
@@ -830,25 +836,34 @@ editReDBlock(event){
               															? null
               															:
                     												<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    															<div className="form-group">
-                    																<label className="label-category labelform">Repeated Block Title<span className="astrick"></span></label>
-                    																<input type="text" ref="repGBlockTitle" id="repGBlockTitle" value={this.state.repGBlockTitle} name="repGBlockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)} />
-                    															</div>
+                															<div className="form-group">
+                																<label className="label-category labelform">Repeated Block Title<span className="astrick"></span></label>
+                																<input type="text" ref="repGBlockTitle" id="repGBlockTitle" value={this.state.repGBlockTitle} name="repGBlockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)} />
+                															</div>
                     												</div>
               														}
-              												    { this.state.parsed.rBlocksSubTitle === ""
-              															? null
-              															:
-                    												<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    														    <div className="form-group ">
-                    														   		<label className="label-category labelform">Repeated Sub Title<span className="astrick"></span></label>
-                    														        <input type="text" ref="repGBlocksubTitle" id="repGBlocksubTitle" value={this.state.repGBlocksubTitle} name="repGBlocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
-                    														    </div>
-                    												</div>
+              												    {   
+                                            this.state.rBlocksSubTitle === ""
+                                            ?
+                                                 this.state.parsed.rBlocksSubTitle === ""
+                                                  ? null
+                                                  :
+                                                  <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                    <div className="form-group ">
+                                                      <label className="label-category labelform">Repeated Sub Title<span className="astrick"></span></label>
+                                                      <input type="text" ref="repGBlocksubTitle" id="repGBlocksubTitle" value={this.state.repGBlocksubTitle} name="repGBlocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
+                                                    </div>
+                                                  </div>
+
+                                            : ""
+                                                 
               														}
               											
               											
-              							              { this.state.parsed.rBlocksLink === ""
+              							              { 
+                                            this.state.rBlocksLink === ""
+                                            ?
+                                            this.state.parsed.rBlocksLink === ""
                                             ? null
                                             :
                                               <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 nopadd">
@@ -857,8 +872,12 @@ editReDBlock(event){
                       										        		<input type="text" ref="repetedLink" id="repetedLink" value={this.state.repetedLink} name="repetedLink"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
                       												    </div>
                       												</div>
+                                               : ""
+                                              
                                           }
-                                          { this.state.parsed.rBlocksImage ===  ""
+                                          { 
+                                          
+                                            this.state.parsed.rBlocksImage ===  ""
                                             ? null
                                             :
               												        <div className="">
@@ -894,7 +913,10 @@ editReDBlock(event){
               							                    </div>
                                             }
               							               
-                                            { this.state.parsed.rBlocksVideo === ""
+                                            { 
+                                              this.state.rvideobPath === ""
+                                              ?
+                                              this.state.parsed.rBlocksVideo === "" || this.state.parsed.rBlocksVideo === null
                                                 ? null
                                                 :
                                                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -922,6 +944,7 @@ editReDBlock(event){
                                                      </div>
                                                     </div>
                                                 </div>
+                                                : ""
                                               }
                                             { this.state.parsed.rBlocksDescription === ""
                                              ? null
@@ -956,26 +979,26 @@ editReDBlock(event){
                     											this.state.repetedGroup.map((data, index)=>{
                     												// console.log("re===>",data);
               												return(
-              						          				<div className="col-lg-4 Allblog" key={index}>
-              						          					{
+              						          					
               				                					data ? 
-              							          					<div className="All1block1">
-                    															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image: this.state.repeteddemoimg } alt="Bannerpng"/>
-                    															<div className="middle">
-                                                      <i className="fa fa-pencil rclr hoverbbk" onClick={this.editReDBlock.bind(this)} id={data._id}></i>    
-                    															    <i className="fa fa-trash rclr hoverbbk" ></i>{/*id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)}*/}
-                    															</div>
-                    															<a href={"/block/"+data.Link}>
-                    															{/*<p className="blogDate p10 mtop20 graycolor">{this.state.repetedGroup.createdAt}</p>*/}
-                    															<h3 className="blockTitle p10"><b>{data.Title}</b></h3>
-                    															<h4 className="blockTitle p10"><b>{data.SubTitle}</b></h4>
-                    															<p className="blockPara p10 graycolor" dangerouslySetInnerHTML={ { __html: data.Description } }></p>
-                    															</a>
-                    														</div>
+              						          				    <div className="col-lg-4 Allblog" key={index}>
+                							          					<div className="All1block1">
+                      															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image: this.state.repeteddemoimg } alt="Bannerpng"/>
+                      															<div className="middle">
+                                                        <i className="fa fa-pencil rclr hoverbbk" onClick={this.editReDBlock.bind(this)} id={data._id}></i>    
+                      															    <i className="fa fa-trash rclr hoverbbk" ></i>{/*id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)}*/}
+                      															</div>
+                      															<a href={"/block/"+data.Link}>
+                      															{/*<p className="blogDate p10 mtop20 graycolor">{this.state.repetedGroup.createdAt}</p>*/}
+                      															<h3 className="blockTitle p10"><b>{data.Title}</b></h3>
+                      															<h4 className="blockTitle p10"><b>{data.SubTitle}</b></h4>
+                      															<p className="blockPara p10 graycolor" dangerouslySetInnerHTML={ { __html: data.Description } }></p>
+                      															</a>
+                    														  </div>
+              						          				    </div>
               													      :
               						          					null
-              			            							}	
-              						          				</div>
+              			            							
               						          				)
               											})
               										:
@@ -1047,7 +1070,8 @@ editReDBlock(event){
   									                </div>
   	                            </div>
                               }
-                              { this.state.parsed.bgVideo === ""
+                              { this.state.parsed.bgVideo === "" || this.state.parsed.bgVideo === null
+
                                 ? null
                                 :
                                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">

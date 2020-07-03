@@ -65,7 +65,7 @@ componentDidMount(){
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
         		  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
         		   <h2 className="BT1_bannerTitle">{this.state.blocks.blockTitle}</h2>
-                   <img src={this.state.blocks.bgImage} className="BT1_img"/>
+                   <img src={this.state.blocks.bgImage} className="BT1_img img-responsive"/>
         		  </div>
         </div>
        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

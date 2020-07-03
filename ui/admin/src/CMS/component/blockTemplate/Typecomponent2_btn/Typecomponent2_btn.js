@@ -26,7 +26,7 @@ componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -54,7 +54,7 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img" />
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img img-responsive" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                    <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>

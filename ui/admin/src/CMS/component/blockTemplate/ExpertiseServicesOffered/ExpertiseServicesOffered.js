@@ -77,7 +77,7 @@ componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -120,7 +120,7 @@ componentDidMount(){
               <div>
                <div className="col-lg-offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12 B4T_ServicesDiv">
                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 NOPadding">
-                 <img src={result.Image} className="B5T_img"/>
+                 <img src={result.Image} className="B5T_img img-responsive"/>
                 </div>
                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 innerServiceDiv NOPadding">
                  <h5 className="B5T_txt">{result.Title}</h5>

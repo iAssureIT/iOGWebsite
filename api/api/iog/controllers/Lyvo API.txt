@@ -1,0 +1,22 @@
+- hard delete only for admin
+- oldest on top
+- List New Property with duration
+- Status of Property : WIP , NEW , Verified Pending, VerifyRejected, Listed, ReList, Inactive, Deleted, 
+- List of all the WIP property
+- Delete Property from the WIP 
+- round robin for allocating the sales agents
+- if non sales agent is present then allocate it to tech admin
+- Sales agent will have soft delete
+- admin can only delete the new property
+- > 4hr Maroon
+- > 2hr Red
+  > 1hr Amber
+  < 1hr white 
+- sort : list verified - light green
+-
+
+
+Allocate to Field Agent
+
+- Allocate as per pincode search Field Office
+- Allocate to agent using round robin

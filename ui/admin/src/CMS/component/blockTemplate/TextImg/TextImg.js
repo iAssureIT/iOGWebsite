@@ -54,7 +54,7 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img" />
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img img-responsive" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                    {/*<h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>*/}

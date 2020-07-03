@@ -63,7 +63,7 @@ componentDidMount(){
 // console.log("==>",this.props.block_id);
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
@@ -104,7 +104,7 @@ componentDidMount(){
               </div>
                <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 NOPadding">
                 <div className="">
-                 <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg" src={result.Image}/>          
+                 <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg img-responsive" src={result.Image}/>          
                 </div>
                 <div className="col-lg-12 col-md-12">
                  <h4 className=" newsheading ">{result.SubTitle}</h4>

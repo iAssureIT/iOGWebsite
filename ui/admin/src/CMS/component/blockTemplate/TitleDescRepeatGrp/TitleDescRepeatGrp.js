@@ -101,7 +101,7 @@ componentDidMount(){
                               <div className="col-lg-3  col-md-3 col-sm-12 col-xs-12">
                                 <div className="RB_block repeated_block1height ">
                                   <div className="RBicon1">
-                                    <img src={result.Image} alt="" className="rbicn_1" />
+                                    <img src={result.Image} alt="" className="rbicn_1 img-responsive" />
                                   {/*<img src="/images/11.png" alt="" className="icn1_hover"  />*/}
                                   </div>
                                    <p className="lightbluetext rb-para-top">{result.Title}</p>

@@ -63,7 +63,7 @@ componentDidMount(){
 /*console.log("==>",this.props.block_id);*/
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                     if(response.data){
                       this.setState({
@@ -92,7 +92,7 @@ componentDidMount(){
            <div className="ht_row1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div className="row">
-                       <img className="iogimgblock1" src={this.state.blocks.fgImage} />
+                       <img className="iogimgblock1 img-responsive" src={this.state.blocks.fgImage} />
                      </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -114,7 +114,7 @@ componentDidMount(){
               
               <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div className="row">
-                <img className="iogimgblock2" src={this.state.blocks.repeatedBlocks[0].Image} />
+                <img className="iogimgblock2 img-responsive" src={this.state.blocks.repeatedBlocks[0].Image} />
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ componentDidMount(){
         <div className="ht_row3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div className="row">
-                <img className="iogimgblock3" src={this.state.blocks.repeatedBlocks[1].Image} />
+                <img className="iogimgblock3 img-responsive" src={this.state.blocks.repeatedBlocks[1].Image} />
               </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -142,7 +142,7 @@ componentDidMount(){
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
               <div className="row">
-                <img className="iogimg_4" src={this.state.blocks.repeatedBlocks[2].Image} />
+                <img className="iogimg_4 img-responsive" src={this.state.blocks.repeatedBlocks[2].Image} />
               </div>
             </div>
           </div>

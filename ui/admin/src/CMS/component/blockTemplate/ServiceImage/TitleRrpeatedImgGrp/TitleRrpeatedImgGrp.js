@@ -85,7 +85,7 @@ componentDidMount(){
 
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
@@ -111,9 +111,9 @@ componentDidMount(){
 		return (
 			<div>
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-				  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
-		           <div class="B2T1_line col-lg-1 col-lg-offset-2">
-		         </div>
+				    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-lg-offset-5">
+		                <div class="B2T1_line col-lg-1 col-lg-offset-2">
+		            </div>
 		        </div>
 		         <h2 className="B2T_overviewTitle">{this.state.blocks.blockTitle}</h2>		
 					<div className="mtop25">
@@ -128,7 +128,7 @@ componentDidMount(){
 								 <div className="col-lg-12">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2  pull-right">
-								   <img src={result.Image} className="iconclass"/>					    
+								   <img src={result.Image} className="iconclass img-responsive"/>					    
 								   </div>
 							    </div>
 								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>
@@ -156,7 +156,7 @@ componentDidMount(){
 								 <div className="col-lg-12 NOpadding">
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2">
-								    <img src={result.Image} className="iconclass"/>
+								    <img src={result.Image} className="iconclass img-responsive"/>
 								   </div>
 							     </div>
 								 <h4 className="featuretitle text-left col-lg-9 NOpadding">{result.Title}</h4>

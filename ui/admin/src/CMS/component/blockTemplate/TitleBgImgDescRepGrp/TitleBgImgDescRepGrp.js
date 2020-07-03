@@ -47,7 +47,7 @@ componentDidMount(){
 	              <div className="row">
 	                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
 	                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 img1">
-	                      <img src={this.state.blocks.bgImage} alt="" className="plane" />
+	                      <img src={this.state.blocks.bgImage} alt="" className="plane img-responsive" />
 	                 </div>
 	                      <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blck blck1height b1width">

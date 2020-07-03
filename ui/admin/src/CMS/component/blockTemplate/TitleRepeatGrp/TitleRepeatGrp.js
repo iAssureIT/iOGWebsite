@@ -140,7 +140,7 @@ componentDidMount(){
                <div className=" col-lg-3 col-md-3 col-sm-12 col-xs-12 BT3_dataDiv">
                <div className="col-lg-12 col-md-12">
                 <div className="BT4_imgBack col-lg-offset-5"></div>
-                 <img src={result.Image}className="BT3_img"/>
+                 <img src={result.Image}className="BT3_img img-responsive"/>
                 </div>
                 <div className="col-lg-12 col-md-12">
                  <h4 className="BT3_subhead text-center">{result.Title}</h4>

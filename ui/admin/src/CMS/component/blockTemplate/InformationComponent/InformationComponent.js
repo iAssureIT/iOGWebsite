@@ -39,21 +39,21 @@ class InformationComponent extends Component{
              <div className="row">
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                  <div className="icnn_1">
-                   <img src="/images/icnn1.svg" alt="" className=""  />
+                   <img src="/images/icnn1.svg" alt="" className="img-responsive"  />
                  </div>
                     <p className="txt_1">RELOCATION ASSISTANCE</p>
                 </div>
                
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                <div className="icnn_1">
-                   <img src="/images/icnn1.svg" alt="" className=""  />
+                   <img src="/images/icnn1.svg" alt="" className="img-responsive"  />
                  </div>
                     <p className="txt_1">MODERN CENTRAL OFFICE</p>
                </div>
 
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                <div className="icnn_1">
-                   <img src="/images/icnn1.svg" alt="" className=""  />
+                   <img src="/images/icnn1.svg" alt="" className="img-responsive"  />
                  </div>
                     <p className="txt_1">TRAINING & DEVELOPMENT</p>
                </div>
@@ -62,21 +62,21 @@ class InformationComponent extends Component{
              <div className="row">
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                <div className="icnn_1">
-                   <img src="/images/icnn1.svg" alt="" className=""  />
+                   <img src="/images/icnn1.svg" alt="" className="img-responsive"  />
                  </div>
                     <p className="txt_4">HEALTH INSURANCE</p>
                </div>
 
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                <div className="icnn_1">
-                   <img src="/images/icnn1.svg" alt="" className=""  />
+                   <img src="/images/icnn1.svg" alt="" className="img-responsive"  />
                  </div>
                     <p className="txt_5">GYM MEMBERSHIP</p>
                </div>
 
                <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                <div className="icnn_1">
-                   <img src="/images/icnn1.svg" alt="" className=""  />
+                   <img src="/images/icnn1.svg" alt="" className="img-responsive"  />
                  </div>
                     <p className="txt_6">SOCIAL EVENTS</p>
                </div>

@@ -4,3 +4,5 @@
 /ui/website/node_modules
 /ui/website/.env
 
+/api/node_modules
+

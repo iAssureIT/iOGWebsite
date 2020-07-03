@@ -9,38 +9,45 @@ import swal from 'sweetalert';
 import PropTypes from 'prop-types';
 import CKEditor from 'ckeditor4-react';
 
-class BlogsForm extends Component{
-constructor(props) {
-super(props);
-this.state={
-      "fields"            : {},
-      "errors"            : {}, 
-      "blogTitle"        : "",
-      "pageUrl"           : "",
-      "updateID"          : "",
-      "summary"         : "",
-      "bannerImg"         : "",
-      "typeOfBlog"     : "",
-      "imgArrayWSaws"     : [],
-      "config"            : "",
-      "uploadedImage"     : [],
-      "imgPath"           : "",
-      "imgbPath"          : {},
-      "imgInTextPath"     : {},
-      "blog1Img"          : [],
-      "blogContent"       : '',
-      "editUrl"           : '',
-      "formerrors"        :{
-          "clientName"    : " ",
-          "clientEmail"   : " ",
-        },
-        "editId"          : this.props.match.params ? this.props.match.params.blogURL : ''
-      };
-      this.handleChange = this.handleChange.bind( this );
-      this.onEditorChange = this.onEditorChange.bind( this );
-}
+class BlogsForm extends React.PureComponent{
+  constructor(props) {
+    super(props);
+    this.state={
+          "fields"            : {},
+          "errors"            : {}, 
+          "blogTitle"        : "",
+          "pageUrl"           : "",
+          "updateID"          : "",
+          "summary"         : "",
+          "bannerImg"         : "",
+          "typeOfBlog"     : "",
+          "imgArrayWSaws"     : [],
+          "config"            : "",
+          "uploadedImage"     : [],
+          "imgPath"           : "",
+          "imgbPath"          : {},
+          "imgInTextPath"     : {},
+          "blog1Img"          : [],
+          "blogContent"       : '',
+          "editUrl"           : '',
+          "formerrors"        :{
+              "clientName"    : " ",
+              "clientEmail"   : " ",
+            },
+            "editId"          : this.props.match.params ? this.props.match.params.blogURL : ''
+          };
+          this.handleChange = this.handleChange.bind( this );
+          this.onEditorChange = this.onEditorChange.bind( this );
+  }
+ /* componentWillMount() {
+      this.setState({count: 1});
+  }
+  shouldComponentUpdate(){
+      return false;
+  }*/
+ /* componentWillReceiveProps(nextProps) {
 
-  componentWillReceiveProps(nextProps) {
+
       var editId = nextProps.match.params.id;
       if(nextProps.match.params.id){
         this.setState({
@@ -48,7 +55,7 @@ this.state={
         })
         this.edit(editId);
       }
-  }
+  }*/
 
   onEditorChange( evt ) {
       this.setState( {
@@ -58,9 +65,9 @@ this.state={
   edit(e){
     
     var pageUrl = window.location.pathname;
-      console.log("pageUrl in blog = ",pageUrl);
+      // console.log("pageUrl in blog = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
-          console.log("a==>",a[3]); 
+          // console.log("a==>",a[3]); 
           this.setState( {
               editUrl: a[3]
           });
@@ -86,13 +93,13 @@ this.state={
       });
 
   }
-  componentWillReceiveProps(){
+/*  componentWillReceiveProps(){
     // this.edit();
-  }
+  }*/
   componentDidMount(){
-    this.edit();
+    // this.edit();
       axios
-        .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
+        .get('/api/projectsettings/get/S3')
         .then((response)=>{
          
           const config = {
@@ -117,7 +124,7 @@ this.state={
                      this.props.history.push("/");
                 }
         })
-           // this.edit();
+           this.edit();
 
     }
 
@@ -189,57 +196,57 @@ this.state={
 
   }
 
-uploadBlogImage(event){
-   event.preventDefault();
-   let self = this;
-   if (event.currentTarget.files && event.currentTarget.files[0]) {
-      var file = event.currentTarget.files[0];
-      var newFileName = JSON.parse(JSON.stringify(new Date()))+"_"+file.name;
-      var newFile = new File([file],newFileName);
-      // console.log("file",newFile);
-      if (newFile) {
-      // console.log("config--------------->",this.state.config);
-        var ext = newFile.name.split('.').pop();
-        if(ext=="jpg" || ext=="png" || ext=="jpeg" || ext=="JPG" || ext=="PNG" || ext=="JPEG"){
+  uploadBlogImage(event){
+       event.preventDefault();
+       let self = this;
+       if (event.currentTarget.files && event.currentTarget.files[0]) {
+          var file = event.currentTarget.files[0];
+          var newFileName = JSON.parse(JSON.stringify(new Date()))+"_"+file.name;
+          var newFile = new File([file],newFileName);
+          // console.log("file",newFile);
           if (newFile) {
-            S3FileUpload
-              .uploadFile(newFile,this.state.config)
-              .then((Data)=>{
-               
-                  var obj1={
-                    imgPath : Data.location,
-                  }
-                  var imgArrayWSaws = this.state.imgArrayWSaws;
-                  imgArrayWSaws.push(obj1);
-                  this.setState({
-                    // workspaceImages : imgArrayWSaws
-                    blog1Img : imgArrayWSaws
+          // console.log("config--------------->",this.state.config);
+            var ext = newFile.name.split('.').pop();
+            if(ext=="jpg" || ext=="png" || ext=="jpeg" || ext=="JPG" || ext=="PNG" || ext=="JPEG"){
+              if (newFile) {
+                S3FileUpload
+                  .uploadFile(newFile,this.state.config)
+                  .then((Data)=>{
+                   
+                      var obj1={
+                        imgPath : Data.location,
+                      }
+                      var imgArrayWSaws = this.state.imgArrayWSaws;
+                      imgArrayWSaws.push(obj1);
+                      this.setState({
+                        // workspaceImages : imgArrayWSaws
+                        blog1Img : imgArrayWSaws
+                      })
                   })
-              })
-              .catch((error)=>{
-                console.log("formErrors");
-                console.log(error);
-              })
+                  .catch((error)=>{
+                    console.log("formErrors");
+                    console.log(error);
+                  })
 
-            // var objTitle={ 
-            //   fileInfo :newFile
-            // }
-            // // var imgTitleArrayWS = [];
-            // imgTitleArrayWS.push(objTitle);
-            // this.setState({
-            //   imageTitleArrayWS : imgTitleArrayWS
-            // })
-            //  console.log('imgArrayWS = ',imgTitleArrayWS);
+                // var objTitle={ 
+                //   fileInfo :newFile
+                // }
+                // // var imgTitleArrayWS = [];
+                // imgTitleArrayWS.push(objTitle);
+                // this.setState({
+                //   imageTitleArrayWS : imgTitleArrayWS
+                // })
+                //  console.log('imgArrayWS = ',imgTitleArrayWS);
 
 
-          }else{        
-            swal("File not uploaded","Something went wrong","error");
+              }else{        
+                swal("File not uploaded","Something went wrong","error");
+              }
+            }else{
+              swal("Please upload file","Only Upload  images format (jpg,png,jpeg)","warning"); 
+            }
           }
-        }else{
-          swal("Please upload file","Only Upload  images format (jpg,png,jpeg)","warning"); 
         }
-      }
-    }
   }
 
   deleteBlogimage(event){
@@ -320,9 +327,10 @@ uploadBlogImage(event){
                     console.log("error = ", error);
                   });
   }
+
   Submit(event){
       event.preventDefault();
-/*    if (this.validateForm() && this.validateFormReq()) {
+      /*    if (this.validateForm() && this.validateFormReq()) {
         let errors = {};
         errors[event.target.name] = "";
         this.setState({
@@ -407,8 +415,8 @@ uploadBlogImage(event){
     .catch((error)=>{
       console.log(error);
     })
-  })
-}
+    })
+  }
   validateFormReq() {
     let fields = this.state.fields;
     let errors = {};
@@ -433,7 +441,7 @@ uploadBlogImage(event){
       formIsValid = false;
       errors["addressProof"] = "This field is required.";
     }
-*/
+      */
     this.setState({
       errors: errors
     });
@@ -452,7 +460,7 @@ uploadBlogImage(event){
         errors["blogTitle"] = "Please enter valid blog title.";
       }
     }
-  /*  if (typeof fields["blogTitle"] !== "undefined") {
+      /*  if (typeof fields["blogTitle"] !== "undefined") {
       if (!fields["blogTitle"].match(/^[a-zA-Z0-9]$/)) {
         formIsValid = false;
         errors["blogTitle"] = "Please .";
@@ -466,9 +474,12 @@ uploadBlogImage(event){
   }
 
 render() {
-   
-return (
+   const { isFetching } = this.state;
+    return (
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padd20lr">
+        {isFetching ? (
+          <div>Loading...</div>
+          ) : (
           <div className="boxform1 boxLayoutBlogform">
             {/*<div className="col-lg-12 textAlignCenter createBlogLabel"><label className="">Create Blog</label></div>*/}
               <form id="blogForm" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding blogFormBox">
@@ -574,6 +585,7 @@ return (
                   </div>
               </form>
           </div>
+          )}
         </div>
       );
   }
