@@ -79,7 +79,8 @@
 }
 
 .serflip-card-back p{
-  letter-spacing: 0.5px;
+  letter-spacing: 0px;
+  font-size: 13px;
 }
 .downstreamservicesblock{
 	  background-color: #fff;

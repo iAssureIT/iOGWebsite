@@ -13,6 +13,7 @@ export default class newbanner extends Component {
       }
 
 componentDidMount(){
+    $("#new_HoverDivhide").css("display", "none");
 
  
   $(document).ready(function(){
@@ -95,7 +96,7 @@ pinclick(event){
 
   $(document).ready(function(){
     $(".ripplebox").click(function(){
-    $(".new_HoverDiv").show();
+     $("#new_HoverDivhide").css("display", "block");
     $("#blackbackground").show();
     $(".ripplebox").hide();
     $(".boat_img").css('opacity','0.2');
@@ -259,7 +260,7 @@ pin3click(event){
                       <span style={{"--i":"5"}}></span>
                      </div>
                    </div>
-                  <div className="new_HoverDiv"onClick={this.pinremoveclick.bind(this)}>
+                  <div className="new_HoverDiv" id="new_HoverDivhide"onClick={this.pinremoveclick.bind(this)}>
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"165px"}}>
                    { <div><i className="fa fa-times hover_close"></i></div>}

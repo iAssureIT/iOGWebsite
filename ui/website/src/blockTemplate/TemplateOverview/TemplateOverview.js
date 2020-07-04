@@ -58,7 +58,7 @@ console.log("==>",this.props.block_id);
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid innerBlocktepmlate1 NOPadding">
           {console.log(".blockDescription",this.state.blockDescription)}
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-md-offset-5 col-lg-offset-5">
-           <div class="B2T1_line col-lg-1 col-lg-offset-2">
+           <div class="B2T1_line col-lg-4 col-lg-offset-2"style={{left:"24px"}}>
          </div>
         </div>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

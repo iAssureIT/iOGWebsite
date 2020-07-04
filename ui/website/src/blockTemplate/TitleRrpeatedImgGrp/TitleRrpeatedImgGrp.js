@@ -156,7 +156,7 @@ componentDidMount(){
 		
 			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 			  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-md-offset-5 col-lg-offset-5">
-		        <div class="B2T1_line col-lg-1 col-lg-offset-2 ">
+		        <div class="B2T1_line col-lg-4 col-lg-offset-2 ">
 		        </div>
 		        {console.log("second",second)}
 		        </div>

@@ -115,45 +115,42 @@ componentDidMount(){
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       
                       <div className="row"> 
-                        <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"> 
+                        <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1"> 
                           <div className="col-lg-12">
-                            <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
-                             <div class="col-lg-2 col-md-2 col-md-offset-5 col-lg-offset-5">
-                              <div class="line4 col-lg-1 col-md-1  col-lg-offset-1">
-                              </div>
-                            </div>
-                          </div>
+                            <div className="col-lg-2 col-lg-offset-5">
+                             <div className="line1 col-lg-4 col-lg-offset-2"></div>
+                          </div> 
                             <h2 className="text-center lightbluetext para-top_website">{this.state.blocks.blockTitle}</h2>                   
-                        </div> 
+                      </div> 
                           <div className="row"> 
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
-                                console.log("dta=======>",data);
+                                // console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2  col-lg-4 col-md-6 col-sm-6 col-xs-6";
+                                    var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-6 col-xs-6 text-center";
+                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
                                  
                                 }
                                 }else if(productlength == 1){
                                   // console.log('productlength')
                                   if(plength === index+1){
-                                    var classes = "webpageshopcont col-lg-4 col-md-6 col-xs-6 col-lg-offset-4   text-center";                                   
+                                    var classes = "webpageshopcont col-lg-4 col-xs-12 col-lg-offset-4   text-center";                                   
                                   }else{
-                                    var classes="webpageshopcont col-lg-4 col-md-6  col-sm-6 col-xs-6  text-center";                                 
+                                    var classes="webpageshopcont col-lg-4 col-md-4  col-sm-12 col-xs-12  text-center";                                 
                                 }
                                 }else{
-                                  var classes="webpageshopcont col-lg-4 col-md-6 col-sm-8 col-xs-8   text-center";                               
+                                  var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               
                                 }
                                  return (
                                 <div key={index} className={classes}>
-                                  <a href={"/masterpage/"+data.Link} data-toggle="tooltip" title="Click me to read more!">
+                                  <a href={data.Link} data-toggle="tooltip" title="Click me to read more!">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="row">
                                           <div className="text-center">
-                                            <div className="serflip-card">
+                                            <div className="serflip-card"style={{width:"300px"}}>
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front">
                                                     <img src={data.Image} alt=""/>

@@ -81,12 +81,12 @@ export default class Header extends Component {
               <div class="col-lg-12 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                    <h5 className="columnhead"><a href="/planningschedul" className="columnhead">Planning & Scheduling</a></h5>
-                      <a className="columnheadsub" href="/refineryplanning">Production Planning </a>
-                      <a className="columnheadsub" href="/refineryschedule">Production Schedule</a>
-                      <a className="columnheadsub" href="/backcasting"> Retro-Analysis</a>
-                      <a className="columnheadsub" href="/lputility">LP Utilities</a>
-                      <a className="columnheadsub" href="/lpconfig">LP Configuration studies</a>
+                    <h5 className="columnhead"><a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
+                       <a href="/masterpage/production-plannning">Production Planning </a>
+                       <a href="/masterpage/refinery-scheduling">Production Schedule</a>
+                       <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
+                       <a href="/masterpage/lp-utilities">LP Utilities</a>
+                       <a href="/masterpage/lp-configuration">LP Configuration studies</a>
                  </div> 
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{padding:"0px"}}>
                  <h5 className="columnhead"><a href="/masterpage/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
