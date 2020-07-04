@@ -1051,7 +1051,7 @@ height: 90px;
     opacity:1;
   }
 
-/*.new_HoverDiv  img {
+.new_HoverDiv  img {
     
        -webkit-animation: rotation 45s infinite linear;
 }
@@ -1074,7 +1074,7 @@ height: 90px;
   to {
     transform: rotate(150deg);
   }
-}*/
+}
 
   #blackbackground{
     display: none;
