@@ -9,7 +9,7 @@ import swal from 'sweetalert';
 import PropTypes from 'prop-types';
 import CKEditor from 'ckeditor4-react';
 
-export default class BlogsForm extends React.PureComponent{
+class BlogsForm extends React.PureComponent{
   constructor(props) {
     super(props);
     this.state={
@@ -34,7 +34,7 @@ export default class BlogsForm extends React.PureComponent{
               "clientName"    : " ",
               "clientEmail"   : " ",
             },
-            "editId"          : "" /*this.props.match.params ? this.props.match.params.blogURL : ''*/
+            "editId"          : this.props.match.params ? this.props.match.params.blogURL : ''
           };
           this.handleChange = this.handleChange.bind( this );
           this.onEditorChange = this.onEditorChange.bind( this );
@@ -98,7 +98,7 @@ export default class BlogsForm extends React.PureComponent{
   }
 
   componentDidMount(){
-       this.edit();
+
       axios
         .get('/api/projectsettings/get/S3')
         .then((response)=>{
@@ -126,7 +126,7 @@ export default class BlogsForm extends React.PureComponent{
                 }
         })
         
-
+        this.edit();
     }
 
   handleChange(event){
@@ -312,7 +312,7 @@ export default class BlogsForm extends React.PureComponent{
           .patch('/api/blogs/patch/'+id,formValues)
           .then((res)=>{
                       swal(" Your Blog Update successfully ");
-                       this.props.history.push("/allblogs");
+                       this.props.history.push("/cms/AllBlogs");
 
                   })
                   .catch((error)=>{
@@ -465,10 +465,13 @@ export default class BlogsForm extends React.PureComponent{
     return formIsValid;
   }
 
-  render() {
+render() {
+   const { isFetching } = this.state;
     return (
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padd20lr">
-
+        {isFetching ? (
+          <div>Loading...</div>
+          ) : (
           <div className="boxform1 boxLayoutBlogform">
             {/*<div className="col-lg-12 textAlignCenter createBlogLabel"><label className="">Create Blog</label></div>*/}
               <form id="blogForm" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding blogFormBox">
@@ -574,10 +577,10 @@ export default class BlogsForm extends React.PureComponent{
                   </div>
               </form>
           </div>
-         
+          )}
         </div>
       );
   }
 }
-// export default withRouter(BlogsForm);
+export default withRouter(BlogsForm);
 

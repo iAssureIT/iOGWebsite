@@ -986,7 +986,7 @@ class CmsBlock extends Component {
                       															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image: this.state.repeteddemoimg } alt="Bannerpng"/>
                       															<div className="middle">
                                                         <i className="fa fa-pencil rclr hoverbbk" onClick={this.editReDBlock.bind(this)} id={data._id}></i>    
-                      															    <i className="fa fa-trash rclr hoverbbk" ></i>{/*id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)}*/}
+                      															    {/*<i className="fa fa-trash rclr hoverbbk" ></i>*/}{/*id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)}*/}
                       															</div>
                       															<a href={"/block/"+data.Link}>
                       															{/*<p className="blogDate p10 mtop20 graycolor">{this.state.repetedGroup.createdAt}</p>*/}

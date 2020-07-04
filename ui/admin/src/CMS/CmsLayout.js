@@ -94,15 +94,15 @@ export default class CmsLayout extends React.Component {
                         */}
                     	<div>
                     	<Header />
-                            <Route path="/cms/masterpage/:pageurl"              component={ MasterPage } /> 
+                            <Route path="/cms/masterpage/:pageurl"         exact strict   component={ MasterPage } /> 
                                                     
-                            <Route path="/"                      exact strict component={CmsDashBoard}  />
-                            <Route path="/cms/create-new-page"                         exact strict component={ViewPage_1}  />
-                            <Route path="/cms/new-page-add-block"                         exact strict component={ViewPage_2}  />
-                            <Route path="/cms/new-page-add-block/:id"                     exact strict component={ViewPage_2}  />
-                            <Route path="/cms/select-new-block"                        exact strict component={ViewBlock_1}  />
-                            <Route path="/cms/create-new-block"                        exact strict component={ViewBlock_2}  />
-                            <Route path="/cms/view-blocks"                        exact strict component={ViewBlock_3}  />
+                            <Route path="/"                                exact strict component={CmsDashBoard}  />
+                            <Route path="/cms/create-new-page"             exact strict component={ViewPage_1}  />
+                            <Route path="/cms/new-page-add-block"          exact strict component={ViewPage_2}  />
+                            <Route path="/cms/new-page-add-block/:id"      exact strict component={ViewPage_2}  />
+                            <Route path="/cms/select-new-block"            exact strict component={ViewBlock_1}  />
+                            <Route path="/cms/create-new-block"            exact strict component={ViewBlock_2}  />
+                            <Route path="/cms/view-blocks"                 exact strict component={ViewBlock_3}  />
                             
          					
          					<Route path="/cms/singleblog" 					exact strict component={ SingleBlogPage }  />   
