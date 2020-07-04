@@ -39,6 +39,13 @@ class BlogsForm extends React.PureComponent{
           this.handleChange = this.handleChange.bind( this );
           this.onEditorChange = this.onEditorChange.bind( this );
   }
+/*
+  shouldComponentUpdate() {
+    // console.log('Greeting - shouldComponentUpdate lifecycle');
+
+    return false;
+  }*/
+
  /* componentWillMount() {
       this.setState({count: 1});
   }
@@ -130,20 +137,11 @@ class BlogsForm extends React.PureComponent{
 
   handleChange(event){
       event.preventDefault();
-
-
       // var noSpecial = alert(this.state.blogTitle.replace(/[^a-zA-Z ]/g, " "));
-
-
-
-      
           this.setState({
              [event.target.name]  : event.target.value, 
                 "pageUrl"         : this.refs.blogTitle.value.replace(/[^a-zA-Z ]/g, " ").toLowerCase().split(" ").join("-"),
-      
-      });
-    
-     
+      }); 
   }
   uploadDesignImg(event){
     console.log("upload =",event.target.files[0]);
