@@ -9,7 +9,7 @@ import swal from 'sweetalert';
 import PropTypes from 'prop-types';
 import CKEditor from 'ckeditor4-react';
 
-class BlogsForm extends React.PureComponent{
+export default class BlogsForm extends React.PureComponent{
   constructor(props) {
     super(props);
     this.state={
@@ -34,7 +34,7 @@ class BlogsForm extends React.PureComponent{
               "clientName"    : " ",
               "clientEmail"   : " ",
             },
-            "editId"          : this.props.match.params ? this.props.match.params.blogURL : ''
+            "editId"          : "" /*this.props.match.params ? this.props.match.params.blogURL : ''*/
           };
           this.handleChange = this.handleChange.bind( this );
           this.onEditorChange = this.onEditorChange.bind( this );
@@ -69,17 +69,12 @@ class BlogsForm extends React.PureComponent{
           blogContent: evt.editor.getData()
       } );
   }
-  edit(e){
+  edit(){
     
-    var pageUrl = window.location.pathname;
+      var pageUrl = window.location.pathname;
       // console.log("pageUrl in blog = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
-          // console.log("a==>",a[3]); 
-          this.setState( {
-              editUrl: a[3]
-          });
-        
-    axios
+      axios
       .get("/api/blogs/get/"+a[3])
       .then((response)=>{
         console.log("===>",response.data);
@@ -90,6 +85,7 @@ class BlogsForm extends React.PureComponent{
           "typeOfBlog"    :response.data.typeOfBlog,
           "blogContent"   :response.data.blogContent,
           "updateID"      : response.data._id,
+          "editUrl"       : a[3],
           "imgbPath"      :{
                               path:response.data.bannerImage.path
                             },
@@ -100,11 +96,9 @@ class BlogsForm extends React.PureComponent{
       });
 
   }
-/*  componentWillReceiveProps(){
-    // this.edit();
-  }*/
+
   componentDidMount(){
-    // this.edit();
+       this.edit();
       axios
         .get('/api/projectsettings/get/S3')
         .then((response)=>{
@@ -131,7 +125,7 @@ class BlogsForm extends React.PureComponent{
                      this.props.history.push("/");
                 }
         })
-           this.edit();
+        
 
     }
 
@@ -471,13 +465,10 @@ class BlogsForm extends React.PureComponent{
     return formIsValid;
   }
 
-render() {
-   const { isFetching } = this.state;
+  render() {
     return (
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padd20lr">
-        {isFetching ? (
-          <div>Loading...</div>
-          ) : (
+
           <div className="boxform1 boxLayoutBlogform">
             {/*<div className="col-lg-12 textAlignCenter createBlogLabel"><label className="">Create Blog</label></div>*/}
               <form id="blogForm" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding blogFormBox">
@@ -583,10 +574,10 @@ render() {
                   </div>
               </form>
           </div>
-          )}
+         
         </div>
       );
   }
 }
-export default withRouter(BlogsForm);
+// export default withRouter(BlogsForm);
 

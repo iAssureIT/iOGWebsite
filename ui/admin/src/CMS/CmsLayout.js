@@ -105,11 +105,11 @@ export default class CmsLayout extends React.Component {
                             <Route path="/cms/view-blocks"                        exact strict component={ViewBlock_3}  />
                             
          					
-         					<Route path="/cms/singleblog" 					component={ SingleBlogPage }  />   
-         					<Route path="/cms/blogs-form" 					component={ BlogsFormPage }  />   
-         					<Route path="/cms/blogs-form/:blogURL" 					component={ BlogsFormPage }  />   
-         					<Route path="/cms/AllBlogs" 					component={ AllBlogs }  />   
-         					<Route path="/cms/singleblog/:selectedUrl" 					component={ SingleBlogPage }  />   
+         					<Route path="/cms/singleblog" 					exact strict component={ SingleBlogPage }  />   
+         					<Route path="/cms/blogs-form" 					exact strict component={ BlogsFormPage }  />   
+         					<Route path="/cms/blogs-form/:blogURL" 			exact strict component={ BlogsFormPage }  />   
+         					<Route path="/cms/AllBlogs" 					exact strict component={ AllBlogs }  />   
+         					<Route path="/cms/singleblog/:selectedUrl" 		exact strict component={ SingleBlogPage }  />   
          					{/*<Route path="/cms/contact-us" 					component={ SingleBlogPage }  />   */}
          					{/*<Route path="/cms/job-application" 					component={ JobForm }  /> */}  
          					{/*<Route path="/cms/homepage" 					component={ Homepage }  />   */}
