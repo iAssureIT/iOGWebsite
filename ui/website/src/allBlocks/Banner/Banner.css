@@ -1444,6 +1444,7 @@ height: 90px;
   position: absolute;
   left: 51px;
   top: -24px;
+  z-index: 10000000;
 
 }
 .ripplebox1 {
@@ -1523,6 +1524,37 @@ height: 90px;
   .hover_close:hover{
     cursor: pointer;
   }
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 20s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+
+svg {
+  width: 80vw;
+}
+.squiggle {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 200;
+  animation: draw 8s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.svgBox{
+    margin-top: 172px;
+    margin-left: 100px;
+
+}
 
 
 

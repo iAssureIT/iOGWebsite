@@ -57,7 +57,7 @@ export default class Header extends Component {
               </button>
               <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
                  <a href="/masterpage/about-us">Company Profile</a>
-                 <a href="/masterpage/foundersprofilepage">Founder's Profile</a>
+                 <a href="/masterpage/founder-profile">Founder's Profile</a>
                  <a href="/masterpage/news-&amp;-events">News &amp; Events</a>
                  
                  <a href="/ourjourny">Our Journey</a>
