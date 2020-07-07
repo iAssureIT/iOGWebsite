@@ -13,6 +13,39 @@ export default class newbanner extends Component {
       }
 
 componentDidMount(){
+  
+   
+    $(function(){
+  
+  var useMax = false;
+  if (useMax){
+       $('.box').css('-webkit-transform', 'rotate(0deg)');
+    
+  }else {
+    
+    setInterval(function(){      
+      var deg = -Math.random() *   100;
+
+        $('.box').css('-webkit-transform', 'rotate(' + deg   +'deg)')
+        .css('-moz-transform', 'rotate(' + deg   +'deg)')
+        .css('-ms-transform', 'rotate(' + deg   +'deg)')
+;
+
+
+      
+           deg = -Math.random() *   100;
+      
+        $('.gauge2 .box').css('-webkit-transform', 'rotate(' + deg   +'deg)');
+    
+      console.log(deg);
+
+    }, 1000);
+  }
+  
+});
+  
+
+
     $(".new_HoverDiv").css("display", "none");
      $("#hidemydiv").css("display", "none");
     $("#hidemydiv").delay(3200).fadeOut(3000);
@@ -26,14 +59,15 @@ componentDidMount(){
   });
  
 } 
+
 pinremoveclick(event){
    $(document).ready(function(){
       $(".new_HoverDiv").click(function(){
-      $("#blackbackground").css("display", "none");
+      $(".banner-cover").css("display", "none");
       $(".new_HoverDiv").css("display", "none");
        $(".ripplebox").show();
        $("#hidemydiv").show().delay(3200).fadeOut(3000);;
-      $(".boat_img").css('opacity','0.8');
+      /*$(".boat_img").css('opacity','0.8');
       $(".oilimage").css('opacity','0.8');
       $(".gasimage").css('opacity','0.8');
       $(".plantimage1").css('opacity','0.8');
@@ -42,7 +76,7 @@ pinremoveclick(event){
       $(".petrolimage1").css('opacity','0.8');
       $(".waterimg2").css('opacity','0.8');
       $(".nexttogasimage").css('opacity','0.8');
-      $(".boat_img2").css('opacity','0.8');
+      $(".boat_img2").css('opacity','0.8');*/
 
      });
 
@@ -52,10 +86,10 @@ pinremoveclick(event){
 pin1removeclick(event){
    $(document).ready(function(){
       $(".new_HoverDiv1").click(function(){
-      $("#blackbackground").hide();
+      $(".banner-cover").hide();
       $(".new_HoverDiv1").hide();
        $(".ripplebox1").show();
-      $(".boat_img").css('opacity','0.8');
+      /*$(".boat_img").css('opacity','0.8');
       $(".oilimage").css('opacity','0.8');
       $(".gasimage").css('opacity','0.8');
       $(".plantimage1").css('opacity','0.8');
@@ -64,7 +98,7 @@ pin1removeclick(event){
       $(".petrolimage1").css('opacity','0.8');
       $(".waterimg2").css('opacity','0.8');
       $(".nexttogasimage").css('opacity','0.8');
-      $(".waterimg").css('opacity','0.8');
+      $(".waterimg").css('opacity','0.8');*/
 
      });
 
@@ -74,25 +108,42 @@ pin1removeclick(event){
 pin3removeclick(event){
   $(document).ready(function(){
       $(".new_HoverDiv3").click(function(){
-      $("#blackbackground").hide();
+      $(".banner-cover").hide();
       $(".new_HoverDiv3").hide();
        $(".ripplebox2").show();
-      $(".boat_img").css('opacity','0.8');
-      $(".oilimage").css('opacity','0.8');
-      $(".gasimage").css('opacity','0.8');
-      $(".boat_img2").css('opacity','0.8');
-      $(".plantimage11").css('opacity','0.8');
-      $(".petrolimage").css('opacity','0.8');
-      $(".petrolimage1").css('opacity','0.8');
-      $(".waterimg2").css('opacity','0.8');
-      $(".nexttogasimage").css('opacity','0.8');
-      $(".waterimg").css('opacity','0.8');
-
      });
 
    });
+}
+pin4removeclick(event){
+  $(document).ready(function(){
+      $(".new_HoverDiv4").click(function(){
+      $(".banner-cover").hide();
+      $(".new_HoverDiv4").hide();
+      $(".ripplebox2").show();
+     });
 
+   });
+}
+pin5removeclick(event){
+  $(document).ready(function(){
+      $(".new_HoverDiv6").click(function(){
+      $(".banner-cover").hide();
+      $(".new_HoverDiv6").hide();
+      $(".ripplebox4").show();
+     });
 
+   });
+}
+pin6removeclick(event){
+  $(document).ready(function(){
+      $(".new_HoverDiv5").click(function(){
+      $(".banner-cover").hide();
+      $(".new_HoverDiv5").hide();
+      $(".ripplebox5").show();
+     });
+
+   });
 }
 pinclick(event){
 
@@ -100,19 +151,9 @@ pinclick(event){
     $(".rippleboxhov").click(function(){
      $(".new_HoverDiv").css("display", "block");
      $(".new_HoverDiv").fadeIn();
-    $("#blackbackground").css("display", "block");
+    $(".banner-cover").css("display", "block");
     $(".ripplebox").css("display", "none");
-    $(".boat_img").css('opacity','0.2');
-    $(".oilimage").css('opacity','0.2');
-    $(".gasimage").css('opacity','0.2');
-    $(".plantimage1").css('opacity','0.2');
-    $(".plantimage11").css('opacity','0.2');
-    $(".petrolimage").css('opacity','0.2');
-    $(".petrolimage1").css('opacity','0.2');
-    $(".waterimg2").css('opacity','0.2');
-    $(".nexttogasimage").css('opacity','0.2');
-    $(".boat_img2").css('opacity','0.2');
-
+     $(".waterimg").css('z-index','110');
     });
   });
 } 
@@ -121,20 +162,9 @@ pin2click(event){
   $(document).ready(function(){
     $(".ripplebox1").click(function(){
     $(".new_HoverDiv1").show();
-    $("#blackbackground").show();
+    $(".banner-cover").show();
     $(".ripplebox1").hide();
-    $(".boat_img").css('opacity','0.2');
-    $(".oilimage").css('opacity','0.2');
-    $(".gasimage").css('opacity','0.2');
-    $(".plantimage1").css('opacity','0.2');
-    $(".plantimage11").css('opacity','0.2');
-    $(".petrolimage").css('opacity','0.2');
-    $(".petrolimage1").css('opacity','0.2');
-    $(".waterimg2").css('opacity','0.2');
-    $(".nexttogasimage").css('opacity','0.2');
-    $(".boat_img2").css('opacity','1');
-    $(".waterimg").css('opacity','0.2');
-
+    $(".boat_img2").css('z-index','110');
     });
   });
 } 
@@ -143,23 +173,53 @@ pin3click(event){
   $(document).ready(function(){
     $(".ripplebox2").click(function(){
     $(".new_HoverDiv3").show();
-    $("#blackbackground").show();
+    $(".banner-cover").show();
     $(".ripplebox2").hide();
-    $(".boat_img").css('opacity','0.2');
-    $(".oilimage").css('opacity','0.2');
-    $(".gasimage").css('opacity','0.2');
-    $(".boat_img2").css('opacity','0.2');
-    $(".plantimage11").css('opacity','0.2');
-    $(".petrolimage").css('opacity','0.2');
-    $(".petrolimage1").css('opacity','0.2');
-    $(".waterimg2").css('opacity','0.2');
-    $(".nexttogasimage").css('opacity','0.2');
-    $(".waterimg").css('opacity','0.2');
+    $(".plantimage1").css('z-index','110');
 
     });
   });
 
 }
+pin4click(event){
+  $(document).ready(function(){
+    $(".ripplebox3").click(function(){
+    $(".new_HoverDiv4").show();
+    $(".banner-cover").show();
+    $(".ripplebox3").hide();
+    
+
+    });
+  });
+
+}
+pin5click(event){
+  $(document).ready(function(){
+    $(".ripplebox4").click(function(){
+    $(".new_HoverDiv6").show();
+    $(".banner-cover").show();
+    $(".ripplebox4").hide();
+    $(".waterimg2").css('z-index','110');
+    
+
+    });
+  });
+
+}
+pin6click(event){
+  $(document).ready(function(){
+    $(".ripplebox5").click(function(){
+    $(".new_HoverDiv5").show();
+    $(".banner-cover").show();
+    $(".ripplebox5").hide();
+    $(".nexttogasimage").css('z-index','110');
+    
+
+    });
+  });
+
+}
+
 
 
   render() {  
@@ -205,8 +265,19 @@ pin3click(event){
                  <img alt="" src="/images/Banner3_8.png" className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="nexttogasimage">
+                 <div className="ripplediv">
+                     <div className=" ripplebox5" onClick={this.pin6click.bind(this)} title="Click Me">
+                      <span style={{"--i":"1"}}></span>
+                      <span style={{"--i":"2"}}></span>
+                      <span style={{"--i":"3"}}></span>
+                      <span style={{"--i":"4"}}></span>
+                      <span style={{"--i":"5"}}></span>
+                     </div>
+                   </div>
                  <div className="new_HoverDiv5">
+                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
+                    <i className="fa fa-times hover_close"onClick={this.pin6removeclick.bind(this)}></i>
                    <p className="newhovertxt_8"> Entire process of chemicals takes place here. </p>
                    <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
@@ -246,8 +317,19 @@ pin3click(event){
                  <img alt="" className="img-responsive"src="/images/Banner3_6.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="plantimage11">
-                 <div className="new_HoverDiv4"> 
+                 <div className="ripplediv">
+                     <div className="ripplebox3" onClick={this.pin4click.bind(this)} title="Click Me">
+                      <span className="rippleboxhov" style={{"--i":"1"}}></span>
+                      <span className="rippleboxhov" style={{"--i":"2"}}></span>
+                      <span className="rippleboxhov" style={{"--i":"3"}}></span>
+                      <span className="rippleboxhov" style={{"--i":"4"}}></span>
+                      <span className="rippleboxhov" style={{"--i":"5"}}></span>
+                     </div>
+                   </div>
+                 <div className="new_HoverDiv4"onClick={this.pin4removeclick.bind(this)}> 
+                  <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
+                     <i className="fa fa-times hover_close"onClick={this.pin4removeclick.bind(this)}></i>
                      <p className="newhovertxt_4">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
                    <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
@@ -280,15 +362,41 @@ pin3click(event){
                    <img alt="" className="img-responsive  "src="/images/Banner3_1.png"style={{width:"130px"}}/> 
                     {/*  <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
                        <a href="/masterpage/oil-&-gas-e-&-p">
-
-                        </a> 
+                       </a> 
                       </p>*/}
                 </figure>
-                <div className="svgBox"id="hidemydiv">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.44 74.33">
-                    <path class="squiggle" fill="none" stroke="#555" stroke-miterlimit="10" stroke-width="1" d="M14.2 65.54s36-36.79 56.31-35.66 38.6 27.31 58.13 26.56 26.34-5.91 37.6-13 30.53-19.52 39.48-19.14 19.48 8.23 31.12 19.87 18.91  13.27" />
-                  </svg>
-                </div>
+                {/*<div className="svgBox">
+                    <ul class="chart-skills">
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                    </ul>
+                </div>*/}
+               {/* <div className="svgBox1">
+                    <ul class="chart-skills1">
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                    </ul>
+                </div>*/}
                  <figure className="boat_img"style={{overflow:"hidden"}}>
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
                 </figure>
@@ -306,15 +414,26 @@ pin3click(event){
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
                     <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>
-                   <p className="newhovertxt_e_p">The upstream segment of oil & gas industry, also known as Exploration & Production (E&P)</p>
+                    <p className="newhovertxt_e_p">The upstream segment of oil & gas industry, also known as Exploration & Production (E&P)</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
                    <img alt="" className="img-responsive tabimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
                 </figure>
                 <figure className="waterimg2">
+                  <div className="ripplediv">
+                     <div className=" ripplebox4" onClick={this.pin5click.bind(this)} title="Click Me">
+                      <span style={{"--i":"1"}}></span>
+                      <span style={{"--i":"2"}}></span>
+                      <span style={{"--i":"3"}}></span>
+                      <span style={{"--i":"4"}}></span>
+                      <span style={{"--i":"5"}}></span>
+                     </div>
+                   </div>
                  <div className="new_HoverDiv6">
+                  <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"139px"}}>
+                   <i className="fa fa-times hover_close"onClick={this.pin5removeclick.bind(this)}></i>
                    <p className="newhovertxt_6">Merchandising different types of oil and gas</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
@@ -322,9 +441,10 @@ pin3click(event){
                  <img alt="" className="img-responsive"src="/images/newbanner_img4.png"style={{width:"110px"}}/>
                 </figure>
                </div> 
-               </div> 
-
+              </div> 
           </div>
+        </div>
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-cover NOpadding">   
         </div>
         <div className="resbanner hidden-lg hidden-md"></div>
       </div>
