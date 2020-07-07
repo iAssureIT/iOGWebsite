@@ -13,33 +13,51 @@ export default class newbanner extends Component {
       }
 
 componentDidMount(){
-
- // $('.banner-cover').css("display", "none");
-
-  $("#waterimgDiv").hover(function() { 
-       $('#blackbannerDiv').css('background','#0f0f0f','z-index','120').removeClass('hiddendiv');
+  
+   
+    $(function(){
+  
+  var useMax = false;
+  if (useMax){
+       $('.box').css('-webkit-transform', 'rotate(0deg)');
     
-    }, function() {
-      $('#blackbannerDiv').css('background','#0f0f0f','z-index','120').addClass('hiddendiv');
-     
-    });
+  }else {
+    
+    setInterval(function(){      
+      var deg = -Math.random() *   100;
 
-   /*$("#waterimg2Div").hover(function() { 
-       $('.banner-cover').css('background','#0f0f0f','z-index','220').removeClass('hiddendiv');
-    
-    
-    }, function() {
-      $('.banner-cover').css('background','#0f0f0f','z-index','220').addClass('hiddendiv');
-     
-    });
+        $('.box').css('-webkit-transform', 'rotate(' + deg   +'deg)')
+        .css('-moz-transform', 'rotate(' + deg   +'deg)')
+        .css('-ms-transform', 'rotate(' + deg   +'deg)')
+;
 
-    $("#boat_img2Div").hover(function() { 
-       $('.banner-cover').css('background','#0f0f0f').removeClass('hiddendiv');
+
+      
+           deg = -Math.random() *   100;
+      
+        $('.gauge2 .box').css('-webkit-transform', 'rotate(' + deg   +'deg)');
     
-    }, function() {
-      $('.banner-cover').css('background','#0f0f0f').addClass('hiddendiv');
-     
-    });*/
+      console.log(deg);
+
+    }, 1000);
+  }
+  
+});
+  
+
+
+    $(".new_HoverDiv").css("display", "none");
+     $("#hidemydiv").css("display", "none");
+    $("#hidemydiv").delay(3200).fadeOut(3000);
+  
+  $(document).ready(function(){
+    $(".waterimg").hover(function(){
+        $("#backimage1").toggleClass(".onhoverBackgImg");
+
+    })
+ 
+  });
+ 
 } 
 
 pinremoveclick(event){
@@ -246,8 +264,8 @@ pin6click(event){
                 <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage"style={{width:"241px"}}/>
                 </figure>
-                <figure className="nexttogasimage"id="nexttogasimageDiv">
-                 {/*<div className="ripplediv">
+                <figure className="nexttogasimage">
+                 <div className="ripplediv">
                      <div className=" ripplebox5" onClick={this.pin6click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -255,7 +273,7 @@ pin6click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>*/}
+                   </div>
                  <div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
@@ -269,7 +287,7 @@ pin6click(event){
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
-                <figure className="petrolimage1"id="petrolimage1">
+                <figure className="petrolimage1">
                  <div className="new_HoverDiv2">
                   <div style={{width:"165px"}}>
                    <p className="newhovertxt"> Entire process of refining takes place here. </p>
@@ -278,8 +296,8 @@ pin6click(event){
                  </div>
                  <img alt="" className="img-responsive tabimage"src="/images/newbanner_img5.png"style={{width:"241px"}}/>
                 </figure>
-                 <figure className="plantimage1"id="plantimage1Div">
-                  {/* <div className="ripplediv">
+                 <figure className="plantimage1">
+                   <div className="ripplediv">
                      <div className=" ripplebox2" onClick={this.pin3click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -287,11 +305,11 @@ pin6click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>*/}
+                   </div>
                   <div className="new_HoverDiv3">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"188px"}}>
-                   {/* <i className="fa fa-times hover_close"onClick={this.pin3removeclick.bind(this)}></i>*/}
+                    <i className="fa fa-times hover_close"onClick={this.pin3removeclick.bind(this)}></i>
                    <p className="newhovertxt_ptrchemical">Petrochemical industry & its higher value addition in recent volatile oil market.</p>
                    <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
@@ -300,38 +318,38 @@ pin6click(event){
                 </figure>
                 <figure className="plantimage11">
                  <div className="ripplediv">
-                    {/* <div className="ripplebox3" onClick={this.pin4click.bind(this)} title="Click Me">
+                     <div className="ripplebox3" onClick={this.pin4click.bind(this)} title="Click Me">
                       <span className="rippleboxhov" style={{"--i":"1"}}></span>
                       <span className="rippleboxhov" style={{"--i":"2"}}></span>
                       <span className="rippleboxhov" style={{"--i":"3"}}></span>
                       <span className="rippleboxhov" style={{"--i":"4"}}></span>
                       <span className="rippleboxhov" style={{"--i":"5"}}></span>
-                     </div>*/}
+                     </div>
                    </div>
                  <div className="new_HoverDiv4"onClick={this.pin4removeclick.bind(this)}> 
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                     {/*<i className="fa fa-times hover_close"onClick={this.pin4removeclick.bind(this)}></i>*/}
+                     <i className="fa fa-times hover_close"onClick={this.pin4removeclick.bind(this)}></i>
                      <p className="newhovertxt_4">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
                    <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
                  <img alt="" className="img-responsive tabimage"src="/images/newbanner_img7.png"style={{width:"241px"}}/>
                 </figure>
-                <figure className="waterimg"id="waterimgDiv">
+                <figure className="waterimg">
                   <div className="ripplediv">
-                    {/* <div className="ripplebox" onClick={this.pinclick.bind(this)} title="Click Me">
+                     <div className="ripplebox" onClick={this.pinclick.bind(this)} title="Click Me">
                       <span className="rippleboxhov" style={{"--i":"1"}}></span>
                       <span className="rippleboxhov" style={{"--i":"2"}}></span>
                       <span className="rippleboxhov" style={{"--i":"3"}}></span>
                       <span className="rippleboxhov" style={{"--i":"4"}}></span>
                       <span className="rippleboxhov" style={{"--i":"5"}}></span>
-                     </div>*/}
+                     </div>
                    </div>
-                  <div className="new_HoverDiv">
+                  <div className="new_HoverDiv" id="new_HoverDivhide"onClick={this.pinremoveclick.bind(this)}>
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"165px"}}>
-                   {/* <div><i className="fa fa-times hover_close"></i></div>*/}
+                   { <div><i className="fa fa-times hover_close"></i></div>}
                      <p className="newhovertxt_1">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
                       <a href="/masterpage/lng">
                        <span className="servicekbtnarrow3">
@@ -379,11 +397,11 @@ pin6click(event){
                       </li>
                     </ul>
                 </div>*/}
-                 <figure className="boat_img"style={{overflow:"hidden"}} id="boat_imgDiv">
+                 <figure className="boat_img"style={{overflow:"hidden"}}>
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
                 </figure>
-                 <figure className="boat_img2" id="boat_img2Div">
-                 {/* <div className="ripplediv">
+                 <figure className="boat_img2">
+                  <div className="ripplediv">
                      <div className=" ripplebox1" onClick={this.pin2click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -391,19 +409,19 @@ pin6click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>*/}
+                   </div>
                   <div className="new_HoverDiv1">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
-                   {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
+                    <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>
                     <p className="newhovertxt_e_p">The upstream segment of oil & gas industry, also known as Exploration & Production (E&P)</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
                    <img alt="" className="img-responsive tabimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
                 </figure>
-                <figure className="waterimg2"id="waterimg2Div">
-                 {/* <div className="ripplediv">
+                <figure className="waterimg2">
+                  <div className="ripplediv">
                      <div className=" ripplebox4" onClick={this.pin5click.bind(this)} title="Click Me">
                       <span style={{"--i":"1"}}></span>
                       <span style={{"--i":"2"}}></span>
@@ -411,10 +429,11 @@ pin6click(event){
                       <span style={{"--i":"4"}}></span>
                       <span style={{"--i":"5"}}></span>
                      </div>
-                   </div>*/}
+                   </div>
                  <div className="new_HoverDiv6">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"139px"}}>
+                   <i className="fa fa-times hover_close"onClick={this.pin5removeclick.bind(this)}></i>
                    <p className="newhovertxt_6">Merchandising different types of oil and gas</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
@@ -425,7 +444,7 @@ pin6click(event){
               </div> 
           </div>
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-cover  NOpadding" id="blackbannerDiv">   
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-cover NOpadding">   
         </div>
         <div className="resbanner hidden-lg hidden-md"></div>
       </div>

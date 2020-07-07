@@ -75,7 +75,7 @@ export default class Header extends Component {
               </div>
             </div> 
             <div class="dropdown ">
-              <button class="dropbtn">EXPERTIES 
+              <button class="dropbtn">EXPERTISE
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="col-lg-12 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown" style={{position:"fixed"}}>
