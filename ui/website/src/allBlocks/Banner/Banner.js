@@ -17,29 +17,64 @@ componentDidMount(){
  // $('.banner-cover').css("display", "none");
 
   $("#waterimgDiv").hover(function() { 
-       $('#blackbannerDiv').css('background','#0f0f0f','z-index','120').removeClass('hiddendiv');
+       $('#blackbannerDiv').removeClass('hiddendiv');
     
     }, function() {
-      $('#blackbannerDiv').css('background','#0f0f0f','z-index','120').addClass('hiddendiv');
+      $('#blackbannerDiv').addClass('hiddendiv');
      
     });
 
-   /*$("#waterimg2Div").hover(function() { 
-       $('.banner-cover').css('background','#0f0f0f','z-index','220').removeClass('hiddendiv');
+   $("#waterimg2Div").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
     
     
     }, function() {
-      $('.banner-cover').css('background','#0f0f0f','z-index','220').addClass('hiddendiv');
+      $('.banner-cover').addClass('hiddendiv');
      
     });
 
     $("#boat_img2Div").hover(function() { 
-       $('.banner-cover').css('background','#0f0f0f').removeClass('hiddendiv');
+       $('#blackbannerDiv').removeClass('hiddendiv');
     
     }, function() {
-      $('.banner-cover').css('background','#0f0f0f').addClass('hiddendiv');
+      $('#blackbannerDiv').addClass('hiddendiv');
+     
+    });
+    $("#nexttogasimageDiv").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+     
+    });
+   /* $("#plantimage1Div").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
      
     });*/
+    $("#plantimage11Div").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+     
+    });
+    $("#oilimageDiv").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+     
+    });
+    $("#petrolimage1Div").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+     
+    });
 } 
 
 pinremoveclick(event){
@@ -234,7 +269,7 @@ pin6click(event){
              <div id="blackbackground"></div>
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className="row"style={{overflow:"hidden"}}>
-                <figure className="oilimage">
+                <figure className="oilimage"id="oilimageDiv">
                  <div className="new_HoverDiv7">
                   <div style={{width:"177px"}}>
                    <p className="newhovertxt"> iOG Solutions helps clients to define a road map for sustainable Health and Safety practices.</p>
@@ -258,10 +293,9 @@ pin6click(event){
                    </div>*/}
                  <div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                  <div style={{width:"165px"}}>
-                    <i className="fa fa-times hover_close"onClick={this.pin6removeclick.bind(this)}></i>
-                   <p className="newhovertxt_8"> Entire process of chemicals takes place here. </p>
-                   <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
+                    <div style={{width:"165px"}}>
+                    <p className="newhovertxt_8"> Entire process of chemicals takes place here. </p>
+                    <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" src="/images/Banner3_5.png"clasName="tabimage_1"style={{width:"200px"}}/>
@@ -269,7 +303,7 @@ pin6click(event){
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
-                <figure className="petrolimage1"id="petrolimage1">
+                <figure className="petrolimage1"id="petrolimage1Div">
                  <div className="new_HoverDiv2">
                   <div style={{width:"165px"}}>
                    <p className="newhovertxt"> Entire process of refining takes place here. </p>
@@ -298,7 +332,7 @@ pin6click(event){
                   </div>
                  <img alt="" className="img-responsive"src="/images/Banner3_6.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
-                <figure className="plantimage11">
+                <figure className="plantimage11"id="plantimage11Div">
                  <div className="ripplediv">
                     {/* <div className="ripplebox3" onClick={this.pin4click.bind(this)} title="Click Me">
                       <span className="rippleboxhov" style={{"--i":"1"}}></span>
@@ -425,7 +459,13 @@ pin6click(event){
               </div> 
           </div>
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-cover  NOpadding" id="blackbannerDiv">   
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-cover hiddendiv NOpadding" id="blackbannerDiv"> 
+         <div class="curtain">    
+            <div class="left-panel">
+            </div>
+            <div class="right-panel">
+            </div>
+        </div>  
         </div>
         <div className="resbanner hidden-lg hidden-md"></div>
       </div>
