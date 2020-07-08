@@ -18,12 +18,9 @@ componentDidMount(){
 
   $("#waterimgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $("#nexttogasimageDiv").css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-       $("#nexttogasimageDiv").css('z-index','10');
-
      
     });
 
@@ -43,7 +40,7 @@ componentDidMount(){
       $('#blackbannerDiv').addClass('hiddendiv');
      
     });
-   /* $("#nexttogasimageDiv").hover(function() { 
+    /*$("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
     
     }, function() {
@@ -274,7 +271,8 @@ pin6click(event){
               <div className="row"style={{overflow:"hidden"}}>
                 <figure className="oilimage"id="oilimageDiv">
                  <div className="new_HoverDiv7">
-                  <div style={{width:"177px"}}>
+                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
+                   <div style={{width:"177px"}}>
                    <p className="newhovertxt"> iOG Solutions helps clients to define a road map for sustainable Health and Safety practices.</p>
                    <a href="/masterpage/health-safety-environment"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
@@ -308,8 +306,9 @@ pin6click(event){
                 </figure>
                 <figure className="petrolimage1"id="petrolimage1Div">
                  <div className="new_HoverDiv2">
+                  <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                   <p className="newhovertxt"> Entire process of refining takes place here. </p>
+                   <p className="newhovertxt_again"> Entire process of refining takes place here. </p>
                    <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
@@ -417,6 +416,14 @@ pin6click(event){
                     </ul>
                 </div>*/}
                  <figure className="boat_img"style={{overflow:"hidden"}} id="boat_imgDiv">
+                   <div class="drop-container">
+                      <div class="drop">
+                      </div>
+                   </div>
+                   <div class="drop-container1">
+                      <div class="drop1">
+                      </div>
+                   </div>
                  <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
                 </figure>
                  <figure className="boat_img2" id="boat_img2Div">
