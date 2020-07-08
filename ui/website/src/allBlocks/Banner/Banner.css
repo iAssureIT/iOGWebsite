@@ -855,6 +855,7 @@ height: 90px;
   right: 71px;
   top: 100px;
   height: 168px;
+  /*z-index: 110;*/
   /*opacity: 0.9;*/
 }
 @media only screen (min-width: 1920px) {
@@ -968,7 +969,7 @@ height: 90px;
   bottom: 0px;
   right: 562px;
   top: 449px;
-  z-index: 110;
+  /*z-index: 110;*/
   height: 168px;
   /*opacity: 0.9;*/
 }
@@ -1003,7 +1004,7 @@ height: 90px;
   right: 320px;
   top: 159px;
   height: 221px;
-  opacity: 1;
+  /*opacity: 1;*/
 
 }
 .waterimg{
@@ -1249,11 +1250,11 @@ height: 90px;
       cursor: pointer;
       opacity: 1;
 }*/
-.nexttogasimage:hover .new_HoverDiv5 {
+/*.nexttogasimage:hover .new_HoverDiv5 {
       display: block ! important;
       cursor: pointer;
       opacity: 1;
-}
+}*/
 .plantimage11:hover .new_HoverDiv4  {
       display: block ! important;
       cursor: pointer;
