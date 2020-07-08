@@ -18,9 +18,12 @@ componentDidMount(){
 
   $("#waterimgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $("#nexttogasimageDiv").css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+       $("#nexttogasimageDiv").css('z-index','10');
+
      
     });
 
@@ -40,13 +43,13 @@ componentDidMount(){
       $('#blackbannerDiv').addClass('hiddendiv');
      
     });
-    $("#nexttogasimageDiv").hover(function() { 
+   /* $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
      
-    });
+    });*/
    /* $("#plantimage1Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
     

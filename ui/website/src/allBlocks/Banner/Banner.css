@@ -968,6 +968,7 @@ height: 90px;
   bottom: 0px;
   right: 562px;
   top: 449px;
+  z-index: 110;
   height: 168px;
   /*opacity: 0.9;*/
 }
@@ -1663,7 +1664,7 @@ svg {
   background-position: right bottom;
   transition: all 5s ease-out;*/
   position: absolute;
- -webkit-animation: blackbannerDiv 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+ /*-webkit-animation: blackbannerDiv 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
           animation: blackbannerDiv 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   height: 43em;
   /*opacity: 0.6;*/
