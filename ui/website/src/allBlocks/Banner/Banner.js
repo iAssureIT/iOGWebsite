@@ -40,13 +40,13 @@ componentDidMount(){
       $('#blackbannerDiv').addClass('hiddendiv');
      
     });
-    /*$("#nexttogasimageDiv").hover(function() { 
+    $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
      
-    });*/
+    });
    /* $("#plantimage1Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
     
@@ -277,10 +277,10 @@ pin6click(event){
                    <a href="/masterpage/health-safety-environment"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_11.png"className="tabimage"style={{width:"241px"}}/>
+                 <img alt="" src="/images/Banner3_11.png"className="tabimage scaleimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="gasimage"style={{overflow:"hidden"}}>
-                 <img alt="" src="/images/Banner3_8.png" className="tabimage"style={{width:"241px"}}/>
+                 <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="nexttogasimage"id="nexttogasimageDiv">
                  {/*<div className="ripplediv">
@@ -299,7 +299,7 @@ pin6click(event){
                     <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_5.png"clasName="tabimage_1"style={{width:"200px"}}/>
+                 <img alt="" src="/images/Banner3_5.png"clasName="tabimage_1 scaleimage"style={{width:"200px"}}/>
                 </figure>
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
@@ -312,7 +312,7 @@ pin6click(event){
                    <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img5.png"style={{width:"241px"}}/>
+                 <img alt="" className="img-responsive tabimage scaleimage"src="/images/newbanner_img5.png"style={{width:"241px"}}/>
                 </figure>
                  <figure className="plantimage1"id="plantimage1Div">
                   {/* <div className="ripplediv">
@@ -332,7 +332,7 @@ pin6click(event){
                    <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                 <img alt="" className="img-responsive"src="/images/Banner3_6.png"className="tabimage"style={{width:"241px"}}/>
+                 <img alt="" className="img-responsive scaleimage"src="/images/Banner3_6.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="plantimage11"id="plantimage11Div">
                  <div className="ripplediv">
@@ -352,7 +352,7 @@ pin6click(event){
                    <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
-                 <img alt="" className="img-responsive tabimage"src="/images/newbanner_img7.png"style={{width:"241px"}}/>
+                 <img alt="" className="img-responsive tabimage scaleimage"src="/images/newbanner_img7.png"style={{width:"241px"}}/>
                 </figure>
                 <figure className="waterimg"id="waterimgDiv">
                   <div className="ripplediv">
@@ -377,7 +377,7 @@ pin6click(event){
                       </a>
                   </div>
                    </div>
-                   <img alt="" className="img-responsive  "src="/images/Banner3_1.png"style={{width:"130px"}}/> 
+                   <img alt="" className="img-responsive scaleimage "src="/images/Banner3_1.png"style={{width:"130px"}}/> 
                     {/*  <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
                        <a href="/masterpage/oil-&-gas-e-&-p">
                        </a> 
@@ -444,7 +444,7 @@ pin6click(event){
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive tabimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
+                   <img alt="" className="img-responsive tabimage scaleimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
                  {/* <div className="ripplediv">
@@ -463,7 +463,7 @@ pin6click(event){
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                   </div>
-                 <img alt="" className="img-responsive"src="/images/newbanner_img4.png"style={{width:"110px"}}/>
+                 <img alt="" className="img-responsive scaleimage"src="/images/newbanner_img4.png"style={{width:"110px"}}/>
                 </figure>
                </div> 
               </div> 
