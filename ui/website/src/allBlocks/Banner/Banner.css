@@ -24,7 +24,7 @@
   background-size: 100% 100% ;
     width: 100%;
   /*  margin-right: auto;*/
-    height: 53em;
+    height: 43em;
   /*  margin-left: auto;*/
     /*float: left;*/
     background-image: url(/images/Banner3_.png);
@@ -855,7 +855,7 @@ height: 90px;
   right: 71px;
   top: 100px;
   height: 168px;
-  animation: slide-right 4s ;
+  animation: slide-left 4s ;
   /*z-index: 110;*/
   /*opacity: 0.9;*/
 }
@@ -962,20 +962,16 @@ height: 90px;
   right: 153px;
   top: 429px;
   height: 168px;
-  animation: slide-right 4s;
+ animation: slide-tl 4s;
 
 }
 .nexttogasimage{
    position: absolute;
-   animation: slide-right 4s;
-   /*left: 968px;*/
-  bottom: 0px;
-  right: 562px;
-  top: 449px;
-  /*z-index: 110;*/
-  height: 168px;
-  /*z-index: 5;*/
-  /*opacity: 0.9;*/
+   animation: slide-top 4s;
+   bottom: 0px;
+   right: 562px;
+   top: 449px;
+   height: 168px;
 }
 .petrolimage{
   position: absolute;
@@ -983,7 +979,7 @@ height: 90px;
   right: 126px;
   top: 247px;
   height: 221px;
-  animation: slide-right 4s;
+  animation: slide-tl 4s;
 
 
 }
@@ -1002,7 +998,7 @@ height: 90px;
   right: 493px;
   top: 232px;
   height: 221px;
-  animation: slide-right 4s ;
+  animation: slide-bottom 4s ;
 
   /*z-index: 110;*/
 
@@ -1013,7 +1009,7 @@ height: 90px;
   right: 320px;
   top: 159px;
   height: 221px;
-  animation: slide-right 4s ;
+  animation: slide-bottom 4s ;
   /*opacity: 1;*/
 
 }
@@ -1047,7 +1043,7 @@ height: 90px;
   left: 221px;
   top: 127px;
   height: 221px;
-   animation: slide-right 4s
+  animation: slide-br 4s
   /*z-index: 110;*/
   /*opacity:1;*/
 
@@ -1058,7 +1054,7 @@ height: 90px;
   left: 297px;
   top: 320px;
   height: 221px;
-  animation: slide-right 4s ;
+  animation: slide-br 4s ;
   /*z-index: 110;*/
   /*opacity: 1;*/
 
@@ -1068,7 +1064,7 @@ height: 90px;
   top: 77%;
   left: 13%;
   height: 221px;
-  animation: slide-right 4s
+  animation: slide-tr 4s;
   /*z-index: 110;*/
   /*opacity: 0.9;*/
 
@@ -2216,8 +2212,8 @@ div.drop-container:after {
 }
 @keyframes slide-right {
   0% {
-    -webkit-transform: translateX(-40px);
-            transform: translateX(-40px);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
   100% {
     -webkit-transform: translateX();
@@ -2225,11 +2221,155 @@ div.drop-container:after {
   }
 }
 
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    -webkit-transform: translateX();
+            transform: translateX();
+  }
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+}
+@-webkit-keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(-100px);
+            transform: translateY(-100px) translateX(-100px);
+  }
+}
+@keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(50px);
+            transform: translateY(0) translateX(50px);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX();
+            transform: translateY(-100px) translateX();
+  }
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+}
+@-webkit-keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(100px);
+            transform: translateY(-100px) translateX(100px);
+  }
+}
+@keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(-100px);
+            transform: translateY(0) translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX();
+            transform: translateY(-100px) translateX();
+  }
+}
+@-webkit-keyframes slide-br {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px) translateX(100px);
+            transform: translateY(100px) translateX(100px);
+  }
+}
+@keyframes slide-br {
+  0% {
+    -webkit-transform: translateY(0) translateX(-40px);
+            transform: translateY(0) translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateY(100px) translateX();
+            transform: translateY(100px) translateX();
+  }
+}
+
+
+
 .slide-right {
 
   -webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-
-
+.slide-left {
+  -webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-tl {
+  -webkit-animation: slide-tl 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-tl 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-top {
+  -webkit-animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-tr {
+  -webkit-animation: slide-tr 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-tr 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-br {
+  -webkit-animation: slide-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
