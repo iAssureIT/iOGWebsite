@@ -219,4 +219,33 @@
   /*background-color: red;*/
   /*margin-top: -300px!important;*/
 }
+.newupstreamTitle{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  /*margin-left: 135px;*/
+}
+.newblogsTitle{
+  color: #009de2;
+  font-size: 40px;
+  font-weight: 700;
+  /*margin-left: 135px;*/
+}
+.hrnewclass{
+    height: 3px;
+    width: 100px;
+    border: 1px solid #f19000;
+    background-color: #f19000;
+    margin-bottom: 12px;
+
+}
+.hrnewclassblog{
+    height: 3px;
+    width: 100px;
+    border: 1px solid #f19000;
+    background-color: #f19000;
+    margin-bottom: 12px;
+    margin-left: 587px
+
+}
 

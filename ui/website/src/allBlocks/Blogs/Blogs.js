@@ -80,12 +80,16 @@ export default class Blogs extends Component {
     render(){
         return(
             <div>
-                <div className="upstreamcontentheader col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-sm-offset-2 col-md-offset-2 text-center ">                        
-                    <hr/>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div className="hrnewclassblog col-lg-offset-5 col-md-offset-5"></div>
+                       <span className="col-lg-12 col-md-12 col-sm-12 col-xs-12 newblogsTitle text-center">Latest Blogs</span>
+                    </div>                       
+                   {/* <hr/>
                     <h1 className="lightbluetext latestblog">
                         <b>Latest Blogs</b>
-                    </h1>
-                </div>
+                    </h1>*/}
+               
                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs">
                   <div>
                         <OwlCarousel 
@@ -203,35 +207,9 @@ export default class Blogs extends Component {
                     </OwlCarousel>
                 </div>                
               </div> 
-             {/* <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 hidden-lg hidden-md">
-                    <div id="myCarousel" className="carousel slide" data-ride="carousel">
-                      <ol className="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                      <div class="carousel-inner">
-                      {
-                            this.upstreamData().map((data, index)=>{
-                            return (
-                             <div className="item active">
-                              <img src={data.downstreamimg}/>
-                              <div className="">
-                               <h4>{data.upstreamTitle}</h4>
-                              </div>
-                              <div className="">
-                                <p>{data.upstreamLi}</p>
-                              </div>
-                           </div>
-                               );
-                            })
-                        }
-
-                      </div>
-                    </div>        
-               </div> */}
-               {/*end res*/}     
-          </div>   
+            
+          </div> 
+         </div>   
         );
     }
 }
