@@ -190,11 +190,11 @@ export default class Header extends Component {
               </button>
               <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
                 <a href="/masterpage/refinery-mainpage">Refinery</a>
-                <a href="/masterpage/lng">LNG</a>
                 <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
                 <a href="/masterpage/chemicals-mainpage">Chemicals</a>
                 <a href="/masterpage/lng">LNG</a>
                 <a href="/masterpage/gas-processing">Gas Precessing</a>
+                <a href="/masterpage/oil-&-gas-e-&-p">Oil & Gas E & P</a>
               </div>
             </div> 
              <a href="/masterpage/careers">CAREERS</a>
