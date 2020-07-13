@@ -11,6 +11,7 @@
 }
 
 .downimgtext{
+    font-size: 30px;
 	  position: absolute;
     top: 5em;
     left: 16em;
@@ -21,6 +22,7 @@
    /* position: absolute;
     top: 5em;
     left: 13em;*/
+    font-size: 30px;
     color: #009de2;
     font-weight: 600;
 }
@@ -111,7 +113,41 @@
     text-align: right;
 
 }
-
+@media only screen and (max-width : 768px)
+{
+ #consultdown_data0{
+  right: 4% ! important;
+ } 
+  #consultdown_data1{
+  left: 4% ! important;
+ } 
+ #consultdown_data2{
+  right: 4% ! important;
+ } 
+  #consultdown_data3{
+  left: 4% ! important;
+ } 
+ #consultdown_data4{
+  right: 4% ! important;
+ } 
+  #consultdown_data5{
+  left: 4% ! important;
+ } 
+ #consultdown_data6{
+  right: 4% ! important;
+ } 
+  #consultdown_data7{
+  left: 4% ! important;
+ } 
+ .downimgtext{
+  left:8em ! important;
+ }
+ .downimg_p_txt{
+    top: 10.5em;
+    left: 2em;
+    padding-right: 0px;
+ }
+}
 #downimg_text0,#downimg_text4,#downimg_text6{
 	font-weight: 600;
 

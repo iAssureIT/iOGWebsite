@@ -27,7 +27,7 @@
 }
 .contactBarres{
   position: absolute;
-  right: 0px;
+  left: 0px;
   background-color: #f19000;
   width: 35px;
   height: 30px;
@@ -40,7 +40,7 @@
   transition: width 1s;
   border: none;
   z-index: 100000;
-  top:30px;
+  top:95px;
 }
 .navbar-static-top{
   padding-top: 20px;

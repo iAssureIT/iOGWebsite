@@ -127,15 +127,15 @@ componentDidMount(){
      <div> 
       <div className="container-fluid">
        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding hidden-sm hidden-xs " style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
-          <div class="Bubble">
-           <div class="Main_Cards__Bubble1 bub11">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding  hidden-xs " style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
+          <div className="Bubble hidden-md hidden-sm">
+           <div className="Main_Cards__Bubble1 bub11">
          </div>
-           <div class="Main_Cards__Bubble1 bub21">
+           <div className="Main_Cards__Bubble1 bub21">
           </div>
          </div>
          <div>
-             <h1 className="downimgtext text-center">{this.state.blocks.blockTitle}</h1>
+             <div className="downimgtext text-center">{this.state.blocks.blockTitle}</div>
             <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt" dangerouslySetInnerHTML={{ __html:this.state.blocks.blockDescription}}></p>
           </div>  
           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 container">  
@@ -162,10 +162,10 @@ componentDidMount(){
        </div>  
 
       {/*res*/}
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult_new NOPadding hidden-lg hidden-md">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult_new NOPadding hidden-lg hidden-md hidden-sm">
        
        <div>
-          <h1 className="downimgtext_new text-center">{this.state.blocks.blockTitle}</h1>
+          <div className="downimgtext_new text-center">{this.state.blocks.blockTitle}</div>
           <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt_new text-center ">We at iOG Solutions believe in providing solutions that are as unique as our clients requirements.Following is a partial listof our consulting services under our iOGConsult service arm </p>
         </div>  
         <div className="col-lg-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">     

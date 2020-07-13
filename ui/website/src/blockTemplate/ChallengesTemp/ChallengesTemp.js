@@ -110,16 +110,16 @@ componentDidMount(){
          </div>
         </div>
              <div className=" text-center B2T_challengesTitle">{this.state.blocks.blockTitle}</div>
-        <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+        <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1  col-xs-12">
          
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
           this.state.blocks.repeatedBlocks.map((result, index)=>{
             return(
              
-               <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 B3T_challengesDiv">
+               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 B3T_challengesDiv">
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                 <img src={result.Image} className="B4T_img"/>
+                 <img src={result.Image} className="B4T_img img-responsive"/>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  <p className="B4T_txt"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>

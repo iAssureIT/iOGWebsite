@@ -120,7 +120,7 @@ componentDidMount(){
 
                           return(
                            
-                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                           <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 adjustfor5 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
@@ -243,11 +243,11 @@ componentDidMount(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>
-                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                      <span className={"new_round-tabfor4 "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
                                    
-                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    <div className="new_wizardNotefor4 ">{result.Title}</div>
                                     </a>
                                 </div>
                                

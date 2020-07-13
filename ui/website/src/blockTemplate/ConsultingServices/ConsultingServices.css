@@ -28,7 +28,7 @@
 }
 .BT4_txt {
     margin-top: 10px;
-    /*margin-left: 54px;*/
+    margin-left: 71px;
     font-size: 15px;
     height: auto;
     font-size: 15px;
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 992px) {
   .BT4_imgBack {
-    opacity:0;
+    /*opacity:0;*/
   }
 }
 .Main_Cards__Bubble1:first-child {
@@ -176,4 +176,5 @@
 }
 .services_title{
   color: #009de2 ! important;
+  font-size: 30px;
 }

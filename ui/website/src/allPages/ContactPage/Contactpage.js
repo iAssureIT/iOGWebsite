@@ -259,7 +259,7 @@ class Contactpage extends Component{
                           <div className="row">
                                 <div className="col-lg-8 col-md-8 hidden-sm hidden-xs col-lg-offset-2 contactcontbackimg">
                                 </div>
-                                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-3 contacticons">
+                                <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3 contacticons">
                                   <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3">
                                     <a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank">
                                       <i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i>
