@@ -269,11 +269,11 @@ componentDidMount(){
              else if(length>6){
               return(
                      
-                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12 hidden-sm hidden-xs">
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12 hidden-xs">
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                      <h4 className="new_navigationTitle text-center">You May Also Visit</h4>
-                    <div className="wizard-inner col-lg-offset-1 col-lg-10  col-md-12 col-xs-12 col-sm-12">
-                    
+                    <div className="wizard-inner col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                     <div className="row">
                             { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -301,6 +301,7 @@ componentDidMount(){
 
 
                         </div>
+                       </div> 
                     </div>
                 );
 

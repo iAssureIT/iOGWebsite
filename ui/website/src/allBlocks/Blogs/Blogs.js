@@ -82,7 +82,7 @@ export default class Blogs extends Component {
             <div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="hrnewclassblog col-lg-offset-5 col-md-offset-5"></div>
+                      <div className="hrnewclassblog col-lg-offset-5 col-md-offset-5 hidden-sm hidden-xs"></div>
                        <span className="col-lg-12 col-md-12 col-sm-12 col-xs-12 newblogsTitle text-center">Latest Blogs</span>
                     </div>                       
                    {/* <hr/>

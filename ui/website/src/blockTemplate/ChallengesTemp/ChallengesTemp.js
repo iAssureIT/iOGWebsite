@@ -105,11 +105,11 @@ componentDidMount(){
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate4 NOPadding">
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4  col-lg-offset-5 col-md-offset-5">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
            <div class="B4T_line col-lg-1 col-lg-offset-2">
          </div>
         </div>
-             <h1 className=" text-center B2T_challengesTitle">{this.state.blocks.blockTitle}</h1>
+             <div className=" text-center B2T_challengesTitle">{this.state.blocks.blockTitle}</div>
         <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
          
         { 

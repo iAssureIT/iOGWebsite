@@ -21,10 +21,10 @@
 }
 .B4T_line{
     background-color: #f08f00;
-  	width: 90px;
+  	width: 80px;
   	height: 4px;
   	top: 54px;
-    left: 15px;
+    left: 399px;
   	position: absolute;
   	z-index: 999	
 }

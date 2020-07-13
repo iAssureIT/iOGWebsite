@@ -86,6 +86,7 @@
 }
 .navigation_tab{
     width: 112px;
+    margin-left: 32px;
 }
 .navigation_tab_for6{
     /*width: 165px;*/
@@ -186,6 +187,40 @@
   {
    width:112px;
   }
+  .navigation_tab{
+    margin-left: 20px ! important;
+
+  }
 
   
+}
+@media only screen and (max-width : 768px)
+{
+    .navigation_tab{
+    margin-left: 20px ! important;
+
+  }
+  .serflip-card{
+    width: 206px ! important;
+  }
+ .para-top_website{
+    margin-top: 20px ! important;
+ }
+ .B4T_ServicesDiv{
+    margin-left: 73px ! important;
+    min-height: 150px;
+    width: 580px;
+ }
+ .B2T1_line{
+    margin-left: 174px ! important;
+ }
+ .B2T1_line1{
+    margin-left:345px ! important;
+ }
+ .B2T_serviceTitle{
+    margin-left: 190px;
+ }
+ .B2T_challengesTitle{
+    margin-left: 90px;
+ }
 }

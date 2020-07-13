@@ -15,7 +15,7 @@ export default class Footer extends Component {
     <div className="footerText"> 
       <div className="iogfooter col-lg-12 col-md-12 NOpadding hidden-sm hidden-xs">
         <div className="animationoveflow col-lg-12 col-md-12 col-sm-12 col-xs-12">
-             <div className="viman">
+          <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
             </div>
                 <figure className="footeranimationtruck">
@@ -57,7 +57,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
-                <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11  pb351">
+                <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 ">
                     <div className="row">
                         <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>

@@ -170,6 +170,14 @@
     font-size: 50px;
     font-weight: 700;
 }
+@media only screen and (max-width: 768px) {
+  .para1-top{
+   font-size: 27px ! important;
+  }
+  .line2{
+    width: 60px ! important;
+  }
+}
 
 .iog_txt{
     margin-top: 73px;

@@ -106,12 +106,12 @@ componentDidMount(){
     return (
       <div className="container-fluid">
        <div className="col-lg-offset-1 col-md-offset-1  col-lg-10 col-md-10 col-sm-10 col-xs-10 innerBlock5tepmlate services_block NOPadding">
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-xs-offset-2 col-md-offset-5 col-lg-offset-5">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
            <div class="B2T1_line1 col-lg-4 col-lg-offset-2">
          </div>
         </div>
          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 className="B2T_serviceTitle text-center">{this.state.blocks.blockTitle}</h1>
+          <div className="B2T_serviceTitle text-center">{this.state.blocks.blockTitle}</div>
          </div> 
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
         { 
@@ -119,7 +119,7 @@ componentDidMount(){
           this.state.blocks.repeatedBlocks.map((result, index)=>{
             return(
               <div>
-               <div className=" col-lg-5 col-md-5 col-sm-12 col-xs-12 B4T_ServicesDiv">
+               <div className=" col-lg-5 col-md-12 col-sm-12 col-xs-12 B4T_ServicesDiv">
                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 NOPadding">
                  <img src={result.Image} className="B5T_img img-responsive"/>
                 </div>

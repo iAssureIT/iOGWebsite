@@ -38,7 +38,10 @@ export default class Resourcedownload extends Component {
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
+                  <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                    <div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6 col-md-offset-6 col-xs-offset-4">
+                     </div>
+                    </div>
                     <h2 className="lightbluetext text-center para1-top">Downloads</h2>
                     <br></br>
                     <p className="line_para2  text-center">

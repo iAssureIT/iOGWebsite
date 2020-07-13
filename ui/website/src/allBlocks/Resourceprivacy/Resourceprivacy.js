@@ -42,10 +42,10 @@ export default class Resourceprivacy extends Component {
                           </div>
                           <div className="resource_blck blckk-ht1 hidden-lg hidden-md">
                             <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                            <div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6">
+                            <div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6 col-sm-offset-4 col-xs-offset-4">
                             </div>
                             </div>
-                            <h2 className="lightbluetext text-center para1-top">Privacy Policy</h2>
+                            <h2 className="lightbluetext text-center para1-top"style={{fontsize:"27px"}}>Privacy Policy</h2>
                             <br></br>
                             <p className="resource_para ">
                                  The privacy and security of the personal information that we hold about you are very important to us and is an important part

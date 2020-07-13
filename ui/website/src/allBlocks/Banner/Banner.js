@@ -477,7 +477,7 @@ pin6click(event){
             </div>
         </div>  
         </div>
-        <div className="resbanner hidden-lg hidden-md"></div>
+        <div className="resbanner hidden-lg hidden-md"style={{height:"500px"}}></div>
       </div>
       
     );  

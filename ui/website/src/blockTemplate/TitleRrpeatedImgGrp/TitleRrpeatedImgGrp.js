@@ -191,7 +191,7 @@ componentDidMount(){
 	                	</div>
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs hidden-sm">
+	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs">
 	                      <img src={this.state.blocks.fgImage} className="B3t_img img-responsive"  />
 	                    </div>
 						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
