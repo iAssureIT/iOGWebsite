@@ -44,6 +44,30 @@ class FormContent extends Component{
   }
 
   componentDidMount() {
+      axios
+          .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
+          .then((response)=>{
+            // console.log("response",response);
+            const config = {
+                              bucketName      : response.data.bucket,
+                              dirName         : "iOG",
+                              region          : response.data.region,
+                              accessKeyId     : response.data.key,
+                              secretAccessKey : response.data.secret,
+                           }
+            this.setState({
+              config : config
+            })
+
+          })
+          .catch(function(error){
+            console.log(error);
+              if(error.message === "Request failed with status code 401")
+                  {
+                       swal("Your session is expired! Please login again.","", "error");
+                       this.props.history.push("/");
+                  }
+          });
     $(document).ready(function(){
       $('.dropdown-submenu a.test').on("click", function(e){
         $(this).next('ul').toggle();
@@ -171,7 +195,7 @@ class FormContent extends Component{
   Submit(event){
     event.preventDefault();
      const fileurl = localStorage.getItem('Fileurl');
-      console.log("fileurlNew---",fileurl)
+      console.log("fileurlNew---",this.state.fileurl)
 
     if (this.validateForm()) {
      
@@ -189,7 +213,7 @@ class FormContent extends Component{
       "email"            : this.refs.email.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "position"         : this.refs.position.value,
-      "resume"           : this.refs.resume.value,
+      "resume"           : this.state.fileurl,
       "skills"           : this.refs.skills.value,
       "noticePeriod"     : this.refs.noticePeriod.value,
     }
@@ -253,14 +277,12 @@ class FormContent extends Component{
 
                               "<b>Current Location: </b>"   + this.state.city + '<br/><br/>'+
 
-                              "<b>Key Skills: </b>"         + this.state.city + '<br/><br/>'+
+                              "<b>Key Skills: </b>"         + this.state.skills + '<br/><br/>'+
 
                               "<b>Highest Education: </b>"  + this.state.education + '<br/><br/>'+
                               
-          /*"attachments.filename"   :               
-          "attachments.contentType":               
-          "attachments.content"    :               
-*/
+          
+
                              /* "<pre> " + this.state.message + "</pre>" +*/
                               "<br/><br/> ============================ " +
                               "<br/><br/> This is a system generated email! " ,
@@ -452,6 +474,42 @@ class FormContent extends Component{
       return true;
     }
   }
+  uploadforeGImg(event){
+    // console.log("upload =",event.target.files[0]);
+    var file = event.target.files[0];
+    if(file){
+      var ext = file.name.split('.').pop();
+      if(ext=="jpg" || ext=="png" || ext=="jpeg" || ext=="JPG" || ext=="PNG" || ext=="JPEG" || ext=="pdf" || ext=="PDF"){ 
+        this.setState({
+          uploadedImage: event.target.files[0]
+          },()=>{
+          console.log("uploadToS3 =",this.state.uploadedImage);
+          console.log("this.state.config",this.state.config);
+           S3FileUpload
+            .uploadFile(file,this.state.config)
+
+            .then((Data)=>{
+                console.log('Data.location', Data.location);
+              this.setState({
+                fileurl :  Data.location,
+                  
+              })
+          })
+          .catch((error)=>{
+            console.log(error);
+          })
+        })
+      }else{
+        swal("Format is incorrect","Only Upload images format (jpg,png,jpeg)","warning"); 
+         this.setState({
+                fileurl :  "",
+                  
+              })
+        }
+      }else{         
+            swal("","Something went wrong","error"); 
+          } 
+  }
   docBrowseSingle(event) {
     event.preventDefault();
     var name = event.target.name
@@ -506,27 +564,23 @@ class FormContent extends Component{
 
 
         function s3upload(image, configuration) {
+          // console.log("configuration",configuration);
 
           return new Promise(function (resolve, reject) {
             S3FileUpload
               .uploadFile(image, configuration)
               .then((URL) => {
-                console.log("s3 data",URL);
-                 if (URL) {
-                  const Fileurl=URL.location;
+                // console.log("s3 data",URL);
+                  // const fileurl=URL.location;
+                  // console.log("URL.location",URL.location);
                   this.setState({
-                    Fileurl:URL.location
+                    fileurl:URL.location
 
-                  })
-                   const fileurl=localStorage.setItem("fileurl",this.state.Fileurl);
+                  },()=>{
+                         console.log("fileurl>>>",this.state.fileurl)
+                  });
+                   // const fileurl=localStorage.setItem("fileurl",this.state.fileurl);
                   // const fileurl = localStorage.getItem('Fileurl');
-                    console.log("fileurl>>>",fileurl)
-                   
-
-                }else{
-                  swal("data invalid")
-
-                 }
                 resolve(URL.location);
                 
                  
@@ -538,7 +592,7 @@ class FormContent extends Component{
         function getConfig() {
           return new Promise(function (resolve, reject) {
             axios
-              .get('/api/projectsettings/get/S3')
+              .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
               .then((response) => {
                 // console.log("s3 response",response);
                 const config = {
@@ -592,9 +646,9 @@ class FormContent extends Component{
                         <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 jobpageform">
                             <form id="contactForm" >
                               <div className="col-lg-12">
-                                <div className="col-lg-2 col-lg-offset-5 col-md-offset-5">
+                                {/*<div className="col-lg-12 col-md-12 col-sm-11 col-xs-12 ">
                                   <div className="line1 col-lg-1 col-lg-offset-2"></div>
-                                </div>                    
+                                </div> */}                   
                               </div> 
                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                   <div className="row">
@@ -678,7 +732,7 @@ class FormContent extends Component{
                                     <div className="errorMsg">{this.state.errors.email}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
+                                    <label htmlFor="contactNumber">Contact Number</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
                                       <input className="form-control" ref="contactNumber"  value={this.state.contactNumber}name="contactNumber"onChange={this.handleChange.bind(this)}/>
@@ -687,7 +741,7 @@ class FormContent extends Component{
                                     <div className="errorMsg">{this.state.errors.contactNumber}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="country">Country<span className="redFont">*</span></label>
+                                    <label htmlFor="country">Country</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-globe" aria-hidden="true"></i></span>
                                         <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12"
@@ -696,7 +750,7 @@ class FormContent extends Component{
                                        </div>
                                     </div>
                                     <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="state">State<span className="redFont">*</span></label>
+                                    <label htmlFor="state">State</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                       <input className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
@@ -705,7 +759,7 @@ class FormContent extends Component{
                                    <div className="errorMsg">{this.state.errors.state}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="city">City<span className="redFont">*</span></label>
+                                    <label htmlFor="city">City</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                       <input className="form-control nameSpaceUpper" id="city" type="text" name="city" ref="city"  value={this.state.city} placeholder="Enter City" name="city" onChange={this.handleChange.bind(this)}/>
@@ -716,7 +770,7 @@ class FormContent extends Component{
                                   
                                     <div className="errorMsg">{this.state.errors.country}</div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="education">Highest Education<span className="redFont">*</span></label>
+                                    <label htmlFor="education">Highest Education</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-book" aria-hidden="true"></i></span>
                                       <input className="form-control nameSpaceUpper" id="education" type="text" name="education" ref="education" value={this.state.education}  onChange={this.handleChange.bind(this)}/>
@@ -724,7 +778,7 @@ class FormContent extends Component{
                                     <div className="errorMsg">{this.state.errors.education}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="college">College / University<span className="redFont">*</span></label>
+                                    <label htmlFor="college">College / University</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-university" aria-hidden="true"></i></span>
                                       <input className="form-control nameSpaceUpper" id="college" type="text" name="college" ref="college" value={this.state.college}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}/>
@@ -732,7 +786,7 @@ class FormContent extends Component{
                                     <div className="errorMsg">{this.state.errors.college}</div>
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <label htmlFor="year">Year of Passing<span className="redFont">*</span></label>
+                                    <label htmlFor="year">Year of Passing</label>
                                     <div className="input-group">
                                       <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
                                       <input className="form-control nameSpaceUpper" id="year" type="date" name="year" ref="year" value={this.state.year}  onChange={this.handleChange.bind(this)}/>
@@ -741,7 +795,7 @@ class FormContent extends Component{
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
-                                        <label htmlFor="experience">Work Experience<span className="redFont">*</span></label>
+                                        <label htmlFor="experience">Work Experience</label>
                                         <div className="input-group">
                                           <span className="input-group-addon addonColor"><i className="fa fa-calendar" aria-hidden="true"></i></span>
                                           <input className="form-control nameSpaceUpper" id="experience" type="text" name="experience" ref="experience" value={this.state.experience}   onChange={this.handleChange.bind(this)}/>
@@ -761,7 +815,7 @@ class FormContent extends Component{
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
-                                        <label htmlFor="exp_ctc">Expected CTC<span className="redFont">*</span></label>
+                                        <label htmlFor="exp_ctc">Expected CTC</label>
                                         <div className="input-group">
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                           <input className="form-control nameSpaceUpper" id="exp_ctc" type="text" name="exp_ctc" ref="exp_ctc" value={this.state.exp_ctc}  onChange={this.handleChange.bind(this)}/>
@@ -771,7 +825,7 @@ class FormContent extends Component{
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
-                                        <label htmlFor="noticePeriod">Notice Period<span className="redFont">*</span></label>
+                                        <label htmlFor="noticePeriod">Notice Period</label>
                                         <div className="input-group">
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                           <input className="form-control nameSpaceUpper" id="noticePeriod" type="text" name="noticePeriod" ref="noticePeriod"  value={this.state.noticePeriod}  onChange={this.handleChange.bind(this)}/>
@@ -797,7 +851,7 @@ class FormContent extends Component{
                                                <label htmlFor="noticePeriod">Upload Resume<span className="redFont">*</span></label>
                                                <div className="input-group">
                                                 <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                                    <input onChange={this.docBrowseSingle.bind(this)} id="LogoImageUp" type="file" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" title="" name="resume"  ref="resume"/>
+                                                    <input onChange={this.uploadforeGImg.bind(this)} id="LogoImageUp" type="file" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" title="" name="resume"  ref="resume"/>
                                                   </div>
                                                 </div>  
 
@@ -856,35 +910,3 @@ export default FormContent;
 
 
 
-{/*<div class="zmAttDivision">
- <div class="zmPAtt">
-  <div class="zmAttHdr">
-   <i class="msi-zmPle"></i>
-    <b><span id="count">1 Attachment</span></b>
-     <span class="zmSDot"></span>
-      <span class="zmLink" data-msg="downloadall">Download as Zip</span>
-       </div>
-       <div class="zmAttGrp">
-        <div data-refid="1381037144777802201591078795816110001" class="zmL zmAch " data-detail="0">
-         <div class="zmLst">
-          <div class="zmDtl">
-           <div data-msg="imgView" class="zmImg">
-            <i class="msi-attpdf zm-attIcn" data-msg="imgView"></i>
-             </div>
-              <div class="zmFrm">
-               <span title="syedarkan3007@gmail.com.pdf" class="zmAttTitle">
-                <span data-msg="view"> syedarkan3007@gmail.com </span>
-                 <span data-msg="view"> .pdf </span>
-                  </span>
-                   </div>
-                    <div class="zmSub">
-                     <span data-msg="download">Download</span>
-                      <span data-msg="view">View</span>
-                       <i class="msi-action" data-msg="showMore" title="More" data-showfrom="5"></i>
-                        </div><div class="zmSze">
-                         <span class="sum">127.4 KB</span>
-                          </div>
-                           <span class="SC_ldot zm_lbl">
-                            <i class="msi-label" title="Add tag" data-msg="addTag">
-                             </i><div class="zmLblGrp zmViewLtdLbl">
-                              </div></span></div></div></div></div></div></div>*/}
