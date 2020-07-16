@@ -267,6 +267,7 @@ pin6click(event){
           <div className="row">
             <div id="backimage1"className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 hidden-xs"style={{overflow:"hidden"}}>
              <div id="blackbackground"></div>
+              <div className="translatediv" id="google_translate_element"></div>
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className="row"style={{overflow:"hidden"}}>
                 <figure className="oilimage"id="oilimageDiv">

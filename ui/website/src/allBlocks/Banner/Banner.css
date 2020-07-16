@@ -2372,3 +2372,7 @@ div.drop-container:after {
   -webkit-animation: slide-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           animation: slide-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+.translatediv{
+  z-index: 20000000;
+  position: absolute;
+}
