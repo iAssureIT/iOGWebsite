@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import $                  from 'jquery';
 import './Banner.css';
+// import $ from "jquery";
 
 export default class newbanner extends Component {
-
-
     constructor(props) {
     super(props);
         this.state={
@@ -15,7 +14,8 @@ export default class newbanner extends Component {
 componentDidMount(){
 
  // $('.banner-cover').css("display", "none");
-
+ // $('#google_translate_element').find('option:eq(0)').remove()
+ $("#google_translate_element option[value='af']").remove();
   $("#waterimgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
     
