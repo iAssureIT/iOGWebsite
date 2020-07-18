@@ -848,8 +848,8 @@ height: 90px;
   position: absolute;
   /*left: 968px;*/
   bottom: 0px;
-  right: 71px;
-  top: 100px;
+  right: 60px;
+  top: 162px;
   height: 168px;
   animation: slide-left 4s ;
   /*z-index: 110;*/
@@ -959,7 +959,7 @@ height: 90px;
 .gasimage{
   position: absolute;
   right: 153px;
-  top: 429px;
+  top: 469px;
   height: 168px;
  animation: slide-tl 4s;
 
@@ -969,14 +969,14 @@ height: 90px;
    animation: slide-top 4s;
    bottom: 0px;
    right: 562px;
-   top: 449px;
+   top: 489px;
    height: 168px;
 }
 .petrolimage{
   position: absolute;
   bottom: 0px;
   right: 126px;
-  top: 247px;
+  top: 287px;
   height: 221px;
   animation: slide-tl 4s;
 
@@ -985,7 +985,7 @@ height: 90px;
 .petrolimage1{
   position: absolute;
   right: 323px;
-  top: 332px;
+  top: 372px;
   height: 221px;
   animation: slide-right 4s ;
    /*opacity: 0.7;*/
@@ -1006,7 +1006,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   right: 320px;
-  top: 159px;
+  top: 204px;
   height: 221px;
   animation: slide-bottom 4s ;
   /*opacity: 1;*/
@@ -1016,7 +1016,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   left: 65px;
-  top: 258px;
+  top: 298px;
   height: 221px;
   animation: slide-right 4s ease-out;
   
@@ -1040,7 +1040,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   left: 221px;
-  top: 127px;
+  top: 167px;
   height: 221px;
   animation: slide-br 4s
   /*z-index: 110;*/
@@ -1051,7 +1051,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   left: 297px;
-  top: 320px;
+  top: 360px;
   height: 221px;
   animation: slide-br 4s ;
   /*z-index: 110;*/
@@ -1060,7 +1060,7 @@ height: 90px;
 }
 .waterimg2{
   position: absolute;
-  top: 77%;
+  top: 79%;
   left: 13%;
   height: 221px;
   animation: slide-tr 4s;
@@ -1142,6 +1142,10 @@ height: 90px;
       display: block ! important;
       cursor: pointer;
       z-index: 140;
+}
+.waterimg:hover .hidepoweredby{
+  display: none ! important;
+
 }
 
 .boat_img2:hover .  {
@@ -1266,6 +1270,11 @@ height: 90px;
       display: block ! important;
       cursor: pointer;
       opacity: 1;
+
+}
+.oilimage:hover .translatediv{
+  z-index: 10 ! important;
+
 }
 .boat_img2:hover .new_HoverDiv1  {
       display: block ! important;
@@ -1702,6 +1711,26 @@ svg {
   height: 53em;
   z-index: 50;
 }
+#hidepoweredbyblack{
+ background: #0f0f0fbf;
+ position: absolute;
+ height: 25px;
+ top: 35px;
+ width: 146px;
+ right: 2px;
+ z-index: 11000;
+}
+#hidepoweredbyblack1{
+ background: #0f0f0fbf;
+ position: absolute;
+ height: 12px;
+ top: 66px;
+ width: 60px;
+ right: 88px;
+ z-index: 11000;
+}
+
+
 .circle_wrapper {
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
@@ -2373,6 +2402,47 @@ div.drop-container:after {
           animation: slide-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .translatediv{
-  z-index: 20000000;
+  z-index: 2000;
   position: absolute;
+  margin-top: 9px;
+  /*position: absolute;*/
+  right: -13px;
+}
+.translatediv span{
+  display: none;
+}
+.translatediv {
+  color: transparent;
+}
+.navbar-form .moduletable:first-child {
+    float: right;
+}
+.flagdiv{
+  padding:2px 2px 2px 2px;
+  width: 20px;
+  height: 20px;
+}
+/*.goog-te-banner-frame{
+  position: absolute ! important;
+  z-index: 0 ! important;
+
+}*/
+/*.noselection{
+  margin-top: -40px ! important;
+}
+.goog-te-banner-content{
+  display: none;
+}
+.goog-te-banner-frame{
+  width: 0px ! important;
+  height:0px ! important;
+}*/
+.goog-te-banner-frame{
+  position: absolute;
+  width: 0px ! important;
+  height:0px ! important;
+}
+.goog-te-combo{
+  border:none;
+  background-color: #eee;
 }

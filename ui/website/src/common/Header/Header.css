@@ -349,6 +349,15 @@
 .Headerdownarraow{
   margin-left: 4px;
 }
+.hidepoweredby{
+    right: 73px;
+    width: 60px;
+    height: 11px;
+    position: absolute;
+    background-color: #eee;
+    z-index: 2000;
+    top: 47px;
+}
 
 
 

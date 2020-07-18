@@ -79,6 +79,190 @@ export default class Header extends Component {
                 <img src="img/flags/russia_flag.jpg" alt="" /></a> </li>
         </ul>*/}
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top" id="bb">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">
+             <div class="navbar-form navbar-left pull-right">
+               <div class="moduletable">
+                    <div className="translatediv" id="google_translate_element">
+                     
+                    </div>
+                    <div className="hidepoweredby"></div>
+                   {/* <script type="text/javascript">function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element2');}</script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+            */}  {/* <div className="sepersteflagdiv">
+                    <a  onClick="doGTranslate('en|en');return false;" title="English" className="flag nturl" >
+                     <img src="/images/engelsflag.png"  className="flagdiv"  alt="English"/>
+                    </a>
+                    <a  onClick="doGTranslate('en|ar');return false;" title="Arabic" className="flag nturl" >
+                     <img src="/images/arebicflag.png"  className="flagdiv"  alt="Arabic"/>
+                    </a>
+                    <a  onClick="doGTranslate('en|fr');return false;" title="French" className="flag nturl">
+                     <img  src="/images/fransflag.jpg"  className="flagdiv"  alt="French"/>
+                    </a>
+                    <a  onClick="doGTranslate('en|de');return false;" title="German" className="flag nturl">
+                     <img src="/images/Germany.png" className="flagdiv"  alt="German"/>
+                    </a>
+                    <a  onClick="doGTranslate('en|es');return false;" title="Spanish" className="flag nturl" >
+                     <img  src="/images/spain-flag.jpg"  className="flagdiv" alt="Spanish"/>
+                    </a>
+                   </div> */}
+                </div>
+                    <div class="moduletable">
+                     <div class="custom">
+                       {/* <script>
+                          (function() {
+                            var cx = '010789374304871716353:siwuvikomqi';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                '//cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                          })();
+                        </script>*/}
+                    {/*<gcse:search></gcse:search>*/}
+                  </div>
+                </div>
+                <div class="moduletable">
+                  <div class="custom">
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56273c2eb6a8a1a3" async="async"></script>
+                   </div>
+                </div>    
+              </div>
+               {/*<div class="navbar-form navbar-left pull-right">
+                 <div class="moduletable">
+                  <div className="translatediv" id="google_translate_element2">
+                   <div className="skiptranslate goog-te-gadget" dir="ltr">
+                    <div id=":0.targetLanguage">
+                     <select className="goog-te-combo" aria-label="Language Translate Widget">
+                       <option value="">Select Language</option>
+                       <option value="af">Afrikaans</option>
+                       <option value="sq">Albanian</option>
+                       <option value="am">Amharic</option>
+                       <option value="ar">Arabic</option>
+                       <option value="hy">Armenian</option>
+                       <option value="az">Azerbaijani</option>
+                       <option value="eu">Basque</option>
+                       <option value="be">Belarusian</option>
+                       <option value="bn">Bengali</option>
+                       <option value="bs">Bosnian</option>
+                       <option value="bg">Bulgarian</option>
+                       <option value="ca">Catalan</option>
+                       <option value="ceb">Cebuano</option>
+                       <option value="ny">Chichewa</option>
+                       <option value="zh-CN">Chinese (Simplified)</option>
+                       <option value="zh-TW">Chinese (Traditional)</option>
+                       <option value="co">Corsican</option>
+                       <option value="hr">Croatian</option>
+                       <option value="cs">Czech</option>
+                       <option value="da">Danish</option>
+                       <option value="nl">Dutch</option>
+                       <option value="eo">Esperanto</option>
+                       <option value="et">Estonian</option>
+                       <option value="tl">Filipino</option>
+                       <option value="fi">Finnish</option>
+                       <option value="fr">French</option>
+                       <option value="fy">Frisian</option>
+                       <option value="gl">Galician</option>
+                       <option value="ka">Georgian</option>
+                       <option value="de">German</option>
+                       <option value="el">Greek</option>
+                       <option value="gu">Gujarati</option>
+                       <option value="ht">Haitian Creole</option>
+                       <option value="ha">Hausa</option>
+                       <option value="haw">Hawaiian</option>
+                       <option value="iw">Hebrew</option>
+                       <option value="hi">Hindi</option>
+                       <option value="hmn">Hmong</option>
+                       <option value="hu">Hungarian</option>
+                       <option value="is">Icelandic</option>
+                       <option value="ig">Igbo</option>
+                       <option value="id">Indonesian</option>
+                       <option value="ga">Irish</option>
+                       <option value="it">Italian</option>
+                       <option value="ja">Japanese</option>
+                       <option value="jw">Javanese</option>
+                       <option value="kn">Kannada</option>
+                       <option value="kk">Kazakh</option>
+                       <option value="km">Khmer</option>
+                       <option value="rw">Kinyarwanda</option>
+                       <option value="ko">Korean</option>
+                       <option value="ku">Kurdish (Kurmanji)</option>
+                       <option value="ky">Kyrgyz</option>
+                       <option value="lo">Lao</option>
+                       <option value="la">Latin</option>
+                       <option value="lv">Latvian</option>
+                       <option value="lt">Lithuanian</option>
+                       <option value="lb">Luxembourgish</option>
+                       <option value="mk">Macedonian</option>
+                       <option value="mg">Malagasy</option>
+                       <option value="ms">Malay</option>
+                       <option value="ml">Malayalam</option>
+                       <option value="mt">Maltese</option>
+                       <option value="mi">Maori</option>
+                       <option value="mr">Marathi</option>
+                       <option value="mn">Mongolian</option>
+                       <option value="my">Myanmar (Burmese)</option>
+                       <option value="ne">Nepali</option>
+                       <option value="no">Norwegian</option>
+                       <option value="or">Odia (Oriya)</option>
+                       <option value="ps">Pashto</option>
+                       <option value="fa">Persian</option>
+                       <option value="pl">Polish</option>
+                       <option value="pt">Portuguese</option>
+                       <option value="pa">Punjabi</option>
+                       <option value="ro">Romanian</option>
+                       <option value="ru">Russian</option>
+                       <option value="sm">Samoan</option>
+                       <option value="gd">Scots Gaelic</option>
+                       <option value="sr">Serbian</option>
+                       <option value="st">Sesotho</option>
+                       <option value="sn">Shona</option>
+                       <option value="sd">Sindhi</option>
+                       <option value="si">Sinhala</option>
+                       <option value="sk">Slovak</option>
+                       <option value="sl">Slovenian</option>
+                       <option value="so">Somali</option>
+                       <option value="es">Spanish</option>
+                       <option value="su">Sundanese</option>
+                       <option value="sw">Swahili</option>
+                       <option value="sv">Swedish</option>
+                       <option value="tg">Tajik</option>
+                       <option value="ta">Tamil</option>
+                       <option value="tt">Tatar</option>
+                       <option value="te">Telugu</option>
+                       <option value="th">Thai</option>
+                       <option value="tr">Turkish</option>
+                       <option value="tk">Turkmen</option>
+                       <option value="uk">Ukrainian</option>
+                       <option value="ur">Urdu</option>
+                       <option value="ug">Uyghur</option>
+                       <option value="uz">Uzbek</option>
+                       <option value="vi">Vietnamese</option>
+                       <option value="cy">Welsh</option>
+                       <option value="xh">Xhosa</option>
+                       <option value="yi">Yiddish</option>
+                       <option value="yo">Yoruba</option>
+                       <option value="zu">Zulu</option>
+                     </select>
+                   </div> 
+                   <a onClick="doGTranslate('en|en');return false;"   title="Engels" className="flag nturl">
+                   <img src="/images/engelsflag.png"  className="flagdiv"  alt="Engels"/>
+                   </a>
+                  <a href="#" onclick="doGTranslate('en|ar');return false;"  title="Arabies" className="flag nturl">
+                   <img src="/images/arebicflag.png"  className="flagdiv"  alt="Arabies"/>
+                   </a>
+                  <a href="#" onclick="doGTranslate('en|fr');return false;" title="Frans" className="flag nturl">
+                   <img   src="/images/fransflag.jpg"  className="flagdiv" alt="Frans"/></a>
+                  <a href="#"  title="Duitse" className="flag nturl">
+                   <img src="/images/Germany.png" onclick="doGTranslate('en|de');return false;"  className="flagdiv" alt="Duitse"/></a>
+                  <a href="#" onclick="doGTranslate('en|es');return false;"  title="Spaans" className="flag nturl">
+                   <img  src="/images/spain-flag.jpg"  className="flagdiv" alt="Spaans"/></a>
+                 </div>    
+                </div>
+               </div>
+             </div>*/}
+            </div>
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 setlogo">
            <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>         
         </div>

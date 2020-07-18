@@ -13,38 +13,57 @@ export default class newbanner extends Component {
 
 componentDidMount(){
 
+   // $("#hidepoweredbyblack").css("display", "none");
+   // $("#hidepoweredbyblack1").css("display", "none");
+
  // $('.banner-cover').css("display", "none");
  // $('#google_translate_element').find('option:eq(0)').remove()
- $("#google_translate_element option[value='af']").remove();
+ // $(".goog-te-combo option[value='af']").remove();
   $("#waterimgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
 
    $("#waterimg2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+        $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     
     }, function() {
       $('.banner-cover').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
 
     $("#boat_img2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
    /* $("#plantimage1Div").hover(function() { 
@@ -56,23 +75,35 @@ componentDidMount(){
     });*/
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
     $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
     $("#petrolimage1Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
 } 
@@ -267,7 +298,7 @@ pin6click(event){
           <div className="row">
             <div id="backimage1"className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 hidden-xs"style={{overflow:"hidden"}}>
              <div id="blackbackground"></div>
-              <div className="translatediv" id="google_translate_element"></div>
+                 
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className="row"style={{overflow:"hidden"}}>
                 <figure className="oilimage"id="oilimageDiv">
@@ -471,6 +502,7 @@ pin6click(event){
           </div>
         </div>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-cover hiddendiv NOpadding" id="blackbannerDiv"> 
+
          <div class="curtain">    
             <div class="left-panel">
             </div>
@@ -478,6 +510,8 @@ pin6click(event){
             </div>
         </div>  
         </div>
+        <div id="hidepoweredbyblack"></div>
+        <div id="hidepoweredbyblack1"></div>
         <div className="resbanner hidden-lg hidden-md"style={{height:"500px"}}></div>
       </div>
       
