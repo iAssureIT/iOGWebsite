@@ -21,8 +21,8 @@ componentDidMount(){
  // $(".goog-te-combo option[value='af']").remove();
   $("#waterimgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -33,8 +33,8 @@ componentDidMount(){
 
    $("#waterimg2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-        $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     
     }, function() {
@@ -46,8 +46,8 @@ componentDidMount(){
 
     $("#boat_img2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -57,8 +57,8 @@ componentDidMount(){
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -75,8 +75,8 @@ componentDidMount(){
     });*/
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -86,8 +86,8 @@ componentDidMount(){
     });
     $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -97,8 +97,8 @@ componentDidMount(){
     });
     $("#petrolimage1Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');

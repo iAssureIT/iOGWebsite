@@ -1712,10 +1712,10 @@ svg {
   z-index: 50;
 }
 #hidepoweredbyblack{
- background: #0f0f0fbf;
+    background: #0f0f0fbf;
     position: absolute;
-    height: 14px;
-    top: 43px;
+    height: 17px;
+    top: 41px;
     /* display: none; */
     width: 144px;
     right: 2px;
