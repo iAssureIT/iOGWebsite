@@ -40,11 +40,64 @@ modalClickEvent(){
 componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			// this.getAllBlockList();
-			var pageUrl = window.location.pathname;;
+			var pageUrl = window.location.pathname;
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
+	        if(a=='MasterPage'){
+	        	 $(".hidepoweredby").css("backgroundColor", "#eee");
+	          }else{
+	             $(".hidepoweredby").css("backgroundColor", "#fff");
+
+	          }
+	          if(a=='ourjourny'){
+	        	 $(".hidepoweredby").css("backgroundColor", "#fff");
+	        	}
 	        console.log("a==>",a[1]); 
+
 	        const urlParam =a[2];
+	        if(urlParam=='planning-&-scheduling'){
+	        	$(".hidepoweredby").css("backgroundColor", "#b1d9eb");
+
+	        }
+	        if(urlParam=='manufacturing-exec-system'){
+	        	$(".hidepoweredby").css("backgroundColor", "#e1edf9");
+
+	        }
+	        if(urlParam=='new-energy-management'){
+	        	$(".hidepoweredby").css("backgroundColor", "#bfdfed");
+
+	        }
+	      
+	        if(urlParam=='health-safety-environment'){
+	        	$(".hidepoweredby").css("backgroundColor", "#fff");
+
+	        }
+
+            if(urlParam=='asset-management'){
+	        	$(".hidepoweredby").css("backgroundColor", "rgb(202, 213, 237)");
+
+	        }
+	        if(urlParam=='iog-train'){
+	        	$(".hidepoweredby").css("backgroundColor", "rgb(201, 249, 249)");
+
+	        }
+	        if(urlParam=='chemicals-mainpage'){
+	        	$(".hidepoweredby").css("backgroundColor", "rgb(59, 93, 214)");
+
+	        }
+	        if(urlParam=='lng'){
+	        	$(".hidepoweredby").css("backgroundColor", "#53c9fd");
+
+	        }
+	        if(urlParam=='gas-processing'){
+	        	$(".hidepoweredby").css("backgroundColor", "rgba(64, 178, 229, 0.93)");
+
+	        }
+
+	        
+
+	       
+	       
 	        // console.log("urlparam..",urlParam);
 	        this.setState({
 					      			urlParam:urlParam

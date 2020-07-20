@@ -995,7 +995,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   right: 493px;
-  top: 232px;
+  top: 272px;
   height: 221px;
   animation: slide-bottom 4s ;
 
@@ -1070,12 +1070,12 @@ height: 90px;
 }
 .new_HoverDiv {
     display: none;
-    height: 255px;
-    width: 250px;
+    height: 275px;
+    width: 275px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: -41px;
-    margin-top: -175px;
+    margin-left: -58px;
+    margin-top: -188px;
     position: absolute;
     background-size: 100% 100%;
     z-index: 110;
@@ -1177,12 +1177,12 @@ height: 90px;
 }
 .new_HoverDiv1 {
     display: none;
-    height: 240px;
-    width: 250px;
+    height: 275px;
+    width: 275px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: 28px;
-    margin-top: -128px;
+    margin-left: 2px;
+    margin-top: -143px;
     position: absolute;
     background-size: 100% 100%;
     z-index: 110;
@@ -1190,24 +1190,24 @@ height: 90px;
 }
 .new_HoverDiv5 {
     display: none;
-    height: 224px;
-    width: 228px;
+    height: 260px;
+    width: 260px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: -48px;
-    margin-top: -120px;
+    margin-left: -42px;
+    margin-top: -138px;
     position: absolute;
     background-size: 100% 100%;
     
 }
 .new_HoverDiv2 {
     display: none;
-    height: 240px;
-    width: 248px;
+    height: 275px;
+    width: 275px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: 6px;
-    margin-top: -101px;
+    margin-left: -12px;
+    margin-top: -142px;
     position: absolute;
     background-size: 100% 100%;
     z-index:200;
@@ -1215,8 +1215,8 @@ height: 90px;
 }
 .new_HoverDiv3 {
     display: none;
-    height: 267px;
-    width: 274px;
+    height: 275px;
+    width: 275px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -26px;
@@ -1228,8 +1228,8 @@ height: 90px;
 }
 .new_HoverDiv4 {
     display: none;
-    height: 250px;
-    width: 250px;
+    height: 275px;
+    width: 275px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: 11px;
@@ -1242,12 +1242,12 @@ height: 90px;
 }
 .new_HoverDiv6 {
     display: none;
-    height: 240px;
-    width: 240px;
+    height: 275px;
+    width: 275px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: -24px;
-    margin-top: -166px;
+    margin-left: -98px;
+    margin-top: -175px;
     position: absolute;
     background-size: 100% 100%;
     z-index: 110;
@@ -1321,38 +1321,38 @@ height: 90px;
   opacity: 0.3;
 }
 .newhovertxt{
-    margin-top: -201px;
-    margin-left: 86px;
+    margin-top: -196px;
+    margin-left: 66px;
     font-size: 11px;
     padding-left: 10px;
     text-align: center;
     position: absolute;
-    width: 105px;
+    width: 121px;
 }
 .newhovertxt_again{
-    top: 81px;
+    top: 85px;
     position: absolute;
-    width: 90px;
-    left: 75px;
+    width: 110px;
+    left: 72px;
     text-align: center;
     font-size: 12px;
 }
 .newhovertxt_6{
-  margin-top: -153px;
+  margin-top: -176px;
   margin-left: 68px;
   font-size: 11px;
   padding-left: 10px;
   text-align: center;
   position: absolute;
-  width: 76px;
+  width: 113px;
 }
 .newhovertxt_8{
-    margin-top: -155px;
-    margin-left: 60px;
+    margin-top: -175px;
+    margin-left: 51px;
     font-size: 11px;
     padding-left: 10px;
     text-align: center;
-    width: 85px;
+    width: 130px;
     position: absolute;
 }
 .newhovertxt_1{
@@ -1362,13 +1362,13 @@ height: 90px;
   padding-left: 10px;
   text-align: center;
   position: fixed;
-  width: 101px;
+  width: 122px;
 }
 .newhovertxt_4{
-    margin-top: -176px;
+    margin-top: -183px;
     margin-left: 65px;
     font-size: 11px;
-    width: 103px;
+    width: 124px;
     /* padding-left: 10px; */
     text-align: center;
     position: absolute;
@@ -1387,7 +1387,7 @@ height: 90px;
   padding-left: 10px;
   text-align: center;
   position: absolute;
-  width: 123px;
+  width: 149px;
 
 }
 .newhovertxt_ptrchemical{
@@ -1400,30 +1400,30 @@ height: 90px;
     width: 111px;
 }
 .servicekbtnarrow1{
-   margin-left: 114px;
+   margin-left: 127px;
     color: #000;
-    margin-top: -105px;
+    margin-top: -110px;
     font-size: 13px;
     position: absolute;
 }
 .servicekbtnarrow2{
-    margin-left: 98px;
+    margin-left: 124px;
     color: #000;
-    margin-top: -93px;
+    margin-top: -106px;
     font-size: 13px;
     position: absolute;
 }
 .servicekbtnarrow3 {
-    margin-left: 108px;
+    margin-left: 119px;
     color: #000;
-    margin-top: -97px;
+    margin-top: -105px;
     font-size: 13px;
     position: absolute;
 }
 .servicekbtnarrow4 {
     margin-left: 113px;
     color: #000;
-    margin-top: -98px;
+    margin-top: -106px;
     font-size: 13px;
     position: absolute;
 }
@@ -1442,9 +1442,9 @@ height: 90px;
     position: absolute;
 }
 .servicekbtnarrow8 {
-    left: 96px;
+    left: 111px;
     color: #000;
-    top: 133px;
+    top: 153px;
     font-size: 13px;
     position: absolute;
 }

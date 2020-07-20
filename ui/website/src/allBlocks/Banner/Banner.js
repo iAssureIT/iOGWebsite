@@ -13,6 +13,8 @@ export default class newbanner extends Component {
 
 componentDidMount(){
 
+  
+
 /*   $("#hidepoweredbyblack").css("display", "none");
    $("#hidepoweredbyblack1").css("display", "none");*/
 

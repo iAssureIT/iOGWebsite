@@ -11,6 +11,21 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 export default class Header extends Component {
   
   componentWillMount() {
+
+
+
+     var pageUrl = window.location.pathname;;
+      console.log("pageUrl kkk= ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+          // console.log("a kkk==>",a[2]); 
+          if(pageUrl == '/ourjourny'){
+            $(".hidepoweredby").css("backgroundColor", "#fff");
+          }
+         
+
+
+
+
      $(".onscrollheader").css("display", "none");
     $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
@@ -48,6 +63,15 @@ translateWebsite(event){
             script.type = 'text/javascript';
             script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" + "&callback=initialize";
             document.body.appendChild(script);
+
+ eval(function(p,a,c,k,e,r){e=function(c){
+  return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};
+  if(!''.replace(/^/,String))
+    { while(c--)r[e(c)]=k[c]||e(c);k=[function(e){
+       return r[e]}];e=function(){
+         return'\\w+'};c=1};while(c--)
+          if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|translateWebsite||getElementById|google_translate_element|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+           
 
  
 }
@@ -117,9 +141,9 @@ translateWebsite(event){
                     </div>
                     <div className="hidepoweredby">
                     </div>
-                   {/* <div className="new_flagdiv">
+                   <div className="new_flagdiv">
 
-                      <a onClick={this.translateWebsite.bind(this)}  title="English" className="flag nturl" id="en">
+                      {/*<a onClick={this.translateWebsite.bind(this)}  title="English" className="flag nturl" id="en">
                         <img src="/images/engelsflag.png"  className="flagdiv"  alt="English" />
                       </a>
 
@@ -133,13 +157,13 @@ translateWebsite(event){
 
                       <a href="#" onClick={this.translateWebsite.bind(this)}  title="German" className="flag nturl" id="de">
                         <img src="/images/Germany.png" onclick="doGTranslate('en|de');return false;"  className="flagdiv" alt="German"/>
-                      </a>
+                      </a>*/}
 
-                      <a href="#" onClick={this.translateWebsite.bind(this)}  title="Spanish" className="flag nturl" id="es">
+                     {/* <a href="#" onClick={this.translateWebsite.bind(this)}  title="Spanish" className="flag nturl" id="es">
                         <img  src="/images/spain-flag.jpg"  className="flagdiv" alt="Spanish"/>
-                      </a>
+                      </a>*/}
 
-                   </div>  */}
+                   </div>  
 
 
                    {/* <div className="sepersteflagdiv">
@@ -164,26 +188,8 @@ translateWebsite(event){
                 </div>
                     <div class="moduletable">
                      <div class="custom">
-                       {/* <script>
-                          (function() {
-                            var cx = '010789374304871716353:siwuvikomqi';
-                            var gcse = document.createElement('script');
-                            gcse.type = 'text/javascript';
-                            gcse.async = true;
-                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                                '//cse.google.com/cse.js?cx=' + cx;
-                            var s = document.getElementsByTagName('script')[0];
-                            s.parentNode.insertBefore(gcse, s);
-                          })();
-                        </script>*/}
-                    {/*<gcse:search></gcse:search>*/}
                   </div>
-                </div>
-                <div class="moduletable">
-                  <div class="custom">
-                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56273c2eb6a8a1a3" async="async"></script>
-                   </div>
-                </div>    
+                </div>  
               </div>
                {/*<div class="navbar-form navbar-left pull-right">
                  <div class="moduletable">
