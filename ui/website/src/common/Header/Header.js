@@ -10,13 +10,19 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
 export default class Header extends Component {
   
-  componentWillMount() {$(window).scroll(function() {    
+  componentWillMount() {
+     $(".onscrollheader").css("display", "none");
+    $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
       if (scroll >= 100) {
-          $(".headerflow").addClass("headerflowscroll");
+           $(".hidepoweredby").css("backgroundColor", "#fff");
+           $(".headerflow").addClass("headerflowscroll");
+           $(".onscrollheader").css("z-index", "2002");
       } else {
-          $(".headerflow").removeClass("headerflowscroll");
+           $(".hidepoweredby").css("backgroundColor", "#eee");
+           $(".headerflow").removeClass("headerflowscroll");
+           $(".onscrollheader").css("z-index", "1");
       }
     });
   }
@@ -28,6 +34,30 @@ export default class Header extends Component {
     x.className = "topnav";
   }
 }
+translateWebsite(event){
+ event.preventDefault();
+  var langId=event.currentTarget.id;
+  console.log("langId",langId);
+
+  function googleTranslateElementInit(){
+    const google = window.google;
+    new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element')
+  }
+  
+ var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" + "&callback=initialize";
+            document.body.appendChild(script);
+
+ 
+}
+
+
+
+
+/*function googleTranslateElementInit()
+ {
+  new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');}*/
 /*translateLanguage(lang) 
 {
 
@@ -79,16 +109,40 @@ export default class Header extends Component {
                 <img src="img/flags/russia_flag.jpg" alt="" /></a> </li>
         </ul>*/}
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top" id="bb">
+         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 onscrollheader"></div>
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">
              <div class="navbar-form navbar-left pull-right">
                <div class="moduletable">
-                    <div className="translatediv" id="google_translate_element">
-                     
+                  <div className="translatediv" id="google_translate_element">
                     </div>
-                    <div className="hidepoweredby"></div>
-                   {/* <script type="text/javascript">function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element2');}</script>
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-            */}  {/* <div className="sepersteflagdiv">
+                    <div className="hidepoweredby">
+                    </div>
+                   {/* <div className="new_flagdiv">
+
+                      <a onClick={this.translateWebsite.bind(this)}  title="English" className="flag nturl" id="en">
+                        <img src="/images/engelsflag.png"  className="flagdiv"  alt="English" />
+                      </a>
+
+                      <a href="#" onClick={this.translateWebsite.bind(this)}  title="Arabic" className="flag nturl" id="ar">
+                        <img src="/images/arebicflag.png"  className="flagdiv"  alt="Arabic"/>
+                      </a>
+
+                      <a href="#" onClick={this.translateWebsite.bind(this)} title="French" className="flag nturl" id="fn">
+                        <img   src="/images/fransflag.jpg"  className="flagdiv" alt="French"/>
+                      </a>
+
+                      <a href="#" onClick={this.translateWebsite.bind(this)}  title="German" className="flag nturl" id="de">
+                        <img src="/images/Germany.png" onclick="doGTranslate('en|de');return false;"  className="flagdiv" alt="German"/>
+                      </a>
+
+                      <a href="#" onClick={this.translateWebsite.bind(this)}  title="Spanish" className="flag nturl" id="es">
+                        <img  src="/images/spain-flag.jpg"  className="flagdiv" alt="Spanish"/>
+                      </a>
+
+                   </div>  */}
+
+
+                   {/* <div className="sepersteflagdiv">
                     <a  onClick="doGTranslate('en|en');return false;" title="English" className="flag nturl" >
                      <img src="/images/engelsflag.png"  className="flagdiv"  alt="English"/>
                     </a>
@@ -105,6 +159,8 @@ export default class Header extends Component {
                      <img  src="/images/spain-flag.jpg"  className="flagdiv" alt="Spanish"/>
                     </a>
                    </div> */}
+
+
                 </div>
                     <div class="moduletable">
                      <div class="custom">
@@ -263,6 +319,9 @@ export default class Header extends Component {
                </div>
              </div>*/}
             </div>
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+
+           </div> 
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 setlogo">
            <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>         
         </div>

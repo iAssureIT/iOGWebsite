@@ -1716,18 +1716,23 @@ svg {
  position: absolute;
  height: 25px;
  top: 35px;
+ /*display: none;*/
  width: 146px;
  right: 2px;
- z-index: 11000;
+ /*z-index: 11000;*/
 }
 #hidepoweredbyblack1{
  background: #0f0f0fbf;
  position: absolute;
  height: 12px;
+ /*display: none;*/
  top: 66px;
  width: 60px;
  right: 88px;
- z-index: 11000;
+ /*z-index: 11000;*/
+}
+.waterimg:hover .hidepoweredby{
+  background-color:#0f0f0fbf ! important;
 }
 
 

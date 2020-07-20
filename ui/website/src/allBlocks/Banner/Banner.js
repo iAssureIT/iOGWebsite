@@ -13,8 +13,8 @@ export default class newbanner extends Component {
 
 componentDidMount(){
 
-   // $("#hidepoweredbyblack").css("display", "none");
-   // $("#hidepoweredbyblack1").css("display", "none");
+/*   $("#hidepoweredbyblack").css("display", "none");
+   $("#hidepoweredbyblack1").css("display", "none");*/
 
  // $('.banner-cover').css("display", "none");
  // $('#google_translate_element').find('option:eq(0)').remove()

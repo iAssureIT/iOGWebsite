@@ -236,6 +236,7 @@
 }
 .setlogo{
   padding-left: 0 ! important;
+
 }
 .expertiesdropdown{
   margin-left: -276px ! important;
@@ -319,6 +320,7 @@
 }
 .setlogo{
   padding-left: 60px;
+  padding-top: 7px;
 }
 .contactBar{
   position: absolute;
@@ -356,7 +358,22 @@
     position: absolute;
     background-color: #eee;
     z-index: 2000;
-    top: 47px;
+    top: 46px;
+}
+.new_flagdiv{
+    right: 113px;
+    position: absolute;
+    width: 122px;
+    top: 20px;
+    z-index: 3000;
+}
+.onscrollheader{
+    width: 151px ! important;
+    height: 17px;
+    background-color: #fff;
+    position: absolute;
+    right: -5px;
+    top: 41px;
 }
 
 
