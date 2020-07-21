@@ -1,0 +1,13 @@
+.B2T1_line1{
+  margin-left: 491px ! important;
+  background-color: #f08f00;
+  width: 80px;
+  height: 4px;
+  top: 36px;
+  /*z-index: 999;*/
+}
+@media only screen and (max-width: 768px) {
+	.newline2{
+		margin-left: 310px ! important;
+	}
+}

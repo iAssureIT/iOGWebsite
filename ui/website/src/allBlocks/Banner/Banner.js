@@ -9,18 +9,13 @@ export default class newbanner extends Component {
         this.state={
           hide:"true",
         }
+
       }
 
 componentDidMount(){
 
+ 
   
-
-/*   $("#hidepoweredbyblack").css("display", "none");
-   $("#hidepoweredbyblack1").css("display", "none");*/
-
- // $('.banner-cover').css("display", "none");
- // $('#google_translate_element').find('option:eq(0)').remove()
- // $(".goog-te-combo option[value='af']").remove();
   $("#waterimgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
@@ -272,7 +267,8 @@ pin6click(event){
 
 
 
-  render() {  
+  render() { 
+
     var y = 330;
     var h = y + 'px';
     var x = $(window).height();  
@@ -317,23 +313,18 @@ pin6click(event){
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"241px"}}/>
                 </figure>
                 <figure className="nexttogasimage"id="nexttogasimageDiv">
-                 {/*<div className="ripplediv">
-                     <div className=" ripplebox5" onClick={this.pin6click.bind(this)} title="Click Me">
-                      <span style={{"--i":"1"}}></span>
-                      <span style={{"--i":"2"}}></span>
-                      <span style={{"--i":"3"}}></span>
-                      <span style={{"--i":"4"}}></span>
-                      <span style={{"--i":"5"}}></span>
-                     </div>
-                   </div>*/}
                  <div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                     <div style={{width:"165px"}}>
                     <p className="newhovertxt_8"> Entire process of chemicals takes place here. </p>
-                    <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow8"><i className="fa fa-chevron-circle-right"></i></span></a>
+                    <a href="/masterpage/chemicals-mainpage">
+                      <span className="servicekbtnarrow8">
+                       <i className="fa fa-chevron-circle-right"></i>
+                      </span>
+                    </a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_5.png"clasName="tabimage_1 scaleimage"style={{width:"200px"}}/>
+                  <img alt="" className="img-responsive scaleimage nexttogasimg_size"src="/images/Banner3_5.png" /> 
                 </figure>
                 <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
@@ -411,44 +402,9 @@ pin6click(event){
                       </a>
                   </div>
                    </div>
-                   <img alt="" className="img-responsive scaleimage "src="/images/Banner3_1.png"style={{width:"130px"}}/> 
-                    {/*  <p className="pinhoverdata text-center">Finding, augmenting, producing, and merchandising different types of oil and gas<br/> 
-                       <a href="/masterpage/oil-&-gas-e-&-p">
-                       </a> 
-                      </p>*/}
+                   <img alt="" className="img-responsive scaleimage waterimg_size"src="/images/Banner3_1.png" /> 
                 </figure>
-                {/*<div className="svgBox">
-                    <ul class="chart-skills">
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                    </ul>
-                </div>*/}
-               {/* <div className="svgBox1">
-                    <ul class="chart-skills1">
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                    </ul>
-                </div>*/}
+                
                  <figure className="boat_img"style={{overflow:"hidden"}} id="boat_imgDiv">
                    <div class="drop-container">
                       <div class="drop">
@@ -458,18 +414,9 @@ pin6click(event){
                       <div class="drop1">
                       </div>
                    </div>
-                 <img alt="" className="img-responsive"src="/images/newbanner_img3.png"style={{width:"155px"}}/>
+                 <img alt="" className="img-responsive boat_img_size"src="/images/newbanner_img3.png"/>
                 </figure>
                  <figure className="boat_img2" id="boat_img2Div">
-                 {/* <div className="ripplediv">
-                     <div className=" ripplebox1" onClick={this.pin2click.bind(this)} title="Click Me">
-                      <span style={{"--i":"1"}}></span>
-                      <span style={{"--i":"2"}}></span>
-                      <span style={{"--i":"3"}}></span>
-                      <span style={{"--i":"4"}}></span>
-                      <span style={{"--i":"5"}}></span>
-                     </div>
-                   </div>*/}
                   <div className="new_HoverDiv1">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
@@ -481,15 +428,6 @@ pin6click(event){
                    <img alt="" className="img-responsive tabimage scaleimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
-                 {/* <div className="ripplediv">
-                     <div className=" ripplebox4" onClick={this.pin5click.bind(this)} title="Click Me">
-                      <span style={{"--i":"1"}}></span>
-                      <span style={{"--i":"2"}}></span>
-                      <span style={{"--i":"3"}}></span>
-                      <span style={{"--i":"4"}}></span>
-                      <span style={{"--i":"5"}}></span>
-                     </div>
-                   </div>*/}
                  <div className="new_HoverDiv6">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"139px"}}>

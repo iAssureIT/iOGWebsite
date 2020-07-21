@@ -12,10 +12,10 @@ export default class Header extends Component {
   
   componentWillMount() {
 
-
+     
 
      var pageUrl = window.location.pathname;;
-      console.log("pageUrl kkk= ",pageUrl);
+     console.log("pageUrl kkk= ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
           // console.log("a kkk==>",a[2]); 
           if(pageUrl == '/ourjourny'){
@@ -111,6 +111,11 @@ translateWebsite(event){
 } 
 */
   render() {  
+     var toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];
+         if(toolBar !== undefined) {
+             toolBar.style.display  = 'none';
+             document.body.style.top = '0px';
+              } 
     return (
     <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow"> 
       <div className="row"> 
@@ -134,13 +139,13 @@ translateWebsite(event){
         </ul>*/}
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top" id="bb">
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 onscrollheader"></div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">
+          {/*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">*/}
              <div class="navbar-form navbar-left pull-right">
                <div class="moduletable">
                   <div className="translatediv" id="google_translate_element">
                     </div>
-                    <div className="hidepoweredby">
-                    </div>
+                   {/* <div className="hidepoweredby">
+                    </div>*/}
                    <div className="new_flagdiv">
 
                       {/*<a onClick={this.translateWebsite.bind(this)}  title="English" className="flag nturl" id="en">
@@ -324,7 +329,7 @@ translateWebsite(event){
                 </div>
                </div>
              </div>*/}
-            </div>
+           {/* </div>*/}
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 
            </div> 
@@ -338,7 +343,7 @@ translateWebsite(event){
               <button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
-              <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
+              <div className="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
                  <a href="/masterpage/about-us">Company Profile</a>
                  <a href="/masterpage/founder-profile">Founder's Profile</a>
                  <a href="/masterpage/news-&amp;-events">News &amp; Events</a>
@@ -350,7 +355,7 @@ translateWebsite(event){
               <button class="dropbtn">SERVICES 
                 <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
-              <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
+              <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
                  <a href="/masterpage/iog-consult">iOGConsult</a>
                  <a href="/masterpage/iog-implement">iOGImplement</a>
                  <a href="/masterpage/iog-train">iOGTrain</a>
@@ -363,72 +368,73 @@ translateWebsite(event){
               </button>
               <div class="col-lg-12 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                    <h5 className="columnhead"><a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
-                       <a href="/masterpage/production-plannning">Production Planning </a>
-                       <a href="/masterpage/refinery-scheduling">Production Schedule</a>
-                       <a href="/masterpage/retro-analysis">Back Casting / Retro-Analysis</a>
-                       <a href="/masterpage/lp-utilities">LP Utilities</a>
-                       <a href="/masterpage/lp-configuration">LP Configuration studies</a>
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1 ">
+                    <h5 className="columnhead">
+                       <a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
+                       <a href="/masterpage/production-plannning" className="dropdownintab expertise_a">Production Planning </a>
+                       <a href="/masterpage/refinery-scheduling"className="dropdownintab expertise_a">Production Schedule</a>
+                       <a href="/masterpage/retro-analysis"className="dropdownintab expertise_a">Back Casting / Retro-Analysis</a>
+                       <a href="/masterpage/lp-utilities"className="dropdownintab expertise_a">LP Utilities</a>
+                       <a href="/masterpage/lp-configuration"className="dropdownintab expertise_a">LP Configuration studies</a>
                  </div> 
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{padding:"0px"}}>
                  <h5 className="columnhead"><a href="/masterpage/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
-                  <a href="/masterpage/demand-management">Demand Management</a>
-                  <a href="/masterpage/invetory-management">Inventory Management</a>
-                  <a href="/masterpage/distribution-planning">Distribution Planning</a>
-                  <a href="/masterpage/retail-automation">Retail Automation</a><br/>
+                  <a href="/masterpage/demand-management" className="dropdownintab expertise_a">Demand Management</a>
+                  <a href="/masterpage/invetory-management"className="dropdownintab expertise_a">Inventory Management</a>
+                  <a href="/masterpage/distribution-planning"className="dropdownintab expertise_a">Distribution Planning</a>
+                  <a href="/masterpage/retail-automation"className="dropdownintab expertise_a">Retail Automation</a><br/>
                </div> 
                </div>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
-                    <a href="/masterpage/production-accounting">Production Accounting</a>
-                    <a href="/masterpage/data-historian">Realtime Data Historian</a>
-                    <a href="/masterpage/corporate-dashboard">Corporate Dashboard & Analytics</a>
-                    <a href="/masterpage/operation-logbook">Operation Logbook</a>        
-                    <a href="/masterpage/oil-movement">Oil Movement Management</a>
+                    <a href="/masterpage/production-accounting"className="dropdownintab expertise_a">Production Accounting</a>
+                    <a href="/masterpage/data-historian"className="dropdownintab expertise_a">Realtime Data Historian</a>
+                    <a href="/masterpage/corporate-dashboard"className="dropdownintab expertise_a">Corporate Dashboard & Analytics</a>
+                    <a href="/masterpage/operation-logbook"className="dropdownintab expertise_a">Operation Logbook</a>        
+                    <a href="/masterpage/oil-movement"className="dropdownintab expertise_a">Oil Movement Management</a>
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/digital-services"className="columnhead">Digital Services</a></h5>
-                    <a href="/masterpage/digital-transformation">Digital Transformation</a>
-                    <a href="/masterpage/application-support">Application Support</a>
-                    <a href="/masterpage/application-integration">Application Integration</a>
-                    <a href="/masterpage/visualization-&-dashboards">Visualization & Dashboards</a>
-                    <a href="/masterpage/industries-v4" className="">Industry 4.0 Initiatives</a>
+                    <a href="/masterpage/digital-transformation"className="dropdownintab expertise_a">Digital Transformation</a>
+                    <a href="/masterpage/application-support"className="dropdownintab expertise_a">Application Support</a>
+                    <a href="/masterpage/application-integration"className="dropdownintab expertise_a">Application Integration</a>
+                    <a href="/masterpage/visualization-&-dashboards"className="dropdownintab expertise_a">Visualization & Dashboards</a>
+                    <a href="/masterpage/industries-v4" className=""className="dropdownintab expertise_a">Industry 4.0 Initiatives</a>
                 </div>   
                </div>   
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
-                    <a href="/masterpage/steady-state" className="red">Steady State Simulation</a>
-                    <a href="/masterpage/dynamic-simulation">Dynamic Simulation</a>
-                    <a href="/masterpage/operator-training">Operator Training</a> 
+                    <a href="/masterpage/steady-state" className="red"className="dropdownintab expertise_a">Steady State Simulation</a>
+                    <a href="/masterpage/dynamic-simulation"className="dropdownintab expertise_a">Dynamic Simulation</a>
+                    <a href="/masterpage/operator-training"className="dropdownintab expertise_a">Operator Training</a> 
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/health-safety-environment"className="columnhead">Health Safety & Environment</a></h5>
-                    <a href="/masterpage/occupational-health">Occupational Health Management</a>
-                    <a href="/masterpage/process-safety">Process Safety Management</a>
-                    <a href="/masterpage/environment-management">Environment Management</a>
+                    <a href="/masterpage/occupational-health"className="dropdownintab expertise_a">Occupational Health Management</a>
+                    <a href="/masterpage/process-safety"className="dropdownintab expertise_a">Process Safety Management</a>
+                    <a href="/masterpage/environment-management"className="dropdownintab expertise_a">Environment Management</a>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/other-services" className="columnhead">Other Services</a></h5>
-                    <a href="/masterpage/apc-services">APC Services</a>
-                    <a href="/masterpage/etrm">ETRM</a>
+                    <a href="/masterpage/apc-services"className="dropdownintab expertise_a">APC Services</a>
+                    <a href="/masterpage/etrm"className="dropdownintab expertise_a">ETRM</a>
                 </div>      
                </div>   
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
-                    <a href="/masterpage/energy-optimization">Utility Network Optimization</a>
-                    <a href="/masterpage/equipment-monitoring">Equipment Monitoring</a>
-                    <a href="/masterpage/energy-accounting">Energy Accounting</a>
+                    <a href="/masterpage/energy-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
+                    <a href="/masterpage/equipment-monitoring"className="dropdownintab expertise_a">Equipment Monitoring</a>
+                    <a href="/masterpage/energy-accounting"className="dropdownintab expertise_a">Energy Accounting</a>
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                     <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
-                      <a href="/masterpage/aseet-criticality">Asset Criticality Analysis </a>
-                      <a href="/masterpage/asset-lifecycle">Asset Lifecycle </a>
-                      <a href="/masterpage/asset-strategy-management">Asset Strategy </a>
-                      <a href="/masterpage/inspection-&-calibration">Inspection & Calibration</a>
+                      <a href="/masterpage/aseet-criticality"className="dropdownintab expertise_a">Asset Criticality Analysis </a>
+                      <a href="/masterpage/asset-lifecycle"className="dropdownintab expertise_a">Asset Lifecycle </a>
+                      <a href="/masterpage/asset-strategy-management"className="dropdownintab expertise_a">Asset Strategy </a>
+                      <a href="/masterpage/inspection-&-calibration"className="dropdownintab">Inspection & Calibration</a>
                 </div>   
                </div>   
               </div>
@@ -437,7 +443,7 @@ translateWebsite(event){
               <button class="dropbtn">INDUSTRIES 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
-              <div class="dropdown-content normaldropdown" style={{position:"fixed"}}>
+              <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
                 <a href="/masterpage/refinery-mainpage">Refinery</a>
                 <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
                 <a href="/masterpage/chemicals-mainpage">Chemicals</a>

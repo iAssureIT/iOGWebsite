@@ -14,6 +14,8 @@
 }
 .cuformWall{
 	height: 500px;
+  margin-top: -67px;
+  padding: 0px;
 	/*background-color: #aaa;*/
 }
 .cuformWall h1, .cuformWall h3, .cuformWall p{

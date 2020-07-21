@@ -27,7 +27,7 @@
 }
 .contactBarres{
   position: absolute;
-  left: 0px;
+  right: 0px;
   background-color: #f19000;
   width: 35px;
   height: 30px;
@@ -43,7 +43,7 @@
   top:95px;
 }
 .navbar-static-top{
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 .rescontactBar{
   position: absolute;
@@ -221,14 +221,40 @@
     text-decoration: none;
     font-size: 9px;
     font-weight: 700;
+    margin-top: 13px;
 }
 .dropdown .dropbtn {
     font-size: 9px;
     padding: 14px 2px;
+    margin-top: 12px;
     
+}
+.contactBarres{
+  right: 0px! important;
+
+}
+.dropdownintab a{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 15px;
+  /*font-weight: 400 ! important;*/
+}
+.dropdownintab{
+  padding-bottom: 0px ! important;
+  padding-top: 0px ! important;
+  /*font-weight: 400 ! important;*/
+
+}
+.expertise_a{
+  font-weight: 400 ! important;
+  font-size: 10px ! important;
 }
 .contactBar{
   display: none;
+}
+.dropdown-content{
+  min-width: 100px;
+  min-height: 120px;
 }
 .headerlogo img{
   height: 68px ! important;
@@ -322,6 +348,7 @@
   padding-left: 60px;
   padding-top: 7px;
 }
+
 .contactBar{
   position: absolute;
   right: 0px;
@@ -368,13 +395,29 @@
     z-index: 3000;
 }
 .onscrollheader{
-    width: 151px ! important;
+    width: 137px ! important;
     height: 17px;
     background-color: #fff;
     position: absolute;
-    right: -5px;
-    top: 41px;
+    right: -7px;
+    top: 2px;
 }
+.goog-logo-link {
+   display:none !important;
+} 
+
+.goog-te-gadget{
+   color: transparent !important;
+}
+ .goog-te-banner-frame{
+    visibility:hidden !important;
+    }
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+} 
+body { top: 0px !important; }    
+
 
 
 

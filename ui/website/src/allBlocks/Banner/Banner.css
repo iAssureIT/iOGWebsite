@@ -849,7 +849,7 @@ height: 90px;
   /*left: 968px;*/
   bottom: 0px;
   right: 60px;
-  top: 162px;
+  top: 142px;
   height: 168px;
   animation: slide-left 4s ;
   /*z-index: 110;*/
@@ -899,61 +899,94 @@ height: 90px;
     top: 377px ! important;
   }
 }
+.waterimg_size{
+  width: 130px;
+}
+.boat_img_size{
+  width: 155px;
+}
+.nexttogasimg_size{
+  width: 200px;
+
+}
 
 @media only screen and (max-width: 768px) {
 .oilimage{
   right: 27px;
-  top: 62px;
+  top: 136px;
+}
+.waterimg_size{
+  width: 100px;
+}
+.nexttogasimg_size{
+  width: 150px;
+}
+.boat_img_size{
+  width: 125px;
 }
 .bannerContainer1{
-  height: 43em ! important;
+  height: 38em ! important;
 }
 .tabimage{
-  width: 170px ! important;
+  width: 150px ! important;
 }
 .plantimage11{
-  right: 134px ! important;
-    top: 117px ! important;
+  right: 183px ! important;
+  top: 167px ! important;
  }
  .petrolimage{
-    right: 25px ! important;
-    top: 167px ! important;
+   right: 45px ! important;
+   top: 229px ! important;
  }
  .boat_img{
     left: 137px ! important;
-    top: 93px ! important;
+    top: 126px ! important;
  }
  .plantimage1{
-    right: 259px !important;
-    top: 162px ! important;
+    right: 285px !important;
+    top: 211px ! important;
  }
  .petrolimage1{
   right: 156px ! important;
-  top: 232px ! important;
+  top: 285px ! important;
  }
  .boat_img2{
   left: 238px ! important;
-  top: 265px ! important;
+  top: 300px ! important;
  }
  .gasimage{
   right: 34px !important;
-  top: 296px ! important;
+  top: 355px ! important;
  }
  .nexttogasimage{
-  right: 193px !important;
-  top: 368px ! important;
+  right: 267px !important;
+  top: 386px ! important;
+  /*width: 150px ! important;*/
  }
+ 
  .waterimg2{
-  top: 67% ! important;
+  top: 77% ! important;
   left: 23% ! important;
  }
  .new_HoverDiv1{
-    margin-left: -18px ! important;
-    margin-top: -143px !important;
+   margin-left: -38px ! important;
+   margin-top: -172px !important;
+ }
+ .new_HoverDiv4{
+    margin-left: -50px ! important;
+    margin-top: -179px ! important;
  }
  .new_HoverDiv5{
-  margin-left: -11px ! important;
-  margin-top: -115px ! important;
+  margin-left: -61px ! important;
+  margin-top: -158px ! important;
+ }
+ .new_HoverDiv7{
+    margin-left: -55px ! important;
+    margin-top: -163px ! important;
+ }
+ .new_HoverDiv2{
+    margin-left: -135px ! important;
+    margin-top: -55px ! important;
  }
 }
 .gasimage{
@@ -969,14 +1002,14 @@ height: 90px;
    animation: slide-top 4s;
    bottom: 0px;
    right: 562px;
-   top: 489px;
+   top: 469px;
    height: 168px;
 }
 .petrolimage{
   position: absolute;
   bottom: 0px;
   right: 126px;
-  top: 287px;
+  top: 267px;
   height: 221px;
   animation: slide-tl 4s;
 
@@ -985,7 +1018,7 @@ height: 90px;
 .petrolimage1{
   position: absolute;
   right: 323px;
-  top: 372px;
+  top: 352px;
   height: 221px;
   animation: slide-right 4s ;
    /*opacity: 0.7;*/
@@ -995,7 +1028,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   right: 493px;
-  top: 272px;
+  top: 252px;
   height: 221px;
   animation: slide-bottom 4s ;
 
@@ -1006,7 +1039,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   right: 320px;
-  top: 204px;
+  top: 188px;
   height: 221px;
   animation: slide-bottom 4s ;
   /*opacity: 1;*/
@@ -1015,8 +1048,8 @@ height: 90px;
 .waterimg{
   position: absolute;
   bottom: 0px;
-  left: 65px;
-  top: 298px;
+  left: 46px;
+  top: 225px;
   height: 221px;
   animation: slide-right 4s ease-out;
   
@@ -1040,7 +1073,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   left: 221px;
-  top: 167px;
+  top: 147px;
   height: 221px;
   animation: slide-br 4s
   /*z-index: 110;*/
@@ -1051,7 +1084,7 @@ height: 90px;
   position: absolute;
   bottom: 0px;
   left: 297px;
-  top: 360px;
+  top: 340px;
   height: 221px;
   animation: slide-br 4s ;
   /*z-index: 110;*/
@@ -1060,8 +1093,8 @@ height: 90px;
 }
 .waterimg2{
   position: absolute;
-  top: 79%;
-  left: 13%;
+  top: 72%;
+  left: 16%;
   height: 221px;
   animation: slide-tr 4s;
   /*z-index: 110;*/
@@ -1715,20 +1748,13 @@ svg {
     background: #0f0f0fbf;
     position: absolute;
     height: 17px;
-    top: 41px;
+    top: 2px;
     /* display: none; */
-    width: 144px;
-    right: 2px;
+    width: 130px;
+    right: 0px;
 }
 #hidepoweredbyblack1{
- background: #0f0f0fbf;
- position: absolute;
- height: 11px;
- /*display: none;*/
- top: 66px;
- width: 60px;
- right: 88px;
- /*z-index: 11000;*/
+ 
 }
 .waterimg:hover .hidepoweredby{
   background-color:#0f0f0fbf ! important;
@@ -2447,6 +2473,9 @@ div.drop-container:after {
   height:0px ! important;
 }
 .goog-te-combo{
-  border:none;
+  border: none;
+  top: -24px;
+  right: -2px;
+  position: absolute;
   background-color: #eee;
 }
