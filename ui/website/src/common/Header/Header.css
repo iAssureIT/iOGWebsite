@@ -320,8 +320,9 @@
   transition-duration: 0.8s;
 }
 .expertiesdropdown{
-    width: 1277px;
-    margin-left: -550px;
+    width: 1170px;
+    margin-left: -536px;
+    padding-left: 56px;
 }
 .columnhead{
   /*line-height: 20px;*/
@@ -395,12 +396,23 @@
     z-index: 3000;
 }
 .onscrollheader{
-    width: 137px ! important;
+    width: 157px ! important;
     height: 17px;
     background-color: #fff;
     position: absolute;
-    right: -7px;
-    top: 2px;
+    right: 0px;
+    top: -17px;
+}
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important;
 }
 .goog-logo-link {
    display:none !important;

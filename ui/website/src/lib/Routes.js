@@ -10,8 +10,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import '../App.css';
 //-----------Main Menu Rout.................//
 import Header            from '../common/Header/Header.js';
-import header_aashish    from '../common/Header/header_aashish.js';
-import HeaderTry         from '../common/Header/HeaderTry.js';
 import Megamenu          from '../common/Header/Megamenu.js';
 // import NewHeader      from '../common/MegaMenuHeader/NewHeader.js';
 import Footer         from '../common/Footer/Footer.js';
@@ -193,8 +191,6 @@ import MasterPage                from '../MasterPage/MasterPage.js';
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
     <Route path="/" exact strict component={ HomePage } /> 
-    <Route path="/header_aashish" exact strict component={ header_aashish } /> 
-    <Route path="/HeaderTry" exact strict component={ HeaderTry } /> 
     <Route path="/megamenu" component={ Megamenu } />  
     <Route path="/contact-us" component={ Contactpage } />  
 {/*    <Route path="/contactUsModal" component={ ContactUsModal } />  */}

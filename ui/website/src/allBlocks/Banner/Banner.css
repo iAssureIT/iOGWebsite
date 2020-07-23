@@ -1045,6 +1045,38 @@ height: 90px;
   /*opacity: 1;*/
 
 }
+.fade-in {
+animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
 .waterimg{
   position: absolute;
   bottom: 0px;
@@ -1111,6 +1143,7 @@ height: 90px;
     margin-top: -188px;
     position: absolute;
     background-size: 100% 100%;
+    animation: fadeIn ease 3s;
     z-index: 110;
   }
 
@@ -1217,6 +1250,7 @@ height: 90px;
     margin-left: 2px;
     margin-top: -143px;
     position: absolute;
+    animation: fadeIn ease 3s;
     background-size: 100% 100%;
     z-index: 110;
     
@@ -1229,6 +1263,7 @@ height: 90px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -42px;
     margin-top: -138px;
+    animation: fadeIn ease 3s;
     position: absolute;
     background-size: 100% 100%;
     
@@ -1240,6 +1275,7 @@ height: 90px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -12px;
+    animation: fadeIn ease 3s;
     margin-top: -142px;
     position: absolute;
     background-size: 100% 100%;
@@ -1255,6 +1291,7 @@ height: 90px;
     margin-left: -26px;
     margin-top: -130px;
     position: absolute;
+    animation: fadeIn ease 3s;
     background-size: 100% 100%;
     z-index: 110;
     
@@ -1266,6 +1303,7 @@ height: 90px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: 11px;
+    animation: fadeIn ease 3s;
     margin-top: -143px;
     position: absolute;
     background-size: 100% 100%;
@@ -1278,6 +1316,7 @@ height: 90px;
     height: 275px;
     width: 275px;
     border-radius: 5px;
+    animation: fadeIn ease 3s;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -98px;
     margin-top: -175px;
@@ -1294,6 +1333,7 @@ height: 90px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: 16px;
     margin-top: -128px;
+    animation: fadeIn ease 3s;
     position: absolute;
     background-size: 100% 100%;
     z-index: 250;
@@ -1740,7 +1780,8 @@ svg {
 #blackbannerDiv{
   background:#0f0f0fbf;
   position: absolute;
-  animation: dripple1 1s ease-out 1s;
+  /*animation: dripple1 1s ease-out 1s;*/
+  animation: fadeIn ease 3s;
   height: 53em;
   z-index: 50;
 }
@@ -1750,7 +1791,7 @@ svg {
     height: 17px;
     top: 2px;
     /* display: none; */
-    width: 130px;
+    width: 144px;
     right: 0px;
 }
 #hidepoweredbyblack1{
@@ -2436,7 +2477,7 @@ div.drop-container:after {
   position: absolute;
   margin-top: 9px;
   /*position: absolute;*/
-  right: -13px;
+  right: -0px;
 }
 .translatediv span{
   display: none;
@@ -2474,8 +2515,11 @@ div.drop-container:after {
 }
 .goog-te-combo{
   border: none;
-  top: -24px;
-  right: -2px;
+  top: -20px;
+  right: 0px;
   position: absolute;
   background-color: #eee;
+}
+.goog-te-gadget .goog-te-combo{
+  margin: 0px;
 }

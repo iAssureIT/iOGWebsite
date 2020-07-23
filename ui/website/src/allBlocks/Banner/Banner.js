@@ -14,6 +14,16 @@ export default class newbanner extends Component {
 
 componentDidMount(){
 
+    $(".waterimg").fadeIn(6000);
+    $(".waterimg2").fadeIn(6000);
+    $(".petrolimage1").fadeIn(6000);
+    $(".nexttogasimage").fadeIn(6000);
+    $(".plantimage1").fadeIn(6000);
+    $(".plantimage11").fadeIn(6000);
+    $(".boat_img").fadeIn(6000);
+    $(".boat_img2").fadeIn(6000);
+ 
+
  
   
   $("#waterimgDiv").hover(function() { 
@@ -23,6 +33,7 @@ componentDidMount(){
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
+      $(".new_HoverDiv").fadeOut(6000);
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
      

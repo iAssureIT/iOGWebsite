@@ -366,8 +366,8 @@ translateWebsite(event){
               <button class="dropbtn">EXPERTISE
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
-              <div class="col-lg-12 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown" style={{position:"fixed"}}>
-               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown NOPadding" style={{position:"fixed"}}>
+               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1 ">
                     <h5 className="columnhead">
                        <a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
@@ -385,7 +385,7 @@ translateWebsite(event){
                   <a href="/masterpage/retail-automation"className="dropdownintab expertise_a">Retail Automation</a><br/>
                </div> 
                </div>
-               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
                     <a href="/masterpage/production-accounting"className="dropdownintab expertise_a">Production Accounting</a>
@@ -403,7 +403,7 @@ translateWebsite(event){
                     <a href="/masterpage/industries-v4" className=""className="dropdownintab expertise_a">Industry 4.0 Initiatives</a>
                 </div>   
                </div>   
-               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
                     <a href="/masterpage/steady-state" className="red"className="dropdownintab expertise_a">Steady State Simulation</a>
@@ -422,7 +422,7 @@ translateWebsite(event){
                     <a href="/masterpage/etrm"className="dropdownintab expertise_a">ETRM</a>
                 </div>      
                </div>   
-               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
                     <a href="/masterpage/energy-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
@@ -448,7 +448,7 @@ translateWebsite(event){
                 <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
                 <a href="/masterpage/chemicals-mainpage">Chemicals</a>
                 <a href="/masterpage/lng">LNG</a>
-                <a href="/masterpage/gas-processing">Gas Precessing</a>
+                <a href="/masterpage/gas-processing">Gas Processing</a>
                 <a href="/masterpage/oil-&-gas-e-&-p">Oil & Gas E & P</a>
               </div>
             </div> 
