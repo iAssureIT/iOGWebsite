@@ -19,20 +19,6 @@ export default class Aboutufounder extends Component {
                             <div key={index} className="backgrd_curve1 col-lg-12 col-md-12 col-sm-12 col-xs-12 head_spacing">
                                   <div className="col-lg-5 col-md-4 col-sm-4 col-xs-4">
                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 takeleft">
-                                    <div className=" col-lg-4 ">
-                                     <div class="container">
-                                      <div class="moduletable">           
-                                      <ul class="breadcrumb breadcrumb1 founderbrdcrm">
-                                      <li class="active">&nbsp;</li><li>
-                                      <a href="/" class="pathway">Home</a>
-                                      <span class="divider">
-                                      <img src="/media/system/images/arrow.png" alt=""/></span></li>
-                                      <li><a href="/about-us" class="pathway">About Us</a>
-                                      <span class="divider"><img src="/media/system/images/arrow.png" alt=""/></span></li>
-                                      <li class="active"><span>Founder's Profile</span></li></ul>
-                                        </div>
-                                    </div>
-                                   </div> 
                                  </div>
                                     <div className="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-xs-8">
                                           <a href={data.founderlink} target="_blank"><img src={data.founderimg} alt="" className="director_img"/></a>

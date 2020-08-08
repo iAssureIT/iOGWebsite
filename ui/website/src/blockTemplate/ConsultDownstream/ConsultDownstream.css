@@ -60,7 +60,7 @@
 
 #consultdown_data4{
 	 position: absolute;
-    top: 66em;
+    top: 82em;
     right: 12%;
     width: 294px;
     text-align: left;
@@ -75,10 +75,10 @@
 }
 #consultdown_data6{
 	position: absolute;
-    top: 83em;
-    right: 12%;
-    width: 294px;
-    text-align: left;
+  top: 90em;
+  left: 13%;
+  width: 294px;
+  text-align: left;
 }
 #consultdown_data7{
 	position: absolute;

@@ -340,10 +340,11 @@ translateWebsite(event){
            <div class="topnav" id="myTopnav">
             <a href="/">HOME</a>
             <div class="dropdown">
-              <button class="dropbtn">ABOUT US 
+              <a href="/masterpage/about-us" className="NopaddingToA"><button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
-              </button>
-              <div className="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
+               </button>
+             </a>
+              <div className="dropdown-content normaldropdown dropdownintab dropdownforAbiutus" style={{position:"fixed"}}>
                  <a href="/masterpage/about-us">Company Profile</a>
                  <a href="/masterpage/founder-profile">Founder's Profile</a>
                  <a href="/masterpage/news-&amp;-events">News &amp; Events</a>
@@ -352,18 +353,19 @@ translateWebsite(event){
               </div>
             </div>  
             <div class="dropdown">
-              <button class="dropbtn">SERVICES 
+              <button class="dropbtn"><a href="/masterpage/service-arms"className="NopaddingToA">SERVICES</a> 
                 <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
+                 <a href="/masterpage/iog-study">iOGStudy</a>
                  <a href="/masterpage/iog-consult">iOGConsult</a>
                  <a href="/masterpage/iog-implement">iOGImplement</a>
                  <a href="/masterpage/iog-train">iOGTrain</a>
-                 <a href="/masterpage/iog-study">iOGStudy</a>
+                
               </div>
             </div> 
             <div class="dropdown ">
-              <button class="dropbtn">EXPERTISE
+              <button class="dropbtn"><a href="/masterpage/expertise-main-page" className="NopaddingToA">EXPERTISE</a>
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown NOPadding" style={{position:"fixed"}}>
@@ -440,7 +442,7 @@ translateWebsite(event){
               </div>
             </div> 
              <div class="dropdown">
-              <button class="dropbtn">INDUSTRIES 
+              <button class="dropbtn"><a href="/masterpage/industries"className="NopaddingToA">INDUSTRIES</a> 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>

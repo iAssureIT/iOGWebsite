@@ -25,6 +25,12 @@
   z-index: 100000;
   top:70px;
 }
+.NopaddingToA{
+  padding: 0px ! important;
+}
+.dropdownforAbiutus{
+  margin-top: 31px;
+}
 .contactBarres{
   position: absolute;
   right: 0px;

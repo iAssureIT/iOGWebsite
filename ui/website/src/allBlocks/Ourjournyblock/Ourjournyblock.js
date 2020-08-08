@@ -209,10 +209,12 @@ journyData3(){
 }
 journyData4(){
     return [
+
         {
-            journyTitle : "June 2015",
-            journytext  : "iOG Solutions partners with leading IT firm and provide consulting services for a complete review of IT spending of an O&G Global Major. "   
+            journyTitle : "Sep 2015",
+            journytext  : "iOG Solutions launch its new website on 9th Sep 2015. "   
         },
+       
     /*    {
             journyTitle : "",
             journytext  : ""   
@@ -226,9 +228,9 @@ journyData4(){
 }
 journyData5(){
     return [
-        {
-            journyTitle : "Sep 2015",
-            journytext  : "iOG Solutions launch its new website on 9th Sep 2015. "   
+         {
+            journyTitle : "June 2015",
+            journytext  : "iOG Solutions partners with leading IT firm and provide consulting services for a complete review of IT spending of an O&G Global Major. "   
         },
    /*     {
             journyTitle : "",

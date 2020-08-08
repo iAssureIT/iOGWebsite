@@ -105,7 +105,7 @@ componentDidMount(){
         <div className="ht_row2 col-lg-12 col-md-12 hidden-sm hidden-xs">
             <div className="row alignment_rw">
               <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-              <div className="iogblock2text col-lg-4  col-md-4 col-sm-12 col-xs-12 bckgblck_color_white">
+              <div className="iogblock2text col-lg-6  col-md-6 col-sm-12 col-xs-12 bckgblck_color_white">
               <span><b>{this.state.blocks.repeatedBlocks[0].Title}</b></span>
               <p className="secondblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[0].Description}}></p>
               </div>
@@ -136,7 +136,7 @@ componentDidMount(){
             <div className="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3 col-sm-11 col-xs-11">
               <div className="iogblock4text col-lg-10 col-md-10 col-sm-10 col-xs-10 bckgblck_color_white">
                 <span><b className=""></b>{this.state.blocks.repeatedBlocks[2].Title}</span> 
-                <p className="fourthblockk col-lg-offset-1" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
+                <p className="fourthblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
               </div>
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
