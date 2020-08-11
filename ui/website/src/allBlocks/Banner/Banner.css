@@ -1790,7 +1790,7 @@ svg {
     position: absolute;
     height: 41px;
     top: 0px;
-    /* display: none; */
+     display: none; 
     width: 144px;
     right: 0px;
 }
