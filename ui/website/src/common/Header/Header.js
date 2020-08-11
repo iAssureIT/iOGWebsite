@@ -9,11 +9,17 @@ import './Megamenu.js'
 import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
 export default class Header extends Component {
+
+   constructor(props) {
+    super(props);
+        this.state={
+          lang:"en",
+        }
+
+      }
+
   
   componentWillMount() {
-
-     
-
      var pageUrl = window.location.pathname;;
      console.log("pageUrl kkk= ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
@@ -21,10 +27,6 @@ export default class Header extends Component {
           if(pageUrl == '/ourjourny'){
             $(".hidepoweredby").css("backgroundColor", "#fff");
           }
-         
-
-
-
 
      $(".onscrollheader").css("display", "none");
     $(window).scroll(function() {    
@@ -41,15 +43,141 @@ export default class Header extends Component {
       }
     });
   }
-  myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+
+ componentDidMount () {
+
+    const script = document.createElement("script");
+    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // this.googleTranslateElementInit();
+} 
+
+
+
+myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
 }
-translateWebsite(event){
+
+triggerHtmlEvent(element, eventName) {
+
+
+   $('document').ready(function () {
+
+
+    // RESTYLE THE DROPDOWN MENU
+    $('#google_translate_element').on("click", function () {
+
+        // Change font family and color
+        $("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2 *")
+            .css({
+                'color': '#544F4B',
+                'font-family': 'Roboto',
+                'width':'100%'
+            });
+        // Change menu's padding
+        $("iframe").contents().find('.goog-te-menu2-item-selected').css ('display', 'none');
+      
+        // Change menu's padding
+        $("iframe").contents().find('.goog-te-menu2').css ('padding', '0px');
+      
+        // Change the padding of the languages
+        $("iframe").contents().find('.goog-te-menu2-item div').css('padding', '20px');
+      
+        // Change the width of the languages
+        $("iframe").contents().find('.goog-te-menu2-item').css('width', '100%');
+        $("iframe").contents().find('td').css('width', '100%');
+      
+        // Change hover effects
+        $("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
+            $(this).css('background-color', '#4385F5').find('span.text').css('color', 'white');
+        }, function () {
+            $(this).css('background-color', 'white').find('span.text').css('color', '#544F4B');
+        });
+
+        // Change Google's default blue border
+        $("iframe").contents().find('.goog-te-menu2').css('border', 'none');
+
+        // Change the iframe's box shadow
+        $(".goog-te-menu-frame").css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)');
+        
+      
+      
+        // Change the iframe's size and position?
+        $(".goog-te-menu-frame").css({
+            'height': '100%',
+            'width': '100%',
+            'top': '0px'
+        });
+        // Change iframes's size
+        $("iframe").contents().find('.goog-te-menu2').css({
+            'height': '100%',
+            'width': '100%'
+        });
+    });
+  })
+
+ }
+
+
+ googleTranslateElementInit() {
+
+    const google = window.google;
+    new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+     // window.location.reload();
+ }
+
+ /*  triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+       window.location.reload();
+    event = document.createEvent('HTMLEvents');
+    event.initEvent(eventName, true, true);
+    element.dispatchEvent(event);
+    } else {
+    event = document.createEventObject();
+    event.eventType = eventName;
+    element.fireEvent('on' + event.eventType, event);
+    }
+  }
+*/
+  changeLanguage(event, element, eventName){
+
+    // window.location.reload();
+    var lang = event.currentTarget.dataset;
+    console.log("lang",lang);
+    console.log("window.location",window.location);
+    this.setState({
+      lang:lang
+
+    })
+
+     // window.location.reload();
+
+   this.googleTranslateElementInit();
+
+
+  }
+ /* jQuery('.lang-select').click(function() {
+    var theLang = jQuery(this).attr('data-lang');
+    jQuery('.goog-te-combo').val(theLang);
+
+
+    //alert(jQuery(this).attr('href'));
+    window.location = jQuery(this).attr('href');
+    window.location.reload();
+
+  });*/
+
+
+
+/*translateWebsite(event){
  event.preventDefault();
   var langId=event.currentTarget.id;
   console.log("langId",langId);
@@ -74,9 +202,24 @@ translateWebsite(event){
            
 
  
+}*/
+
+/*Custom_tanslate(event){
+  var script = document.createElement('script');
+  script.type="text/javascript";
+    $('.translation-links a').click(function() {
+      var lang = $(this).data('lang');
+      var $frame = $('.goog-te-menu-frame:first');
+      if (!$frame.size()) {
+        alert("Error: Could not find Google translate frame.");
+        return false;
+      }
+      $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+      return false;
+    });
 }
 
-
+*/
 
 
 /*function googleTranslateElementInit()
@@ -140,10 +283,70 @@ translateWebsite(event){
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top" id="bb">
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 onscrollheader"></div>
           {/*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">*/}
-             <div class="navbar-form navbar-left pull-right">
-               <div class="moduletable">
-                  <div className="translatediv" id="google_translate_element">
+             <div className="navbar-form navbar-left pull-right">
+               <div className="moduletable">
+               
+                  <div className="ct-topbar">
+                    <div className="container new_container">
+                    <ul className="list-unstyled list-inline ct-topbar__list">
+                      <li className="ct-language">
+                      <ul className="list-unstyled ct-language__dropdown">
+                        <li><a href="#googtrans(en|en)" className="lang-en lang-select" data-lang="en" >
+                          <img src="/images/engelsflag.png" className="flagdiv" alt="ENGLISH" title="English"/>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#googtrans(en|ar)" className="lang-es lang-select" data-lang="ar" >
+                           <img src="/images/arebicflag.png" className="flagdiv" alt="ARABIC" title="Arabic" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#googtrans(en|fr)" className="lang-es lang-select" data-lang="fr">
+                           <img src="/images/Germany.png" className="flagdiv" alt="GERMAN" title="German"/>
+                          </a>
+                         </li>
+                        <li>
+                         <a href="#googtrans(en|fr)" className="lang-es lang-select" data-lang="fn">
+                          <img src="/images/fransflag.jpg" className="flagdiv" alt="FRENCH" title="French"/>
+                           </a>
+                        </li>
+                        <li>
+                         <a href="#googtrans(en|es)" className="lang-es lang-select" data-lang="es">
+                          <img src="/images/spain-flag.jpg" className="flagdiv" alt="SPANISH" title="Spanish"/>
+                         </a>
+                        </li>
+                      </ul>
+                      </li>
+                    </ul>
                     </div>
+                  </div>
+               
+                 {/* <div class="ct-topbar">
+                    <div class="container">
+                    <ul class="list-unstyled list-inline ct-topbar__list">
+                      <li class="ct-language">Language <i class="fa fa-arrow-down"></i>
+                      <ul class="list-unstyled ct-language__dropdown">
+                        <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en" onClick={this.triggerHtmlEvent.bind(this)}>
+                             <img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"/>
+                          </a>
+                        </li>
+                        <li>
+                         <a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es" onClick={this.triggerHtmlEvent.bind(this)}>
+                          <img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"/>
+                         </a>
+                        </li>
+                        <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr" onClick={this.triggerHtmlEvent.bind(this)}>
+                             <img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="FRANCE"/>
+                           </a>
+                        </li>
+    
+                      </ul>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>*/}
+                 
+
                    {/* <div className="hidepoweredby">
                     </div>*/}
                    <div className="new_flagdiv">
@@ -196,140 +399,6 @@ translateWebsite(event){
                   </div>
                 </div>  
               </div>
-               {/*<div class="navbar-form navbar-left pull-right">
-                 <div class="moduletable">
-                  <div className="translatediv" id="google_translate_element2">
-                   <div className="skiptranslate goog-te-gadget" dir="ltr">
-                    <div id=":0.targetLanguage">
-                     <select className="goog-te-combo" aria-label="Language Translate Widget">
-                       <option value="">Select Language</option>
-                       <option value="af">Afrikaans</option>
-                       <option value="sq">Albanian</option>
-                       <option value="am">Amharic</option>
-                       <option value="ar">Arabic</option>
-                       <option value="hy">Armenian</option>
-                       <option value="az">Azerbaijani</option>
-                       <option value="eu">Basque</option>
-                       <option value="be">Belarusian</option>
-                       <option value="bn">Bengali</option>
-                       <option value="bs">Bosnian</option>
-                       <option value="bg">Bulgarian</option>
-                       <option value="ca">Catalan</option>
-                       <option value="ceb">Cebuano</option>
-                       <option value="ny">Chichewa</option>
-                       <option value="zh-CN">Chinese (Simplified)</option>
-                       <option value="zh-TW">Chinese (Traditional)</option>
-                       <option value="co">Corsican</option>
-                       <option value="hr">Croatian</option>
-                       <option value="cs">Czech</option>
-                       <option value="da">Danish</option>
-                       <option value="nl">Dutch</option>
-                       <option value="eo">Esperanto</option>
-                       <option value="et">Estonian</option>
-                       <option value="tl">Filipino</option>
-                       <option value="fi">Finnish</option>
-                       <option value="fr">French</option>
-                       <option value="fy">Frisian</option>
-                       <option value="gl">Galician</option>
-                       <option value="ka">Georgian</option>
-                       <option value="de">German</option>
-                       <option value="el">Greek</option>
-                       <option value="gu">Gujarati</option>
-                       <option value="ht">Haitian Creole</option>
-                       <option value="ha">Hausa</option>
-                       <option value="haw">Hawaiian</option>
-                       <option value="iw">Hebrew</option>
-                       <option value="hi">Hindi</option>
-                       <option value="hmn">Hmong</option>
-                       <option value="hu">Hungarian</option>
-                       <option value="is">Icelandic</option>
-                       <option value="ig">Igbo</option>
-                       <option value="id">Indonesian</option>
-                       <option value="ga">Irish</option>
-                       <option value="it">Italian</option>
-                       <option value="ja">Japanese</option>
-                       <option value="jw">Javanese</option>
-                       <option value="kn">Kannada</option>
-                       <option value="kk">Kazakh</option>
-                       <option value="km">Khmer</option>
-                       <option value="rw">Kinyarwanda</option>
-                       <option value="ko">Korean</option>
-                       <option value="ku">Kurdish (Kurmanji)</option>
-                       <option value="ky">Kyrgyz</option>
-                       <option value="lo">Lao</option>
-                       <option value="la">Latin</option>
-                       <option value="lv">Latvian</option>
-                       <option value="lt">Lithuanian</option>
-                       <option value="lb">Luxembourgish</option>
-                       <option value="mk">Macedonian</option>
-                       <option value="mg">Malagasy</option>
-                       <option value="ms">Malay</option>
-                       <option value="ml">Malayalam</option>
-                       <option value="mt">Maltese</option>
-                       <option value="mi">Maori</option>
-                       <option value="mr">Marathi</option>
-                       <option value="mn">Mongolian</option>
-                       <option value="my">Myanmar (Burmese)</option>
-                       <option value="ne">Nepali</option>
-                       <option value="no">Norwegian</option>
-                       <option value="or">Odia (Oriya)</option>
-                       <option value="ps">Pashto</option>
-                       <option value="fa">Persian</option>
-                       <option value="pl">Polish</option>
-                       <option value="pt">Portuguese</option>
-                       <option value="pa">Punjabi</option>
-                       <option value="ro">Romanian</option>
-                       <option value="ru">Russian</option>
-                       <option value="sm">Samoan</option>
-                       <option value="gd">Scots Gaelic</option>
-                       <option value="sr">Serbian</option>
-                       <option value="st">Sesotho</option>
-                       <option value="sn">Shona</option>
-                       <option value="sd">Sindhi</option>
-                       <option value="si">Sinhala</option>
-                       <option value="sk">Slovak</option>
-                       <option value="sl">Slovenian</option>
-                       <option value="so">Somali</option>
-                       <option value="es">Spanish</option>
-                       <option value="su">Sundanese</option>
-                       <option value="sw">Swahili</option>
-                       <option value="sv">Swedish</option>
-                       <option value="tg">Tajik</option>
-                       <option value="ta">Tamil</option>
-                       <option value="tt">Tatar</option>
-                       <option value="te">Telugu</option>
-                       <option value="th">Thai</option>
-                       <option value="tr">Turkish</option>
-                       <option value="tk">Turkmen</option>
-                       <option value="uk">Ukrainian</option>
-                       <option value="ur">Urdu</option>
-                       <option value="ug">Uyghur</option>
-                       <option value="uz">Uzbek</option>
-                       <option value="vi">Vietnamese</option>
-                       <option value="cy">Welsh</option>
-                       <option value="xh">Xhosa</option>
-                       <option value="yi">Yiddish</option>
-                       <option value="yo">Yoruba</option>
-                       <option value="zu">Zulu</option>
-                     </select>
-                   </div> 
-                   <a onClick="doGTranslate('en|en');return false;"   title="Engels" className="flag nturl">
-                   <img src="/images/engelsflag.png"  className="flagdiv"  alt="Engels"/>
-                   </a>
-                  <a href="#" onclick="doGTranslate('en|ar');return false;"  title="Arabies" className="flag nturl">
-                   <img src="/images/arebicflag.png"  className="flagdiv"  alt="Arabies"/>
-                   </a>
-                  <a href="#" onclick="doGTranslate('en|fr');return false;" title="Frans" className="flag nturl">
-                   <img   src="/images/fransflag.jpg"  className="flagdiv" alt="Frans"/></a>
-                  <a href="#"  title="Duitse" className="flag nturl">
-                   <img src="/images/Germany.png" onclick="doGTranslate('en|de');return false;"  className="flagdiv" alt="Duitse"/></a>
-                  <a href="#" onclick="doGTranslate('en|es');return false;"  title="Spaans" className="flag nturl">
-                   <img  src="/images/spain-flag.jpg"  className="flagdiv" alt="Spaans"/></a>
-                 </div>    
-                </div>
-               </div>
-             </div>*/}
-           {/* </div>*/}
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 
            </div> 

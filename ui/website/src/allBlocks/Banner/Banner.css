@@ -1788,8 +1788,8 @@ svg {
 #hidepoweredbyblack{
     background: #0f0f0fbf;
     position: absolute;
-    height: 17px;
-    top: 2px;
+    height: 41px;
+    top: 0px;
     /* display: none; */
     width: 144px;
     right: 0px;
@@ -2477,7 +2477,7 @@ div.drop-container:after {
   position: absolute;
   margin-top: 9px;
   /*position: absolute;*/
-  right: -0px;
+  right: 30px;
 }
 .translatediv span{
   display: none;
@@ -2490,8 +2490,8 @@ div.drop-container:after {
 }
 .flagdiv{
   padding:2px 2px 2px 2px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 /*.goog-te-banner-frame{
   position: absolute ! important;
