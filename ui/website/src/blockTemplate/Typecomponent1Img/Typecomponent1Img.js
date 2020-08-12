@@ -66,10 +66,10 @@ componentDidMount(){
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img col-lg-10 col-sm-10 col-xs-10" hight="250" width="400" />
-                          </div>
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 comp_imgDiv ">
+                            
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" />
+ 
                         </div>
                         </div>
                     </div>

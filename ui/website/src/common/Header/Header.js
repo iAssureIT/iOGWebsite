@@ -129,7 +129,7 @@ triggerHtmlEvent(element, eventName) {
  googleTranslateElementInit() {
 
     const google = window.google;
-    new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    new google.translate.TranslateElement({pageLanguage: this.state.lang, layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
      // window.location.reload();
  }
 
@@ -149,8 +149,8 @@ triggerHtmlEvent(element, eventName) {
 */
   changeLanguage(event, element, eventName){
 
-    // window.location.reload();
-    var lang = event.currentTarget.dataset;
+     // window.location.reload();
+   var lang = event.currentTarget.dataset;
     console.log("lang",lang);
     console.log("window.location",window.location);
     this.setState({
@@ -296,17 +296,17 @@ triggerHtmlEvent(element, eventName) {
                           </a>
                         </li>
                         <li>
-                          <a href="#googtrans(en|ar)" className="lang-es lang-select" data-lang="ar" >
-                           <img src="/images/arebicflag.png" className="flagdiv" alt="ARABIC" title="Arabic" />
+                          <a href="#googtrans(en|ar)" className="lang-es lang-select" data-lang="ar">
+                           <img src="/images/arebicflag.png" className="flagdiv" alt="ARABIC" title="Arabic"  />
                           </a>
                         </li>
                         <li>
-                          <a href="#googtrans(en|fr)" className="lang-es lang-select" data-lang="fr">
+                          <a href="#googtrans(en|de)" className="lang-es lang-select" data-lang="de">
                            <img src="/images/Germany.png" className="flagdiv" alt="GERMAN" title="German"/>
                           </a>
                          </li>
                         <li>
-                         <a href="#googtrans(en|fr)" className="lang-es lang-select" data-lang="fn">
+                         <a href="#googtrans(en|fr)" className="lang-es lang-select" data-lang="fr">
                           <img src="/images/fransflag.jpg" className="flagdiv" alt="FRENCH" title="French"/>
                            </a>
                         </li>

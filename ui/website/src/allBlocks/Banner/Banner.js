@@ -30,12 +30,14 @@ componentDidMount(){
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
        $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+       $('.boat_img').css('z-index','12000').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $(".new_HoverDiv").fadeOut(6000);
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
+      $('.boat_img').css('z-index','10000');
      
     });
 
@@ -56,17 +58,22 @@ componentDidMount(){
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
        $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+       $('.waterimg2').css('z-index','12000').removeClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
+
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
+      $('.waterimg2').css('z-index','10');
      
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
        $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -85,33 +92,39 @@ componentDidMount(){
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
        $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+        $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
      
     });
     $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
        $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+        $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
      
     });
     $("#petrolimage1Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
        $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
      
     });
 } 
@@ -310,25 +323,25 @@ pin6click(event){
                  
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className="row"style={{overflow:"hidden"}}>
-                <figure className="oilimage"id="oilimageDiv">
+              <figure className="oilimage"id="oilimageDiv">
                  <div className="new_HoverDiv7">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
-                   <p className="newhovertxt"> iOG Solutions helps clients to define a road map for sustainable Health and Safety practices.</p>
-                   <a href="/masterpage/health-safety-environment"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <p className="newhovertxt">Complex processes of Petrochemical units takes place here.</p>
+                   <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_11.png"className="tabimage scaleimage"style={{width:"241px"}}/>
+                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage"style={{width:"241px"}}/>
                 </figure>
-                <figure className="gasimage"style={{overflow:"hidden"}}>
-                 <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"241px"}}/>
-                </figure>
+               {/* <figure className="gasimage"style={{overflow:"hidden"}}>
+                 <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
+                </figure>*/}
                 <figure className="nexttogasimage"id="nexttogasimageDiv">
                  <div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                     <div style={{width:"165px"}}>
-                    <p className="newhovertxt_8"> Entire process of chemicals takes place here. </p>
-                    <a href="/masterpage/chemicals-mainpage">
+                    <p className="newhovertxt_8"> Entire process of Refinery takes place here. </p>
+                    <a href="/masterpage/refinery-mainpage">
                       <span className="servicekbtnarrow8">
                        <i className="fa fa-chevron-circle-right"></i>
                       </span>
@@ -337,39 +350,30 @@ pin6click(event){
                  </div>
                   <img alt="" className="img-responsive scaleimage nexttogasimg_size"src="/images/Banner3_5.png" /> 
                 </figure>
-                <figure className="petrolimage"style={{overflow:"hidden"}}>
+               {/* <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
-                </figure>
+                </figure>*/}
                 <figure className="petrolimage1"id="petrolimage1Div">
                  <div className="new_HoverDiv2">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                   <p className="newhovertxt_again"> Entire process of refining takes place here. </p>
-                   <a href="/masterpage/refinery-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <p className="newhovertxt_again"> Entire process of Chemicals takes place here. </p>
+                   <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" className="img-responsive tabimage scaleimage"src="/images/newbanner_img5.png"style={{width:"241px"}}/>
+                 <img alt="" className="img-responsive tabimage scaleimage"src="/images/newbanner_img5.png"style={{width:"255px"}}/>
                 </figure>
-                 <figure className="plantimage1"id="plantimage1Div">
-                  {/* <div className="ripplediv">
-                     <div className=" ripplebox2" onClick={this.pin3click.bind(this)} title="Click Me">
-                      <span style={{"--i":"1"}}></span>
-                      <span style={{"--i":"2"}}></span>
-                      <span style={{"--i":"3"}}></span>
-                      <span style={{"--i":"4"}}></span>
-                      <span style={{"--i":"5"}}></span>
-                     </div>
-                   </div>*/}
+                {/* <figure className="plantimage1"id="plantimage1Div">
                   <div className="new_HoverDiv3">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"188px"}}>
-                   {/* <i className="fa fa-times hover_close"onClick={this.pin3removeclick.bind(this)}></i>*/}
+                  
                    <p className="newhovertxt_ptrchemical">Petrochemical industry & its higher value addition in recent volatile oil market.</p>
                    <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                 <img alt="" className="img-responsive scaleimage"src="/images/Banner3_6.png"className="tabimage"style={{width:"241px"}}/>
-                </figure>
+                 <img alt="" className="img-responsive scaleimage"src="/images/Banner3_6.png"className="tabimage"style={{width:"255px"}}/>
+                </figure>*/}
                 <figure className="plantimage11"id="plantimage11Div">
                  <div className="ripplediv">
                     {/* <div className="ripplebox3" onClick={this.pin4click.bind(this)} title="Click Me">
@@ -380,15 +384,15 @@ pin6click(event){
                       <span className="rippleboxhov" style={{"--i":"5"}}></span>
                      </div>*/}
                    </div>
-                 <div className="new_HoverDiv4"onClick={this.pin4removeclick.bind(this)}> 
+                 <div className="new_HoverDiv4"> 
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                     {/*<i className="fa fa-times hover_close"onClick={this.pin4removeclick.bind(this)}></i>*/}
-                     <p className="newhovertxt_4">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
-                   <a href="/masterpage/supply-&-distribution"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
+                    
+                     <p className="newhovertxt_4"> Gas Processing Plants which employs complex industrial process to get impurity free dry natural gas.</p>
+                   <a href="/masterpage/gas-processing"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
-                 <img alt="" className="img-responsive tabimage scaleimage"src="/images/newbanner_img7.png"style={{width:"241px"}}/>
+                 <img alt="" className="img-responsive tabimage scaleimage"src="/images/Banner3_8.png"style={{width:"255px"}}/>
                 </figure>
                 <figure className="waterimg"id="waterimgDiv">
                   <div className="ripplediv">
@@ -436,7 +440,7 @@ pin6click(event){
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive tabimage scaleimage"src="/images/Banner3_4.png"style={{width:"241px"}}/>
+                   <img alt="" className="img-responsive tabimage scaleimage"src="/images/Banner3_4.png"style={{width:"255px"}}/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
                  <div className="new_HoverDiv6">
@@ -446,7 +450,7 @@ pin6click(event){
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                   </div>
-                 <img alt="" className="img-responsive scaleimage"src="/images/newbanner_img4.png"style={{width:"110px"}}/>
+                 <img alt="" className="img-responsive scaleimage"src="/images/newbanner_img4.png"style={{width:"135px"}}/>
                 </figure>
                </div> 
               </div> 

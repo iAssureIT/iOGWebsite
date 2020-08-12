@@ -45,47 +45,47 @@
 #consultdown_data0{
    position: absolute;
    top: 29em;
-   right: 12%;
-   width: 294px;
+   right: 0%;
+   width: 490px;
 
 }
 #consultdown_data1{
    position: absolute;
    top: 36em;
-   left:12%;
-   width: 294px;
+   left:-1%;
+   width: 490px;
    text-align: right;
 
 }
 
 #consultdown_data4{
 	 position: absolute;
-    top: 82em;
-    right: 12%;
-    width: 294px;
+    top: 71em;
+    right: 0%;
+    width: 490px;
     text-align: left;
 
 }
 #consultdown_data5{
 	position: absolute;
     top: 74em;
-    left:12%;
-    width: 294px;
+    left:-1%;
+    width: 490px;
     text-align: right;
 }
 #consultdown_data6{
 	position: absolute;
-  top: 90em;
-  left: 13%;
-  width: 294px;
+  top: 83em;
+  right: -1%;
+  width: 490px;
   text-align: left;
 }
 #consultdown_data7{
 	position: absolute;
-    top: 91em;
-    left:10%;
-    width: 294px;
-    text-align: right;
+  top: 91em;
+  left:-2%;
+  width: 490px;
+  text-align: right;
 }
 /*responsive*/
 
@@ -93,23 +93,23 @@
    /*position: absolute;
    top: 29em;
    left: 54em;*/
-   width: 294px;
+   width: 490px;
 
 }
 
 #consultdown_data2{
     position: absolute;
     top: 47em;
-    right: 11%;
-    width: 294px;
+    right: 0%;
+    width: 490px;
     text-align: left;
 
 }
 #consultdown_data3{
     position: absolute;
     top: 56em;
-    left:12%;
-    width: 294px;
+    left:0%;
+    width: 490px;
     text-align: right;
 
 }

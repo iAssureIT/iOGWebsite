@@ -27,3 +27,13 @@
 .marginTop_70{
   margin-top: 50px;
 }
+.comp_imgDiv{
+    width: 815px;
+    height: 450px;
+    margin-top: 24px;
+}
+.comp_imgDiv img{
+  width: 75%;
+  margin-left: 222px;
+
+}

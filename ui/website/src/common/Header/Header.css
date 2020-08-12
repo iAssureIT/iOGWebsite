@@ -469,7 +469,7 @@ body { top: 0px !important; }
 }
 .ct-language__dropdown li{
   background: transparent;
-  padding: 5px;
+  padding: 0px;
 }
 .ct-language__dropdown li a{
   display: block;
@@ -532,6 +532,10 @@ border:1px solid #eee ! important;
     top: 4px;
     z-index: 3000;
 }
+
+
+
+
 
 
 
