@@ -425,7 +425,7 @@ pin6click(event){
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
                     <p className="newhovertxt_e_p">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
-                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/masterpage/lng"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
                   
