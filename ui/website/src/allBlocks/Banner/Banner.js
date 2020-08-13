@@ -27,38 +27,46 @@ componentDidMount(){
  
   
   $("#waterimgDiv").hover(function() { 
+       $('.new_HoverDiv').css('display','block');
+       $('.boat_img').css('z-index','100');
+    
+    }, function() {
+      $(".new_HoverDiv").css('display','none');
+      $('.boat_img').css('z-index','10');
+      $(".new_HoverDiv").css('display','none');
+     
+    });
+
+     $("#waterimg2Div").hover(function() {
+     $('.new_HoverDiv1').css('display','block'); 
+         
+       
+    
+    }, function() {
+     $(".new_HoverDiv1").css('display','none');
+    
+    });
+
+      $("#boat_imgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
-       $('.boat_img').css('z-index','12000').removeClass('hiddendiv');
+        $('.boat_img').css('z-index','150');
+         $('.waterimg').css('z-index','100');
+         $('.new_HoverDivforboat').css('display','block');
+      
+
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-      $(".new_HoverDiv").fadeOut(6000);
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
-      $('.boat_img').css('z-index','10000');
-     
-    });
-
-   $("#waterimg2Div").hover(function() { 
-       $('#blackbannerDiv').removeClass('hiddendiv');
-        $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
+       $('.waterimg').css('z-index','10');
+        $('.new_HoverDivforboat').css('display','none');
     
-    
-    }, function() {
-      $('.banner-cover').addClass('hiddendiv');
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
-     
     });
+    
 
     $("#boat_img2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
-       $('.waterimg2').css('z-index','12000').removeClass('hiddendiv');
+       $('.waterimg2').css('z-index','120');
        $('.boat_img').css('z-index','10');
 
     
@@ -71,8 +79,6 @@ componentDidMount(){
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
        $('.boat_img').css('z-index','10');
     
     }, function() {
@@ -90,9 +96,7 @@ componentDidMount(){
     });*/
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
-        $('.boat_img').css('z-index','10');
+       $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -103,9 +107,7 @@ componentDidMount(){
     });
     $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
-        $('.boat_img').css('z-index','10');
+       $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -116,9 +118,6 @@ componentDidMount(){
     });
     $("#petrolimage1Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').css('z-index','11000').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').css('z-index','11000').removeClass('hiddendiv');
-
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -420,17 +419,35 @@ pin6click(event){
                    <img alt="" className="img-responsive scaleimage waterimg_size"src="/images/Banner3_1.png" /> 
                 </figure>
                 
-                 <figure className="boat_img"style={{overflow:"hidden"}} id="boat_imgDiv">
-                   <div class="drop-container">
-                      <div class="drop">
-                      </div>
-                   </div>
+                 <figure className="boat_img " style={{overflow:"hidden"}} id="boat_imgDiv">
+                  <div className="new_HoverDivforboat">
+                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
+                   <div style={{width:"171px"}}>
+                   {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
+                    <p className="newhovertxt_e_p">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
+                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
+                  </div> 
+                  </div>
+                  
+                   
                    <div class="drop-container1">
                       <div class="drop1">
                       </div>
                    </div>
-                 <img alt="" className="img-responsive boat_img_size"src="/images/newbanner_img3.png"/>
+                 <img alt="" className="img-responsive boat_img_size "src="/images/newbanner_img3.png"/>
                 </figure>
+                <div className="ripple_Div"style={{width:"200"},{overflow:"hidden"},{position:"absolute"}}>
+                  <div class="drop-container">
+                      <div class="drop">
+                      </div>
+                   </div>
+               </div> 
+                 {/*<div className="ripple_Div" style={{overflow:"hidden"}}>
+                  <div className="drop-container">
+                      <div className="drop">
+                      </div>
+                   </div>
+                 </div>  */}
                  <figure className="boat_img2" id="boat_img2Div">
                   <div className="new_HoverDiv1">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
