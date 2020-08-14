@@ -915,9 +915,27 @@ height: 90px;
 
 @media only screen and (max-width: 768px) {
 .oilimage{
-  right: 27px;
-  top: 136px;
+  right: 168px;
+  top: 126px;
 }
+.boat_img2_img{
+  width: 173px ! important;
+}
+.plantimage11_img{
+  width: 173px ! important;
+}
+
+.petrolimage1_img{
+  width: 173px ! important;
+
+}
+.oilimage_img{
+   width: 173px ! important;
+}
+.waterimg2_img {
+  width:110px ! important;
+}
+
 .waterimg_size{
   width: 100px;
 }
@@ -926,6 +944,8 @@ height: 90px;
 }
 .boat_img_size{
   width: 125px;
+  left: 116px;
+  top: 65px;
 }
 .bannerContainer1{
   height: 38em ! important;
@@ -934,46 +954,57 @@ height: 90px;
   width: 150px ! important;
 }
 .plantimage11{
-  right: 183px ! important;
-  top: 167px ! important;
+  right: 47px ! important;
+  top: 216px ! important;
  }
  .petrolimage{
    right: 45px ! important;
    top: 229px ! important;
  }
  .boat_img{
-    left: 137px ! important;
-    top: 126px ! important;
+    left: 38px ! important;
+    top: 68px ! important;
  }
  .plantimage1{
     right: 285px !important;
     top: 211px ! important;
  }
  .petrolimage1{
-  right: 156px ! important;
-  top: 285px ! important;
+  right: 187px ! important;
+  top: 292px ! important;
  }
  .boat_img2{
-  left: 238px ! important;
-  top: 300px ! important;
+  left: 158px ! important;
+  top: 308px ! important;
  }
  .gasimage{
   right: 34px !important;
   top: 355px ! important;
  }
+ .nexttogasimage_img{
+  width: 173px ! important;
+ }
  .nexttogasimage{
-  right: 267px !important;
-  top: 386px ! important;
+  right: 301px !important;
+  top: 203px ! important;
   /*width: 150px ! important;*/
+ }
+ .waterimg{
+  left: 41px ! important;
+  top: 193px ! important;
+ }
+ .new_HoverDivforboat{
+    margin-left: -46px;
+    margin-top: -40px;
  }
  
  .waterimg2{
   top: 77% ! important;
-  left: 23% ! important;
+  left: 10% ! important;
  }
  .new_HoverDiv1{
-   margin-left: -38px ! important;
-   margin-top: -172px !important;
+    margin-left: -157px ! important;
+    margin-top: -103px !important;
  }
  .new_HoverDiv4{
     margin-left: -50px ! important;
@@ -984,12 +1015,12 @@ height: 90px;
   margin-top: -158px ! important;
  }
  .new_HoverDiv7{
-    margin-left: -55px ! important;
-    margin-top: -163px ! important;
+    margin-left: -64px ! important;
+    margin-top: -84px ! important;
  }
  .new_HoverDiv2{
-    margin-left: -135px ! important;
-    margin-top: -55px ! important;
+    margin-left: -33px ! important;
+    margin-top: -15px ! important;
  }
 }
 .gasimage{
