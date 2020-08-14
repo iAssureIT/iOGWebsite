@@ -41,7 +41,7 @@ componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			// this.getAllBlockList();
 			var pageUrl = window.location.pathname;
-			// console.log("pageUrl = ",pageUrl);
+			console.log("pageUrl now = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
 	        if(a=='MasterPage'){
 	        	 $(".hidepoweredby").css("backgroundColor", "#eee");

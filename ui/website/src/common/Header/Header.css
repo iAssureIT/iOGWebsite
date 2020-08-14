@@ -133,7 +133,7 @@
   text-align: center;
   padding: 14px 7px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 13px;    
+  font-size: 12px;    
   border: none;
   outline: none;
   color: #333;
@@ -326,9 +326,9 @@
   transition-duration: 0.8s;
 }
 .expertiesdropdown{
-    width: 1170px;
-    margin-left: -536px;
-    padding-left: 56px;
+    width: 1000px;
+    margin-left: -528px;
+    padding-left: 40px;
 }
 .columnhead{
   /*line-height: 20px;*/

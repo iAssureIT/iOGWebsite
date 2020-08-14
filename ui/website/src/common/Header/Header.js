@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 // import $                  from 'jquery';
+import {Route, withRouter,Redirect} from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
@@ -8,13 +10,16 @@ import 'bootstrap/js/modal.js';
 import './Megamenu.js'
 import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
-export default class Header extends Component {
+ class Header extends Component {
 
    constructor(props) {
     super(props);
         this.state={
           lang:"en",
+          id: "",
+
         }
+        this.handlechange = this.handlechange.bind(this);
 
       }
 
@@ -26,6 +31,9 @@ export default class Header extends Component {
           // console.log("a kkk==>",a[2]); 
           if(pageUrl == '/ourjourny'){
             $(".hidepoweredby").css("backgroundColor", "#fff");
+          }
+           if(pageUrl == '/#googtrans(en|fr)'){
+            $("#dropdownFr").css("color", "red");
           }
 
      $(".onscrollheader").css("display", "none");
@@ -45,12 +53,24 @@ export default class Header extends Component {
   }
 
  componentDidMount () {
+    // this.handlechange();
+    var fr_id=this.state.id;
+    console.log("fr_id",fr_id);
 
     const script = document.createElement("script");
     script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
     script.async = true;
     document.body.appendChild(script);
 
+    var pageUrl = window.location.pathname;
+    console.log("pageUrl for lang",pageUrl);
+    if(pageUrl == '/#googtrans(en|fr)'){
+            $("#dropdownFr").css("color", "red");
+          }
+
+     $('.frenchFlag').click(function() {
+      $('.expertiesdropdown').css('color','red');
+    });
     // this.googleTranslateElementInit();
 } 
 
@@ -164,83 +184,7 @@ triggerHtmlEvent(element, eventName) {
 
 
   }
- /* jQuery('.lang-select').click(function() {
-    var theLang = jQuery(this).attr('data-lang');
-    jQuery('.goog-te-combo').val(theLang);
-
-
-    //alert(jQuery(this).attr('href'));
-    window.location = jQuery(this).attr('href');
-    window.location.reload();
-
-  });*/
-
-
-
-/*translateWebsite(event){
- event.preventDefault();
-  var langId=event.currentTarget.id;
-  console.log("langId",langId);
-
-  function googleTranslateElementInit(){
-    const google = window.google;
-    new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element')
-  }
-  
- var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" + "&callback=initialize";
-            document.body.appendChild(script);
-
- eval(function(p,a,c,k,e,r){e=function(c){
-  return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};
-  if(!''.replace(/^/,String))
-    { while(c--)r[e(c)]=k[c]||e(c);k=[function(e){
-       return r[e]}];e=function(){
-         return'\\w+'};c=1};while(c--)
-          if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|translateWebsite||getElementById|google_translate_element|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
-           
-
  
-}*/
-
-/*Custom_tanslate(event){
-  var script = document.createElement('script');
-  script.type="text/javascript";
-    $('.translation-links a').click(function() {
-      var lang = $(this).data('lang');
-      var $frame = $('.goog-te-menu-frame:first');
-      if (!$frame.size()) {
-        alert("Error: Could not find Google translate frame.");
-        return false;
-      }
-      $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-      return false;
-    });
-}
-
-*/
-
-
-/*function googleTranslateElementInit()
- {
-  new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');}*/
-/*translateLanguage(lang) 
-{
-
-  var $frame = $('.goog-te-menu-frame:first');
-  if (!$frame.size()) {
-      alert("Error: Could not find Google translate frame.");
-      return false;
-  }
-  $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
-  return false;
-}
- googleTranslateElementInit() 
- {
-  new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
- }*/
-
   modalClickEvent(){
     
     console.log("click event")
@@ -253,6 +197,22 @@ triggerHtmlEvent(element, eventName) {
   'google_translate_element');
 } 
 */
+
+handlechange(event){
+      var id = event.currentTarget.id;
+      console.log("id---",id)
+      this.setState({
+         id:id
+      });
+      console.log("id---",id)
+      this.props.history.push("/#googtrans(en|"+id+")");
+      window.location.reload();
+     
+   
+    
+
+  }
+
   render() {  
      var toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];
          if(toolBar !== undefined) {
@@ -291,27 +251,27 @@ triggerHtmlEvent(element, eventName) {
                     <ul className="list-unstyled list-inline ct-topbar__list">
                       <li className="ct-language">
                       <ul className="list-unstyled ct-language__dropdown">
-                        <li><a href="#googtrans(en|en)" className="lang-en lang-select" data-lang="en" >
+                        <li><a href="#googtrans(en|en)" className="lang-en lang-select" data-lang="en" id="en" onClick={this.handlechange.bind(this)}>
                           <img src="/images/engelsflag.png" className="flagdiv" alt="ENGLISH" title="English"/>
                           </a>
                         </li>
                         <li>
-                          <a href="#googtrans(en|ar)" className="lang-es lang-select" data-lang="ar">
+                          <a href="#googtrans(en|ar)" className="lang-es lang-select" data-lang="ar" id="ar" onClick={this.handlechange.bind(this)}>
                            <img src="/images/arebicflag.png" className="flagdiv" alt="ARABIC" title="Arabic"  />
                           </a>
                         </li>
                         <li>
-                          <a href="#googtrans(en|de)" className="lang-es lang-select" data-lang="de">
+                          <a href="#googtrans(en|de)" className="lang-es lang-select" data-lang="de" id="de" onClick={this.handlechange.bind(this)}>
                            <img src="/images/Germany.png" className="flagdiv" alt="GERMAN" title="German"/>
                           </a>
                          </li>
                         <li>
-                         <a href="#googtrans(en|fr)" className="lang-es lang-select" data-lang="fr">
+                         <a href="#googtrans(en|fr)" className="lang-es lang-select frenchFlag" data-lang="fr" id="fr" onClick={this.handlechange.bind(this)}>
                           <img src="/images/fransflag.jpg" className="flagdiv" alt="FRENCH" title="French"/>
                            </a>
                         </li>
                         <li>
-                         <a href="#googtrans(en|es)" className="lang-es lang-select" data-lang="es">
+                         <a href="#googtrans(en|es)" className="lang-es lang-select" data-lang="es" id="es" onClick={this.handlechange.bind(this)}>
                           <img src="/images/spain-flag.jpg" className="flagdiv" alt="SPANISH" title="Spanish"/>
                          </a>
                         </li>
@@ -437,7 +397,7 @@ triggerHtmlEvent(element, eventName) {
               <button class="dropbtn"><a href="/masterpage/expertise-main-page" className="NopaddingToA">EXPERTISE</a>
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
-              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown NOPadding" style={{position:"fixed"}}>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1 ">
                     <h5 className="columnhead">
@@ -567,3 +527,5 @@ triggerHtmlEvent(element, eventName) {
     );  
   }
 }
+
+export default withRouter(Header);
