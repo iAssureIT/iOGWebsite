@@ -109,12 +109,12 @@ class ContactUsform extends Component{
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
         var adminEmail = "karuna.khandale@iassureit.com";
         const formValues1 = {
-            "email"         : this.state.email ,
+            "email"         : this.refs.email.value ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
             "message"       : "",
-            "mail"          : 'Dear' + this.state.name + ', <br/><br/>'+
+            "mail"          : 'Dear ' + this.state.userName + ', <br/><br/>'+
                              
-                              "<b>Your Email: </b>"  + this.state.email + '<br/><br/>'+
+                              "<b>Your Email: </b>"  + this.refs.email.value + '<br/><br/>'+
                               "Your following message has been successfully delivered to the admin! We will get back to you shortly. <br/> <br/> " +
                               "===============================  <br/> <br/> " +
                               "<pre> " + this.state.message+ "</pre>" +
@@ -136,7 +136,7 @@ class ContactUsform extends Component{
         const formValues2 = {
             "email"         : adminEmail ,
             "subject"       : "New query/feedback arrived from Website!",
-            "message"          : "",
+            "message"       : "HIii",
             "mail"          : 'Dear Admin, <br/>'+
                               "Following new query/feedback came from website! <br/> <br/> " +
                               "============================  <br/> <br/> " +

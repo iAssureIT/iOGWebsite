@@ -145,7 +145,7 @@ app.use('/api/jobapplicationform',jobapplicationformRoute);
 
 
 
-app.post('/translate', (req, res) => {
+/*app.post('/translate', (req, res) => {
     var q = req.body.q;
     console.log(q);
   var options = { method: 'POST',
@@ -160,63 +160,42 @@ app.post('/translate', (req, res) => {
     res.send(body);
     });
 })
-
+*/
 
 app.post('/send-email', (req, res)=> {
-	// console.log('req',req.body);
+	console.log("inside app.js req:");
 	let transporter = nodeMailer.createTransport({
-			// service: 'Gmail',
-			host: 'smtp.gmail.com',
-			port: 587,
-			// port: 465,
-			auth: {
-				/*user: 'kycwealthyvia@gmail.com',
-				pass: 'Artha123$'*/
-				 user : 'iassureitmail@gmail.com',
-				 pass : 'iAssureIT@123'
-			}
-		});
-		console.log('after transport');
-		let mailOptions = {
-			
-			// from   : '"Wealthyvia" <kycwealthyvia@gmail.com>', // sender address
-			from   : '"iAssureIT" <iassureitmail@gmail.com>', // sender address
-			to     : req.body.email, // list of receivers
-			subject: req.body.subject, // Subject line
-			text   : req.body.text, // plain text body
-			html   : req.body.mail, // html body
-			attachments : [
-								{
-								filename: data.title + ".jpg",
-								contentType:  'image/jpeg/file/pdf/docx',
-								content: new Buffer.from(req.body.file.split("base64,")[1], "base64"),
-								}
-							]
-		};
-		console.log('after mailoption');
-		//name email mobilenumber message
-		// console.log("mailOptions",mailOptions);
-		
-		transporter.sendMail(mailOptions, (error, info) => {
-			console.log('in mail');
-			if (error) {
-				
-				console.log("send mail error",error);
-				return "Failed";
-			}
-			if(info){
-				console.log('in info');
-				// return "Success";
-				res.status(200).json({ 
-					
-					message: "Success",
-					// return "Success",
-
-				});
-			}
-	
-			res.render('index');
-		});
+		host: globalVariable.emailHost,
+		port: globalVariable.emailPort,
+		auth: {
+			user: globalVariable.user,
+			pass: globalVariable.pass
+		}
+	});
+	console.log("transporter",transporter);
+	console.log("globalVariable.user:",globalVariable.user);
+	let mailOptions = {
+		from   : globalVariable.project+'<'+globalVariable.user+'>', // sender address
+		to     : req.body.email, // list of receivers
+		subject: req.body.subject, // Subject line
+		text   : req.body.text, // plain text body
+		html   : req.body.mail // html body
+	};	
+	transporter.sendMail(mailOptions, (error, info) => {
+		if (error) {			
+			return "Failed";
+		}
+		if(info){
+			res.status(200).json({ 
+				message: "Success",
+			});
+		}else{
+			res.status(401).json({ 
+				message: "Failed",
+			});
+		}
+		res.render('index');
+	});
 });
 app.post('/send-email/portalreview', (req, res)=> {
 	// console.log('req',req.body);
@@ -227,12 +206,12 @@ app.post('/send-email/portalreview', (req, res)=> {
 			// user: 'review.wealthyvia@gmail.com',
 			// pass: 'Artha123$'
 			user : 'iassureitmail@gmail.com',
-				pass : 'iAssureIT@123'
+			pass : 'iAssureIT@123'
 		}
 	});
 	let mailOptions = {
 			// from   : '"Wealthyvia" <review.wealthyvia@gmail.com>', // sender address
-			from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
+			from   : '"IOG-Solutions" <iassureitmail@gmail.com>', // sender address
 			to     : req.body.email, // list of receivers
 			subject: req.body.subject, // Subject line
 			text   : req.body.text, // plain text body

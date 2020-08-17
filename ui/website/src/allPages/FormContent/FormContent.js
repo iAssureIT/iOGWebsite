@@ -241,12 +241,12 @@ class FormContent extends Component{
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
             "message"       : "",
-            "mail"          : 'Dear' + this.state.name1 + ', <br/><br/>'+
+            "mail"          : 'Dear ' + this.state.name1 + ', <br/><br/>'+
                              
                               "<b>Your Email: </b>"  + this.state.email + '<br/><br/>'+
                               "Your job Application has been sent Successfully to the admin! We will get back to you shortly. <br/> <br/> " +
                               "===============================  <br/> <br/> " +
-                              "<pre> " + /*this.state.message*/+ "</pre>" +
+                              "<pre> " + this.state.message+ "</pre>" +
                               " <br/> <br/> =============================== " +
                               "<br/><br/> Thank You, <br/> Support Team, <br/> www..com " ,
         };
@@ -280,7 +280,11 @@ class FormContent extends Component{
                               "<b>Key Skills: </b>"         + this.state.skills + '<br/><br/>'+
 
                               "<b>Highest Education: </b>"  + this.state.education + '<br/><br/>'+
-                              
+
+                               "----------------------------------------------------------------------<br/> <br/> " +
+
+
+                                "<b>Download Resume: </b>"     + this.state.fileurl + '<br/><br/>'+
           
 
                              /* "<pre> " + this.state.message + "</pre>" +*/
@@ -484,7 +488,7 @@ class FormContent extends Component{
           uploadedImage: event.target.files[0]
           },()=>{
           console.log("uploadToS3 =",this.state.uploadedImage);
-          console.log("this.state.config",this.state.config);
+          // console.log("this.state.config",this.state.config);
            S3FileUpload
             .uploadFile(file,this.state.config)
 
