@@ -53,15 +53,13 @@ componentDidMount(){
           <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 img1">
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img typebtn_img" />
+                <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs img1">
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img typebtn_img hidden-xs" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                 
                   <div className="col-lg-12  NOpadding">
                     <div className="line2 "></div>
                   </div>                    
-          
                    <h2 className="lightbluetext"><b>{this.state.blocks.blockTitle}</b></h2>
                    <div>
                      <p className="righttextaboutus"  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>

@@ -387,3 +387,10 @@
     margin-top: 40px;
     margin-left: 28px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .serflip-card{
+    width: 300px ! important;
+  }
+ } 

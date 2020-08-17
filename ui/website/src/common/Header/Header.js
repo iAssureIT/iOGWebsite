@@ -397,7 +397,7 @@ handlechange(event){
               <button class="dropbtn"><a href="/masterpage/expertise-main-page" className="NopaddingToA">EXPERTISE</a>
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
-              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6 dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
+              <div class="col-lg-10 col-md-10 hidden-sm hidden-xs dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1 ">
                     <h5 className="columnhead">

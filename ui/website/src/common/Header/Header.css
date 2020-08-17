@@ -33,7 +33,7 @@
 }
 .contactBarres{
   position: absolute;
-  right: 0px;
+  left: 0px;
   background-color: #f19000;
   width: 35px;
   height: 30px;
@@ -218,6 +218,18 @@
     width: 32px;
     display: block;
   }
+  .ct-topbar
+  {
+    position: fixed ! important;
+    bottom: 0px ! important;
+    right: -45px ! important;
+    bottom: 473px ! important;
+  }
+  .headerlogo img{
+    position: fixed;
+    bottom: 443px;
+  }
+
 }
 @media screen and (max-width: 768px) {
  
@@ -239,6 +251,7 @@
   right: 0px! important;
 
 }
+
 .dropdownintab a{
   padding-bottom: 0px;
   padding-top: 0px;

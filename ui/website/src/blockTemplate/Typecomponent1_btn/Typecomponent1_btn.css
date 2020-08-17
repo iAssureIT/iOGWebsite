@@ -28,3 +28,33 @@
   
 
 }*/
+@media screen and (max-width: 600px) {
+  
+  .line3 {
+    background-color: #f08f00;
+    width: 90px;
+    height: 4px;
+    margin-top: 70px;
+    margin-left: 32px;
+   }
+   .serflip-card{
+    width:340px ! important;
+    margin-left: 30px ! important;
+   }
+  .serflip-card-inner{
+    margin-left: 30px;
+  } 
+
+}
+@media screen and (max-width: 425px) {
+  
+ 
+   .serflip-card{
+    width:340px ! important;
+    margin-left: 30px ! important;
+   }
+  .serflip-card-inner{
+    margin-left: 30px;
+  } 
+
+}
