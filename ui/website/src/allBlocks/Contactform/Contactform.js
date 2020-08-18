@@ -145,9 +145,8 @@ export default class ContactUsForm extends React.Component {
                 <div className="contactpageform" >
                     <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
-                            <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">We're here to help! Email us through the secure form below, or log in to see our phone number.
-                                When sending us a message, please share the email address  you use for<b> iOG Solutions</b>.</p>
-                            <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b> Drop Us a Line</b></h4>
+                            <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">Connect with us for information about our services,technical support and training.<b> iOG Solutions</b>.</p>
+                            <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b> Happy to Help</b></h4>
                         </div>
                         <div className="formcontent col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
                           <label htmlFor="name">Name<span className="redFont">*</span></label>

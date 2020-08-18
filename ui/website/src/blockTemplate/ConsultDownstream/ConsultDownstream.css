@@ -2,7 +2,7 @@
 	height: 1700px;
 	/*background-image: url("/images/consultdown.png");*/
 	background-size: 100% 100%;
-  margin-top: 70px;
+  /*margin-top: 70px;*/
 }
 .innerBlocktConsult_new{
   /*height: 1700px;*/
@@ -14,7 +14,7 @@
     font-size: 30px;
 	  position: absolute;
     top: 5em;
-    left: 16em;
+    left: 20em;
     color: #009de2;
     font-weight: 600;
 }
@@ -44,7 +44,7 @@
 }
 #consultdown_data0{
    position: absolute;
-   top: 29em;
+   top: 26em;
    right: 0%;
    width: 490px;
 
@@ -60,7 +60,7 @@
 
 #consultdown_data4{
 	 position: absolute;
-    top: 71em;
+    top: 67em;
     right: 0%;
     width: 490px;
     text-align: left;
@@ -99,7 +99,7 @@
 
 #consultdown_data2{
     position: absolute;
-    top: 47em;
+    top: 44em;
     right: 0%;
     width: 490px;
     text-align: left;

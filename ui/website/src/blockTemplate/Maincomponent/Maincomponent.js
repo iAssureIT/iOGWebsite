@@ -95,7 +95,7 @@ componentDidMount(){
                   </div>
                 </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div className="iogblock1text col-lg-10 col-md-10 col-sm-12 col-xs-12 bckgblck_color_blue">
+                    <div className="iogblock1text col-lg-12 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
                         <span><b className="head_firstblock">{this.state.blocks.blockTitle}</b></span>
                         <p className="firstblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.blockDescription}}></p>
                     </div>
@@ -124,7 +124,7 @@ componentDidMount(){
                 <img className="iogimgblock3" src={this.state.blocks.repeatedBlocks[1].Image} />
               </div>
           </div>
-          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div className="col-lg-5 col-md-4 col-sm-12 col-xs-12">
             <div className="iogblock3text col-lg-10 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
               <span><b className="center_block_text">{this.state.blocks.repeatedBlocks[1].Title}</b></span>
               <p className="thirdblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[1].Description}}></p>                         

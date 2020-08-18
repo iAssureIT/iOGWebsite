@@ -107,7 +107,7 @@ class ContactUsform extends Component{
 /*      fields["enquiry"]       = "";
 */
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "karuna.khandale@iassureit.com";
+        var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
             "email"         : this.refs.email.value ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -146,7 +146,7 @@ class ContactUsform extends Component{
 
                               "<b>Designation: </b>"  + this.state.designation + '<br/><br/>'+
 
-                               "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
+                              "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
 
                               "<pre> " + this.state.message + "</pre>" +
                               "<br/><br/> ============================ " +
@@ -411,6 +411,4 @@ class ContactUsform extends Component{
 }
 
 export default ContactUsform;
-
-
 
