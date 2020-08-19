@@ -13,8 +13,9 @@
 .jobpageform{
 	box-shadow: 01px 1px 15px 1px #ccc;
 	height: auto;
-	padding: 40px;
+	padding: 25px;
     color: #555;
+    margin-top: 20px
 }
 .jobformcontent{
 	margin-bottom: 30px !important;

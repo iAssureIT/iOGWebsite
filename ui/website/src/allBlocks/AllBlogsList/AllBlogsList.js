@@ -95,7 +95,7 @@ render() {
 				        			<a href={"/singleblog/"+data.blogURL}>
 									<img className="img-responsive AllblogImgB" src={data.bannerImage ? data.bannerImage.path : ""} alt="Bannerpng"/>
 									<p className="blogDate blogsText mtop20 graycolor"><Moment format=" MMMM D YYYY ">{data.createdAt}</Moment></p>
-									<h4 className="blogTitle blogSummeryp10"><b>{data ? data.blogTitle : ""}</b></h4>
+									<h4 className="blogTitle blogSummeryp10" id="data"><b>{data ? data.blogTitle : ""}</b></h4>
 									{/*<p className="blogPara blogSummeryp10 graycolor">{data ? data.summary: "" }</p>*/}
 									</a>
 								</div>

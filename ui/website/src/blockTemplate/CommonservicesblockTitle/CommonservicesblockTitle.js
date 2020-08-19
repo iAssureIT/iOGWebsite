@@ -153,7 +153,7 @@ componentDidMount(){
                                             <div className="serflip-card"style={{width:"300px"}}>
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front">
-                                                    <img src={data.Image} className="img-responsive" alt=""/>
+                                                    <img src={data.Image} className="text-center" alt=""/>
                                                     <div className="dwstmTitle">{data.Title}</div> 
                                                   </div>
                                                   <div className="serflip-card-back">

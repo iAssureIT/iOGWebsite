@@ -236,7 +236,7 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
-        var adminEmail = "kkhandalekaruna@gmail.com";
+        var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -483,7 +483,7 @@ class FormContent extends Component{
     var file = event.target.files[0];
     if(file){
       var ext = file.name.split('.').pop();
-      if(ext=="jpg" || ext=="png" || ext=="jpeg" || ext=="JPG" || ext=="PNG" || ext=="JPEG" || ext=="pdf" || ext=="PDF"){ 
+      if(ext=="jpg" || ext=="png" || ext=="jpeg" || ext=="JPG" || ext=="PNG" || ext=="JPEG" || ext=="pdf" || ext=="PDF" || ext=="docx"){ 
         this.setState({
           uploadedImage: event.target.files[0]
           },()=>{
@@ -669,20 +669,20 @@ class FormContent extends Component{
                                          {/*<ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" value={this.state.positionDataArray} margin-top={"40px"} options={this.state.positionlevel}  onChange={this.positionhandleChange.bind(this)}/>*/}
                                           <select id="vendor" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" value={this.state.position} ref="position" name="position" onChange={this.handleChange.bind(this)}>
                                             <option>--Select Position--</option>
-                                            <option>Well Engineer</option>
-                                            <option>Reservoir Engineer</option>
-                                            <option>Production Technologist</option>
-                                            <option>Consultant-Geophysicist</option>
-                                            <option>Consultant-Geologist</option>
-                                            <option>Consultant-Data Management</option>
-                                            <option>Supply Chain Consultant(Refinery Planning)</option>
-                                            <option>Supply Chain Consultant(Refinery Scheduling)</option>
+                                            <option>Asset Reliability Consultant </option>
+                                            <option>Asset Integrity Management Consultant</option>
+                                            <option>Supply Chain Consultant (Chemical)</option>
+                                            <option>Process & Health Safety Consultant </option>
+                                            <option>Supply Chain Consultant(Refinery Planning</option>
                                             <option>MES Consultant</option>
                                             <option>Manager-Projects</option>
                                             <option>Manager Business Developement</option>
+                                            <option>APC Consultant</option>
+                                            {/*<option>Manager-Projects</option>
+                                            <option>Manager Business Developement</option>
                                             <option>Upstream Production Optimization Consultant</option>
                                             <option>APC Consultant</option>
-      
+      */}
                                         </select>
                                       {/*<ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" name="positionlevel" margin-top={"40px"}ref="positionlevel" options={this.state.positionlevel} onChange={this.positionhandleChange.bind(this)}/>*/}
                                     </div>

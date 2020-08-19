@@ -164,11 +164,11 @@ class ContactUsform extends Component{
         .catch((error)=>{
           console.log("error = ", error);
         });
-      swal({
+      /*swal({
           title : "Thank You....!",
           text  : "",
           buttons: false,
-        });
+        });*/
       this.setState({
         "userName"         : "",
         "companyName"      : "",

@@ -13,6 +13,23 @@
   white-space: pre;
   text-overflow: ellipsis;
 }
+#data {
+    width: 258px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#data:hover{
+    overflow: visible; 
+    white-space: normal; 
+    width: auto;
+    position: absolute;
+    background-color:#FFF;
+}
+#data:hover+div {
+    margin-top:20px;
+}
 .AllblogImgB{
 	height: 173px!important;
 	width: 100%;
@@ -32,7 +49,7 @@
 }
 .All1blog1{
 	position: relative;
-	height: 252px;
+	height: 303px;
 	overflow: hidden;
 	margin-bottom: 50px;
 	background-color: #fff;

@@ -40,6 +40,7 @@
   height: 200px;
   text-decoration: none;
   z-index: 0;
+
   overflow: hidden;
   color: #000;
 }
@@ -78,6 +79,7 @@ height: 100px;
   }
 .videocard:hover{
 	text-decoration: none;
+  cursor: pointer;
 }
 .videocard:focus{
 	text-decoration: none;

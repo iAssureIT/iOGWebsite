@@ -163,19 +163,19 @@ app.use('/api/jobapplicationform',jobapplicationformRoute);
 */
 
 app.post('/send-email', (req, res)=> {
-	console.log("inside app.js req:");
+	console.log("inside app.js req:",req.body);
 	let transporter = nodeMailer.createTransport({
-		host: globalVariable.emailHost,
-		port: globalVariable.emailPort,
+		host: 'smtp.gmail.com',
+		port:  587,
 		auth: {
-			user: globalVariable.user,
-			pass: globalVariable.pass
+			user : 'iogdevelopers@gmail.com',
+			pass : 'IOGSolutions@7090'
 		}
 	});
 	console.log("transporter",transporter);
 	console.log("globalVariable.user:",globalVariable.user);
 	let mailOptions = {
-		from   : globalVariable.project+'<'+globalVariable.user+'>', // sender address
+		from   : 'iogdevelopers@gmail.com', // sender address
 		to     : req.body.email, // list of receivers
 		subject: req.body.subject, // Subject line
 		text   : req.body.text, // plain text body
@@ -197,33 +197,59 @@ app.post('/send-email', (req, res)=> {
 		res.render('index');
 	});
 });
+app.post('/send-email/portalreview', (req, res)=> {
+	// console.log('req',req.body);
+	let transporter = nodeMailer.createTransport({
+		host: 'smtp.gmail.com',
+		port: 587,
+		auth: { 
+			// user: 'review.wealthyvia@gmail.com',
+			// pass: 'Artha123$'
+			user : 'iogdevelopers@gmail.com',
+			pass : 'IOGSolutions@7090'
+		}
+	});
+	let mailOptions = {
+			// from   : '"Wealthyvia" <review.wealthyvia@gmail.com>', // sender address
+			from   : '"IOG-Solutions" <iassureitmail@gmail.com>', // sender address
+			to     : req.body.email, // list of receivers
+			subject: req.body.subject, // Subject line
+			text   : req.body.text, // plain text body
+			html   : req.body.mail // html body
+		};
+		// console.log("mailOptions",mailOptions);
+
+		transporter.sendMail(mailOptions, (error, info) => {
+			if (error) {
+				console.log("send mail error",error);
+				return "Failed";
+			}
+			if(info){
+			   return "Success";
+			}
+			// console.log('Message %s sent: %s', info.messageId, info.response);
+			res.render('index');
+		});
+});
+
 
 // handle all other request which not found 
 app.use((req, res, next) => {
-		const error = new Error("This Page Is Not Found");
-		error.status = 404;
-		next(error);
-	});
+	const error = new Error('Not Found Manual ERROR');
+	error.status = 404;
+	next(error);
+		// when we get 404 error it send to next 
+});
 
+// it will handel all error in the application
+app.use((error, req, res, next) => {
+	// 500 type error is used when we use database
+	res.status(error.status || 500);
+	res.json({
+		error:{
+			message:error.message
+		}
+	})
+});
 
-	app.use((error, req, res, next) => {
-
-		fs.readFile('./index.html', function (err, html) {
-	    if (err) {
-	        throw err; 
-	    }      
-			// res.writeHeader(200, {"Content-Type": "text/html"});  
-	    // res.write(html);  
-
-			res.status(error.status || 500);
-			res.json({
-					error: {
-					message: error.message
-					}
-				});
-	    res.end();  
-	  });
-
-	});
-
-	module.exports = app;
+module.exports = app;
