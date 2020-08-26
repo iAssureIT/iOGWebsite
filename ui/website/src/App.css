@@ -624,6 +624,14 @@ body{
 .NOPadding{
     padding: 0;
 } 
+.error{
+    font-size: 10px;
+    color: red;
+}
+.astrick{
+    /*font-size: 10px;*/
+    color: red;
+}
 /*.goog-te-gadget{
     display: none;
  }

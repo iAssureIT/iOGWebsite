@@ -38,12 +38,12 @@ componentDidMount(){
     });
 
      $("#waterimg2Div").hover(function() {
-     $('.new_HoverDiv1').css('display','block'); 
+     // $('.new_HoverDiv1').css('display','block'); 
          
        
     
     }, function() {
-     $(".new_HoverDiv1").css('display','none');
+     // $(".new_HoverDiv1").css('display','none');
     
     });
 

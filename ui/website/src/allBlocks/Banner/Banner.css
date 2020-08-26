@@ -1127,13 +1127,14 @@ animation: fadeIn ease 20s;
 }*/
 .waterimg:hover #blackbannerDiv{
   display: block;
+  /*text-transform: */
 
 }
-.waterimg2:hover #blackbannerDiv{
+/*.waterimg2:hover #blackbannerDiv{
   display: block;
 
 }
-
+*/
 .scaleimage:hover{
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);

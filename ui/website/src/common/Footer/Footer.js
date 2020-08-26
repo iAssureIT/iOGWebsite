@@ -112,7 +112,7 @@ export default class Footer extends Component {
                                 <div className="NOpadding col-lg-8 col-md-6 col-sm-12 col-xs-12">
                                     <input type="text" className="form-control subscribeMail" placeholder="Enter your Email" />
                                 </div>
-                                <a href="Contact-us" className="NOpadding col-lg-1 col-md-3 col-sm-12 col-xs-12"><button className="subscribeBtn btn">Subscribe</button></a>
+                                <a href="/Contact-us" className="NOpadding col-lg-1 col-md-3 col-sm-12 col-xs-12"><button className="subscribeBtn btn">Subscribe</button></a>
                             </div>      
                         </div>      
                     </div>

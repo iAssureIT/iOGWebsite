@@ -9,8 +9,8 @@ const globalVariable = require("./nodemon.js");
 // Routes - Core Admin
 // const userRoutes 					= require('./api/coreAdmin/routes/users.js');
 // const rolesRoutes					= require('./api/coreAdmin/routes/roles.js');
-/*const masternotificationRoutes      = require('./api/coreAdmin/notificationManagement/RoutesMasterNotification.js');
-const notificationRoutes		    = require('./api/coreAdmin/notificationManagement/RoutesNotification.js');*/
+/*const masternotificationRoutes        = require('./api/coreAdmin/notificationManagement/RoutesMasterNotification.js');
+const notificationRoutes		        = require('./api/coreAdmin/notificationManagement/RoutesNotification.js');*/
 // const companysettingsRoutes			= require('./api/coreAdmin/routes/companysettings.js');
 // const projectSettingRoutes 			= require('./api/coreAdmin/routes/projectsettings.js');
 
@@ -84,11 +84,8 @@ app.use('/api/preferences',preferencesRoutes);
 /*
 app.use("/api/packagetypemaster", packageTypeMasterRoutes);
 app.use("/api/packagenamemaster", packageNameMasterRoutes);
-
 app.use("/api/paymentgateway", paymentgatewayRoutes);
-
 app.use("/api/packagemaster", packageMasterRoutes);
-
 app.use("/api/packagemasterbulk", packageMasterBulkRoutes);
 app.use("/api/categorymaster", categoryMasterRoutes);
 app.use("/api/brandmaster", brandMasterRoutes);
@@ -107,7 +104,6 @@ app.use("/api/citynamemaster", cityNameMasterRoutes);
 app.use("/api/vehiclemaster", vehicleMasterRoutes);
 app.use("/api/modulemaster", moduleRoutes);
 app.use("/api/facilitymaster", facilityRoutes);
-
 app.use("/api/personmaster", personMasterRoutes);
 app.use("/api/contract", contractRoutes);
 app.use("/api/entitymapping", entityMappingRoutes);
@@ -162,94 +158,161 @@ app.use('/api/jobapplicationform',jobapplicationformRoute);
 })
 */
 
+/*
+  "user"         : "iogdevelopers@gmail.com",
+    "pass"         : "IOGSolutions@7090"
+*/
+
 app.post('/send-email', (req, res)=> {
-	console.log("inside app.js req:",req.body);
-	let transporter = nodeMailer.createTransport({
-		host: 'smtp.gmail.com',
-		port:  587,
-		auth: {
-			user : 'iogdevelopers@gmail.com',
-			pass : 'IOGSolutions@7090'
-		}
-	});
-	console.log("transporter",transporter);
-	console.log("globalVariable.user:",globalVariable.user);
-	let mailOptions = {
-		from   : 'iogdevelopers@gmail.com', // sender address
-		to     : req.body.email, // list of receivers
-		subject: req.body.subject, // Subject line
-		text   : req.body.text, // plain text body
-		html   : req.body.mail // html body
-	};	
-	transporter.sendMail(mailOptions, (error, info) => {
-		if (error) {			
-			return "Failed";
-		}
-		if(info){
-			res.status(200).json({ 
-				message: "Success",
-			});
-		}else{
-			res.status(401).json({ 
-				message: "Failed",
-			});
-		}
-		res.render('index');
-	});
+  console.log('mail data',req.body);
+  let transporter = nodeMailer.createTransport({
+      // service: 'Gmail',
+      host: 'smtp.gmail.com',
+      port: 587,
+      // port: 465,
+      auth: {
+        user: 'iogdevelopers@gmail.com',
+        pass: 'IOGSolutions@7090'
+        /* user : 'iassureitmail@gmail.com',
+         pass : 'iAssureIT@123'*/
+      }
+    });
+    console.log('after transport');
+    let mailOptions = {
+      
+      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
+      // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
+      to     : req.body.email, // list of receivers
+      subject: req.body.subject, // Subject line
+      text   : req.body.text, // plain text body
+      html   : req.body.mail, // html body
+      attachments : req.body.attachments
+    };
+    console.log('after mailoption');
+    //name email mobilenumber message
+    // console.log("mailOptions",mailOptions);
+    
+    transporter.sendMail(mailOptions, (error, info) => {
+      console.log('in mail');
+      if (error) {
+        
+        console.log("send mail error",error);
+        return "Failed";
+      }
+      if(info){
+        console.log('in info');
+        // return "Success";
+        res.status(200).json({ 
+          
+          message: "Success",
+          // return "Success",
+
+        });
+      }
+  
+      res.render('index');
+    });
+});
+app.post('/send-email-admin', (req, res)=> {
+  // console.log('req',req.body);
+  let transporter = nodeMailer.createTransport({
+      // service: 'Gmail',
+      host: 'smtp.gmail.com',
+      port: 587,
+      // port: 465,
+      auth: {
+        user: 'iogdevelopers@gmail.com',
+        pass: 'IOGSolutions@7090'
+        // user : 'iassureitmail@gmail.com',
+        // pass : 'iAssureIT@123'
+      }
+    });
+    console.log('after transport', req.body.emaillist);
+    let mailOptions = {
+      
+      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
+      // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
+      to     : req.body.emaillist,
+      subject: req.body.subject, // Subject line
+      text   : req.body.text, // plain text body
+      html   : req.body.mail, // html body
+      attachments : req.body.attachments
+    };
+    console.log('after mailoption');
+    //name email mobilenumber message
+    // console.log("mailOptions",mailOptions);
+    
+    transporter.sendMail(mailOptions, (error, info) => {
+      console.log('in mail');
+      if (error) {
+        
+        console.log("send mail error",error);
+        return "Failed";
+      }
+      if(info){
+        console.log('in info');
+        // return "Success";
+        res.status(200).json({ 
+          
+          message: "Success",
+          // return "Success",
+
+        });
+      }
+  
+      res.render('index');
+    });
 });
 app.post('/send-email/portalreview', (req, res)=> {
-	// console.log('req',req.body);
-	let transporter = nodeMailer.createTransport({
-		host: 'smtp.gmail.com',
-		port: 587,
-		auth: { 
-			// user: 'review.wealthyvia@gmail.com',
-			// pass: 'Artha123$'
-			user : 'iogdevelopers@gmail.com',
-			pass : 'IOGSolutions@7090'
-		}
-	});
-	let mailOptions = {
-			// from   : '"Wealthyvia" <review.wealthyvia@gmail.com>', // sender address
-			from   : '"IOG-Solutions" <iassureitmail@gmail.com>', // sender address
-			to     : req.body.email, // list of receivers
-			subject: req.body.subject, // Subject line
-			text   : req.body.text, // plain text body
-			html   : req.body.mail // html body
-		};
-		// console.log("mailOptions",mailOptions);
+  // console.log('req',req.body);
+  let transporter = nodeMailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    auth: { 
+      // user: 'review.wealthyvia@gmail.com',
+      // pass: 'Artha123$'
+      user : 'iassureitmail@gmail.com',
+      pass : 'iAssureIT@123'
+    }
+  });
+  let mailOptions = {
+      // from   : '"Wealthyvia" <review.wealthyvia@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <iassureitmail@gmail.com>', // sender address
+      to     : req.body.email, // list of receivers
+      subject: req.body.subject, // Subject line
+      text   : req.body.text, // plain text body
+      html   : req.body.mail // html body
+    };
+    // console.log("mailOptions",mailOptions);
 
-		transporter.sendMail(mailOptions, (error, info) => {
-			if (error) {
-				console.log("send mail error",error);
-				return "Failed";
-			}
-			if(info){
-			   return "Success";
-			}
-			// console.log('Message %s sent: %s', info.messageId, info.response);
-			res.render('index');
-		});
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log("send mail error",error);
+        return "Failed";
+      }
+      if(info){
+         return "Success";
+      }
+      // console.log('Message %s sent: %s', info.messageId, info.response);
+      res.render('index');
+    });
 });
-
-
 // handle all other request which not found 
 app.use((req, res, next) => {
-	const error = new Error('Not Found Manual ERROR');
-	error.status = 404;
-	next(error);
-		// when we get 404 error it send to next 
+  const error = new Error('Not Found Manual ERROR');
+  error.status = 404;
+  next(error);
+    // when we get 404 error it send to next 
 });
-
 // it will handel all error in the application
 app.use((error, req, res, next) => {
-	// 500 type error is used when we use database
-	res.status(error.status || 500);
-	res.json({
-		error:{
-			message:error.message
-		}
-	})
+  // 500 type error is used when we use database
+  res.status(error.status || 500);
+  res.json({
+    error:{
+      message:error.message
+    }
+  })
 });
 
 module.exports = app;

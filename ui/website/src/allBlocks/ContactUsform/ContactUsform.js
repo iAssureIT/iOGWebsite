@@ -1,4 +1,5 @@
 import React,{Component}      from 'react';
+import 'jquery-validation';
 import swal                   from 'sweetalert';
 import $                      from 'jquery';
 // import { render } from 'react-dom';
@@ -77,11 +78,28 @@ class ContactUsform extends Component{
     });
   });
 
+    $.validator.addMethod("regexifsc", function (value, element, regexpr) {
+      return regexpr.test(value);
+    }, "Special Characters Not Allowed.");
+
+    $("#contactForm").validate({
+    rules: {
+      userName: {
+        required: true,
+      },
+      userName: {
+        required: true,
+        regexifsc: /^[A-Za-z0-9 ]+$/,
+      },
+     
+      }
+    });
   }
+
   Submit(event){
     event.preventDefault();
-    if (this.validateForm()) {
-     
+   
+      if (this.validateForm()) {
       var dataArray={
       "userName"         : this.refs.userName.value,
       "companyName"      : this.refs.companyName.value,
@@ -91,7 +109,7 @@ class ContactUsform extends Component{
       "message"          : this.refs.message.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "subject"          : this.refs.subject.value,
-      "enquiry"          : this.state.enquiry,
+      "enquiry"          : this.refs.enquiry.value,
      
     }
     console.log("dataArray======>",dataArray);
@@ -107,7 +125,7 @@ class ContactUsform extends Component{
 /*      fields["enquiry"]       = "";
 */
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "iassureitmail@gmail.com";
+        var adminEmail = "iogdevelopers@gmail.com";
         const formValues1 = {
             "email"         : this.refs.email.value ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -122,6 +140,7 @@ class ContactUsform extends Component{
                               "<br/><br/> Thank You, <br/> Support Team, <br/> www..com " ,
         };
         // console.log("notification",formValues1);
+        
         axios
         .post('/send-email',formValues1)
         .then((res)=>{
@@ -136,7 +155,7 @@ class ContactUsform extends Component{
         const formValues2 = {
             "email"         : adminEmail ,
             "subject"       : "New query/feedback arrived from Website!",
-            "message"       : "HIii",
+            "message"       : "i",
             "mail"          : 'Dear Admin, <br/>'+
                               "Following new query/feedback came from website! <br/> <br/> " +
                               "============================  <br/> <br/> " +
@@ -181,6 +200,8 @@ class ContactUsform extends Component{
         "enquiry"          : "",
         "fields"           : fields
       });
+    }else{
+      window.scrollTo(0, 0);
     }
   }
   validateFormReq() {
@@ -237,13 +258,37 @@ class ContactUsform extends Component{
         var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
         if (!pattern.test(fields["email"])) {
           formIsValid = false;
-          errors["email"] = "Please enter valid email-ID.";
+          errors["email"] = "This field is required";
         }
       }
       if (typeof fields["contactNumber"] !== "undefined") {
         if (!fields["contactNumber"].match(/^[0-9]{10}$/)) {
           formIsValid = false;
-          errors["contactNumber"] = "Please enter valid mobile no.";
+          errors["contactNumber"] = "This field is required";
+        }
+      }
+       if (typeof fields["userName"] !== "undefined") {
+        if (!fields["userName"].match(/^[A-Za-z ]{10}$/)) {
+          formIsValid = false;
+          errors["userName"] = "This field is required";
+        }
+      }
+      /* if (typeof fields["companyName"] !== "undefined") {
+        if (!fields["companyName"].match(/^[A-Za-z0-9 ]{10}$/)) {
+          formIsValid = false;
+          errors["companyName"] = "This field is required";
+        }
+      }*/
+        /* if (typeof fields["subject"] !== "undefined") {
+        if (!fields["subject"].match(/^[0-9]{10}$/)) {
+          formIsValid = false;
+          errors["subject"] = "This field is required";
+        }
+      }*/
+         if (typeof fields["enquiry"] !== "undefined") {
+        if (!fields["enquiry"].match(/^[A-Za-z0-9 ]{10}$/)) {
+          formIsValid = false;
+          errors["enquiry"] = "This field is required";
         }
       }
      
@@ -320,18 +365,18 @@ class ContactUsform extends Component{
         <div>    
             <form id="contactForm ">
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label htmlFor="userName">Name<span className="redFont">*</span></label>
-                      <div className="input-group">
-                        <span className="input-group-addon addonColor"><i className="fa fa-user" aria-hidden="true"></i></span>
-                        <input className="form-control nameSpaceUpper" id="userName" type="text" name="userName"  ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} onKeyDown={this.isTextKey.bind(this)}  placeholder="Enter Your Name"/>
-                      </div>
+                  <label htmlFor="contactNumber">Name<span className="redFont">*</span></label>
+                  <div className="input-group">
+                    <span className="input-group-addon addonColor"><i className="fa fa-user mobileIcon" aria-hidden="true"></i></span>
+                    <input className="form-control" id="userName" type="text" name="userName" value={this.state.userName} maxLength={10}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="userName" placeholder="Enter Your Name"/>
+                  </div>
                   <div className="errorMsg">{this.state.errors.userName}</div>
                 </div>
-                <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="companyName">Company Name<span className="redFont">*</span></label>
+                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <label htmlFor="contactNumber">Company Name</label>
                   <div className="input-group">
-                    <span className="input-group-addon addonColor"><i className="fa fa-industry" aria-hidden="true"></i></span>
-                    <input className="form-control nameSpaceUpper" id="companyName" type="text" name="companyName" value={this.state.companyName} onChange={this.handleChange.bind(this)} onKeyDown={this.isTextKey.bind(this)} ref="companyName" placeholder="Enter Company Name"/>
+                    <span className="input-group-addon addonColor"><i className="fa fa-industry mobileIcon" aria-hidden="true"></i></span>
+                    <input className="form-control" id="companyName" type="text" name="companyName" value={this.state.companyName} maxLength={10}  onChange={this.handleChange.bind(this)}  ref="companyName" placeholder="Enter Company Name"/>
                   </div>
                   <div className="errorMsg">{this.state.errors.companyName}</div>
                 </div>
@@ -377,7 +422,7 @@ class ContactUsform extends Component{
                                 className="NOPadding"
                                 id="enquiry"
                                 value={this.state.enquiry}
-
+                                ref="enquiry"
                                 list={fruit}
                                 onChange ={this.handleChangeSelect.bind(this)}
                                 onSelectChange={this.handleChangeSelect.bind(this)}
@@ -387,7 +432,7 @@ class ContactUsform extends Component{
                   </div>  
                 </div>
                 <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                  <label htmlFor="subject">Subject<span className="redFont">*</span></label>
+                  <label htmlFor="subject">Subject</label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>
                     <input className="form-control nameSpaceUpper" id="subject" type="text" name="subject" value={this.state.subject} onChange={this.handleChange.bind(this)}  ref="subject" placeholder="Enter Subject"/>

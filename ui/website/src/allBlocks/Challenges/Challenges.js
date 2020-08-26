@@ -24,7 +24,7 @@ render(){
                                   <p className="challenges_line_subheadd ">{data.challengesTitle}</p>
                                   <p className="line_paraaaa">{data.challengestag}</p>
                                   <p className="line_paraaaa">{data.challengestext}</p> 
-                                  <p className="line_paraaaa">{data.challengestext5}</p> 
+                                  <p className="line_paraaaa"style={{textTransform:"lowercase"}}>{data.challengestext5}</p> 
                                   <ul className="line_paraaaa">
                                       {
                                           data.commonulliUl.map((ulDetail, index)=>{

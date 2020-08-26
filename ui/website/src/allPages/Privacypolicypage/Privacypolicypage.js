@@ -280,7 +280,7 @@ Commonleafulblock13(){
         <Challenges   CommonleafblockData={this.Commonleafulblock4()} /> 
         <Challenges   CommonleafblockData={this.Commonleafulblock5()} /> 
         <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> 
+       {/* <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> */}
       </div>
     );  
   }
