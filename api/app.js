@@ -155,8 +155,8 @@ app.post('/send-email', (req, res)=> {
       port: 587,
       // port: 465,
       auth: {
-        user: 'iassureitmail@gmail.com',
-        pass: 'iAssureIT@123'
+        user: 'iogdevelopers@gmail.com',
+        pass: 'IOGSolutions@7090'
         // user : 'iassureitmail@gmail.com',
         // pass : 'iAssureIT@123'
       }
@@ -164,7 +164,7 @@ app.post('/send-email', (req, res)=> {
     console.log('after transport');
     let mailOptions = {
       
-      from   : '"iOG-Solutions" <iassureitmail@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
       // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
       to     : req.body.email, // list of receivers
       subject: req.body.subject, // Subject line
@@ -205,8 +205,8 @@ app.post('/send-email-admin', (req, res)=> {
       port: 587,
       // port: 465,
       auth: {
-        user: 'iassureitmail@gmail.com',
-        pass: 'iAssureIT@123'
+        user: 'iogdevelopers@gmail.com',
+        pass: 'IOGSolutions@7090'
         // user : 'iassureitmail@gmail.com',
         // pass : 'iAssureIT@123'
       }
@@ -214,7 +214,7 @@ app.post('/send-email-admin', (req, res)=> {
     console.log('after transport', req.body.emaillist);
     let mailOptions = {
       
-      from   : '"iOG-Solutions" <iassureitmail@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
       // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
       to     : req.body.emaillist,
       subject: req.body.subject, // Subject line
@@ -255,13 +255,13 @@ app.post('/send-email/portalreview', (req, res)=> {
     auth: { 
       // user: 'review.wealthyvia@gmail.com',
       // pass: 'Artha123$'
-      user : 'iassureitmail@gmail.com',
-        pass : 'iAssureIT@123'
+      user : 'iogdevelopers@gmail.com',
+        pass : 'IOGSolutions@7090'
     }
   });
   let mailOptions = {
       // from   : '"Wealthyvia" <review.wealthyvia@gmail.com>', // sender address
-      from   : '"iOG-Solutions" <iassureitmail@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
       to     : req.body.email, // list of receivers
       subject: req.body.subject, // Subject line
       text   : req.body.text, // plain text body
