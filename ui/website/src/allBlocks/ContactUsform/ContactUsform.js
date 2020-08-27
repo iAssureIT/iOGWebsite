@@ -268,7 +268,7 @@ class ContactUsform extends Component{
         }
       }
        if (typeof fields["userName"] !== "undefined") {
-        if (!fields["userName"].match(/^[A-Za-z ]{10}$/)) {
+        if (!fields["userName"].match(/^[A-Za-z]/)) {
           formIsValid = false;
           errors["userName"] = "This field is required";
         }
@@ -365,15 +365,23 @@ class ContactUsform extends Component{
         <div>    
             <form id="contactForm ">
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="contactNumber">Name<span className="redFont">*</span></label>
+                  <label htmlFor="userName">Name<span className="redFont">*</span></label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-user mobileIcon" aria-hidden="true"></i></span>
-                    <input className="form-control" id="userName" type="text" name="userName" value={this.state.userName} maxLength={10}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="userName" placeholder="Enter Your Name"/>
+                    <input className="form-control" id="userName" type="text" name="userName" value={this.state.userName} maxLength={30}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="userName" placeholder="Enter Your Name"/>
                   </div>
                   <div className="errorMsg">{this.state.errors.userName}</div>
                 </div>
+              {/*  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <label htmlFor="contactNumber">Name<span className="redFont">*</span></label>
+                  <div className="input-group">
+                    <span className="input-group-addon addonColor"><i className="fa fa-user mobileIcon" aria-hidden="true"></i></span>
+                    <input className="form-control" id="userName" type="text" name="userName" value={this.state.userName} maxLength={30}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="userName" placeholder="Enter Your Name"/>
+                  </div>
+                  <div className="errorMsg">{this.state.errors.userName}</div>
+                </div>*/}
                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="contactNumber">Company Name</label>
+                  <label htmlFor="companyName">Company Name</label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-industry mobileIcon" aria-hidden="true"></i></span>
                     <input className="form-control" id="companyName" type="text" name="companyName" value={this.state.companyName} maxLength={10}  onChange={this.handleChange.bind(this)}  ref="companyName" placeholder="Enter Company Name"/>

@@ -1,10 +1,10 @@
-const express = require('express');
-const app = express();
-const morgan = require('morgan');// morgan call next function if problem occure
-const bodyParser = require('body-parser');// this package use to formate json data 
-const mongoose = require ('mongoose');
-var nodeMailer = require('nodemailer');
-const globalVariable = require("./nodemon.js");
+const express           = require('express');
+const app               = express();
+const morgan            = require('morgan');// morgan call next function if problem occure
+const bodyParser        = require('body-parser');// this package use to formate json data 
+const mongoose          = require ('mongoose');
+var  nodeMailer         = require('nodemailer');
+const globalVariable    = require("./nodemon.js");
 
 // Routes - Core Admin
 // const userRoutes 					= require('./api/coreAdmin/routes/users.js');
@@ -139,32 +139,16 @@ app.use('/api/jobform',jobformRoute);
 app.use('/api/jobapplicationform',jobapplicationformRoute);
 
 
-
-
-/*app.post('/translate', (req, res) => {
-    var q = req.body.q;
-    console.log(q);
-  var options = { method: 'POST',
-  url: 'https://translation.googleapis.com/language/translate/v2',
-  form: 
-   { key: process.env.TRANSLATE,
-     q: q,
-     target: 'en' } };
-    request(options, function (error, response, body) {
-    if (error) throw new Error(error);
-    console.log(body);
-    res.send(body);
-    });
-})
-*/
-
 /*
   "user"         : "iogdevelopers@gmail.com",
     "pass"         : "IOGSolutions@7090"
 */
 
+
+
+
 app.post('/send-email', (req, res)=> {
-  console.log('mail data',req.body);
+  // console.log('req',req.body);
   let transporter = nodeMailer.createTransport({
       // service: 'Gmail',
       host: 'smtp.gmail.com',
@@ -173,8 +157,8 @@ app.post('/send-email', (req, res)=> {
       auth: {
         user: 'iogdevelopers@gmail.com',
         pass: 'IOGSolutions@7090'
-        /* user : 'iassureitmail@gmail.com',
-         pass : 'iAssureIT@123'*/
+        // user : 'iassureitmail@gmail.com',
+        // pass : 'iAssureIT@123'
       }
     });
     console.log('after transport');
@@ -272,7 +256,7 @@ app.post('/send-email/portalreview', (req, res)=> {
       // user: 'review.wealthyvia@gmail.com',
       // pass: 'Artha123$'
       user : 'iassureitmail@gmail.com',
-      pass : 'iAssureIT@123'
+        pass : 'iAssureIT@123'
     }
   });
   let mailOptions = {

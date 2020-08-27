@@ -236,7 +236,7 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
-        var adminEmail = "iogdevelopers@gmail.com";
+        var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -338,6 +338,8 @@ class FormContent extends Component{
         "noticePeriod"     : "",
         "fields"           : fields
       });
+    }else{
+      window.scrollTo(0, 0);
     }
 
   }
@@ -419,6 +421,12 @@ class FormContent extends Component{
         if (!fields["contactNumber"].match(/^[0-9]{10}$/)) {
           formIsValid = false;
           errors["contactNumber"] = "Please enter valid mobile no.";
+        }
+      }
+       if (typeof fields["name1"] !== "undefined") {
+        if (!fields["name1"].match(/^[A-Za-z]/)) {
+          formIsValid = false;
+          errors["name1"] = "This field is required";
         }
       }
      
