@@ -19,7 +19,7 @@ export default class Map extends Component {
               
                <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21 "></span> 
-                 <a href="/about-us" className="Aboutuslink">ABOUT US</a><br/>
+                 <a href="/masterpage/about-us" className="Aboutuslink">ABOUT US</a><br/>
                   <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu"> 

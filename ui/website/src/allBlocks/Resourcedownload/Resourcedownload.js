@@ -105,6 +105,41 @@ export default class Resourcedownload extends React.Component {
     $('#modalId1').addClass('in');
     $('#modalId1').css('display','block');
   }
+  componentDidMount() {
+      
+    $.validator.addMethod("regexifsc", function (value, element, regexpr) {
+      return regexpr.test(value);
+    }, "Special Characters Not Allowed.");
+
+
+    $.validator.addMethod("regexifsc1", function (value, element, regexpr) {
+      return regexpr.test(value);
+    }, "Enter valid e-mail");
+
+
+
+    $("#resourceform").validate({
+    rules: {
+      userName: {
+        required: true,
+      },
+      userName: {
+        required: true,
+        regexifsc: /^[A-Za-z0-9 ]+$/,
+      },
+       email: {
+        required: true,
+        regexifsc1:/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i,
+      },
+       subject: {
+        required: true,
+       
+      },
+     
+      }
+    });
+    }
+
     
      handleChange(event){
         event.preventDefault();
@@ -125,7 +160,7 @@ export default class Resourcedownload extends React.Component {
         this.setState({
             formerrors,
             [name]:value,
-            "name"         : this.refs.name.value,
+            "name"         : this.refs.userName.value,
             "email"        : this.refs.email.value,
             "subject"      : this.refs.subject.value,
             "message"      : this.refs.message.value,
@@ -134,17 +169,9 @@ export default class Resourcedownload extends React.Component {
    
   Submit(event,url){
     event.preventDefault();
-
+      if($("#resourceform").valid()){
      // const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = this.state.id;
-    // the filename you want
-    a.download = this.state.id;
-    document.body.appendChild(a);
-    a.click();
-    window.URL.revokeObjectURL(url);
-    alert('your file has downloaded!');
+    
 
      /*return (
         <div>
@@ -156,7 +183,7 @@ export default class Resourcedownload extends React.Component {
     // if (this.validateForm()) {
      
       var dataArray={
-            "name"         : this.refs.name.value,
+            "name"         : this.refs.userName.value,
             "email"        : this.refs.email.value,
             "subject"      : this.refs.subject.value,
             "message"      : this.refs.message.value,
@@ -175,12 +202,12 @@ export default class Resourcedownload extends React.Component {
 /*      fields["enquiry"]       = "";
 */
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "iogdevelopers@gmail.com";
+        var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
             "email"         : this.refs.email.value ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
             "message"       : "",
-            "mail"          : 'Dear ' + this.state.name + ', <br/><br/>'+
+            "mail"          : 'Dear ' + this.refs.userName.value + ', <br/><br/>'+
                              
                               "<b>Your Email: </b>"  + this.refs.email.value + '<br/><br/>'+
                               "Your following message has been successfully delivered to the admin! We will get back to you shortly. <br/> <br/> " +
@@ -196,6 +223,15 @@ export default class Resourcedownload extends React.Component {
             if(res.status === 200){
                 swal("Thank you for contacting us. We will get back to you shortly.")
                 }
+                const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = this.state.id;
+    // the filename you want
+    a.download = this.state.id;
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+    alert('your file has downloaded!');
         })
         .catch((error)=>{
           console.log("error = ", error);
@@ -248,7 +284,9 @@ export default class Resourcedownload extends React.Component {
         "fields"           : fields
       });
 /*    }
+
 */  } 
+}
 
    
 
@@ -319,7 +357,7 @@ export default class Resourcedownload extends React.Component {
                                   <button type="button" className="close closeBtn" data-dismiss="modal" onClick={this.closeThisModal.bind(this)}>&times;</button>
                               </div>
                                 <div className="contactpageform" >
-                                    <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12" id="resourceform">
                                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
                                             <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">Connect with us for information about our services,technical support and training.</p>
                                             <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b> Happy to Help</b></h4>
@@ -328,7 +366,7 @@ export default class Resourcedownload extends React.Component {
                                           <label htmlFor="name">Name<span className="redFont">*</span></label>
                                             <div className="input-group">
                                               <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>
-                                              <input className="form-control inputtextContent nameSpaceUpper" id="name" type="text" name="name"  ref="name" value={this.state.name} onChange={this.handleChange.bind(this)} placeholder="Enter Your Name"/>
+                                              <input className="form-control inputtextContent nameSpaceUpper" id="userName" type="text" name="userName"  ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} placeholder="Enter Your Name"/>
                                             </div>
                                         </div>
                                         <div className="formcontent_new col-lg-6 col-md-6 col-sm-12 col-xs-12">

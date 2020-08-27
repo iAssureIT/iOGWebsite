@@ -236,7 +236,7 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
-        var adminEmail = "iogdevelopers@gmail.com";
+        var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
