@@ -155,8 +155,8 @@ app.post('/send-email', (req, res)=> {
       port: 587,
       // port: 465,
       auth: {
-        user: 'kkhandalekaruna@gmail.com',
-        pass: 'changedon1stJune'
+        user: 'iogdevelopers@gmail.com',
+        pass: 'IOGSolutions@7090'
         // user : 'iassureitmail@gmail.com',
         // pass : 'iAssureIT@123'
       }
@@ -164,7 +164,7 @@ app.post('/send-email', (req, res)=> {
     console.log('after transport');
     let mailOptions = {
       
-      from   : '"iOG-Solutions" <kkhandalekaruna@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
       // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
       to     : req.body.email, // list of receivers
       subject: req.body.subject, // Subject line
