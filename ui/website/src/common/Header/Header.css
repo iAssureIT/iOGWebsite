@@ -366,7 +366,7 @@
 }
 .setlogo{
   padding-left: 60px;
-  padding-top: 7px;
+  /*padding-top: 7px;*/
 }
 
 .contactBar{
@@ -457,7 +457,7 @@ body { top: 0px !important; }
   text-align: right;
   position: absolute;
   right: 27px;
-  bottom: 68px;
+  bottom: 59px;
   /*background: #eee;*/
 }
 .ct-topbar__list {

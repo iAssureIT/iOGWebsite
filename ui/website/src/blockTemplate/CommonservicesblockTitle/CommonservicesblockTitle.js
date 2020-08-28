@@ -122,7 +122,7 @@ componentDidMount(){
                           </div> 
                             <h2 className="text-center lightbluetext para-top_website">{this.state.blocks.blockTitle}</h2>                   
                       </div> 
-                          <div className="row"> 
+                         {/* <div className="row">*/} 
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
                                 // console.log("dta=======>",data);
@@ -169,7 +169,7 @@ componentDidMount(){
                                  );
                               })
                             }
-                          </div>
+                       {/*   </div>*/}
                         </div>
                       </div>
                     </div>

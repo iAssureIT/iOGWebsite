@@ -861,8 +861,8 @@ class CmsBlock extends Component {
               											
               											
               							              { 
-                                            this.state.rBlocksLink === ""
-                                            ?
+                                            /*this.state.rBlocksLink === ""
+                                            ?*/
                                             this.state.parsed.rBlocksLink === ""
                                             ? null
                                             :
@@ -872,7 +872,7 @@ class CmsBlock extends Component {
                       										        		<input type="text" ref="repetedLink" id="repetedLink" value={this.state.repetedLink} name="repetedLink"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
                       												    </div>
                       												</div>
-                                               : ""
+                                               /*: ""*/
                                               
                                           }
                                           { 
