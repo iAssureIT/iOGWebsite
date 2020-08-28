@@ -7,6 +7,13 @@
 
 
 }
+.blogs_newhwading{
+
+ position: absolute;
+    top: -215px;
+    color: #333;
+    font-size: 55px
+}
 .blogTitle{
 	margin: 5px 0px;
 	  overflow: hidden;
@@ -158,8 +165,8 @@
 }
 .blogtext1{
 
-	margin-top: 120px;
-	left:441px;
+	/*margin-top: 120px;*/
+	left:378px;
 }
 .bloglist_margin{
 	margin-left: 60px;

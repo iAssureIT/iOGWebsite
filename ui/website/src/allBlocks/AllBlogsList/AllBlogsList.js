@@ -81,9 +81,9 @@ render() {
 		<div>
 			<div className="container-fluid AllBlogsBox" style={{padding:"0px"}}>
 				<div class="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">
-				  	<h1 class="lightbluetext latestblog blogtext1">
-				  		{/*<b>Blogs</b>*/}
-				    </h1>
+				  	<div class="lightbluetext latestblog blogtext1 blogs_newhwading">
+				  		<b>Blogs</b>
+				    </div>
 				</div>
 			    <div className=" col-lg-11 col-md-11 col-sm-12 col-xs-12 bloglist_margin">
 		          {

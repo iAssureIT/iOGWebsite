@@ -51,7 +51,7 @@ export default class Resourcedownload extends React.Component {
             {
                 downstreamTitle : "iOG Corporate Brochure",
                 downstreamimg   : "/images/Illustration_2.png",
-                downstreamlink  : "",
+                downstreamlink  : "https://iogiassureit.s3.amazonaws.com/iOG/iOGCorporateBrochure.docx",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus."
                     
                 
@@ -202,7 +202,7 @@ export default class Resourcedownload extends React.Component {
 /*      fields["enquiry"]       = "";
 */
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "iassureitmail@gmail.com";
+        var adminEmail = "iogdevelopers@gmail.com";
         const formValues1 = {
             "email"         : this.refs.email.value ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -240,11 +240,11 @@ export default class Resourcedownload extends React.Component {
         const formValues2 = {
             "email"         : adminEmail ,
             "subject"       : "New query/feedback arrived from Website!",
-            "message"       : "HIii",
+            "message"       : "Brochure Downloaded By User",
             "mail"          : 'Dear Admin, <br/>'+
-                              "Following new query/feedback came from website! <br/> <br/> " +
+                              this.refs.userName.value+" Has downloaded Brochure from Website Resources! <br/> <br/> " +
                               "============================  <br/> <br/> " +
-                              "<b>Client Name: </b>"   + this.state.name + '<br/>'+
+                              // "<b>Client Name: </b>"   + this.state.name + '<br/>'+
 
                               "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
 

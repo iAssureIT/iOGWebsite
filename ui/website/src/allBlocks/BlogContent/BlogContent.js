@@ -63,7 +63,7 @@ export default class BlogContent extends Component {
               </div>
              
             </div>
-             <button className="btn iogpdfbtn pull-right" onClick={this.printTicket.bind(this)}>Generate pdf</button>
+             <button className="btn iogpdfbtn pull-right" onClick={this.printTicket.bind(this)}>Generate PDF</button>
               <div style={{width:0, height: 0}}></div>
              </div> 
     );

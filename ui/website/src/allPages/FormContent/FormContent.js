@@ -236,7 +236,7 @@ class FormContent extends Component{
       fields["position"]        = "";
       fields["experience"]      = "";
 
-        var adminEmail = "iassureitmail@gmail.com";
+        var adminEmail = "iogdevelopers@gmail.com";
         const formValues1 = {
             "email"         : this.state.email ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -284,12 +284,17 @@ class FormContent extends Component{
                                "----------------------------------------------------------------------<br/> <br/> " +
 
 
-                                "<b>Download Resume: </b>"     + this.state.fileurl + '<br/><br/>'+
-          
+                                // "<b>Download Resume: </b>"     + this.state.fileurl + '<br/><br/>'+
+                                 "" ,
 
-                             /* "<pre> " + this.state.message + "</pre>" +*/
-                              "<br/><br/> ============================ " +
-                              "<br/><br/> This is a system generated email! " ,
+
+
+            "attachments"  : [{
+                           
+                            "name" : "Resume",
+                            "path" : this.state.fileurl
+                          }]      
+
         };
 
          axios

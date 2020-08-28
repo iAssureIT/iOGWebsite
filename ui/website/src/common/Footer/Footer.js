@@ -72,10 +72,11 @@ export default class Footer extends Component {
                         <div className="col-md-2 col-sm-2 col-xs-6 footerdivs">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
-                                <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
-                                <li><a href="/masterpage/iog-train">iOGTrain</a></li>
                                 <li><a href="/masterpage/iog-study">iOGStudy</a></li>
+                                 <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
+                                <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
+                                <li><a href="/masterpage/iog-train">iOGTrain</a></li>
+                               
                             </ul>
                         </div>
                         
@@ -202,10 +203,10 @@ export default class Footer extends Component {
                         <div className=" col-sm-4 col-xs-4">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
-                                 <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
-                                <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
+                                 <li><a href="/masterpage/iog-study">iOGStudy</a></li>
+                                 <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
+                                <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
                                 <li><a href="/masterpage/iog-train">iOGTrain</a></li>
-                                <li><a href="/masterpage/iog-study">iOGStudy</a></li>
                             </ul>
                         </div>
                         
