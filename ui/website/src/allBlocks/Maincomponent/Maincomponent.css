@@ -39,7 +39,8 @@
 }
 .iogimgblock2{
    width: 81%;
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    padding-top: 101px;
     padding-left: 13px;
     margin-left: 1px;
     height: 747px;

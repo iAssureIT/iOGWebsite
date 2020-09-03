@@ -2,6 +2,7 @@ import React,{Component}  from 'react';
 import axios              from "axios";
 import swal               from 'sweetalert';
 import $                  from 'jquery';
+import jQuery, { isNumeric } from 'jquery';
 import ReactMultiSelectCheckboxes from 'react-multiselect-checkboxes';
 import PhoneInput               from 'react-phone-input-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -44,6 +45,12 @@ class FormContent extends Component{
   }
 
   componentDidMount() {
+   var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+   if (isSafari){
+     $('body').css('background-image','none');
+   }
+
       axios
           .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
           .then((response)=>{
@@ -134,6 +141,71 @@ class FormContent extends Component{
         console.log("positionlevel",positionlevel)
       });
 
+      $.validator.addMethod("noSpace", function(value, element) { 
+        return value == '' || value.trim().length != 0;
+        }, "No space please and don't leave it empty");
+
+        $.validator.addMethod("valueNotEquals", function (value, element, arg) {
+          return arg !== value && value!== null;
+        }, "Please select position");
+    
+  
+      jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+      });
+      
+        $("#contactForm").validate({
+        rules: {
+          position: {
+            required: true,
+            valueNotEquals:"--Select Position--"
+          },
+          name1: {
+           required: true,
+           noSpace: true
+          },
+          email: {
+           required: true,	
+           noSpace: true,
+          },
+          curr_ctc:{
+           required: true,
+           noSpace: true
+          },
+          skills:{
+            required:true,
+            noSpace: true
+          },
+          resume:{
+            required:true
+          }
+        },
+        errorPlacement: function (error, element) {
+          if (element.attr("name") === "position") {
+            error.insertAfter(".positionDiv");
+          }
+          if (element.attr("name") === "name1") {
+            error.insertAfter(".name1Div");
+          }
+          if (element.attr("name") === "email") {
+            error.insertAfter(".emailDiv");
+          }
+          if (element.attr("name") === "curr_ctc") {
+            error.insertAfter(".curr_ctc_div");
+          }
+          if (element.attr("name") === "skills") {
+            error.insertAfter(".skillsDiv");
+          }
+          if (element.attr("name") === "skills") {
+            error.insertAfter(".skillsDiv");
+          }
+          if (element.attr("name") === "resume") {
+            error.insertAfter(".resumeDiv");
+          }
+        }
+        });  
+
   }
   handleChangeState(event) {
     this.setState({
@@ -197,7 +269,7 @@ class FormContent extends Component{
      const fileurl = localStorage.getItem('Fileurl');
       console.log("fileurlNew---",this.state.fileurl)
 
-    if (this.validateForm()) {
+    if ($('#contactForm').valid()) {
      
       var dataArray={
       "name1"            : this.refs.name1.value,
@@ -677,7 +749,7 @@ class FormContent extends Component{
                               <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                 <div className="form-group ">
                                     <label htmlFor="position">Positions<span className="redFont">*</span></label>
-                                    <div className="input-group dropZindex">
+                                    <div className="input-group dropZindex positionDiv">
                                        <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                          {/*<ReactMultiSelectCheckboxes placeholderButtonLabel="Select Positions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" value={this.state.positionDataArray} margin-top={"40px"} options={this.state.positionlevel}  onChange={this.positionhandleChange.bind(this)}/>*/}
                                           <select id="vendor" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" value={this.state.position} ref="position" name="position" onChange={this.handleChange.bind(this)}>
@@ -734,19 +806,19 @@ class FormContent extends Component{
                                   
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                    <label htmlFor="name">Name<span className="redFont">*</span></label>
-                                    <div className="input-group">
+                                    <div className="input-group name1Div">
                                       <span className="input-group-addon addonColor"><i className="fa fa-user" aria-hidden="true"></i></span>
-                                      <input className="form-control nameSpaceUpper" id="name1" type="text" name="name1" ref="name1" value={this.state.name1} onKeyDown={this.isTextKey.bind(this)} placeholder="Enter Your Name" onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control nameSpaceUpper" id="name1" type="text" name="name1" ref="name1" value={this.state.name1} onKeyDown={this.isTextKey.bind(this)} placeholder="Enter Your Name" onChange={this.handleChange.bind(this)} required/>
                                     </div>
-                                   <div className="errorMsg">{this.state.errors.name1}</div>
+                                   {/* <div className="errorMsg">{this.state.errors.name1}</div> */}
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="email">Email<span className="redFont">*</span></label>
-                                    <div className="input-group">
+                                    <div className="input-group emailDiv">
                                       <span className="input-group-addon addonColor"><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                                      <input className="form-control" id="email" type="text" name="email" ref="email" value={this.state.email} placeholder="Enter Email" name="email" onChange={this.handleChange.bind(this)}/>
+                                      <input className="form-control" id="email" type="text" name="email" ref="email" value={this.state.email} placeholder="Enter Email" name="email" onChange={this.handleChange.bind(this)} required/>
                                     </div>
-                                    <div className="errorMsg">{this.state.errors.email}</div>
+                                    {/* <div className="errorMsg">{this.state.errors.email}</div> */}
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <label htmlFor="contactNumber">Contact Number</label>
@@ -823,11 +895,11 @@ class FormContent extends Component{
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
                                         <label htmlFor="curr_ctc">Current CTC<span className="redFont">*</span></label>
-                                        <div className="input-group">
+                                        <div className="input-group curr_ctc_div">
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                          <input className="form-control nameSpaceUpper" id="curr_ctc" type="text" name="curr_ctc" ref="curr_ctc" value={this.state.curr_ctc}   onChange={this.handleChange.bind(this)}/>
+                                          <input className="form-control nameSpaceUpper" id="curr_ctc" type="text" name="curr_ctc" ref="curr_ctc" value={this.state.curr_ctc}   onChange={this.handleChange.bind(this)} required/>
                                         </div>
-                                        <div className="errorMsg">{this.state.errors.curr_ctc}</div>
+                                        {/* <div className="errorMsg">{this.state.errors.curr_ctc}</div> */}
                                     </div>  
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
@@ -837,7 +909,7 @@ class FormContent extends Component{
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                           <input className="form-control nameSpaceUpper" id="exp_ctc" type="text" name="exp_ctc" ref="exp_ctc" value={this.state.exp_ctc}  onChange={this.handleChange.bind(this)}/>
                                         </div>
-                                        <div className="errorMsg">{this.state.errors.exp_ctc}</div>
+                                        {/* <div className="errorMsg">{this.state.errors.exp_ctc}</div> */}
                                     </div>  
                                   </div>
                                   <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
@@ -847,17 +919,17 @@ class FormContent extends Component{
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
                                           <input className="form-control nameSpaceUpper" id="noticePeriod" type="text" name="noticePeriod" ref="noticePeriod"  value={this.state.noticePeriod}  onChange={this.handleChange.bind(this)}/>
                                         </div>
-                                        <div className="errorMsg">{this.state.errors.noticePeriod}</div>
+                                        {/* <div className="errorMsg">{this.state.errors.noticePeriod}</div> */}
                                     </div>  
                                   </div>
                                    <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht">
                                     <div className="form-group">
                                         <label htmlFor="noticePeriod">Key Skills<span className="redFont">*</span></label>
-                                        <div className="input-group">
+                                        <div className="input-group skillsDiv">
                                           <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                          <input className="form-control nameSpaceUpper" id="skills" type="text" name="skills" ref="skills"  value={this.state.skills}  onChange={this.handleChange.bind(this)}/>
+                                          <input className="form-control nameSpaceUpper" id="skills" type="text" name="skills" ref="skills"  value={this.state.skills}  onChange={this.handleChange.bind(this)} required/>
                                         </div>
-                                        <div className="errorMsg">{this.state.errors.noticePeriod}</div>
+                                        {/* <div className="errorMsg">{this.state.errors.noticePeriod}</div> */}
                                     </div>  
                                   </div>
                                    <div className="formcontent col-lg-6 col-md-12 col-sm-12 col-xs-12 formht NOpadding">
@@ -866,9 +938,9 @@ class FormContent extends Component{
                                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding marginsBottom" id="hide">
                                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 profileImageDiv" id="LogoImageUpEmployee">
                                                <label htmlFor="noticePeriod">Upload Resume<span className="redFont">*</span></label>
-                                               <div className="input-group">
+                                               <div className="input-group resumeDiv">
                                                 <span className="input-group-addon addonColor"><i className="fa fa-crosshairs" aria-hidden="true"></i></span>
-                                                    <input onChange={this.uploadforeGImg.bind(this)} id="LogoImageUp" type="file" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" title="" name="resume"  ref="resume"/>
+                                                    <input onChange={this.uploadforeGImg.bind(this)} id="LogoImageUp" type="file" className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" title="" name="resume"  ref="resume" required/>
                                                   </div>
                                                 </div>  
 

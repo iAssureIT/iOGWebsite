@@ -4,13 +4,17 @@ import React, { Component } from 'react';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
+import $ from 'jquery';
 import './Upstream.css';
 
 export default class Upstream extends Component {
 
-     componentDidMount(){
+  componentDidMount(){
 
+  var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  if (isSafari){
+      $('.cards').css('-webkit-transform','translate3d(0,0,0)');
+  }
 
   window.addEventListener('DOMContentLoaded', () => {setTimeout(init,1)}, true);
 

@@ -2,11 +2,8 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
-
-// import $                  from 'jquery';
+import $                  from 'jquery';
 import './ConsultingServices.css';
-
-
 
 export default class ConsultingServices extends Component {
  constructor(props) {
@@ -120,9 +117,23 @@ componentDidMount(){
                       }
               })
             }
-      this.setState({
+            this.setState({
                 block_id:this.props.block_id
-              });
+            });
+
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+            if (isSafari){
+              $('.BT4_txt').addClass('safari_BT4_txt');
+            }else{
+              if (isChrome){
+                $('.BT4_txt').addClass('chrome_BT4_txt');
+              }else{
+                $('.BT4_txt').removeClass('chrome_BT4_txt');
+                $('.BT4_txt').removeClass('safari_BT4_txt');
+              }
+            }
 }
   render() {  
     return (
@@ -132,7 +143,7 @@ componentDidMount(){
             <div className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></div>
          </div>
           <div className="col-lg-10 col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-10 col-xs-12 servivesblockIog">
-           <div className="row">
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
            { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
             this.state.blocks.repeatedBlocks.map((result, index)=>{

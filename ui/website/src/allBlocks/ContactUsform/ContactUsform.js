@@ -1,6 +1,7 @@
 import React,{Component}      from 'react';
 import 'jquery-validation';
 import swal                   from 'sweetalert';
+import jQuery, { isNumeric } from 'jquery';
 import $                      from 'jquery';
 // import { render } from 'react-dom';
 import Select                 from 'react-select-nested';
@@ -82,24 +83,52 @@ class ContactUsform extends Component{
       return regexpr.test(value);
     }, "Special Characters Not Allowed.");
 
+    $.validator.addMethod("valueNotEquals", function (value, element, arg) {
+			console.log("valueNotEquals",arg,value);
+			return arg !== value && value!== null;
+		}, "Please select enquiry");
+
+
     $("#contactForm").validate({
     rules: {
-      userName: {
-        required: true,
-      },
-      userName: {
+       userName: {
         required: true,
         regexifsc: /^[A-Za-z0-9 ]+$/,
+       },
+       contactNumber:{
+        required: true
+       },
+       email:{
+        required: true
+       },
+       enquiry:{
+        required: true,
+         valueNotEquals: "" 
+			  },
+        
       },
-     
-      }
+      errorPlacement: function (error, element) {
+			  if (element.attr("name") === "userName") {
+				error.insertAfter(".userNameDiv");
+			  }
+			  if (element.attr("name") === "contactNumber") {
+				error.insertAfter(".contactNumberDiv");
+			  }
+			  if (element.attr("name") === "email") {
+				error.insertAfter(".emailDiv");
+        }
+        
+        if (element.attr("name") === "enquiry") {
+          error.insertAfter(".enquiryDiv");
+          }
+      },
     });
   }
 
   Submit(event){
     event.preventDefault();
-   
-      if (this.validateForm()) {
+      if ($('#contactForm').valid()) {
+       
       var dataArray={
       "userName"         : this.refs.userName.value,
       "companyName"      : this.refs.companyName.value,
@@ -205,97 +234,97 @@ class ContactUsform extends Component{
     }
   }
   validateFormReq() {
-    let fields = this.state.fields;
-    let errors = {};
-    let formIsValid = true;
-      if (!fields["userName"]) {
-        formIsValid = false;
-        errors["userName"] = "This field is required.";
-      }     
-      if (!fields["companyName"]) {
-        formIsValid = false;
-        errors["companyName"] = "This field is required.";
-      }
-      // if (!fields["designation"]) {
-      //   formIsValid = false;
-      //   errors["designation"] = "This field is required.";
-      // }
-      // if (!fields["country"]) {
-      //     formIsValid = false;
-      //     errors["country"] = "This field is required.";
-      // }
-      if (!fields["email"]) {
-        formIsValid = false;
-        errors["email"] = "This field is required.";
-      }          
-      if (!fields["message"]) {
-        formIsValid = false;
-        errors["message"] = "This field is required.";
-      }          
-      // if (!fields["subject"]) {
-      //   formIsValid = false;
-      //   errors["subject"] = "This field is required.";
-      // }  
-       if (!fields["contactNumber"]) {
-        formIsValid = false;
-        errors["contactNumber"] = "This field is required.";
-      }
-     /*if (!fields["enquiry"]) {
-        formIsValid = false;
-        errors["enquiry"] = "This field is required.";
-      }   */      
-      this.setState({
-        errors: errors
-      });
-      return formIsValid;
+    // let fields = this.state.fields;
+    // let errors = {};
+    // let formIsValid = true;
+    //   if (!fields["userName"]) {
+    //     formIsValid = false;
+    //     errors["userName"] = "This field is required.";
+    //   }     
+    //   if (!fields["companyName"]) {
+    //     formIsValid = false;
+    //     errors["companyName"] = "This field is required.";
+    //   }
+    //   // if (!fields["designation"]) {
+    //   //   formIsValid = false;
+    //   //   errors["designation"] = "This field is required.";
+    //   // }
+    //   // if (!fields["country"]) {
+    //   //     formIsValid = false;
+    //   //     errors["country"] = "This field is required.";
+    //   // }
+    //   if (!fields["email"]) {
+    //     formIsValid = false;
+    //     errors["email"] = "This field is required.";
+    //   }          
+    //   if (!fields["message"]) {
+    //     formIsValid = false;
+    //     errors["message"] = "This field is required.";
+    //   }          
+    //   // if (!fields["subject"]) {
+    //   //   formIsValid = false;
+    //   //   errors["subject"] = "This field is required.";
+    //   // }  
+    //    if (!fields["contactNumber"]) {
+    //     formIsValid = false;
+    //     errors["contactNumber"] = "This field is required.";
+    //   }
+    //  /*if (!fields["enquiry"]) {
+    //     formIsValid = false;
+    //     errors["enquiry"] = "This field is required.";
+    //   }   */      
+    //   this.setState({
+    //     errors: errors
+    //   });
+    //   return formIsValid;
   }
   validateForm() {
-    let fields = this.state.fields;
-    let errors = {};
-    let formIsValid = true;
-      if (typeof fields["email"] !== "undefined") {
-        //regular expression for email validation
-        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-        if (!pattern.test(fields["email"])) {
-          formIsValid = false;
-          errors["email"] = "This field is required";
-        }
-      }
-      if (typeof fields["contactNumber"] !== "undefined") {
-        if (!fields["contactNumber"].match(/^[0-9]{10}$/)) {
-          formIsValid = false;
-          errors["contactNumber"] = "This field is required";
-        }
-      }
-       if (typeof fields["userName"] !== "undefined") {
-        if (!fields["userName"].match(/^[A-Za-z]/)) {
-          formIsValid = false;
-          errors["userName"] = "This field is required";
-        }
-      }
-      /* if (typeof fields["companyName"] !== "undefined") {
-        if (!fields["companyName"].match(/^[A-Za-z0-9 ]{10}$/)) {
-          formIsValid = false;
-          errors["companyName"] = "This field is required";
-        }
-      }*/
-        /* if (typeof fields["subject"] !== "undefined") {
-        if (!fields["subject"].match(/^[0-9]{10}$/)) {
-          formIsValid = false;
-          errors["subject"] = "This field is required";
-        }
-      }*/
-         if (typeof fields["enquiry"] !== "undefined") {
-        if (!fields["enquiry"].match(/^[A-Za-z0-9 ]{10}$/)) {
-          formIsValid = false;
-          errors["enquiry"] = "This field is required";
-        }
-      }
+    // let fields = this.state.fields;
+    // let errors = {};
+    // let formIsValid = true;
+    //   if (typeof fields["email"] !== "undefined") {
+    //     //regular expression for email validation
+    //     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    //     if (!pattern.test(fields["email"])) {
+    //       formIsValid = false;
+    //       errors["email"] = "This field is required";
+    //     }
+    //   }
+    //   if (typeof fields["contactNumber"] !== "undefined") {
+    //     if (!fields["contactNumber"].match(/^[0-9]{10}$/)) {
+    //       formIsValid = false;
+    //       errors["contactNumber"] = "This field is required";
+    //     }
+    //   }
+    //    if (typeof fields["userName"] !== "undefined") {
+    //     if (!fields["userName"].match(/^[A-Za-z]/)) {
+    //       formIsValid = false;
+    //       errors["userName"] = "This field is required";
+    //     }
+    //   }
+    //   /* if (typeof fields["companyName"] !== "undefined") {
+    //     if (!fields["companyName"].match(/^[A-Za-z0-9 ]{10}$/)) {
+    //       formIsValid = false;
+    //       errors["companyName"] = "This field is required";
+    //     }
+    //   }*/
+    //     /* if (typeof fields["subject"] !== "undefined") {
+    //     if (!fields["subject"].match(/^[0-9]{10}$/)) {
+    //       formIsValid = false;
+    //       errors["subject"] = "This field is required";
+    //     }
+    //   }*/
+    //      if (typeof fields["enquiry"] !== "undefined") {
+    //     if (!fields["enquiry"].match(/^[A-Za-z0-9 ]{10}$/)) {
+    //       formIsValid = false;
+    //       errors["enquiry"] = "This field is required";
+    //     }
+    //   }
      
-      this.setState({
-        errors: errors
-      });
-      return formIsValid;
+    //   this.setState({
+    //     errors: errors
+    //   });
+    //   return formIsValid;
   }
   isNumberKey(evt){
     var charCode = (evt.which) ? evt.which : evt.keyCode
@@ -363,14 +392,14 @@ class ContactUsform extends Component{
  
     return(
         <div>    
-            <form id="contactForm ">
+            <form id="contactForm">
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="userName">Name<span className="redFont">*</span></label>
-                  <div className="input-group">
+                  <div className="input-group userNameDiv">
                     <span className="input-group-addon addonColor"><i className="fa fa-user mobileIcon" aria-hidden="true"></i></span>
-                    <input className="form-control" id="userName" type="text" name="userName" value={this.state.userName} maxLength={30}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="userName" placeholder="Enter Your Name"/>
+                    <input className="form-control" id="userName" type="text" name="userName" value={this.state.userName} maxLength={30}  onKeyDown={this.isTextKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="userName" placeholder="Enter Your Name" required/>
                   </div>
-                  <div className="errorMsg">{this.state.errors.userName}</div>
+                  {/* <div className="errorMsg">{this.state.errors.userName}</div> */}
                 </div>
               {/*  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="contactNumber">Name<span className="redFont">*</span></label>
@@ -406,37 +435,36 @@ class ContactUsform extends Component{
                 </div>
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
-                  <div className="input-group">
+                  <div className="input-group contactNumberDiv">
                     <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
-                    <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder="Enter Contact Number"/>
+                    <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder="Enter Contact Number" required/>
                   </div>
-                  <div className="errorMsg">{this.state.errors.contactNumber}</div>
                 </div>
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="email">Email<span className="redFont">*</span></label>
-                  <div className="input-group">
+                  <div className="input-group emailDiv">
                     <span className="input-group-addon addonColor"><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                    <input className="form-control" id="email" type="text" name="email" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}  placeholder="Enter Email"/>
+                    <input className="form-control" id="email" type="email" name="email" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}  placeholder="Enter Email" required/>
                   </div>
-                  <div className="errorMsg">{this.state.errors.email}</div>
                 </div>
-                <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
                   <div className="form-group">
                       <label htmlFor="enquiry">Enquiry<span className="redFont">*</span></label>
-                      <div className="input-group">
+                      <div className="input-group enquiryDiv">
                       <span className="input-group-addon addonColor"><i className="fa fa-handshake-o" aria-hidden="true"></i></span>
                            <Select
                                 placeholder="-- Select Option --"
                                 className="NOPadding"
                                 id="enquiry"
+                                name="enquiry"
                                 value={this.state.enquiry}
                                 ref="enquiry"
                                 list={fruit}
                                 onChange ={this.handleChangeSelect.bind(this)}
                                 onSelectChange={this.handleChangeSelect.bind(this)}
+                                required
                             />                                          
                         </div>
-                      <div className="errorMsg">{this.state.errors.enquiry}</div>
                   </div>  
                 </div>
                 <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -454,7 +482,7 @@ class ContactUsform extends Component{
                 </div>
                 <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-2 col-lg-offset-10">
-                    <button className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}> Submit</button>
+                    <button type='submit' className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}> Submit</button>
                   </div>
                </div>
             </form>

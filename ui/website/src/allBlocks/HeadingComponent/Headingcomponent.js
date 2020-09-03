@@ -33,7 +33,8 @@ class Headingcomponent extends Component{
                   <div className="career_linee_1  ">
                   </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NOpadding">
-                    <div className="row">
+                    {/* row */}
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                         <div className="col-lg-12">
                           <p className="text-justify ">
                            <div className="col-lg-offset-1 colorblue_txt career_line_subhead">

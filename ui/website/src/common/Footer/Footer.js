@@ -58,7 +58,7 @@ export default class Footer extends Component {
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
                 <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 ">
-                    <div className="row">
+                    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
                             <ul className="no-icon-list">
@@ -88,7 +88,7 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-lg-4 col-md-3 col-sm-2 col-xs-6 NOpadding ">
+                        <div className="col-lg-4 col-md-3 col-sm-2 col-xs-6 NOpadding">
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
 

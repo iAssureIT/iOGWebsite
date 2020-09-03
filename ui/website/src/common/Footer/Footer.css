@@ -413,3 +413,9 @@ ul.no-icon-list {
 .footerText{
   color:#ffffff ! important;
 }
+
+
+/* Safari only */ 
+.safari-col-4:not(:root:root) { 
+	width:25% !important;
+}
