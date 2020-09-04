@@ -9,4 +9,27 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 	font-family: 'Open Sans', sans-serif
 }
 
+/* for safari */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{
+    /*
+      Define here the CSS styles applied only to Safari browsers
+      (any version and any device)
+	 */
+	 
+	 .new_HoverDiv1 img, .new_HoverDiv2 img, .new_HoverDiv3 img, .new_HoverDiv4 img, .new_HoverDiv5 img, .new_HoverDiv6 img, .new_HoverDiv7 img, .new_HoverDivforboat img, .new_HoverDiv img{
+		-webkit-animation : ''
+	 }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .new_HoverDiv1 img, .new_HoverDiv2 img, .new_HoverDiv3 img, .new_HoverDiv4 img, .new_HoverDiv5 img, .new_HoverDiv6 img, .new_HoverDiv7 img, .new_HoverDivforboat img, .new_HoverDiv img{
+		-webkit-animation : ' ' !important;      
+	 }
+
+}
+
+
+
 
