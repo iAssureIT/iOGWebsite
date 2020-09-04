@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
 
-// import $                  from 'jquery';
+import $                  from 'jquery';
 import './ConsultDownstream.css';
 
 
@@ -96,11 +96,26 @@ export default class ConsultDownstream extends Component {
     };    
   }
 componentDidMount(){
+  var pageUrl = window.location.pathname;
+      console.log("pageUrl now = ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+      console.log("consult url",a);
+      if(pageUrl =="/masterpage/iog-consult"){
+        $('.innerBlocktConsult').css('height','900px');
+// 
+
+      }
 // console.log("==>",this.props.block_id);
+          console.log("this.props.block_id0000",this.props.block_id);
+          
           {
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                  console.log("response.data.length>>>>>>>>>>>>>",response);
+                  if(response.data.length == 3){
+                    
+                  }
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
                 this.setState({
@@ -126,7 +141,7 @@ componentDidMount(){
     return (
      <div> 
       <div className="container-fluid">
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 imagesize">
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding  hidden-xs " style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
           <div className="Bubble hidden-md hidden-sm">
            <div className="Main_Cards__Bubble1 bub11">
@@ -147,7 +162,7 @@ componentDidMount(){
                 <div className=" col-lg-6 col-md-6 col-sm-6 col-xs-6 " id={"consultdown_data"+index}>
                   <div className="col-lg-12 col-md-12">
                    <h3 id={"downimg_text"+index}>{result.Title}</h3>
-                   <p id=" downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                   <p id="downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                   </div>
                  </div>
                 );
