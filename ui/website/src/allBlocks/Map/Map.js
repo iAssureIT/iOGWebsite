@@ -122,7 +122,7 @@ export default class Map extends Component {
                 </div> 
                 <div className="submenu submenuindustries">
                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/production-accounting"                    className="">Production Accounting</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/data-historian"            className="">Realtime Data Historian</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/real-time-data-historian"            className="">Realtime Data Historian</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/corporate-dashboard"       className="">Corporate Dashboard & Analytics</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/operation-logbook"         className="">Operation Logbook & Target Dashboard</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/oil-movement"              className="">Oil Movement Management Systems</a><br/>
@@ -135,7 +135,7 @@ export default class Map extends Component {
                   <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/steady-state"      className="">Steady State Simulation </a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/steady-state-simulation"      className="">Steady State Simulation </a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/dynamic-simulation"      className="">Dynamic Simulation</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/operator-training"      className="">Operator Training</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/etrm"  className="">ETRM</a> <br/>
@@ -152,7 +152,7 @@ export default class Map extends Component {
                  <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu">
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/energy-optimization"      className="">Utility Network Optimization</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/utility-network-optimization"      className="">Utility Network Optimization</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/equipment-monitoring"      className="">Equipment Monitoring</a><br/>
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/energy-accounting"      className="">Energy Accounting</a><br/><br/>
                 </div>
@@ -178,8 +178,8 @@ export default class Map extends Component {
                   <div className="col-lg-6 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/occupational-health"      className="">Occupational Health Management</a><br/>
-                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/process-safety"      className="">Process Safety Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/occupational-health-management"      className="">Occupational Health Management</a><br/>
+                    <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/process-safety-management"      className="">Process Safety Management</a><br/>
                   
                     <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/environment-management"      className="">Environment Management</a><br/>
                 </div>

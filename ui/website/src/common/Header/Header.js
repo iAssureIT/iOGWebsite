@@ -420,7 +420,7 @@ handlechange(event){
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
                     <a href="/masterpage/production-accounting"className="dropdownintab expertise_a">Production Accounting</a>
-                    <a href="/masterpage/data-historian"className="dropdownintab expertise_a">Realtime Data Historian</a>
+                    <a href="/masterpage/real-time-data-historian"className="dropdownintab expertise_a">Realtime Data Historian</a>
                     <a href="/masterpage/corporate-dashboard"className="dropdownintab expertise_a">Corporate Dashboard & Analytics</a>
                     <a href="/masterpage/operation-logbook"className="dropdownintab expertise_a">Operation Logbook</a>        
                     <a href="/masterpage/oil-movement"className="dropdownintab expertise_a">Oil Movement Management</a>
@@ -437,14 +437,14 @@ handlechange(event){
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
-                    <a href="/masterpage/steady-state" className="red"className="dropdownintab expertise_a">Steady State Simulation</a>
+                    <a href="/masterpage/steady-state-simulation" className="red"className="dropdownintab expertise_a">Steady State Simulation</a>
                     <a href="/masterpage/dynamic-simulation"className="dropdownintab expertise_a">Dynamic Simulation</a>
                     <a href="/masterpage/operator-training"className="dropdownintab expertise_a">Operator Training</a> 
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/health-safety-environment"className="columnhead">Health Safety & Environment</a></h5>
-                    <a href="/masterpage/occupational-health"className="dropdownintab expertise_a">Occupational Health Management</a>
-                    <a href="/masterpage/process-safety"className="dropdownintab expertise_a">Process Safety Management</a>
+                    <a href="/masterpage/occupational-health-management"className="dropdownintab expertise_a">Occupational Health Management</a>
+                    <a href="/masterpage/process-safety-management"className="dropdownintab expertise_a">Process Safety Management</a>
                     <a href="/masterpage/environment-management"className="dropdownintab expertise_a">Environment Management</a>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
@@ -456,7 +456,7 @@ handlechange(event){
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
-                    <a href="/masterpage/energy-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
+                    <a href="/masterpage/utility-network-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
                     <a href="/masterpage/equipment-monitoring"className="dropdownintab expertise_a">Equipment Monitoring</a>
                     <a href="/masterpage/energy-accounting"className="dropdownintab expertise_a">Energy Accounting</a>
                 </div> 
