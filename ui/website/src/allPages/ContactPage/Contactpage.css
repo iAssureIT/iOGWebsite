@@ -167,3 +167,10 @@ margin-bottom: 50px;
 ..sxSelectPlaceholder__1-20v{
   line-height: 1.2px !important;
 }
+
+
+@media(max-width : 600px){
+  .contactpageform{
+    height: 1100px;
+  }
+}

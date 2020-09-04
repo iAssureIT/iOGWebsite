@@ -207,10 +207,11 @@
     display: none;
   }
   .topnav a.icon {
-    top: 23px;
+    top: 5px;
+    right: 0px;
     position: absolute;
     float: right;
-    right: -5px;
+    /*right: -5px;*/
     display: block;
     background: #fff;
     border-radius: 4px;
@@ -220,14 +221,15 @@
   }
   .ct-topbar
   {
+
     position: fixed ! important;
     bottom: 0px ! important;
-    right: -45px ! important;
-    bottom: 473px ! important;
+    top: 20px;
+    left: 325px;
   }
   .headerlogo img{
     position: fixed;
-    bottom: 443px;
+    top: 12px;
   }
 
 }
@@ -318,6 +320,9 @@
     left: 233px ! important;
     top: 78px ! important;
 
+  }
+  .ct-language__dropdown{
+    right: 154px ! important;
   }
 }
 .headerflow{
@@ -458,6 +463,7 @@ body { top: 0px !important; }
   position: absolute;
   right: 27px;
   bottom: 59px;
+  height: 20px;
   /*background: #eee;*/
 }
 .ct-topbar__list {

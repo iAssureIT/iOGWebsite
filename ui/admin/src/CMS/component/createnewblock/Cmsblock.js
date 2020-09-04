@@ -728,6 +728,41 @@ class CmsBlock extends Component {
         }
       }
   }
+  deleteopReDBlock(event){
+     event.preventDefault();
+     var id = event.target.id;
+      console.log("id od index------",id);
+    if (id){
+        // console.log('this.state.repetedGroup',this.state.repetedGroup)
+        var array = this.state.repetedGroup
+        var index = array.findIndex(x=>x._id===id)
+        console.log("index for delete repated>>>",index);
+        swal({
+              title: "Are you sure you want to delete this Repeated Block ?",
+              text: "Once deleted, you will not be able to recover this Repeated Block!",
+              buttons: true,
+              dangerMode: true,
+            })
+        .then((success) => {
+
+                if (success) {
+                  array.splice(index, index);
+      this.setState({'repetedGroup':array})
+             
+                swal("Your block is deleted!");
+               
+            
+                 
+                } else {
+                swal("Your Block is safe!");
+              }
+            });
+    
+        
+            } 
+      
+
+  }
 
   render() {
         return (
@@ -986,7 +1021,7 @@ class CmsBlock extends Component {
                       															<img className="img-responsive AllblockImgB" src={data.Image ? data.Image: this.state.repeteddemoimg } alt="Bannerpng"/>
                       															<div className="middle">
                                                         <i className="fa fa-pencil rclr hoverbbk" onClick={this.editReDBlock.bind(this)} id={data._id}></i>    
-                      															   {/*<i className="fa fa-trash rclr hoverbbk" id={this.state.repetedGroup.blogURL} onClick={this.deleteopReDBlock.bind(this)} ></i>*/}
+                      															   <i className="fa fa-trash rclr hoverbbk" id={data._id} onClick={this.deleteopReDBlock.bind(this)} ></i>
                       															</div>
                       															<a href={"/block/"+data.Link}>
                       															{/*<p className="blogDate p10 mtop20 graycolor">{this.state.repetedGroup.createdAt}</p>*/}

@@ -171,7 +171,7 @@ componentDidMount(){
 							    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding"> 
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2   pull-right">
-								     <img src={result.Image} className="iconclass"/>					    
+								     <img src={result.Image} className="iconclass img-responsive"/>					    
 								   </div>
 							     </div>
 								 <h4 className="featuretitle featuretitleleft text-right col-lg-9 pull-right">{result.Title}</h4>	
@@ -201,7 +201,7 @@ componentDidMount(){
 									<div className=" col-lg-10 col-md-12 col-sm-12 col-xs-12 NOpadding">
 										<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 										    <div className="col-lg-2  pull-left">
-										   		<img src={result.Image} className="iconclass"/>					    
+										   		<img src={result.Image} className="iconclass img-responsive"/>					    
 										    </div>
 							    		</div>
 								 		<h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>

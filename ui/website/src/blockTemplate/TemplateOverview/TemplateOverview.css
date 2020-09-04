@@ -45,3 +45,13 @@
 .websiteclass{
   padding-top: 40px;
 }
+@media(max-width : 768px){
+  .B2T1_line{
+    margin-left: 172px;
+  }
+}
+@media(max-width : 767px){
+  .B2T1_line{
+    margin-left: 61px;
+  }
+}

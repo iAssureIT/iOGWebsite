@@ -137,7 +137,7 @@ componentDidMount(){
                                 }else if(productlength == 1){
                                   // console.log('productlength')
                                   if(plength === index+1){
-                                    var classes = "webpageshopcont col-lg-4 col-md-6 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-4  text-center";                                   
+                                    var classes = "webpageshopcont col-lg-4 col-md-6 col-xs-12 col-lg-offset-4 col-md-offset-4   text-center";                                   
                                   }else{
                                     var classes="webpageshopcont col-lg-4 col-md-6  col-sm-12 col-xs-12  text-center";                                 
                                 }
@@ -152,8 +152,12 @@ componentDidMount(){
                                           <div className="text-center">
                                             <div className="serflip-card"style={{width:"300px"}}>
                                               <div className="serflip-card-inner">
-                                                  <div className="serflip-card-front">
+                                                  <div className="serflip-card-front hidden-sm hidden-xs">
                                                     <img src={data.Image} className="text-center" alt=""/>
+                                                    <div className="dwstmTitle">{data.Title}</div> 
+                                                  </div>
+                                                  <div className="serflip-card-front hidden-lg hidden-md">
+                                                    <img src={data.Image} className="text-center img-responsive" alt=""/>
                                                     <div className="dwstmTitle">{data.Title}</div> 
                                                   </div>
                                                   <div className="serflip-card-back">

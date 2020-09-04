@@ -42,10 +42,42 @@
   margin-top: 30px;
 }
 .B2T1_line1{
-  margin-left: 491px ! important;
+  margin-left: 484px ! important;
   background-color: #f08f00;
   width: 80px;
   height: 4px;
   top: 36px;
   /*z-index: 999;*/
+}
+@media(max-width : 600px){
+.BT4_imgBack{
+    margin-left: 102px;
+}
+.BT4_txt{
+    text-align: center;
+    margin-left: 0px;
+}
+.BT3_subhead{
+    margin-left: -11px;
+}
+.B2T_serviceTitle{
+    margin-left: 41px ! important;
+    font-size: 27px ! important;
+}
+.B2T1_line1{
+  margin-left: 145px ! important;
+}
+
+}
+@media(max-width : 768px){
+  .B2T1_line1{
+    margin-left: 356px ! important;
+
+  }
+}
+@media(max-width : 767px){
+  .B2T1_line1{
+    margin-left: 119px ! important;
+
+  }
 }
