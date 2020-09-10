@@ -102,9 +102,19 @@ componentDidMount(){
       console.log("consult url",a);
       if(pageUrl =="/masterpage/iog-consult"){
         $('.innerBlocktConsult').css('height','900px');
+        $('.innerBlocktConsult').css('marginTop','-143px');
+
 // 
 
       }
+       if(pageUrl =="/masterpage/iog-implement"){
+        $('.innerBlocktConsult').css('marginTop','-143px');
+      }
+       if(pageUrl =="/masterpage/iog-study"){
+        $('.innerBlocktConsult').css('marginTop','-80px');
+      }
+
+
 // console.log("==>",this.props.block_id);
           console.log("this.props.block_id0000",this.props.block_id);
           
