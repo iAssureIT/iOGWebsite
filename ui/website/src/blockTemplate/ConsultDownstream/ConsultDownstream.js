@@ -113,9 +113,13 @@ componentDidMount(){
        if(pageUrl =="/masterpage/iog-study"){
         $('.innerBlocktConsult').css('marginTop','-80px');
       }
+      if(pageUrl=="/masterpage/sample_repeateddelete"){
+        $('.downimg_p_txt').css('top','-1.5em');
+
+      }
 
 
-// console.log("==>",this.props.block_id);
+console.log("10 sep==>",this.props.block_id);
           console.log("this.props.block_id0000",this.props.block_id);
           
           {

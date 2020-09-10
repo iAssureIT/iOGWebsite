@@ -121,25 +121,25 @@ export default class Downstream extends Component {
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
             <div className="row">
                 <div className="Bubble" >
-                            <div className="Main_Cards__Bubble bub1"></div>
-                            <div className="Main_Cards__Bubble bub2"></div>
-                        </div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
+                  <div className="Main_Cards__Bubble bub1"></div>
+                     <div className="Main_Cards__Bubble bub2"></div>
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
                     <hr/>
                      <h2 style={{color:"#009de2"}}><b>Downstream Oil & Gas Industry</b></h2>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <div className="row">
+                              <div className="">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div className="row"> 
+                                    <div className=""> 
                                         <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 "> 
                                             {
                                               this.DownstreamData().map((data, index)=>{
                                                  return (
                                                 <a key={index} href={"/"+data.hryperlink}>
-                                                <div  className={"col-lg-5 col-md-5 col-sm-4 col-xs-12 para"+index}>
+                                                <div  className={"col-lg-5 col-md-5 col-sm-6 col-xs-12 para"+index}>
                                                     <div className="lightbluetext block block1height text-center">
                                                         <img alt="" className="streamImg" src={data.downstreamimg} />
                                                         <br/>

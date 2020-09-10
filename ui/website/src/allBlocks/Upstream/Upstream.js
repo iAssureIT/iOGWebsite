@@ -129,7 +129,7 @@ export default class Upstream extends Component {
     render(){
         return(
           <div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs upstreamblock lightbluebg NOpadding">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs upstreamblock lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div className="hrnewclass col-lg-offset-6 col-md-offset-6"></div>
@@ -146,7 +146,7 @@ export default class Upstream extends Component {
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
-                                         <div key={index}className="col-md-4 card" data-card={index}>
+                                         <div key={index}className="col-lg-4 col-md-4 card" data-card={index}>
                                             <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -168,7 +168,7 @@ export default class Upstream extends Component {
                 </div>                
             </div> 
              {/*responsive*/}
-               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md upstreamblock_new lightbluebg NOpadding">
+               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md hidden-sm upstreamblock_new lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
                         <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-sm-offset-1 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
@@ -184,7 +184,7 @@ export default class Upstream extends Component {
                                 this.upstreamData().map((data, index)=>{
                                  return (
                                          <div key={index}className="" data-card={index}>
-                                            <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div className="price price-three col-lg-12 col-md-12 col-sm-6 col-xs-12 upstream_tab">
                                                 <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
                                                 <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <img src={data.upstreamimg  } />

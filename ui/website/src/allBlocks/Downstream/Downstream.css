@@ -354,6 +354,15 @@
   margin-inline-start: 45px;
   margin-inline-end: 28px;
 }
+@media screen and (max-width: 768px){
+  .paraeff{
+    margin-inline-start:12px ! important;
+
+  }
+  .downTitle{
+    font-size: 15px ! important;
+  }
+}
 
 .paraeff1{
   position: relative;
