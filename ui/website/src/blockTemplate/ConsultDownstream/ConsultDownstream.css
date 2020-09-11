@@ -13,7 +13,7 @@
 .downimgtext{
     font-size: 30px;
 	  position: absolute;
-    top: 6em;
+    top: 5em;
     left: 18em;
     color: #009de2;
     font-weight: 600;
@@ -29,10 +29,10 @@
 
 .downimg_p_txt{
 	  position: absolute;
-    top: 14.5em;
-    left: 13em;
-    /*text-align: justify; */
-    font-size: 15px;
+    top: 12.5em;
+    left: 10em;
+    text-align: center; 
+    font-size: 18px;
     padding-right:135px;
 }
 .downimg_p_txt_new{
@@ -44,7 +44,7 @@
 }
 #consultdown_data0{
    position: absolute;
-   top: 23em;
+   top: 22em;
    right: 5%;
    width: 600px;
 
@@ -175,7 +175,7 @@
 
 #consultdown_img0{
     position: absolute;
-    top: 23em;
+    top: 22em;
     left: 20em;
     height: 135px;
 }

@@ -112,6 +112,7 @@ componentDidMount(){
       }
        if(pageUrl =="/masterpage/iog-study"){
         $('.innerBlocktConsult').css('marginTop','-80px');
+        $('.downimgtext').css('left','20em');
       }
       if(pageUrl=="/masterpage/sample_repeateddelete"){
         $('.downimg_p_txt').css('top','-1.5em');
