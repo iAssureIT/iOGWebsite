@@ -13,7 +13,7 @@
 .downimgtext{
     font-size: 30px;
 	  position: absolute;
-    top: 5em;
+    top: 6em;
     left: 18em;
     color: #009de2;
     font-weight: 600;
@@ -29,10 +29,10 @@
 
 .downimg_p_txt{
 	  position: absolute;
-    top: 12.5em;
+    top: 14.5em;
     left: 13em;
     /*text-align: justify; */
-    font-size: 20px;
+    font-size: 15px;
     padding-right:135px;
 }
 .downimg_p_txt_new{
@@ -44,47 +44,47 @@
 }
 #consultdown_data0{
    position: absolute;
-   top: 26em;
-   right: 0%;
-   width: 490px;
+   top: 23em;
+   right: 5%;
+   width: 600px;
 
 }
 #consultdown_data1{
    position: absolute;
-   top: 36em;
-   left:-1%;
-   width: 490px;
+   top: 35em;
+   left:2%;
+   width: 552px;
    text-align: right;
 
 }
 
 #consultdown_data4{
 	 position: absolute;
-    top: 67em;
-    right: 0%;
-    width: 490px;
+    top: 74em;
+    right: 7%;
+    width: 572px;
     text-align: left;
 
 }
 #consultdown_data5{
 	position: absolute;
-    top: 74em;
-    left:-1%;
-    width: 490px;
-    text-align: right;
+  top: 89em;
+  left:0em;
+  width: 572px;
+  text-align: right;
 }
 #consultdown_data6{
 	position: absolute;
-  top: 83em;
-  right: -1%;
-  width: 490px;
+  top: 102em;
+  right: 7%;
+  width: 572px;
   text-align: left;
 }
 #consultdown_data7{
 	position: absolute;
   top: 91em;
   left:-2%;
-  width: 490px;
+  width: 600px;
   text-align: right;
 }
 /*responsive*/
@@ -93,23 +93,23 @@
    /*position: absolute;
    top: 29em;
    left: 54em;*/
-   width: 490px;
+   width: 700px;
 
 }
 
 #consultdown_data2{
     position: absolute;
-    top: 44em;
-    right: 0%;
-    width: 490px;
+    top: 48em;
+    right: 8%;
+    width: 552px;
     text-align: left;
 
 }
 #consultdown_data3{
     position: absolute;
-    top: 56em;
-    left:0%;
-    width: 490px;
+    top: 63em;
+    left:-1%;
+    width: 600px;
     text-align: right;
 
 }
@@ -171,4 +171,53 @@
 #downimg_p_text2, #downimg_p_text3{
 	font-size: 17px;
 
+}
+
+#consultdown_img0{
+    position: absolute;
+    top: 23em;
+    left: 20em;
+    height: 135px;
+}
+#consultdown_img1{
+    position: absolute;
+    top: 36em;
+    left: 46em;
+     height: 135px;
+}
+#consultdown_img2{
+    position: absolute;
+    top: 48em;
+    left: 20em;
+     height: 135px;
+}
+#consultdown_img3{
+    position: absolute;
+    top: 63em;
+    left: 46em;
+    height: 135px;
+}
+#consultdown_img4{
+    position: absolute;
+    top: 75em;
+    left: 20em;
+     height: 135px;
+}
+#consultdown_img5{
+    position: absolute;
+    top: 89em;
+    left: 46em;
+    height: 135px;
+}
+#consultdown_img6{
+    position: absolute;
+    top: 101em;
+    left: 20em;
+    height: 135px;
+}
+#consultdown_img7{
+    position: absolute;
+    top: 23em;
+    left: 8em;
+     height: 135px;
 }

@@ -17,11 +17,12 @@ export default class ConsultDownstream extends Component {
         "blockSubTitle"      : "",
         "blockDescription"   : "",
         "blockComponentName" : "",
-        "bgImage"            : "/images/consultdown.png",
+        // "bgImage"            : "/images/consultdown.png",
         "blockType"          : "simple",
         "repeatedBlocks"    : [
                       {
-                         "Title"         : "BUSINESS PROCESS MAPPING",
+                          "Title"         : "BUSINESS PROCESS MAPPING",
+                          "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Design Efficient FEED that strikes the right balance of IT investments and the business",
                           "Image"     : "/images/consultsrvice.png",
@@ -29,13 +30,15 @@ export default class ConsultDownstream extends Component {
                       },
                       {
                         "Title"         : "FEED FOR INTEGRATED",
+                         "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "DOWNSTREAM OIL & EXPERT",
+                          "Title"         : "DOWNSTREAM OIL & EXPERT",
+                          "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Assessment of the business requirements, analyze and enhance the Downstream",
                           "Image"     : "/images/consultsrvice.png",
@@ -43,14 +46,16 @@ export default class ConsultDownstream extends Component {
                       },
                      
                       {
-                        "Title"         : "OPTIMIZE THE OF EXISTING",
+                          "Title"         : "OPTIMIZE THE OF EXISTING",
+                          "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Finding simplification opportunities to reduce the cost of application support",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "BUSINESS CASE",
+                          "Title"         : "BUSINESS CASE",
+                          "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Device structured ap-proach to transition and manage applications",
                           "Image"     : "/images/consultsrvice.png",
@@ -58,7 +63,8 @@ export default class ConsultDownstream extends Component {
                       },
                       
                       {
-                        "Title"         : "REVIEW OF AREAS NEEDING",
+                         "Title"         : "REVIEW OF AREAS NEEDING",
+                          "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
                           "Image"     : "/images/consultsrvice.png",
@@ -66,6 +72,7 @@ export default class ConsultDownstream extends Component {
                       },
                       {
                           "Title"         : "ESTABLISHING INDUSTRY",
+                           "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Ensure process streamlining & standardization and efficiency improvements",
                           "Image"     : "/images/consultsrvice.png",
@@ -73,6 +80,7 @@ export default class ConsultDownstream extends Component {
                       },
                       {
                           "Title"         : "ASSESSMENT OF READINESS",
+                           "Image"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
                           "Image"     : "/images/consultsrvice.png",
@@ -101,6 +109,7 @@ componentDidMount(){
              axios
                 .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                  console.log("response for downstream",response);
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
                 this.setState({
@@ -124,7 +133,7 @@ componentDidMount(){
   render() {  
     console.log('kghjgjgj',this.state.blocks.bgImage);
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktConsult NOPadding">
         <div class="Bubble">
          <div class="Main_Cards__Bubble1 bub11">
        </div>

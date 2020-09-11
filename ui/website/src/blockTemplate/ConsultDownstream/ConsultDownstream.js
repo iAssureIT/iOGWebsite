@@ -21,7 +21,7 @@ export default class ConsultDownstream extends Component {
         "blockType"          : "simple",
         "repeatedBlocks"    : [
                       {
-                         "Title"         : "BUSINESS PROCESS MAPPING",
+                          "Title"         : "BUSINESS PROCESS MAPPING",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Design Efficient FEED that strikes the right balance of IT investments and the business",
                           "Image"     : "/images/consultsrvice.png",
@@ -101,7 +101,7 @@ componentDidMount(){
       let a = pageUrl ? pageUrl.split('/') : "";
       console.log("consult url",a);
       if(pageUrl =="/masterpage/iog-consult"){
-        $('.innerBlocktConsult').css('height','900px');
+        $('.innerBlocktConsult').css('height','1230px');
         $('.innerBlocktConsult').css('marginTop','-143px');
 
 // 
@@ -126,8 +126,8 @@ console.log("10 sep==>",this.props.block_id);
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
-                  console.log("response.data.length>>>>>>>>>>>>>",response);
-                  if(response.data.length == 3){
+                  console.log("response.data.length>>>>>>>>>>>>>",response.data.repeatedBlocks.length);
+                  if(response.data.repeatedBlocks.length == 3){
                     
                   }
                 /*var blocks = this.state.blocks;
@@ -156,7 +156,7 @@ console.log("10 sep==>",this.props.block_id);
      <div> 
       <div className="container-fluid">
        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 imagesize">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding  hidden-xs " style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding  hidden-xs "style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
           <div className="Bubble hidden-md hidden-sm">
            <div className="Main_Cards__Bubble1 bub11">
          </div>
@@ -173,12 +173,17 @@ console.log("10 sep==>",this.props.block_id);
               this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
               this.state.blocks.repeatedBlocks.map((result, index)=>{
               return(
-                <div className=" col-lg-6 col-md-6 col-sm-6 col-xs-6 " id={"consultdown_data"+index}>
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <img src={result.Image} id={"consultdown_img"+index}/>
+               </div>
+                <div className=" col-lg-9 col-md-9 col-sm-9 col-xs-9 " id={"consultdown_data"+index}>
                   <div className="col-lg-12 col-md-12">
                    <h3 id={"downimg_text"+index}>{result.Title}</h3>
                    <p id="downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                   </div>
                  </div>
+              </div>   
                 );
             })
               :

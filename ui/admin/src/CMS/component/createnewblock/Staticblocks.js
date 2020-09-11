@@ -31,9 +31,6 @@ import ImgBlock                      from "../blockTemplate/ImgBlock/ImgBlock.js
 import Maincomponent            	 from "../blockTemplate/Maincomponent/Maincomponent.js";
 import Careerimpact            	 	 from "../blockTemplate/Careerimpact/Careerimpact.js";
 import CircleMenuBars            	 from "../blockTemplate/CircleMenuBars/CircleMenuBars.js";
-
-
-
 import 									 './Staticblocks.css';
 
 
@@ -417,6 +414,7 @@ class Staticblocks extends React.Component {
 								data-blockTitle   		="blockTitle" 
 			                	data-blockDescription   ="blockDescription" 
 								data-rBlocksTitle       ="rBlocksTitle" 
+								data-rBlocksImage       ="rBlocksImage" 
 								data-rBlocksDescription ="rBlocksDescription" 
 								data-rBlocksLink  		="rBlocksLink" 
 								data-RepetedBlock 		="RepetedBlock"
