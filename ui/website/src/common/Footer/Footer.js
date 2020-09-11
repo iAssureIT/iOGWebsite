@@ -63,7 +63,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="masterpage/sample_repeateddelete">About Us</a></li>
+                                <li><a href="/masterpage/about-us">About Us</a></li>
                                 <li><a href="/masterpage/expertise-main-page">Expertise</a></li>
                                 <li><a href="/masterpage/industries">Industries</a></li>
                             </ul>
