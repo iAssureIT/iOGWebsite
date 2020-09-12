@@ -101,7 +101,7 @@ componentDidMount(){
       let a = pageUrl ? pageUrl.split('/') : "";
       console.log("consult url",a);
       if(pageUrl =="/masterpage/iog-consult"){
-        $('.innerBlocktConsult').css('height','1230px');
+        // $('.innerBlocktConsult').css('height','1230px');
         $('.innerBlocktConsult').css('marginTop','-143px');
 
 // 
@@ -128,7 +128,16 @@ console.log("10 sep==>",this.props.block_id);
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                   console.log("response.data.length>>>>>>>>>>>>>",response.data.repeatedBlocks.length);
-                  if(response.data.repeatedBlocks.length == 3){
+                  if(response.data.repeatedBlocks.length == 10){
+                    $('.innerBlocktConsult').css('height','2200px');
+                    
+                  }
+                   if(response.data.repeatedBlocks.length == 8){
+                    $('.innerBlocktConsult').css('height','2000px');
+                    
+                  }
+                   if(response.data.repeatedBlocks.length == 4){
+                    $('.innerBlocktConsult').css('height','1200px');
                     
                   }
                 /*var blocks = this.state.blocks;
