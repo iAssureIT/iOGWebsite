@@ -57,13 +57,33 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
     var fr_id=this.state.id;
     console.log("fr_id",fr_id);
 
+    var currentLocation = window.location.href;
+    console.log("currentLocation----",currentLocation);
+    var divUrl = currentLocation ? currentLocation.split('/') : "";
+     console.log("divUrl",divUrl);
+    if(divUrl[3] == "#googtrans(en|fr)"){
+       $('.expertiesdropdown').css('marginLeft','-540px');
+       $('.dropdown-content a').css('paddingTop','7px');
+       $('.ct-topbar').css('bottom','76px');
+
+    }
+
+    if(divUrl[3]== "#googtrans(en|de)" ){
+      $('.expertiesdropdown').css('marginLeft','-396px');
+
+    }
+    if(divUrl[3]== "#googtrans(en|es)" ){
+      $('.expertiesdropdown').css('marginLeft','-407px');
+
+    }
+
     const script = document.createElement("script");
     script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
     script.async = true;
     document.body.appendChild(script);
 
     var pageUrl = window.location.pathname;
-    console.log("pageUrl for lang",pageUrl);
+    console.log("pageUrl for lang----",pageUrl);
     if(pageUrl == '/#googtrans(en|fr)'){
             $("#dropdownFr").css("color", "red");
           }
@@ -206,7 +226,11 @@ handlechange(event){
       });
       console.log("id---",id)
       this.props.history.push("/#googtrans(en|"+id+")");
+       if(this.state.id == "fr"){
+        $('.expertiesdropdown').css('marginLeft','-540px');
+       }
       window.location.reload();
+
      
    
     
