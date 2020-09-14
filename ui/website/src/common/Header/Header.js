@@ -419,11 +419,11 @@ handlechange(event){
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/masterpage/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
-                    <a href="/masterpage/production-accounting"className="dropdownintab expertise_a">Production Accounting</a>
-                    <a href="/masterpage/real-time-data-historian"className="dropdownintab expertise_a">Realtime Data Historian</a>
-                    <a href="/masterpage/corporate-dashboard"className="dropdownintab expertise_a">Corporate Dashboard & Analytics</a>
-                    <a href="/masterpage/operation-logbook"className="dropdownintab expertise_a">Operation Logbook</a>        
-                    <a href="/masterpage/oil-movement"className="dropdownintab expertise_a">Oil Movement Management</a>
+                    <a href="/masterpage/production-accounting" className="dropdownintab expertise_a">Production Accounting</a>
+                    <a href="/masterpage/real-time-data-historian" className="dropdownintab expertise_a">Realtime Data Historian</a>
+                    <a href="/masterpage/corporate-dashboard" className="dropdownintab expertise_a">Corporate Dashboard & Analytics</a>
+                    <a href="/masterpage/operation-logbook" className="dropdownintab expertise_a">Operation Logbook</a>        
+                    <a href="/masterpage/oil-movement" className="dropdownintab expertise_a">Oil Movement Management</a>
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                    <h5 className="columnhead"><a href="/masterpage/digital-services"className="columnhead">Digital Services</a></h5>
@@ -462,7 +462,7 @@ handlechange(event){
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                     <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
-                      <a href="/masterpage/aseet-criticality"className="dropdownintab expertise_a">Asset Criticality Analysis </a>
+                      <a href="/masterpage/asset-criticality-analysis"className="dropdownintab expertise_a">Asset Criticality Analysis </a>
                       <a href="/masterpage/asset-lifecycle"className="dropdownintab expertise_a">Asset Lifecycle </a>
                       <a href="/masterpage/asset-strategy-management"className="dropdownintab expertise_a">Asset Strategy </a>
                       <a href="/masterpage/inspection-&-calibration"className="dropdownintab">Inspection & Calibration</a>

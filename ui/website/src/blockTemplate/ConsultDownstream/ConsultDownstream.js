@@ -136,6 +136,10 @@ console.log("10 sep==>",this.props.block_id);
                     $('.innerBlocktConsult').css('height','2000px');
                     
                   }
+                    if(response.data.repeatedBlocks.length == 6){
+                    $('.innerBlocktConsult').css('height','1520px');
+                    
+                  }
                    if(response.data.repeatedBlocks.length == 4){
                     $('.innerBlocktConsult').css('height','1200px');
                     
