@@ -19,7 +19,7 @@ export default class Downstreamservicebanner extends Component {
                       return ( 
                             <div key="index">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                  <div className="img1 row">
+                                  <div className="img1 ">
                                     <img src={data.servicesimg} alt="" className="services_img" />
                                   </div>
                                 </div>

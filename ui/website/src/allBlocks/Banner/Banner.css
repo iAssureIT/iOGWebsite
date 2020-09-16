@@ -42,6 +42,7 @@
 }
 .resbannerimg{
   background-size: 100% 100%;
+  height: 500px ! important;
   background-repeat: no-repeat;
   background-image: url("/images/newbanner_1.png");
 }
@@ -829,8 +830,8 @@ height: 90px;
 
   .resbanner{
     background-image: url("/images/IOG_Banner_crop.png");
-    background-size: contain;
-    /*height: 250px;*/
+    background-size: cover;
+    height: 450px;
     background-repeat: no-repeat;
   } 
   .arrow-right {

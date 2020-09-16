@@ -141,7 +141,7 @@ componentDidMount(){
                                 <div key={index} className={classes}>
                                   <a href ={data.downstreamurl} data-toggle="tooltip" title="Click me to read more!">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                      <div className="row">
+                                      <div className="">
                                           <div className="text-center">
                                             <div className="serflip-card">
                                               <div className="serflip-card-inner">

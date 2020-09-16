@@ -37,3 +37,51 @@
   margin-left: 222px;
 
 }
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .comp_imgDiv img {
+              width: 44%;
+              margin-left: -50px;
+          }
+      .downimgtext{
+        left:3em ! important;
+      } 
+      .comp_imgDiv{
+        height: 350px ! important;
+      } 
+      #consultdown_data0{
+        width: 345px ! important;
+        top:32px ! important;
+        right: 3% ! important;
+      }  
+ }
+ @media (max-width: 480px){
+    .comp_imgDiv img {
+              width: 100%  ! important;
+              margin-left: 0px ! important;
+          }
+    .ct-topbar{
+      right: 424px ! important;
+    }    
+    .topnav a.icon {
+    top: -16px;
+    right: 498px;
+    }
+    .new_BT3_innerBlock{
+      width: 360px ! important;
+    }  
+    .services_img {
+    width:100% ! important;
+    height: 291px ! important;
+   
+   }
+   .BT3_text{
+    font-size: 15px ! important;
+   }
+   .maindivWidth_mob{
+    width: 355px ! important;
+   }
+
+ }

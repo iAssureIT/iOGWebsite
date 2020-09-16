@@ -55,3 +55,17 @@
     width:300px ! important;
   }
 }
+@media (max-width: 480px){
+     .divinportrait{
+    width:206px ! important;
+  }
+  .paraeffect{
+    margin-inline-start:0px ! important;
+  }
+  .contentWraper{
+    width: 350px ! important;
+  }
+  .contentheader h2{
+    font-size: 35px ! important;
+  }
+ }   

@@ -24,5 +24,12 @@
     left: 542px;
     top: 94px;
   }
+  @media(max-width : 600px){
+    
+    .BT1_bannerTitle{
+      font-size: 37px ! important;
+    }
+
+  }
 
    

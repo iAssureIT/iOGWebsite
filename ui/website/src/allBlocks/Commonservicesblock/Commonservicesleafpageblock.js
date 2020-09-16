@@ -68,7 +68,7 @@ export default class Commonservicesleafpageblock extends Component {
                                return (<div key={index} className={classes}>
                                     <div data-toggle="modal" data-target="#leafModal" title="Click me to read more!">
                                       <div className="col-lg-12">
-                                        <div className="row">
+                                        <div className="">
                                             <div className="text-center">
                                               <div className="serflip-card">
                                                 <div className="serflip-card-inner">
@@ -91,7 +91,7 @@ export default class Commonservicesleafpageblock extends Component {
                                         <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
                             {/*              <button type="button" class="close closeButton" data-dismiss="modal">&times;</button>*/}
                                           <div className="modal-body  leafModalBody">
-                                           <div className="row">
+                                           <div className="">
                                               <Contactform />                               
                                             </div>   
                                           </div>
@@ -111,7 +111,7 @@ export default class Commonservicesleafpageblock extends Component {
                                   <div key={index} className={classes}>
                                     <a href ={data.downstreamurl} data-toggle="tooltip" title="Click me to read more!">
                                       <div className="col-lg-12">
-                                        <div className="row">
+                                        <div className="">
                                             <div className="text-center">
                                               <div className="serflip-card">
                                                 <div className="serflip-card-inner">

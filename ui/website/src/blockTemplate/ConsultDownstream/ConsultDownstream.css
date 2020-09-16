@@ -82,7 +82,7 @@
 }
 #consultdown_data7{
 	position: absolute;
-  top: 91em;
+  top: 113em;
   left:-2%;
   width: 600px;
   text-align: right;
@@ -176,6 +176,32 @@
  #consultdown_img5{
   left:26em ! important;
  }
+ #consultdown_img7 {
+    top: 113em ! important;
+    left: 24em ! important;
+ }
+ #consultdown_img8{
+  left:4em ! important;
+ }
+ #consultdown_data8{
+  width: 400px ! important;
+  left: 23em ! important;
+ }
+ #consultdown_data9 {
+    width: 350px ! important;
+    text-align: right;
+    left: -14em ! important;
+ }
+ #consultdown_img9 {
+    top: 135em ! important;
+    left: 24em ! important;
+}
+#downimg_text0,#downimg_text1,#downimg_text2,#downimg_text3,#downimg_text4,#downimg_text5,#downimg_text6,#downimg_text7,#downimg_text8 {
+  font-size: 16px ! important;
+}
+.downimg_p_text{
+  font-size: 13px ! important;
+}
 }
 #downimg_text0,#downimg_text4,#downimg_text6{
 	font-weight: 600;
@@ -247,7 +273,174 @@
 #consultdown_img7{
     position: absolute;
     top: 112em;
-    left: 8em;
+    left: 47em;
     height: 135px;
+}
+ #consultdown_img8{
+    height: 135px;
+    position: absolute;
+    top: 124em;
+    left: 19em;
+}
+#consultdown_img9{
+    position: absolute;
+    height: 135px;
+    top: 133em;
+    left: 45em;
+}
+#consultdown_data8{
+    position: absolute;
+    width: 600px;
+    top: 125em;
+    text-align: left;
+    left: 45em;
+}
+#consultdown_data9{
+    top: 135em;
+    width: 600px;
+    text-align: right;
+    left: -26em;
+}
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .services_img{
+        height: 397px ! important;
+      }
+      .ct-topbar{
+        right: 580px ! important;
+      }
+      .topnav a.icon{
+        right: 8px ! important;
+        top:-5px ! important;
+      }
+    }
+
+ @media (max-width: 480px){
+  .services_img img{
+    height: 311px ! important;
+  }
+  .serflip-card{
+    margin-left: 20px ! important;
+  }
+  #consultdown_img0{
+    top: 26em ! important;
+    height: 95px ! important;
+    left:2em ! important;
+  }
+  #consultdown_img1 {
+    position: absolute;
+    top: 53em ! important;
+    left: 2em ! important;
+    height: 97px;
+}
+ #consultdown_img3 {
+    position: absolute;
+    top: 105em ! important;
+    left: 2em ! important;
+    height: 97px;
+}
+ #consultdown_img4 {
+    position: absolute;
+    top: 130em ! important;
+    left: 2em ! important;
+    height: 97px;
+}
+#consultdown_img5 {
+    position: absolute;
+    top: 155em ! important;
+    left: 1em ! important;
+    height: 97px;
+}
+#consultdown_img6 {
+    position: absolute;
+    top: 170em ! important;
+    left: 1em ! important;
+    height: 97px;
+}
+#consultdown_img2{
+    top: 77em ! important;
+    height: 95px ! important;
+    left:2em ! important;
+  }
+  #consultdown_data0 {
+    width: 345px ! important;
+    top: 457px ! important;
+    right: -4% ! important;
+    text-align: justify;
+}
+#consultdown_data1{
+  top:60em ! important;
+  text-align: justify;
+  width: 300px ! important;
+}
+#consultdown_data2{
+  top:84em ! important;
+  width: 345px ! important;
+  text-align: justify;
+  right: -23px ! important;
+}
+
+#consultdown_data3{
+  top:113em ! important;
+  width: 345px ! important;
+  text-align: justify;
+  right: -4px ! important;
+}
+#consultdown_data4 {
+    top: 137em ! important;
+    width: 304px ! important;
+    text-align: justify;
+    right: -4px ! important;
+}
+#consultdown_data5 {
+    top: 161em ! important;
+    width: 306px ! important;
+    text-align: justify;
+    right: -4px ! important;
+}
+#consultdown_data6 {
+    top: 180em ! important;
+    width: 306px ! important;
+    text-align: justify;
+    right: -4px ! important;
+}
+.innerBlocktConsult{
+  height: 2000 ! important;
+}
+.newinnerBlocktConsult{
+  height: 2000px ! important;
+}
+.comp_imgDiv{
+  width: 295px ! important;
+}
+.downimgtext{
+  left: 6em ! important;
+    font-size: 17px;
+    top: 14em;
+}
+.downimg_p_txt{
+  font-size: 13px ! important;
+  top:20.5em ! important;
+}
+.adjustfor5{
+  margin-left: 10px ! important;
+}
+.topnav a.icon{
+  top:0px ! important;
+}
+.serflip-card-inner{
+  margin-left: -59px ! important;
+}
+ } 
+
+ @media only screen and (-webkit-device-pixel-ratio: 3) and (device-height: 812px) and (device-width: 375px)
+{
+    #consultdown_data0 {
+        width: 345px ! important;
+        top: 466px ! important;
+        right: -12% ! important;
+    }  
 }
 

@@ -62,13 +62,13 @@ export default class Commonstream extends Component {
  render(){
        return(
         <div className="col-lg-12 contentWraper">
-            <div className="row">
+            <div className="">
                 <div className="col-lg-12">
-                    <div className="row">
+                    <div className="">
                        <div className="col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1">
-                          <div className="row">
+                          <div className="">
                              <div className="col-lg-5 col-md-8 col-sm-4 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 para12"> 
-                                <div className="row">
+                                <div className="">
                                   <a href="/masterpage/health-safety-environment">
                                       <div className="col-lg-12 col-md-12 col-sm-12">
                                           <div className="lightbluetext block block1height text-center divinsm divinportrait"style={{width:"540px"}}>
@@ -90,7 +90,7 @@ export default class Commonstream extends Component {
                                      return (
                                   <a key={index} href={"/"+data.hryperlink} >
                                     <div className={"col-lg-5 col-md-8 col-sm-4 para1"+index} >
-                                      <div className="row">
+                                      <div className="">
                                         <div className="col-lg-12 col-md-12 col-sm-12 lightbluetext block block1height text-center">
                                             <img alt="" className="streamImg" src={data.downstreamimg} />
                                             <br/>

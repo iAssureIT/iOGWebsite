@@ -171,3 +171,17 @@
 .bloglist_margin{
 	margin-left: 60px;
 }
+
+@media (max-width: 480px){
+.bloglist_margin{
+	margin-left: 0px ! important;
+	background-color: #fff ! important;
+
+  }
+.blogtext1{
+left: 116px ! important;
+} 
+.All1blog1{
+	margin-left: 20px ! important;
+} 
+} 

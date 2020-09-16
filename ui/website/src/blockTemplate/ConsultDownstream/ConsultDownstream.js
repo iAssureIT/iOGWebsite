@@ -144,6 +144,18 @@ console.log("10 sep==>",this.props.block_id);
                     $('.innerBlocktConsult').css('height','1200px');
                     
                   }
+                  if (($(window).width() <= 480) && (response.data.repeatedBlocks.length == 6) ) {
+                     console.log("hiiiiiiiii......")
+                      $( ".innerBlocktConsult" ).css( 'height','2700px' );
+                      }
+                       if (($(window).width() <= 480) && (response.data.repeatedBlocks.length == 4) ) {
+                     console.log("hiiiiiiiii......")
+                      $( ".innerBlocktConsult" ).css( 'height','1865px' );
+                      }
+                        if (($(window).width() <= 480) && (response.data.repeatedBlocks.length == 7) ) {
+                     console.log("hiiiiiiiii......")
+                      $( ".innerBlocktConsult" ).css( 'height','2910px' );
+                      }
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
                 this.setState({
@@ -170,8 +182,8 @@ console.log("10 sep==>",this.props.block_id);
      <div> 
       <div className="container-fluid">
        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 imagesize">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding  hidden-xs "style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
-          <div className="Bubble hidden-md hidden-sm">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding "style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
+          <div className="Bubble hidden-md hidden-sm hidden-xs">
            <div className="Main_Cards__Bubble1 bub11">
          </div>
            <div className="Main_Cards__Bubble1 bub21">
@@ -182,16 +194,16 @@ console.log("10 sep==>",this.props.block_id);
             <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt" dangerouslySetInnerHTML={{ __html:this.state.blocks.blockDescription}}></p>
           </div>  
           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 container">  
-           <div className="row">
+           <div className="">
            { 
               this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
               this.state.blocks.repeatedBlocks.map((result, index)=>{
               return(
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <img src={result.Image} id={"consultdown_img"+index}/>
                </div>
-                <div className=" col-lg-9 col-md-9 col-sm-9 col-xs-9 " id={"consultdown_data"+index}>
+                <div className=" col-lg-9 col-md-9 col-sm-9 col-xs-12 " id={"consultdown_data"+index}>
                   <div className="col-lg-12 col-md-12">
                    <h3 id={"downimg_text"+index}>{result.Title}</h3>
                    <p id="downimg_p_text"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
@@ -210,7 +222,13 @@ console.log("10 sep==>",this.props.block_id);
        </div>  
 
       {/*res*/}
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult_new NOPadding hidden-lg hidden-md hidden-sm">
+
+
+
+     
+
+
+     {/*  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult_new NOPadding hidden-lg hidden-md hidden-sm">
        
        <div>
           <div className="downimgtext_new text-center">{this.state.blocks.blockTitle}</div>
@@ -233,7 +251,7 @@ console.log("10 sep==>",this.props.block_id);
             null
         }
         </div>
-       </div> 
+       </div> */}
       
     {/*end res*/}
     </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

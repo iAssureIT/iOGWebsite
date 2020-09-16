@@ -38,3 +38,8 @@
 .formcontent_new{
 	height: 70px;
 }
+ @media (max-width: 480px){
+  .newline2{
+    margin-left: 97px ! important;
+  }
+}

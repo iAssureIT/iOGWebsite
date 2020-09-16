@@ -90,7 +90,7 @@ render() {
 		            Allblogs && Allblogs.length > 0 ?
 		    		Allblogs.map((data, index)=>{
 		            return(
-				          	<div className=" pricehover-float col-lg-3 col-md-6 col-sm-6 col-xs-3 Allblog"><a href={"/singleblog/"+data.blogURL}></a>
+				          	<div className=" pricehover-float col-lg-3 col-md-6 col-sm-6 col-xs-12 Allblog"><a href={"/singleblog/"+data.blogURL}></a>
 				          		<div className="All1blog1 z50">
 				        			<a href={"/singleblog/"+data.blogURL}>
 									<img className="img-responsive AllblogImgB" src={data.bannerImage ? data.bannerImage.path : ""} alt="Bannerpng"/>

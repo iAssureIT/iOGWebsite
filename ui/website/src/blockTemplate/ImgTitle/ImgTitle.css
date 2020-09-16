@@ -30,5 +30,16 @@
   .dynamicpageimg{
     background-image: url("/images/acc.png");
   }
+  @media(max-width : 600px){
+    
+    .BT1_bannerTitle{
+      font-size: 37px ! important;
+    }
+    .serflip-card{
+      width: 300px ! important;
+    }
+
+  }
+
 
    
