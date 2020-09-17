@@ -11,7 +11,7 @@ export default class Aboutusimgright extends Component {
     render(){
         return(
           <div className="container-fluid g_blockOuterWrapper">
-            <div className="row">
+            <div className="">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 g_blockInnerWrapper">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blockTextWrapper">
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

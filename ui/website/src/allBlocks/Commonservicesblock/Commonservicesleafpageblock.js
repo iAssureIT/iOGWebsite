@@ -27,7 +27,7 @@ export default class Commonservicesleafpageblock extends Component {
 
     return(
       <div className="col-lg-12 contentWraper mt100">
-        <div className="row">
+        <div className="">
           <div className="Bubble" >
             <div className="Main_Cards__Bubble bub1"></div>
             <div className="Main_Cards__Bubble bub2"></div>
@@ -37,13 +37,13 @@ export default class Commonservicesleafpageblock extends Component {
             <h1 className="">Services</h1>
           </div>
           <div className="col-lg-12">
-            <div className="row">
+            <div className="">
               <div className="col-lg-12">
-                <div className="row">
+                <div className="">
                   <div className="col-lg-12">
-                    <div className="row"> 
+                    <div className=""> 
                       <div className="col-lg-10 col-lg-offset-1"> 
-                        <div className="row"> 
+                        <div className=""> 
                           {
                             this.props.servicedata.map((data, index)=>{
                               if(productlength == 2){

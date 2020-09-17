@@ -10,7 +10,7 @@ export default class Commonulliblock extends Component {
 render(){
   return(
           <div  className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <div  className="row">
+            <div  className="">
             {
               this.props.CommonulliData.map((data, index)=>{
                 return ( 

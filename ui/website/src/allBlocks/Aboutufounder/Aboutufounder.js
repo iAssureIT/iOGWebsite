@@ -12,7 +12,7 @@ export default class Aboutufounder extends Component {
         return(
           
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className="row">
+              <div className="">
               {this.props.founderData && this.props.founderData.length>0?
                 this.props.founderData.map((data, index)=>{
                   return (
@@ -25,7 +25,7 @@ export default class Aboutufounder extends Component {
                                     </div>
                                   </div>
                                   <div className="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-                                    <div className="row">
+                                    <div className="">
                                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                           <h2 className="para-top3 txt-size-director textcoloryellow"><b>{data.foundername}</b></h2>
                                           <h1 className="txt-size-founder lightbluetext">{data.foundertag}</h1>

@@ -119,7 +119,7 @@ export default class Downstream extends Component {
  render(){
        return(
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
-            <div className="row">
+            <div className="">
                 <div className="Bubble" >
                   <div className="Main_Cards__Bubble bub1"></div>
                      <div className="Main_Cards__Bubble bub2"></div>
@@ -129,7 +129,7 @@ export default class Downstream extends Component {
                      <h2 style={{color:"#009de2"}}><b>Downstream Oil & Gas Industry</b></h2>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="row">
+                      <div className="">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <div className="">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

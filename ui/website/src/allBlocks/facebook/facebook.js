@@ -242,13 +242,13 @@ Removefromcart(event){
     return (
       <div className="homecontentwrapper">
           <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow">
-            <div className="row">
+            <div className="">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 header1wrapper">
-                <div className="row">
+                <div className="">
                   <div className="col-lg-10 col-lg-offset-1 col-md-10 col-sm-12 col-xs-12">
-                    <div className="row">
+                    <div className="">
                       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 header1list1">
-                        <div className="row">
+                        <div className="">
                           <ul>
                             <li><a href="/">Get the app</a></li>
                            
@@ -262,7 +262,7 @@ Removefromcart(event){
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 header1list2">
-                        <div className="row">
+                        <div className="">
                           <ul>
                             <li className="borderLeft"><a href="/signup"><i className="fa fa-sign-in"></i> &nbsp;Join Free</a></li>
                             {
@@ -286,32 +286,32 @@ Removefromcart(event){
                 </div>
               </div>
               <div className="col-lg-10 col-lg-offset-1 col-md-10 col-sm-12 col-xs-12">
-               <div className="row">
+               <div className="">
                   <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 headerlogoimg headerpaddingtop text-center">
-                    <div className="row">
+                    <div className="">
                       <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <div className="row">
+                        <div className="">
                           <a href="/"><img src="/images/logo1.png"/></a>
                         </div> 
                       </div> 
                     </div> 
                   </div> 
                   <div className="col-lg-7 col-md-7 col-sm-12 col-xs-12 headerpaddingtop">
-                    <div className="row">
+                    <div className="">
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="row">
+                        <div className="">
                             <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                              <div className="row">
+                              <div className="">
                                   <ReactMultiSelectCheckboxes placeholderButtonLabel="Shop by category" margin-top={"40px"} options={this.state.options} onChange={this.handleChange.bind(this)}/>
                               </div>  
                             </div>  
                             <div className="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                              <div className="row">
+                              <div className="">
                                   <input type="text" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headersearch" name="x" placeholder="What are you looking for...." />
                               </div>  
                             </div>  
                             <div className="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                              <div className="row">
+                              <div className="">
                                   <button className="col-lg-8 col-md-8 col-sm-12 col-xs-12 btn searchbutton" type="button" onClick={this.searchProducts.bind(this)} ><i className="fa fa-search" aria-hidden="true"></i></button>
                               </div>  
                             </div>  
@@ -321,7 +321,7 @@ Removefromcart(event){
                   </div>
                   <div className="col-lg-2 col-md-2 col-sm-4 col-xs-6 headerpaddingtop text-center">
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headercart">
-                        <div className="row dropdown">
+                        <div className=" dropdown">
                             <a href="#" data-toggle="dropdown"><i className="fa fa-shopping-bag headercarticon" aria-hidden="true"></i><span className="cartvalue">{ user_ID ? this.props.cartCount:0}</span></a>
                             { user_ID ?
                               <ul className="dropdown-menu cartdropmenu" role="menu" aria-labelledby="menu1">
@@ -341,26 +341,26 @@ Removefromcart(event){
                                               <li className="col-lg-12 col-md-12 col-sm-12 col-xs-12 cartdropheight " key={index}>
                                                 <div className="cartdropborder">
                                                   <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 cartdropimg">
-                                                    <div className="row">
+                                                    <div className="">
                                                       <img src={data.productImage[0]}/>
                                                     </div>
                                                   </div>
                                                   <div className="col-lg-7 col-md-7 col-sm-12 col-xs-12 cartdropimg">
-                                                    <div className="row">
+                                                    <div className="">
                                                       <a href={"/productdetails/"+data.product_ID}><p className="cartdroptext col-lg-12 col-md-12 col-sm-12 col-xs-12" title={data.productName}>{data.productName}</p></a>
                                                       <div className="cursorpointer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <p className="row"><b><i className="fa fa-inr"></i> {data.offeredPrice}</b></p>
+                                                        <p className=""><b><i className="fa fa-inr"></i> {data.offeredPrice}</b></p>
                                                       </div>
                                                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <div className="row">
+                                                        <div className="">
                                                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <div className="row">
+                                                            <div className="">
                                                               <p className="col-md-6 col-md-6 col-sm-12 col-xs-12">Qty:</p>
                                                               <p className="col-md-6 col-md-6 col-sm-12 col-xs-12 cartmodquntityborder text-center">{data.quantity}</p>
                                                             </div>
                                                           </div>
                                                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <div className="row">
+                                                            <div className="">
                                                               <div className="col-lg-1 col-md-1 col-sm-4 col-xs-6 pull-right"><div className="row"><a href={"/productdetails/"+data.product_ID}><i className="fa fa-cog cartdropaction" aria-hidden="true"></i></a></div></div>
                                                               <div className="col-lg-1 col-md-1 col-sm-4 col-xs-6 pull-right"><div className="row"><i className="fa fa-trash-o cartdropaction" aria-hidden="true" id={data._id} onClick={this.Removefromcart.bind(this)}></i></div></div>
                                                             </div>

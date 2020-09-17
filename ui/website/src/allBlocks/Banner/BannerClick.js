@@ -247,11 +247,11 @@ pin6click(event){
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid banner-wrapper NOpadding full-height"style={{overflow:"hidden"}}>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner  NOpadding"style={{overflow:"hidden"}}>
-          <div className="row">
+          <div className="">
             <div id="backimage1"className=" bannerContainer1 img-responsive col-lg-12 col-md-12 col-sm-12 hidden-xs"style={{overflow:"hidden"}}>
              <div id="blackbackground"></div>
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
-              <div className="row"style={{overflow:"hidden"}}>
+              <div className=""style={{overflow:"hidden"}}>
                 <figure className="oilimage">
                  <div className="new_HoverDiv7">
                   <div style={{width:"177px"}}>
