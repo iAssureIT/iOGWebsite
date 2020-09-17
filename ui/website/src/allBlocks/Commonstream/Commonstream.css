@@ -63,7 +63,7 @@
     margin-inline-start:0px ! important;
   }
   .contentWraper{
-    width: 350px ! important;
+    width: 100% ! important;
   }
   .contentheader h2{
     font-size: 35px ! important;

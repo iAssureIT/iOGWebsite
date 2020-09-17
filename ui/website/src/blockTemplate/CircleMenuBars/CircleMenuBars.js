@@ -229,7 +229,7 @@ componentDidMount(){
                //console.log('length 4',length);
               return(
                      
-                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12 hidden-xs">
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div> 
                       <h4 className="navigationTitle text-center">You May Also Visit</h4>
                     <div className="wizard-inner col-lg-10 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
@@ -240,7 +240,7 @@ componentDidMount(){
 
                           return(
                            
-                           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 nopadding">
+                           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-2 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={"/masterpage/"+result.Link}>

@@ -99,7 +99,7 @@ componentDidMount(){
     return(
       
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
-          <div className="row">
+          <div className="">
             <div className="Bubble" >
               <div className="Main_Cards__Bubble bub1"></div>
               <div className="Main_Cards__Bubble bub2"></div>
@@ -107,13 +107,13 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className="row">
+              <div className="">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="row">
+                  <div className="">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="row"> 
+                      <div className=""> 
                         <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1"> 
-                          <div className="row"> 
+                          <div className=""> 
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
                                 if(productlength == 2){

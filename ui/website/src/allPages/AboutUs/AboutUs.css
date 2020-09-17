@@ -542,3 +542,9 @@ margin-top: 100px;
 
   }
 }
+@media (max-width: 480px){
+    .line1{
+    margin-left:99px ! important;
+
+  }
+}

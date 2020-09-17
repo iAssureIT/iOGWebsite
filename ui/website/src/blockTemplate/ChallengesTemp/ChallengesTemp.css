@@ -41,3 +41,12 @@
     margin-left: 0px;
   }
 }
+@media (max-width: 480px){
+.B2T_challengesTitle{
+      margin-left: -6px  ! important;
+
+}
+.B3T_challengesDiv{
+  left:57px ! important;
+}
+}

@@ -81,3 +81,34 @@
 
   }
 }
+
+@media (max-width: 480px){
+  .B4T_ServicesDiv{
+    margin-left: 22px ! important;
+    width: 304px ! important;
+    min-height: 125px ! important;
+  }
+  .innerServiceDiv{
+    padding-left: 0px ! important;
+  }
+  .adjustfor5{
+    margin-left: 9px ! important;
+  }
+  .new_wizardNotefor4 {
+    left: 18px ! important;
+    font-size: 10px ! important;
+    left:-9px! important;
+}
+.new_wizardNote{
+  font-size: 10px ! important;
+}
+.new_round-tabfor4 {
+    margin-left: 27% ! important;
+}
+.BT1_bannerTitle{
+  font-size: 33px ! important;
+}
+.B4T_line{
+  left: 151px ! important;
+}
+}

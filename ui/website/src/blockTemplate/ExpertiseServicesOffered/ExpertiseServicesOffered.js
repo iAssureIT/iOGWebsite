@@ -120,10 +120,10 @@ componentDidMount(){
             return(
               <div>
                <div className=" col-lg-5 col-md-12 col-sm-12 col-xs-12 B4T_ServicesDiv">
-               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 NOPadding">
+               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 NOPadding hidden-xs">
                  <img src={result.Image} className="B5T_img img-responsive"/>
                 </div>
-                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 innerServiceDiv NOPadding">
+                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-12 innerServiceDiv NOPadding">
                  <h5 className="B5T_txt">{result.Title}</h5>
                  <p  className="ServiceTxt"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
                 </div>

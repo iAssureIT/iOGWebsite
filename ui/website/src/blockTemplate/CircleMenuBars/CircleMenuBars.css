@@ -314,3 +314,15 @@
     margin-left: -11px;
 }
 }
+@media (max-width: 480px){
+.adjustfor5{
+    margin-left: 10px ! important;
+}
+.new_round-tabfor4{
+    margin-left:27% ! important;
+}
+.new_wizardNotefor4 {
+    left: -6px ! important;
+    font-size: 12px ! important;
+}
+}
