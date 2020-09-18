@@ -200,9 +200,9 @@ const WebLayout = () => (
     <Route path="/careers" component={ Careerspage } />
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
-    <Route path="/resource" component={ ResourcePage } />
+    <Route path="/resources" component={ ResourcePage } />
     <Route path="/newbanner" component={ newbanner } />
-    <Route path="/blog" component={ AllBlog } /> 
+    <Route path="/blogs" component={ AllBlog } /> 
 
     <Route path="/AllBlog" component={AllBlog}  />
     <Route path="/blogs/:id" component={ BlogContent } />

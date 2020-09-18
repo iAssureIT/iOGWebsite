@@ -418,7 +418,7 @@ handlechange(event){
               </div>
             </div> 
             <div class="dropdown ">
-              <button class="dropbtn"><a href="/masterpage/expertise-main-page" className="NopaddingToA">EXPERTISE</a>
+              <button class="dropbtn"><a href="/masterpage/expertise" className="NopaddingToA">EXPERTISE</a>
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="col-lg-10 col-md-10 hidden-sm hidden-xs dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
@@ -499,17 +499,17 @@ handlechange(event){
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
-                <a href="/masterpage/refinery-mainpage">Refinery</a>
-                <a href="/masterpage/petrochemical-mainpage">Petrochemicals</a>
-                <a href="/masterpage/chemicals-mainpage">Chemicals</a>
+                <a href="/masterpage/refinery">Refinery</a>
+                <a href="/masterpage/petrochemical">Petrochemicals</a>
+                <a href="/masterpage/chemicals">Chemicals</a>
                 <a href="/masterpage/lng">LNG</a>
                 <a href="/masterpage/gas-processing">Gas Processing</a>
                 <a href="/masterpage/oil-&-gas-e-&-p">Oil & Gas E & P</a>
               </div>
             </div> 
              <a href="/masterpage/careers">CAREERS</a>
-             <a href="/resource" >RESOURCES</a>
-             <a href="/blog" >BLOGS</a>
+             <a href="/resources" >RESOURCES</a>
+             <a href="/blogs" >BLOGS</a>
              <a href="/contact-us" >CONTACT US</a>
             <a href="javascript:void(0);" class="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>
           </div>

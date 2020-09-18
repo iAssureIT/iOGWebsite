@@ -118,6 +118,11 @@ componentDidMount(){
         $('.downimg_p_txt').css('top','-1.5em');
 
       }
+       if(pageUrl=="/masterpage/iog-train"){
+        $('.downimgtext').css('left','17em');
+
+      }
+
 
 
 console.log("10 sep==>",this.props.block_id);
