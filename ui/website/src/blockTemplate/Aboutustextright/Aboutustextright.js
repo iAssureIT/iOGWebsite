@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
+import $                  from 'jquery';
 import './Aboutusimgright.css';
 
 export default class Aboutusimgright extends Component {
@@ -25,6 +25,17 @@ export default class Aboutusimgright extends Component {
     
   }
 componentDidMount(){
+
+   var pageUrl = window.location.pathname;
+      console.log("pageUrl now = ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+      console.log("consult url",a);
+      if(pageUrl =="/masterpage/about-us"){
+        // $('.innerBlocktConsult').css('height','1230px');
+        $('.l_BT1_para').css('marginTop','61px');
+        $('.truck').css('marginTop','7px');
+      }
+
 /*console.log("==>",this.props.block_id);*/
           {
              axios

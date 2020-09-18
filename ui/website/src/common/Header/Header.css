@@ -289,6 +289,15 @@
   margin-left: -276px ! important;
 }
 }
+@media screen and (max-width: 480px) {
+    .dropdown .dropbtn {
+    font-size: 13px ! important;  
+  }
+  .topnav.responsive a{
+     font-size: 13px ! important;  
+
+  }
+}
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
