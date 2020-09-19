@@ -97,7 +97,7 @@ console.log("==>",this.props.block_id);
 
   render() {  
     return (
-      <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 innerBlocktepmlate6 NOPadding">  
+      <div className="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 innerBlocktepmlate6 NOPadding">  
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maindivNews">
 
         { 

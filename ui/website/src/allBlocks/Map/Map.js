@@ -50,9 +50,9 @@ export default class Map extends Component {
                  <div className="col-lg-6 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">
-                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/refinery-mainpage" className="">Refinery</a><br/>
-                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/petrochemical-mainpage" className="">Petrochemicals</a><br/>
-                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/chemicals-mainpage" className="">Chemicals</a><br/>
+                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/refinery" className="">Refinery</a><br/>
+                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/petrochemica" className="">Petrochemicals</a><br/>
+                <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/chemicals" className="">Chemicals</a><br/>
                 <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/lng" className="">LNG</a><br/>
                 <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/gas-processing" className="">Gas Processing</a><br/>
                 <span class="bottomlinksraquo  subdata"></span> <a href="/masterpage/oil-&-gas-e-&-p" className="">Oil & Gas E & P</a><br/>
@@ -66,12 +66,12 @@ export default class Map extends Component {
                 </div><br/>
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
-                 <a href="/blog" className="Aboutuslink">Blogs</a><br/>
+                 <a href="/blogs" className="Aboutuslink">Blogs</a><br/>
                  <div className="col-lg-6 sitemapline"></div>
                 </div><br/>
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
-                 <a href="/resource" className="Aboutuslink">Resources</a><br/>
+                 <a href="/resources" className="Aboutuslink">Resources</a><br/>
                  <div className="col-lg-6 sitemapline"></div>
                 </div><br/>
                  <div className="mainpages ">

@@ -309,8 +309,9 @@ class FormContent extends Component{
       fields["experience"]      = "";
 
         var adminEmail = "iogdevelopers@gmail.com";
+        // var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
-            "email"         : this.state.email ,
+            "email"         : [this.state.email],
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
             "message"       : "",
             "mail"          : 'Dear ' + this.state.name1 + ', <br/><br/>'+
@@ -335,7 +336,10 @@ class FormContent extends Component{
          
         })
          const formValues2 = {
-            "email"         : adminEmail ,
+            "email"         : [ adminEmail,
+                               // 'careers@iogsolutions.com'
+                                'careers@iogsolutions.com'
+                              ],
             "subject"       : "New Job Application has been received..!",
             "message"          : "",
             "mail"          : 'Dear  Recruiter, <br/>'+

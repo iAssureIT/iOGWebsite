@@ -204,7 +204,7 @@ export default class Resourcedownload extends React.Component {
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
         var adminEmail = "iogdevelopers@gmail.com";
         const formValues1 = {
-            "email"         : this.refs.email.value ,
+            "email"         : [this.refs.email.value],
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
             "message"       : "",
             "mail"          : 'Dear ' + this.refs.userName.value + ', <br/><br/>'+
@@ -238,7 +238,9 @@ export default class Resourcedownload extends React.Component {
          
         })
         const formValues2 = {
-            "email"         : adminEmail ,
+            "email"         : [adminEmail,
+                               'info@iogsolutions.com'
+                               ] ,
             "subject"       : "New query/feedback arrived from Website!",
             "message"       : "Brochure Downloaded By User",
             "mail"          : 'Dear Admin, <br/>'+

@@ -164,15 +164,21 @@ app.post('/send-email', (req, res)=> {
     console.log('after transport');
     let mailOptions = {
       
-      from   : '"iOG-Solutions" <iogdevelopers@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <iassureitmail@gmail.com>', // sender address
       // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
-      to     : req.body.email, // list of receivers
+      to     : [
+                req.body.email,
+                // 'kkhandalekaruna@gmail.com'
+
+               ],// list of receivers
+      // cc     : 'kkhandalekaruna@gmail.com',
       subject: req.body.subject, // Subject line
       text   : req.body.text, // plain text body
       html   : req.body.mail, // html body
       attachments : req.body.attachments
     };
     console.log('after mailoption');
+    console.log("mailOptions",mailOptions);
     //name email mobilenumber message
     // console.log("mailOptions",mailOptions);
     
