@@ -155,6 +155,7 @@ class ContactUsform extends Component{
 */
         // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
         var adminEmail = "iogdevelopers@gmail.com";
+        // var adminEmail = "iassureitmail@gmail.com";
         const formValues1 = {
             "email"         : this.refs.email.value ,
             "subject"       : "Your Query/Feedback is sent successfully to www..com!",
@@ -182,17 +183,19 @@ class ContactUsform extends Component{
          
         })
         const formValues2 = {
-            "email"         : adminEmail ,
+            "email"         : [adminEmail,
+                               'info@iogsolutions.com'
+                               ] ,
             "subject"       : "New query/feedback arrived from Website!",
-            "message"       : "i",
+            "message"       : "",
             "mail"          : 'Dear Admin, <br/>'+
                               "Following new query/feedback came from website! <br/> <br/> " +
-                              "============================  <br/> <br/> " +
+                              "------------------------------------------------------------------------------  <br/> <br/> " +
                               "<b>Client Name: </b>"   + this.state.userName + '<br/>'+
                              
-                              "<b>Client Company Name: </b>"  + this.state.companyName + '<br/><br/>'+
+                              "<b>Client Company Name: </b>"  + this.state.companyName + '<br/>'+
 
-                              "<b>Designation: </b>"  + this.state.designation + '<br/><br/>'+
+                              "<b>Designation: </b>"  + this.state.designation + '<br/>'+
 
                               "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
 
@@ -212,6 +215,20 @@ class ContactUsform extends Component{
         .catch((error)=>{
           console.log("error = ", error);
         });
+          axios.post("/api/contactModal/post", dataArray)
+        .then((response)=>{
+          console.log("response",response);
+        //   swal({
+        //   title : "Thank You....!",
+        //   text  : "",
+        //   buttons: false,
+        // });
+
+         /* swal({
+            title : response.data.message,
+            text  : response.data.message
+          });*/
+        })
       /*swal({
           title : "Thank You....!",
           text  : "",

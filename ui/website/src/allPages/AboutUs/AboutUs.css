@@ -532,6 +532,12 @@ margin-top: 100px;
 }
 @media(max-width : 767px){
   .line1{
+    /*margin-left:135px ! important;*/
+
+  }
+}
+@media(max-width : 600px){
+  .line1{
     margin-left:135px ! important;
 
   }

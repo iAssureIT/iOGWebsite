@@ -15,27 +15,28 @@ const notificationRoutes		        = require('./api/coreAdmin/notificationManagem
 // const projectSettingRoutes 			= require('./api/coreAdmin/routes/projectsettings.js');
 
 const systemSecurityRoutes 				= require('./api/coreAdmin/systemSecurity/RoutesSystemSecurity.js');
-const userRoutes 						= require('./api/coreAdmin/userManagement/RoutesUsers.js');
-const rolesRoutes						= require('./api/coreAdmin/rolesManagement/RoutesRoles.js');
+const userRoutes 						      = require('./api/coreAdmin/userManagement/RoutesUsers.js');
+const rolesRoutes						      = require('./api/coreAdmin/rolesManagement/RoutesRoles.js');
 const rolesentitymasterRoutes			= require('./api/coreAdmin/RoleEntityMaster/Routes.js');
-const masternotificationRoutes			= require('./api/coreAdmin/notificationManagement/RoutesMasterNotification.js');
-const notificationRoutes				= require('./api/coreAdmin/notificationManagement/RoutesNotification.js');
+const masternotificationRoutes		= require('./api/coreAdmin/notificationManagement/RoutesMasterNotification.js');
+const notificationRoutes				  = require('./api/coreAdmin/notificationManagement/RoutesNotification.js');
 const companySettingsRoutes				= require('./api/coreAdmin/companySettings/RoutesCompanySettings.js');
 const projectSettingRoutes 				= require('./api/coreAdmin/projectSettings/RoutesProjectSettings.js');
-const globalMasterRoutes 				= require('./api/coreAdmin/globalMaster/RoutesGlobalMaster.js');
-const preferencesRoutes 				= require('./api/coreAdmin/preferences/RoutesPreferences.js');
+const globalMasterRoutes 				  = require('./api/coreAdmin/globalMaster/RoutesGlobalMaster.js');
+const preferencesRoutes 				  = require('./api/coreAdmin/preferences/RoutesPreferences.js');
 const paymentgatewayRoutes 				= require('./api/coreAdmin/paymentgateway/Routes.js');
 
 // Routes - CMS
-const blockRoutes 					= require('./api/cms/blocks/routes.js');
-const pageRoutes 					= require('./api/cms/pages/routes.js');
+const blockRoutes 					        = require('./api/cms/blocks/routes.js');
+const pageRoutes 					          = require('./api/cms/pages/routes.js');
 // Routers - IOG
-const blogRoutes 					= require('./api/cms/blogs/routes.js');
-const offeringsRoutes 				= require('./api/iog/routes/offerings.js');
-const subscriptionorderRoutes 		= require('./api/iog/routes/subscriptionorders.js');
+const blogRoutes 					          = require('./api/cms/blogs/routes.js');
+const offeringsRoutes 				      = require('./api/iog/routes/offerings.js');
+const subscriptionorderRoutes 		  = require('./api/iog/routes/subscriptionorders.js');
 const blogcommentRoute              = require('./api/iog/routes/blogcomment.js');
 const jobformRoute                  = require('./api/iog/routes/jobform.js');
 const jobapplicationformRoute       = require('./api/iog/routes/jobapplicationform.js');
+const contactFormRoute              = require('./api/iog/routes/contactModal.js');
 
 // global.JWT_KEY = "secret";
 
@@ -72,6 +73,7 @@ app.use((req, res, next) => {
 //coreAdmin
 
 app.use("/api/roles", rolesRoutes);
+app.use("/api/contactModal", contactFormRoute);
 app.use('/api/projectsettings',projectSettingRoutes);
 app.use("/api/auth", systemSecurityRoutes);
 app.use("/api/users", userRoutes);
@@ -164,7 +166,7 @@ app.post('/send-email', (req, res)=> {
     console.log('after transport');
     let mailOptions = {
       
-      from   : '"iOG-Solutions" <iassureitmail@gmail.com>', // sender address
+      from   : '"iOG-Solutions" <info@iogsolutions.com>', // sender address
       // from   : '"Wealthyvia" <iassureitmail@gmail.com>', // sender address
       to     : [
                 req.body.email,

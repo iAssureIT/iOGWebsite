@@ -69,6 +69,10 @@ export default class ContactUsForm extends React.Component {
         required: true,
         regexifsc: /^[A-Za-z0-9 ]+$/,
       },
+      contact: {
+        required: true,
+        regexifsc: /^[0-9 ]+$/,
+      },
        email: {
         required: true,
         regexifsc1:/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i,
@@ -98,8 +102,9 @@ export default class ContactUsForm extends React.Component {
     if($("#contactmodalId").valid()){
      
       var dataArray={
-            "name"         : this.refs.userName.value,
+            "userName"     : this.refs.userName.value,
             "email"        : this.refs.email.value,
+            "contactNumber": this.refs.contact.value,
             "subject"      : this.refs.subject.value,
             "message"      : this.refs.message.value,
      
@@ -148,19 +153,20 @@ export default class ContactUsForm extends React.Component {
                                'info@iogsolutions.com'
                                ] ,
             "subject"       : "New query/feedback arrived from Website!",
-            "message"       : "HIii",
+            "message"       : "",
             "mail"          : 'Dear Admin, <br/>'+
                               "Following new query/feedback came from website! <br/> <br/> " +
-                              "============================  <br/> <br/> " +
+                              "-----------------------------------------------------------------  <br/> <br/> " +
                               "<b>Client Name: </b>"   + this.refs.userName.value + '<br/>'+
-                             
+                              "<b>Contact Number: </b>"   + this.refs.contact.value + '<br/>'+
+                              "<b>Client Email: </b>"  + this.state.email + '<br/>'+
                               "<b>Subject: </b>"  +  this.refs.subject.value+ '<br/><br/>'+
 
                               // "<b>Designation: </b>"  + this.state.designation + '<br/><br/>'+
 
-                               "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
+                              
 
-                              "<pre> " + this.state.message + "</pre>" +
+                              // "<pre> " + this.state.message + "</pre>" +
                               "<br/><br/> ============================ " +
                               "<br/><br/> This is a system generated email! " ,
         };
@@ -176,14 +182,25 @@ export default class ContactUsForm extends React.Component {
         .catch((error)=>{
           console.log("error = ", error);
         });
-      swal({
+         axios.post("/api/contactModal/post", dataArray)
+        .then((response)=>{
+          console.log("response",response);
+          swal({
           title : "Thank You....!",
           text  : "",
           buttons: false,
         });
+
+         /* swal({
+            title : response.data.message,
+            text  : response.data.message
+          });*/
+        })
+      
       this.setState({
         "userName"         : "",
         "companyName"      : "",
+        "contact"      : "",
         "designation"      : "",
         "country"          : "",
         "email"            : "",
@@ -193,6 +210,17 @@ export default class ContactUsForm extends React.Component {
         "enquiry"          : "",
         "fields"           : fields
       });
+    }
+  }
+  isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57)  && (charCode < 96 || charCode > 105))
+    {
+    evt.preventDefault();
+      return false;
+    }
+    else{
+      return true;
     }
   }
 
@@ -220,11 +248,18 @@ export default class ContactUsForm extends React.Component {
                             <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">Connect with us for information about our services,technical support and training.</p>
                             <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b> Happy to Help</b></h4>
                         </div>
-                        <div className="formcontent col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+                        <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
                           <label htmlFor="name">Name<span className="astrick">*</span></label>
                             {/*<div className="input-group">
                               <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>*/}
                               <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="userName" type="text" ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} placeholder="Enter Your Name"  required />
+                           {/* </div>*/}
+                        </div>
+                        <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
+                          <label htmlFor="name">Contact Number<span className="astrick">*</span></label>
+                            {/*<div className="input-group">
+                              <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>*/}
+                              <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="contact" type="text" ref="contact" maxLength={10} onKeyDown={this.isNumberKey.bind(this)} value={this.state.contact} onChange={this.handleChange.bind(this)} placeholder="Enter Your Phone Number"  required />
                            {/* </div>*/}
                         </div>
                         <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
