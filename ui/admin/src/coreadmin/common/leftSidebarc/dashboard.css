@@ -4848,6 +4848,10 @@ table.text-center th {
   .table-responsive {
     overflow: auto;
   }
+  .table_new{
+    height: 400px;
+    overflow: auto;
+  }
   .table-responsive > .table tr th,
   .table-responsive > .table tr td {
     white-space: normal !important;

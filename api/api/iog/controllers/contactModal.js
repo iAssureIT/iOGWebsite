@@ -39,7 +39,7 @@ exports.create_contactModal = (req, res, next) => {
 
                            
 }; 
-exports.list_jobform = (req,res,next)=>{
+exports.list_contactform = (req,res,next)=>{
     ContactModal.find()
         .exec()
         .then(data=>{

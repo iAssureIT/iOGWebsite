@@ -145,8 +145,8 @@ class Header extends React.Component {
                     <ul className="nav navbar-nav">
                       <li><a href="/cms/select-new-block">Blocks</a></li>
                       <li className=""><a href="/cms/create-new-page">Pages</a></li>
-                      <li><a href="#" className="dropdown" id="blogbtnidA">
-                      
+                      <li>
+                        <a href="#" className="dropdown" id="blogbtnidA">
                         <button className="dropbtn1" id="blogbtnid">Blogs 
                           <i className="fa fa-caret-down"></i>
                         </button>
@@ -156,7 +156,21 @@ class Header extends React.Component {
                           
                           
                         </div>
-                      </a></li>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="dropdown" id="blogbtnidA">
+                        <button className="dropbtn1" id="blogbtnid">Notification 
+                          <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                          <li className="dpdnBoxLi"><a href="/contactUs" className="whtclrHeaderBrand">Contact Us</a></li>
+                          <li className="dpdnBoxLi"><a href="/downloads" className="whtclrHeaderBrand">Downloads</a></li>
+                           <li className="dpdnBoxLi"><a href="/careersNotification" className="whtclrHeaderBrand">Careers</a></li>
+                         {/* <li className="dpdnBoxLi"><a href="/cms/AllBlogs" className="whtclrHeaderBrand">Resource Download</a></li> */}  
+                        </div>
+                        </a>
+                      </li>
                       
                       {/*
                       <li className="dropdown">

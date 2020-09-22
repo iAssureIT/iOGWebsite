@@ -32,6 +32,9 @@ import SingleBlogPage                   from './component/Blogs/SingleBlogPage/S
 import BlogsFormPage    from "./component/Blogs/BlogsForm/BlogsFormPage.js";
 import AllBlogs          from "./component/Blogs/AllBlogs/AllBlogs.js";
 import JobForm          from "./component/JobApplication/JobApplication.js";
+import careersNotification          from "./component/careersNotification/careersNotification.js";
+import ContactusNotify          from "./component/ContactusNotify/ContactusNotify.js";
+import Downloads          from "./component/Downloads/Downloads.js";
 
 
 // import Homepage          from "./component/Homepage/Homepage.js";
@@ -110,6 +113,9 @@ export default class CmsLayout extends React.Component {
          					<Route path="/cms/blogs-form/:blogURL" 			exact strict component={ BlogsFormPage }  />   
          					<Route path="/cms/AllBlogs" 					exact strict component={ AllBlogs }  />   
          					<Route path="/cms/singleblog/:selectedUrl" 		exact strict component={ SingleBlogPage }  />   
+                            <Route path="/careersNotification"              exact strict component={ careersNotification }  />   
+                            <Route path="/contactUs"                        exact strict component={ ContactusNotify }  />   
+                            <Route path="/downloads"                        exact strict component={ Downloads }  />   
          					{/*<Route path="/cms/contact-us" 					component={ SingleBlogPage }  />   */}
          					{/*<Route path="/cms/job-application" 					component={ JobForm }  /> */}  
          					{/*<Route path="/cms/homepage" 					component={ Homepage }  />   */}
