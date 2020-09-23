@@ -453,7 +453,7 @@ class ContactUsform extends Component{
                 <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <label htmlFor="contactNumber">Contact Number<span className="redFont">*</span></label>
                   <div className="input-group contactNumberDiv">
-                    <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon" aria-hidden="true"></i></span>
+                    <span className="input-group-addon addonColor"><i className="fa fa-mobile mobileIcon bold-icons" aria-hidden="true"></i></span>
                     <input className="form-control" id="contactNumber" type="text" name="contactNumber" value={this.state.contactNumber} maxLength={10}  onKeyDown={this.isNumberKey.bind(this)} onChange={this.handleChange.bind(this)}  ref="contactNumber" placeholder="Enter Contact Number" required/>
                   </div>
                 </div>
@@ -464,11 +464,11 @@ class ContactUsform extends Component{
                     <input className="form-control" id="email" type="email" name="email" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}  placeholder="Enter Email" required/>
                   </div>
                 </div>
-                <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+                <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                   <div className="form-group">
                       <label htmlFor="enquiry">Enquiry<span className="redFont">*</span></label>
                       <div className="input-group enquiryDiv">
-                      <span className="input-group-addon addonColor"><i className="fa fa-handshake-o" aria-hidden="true"></i></span>
+                      <span className="input-group-addon addonColor"><i className="fa fa-handshake-o bold-icons" aria-hidden="true"></i></span>
                            <Select
                                 placeholder="-- Select Option --"
                                 className="NOPadding"
@@ -484,10 +484,10 @@ class ContactUsform extends Component{
                         </div>
                   </div>  
                 </div>
-                <div className="formcontent col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <label htmlFor="subject">Subject</label>
                   <div className="input-group">
-                    <span className="input-group-addon addonColor"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                    <span className="input-group-addon addonColor"><i className="fa fa-pencil-square-o bold-icons" aria-hidden="true"></i></span>
                     <input className="form-control nameSpaceUpper" id="subject" type="text" name="subject" value={this.state.subject} onChange={this.handleChange.bind(this)}  ref="subject" placeholder="Enter Subject"/>
                   </div>
                   <div className="errorMsg">{this.state.errors.subject}</div>

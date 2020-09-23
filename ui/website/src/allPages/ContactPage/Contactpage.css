@@ -164,10 +164,13 @@ margin-bottom: 50px;
 .separatorWrapper__eH30j{
   width:25%;
 }
-..sxSelectPlaceholder__1-20v{
+.sxSelectPlaceholder__1-20v{
   line-height: 1.2px !important;
 }
 
+.bold-icons{
+  font-weight: bold;
+}
 
 @media(max-width : 600px){
   .contactpageform{

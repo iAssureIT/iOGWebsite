@@ -70,7 +70,7 @@
 
  }
  .forthreeCircles{
-    margin-left: 
+    margin-left: ''
  }
 
  .new_round-tab {
@@ -131,8 +131,8 @@
     cursor: pointer;
 }
 .active{
-    background-color: #a8a;
-   
+    /* background-color: #a8a; */
+   background-color: #4d90fe;
 }
 .navigation_img{
     height: 20px;

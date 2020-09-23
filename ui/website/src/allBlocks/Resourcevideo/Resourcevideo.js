@@ -11,7 +11,16 @@ import './Resourcevideo.css';
 import ReactPlayer from 'react-player'
 
 export default class Resourcevideo extends Component {
+  constructor(){
+    super();
+     this.state={
+      loadedVideosCount: 0,
+      currentPlayingIndex: -1,
+      autoPlay : false,
+      playing:false
+     }
 
+  }
   
   VideoData(){
         return [
@@ -61,8 +70,24 @@ export default class Resourcevideo extends Component {
            
         ]
     }
+    onEnded(){
+      this.setState({
+        playing:"false"
+      })
+    }
+
+    onPlay(index){
+      console.log('pppppp',index);
+     // $(e.target).play();
+      this.setState({
+        playing:"true",
+        currentPlayingIndex : index
+      })
+    }
 
     render(){
+      const { loadedVideosCount, currentPlayingIndex } = this.state;
+
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -86,10 +111,18 @@ export default class Resourcevideo extends Component {
                         <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
                         <div className="videocard1">
                             <div className="introvideo">      
-                             {/* <video width="320" height="240" controls>
-                                <source src={data.link} />
-                              </video>*/}
-                               <ReactPlayer url={data.link} width='324px' height='211px' controls loop  />
+                            <ReactPlayer
+                                url={data.link}
+                                className='react-player'
+                                playing={currentPlayingIndex === index ? true : false}
+                                width='324px' height='211px'
+                                onEnded={this.onEnded.bind(this)}
+                                onPlay = {this.onPlay.bind(this,index)}
+                                controls loop={false}
+                                muted
+                              
+                              />
+                               {/* <ReactPlayer url={data.link} width='324px' height='211px' controls loop  />  */}
                             </div>          
                           <div className="go-corner" href="#">
                             <div className="go-arrow">

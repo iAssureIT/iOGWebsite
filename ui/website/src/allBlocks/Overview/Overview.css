@@ -1,6 +1,8 @@
 .paraaa-top{
     margin-bottom: -1px;
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 40px;
+
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 30px;
@@ -17,7 +19,8 @@
 }
 .line_subheadd{
     /*font-weight: 600;*/
-    font-size: 33px;
+    /* font-size: 33px; */
+    font-size: 30px;
     color: #3a3737;
     font-weight: bold;
   }
