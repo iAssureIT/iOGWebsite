@@ -21,11 +21,11 @@ class Downloads extends Component{
       "tableHeading": {
           userName         : "Name",
           email            : "Email",
-          contactNumber    : "Contact No",
+          // contactNumber    : "Contact No",
           // companyName      : "Company Name",
           // designation      : "Designation",
           // country          : "Country",
-          message          : "Message",
+          // message          : "Message",
           subject          : "Subject",
           // enquiry          companyName      : "Company Name",
           // designation      : "Designation",
@@ -56,7 +56,7 @@ class Downloads extends Component{
    
   }
    getData(){
-    axios.get('/api/contactModal/get/list')
+    axios.get('/api/resourcedownload/get/list')
 
     .then((response)=>{
       var tableData = response.data;

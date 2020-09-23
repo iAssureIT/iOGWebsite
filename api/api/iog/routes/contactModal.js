@@ -5,10 +5,10 @@ const contactformController = require('../controllers/contactModal.js');
 
 router.post('/post'                , contactformController.create_contactModal);
 router.get('/get/list'             , contactformController.list_contactform);
-router.get('/get/one/:fetchId'     , contactformController.fetch_one);
-router.delete('/delete/all'        , contactformController.delete_all_forms);
-router.patch('/update/:form_id'    , contactformController.update_jobform);
-router.delete('/delete/:form_id'   , contactformController.delete_jobform);
+router.get('/get/one/:fetchId'     , contactformController.fetch_onecontactModal);
+router.delete('/delete/all'        , contactformController.delete_all_formscontactModal);
+router.patch('/update/:form_id'    , contactformController.update_contactModal);
+router.delete('/delete/:form_id'   , contactformController.delete_contactModal);
 
 
 module.exports = router;

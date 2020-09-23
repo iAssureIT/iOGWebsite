@@ -21,20 +21,22 @@ class careersNotification extends Component{
       "tableHeading": {
           position         : "Position Applied For",
           name1            : "Email",
-          contactNumber    : "City",
-          city             : "State",
-          state1           : "Country",
-          country          : "Education",
-          education        : "College Name",
-          college          : "Passing Year",
-          year             : "Experience",
-          experience       : "Current CTC",
-          curr_ctc         : "Expected CTC",
-          exp_ctc          : "Phone No.",
+          contactNumber    : "State",
+          // city             : "State",
+          country           : "Country",
+          state1            : "Experience",
+          // education        : "College Name",
+          // college          : "Passing Year",
+          contactNumber             : "State",
+          // experience       : "Current CTC",
+          // curr_ctc         : "Expected CTC",
+          // exp_ctc          : "Phone No.",
           name1            : "Name",
           // resume           : "",
-          skills           : "Skills",
-          noticePeriod     : "Notice period",
+          skills           : "Email",
+           experience       : "Contact No.",
+           email              : "Skills",
+          // noticePeriod     : "Notice period",
           // actions          : 'Action',
          
       },
@@ -65,6 +67,7 @@ class careersNotification extends Component{
     axios.get('/api/jobform/get/list')
 
     .then((response)=>{
+      console.log("response------",response);
       var tableData = response.data;
       var tableData = tableData.map((a, i)=>{
         return {

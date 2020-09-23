@@ -150,7 +150,7 @@ export default class ContactUsForm extends React.Component {
         })
         const formValues2 = {
             "email"         : [adminEmail,
-                               'info@iogsolutions.com'
+                               // 'info@iogsolutions.com'
                                ] ,
             "subject"       : "New query/feedback arrived from Website!",
             "message"       : "",

@@ -183,10 +183,10 @@ export default class Resourcedownload extends React.Component {
     // if (this.validateForm()) {
      
       var dataArray={
-            "name"         : this.refs.userName.value,
-            "email"        : this.refs.email.value,
-            "subject"      : this.refs.subject.value,
-            "message"      : this.refs.message.value,
+            "userName"         : this.refs.userName.value,
+            "email"            : this.refs.email.value,
+            "subject"          : this.refs.subject.value,
+            "message"          : this.refs.message.value,
      
     }
     this.setState({
@@ -268,6 +268,20 @@ export default class Resourcedownload extends React.Component {
         .catch((error)=>{
           console.log("error = ", error);
         });
+         axios.post("/api/resourcedownload/post", dataArray)
+        .then((response)=>{
+          console.log("response",response);
+        //   swal({
+        //   title : "Thank You....!",
+        //   text  : "",
+        //   buttons: false,
+        // });
+
+         /* swal({
+            title : response.data.message,
+            text  : response.data.message
+          });*/
+        })
      /* swal({
           title : "Thank You....!",
           text  : "",

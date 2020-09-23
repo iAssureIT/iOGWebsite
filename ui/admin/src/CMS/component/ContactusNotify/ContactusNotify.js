@@ -20,14 +20,14 @@ class Contactus extends Component{
         tabledata:[],
       "tableHeading": {
           userName         : "Name",
-          email            : "Email",
-          contactNumber    : "Contact No",
-          companyName      : "Company Name",
+          email            : "Company Name",
           designation      : "Designation",
-          country          : "Country",
-          message          : "Message",
-          subject          : "Subject",
-          enquiry          : "Enquiry",          // // actions          : 'Action',
+          companyName      : "Country",
+          designation      : "Designation",
+          country          : "Email",
+          // message          : "Message",
+          contactNumber          : "Subject",
+          contactNumber          : "Contact No",          // // actions          : 'Action',
          
       },
       "tableObjects"  : 

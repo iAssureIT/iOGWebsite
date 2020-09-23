@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 
 const blogsSchema = mongoose.Schema({
@@ -15,7 +16,7 @@ const blogsSchema = mongoose.Schema({
     
 });
 
-module.exports = mongoose.model('contactModal',blogsSchema);
+module.exports = mongoose.model('downloadResource',blogsSchema);
 
 
 

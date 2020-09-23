@@ -1,11 +1,11 @@
 const mongoose            = require("mongoose");
 var ObjectID              = require('mongodb').ObjectID;
-const ContactModal             = require('../models/contactModal.js');
+const DownloadResource             = require('../models/Resourcedownload.js');
 
-exports.create_contactModal = (req, res, next) => {
+exports.create_download = (req, res, next) => {
     console.log("inside comment");
 
-        const contactModal         = new ContactModal({
+        const downloadResource         = new DownloadResource({
 
                     _id                     :  new mongoose.Types.ObjectId(), 
 
@@ -22,7 +22,7 @@ exports.create_contactModal = (req, res, next) => {
 
         });
         
-        contactModal.save()
+        downloadResource.save()
             .then(data=>{
                 console.log("data--->",data);
                     res.status(200).json({
@@ -39,8 +39,8 @@ exports.create_contactModal = (req, res, next) => {
 
                            
 }; 
-exports.list_contactform = (req,res,next)=>{
-    ContactModal.find()
+exports.list_download = (req,res,next)=>{
+    DownloadResource.find()
      .sort({createdAt : -1})
         .exec()
         .then(data=>{
@@ -53,8 +53,8 @@ exports.list_contactform = (req,res,next)=>{
             });
         });
 }; 
-exports.fetch_onecontactModal = (req,res,next)=>{
-    ContactModal.findOne({"_id":req.params.fetchId})
+exports.fetch_download = (req,res,next)=>{
+    DownloadResource.findOne({"_id":req.params.fetchId})
         .exec()
         .then(data=>{
             if(data){
@@ -71,8 +71,8 @@ exports.fetch_onecontactModal = (req,res,next)=>{
         });
 };  
 
-exports.update_contactModal = (req,res,next)=>{
-    ContactModal.updateOne(
+exports.update_download = (req,res,next)=>{
+    DownloadResource.updateOne(
 
                         { "_id":req.params.form_id},    
                         
@@ -103,8 +103,8 @@ exports.update_contactModal = (req,res,next)=>{
                         });
                     });
 }; 
-exports.delete_contactModal = (req,res,next)=>{
-    ContactModal.deleteOne({"_id":req.params.form_id})
+exports.delete_download = (req,res,next)=>{
+    DownloadResource.deleteOne({"_id":req.params.form_id})
         .exec()
         .then(data=>{
             console.log('data ',data);
@@ -121,8 +121,8 @@ exports.delete_contactModal = (req,res,next)=>{
             });
         });
 };
-exports.delete_all_formscontactModal = (req,res,next)=>{
-    ContactModal.deleteMany({})
+exports.delete_all_download = (req,res,next)=>{
+    DownloadResource.deleteMany({})
         .exec()
         .then(data=>{
             res.status(200).json("All forms deleted");

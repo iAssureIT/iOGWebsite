@@ -47,8 +47,11 @@ exports.create_jobform = (req, res, next) => {
 }; 
 exports.list_jobform = (req,res,next)=>{
     Jobform.find()
+    .sort({createdAt : -1})
         .exec()
         .then(data=>{
+            // data.year.split();
+            
             res.status(200).json(data);
         })
         .catch(err =>{

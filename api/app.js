@@ -37,6 +37,7 @@ const blogcommentRoute              = require('./api/iog/routes/blogcomment.js')
 const jobformRoute                  = require('./api/iog/routes/jobform.js');
 const jobapplicationformRoute       = require('./api/iog/routes/jobapplicationform.js');
 const contactFormRoute              = require('./api/iog/routes/contactModal.js');
+const ResourceDownload              = require('./api/iog/routes/Resourcedownload.js');
 
 // global.JWT_KEY = "secret";
 
@@ -74,6 +75,7 @@ app.use((req, res, next) => {
 
 app.use("/api/roles", rolesRoutes);
 app.use("/api/contactModal", contactFormRoute);
+app.use("/api/resourcedownload", ResourceDownload);
 app.use('/api/projectsettings',projectSettingRoutes);
 app.use("/api/auth", systemSecurityRoutes);
 app.use("/api/users", userRoutes);

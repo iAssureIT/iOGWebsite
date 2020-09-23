@@ -41,7 +41,7 @@ class ContactUsform extends Component{
       "message"          : this.refs.message.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "subject"          : this.refs.subject.value,
-      "enquiry"          : this.state.enquiry,
+      "enquiry"          : this.refs.enquiry.value,
      
     });
 
@@ -61,7 +61,7 @@ class ContactUsform extends Component{
 
   handleChangeSelect(itemValue){
 
-    // console.log("selectValue",itemValue)
+    console.log("selectValue",itemValue)
     var itemLabel = itemValue.label;
     this.setState({
        "enquiry" :  itemLabel,
@@ -184,7 +184,7 @@ class ContactUsform extends Component{
         })
         const formValues2 = {
             "email"         : [adminEmail,
-                               'info@iogsolutions.com'
+                               // 'info@iogsolutions.com'
                                ] ,
             "subject"       : "New query/feedback arrived from Website!",
             "message"       : "",
@@ -366,6 +366,8 @@ class ContactUsform extends Component{
     }
   }
   render(){
+
+    console.log("this.state.enquiry",this.state.enquiry);
     const fruit = [
           {
               val: 0,
@@ -427,7 +429,7 @@ class ContactUsform extends Component{
                   <div className="errorMsg">{this.state.errors.userName}</div>
                 </div>*/}
                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="companyName">Company Name</label>
+                  <label htmlFor="companyName">Company Name11</label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-industry mobileIcon" aria-hidden="true"></i></span>
                     <input className="form-control" id="companyName" type="text" name="companyName" value={this.state.companyName} maxLength={10}  onChange={this.handleChange.bind(this)}  ref="companyName" placeholder="Enter Company Name"/>
