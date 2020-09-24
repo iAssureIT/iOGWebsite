@@ -164,7 +164,7 @@ class Header extends React.Component {
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                          <li className="dpdnBoxLi"><a href="/contactUs" className="whtclrHeaderBrand">Contact Us</a></li>
+                          <li className="dpdnBoxLi"><a href="/contactUs" className="whtclrHeaderBrand">Contacts</a></li>
                           <li className="dpdnBoxLi"><a href="/downloads" className="whtclrHeaderBrand">Downloads</a></li>
                            <li className="dpdnBoxLi"><a href="/careersNotification" className="whtclrHeaderBrand">Careers</a></li>
                          {/* <li className="dpdnBoxLi"><a href="/cms/AllBlogs" className="whtclrHeaderBrand">Resource Download</a></li> */}  

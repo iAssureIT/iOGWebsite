@@ -85,7 +85,7 @@ Commonleafulblock4(){
 Commonleafulblock5(){
         return [
             {
-                challengesTitle : "DISCLAIMER OF WARRANTIES",
+                challengesTitle : "",
                 challengestext5  : "",
                 challengestext : "",
                 challengestext2 : "",
