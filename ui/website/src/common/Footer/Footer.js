@@ -80,7 +80,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-lg-2 col-md-2 col-sm-3 col-xs-6 footerdivs">
+                        <div className="col-lg-1 col-md-1 col-sm-3 col-xs-6 footerdivs newAddress">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/careers">Careers</a></li>
@@ -88,20 +88,29 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-lg-4 col-md-3 col-sm-2 col-xs-6 NOpadding">
-                            <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Address</h6>
+                        <div className="col-lg-5 col-md-3 col-sm-2 col-xs-6 NOpadding newaddressdiv">
+                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+                            <h6 className="font-montserrat col newAddress"style={{color:"#ffffff"}}>Office Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
 
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.,
-                                 7090,7th Floor,  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar,<br/>
+                                 7090,7th Floor,  Marvel Fuego,Magarpatta Road, Opp Seasons Mall,Hadapsar,
                                   Pune,India- 411028.<br/>
                                    <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"}}></i>Mail: info@iogsolutions.com<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
+                                   <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
                                 
                              </p>
+                         </div>
+                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+                            <h6 className="font-montserrat col newAddress1"style={{color:"#ffffff"}}>Registered Address</h6>
+                            <p className="fs15"style={{color:"#ffffff"}}>
+                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
+                                  L402 Marvel Ritz E, near Dsk Toyota, behind Amanora Town Center,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
+                             </p>
+                         </div>
                         </div> 
-                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Connect us on</h6>
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12" style={{float:"right"}}>
+                            <h6 className="font-montserrat newAddress col"style={{color:"#ffffff"}}>Connect us on</h6>
                             <ul className="no-icon-list socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -109,7 +118,7 @@ export default class Footer extends Component {
                                 <li><a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank"><i className="col-lg-12 fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
                             </ul>
                             <div className=" subscribeBox">
-                                <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Newsletter Subscription</h6>
+                                <h6 className="font-montserrat newAddress col"style={{color:"#ffffff"}}>Newsletter Subscription</h6>
                                 <div className="NOpadding col-lg-8 col-md-6 col-sm-12 col-xs-12">
                                     <input type="text" className="form-control subscribeMail" placeholder="Enter your Email" />
                                 </div>

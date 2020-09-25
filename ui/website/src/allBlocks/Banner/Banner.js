@@ -326,8 +326,8 @@ pin6click(event){
                  <div className="new_HoverDiv7">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
-                   <p className="newhovertxt">Complex processes of Petrochemical units takes place here.</p>
-                   <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <p className="newhovertxt">Processing multiple grades, grade transitions, product sequencing & the variable cost of feedstocks etc.</p>
+                   <a href="/masterpage/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"241px"}}/>
@@ -339,8 +339,8 @@ pin6click(event){
                  <div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                     <div style={{width:"165px"}}>
-                    <p className="newhovertxt_8"> Entire process of Refinery takes place here. </p>
-                    <a href="/masterpage/refinery-mainpage">
+                    <p className="newhovertxt_8">Keeping up with the technological advancements and making sense out of IT investments are few of the many challenges of Modern Refining Business</p>
+                    <a href="/masterpage/refinery">
                       <span className="servicekbtnarrow8">
                        <i className="fa fa-chevron-circle-right"></i>
                       </span>
@@ -356,8 +356,8 @@ pin6click(event){
                  <div className="new_HoverDiv2">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                   <p className="newhovertxt_again"> Entire process of Chemicals takes place here. </p>
-                   <a href="/masterpage/chemicals-mainpage"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <p className="newhovertxt_again">Unpredictable raw material prices, strict government and regulatory compliances, outdating process plants and machinery, data overload caused by leveraging new-age technologies</p>
+                   <a href="/masterpage/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" className="img-responsive tabimage scaleimage petrolimage1_img"src="/images/newbanner_img5.png"style={{width:"255px"}}/>
@@ -387,7 +387,7 @@ pin6click(event){
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
                     
-                     <p className="newhovertxt_4"> Gas Processing Plants which employs complex industrial process to get impurity free dry natural gas.</p>
+                     <p className="newhovertxt_4">Skid & modular construction techniques that are common in gas processing plant construction are hindering the integration of various critical sub-processes.</p>
                    <a href="/masterpage/gas-processing"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
@@ -424,7 +424,7 @@ pin6click(event){
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
+                    <p className="newhovertxt_e_p1">Integrated modeling between the utility system and liquefaction process for optimal utilization of LNG fuel</p>
                    <a href="/masterpage/lng"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
@@ -453,7 +453,7 @@ pin6click(event){
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p">The upstream segment of oil & gas industry, also known as Exploration & Production (E&P)</p>
+                    <p className="newhovertxt_e_p">Drilling, appraisal and production and analysis of wells for production and economic viability to bring crude oil and raw natural gas to the surface</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>

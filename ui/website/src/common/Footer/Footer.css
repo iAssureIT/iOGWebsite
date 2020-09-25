@@ -15,8 +15,8 @@
  color: #fff ! important;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
- height: 225px;
- padding-top: 30px;
+ height: 235px;
+ padding-top: 10px;
  padding-bottom: 10px;
 }
 .footer-two a{
@@ -63,7 +63,7 @@ color: #fff;
 
 .font-montserrat{
     /*font-family: 'Montserrat', sans-serif;*/
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 ul.no-icon-list {
@@ -419,3 +419,15 @@ ul.no-icon-list {
 .safari-col-4:not(:root:root) { 
 	width:25% !important;
 }
+.newAddress{
+  /*margin-bottom: 0px;*/
+  padding-left: 0px;
+}
+.newAddress1{
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.newaddressdiv{
+  padding-left: 20px ! important;
+}
+
