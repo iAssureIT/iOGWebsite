@@ -52,7 +52,7 @@
 @media screen and (max-width: 768px) {
  
   .divinportrait{
-    width:300px ! important;
+    width:200px ! important;
   }
 }
 @media (max-width: 480px){

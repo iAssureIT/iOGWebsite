@@ -431,3 +431,9 @@ ul.no-icon-list {
   padding-left: 20px ! important;
 }
 
+@media screen and (max-width: 768px) {
+  .fs15{
+    margin-left: 20px;
+  }
+}
+
