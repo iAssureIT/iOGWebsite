@@ -23,17 +23,9 @@ export default class BlogContent extends Component {
   printTicket(event){
 
   event.preventDefault();
-  // window.print();
-
   var printContents = document.getElementById('pdfWrap').innerHTML;
-
-  //var originalContents = document.body.innerHTML;
-
-  //document.body.innerHTML = printContents;
-
   window.print(printContents);
 
-  //document.body.innerHTML = originalContents;
 
 }
 

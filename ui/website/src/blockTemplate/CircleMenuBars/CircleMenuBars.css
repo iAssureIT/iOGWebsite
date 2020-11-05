@@ -202,23 +202,24 @@
     bottom:14px;
 
 }
-.navigationTitle_for6{
+/*.navigationTitle_for6{
     color: #ffffff;
     position: absolute; 
     top: -12px;
-    left: 351px;
+    left: 3px;
     font-weight: 600;
     font-size: 23px;
     bottom:14px;
 
-}
+}*/
 
 .navigationTitle_for6
 {   
+    color: #ffffff;
     font-size: 23px;
     font-weight: 600;
-   left: 506px;
-    top: 24px;
+    left: 570px;
+    top: 19px;
     position: absolute;
 }
 #NavposFor51{
