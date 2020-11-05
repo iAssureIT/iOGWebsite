@@ -21,13 +21,13 @@ class Contactus extends Component{
       "tableHeading": {
           userName         : "Name",
           email            : "Company Name",
-          designation      : "Designation",
-          companyName      : "Country",
-          designation      : "Designation",
-          country          : "Email",
+          contactNumber    : "Contact No",          // // actions          : 'Action',
+          // designation      : "Contact Number",
+          // companyName      : "Country",
+          // designation      : "Designation",
+          email             : "Email",
           // message          : "Message",
-          contactNumber          : "Subject",
-          contactNumber          : "Contact No",          // // actions          : 'Action',
+          // contactNumber      : "Subject",
          
       },
       "tableObjects"  : 
