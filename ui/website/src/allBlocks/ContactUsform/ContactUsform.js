@@ -429,7 +429,7 @@ class ContactUsform extends Component{
                   <div className="errorMsg">{this.state.errors.userName}</div>
                 </div>*/}
                  <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <label htmlFor="companyName">Company Name11</label>
+                  <label htmlFor="companyName">Company Name</label>
                   <div className="input-group">
                     <span className="input-group-addon addonColor"><i className="fa fa-industry mobileIcon" aria-hidden="true"></i></span>
                     <input className="form-control" id="companyName" type="text" name="companyName" value={this.state.companyName} maxLength={10}  onChange={this.handleChange.bind(this)}  ref="companyName" placeholder="Enter Company Name"/>
