@@ -93,6 +93,11 @@ componentDidMount(){
 	        	$(".hidepoweredby").css("backgroundColor", "rgba(64, 178, 229, 0.93)");
 
 	        }
+	        /*if(pageUrl=="/masterpage/about-us"){
+	        	$(".third_img").css("width",'52%');
+	        	$(".third_img").css("marginLeft",'114px');
+
+	        }*/
 
 	        
 

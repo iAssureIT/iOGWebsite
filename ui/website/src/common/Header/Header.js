@@ -220,18 +220,28 @@ triggerHtmlEvent(element, eventName) {
 
 handlechange(event){
       var id = event.currentTarget.id;
-      console.log("id---",id)
+      // console.log("id---",id)
       this.setState({
          id:id
       });
-      console.log("id---",id)
-      this.props.history.push("/#googtrans(en|"+id+")");
+      // console.log("id---",id)
+       var currentLocation1 = window.location.href;
+        var divUrl = currentLocation1 ? currentLocation1.split('/') : "";
+        
+       console.log("divUrl",divUrl);
+       if(divUrl.length==5){
+          this.props.history.push(divUrl[4]+"/#googtrans(en|"+id+")");
+      }
+      if(divUrl.length==4){
+          this.props.history.push(divUrl[3]+"/#googtrans(en|"+id+")");
+      }
+
        if(this.state.id == "fr"){
         $('.expertiesdropdown').css('marginLeft','-540px');
        }
       window.location.reload();
 
-     
+     /*divUrl[3]+divUrl[4]*/
    
     
 
@@ -246,7 +256,6 @@ handlechange(event){
     return (
     <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow"> 
       <div className="row"> 
-      
        {/* <ul>
             <li><a href="javascript:;" id="German" onclick="translateLanguage(this.id);"><span>German </span>
                 <img src="img/flags/germany_flag.jpg" alt="" /></a> </li>
@@ -269,7 +278,6 @@ handlechange(event){
           {/*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">*/}
              <div className="navbar-form navbar-left pull-right">
                <div className="moduletable">
-               
                   <div className="ct-topbar">
                     <div className="container new_container">
                     <ul className="list-unstyled list-inline ct-topbar__list">
@@ -427,7 +435,7 @@ handlechange(event){
                     <h5 className="columnhead">
                        <a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
                        <a href="/masterpage/production-plannning" className="dropdownintab expertise_a">Production Planning </a>
-                       <a href="/masterpage/refinery-scheduling"className="dropdownintab expertise_a">Production Schedule</a>
+                       <a href="/masterpage/refinery-scheduling"className="dropdownintab expertise_a">Production Scheduling</a>
                        <a href="/masterpage/retro-analysis"className="dropdownintab expertise_a">Back Casting / Retro-Analysis</a>
                        <a href="/masterpage/lp-utilities"className="dropdownintab expertise_a">LP Utilities</a>
                        <a href="/masterpage/lp-configuration"className="dropdownintab expertise_a">LP Configuration studies</a>

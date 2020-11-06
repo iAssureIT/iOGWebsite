@@ -1357,7 +1357,7 @@ animation: fadeIn ease 20s;
 .new_HoverDiv2 {
     display: none;
     height: 275px;
-    width: 320px;
+    width: 355px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -12px;
@@ -1494,9 +1494,9 @@ animation: fadeIn ease 20s;
     width: 112px;
 }
 .newhovertxt_again{
-    top: 94px;
+    top: 106px;
     position: absolute;
-    width: 160px;
+    width: 164px;
     left: 72px;
     text-align: center;
     font-size: 11px;
