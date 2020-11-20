@@ -26,10 +26,10 @@
  }/* Base
 ------------------------------------------------------------------------- */
             
-    body {
+    /*body {
         font: 14px/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
         }  
-    
+    */
 /* Step Navigation
 ------------------------------------------------------------------------- */
     
@@ -175,9 +175,9 @@
  /* Base
 ------------------------------------------------------------------------- */
             
-    body {
+   /* body {
         font: 14px/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-        }  
+        }*/  
     
 /* Step Navigation
 ------------------------------------------------------------------------- */

@@ -31,17 +31,17 @@ export default class Commonstream extends Component {
         ]
     }
 
-    componentWillMount() {
+  componentWillMount() {
         $(window).scroll(function() 
     {    
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 1500) {
+        if (scroll >= 1400) {
             $(".para10").addClass("paraeffect");
         } else {
             $(".para10").removeClass("paraeffect");
         }
-        if (scroll >= 1500) {
+        if (scroll >= 1400) {
             $(".para11").addClass("paraeffect");
         } else {
             $(".para11").removeClass("paraeffect");
@@ -61,9 +61,9 @@ export default class Commonstream extends Component {
 
  render(){
        return(
-        <div className="col-lg-12 contentWraper">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
             <div className="">
-                <div className="col-lg-12">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
                        <div className="col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1">
                           <div className="">

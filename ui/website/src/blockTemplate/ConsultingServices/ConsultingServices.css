@@ -26,15 +26,40 @@
     margin-top: 9px;
     margin-left: 9px
 }
+.iconCircle {
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    margin-left: 33%;
+    top: -21px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.endofsubblock{
+  border-bottom: 5px solid #1e53e8;
+  height: 120px;
+}
+.iconCircle img{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.FirstPart{
+  height: 70px;
+  background-color: #eeeeee54;
+}
 .BT4_txt {
     margin-top: 10px;
-    margin-left: 71px;
+    /*margin-left: 71px;*/
     font-size: 15px;
     height: auto;
     font-size: 15px;
     /* white-space: nowrap; */
     overflow: hidden !important;
     text-overflow: ellipsis;
+}
+.New_Study_shadow{
+      box-shadow: 2px 2px 8px 3px #dad6d6;
+      padding: 0px;
 }
 .BT4_imgBack{
 

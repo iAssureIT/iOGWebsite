@@ -111,12 +111,12 @@ export default class Blogs extends Component {
                         {
                             this.upstreamData().map((data, index)=>{
                             return (
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}>
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}style={{height:"750px"}}>
                                   <div className="">
                                     <div className={" index"+index}>
                                         <div className=" blogtext pricehover-float ">
                                           <div>
-                                             <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                             <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{height:"600px"}}>
                                                 <div className="">
                                                   <div className="row blogsimg">
                                                     <img alt="" src={data.downstreamimg}/>

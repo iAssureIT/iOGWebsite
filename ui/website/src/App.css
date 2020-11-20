@@ -612,10 +612,12 @@ body{
     height: 40px;
 }
 .ServiceTxt{
-    font-size: 14px ! important;
+    font-size: 16px ! important;
+    text-align: justify;
 }
 .righttextaboutus{
     font-size: 17px ! important;
+    text-align: justify;
 }
 .fa{
     font-family: FontAwesome !important;
@@ -631,6 +633,9 @@ body{
 .astrick{
     /*font-size: 10px;*/
     color: red;
+}
+.blogtext p{
+    font-size: 14px ! important;
 }
 /*.goog-te-gadget{
     display: none;

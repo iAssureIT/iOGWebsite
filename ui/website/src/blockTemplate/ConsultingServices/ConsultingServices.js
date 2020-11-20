@@ -150,16 +150,23 @@ componentDidMount(){
               console.log("repeatedBlocks from consultsrvice=",result);
             return(
              
-               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-               <div className="col-md-offset-4 col-lg-offset-5 col-lg-4 col-md-4">
-                <div className="BT4_imgBack">
-                  <img src={result.Image}className="BT3_img1"/>
-                 </div>
-                </div>
-                <div className="col-lg-12 col-md-12">
-                 <h4 className="BT3_subhead text-center">{result.Title}</h4>
-                 <p className="BT4_txt col-lg-offset-2 col-lg-10 col-md-10"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
-                </div>
+               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12"style={{marginBottom:"30px"}}>
+                <div className="col-lg-12 col-md-12 New_Study_shadow">
+                 <div className="col-md-12 col-lg-12 col-lg-12 col-md-12 FirstPart">
+                  <div class="iconCircle">
+                   <img src={result.Image} alt="enteprice" class="innerCircle img-responsive"/>
+                   </div>
+                 {/* <div className=" text-center">
+                                     <img src={result.Image}className="BT3_img1"/>
+                                    </div>*/}
+                  </div>
+                  <div className="col-lg-12 col-md-12">
+                   <h4 className=" text-center"><b>{result.Title}</b></h4>
+                  </div>
+                   <div className="col-lg-12 col-md-12 endofsubblock">
+                    <p className="BT4_txt  text-center"dangerouslySetInnerHTML={ { __html: result.Description } }></p>
+                   </div>
+                 </div> 
                </div>
             
              );

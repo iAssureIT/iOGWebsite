@@ -330,7 +330,7 @@ pin6click(event){
                    <a href="/masterpage/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"241px"}}/>
+                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"255px"}}/>
                 </figure>
                {/* <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
@@ -339,7 +339,7 @@ pin6click(event){
                  <div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                     <div style={{width:"165px"}}>
-                    <p className="newhovertxt_8">Keeping up with the technological advancements and making sense out of IT investments are few of the many challenges of Modern Refining Business</p>
+                    <p className="newhovertxt_8">Keeping up with the technological advancements & making sense out of IT investments are few challenges of Modern Refining Business</p>
                     <a href="/masterpage/refinery">
                       <span className="servicekbtnarrow8">
                        <i className="fa fa-chevron-circle-right"></i>
@@ -356,7 +356,7 @@ pin6click(event){
                  <div className="new_HoverDiv2">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                   <p className="newhovertxt_again">Unpredictable raw material prices, strict government and regulatory compliances, outdating process plants and machinery, data overload caused by leveraging new-age technologies</p>
+                   <p className="newhovertxt_again">Unpredictable raw material prices,outdating process plants and machinery, data overload caused by leveraging new-age technologies</p>
                    <a href="/masterpage/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
@@ -403,10 +403,9 @@ pin6click(event){
                       <span className="rippleboxhov" style={{"--i":"5"}}></span>
                      </div>*/}
                    </div>
-                  <div className="new_HoverDiv">
+                  {/*<div className="new_HoverDiv">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"165px"}}>
-                   {/* <div><i className="fa fa-times hover_close"></i></div>*/}
                      <p className="newhovertxt_1">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
                       <a href="/masterpage/lng">
                        <span className="servicekbtnarrow3">
@@ -415,7 +414,7 @@ pin6click(event){
                        </span>
                       </a>
                   </div>
-                   </div>
+                   </div>*/}
                    <img alt="" className="img-responsive scaleimage waterimg_size"src="/images/Banner3_1.png" /> 
                 </figure>
                 
@@ -424,7 +423,7 @@ pin6click(event){
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p1">Integrated modeling between the utility system and liquefaction process for optimal utilization of LNG fuel</p>
+                    <p className="newhovertxt_e_p1">Integrated modeling between the utility system & liquefaction process for optimal utilization of LNG fuel</p>
                    <a href="/masterpage/lng"><span className="servicekbtnarrow4_1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
@@ -453,11 +452,11 @@ pin6click(event){
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p">Drilling, appraisal and production and analysis of wells for production and economic viability to bring crude oil and raw natural gas to the surface</p>
+                    <p className="newhovertxt_e_p">Production & analysis of wells for production & economic viability to bring crude oil & raw natural gas to the surface</p>
                    <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive tabimage scaleimage boat_img2_img"src="/images/Banner3_4.png"style={{width:"255px"}}/>
+                   <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"style={{width:"255px"}}/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
                  <div className="new_HoverDiv6">

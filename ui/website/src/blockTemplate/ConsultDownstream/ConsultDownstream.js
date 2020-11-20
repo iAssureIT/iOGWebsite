@@ -102,7 +102,7 @@ componentDidMount(){
       console.log("consult url",a);
       if(pageUrl =="/masterpage/iog-consult"){
         // $('.innerBlocktConsult').css('height','1230px');
-        $('.innerBlocktConsult').css('marginTop','-143px');
+        // $('.innerBlocktConsult').css('marginTop','-143px');
 
 // 
 
@@ -111,7 +111,7 @@ componentDidMount(){
         $('.innerBlocktConsult').css('marginTop','-143px');
       }
        if(pageUrl =="/masterpage/iog-study"){
-        $('.innerBlocktConsult').css('marginTop','-80px');
+        $('.innerBlocktConsult').css('marginTop','-36px');
         $('.downimgtext').css('left','20em');
       }
       if(pageUrl=="/masterpage/sample_repeateddelete"){

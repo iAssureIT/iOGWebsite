@@ -436,7 +436,7 @@ handlechange(event){
                        <a href="/masterpage/planning-&-scheduling" className="columnhead">Planning & Scheduling</a></h5>
                        <a href="/masterpage/production-plannning" className="dropdownintab expertise_a">Production Planning </a>
                        <a href="/masterpage/refinery-scheduling"className="dropdownintab expertise_a">Production Scheduling</a>
-                       <a href="/masterpage/retro-analysis"className="dropdownintab expertise_a">Back Casting / Retro-Analysis</a>
+                       <a href="/masterpage/retro-analysis"className="dropdownintab expertise_a"> Retro-Analysis</a>
                        <a href="/masterpage/lp-utilities"className="dropdownintab expertise_a">LP Utilities</a>
                        <a href="/masterpage/lp-configuration"className="dropdownintab expertise_a">LP Configuration studies</a>
                  </div> 
@@ -487,7 +487,7 @@ handlechange(event){
                </div>   
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                  <h5 className="columnhead"><a href="/masterpage/new-energy-management"className="columnhead">Energy Management</a></h5>
+                  <h5 className="columnhead"><a href="/masterpage/energy-management."className="columnhead">Energy Management</a></h5>
                     <a href="/masterpage/utility-network-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
                     <a href="/masterpage/equipment-monitoring"className="dropdownintab expertise_a">Equipment Monitoring</a>
                     <a href="/masterpage/energy-accounting"className="dropdownintab expertise_a">Energy Accounting</a>
@@ -495,8 +495,8 @@ handlechange(event){
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                     <h5 className="columnhead"><a href="/masterpage/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
                       <a href="/masterpage/asset-criticality-analysis"className="dropdownintab expertise_a">Asset Criticality Analysis </a>
-                      <a href="/masterpage/asset-lifecycle"className="dropdownintab expertise_a">Asset Lifecycle </a>
-                      <a href="/masterpage/asset-strategy-management"className="dropdownintab expertise_a">Asset Strategy </a>
+                      <a href="/masterpage/asset-lifecycle"className="dropdownintab expertise_a">Asset Lifecycle Management </a>
+                      <a href="/masterpage/asset-strategy-management"className="dropdownintab expertise_a">Asset Strategy Management </a>
                       <a href="/masterpage/inspection-&-calibration"className="dropdownintab">Inspection & Calibration</a>
                 </div>   
                </div>   

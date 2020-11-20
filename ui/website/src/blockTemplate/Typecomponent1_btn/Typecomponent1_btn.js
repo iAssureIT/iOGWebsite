@@ -29,7 +29,7 @@ componentDidMount(){
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                   console.log("response btn",this.props.block_id);
-                  if(this.state.blocks.blocksubTitle=="refinery-mainpage"){
+                  if(this.state.blocks.blocksubTitle=="refinery"){
 
                   }
                     if(response.data){
@@ -52,7 +52,7 @@ componentDidMount(){
 }
     render(){
       console.log("this.state.blocks.blocksubTitle---",this.state.blocks.blockSubTitle);
-      if(this.state.blocks.blockSubTitle=="refinery-mainpage")
+      if(this.state.blocks.blockSubTitle=="refinery")
         return(
 
             <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel  industries_imgDiv"
@@ -68,7 +68,7 @@ componentDidMount(){
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p className="TypeBTnP" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
                             <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
@@ -103,7 +103,7 @@ componentDidMount(){
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p className="TypeBTnP" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
                             <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>

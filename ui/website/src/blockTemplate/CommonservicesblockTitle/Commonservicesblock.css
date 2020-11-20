@@ -25,6 +25,13 @@
 	/*padding-top: 35px;*/
   overflow: hidden;
 }
+.line1common{
+  background-color: #f08f00;
+  width: 70px;
+  height: 4px;
+  margin-top: 40px;
+  margin-left: 33px;
+}
 
 .serflip-card {
     /*background-color: #fff;*/
