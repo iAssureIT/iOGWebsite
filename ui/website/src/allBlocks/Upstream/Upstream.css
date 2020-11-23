@@ -19,7 +19,7 @@
   align-items:center;
   justify-content:center;
   position: relative;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   
 }
 .upstream_tab{
@@ -230,15 +230,15 @@
 }
 
 .upstreamblock{
-  height: 710px;
-  padding: 60px 100px;
-  margin-bottom:60px;
+  height: 640px;
+  padding: 18px 100px;
+  margin-bottom:18px;
 
 
 }
 .upstreamblock_new{
   height: auto;
-    padding: 60px 100px;
+  padding: 60px 100px;
   margin-bottom:60px;
 }
 

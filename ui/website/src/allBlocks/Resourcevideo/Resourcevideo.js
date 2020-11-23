@@ -97,11 +97,11 @@ export default class Resourcevideo extends Component {
                     </div>
                     <h2 className="lightbluetext text-center para1-top">Videos</h2>
                       <br></br>
-                      <p className="line_para2  text-center">
+                      {/*<p className="line_para2  text-center">
                           iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
                           lege to join hands and work with you to explore every possibility of enhancing your company’s profitability.<br></br>
                            We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
-                        </p>          
+                        </p>      */}    
                 </div>
 
                  <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

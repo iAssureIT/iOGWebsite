@@ -81,15 +81,10 @@ export default class Blogs extends Component {
         return(
             <div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                   <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="hrnewclassblog col-lg-offset-5 col-md-offset-5 hidden-sm hidden-xs"></div>
-                       <span className="col-lg-12 col-md-12 col-sm-12 col-xs-12 newblogsTitle text-center">Latest Blogs</span>
-                    </div>                       
-                   {/* <hr/>
-                    <h1 className="lightbluetext latestblog">
-                        <b>Latest Blogs</b>
-                    </h1>*/}
-               
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+                    <hr/>
+                     <h2 style={{color:"#000"}}><b>Latest Blogs</b></h2>
+                    </div>
                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs">
                   <div>
                         <OwlCarousel 

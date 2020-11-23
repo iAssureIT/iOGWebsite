@@ -356,7 +356,7 @@ pin6click(event){
                  <div className="new_HoverDiv2">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
-                   <p className="newhovertxt_again">Unpredictable raw material prices,outdating process plants and machinery, data overload caused by leveraging new-age technologies</p>
+                   <p className="newhovertxt_again">Unpredictable raw material prices,outdating process plants & machinery, data overload caused by leveraging new-age technologies</p>
                    <a href="/masterpage/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
@@ -433,7 +433,7 @@ pin6click(event){
                       <div class="drop1">
                       </div>
                    </div>
-                 <img alt="" className="img-responsive boat_img_size "src="/images/newbanner_img3.png"/>
+                 <img alt="" className="img-responsive boat_img_size "src="/images/newboat.png"/>
                 </figure>
                 <div className="ripple_Div"style={{width:"200"},{overflow:"hidden"},{position:"absolute"}}>
                   <div class="drop-container">

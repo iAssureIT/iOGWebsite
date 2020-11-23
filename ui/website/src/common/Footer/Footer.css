@@ -15,20 +15,24 @@
  color: #fff ! important;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
- height: 235px;
- padding-top: 10px;
+ height: 280px;
+ padding-top: 35px ! important;
  padding-bottom: 10px;
+ padding-right: 0px;
 }
 .footer-two a{
 color: #fff;
 
+}
+.no-icon-list li{
+  padding-bottom: 10px;
 }
 .footer-end a{
 color: #fff;
 
 }
 .footer-end{
-    height: 65px!important;
+    height: 55px!important;
 
 }
 .footer-two ul{
@@ -148,6 +152,10 @@ ul.no-icon-list {
     /*font-family: 'Montserrat', sans-serif;*/
 }
 ul.no-icon-list {
+    margin: 0;
+    padding: 0;
+}
+ul.no-icon-list1 {
     margin: 0;
     padding: 0;
 }
@@ -402,7 +410,11 @@ ul.no-icon-list {
 }
 .footermailicon{
   font-size: 9px;
+  color: #fff;
   padding-right: 5px;
+}
+.iconPadding{
+  padding-right: 10px;
 }
 .pb351{
   margin-left: 55px;

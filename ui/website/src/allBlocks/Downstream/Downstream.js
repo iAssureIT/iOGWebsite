@@ -14,8 +14,8 @@ export default class Downstream extends Component {
   DownstreamData(){
         return [
             {
-                downstreamTitle  : "Supply Chain",
-                downstreamTitle1 : "Management",
+                downstreamTitle  : "Supply Chain Management",
+                downstreamTitle1 : "",
                 hryperlink       : "masterpage/supply-chain-management",
                 downstreamimg    : "/images/Illustration_2.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
@@ -23,36 +23,36 @@ export default class Downstream extends Component {
                 
             }, 
             {
-                downstreamTitle  : "Manufacturing Execution",
-                downstreamTitle1 : "Systems",
-                hryperlink       : "masterpage/manufacturing-exec-system",
-                downstreamimg    : "/images/Illustration_3.png",
-                downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }, 
+                downstreamTitle : "Asset Management",
+                downstreamTitle1: "",
+                hryperlink      : "masterpage/asset-management",
+                downstreamimg   : "/images/Illustration_12.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
             {
-                downstreamTitle  : "APC",
-                downstreamTitle1 : "Services",
+                downstreamTitle  : "APC Services",
+                downstreamTitle1 : "",
                 hryperlink       : "masterpage/apc-services",
                 downstreamimg    : "/images/Illustration_4.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle  : "Simulation &",
-                downstreamTitle1 : "Modelling",
+                downstreamTitle  : "Simulation & Modelling",
+                downstreamTitle1 : "",
                 hryperlink       : "masterpage/simulation-and-modeling",
                 downstreamimg    : "/images/Illustration_5.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 
             {
-                downstreamTitle  : "Energy ",
-                downstreamTitle1 : " Management",
+                downstreamTitle  : "Energy Management",
+                downstreamTitle1 : " ",
                 hryperlink       : "masterpage/energy-management",
                 downstreamimg    : "/images/Illustration_6.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
              {
-                downstreamTitle  : "ETRM & Pricing ",
-                downstreamTitle1 : "Tool",
+                downstreamTitle  : "ETRM & Pricing Tool ",
+                downstreamTitle1 : "",
                 hryperlink       : "masterpage/etrm",
                 downstreamimg    : "/images/Illustration_7.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
@@ -76,7 +76,7 @@ export default class Downstream extends Component {
         } else {
             $(".para1").removeClass("paraeff");
         }
-        if (scroll >= 600) {
+        if (scroll >= 350) {
             $(".para2").addClass("paraeff");
         } else {
             $(".para2").removeClass("paraeff");
@@ -86,12 +86,12 @@ export default class Downstream extends Component {
         } else {
             $(".para3").removeClass("paraeff");
         }
-        if (scroll >= 850) {
+        if (scroll >= 600) {
             $(".para4").addClass("paraeff");
         } else {
             $(".para4").removeClass("paraeff");
         }
-        if (scroll >= 850) {
+        if (scroll >= 600) {
             $(".para5").addClass("paraeff");
         } else {
             $(".para5").removeClass("paraeff");
@@ -109,37 +109,33 @@ export default class Downstream extends Component {
                             <div className="Main_Cards__Bubble bub1"></div>
                             <div className="Main_Cards__Bubble bub2"></div>
                         </div>
-                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
                     <hr/>
-                     <h2 style={{color:"#009de2"}}><b>Downstream Oil & Gas Industry</b></h2>
+                     <h2 style={{color:"#333"}}><b>Downstream Oil & Gas Industry</b></h2>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="row">
+                      <div className="">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <div className="row">
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div className="row"> 
-                                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1"> 
-                                            {
-                                              this.DownstreamData().map((data, index)=>{
-                                                 return (
-                                                <a key={index} href={"/"+data.hryperlink}>
-                                                <div  className={"col-lg-5 col-md-5 col-sm-12 col-xs-12 para"+index}>
-                                                    <div className="lightbluetext block block1height text-center">
-                                                        <img alt="" className="streamImg" src={data.downstreamimg} />
-                                                        <br/>
-                                                        <label className="downTitle">{data.downstreamTitle}</label>
-                                                        <br/>
-                                                        <label className="downTitle">{data.downstreamTitle1}</label>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                                 );
-                                              })
-                                            }
-                                       </div>
-                                   </div>
-                                </div>
+                              <div className="">
+                                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1"> 
+                                    {
+                                      this.DownstreamData().map((data, index)=>{
+                                         return (
+                                        <a key={index} href={"/"+data.hryperlink}>
+                                        <div  className={"col-lg-4 col-md-4 col-sm-12 col-xs-12 para"+index}>
+                                            <div className="lightbluetext block block1height text-center">
+                                                <img alt="" className="streamImg" src={data.downstreamimg} />
+                                                <br/>
+                                                <label className="downTitle">{data.downstreamTitle}</label>
+                                                <br/>
+                                                <label className="downTitle">{data.downstreamTitle1}</label>
+                                            </div>
+                                        </div>
+                                        </a>
+                                         );
+                                      })
+                                    }
+                               </div>
                             </div>
                        </div>
                     </div>

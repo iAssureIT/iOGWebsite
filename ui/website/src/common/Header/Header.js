@@ -395,7 +395,7 @@ handlechange(event){
 
            </div> 
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 setlogo">
-           <a className="headerlogo" href="/"><img alt="Logo" src="/images/logo.png"/></a>         
+           <a className="headerlogo" href="/"><img alt="Logo" src="https://iogiassureit.s3.amazonaws.com/iOG/iOG_Logo.svg"/></a>         
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-9">
            <div class="topnav" id="myTopnav">

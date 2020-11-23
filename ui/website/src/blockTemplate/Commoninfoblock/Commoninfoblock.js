@@ -62,13 +62,10 @@ console.log("inside==>",this.props.block_id);
               </div>
               <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center NOPadding">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-2 col-md-2 col-md-offset-5 hidden-sm hidden-xs col-lg-offset-5">
-                      <div className="line1 col-lg-4 col-lg-offset-1"></div>
-                    </div>                    
-                  </div> 
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+                    <hr/>
+                     <h2 style={{color:"#009de2"}}><b>{this.state.blocks.blockTitle}</b></h2>
+                  </div>
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <p className="line_para B2T_p text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>   
@@ -77,7 +74,6 @@ console.log("inside==>",this.props.block_id);
                   </div>
                 </div>
               </div>
-            </div>   
         );
     }
 }

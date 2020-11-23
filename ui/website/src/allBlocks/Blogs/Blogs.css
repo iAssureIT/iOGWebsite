@@ -31,7 +31,7 @@
   text-align: justify;
   padding: 10px 20px;
   font-size: 13px;
-  margin-top: 118px;
+  margin-top: 85px;
 
 }
 .blogtext h4{
@@ -40,12 +40,13 @@
   font-size: 16px;
   font-weight: 600;
   height: 50px;
+  margin-top: 30px;
 
 }
 .blogtext {
 	height: 550px;
 	border-radius: 8px;
-	margin-top: 50px
+	margin-top: 5px
 }
 
 .latestblog{
@@ -60,7 +61,7 @@
 }
 
 .blogbtn1{
-  	margin-top: 125px;
+  	margin-top: 85px;
     border-radius: 20px;
     color: #fff;
 }

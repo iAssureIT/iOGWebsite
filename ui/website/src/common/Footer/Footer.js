@@ -60,7 +60,7 @@ export default class Footer extends Component {
                 <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 ">
                     <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
-                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/masterpage/about-us">About Us</a></li>
@@ -94,10 +94,10 @@ export default class Footer extends Component {
                             <p className="fs15"style={{color:"#ffffff"}}>
 
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.,
-                                 7090,7th Floor,  Marvel Fuego,Magarpatta Road, Opp Seasons Mall,Hadapsar,
+                                 7090,7th Floor,  Marvel Fuego,Magarpatta  Road, Opp Seasons Mall,Hadapsar,
                                   Pune,India- 411028.<br/>
-                                   <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"}}></i>Mail: info@iogsolutions.com<br/>
-                                   <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
+                                   <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"},{paddingRight:"10px"}}></i>Mail: info@iogsolutions.com<br/>
+                                   <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
                                 
                              </p>
                          </div>
@@ -105,13 +105,13 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col newAddress1"style={{color:"#ffffff"}}>Registered Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
-                                  L402 Marvel Ritz E, near Dsk Toyota, behind Amanora Town Center,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
+                                  L402 Marvel Ritz E, near Dsk Toyota, behind Amanora Town Center,Hadapsar, Pune, Maharashtra 411028.<br/>
                              </p>
                          </div>
                         </div> 
                         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12" style={{float:"right"}}>
                             <h6 className="font-montserrat newAddress col"style={{color:"#ffffff"}}>Connect us on</h6>
-                            <ul className="no-icon-list socialicon">
+                            <ul className="no-icon-list1 socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -200,7 +200,7 @@ export default class Footer extends Component {
                 <div className=" col-sm-12 col-xs-12 pb35">
                     <div className="">
                         <div className=" col-sm-2 col-xs-4">
-                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Menu</h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu></b></h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>

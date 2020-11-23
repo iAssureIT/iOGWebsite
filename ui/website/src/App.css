@@ -1,6 +1,11 @@
 body{
     overflow-x: hidden;
     margin-top: 0px ! important;
+    font-family: 'Raleway', sans-serif ! important;
+}
+div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
+    font-family: 'Raleway', sans-serif ! important;
+    /*color:#000;*/
 }
 .sharefacebook{
     padding-top: 150px;
@@ -14,6 +19,9 @@ body{
 
 .fs12{
     font-size: 12px;
+}
+.downstreamtxt p{
+    color: #fff ! important;
 }
 .NOpadding{
     padding-left: 0px;
@@ -150,7 +158,7 @@ body{
     height: 407px;
 }
 .price {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 10px;
     border-radius: 4px;
 }
@@ -411,7 +419,7 @@ body{
     padding: 0px 0px 30px 0px;
 }
 .price {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 10px;
     margin-left: 2px;
     transition: all .3s ease-in-out;
@@ -460,7 +468,7 @@ body{
     line-height: 25px;
 }
 .price-footer{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     /*position: absolute;*/
     /*cursor: pointer !important;*/
 
@@ -589,7 +597,7 @@ body{
 
 .errorMsg{
     color: #f00;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size:12px;
 }
 .nameSpaceUpper{
@@ -604,6 +612,11 @@ body{
 }
 .fs15{
     font-size: 14px;
+    letter-spacing: 1px ! important; 
+}
+.fs15 p{
+    font-size: 14px;
+    letter-spacing: 1px ! important; 
 }
 .mar10{
     margin: 10px;

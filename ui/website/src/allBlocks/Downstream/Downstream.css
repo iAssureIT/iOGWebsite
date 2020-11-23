@@ -14,7 +14,8 @@
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 50px;
     padding:13px 12px 10px 12px;
-    height: 200px;
+    height: 210px;
+    padding-top: 35px;
 }
 .block img{
   height: 55%;
@@ -57,7 +58,7 @@
   width: 95px;
   border: 1px solid #f19000;
   background-color: #f19000;
-  margin-bottom: 39px;
+  /*margin-bottom: 39px;*/
 }
 
 /*.block1height{
@@ -184,8 +185,8 @@
     left: -75px;
 }
 .Main_Cards__Bubble:first-child {
-    width: 493px;
-    height: 493px;
+    width: 893px;
+    height: 893px;
     content: "";
 }
 .Main_Cards__Bubble {
@@ -202,8 +203,8 @@
 .Main_Cards__Bubble:nth-child(2) {
     right: 0px;
     bottom: 0px;
-    width: 600px;
-    height: 600px;
+    width: 1000px;
+    height: 1000px;
 }
 /*.Main_Cards__Bubble {
     pointer-events: none;
@@ -351,8 +352,8 @@
   top :0px;
   transform: rotate(0deg);
   transition-duration: 0.5s;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+ /* margin-inline-start: 40px;
+  margin-inline-end: 40px;*/
 }
 @media screen and (max-width: 768px){
   .paraeff{
@@ -360,7 +361,7 @@
 
   }
   .downTitle{
-    font-size: 15px ! important;
+    /*font-size: 15px ! important;*/
   }
 }
 
@@ -378,7 +379,23 @@
 }
 .downTitle{
   font-size: 21px;
+  margin-top: 20px;
+   font-size: 21px;
+}
+.downTitle1{
+  font-size: 21px;
+  
+}
+.downTitleNew{
+  margin-top: 0px;
+  font-size: 20px;
 }
 .streamImg{
   margin-bottom: 15px;
+}
+.HOmeLine1{
+  text-align: center;
+  height: 4px;
+  width: 90px;
+  background: #f19000;
 }

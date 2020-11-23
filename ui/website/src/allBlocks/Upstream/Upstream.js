@@ -131,17 +131,10 @@ export default class Upstream extends Component {
           <div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs upstreamblock lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div className="hrnewclass col-lg-offset-6 col-md-offset-6"></div>
-                      <span className="col-lg-12 col-md-12 col-sm-12 col-xs-12 newupstreamTitle text-center">Upstream Oil & Gas Industry</span>
-                       {/* <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-sm-offset-1 col-md-10 col-md-offset-1 text-center ">                        
-                            
-                            <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
-                                <b></b>
-                            </h1>
-                        </div>*/}
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+                    <hr/>
+                     <h2 style={{color:"#fff"}}><b>Upstream Oil & Gas Industry</b></h2>
                     </div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             {
                                 this.upstreamData().map((data, index)=>{
@@ -164,7 +157,6 @@ export default class Upstream extends Component {
                                  })
                             }
                        </div>
-                    </div>
                 </div>                
             </div> 
              {/*responsive*/}

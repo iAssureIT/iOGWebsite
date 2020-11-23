@@ -126,7 +126,7 @@
   width: 95px;
   border: 1px solid #f19000;
   background-color: #f19000;
-  margin-bottom: 39px;
+  /*margin-bottom: 39px;*/
 }
 
 /*.block1height{
@@ -271,8 +271,8 @@
 .Main_Cards__Bubble:nth-child(2) {
     right: 0px;
     bottom: 0px;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
 }
 /*.Main_Cards__Bubble {
     pointer-events: none;
