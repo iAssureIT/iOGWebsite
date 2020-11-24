@@ -1,7 +1,7 @@
 .upstreamtext{
-    padding: 10px 40px;
+    padding:0px 40px;
     /*letter-spacing: 0.5px;*/
-    height: 153px;
+    height: 85px;
   }
 
 .price-bodyhover:hover .upbuttonhover{
@@ -10,7 +10,11 @@
   transition-duration:0.7s;
   cursor: pointer;
 }
-
+.uptitle{
+  border-bottom: 1px solid #c0b1b1b1;
+  padding-bottom:20px; 
+  color:#333;
+}
 
 .cards
 {
@@ -30,7 +34,7 @@
 {
   /*display:flex;*/
   width:380px;
-  height:407px;
+  height:314px;
   border-radius:0.5rem;
   transform-origin:center center;
   transform:scale(1) translate(0px,0px) perspective( 750px ) rotateY(0deg);
@@ -230,9 +234,9 @@
 }
 
 .upstreamblock{
-  height: 640px;
-  padding: 18px 100px;
-  margin-bottom:18px;
+  height: 550px;
+  padding: 0px 100px;
+  /*margin-bottom:18px;*/
 
 
 }

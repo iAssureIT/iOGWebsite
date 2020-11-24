@@ -46,19 +46,19 @@ export default class Blogs extends Component {
             {
                 upstreamTitle : "EHS Applications in Oil & Gas",
                 downstreamimg : "/images/blog1.jpg",
-                upstreamLi    : "EHS software solutions facilitates streamlining all aspects environmental, health and safety programs in organization. EHS software plays a key role for providing detailed and intuitive reports on incident management, audits and inspections, risk analysis, environmental management, sustainability management, etc. These solutions are designed to increase transparency - especially in audits - and improve employee engagement."
+                upstreamLi    : "EHS software solutions facilitates streamlining all aspects environmental, health and safety programs in organization. EHS software plays a key role for providing detailed and intuitive reports on incident management, environmental management, sustainability management etc."
 
             }, 
             {
                 upstreamTitle : "Leveraging Machine Learning to add value to the Oil and Gas business.",
                 downstreamimg : "/images/blog2.jpg",
-                upstreamLi    : "Machine learning provides information systems the ability to automatically learn and improve from the experience, without being explicitly programmed. It is a subset of Artificial Intelligence that focuses on the development of computer programs that can access data, use patterns and inferences and use it to teach themselves."
+                upstreamLi    : "Machine learning provides information systems the ability to automatically learn and improve from the experience, without being explicitly programmed. It is a subset of Artificial Intelligence that focuses on the development of computer programs that can access data and use it."
 
             }, 
             {
                 upstreamTitle : "Energy Management in Refineries and Petrochemicals Complex",
                 downstreamimg : "/images/blog3.jpg",
-                upstreamLi    : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality. Improving energy efficiency reduces operating cost and improves the refinery margin. A refinery-wide energy management system implementation is one of the most important and cost-saving initiatives an organisation can undertake."
+                upstreamLi    : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality. Improving energy efficiency improves the refinery margin."
 
             },
             {
@@ -70,7 +70,7 @@ export default class Blogs extends Component {
             {
                 upstreamTitle : "Asset Reliability and Integrity Management Today",
                 downstreamimg : "/images/blog5.jpg",
-                upstreamLi    : "Process industries are asset-intensive and are witnessing many improvement opportunities as owner-operators strive to enhance asset availability, performance, efficiency and reduce operational costs. To effectively leverage critical asset data for their strategic decisions, these end-users need to overcome the challenge of data consolidation and interpretation."
+                upstreamLi    : "Process industries are asset-intensive and are witnessing many improvement opportunities as owner-operators strive to enhance asset availability, performance and reduce operational costs."
 
             } 
            
@@ -83,10 +83,10 @@ export default class Blogs extends Component {
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
                     <hr/>
-                     <h2 style={{color:"#000"}}><b>Latest Blogs</b></h2>
+                     <h2 style={{color:"#333"}}><b>Latest Blogs</b></h2>
                     </div>
-                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs">
-                  <div>
+                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs">
+                      <div>
                         <OwlCarousel 
                         className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
                         loop
@@ -106,14 +106,14 @@ export default class Blogs extends Component {
                         {
                             this.upstreamData().map((data, index)=>{
                             return (
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}style={{height:"750px"}}>
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}style={{height:"600px"}}>
                                   <div className="">
                                     <div className={" index"+index}>
                                         <div className=" blogtext pricehover-float ">
                                           <div>
                                              <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{height:"600px"}}>
                                                 <div className="">
-                                                  <div className="row blogsimg">
+                                                  <div className="img-responsive blogsimg">
                                                     <img alt="" src={data.downstreamimg}/>
                                                   </div>
                                                   <div className=""><h4>{data.upstreamTitle}</h4></div>
@@ -144,7 +144,7 @@ export default class Blogs extends Component {
                 </div>                
               </div>   
               {/*res*/}
-              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 hidden-lg hidden-md">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 hidden-lg hidden-md">
                   <div>
                         <OwlCarousel 
                         className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
@@ -181,8 +181,8 @@ export default class Blogs extends Component {
                                                     </div>
                                                     <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">july 5,2019</div>
-                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 blogdate">july 5,2019</div>
+                                                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                             <a className="" href="/blog">
                                                                 <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>

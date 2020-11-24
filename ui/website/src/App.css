@@ -452,7 +452,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 }
 
 .price-three .price-body {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .price-body ul {
@@ -467,7 +467,8 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     
     line-height: 25px;
 }
-.price-footer{
+.price-footer_upstream{
+    background-color: #eee;
     /*margin-top: 10px;*/
     /*position: absolute;*/
     /*cursor: pointer !important;*/
@@ -477,6 +478,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     /*background-color: #367588;*/
     border-radius: 4px;
     font-size: 13px;
+    margin-top: 10px;
     font-weight: 700;
     padding: 8px 20px;
     /*color: #fff !important;*/

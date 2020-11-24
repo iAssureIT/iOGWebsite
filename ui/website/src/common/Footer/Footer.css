@@ -15,7 +15,7 @@
  color: #fff ! important;
  /*background-color: #367588;*/
  /*border-top: 1px solid #eee;*/
- height: 280px;
+ height: 335px;
  padding-top: 35px ! important;
  padding-bottom: 10px;
  padding-right: 0px;
@@ -271,6 +271,7 @@ ul.no-icon-list1 {
     bottom: 14px;
   animation:  wheel 0.4s linear  infinite;
 }
+
 .foot6wheel3{
   position: relative;
    left: 48px;
@@ -406,7 +407,12 @@ ul.no-icon-list1 {
   /*font-size: 11px ! important;*/
 }
 .footerdivs{
-  width: 160px;
+  width: 180px;
+  padding-left: 40px;
+  letter-spacing: 1px;
+}
+.Hidden_div{
+  height: 8px;
 }
 .footermailicon{
   font-size: 9px;
@@ -421,6 +427,7 @@ ul.no-icon-list1 {
 }
 .footerdiv1{
   width:140px;
+  letter-spacing: 1px;
 }
 .footerText{
   color:#ffffff ! important;
@@ -433,14 +440,16 @@ ul.no-icon-list1 {
 }
 .newAddress{
   /*margin-bottom: 0px;*/
+  letter-spacing: 1px;
   padding-left: 0px;
 }
 .newAddress1{
   margin-top: 0px;
   padding-left: 0px;
+  letter-spacing: 1px;
 }
 .newaddressdiv{
-  padding-left: 20px ! important;
+  padding-left: 33px ! important;
 }
 
 @media screen and (max-width: 768px) {
@@ -448,4 +457,6 @@ ul.no-icon-list1 {
     margin-left: 20px;
   }
 }
-
+.connectUsDiv{
+  padding-left: 70px;
+}

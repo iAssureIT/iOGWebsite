@@ -93,7 +93,7 @@ export default class Upstream extends Component {
                 upstreamTitle : "Geology & Geophysics",
                 hryperlink    : "masterpage/geology-geophysics",
                 upstreamimg   : "/images/upstream1.png",
-                upstreamtext  : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface."
+                upstreamtext  : "iOG understands the various paradigms of the sub-surface ecosystem. The domain knowledge & expertise enables it to understand the subsurface."
                     
                 
             }, 
@@ -131,7 +131,7 @@ export default class Upstream extends Component {
           <div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs upstreamblock lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheader1 text-center">
                     <hr/>
                      <h2 style={{color:"#fff"}}><b>Upstream Oil & Gas Industry</b></h2>
                     </div>
@@ -139,16 +139,16 @@ export default class Upstream extends Component {
                             {
                                 this.upstreamData().map((data, index)=>{
                                  return (
-                                         <div key={index}className="col-lg-4 col-md-4 card" data-card={index}>
+                                         <div key={index}className="col-lg-4 col-md-4 card NOpadding" data-card={index}>
                                             <div className="price price-three col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <h3><div className="uptitle lightbluetext"><b>{data.upstreamTitle}</b></div></h3>
+                                                <h3 className="col-lg-12 col-md-12 col-sm-12 col-xs-12 uptitle "><b>{data.upstreamTitle}</b></h3>
                                                 <div className="price-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <img src={data.upstreamimg  } />
                                                 </div>
                                                 <div className="price-body  col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <p className="text-justify upstreamtext">{data.upstreamtext}</p>
                                                 </div>
-                                                <div className="price-footer price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                                <div className="price-footer price-footer_upstream  price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                                     <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
                                                 </div>
                                             </div>

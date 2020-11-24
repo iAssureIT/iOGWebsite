@@ -24,23 +24,24 @@
   font-size: 11px;
   height: 170px;
   color:#000;
-  margin-top: 25px;
+  margin-top: 10px;
 
 }
 .blogdate{
   text-align: justify;
   padding: 10px 20px;
   font-size: 13px;
-  margin-top: 85px;
+  margin-top: -16px;
 
 }
 .blogtext h4{
-  text-align: justify;
+  /*text-align: justify;*/
   padding: 0px 20px;
   font-size: 16px;
+  line-height: 1.3;
   font-weight: 600;
   height: 50px;
-  margin-top: 30px;
+  margin-top: 25px;
 
 }
 .blogtext {
@@ -54,15 +55,16 @@
 }
 
 .blogblock{
-  height: 650px ! important;
+  height: 500px ! important;
 	box-shadow: 0 10px 29px rgba(92,141,255,.22);
 	border-radius: 8px;
+  padding:0px;
 
 }
 
 .blogbtn1{
-  	margin-top: 85px;
-    border-radius: 20px;
+  	margin-top: -15px;
+    /*border-radius: 20px;*/
     color: #fff;
 }
 .blogbtn1:focus{

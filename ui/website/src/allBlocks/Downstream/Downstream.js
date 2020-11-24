@@ -56,47 +56,88 @@ export default class Downstream extends Component {
                 hryperlink       : "masterpage/etrm",
                 downstreamimg    : "/images/Illustration_7.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }
+            },
+            {
+                downstreamTitle : "Digital Services",
+                downstreamTitle1: "",
+                hryperlink      : "masterpage/digital-services",
+                downstreamimg   : "/images/Illustration_13.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+            {
+                downstreamTitle  : "Manufacturing Execution Systems",
+                downstreamTitle1 : "",
+                hryperlink       : "masterpage/manufacturing-exec-system",
+                downstreamimg    : "/images/Illustration_3.png",
+                downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },  
+           
+            {
+                downstreamTitle : "Health Safety & Environment ",
+                downstreamTitle1: "",
+                hryperlink      : "masterpage/health-safety-environment",
+                downstreamimg   : "/images/Illustration_11.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            } 
+            
             
         ]
     }
 
     componentWillMount() {
         $(window).scroll(function() 
-    {    
-        var scroll = $(window).scrollTop();
+            
+        {    
+            var scroll = $(window).scrollTop();
 
-        if (scroll >= 350) {
-            $(".para0").addClass("paraeff");
-        } else {
-            $(".para0").removeClass("paraeff");
-        }
-        if (scroll >= 350) {
-            $(".para1").addClass("paraeff");
-        } else {
-            $(".para1").removeClass("paraeff");
-        }
-        if (scroll >= 350) {
-            $(".para2").addClass("paraeff");
-        } else {
-            $(".para2").removeClass("paraeff");
-        }
-        if (scroll >= 600) {
-            $(".para3").addClass("paraeff");
-        } else {
-            $(".para3").removeClass("paraeff");
-        }
-        if (scroll >= 600) {
-            $(".para4").addClass("paraeff");
-        } else {
-            $(".para4").removeClass("paraeff");
-        }
-        if (scroll >= 600) {
-            $(".para5").addClass("paraeff");
-        } else {
-            $(".para5").removeClass("paraeff");
-        }
-    });
+            if (scroll >= 350) {
+                $(".para0").addClass("paraeff");
+            } else {
+                $(".para0").removeClass("paraeff");
+            }
+            if (scroll >= 350) {
+                $(".para1").addClass("paraeff");
+            } else {
+                $(".para1").removeClass("paraeff");
+            }
+            if (scroll >= 350) {
+                $(".para2").addClass("paraeff");
+            } else {
+                $(".para2").removeClass("paraeff");
+            }
+            if (scroll >= 650) {
+                $(".para3").addClass("paraeff");
+            } else {
+                $(".para3").removeClass("paraeff");
+            }
+            if (scroll >= 650) {
+                $(".para4").addClass("paraeff");
+            } else {
+                $(".para4").removeClass("paraeff");
+            }
+            if (scroll >= 650) {
+                // console.log("second scroll---",scroll);
+                $(".para5").addClass("paraeff");
+            } else {
+                $(".para5").removeClass("paraeff");
+            }
+             if (scroll >= 1000) {
+              console.log("scroll===",scroll);
+                $(".para6").addClass("paraeff");
+            } else {
+                $(".para6").removeClass("paraeff");
+            }
+            if (scroll >= 1000) {
+                $(".para7").addClass("paraeff");
+            } else {
+                $(".para7").removeClass("paraeff");
+            }
+            if (scroll >= 1000) {
+                $(".para8").addClass("paraeff");
+            } else {
+                $(".para8").removeClass("paraeff");
+            }
+        });
     }
 
   
@@ -106,9 +147,9 @@ export default class Downstream extends Component {
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
             <div className="row">
                 <div className="Bubble" >
-                            <div className="Main_Cards__Bubble bub1"></div>
-                            <div className="Main_Cards__Bubble bub2"></div>
-                        </div>
+                    <div className="Main_Cards__Bubble bub1"></div>
+                     <div className="Main_Cards__Bubble bub2"></div>
+                  </div>
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
                     <hr/>
                      <h2 style={{color:"#333"}}><b>Downstream Oil & Gas Industry</b></h2>
@@ -117,9 +158,10 @@ export default class Downstream extends Component {
                       <div className="">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <div className="">
-                                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1"> 
+                                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 col-lg-offset-1 col-md-offset-1"> 
                                     {
                                       this.DownstreamData().map((data, index)=>{
+                                        // console.log("data----------",data);
                                          return (
                                         <a key={index} href={"/"+data.hryperlink}>
                                         <div  className={"col-lg-4 col-md-4 col-sm-12 col-xs-12 para"+index}>

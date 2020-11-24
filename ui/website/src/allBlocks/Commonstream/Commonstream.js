@@ -11,56 +11,39 @@ import './Commonstream.css';
 
 export default class Commonstream extends Component {
     
-  DownstreamData(){
+  DownstreamData1(){
         return [
-             {
-                downstreamTitle : "Digital Services",
-                downstreamTitle1: "",
-                hryperlink      : "masterpage/digital-services",
-                downstreamimg   : "/images/Illustration_13.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            },
-            {
-                downstreamTitle  : "Manufacturing Execution Systems",
-                downstreamTitle1 : "",
-                hryperlink       : "masterpage/manufacturing-exec-system",
-                downstreamimg    : "/images/Illustration_3.png",
-                downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            },  
-           
-            {
-                downstreamTitle : "Health Safety & Environment ",
-                downstreamTitle1: "",
-                hryperlink      : "masterpage/health-safety-environment",
-                downstreamimg   : "/images/Illustration_11.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            } 
+             
             
         ]
     }
 
   componentWillMount() {
         $(window).scroll(function() 
-    {    
-        var scroll = $(window).scrollTop();
 
-        if (scroll >= 1000) {
-            $(".para10").addClass("paraeffect");
-        } else {
-            $(".para10").removeClass("paraeffect");
-        }
-        if (scroll >= 1000) {
-            $(".para11").addClass("paraeffect");
-        } else {
-            $(".para11").removeClass("paraeffect");
-        }
-        if (scroll >= 1000) {
-            $(".para12").addClass("paraeffect12");
-        } else {
-            $(".para12").removeClass("paraeffect12");
-        }
-        
-      });
+        {    
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1000) {
+              // console.log("scroll===",scroll);
+                $(".para10").addClass("paraeffect");
+            } else {
+                $(".para10").removeClass("paraeffect");
+            }
+
+            if (scroll >= 1000) {
+                $(".para11").addClass("paraeffect");
+            } else {
+                $(".para11").removeClass("paraeffect");
+            }
+
+            if (scroll >= 1000) {
+                $(".para12").addClass("paraeffect12");
+            } else {
+                $(".para12").removeClass("paraeffect12");
+            }
+            
+          });
 
     }
 
@@ -71,17 +54,18 @@ export default class Commonstream extends Component {
  render(){
        return(
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
-            <div className="">
+            <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
-                       <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1">
-                          <div className="">
-                                        
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="">
+                          <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-offset-1">
+                          <div className="">         
                                 {
-                                  this.DownstreamData().map((data, index)=>{
+                                  this.DownstreamData1().map((data, index)=>{
                                      return (
                                   <a key={index} href={"/"+data.hryperlink} >
-                                    <div className={"col-lg-4 col-md-4 col-sm-4 para1"+index} >
+                                    <div className={"col-lg-3 col-md-3 col-sm-12 col-xs-12 para1"+index} >
                                       <div className="">
                                         <div className="col-lg-12 col-md-12 col-sm-12 lightbluetext block block1height text-center">
                                             <img alt="" className="streamImg" src={data.downstreamimg} />
@@ -104,10 +88,14 @@ export default class Commonstream extends Component {
                                 }
                                </div>
                             </div>
-                       </div>
+                         </div>
+                       <div>
+                     </div>   
                     </div>
                   </div>
                 </div>
+              </div>  
+            </div>  
         );
     } 
 }

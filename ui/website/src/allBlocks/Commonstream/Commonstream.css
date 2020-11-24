@@ -1,7 +1,7 @@
 .para10{
   position: relative;
   top: 800px;
-  /*transform: rotate(20deg);*/
+  transform: rotate(20deg);
   transition-duration: 2s;
 
 }
@@ -9,14 +9,14 @@
 .para11{
   position: relative;
   top: 800px;
-  /*transform: rotate(-20deg);*/
+  transform: rotate(-20deg);
   transition-duration: 2s;
 
 }
 .para12{
   position: relative;
   top: 800px;
-  /*transform: rotate(-20deg);*/
+  transform: rotate(-20deg);
   transition-duration: 2s;
 
 }
@@ -24,7 +24,7 @@
   position: relative;
   top :0px;
   transform: rotate(0deg);
-  transition-duration: 0.9s;
+  transition-duration: 0.5s;
   /*margin-inline-start: 45px;*/
   /*margin-inline-end: 28px;*/
 }
@@ -32,7 +32,7 @@
   position: relative;
   top :0px;
   transform: rotate(0deg);
-  transition-duration: 0.9s;
+  transition-duration: 0.5s;
 }
 /*
 .para12{
@@ -44,7 +44,7 @@
 	transition-duration: 1.5s;
 }
 .downTitle{
-  font-size: 21px;
+  font-size: 19px;
 }
 .streamImg{
   margin-bottom: 5px;

@@ -115,7 +115,7 @@ componentDidMount(){
                     <div className="">
                       
                       <div className=""> 
-                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"> 
+                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1"> 
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
                           <hr/>
                            <h2 style={{color:"#009de2"}}><b>{this.state.blocks.blockTitle}</b></h2>
@@ -125,7 +125,7 @@ componentDidMount(){
                                 console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
+                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-4 col-md-offset-2 col-xs-offset-1 col-sm-4 col-xs-4";
                                    
                                   }else{
                                     var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center";
@@ -134,7 +134,7 @@ componentDidMount(){
                                 }else if(productlength == 1){
                                   // console.log('productlength')
                                   if(plength === index+1){
-                                    var classes = "webpageshopcont col-lg-4 col-md-6 col-xs-12 col-lg-offset-4 col-md-offset-4   text-center";                                   
+                                    var classes = "webpageshopcont col-lg-4 col-md-4 col-xs-4 col-lg-offset-4 col-md-offset-4   text-center";                                   
                                   }else{
                                     var classes="webpageshopcont col-lg-4 col-md-6  col-sm-12 col-xs-12  text-center";                                 
                                 }

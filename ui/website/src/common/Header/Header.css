@@ -206,6 +206,12 @@
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
+  .blogtext{
+    height: 810px ! important;
+  }
+  .no-icon-list li{
+    padding-bottom: 0px ! important;
+  }
   .topnav a.icon {
     top: 5px;
     right: 0px;

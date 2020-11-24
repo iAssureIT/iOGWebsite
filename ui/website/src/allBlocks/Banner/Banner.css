@@ -1,7 +1,7 @@
 .banner-wrapper{
 	margin-top: 0px;
-  margin-bottom: 18px;
-    overflow: hidden;
+  /*margin-bottom: 18px;*/
+  overflow: hidden;
 }
 .full-height {
   height: 100%;

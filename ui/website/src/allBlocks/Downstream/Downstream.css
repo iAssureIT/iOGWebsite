@@ -12,10 +12,11 @@
 	  background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding:13px 12px 10px 12px;
-    height: 210px;
-    padding-top: 35px;
+    height: 225px;
+    padding-top: 30px;
+    /*width: 287px;*/
 }
 .block img{
   height: 55%;
@@ -38,9 +39,11 @@
   font-size: 14px;
   color:#000;
 }
-
+.contentheader1{
+  margin-bottom:20px!important;
+}
 .contentheader{
-	margin-bottom:10px!important;
+	margin-bottom:35px!important;
 }
 .contentheader h1{
 	font-size: 41px;
@@ -54,6 +57,25 @@
   letter-spacing: -1px;
 }
 .contentheader hr{
+  height: 2px;
+  width: 95px;
+  border: 1px solid #f19000;
+  background-color: #f19000;
+  /*margin-bottom: 39px;*/
+}
+
+.contentheader1 h1{
+  font-size: 41px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+}
+.contentheader1 h2{
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: -1px;
+}
+.contentheader1 hr{
   height: 2px;
   width: 95px;
   border: 1px solid #f19000;
@@ -346,10 +368,38 @@
   transition-duration: 1s;
 
 }
+.para6{
+  position: relative;
+  top: 730px;
+  transform: rotate(0deg);
+  transition-duration: 1s;
+
+}
+.para7{
+  position: relative;
+  top: 730px;
+  transform: rotate(0deg);
+  transition-duration: 1s;
+
+}
+.para8{
+  position: relative;
+  top: 730px;
+  transform: rotate(0deg);
+  transition-duration: 1s;
+
+}
+
+
+
+
+
+
 
 .paraeff{
   position: relative;
   top :0px;
+  /*margin-left: 8px;*/
   transform: rotate(0deg);
   transition-duration: 0.5s;
  /* margin-inline-start: 40px;
@@ -357,11 +407,17 @@
 }
 @media screen and (max-width: 768px){
   .paraeff{
-    margin-inline-start:12px ! important;
+    /*margin-inline-start:12px ! important;*/
 
   }
+  .downTitleNew{
+    font-size: 15px ! important;
+  }
   .downTitle{
-    /*font-size: 15px ! important;*/
+    font-size: 16px ! important;
+  }
+  .downTitle1{
+    font-size: 15px ! important;
   }
 }
 
@@ -378,9 +434,9 @@
   /*border: 1px solid*/
 }
 .downTitle{
-  font-size: 21px;
+  font-size: 19px;
   margin-top: 20px;
-   font-size: 21px;
+  font-size: 21px;
 }
 .downTitle1{
   font-size: 21px;

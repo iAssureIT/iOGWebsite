@@ -57,7 +57,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue col-lg-12 footer-two">
-                <div className=" col-lg-12 col-md-11 col-sm-11 col-xs-11 ">
+                <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                     <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-1 col-md-1 col-sm-2 col-xs-6 footerdiv1">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
@@ -80,7 +80,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-lg-1 col-md-1 col-sm-3 col-xs-6 footerdivs newAddress">
+                        <div className="col-lg-2 col-md-2 col-sm-3 col-xs-6 footerdivs">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/masterpage/careers">Careers</a></li>
@@ -88,14 +88,15 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>                        
-                        <div className="col-lg-5 col-md-3 col-sm-2 col-xs-6 NOpadding newaddressdiv">
+                        <div className="col-lg-3 col-md-3 col-sm-2 col-xs-6 NOpadding newaddressdiv">
                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
                             <h6 className="font-montserrat col newAddress"style={{color:"#ffffff"}}>Office Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
 
-                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.,
-                                 7090,7th Floor,  Marvel Fuego,Magarpatta  Road, Opp Seasons Mall,Hadapsar,
+                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>
+                                 7090,7th Floor,  Marvel Fuego,<br/>Magarpatta  Road, Opp Seasons Mall,<br/>Hadapsar,
                                   Pune,India- 411028.<br/>
+                                  <div className="Hidden_div"></div>
                                    <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"},{paddingRight:"10px"}}></i>Mail: info@iogsolutions.com<br/>
                                    <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
                                 
@@ -105,11 +106,11 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col newAddress1"style={{color:"#ffffff"}}>Registered Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
-                                  L402 Marvel Ritz E, near Dsk Toyota, behind Amanora Town Center,Hadapsar, Pune, Maharashtra 411028.<br/>
+                                  L402 Marvel Ritz E, near Dsk Toyota,<br/> behind Amanora Town Center,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
                              </p>
                          </div>
                         </div> 
-                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12" style={{float:"right"}}>
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 connectUsDiv" style={{float:"right"}}>
                             <h6 className="font-montserrat newAddress col"style={{color:"#ffffff"}}>Connect us on</h6>
                             <ul className="no-icon-list1 socialicon">
                                 <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -127,17 +128,15 @@ export default class Footer extends Component {
                         </div>      
                     </div>
                 </div>            
-        </div>
-                    <div className="darkbluebg col-lg-12 col-md-12 footer-end">
-                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1">
-                    <div className="row">
-
-                        <div className="textcolorwhite col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-left pt20">
+             </div>
+              <div className="darkbluebg col-lg-12 col-md-12 footer-end">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div className="">
+                        <div className="textcolorwhite col-lg-5 col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-left pt20">
                             <p style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                         </div>
-
-                        <div className="textcolorwhite col-md-5 col-sm-6 col-xs-12 pull-right pt20">
-                            <p className="text-right">
+                        <div className="textcolorwhite col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-right pt20">
+                            <p className="text-right"style={{paddingRight:"20px"}}>
                                 <a href="/privacypolicy" className="mr20">Privacy Policy</a>
                                 <a href="/termsofuse" className="mr20">Terms of Use</a>
                                 <a href="/sitemap" className="">Site Map</a>
@@ -154,6 +153,7 @@ export default class Footer extends Component {
 {/*  */}
 
       <div className="iogfooter col-xs-12 col-sm-12 NOpadding hidden-lg hidden-md">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div className="animationoveflow col-sm-12 col-xs-12">
              <div className="viman">
                 <img className="img-responsive" alt="" src="/images/viman.png" />
@@ -197,10 +197,10 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue responsivefooter col-lg-12 footer-two">
-                <div className=" col-sm-12 col-xs-12 pb35">
+                <div className=" col-sm-12 col-xs-12 ">
                     <div className="">
                         <div className=" col-sm-2 col-xs-4">
-                            <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu></b></h6>
+                            <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
@@ -227,7 +227,8 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div> 
-                        <div className="col-sm-6 col-xs-12">                       
+                         <div className="col-sm-6 col-xs-6"style={{padding:"0px"}}> 
+                           <div className="col-sm-6 col-xs-6"style={{padding:"0px"}}>                       
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Office Address</h6>
                             <p className="fs15" style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.
@@ -236,23 +237,28 @@ export default class Footer extends Component {
                                  <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500
                              </p>
                         </div>
-                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6"style={{padding:"0px"}}>
                             <h6 className="font-montserrat col "style={{color:"#ffffff"}}>Registered Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
                                   L402 Marvel Ritz E, near Dsk Toyota, behind Amanora Town Center,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
                              </p>
+                         </div>   
                          </div>
-                        <div className="col-sm-6 col-xs-12">
-                            <h6 className="font-montserrat col newAddress resicons"style={{color:"#ffffff"}}>Connect us on</h6>
-                            <ul className="no-icon-list socialicon socialicon1 ">
-                                <li><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="col-lg-12 fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook col-lg-12 fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="https://twitter.com/iogsolutions" target="_blank"><i className="col-lg-12 fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank"><i className="col-lg-12 fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div> 
-                        <div className="col-sm-6 col-xs-12"> 
+
+                    </div>
+                       
+                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                             <div className="col-sm-6 col-xs-6">
+                                <h6 className="font-montserrat col newAddress resicons"style={{color:"#ffffff"}}>Connect us on</h6>
+                                <ul className="no-icon-list socialicon socialicon1 ">
+                                    <li className="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className=" fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li className="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="facebook  fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li className="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="https://twitter.com/iogsolutions" target="_blank"><i className=" fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li className="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank"><i className=" fa fa-whatsapp whatsupIcon" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div> 
+                        <div className="col-sm-6 col-xs-6"> 
                          <div className=" subscribeBox subscribeBox1">
                                 <h6 className="font-montserrat newAddress col"style={{color:"#ffffff"}}>Newsletter Subscription</h6>
                                 <div className="NOpadding  col-sm-7 col-xs-7">
@@ -262,18 +268,19 @@ export default class Footer extends Component {
                                  <button className="subscribeBtn   btn">Subscribe</button></a>
                             </div> 
                          </div>
+                       </div>  
                     </div>
                 </div>            
         </div>
             <div className="darkbluebg col-sm-12 col-xs-12 footer-end resfooterend NOpadding">
-                <div className="col-sm-6 col-xs-12">
+                <div className="col-sm-6 col-xs-6">
                     <div className="">
                     <div className="textcolorwhite  col-sm-12 col-xs-12 pull-left pt20">
                         <p style={{color:"#ffffff"}}style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                      </div>
                     </div>
                     </div> 
-                    <div className="textcolorwhite col-sm-6 col-xs-12 pull-right pt20 ">
+                    <div className="textcolorwhite col-sm-6 col-xs-6 pull-right pt20 ">
                     <p className="">
                         <a href="/privacypolicy" className="mr20 resmr20 ">Privacy Policy</a>
                         <a href="/termsofuse" className=" mr20 resmr20">Terms of Use</a>
@@ -283,8 +290,7 @@ export default class Footer extends Component {
               </div>
           </div>
        </div> 
-   </div> 
-                
+     </div>           
 
       );
   } 
