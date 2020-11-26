@@ -17,18 +17,8 @@
     /*background-size: 100% 75%;*/
     /*color: #fff;*/
     /*height: 500px;*/
-}.bannerContainer1{
-  opacity: 1;
-  /*height: 500px;*/
-  background-size: 100% 100% ;
-    width: 100%;
-  /*  margin-right: auto;*/
-    height: 43em;
-  /*  margin-left: auto;*/
-    /*float: left;*/
-    background-image: url(/images/Banner3_.png);
-
 }
+
 .bannerContainer {
     /* max-width: 930px; */
     /* position: relative; */

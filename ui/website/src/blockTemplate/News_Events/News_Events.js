@@ -108,9 +108,9 @@ console.log("==>",this.props.block_id);
               <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2 yearbox">
                <b>{result.Title}</b>
               </div>
-               <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 NOPadding">
+               <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 NOPadding NwesBoxShadow">
                 <div className="">
-                 <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg" src={result.Image}/>          
+                 <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg "style={{padding:"0px"}} src={result.Image}/>          
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  {/*<h4 className=" newsheading ">{result.SubTitle}</h4>*/}

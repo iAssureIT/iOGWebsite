@@ -104,35 +104,61 @@ componentDidMount(){
 
   render() {  
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate4 NOPadding">
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+      <div className="container-fluid">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlock5tepmlate services_block NOPadding">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ContentHeadreMargin  contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
           <hr/>
            <h2 style={{color:"#009de2"}}><b>{this.state.blocks.blockTitle}</b></h2>
-          </div>
-        <div className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1  col-xs-12">
-         
+        </div>
+        <div className="col-lg-11 col-md-11 col-sm-11 col-xs-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 ">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
           this.state.blocks.repeatedBlocks.map((result, index)=>{
             return(
-             
-               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-8 B3T_challengesDiv">
-               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                 <img src={result.Image} className="B4T_img img-responsive"/>
-                </div>
+              <div>
+               <div className=" col-lg-3 col-md-3 col-sm-12 col-xs-12 B3T_challengesDiv">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                 <p className="B4T_txt"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
+                 <img src={result.Image} className="B4T_img img-responsive"/>
+                </div> 
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <p className="B4T_txt text-center"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
                 </div>
                </div>
-             
-              );
+               
+              </div>
+            );
 
           })
-          :
-          null
+           :
+            null
         }
         </div>
-       </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+       {/*  <div className="col-lg-12 col-md-12  hidden-lg hidden-md">
+        { 
+          this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+          this.state.blocks.repeatedBlocks.map((result, index)=>{
+            return(
+              <div>
+               <div className=" col-lg-5 col-md-5 col-sm-12 col-xs-12 B4T_ServicesDiv_mob">
+               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 NOPadding">
+                 <img src={result.Image} className="B5T_img"/>
+                </div>
+                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8 innerServiceDiv NOPadding">
+                 <h5 className="B5T_txt">{result.Title}</h5>
+                 <p  className="ServiceTxt"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
+                </div>
+               </div>
+               
+              </div>
+            );
+
+          })
+           :
+            null
+        }
+        </div>*/}
+       </div> 
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     );  
   }
 }

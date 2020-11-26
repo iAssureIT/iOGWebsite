@@ -3,10 +3,10 @@
  }
  .B4T_ServicesDiv{
     top: 45px;
-    box-shadow: 0px 0px 3px 0px #d9d4d4;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    min-height: 150px;
+    box-shadow: 0px 0px 5px 0px #b7b3b3;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    min-height: 170px;
   }
   .B4T_ServicesDiv_mob{
     top: 45px;
@@ -18,6 +18,7 @@
   .B5T_img{
   	/*width: 185px;*/
     padding: 11px;
+    padding-top: 34px;
   }
   .B5T_txt{
     font-size: 17px;
@@ -25,6 +26,7 @@
     margin-left: 15px;
   }
   .innerServiceDiv{
+    padding-top: 15px;
   	/*padding-left: 45px;*/
   }
   .B2T_serviceTitle{

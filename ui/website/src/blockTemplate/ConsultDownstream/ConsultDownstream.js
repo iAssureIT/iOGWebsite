@@ -142,7 +142,7 @@ console.log("10 sep==>",this.props.block_id);
                     
                   }
                     if(response.data.repeatedBlocks.length == 6){
-                    $('.innerBlocktConsult').css('height','1520px');
+                    $('.innerBlocktConsult').css('height','1570px');
                     
                   }
                    if(response.data.repeatedBlocks.length == 4){

@@ -57,15 +57,18 @@ componentDidMount(){
     render(){
         return(
           
-            <div className="col-lg-12 col-md-12  container-fluid">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid">
                 <div  className="backgrd_curve1 col-lg-12 col-md-12 hidden-sm hidden-xs head_spacing">
-                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 foundermainDiv">
-                  <div className="col-lg-3 col-lg-offset-1 col-md-3 col-sm-12 col-xs-12">
+                 <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 foundermainDiv">
+                  <div className="col-lg-4  col-md-3 col-sm-12 col-xs-12  director_imgDiv">
                       <a href="" target="_blank">
-                        <img src={this.state.blocks.fgImage} alt="" className="director_img"/></a>
+                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <img src={this.state.blocks.fgImage} alt="" className="director_img"/>
+                        </div>
+                        </a>
                     </div>
-                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-1"style={{height:"auto"}}>
-                        <div className="row">
+                      <div className="col-lg-offset-1 col-md-offset-1 col-lg-7 col-md-7 col-sm-12 col-xs-12 DirectorText"style={{height:"auto"}}>
+                        <div className="">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                               <h2 className="para-top3 txt-size-director textcoloryellow"><b>{this.state.blocks.blockTitle}</b></h2>
                               <h1 className="txt-size-founder lightbluetext" dangerouslySetInnerHTML={ { __html: this.state.blocks.blocksubTitle}}></h1>

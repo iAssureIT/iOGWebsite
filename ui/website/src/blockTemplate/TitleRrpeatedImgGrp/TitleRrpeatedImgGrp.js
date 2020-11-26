@@ -154,20 +154,20 @@ componentDidMount(){
 		
 		return (
 		   <div>   
-			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs ">
-		        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+		        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
                     <hr/>
                      <h2 style={{color:"#009de2"}}><b>{this.state.blocks.blockTitle}</b></h2>
                     </div>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
-					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                         <div className="row">
+					<div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
+                         <div className="">
 						 {
 					   	this.state.blocks.repeatedBlocks ?
 					   	this.state.blocks.repeatedBlocks.slice(0,first).map((result, index)=>{
             			return(
 							  <div>
-							    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding"> 
+							    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 "> 
 								  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								   <div className="col-lg-2   pull-right">
 								     <img src={result.Image} className="iconclass"/>					    
@@ -189,10 +189,10 @@ componentDidMount(){
 	                	</div>
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs">
-	                      <img src={this.state.blocks.fgImage} className="B3t_img img-responsive"  />
+	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs B3t_img">
+	                      <img src={this.state.blocks.fgImage} className=" img-responsive" style={{height:"100%"}} />
 	                    </div>
-						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
 						  {
 						   	this.state.blocks.repeatedBlocks ?
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{

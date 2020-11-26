@@ -93,7 +93,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col newAddress"style={{color:"#ffffff"}}>Office Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
 
-                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>
+                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
                                  7090,7th Floor,  Marvel Fuego,<br/>Magarpatta  Road, Opp Seasons Mall,<br/>Hadapsar,
                                   Pune,India- 411028.<br/>
                                   <div className="Hidden_div"></div>
@@ -231,7 +231,7 @@ export default class Footer extends Component {
                            <div className="col-sm-6 col-xs-6"style={{padding:"0px"}}>                       
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Office Address</h6>
                             <p className="fs15" style={{color:"#ffffff"}}>
-                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i> iOG Solutions Pvt. Ltd.
+                                 <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>
                                  7090, 7th Floor,<br/>  Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
                                   Pune,India- 411028.<br/>
                                  <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500

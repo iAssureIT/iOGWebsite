@@ -20,6 +20,9 @@
     margin-top: 76px;
     margin-top: 60px;
 }
+.ContentHeadreMargin{
+  margin-top: 50px;
+}
 
 .B2T_p{
 	/*position: absolute;
@@ -29,7 +32,8 @@
 }
 .B2T_overviewTxt{
 	height: 260px;
-	width:  260px;
+	width:  414px;
+  padding-left: 130px;
 }
 .B2T_btn{
  position: absolute;
@@ -44,6 +48,8 @@
 }
 .websiteclass{
   padding-top: 40px;
+  height: 300px;
+  margin-bottom: 50px;
 }
 @media(max-width : 768px){
   .B2T1_line{

@@ -112,7 +112,7 @@
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: 120px;
+  height: 95px;
   box-shadow: 0 10px 14px rgba(92,141,255,.2);
   transition-duration: 0.8s;
 }
@@ -131,7 +131,7 @@
   display: block;
   color: #000;
   text-align: center;
-  padding: 14px 7px;
+  padding: 14px 12px;
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -156,7 +156,7 @@
   border: none;
   outline: none;
   color: #000;
-  padding: 14px 7px;
+  padding: 14px 12px;
   background-color: inherit;
   /*font-family: inherit;*/
   margin: 0;
@@ -354,7 +354,7 @@
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: 120px;
+  height: 95px;
   box-shadow: 0 10px 14px rgba(92,141,255,.2);
   transition-duration: 0.8s;
 }
@@ -476,8 +476,8 @@ body { top: 0px !important; }
 .ct-topbar {
   text-align: right;
   position: absolute;
-  right: 27px;
-  bottom: 59px;
+  right: 54px;
+  bottom: 62px;
   height: 20px;
   /*background: #eee;*/
 }

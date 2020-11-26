@@ -216,8 +216,8 @@ margin-top: 24px !important;
 }
 
 .AllBlogsBox{
-  background-color: #f6f6f6;
-  border: 1px solid #eaeaea;
+  /*background-color: #f6f6f6;*/
+  /*border: 1px solid #eaeaea;*/
   padding: 20px;
 }
 /*.mtop75{
@@ -243,6 +243,7 @@ margin-top: 24px !important;
   margin-bottom: 50px;
   background-color: #fff;
   border-radius: 5px;
+  padding: 0px;
   box-shadow: 0px 11px 15px 1px #ccc;
 }
 .p10{
@@ -276,5 +277,5 @@ margin-top: 24px !important;
 .z50{
   position: relative;
   top: -75px;
-  width:260px;
+  width:270px;
 }

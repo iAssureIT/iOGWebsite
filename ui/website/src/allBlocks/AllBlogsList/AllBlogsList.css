@@ -1,6 +1,6 @@
 .AllBlogsBox{
-	background-color: #f6f6f6;
-	border: 1px solid #eaeaea;
+	/*background-color: #f6f6f6;*/
+	/*border: 1px solid #eaeaea;*/
 	padding: 20px;
 }
 .All1blog1{
@@ -10,7 +10,7 @@
 .blogs_newhwading{
 
  position: absolute;
-    top: -215px;
+    top: -343px;
     color: #333;
     font-size: 55px
 }
@@ -57,6 +57,7 @@
 .All1blog1{
 	position: relative;
 	height: 303px;
+	margin-left: 55px;
 	overflow: hidden;
 	margin-bottom: 50px;
 	background-color: #fff;
@@ -145,7 +146,7 @@
 
 }
 .Allblog{
-	margin-top: 66px ! important;
+	/*margin-top: 66px ! important;*/
 
 }
 .pricehover-float:hover{
@@ -166,7 +167,7 @@
 .blogtext1{
 
 	/*margin-top: 120px;*/
-	left:378px;
+	left:50%;
 }
 .bloglist_margin{
 	margin-left: 60px;
@@ -179,7 +180,7 @@
 
   }
 .blogtext1{
-left: 116px ! important;
+left: 50% ! important;
 } 
 .All1blog1{
 	margin-left: 20px ! important;

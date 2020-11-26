@@ -401,12 +401,12 @@ handlechange(event){
            <div class="topnav" id="myTopnav">
             <a href="/">HOME</a>
             <div class="dropdown">
-              <a href="/masterpage/about-us" className="NopaddingToA"><button class="dropbtn">ABOUT US 
+              <a href="/masterpage/about" className="NopaddingToA"><button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
                </button>
              </a>
               <div className="dropdown-content normaldropdown dropdownintab dropdownforAbiutus" style={{position:"fixed"}}>
-                 <a href="/masterpage/about-us">Company Profile</a>
+                 <a href="/masterpage/about">Company Profile</a>
                  <a href="/masterpage/founder-profile">Founder's Profile</a>
                  <a href="/masterpage/news-&amp;-events">News &amp; Events</a>
                  
@@ -426,7 +426,7 @@ handlechange(event){
               </div>
             </div> 
             <div class="dropdown ">
-              <button class="dropbtn"><a href="/masterpage/expertise" className="NopaddingToA">EXPERTISE</a>
+              <button class="dropbtn"><a href="/masterpage/newexpertise" className="NopaddingToA">EXPERTISE</a>
                  <i className="fa fa-angle-down Headerdownarraow"></i>
               </button>
               <div class="col-lg-10 col-md-10 hidden-sm hidden-xs dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>

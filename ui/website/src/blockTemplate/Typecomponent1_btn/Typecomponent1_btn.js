@@ -55,8 +55,8 @@ componentDidMount(){
       if(this.state.blocks.blockSubTitle=="refinery")
         return(
 
-            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel  industries_imgDiv"
-                 id="Type1Component" 
+            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel Typecomponent1_btn  industries_imgDiv"
+                 id="" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
@@ -64,11 +64,11 @@ componentDidMount(){
                     <div className="line3 col-lg-1 "></div>
                   </div>                    
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p className="TypeBTnP" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p className="TypeBTnP text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
                             <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
@@ -77,7 +77,7 @@ componentDidMount(){
                              </div>
                             </a>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
                               <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="300" />
@@ -90,7 +90,7 @@ componentDidMount(){
         );
       else{
         return(
-           <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel onselecthover"
+           <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 Typecomponent1_btn  posRel onselecthover"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -99,11 +99,11 @@ componentDidMount(){
                     <div className="line3 col-lg-1 "></div>
                   </div>                    
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p className="TypeBTnP" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p className="TypeBTnP text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
                             <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
@@ -112,10 +112,10 @@ componentDidMount(){
                              </div>
                             </a>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                        <div className="col-lg-4 col-md-4 col-sm-6 hidden-xs">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img typebtn_img" hight="250" width="300" />
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img " hight="250" width="300" />
                           </div>
                         </div>
                         </div>

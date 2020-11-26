@@ -47,19 +47,30 @@ componentDidMount(){
     render()
     {
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-
-                  <h4 className="lightbluetext para-top new-para-top">{this.state.blocks.blockTitle}</h4>
-
-
-                  <div dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></div>   
-                </div>
-              </div>
-          </div>
-   
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel"style={{marginTop:"50px"}} 
+                 id="Type1Component" 
+                 data-field1="blockTitle" 
+                 data-field2="blockDescription" 
+                 data-field3="fgImage">
+                 
+                {/*<div className="col-lg-2">
+                  <div className="col-lg-11 col-lg-offset-1">
+                    <div className="line1 col-lg-1 pull-right "></div>
+                  </div>                    
+                </div> */}
+                    <div className="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{paddingLeft:"50px"}}>
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                              <div> 
+                                <p className="energypagedata text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                              </div>   
+                            </div>
+                        </div>
+                       
+                    </div>
+                          
+            </div>   
         );
     }
 }

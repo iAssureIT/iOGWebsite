@@ -2,12 +2,11 @@
 	height: auto;
 }
 .B3T_challengesDiv {
-    top: 25px;
-    height: 190px;
-    /*width: 303px;*/
-    box-shadow: 0px 2px 2px 3px #eee;
-    /*margin-left: 40px;*/
+   top: 45px;
+    box-shadow: 0px 0px 3px 0px #d9d4d4;
+    margin-left: 50px;
     margin-bottom: 40px;
+    min-height: 200px;
     
 }
 .B4T_img{
@@ -19,6 +18,7 @@
 	margin-top: 25px;
 	margin-left: 20px;
 }
+
 .B4T_line{
     background-color: #f08f00;
   	width: 80px;

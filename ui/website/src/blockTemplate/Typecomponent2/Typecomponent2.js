@@ -48,13 +48,13 @@ componentDidMount(){
 
     render(){
         return(
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel"style={{marginTop:"70px"}}>
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel alternateblock Textrighgtblock">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img" />
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-1">
+                <div className="col-lg-4 col-md-4 hidden-sm hidden-xs img1">
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img_new" />
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                    {/*<h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>*/}
                    <div>
                      <p className="righttextaboutus" style={{fontsize:"17px"}}  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>

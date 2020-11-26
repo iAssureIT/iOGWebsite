@@ -46,19 +46,19 @@ export default class Blogs extends Component {
             {
                 upstreamTitle : "EHS Applications in Oil & Gas",
                 downstreamimg : "/images/blog1.jpg",
-                upstreamLi    : "EHS software solutions facilitates streamlining all aspects environmental, health and safety programs in organization. EHS software plays a key role for providing detailed and intuitive reports on incident management, environmental management, sustainability management etc."
+                upstreamLi    : "EHS software solutions facilitates streamlining all aspects environmental, health and safety programs in organization. EHS software plays a key role for providing detailed and intuitive reports."
 
             }, 
             {
                 upstreamTitle : "Leveraging Machine Learning to add value to the Oil and Gas business.",
                 downstreamimg : "/images/blog2.jpg",
-                upstreamLi    : "Machine learning provides information systems the ability to automatically learn and improve from the experience, without being explicitly programmed. It is a subset of Artificial Intelligence that focuses on the development of computer programs that can access data and use it."
+                upstreamLi    : "Machine learning provides information systems the ability to automatically learn and improve from the experience, without being explicitly programmed."
 
             }, 
             {
                 upstreamTitle : "Energy Management in Refineries and Petrochemicals Complex",
                 downstreamimg : "/images/blog3.jpg",
-                upstreamLi    : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality. Improving energy efficiency improves the refinery margin."
+                upstreamLi    : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality."
 
             },
             {

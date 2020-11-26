@@ -435,12 +435,12 @@ pin6click(event){
                    </div>
                  <img alt="" className="img-responsive boat_img_size "src="/images/newboat.png"/>
                 </figure>
-                <div className="ripple_Div"style={{width:"200"},{overflow:"hidden"},{position:"absolute"}}>
+               {/* <div className="ripple_Div"style={{width:"200"},{overflow:"hidden"},{position:"absolute"}}>
                   <div class="drop-container">
                       <div class="drop">
                       </div>
                    </div>
-               </div> 
+               </div> */}
                  {/*<div className="ripple_Div" style={{overflow:"hidden"}}>
                   <div className="drop-container">
                       <div className="drop">

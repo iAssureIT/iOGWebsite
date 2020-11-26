@@ -104,13 +104,12 @@ componentDidMount(){
   render() { 
   // console.log('khj', this.state.blocks); 
     return (
-      <div className="container-fluid">
-       <div className="col-lg-offset-1 col-md-offset-1  col-lg-10 col-md-10 col-sm-10 col-xs-10 innerBlock5tepmlate services_block NOPadding">
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 services_block innerBlock5tepmlate  container-fluid">
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ContentHeadreMargin  contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
           <hr/>
            <h2 style={{color:"#009de2"}}><b>{this.state.blocks.blockTitle}</b></h2>
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <div className="col-lg-offset-1 col-lg-11 col-md-11 col-sm-11 col-xs-11">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
           this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -158,7 +157,6 @@ componentDidMount(){
             null
         }
         </div>*/}
-       </div> 
       </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     );  
   }

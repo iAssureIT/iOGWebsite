@@ -90,11 +90,11 @@ componentDidMount(){
                     </h2>
                         
                     <div>
-                     <p className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                     <p className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
 
                 </div>
-                  <div  className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 blk_ht">
+                  <div  className="col-lg-offset-1 col-md-1 col-sm-1 col-xs-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 blk_ht">
                   { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{

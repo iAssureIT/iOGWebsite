@@ -46,7 +46,7 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top posRel onselecthover" style={{marginTop:"140px"}}
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover" style={{marginTop:"50px"}}
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -67,7 +67,7 @@ componentDidMount(){
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{marginTop:"30px"}}>
                             <div className="img1">
                               <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="250" />
                           </div>

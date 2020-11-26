@@ -11,6 +11,23 @@
 	margin-top: 90px;
 	font-size: 17px ! important;
 }
+
+.subpages_Title h2{
+  font-size: 30px;
+  line-height: 30px;
+  /*letter-spacing: 2px;*/
+  color:#009de2;
+  font-weight: 700px ! important;
+
+}
+.subpages_Title hr{
+  height: 2px;
+  width: 95px;
+  border: 1px solid #f19000;
+  background-color: #f19000;
+  /*margin-bottom: 39px;*/
+}
+
 /*.onselecthover:hover{
   cursor: pointer;
   border: 1px solid #aaa;
@@ -20,6 +37,9 @@
 }*/
 .padding_approach{
 	padding-left: 110px;
+}
+.H2weight{
+  font-weight: 700;
 }
 .implementApproach{
 	font-size: 17px ! important;

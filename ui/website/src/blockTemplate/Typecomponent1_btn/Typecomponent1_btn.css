@@ -3,7 +3,7 @@
 }
 .onselecthover{
   height: auto;
-  padding-top: 5%;
+  padding-top: 10px;
   
 
 }
@@ -20,9 +20,20 @@
 .righttextaboutus{
 	margin-top: 25px;
 	font-size: 17px ! important;
+  color:#009de2;
+}
+.righttextaboutus h2{
+  color:#009de2; 
+
+}
+.TypeBTnP h2{
+  color:#009de2; 
+}
+.Typecomponent1_btn{
+  margin-bottom: 25px;
 }
 .industries_imgDiv{
-  margin-top: 75px;
+  /*margin-top: 75px;*/
 }
 /*.onselecthover:hover{
   cursor: pointer;

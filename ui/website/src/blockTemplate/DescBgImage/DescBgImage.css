@@ -357,19 +357,20 @@ margin-top: 100px;
     /*margin-left: 113px;*/
 }
 
-.plane{
+/*.plane{
     width: 70%;
     margin-left: 49px;
     margin-top: 50px;
-}
+}*/
 
 .director_img{
-  width: 100%;
+  /*width: 100%;*/
   /* margin-left: 171px; */
   margin-top: 235px;
   border: 9px solid #fff;
   box-shadow: 0 10px 29px rgba(92,141,255,0.5);
 }
+
 .curve_img{
     width: 100%;
     margin-top: -135px;

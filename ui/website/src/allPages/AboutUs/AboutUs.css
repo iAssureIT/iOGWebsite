@@ -245,7 +245,7 @@ margin-top: 100px;
 
  .para_spacing{
     font-size: 17px;
-    padding: 0px 135px 22px 0px;
+    padding: 0px 0px 22px 0px;
     
   }
 
@@ -259,7 +259,7 @@ margin-top: 100px;
   .line_para{
     line-height: 25px;
     letter-spacing: 1px;
-     margin-top: 20px; 
+     /*margin-top: 20px; */
     font-size: 20px;
 }
 .line_para1{
@@ -329,6 +329,15 @@ margin-top: 100px;
     margin-left: 161px;
     margin-top: 10px;
     border-radius: 10px;
+}
+.blck1heightnew{
+    top: 137px;
+    height: 224px;
+    width: 427px;
+    /*margin-left: 161px;*/
+    margin-top: 10px;
+    border-radius: 10px;
+    float: right;
 }
 .blck1height1{
     /*top: 137px;*/
@@ -410,23 +419,31 @@ margin-top: 100px;
 
 .truck{
     width: 100%;
-    margin-top: 126px;
+    margin-top: 26px;
     /*margin-left: 113px;*/
 }
 
 .plane{
-    width: 91%;
-    margin-left: 49px;
-    margin-top: 50px;
+    width: 154%;
+    /*margin-left: 49px;*/
+    margin-top: 59px;
 }
 
 .director_img{
-  width: 100%;
+  /*width: 100%;*/
   /* margin-left: 171px; */
   /*margin-top: 235px;*/
   border: 9px solid #fff;
   box-shadow: 0 10px 29px rgba(92,141,255,0.5);
 }
+.director_imgDiv{
+  /*padding-left: 170px;*/
+    padding-top: 45px;
+}
+.DirectorText{
+  padding-top: 27px;
+}
+
 .curve_img{
     width: 100%;
     margin-top: -135px;
@@ -518,17 +535,17 @@ margin-top: 100px;
 .servicekbtn{
    color: #fff;
     margin-top: 15px;
-    width: 100%;
+    width: 65%;
     border-radius: 20px;
     font-weight: 600;
-    padding: 10px;
+    padding: 5px;
     border-radius: 40px;
     font-size: 14px;
 }
 .servicekbtnarrow{
     color: #fff;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 10px;
 }
 @media(max-width : 767px){

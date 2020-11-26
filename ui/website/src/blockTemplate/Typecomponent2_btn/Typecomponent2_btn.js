@@ -50,13 +50,14 @@ componentDidMount(){
 
     render(){
         return(
-          <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel"style={{marginTop:"70px"}}>
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 alternateblock"> 
+          <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12   posRel">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs img1">
+                <div className="col-lg-4 col-md-4 col-sm-6 hidden-xs img1">
                  <img src={this.state.blocks.fgImage} alt="" className="third_img typebtn_img hidden-xs" />
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <div className="col-lg-12  NOpadding">
                     <div className="line2 "></div>
                   </div>                    
@@ -73,6 +74,7 @@ componentDidMount(){
               </div>
             </div> 
            </div>   
+        </div>   
         );
     }
 }
