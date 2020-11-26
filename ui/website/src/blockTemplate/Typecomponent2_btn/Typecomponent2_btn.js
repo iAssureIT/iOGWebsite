@@ -54,18 +54,18 @@ componentDidMount(){
           <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12   posRel">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="col-lg-4 col-md-4 col-sm-6 hidden-xs img1">
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img typebtn_img hidden-xs" />
+                <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs img1">
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img typebtn_img hidden-xs" style={{width:"100%"}} />
                 </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div className="col-lg-12  NOpadding">
                     <div className="line2 "></div>
                   </div>                    
-                   <h2 className="lightbluetext"><b>{this.state.blocks.blockTitle}</b></h2>
+                   <h2 className=""><b>{this.state.blocks.blockTitle}</b></h2>
                    <div>
                      <p className="righttextaboutus"  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                    </div>
-                   <a class="col-lg-4 col-md-6 services_title" href={this.state.blocks.blockSubTitle}>
+                   <a class="col-lg-6 col-md-6 services_title" href={this.state.blocks.blockSubTitle}>
                     <button class="lightbluebg buttonhover servicekbtn btn">Read More 
                      <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
                    </button>

@@ -64,9 +64,9 @@ componentDidMount(){
                     <div className="line3 col-lg-1 "></div>
                   </div>                    
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                              <h2 className=" para-top">{this.state.blocks.blockTitle}</h2>
                               <div> 
                                 <p className="TypeBTnP text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
@@ -77,10 +77,10 @@ componentDidMount(){
                              </div>
                             </a>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="300" />
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" style={{width:"100%"}} />
                           </div>
                         </div>
                         </div>
@@ -99,9 +99,9 @@ componentDidMount(){
                     <div className="line3 col-lg-1 "></div>
                   </div>                    
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                              <h2 className=" para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                               <div> 
                                 <p className="TypeBTnP text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
@@ -112,10 +112,10 @@ componentDidMount(){
                              </div>
                             </a>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+                        <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                             <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img " hight="250" width="300" />
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img "style={{width:"100%"}} />
                           </div>
                         </div>
                         </div>

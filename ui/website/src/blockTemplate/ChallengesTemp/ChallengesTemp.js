@@ -108,7 +108,7 @@ componentDidMount(){
        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlock5tepmlate services_block NOPadding">
        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ContentHeadreMargin  contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
           <hr/>
-           <h2 style={{color:"#009de2"}}><b>{this.state.blocks.blockTitle}</b></h2>
+           <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
         </div>
         <div className="col-lg-11 col-md-11 col-sm-11 col-xs-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 ">
         { 

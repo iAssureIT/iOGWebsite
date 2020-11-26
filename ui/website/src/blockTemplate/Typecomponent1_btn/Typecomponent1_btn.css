@@ -17,17 +17,13 @@
 .TypeBTnP{
   font-size: 17px ! important;
 }
-.righttextaboutus{
-	margin-top: 25px;
-	font-size: 17px ! important;
-  color:#009de2;
-}
+
 .righttextaboutus h2{
   color:#009de2; 
 
 }
 .TypeBTnP h2{
-  color:#009de2; 
+  color:#333; 
 }
 .Typecomponent1_btn{
   margin-bottom: 25px;

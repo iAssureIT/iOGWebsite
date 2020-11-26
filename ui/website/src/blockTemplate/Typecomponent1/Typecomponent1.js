@@ -52,25 +52,21 @@ componentDidMount(){
                  data-field2="blockDescription" 
                  data-field3="fgImage">
                  
-                {/*<div className="col-lg-2">
-                  <div className="col-lg-11 col-lg-offset-1">
-                    <div className="line1 col-lg-1 pull-right "></div>
-                  </div>                    
-                </div> */}
+                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1">
+                    <div className="line1 col-lg-1 pull-left "></div>                  
+                </div> 
                     <div className="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>
+                              <h2 className=" para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p className="energypagedata" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p className="energypagedata text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{marginTop:"30px"}}>
-                            <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" hight="250" width="250" />
-                          </div>
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img"  />
                         </div>
                         </div>
                     </div>
