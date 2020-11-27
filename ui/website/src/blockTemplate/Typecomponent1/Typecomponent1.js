@@ -46,17 +46,17 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover" style={{marginTop:"50px"}}
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover" style={{marginTop:"45px"}}
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
-                 
-                <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1">
-                    <div className="line1 col-lg-1 pull-left "></div>                  
-                </div> 
-                    <div className="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingLeft:"50px"}}>
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
+                              <hr/>
+                             {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}
+                            </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className=" para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                               <div> 
@@ -65,13 +65,12 @@ componentDidMount(){
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{marginTop:"30px"}}>
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                               <img src={this.state.blocks.fgImage} alt="" className="intro_img"  />
                         </div>
                         </div>
-                    </div>
-                          
-            </div>   
+                    </div>            
+                </div>   
         );
     }
 }

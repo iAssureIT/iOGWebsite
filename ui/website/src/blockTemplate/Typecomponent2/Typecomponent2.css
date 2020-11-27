@@ -3,10 +3,16 @@
 }
 .Textrighgtblock{
 	margin-top: 50px;
-	height: 450px;
+	/*height: 450px;*/
 }
 
-.third_img_new {
+/*.third_img_new {
     width: 83%;
     margin-top: 14px;
+}*/
+.Type2Img{
+	width  : 100%;
+	height : 100%;
+	padding:50px;
+
 }

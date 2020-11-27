@@ -45,31 +45,31 @@ export default class Blogs extends Component {
         return [
             {
                 upstreamTitle : "EHS Applications in Oil & Gas",
-                downstreamimg : "/images/blog1.jpg",
+                downstreamimg : "/images/Ehs_Application.jpg",
                 upstreamLi    : "EHS software solutions facilitates streamlining all aspects environmental, health and safety programs in organization. EHS software plays a key role for providing detailed and intuitive reports."
 
             }, 
             {
                 upstreamTitle : "Leveraging Machine Learning to add value to the Oil and Gas business.",
-                downstreamimg : "/images/blog2.jpg",
+                downstreamimg : "/images/Leveraging_Machine.jpg",
                 upstreamLi    : "Machine learning provides information systems the ability to automatically learn and improve from the experience, without being explicitly programmed."
 
             }, 
             {
                 upstreamTitle : "Energy Management in Refineries and Petrochemicals Complex",
-                downstreamimg : "/images/blog3.jpg",
+                downstreamimg : "/images/energy_managemnt.jpg",
                 upstreamLi    : "As oil refiners face an increasingly competitive global business environment, they look out for the opportunities to reduce production costs without negatively affecting product yield or quality."
 
             },
             {
                 upstreamTitle : "How oil and gas industry is embracing new age technologies?",
-                downstreamimg : "/images/blog4.jpg",
+                downstreamimg : "/images/gas_industy_embracing.jpg",
                 upstreamLi    : "As we come to the middle of 2019, oil and gas companies worldwide are facing constant changes. Compliance, pollution control, supply-demand fluctuations, price volatility, and geopolitical changes are some of them worth mentioning."
 
             },
             {
                 upstreamTitle : "Asset Reliability and Integrity Management Today",
-                downstreamimg : "/images/blog5.jpg",
+                downstreamimg : "/images/oil-and-gas-management.jpg",
                 upstreamLi    : "Process industries are asset-intensive and are witnessing many improvement opportunities as owner-operators strive to enhance asset availability, performance and reduce operational costs."
 
             } 
@@ -124,7 +124,7 @@ export default class Blogs extends Component {
                                                       <div className="row">
                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">July 5,2019</div>
                                                          <div className="col-lg-6 col-md-8 col-sm-12 col-xs-12">
-                                                            <a className="" href="/blog">
+                                                            <a className="" href="/blogs">
                                                                 <input type="button" className="col-lg-10 col-md-12 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>
                                                         </div>

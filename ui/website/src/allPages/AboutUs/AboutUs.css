@@ -332,8 +332,8 @@ margin-top: 100px;
 }
 .blck1heightnew{
     top: 137px;
-    height: 224px;
-    width: 427px;
+    height: 200px;
+    width: 600px;
     /*margin-left: 161px;*/
     margin-top: 10px;
     border-radius: 10px;
@@ -419,14 +419,14 @@ margin-top: 100px;
 
 .truck{
     width: 100%;
-    margin-top: 26px;
+    /*margin-top: 26px;*/
     /*margin-left: 113px;*/
 }
 
 .plane{
-    width: 154%;
+    width: 90%;
     /*margin-left: 49px;*/
-    margin-top: 59px;
+    margin-top: 35px;
 }
 
 .director_img{

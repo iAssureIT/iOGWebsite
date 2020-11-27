@@ -76,18 +76,18 @@ componentDidMount(){
         return(
           
           <div>
-            <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1  NOPadding"style={{height:"615px"}}>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12NOPadding"style={{height:"615px"}}>
               <div className="">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 img1">
-                      <img src={this.state.blocks.fgImage} alt="" className="plane" />
+                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 img1">
+                      <img src={this.state.blocks.fgImage} alt="" className="img-responsive plane" />
                   </div>
-                      <div className=" col-lg-8 col-md-8 col-sm-12 col-xs-12"style={{marginTop:"-43px"}}>
+                      <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{marginTop:"-43px"}}>
                          { 
                           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                           this.state.blocks.repeatedBlocks.map((result, index)=>{
                           return(
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blck blck1heightnew b1width">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blck blck1heightnew b1width">
                               <h2 className="line_subhead textcolorblue vision_align1">{result.Title}</h2>
                               <p className="text-justify vision_align" dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                            </div>

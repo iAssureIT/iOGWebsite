@@ -13,7 +13,7 @@
   .BT1_img{
   	height: 200px;
   	width: 100%;
-  	margin-top: 30px;
+  	margin-top: 45px;
 
   }
   .BT1_bannerTitle{
@@ -22,8 +22,8 @@
   	font-size: 43px;
     font-weight: 600;
     /*left: 500px;*/
-    top: 151px;
-    letter-spacing: 1px;
+    top: 165px;
+    letter-spacing: 2px;
   }
   .HistorianTitle{
     color: #fff;

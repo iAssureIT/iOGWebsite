@@ -105,13 +105,12 @@ console.log("==>",this.props.block_id);
           this.state.blocksrepeat.map((result, index)=>{
             return(
              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 maindivNews"> 
-              <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2 yearbox">
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 yearbox">
                <b>{result.Title}</b>
               </div>
-               <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 NOPadding NwesBoxShadow">
-                <div className="">
-                 <img className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Newsbannerimg "style={{padding:"0px"}} src={result.Image}/>          
-                </div>
+               <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 NOPadding NwesBoxShadow">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive blogsimg"style={{padding:"0px"}}>
+                   <img alt="" src={result.Image} style={{width:"100%"}}/></div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  {/*<h4 className=" newsheading ">{result.SubTitle}</h4>*/}
                  

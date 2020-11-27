@@ -2,7 +2,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .repeated_block1height:hover{
@@ -45,4 +45,7 @@
 .type3text{
     margin-top: 40px;
     font-size: 17px;
+}
+.Type3component{
+    margin-bottom: 50px;
 }

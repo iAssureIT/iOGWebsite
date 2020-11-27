@@ -61,17 +61,20 @@ componentDidMount(){
 }
     render(){
         return(
-          <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 container-fluid g_blockOuterWrapper">
-           
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid g_blockOuterWrapper About5block"style={{background:"#eee"}}>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 g_blockInnerWrapper">
-                  <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 blockTextWrapper">
+                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blockTextWrapper">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
+                      <hr/>
+                     {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}
+                    </div>
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div className="col-lg-2"> </div>
                           <p className="righttextaboutus text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                       </div>
                   </div>
-                  <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{paddingTop:"10px"}}>
                       <img src={this.state.blocks.fgImage} alt="" className="truck" />
                     </div>
                   </div>

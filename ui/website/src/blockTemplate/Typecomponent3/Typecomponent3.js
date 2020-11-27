@@ -83,18 +83,18 @@ componentDidMount(){
     render(){
       // console.log("------------>",this.state.blocks.repeatedBlocks);
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel Type3component" style={{marginTop:"50px"}}>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12"><div className="line2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6"></div></div>
-                    <h2 className="lightbluetext text-center para1-top">{this.state.blocks.blockTitle}
-                    </h2>
-                        
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
+                      <hr/>
+                       <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
+                    </div>
                     <div>
-                     <p className="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                     <p className=" col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 text-center type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
 
                 </div>
-                  <div  className="col-lg-offset-1 col-md-1 col-sm-1 col-xs-1 col-lg-10 col-md-10 col-sm-10 col-xs-10 blk_ht">
+                  <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blk_ht">
                   { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
@@ -106,7 +106,7 @@ componentDidMount(){
                                     <img src={result.Image} alt="" className="rbicn_1" />
                                   {/*<img src="/images/11.png" alt="" className="icn1_hover"  />*/}
                                   </div>
-                                   <p className="lightbluetext rb-para-top">{result.Title}</p>
+                                   <p className=" rb-para-top">{result.Title}</p>
 
                                   {/*<p className="iog_txt" dangerouslySetInnerHTML={ { __html: result.Description } }></p>*/}
                                 </div>

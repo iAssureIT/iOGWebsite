@@ -17,6 +17,8 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
         this.state={
           lang:"en",
           id: "",
+          divUrl:"",
+          pageUrl:"",
 
         }
         this.handlechange = this.handlechange.bind(this);
@@ -25,7 +27,7 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
   
   componentWillMount() {
-     var pageUrl = window.location.pathname;;
+     var pageUrl = window.location.pathname;
      console.log("pageUrl kkk= ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
           // console.log("a kkk==>",a[2]); 
@@ -59,8 +61,12 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
     var currentLocation = window.location.href;
     console.log("currentLocation----",currentLocation);
+    var pageUrl = window.location.pathname;
+    this.setState({
+      pageUrl:pageUrl
+    })
     var divUrl = currentLocation ? currentLocation.split('/') : "";
-     console.log("divUrl",divUrl);
+     console.log("divUrl[4]",divUrl[4]);
     if(divUrl[3] == "#googtrans(en|fr)"){
        $('.expertiesdropdown').css('marginLeft','-540px');
        $('.dropdown-content a').css('paddingTop','7px');
@@ -76,6 +82,11 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
       $('.expertiesdropdown').css('marginLeft','-407px');
 
     }
+
+    this.setState({
+      divUrl:divUrl
+
+    })
 
     const script = document.createElement("script");
     script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
@@ -399,20 +410,23 @@ handlechange(event){
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-9">
            <div class="topnav" id="myTopnav">
-            <a href="/">HOME</a>
+            <a href="/" className={this.state.divUrl[3]== "" ? "Currentactivetab" : ""}>HOME</a>
+
             <div class="dropdown">
-              <a href="/masterpage/about" className="NopaddingToA"><button class="dropbtn">ABOUT US 
+            {console.log("-----",this.state.pageUrl === "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA")}
+              <a href="/masterpage/about" className={this.state.pageUrl === "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA" } ><button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
                </button>
              </a>
+
               <div className="dropdown-content normaldropdown dropdownintab dropdownforAbiutus" style={{position:"fixed"}}>
                  <a href="/masterpage/about">Company Profile</a>
                  <a href="/masterpage/founder-profile">Founder's Profile</a>
-                 <a href="/masterpage/news-&amp;-events">News &amp; Events</a>
-                 
+                 <a href="/masterpage/news-&amp;-events">News &amp; Events</a>   
                  <a href="/ourjourny">Our Journey</a>
               </div>
-            </div>  
+            </div> 
+
             <div class="dropdown">
               <button class="dropbtn"><a href="/masterpage/service-arms"className="NopaddingToA">SERVICES</a> 
                 <i className="fa fa-angle-down Headerdownarraow"></i>
@@ -421,10 +435,10 @@ handlechange(event){
                  <a href="/masterpage/iog-study">iOGStudy</a>
                  <a href="/masterpage/iog-consult">iOGConsult</a>
                  <a href="/masterpage/iog-implement">iOGImplement</a>
-                 <a href="/masterpage/iog-train">iOGTrain</a>
-                
+                 <a href="/masterpage/iog-train">iOGTrain</a>    
               </div>
             </div> 
+
             <div class="dropdown ">
               <button class="dropbtn"><a href="/masterpage/newexpertise" className="NopaddingToA">EXPERTISE</a>
                  <i className="fa fa-angle-down Headerdownarraow"></i>
@@ -525,7 +539,7 @@ handlechange(event){
         </div>
          <button className="contactBar hidden-xs" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
           <div className="fixedContactBar">
-            <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
+            <i className="fa fa-phone envelopeIcon"style={{color:"#ffffff"}} aria-hidden="true"style={{paddingRight:"3px"}}></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>

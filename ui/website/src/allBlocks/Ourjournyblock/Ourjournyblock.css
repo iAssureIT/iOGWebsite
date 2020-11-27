@@ -149,6 +149,18 @@
     background-repeat: no-repeat;
     height: 300px;
 }
+.journybg7{
+    background-image: url(/images/journy6.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.journybg8{
+    background-image: url(/images/journy6.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
 .journytextblock{
   width: 70%;
   height: 85px;
@@ -165,12 +177,11 @@ color: #fff;
   z-index: 3;
   height: 0px;
   background: transparent;
-  /*overflow: hidden;*/
+  overflow: hidden;
   max-height: 1590px;
   /*left: -95px;*/
   right: 0px;
 }
-
 .roadjournyoverflow{
   overflow: none!important;
   height: 1590px!important;
@@ -185,7 +196,7 @@ color: #fff;
 
 .add1{
   position: relative;
-    left: 547px;
+    left: 577px;
     z-index: 100;
     height: 75px;
     top: 248px;
@@ -193,105 +204,92 @@ color: #fff;
 }
 .add2{
     position: relative;
-    right: 120px;
+    right: 36px;
     z-index: 100;
     height: 75px;
-    top: 430px;
+    top: 402px;
     opacity: 0;
 }
 .add3{
-    position: relative;
-    left: 552px;
+  position: relative;
+    left: 525px;
     z-index: 100;
     height: 75px;
-    top: -357px;
-    /*opacity: 0;*/
-
+    top: 270px;
+    opacity: 0;
 }
 .add4{
-    position: relative;
-   right: 264px;
+  position: relative;
+    right: 300px;
     z-index: 100;
     height: 75px;
-    top: -227px;
+    top: 439px;
     opacity: 0;
 }
 .add5{
-    position: relative;
-    right: 416px;
+  position: relative;
+    right: 696px;
     z-index: 100;
     height: 75px;
-    top: 88px;
+    top: 757px;
+    opacity: 0;
 }
 .add6{
-    position: relative;
-    left: 892px;
+  position: relative;
+    left: 830px;
     z-index: 100;
     height: 75px;
-    top: -449px;
+    top: -8px;
     opacity: 0;
 }
 .add7{
   position: relative;
-    left: 438px;
+    left: 836px;
     z-index: 100;
     height: 75px;
-    top: -379px;
+    top: 270px;
     opacity: 0;
 }
 .add8{
-    position: relative;
-    left: 371px;
+  position: relative;
+    right: 113px;
     z-index: 100;
     height: 75px;
-    top: -340px;
+    top: 324px;
     opacity: 0;
 }
 .add9{
-    position: relative;
-    left: 311px;
+  position: relative;
+    left: 266px;
     z-index: 100;
     height: 75px;
-    bottom: 420px;
+    top: 219px;
     opacity: 0;
 }
 .add10{
-    position: relative;
-    left: 596px;
+  position: relative;
+    left: 266px;
     z-index: 100;
     height: 75px;
-    bottom: 420px;
+    top: 419px;
     opacity: 0;
 }
 .add11{
-    position: relative;
-    left: 1150px;
+  position: relative;
+    left: 266px;
     z-index: 100;
     height: 75px;
-    bottom: 579px;
+    top: 619px;
     opacity: 0;
 }
 .add12{
-    position: relative;
-    left: 1101px;
+  position: relative;
+    left: 266px;
     z-index: 100;
     height: 75px;
-    bottom: 567px;
+    top: 819px;
     opacity: 0;
 }
-.add13{
-    position: relative;
-    left: 472px;
-    z-index: 100;
-    height: 75px;
-    bottom: 801px;
-    opacity: 0;
-}
-.ourjourney_page{
-  height: 800px
-}
-
-
 
 .addanim{
   opacity: 1;
@@ -336,14 +334,14 @@ color: #fff;
     z-index: 1000;
     position: absolute;
     top: 754px;
-    left: 230px;
+    left: 265px;
     opacity: 0;
 }
 .Journycaro5{
    z-index: 1000;
     position: absolute;
-    top: 1031px;
-    left: 508px;
+    top: 1024px;
+    left: 220px;
     opacity: 0;
 }
 .Journycaro6{
@@ -356,53 +354,45 @@ color: #fff;
 .Journycaro7{
     z-index: 1000;
     position: absolute;
-    top: 1307px;
+    top: 1327px;
     left: 730px;
     opacity: 0;
 }
 .Journycaro8{
     z-index: 1000;
     position: absolute;
-    top: 1180px;
+    top: 1166px;
     left: 70px;
     opacity: 0;
 }
 .Journycaro9{
     z-index: 1000;
     position: absolute;
-    top: 1480px;
-    left: 359px;
+    top: 1624px;
+    left: 372px;
     opacity: 0;
 }
 .Journycaro10{
     z-index: 1000;
     position: absolute;
-    top: 1648px;
-    left: 637px;
+    top: 1838px;
+    left: 372px;
     opacity: 0;
 }
 .Journycaro11{
     z-index: 1000;
     position: absolute;
-    top: 1883px;
-    left: 808px;
+    top: 2000px;
+    left: 372px;
     opacity: 0;
 }
 .Journycaro12{
     z-index: 1000;
     position: absolute;
-    top: 2164px;
-    left: 741px;
+    top: 1438px;
+    left: 372px;
     opacity: 0;
 }
-.Journycaro13{
-    z-index: 1000;
-    position: absolute;
-    top: 2147px;
-    left: 143px;
-    opacity: 0;
-}
-
 
 .journyanim{
   opacity: 1;
@@ -421,7 +411,6 @@ color: #fff;
   height: 70px ! important;
 
 }
-
 
 
 /*previous toggle*/

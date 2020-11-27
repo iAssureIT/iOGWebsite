@@ -8,8 +8,9 @@
 
 }
 .righttextaboutus{
-	padding-top: 105px;
+	padding-top: 20px;
 	font-size: 17px ! important;
+  color: #333;
 }
 .energypagedata{
 	font-size: 17px;
@@ -17,6 +18,10 @@
 }
 .intro_img{
   width: 100%
+}
+.AboutUsLine hr {
+  float: left;
+  margin-bottom: 0px ! important;
 }
 /*.onselecthover:hover{
   cursor: pointer;
