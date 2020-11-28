@@ -187,7 +187,7 @@ CareersData(){
        {/* <div className="lineee2 col-lg-12 col-lg-offset-6"></div>*/}
       </div>       
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h2 className="career_para-top2 text-center"dangerouslySetInnerHTML={{ __html: this.state.blocks.blockTitle}} ></h2>
+          <h2 className="career_para-top2 text-center"style={{color:"#333"}}dangerouslySetInnerHTML={{ __html: this.state.blocks.blockTitle}} ></h2>
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
               <div className="img_2">
                 <img src={this.state.blocks.fgImage} alt="" className="career2_img" />

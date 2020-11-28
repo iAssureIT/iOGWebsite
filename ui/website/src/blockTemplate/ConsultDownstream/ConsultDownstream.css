@@ -1,5 +1,5 @@
 .innerBlocktConsult{
-	height: 1700px;
+	height: 1750px;
 	/*background-image: url("/images/consultdown.png");*/
 	background-size: 100% 100%;
   /*margin-top: 70px;*/
@@ -13,10 +13,10 @@
 .downimgtext{
     font-size: 30px;
 	  position: absolute;
-    top: 5em;
+    top: 5.5em;
     left: 18em;
     color: #333;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 .downimgtext_new{
@@ -30,7 +30,7 @@
 
 .downimg_p_txt{
 	  position: absolute;
-    top: 12.5em;
+    top: 13em;
     left: 10em;
     text-align: center; 
     font-size: 18px;

@@ -10,10 +10,10 @@
     /*padding: 0;*/
 }
 .iogimgblock1{
-    width: 96%;
+    width: 100%;
     /* padding-top: 143px; */
-    padding-left: 69px;
-    margin-left: 52px;
+    /*padding-left: 69px;*/
+    /*margin-left: 52px;*/
     height: 389px;
 }
 
@@ -49,11 +49,12 @@
 }
 .iogblock2text{
     padding-top: 91px;
+    border-left: 1px #eee;
     /* padding-bottom: 112px; */
     font-size: 15px;
     padding-left: 86px;
-    margin-top: 34px;
-    margin-left: 106px;
+    margin-top: 92px;
+    margin-left: 54px;
     width: 94%;
     height: 294px;
 }
@@ -80,8 +81,11 @@
     width: 107%;
     height: 362px;
     /*padding-top: 97px;*/
-    padding: 27px;
+    padding: 86px;
     /* margin-top: 82px; */
+}
+.iogblock3text p,span{
+    color:#fff;
 }
 
 .iogblock3text span{
@@ -161,8 +165,14 @@
 
 }
 .firstblockk{
+    color: #fff ! important;
    padding-top: 28px;
 }
+.firstblockk p,span {
+    color:#fff ! important;
+    font-weight: 500;
+}
+
 .secondblockk{
     padding-top: 16px;
  }

@@ -53,8 +53,11 @@
     right: 36px;
     color: #ffffff;
  }
+ .wizard-inner{
+    margin-top: 20px;
+ }
  .new_wizard{
-    height: 160px;
+    height: 200px;
     color: #fff;
     margin: 15px 0px;
     padding-top: 35px;

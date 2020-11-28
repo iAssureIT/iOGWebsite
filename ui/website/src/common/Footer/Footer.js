@@ -97,8 +97,8 @@ export default class Footer extends Component {
                                  7090,7th Floor,  Marvel Fuego,<br/>Magarpatta  Road, Opp Seasons Mall,<br/>Hadapsar,
                                   Pune,India- 411028.<br/>
                                   <div className="Hidden_div"></div>
-                                   <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"},{paddingRight:"10px"}}></i>Mail: info@iogsolutions.com<br/>
-                                   <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500 
+                                   <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"},{paddingRight:"10px"}}></i>Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: info@iogsolutions.com<br/>
+                                   <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone&nbsp;: +91 2029510500 
                                 
                              </p>
                          </div>

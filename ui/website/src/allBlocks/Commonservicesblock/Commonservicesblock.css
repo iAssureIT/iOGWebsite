@@ -75,7 +75,7 @@
   color: white;
   transform: rotateY(180deg);
   border-radius: 15px;
-  padding: 50px 22px 47px; /*PB*/
+  padding: 22px 22px 47px; /*PB*/
 }
 
 .serflip-card-back p{

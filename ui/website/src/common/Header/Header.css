@@ -116,7 +116,7 @@
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: 95px;
+  height: 105px;
   box-shadow: 0 10px 14px rgba(92,141,255,.2);
   transition-duration: 0.8s;
 }
@@ -199,7 +199,7 @@
 
 .dropdown-content a:hover {
   /*background-color: #ddd;*/
-  color: #5e8c31;
+  color: #f08f00;
 }
 
 .dropdown:hover .dropdown-content {
@@ -358,7 +358,7 @@
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: 95px;
+  height: 105px;
   box-shadow: 0 10px 14px rgba(92,141,255,.2);
   transition-duration: 0.8s;
 }
@@ -375,7 +375,7 @@
   color: #333 ! important;
 }
 .columnhead a:hover{
-  color:#5e8c31 ! important;
+  color:#f08f00 ! important;
 }
 .columnheadsub{
   font-size: 12px;

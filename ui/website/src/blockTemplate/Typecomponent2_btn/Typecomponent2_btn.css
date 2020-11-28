@@ -18,3 +18,19 @@
     font-size: 17px;
     text-align: justify;
 }
+.Type2_btn{
+    background-color: #eee;
+    height: 450px;
+}
+.type2btnimg{
+    margin-top: 33px;
+}
+.takebuttonDown2{
+    padding-top: 75px;
+    padding-right: 65px;
+}
+.Type2ImgDiv{
+    height: 572px;
+    width: 572px;
+
+}

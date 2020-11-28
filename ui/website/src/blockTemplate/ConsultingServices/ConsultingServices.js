@@ -150,7 +150,7 @@ componentDidMount(){
               console.log("repeatedBlocks from consultsrvice=",result);
             return(
              
-               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12"style={{marginBottom:"30px"}}>
+               <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12"style={{marginBottom:"60px"}}>
                 <div className="col-lg-12 col-md-12 New_Study_shadow">
                  <div className="col-md-12 col-lg-12 col-lg-12 col-md-12 FirstPart">
                   <div class="iconCircle">
@@ -161,7 +161,7 @@ componentDidMount(){
                                     </div>*/}
                   </div>
                   <div className="col-lg-12 col-md-12">
-                   <h4 className=" text-center"><b>{result.Title}</b></h4>
+                   <h4 className="headingPadding text-center"><b>{result.Title}</b></h4>
                   </div>
                    <div className="col-lg-12 col-md-12 endofsubblock">
                     <p className="BT4_txt  text-center"dangerouslySetInnerHTML={ { __html: result.Description } }></p>

@@ -51,78 +51,42 @@ componentDidMount(){
               });
 }
     render(){
-      console.log("this.state.blocks.blocksubTitle---",this.state.blocks.blockSubTitle);
-      if(this.state.blocks.blockSubTitle=="refinery")
+   
         return(
-
-            <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12  posRel Typecomponent1_btn  industries_imgDiv"
-                 id="" 
-                 data-field1="blockTitle" 
-                 data-field2="blockDescription" 
-                 data-field3="fgImage">
-                  <div className="col-lg-12 ">
-                    <div className="line3 col-lg-1 "></div>
-                  </div>                    
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h2 className=" para-top">{this.state.blocks.blockTitle}</h2>
-                              <div> 
-                                <p className="TypeBTnP text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
-                              </div>   
-                            </div>
-                            <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
-                              <div class="lightbluebg buttonhover servicekbtn btn">Read More 
-                               <span class="servicekbtnarrow"style={{color:"#fff"}}>&gt;&gt;</span>
-                             </div>
-                            </a>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" style={{width:"100%"}} />
-                          </div>
-                        </div>
-                        </div>
-                    </div>
-                          
-            </div>   
-        );
-      else{
-        return(
-           <div className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 Typecomponent1_btn  posRel onselecthover"
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover type1btnDiv" style={{marginTop:"45px"}}
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
-                  <div className="col-lg-12 ">
-                    <div className="line3 col-lg-1 "></div>
-                  </div>                    
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 takebuttonDown">
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
+                              <hr style={{float:"left"}}/>
+                             {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}
+                            </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className=" para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p className="TypeBTnP text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
-                              </div>   
+                                <p className="energypagedata text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                              </div> 
+                              <a class="col-lg-6 col-md-6 services_title"style={{padding:"0px"}} href={this.state.blocks.blockSubTitle}>
+                              <button class="col-lg-8 col-md-8 lightbluebg buttonhover servicekbtn btn">Read More 
+                               <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
+                             </button>
+                          </a>  
                             </div>
-                            <a class="col-lg-4 col-md-6" href={this.state.blocks.blockSubTitle}>
-                              <div class="lightbluebg buttonhover servicekbtn btn">Read More 
-                               <span class="servicekbtnarrow"style={{color:"#fff"}}>&gt;&gt;</span>
-                             </div>
-                            </a>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingLeft:"100px"}}>
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <div className="img1">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img "style={{width:"100%"}} />
-                          </div>
+                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" style={{width:"80%"}}   />
                         </div>
                         </div>
-                    </div>
-                          
-            </div>
+                    </div>   
+                   </div>          
+                </div>   
           );
-      }
+
     }
 }

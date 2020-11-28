@@ -52,9 +52,9 @@ componentDidMount(){
                  data-field2="blockDescription" 
                  data-field3="fgImage">
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingLeft:"50px"}}>
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 typecomp1DIV1"style={{paddingLeft:"50px"}}>
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
-                              <hr/>
+                              <hr style={{float:"left"}}/>
                              {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

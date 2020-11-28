@@ -67,8 +67,8 @@ console.log("inside==>",this.props.block_id);
                      <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                   </div>
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1">
-                          <p className="line_para B2T_p text-center" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>   
+                        <div className="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-10">
+                          <p className="line_para B2T_p text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>   
                         </div>       
                       </div>    
                   </div>

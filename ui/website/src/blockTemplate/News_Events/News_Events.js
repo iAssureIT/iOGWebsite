@@ -74,6 +74,9 @@ console.log("==>",this.props.block_id);
                 this.setState({
                   blocksrepeat:response.data.repeatedBlocks.reverse()
                   });
+                
+                // var split_date = splitdate.split();
+                // console.log("split_date",splitdate);
 
 
 
@@ -109,8 +112,9 @@ console.log("==>",this.props.block_id);
                <b>{result.Title}</b>
               </div>
                <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 NOPadding NwesBoxShadow">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive blogsimg"style={{padding:"0px"}}>
-                   <img alt="" src={result.Image} style={{width:"100%"}}/></div>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  blogsimg1 NOPadding">
+                    <img alt="" className="img-responsive" src={result.Image}/>
+                  </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  {/*<h4 className=" newsheading ">{result.SubTitle}</h4>*/}
                  

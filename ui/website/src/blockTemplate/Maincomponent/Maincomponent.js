@@ -105,7 +105,7 @@ componentDidMount(){
         <div className="ht_row2 col-lg-12 col-md-12 hidden-sm hidden-xs">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 alignment_rw">
               <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 NOPadding">
-              <div className="iogblock2text col-lg-6  col-md-6 col-sm-12 col-xs-12 bckgblck_color_white">
+              <div className="iogblock2text col-lg-12  col-md-12 col-sm-12 col-xs-12 bckgblck_color_white">
               <span><b>{this.state.blocks.repeatedBlocks[0].Title}</b></span>
               <p className="secondblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[0].Description}}></p>
               </div>

@@ -12,19 +12,19 @@ export default class Ourjournyblock extends Component {
    var windowheight =$(window).height();;
   
 
-  var nb1t = (2*windowtop)+"px";
-  var nbtheight = 200;
-  var nbtnull = (0)+"px";
-    // alert(windowheight);
+      var nb1t = (2*windowtop)+"px";
+      var nbtheight = 200;
+      var nbtnull = (0)+"px";
+        // alert(windowheight);
 
-  if(windowheight == 669){
-    $(".roadjourny").addClass("roadjournyoverflow");
-  
-  }
-  else{
-      $(".roadjourny").css("height",nb1t);
+      if(windowheight == 669){
+        $(".roadjourny").addClass("roadjournyoverflow");
+      
+      }
+      else{
+          $(".roadjourny").css("height",nb1t);
 
-  }
+      }
 
 
 
@@ -65,13 +65,13 @@ export default class Ourjournyblock extends Component {
             $(".add9").addClass("addanim");
         }   
          if (scroll >= 1250) {
-            $(".add9").addClass("addanim");
+            $(".add10").addClass("addanim");
         } 
          if (scroll >= 1450) {
-            $(".add9").addClass("addanim");
+            $(".add11").addClass("addanim");
         }  
          if (scroll >= 1600) {
-            $(".add9").addClass("addanim");
+            $(".add12").addClass("addanim");
         }           
     });
  $(window).scroll(function() 
@@ -117,12 +117,12 @@ export default class Ourjournyblock extends Component {
         if (scroll >= 1450) {
             $(".Journycaro10").addClass("journyanim");
         }
-        if (scroll >= 1650) {
+       /* if (scroll >= 1650) {
             $(".Journycaro11").addClass("journyanim");
-        }
-        if (scroll >= 1850) {
+        }*/
+       /* if (scroll >= 1850) {
             $(".Journycaro12").addClass("journyanim");
-        }
+        }*/
         
     });
     
@@ -143,6 +143,7 @@ journyData(){
         }*/
     ]
 }
+
 
 journyData1(){
     return [
@@ -230,24 +231,8 @@ journyData5(){
         */
     ]
 }
+
 journyData6(){
-    return [
-        {
-            journyTitle : "Oct 2013",
-            journytext  : "iOG Solutions establishes a base in Abu Dhabi near Mushriff Mall."   
-        },
-  /*      {
-            journyTitle : "",
-            journytext  : ""   
-        }, 
-        {
-            journyTitle : "",
-            journytext  : ""   
-        } */
-        
-    ]
-}
-journyData7(){
     return [
         {
             journyTitle : "Sept 2017",
@@ -265,6 +250,17 @@ journyData7(){
     ]
 }
 journyData8(){
+
+  return [
+        {
+            journyTitle : "June 2019",
+            journytext  : "Conducted Value Discovery Workshop for multiple refineries to identify significant opportunities for improvement."   
+        },
+        
+    ]
+  
+}
+journyData7(){
     return [
         {
             journyTitle : "Apr 2018",
@@ -276,22 +272,13 @@ journyData8(){
 journyData9(){
     return [
         {
-            journyTitle : "Mar 2019",
-            journytext  : "Successful Delivery and Go-Live of Petrochemical Scheduling, Mass Balance for a Greenfield Refinery and Petrochemical Complex in the Asia Pacific."   
+            journyTitle : "Nov 2019",
+            journytext  : "iOG Solutions moved to its new office space in #7090, Marvel Feugo, Pune with a grand inaugural ceremony."   
         },
         
     ]
 }
-journyData10(){
-    return [
-        {
-            journyTitle : "June 2019",
-            journytext  : "Conducted Value Discovery Workshop for multiple refineries to identify significant opportunities for improvement."   
-        },
-        
-    ]
-}
-journyData11(){
+/*journyData10(){
     return [
         {
             journyTitle : "Aug 2019",
@@ -299,15 +286,16 @@ journyData11(){
         },
         
     ]
-}
-journyData12(){
+}*/
+journyData11(){
     return [
         {
-            journyTitle : "Nov 2019",
-            journytext  : "iOG Solutions moved to its new office space in #7090, Marvel Feugo, Pune with a grand inaugural ceremony."   
+            journyTitle : "Apr 2018",
+            journytext  : "Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry."   
         },
         
     ]
+    
 }
 
 
@@ -321,10 +309,10 @@ journyData12(){
                     <span className="text">Scroll down</span>
                   </div>
                   <div className="Journycaro1">
-                    <Journycaro journyData={this.journyData()}/>
+                    <Journycaro className="text-left" journyData={this.journyData()}/>
                   </div>
                   <div className="Journycaro2">
-                    <Journycaro journyData={this.journyData1()}/>
+                    <Journycaro className="text-right" journyData={this.journyData1()}/>
                   </div>
                   <div className="Journycaro3">
                     <Journycaro journyData={this.journyData2()}/>
@@ -350,9 +338,9 @@ journyData12(){
                   <div className="Journycaro10">
                     <Journycaro journyData={this.journyData9()}/>
                   </div>
-                  <div className="Journycaro11">
+                  {/*<div className="Journycaro11">
                     <Journycaro journyData={this.journyData10()}/>
-                  </div>
+                  </div>*/}
                   <div className="Journycaro12">
                     <Journycaro journyData={this.journyData11()}/>
                   </div>
@@ -363,8 +351,8 @@ journyData12(){
                   </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 NOpadding">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock lightbluebg">
-              <h1 className="col-lg-10 col-lg-offset-2"><b>Our</b> Journey</h1>
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock " style={{background:"#1056f3"}}>
+                <h1 className="col-lg-10 col-lg-offset-1"style={{opacity:1}}><b>Our</b> Journey</h1>
               </div>
                 <img className="add1" src="/images/add1.png" />
               </div>
@@ -403,25 +391,31 @@ journyData12(){
               </div>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 journybg5">
+              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
               <img className="add11" src="/images/add1.png" />
               </div>
           </div>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+              <img className="add12" src="/images/add1.png" />
+              </div>
+          </div>
+
          {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 ">
               <img className="add10" src="/images/add1.png" />
               </div>
-              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg7">
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
               </div>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 ">
               <img className="add11" src="/images/add1.png" />
               </div>
-              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
+              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
               </div>
-          </div>
-         */}
+          </div>*/}
+         
           {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <div className="col-lg-4 col-md-7">
                <nav aria-label="breadcrumb">

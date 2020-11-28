@@ -210,7 +210,7 @@
 
 
 .Main_Cards__Bubble:first-child {
-    top: 270px;
+    top: 450px;
     left: -75px;
 }
 .Main_Cards__Bubble:first-child {
@@ -231,7 +231,7 @@
 }
 .Main_Cards__Bubble:nth-child(2) {
     right: 0px;
-    bottom: 0px;
+    top: 400px;
     width: 1000px;
     height: 1000px;
 }

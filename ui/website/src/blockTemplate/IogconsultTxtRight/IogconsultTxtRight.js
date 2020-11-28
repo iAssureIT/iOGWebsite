@@ -59,7 +59,7 @@ componentDidMount(){
                     <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
                      <img src={this.state.blocks.fgImage} alt="" className="BT3_iogconsult" />
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BT3_text1">
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BT3_text11">
                     <div className="services_title"><b>{this.state.blocks.blockTitle}</b></div>
                       <p className="BT3_text text-justify "dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>

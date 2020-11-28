@@ -149,7 +149,7 @@ export default class Upstream extends Component {
                                                     <p className="text-center upstreamtext">{data.upstreamtext}</p>
                                                 </div>
                                                 <div className="price-footer price-footer_upstream  price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
+                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="Read More"/></a>                                    
                                                 </div>
                                             </div>
                                         </div>                       

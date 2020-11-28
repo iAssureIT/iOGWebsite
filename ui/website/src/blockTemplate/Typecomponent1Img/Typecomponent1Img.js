@@ -46,7 +46,7 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel onselecthover"
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel onselecthover"style={{marginBottom:"50px"}}
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -57,7 +57,7 @@ componentDidMount(){
                   </div>       */}             
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 subpages_Title text-center">
                     <hr/>
-                     <h2 className="H2weight" style={{color:"#009de2"}}>{this.state.blocks.blockTitle}</h2>
+                     <h2 className="H2weight" style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                     </div>
                     <div className="col-lg-offset-1 col-lg-11 col-md-12 col-sm-12 col-xs-12  maindivWidth_mob">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

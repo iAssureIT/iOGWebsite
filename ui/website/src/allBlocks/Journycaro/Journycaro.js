@@ -9,6 +9,13 @@ import './Journycaro.css';
 
 export default class Journycaro extends Component {
 
+ componentDidMount(){
+  var dataCount1=[];
+  var dataCount=this.props.journyData;
+  dataCount1.push(dataCount);
+  console.log("dataCount----",dataCount1);
+ 
+ }
 
 
     render(){
@@ -16,16 +23,17 @@ export default class Journycaro extends Component {
              <div>
                 <div className="col-lg-7 col-md-3 col-sm-3 col-xs-3">
                   <div className="row">
-                      <div className="webclientbackimg text-center col-lg-12">
+                      <div className="webclientbackimg  col-lg-12">
                             <div id="myCarousel" className="carousel slide" data-ride="carousel" data-pause="false">
                               <div className="carousel-inner webclientcaro">
                                     
                                     {this.props.journyData && this.props.journyData.length>0?
                                       this.props.journyData.map((data, index)=>{
+                                        // console.log("data----",data);
                                         if(index == 0){
                                             return (
                                                 <div key={index} className="item active webclientcaro ">
-                                                  <h3 className="lightbluetext">{data.journyTitle}</h3>
+                                                  <h3 className=""style={{color:"#333"}}>{data.journyTitle}</h3>
                                                   <p>{data.journytext}</p>
                                                 </div>
                                             );

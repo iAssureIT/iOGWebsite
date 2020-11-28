@@ -185,8 +185,8 @@ console.log("10 sep==>",this.props.block_id);
     console.log('kghjgjgj',this.state.blocks.fgImage);
     return (
      <div> 
-      <div className="container-fluid">
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 imagesize">
+      <div className="container-fluid"style={{padding:"0px"}}>
+       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 imagesize"style={{padding:"0px"}}>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  innerBlocktConsult NOPadding "style={{backgroundImage:"url("+this.state.blocks.fgImage+")"}}>
           <div className="Bubble hidden-md hidden-sm hidden-xs">
            <div className="Main_Cards__Bubble1 bub11">
