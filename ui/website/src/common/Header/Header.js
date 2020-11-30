@@ -406,15 +406,15 @@ handlechange(event){
 
            </div> 
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 setlogo">
-           <a className="headerlogo" href="/"><img alt="Logo" src="https://iogiassureit.s3.amazonaws.com/iOG/iOG_Logo.svg"/></a>         
+           <a className="headerlogo" href="/"><img alt="Logo" src="https://iogiassureit.s3.amazonaws.com/iOG/Logo.svg"/></a>         
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-9">
            <div class="topnav" id="myTopnav">
-            <a href="/" className={this.state.divUrl[3]== "" ? "Currentactivetab" : ""}>HOME</a>
+            <a href="/" className={this.state.pageUrl== "/" ? "Currentactivetab" : ""}>HOME</a>
 
             <div class="dropdown">
-            {console.log("-----",this.state.pageUrl === "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA")}
-              <a href="/masterpage/about" className={this.state.pageUrl === "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA" } ><button class="dropbtn">ABOUT US 
+            {console.log("-----",this.state.pageUrl == "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
+              <a href="/masterpage/about" className={this.state.pageUrl == "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA" } ><button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
                </button>
              </a>
@@ -428,8 +428,9 @@ handlechange(event){
             </div> 
 
             <div class="dropdown">
-              <button class="dropbtn"><a href="/masterpage/service-arms"className="NopaddingToA">SERVICES</a> 
-                <i className="fa fa-angle-down Headerdownarraow"></i>
+              {console.log("-----",this.state.pageUrl === "/masterpage/service-arms" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
+              <button class="dropbtn"><a href="/masterpage/service-arms"className={this.state.pageUrl == "/masterpage/service-arms" ? "Currentactivetab NopaddingToA":"NopaddingToA"}>SERVICES</a> 
+                <i  className={this.state.pageUrl == "/masterpage/service-arms" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
                  <a href="/masterpage/iog-study">iOGStudy</a>
@@ -440,8 +441,8 @@ handlechange(event){
             </div> 
 
             <div class="dropdown ">
-              <button class="dropbtn"><a href="/masterpage/newexpertise" className="NopaddingToA">EXPERTISE</a>
-                 <i className="fa fa-angle-down Headerdownarraow"></i>
+              <button class="dropbtn"><a href="/masterpage/newexpertise" className={this.state.pageUrl == "/masterpage/newexpertise" ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>EXPERTISE</a>
+                 <i className={this.state.pageUrl == "/masterpage/newexpertise" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
               <div class="col-lg-10 col-md-10 hidden-sm hidden-xs dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
@@ -517,8 +518,8 @@ handlechange(event){
               </div>
             </div> 
              <div class="dropdown">
-              <button class="dropbtn"><a href="/masterpage/industries"className="NopaddingToA">INDUSTRIES</a> 
-                 <i className="fa fa-angle-down Headerdownarraow"></i>
+              <button class="dropbtn"><a href="/masterpage/newindustries"className={this.state.pageUrl == "/masterpage/newindustries" ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>INDUSTRIES</a> 
+                 <i className={this.state.pageUrl == "/masterpage/newindustries" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
                 <a href="/masterpage/refinery">Refinery</a>
@@ -529,10 +530,9 @@ handlechange(event){
                 <a href="/masterpage/oil-&-gas-e-&-p">Oil & Gas E & P</a>
               </div>
             </div> 
-             <a href="/masterpage/careers">CAREERS</a>
-             <a href="/resources" >RESOURCES</a>
-             <a href="/blogs" >BLOGS</a>
-             <a href="/contact-us" >CONTACT US</a>
+             <a href="/resources"className={this.state.pageUrl == "/resources" ? "Currentactivetab " : "" } >RESOURCES</a>
+             <a href="/blogs" className={this.state.pageUrl == "/blogs" ? "Currentactivetab " : "" } >BLOGS</a>
+             <a href="/contact-us"className={this.state.pageUrl == "/contact-us" ? "Currentactivetab " : "" } >CONTACT US</a>
             <a href="javascript:void(0);" class="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>
           </div>
           </div>

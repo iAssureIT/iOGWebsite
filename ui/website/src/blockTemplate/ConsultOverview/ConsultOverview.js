@@ -53,8 +53,8 @@ componentDidMount(){
 
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div  className="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 BT3_innerBlock new_BT3_innerBlock">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 overviewPadding">
+              <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_innerBlock new_BT3_innerBlock">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_text1">
                 <div className="services_title"><b>{this.state.blocks.blockTitle}</b></div>
                   <p className="BT3_text text-justify "dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>

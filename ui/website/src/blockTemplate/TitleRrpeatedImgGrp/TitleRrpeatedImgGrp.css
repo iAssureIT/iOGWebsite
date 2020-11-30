@@ -28,9 +28,11 @@
     position: relative;
     margin-top: 90px;
 
-
     /*background-image: url("/img/bg001.png");*/
 
+}
+.B3t_imgNew{
+  width: 100%;
 }
 .roundimg{
     border-radius: 50%;

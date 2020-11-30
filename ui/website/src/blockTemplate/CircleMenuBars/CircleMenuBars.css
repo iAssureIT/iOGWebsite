@@ -59,7 +59,7 @@
  .new_wizard{
     height: 200px;
     color: #fff;
-    margin: 15px 0px;
+    margin: 0px 0px;
     padding-top: 35px;
     background: #004266;
 
@@ -331,3 +331,24 @@
     font-size: 12px ! important;
 }
 }
+
+@media screen and (min-width: 1400px) {
+    .navigation_tab{
+        margin-left: 48px ! important;
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+    .navigation_tab{
+        margin-left: 48px ! important;
+    }
+  
+}
+@media screen and (min-width: 1900px) {
+      .navigation_tab{
+        margin-left: 48px ! important;
+    }
+      
+}
+

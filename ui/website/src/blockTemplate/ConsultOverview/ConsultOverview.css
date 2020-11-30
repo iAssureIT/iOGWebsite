@@ -1,5 +1,5 @@
 .BT3_iogconsult {
-    width: 90%;
+    /*width: 90%;*/
     /*margin-top: 46px;*/
 }
 .BT3_text1{
@@ -11,4 +11,8 @@
 .services_title{
   color: #333 ! important;
   font-size: 30px;
+}
+.overviewPadding{
+	padding-left: 55px;
+	padding-right: 55px;
 }

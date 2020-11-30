@@ -53,14 +53,13 @@ componentDidMount(){
     render(){
    
         return(
-           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover type1btnDiv" style={{marginTop:"45px"}}
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover type1btnDiv"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 takebuttonDown">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
                               <hr style={{float:"left"}}/>
@@ -69,19 +68,19 @@ componentDidMount(){
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className=" para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p className="energypagedata text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                                <p className="energypagedata text-justify" style={{fontSize:"17px"}}dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div> 
-                              <a class="col-lg-6 col-md-6 services_title"style={{padding:"0px"}} href={this.state.blocks.blockSubTitle}>
-                              <button class="col-lg-8 col-md-8 lightbluebg buttonhover servicekbtn btn">Read More 
-                               <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
-                             </button>
-                          </a>  
+                              <a class="col-lg-5 col-md-5 services_title"style={{padding:"0px"}} href={this.state.blocks.blockSubTitle}>
+                                  <button class="col-lg-8 col-md-8 lightbluebg buttonhover servicekbtn btn">Read More 
+                                   <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
+                                 </button>
+                              </a>  
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingLeft:"100px"}}>
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" style={{width:"80%"}}   />
-                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BtnImageDown"style={{paddingLeft:"100px"}}>
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
+                              <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
+                          </div>
                         </div>
                     </div>   
                    </div>          

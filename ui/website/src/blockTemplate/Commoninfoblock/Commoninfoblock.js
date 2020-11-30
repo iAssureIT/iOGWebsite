@@ -55,7 +55,7 @@ console.log("inside==>",this.props.block_id);
       console.log("========",this.state.blocks.fgImage);
         return(
             <div className="">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding ">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
                 <div className="img1 ">
                   <img src={this.state.blocks.fgImage} alt="" className="services_img img-responsive" />
                 </div>
@@ -66,8 +66,8 @@ console.log("inside==>",this.props.block_id);
                     <hr/>
                      <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                   </div>
-                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <div className="col-lg-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-10">
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{marginBottom:"50px"}}> 
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 commonBlockpadd">
                           <p className="line_para B2T_p text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>   
                         </div>       
                       </div>    

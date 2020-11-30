@@ -30,7 +30,12 @@
     font-size: 17px;
     text-align: justify;
 }
+.tempaltepadding{
+    padding-left: 60px;
+    padding-right: 46px;
+}
 .B2T_overviewTxt{
+  overflow: hidden;
 /*	height: 260px;
 	width:  414px;
   padding-left: 130px;*/
@@ -46,10 +51,24 @@
     left: 130px;
     color: #ffffff;
 }
+.energypagedata ul{
+  padding-left: 18px;
+}
+.energypagedata p{
+  font-size: 17px ! important;
+}
+.B2T_overviewTxt img{
+  /*height: 100%;
+  width: 100%;*/
+  padding-top: 30px;
+}
+.righttextaboutus p{
+  font-size: 17px ! important;
+}
 .websiteclass{
   padding-top: 40px;
-  height: 300px;
-  margin-bottom: 50px;
+  /*height: 300px;*/
+  margin-bottom: 40px;
 }
 @media(max-width : 768px){
   .B2T1_line{

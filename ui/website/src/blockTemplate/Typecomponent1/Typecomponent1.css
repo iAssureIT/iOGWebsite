@@ -12,10 +12,11 @@
 	font-size: 17px ! important;
   color: #333;
 }
-.energypagedata{
-	font-size: 17px;
+.energypagedata p{
+	font-size: 17px ! important;
 	text-align: justify;
 }
+
 .intro_img{
   width: 100%
 }

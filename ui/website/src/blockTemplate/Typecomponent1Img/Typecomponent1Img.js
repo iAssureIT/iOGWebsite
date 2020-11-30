@@ -57,20 +57,20 @@ componentDidMount(){
                   </div>       */}             
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 subpages_Title text-center">
                     <hr/>
-                     <h2 className="H2weight" style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
+                     <h2 className="H2weight text-center" style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                     </div>
-                    <div className="col-lg-offset-1 col-lg-11 col-md-12 col-sm-12 col-xs-12  maindivWidth_mob">
+                    <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12  maindivWidth_mob">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <div> 
-                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } } className="implementApproach"></p>
+                                <p dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } } className="text-center implementApproach"></p>
                               </div>   
                             </div>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 comp_imgDiv ">
+                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-10  ">
                             
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img" />
+                              <img src={this.state.blocks.fgImage} alt="" className="text-center img-responsive" />
  
                         </div>
                         </div>

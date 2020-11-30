@@ -142,7 +142,7 @@ componentDidMount(){
          <div>
             <div className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></div>
          </div>
-          <div className="col-lg-10 col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-10 col-xs-12 servivesblockIog">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 servivesblockIog">
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
            { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?

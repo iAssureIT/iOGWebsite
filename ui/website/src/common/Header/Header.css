@@ -133,7 +133,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #000;
+  color: #333;
   text-align: center;
   padding: 14px 12px;
   text-decoration: none;
@@ -576,6 +576,9 @@ border:1px solid #eee ! important;
 
   .Currentactivetab{
     color:orange ! important;
+  }
+  .normalTabColor{
+    color:#333 ! important;
   }
 
 

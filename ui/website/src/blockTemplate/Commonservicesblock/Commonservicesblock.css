@@ -53,6 +53,10 @@
   transform: rotateY(180deg);
   transition-duration:1.5s;
 }
+.commonBlockCss{
+  background:#eeeeee80;
+  padding-top: 40px;
+}
 
 .serflip-card-front, .serflip-card-back {
   position: absolute;

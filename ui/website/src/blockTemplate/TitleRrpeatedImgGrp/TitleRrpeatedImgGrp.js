@@ -154,12 +154,12 @@ componentDidMount(){
 		
 		return (
 		   <div>   
-			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs"style={{marginBottom:"50px"}}>
 		        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
                     <hr/>
                      <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                     </div>
-					<div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
                          <div className="">
 						 {
@@ -190,7 +190,7 @@ componentDidMount(){
 	                    </div>
 	      
 	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs B3t_img">
-	                      <img src={this.state.blocks.fgImage} className=" img-responsive" style={{height:"100%"}} />
+	                      <img src={this.state.blocks.fgImage} className=" img-responsive B3t_imgNew" style={{height:"100%"}} />
 	                    </div>
 						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
 						  {

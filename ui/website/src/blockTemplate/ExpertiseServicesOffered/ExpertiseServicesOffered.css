@@ -4,9 +4,9 @@
  .B4T_ServicesDiv{
     top: 45px;
     box-shadow: 0px 0px 5px 0px #b7b3b3;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    min-height: 170px;
+    margin-left: 40px;
+    margin-bottom: 35px;
+    min-height: 193px;
   }
   .B4T_ServicesDiv_mob{
     top: 45px;
@@ -26,7 +26,7 @@
     margin-left: 15px;
   }
   .innerServiceDiv{
-    padding-top: 15px;
+    padding-top: 25px;
   	/*padding-left: 45px;*/
   }
   .B2T_serviceTitle{

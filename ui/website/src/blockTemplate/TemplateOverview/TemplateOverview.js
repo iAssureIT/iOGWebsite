@@ -55,22 +55,22 @@ console.log("==>",this.props.block_id);
 
   render() {  
     return (
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid innerBlocktepmlate1 NOPadding">
+      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid innerBlocktepmlate1 NOPadding ">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ContentHeadreMargin  contentheaderNewPage text-center">
                 <hr/>
                  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                 </div>
-            <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1  websiteclass ">
-              <div className="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   websiteclass tempaltepadding ">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingTop:"40px"}}>
                 <p className="B2T_p" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                   {/*<div>
                   <input type="button" className="col-lg-3 col-md-3 col-sm-8 col-xs-8 btn blogbtn1 lightbluebg buttonhover B2T_btn" value="Read More"/>
                    <i className=" col-lg-1 readmore fa fa-angle-double-right"></i>
                   </div>*/}
                 </div>
-                <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12 B2T_overviewTxt">
-                  <img src={this.state.blocks.fgImage}className=" img-responsive "/>
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 B2T_overviewTxt">
+                  <img src={this.state.blocks.fgImage}className="col-lg-10 col-md-10 col-sm-10 col-xs-10 img-responsive "/>
                 </div>
             </div>
         </div> 

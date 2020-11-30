@@ -316,20 +316,13 @@ export default class Resourcedownload extends React.Component {
        const {formerrors} = this.state;
         return(
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                    <div className="line2 newline2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6 col-md-offset-6 col-xs-offset-4">
-                     </div>
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
+                    <hr/>
+                     <h2 style={{color:"#333"}}><b>Downloads</b></h2>
                     </div>
-                    <h2 className="lightbluetext text-center para1-top">Downloads</h2>
-                    <br></br>
-                    {/*<p className="line_para2  text-center">
-                        iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>
-                        lege to join hands and work with you to explore every possibility of enhancing your company’s profitability.<br></br>
-                         We are only a phone call or email away from you.Looking forward to an opportunity to partner with you.<br></br>
-                      </p>     */}     
-                </div>
-                 <div  className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1">
+
+                 <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      {
                       this.VideoData().map((data, index)=>{
                       return (
@@ -359,6 +352,7 @@ export default class Resourcedownload extends React.Component {
                       })
                     }   
                  </div>
+                </div> 
                   <div className="row"> 
            
                     <div className="modal fade" id="modalId1" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

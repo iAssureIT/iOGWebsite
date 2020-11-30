@@ -89,13 +89,12 @@ export default class Resourcevideo extends Component {
       const { loadedVideosCount, currentPlayingIndex } = this.state;
 
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 videosDiv"style={{marginTop:"100px"}}>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                    <div className="line2 newline2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-6 col-md-offset-6 col-xs-offset-4">
-                     </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
+                    <hr/>
+                     <h2 style={{color:"#333"}}><b>Videos</b></h2>
                     </div>
-                    <h2 className="lightbluetext text-center para1-top">Videos</h2>
                       <br></br>
                       {/*<p className="line_para2  text-center">
                           iOG delivers services to the industry through 4 distinct arms of engagement.We would consider it our privi-<br></br>

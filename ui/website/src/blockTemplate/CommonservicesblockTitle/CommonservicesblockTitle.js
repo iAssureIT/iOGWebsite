@@ -100,7 +100,7 @@ componentDidMount(){
   var productlength = plength % 3;
 
   return(
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper serviceTitleBack">
           <div className="">
             <div className="Bubble" >
               <div className="Main_Cards__Bubble bub1"></div>

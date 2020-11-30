@@ -1,5 +1,5 @@
 .mt100{
-	margin-top: 100px;
+	margin-top: 40px;
 }
 
 .mt70{
@@ -48,13 +48,15 @@
 
 height: 100px;  
 }
-
+.videosDiv{
+  margin-bottom: 50px;
+}
 .videocard:before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -16px;
-    right: -16px;
+    top: -32px;
+    right: 35px;
     background: #00838d;
     height: 32px;
     width: 36px;

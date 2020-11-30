@@ -15,14 +15,21 @@
     margin-top: 25px;
 }
 
+
 .B2T_p{
+    padding-right: 45px;
 	/*position: absolute;
     top: 154px;*/
     font-size: 17px;
 }
 .B2T_overviewTxt{
+    height: 350px;
+
 	/*height: 260px;*/
 	/*margin-top: 150px;*/
+}
+.B2T_overviewTxt img{
+    /*height: 100%;*/
 }
 .B2T_btn{
  position: absolute;
