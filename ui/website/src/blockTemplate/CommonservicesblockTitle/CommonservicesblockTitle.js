@@ -113,7 +113,7 @@ componentDidMount(){
     }
 
   return(
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper serviceTitleBack">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contentWraper serviceTitleBack" style={{marginTop:"25px"}}>
           <div className="">
             <div className="Bubble" >
               <div className="Main_Cards__Bubble bub1"></div>
@@ -121,11 +121,11 @@ componentDidMount(){
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
             </div>
-            <div className="">
-              <div className="">
-                <div className="">
-                  <div className="">
-                    <div className="">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style={{padding:"0px"}}>
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                       
                       <div className=""> 
                         <div className={classfor4} style={{marginBottom:"50px"}}> 
@@ -160,7 +160,7 @@ componentDidMount(){
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="">
                                           <div className="text-center">
-                                            <div className="serflip-card"style={{width:"300px"}}>
+                                            <div className="serflip-card"style={{width:"275px"}}>
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front hidden-sm hidden-xs">
                                                     <img src={data.Image} className="text-center" alt=""/>

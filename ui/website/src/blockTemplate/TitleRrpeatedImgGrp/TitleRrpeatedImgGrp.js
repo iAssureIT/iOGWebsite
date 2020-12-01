@@ -189,8 +189,8 @@ componentDidMount(){
 	                	</div>
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs B3t_img">
-	                      <img src={this.state.blocks.fgImage} className=" img-responsive B3t_imgNew" style={{height:"100%"}} />
+	                	<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs newApplicationDiv B3t_img">
+	                      <img src={this.state.blocks.fgImage} className=" img-responsive " style={{height:"350px"}} />
 	                    </div>
 						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
 						  {

@@ -14,13 +14,13 @@
 
 }
 .type1btnDiv{
-  height: 430px;
+  height: 465px;
   overflow: hidden;
   padding-top: 25px;
   margin-bottom: 65px;
 }
 .takebuttonDown{
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 25px;
 }
 .line3{
@@ -47,10 +47,14 @@
 .TypecomponentBtnImg{
   width: 500px;
   height: 380px;
-  float:right;
+  padding-top: 50px;
+  /*float:right;*/
 }
 .TypecomponentBtnImg img{
-  width: 390px;
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+
   /*height: 100%;*/
   /*width: 100%;*/
 }
@@ -68,9 +72,10 @@
   margin-top: 20px;
 }
 .Typecomponent2BtnImg img{
-  /*width: 100%;*/
-  /*float:right;*/
-  /*height: 100%;*/
+
+ /*width:400px;
+ height:400px;
+ object-fit: contain;*/
 }
 .industries_imgDiv{
   /*margin-top: 75px;*/

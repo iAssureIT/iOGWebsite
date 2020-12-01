@@ -16,6 +16,16 @@
   	margin-top: 45px;
 
   }
+ .BT1_bannerTitle_res{
+
+    position: relative;
+    color: #fff;
+    font-size: 43px;
+    font-weight: 600;
+    left: 578px;
+    top: 165px;
+    letter-spacing: 2px;
+  }
   .BT1_bannerTitle{
   	position: relative;
   	color: #fff;

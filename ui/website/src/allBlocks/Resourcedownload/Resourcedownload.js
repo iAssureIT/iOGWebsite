@@ -323,35 +323,41 @@ export default class Resourcedownload extends React.Component {
 
                  <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                     {
-                      this.VideoData().map((data, index)=>{
-                      return (
-                         
-                       /* <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
-                          <a className="videocard" href={data.downstreamlink} title="Click to Download" >
-                            <h3>{data.downstreamTitle}</h3>
-                            <div className="go-corner" href={data.downstreamlink}>
-                              <div className="go-arrow">
-                                →
+                     <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                        <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       {
+                        this.VideoData().map((data, index)=>{
+                        return (
+                           
+                         /* <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100" data-toggle="modal" data-target="#modalId" onClick={this.modalClickEvent.bind(this)}>
+                            <a className="videocard" href={data.downstreamlink} title="Click to Download" >
+                              <h3>{data.downstreamTitle}</h3>
+                              <div className="go-corner" href={data.downstreamlink}>
+                                <div className="go-arrow">
+                                  →
+                                </div>
                               </div>
-                            </div>
-                          </a>
-                        </div> */
+                            </a>
+                          </div> */
 
-                       <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100" data-toggle="modal" id={data.downstreamlink} data-target="#modalId1" onClick={this.modalClickEvent1.bind(this)}>
-                          <div className="videocard" title="Click to Download" download>
-                            <h3>{data.downstreamTitle}</h3>
-                            <div className="go-corner" >
-                              <div className="go-arrow">
-                                →
+                         <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100" data-toggle="modal" id={data.downstreamlink} data-target="#modalId1" onClick={this.modalClickEvent1.bind(this)}>
+                            <div className="videocard" title="Click to Download" download>
+                              <h3>{data.downstreamTitle}</h3>
+                              <div className="go-corner" >
+                                <div className="go-arrow">
+                                  →
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
                          );
                       })
                     }   
-                 </div>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
                 </div> 
                   <div className="row"> 
            

@@ -57,7 +57,7 @@
 .All1blog1{
 	position: relative;
 	height: 310px;
-	margin-left: 55px;
+	margin-left: 40px;
 	overflow: hidden;
 	margin-bottom: 50px;
 	background-color: #fff;
@@ -167,7 +167,7 @@
 .blogtext1{
 
 	/*margin-top: 120px;*/
-	left:50%;
+	left:8em;
 }
 .bloglist_margin{
 	margin-left: 60px;

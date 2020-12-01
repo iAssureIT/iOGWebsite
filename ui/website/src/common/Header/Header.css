@@ -116,7 +116,7 @@
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: 105px;
+  height: 115px;
   box-shadow: 0 10px 14px rgba(92,141,255,.2);
   transition-duration: 0.8s;
 }
@@ -358,7 +358,7 @@
   position: fixed;
   z-index: 10000;
   background-color: #fff;
-  height: 105px;
+  height: 115px;
   box-shadow: 0 10px 14px rgba(92,141,255,.2);
   transition-duration: 0.8s;
 }

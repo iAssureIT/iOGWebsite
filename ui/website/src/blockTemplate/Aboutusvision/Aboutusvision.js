@@ -88,7 +88,7 @@ componentDidMount(){
                           this.state.blocks.repeatedBlocks.map((result, index)=>{
                           return(
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blck blck1heightnew b1width">
-                              <h2 className="line_subhead textcolorblue vision_align1">{result.Title}</h2>
+                              <h2 className="line_subhead textcolorblue vision_align1" style={{color:"#333"}}>{result.Title}</h2>
                               <p className="text-justify vision_align" dangerouslySetInnerHTML={ { __html: result.Description } }></p>
                            </div>
                               )

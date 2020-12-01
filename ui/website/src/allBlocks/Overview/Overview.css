@@ -39,3 +39,50 @@
     /* margin-left: 500px; */
     text-align: center;
 }
+
+ .BT1_line{
+    background-color: #f08f00;
+    width: 90px;
+    height: 4px;
+    top: 211px;
+    left: 60px;
+    position: absolute;
+    z-index: 999
+  }
+  .innerBlocktepmlate{
+    height: auto;
+  }
+  .BT1_img{
+    height: 200px;
+    width: 100%;
+    margin-top: 45px;
+
+  }
+  .BT1_bannerTitle{
+    position: relative;
+    color: #fff;
+    font-size: 43px;
+    font-weight: 600;
+    /*left: 500px;*/
+    top: 165px;
+    letter-spacing: 2px;
+  }
+  .HistorianTitle{
+    color: #fff;
+  }
+  .dynamicpageimg{
+    background-image: url("/images/acc.png");
+  }
+  @media(max-width : 600px){
+    
+    .BT1_bannerTitle{
+      font-size: 37px ! important;
+    }
+    .serflip-card{
+      width: 300px ! important;
+    }
+
+  }
+
+
+   

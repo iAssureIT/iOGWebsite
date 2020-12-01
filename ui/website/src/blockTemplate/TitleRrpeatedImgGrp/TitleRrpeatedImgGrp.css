@@ -32,7 +32,10 @@
 
 }
 .B3t_imgNew{
-  width: 100%;
+   height: 300px ! important;
+   object-fit: contain;
+
+  /*width: 100%;*/
 }
 .roundimg{
     border-radius: 50%;
@@ -257,12 +260,25 @@
     margin-top: 10px;
     height: 32px;
   }
+  /*.B3t_img img{
+
+    height: 322px;
+    width: 404px;
+     object-fit: contain;
+  }*/
+  .newApplicationDiv img{
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    object-fit: contain;
+  }
 
   .B3t_img{
-    background-size: 100%;
     margin-top: 50px;
     height: 322px;
     width: 404px;
+    overflow: hidden ! important;
+   
   }
   .B3T_star{
     position: absolute;

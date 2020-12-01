@@ -214,7 +214,7 @@
 }
 .featuretitle{
   font-size: 18px;
-  color: #000080;
+  color: #003352;
   font-weight: 600;
 }
 .featuretext{
@@ -256,12 +256,7 @@
     height: 32px;
   }
 
-  .B3t_img{
-    background-size: 100%;
-    margin-top: 50px;
-    height: 322px;
-    width: 404px;
-  }
+  
   .B3T_star{
     position: absolute;
     right: 9px; 

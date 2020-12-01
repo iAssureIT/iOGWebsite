@@ -1,12 +1,12 @@
 .new_connecting-line {
-    height: 2px;
-    background: #e0e0e0;
+    height: 1px;
+    background: #999;
     position: absolute;
     width: 100% ! important;
     margin: 0 auto;
     left: 0;
     right: 640px ! important;
-    top: 55%;
+    top: 57%;
     z-index: 1;
 }
 .new_tab{
@@ -20,7 +20,7 @@
     position: relative;
     top: 31px;
     right: 15px;
-    color: #ffffff;
+    color: #333;
     font-weight: 500;
  }
  .new_wizardNotefortwo
@@ -41,7 +41,8 @@
     position: relative;
     top: 31px;
     right: 30px;
-    color: #ffffff;
+    color: #333;
+    font-weight: 500;
  }
  .new_wizardNote_for6
  {
@@ -58,10 +59,10 @@
  }
  .new_wizard{
     height: 200px;
-    color: #fff;
+    color: #333;
     margin: 0px 0px;
     padding-top: 35px;
-    background: #004266;
+    background: #99999975;
 
  }
  .new_wizard_length{
@@ -78,14 +79,14 @@
  }
 
  .new_round-tab {
-    width: 20px;
+    width: 24px;
     margin-left: 29%;
-    height: 20px;
+    height: 24px;
     line-height: 36px;
     display: inline-block;
     border-radius: 100px;
     background: #f1f1f1;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #fff;
     z-index: 2;
     position: absolute;
     left: 0;
@@ -112,14 +113,14 @@
     /*top:44px;*/
 }
 .new_round-tabfor4 {
-    width: 20px;
+    width: 24px;
     margin-left: 29%;
-    height: 20px;
+    height: 24px;
     line-height: 36px;
     display: inline-block;
     border-radius: 100px;
     background: #f1f1f1;
-    border: 2px solid #e0e0e0;
+    border: 3px solid #fff;
     z-index: 2;
     position: absolute;
     left: 0;
@@ -136,7 +137,7 @@
 }
 .active{
     /* background-color: #a8a; */
-   background-color: #4d90fe;
+   background-color: orange;
 }
 .navigation_img{
     height: 20px;
@@ -181,7 +182,7 @@
     right: 20px;
 }
 .navigationTitle{
-    color: #ffffff;
+    color: #333;
     /*position: absolute; */
     bottom: 4px;
     left: 254px;
@@ -200,9 +201,9 @@
 
 }
 .navigationTitle_for5{
-    color: #ffffff;
+    color: #333;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 25px;
     bottom:14px;
 
 }

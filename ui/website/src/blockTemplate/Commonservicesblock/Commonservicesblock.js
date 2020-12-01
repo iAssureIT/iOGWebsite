@@ -122,13 +122,13 @@ export default class Commonservicesblock extends Component {
            {/*   <hr/>
               <h1 className="lightbluetext">Services</h1>*/}
             </div>
-           {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{padding:"0px"}}>
               <div className="">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{padding:"0px"}}>
                   <div className="">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div className=""> 
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> */}
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div className={classfor4} style={{paddingLeft:"0px"}}> 
                             {
                              this.state.blocks.repeatedBlocks.map((data, index)=>{
@@ -152,12 +152,12 @@ export default class Commonservicesblock extends Component {
                                   var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               
                                 }
                                  return (
-                                 <div key={index} className={classes}>
+                                 <div key={index} className={classes} style={{paddingRight:"0px"}}>
                                   <a href={data.Link} data-toggle="tooltip" title="Click me to read more!">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="">
                                           <div className="text-center">
-                                            <div className="serflip-card"style={{width:"300px"}}>
+                                            <div className="serflip-card"style={{width:"285px"}}>
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front hidden-sm hidden-xs">
                                                     <img src={data.Image} className="text-center" alt=""/>
@@ -183,6 +183,13 @@ export default class Commonservicesblock extends Component {
                           </div>
                         </div>
                       </div>
+                     </div> 
+                   </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
                
       
     );

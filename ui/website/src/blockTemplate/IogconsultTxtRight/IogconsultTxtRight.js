@@ -56,7 +56,7 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             
                   <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BT3_innerBlock">
-                    <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1">
+                    <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1 BT3_innerBlockImage">
                      <img src={this.state.blocks.fgImage} alt="" className="BT3_iogconsult" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BT3_text11">

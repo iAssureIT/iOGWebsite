@@ -652,6 +652,11 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 .blogtext p{
     font-size: 14px ! important;
 }
+.carousel-control.left , .carousel-control.right
+{
+  background-image: none !important;
+}
+
 /*.goog-te-gadget{
     display: none;
  }

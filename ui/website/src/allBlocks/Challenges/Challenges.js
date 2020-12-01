@@ -13,7 +13,7 @@ export default class Challenges extends Component {
 
 render(){
   return(
-          <div  className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <div  className="col-sm-12 col-md-12 col-sm-12 col-xs-12" style={{padding:"30px"}}>
             {
               this.props.CommonleafblockData.map((data, index)=>{
                 return (     

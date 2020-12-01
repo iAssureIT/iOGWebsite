@@ -86,19 +86,35 @@ height: 100px;
 .videocard:focus{
 	text-decoration: none;
 }
+.BT1_img1{
+    height: 200px;
+    width: 100%;
+    /*margin-top: 45px;*/
+
+  }
 
 .videocard1{
   display: block;
   position: relative;
   background-color: #f2f8f9;
   border-radius: 4px;
-  padding: 32px 24px;
+  padding: 15px 12px;
   margin: 12px;
-  height: 272px;
+  height: 242px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
 }
+.BT1_bannerTitle_res{
+
+    position: relative;
+    color: #fff;
+    font-size: 43px;
+    font-weight: 600;
+    left: 27px;
+    top: 130px;
+    letter-spacing: 2px;
+  }
 
 .videocard1:before {
     content: "";

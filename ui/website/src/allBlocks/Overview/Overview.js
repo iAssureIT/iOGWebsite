@@ -12,20 +12,31 @@ export default class Overview extends Component {
 render(){
       return(
 
-            <div className="col-lg-11 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 blockContent">  
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style={{padding:"0px"}}>  
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style={{padding:"0px"}}>  
+
+   
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blockContent"  style={{padding:"0px"}}>  
+            
                {
                 this.props.OverviewData.map((data, index)=>{
                    return ( 
-                    <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{padding:"0px"}}>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         {/*<div className="line_overview line_overview1 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-5">
                         </div>*/}
                         </div>
-                        <h2 className="bluetext text-center paraaa-top newparaaa-top">{data.overviewTitle}</h2>
-                        <p className="line_subheadd ">{data.overviewSubTitle}</p>
-                        <p className="line_paraaaa">{data.overviewtext1}</p>
-                        <p className="line_paraaaa">{data.overviewtext2}</p>
-                        <ul className="challenges_list">
+                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+                               <h2 className="BT1_bannerTitle text-center HistorianTitle text-center"><b>{data.overviewTitle}</b></h2>
+                               <div className="dynamicpageimg BT1_img"></div>
+                              </div>
+                         </div>
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{padding:"60px"}}>  
+                            <p className="line_subheadd ">{data.overviewSubTitle}</p>
+                            <p className="line_paraaaa">{data.overviewtext1}</p>
+                            <p className="line_paraaaa">{data.overviewtext2}</p>
+                            <ul className="challenges_list">
                             {
                               data.commonulliUl  && data.commonulliUl.length > 0 ? 
                                 data.commonulliUl.map((ulDetail, index)=>{
@@ -77,6 +88,7 @@ render(){
                                 null
                              }
                         </ul> 
+                       </div> 
                         <p className="line_paraaaa">{data.overviewtext5}</p>                                     
 
                     </div>
@@ -84,6 +96,8 @@ render(){
                       })
                   }
               </div>
+            </div>
+          </div>    
               );
           }
         }

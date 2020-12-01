@@ -59,13 +59,10 @@ componentDidMount(){
          </div>
         </div>*/}
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
-
         		  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
         		   <h2 className="BT1_bannerTitle text-center HistorianTitle"><b>{this.state.blocks.blockTitle}</b></h2>
-                   {/*<img src={this.state.blocks.bgImage} className="BT1_img"/>*/}
                    <div className="dynamicpageimg BT1_img"></div>
         		  </div>
-    
         </div>
        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     );  
