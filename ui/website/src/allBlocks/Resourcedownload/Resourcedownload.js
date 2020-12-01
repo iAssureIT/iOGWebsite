@@ -315,7 +315,7 @@ export default class Resourcedownload extends React.Component {
     render(){
        const {formerrors} = this.state;
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{marginBottom:"50px"}}>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
                     <hr/>
                      <h2 style={{color:"#333"}}><b>Downloads</b></h2>

@@ -34,10 +34,13 @@
     margin-bottom: 50px;
     padding: 32px 40px 56px;
     background-color: #009de2;
-    color: white;
+    color: #fff ! important;
     background-image: url(/images/11.png) no-repeat;
     height: 290px;
     top: 12px;
+}
+.RB_block:hover  .rb-para-top{
+    color:#fff ! important;
 }
 .rbicn_1 {
     margin-top: 40px;

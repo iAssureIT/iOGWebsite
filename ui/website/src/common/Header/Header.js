@@ -530,7 +530,9 @@ handlechange(event){
                 <a href="/masterpage/oil-&-gas-e-&-p">Oil & Gas E & P</a>
               </div>
             </div> 
+
              <a href="/resources"className={this.state.pageUrl == "/resources" ? "Currentactivetab " : "" } >RESOURCES</a>
+             <a href="/masterpage/careers"className={this.state.pageUrl == "/masterpage/careers" ? "Currentactivetab " : "" } >CAREERS</a>
              <a href="/blogs" className={this.state.pageUrl == "/blogs" ? "Currentactivetab " : "" } >BLOGS</a>
              <a href="/contact-us"className={this.state.pageUrl == "/contact-us" ? "Currentactivetab " : "" } >CONTACT US</a>
             <a href="javascript:void(0);" class="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>

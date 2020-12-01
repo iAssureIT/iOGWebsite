@@ -34,13 +34,16 @@
     margin-bottom: 50px;
     padding: 32px 40px 56px;
     background-color: #009de2;
-    color: white;
+    color: #fff ! important;
     background-image: url(/images/11.png) no-repeat;
     height: 290px;
     top: 12px;
 }
+.rb-para-top:hover{
+    color:#fff ! important;
+}
 .rbicn_1 {
-    margin-top: 40px;
+    margin-top: 65px;
 }
 .type3text{
     margin-top: 40px;
@@ -48,4 +51,7 @@
 }
 .Type3component{
     margin-bottom: 50px;
+}
+.rb-para-top{
+    height: 300px;
 }

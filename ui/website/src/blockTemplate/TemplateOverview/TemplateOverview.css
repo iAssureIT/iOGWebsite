@@ -58,9 +58,10 @@
   font-size: 17px ! important;
 }
 .B2T_overviewTxt img{
+  height: 345px;
   /*height: 100%;
   width: 100%;*/
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 .righttextaboutus p{
   font-size: 17px ! important;

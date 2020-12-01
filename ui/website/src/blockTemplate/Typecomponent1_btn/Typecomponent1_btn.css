@@ -8,16 +8,15 @@
 
 }
 .Type2Img{
-  /*width  : 100%;
-  height : 85%;*/
-  padding-top:50px;
-  /*padding-left: 0px;*/
+
+  width:385px; 
+  padding-top:25px;
 
 }
 .type1btnDiv{
-  height: 425px;
+  height: 430px;
   overflow: hidden;
-  padding-top: 70px;
+  padding-top: 25px;
   margin-bottom: 65px;
 }
 .takebuttonDown{
@@ -51,12 +50,17 @@
   float:right;
 }
 .TypecomponentBtnImg img{
-  height: 100%;
+  width: 390px;
+  /*height: 100%;*/
   /*width: 100%;*/
+}
+.TypebtnText{
+  margin-left: 30px;
 }
 .Typecomponent2BtnImg{
   width: 500px;
   height: 450px;
+  /*margin-left: 50px;*/
 
   /*float:left;*/
 }
@@ -64,9 +68,9 @@
   margin-top: 20px;
 }
 .Typecomponent2BtnImg img{
-  width: 100%;
+  /*width: 100%;*/
   /*float:right;*/
-  height: 100%;
+  /*height: 100%;*/
 }
 .industries_imgDiv{
   /*margin-top: 75px;*/

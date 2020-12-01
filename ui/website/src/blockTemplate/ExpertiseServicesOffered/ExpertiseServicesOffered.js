@@ -109,16 +109,16 @@ componentDidMount(){
           <hr/>
            <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
         </div>
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+     {/*  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{marginLeft:"45px"}}>
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> */}
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           { 
             this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
             this.state.blocks.repeatedBlocks.map((result, index)=>{
               return(
                 <div>
-                 <div className=" col-lg-5 col-md-12 col-sm-12 col-xs-12 B4T_ServicesDiv">
+                 <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 B4T_ServicesDiv">
                  <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding hidden-xs">
                    <img src={result.Image} className="B5T_img img-responsive"/>
                   </div>
@@ -136,9 +136,7 @@ componentDidMount(){
               null
           }
           </div>
-         </div> 
-        </div>  
-     </div> 
+     
        {/*  <div className="col-lg-12 col-md-12  hidden-lg hidden-md">
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?

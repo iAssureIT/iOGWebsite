@@ -12,22 +12,23 @@
 .iogimgblock1{
     width: 96%;
     /* padding-top: 143px; */
-    padding-left: 69px;
-    margin-left: 52px;
+    /*padding-left: 69px;*/
+    /*margin-left: 52px;*/
     height: 389px;
 }
 
 .iogblock1text{
-    padding-top: 112px; 
+    padding-top: 130px; 
     font-weight: normal;
     font-style: normal;
+    text-align: center;
     /* font-size: 115px; */
     line-height: 1;
     margin-bottom: 4px;
     color: #000000bd;
     /* padding-bottom: 136px; */
     font-size: 15px;
-    padding-left: 55px;
+    padding-left: 25px;
     /* margin-top: 144px; */
     /* padding-bottom: 150px; */
     height: 399px;
@@ -38,11 +39,11 @@
   font-weight: bold;
 }
 .iogimgblock2{
-   width: 81%;
+   width: 111%;
     /* padding-top: 90px; */
     padding-top: 101px;
     padding-left: 13px;
-    margin-left: 1px;
+    margin-left: -27px;
     height: 747px;
 }
 .careerBox{
@@ -67,17 +68,12 @@
     margin-top: -95px;
 }
 
-.iogimgblock3{
-    width: 99%;
-    padding-left: 76px;
-    margin-left: 29px;
-    height: 362px;
-}
+
 
 .iogblock3text{
     font-size: 15px;
     /*padding-left: 87px;*/
-    margin-left: 8px;
+    margin-left: 52px;
     width: 107%;
     height: 362px;
     /*padding-top: 97px;*/
@@ -163,6 +159,8 @@
 }
 .firstblockk{
    padding-top: 28px;
+   letter-spacing: 1px;
+    line-height: 20px;
 }
 .secondblockk{
     padding-top: 16px;

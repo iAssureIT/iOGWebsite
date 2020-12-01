@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 // import { render } from 'react-dom';
 
-import axios from 'axios';
+// import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -9,44 +10,45 @@ import './Commonservicesblock.css';
 
 
 export default class Commonservicesblock extends Component {
-
-  constructor(props) {
+    constructor(props) {
     super(props);
     this.state = {
       blocks:{
-        "blockComponentName"  : "Commonservicesblock",
+        
+        "blockComponentName"  : "CommonservicesblockTitle",
+         blockTitle : "This is Block Title",
         "blockType"           : "simple",
         "repeatedBlocks"    : [
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                          "Title"       : "Geology &amp; Geophysics",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"     : "/images/Icon_1.png",
-                          "Link"      : "/iogstudy"
+                          "Image"       : "/images/Icon_1.png",
+                          "Link"        : "/"
                       },
                       {
-                        "Title"     : "Geology",
+                          "Title"     : "Geology",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
                           "Link"      : "/iogimplement"
                       },
                       {
-                        "Title"     : "Geology &amp; Geophysics",
+                          "Title"     : "Geology &amp; Geophysics",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_1.png",
                           "Link"      : "/iogtrain"
                       },
                       {
-                        "Title"     : "Geology",
+                          "Title"     : "Geology",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
                           "Link"      : "/iogstudy"
                       },
                        {
-                        "Title"     : "Geology",
+                          "Title"     : "Geology",
                           "SubTitle"    : "",
                           "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
                           "Image"     : "/images/Icon_2.png",
@@ -65,7 +67,8 @@ export default class Commonservicesblock extends Component {
 
     };    
   }
-componentDidMount(){
+  
+  componentDidMount(){
 // console.log("==>",this.props.block_id);
           {
              axios
@@ -73,6 +76,7 @@ componentDidMount(){
                 .then((response)=>{
                 /*var blocks = this.state.blocks;
                 blocks.push(response.data);*/
+                console.log("response in Commonservicesblock===",response);
                 this.setState({
                   blocks:response.data
                   });
@@ -88,13 +92,23 @@ componentDidMount(){
       this.setState({
                 block_id:this.props.block_id
               });
-}
-    
+}  
   
  render(){
-  var plength = this.state.blocks.repeatedBlocks ? this.state.blocks.repeatedBlocks.length : 0;
-  console.log("plength....",plength);
+  var plength =this.state.blocks.repeatedBlocks ? this.state.blocks.repeatedBlocks.length : 0;
   var productlength = plength % 3;
+   if(productlength == 2){
+      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1";
+
+    }
+    else if(productlength == 1){
+      var classfor4="col-lg-12 col-md-12 col-sm-12 col-xs-12";
+
+    }
+    else{
+      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1";
+
+    }
 
     return(
       
@@ -105,47 +119,53 @@ componentDidMount(){
               <div className="Main_Cards__Bubble bub2"></div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
+           {/*   <hr/>
+              <h1 className="lightbluetext">Services</h1>*/}
             </div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 commonBlockCss">
+           {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 CommonBlockSpacing">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div className=""> 
-                        <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1"> 
-                          <div className=""> 
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> */}
+                          <div className={classfor4} style={{paddingLeft:"0px"}}> 
                             {
-                              this.state.blocks.repeatedBlocks.map((data, index)=>{
+                             this.state.blocks.repeatedBlocks.map((data, index)=>{
+                                console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
+                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-4 col-md-offset-2 col-xs-offset-1 col-sm-4 col-xs-4";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
+                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center";
                                  
                                 }
                                 }else if(productlength == 1){
                                   // console.log('productlength')
                                   if(plength === index+1){
-                                    var classes = "webpageshopcont col-lg-4 col-xs-12 col-lg-offset-4   text-center";                                   
+                                    var classes = "webpageshopcont col-lg-3 col-md-3 col-xs-3   text-center";                                   
                                   }else{
-                                    var classes="webpageshopcont col-lg-4 col-md-4  col-sm-12 col-xs-12  text-center";                                 
+                                    var classes="webpageshopcont col-lg-3 col-md-3  col-sm-12 col-xs-12  text-center";                                 
                                 }
                                 }else{
                                   var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               
                                 }
                                  return (
-                                <div key={index} className={classes}>
-                                  <a href={"/masterpage/"+data.Link} data-toggle="tooltip" title="Click me to read more!">
+                                 <div key={index} className={classes}>
+                                  <a href={data.Link} data-toggle="tooltip" title="Click me to read more!">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="">
                                           <div className="text-center">
-                                            <div className="serflip-card">
+                                            <div className="serflip-card"style={{width:"300px"}}>
                                               <div className="serflip-card-inner">
-                                                  <div className="serflip-card-front">
-                                                    <img src={data.Image} alt=""/>
+                                                  <div className="serflip-card-front hidden-sm hidden-xs">
+                                                    <img src={data.Image} className="text-center" alt=""/>
                                                     <div className="dwstmTitle">{data.Title}</div> 
-                                                  
+                                                  </div>
+                                                  <div className="serflip-card-front hidden-lg hidden-md">
+                                                    <img src={data.Image} className="text-center img-responsive" alt=""/>
+                                                    <div className="dwstmTitle">{data.Title}</div> 
                                                   </div>
                                                   <div className="serflip-card-back">
                                                       <p className="text-justify downstreamtxt" dangerouslySetInnerHTML={ { __html: data.Description } }></p>
@@ -163,13 +183,7 @@ componentDidMount(){
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+               
       
     );
   } 

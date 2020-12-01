@@ -53,10 +53,10 @@ componentDidMount(){
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel alternateblock Textrighgtblock"style={{height:"490px"}}>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-1 ">
-                <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1 Typecomponent2BtnImg"style={{paddingLeft:"30px"}}>
-                 <img src={this.state.blocks.fgImage} alt="" className="img-responsive Type2Img" style={{width:"100%"}} />
+                <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1 Typecomp2Btn_img Typecomponent2BtnImg"style={{paddingLeft:"71px"}}>
+                 <img src={this.state.blocks.fgImage} alt="" className="img-responsive Type2Img" />
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingTop:"8%"}}>
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 TypebtnText"style={{paddingTop:"8%"}}>
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTitle hrpadding   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
                       <hr style={{float:"left"}} className/>
                      {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}

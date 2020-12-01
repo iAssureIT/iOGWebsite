@@ -38,10 +38,10 @@
   font-weight: bold;
 }
 .iogimgblock2{
-    width: 103%;
+    width: 111%;
     padding-top: 101px;
     padding-left: 13px;
-    margin-left: 1px;
+    margin-left: -27px;
     height: 747px;
 }
 .careerBox{
@@ -68,7 +68,7 @@
 }
 
 .iogimgblock3{
-    width: 99%;
+    width: 103%;
     padding-left: 76px;
     margin-left: 29px;
     height: 362px;
@@ -77,7 +77,7 @@
 .iogblock3text{
     font-size: 15px;
     /*padding-left: 87px;*/
-    margin-left: 8px;
+    margin-left: 24px;
     width: 107%;
     height: 362px;
     /*padding-top: 97px;*/
