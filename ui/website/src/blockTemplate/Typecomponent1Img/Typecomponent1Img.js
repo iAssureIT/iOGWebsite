@@ -67,7 +67,7 @@ componentDidMount(){
                               </div>   
                             </div>
                         </div>
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style={{padding:"0px"}}>
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-10  ">
                             
                               <img src={this.state.blocks.fgImage} alt="" className="text-center img-responsive" />

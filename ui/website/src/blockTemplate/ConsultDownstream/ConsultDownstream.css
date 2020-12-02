@@ -46,14 +46,14 @@
 #consultdown_data0{
    position: absolute;
    top: 22em;
-   right: 3%;
+   right: 1%;
    width: 600px;
 
 }
 #consultdown_data1{
    position: absolute;
    top: 35em;
-   left:4%;
+   left:8%;
    width: 552px;
    text-align: right;
 
@@ -62,7 +62,7 @@
 #consultdown_data4{
 	 position: absolute;
     top: 74em;
-    right: 5%;
+    right: 3%;
     width: 572px;
     text-align: left;
 
@@ -70,7 +70,7 @@
 #consultdown_data5{
 	position: absolute;
   top: 89em;
-  left:0em;
+  left:2em;
   width: 572px;
   text-align: right;
 }
@@ -101,7 +101,7 @@
 #consultdown_data2{
     position: absolute;
     top: 48em;
-    right: 6%;
+    right: 4%;
     width: 552px;
     text-align: left;
 
@@ -109,7 +109,7 @@
 #consultdown_data3{
     position: absolute;
     top: 63em;
-    left:-1%;
+    left:2%;
     width: 600px;
     text-align: right;
 
@@ -232,43 +232,43 @@
 #consultdown_img0{
     position: absolute;
     top: 22em;
-    left: 23em;
+    left: 27em;
     height: 135px;
 }
 #consultdown_img1{
     position: absolute;
     top: 36em;
-    left: 49em;
-     height: 135px;
+    left: 51em;
+    height: 135px;
 }
 #consultdown_img2{
     position: absolute;
     top: 48em;
-    left: 20em;
-     height: 135px;
+    left: 25em;
+    height: 135px;
 }
 #consultdown_img3{
     position: absolute;
     top: 63em;
-    left: 49em;
+    left: 51em;
     height: 135px;
 }
 #consultdown_img4{
     position: absolute;
     top: 75em;
-    left: 20em;
-     height: 135px;
+    left: 22em;
+    height: 135px;
 }
 #consultdown_img5{
     position: absolute;
     top: 89em;
-    left: 49em;
+    left: 51em;
     height: 135px;
 }
 #consultdown_img6{
     position: absolute;
     top: 101em;
-    left: 20em;
+    left: 22em;
     height: 135px;
 }
 #consultdown_img7{

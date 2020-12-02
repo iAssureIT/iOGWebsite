@@ -6,7 +6,7 @@
     margin: 0 auto;
     left: 0;
     right: 640px ! important;
-    top: 57%;
+    top: 55%;
     z-index: 1;
 }
 .new_tab{
@@ -31,7 +31,7 @@
     position: relative;
     top: 31px;
     right: 83px;
-    color: #ffffff;
+    color: #333;
  }
  .new_wizardNotefor4
  {
@@ -52,7 +52,7 @@
     position: relative;
     top: 35px;
     right: 36px;
-    color: #ffffff;
+    color: #333;
  }
  .wizard-inner{
     margin-top: 20px;
@@ -96,9 +96,9 @@
     /*top:44px;*/
 }
  .new_round-tabforTwo  {
-    width: 20px;
+    width: 24px;
     margin-left: 18%;
-    height: 20px;
+    height: 24px;
     line-height: 36px;
     display: inline-block;
     border-radius: 100px;
@@ -191,12 +191,12 @@
     
 }
 .new_navigationTitle{
-    color: #ffffff;
+    color: #333;
     /*position: absolute; */
     bottom: 4px;
     left: 578px;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 25px;
     bottom:14px;
 
 }
@@ -220,8 +220,8 @@
 
 .navigationTitle_for6
 {   
-    color: #ffffff;
-    font-size: 23px;
+    color: #333;
+    font-size: 25px;
     font-weight: 600;
     left: 596px;
     top: 19px;

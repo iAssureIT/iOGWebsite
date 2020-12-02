@@ -113,9 +113,10 @@
     height: 300px;
 }
 .serflip-card img{
-  height: 130px;
-  margin-bottom: 15px;
-  /*margin-left: 64px;*/
+     width: 190px;
+    object-fit: contain;
+    height: 130px;
+    margin-bottom: 15px;
 }
 
 .serflip-card h2{

@@ -85,12 +85,12 @@ export default class Blogs extends Component {
                     <hr/>
                      <h2 style={{color:"#333"}}><b>Latest Blogs</b></h2>
                     </div>
-                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs">
+                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs" style={{height:"515px"}}>
                       <div>
                         <OwlCarousel
                         className="owl-theme"
                         loop
-                        // nav
+                        nav= {true}
                         dots={false}
                         items={3}
                         margin={0}
@@ -99,7 +99,7 @@ export default class Blogs extends Component {
                         // responsive={
                         // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
                         // }
-                        autoplay={true}
+                        autoplay={false}
                         autoplayHoverPause={true}
                         >
                         {

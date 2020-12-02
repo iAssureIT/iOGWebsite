@@ -61,7 +61,7 @@ componentDidMount(){
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{marginBottom:"50px"}}>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{paddingLeft:"50px"}}>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h2 className=" para-top">{this.state.blocks.blockTitle}</h2>
+                              <h2 style={{marginBottom:"30px"}} className=" para-top">{this.state.blocks.blockTitle} </h2>
                               <div> 
                                 <p className="energypagedata text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div>   

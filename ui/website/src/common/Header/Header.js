@@ -68,7 +68,7 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
     var divUrl = currentLocation ? currentLocation.split('/') : "";
      console.log("divUrl[4]",divUrl[4]);
     if(divUrl[3] == "#googtrans(en|fr)"){
-       $('.expertiesdropdown').css('marginLeft','-540px');
+       $('.expertiesdropdown').css('marginLeft','-332px');
        $('.dropdown-content a').css('paddingTop','7px');
        $('.ct-topbar').css('bottom','76px');
 
@@ -441,8 +441,9 @@ handlechange(event){
             </div> 
 
             <div class="dropdown ">
-              <button class="dropbtn"><a href="/masterpage/newexpertise" className={this.state.pageUrl == "/masterpage/newexpertise" ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>EXPERTISE</a>
-                 <i className={this.state.pageUrl == "/masterpage/newexpertise" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
+              <button class="dropbtn"><a href="/masterpage/newexpertise" className={this.state.pageUrl == "/masterpage/newexpertise" ||  this.state.pageUrl == "/masterpage/supply-&-distribution" ||  this.state.pageUrl == "/masterpage/planning-&-scheduling" ||  this.state.pageUrl == "/masterpage/manufacturing-exec-system"   
+                ||  this.state.pageUrl == "/masterpage/digital-services" ||  this.state.pageUrl == "/masterpage/simulation-and-modeling"      ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>EXPERTISE</a>
+                 <i className={this.state.pageUrl == "/masterpage/newexpertise" ||  this.state.pageUrl == "/masterpage/planning-&-scheduling" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
               <div class="col-lg-10 col-md-10 hidden-sm hidden-xs dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
@@ -532,7 +533,7 @@ handlechange(event){
             </div> 
 
              <a href="/resources"className={this.state.pageUrl == "/resources" ? "Currentactivetab " : "" } >RESOURCES</a>
-             <a href="/masterpage/careers"className={this.state.pageUrl == "/masterpage/careers" ? "Currentactivetab " : "" } >CAREERS</a>
+             <a href="/masterpage/newcareers"className={this.state.pageUrl == "/masterpage/careers" ? "Currentactivetab " : "" } >CAREERS</a>
              <a href="/blogs" className={this.state.pageUrl == "/blogs" ? "Currentactivetab " : "" } >BLOGS</a>
              <a href="/contact-us"className={this.state.pageUrl == "/contact-us" ? "Currentactivetab " : "" } >CONTACT US</a>
             <a href="javascript:void(0);" class="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>

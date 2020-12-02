@@ -72,7 +72,7 @@ componentDidMount(){
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                               <h2 className="para-top3 txt-size-director textcoloryellow"style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                               <h1 className="txt-size-founder "style={{color:"#333"}} dangerouslySetInnerHTML={ { __html: this.state.blocks.blocksubTitle}}></h1>
-                                <p className="para_spacing para_Spacingforfounder text-justify pull-right foundertext" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription}}></p>                                      
+                                <p className="para_spacing para_Spacingforfounder text-justify pull-right foundertext" style={{letterSpacing:"1px"}} dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription}}></p>                                      
                           </div>
                         </div>
                       </div>

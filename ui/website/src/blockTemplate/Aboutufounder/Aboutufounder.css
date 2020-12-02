@@ -8,8 +8,15 @@
 	font-size: 17px ! important;
 }
 .foundermainDiv{
-	margin-top: 90px;
+	margin-top: 70px;
+	/*width: 500px;*/
+	height: 400px;
 }
 .para_Spacingforfounder ul{
 	padding-left: 17px;
+}
+.director_imgDiv img{
+	width: 370px;
+    height: 370px;
+    object-fit: contain;
 }

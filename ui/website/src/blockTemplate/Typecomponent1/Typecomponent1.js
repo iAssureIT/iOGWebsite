@@ -51,8 +51,8 @@ componentDidMount(){
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 typecomp1DIV1"style={{paddingLeft:"50px"}}>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{paddingLeft:"40px"}}>
+                       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 takebuttonDown">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
                               <hr style={{float:"left"}}/>
                              {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}
@@ -60,14 +60,14 @@ componentDidMount(){
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 className=" para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                               <div> 
-                                <p className="energypagedata text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
-                              </div>   
+                                <p className="energypagedata text-justify" style={{fontSize:"17px"}}dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                              </div> 
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                              <img src={this.state.blocks.fgImage} alt="" className="intro_img"  />
-                        </div>
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BtnImageDown"style={{paddingLeft:"100px"}}>
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
+                              <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
+                          </div>
                         </div>
                     </div>            
                 </div>   

@@ -14,6 +14,7 @@
     margin-top: -20px;
 
 }
+.
 
 .ocLine{
 	margin-top: 45px;
@@ -266,11 +267,14 @@
     width: 404px;
      object-fit: contain;
   }*/
-  .newApplicationDiv img{
-    height: 350px;
-    width: 300px;
-    overflow: hidden;
+  .newApplicationDiv {
+    height: 350px ! important;
+    width: 300px ! important;
+    overflow: hidden !important;
     object-fit: contain;
+  }
+  .newApplicationImage{
+    padding-left: 30px;
   }
 
   .B3t_img{
