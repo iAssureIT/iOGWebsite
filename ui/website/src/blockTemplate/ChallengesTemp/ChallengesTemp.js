@@ -110,7 +110,7 @@ componentDidMount(){
           <hr/>
            <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style={{paddingLeft:"40px"}}>
         { 
           this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
           this.state.blocks.repeatedBlocks.map((result, index)=>{
