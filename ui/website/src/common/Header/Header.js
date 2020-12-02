@@ -68,7 +68,7 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
     var divUrl = currentLocation ? currentLocation.split('/') : "";
      console.log("divUrl[4]",divUrl[4]);
     if(divUrl[3] == "#googtrans(en|fr)"){
-       $('.expertiesdropdown').css('marginLeft','-332px');
+       $('.expertiesdropdown').css('marginLeft','-500px');
        $('.dropdown-content a').css('paddingTop','7px');
        $('.ct-topbar').css('bottom','76px');
 
@@ -229,34 +229,48 @@ triggerHtmlEvent(element, eventName) {
 } 
 */
 
+// handlechange(event){
+//      { var id = event.currentTarget.id;
+//            console.log("id---",id)
+//            this.setState({
+//               id:id
+//            });
+//            // console.log("id---",id)
+//             var currentLocation1 = window.location.href;
+//              var divUrl = currentLocation1 ? currentLocation1.split('/') : "";
+             
+//             console.log("divUrl",divUrl);
+//             if(divUrl.length==5){
+//                this.props.history.push(divUrl[4]+"/#googtrans(en|"+id+")");
+//            }
+//            if(divUrl.length==4){
+//                this.props.history.push(divUrl[3]+"/#googtrans(en|"+id+")");
+//            }
+     
+//             if(this.state.id == "fr"){
+//              $('.expertiesdropdown').css('marginLeft','-540px');
+//             }
+//            window.location.reload();
+     
+//           /*divUrl[3]+divUrl[4]*/
+//         }
+    
+
+//   }
+
 handlechange(event){
-      var id = event.currentTarget.id;
-      // console.log("id---",id)
+     var id = event.currentTarget.id;
+      console.log("id---",id)
       this.setState({
          id:id
       });
-      // console.log("id---",id)
-       var currentLocation1 = window.location.href;
-        var divUrl = currentLocation1 ? currentLocation1.split('/') : "";
-        
-       console.log("divUrl",divUrl);
-       if(divUrl.length==5){
-          this.props.history.push(divUrl[4]+"/#googtrans(en|"+id+")");
-      }
-      if(divUrl.length==4){
-          this.props.history.push(divUrl[3]+"/#googtrans(en|"+id+")");
-      }
-
+      console.log("id---",id)
+      this.props.history.push("/#googtrans(en|"+id+")");
        if(this.state.id == "fr"){
         $('.expertiesdropdown').css('marginLeft','-540px');
        }
       window.location.reload();
-
-     /*divUrl[3]+divUrl[4]*/
-   
-    
-
-  }
+}
 
   render() {  
      var toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];
@@ -294,9 +308,10 @@ handlechange(event){
                     <ul className="list-unstyled list-inline ct-topbar__list">
                       <li className="ct-language">
                       <ul className="list-unstyled ct-language__dropdown">
-                        <li><a href="#googtrans(en|en)" className="lang-en lang-select" data-lang="en" id="en" onClick={this.handlechange.bind(this)}>
-                          <img src="/images/engelsflag.png" className="flagdiv" alt="ENGLISH" title="English"/>
-                          </a>
+                        <li>
+                          <a href="#googtrans(en|en)" className="lang-en lang-select" data-lang="en" id="en" onClick={this.handlechange.bind(this)}>
+                            <img src="/images/engelsflag.png" className="flagdiv" alt="ENGLISH" title="English"/>
+                            </a>
                         </li>
                         <li>
                           <a href="#googtrans(en|ar)" className="lang-es lang-select" data-lang="ar" id="ar" onClick={this.handlechange.bind(this)}>
@@ -414,7 +429,7 @@ handlechange(event){
 
             <div class="dropdown">
             {console.log("-----",this.state.pageUrl == "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
-              <a href="/masterpage/about" className={this.state.pageUrl == "/masterpage/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA" } ><button class="dropbtn">ABOUT US 
+              <a href="/masterpage/about" className={this.state.pageUrl == "/masterpage/about" || this.state.pageUrl == "/masterpage/founder-profile" || this.state.pageUrl == "/masterpage/news-&-events" || this.state.pageUrl == "/masterpage/ourjourny"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } ><button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
                </button>
              </a>
@@ -433,10 +448,10 @@ handlechange(event){
                 <i  className={this.state.pageUrl == "/masterpage/service-arms" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
-                 <a href="/masterpage/iog-study">iOGStudy</a>
-                 <a href="/masterpage/iog-consult">iOGConsult</a>
-                 <a href="/masterpage/iog-implement">iOGImplement</a>
-                 <a href="/masterpage/iog-train">iOGTrain</a>    
+                 <a className={this.state.pageUrl == "/masterpage/iog-study" ? "Currentactivetab " : "" } href="/masterpage/iog-study">iOGStudy</a>
+                 <a className={this.state.pageUrl == "/masterpage/iog-consult" ? "Currentactivetab " : "" } href="/masterpage/iog-consult">iOGConsult</a>
+                 <a className={this.state.pageUrl == "/masterpage/iog-implement" ? "Currentactivetab " : "" } href="/masterpage/iog-implement">iOGImplement</a>
+                 <a className={this.state.pageUrl == "/masterpage/iog-train" ? "Currentactivetab " : "" } href="/masterpage/iog-train">iOGTrain</a>    
               </div>
             </div> 
 

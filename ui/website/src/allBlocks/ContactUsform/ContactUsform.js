@@ -41,7 +41,7 @@ class ContactUsform extends Component{
       "message"          : this.refs.message.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "subject"          : this.refs.subject.value,
-      "enquiry"          : this.refs.enquiry.value,
+      "enquiry"          : this.state.enquiry,
      
     });
 
@@ -138,7 +138,7 @@ class ContactUsform extends Component{
       "message"          : this.refs.message.value,
       "contactNumber"    : this.refs.contactNumber.value,
       "subject"          : this.refs.subject.value,
-      "enquiry"          : this.refs.enquiry.value,
+      "enquiry"          : this.state.enquiry,
      
     }
     console.log("dataArray======>",dataArray);
@@ -174,6 +174,7 @@ class ContactUsform extends Component{
         axios
         .post('/send-email',formValues1)
         .then((res)=>{
+          console.log("contact result---",res);
             if(res.status === 200){
                 swal("Thank you for contacting us. We will get back to you shortly.")
                 }
@@ -466,6 +467,8 @@ class ContactUsform extends Component{
                     <input className="form-control" id="email" type="email" name="email" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}  placeholder="Enter Email" required/>
                   </div>
                 </div>
+
+
                 <div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                   <div className="form-group">
                       <label htmlFor="enquiry">Enquiry<span className="redFont">*</span></label>
@@ -477,7 +480,7 @@ class ContactUsform extends Component{
                                 id="enquiry"
                                 name="enquiry"
                                 value={this.state.enquiry}
-                                ref="enquiry"
+                                // ref="enquiry"
                                 list={fruit}
                                 onChange ={this.handleChangeSelect.bind(this)}
                                 onSelectChange={this.handleChangeSelect.bind(this)}

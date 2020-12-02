@@ -75,26 +75,36 @@
 }
 
 .blogleftarrow{
-  background-color: #009de2;
+    background-color: #009de2;
     border: 10px solid #009de2;
     color: #fff;
     border-radius: 50%;
-    padding: 5px 13px;
+    padding: 0px 8px;
     font-size: 25px;
     left: -80px;
+    height: 45px;
+    width: 45px;
     top: 204px;
     position: absolute;
 
 }
 .blogrightarrow{
-  background-color: #009de2;
+    background-color: #009de2;
     border: 10px solid #009de2;
     color: #fff;
     border-radius: 50%;
-    padding: 5px 13px;
+    padding: 0px 8px;
     font-size: 25px;
     right: -80px;
+    height: 45px;
+    width: 45px;
     top: 204px;
     position: absolute;
 
+}
+.gt__2YKbG{
+  margin-right: 59% ! important;
+}
+.sxSelectListsWrapper__2321j{
+  width: 42% ! important;
 }
