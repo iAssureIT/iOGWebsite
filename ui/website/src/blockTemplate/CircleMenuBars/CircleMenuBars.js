@@ -70,7 +70,7 @@ componentDidMount(){
       console.log("pageUrl = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
           console.log("a==>",a[1]); 
-          const urlParam =a[2];
+          const urlParam =a[1];
           console.log("urlparam.-",urlParam);
           this.setState({
                       urlParam:urlParam
@@ -117,7 +117,7 @@ componentDidMount(){
                     { 
                     this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                         this.state.blocks.repeatedBlocks.map((result, index)=>{
-
+                         {console.log("result.loink---",result.Link)}
                           return(
                            
                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 adjustfor5 nopadding">
@@ -163,7 +163,7 @@ componentDidMount(){
                            <div className="col-lg-3 col-md-3 col-sm-4 col-xs-4 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
-                                    <a href={"/masterpage/"+result.Link}>
+                                    <a href={result.Link}>
                                       <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
@@ -202,7 +202,7 @@ componentDidMount(){
                            <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
-                                    <a href={"/masterpage/"+result.Link}>
+                                    <a href={result.Link}>
                                       <span className={"new_round-tabforTwo "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
@@ -243,7 +243,7 @@ componentDidMount(){
                            <div className="col-lg-2 col-md-2 col-sm-3 col-xs-2 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
-                                    <a href={"/masterpage/"+result.Link}>
+                                    <a href={result.Link}>
                                       <span className={"new_round-tabfor4 "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
@@ -284,7 +284,7 @@ componentDidMount(){
                            <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding navigation_tab">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
-                                    <a href={"/masterpage/"+result.Link}>
+                                    <a href={result.Link}>
                                       <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
@@ -325,7 +325,7 @@ componentDidMount(){
                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding navigation_tab_for6">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
-                                    <a href={"/masterpage/"+result.Link}>
+                                    <a href={result.Link}>
                                       <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
@@ -364,7 +364,7 @@ componentDidMount(){
                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                               <div role="presentation" className="">
-                                <a href={"/masterpage/"+result.Link}> 
+                                <a href={result.Link}> 
                                   <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
                                   </span>
                                    
