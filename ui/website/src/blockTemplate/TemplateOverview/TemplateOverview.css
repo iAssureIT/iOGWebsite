@@ -60,6 +60,7 @@
 .B2T_overviewTxt img{
   width: 450px;
   height: 318px;
+  /*filter: grayscale(.5);*/
    object-fit: contain;
   /*height: 100%;
   width: 100%;*/
@@ -81,5 +82,44 @@
 @media(max-width : 767px){
   .B2T1_line{
     margin-left: 61px;
+  }
+}
+
+.B2T_overviewTxt img:hover{
+  animation: bloom ease-in-out .75s forwards;
+  /* -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1); 
+  transition: all 2s ease-in-out;*/
+}
+.B2T_overviewTxt img:hover::before {
+  animation: circle .75s;
+}
+
+@keyframes bloom {
+  0% {
+    filter: grayscale(.8);
+  }
+  40% {
+    filter: grayscale(.5);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: .5;
+    background: rgba(213,156,34,.2);
+    
+  }
+  40% {
+    opacity: 1;
+    background: rgba(213,34,160,.2);
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
   }
 }

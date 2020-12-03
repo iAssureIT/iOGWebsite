@@ -43,6 +43,7 @@ componentDidMount(){
 			var pageUrl = window.location.pathname;
 			console.log("pageUrl now = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
+			console.log("a>>>>",a);
 	        if(a=='MasterPage'){
 	        	 $(".hidepoweredby").css("backgroundColor", "#eee");
 	          }else{
@@ -54,7 +55,7 @@ componentDidMount(){
 	        	}
 	        console.log("a==>",a[1]); 
 
-	        const urlParam =a[2];
+	        var urlParam =a[1];
 	        if(urlParam=='planning-&-scheduling'){
 	        	$(".hidepoweredby").css("backgroundColor", "#b1d9eb");
 
@@ -97,7 +98,7 @@ componentDidMount(){
 	        this.setState({
 					      			urlParam:urlParam
 					      		});
-
+            console.log("urlParam----",urlParam)
 			axios
 			.get('http://iogapi.iassureit.com/api/pages/get/page_block/'+urlParam)
 	        .then((response)=>{

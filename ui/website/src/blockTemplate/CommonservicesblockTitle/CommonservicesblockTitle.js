@@ -100,7 +100,7 @@ componentDidMount(){
   var productlength = plength % 3;
  console.log("productlength>>>>>",productlength);
     if(productlength == 2){
-      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1";
+      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1";
 
     }
     else if(productlength == 1){
@@ -108,7 +108,7 @@ componentDidMount(){
 
     }
     else{
-      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1";
+      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1";
 
     }
 
@@ -122,11 +122,11 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style={{padding:"0px"}}>
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+              {/*<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">*/}
+                 {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                      
+                      */}
                       <div className=""> 
                         <div className={classfor4} style={{marginBottom:"50px"}}> 
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheader text-center">
@@ -138,7 +138,7 @@ componentDidMount(){
                                 console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-4 col-md-offset-2 col-xs-offset-1 col-sm-4 col-xs-4";
+                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-4 col-md-offset-2  col-sm-4 col-xs-4";
                                    
                                   }else{
                                     var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center";
@@ -160,7 +160,7 @@ componentDidMount(){
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="">
                                           <div className="text-center">
-                                            <div className="serflip-card"style={{width:"275px"}}>
+                                            <div className="serflip-card"style={{width:"290px"}}>
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front hidden-sm hidden-xs">
                                                     <img src={data.Image} className="text-center" alt=""/>
@@ -188,10 +188,8 @@ componentDidMount(){
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            
+     
       
     );
   } 

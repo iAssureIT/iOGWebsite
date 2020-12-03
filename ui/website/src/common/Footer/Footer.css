@@ -1,6 +1,21 @@
 .whatsupIcon{
-  font-size: 27px !important;
-  padding: 1px 3px !important;
+  font-size: 19px !important;
+  padding: 9px 11px !important;
+}
+.whatsupIcon:hover{
+  background-color: #fff;
+  color:#005b99;
+}
+.linkeninicon:hover{
+  background-color: #fff;
+  color:#005b99;
+}
+.twittericon:hover{
+  background-color: #fff;
+  color:#005b99;
+}
+.socialicon li a .fa:hover{
+  color:#005b99;
 }
 
 .animationoveflow{
@@ -119,15 +134,19 @@ ul.no-icon-list {
 
 }
 .socialicon li a .fa{
-    border: 9px solid #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
-    padding: 5px 6px;
-    background-color: #fff;
-    color: #00317F;
+    padding: 11px 11px;
+    /*background-color: #fff;*/
+    color: #fff;
     font-size: 16px;
 }
 .facebook{
-    padding: 5px 9px !important;
+    padding: 11px 14px !important;
+}
+.facebook:hover{
+  background-color: #fff;
+  color:#005b99;
 }
 .footer-two ul li a:hover{
     /*color: #000;*/
@@ -171,9 +190,10 @@ ul.no-icon-list1 {
     border-radius: 2px;
 }
 .subscribeMail{
-  border-radius: 0px;
-  padding-left:5px;
+  border-radius: 3px;
+  padding-left:22px;
   color: #555;
+  height: 40px;
 }
 .subscribeBox{
     /*background-color: #fff;*/
@@ -189,10 +209,12 @@ ul.no-icon-list1 {
   margin-top: 0px ! important;
 }
 .subscribeBtn{
-  border-radius: 0px;
+  border-radius: 3px;
   font-weight: 700;
   color: #fff;
-  background-color: #00317F;
+  position: absolute;
+  left:-3px;
+  background-color: #f19000;
 }
 .footeranimation{
     position: absolute;
@@ -381,7 +403,7 @@ ul.no-icon-list1 {
 
 /*mob view*/
 .responsivefooter{
-  height: 520px;
+  height: 660px;
 
 }
 .resicons{

@@ -105,10 +105,14 @@ componentDidMount(){
   // console.log('khj', this.state.blocks); 
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 services_block innerBlock5tepmlate  container-fluid"style={{marginBottom:"90px"}}>
-       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
-          <hr/>
-           <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
-        </div>
+        <div className="Bubble hidden-xs"  >
+            <div className="Main_Cards__Bubble bub1"></div>
+            <div className="Main_Cards__Bubble bub2"></div>
+           </div>
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
+              <hr/>
+               <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
+            </div>
      {/*  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> */}

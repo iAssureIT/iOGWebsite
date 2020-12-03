@@ -151,3 +151,14 @@ height: 100px;
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .videocard1{
+    width: 275px;
+    margin: 0px;
+  }
+  .videocard{
+    width: 230px;
+    margin: 0px;
+  }
+  
+}

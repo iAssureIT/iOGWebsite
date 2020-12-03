@@ -337,7 +337,7 @@ const WebLayout = () => (
 
 
 
-    <Route path="/masterpage/:pageurl"       component={ MasterPage } /> 
+    <Route path="/:pageurl"       component={ MasterPage } /> 
 
 
 

@@ -110,7 +110,7 @@ export default class Blogs extends Component {
                                     <div className={" index"+index}>
                                         <div className=" blogtext pricehover-float ">
                                           <div>
-                                             <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{height:"600px"}}>
+                                             <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="">
                                                   <div className="img-responsive blogsimg">
                                                     <img alt="" src={data.downstreamimg}/>
@@ -171,7 +171,7 @@ export default class Blogs extends Component {
                                           <div>
                                              <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="">
-                                                  <div className="row blogsimg">
+                                                  <div className=" blogsimg">
                                                     <img alt="" src={data.downstreamimg}/>
                                                   </div>
                                                   <div className=""><h4>{data.upstreamTitle}</h4></div>
@@ -180,8 +180,8 @@ export default class Blogs extends Component {
                                                     </div>
                                                     <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
-                                                        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 blogdate">july 5,2019</div>
-                                                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 blogdate">july 5,2019</div>
+                                                         <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                                             <a className="" href="/blog">
                                                                 <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>

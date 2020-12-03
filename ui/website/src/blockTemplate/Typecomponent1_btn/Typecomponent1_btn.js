@@ -58,8 +58,8 @@ componentDidMount(){
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopaddinginResponsive">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopaddinginResponsive">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 takebuttonDown">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
                               <hr style={{float:"left"}}/>
@@ -77,7 +77,7 @@ componentDidMount(){
                               </a>  
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BtnImageDown"style={{paddingLeft:"100px"}}>
+                        <div className="col-lg-6 col-md-6 hidden-xs BtnImageDown">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
                               <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
                           </div>

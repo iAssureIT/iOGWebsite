@@ -226,7 +226,7 @@
 }
 .Main_Cards__Bubble, .Main_Cards__Wrapper:after {
     position: absolute;
-    background-color: rgba(105,92,255,.05);
+    background-color:#eeeeee4d;
     border-radius: 50%;
 }
 .Main_Cards__Bubble:nth-child(2) {

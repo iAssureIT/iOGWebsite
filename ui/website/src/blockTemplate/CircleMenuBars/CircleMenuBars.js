@@ -123,7 +123,7 @@ componentDidMount(){
                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 adjustfor5 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
-                                    <a href={"/masterpage/"+result.Link}>
+                                    <a href={result.Link}>
                                     
 
                                         <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>

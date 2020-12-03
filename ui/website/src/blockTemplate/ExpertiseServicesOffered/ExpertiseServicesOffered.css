@@ -3,9 +3,10 @@
  }
  .B4T_ServicesDiv{
     top: 45px;
-    box-shadow: 0px 0px 5px 0px #b7b3b3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 0px #b7b3b3;
     margin-left: 53px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     min-height: 193px;
     width:560px;
   }
@@ -19,7 +20,7 @@
   .B5T_img{
   	/*width: 185px;*/
     padding: 11px;
-    padding-top: 34px;
+    padding-top: 50px;
   }
   .B5T_txt{
     font-size: 17px;

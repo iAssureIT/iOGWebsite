@@ -69,6 +69,7 @@
   /*float:left;*/
 }
 .BtnImageDown{
+  padding-left: 100px;
   margin-top: 20px;
 }
 .Typecomponent2BtnImg img{
@@ -82,6 +83,38 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .type1btnDiv{
+    width: 380px;
+  }
+  .takebuttonDown{
+    padding-top: 0px;
+  }
+  .nopaddinginResponsive{
+    padding: 0px;
+  }
+  .TypebtnText{
+    margin-left: 0px;
+    padding:40px;
+  }
+  .righttextaboutus{
+    width: 300px;
+  }
+  .type1btnDiv{
+    height: 560px;
+  }
+  .iogimg_4 img{
+    width: 275px;
+  }
+  .iogimg_4{
+    height: 90px;
+  }
+  .blogtext1{
+    left:31%;
+  }
+  .All1blog1{
+    margin-left: 0px;
+  }
   
   .line3 {
     background-color: #f08f00;

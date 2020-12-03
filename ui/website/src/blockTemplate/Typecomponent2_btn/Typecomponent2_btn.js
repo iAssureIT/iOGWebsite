@@ -50,9 +50,9 @@ componentDidMount(){
 
     render(){
         return(
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel alternateblock Textrighgtblock"style={{height:"490px"}}>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-1 ">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel alternateblock Textrighgtblock nopaddinginResponsive"style={{height:"490px"}}>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel nopaddinginResponsive">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-12 nopaddinginResponsive">
                 <div className="col-lg-6 col-md-6 hidden-sm hidden-xs img1 Typecomp2Btn_img Typecomponent2BtnImg"style={{paddingLeft:"71px"}}>
                  <img src={this.state.blocks.fgImage} alt="" className="img-responsive Type2Img" />
                 </div>
@@ -65,11 +65,11 @@ componentDidMount(){
                    <h2 className="para-top"style={{color:"#333"}}>{this.state.blocks.blockTitle}</h2>
                      <p className="righttextaboutus text-justify" style={{fontsize:"17px"}}  dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                    </div>
-                   <a class="col-lg-6 col-md-6 services_title"style={{padding:"0px"}} href={this.state.blocks.blockSubTitle}>
-                              <button class="col-lg-6 col-md-6 lightbluebg buttonhover servicekbtn btn">Read More 
-                               <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
-                             </button>
-                          </a>  
+                   <a class="col-lg-6 col-md-6 col-sm-10 col-xs-10 services_title"style={{padding:"0px"}} href={this.state.blocks.blockSubTitle}>
+                      <button class="col-lg-6 col-md-6 lightbluebg buttonhover servicekbtn btn">Read More 
+                       <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
+                     </button>
+                  </a>  
                 </div>
               </div>
             </div> 
