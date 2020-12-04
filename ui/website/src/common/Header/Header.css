@@ -316,15 +316,15 @@
   .topnav.responsive {
     position: absolute;
     background-color: #333333f5;
-    top: -34px;
-    width: 367px;
+    top: -45px;
+    width: 410px;
     height: 529px;
     left: -14px;
    }
   .topnav.responsive .icon {
     position: absolute;
     color:#f19000;
-    right: 0;
+    right: 20px;
     top: 0;
   }
   .topnav.responsive a {

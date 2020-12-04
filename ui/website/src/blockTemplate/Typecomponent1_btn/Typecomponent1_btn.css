@@ -14,7 +14,7 @@
 
 }
 .type1btnDiv{
-  height: 465px;
+  height: 480px;
   overflow: hidden;
   padding-top: 25px;
   margin-bottom: 65px;
@@ -103,9 +103,7 @@
   .type1btnDiv{
     height: 560px;
   }
-  .iogimg_4 img{
-    width: 275px;
-  }
+  
   .iogimg_4{
     height: 90px;
   }
@@ -130,6 +128,12 @@
   .serflip-card-inner{
     margin-left: 30px;
   } 
+  .BtnImageDown{
+    padding-left: 0px ! important;
+  }
+  .Type2Img{
+    padding: 0px ! important;
+  }
 
 }
 @media screen and (max-width: 425px) {

@@ -181,8 +181,47 @@
   }
 .blogtext1{
 left: 50% ! important;
-} 
+	} 
 .All1blog1{
 	margin-left: 20px ! important;
+ } 
 } 
-} 
+@media screen and (min-width: 1900px) {
+	.BolgsHoghDef{
+		margin-left: 130px;
+	}
+	.blogtext1{
+		left:11em;
+	}
+	.iogimgblock2 img{
+		width: 100% ! important;
+	}
+	.iogimgblock1 img{
+		width: 100% ! important;
+	}
+	.iogimgblock3 img{
+		width: 107% ! important;
+	}
+	.iogimg_4 img{
+		width: 108% ! important;
+	}
+	.iogblock4text{
+		padding-top: 157px ! important;
+	}
+	.CareerBlockHighDef{
+		width: 560px ! important;
+	}
+	.iogblock2text{
+		padding-top:140px ! important;
+	}
+	.ht_row4{
+		margin-top: 8px ! important;
+	}
+	.iogblock3text{
+		height: 535px ! important;
+	}
+	.career_para-top2{
+		margin-top: 150px ! important;
+	}
+}	
+

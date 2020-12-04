@@ -109,11 +109,11 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbluetext contentheader text-center">
           
             </div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 responsivePadding">
               <div className="">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 responsivePadding">
                   <div className="">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 responsivePadding" >
                       <div className=""> 
                         <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1"> 
                           <div className=""> 
@@ -121,10 +121,10 @@ componentDidMount(){
                               this.props.servicedata.map((data, index)=>{
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
+                                    var classes = "responsivePadding col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2 col-sm-4 col-xs-12";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
+                                    var classes="responsivePadding webshopmargintop  webpageshopcont responsivePadding col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
                                  
                                 }
                                 }else if(productlength == 1){
@@ -140,7 +140,7 @@ componentDidMount(){
                                  return (
                                 <div key={index} className={classes}>
                                   <a href ={data.downstreamurl} data-toggle="tooltip" title="Click me to read more!">
-                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 responsivePadding">
                                       <div className="">
                                           <div className="text-center">
                                             <div className="serflip-card">

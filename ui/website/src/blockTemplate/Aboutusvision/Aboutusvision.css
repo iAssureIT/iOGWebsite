@@ -4,3 +4,26 @@
 .vision_align1{
 	font-weight: 700;
 }
+.visionHeight{
+	height: 615px;
+}
+
+@media screen and (max-width: 600px) {
+
+	.blck1heightnew{
+		width: 305px ! important;
+	}
+	.visionHeight{
+	height: 900px ! important;
+}
+.blck1heightnew{
+	height: 214px ! important;
+}
+.blck{
+	padding-top: 15px ! important;
+}
+..About5block{
+	padding-top: 0px ! important
+}
+
+}	

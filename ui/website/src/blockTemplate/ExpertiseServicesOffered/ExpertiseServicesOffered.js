@@ -113,33 +113,30 @@ componentDidMount(){
               <hr/>
                <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
             </div>
-     {/*  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> */}
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          { 
-            this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
-            this.state.blocks.repeatedBlocks.map((result, index)=>{
-              return(
-                <div>
-                 <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 B4T_ServicesDiv">
-                 <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding hidden-xs">
-                   <img src={result.Image} className="B5T_img img-responsive"/>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Expertise_maindiv">
+            { 
+              this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+              this.state.blocks.repeatedBlocks.map((result, index)=>{
+                return(
+                  <div>
+                   <div className=" col-lg-5 col-md-5 col-sm-6 col-xs-12 B4T_ServicesDiv">
+                   <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding hidden-xs">
+                     <img src={result.Image} className="B5T_img img-responsive"/>
+                    </div>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12 innerServiceDiv NOPadding">
+                     <h5 className="B5T_txt">{result.Title}</h5>
+                     <p  className="ServiceTxt col-lg-12 col-md-12 col-sm-12 col-xs-12"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
+                    </div>
+                   </div>
+                   
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12 innerServiceDiv NOPadding">
-                   <h5 className="B5T_txt">{result.Title}</h5>
-                   <p  className="ServiceTxt col-lg-12 col-md-12 col-sm-12 col-xs-12"dangerouslySetInnerHTML={ { __html: result.Description } } ></p>
-                  </div>
-                 </div>
-                 
-                </div>
-              );
+                );
 
-            })
-             :
-              null
-          }
-          </div>
+              })
+               :
+                null
+            }
+            </div>
      
        {/*  <div className="col-lg-12 col-md-12  hidden-lg hidden-md">
         { 

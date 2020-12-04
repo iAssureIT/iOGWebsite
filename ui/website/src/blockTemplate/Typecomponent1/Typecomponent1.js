@@ -64,7 +64,7 @@ componentDidMount(){
                               </div> 
                             </div>
                         </div>
-                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BtnImageDown"style={{paddingLeft:"100px"}}>
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BtnImageDown">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
                               <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
                           </div>

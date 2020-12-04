@@ -214,7 +214,7 @@ const WebLayout = () => (
     <Route path="/digitalservices" component={ Digitalservicespage } />
     <Route path="/assetmanagement" component={ Assetmanagementpage } />
 
-    <Route path="/Healthsafty" component={ Healthsaftypage } />
+  {/*  <Route path="/Healthsafty" component={ Healthsaftypage } />
     <Route path="/refinery" component={ Industriesrefinarypage } />
     <Route path="/petrochemicals" component={ Industriespetrochemicalpage } />
     <Route path="/chemicals" component={ Industrieschemicalpage } />
@@ -231,7 +231,7 @@ const WebLayout = () => (
     <Route path="/welldrilling" component={ Welldrillingpage } />
     <Route path="/productionmanagement" component={ Productionmanagepage } />
     <Route path="/datamanagement" component={ Datamanagepage } />
-    <Route path="/founderprofile" component={ Founderprofile } />
+    <Route path="/founderprofile" component={ Founderprofile } />*/}
 
    
     <Route path="/refineryplanning" component={ RefineryPage } />

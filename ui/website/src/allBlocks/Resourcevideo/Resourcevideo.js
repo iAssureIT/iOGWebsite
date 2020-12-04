@@ -98,53 +98,52 @@ export default class Resourcevideo extends Component {
                            <div className="dynamicpageimg BT1_img1"></div>
                           </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{marginTop:"30px"}}>
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
-                                  <hr/>
-                                   <h2 style={{color:"#333"}}><b>Videos</b></h2>
-                                  </div>
-                                    <br></br> 
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
+                              <hr/>
+                               <h2 style={{color:"#333"}}><b>Videos</b></h2>
+                              </div>
+                                <br>
+                                </br> 
                           </div>
-
-                     <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                       <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                          <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                            <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                         {
-                          this.VideoData().map((data, index)=>{
-                          return (
-                            <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
-                            <div className="videocard1">
-                                <div className="introvideo">      
-                                <ReactPlayer
-                                    url={data.link}
-                                    className='react-player'
-                                    playing={currentPlayingIndex === index ? true : false}
-                                    width='324px' height='211px'
-                                    onEnded={this.onEnded.bind(this)}
-                                    onPlay = {this.onPlay.bind(this,index)}
-                                    controls loop={false}
-                                    muted
-                                  
-                                  />
-                                   {/* <ReactPlayer url={data.link} width='324px' height='211px' controls loop  />  */}
-                                </div>          
-                              <div className="go-corner" href="#">
-                                <div className="go-arrow">
+                             <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                               <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                             {
+                              this.VideoData().map((data, index)=>{
+                              return (
+                                <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
+                                <div className="videocard1">
+                                    <div className="introvideo">      
+                                    <ReactPlayer
+                                        url={data.link}
+                                        className='react-player reactplayerDiv'
+                                        playing={currentPlayingIndex === index ? true : false}
+                                        onEnded={this.onEnded.bind(this)}
+                                        onPlay = {this.onPlay.bind(this,index)}
+                                        controls loop={false}
+                                        muted
+                                      
+                                      />
+                                       {/* <ReactPlayer url={data.link} width='324px' height='211px' controls loop  />  */}
+                                    </div>          
+                                  <div className="go-corner" href="#">
+                                    <div className="go-arrow">
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                            </div>
-                             );
-                          })
-                        }   
-                     </div>
-                    </div>
+                                </div>
+                                 );
+                              })
+                            }   
+                         </div>
+                        </div>
+                      </div>
+                    </div>      
                   </div>
-                </div>      
-              </div>
-            </div>
-           </div>
-          </div>    
+                </div>
+               </div>
+              </div>    
             );
         }
     }

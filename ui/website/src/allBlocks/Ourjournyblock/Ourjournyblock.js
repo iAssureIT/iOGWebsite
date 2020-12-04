@@ -2,8 +2,61 @@ import React, {Component} from 'react';
 import $                  from 'jquery';
 import './Ourjournyblock.css';
 import Journycaro                     from '../Journycaro/Journycaro.js';
+import axios from 'axios';
 
 export default class Ourjournyblock extends Component {
+
+   constructor(props) {
+    super(props);
+    this.state = {
+      urlParam                : "",
+      blocks                  :{
+        "blockTitle"          : "Challenges",
+        "blockSubTitle"       : "",
+        "blockDescription"    : "",
+        "blockComponentName"  : "CircleMenuBars",
+        "blockType"           : "simple",
+        "repeatedBlocks"      : [
+                      {
+                        "Title"         : "About Us",
+                          "SubTitle"    : "",
+                          "Description" : "Identification of loop holes in historical data and forecasts",
+                          "Image"       : "/images/challenges1.jpeg",
+                          "Link"        : "/about"
+                      },
+                      {
+                        "Title"         : "Founder's Profile",
+                          "SubTitle"    : "",
+                          "Description" : " Choosing the right statistical model for forecasting",
+                          "Image"       : "/images/challenges1.jpeg",
+                          "Link"        : "/founder-profile"
+                      },
+                      {
+                        "Title"         : "News & Events",
+                          "SubTitle"    : "",
+                          "Description" : "Identification of elements which can be forecasted and which cannot be",
+                          "Image"       : "/images/challenges1.jpeg",
+                          "Link"        : "/news-&-events"
+                      },
+                      {
+                        "Title"         : "Our Journey",
+                          "SubTitle"    : "",
+                          "Description" : "Over dependability on automatic forecasting",
+                          "Image"       : "/images/challenges1.jpeg",
+                          "Link"        : "/ourjourny"
+                      },
+        ],
+        "bgImage"       : "",
+        "bgVideo"       : "",
+        "fgImage"       : "",
+        "fgVideo"       : ""
+
+      },
+      blockID:"",
+      block_id:""
+
+    };    
+  }
 
   componentDidMount(){
     $(document).ready(function(){
@@ -26,9 +79,7 @@ export default class Ourjournyblock extends Component {
 
       }
 
-
-
-});
+   });
 
 });
   
@@ -125,6 +176,40 @@ export default class Ourjournyblock extends Component {
         }*/
         
     });
+
+      var pageUrl = window.location.pathname;;
+      console.log("pageUrl = ",pageUrl);
+      let a = pageUrl ? pageUrl.split('/') : "";
+          console.log("a==>",a[0]); 
+          const urlParam =a[0];
+          console.log("urlparam.-",urlParam);
+          this.setState({
+                      urlParam:urlParam
+                    });
+          {
+             axios
+                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .then((response)=>{
+                  console.log("journey block---",response);
+                    if(response.data){
+                      this.setState({
+                          blocks:response.data
+                      });
+                    }                  
+                  })           
+                .catch(function(error){
+                  console.log(error);
+                    if(error.message === "Request failed with status code 401")
+                      {
+                          // swal("Your session is expired! Please login again.","", "error");
+                      }
+              })
+            }
+      this.setState({
+                block_id:this.props.block_id
+              });
+
+
     
 }
 journyData(){
@@ -303,10 +388,11 @@ journyData11(){
   render() {  
     return (
       <div>
-                  <div className="scrollwrap">
-                    <div className="chevron"></div>
-                    <div className="chevron"></div>
-                    <div className="chevron"></div>
+         <div>
+            <div className="scrollwrap">
+              <div className="chevron"></div>
+               <div className="chevron"></div>
+                <div className="chevron"></div>
                     <span className="text">Scroll down</span>
                   </div>
                   <div className="Journycaro1">
@@ -345,12 +431,12 @@ journyData11(){
                   <div className="Journycaro12">
                     <Journycaro journyData={this.journyData11()}/>
                   </div>
-                  <div className="overflowjourny">
+                  <div className="overflowjourny hidden-sm hidden-xs">
                     <div className="roadjourny">
                         <img alt="" src="/images/roadjourny.png" />
                     </div>
                   </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+          <div className="col-lg-12 col-md-12 col-sm-12 hidden-xs  NOpadding">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 NOpadding">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock " style={{background:"#1056f3"}}>
                 <h1 className="col-lg-10 col-lg-offset-1"style={{opacity:1}}><b>Our</b> Journey</h1>
@@ -373,7 +459,7 @@ journyData11(){
               </div>
               <img className="add6" src="/images/add1.png" />
           </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+          <div className="col-lg-12 col-md-12 col-sm-12   col-xs-12   NOpadding">
               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg2">
               <img className="add7" src="/images/add1.png" />
               </div>
@@ -381,7 +467,7 @@ journyData11(){
                 <img className="add8" src="/images/add1.png" />
               </div>
           </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+          <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
               <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 journybg5">
               <img className="add9" src="/images/add1.png" />
               </div>
@@ -391,17 +477,17 @@ journyData11(){
               <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
               </div>
           </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+          <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
               <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
               <img className="add11" src="/images/add1.png" />
               </div>
           </div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+            <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
               <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
               <img className="add12" src="/images/add1.png" />
               </div>
           </div>
-
+         
          {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 ">
               <img className="add10" src="/images/add1.png" />
@@ -430,6 +516,41 @@ journyData11(){
                </div>
             </div> */}
       </div>
+        <div className="new_wizard new_wizard_journy col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div> 
+                      <h4 className="navigationTitle text-center">You May Also Visit</h4>
+                    <div className="wizard-inner col-lg-10 col-lg-offset-3 col-md-12 col-xs-12 col-sm-12">
+                    
+                            { 
+                    this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
+                        this.state.blocks.repeatedBlocks.map((result, index)=>{
+
+                          return(
+                           
+                           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 nopadding">
+                            <div className=" nav-tabs new_tab" role="tablist">
+                                <div role="presentation" className="">
+                                    <a href={result.Link}>
+                                      <span className={"new_round-tabfor4 "+(result.Link === "/ourjourny" ? "active1": "")}>
+                                            
+                                        </span>
+                                   
+                                    <div className="new_wizardNotefor4 ">{result.Title}</div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                           </div>  
+                            )
+                     })
+                    : null
+                  }
+
+
+                        </div>
+                    </div>
+               </div>     
+
     );  
   }
 }

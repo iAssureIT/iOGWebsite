@@ -135,10 +135,10 @@ export default class Commonservicesblock extends Component {
                                 console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-4 col-md-offset-2 col-xs-offset-1 col-sm-4 col-xs-4";
+                                    var classes = "col-lg-offset-2   col-lg-4 col-md-4 col-md-offset-1 col-xs-offset-1 col-sm-4 col-xs-4";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center";
+                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
                                  
                                 }
                                 }else if(productlength == 1){

@@ -55,3 +55,20 @@
 .rb-para-top{
     height: 300px;
 }
+@media screen and (max-width: 600px) {
+    .RB_block{
+        margin-top: 0px ! important;
+    }
+    .rbicn_1{
+        margin-top: 20px ! important;
+    }
+    .repeated_block1height{
+        height: 170px ! important;
+    }
+    .rb-para-top{
+        font-size: 15px ! important;
+    }
+    .Type3component{
+        margin-bottom: 95px ! important;
+    }
+  }  

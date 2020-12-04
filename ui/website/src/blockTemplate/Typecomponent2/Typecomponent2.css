@@ -16,3 +16,10 @@
 	padding:50px;
 
 }
+
+@media screen and (max-width: 600px) {
+	.Type2Img{
+		padding: 0px ! important;
+	}
+
+}

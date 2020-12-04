@@ -273,13 +273,19 @@ Commonleafulblock13(){
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-      	<Overview OverviewData={this.overviewData()} />
-        <Challenges   CommonleafblockData={this.Commonleafulblock()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock2()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock3()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock4()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock5()} /> 
-        <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> 
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding" style={{marginTop:"30px"}}>
+          <h2 className="BT1_bannerTitle_res text-center HistorianTitle text-center"><b>Legal Privacy Policy</b></h2>
+           <div className="dynamicpageimg BT1_img1"></div>
+          </div>
+         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 policyMainDiv">
+          	<Overview OverviewData={this.overviewData()} />
+            <Challenges   CommonleafblockData={this.Commonleafulblock()} /> 
+            <Challenges   CommonleafblockData={this.Commonleafulblock2()} /> 
+            <Challenges   CommonleafblockData={this.Commonleafulblock3()} /> 
+            <Challenges   CommonleafblockData={this.Commonleafulblock4()} /> 
+            <Challenges   CommonleafblockData={this.Commonleafulblock5()} /> 
+            <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> 
+        </div> 
        {/* <Challenges   CommonleafblockData={this.Commonleafulblock6()} /> */}
       </div>
     );  

@@ -44,3 +44,11 @@
     padding-left: 71px;
     padding-top: 55px;
 }
+@media screen and (max-width: 768px) {
+    .TypebtnText{
+        margin-left: 0px ! important;
+    }
+    .type1btnDiv{
+        height: 600px ! important;
+    }
+}

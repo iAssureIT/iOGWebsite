@@ -5,10 +5,10 @@
     top: 45px;
     border-radius: 5px;
     box-shadow: 0px 0px 14px 0px #b7b3b3;
-    margin-left: 53px;
-    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-bottom: 55px;
     min-height: 193px;
-    width:560px;
+    width:600px;
   }
   .B4T_ServicesDiv_mob{
     top: 45px;
@@ -28,7 +28,7 @@
     margin-left: 15px;
   }
   .innerServiceDiv{
-    padding-top: 25px;
+    padding-top: 35px;
   	/*padding-left: 45px;*/
   }
   .B2T_serviceTitle{
@@ -39,6 +39,10 @@
     font-size: 35px;
     font-weight: 600;
     margin-top: 55px;
+}
+
+.Expertise_maindiv{
+  /*margin-left: 60px;*/
 }
 .B2T_serviceTitleNew{
  background-color: #333 ! important;
@@ -73,12 +77,19 @@
 .B2T1_line1{
   margin-left: 145px ! important;
 }
+.B4T_ServicesDiv{
+  width: 240px ! important;
+}
 
 }
 @media(max-width : 768px){
   .B2T1_line1{
     margin-left: 356px ! important;
 
+  }
+  .B4T_ServicesDiv{
+    margin-left: 55px ! important;
+    min-height: 226px ! important;
   }
 }
 @media(max-width : 767px){
@@ -116,5 +127,14 @@
 }
 .B4T_line{
   left: 151px ! important;
+ }
 }
+
+@media screen and (min-width: 1900px) {
+  .Expertise_maindiv{
+    margin-left: 60px;
+  }
+  .B4T_ServicesDiv{
+    width: 800px;
+  }
 }

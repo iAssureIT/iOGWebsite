@@ -53,3 +53,10 @@
 .Newsbannerimg{
   height: 180px;
 }
+
+@media screen and (min-width: 1900px) {
+
+  .eventdesc{
+    padding: 0px ! important;
+  }
+}  

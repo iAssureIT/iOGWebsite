@@ -404,7 +404,7 @@ ul.no-icon-list1 {
 
 /*mob view*/
 .responsivefooter{
-  height: 660px;
+  height: 600px ! important;
 
 }
 .resicons{
@@ -479,6 +479,8 @@ ul.no-icon-list1 {
   .fs15{
     margin-left: 20px;
   }
+
+  .responsivefooter{}
 }
 .connectUsDiv{
   padding-left: 70px;

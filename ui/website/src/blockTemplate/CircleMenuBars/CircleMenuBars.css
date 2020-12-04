@@ -321,6 +321,12 @@
 .BT3_subhead{
     margin-left: -11px;
 }
+.iogimg_4 img{
+    width: 240px ! important;
+}
+.mb_100{
+    margin-bottom: 0px ! important;
+}
 }
 @media (max-width: 480px){
 .adjustfor5{
@@ -332,6 +338,9 @@
 .new_wizardNotefor4 {
     left: -6px ! important;
     font-size: 12px ! important;
+}
+.iogimg_4 img{
+    width: 241px ! important;
 }
 }
 

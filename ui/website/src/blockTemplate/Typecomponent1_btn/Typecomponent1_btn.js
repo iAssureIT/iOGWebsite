@@ -71,13 +71,13 @@ componentDidMount(){
                                 <p className="energypagedata text-justify" style={{fontSize:"17px"}}dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                               </div> 
                               <a class="col-lg-5 col-md-5 services_title"style={{padding:"0px"}} href={this.state.blocks.blockSubTitle}>
-                                  <button class="col-lg-8 col-md-8 lightbluebg buttonhover servicekbtn btn">Read More 
+                                  <button class="col-lg-8 col-md-6 lightbluebg buttonhover servicekbtn btn">Read More 
                                    <span class="servicekbtnarrow" style={{style:"#fff"}}>&gt;&gt;</span>
                                  </button>
                               </a>  
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 hidden-xs BtnImageDown">
+                        <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs BtnImageDown">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
                               <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
                           </div>

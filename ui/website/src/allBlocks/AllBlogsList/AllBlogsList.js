@@ -85,8 +85,8 @@ render() {
 				  		<b>Blogs</b>
 				    </div>
 				</div>
-			    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-10 ">
-			       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+			       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BolgsHoghDef">
 		          {
 		            Allblogs && Allblogs.length > 0 ?
 		    		Allblogs.map((data, index)=>{

@@ -17,3 +17,9 @@
     height: 400px;
     padding-top: 50px;
 }
+
+@media screen and (max-width: 600px) {
+    .About5block{
+        height: 560px ! important;
+    }
+ }   

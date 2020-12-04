@@ -36,8 +36,8 @@
 }
 .B2T_overviewTxt{
   overflow: hidden;
-/*	height: 260px;
-	width:  414px;
+	height: 420px;
+	/*width:  414px;
   padding-left: 130px;*/
 }
 .B2T_btn{
@@ -58,8 +58,8 @@
   font-size: 17px ! important;
 }
 .B2T_overviewTxt img{
-  width: 450px;
-  height: 318px;
+  width: 100%;
+  height: 465px;
   /*filter: grayscale(.5);*/
    object-fit: contain;
   /*height: 100%;

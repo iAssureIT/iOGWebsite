@@ -21,32 +21,32 @@ export default class CircleMenuBars extends Component{
         "blockType"           : "simple",
         "repeatedBlocks"      : [
                       {
-                        "Title"         : "Page1",
+                        "Title"         : "About Us",
                           "SubTitle"    : "",
                           "Description" : "Identification of loop holes in historical data and forecasts",
                           "Image"       : "/images/challenges1.jpeg",
-                          "Link"        : "/"
+                          "Link"        : "/about"
                       },
                       {
-                        "Title"         : "page2",
+                        "Title"         : "Founder's Profile",
                           "SubTitle"    : "",
                           "Description" : " Choosing the right statistical model for forecasting",
                           "Image"       : "/images/challenges1.jpeg",
-                          "Link"        : ""
+                          "Link"        : "/founder-profile"
                       },
                       {
-                        "Title"         : "page3",
+                        "Title"         : "News & Events",
                           "SubTitle"    : "",
                           "Description" : "Identification of elements which can be forecasted and which cannot be",
                           "Image"       : "/images/challenges1.jpeg",
-                          "Link"        : ""
+                          "Link"        : "/news-&-events"
                       },
                       {
-                        "Title"         : "page4",
+                        "Title"         : "Our Journey",
                           "SubTitle"    : "",
                           "Description" : "Over dependability on automatic forecasting",
                           "Image"       : "/images/challenges1.jpeg",
-                          "Link"        : ""
+                          "Link"        : "/ourjourny"
                       },
                      
         ],
@@ -79,6 +79,7 @@ componentDidMount(){
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
+                  console.log("this.props.block_id----",this.props.block_id);
                     if(response.data){
                       this.setState({
                           blocks:response.data
@@ -240,7 +241,7 @@ componentDidMount(){
 
                           return(
                            
-                           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-2 nopadding">
+                           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 nopadding">
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={result.Link}>

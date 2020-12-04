@@ -287,7 +287,7 @@
 }
 .Main_Cards__Bubble, .Main_Cards__Wrapper:after {
     position: absolute;
-    background-color: rgba(105,92,255,.05);
+    background-color:#eeeeee4d;
     border-radius: 50%;
 }
 .Main_Cards__Bubble:nth-child(2) {
@@ -395,5 +395,16 @@
 }
 .downstreamtxt{
   padding-top: 10px;
+}
+@media only screen and (max-width : 600px){
+  .commonBlockpadd{
+    padding: 0px ! important;
+  }
+  .B2T_p{
+    padding: 0px ! important;
+  }
+  .responsivePadding{
+    padding-left: 0px ! important;
+  }
 }
 
