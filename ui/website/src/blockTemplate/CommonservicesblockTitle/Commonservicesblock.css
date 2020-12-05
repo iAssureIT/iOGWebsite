@@ -132,7 +132,7 @@
 }
 
 .contentheader{
-	margin-bottom:120px;
+	/*margin-bottom:120px;*/
 }
 .contentheader h1{
 	font-size: 41px;
@@ -141,6 +141,7 @@
     letter-spacing: -.4px;
 }
 .contentheader h2{
+  margin-top: 20px ! important;
   font-size: 42px;
   line-height: 55px;
   letter-spacing: 1px;

@@ -339,25 +339,25 @@
   }
   #consultdown_img1 {
     position: absolute;
-    top: 53em ! important;
+    top: 46em ! important;
     left: 2em ! important;
     height: 97px;
 }
  #consultdown_img3 {
     position: absolute;
-    top: 105em ! important;
+    top: 99em ! important;
     left: 2em ! important;
     height: 97px;
 }
  #consultdown_img4 {
     position: absolute;
-    top: 130em ! important;
+    top: 122em ! important;
     left: 2em ! important;
     height: 97px;
 }
 #consultdown_img5 {
     position: absolute;
-    top: 155em ! important;
+    top: 149em ! important;
     left: 1em ! important;
     height: 97px;
 }
@@ -368,7 +368,7 @@
     height: 97px;
 }
 #consultdown_img2{
-    top: 77em ! important;
+    top: 72em ! important;
     height: 95px ! important;
     left:2em ! important;
   }
@@ -379,28 +379,31 @@
     text-align: justify;
 }
 #consultdown_data1{
-  top:60em ! important;
+  top:56em ! important;
   text-align: justify;
   width: 300px ! important;
 }
 #consultdown_data2{
-  top:84em ! important;
+  top:80em ! important;
   width: 345px ! important;
   text-align: justify;
-  /*right: -23px ! important;*/
+  right: -13px ! important;
 }
 
 #consultdown_data3{
-  top:113em ! important;
+  top:110em ! important;
   width: 345px ! important;
   text-align: justify;
   /*right: -4px ! important;*/
 }
+.servivesblockIog{
+  padding-left: 0px ! important;
+}
 #consultdown_data4 {
-    top: 137em ! important;
+    top: 131em ! important;
     width: 304px ! important;
     text-align: justify;
-    right: 14px ! important;
+    right: 27px ! important;
 }
 #consultdown_data5 {
     top: 161em ! important;
@@ -426,11 +429,11 @@
 .downimgtext{
   left: 8em ! important;
     font-size: 17px;
-    top: 16em;
+    top: 15em;
 }
 .downimg_p_txt{
   font-size: 13px ! important;
-  top:23.5em ! important;
+  top:22.5em ! important;
 }
 .adjustfor5{
   margin-left: 10px ! important;

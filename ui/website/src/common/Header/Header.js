@@ -383,8 +383,8 @@ handlechange(event){
                </button>
              </a>
 
-              <div className="dropdown-content normaldropdown dropdownintab dropdownforAbiutus" style={{position:"fixed"}}>
-                 <a href="/about">Company Profile</a>
+              <div className="dropdown-content normaldropdown dropdownintab dropdownforAbiutus hidden-xs" style={{position:"fixed"}}>
+                {/* <a href="/about">Company Profile</a>*/}
                  <a href="/founder-profile">Founder's Profile</a>
                  <a href="/news-&amp;-events">News &amp; Events</a>   
                  <a href="/ourjourny">Our Journey</a>
@@ -396,7 +396,7 @@ handlechange(event){
               <button class="dropbtn"><a href="/service-arms"className={this.state.pageUrl == "/service-arms" ? "Currentactivetab NopaddingToA":"NopaddingToA"}>SERVICES</a> 
                 <i  className={this.state.pageUrl == "/service-arms" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
-              <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
+              <div class="dropdown-content normaldropdown dropdownintab  hidden-xs" style={{position:"fixed"}}>
                  <a href="/iog-study" className={this.state.pageUrl == "/iog-study" ? "Currentactivetab " : "" } >iOGStudy</a>
                  <a className={this.state.pageUrl == "/iog-consult" ? "Currentactivetab " : "" } href="/iog-consult">iOGConsult</a>
                  <a className={this.state.pageUrl == "/iog-implement" ? "Currentactivetab " : "" } href="/iog-implement">iOGImplement</a>
@@ -510,7 +510,7 @@ handlechange(event){
                  <i className={this.state.pageUrl == "/newindustries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemical"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
                 ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
-              <div class="dropdown-content normaldropdown dropdownintab" style={{position:"fixed"}}>
+              <div class="dropdown-content normaldropdown dropdownintab  hidden-xs" style={{position:"fixed"}}>
                 <a href="/refinery">Refinery</a>
                 <a href="/petrochemical">Petrochemicals</a>
                 <a href="/chemicals">Chemicals</a>

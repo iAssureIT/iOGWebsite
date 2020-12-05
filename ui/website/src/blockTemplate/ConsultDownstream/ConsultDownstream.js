@@ -107,10 +107,10 @@ componentDidMount(){
 // 
 
       }
-       if(pageUrl =="/masterpage/iog-implement"){
+       if(pageUrl =="/iog-implement"){
         $('.innerBlocktConsult').css('marginTop','-143px');
       }
-       if(pageUrl =="/masterpage/iog-study"){
+       if(pageUrl =="/iog-study"){
         $('.innerBlocktConsult').css('marginTop','-36px');
         $('.downimgtext').css('left','20em');
       }
@@ -118,7 +118,7 @@ componentDidMount(){
         $('.downimg_p_txt').css('top','-1.5em');
 
       }
-       if(pageUrl=="/masterpage/iog-train"){
+       if(pageUrl=="/iog-train"){
         $('.downimgtext').css('left','17em');
 
       }

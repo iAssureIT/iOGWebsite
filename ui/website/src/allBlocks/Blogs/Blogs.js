@@ -148,7 +148,7 @@ export default class Blogs extends Component {
                         <OwlCarousel 
                         className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
                         loop
-                        // nav
+                        nav={true}
                         dots={false}
                         items={1}
                         margin={0}
@@ -158,7 +158,7 @@ export default class Blogs extends Component {
                         // responsive={
                         // {'0':{items:this.props.items},'768':{items:this.props.items}, '992':{items:this.props.items}, '1200':{items:this.props.items}}
                         // }
-                        autoplay={true}
+                        autoplay={false}
                         autoplayHoverPause={true}
                         >
                         {
@@ -178,12 +178,12 @@ export default class Blogs extends Component {
                                                      <div className="">
                                                      <p>{data.upstreamLi}</p>
                                                     </div>
-                                                    <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                   <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
-                                                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 blogdate">july 5,2019</div>
-                                                         <div className="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                                            <a className="" href="/blog">
-                                                                <input type="button" className="col-lg-10 col-md-10 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">July 5,2019</div>
+                                                         <div className="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                                                            <a className="" href="/blogs">
+                                                                <input type="button" className=" btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>
                                                         </div>
                                                     </div>

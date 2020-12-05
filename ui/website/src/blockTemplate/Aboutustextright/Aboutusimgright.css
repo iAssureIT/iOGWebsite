@@ -14,8 +14,13 @@
     margin-left: 32px;
 }
 .About5block{
-    height: 400px;
+    height: 430px;
     padding-top: 50px;
+}
+.truck img{
+   /* width: 500px;
+    height: 500px;*/
+
 }
 
 @media screen and (max-width: 600px) {

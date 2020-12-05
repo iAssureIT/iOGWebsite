@@ -91,7 +91,7 @@ export default class Upstream extends Component {
         return [
             {
                 upstreamTitle : "Geology & Geophysics",
-                hryperlink    : "masterpage/geology-geophysics",
+                hryperlink    : "/geology-geophysics",
                 upstreamimg   : "/images/upstream1.png",
                 upstreamtext  : "iOG understands the various paradigms of the sub-surface ecosystem. The domain knowledge & expertise enables it to understand the subsurface."
                     
@@ -99,25 +99,25 @@ export default class Upstream extends Component {
             }, 
             {
                 upstreamTitle : "Production Management",
-                hryperlink    : "masterpage/production-management",
+                hryperlink    : "/production-management",
                 upstreamimg   : "/images/upstream3.png",
                 upstreamtext  : "iOG solutions provide the complete range of Production Management services."
             },  
             {
                 upstreamTitle : "Reservoir Management",
-                hryperlink    : "masterpage/reservior-management",
+                hryperlink    : "/reservior-management",
                 upstreamimg   : "/images/upstream4.png",
                 upstreamtext  : "iOG solutions provide end-to-end consulting services for management of reservoirs, utilizing state of the art geo-science and engineering technologies."
             }, 
             {
                 upstreamTitle : "Data Management Services",
-                hryperlink    : "masterpage/data-management",
+                hryperlink    : "/data-management",
                 upstreamimg   : "/images/upstream2.png",
                 upstreamtext  : "iOG solutions provide the complete range of Production Management services."
             },
              {
                 upstreamTitle : "Well & Drilling Services",
-                hryperlink    : "masterpage/well-drilling",
+                hryperlink    : "/well-drilling",
                 upstreamimg   : "/images/upstream5.png",
                 upstreamtext  : "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
             }
@@ -149,7 +149,7 @@ export default class Upstream extends Component {
                                                     <p className="text-center upstreamtext">{data.upstreamtext}</p>
                                                 </div>
                                                 <div className="price-footer price-footer_upstream  price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="Read More"/></a>                                    
+                                                    <a className="upstreamfoot" href={data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="Read More"/></a>                                    
                                                 </div>
                                             </div>
                                         </div>                       

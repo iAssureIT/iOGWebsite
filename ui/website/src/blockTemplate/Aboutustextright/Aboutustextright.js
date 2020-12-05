@@ -73,9 +73,9 @@ componentDidMount(){
                           <p className="righttextaboutus text-justify" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                       </div>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{paddingTop:"10px"}}>
-                      <img src={this.state.blocks.fgImage} alt="" className="truck" />
+                  <div className="col-lg-6 col-md-6 col-sm-12 hidden-xs">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 truck "style={{paddingTop:"10px"}}>
+                      <img src={this.state.blocks.fgImage} alt="" className="img-responsive" />
                     </div>
                   </div>
               </div>

@@ -85,7 +85,7 @@
 @media screen and (max-width: 600px) {
 
   .type1btnDiv{
-    width: 380px;
+    width: 380px ! important;
   }
   .takebuttonDown{
     padding-top: 0px;
@@ -101,7 +101,7 @@
     width: 300px;
   }
   .type1btnDiv{
-    height: 560px;
+    height: 560px ! important;
   }
   
   .iogimg_4{
