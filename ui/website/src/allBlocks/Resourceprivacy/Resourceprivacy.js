@@ -10,8 +10,8 @@ import './Resourceprivacy.css';
 export default class Resourceprivacy extends Component {
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd">
                  {/*   <p className="line_para2  text-center">
                         The privacy and security of the personal information that we hold about you are very important to us and is an important part<br></br>
                         of our relationship with our clients. The following privacy policy applies to all clients of iOG Solutions Pvt. Ltd. It is designed <br></br>to assist you in understanding how we collect and deal with your personal information. By dealing with us, you consent to  <br></br>the collection, use, and disclosure of your personal information as described in this privacy policy.<br></br>

@@ -105,14 +105,14 @@ export default class Resourcevideo extends Component {
                                 <br>
                                 </br> 
                           </div>
-                         <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                           <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                             <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                               <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                         <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd mobileright_padd">
+                           <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd mobileright_padd">
+                             <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd mobileright_padd">
+                               <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                              {
                               this.VideoData().map((data, index)=>{
                               return (
-                                <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100">
+                                <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mobileright_padd  mt100">
                                 <div className="videocard1">
                                     <div className="introvideo">      
                                     <ReactPlayer

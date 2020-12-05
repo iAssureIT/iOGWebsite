@@ -86,8 +86,9 @@ componentDidMount(){
   render(){
     /*console.log("this.state.blockTitle")*/
     return(
-      <div className="ht_top col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{marginTop:"50px"}}>
+      <div className="ht_top col-lg-12 col-md-12 col-sm-12 hidden-xs" style={{marginTop:"50px"}}>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
            <div className="ht_row1 col-lg-12 col-md-12 hidden-sm hidden-xs">
               <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 NOPadding">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimgblock1" style={{paddingRight:"0px"}}>
@@ -139,14 +140,13 @@ componentDidMount(){
                 <p className="fourthblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
               </div>
             </div>
-            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 NOPadding">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimg_4">
+            <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 iogimg_4 NOPadding">
                 <img className="" src={this.state.blocks.repeatedBlocks[2].Image} />
-              </div>
             </div>
           </div>
         </div>
       </div> 
+    </div>  
     );
   }
 }

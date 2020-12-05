@@ -130,12 +130,16 @@
     padding-left: 69px;
     margin-left: -48px;
 }
+.iogimg_4 img{
+    width: 100%;
+    margin-top: -20px;
+}
 
 .iogblock4text{
     padding-top: 35px;
     font-size: 15px;
     /*padding-left: 39px;*/
-    margin-left: 25px;
+    margin-left:7px;
     width: 100%;
     padding-bottom: 59px;
 }
@@ -186,7 +190,7 @@
 .iogimg_4{
     width: 88%;
     height: 315px;
-    margin-left: 28px;
+    /*margin-left: 28px;*/
     /* margin-top: -20px; */
     padding-right: 5px;
     /* margin-top: -20px; */

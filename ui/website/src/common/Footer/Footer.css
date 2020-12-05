@@ -478,7 +478,15 @@ ul.no-icon-list1 {
 @media screen and (max-width: 768px) {
   .fs15{
     margin-left: 20px;
-  }
+    font-size: 13px ! important;
+    }
+    .font-montserrat{
+      font-size: 14px ! important;
+    }
+    .connectUsdiv{
+     margin-top: 20px ! important;
+    margin-left: 20px ! important;
+    }
 
   .responsivefooter{}
 }

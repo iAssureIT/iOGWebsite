@@ -23,6 +23,17 @@
     color: #333;
     font-weight: 500;
  }
+ .new_wizardNotefor5
+ {
+    /* border: 1px solid; */
+    text-align: center;
+    margin-right: 0px;
+    position: relative;
+    top: 31px;
+    right: 15px;
+    color: #333;
+    font-weight: 500;
+ }
  .new_wizardNotefortwo
  {
     /* border: 1px solid; */
@@ -256,7 +267,7 @@
 
   
 }
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
 {
     .navigation_tab{
     margin-left: 20px ! important;
@@ -270,10 +281,12 @@
   }
   .new_wizardNote{
     font-size: 11px;
+    right: -87px ! important;
   }
-  .serflip-card{
-    width: 206px ! important;
+  .new_round-tab{
+    margin-left: 5% ! important;
   }
+  
  .para-top_website{
     margin-top: 20px ! important;
  }
@@ -306,8 +319,12 @@
  .new_wizardNotefor4{
     left:109px;
  }
+.new_wizardNotefor5{
+    /*right: -59px ! important;*/
+    font-size: 11px ! important;
+ }
  .adjustfor5{
-    margin-left: 17px;
+    margin-left: 0px;
  }
 }
 @media only screen and (max-width : 600px){

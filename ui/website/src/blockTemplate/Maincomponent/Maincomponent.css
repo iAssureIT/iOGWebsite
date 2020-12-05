@@ -67,7 +67,7 @@
     margin-top: -95px;
 }
 .iogimg_4 img{
-    width: 902px;
+    /*width: 902px;*/
     margin-top: -6px;
 }
 
@@ -82,7 +82,7 @@
     font-size: 15px;
     /*padding-left: 87px;*/
     margin-left: 24px;
-    width: 107%;
+    /*width: 107%;*/
     height: 405px;
     padding-top: 119px ! important;
     padding: 64px;
@@ -200,9 +200,9 @@
 }
 
 .iogimg_4{
-    width: 99%;
+    /*width: 99%;*/
     height: 315px;
-    margin-left: 28px;
+    /*margin-left: 28px;*/
     /* margin-top: -20px; */
     padding-right: 5px;
     /* margin-top: -20px; */

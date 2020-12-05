@@ -143,8 +143,8 @@ componentDidMount(){
             <div className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></div>
          </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 servivesblockIog">
-           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd">
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                { 
                 this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
@@ -152,7 +152,7 @@ componentDidMount(){
                   console.log("repeatedBlocks from consultsrvice=",result);
                 return(
                  
-                   <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12"style={{marginBottom:"60px"}}>
+                   <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 padding_Mob"style={{marginBottom:"60px"}}>
                     <div className="col-lg-12 col-md-12 New_Study_shadow">
                      <div className="col-md-12 col-lg-12 col-lg-12 col-md-12 FirstPart">
                       <div class="iconCircle">

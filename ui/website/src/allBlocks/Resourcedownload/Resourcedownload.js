@@ -321,9 +321,9 @@ export default class Resourcedownload extends React.Component {
                      <h2 style={{color:"#333"}}><b>Downloads</b></h2>
                     </div>
 
-                 <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                   <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                     <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd mobileright_padd">
+                   <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd mobileright_padd">
+                     <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd mobileright_padd">
                        <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                         <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                        {

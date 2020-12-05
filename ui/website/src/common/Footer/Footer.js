@@ -101,19 +101,19 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/masterpage/about-us">About Us</a></li>
-                                <li><a href="/masterpage/expertise">Expertise</a></li>
-                                <li><a href="/masterpage/industries">Industries</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/newexpertise">Expertise</a></li>
+                                <li><a href="/newindustries">Industries</a></li>
                             </ul>
                         </div>
                         
                         <div className="col-md-2 col-sm-2 col-xs-6 footerdivs">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/masterpage/iog-study">iOGStudy</a></li>
-                                 <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
-                                <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
-                                <li><a href="/masterpage/iog-train">iOGTrain</a></li>
+                                <li><a href="/iog-study">iOGStudy</a></li>
+                                 <li><a href="/iog-consult">iOGConsult</a></li>
+                                <li><a href="/iog-implement">iOGImplement</a></li>
+                                <li><a href="/iog-train">iOGTrain</a></li>
                                
                             </ul>
                         </div>
@@ -121,7 +121,7 @@ export default class Footer extends Component {
                         <div className="col-lg-2 col-md-2 col-sm-3 col-xs-6 footerdivs">
                            <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/masterpage/careers">Careers</a></li>
+                                <li><a href="/newcareers">Careers</a></li>
                                 <li><a href="/blogs">Blogs</a></li>
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
@@ -237,27 +237,27 @@ export default class Footer extends Component {
             <div id="footer" className="bgiogblue responsivefooter col-lg-12 footer-two">
                 <div className=" col-sm-12 col-xs-12 ">
                     <div className="">
-                        <div className=" col-sm-4 col-xs-4">
+                        <div className=" col-sm-2 col-xs-4">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/masterpage/expertise-main-page">Expertise</a></li>
-                                <li><a href="/masterpage/industries">Industries</a></li>
+                                <li><a href="/expertise-main-page">Expertise</a></li>
+                                <li><a href="/industries">Industries</a></li>
                             </ul>
                         </div>
                         
-                        <div className=" col-sm-4 col-xs-4">
+                        <div className=" col-sm-2 col-xs-4">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
-                                 <li><a href="/masterpage/iog-study">iOGStudy</a></li>
-                                 <li><a href="/masterpage/iog-consult">iOGConsult</a></li>
-                                <li><a href="/masterpage/iog-implement">iOGImplement</a></li>
-                                <li><a href="/masterpage/iog-train">iOGTrain</a></li>
+                                 <li><a href="/iog-study">iOGStudy</a></li>
+                                 <li><a href="/iog-consult">iOGConsult</a></li>
+                                <li><a href="/iog-implement">iOGImplement</a></li>
+                                <li><a href="/iog-train">iOGTrain</a></li>
                             </ul>
                         </div>
                         
-                        <div className="col-sm-4 col-xs-4">
+                        <div className="col-sm-2 col-xs-4">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/careers">Careers</a></li>
@@ -265,7 +265,7 @@ export default class Footer extends Component {
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div> 
-                         <div className="col-sm-12 col-xs-12"style={{padding:"0px"}}> 
+                         <div className="col-sm-6 col-xs-12"style={{padding:"0px"}}> 
                            <div className="col-sm-6 col-xs-12"style={{padding:"0px"}}>                       
                             <h6 className="font-montserrat col"style={{color:"#ffffff"}}>Office Address</h6>
                             <p className="fs15" style={{color:"#ffffff"}}>
@@ -285,8 +285,8 @@ export default class Footer extends Component {
                          </div>
 
                     </div>
-                       
-                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{padding:"0px"}}>
+                    </div>   
+                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 connectUsdiv" style={{padding:"0px"}}>
                              <div className="col-sm-6 col-xs-12" >
                                 <h6 className="font-montserrat col newAddress resicons"style={{color:"#ffffff"}}>Connect us on</h6>
                                 <ul className="no-icon-list socialicon socialicon1 ">
@@ -308,14 +308,14 @@ export default class Footer extends Component {
                             </div> 
                          </div>
                     </div>
-                    </div>
+                    
                 </div>            
         </div>
             <div className="darkbluebg col-sm-12 col-xs-12footer-end resfooterend NOpadding">
                 <div className="col-sm-12 col-xs-12">
                     <div className="">
                     <div className="textcolorwhite  col-sm-6 col-xs-12 pull-left pt20">
-                        <p style={{color:"#ffffff"}}style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
+                        <p style={{color:"#ffffff"}}style={{color:"#ffffff"}}>Copyright ©2019 <a style={{color:"#fff"}} href="/">iOGSolutions</a>. All rights reserved.</p>
                      </div>
                     </div>
                    

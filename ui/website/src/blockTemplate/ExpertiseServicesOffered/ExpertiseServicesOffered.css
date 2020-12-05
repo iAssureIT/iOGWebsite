@@ -7,7 +7,7 @@
     box-shadow: 0px 0px 14px 0px #b7b3b3;
     margin-left: 70px;
     margin-bottom: 55px;
-    min-height: 193px;
+    min-height: 204px;
     width:600px;
   }
   .B4T_ServicesDiv_mob{
@@ -87,9 +87,15 @@
     margin-left: 356px ! important;
 
   }
+  .B5T_img{
+   /* width: 218px;
+    height: 165px;
+    padding: 11px;
+    padding-top: 80px;*/
+  }
   .B4T_ServicesDiv{
     margin-left: 55px ! important;
-    min-height: 226px ! important;
+    min-height: 200px ! important;
   }
 }
 @media(max-width : 767px){
@@ -101,12 +107,22 @@
 
 @media (max-width: 480px){
   .B4T_ServicesDiv{
-    margin-left: 22px ! important;
+    margin-left: 8px ! important;
     width: 304px ! important;
     min-height: 125px ! important;
   }
   .innerServiceDiv{
     padding-left: 0px ! important;
+  }
+  .featuretext{
+    font-size: 14px ! important;
+  }
+  .featuretitle{
+    font-size: 15px ! important;
+  }
+  .iconclass{
+    width: 25px ! important;
+    margin-top: 15px ! important;
   }
   .adjustfor5{
     margin-left: 9px ! important;

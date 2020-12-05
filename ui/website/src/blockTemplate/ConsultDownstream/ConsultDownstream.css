@@ -322,6 +322,13 @@
   .services_img img{
     height: 311px ! important;
   }
+  .overviewPadding{
+    padding-left: 0px ! important;
+    padding-right: 0px ! important;
+  }
+  .Mobile_leftPadd{
+    padding-left:0px ! important;
+    }
   .serflip-card{
     margin-left: 20px ! important;
   }
@@ -380,20 +387,20 @@
   top:84em ! important;
   width: 345px ! important;
   text-align: justify;
-  right: -23px ! important;
+  /*right: -23px ! important;*/
 }
 
 #consultdown_data3{
   top:113em ! important;
   width: 345px ! important;
   text-align: justify;
-  right: -4px ! important;
+  /*right: -4px ! important;*/
 }
 #consultdown_data4 {
     top: 137em ! important;
     width: 304px ! important;
     text-align: justify;
-    right: -4px ! important;
+    right: 14px ! important;
 }
 #consultdown_data5 {
     top: 161em ! important;
@@ -405,7 +412,7 @@
     top: 180em ! important;
     width: 306px ! important;
     text-align: justify;
-    right: -4px ! important;
+    right: 14px ! important;
 }
 .innerBlocktConsult{
   height: 2000 ! important;
@@ -417,13 +424,13 @@
   width: 295px ! important;
 }
 .downimgtext{
-  left: 6em ! important;
+  left: 8em ! important;
     font-size: 17px;
-    top: 14em;
+    top: 16em;
 }
 .downimg_p_txt{
   font-size: 13px ! important;
-  top:20.5em ! important;
+  top:23.5em ! important;
 }
 .adjustfor5{
   margin-left: 10px ! important;
@@ -441,7 +448,7 @@
     #consultdown_data0 {
         width: 345px ! important;
         top: 466px ! important;
-        right: -12% ! important;
+        /*right: -12% ! important;*/
     }  
 }
 

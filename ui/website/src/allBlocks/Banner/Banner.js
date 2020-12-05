@@ -327,7 +327,7 @@ pin6click(event){
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
                    <p className="newhovertxt">Processing multiple grades, grade transitions, product sequencing & the variable cost of feedstocks etc.</p>
-                   <a href="/masterpage/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"255px"}}/>
@@ -340,7 +340,7 @@ pin6click(event){
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                     <div style={{width:"165px"}}>
                     <p className="newhovertxt_8">Keeping up with the technological advancements & making sense out of IT investments are few challenges of Modern Refining Business</p>
-                    <a href="/masterpage/refinery">
+                    <a href="/refinery">
                       <span className="servicekbtnarrow8">
                        <i className="fa fa-chevron-circle-right"></i>
                       </span>
@@ -357,7 +357,7 @@ pin6click(event){
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"165px"}}>
                    <p className="newhovertxt_again">Unpredictable raw material prices,outdating process plants & machinery, data overload caused by leveraging new-age technologies</p>
-                   <a href="/masterpage/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" className="img-responsive tabimage scaleimage petrolimage1_img"src="/images/newbanner_img5.png"style={{width:"255px"}}/>
@@ -368,7 +368,7 @@ pin6click(event){
                    <div style={{width:"188px"}}>
                   
                    <p className="newhovertxt_ptrchemical">Petrochemical industry & its higher value addition in recent volatile oil market.</p>
-                   <a href="/masterpage/petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="//petrochemical-mainpage"><span className="servicekbtnarrow5"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
                  <img alt="" className="img-responsive scaleimage"src="/images/Banner3_6.png"className="tabimage"style={{width:"255px"}}/>
@@ -388,7 +388,7 @@ pin6click(event){
                   <div style={{width:"165px"}}>
                     
                      <p className="newhovertxt_4">Skid & modular construction techniques that are common in gas processing plant construction are hindering the integration of various critical sub-processes.</p>
-                   <a href="/masterpage/gas-processing"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/gas-processing"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
                  <img alt="" className="img-responsive tabimage scaleimage plantimage11_img"src="/images/Banner3_8.png"style={{width:"255px"}}/>
@@ -407,7 +407,7 @@ pin6click(event){
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"165px"}}>
                      <p className="newhovertxt_1">The LNG value chain aggregately comprises of E&P, Liquefaction & Shipping.</p>
-                      <a href="/masterpage/lng">
+                      <a href="//lng">
                        <span className="servicekbtnarrow3">
                         <i className="fa fa-chevron-circle-right">
                         </i>
@@ -424,7 +424,7 @@ pin6click(event){
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
                     <p className="newhovertxt_e_p1">Integrated modeling between the utility system & liquefaction process for optimal utilization of LNG fuel</p>
-                   <a href="/masterpage/lng"><span className="servicekbtnarrow4_1"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/lng"><span className="servicekbtnarrow4_1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
                   
@@ -453,7 +453,7 @@ pin6click(event){
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
                     <p className="newhovertxt_e_p">Production & analysis of wells for production & economic viability to bring crude oil & raw natural gas to the surface</p>
-                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
                    <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"style={{width:"255px"}}/>
@@ -463,7 +463,7 @@ pin6click(event){
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"139px"}}>
                    <p className="newhovertxt_6">Merchandising different types of oil and gas</p>
-                   <a href="/masterpage/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                   </div>
                  <img alt="" className="img-responsive scaleimage"src="/images/newbanner_img4.png"style={{width:"135px"}}/>
