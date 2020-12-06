@@ -163,12 +163,10 @@ export default class Upstream extends Component {
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md hidden-sm upstreamblock_new lightbluebg NOpadding">
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
-                        <div className="upstreamcontentheader col-lg-10 col-md-10 col-sm-12 col-xs-12 col-sm-offset-1 col-lg-offset-1 col-md-10 col-md-offset-1 text-center ">                        
-                            <hr/>
-                            <h1 className=" priceh1 pricefont-size-normal pricecolor-light">
-                                 Upstream Oil & Gas Industry
-                            </h1>
-                        </div>
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheader1 text-center">
+                    <hr/>
+                     <h2 style={{color:"#fff"}}><b>Upstream Oil & Gas Industry</b></h2>
+                    </div>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="cards col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -185,7 +183,8 @@ export default class Upstream extends Component {
                                                     <p className="text-center upstreamtext">{data.upstreamtext}</p>
                                                 </div>
                                                 <div className="price-footer price-bodyhover col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                                    <a className="upstreamfoot" href={"/"+data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
+                                                {console.log("data.hryperlink",data.hryperlink)}
+                                                    <a className="upstreamfoot" href={data.hryperlink}><input type="button" className="btn pricebtn1 buttonhover upbuttonhover lightbluebg" value="View More"/></a>                                    
                                                 </div>
                                             </div>
                                         </div>                       

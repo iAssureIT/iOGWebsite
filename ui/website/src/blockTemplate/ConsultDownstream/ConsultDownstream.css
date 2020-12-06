@@ -335,30 +335,30 @@
   #consultdown_img0{
     top: 26em ! important;
     height: 95px ! important;
-    left:2em ! important;
+    left:4em ! important;
   }
   #consultdown_img1 {
     position: absolute;
     top: 46em ! important;
-    left: 2em ! important;
+    left: 4em ! important;
     height: 97px;
 }
  #consultdown_img3 {
     position: absolute;
     top: 99em ! important;
-    left: 2em ! important;
+    left: 4em ! important;
     height: 97px;
 }
  #consultdown_img4 {
     position: absolute;
     top: 122em ! important;
-    left: 2em ! important;
+    left: 4em ! important;
     height: 97px;
 }
 #consultdown_img5 {
     position: absolute;
     top: 149em ! important;
-    left: 1em ! important;
+    left: 4em ! important;
     height: 97px;
 }
 #consultdown_img6 {
@@ -370,7 +370,7 @@
 #consultdown_img2{
     top: 72em ! important;
     height: 95px ! important;
-    left:2em ! important;
+    left:4em ! important;
   }
   #consultdown_data0 {
     width: 345px ! important;
@@ -380,6 +380,7 @@
 }
 #consultdown_data1{
   top:56em ! important;
+  left:1em ! important;
   text-align: justify;
   width: 300px ! important;
 }
@@ -391,6 +392,7 @@
 }
 
 #consultdown_data3{
+  left:1em ! important;
   top:110em ! important;
   width: 345px ! important;
   text-align: justify;
@@ -409,7 +411,7 @@
     top: 161em ! important;
     width: 306px ! important;
     text-align: justify;
-    right: -4px ! important;
+    left: 14px ! important;
 }
 #consultdown_data6 {
     top: 180em ! important;

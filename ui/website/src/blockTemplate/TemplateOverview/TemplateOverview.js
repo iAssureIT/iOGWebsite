@@ -69,7 +69,7 @@ console.log("==>",this.props.block_id);
                    <i className=" col-lg-1 readmore fa fa-angle-double-right"></i>
                   </div>*/}
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12  hidden-xs B2T_overviewTxt">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12  B2T_overviewTxt">
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   {/*<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

@@ -143,7 +143,7 @@ componentDidMount(){
             <div className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></div>
          </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 servivesblockIog">
-           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Mobile_leftPadd">
+           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                { 

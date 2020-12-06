@@ -30,3 +30,23 @@
 	box-shadow: none !important;
 
 }
+ @media (max-width: 480px){
+
+ 	.jobpageform{
+ 		width: 300px ! important;
+ 	}
+ 	.jobformcontent{
+ 		margin-left: 0px ! important;
+ 	}
+ 	.formcontent-wrap{
+ 		margin-top: 150px ! important;
+ 	}
+
+ }
+
+@media screen and (min-width: 768px) {
+
+  .jobformcontent{
+  	margin-left: 232px ! important;
+  }
+  }

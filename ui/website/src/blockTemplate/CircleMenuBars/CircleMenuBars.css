@@ -281,7 +281,7 @@
   }
   .new_wizardNote{
     font-size: 11px;
-    right: -87px ! important;
+    /*right: -87px ! important;*/
   }
   .new_round-tab{
     margin-left: 5% ! important;
@@ -355,6 +355,9 @@
 .new_wizardNotefor4 {
     left: -6px ! important;
     font-size: 12px ! important;
+}
+.pt20{
+    padding-top: 24px ! important;
 }
 .iogimg_4 img{
     width: 241px ! important;
