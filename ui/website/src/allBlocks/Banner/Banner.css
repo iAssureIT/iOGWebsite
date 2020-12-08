@@ -1482,6 +1482,10 @@ animation: fadeIn ease 20s;
   display: block ! important;
   cursor: pointer;
 }
+#oilimageDiv:hover .new_HoverDiv7{
+  display: block ! important;
+  cursor: pointer;
+}
 
 .onhoverimages{
   opacity: 0.7;

@@ -123,9 +123,9 @@ componentDidMount(){
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
-       $('.petrolimage1_img').css('z-index','100');
+      // $('#hidepoweredbyblack').addClass('hiddendiv');
+      // $('#hidepoweredbyblack1').addClass('hiddendiv');
+       // $('.petrolimage1_img').css('z-index','100');
      
     });
 } 
