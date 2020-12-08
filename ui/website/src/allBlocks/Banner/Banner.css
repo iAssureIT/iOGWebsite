@@ -1430,19 +1430,8 @@ animation: fadeIn ease 20s;
     z-index: 250;
     
 }
-.oilimage:hover .new_HoverDiv7  {
-      display: block ! important;
-      cursor: pointer;
-      opacity: 1;
 
-}
-.oilimage:hover #blackbannerDiv{
-  display: block;
-}
-.oilimage:hover .translatediv{
-  z-index: 10 ! important;
 
-}
 .boat_img2:hover .new_HoverDiv1  {
       display: block ! important;
       cursor: pointer;
@@ -1485,11 +1474,11 @@ animation: fadeIn ease 20s;
   display: block ! important;
   cursor: pointer;
 }
-.oilimage:hover .new_HoverDiv7{
+/*.oilimage:hover .new_HoverDiv7{
   display: block ! important;
   cursor: pointer;
 }
-
+*/
 .onhoverimages{
   opacity: 0.7;
 

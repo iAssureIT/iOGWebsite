@@ -97,13 +97,18 @@ componentDidMount(){
     });
      $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       // $('.boat_img').css('z-index','10');
+         $('.new_HoverDiv7').css('display','block');
+            $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-     
+        $('.new_HoverDiv7').css('display','none');
+
+    
+      
      
     });
+
   
 } 
 
@@ -280,7 +285,7 @@ pin6click(event){
              <div id="blackbackground"></div>
                  
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
-              <div className=""style={{overflow:"hidden"}}>
+              <div className="">
               {/*<figure className="oilimage"id="oilimageDiv">
                  <div className="new_HoverDiv7">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
