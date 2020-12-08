@@ -377,7 +377,7 @@ handlechange(event){
 
             <div class="dropdown">
             {console.log("-----",this.state.pageUrl == "/about-us" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
-              <a href="/about" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourny"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
+              <a href="/about-us" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourny"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
                 <button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
                </button>
@@ -405,7 +405,7 @@ handlechange(event){
             </div> 
 
             <div class="dropdown ">
-              <button class="dropbtn"><a href="/newexpertise" className={this.state.pageUrl == "/newexpertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-execution-system"   
+              <button class="dropbtn"><a href="/expertise" className={this.state.pageUrl == "/expertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-execution-system"   
                 ||  this.state.pageUrl == "/digital-services" ||  this.state.pageUrl == "/simulation-and-modeling"  ||  this.state.pageUrl == "/health-safety-environment" ||  this.state.pageUrl == "/energy-management." ||  this.state.pageUrl == "/asset-management"  
                 ||  this.state.pageUrl == "/other-services"  ||  this.state.pageUrl == "/production-plannning" ||  this.state.pageUrl == "/refinery-scheduling" ||  this.state.pageUrl == "/lp-utilities" ||  this.state.pageUrl == "/retro-analysis" ||  this.state.pageUrl == "/lp-configuration"
                 ||  this.state.pageUrl == "/production-accounting"  ||  this.state.pageUrl == "/real-time-data-historian" ||  this.state.pageUrl == "/corporate-dashboard" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
@@ -499,7 +499,7 @@ handlechange(event){
               </div>
             </div> 
              <div class="dropdown">
-              <button class="dropbtn"><a href="/newindustries"className={this.state.pageUrl == "/newindustries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemical"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
+              <button class="dropbtn"><a href="/industries"className={this.state.pageUrl == "/industries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemical"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
                 ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management"
 /*                ||  this.state.pageUrl == "/production-management" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
                 ||  this.state.pageUrl == "/demand-management"  ||  this.state.pageUrl == "/invetory-management" ||  this.state.pageUrl == "/distribution-planning" ||  this.state.pageUrl == "/retail-automation" ||  this.state.pageUrl == "/digital-transformation"  

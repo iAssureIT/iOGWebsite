@@ -1478,11 +1478,11 @@ animation: fadeIn ease 20s;
   opacity: 1;
 
 }*/
-#petrolimage1Div:hover .new_HoverDiv2{
+.petrolimage1:hover .new_HoverDiv2{
   display: block ! important;
   cursor: pointer;
 }
-#oilimageDiv:hover .new_HoverDiv7{
+.oilimage:hover .new_HoverDiv7{
   display: block ! important;
   cursor: pointer;
 }

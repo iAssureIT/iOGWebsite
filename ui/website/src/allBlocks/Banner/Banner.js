@@ -38,12 +38,8 @@ componentDidMount(){
     });
 
      $("#waterimg2Div").hover(function() {
-     // $('.new_HoverDiv1').css('display','block'); 
-         
-       
     
     }, function() {
-     // $(".new_HoverDiv1").css('display','none');
     
     });
 
@@ -87,13 +83,7 @@ componentDidMount(){
       $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
-   /* $("#plantimage1Div").hover(function() { 
-       $('#blackbannerDiv').removeClass('hiddendiv');
-    
-    }, function() {
-      $('#blackbannerDiv').addClass('hiddendiv');
-     
-    });*/
+
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('.boat_img').css('z-index','10');
@@ -105,29 +95,7 @@ componentDidMount(){
        $('.boat_img').css('z-index','10');
      
     });
-    $(".oilimage").hover(function() { 
-       $('#blackbannerDiv').removeClass('hiddendiv');
-       // $('.oilimage_img').css('z-index','10');
-    
-    }, function() {
-      $('#blackbannerDiv').addClass('hiddendiv');
-      // $('#hidepoweredbyblack').addClass('hiddendiv');
-      // $('#hidepoweredbyblack1').addClass('hiddendiv');
-       // $('.oilimage_img').css('z-index','10');
-     
-    });
-    $(".petrolimage1").hover(function() {
-         // $('.new_HoverDiv2').addClass();
-        
-       $('#blackbannerDiv').removeClass('hiddendiv');
-    
-    }, function() {
-      $('#blackbannerDiv').addClass('hiddendiv');
-      // $('#hidepoweredbyblack').addClass('hiddendiv');
-      // $('#hidepoweredbyblack1').addClass('hiddendiv');
-       // $('.petrolimage1_img').css('z-index','100');
-     
-    });
+  
 } 
 
 pinremoveclick(event){
@@ -137,17 +105,6 @@ pinremoveclick(event){
       $(".new_HoverDiv").css("display", "none");
        $(".ripplebox").show();
        $("#hidemydiv").show().delay(3200).fadeOut(3000);;
-      /*$(".boat_img").css('opacity','0.8');
-      $(".oilimage").css('opacity','0.8');
-      $(".gasimage").css('opacity','0.8');
-      $(".plantimage1").css('opacity','0.8');
-      $(".plantimage11").css('opacity','0.8');
-      $(".petrolimage").css('opacity','0.8');
-      $(".petrolimage1").css('opacity','0.8');
-      $(".waterimg2").css('opacity','0.8');
-      $(".nexttogasimage").css('opacity','0.8');
-      $(".boat_img2").css('opacity','0.8');*/
-
      });
 
    });
@@ -159,16 +116,7 @@ pin1removeclick(event){
       $(".banner-cover").hide();
       $(".new_HoverDiv1").hide();
        $(".ripplebox1").show();
-      /*$(".boat_img").css('opacity','0.8');
-      $(".oilimage").css('opacity','0.8');
-      $(".gasimage").css('opacity','0.8');
-      $(".plantimage1").css('opacity','0.8');
-      $(".plantimage11").css('opacity','0.8');
-      $(".petrolimage").css('opacity','0.8');
-      $(".petrolimage1").css('opacity','0.8');
-      $(".waterimg2").css('opacity','0.8');
-      $(".nexttogasimage").css('opacity','0.8');
-      $(".waterimg").css('opacity','0.8');*/
+     
 
      });
 

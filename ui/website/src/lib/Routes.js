@@ -199,7 +199,7 @@ const WebLayout = () => (
     <Route path="/eventblock1" component={ Eventblock1 } />         
    {/* <Route path="/careers" component={ Careerspage } />*/}
     <Route path="/services" component={ ServicesPage } />
-    <Route path="/industries" component={ IndustriesPage } />
+   {/* <Route path="/industries" component={ IndustriesPage } />*/}
     <Route path="/resources" component={ ResourcePage } />
     <Route path="/newbanner" component={ newbanner } />
     <Route path="/blogs" component={ AllBlog } /> 
