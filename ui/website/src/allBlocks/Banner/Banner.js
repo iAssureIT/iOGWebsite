@@ -458,7 +458,7 @@ pin6click(event){
                    <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"style={{width:"255px"}}/>
+                   <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"style={{width:"240px"}}/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
                  <div className="new_HoverDiv6">

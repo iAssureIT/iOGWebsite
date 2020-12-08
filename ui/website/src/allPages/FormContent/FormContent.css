@@ -19,7 +19,7 @@
 }
 .jobformcontent{
 	margin-bottom: 30px !important;
-	margin-left: 383px;
+	margin-left: 383px ! important;
 }
 .dropZindex{
 	z-index: 10;
@@ -47,6 +47,6 @@
 @media screen and (min-width: 768px) {
 
   .jobformcontent{
-  	margin-left: 232px ! important;
+  	margin-left: 400px ! important;
   }
   }

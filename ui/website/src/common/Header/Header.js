@@ -373,7 +373,7 @@ handlechange(event){
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12 TopnavPadding">
            <div class="topnav" id="myTopnav">
-            <a href="/" className={this.state.pageUrl== "/" ? "Currentactivetab" : ""}>HOME</a>
+            <a href="/" className="">HOME</a>
 
             <div class="dropdown">
             {console.log("-----",this.state.pageUrl == "/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
