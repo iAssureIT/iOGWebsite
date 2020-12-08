@@ -105,7 +105,7 @@ componentDidMount(){
        $('.boat_img').css('z-index','10');
      
     });
-    $("#oilimageDiv").hover(function() { 
+    $(".oilimage").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        // $('.oilimage_img').css('z-index','10');
     
@@ -116,7 +116,7 @@ componentDidMount(){
        // $('.oilimage_img').css('z-index','10');
      
     });
-    $("#petrolimage1Div").hover(function() {
+    $(".petrolimage1").hover(function() {
          // $('.new_HoverDiv2').addClass();
         
        $('#blackbannerDiv').removeClass('hiddendiv');

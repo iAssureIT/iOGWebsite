@@ -194,7 +194,7 @@ const WebLayout = () => (
     <Route path="/megamenu" component={ Megamenu } />  
     <Route path="/contact-us" component={ Contactpage } />  
 {/*    <Route path="/contactUsModal" component={ ContactUsModal } />  */}
-    <Route path="/about-us" component={ AboutUs } />         
+   {/* <Route path="/about-us" component={ AboutUs } />         */}
     <Route path="/ourjourny" component={ Ourjourny } />         
     <Route path="/eventblock1" component={ Eventblock1 } />         
    {/* <Route path="/careers" component={ Careerspage } />*/}

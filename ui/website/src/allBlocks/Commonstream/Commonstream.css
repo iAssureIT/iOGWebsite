@@ -45,6 +45,7 @@
 }
 .downTitle{
   font-size: 19px;
+  cursor: pointer;
 }
 .streamImg{
   margin-bottom: 5px;

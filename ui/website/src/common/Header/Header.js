@@ -376,7 +376,7 @@ handlechange(event){
             <a href="/" className="">HOME</a>
 
             <div class="dropdown">
-            {console.log("-----",this.state.pageUrl == "/about" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
+            {console.log("-----",this.state.pageUrl == "/about-us" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
               <a href="/about" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourny"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
                 <button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
