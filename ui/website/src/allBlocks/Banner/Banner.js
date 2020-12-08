@@ -101,9 +101,7 @@ componentDidMount(){
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
-       // $('.boat_img').css('z-index','10');
+     
      
     });
   
@@ -283,7 +281,7 @@ pin6click(event){
                  
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className=""style={{overflow:"hidden"}}>
-              <figure className="oilimage"id="oilimageDiv">
+              {/*<figure className="oilimage"id="oilimageDiv">
                  <div className="new_HoverDiv7">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
@@ -291,8 +289,27 @@ pin6click(event){
                    <a href="/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"155px"}}/>
+                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"255px"}}/>
+                </figure>*/}
+
+                 <figure className="oilimage"id="oilimageDiv">
+                 <div className="new_HoverDiv7">
+                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
+                    <div style={{width:"165px"}}>
+                    <p className="newhovertxt">Processing multiple grades, grade transitions, product sequencing & the variable cost of feedstocks etc.</p>
+                    <a href="/refinery">
+                      <span className="servicekbtnarrow7">
+                       <i className="fa fa-chevron-circle-right"></i>
+                      </span>
+                    </a>
+                  </div>  
+                 </div>
+                  <img alt="" className="img-responsive scaleimage nexttogasimg_size nexttogasimage_img"src="/images/Banner3_6.png" /> 
                 </figure>
+
+ 
+
+
                {/* <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
                 </figure>*/}
