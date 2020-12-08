@@ -1314,7 +1314,7 @@ animation: fadeIn ease 20s;
 
 }
 .oilimage:hover{
-  z-index: 110;
+  z-index: 120;
 
 }
 
@@ -1367,7 +1367,7 @@ animation: fadeIn ease 20s;
     margin-top: -241px;
     position: absolute;
     background-size: 100% 100%;
-    z-index:200;
+    z-index:120;
     
 }
 .new_HoverDiv3 {
@@ -1427,7 +1427,7 @@ animation: fadeIn ease 20s;
     animation: fadeIn ease 1.5s;
     position: absolute;
     background-size: 100% 100%;
-    z-index: 250;
+    /*z-index: 110;*/
     
 }
 
@@ -1458,6 +1458,7 @@ animation: fadeIn ease 20s;
 
   
 }
+
 
 .plantimage11:hover .new_HoverDiv4  {
       display: block ! important;
