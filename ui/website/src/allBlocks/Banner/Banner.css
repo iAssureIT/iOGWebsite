@@ -1436,6 +1436,7 @@ animation: fadeIn ease 20s;
       opacity: 1;
 
 }
+
 .oilimage:hover .translatediv{
   z-index: 10 ! important;
 
