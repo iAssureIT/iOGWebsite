@@ -12,10 +12,10 @@ export default class ConsultOverview extends Component {
     super(props);
     this.state = {
       blocks: {
-        "blockComponentName"  : "ConsultOverview",
-        "blockType"           : "simple",
+        "blockComponentName"  : "",
+        "blockType"           : "",
          blockTitle           : "",
-        blockDescription      : "iOG follows a structured methodology to assess goals and objectives, diagnose problems, define roadmaps and blueprints and finally implement the solution.",
+        blockDescription      : "",
      
       },
       blockID:"",

@@ -17,69 +17,69 @@ export default class ConsultingServices extends Component {
         "blockType"       : "simple",
         "repeatedBlocks"    : [
                       {
-                        "Title"         : "Strong domain",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Strong domain knowledge of refining, petrochemicals & other process industries",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Technical Expertise",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "World-class technical expertise in all the leading advanced software solutions in the industries",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Domain Experts",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "The unparalleled combination ofdomain-experts & subjectmatter experts, that are qualified to meet our clients’ needs and expectations.",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                      
                       {
-                        "Title"         : "Extensive",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Extensive experience on software applications",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Implementation",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "End-to-end Implementation and Integration skills",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       
                       {
-                        "Title"         : "Ability",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Ability to review problems independently and bring fresh perspectives to clients.",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Consultative",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "An open mind and consultative approach to evolving best solutions that meet client requirements",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Proprietary Analysis",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Proprietary analysis,structured consulting and decision-making approachess",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Value creation",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Focus on value creation and ensuring a good return on investments",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/xyz"
                       },
                       
                       

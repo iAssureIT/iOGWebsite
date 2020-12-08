@@ -23,7 +23,7 @@ export default class Journycaro extends Component {
              <div>
                 <div className="col-lg-7 col-md-3 col-sm-12 col-xs-12">
                   <div className="row">
-                      <div className="webclientbackimg  col-lg-12">
+                      <div className="webclientbackimg  col-lg-12 col-md-12 col-sm-12 coll-xs-12">
                             <div id="myCarousel" className="carousel slide" data-ride="carousel" data-pause="false">
                               <div className="carousel-inner webclientcaro">
                                     

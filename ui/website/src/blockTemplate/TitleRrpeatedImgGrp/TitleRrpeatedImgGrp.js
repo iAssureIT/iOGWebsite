@@ -13,8 +13,8 @@ constructor(props) {
     	element3  :[],
     	
         blocks:{
-        "blockTitle"     	 : "Applications",
-        "fgImage   "      	 : "/images/dataHistorian.png",
+        "blockTitle"     	 : "",
+        "fgImage   "      	 : "",
         "blockSubTitle"      : "",
         "blockDescription"   : " ",
         "blockComponentName" : "DataHistorian",
@@ -22,31 +22,31 @@ constructor(props) {
         "repeatedBlocks"     : 
                           [
                             {
-		                          "Title"       : "Manufacturing site to record instrument readings",
+		                          "Title"       : "",
 		                          "SubTitle"    : "",
-		                          "Description" : "Process (flow rate, valve position, vessel level, temperature, pressure) Production Status (machine up/down, downtime reason tracking)",
-		                          "Image"       : "/images/star.png",
+		                          "Description" : "",
+		                          "Image"       : "",
 		                          "Link"        : "/xyz"
 		                      },
 		                      {
-		                        "Title"         : "Utilities",
+		                        "Title"         : "",
 		                          "SubTitle"    : "",
-		                          "Description" : "steam and electricity production and distribution",
-		                          "Image"       : "/images/star.png",
+		                          "Description" : "",
+		                          "Image"       : "",
 		                          "Link"        : "/abc"
 		                      },
 		                    {
-	                        	"Title"         : "Heavy Equipment monitoring ",
-	                          	"SubTitle"    : "",
-	                          	"Description" : "recording of run hours, instrument and equipment readings for predictive maintenance ",
-	                          	"Image"       : "/images/star.png",
-	                          	"Link"        : "/xyz"
+	                        	"Title"         : " ",
+	                          	"SubTitle"      : "",
+	                          	"Description"   : "",
+	                          	"Image"         : "",
+	                          	"Link"          : "/xyz"
                       		},
 		                    {
-		                        "Title"       : "Environmental monitoring",
+		                        "Title"       : "",
 		                        "SubTitle"    : "",
-		                        "Description" : "weather, sea level, atmospheric conditions, groundwater contamination",
-		                        "Image"       : "/images/star.png",
+		                        "Description" : "",
+		                        "Image"       : "",
 		                        "Link"        : "/abc"
 		                    }
 
@@ -189,7 +189,7 @@ componentDidMount(){
 	                	</div>
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 hidden-sm hidden-xs" style={{paddingLeft:"55px"}}>
+	                	<div className="col-lg-4 col-md-4 hidden-sm hidden-xs ApplicationImg" style={{paddingLeft:"55px"}}>
 	                      <img src={this.state.blocks.fgImage} className=" img-responsive newApplicationImage" style={{height:"350px"}} />
 	                    </div>
 						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
@@ -205,7 +205,7 @@ componentDidMount(){
 							    </div>
 								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
 								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
+								   <p className="text-left featuretext  rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>		
 				              </div>			
 					
@@ -266,13 +266,13 @@ componentDidMount(){
             			     return(
 							   <div>
 								<div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								 <div className="col-lg-2  pull-left">
+								 <div className="col-lg-2  pull-left"style={{paddingLeft:"5px"}}>
 								   <img src={result.Image} className="iconclass"/>					    
 								 </div>
 							    </div>
-								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left">{result.Title}</h4>
+								 <h4 className=" text-left featuretitle featuretitleleft text-left col-lg-9 pull-left"style={{paddingLeft:"5px"}}>{result.Title}</h4>
 								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-								   <p className="text-left featuretext rightapplications" dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
+								   <p className="text-left  featuretextInmob rightapplications"style={{marginLeft:"5px"}} dangerouslySetInnerHTML={{ __html: result.Description } }  ></p>
 								 </div>		
 				              </div>			
 					

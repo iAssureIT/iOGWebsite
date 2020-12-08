@@ -8,6 +8,17 @@
 	  height: 405px ! important;
 	  padding: 0px ! important;
 	}
+	.commonBlockpadd{
+		padding-left: 10px ! important;
+		padding-right: 10px ! important;
+	}
+	.overviewPadding{
+		padding-right: 20px! important;
+		padding-right: 20px ! important;
+	}
+	.BT3_text ul{
+		padding-left: 12px ! important;
+	}
 }
 .line_para ul{
 	padding-left: 15px;
@@ -16,3 +27,4 @@
 	padding-left: 70px;
 	padding-right: 70px;
 }
+

@@ -385,4 +385,27 @@
     color: white;
     width: 300px;
   }
+  .featuretextInmob{
+    margin-left: 0px ! important;
+  }
+
+ 
+}
+@media screen and (max-width: 480px) {
+  .featuretextInmob{
+    margin-left: 10px ! important;
+  }
+
+}
+@media screen and (max-width: 1900px) {
+   .ApplicationImg{
+    padding-left: 90px ! important;
+  }
+
+}
+@media screen and (max-width: 1400px) {
+   .ApplicationImg{
+    padding-left: 90px ! important;
+  }
+
 }

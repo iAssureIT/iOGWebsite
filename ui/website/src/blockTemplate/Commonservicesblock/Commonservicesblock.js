@@ -20,39 +20,39 @@ export default class Commonservicesblock extends Component {
         "blockType"           : "simple",
         "repeatedBlocks"    : [
                       {
-                          "Title"       : "Geology &amp; Geophysics",
+                          "Title"       : "",
                           "SubTitle"    : "",
-                          "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"       : "/images/Icon_1.png",
+                          "Description" : "",
+                          "Image"       : "",
                           "Link"        : "/"
                       },
                       {
-                          "Title"     : "Geology",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"     : "/images/Icon_2.png",
-                          "Link"      : "/iogimplement"
+                          "Title"       : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/iogimplement"
                       },
                       {
-                          "Title"     : "Geology &amp; Geophysics",
+                          "Title"       : "",
                           "SubTitle"    : "",
-                          "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"     : "/images/Icon_1.png",
-                          "Link"      : "/iogtrain"
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/iogtrain"
                       },
                       {
-                          "Title"     : "Geology",
+                          "Title"       : "",
                           "SubTitle"    : "",
-                          "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"     : "/images/Icon_2.png",
-                          "Link"      : "/iogstudy"
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/iogstudy"
                       },
                        {
-                          "Title"     : "Geology",
+                          "Title"       : "",
                           "SubTitle"    : "",
-                          "Description" : "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface.",
-                          "Image"     : "/images/Icon_2.png",
-                          "Link"      : "/iogstudy"
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : "/iogstudy"
                       }
 
         ],

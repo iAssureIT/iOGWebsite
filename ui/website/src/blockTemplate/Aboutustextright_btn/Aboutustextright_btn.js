@@ -14,10 +14,10 @@ export default class Aboutustextright_btn extends Component {
     this.state = {
       blocks: {
         "blockComponentName"  : "Aboutustextright_btn",
-        "blockType"       : "simple",
+        "blockType"       : "",
          "blocksubTitle"       : "",
-        blockDescription : "Our key strength is our Team. iOG operates through a team of young and innovative consultants which has strong domain knowledge in all aspects of the O&G value chain and expertise in all leading software solutions. Needless to add, the impact of iOG interventions and its support is directly reflected in the phenomenal growth and progress of the company engaging its services.",
-        fgImage: "/images/imgrightabout.png",
+        blockDescription : "",
+        fgImage: "",
       },
       blockID:"",
       block_id:""

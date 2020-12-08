@@ -123,7 +123,12 @@
 .havh{
   
 }
+@media (max-width: 480px){
 
+  .BT3_text ul{
+    padding-left: 12px ! important;
+  }
+}
 
 
 

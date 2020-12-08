@@ -197,7 +197,7 @@ const WebLayout = () => (
     <Route path="/about-us" component={ AboutUs } />         
     <Route path="/ourjourny" component={ Ourjourny } />         
     <Route path="/eventblock1" component={ Eventblock1 } />         
-    <Route path="/careers" component={ Careerspage } />
+   {/* <Route path="/careers" component={ Careerspage } />*/}
     <Route path="/services" component={ ServicesPage } />
     <Route path="/industries" component={ IndustriesPage } />
     <Route path="/resources" component={ ResourcePage } />

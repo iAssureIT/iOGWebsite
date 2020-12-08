@@ -12,9 +12,9 @@ export default class TemplateOverview extends Component {
     super(props);
     this.state = {
       blocks: {
-        blockTitle : "Overview",
-        blockDescription : "The Production accounting application performs reconciliation of the measured raw data and provides accurate data for daily production accounting and performance reporting. It provides reconciled data for daily, weekly and monthly reporting and provides key inputs for fiscal / revenue accounting. It also provides other tangible and nontangible benefits such as loss minimization, quality giveaway minimization, etc.",
-        fgImage: "/images/block1.png",
+        blockTitle : "",
+        blockDescription : "",
+        fgImage: "",
       },
       blockID:"",
       block_id:""

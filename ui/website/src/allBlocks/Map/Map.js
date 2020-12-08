@@ -117,7 +117,7 @@ export default class Map extends Component {
               <div className=" servicediv col-lg-3 ">
                 <div className="mainpages">
                 <span class="bottomlinksraquo"></span> 
-                 <a href="/manufacturing-exec-system" className="Aboutuslink">Mfg Execution System</a><br/>
+                 <a href="/manufacturing-execution-system" className="Aboutuslink">Manufacturing Execution System</a><br/>
                  <div className="col-lg-6 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">

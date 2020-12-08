@@ -405,7 +405,7 @@ handlechange(event){
             </div> 
 
             <div class="dropdown ">
-              <button class="dropbtn"><a href="/newexpertise" className={this.state.pageUrl == "/newexpertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-exec-system"   
+              <button class="dropbtn"><a href="/newexpertise" className={this.state.pageUrl == "/newexpertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-execution-system"   
                 ||  this.state.pageUrl == "/digital-services" ||  this.state.pageUrl == "/simulation-and-modeling"  ||  this.state.pageUrl == "/health-safety-environment" ||  this.state.pageUrl == "/energy-management." ||  this.state.pageUrl == "/asset-management"  
                 ||  this.state.pageUrl == "/other-services"  ||  this.state.pageUrl == "/production-plannning" ||  this.state.pageUrl == "/refinery-scheduling" ||  this.state.pageUrl == "/lp-utilities" ||  this.state.pageUrl == "/retro-analysis" ||  this.state.pageUrl == "/lp-configuration"
                 ||  this.state.pageUrl == "/production-accounting"  ||  this.state.pageUrl == "/real-time-data-historian" ||  this.state.pageUrl == "/corporate-dashboard" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
@@ -415,7 +415,7 @@ handlechange(event){
                 ||  this.state.pageUrl == "/apc-services"  ||  this.state.pageUrl == "/etrm" ||  this.state.pageUrl == "/utility-network-optimization" ||  this.state.pageUrl == "/equipment-monitoring" ||  this.state.pageUrl == "/energy-accounting" 
                 ||  this.state.pageUrl == "/asset-lifecycle"  ||  this.state.pageUrl == "/asset-criticality-analysis" ||  this.state.pageUrl == "/asset-strategy-management" ||  this.state.pageUrl == "/inspection-&-calibration" 
                   ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>EXPERTISE</a>
-                 <i className={this.state.pageUrl == "/newexpertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-exec-system"   
+                 <i className={this.state.pageUrl == "/newexpertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-execution-system"   
                 ||  this.state.pageUrl == "/digital-services" ||  this.state.pageUrl == "/simulation-and-modeling"  ||  this.state.pageUrl == "/health-safety-environment" ||  this.state.pageUrl == "/energy-management." ||  this.state.pageUrl == "/asset-management"  
                 ||  this.state.pageUrl == "/other-services"  ||  this.state.pageUrl == "/production-plannning" ||  this.state.pageUrl == "/refinery-scheduling" ||  this.state.pageUrl == "/lp-utilities" ||  this.state.pageUrl == "/retro-analysis" ||  this.state.pageUrl == "/lp-configuration"
                 ||  this.state.pageUrl == "/production-accounting"  ||  this.state.pageUrl == "/real-time-data-historian" ||  this.state.pageUrl == "/corporate-dashboard" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
@@ -521,7 +521,7 @@ handlechange(event){
             </div> 
 
              <a href="/resources"className={this.state.pageUrl == "/resources" ? "Currentactivetab " : "" } >RESOURCES</a>
-             <a href="/newcareers"className={this.state.pageUrl == "/careers" ? "Currentactivetab " : "" } >CAREERS</a>
+             <a href="/careers"className={this.state.pageUrl == "/careers" ? "Currentactivetab " : "" } >CAREERS</a>
              <a href="/blogs" className={this.state.pageUrl == "/blogs" ? "Currentactivetab " : "" } >BLOGS</a>
              <a href="/contact-us"className={this.state.pageUrl == "/contact-us" ? "Currentactivetab " : "" } >CONTACT US</a>
             <a href="javascript:void(0);" class="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>

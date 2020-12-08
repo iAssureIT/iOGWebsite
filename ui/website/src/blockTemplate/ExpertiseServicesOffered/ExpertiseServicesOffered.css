@@ -28,7 +28,7 @@
     margin-left: 15px;
   }
   .innerServiceDiv{
-    padding-top: 35px;
+    padding-top: 45px;
   	/*padding-left: 45px;*/
   }
   .B2T_serviceTitle{
@@ -144,11 +144,14 @@
 .B4T_line{
   left: 151px ! important;
  }
+ .NopaddingMob{
+  padding-left: 10px ! important;
+ }
 }
 
 @media screen and (min-width: 1900px) {
   .Expertise_maindiv{
-    margin-left: 60px;
+    margin-left: 40px;
   }
   .B4T_ServicesDiv{
     width: 800px;

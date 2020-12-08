@@ -19,45 +19,45 @@ export default class ExpertiseServicesOffered extends Component {
         "blockType"           : "simple",
         "repeatedBlocks"    : [
                       {
-                        "Title"         : "Implementation",
+                        "Title"         : "",
                           "SubTitle"    : "",
-                          "Description" : "Implementation of the Data Historian Tool",
-                          "Image"       : "/images/s1.png",
+                          "Description" : "",
+                          "Image"       : "",
                           "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Integration",
+                        "Title"         : "",
                           "SubTitle"    : "",
-                          "Description" : " Integrate the Data Historian with your operations and front, mid and back office business systems to historize and archive data.",
-                          "Image"       : "/images/s2.png",
+                          "Description" : "",
+                          "Image"       : "",
                           "Link"        : "/abc"
                       },
                       {
                         "Title"         : "",
-                          "SubTitle"    : "upgradation",
-                          "Description" : "Upgrade your existing Data Historian architecture to utilize high availability, interface redundancy and the application of critical updates to all the modules.",
-                          "Image"       : "/images/s3.png",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
                           "Link"        : "/xyz"
                       },
                       {
-                        "Title"         : "Update and Migration",
+                        "Title"         : "",
                           "SubTitle"    : "",
-                          "Description" : "Data Historian System Update and Migration",
-                          "Image"       : "/images/s4.png",
+                          "Description" : "",
+                          "Image"       : "",
+                          "Link"        : ""
+                      },
+                      {
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"       : "",
                           "Link"        : "/abc"
                       },
                       {
-                        "Title"         : "customized Applications",
+                        "Title"         : "",
                           "SubTitle"    : "",
-                          "Description" : "Develop customized applications and interfaces to fit your unique requirements",
-                          "Image"       : "/images/s5.png",
-                          "Link"        : "/abc"
-                      },
-                      {
-                        "Title"         : "Deliver training materials",
-                          "SubTitle"    : "Update and Migration",
-                          "Description" : "Delivery of standard or customized training materials and one-on-one staff mentoring for users, administrators, and support personnel in your organization.",
-                          "Image"       : "/images/s6.png",
+                          "Description" : "",
+                          "Image"       : "",
                           "Link"        : "/abc"
                       },
 
@@ -113,7 +113,7 @@ componentDidMount(){
               <hr/>
                <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
             </div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Expertise_maindiv">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NopaddingMob Expertise_maindiv">
             { 
               this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
               this.state.blocks.repeatedBlocks.map((result, index)=>{

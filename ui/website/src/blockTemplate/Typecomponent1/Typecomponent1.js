@@ -46,7 +46,7 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel onselecthover" style={{marginTop:"60px"}}
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel MobileDivHeight onselecthover" style={{marginTop:"60px"}}
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -65,7 +65,7 @@ componentDidMount(){
                             </div>
                         </div>
                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 BtnImageDown">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Typecomponent1Img">
                               <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
                           </div>
                         </div>

@@ -117,7 +117,7 @@ export default class Upstream extends Component {
             },
              {
                 upstreamTitle : "Well & Drilling Services",
-                hryperlink    : "/well-drilling",
+                hryperlink    : "/well-drilling-services",
                 upstreamimg   : "/images/upstream5.png",
                 upstreamtext  : "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
             }
