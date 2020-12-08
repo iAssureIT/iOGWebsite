@@ -1436,7 +1436,9 @@ animation: fadeIn ease 20s;
       opacity: 1;
 
 }
-
+.oilimage:hover #blackbannerDiv{
+  display: block;
+}
 .oilimage:hover .translatediv{
   z-index: 10 ! important;
 

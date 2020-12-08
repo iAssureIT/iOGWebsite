@@ -97,13 +97,13 @@ componentDidMount(){
     });
      $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       // $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       // $('.boat_img').css('z-index','10');
      
     });
   
@@ -291,7 +291,7 @@ pin6click(event){
                    <a href="/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"255px"}}/>
+                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"155px"}}/>
                 </figure>
                {/* <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
