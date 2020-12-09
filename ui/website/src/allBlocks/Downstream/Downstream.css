@@ -23,7 +23,7 @@
 }
 .block img:hover
 {
-  transform: scale(0.8,0.8);
+  transform: scale(1.1);
   overflow-wrap: hidden;
   /*transition-delay: 0.10s;*/
   transition-duration: 0.20s;

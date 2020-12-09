@@ -38,16 +38,22 @@ componentDidMount(){
     });
 
      $("#waterimg2Div").hover(function() {
+     // $('.new_HoverDiv1').css('display','block'); 
+         
+       
     
     }, function() {
+     // $(".new_HoverDiv1").css('display','none');
     
     });
 
       $("#boat_imgDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+
         $('.boat_img').css('z-index','150');
          $('.waterimg').css('z-index','100');
          $('.new_HoverDivforboat').css('display','block');
+         $('#hidepoweredbyblack1').removeClass('hiddendiv');
       
 
     
@@ -55,7 +61,8 @@ componentDidMount(){
       $('#blackbannerDiv').addClass('hiddendiv');
        $('.boat_img').css('z-index','10');
        $('.waterimg').css('z-index','10');
-        $('.new_HoverDivforboat').css('display','none');
+       $('.new_HoverDivforboat').css('display','none');
+        $('#hidepoweredbyblack1').addClass('hiddendiv');
     
     });
     
@@ -64,6 +71,8 @@ componentDidMount(){
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('.waterimg2').css('z-index','120');
        $('.boat_img').css('z-index','10');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+      
 
     
     }, function() {
@@ -75,41 +84,61 @@ componentDidMount(){
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+        $('#hidepoweredbyblack1').removeClass('hiddendiv');
        $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
+         $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
-
+   /* $("#plantimage1Div").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+     
+    });*/
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack1').removeClass('hiddendiv');
        $('.boat_img').css('z-index','10');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack1').addClass('hiddendiv');
+       $('.boat_img').css('z-index','10');
+     
+    });
+    $("#oilimageDiv").hover(function() { 
+       $('#blackbannerDiv').removeClass('hiddendiv');
+       $('#hidepoweredbyblack').removeClass('hiddendiv');
+       $('#hidepoweredbyblack2').removeClass('hiddendiv');
+       $('#hidepoweredbyblack3').removeClass('hiddendiv');
+       // $('.oilimage_img').css('z-index','10');
+    
+    }, function() {
+      $('#blackbannerDiv').addClass('hiddendiv');
+      $('#hidepoweredbyblack').addClass('hiddendiv');
+      $('#hidepoweredbyblack2').addClass('hiddendiv');
+      $('#hidepoweredbyblack3').addClass('hiddendiv');
+      // $('#hidepoweredbyblack1').addClass('hiddendiv');
+       // $('.oilimage_img').css('z-index','10');
+     
+    });
+    $("#petrolimage1Div").hover(function() {
+         // $('.new_HoverDiv2').addClass();
+        
+       $('#blackbannerDiv').removeClass('hiddendiv');
+        $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       // $('.petrolimage1_img').css('z-index','100');
      
     });
-     $("#oilimageDiv").hover(function() { 
-       $('#blackbannerDiv').removeClass('hiddendiv');
-         $('.new_HoverDiv7').css('display','block');
-            $('.boat_img').css('z-index','10');
-    
-    }, function() {
-      $('#blackbannerDiv').addClass('hiddendiv');
-        $('.new_HoverDiv7').css('display','none');
-
-    
-      
-     
-    });
-
-  
 } 
 
 pinremoveclick(event){
@@ -119,6 +148,17 @@ pinremoveclick(event){
       $(".new_HoverDiv").css("display", "none");
        $(".ripplebox").show();
        $("#hidemydiv").show().delay(3200).fadeOut(3000);;
+      /*$(".boat_img").css('opacity','0.8');
+      $(".oilimage").css('opacity','0.8');
+      $(".gasimage").css('opacity','0.8');
+      $(".plantimage1").css('opacity','0.8');
+      $(".plantimage11").css('opacity','0.8');
+      $(".petrolimage").css('opacity','0.8');
+      $(".petrolimage1").css('opacity','0.8');
+      $(".waterimg2").css('opacity','0.8');
+      $(".nexttogasimage").css('opacity','0.8');
+      $(".boat_img2").css('opacity','0.8');*/
+
      });
 
    });
@@ -130,7 +170,16 @@ pin1removeclick(event){
       $(".banner-cover").hide();
       $(".new_HoverDiv1").hide();
        $(".ripplebox1").show();
-     
+      /*$(".boat_img").css('opacity','0.8');
+      $(".oilimage").css('opacity','0.8');
+      $(".gasimage").css('opacity','0.8');
+      $(".plantimage1").css('opacity','0.8');
+      $(".plantimage11").css('opacity','0.8');
+      $(".petrolimage").css('opacity','0.8');
+      $(".petrolimage1").css('opacity','0.8');
+      $(".waterimg2").css('opacity','0.8');
+      $(".nexttogasimage").css('opacity','0.8');
+      $(".waterimg").css('opacity','0.8');*/
 
      });
 
@@ -285,8 +334,8 @@ pin6click(event){
              <div id="blackbackground"></div>
                  
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
-              <div className="">
-              {/*<figure className="oilimage"id="oilimageDiv">
+              <div className=""style={{overflow:"hidden"}}>
+              <figure className="oilimage"id="oilimageDiv">
                  <div className="new_HoverDiv7">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
@@ -295,26 +344,7 @@ pin6click(event){
                   </div>  
                  </div>
                  <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"255px"}}/>
-                </figure>*/}
-
-                 <figure className="oilimage"id="oilimageDiv">
-                 <div className="new_HoverDiv7">
-                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                    <div style={{width:"165px"}}>
-                    <p className="newhovertxt">Processing multiple grades, grade transitions, product sequencing & the variable cost of feedstocks etc.</p>
-                    <a href="/refinery">
-                      <span className="servicekbtnarrow7">
-                       <i className="fa fa-chevron-circle-right"></i>
-                      </span>
-                    </a>
-                  </div>  
-                 </div>
-                  <img alt="" className="img-responsive scaleimage nexttogasimg_size nexttogasimage_img"src="/images/Banner3_6.png" /> 
                 </figure>
-
- 
-
-
                {/* <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
                 </figure>*/}
@@ -464,8 +494,10 @@ pin6click(event){
             </div>
         </div>  
         </div>
-        <div id="hidepoweredbyblack"></div>
-        <div id="hidepoweredbyblack1"></div>
+        <div id="hidepoweredbyblack"className="hiddendiv"></div>
+        <div id="hidepoweredbyblack1"className="hiddendiv"></div>
+        <div id="hidepoweredbyblack2"className="hiddendiv"></div>
+        <div id="hidepoweredbyblack3"className="hiddendiv"></div>
         <div className="resbanner hidden-lg hidden-md"style={{height:"400px"},{width:"100%"}}></div>
       </div>
       

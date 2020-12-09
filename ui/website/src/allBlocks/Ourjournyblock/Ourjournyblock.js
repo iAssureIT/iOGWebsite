@@ -22,7 +22,7 @@ export default class Ourjournyblock extends Component {
                           "SubTitle"    : "",
                           "Description" : "Identification of loop holes in historical data and forecasts",
                           "Image"       : "/images/challenges1.jpeg",
-                          "Link"        : "/about"
+                          "Link"        : "/about-us"
                       },
                       {
                         "Title"         : "Founder's Profile",

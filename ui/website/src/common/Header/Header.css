@@ -13,7 +13,7 @@
   right: 0px;
   background-color: #f19000;
   width: 40px;
-  height: 40px;
+  height: 31px;
   color: #fff;
   padding: 6px 8px 6px 6px ;
   border-radius: 3px;
@@ -23,7 +23,7 @@
   transition: width 1s;
   border: none;
   /*z-index: 100000;*/
-  top:70px;
+  top:62px;
 }
 .envelopeIcon{
   padding-right: 3px;
@@ -405,7 +405,8 @@
   right: 0px;
   background-color: #f19000;
   width: 40px;
-  height: 40px;
+  height: 31px;
+  top:62px;
   color: #fff;
   padding: 6px 8px 6px 6px ;
   border-radius: 3px;

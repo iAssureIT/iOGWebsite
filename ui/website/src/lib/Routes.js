@@ -198,7 +198,7 @@ const WebLayout = () => (
     <Route path="/ourjourny" component={ Ourjourny } />         
     <Route path="/eventblock1" component={ Eventblock1 } />         
    {/* <Route path="/careers" component={ Careerspage } />*/}
-    <Route path="/services" component={ ServicesPage } />
+   {/* <Route path="/services" component={ ServicesPage } />*/}
    {/* <Route path="/industries" component={ IndustriesPage } />*/}
     <Route path="/resources" component={ ResourcePage } />
     <Route path="/newbanner" component={ newbanner } />
@@ -302,10 +302,10 @@ const WebLayout = () => (
     <Route path="/cloudbaseddatamanagement" component={ Cloudbasemngpage } />
 
 
-    <Route path="/simulation" component={ SimulationPage } />
+   {/* <Route path="/simulation" component={ SimulationPage } />
     <Route path="/energy" component={ Energypage } />
     <Route path="/apc-services" component={ ApcServices } />
-    <Route path="/etrm" component={ EtrmPage } />
+    <Route path="/etrm" component={ EtrmPage } />*/}
     <Route path="/termsofuse" component={ Termsofusepage } />
     <Route path="/privacypolicy" component={ Privacypolicypage } />
     <Route path="/sitemap" component={ Sitemap } />

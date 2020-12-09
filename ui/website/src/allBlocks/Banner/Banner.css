@@ -1081,6 +1081,7 @@ height: 90px;
   /*opacity: 1;*/
 
 }
+
 .fade-in {
 animation: fadeIn ease 20s;
 -webkit-animation: fadeIn ease 10s;
@@ -1314,7 +1315,7 @@ animation: fadeIn ease 20s;
 
 }
 .oilimage:hover{
-  z-index: 120;
+  z-index: 110;
 
 }
 
@@ -1367,7 +1368,7 @@ animation: fadeIn ease 20s;
     margin-top: -241px;
     position: absolute;
     background-size: 100% 100%;
-    z-index:120;
+    z-index:110;
     
 }
 .new_HoverDiv3 {
@@ -1427,10 +1428,15 @@ animation: fadeIn ease 20s;
     animation: fadeIn ease 1.5s;
     position: absolute;
     background-size: 100% 100%;
-    /*z-index: 110;*/
+    z-index: 110;
     
 }
+.oilimage:hover .new_HoverDiv7  {
+      display: block ! important;
+      cursor: pointer;
+      opacity: 1;
 
+}
 
 .boat_img2:hover .new_HoverDiv1  {
       display: block ! important;
@@ -1459,7 +1465,6 @@ animation: fadeIn ease 20s;
   
 }
 
-
 .plantimage11:hover .new_HoverDiv4  {
       display: block ! important;
       cursor: pointer;
@@ -1475,11 +1480,11 @@ animation: fadeIn ease 20s;
   display: block ! important;
   cursor: pointer;
 }
-/*.oilimage:hover .new_HoverDiv7{
+.oilimage:hover .new_HoverDiv7{
   display: block ! important;
   cursor: pointer;
 }
-*/
+
 .onhoverimages{
   opacity: 0.7;
 
@@ -1893,7 +1898,7 @@ svg {
 }
 #blackbannerDiv{
 
-  background:#0f0f0fbf;
+  background:#0f0f0fde;
   position: absolute;
   /*animation: dripple1 1s ease-out 1s;*/
   animation: fadeIn ease 3s;
@@ -1901,15 +1906,52 @@ svg {
   z-index: 50;
 }
 #hidepoweredbyblack{
-    background: #0f0f0fbf;
-    position: absolute;
-    height: 41px;
-    top: 0px;
-     display: none; 
-    width: 144px;
-    right: 0px;
+     height: 50px;
+  /*display: none;*/
+  background:#2323236e;
+  position: absolute;
+  width: 1348px;
+  right: 0px;
+  /*animation: dripple1 1s ease-out 1s;*/
+  /*animation: fadeIn ease 3s;*/
+  /*height: 53em;*/
+  z-index: 30002;
+}
+#hidepoweredbyblack2{
+     height: 100px;
+  /*display: none;*/
+  background:#2323236e;
+  position: absolute;
+  width: 48px;
+  right: 0px;
+  /*animation: dripple1 1s ease-out 1s;*/
+  /*animation: fadeIn ease 3s;*/
+  /*height: 53em;*/
+  z-index: 30002;
+}
+#hidepoweredbyblack3{
+     height: 100px;
+  /*display: none;*/
+  background:#2323236e;
+  position: absolute;
+  width: 210px;
+  left: 70px;
+  /*animation: dripple1 1s ease-out 1s;*/
+  /*animation: fadeIn ease 3s;*/
+  /*height: 53em;*/
+  z-index: 30002;
 }
 #hidepoweredbyblack1{
+  height: 95px;
+  /*display: none;*/
+  background:#2323236e;
+  position: absolute;
+  width: 1348px;
+  right: 0px;
+  /*animation: dripple1 1s ease-out 1s;*/
+  /*animation: fadeIn ease 3s;*/
+  /*height: 53em;*/
+  z-index: 30002;
  
 }
 /*.waterimg:hover .hidepoweredby{
