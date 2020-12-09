@@ -53,7 +53,7 @@ componentDidMount(){
         $('.boat_img').css('z-index','150');
          $('.waterimg').css('z-index','100');
          $('.new_HoverDivforboat').css('display','block');
-         $('#hidepoweredbyblack1').removeClass('hiddendiv');
+         // $('#hidepoweredbyblack1').removeClass('hiddendiv');
       
 
     
@@ -62,7 +62,7 @@ componentDidMount(){
        $('.boat_img').css('z-index','10');
        $('.waterimg').css('z-index','10');
        $('.new_HoverDivforboat').css('display','none');
-        $('#hidepoweredbyblack1').addClass('hiddendiv');
+        // $('#hidepoweredbyblack1').addClass('hiddendiv');
     
     });
     
@@ -71,25 +71,25 @@ componentDidMount(){
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('.waterimg2').css('z-index','120');
        $('.boat_img').css('z-index','10');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       // $('#hidepoweredbyblack1').removeClass('hiddendiv');
       
 
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
+      // $('#hidepoweredbyblack1').addClass('hiddendiv');
       $('.waterimg2').css('z-index','10');
      
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-        $('#hidepoweredbyblack1').removeClass('hiddendiv');
+        // $('#hidepoweredbyblack1').removeClass('hiddendiv');
        $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-         $('#hidepoweredbyblack1').addClass('hiddendiv');
+         // $('#hidepoweredbyblack1').addClass('hiddendiv');
      
     });
    /* $("#plantimage1Div").hover(function() { 
@@ -101,7 +101,7 @@ componentDidMount(){
     });*/
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack1').removeClass('hiddendiv');
+       // $('#hidepoweredbyblack1').removeClass('hiddendiv');
        $('.boat_img').css('z-index','10');
     
     }, function() {
@@ -112,28 +112,28 @@ componentDidMount(){
     });
     $("#oilimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('#hidepoweredbyblack').removeClass('hiddendiv');
-       $('#hidepoweredbyblack2').removeClass('hiddendiv');
-       $('#hidepoweredbyblack3').removeClass('hiddendiv');
+       // $('#hidepoweredbyblack').removeClass('hiddendiv');
+       // $('#hidepoweredbyblack2').removeClass('hiddendiv');
+       // $('#hidepoweredbyblack3').removeClass('hiddendiv');
        $('.oilimage_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack2').addClass('hiddendiv');
-      $('#hidepoweredbyblack3').addClass('hiddendiv');
+      // $('#hidepoweredbyblack').addClass('hiddendiv');
+      // $('#hidepoweredbyblack2').addClass('hiddendiv');
+      // $('#hidepoweredbyblack3').addClass('hiddendiv');
      
     });
     $("#petrolimage1Div").hover(function() {
          // $('.new_HoverDiv2').addClass();
         
        $('#blackbannerDiv').removeClass('hiddendiv');
-        $('#hidepoweredbyblack1').removeClass('hiddendiv');
+        // $('#hidepoweredbyblack1').removeClass('hiddendiv');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-      $('#hidepoweredbyblack').addClass('hiddendiv');
-      $('#hidepoweredbyblack1').addClass('hiddendiv');
+      // $('#hidepoweredbyblack').addClass('hiddendiv');
+      // $('#hidepoweredbyblack1').addClass('hiddendiv');
        // $('.petrolimage1_img').css('z-index','100');
      
     });

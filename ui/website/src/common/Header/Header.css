@@ -53,6 +53,7 @@
   top:95px;
 }
 .navbar-static-top{
+  z-index: 0 ! important;
   /*padding-top: 20px;*/
 }
 .rescontactBar{
@@ -353,7 +354,7 @@
 }
 .headerflow{
   position: fixed;
-  z-index: 10000;
+  z-index: 1;
   background-color: transparent;
   transition-duration: 0.8s;
 }
