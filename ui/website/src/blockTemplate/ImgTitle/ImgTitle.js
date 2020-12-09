@@ -13,7 +13,7 @@ export default class ImgTitle extends Component {
     super(props);
     this.state = {
       blocks: {
-        blockTitle : "Data Historian",
+        blockTitle : "",
         bgImage    : "/images/images/acc.png",
       },
       blockID:"",

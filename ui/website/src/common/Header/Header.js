@@ -31,7 +31,7 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
      // console.log("pageUrl kkk= ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
           // console.log("a kkk==>",a[2]); 
-          if(pageUrl == '/ourjourny'){
+          if(pageUrl == '/ourjourney'){
             $(".hidepoweredby").css("backgroundColor", "#fff");
           }
            if(pageUrl == '/#googtrans(en|fr)'){
@@ -377,7 +377,7 @@ handlechange(event){
 
             <div class="dropdown">
             {console.log("-----",this.state.pageUrl == "/about-us" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
-              <a href="/about-us" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourny"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
+              <a href="/about-us" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourney"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
                 <button class="dropbtn">ABOUT US 
                  <i className="fa fa-angle-down Headerdownarraow"></i>
                </button>
@@ -387,7 +387,7 @@ handlechange(event){
                 {/* <a href="/about">Company Profile</a>*/}
                  <a href="/founder-profile">Founder's Profile</a>
                  <a href="/news-&amp;-events">News &amp; Events</a>   
-                 <a href="/ourjourny">Our Journey</a>
+                 <a href="/ourjourney">Our Journey</a>
               </div>
             </div> 
 
