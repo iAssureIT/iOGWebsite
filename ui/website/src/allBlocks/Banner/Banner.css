@@ -858,6 +858,15 @@ height: 90px;
   /*z-index: 110;*/
   /*opacity: 0.9;*/
 }
+.petrolimage1{
+  position: absolute;
+  right: 277px;
+  top: 424px;
+  height: 221px;
+  animation: slide-top 4s;
+   /*opacity: 0.7;*/
+
+}
 @media only screen (min-width: 1600px) {
   .bannerContainer1{
     height: 55em ! important;
@@ -1052,15 +1061,7 @@ height: 90px;
 
 
 }
-.petrolimage1{
-  position: absolute;
-  right: 277px;
-  top: 424px;
-  height: 221px;
-  animation: slide-top 4s;
-   /*opacity: 0.7;*/
 
-}
 .plantimage1{
   position: absolute;
   bottom: 0px;
@@ -1315,7 +1316,7 @@ animation: fadeIn ease 20s;
 
 }
 .oilimage:hover{
-  z-index: 110;
+  z-index: 110 ! important;
 
 }
 
@@ -1324,7 +1325,7 @@ animation: fadeIn ease 20s;
 }
 
 .plantimage11:hover  {
-     z-index: 110;
+     z-index: 110 ! important;
 
 }
 .new_HoverDiv1 {
@@ -1357,20 +1358,7 @@ animation: fadeIn ease 20s;
 .new_HoverDiv5 img{
   width: 360px ! important;
 }
-.new_HoverDiv2 {
-    display: none;
-    height: 275px;
-    width: 355px;
-    border-radius: 5px;
-    /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: -12px;
-    animation: fadeIn ease 1.5s;
-    margin-top: -241px;
-    position: absolute;
-    background-size: 100% 100%;
-    z-index:110;
-    
-}
+
 .new_HoverDiv3 {
     display: none;
     height: 275px;
@@ -1431,12 +1419,26 @@ animation: fadeIn ease 20s;
     z-index: 110;
     
 }
-.oilimage:hover .new_HoverDiv7  {
+.new_HoverDiv2 {
+    display: none;
+    height: 275px;
+    width: 355px;
+    border-radius: 5px;
+    /*background-image: url(/images/newbanner_img14.png);*/
+    margin-left: -12px;
+    animation: fadeIn ease 1.5s;
+    margin-top: -241px;
+    position: absolute;
+    background-size: 100% 100%;
+    z-index:110;
+    
+}
+/*.oilimage:hover .new_HoverDiv7  {
       display: block ! important;
       cursor: pointer;
       opacity: 1;
 
-}
+}*/
 
 .boat_img2:hover .new_HoverDiv1  {
       display: block ! important;

@@ -115,15 +115,13 @@ componentDidMount(){
        $('#hidepoweredbyblack').removeClass('hiddendiv');
        $('#hidepoweredbyblack2').removeClass('hiddendiv');
        $('#hidepoweredbyblack3').removeClass('hiddendiv');
-       // $('.oilimage_img').css('z-index','10');
+       $('.oilimage_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       $('#hidepoweredbyblack2').addClass('hiddendiv');
       $('#hidepoweredbyblack3').addClass('hiddendiv');
-      // $('#hidepoweredbyblack1').addClass('hiddendiv');
-       // $('.oilimage_img').css('z-index','10');
      
     });
     $("#petrolimage1Div").hover(function() {
