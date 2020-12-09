@@ -28,11 +28,11 @@ componentDidMount(){
   
   $("#waterimgDiv").hover(function() { 
        $('.new_HoverDiv').css('display','block');
-       $('.boat_img').css('z-index','100');
+       // $('.boat_img').css('z-index','100');
     
     }, function() {
       $(".new_HoverDiv").css('display','none');
-      $('.boat_img').css('z-index','10');
+      // $('.boat_img').css('z-index','10');
       $(".new_HoverDiv").css('display','none');
      
     });
@@ -59,7 +59,7 @@ componentDidMount(){
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       $('.boat_img').css('z-index','0');
        $('.waterimg').css('z-index','10');
        $('.new_HoverDivforboat').css('display','none');
         // $('#hidepoweredbyblack1').addClass('hiddendiv');
@@ -70,7 +70,7 @@ componentDidMount(){
     $("#boat_img2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        $('.waterimg2').css('z-index','120');
-       $('.boat_img').css('z-index','10');
+       // $('.boat_img').css('z-index','10');
        // $('#hidepoweredbyblack1').removeClass('hiddendiv');
       
 
@@ -79,13 +79,13 @@ componentDidMount(){
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack').addClass('hiddendiv');
       // $('#hidepoweredbyblack1').addClass('hiddendiv');
-      $('.waterimg2').css('z-index','10');
+      $('.waterimg2').css('z-index','0');
      
     });
     $("#nexttogasimageDiv").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
         // $('#hidepoweredbyblack1').removeClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       // $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
@@ -102,12 +102,12 @@ componentDidMount(){
     $("#plantimage11Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
        // $('#hidepoweredbyblack1').removeClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       // $('.boat_img').css('z-index','10');
     
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
       $('#hidepoweredbyblack1').addClass('hiddendiv');
-       $('.boat_img').css('z-index','10');
+       // $('.boat_img').css('z-index','10');
      
     });
     $("#oilimageDiv").hover(function() { 
