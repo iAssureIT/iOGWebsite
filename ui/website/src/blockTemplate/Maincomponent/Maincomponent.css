@@ -16,18 +16,23 @@
     /*margin-left: 52px;*/
     height: 389px;
 }
+.CareerBlockHighDef{
+    position: absolute;
+    right: 42px;
+    width: 404px ! important;
+}
 
 .iogblock1text{
-    padding-top: 112px; 
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1;
-    margin-bottom: 4px;
-    color: #000000bd;
-    font-size: 15px;
-    padding-left: 39px;
-    height: 399px;
-    text-align: left;
+    padding-top: 112px ! important; 
+    font-weight: normal ! important;
+    font-style: normal ! important;
+    line-height: 1 ! important;
+    margin-bottom: 4px ! important;
+    color: #000000bd ! important;
+    font-size: 15px ! important;
+    padding-left: 29px ! important;
+    height: 347px ! important;
+    text-align: left ! important;
 }
 
 .iogblock1text span{
@@ -35,26 +40,28 @@
   font-weight: bold;
 }
 .iogimgblock2{
-    width: 111%;
-    padding-top: 101px;
-    padding-left: 13px;
+    /*width: 111%;*/
+    padding-top:4px;
+    /*padding-left: 5px;*/
     margin-left: -27px;
-    height: 747px;
+    height: 783px;
 }
 .iogimgblock2 img{
     width: 433px;
+    height: 100%;
+    object-fit: contain;
 }
 .careerBox{
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
 }
 .iogblock2text{
-    padding-top: 91px;
+    /*padding-top: 91px;*/
     border-left: 1px #eee;
     /* padding-bottom: 112px; */
     font-size: 15px;
     padding-left: 25px;
     margin-top: 92px;
-    margin-left: 25px;
+    margin-left: -20px;
     width: 94%;
     height: 294px;
 }
@@ -67,12 +74,13 @@
     margin-top: -95px;
 }
 .iogimg_4 img{
-    /*width: 902px;*/
-    margin-top: -6px;
+    width: 100%;
+    margin-top: -23px;
+    object-fit: contain;
 }
 
 .iogimgblock3{
-    width: 110%;
+    width: 427px;
    /* padding-left: 76px;
     margin-left: 29px;*/
     height: 362px;
@@ -81,10 +89,10 @@
 .iogblock3text{
     font-size: 15px;
     /*padding-left: 87px;*/
-    margin-left: 24px;
-    /*width: 107%;*/
-    height: 405px;
-    padding-top: 119px ! important;
+    /*margin-left: 33px;*/
+    width: 385px ! important;
+    height: 339px;
+    padding-top: 60px ! important;
     padding: 64px;
     /* margin-top: 82px; */
 }
@@ -141,9 +149,12 @@
     padding-left: 69px;
     margin-left: -48px;
 }
+.no_padding_left{
+    padding-left: 0px;
+}
 
 .iogblock4text{
-    padding-top: 72px;
+    padding-top: 37px;
     font-size: 15px;
     /*padding-left: 39px;*/
     /*margin-left: 25px;*/
@@ -200,9 +211,9 @@
 }
 
 .iogimg_4{
-    /*width: 99%;*/
+    width: 795px;
     height: 315px;
-    /*margin-left: 28px;*/
+    margin-left: 14px;
     /* margin-top: -20px; */
     padding-right: 5px;
     /* margin-top: -20px; */
@@ -223,7 +234,7 @@
 }
 
 .ht_row2{
-        height: 290px;
+        height: 150px;
 }
 
 .ht_row1{
@@ -238,10 +249,93 @@
 
 .ht_top{
     margin-top: 82px;
+    padding-left: 30px;
 }
 
 .mb_100{
     margin-bottom: 100px;
+}
+@media screen and (min-width: 1440px) {
+    .iogblock1text{
+            padding-top: 112px ! important; 
+            font-weight: normal ! important;
+            font-style: normal ! important;
+            line-height: 1 ! important;
+            margin-bottom: 4px ! important;
+            color: #000000bd ! important;
+            font-size: 15px ! important;
+            padding-left: 29px ! important;
+            height: 503px ! important;
+            text-align: left ! important;
+}
+
+
+
+}
+@media screen and (min-width:321px) and (max-width:768px){
+
+    .responsivefooter{
+        height: 550px ! important;
+    }
+    .iogblock1text{
+        height: 182px ! important;
+        padding-top: 10px ! important;
+    }
+    .head_firstblock{
+        font-size: 15px ! important;
+    }
+    .firstblockk{
+        font-size: 12px ! important;
+        padding-top: 13px ! important;
+    }
+    .iogblock2text{
+        padding-top: 0px ! important;
+        margin-top: 0px ! important;
+    }
+    .ht_row1{
+        height: 265px ! important;
+    }
+    .iogblock1text{
+        padding-left: 15px ! important;
+    }
+    .iogimgblock2{
+        height: 379px ! important;
+    }
+    .iogblock3text{
+        font-size: 11px ! important;
+    }
+    .ht_row2{
+        height: 70px ! important;
+    }
+    .iogblock3text{
+        height: 188px ! important;
+    }
+    .ht_row3{
+        height: 210px ! important;
+    }
+    .iogimg_4{
+        margin-left: 0px ! important;
+    }
+    .iogimg_4 img{
+        width: 416px ! important;
+    }
+    .iogblock3text{
+        padding-top: 10px ! important;
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+    }
+    .iogblock4text{
+        padding-top: 0px ! important;
+        font-size: 11px ! important;
+    }
+    .center_block_text{
+        font-size: 15px ! important;
+    }
+}
+@media screen and (min-width: 411px) {
+   .career_para-top2{
+        margin-top: 100px ! important;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -249,4 +343,32 @@
         /*width: 240px ! important;*/
 
     }
- }   
+    
+ }  
+@media screen and (min-width: 1900px) {
+     .CareerBlockHighDef{
+        right: 87px ! important;
+        width: 500px ! important;
+     }
+     .iogimgblock2 img{
+        margin-top: 195px ! important;
+     }
+     .iogimgblock3{
+        width: 600px ! important;
+     }
+     .iogblock3text{
+        width: 583px ! important;
+        padding-top: 180px ! important;
+     }  
+     .iogimgblock2{
+        padding-left: 0px ! important;
+        margin-left: -33px ! important;
+
+     } 
+     .iogblock1text{
+        padding-top: 178px ! important;
+     }
+     .ht_top{
+        padding-left: 82px ! important;
+     }
+} 

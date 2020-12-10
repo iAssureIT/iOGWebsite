@@ -2172,12 +2172,12 @@ a.nameParts{
  .BT4_txt{
     margin-left: 43px;
  }
- .new_round-tabfor4{
-    margin-left:127%;
- }
- .new_wizardNotefor4{
+/* .new_round-tabfor4{
+    margin-left:127% ! important;
+ }*/
+ /*.new_wizardNotefor4{
     left:109px;
- }
+ }*/
  .adjustfor5{
     margin-left: 17px;
  }
@@ -2604,13 +2604,13 @@ a.nameParts{
 .adjustfor5{
     margin-left: 10px ! important;
 }
-.new_round-tabfor4{
+/*.new_round-tabfor4{
     margin-left:27% ! important;
-}
-.new_wizardNotefor4 {
+}*/
+/*.new_wizardNotefor4 {
     left: -6px ! important;
     font-size: 12px ! important;
-}
+}*/
 }
 
 @media screen and (min-width: 1400px) {
@@ -2631,5 +2631,28 @@ a.nameParts{
         margin-left: 48px ! important;
     }
       
+}
+@media (min-width:1025px){
+  
+
+}
+@media (min-width:768px){
+  .MobileDivHeight{
+    height: 350px ! important;
+  }
+
+  .responsivefooter{
+    height: 360px ! important;
+  }
+ /* .new_round-tabfor4{
+    margin-left:127% ! important;
+ }
+ .new_wizardNotefor4{
+  left:113px ! important;
+ }*/
+ .resmr20{
+  color:#fff ! important;
+ }
+
 }
 

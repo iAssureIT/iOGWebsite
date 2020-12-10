@@ -203,14 +203,13 @@ left: 35% ! important;
 		width: 107% ! important;
 	}
 	.iogimg_4 img{
-		width: 108% ! important;
+		width: 95% ! important;
+        margin-top: -21px ! important;
 	}
 	.iogblock4text{
-		padding-top: 157px ! important;
+		/*padding-top: 157px ! important;*/
 	}
-	.CareerBlockHighDef{
-		width: 560px ! important;
-	}
+	
 	.iogblock2text{
 		padding-top:140px ! important;
 	}
@@ -218,10 +217,13 @@ left: 35% ! important;
 		margin-top: 8px ! important;
 	}
 	.iogblock3text{
-		height: 535px ! important;
+		height: 510px ! important;
 	}
 	.career_para-top2{
 		margin-top: 150px ! important;
+	}
+	.iogimg_4{
+		width: 1143px ! important;
 	}
 }	
 

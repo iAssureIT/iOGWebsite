@@ -43,7 +43,7 @@ export default class Ourjournyblock extends Component {
                           "SubTitle"    : "",
                           "Description" : "Over dependability on automatic forecasting",
                           "Image"       : "/images/challenges1.jpeg",
-                          "Link"        : "/ourjourny"
+                          "Link"        : "/ourjourney"
                       },
         ],
         "bgImage"       : "",
@@ -531,7 +531,7 @@ journyData11(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={result.Link}>
-                                      <span className={"new_round-tabfor4 "+(result.Link === "/ourjourny" ? "active1": "")}>
+                                      <span className={"new_round-tabfor4 "+(result.Link === "/ourjourney" ? "active1": "")}>
                                             
                                         </span>
                                    

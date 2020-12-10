@@ -341,7 +341,7 @@ pin6click(event){
                    <a href="/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"style={{width:"255px"}}/>
+                 <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"/>
                 </figure>
                {/* <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
@@ -371,7 +371,7 @@ pin6click(event){
                    <a href="/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
-                 <img alt="" className="img-responsive tabimage scaleimage petrolimage1_img"src="/images/newbanner_img5.png"style={{width:"255px"}}/>
+                 <img alt="" className="img-responsive tabimage scaleimage petrolimage1_img"src="/images/newbanner_img5.png"/>
                 </figure>
                 {/* <figure className="plantimage1"id="plantimage1Div">
                   <div className="new_HoverDiv3">
@@ -402,7 +402,7 @@ pin6click(event){
                    <a href="/gas-processing"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                  </div>
-                 <img alt="" className="img-responsive tabimage scaleimage plantimage11_img"src="/images/Banner3_8.png"style={{width:"255px"}}/>
+                 <img alt="" className="img-responsive tabimage scaleimage plantimage11_img"src="/images/Banner3_8.png"/>
                 </figure>
                 <figure className="waterimg"id="waterimgDiv">
                   <div className="ripplediv">
@@ -467,7 +467,7 @@ pin6click(event){
                    <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>
-                   <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"style={{width:"240px"}}/>
+                   <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
                  <div className="new_HoverDiv6">
@@ -477,7 +477,7 @@ pin6click(event){
                    <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>
                   </div>
-                 <img alt="" className="img-responsive scaleimage"src="/images/newbanner_img4.png"style={{width:"135px"}}/>
+                 <img alt="" className="img-responsive scaleimage waterimg2Div_img"src="/images/newbanner_img4.png"/>
                 </figure>
                </div> 
               </div> 

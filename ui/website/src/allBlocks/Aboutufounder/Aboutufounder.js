@@ -17,7 +17,7 @@ export default class Aboutufounder extends Component {
                 this.props.founderData.map((data, index)=>{
                   return (
                             <div key={index} className="backgrd_curve1 col-lg-12 col-md-12 col-sm-12 col-xs-12 head_spacing">
-                                  <div className="col-lg-5 col-md-4 col-sm-4 col-xs-4">
+                                  <div className="col-lg-5 col-md-4 col-sm-12 col-xs-12">
                                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 takeleft">
                                  </div>
                                     <div className="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-xs-8">

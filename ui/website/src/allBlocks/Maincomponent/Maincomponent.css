@@ -38,26 +38,9 @@
   font-size: 18px;
   font-weight: bold;
 }
-.iogimgblock2{
-   width: 111%;
-    /* padding-top: 90px; */
-    padding-top: 101px;
-    padding-left: 13px;
-    margin-left: -27px;
-    height: 747px;
-}
+
 .careerBox{
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
-}
-.iogblock2text{
-    padding-top: 91px;
-    /* padding-bottom: 112px; */
-    font-size: 15px;
-    padding-left: 86px;
-    margin-top: 22px;
-    margin-left: 106px;
-    width: 94%;
-    height: 294px;
 }
 
 .iogblock2text span{
@@ -70,16 +53,6 @@
 
 
 
-.iogblock3text{
-    font-size: 15px;
-    /*padding-left: 87px;*/
-    margin-left: 52px;
-    width: 107%;
-    height: 362px;
-    /*padding-top: 97px;*/
-    padding: 27px;
-    /* margin-top: 82px; */
-}
 
 .iogblock3text span{
   font-size: 18px;
@@ -129,10 +102,6 @@
     padding-top: 95px;
     padding-left: 69px;
     margin-left: -48px;
-}
-.iogimg_4 img{
-    width: 100%;
-    margin-top: -20px;
 }
 
 .iogblock4text{

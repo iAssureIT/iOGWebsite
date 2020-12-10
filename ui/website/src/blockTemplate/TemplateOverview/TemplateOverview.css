@@ -78,6 +78,9 @@
   .B2T1_line{
     margin-left: 172px;
   }
+  .B2T_p{
+    padding-left: 0px ! important;
+  }
 }
 @media(max-width : 767px){
   .B2T1_line{

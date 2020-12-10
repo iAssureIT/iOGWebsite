@@ -90,7 +90,7 @@ componentDidMount(){
                        <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                     </div>
                     <div>
-                     <p className=" col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 text-center type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
+                     <p className=" col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 text-center type3text" dangerouslySetInnerHTML={ { __html: this.state.blocks.blockDescription } }></p>
                     </div>
 
                 </div>

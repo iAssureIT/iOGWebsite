@@ -666,6 +666,43 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 .sxSelectListsWrapper__2321j{
   width: 42% ! important;
 }
+
+@media screen and (min-width: 411px) {
+
+    .pt20{
+        padding-top: 29px ! important;
+    }
+
+}
+@media screen and (max-width:768px){
+    .new_round-tabfor4{
+        margin-left:127% ! important;
+     }
+     .new_wizardNotefor4{
+      left:113px ! important;
+     }
+     .BT4_txt{
+        font-size: 13px ! important;
+        margin-left: 0px ! important;
+     }
+     .iconCircle{
+        margin-left: 19% ! important;
+     }
+
+  }
+@media screen and (max-width:480px){
+    .new_round-tabfor4{
+        margin-left:27% ! important;
+     }
+
+    .new_wizardNotefor4{
+      left:-12px ! important;
+     }
+}  
+
+
+
+
 /*.goog-te-gadget{
     display: none;
  }

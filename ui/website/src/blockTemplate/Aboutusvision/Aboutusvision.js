@@ -98,7 +98,7 @@ componentDidMount(){
                     </div>
                   </div>
                 </div>
-            </div>
+             </div>
            </div> 
         );
     }

@@ -51,7 +51,7 @@ componentDidMount(){
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
                  data-field3="fgImage">
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{paddingLeft:"40px"}}>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Type1_comp_padd">
                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 takebuttonDown">
                           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
                               <hr style={{float:"left"}}/>

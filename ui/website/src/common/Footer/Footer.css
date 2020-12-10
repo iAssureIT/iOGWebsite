@@ -475,7 +475,7 @@ ul.no-icon-list1 {
   padding-left: 33px ! important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 801px) {
   .fs15{
     margin-left: 20px;
     font-size: 13px ! important;
@@ -488,9 +488,20 @@ ul.no-icon-list1 {
     margin-left: 20px ! important;
     }
 
-  .responsivefooter{}
+  
 }
 
 .connectUsDiv{
   /*padding-left: 70px;*/
+}
+@media (min-width:600px)){
+  
+
+}
+@media (min-width:320px) {
+   .responsivefooter{
+    height: 600px ! important;
+  }
+
+
 }

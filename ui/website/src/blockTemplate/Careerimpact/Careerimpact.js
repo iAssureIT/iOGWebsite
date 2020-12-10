@@ -186,74 +186,70 @@ CareersData(){
       <div>
        {/* <div className="lineee2 col-lg-12 col-lg-offset-6"></div>*/}
       </div>       
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Padding_career">
           <h2 className="career_para-top2 text-center"style={{color:"#333"}}dangerouslySetInnerHTML={{ __html: this.state.blocks.blockTitle}} ></h2>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+          <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12 career2_img">
               <div className="img_2">
-                <img src={this.state.blocks.fgImage} alt="" className="career2_img" />
+                <img src={this.state.blocks.fgImage} alt="" className="img-responsive" />
               </div>
           </div>
 
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-               <div className="col-lg-12">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 
-            <div className="row spacing1">
-                <div className="col-lg-12">
-                  <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        {
-                          this.state.blocks.repeatedBlocks.map((data, index)=>{
-                            var textPara = this.state.para;
-                            var textPara1 = this.state.para1;
- 
-                            console.log("textPara",textPara);
-                           return (
-                                    <div key={index} className="panel panel-default blockdefault">
-                                      <div className="panel-heading" role="tab" id="headingThree">
-                                        <h4 className="panel-title">
-                                        <a className="collapsed careerAnchorhover" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree">
-                                          {data.Title}
-                                        </a>
-                                      </h4>
-                                      </div>
-                                      <div id={"collapseThree"+index} className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div className="panel-body">
-                                          <h3 className="full_head padding_zero">Title</h3>
-                                          <p>{data.Title}</p>
-                                          <h3 className="full_head padding_zero">Location</h3>
-                                          <p>{data.SubTitle}</p>
-                                          <h3 className="full_head padding_zero">Job Information</h3>
-                                          <h5>ROLES AND RESPONSIBILITIES</h5>
-                                          <ul className="simple_list bottom_pad" dangerouslySetInnerHTML={{ __html: data.Description}}></ul>
-                                          <h5>QUALIFICATIONS AND EDUCATION REQUIREMENTS</h5>
-                                          <ul className="simple_list bottom_pad">
-                                            <li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li>
-                                          </ul>
-                                          <h5>
-                                            Send CVs on 
-                                          <b>
-                                            <a href="mailto:careers@iogsolutions.com"> careers@iogsolutions.com</a>
-                                          </b>
-                                          </h5>
-                                            {data.careerstext}
-                                          <div>
-                                              <a href="/form" className="btn lightbluebg buttonhover buttonn_1 col-lg-6 col-lg-offset-8" role="button" onClick={this.handleShow}>Click here to apply</a>
+                  <div className="row spacing1">
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                              {
+                                this.state.blocks.repeatedBlocks.map((data, index)=>{
+                                  var textPara = this.state.para;
+                                  var textPara1 = this.state.para1;
+       
+                                  console.log("textPara",textPara);
+                                 return (
+                                          <div key={index} className="panel panel-default blockdefault">
+                                            <div className="panel-heading" role="tab" id="headingThree">
+                                              <h4 className="panel-title">
+                                              <a className="collapsed careerAnchorhover" role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapseThree"+index} aria-expanded="false" aria-controls="collapseThree">
+                                                {data.Title}
+                                              </a>
+                                            </h4>
+                                            </div>
+                                            <div id={"collapseThree"+index} className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                              <div className="panel-body">
+                                                <h3 className="full_head padding_zero">Title</h3>
+                                                <p>{data.Title}</p>
+                                                <h3 className="full_head padding_zero">Location</h3>
+                                                <p>{data.SubTitle}</p>
+                                                <h3 className="full_head padding_zero">Job Information</h3>
+                                                <h5>ROLES AND RESPONSIBILITIES</h5>
+                                                <ul className="simple_list bottom_pad" dangerouslySetInnerHTML={{ __html: data.Description}}></ul>
+                                                <h5>QUALIFICATIONS AND EDUCATION REQUIREMENTS</h5>
+                                                <ul className="simple_list bottom_pad">
+                                                  <li>Bachelor's/ Master's Degree in Petroleum/Mechanical/Chemical.</li>
+                                                </ul>
+                                                <h5>
+                                                  Send CVs on 
+                                                <b>
+                                                  <a href="mailto:careers@iogsolutions.com"> careers@iogsolutions.com</a>
+                                                </b>
+                                                </h5>
+                                                  {data.careerstext}
+                                                <div>
+                                                    <a href="/form" className="btn lightbluebg buttonhover buttonn_1 col-lg-6 col-lg-offset-8" role="button" onClick={this.handleShow}>Click here to apply</a>
+                                                </div>
+                                              </div>
+                                              
+                                            </div>
                                           </div>
-                                        </div>
-                                        
-                                      </div>
-                                    </div>
-                                    );
-                                })
-                          }
+                                          );
+                                      })
+                                }
+                        </div>
+                      </div>
                   </div>
                 </div>
-            </div>
-          </div>
-        </div> 
-
-              
-
-                
+              </div>       
         </div>
       </div>
     </div>

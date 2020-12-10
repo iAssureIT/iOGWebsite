@@ -86,14 +86,12 @@ componentDidMount(){
   render(){
     /*console.log("this.state.blockTitle")*/
     return(
-      <div className="ht_top col-lg-12 col-md-12 col-sm-12 hidden-xs" style={{marginTop:"50px"}}>
+      <div className="ht_top col-lg-12 col-md-12 col-sm-12 hidden-xs">
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-           <div className="ht_row1 col-lg-12 col-md-12 hidden-sm hidden-xs">
-              <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 NOPadding">
-                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimgblock1" style={{paddingRight:"0px"}}>
-                   <img className="" src={this.state.blocks.fgImage} />
-                  </div>
+           <div className="ht_row1 col-lg-12 col-md-12 col-sm-12  hidden-xs">
+              <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 iogimgblock1 NOPadding">
+                   <img className="img-responsive" src={this.state.blocks.fgImage} />
                 </div>
                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 CareerBlockHighDef NOPadding">
                     <div className="iogblock1text col-lg-12 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
@@ -103,7 +101,7 @@ componentDidMount(){
                   </div>
              </div>
         </div>
-        <div className="ht_row2 col-lg-12 col-md-12 hidden-sm hidden-xs">
+        <div className="ht_row2 col-lg-12 col-md-12 col-sm-12 hidden-xs">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 alignment_rw">
               <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 NOPadding">
               <div className="iogblock2text col-lg-12  col-md-12 col-sm-12 col-xs-12 bckgblck_color_white">
@@ -112,36 +110,32 @@ componentDidMount(){
               </div>
               </div>
               
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOPadding">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimgblock2">
-                <img className="" src={this.state.blocks.repeatedBlocks[0].Image} />
-                </div>
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 iogimgblock2 NOPadding">
+                <img className="img-responsive" src={this.state.blocks.repeatedBlocks[0].Image} />
               </div>
             </div>
         </div>
-        <div className="ht_row3 col-lg-12 col-md-12 hidden-sm hidden-xs">
-          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOPadding NOPadding">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 iogimgblock3">
-                <img className="" src={this.state.blocks.repeatedBlocks[1].Image} />
-              </div>
+        <div className="ht_row3 col-lg-12 col-md-12 col-sm-12 hidden-xs">
+          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 iogimgblock3 NOPadding NOPadding">
+            <img className="img-responsive" src={this.state.blocks.repeatedBlocks[1].Image} />
           </div>
           <div className="col-lg-5 col-md-4 col-sm-12 col-xs-12 NOPadding">
-            <div className="iogblock3text col-lg-9 col-md-9 col-sm-12 col-xs-12 bckgblck_color_blue">
+            <div className="iogblock3text col-lg-12 col-md-12 col-sm-12 col-xs-12 bckgblck_color_blue">
               <span><b className="center_block_text">{this.state.blocks.repeatedBlocks[1].Title}</b></span>
               <p className="thirdblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[1].Description}}></p>                         
             </div>
           </div>
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div className="ht_row4 mb_100 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div className="col-lg-3 col-md-3 col-sm-11 col-xs-11 NOPadding">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding_left">
+          <div className="ht_row4 mb_100 col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding_left">
+            <div className="col-lg-4 col-md-4 col-sm-6 col-xs-11 NOPadding">
               <div className="iogblock4text col-lg-12 col-md-12 col-sm-12 col-xs-12 bckgblck_color_white">
-                <span><b className=""></b>{this.state.blocks.repeatedBlocks[2].Title}</span> 
+                <b className=""></b><b>{this.state.blocks.repeatedBlocks[2].Title}</b>
                 <p className="fourthblockk" dangerouslySetInnerHTML={{ __html: this.state.blocks.repeatedBlocks[2].Description}}></p>
               </div>
             </div>
-            <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 iogimg_4 NOPadding">
-                <img className="" src={this.state.blocks.repeatedBlocks[2].Image} />
+            <div className="col-lg-8 col-md-8 col-sm-6 col-xs-12 iogimg_4 NOPadding">
+                <img className="img-responsive" src={this.state.blocks.repeatedBlocks[2].Image} />
             </div>
           </div>
         </div>

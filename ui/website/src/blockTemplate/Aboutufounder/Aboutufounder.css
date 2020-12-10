@@ -15,8 +15,24 @@
 .para_Spacingforfounder ul{
 	padding-left: 17px;
 }
-.director_imgDiv img{
+@media (min-width:801px)  { 
+	.director_img{
+    /*padding-left: 160px ! important;*/
+   }
+
+}
+@media screen and (min-width:768px){
+  
+   .director_img_para{
+   	 padding-left: 82px;
+     padding-right: 88px;
+   }
+
+  }
+/*.director_imgDiv img{
 	width: 370px;
     height: 370px;
     object-fit: contain;
 }
+*/
+

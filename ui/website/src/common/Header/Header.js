@@ -446,7 +446,7 @@ handlechange(event){
                </div>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                  <h5 className="columnhead"><a href="/manufacturing-exec-system" className="columnhead">Manufacturing Execution System</a></h5>
+                  <h5 className="columnhead"><a href="/manufacturing-execution-system" className="columnhead">Manufacturing Execution System</a></h5>
                     <a href="/production-accounting" className="dropdownintab expertise_a">Production Accounting</a>
                     <a href="/real-time-data-historian" className="dropdownintab expertise_a">Realtime Data Historian</a>
                     <a href="/corporate-dashboard" className="dropdownintab expertise_a">Corporate Dashboard & Analytics</a>
@@ -484,7 +484,7 @@ handlechange(event){
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/energy-management."className="columnhead">Energy Management</a></h5>
-                    <a href="/utility-network-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
+                    <a href="/network-optimization-utility"className="dropdownintab expertise_a">Utility Network Optimization</a>
                     <a href="/equipment-monitoring"className="dropdownintab expertise_a">Equipment Monitoring</a>
                     <a href="/energy-accounting"className="dropdownintab expertise_a">Energy Accounting</a>
                 </div> 
@@ -534,14 +534,14 @@ handlechange(event){
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
-        <a href="/contact-us">
+       {/* <a href="/contact-us">
          <button className="contactBarres hidden-lg hidden-md" >
           <div className="fixedContactBar">
             <i className="fa fa-envelope-o"style={{color:"#ffffff"}} aria-hidden="true"></i>
           </div>
           <div className="hovertext">Contact Us Now</div>
         </button>
-       </a> 
+       </a> */}
       </div>
       <div className="row"style={{zIndex:"10"}} > 
         <div className="modal fade" style={{zIndex:"10"}} id="modalId" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

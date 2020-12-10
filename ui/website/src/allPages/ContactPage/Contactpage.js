@@ -257,7 +257,7 @@ class Contactpage extends Component{
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 rescontacticonwrap ">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contacticonwrap">
                           <div className="row">
-                                <div className="col-lg-8 col-md-8 hidden-sm hidden-xs col-lg-offset-2 contactcontbackimg">
+                                <div className="col-lg-8 col-md-8 col-sm-8 hidden-xs col-lg-offset-2 contactcontbackimg">
                                 </div>
                                 <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3 contacticons">
                                   <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3">
