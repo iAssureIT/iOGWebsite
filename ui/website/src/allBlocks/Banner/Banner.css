@@ -1249,7 +1249,7 @@ animation: fadeIn ease 20s;
   left: 97px;
   top: 104px;
   width: 304px;
-  height: 229px;
+  height: 257px;
   animation: slide-br 4s
   /*z-index: 110;*/
   /*opacity:1;*/
@@ -1304,19 +1304,19 @@ animation: fadeIn ease 20s;
     z-index: 110;
   }
 
-.new_HoverDiv  img {
+.new_HoverDiv img {
         
         width: 345px;
        -webkit-animation: rotation 45s infinite linear;
 }
-.new_HoverDiv1  img {
+.new_HoverDiv1 img {
        
-       width: 350px;
+       width: 400px;
        -webkit-animation: rotation 45s infinite linear;
 }
 .new_HoverDiv2  img {
 
-       width: 355px;
+       width: 395px;
        -webkit-animation: rotation 45s infinite linear;
 }
 .new_HoverDivforboat  img {
@@ -1337,13 +1337,13 @@ animation: fadeIn ease 20s;
     
        -webkit-animation: rotation 45s infinite linear;
 }
-.new_HoverDiv6  img {
+.new_HoverDiv6 img {
     
        -webkit-animation: rotation 45s infinite linear;
 }
-.new_HoverDiv7  img {
+.new_HoverDiv7 img {
     
-        width: 345px;
+        width: 390px;
        -webkit-animation: rotation 45s infinite linear;
 }
 .rotate {
@@ -1409,11 +1409,11 @@ animation: fadeIn ease 20s;
 .new_HoverDiv1 {
     display: none;
     height: 275px;
-    width: 350px ! important;
+    width: 400px ! important;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -176px;
-    margin-top: -103px;
+    margin-top: -143px;
     position: absolute;
     animation: fadeIn ease 1.5s;
     background-size: 100% 100%;
@@ -1423,7 +1423,7 @@ animation: fadeIn ease 20s;
 .new_HoverDiv5 {
     display: none;
     height: 260px;
-    width: 376px ! important;
+    width: 410px ! important;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -84px;
@@ -1434,7 +1434,7 @@ animation: fadeIn ease 20s;
     
 }
 .new_HoverDiv5 img{
-  width: 360px ! important;
+  width: 400px ! important;
 }
 
 .new_HoverDiv3 {
@@ -1454,7 +1454,7 @@ animation: fadeIn ease 20s;
 .new_HoverDiv4 {
     display: none;
     height: 275px;
-    width: 355px;
+    width: 400px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -33px;
@@ -1467,7 +1467,7 @@ animation: fadeIn ease 20s;
     
 }
 .new_HoverDiv4 img{
-  width: 360px ! important;
+  width: 409px ! important;
 }
 .new_HoverDiv6 {
     display: none;
@@ -1486,11 +1486,11 @@ animation: fadeIn ease 20s;
 .new_HoverDiv7 {
     display: none;
     height: 274px;
-    width: 355px;
+    width: 400px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: 66px;
-    margin-top: -153px;
+    margin-left: -37px;
+    margin-top: -192px;
     animation: fadeIn ease 1.5s;
     position: absolute;
     background-size: 100% 100%;
@@ -1500,7 +1500,7 @@ animation: fadeIn ease 20s;
 .new_HoverDiv2 {
     display: none;
     height: 275px;
-    width: 355px;
+    width: 400px;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
     margin-left: -12px;
@@ -1574,21 +1574,21 @@ animation: fadeIn ease 20s;
   opacity: 0.3;
 }
 .newhovertxt{
-    margin-top: -232px;
-    margin-left: 82px;
+    margin-top: -252px;
+    margin-left: 84px;
     font-size: 13px;
     font-weight: 500;
     padding-left: 10px;
     text-align: center;
     position: absolute;
-    width: 143px;
+    width: 177px;
 }
 .newhovertxt_again{
-    top: 105px;
+    top: 122px;
     position: absolute;
-    width: 148px;
+    width: 160px;
     font-weight: 500;
-    left: 86px;
+    left: 103px;
     text-align: center;
     font-size: 13px;
 }
@@ -1603,13 +1603,13 @@ animation: fadeIn ease 20s;
   width: 113px;
 }
 .newhovertxt_8{
-    margin-top: -249px;
-    margin-left: 86px;
+    margin-top: -275px;
+    margin-left: 95px;
     font-size: 12.6px;
     padding-left: 10px;
     text-align: center;
     font-weight: 500;
-    width: 144px;
+    width: 169px;
     position: absolute;
 }
 .newhovertxt_1{
@@ -1623,10 +1623,10 @@ animation: fadeIn ease 20s;
   width: 122px;
 }
 .newhovertxt_4{
-    margin-top: -254px;
-    margin-left: 91px;
+    margin-top: -273px;
+    margin-left: 102px;
     font-size: 12.5px;
-    width: 150px;
+    width: 164px;
     font-weight: 500;
     /* padding-left: 10px; */
     text-align: center;
@@ -1641,29 +1641,29 @@ animation: fadeIn ease 20s;
   text-align: center;
 }
 .newhovertxt_e_p{
-    margin-top: -243px;
+    margin-top: -260px;
     margin-left: 85px;
     font-size: 13px;
     font-weight: 500;
     padding-left: 10px;
     text-align: center;
     position: absolute;
-    width: 138px;
+    width: 183px;
 
 }
 .newhovertxt_e_p1{
-    margin-top: -226px;
+    margin-top: -234px;
     margin-left: 81px;
     font-size: 12.5px;
     padding-left: 10px;
     text-align: center;
     font-weight: 500;
     position: absolute;
-    width: 128px;
+    width: 150px;
 
 }
 .new_HoverDivforboat img{
-  width: 330px;
+  width: 365px;
 }
 .newhovertxt_ptrchemical{
     margin-top: -184px;
@@ -1675,9 +1675,9 @@ animation: fadeIn ease 20s;
     width: 111px;
 }
 .servicekbtnarrow1{
-   margin-left: 155px;
+   margin-left: 177px;
     color: #000;
-    margin-top: -120px;
+    margin-top: -142px;
     font-size: 13px;
     position: absolute;
 }
@@ -1689,23 +1689,23 @@ animation: fadeIn ease 20s;
     position: absolute;
 }
 .servicekbtnarrow3 {
-    margin-left: 156px;
+    margin-left: 178px;
     color: #000;
-    margin-top: -120px;
+    margin-top: -139px;
     font-size: 13px;
     position: absolute;
 }
 .servicekbtnarrow4 {
-    margin-left: 151px;
+    margin-left: 173px;
     color: #000;
-    margin-top: -118px;
+    margin-top: -139px;
     font-size: 13px;
     position: absolute;
 }
 .servicekbtnarrow4_1 {
-    margin-left: 144px;
+    margin-left: 154px;
     color: #000;
-    margin-top: -110px;
+    margin-top: -121px;
     font-size: 13px;
     position: absolute;
 }
@@ -1717,16 +1717,16 @@ animation: fadeIn ease 20s;
     position: absolute;
 }
 .servicekbtnarrow7{
-    margin-left: 151px;
+    margin-left: 172px;
     color: #000;
-    margin-top: -122px;
+    margin-top: -146px;
     font-size: 13px;
     position: absolute;
 }
 .servicekbtnarrow8 {
-    left: 158px;
+    left: 177px;
     color: #000;
-    top: 234px;
+    top: 257px;
     font-size: 13px;
     position: absolute;
 }
