@@ -105,7 +105,7 @@ componentDidMount(){
   // console.log('khj', this.state.blocks); 
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 services_block innerBlock5tepmlate  container-fluid"style={{marginBottom:"90px"}}>
-        <div className="Bubble hidden-sm hidden-xs"  >
+        <div className="Bubble hidden-sm hidden-md hidden-xs"  >
             <div className="Main_Cards__Bubble bub1"></div>
             <div className="Main_Cards__Bubble bub2"></div>
            </div>

@@ -20,7 +20,7 @@
 	text-align: justify;
 }
 .Type1_comp_padd{
-  padding-left: 40px;
+  padding-left: 40px ! important;
 }
 
 .intro_img{
@@ -34,7 +34,7 @@
   padding-top: 64px;
 }
 .Typecomponent1Img{
-  width: 590px;
+  width: 500px;
   height: 380px;
   /*padding-top: 50px;*/
   /*float:right;*/
@@ -63,19 +63,22 @@
   }
 
 }
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+ .Type1_comp_padd{
+    padding-left: 10px ! important;
+  }
+}
 
 @media (min-width:320px){
 
   .MobileDivHeight{
-    height: 635px ! important;
+    /*height: 635px ! important;*/
   }
-    .Type1_comp_padd{
-    padding-left: 10px;
-  }
+   
 }
 @media (min-width:768px){
   .MobileDivHeight{
-    height: 300px ! important;
+    /*height: 300px ! important;*/
   }
 
   .responsivefooter{

@@ -69,8 +69,8 @@
   /*float:left;*/
 }
 .BtnImageDown{
-  padding-left: 100px;
-  margin-top: 20px;
+  padding-left: 100px ! important;
+  margin-top: 20px ! important;
 }
 .Typecomponent2BtnImg img{
 
@@ -148,3 +148,12 @@
   } 
 
 }
+@media screen and (max-width:768px){
+     .BtnImageDown{
+        padding-left: 0px ! important;
+     }
+     .Typecomp2Btn_img{
+      padding-left: 0px ! important;
+     }
+
+  }

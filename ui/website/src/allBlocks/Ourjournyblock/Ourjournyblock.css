@@ -2638,7 +2638,7 @@ a.nameParts{
 }
 @media (min-width:768px){
   .MobileDivHeight{
-    height: 350px ! important;
+    /*height: 350px ! important;*/
   }
 
   .responsivefooter{

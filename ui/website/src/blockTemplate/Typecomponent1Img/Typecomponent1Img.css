@@ -68,11 +68,11 @@
       .comp_imgDiv{
         height: 350px ! important;
       } 
-      #consultdown_data0{
+     /* #consultdown_data0{
         width: 345px ! important;
         top:32px ! important;
         right: 3% ! important;
-      }  
+      }  */
  }
  @media (max-width: 480px){
     .comp_imgDiv img {

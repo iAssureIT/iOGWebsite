@@ -149,10 +149,10 @@
   width: 350px ! important;
  } 
  .downimgtext{
-  left:8em ! important;
+  left:10em ! important;
  }
  .downimg_p_txt{
-    top: 10.5em;
+    top: 12.5em;
     left: 2em;
     padding-right: 0px;
  }
@@ -318,7 +318,7 @@
       }
     }
 
- @media (max-width: 480px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .services_img img{
     height: 311px ! important;
   }
@@ -429,9 +429,9 @@
   width: 295px ! important;
 }
 .downimgtext{
-  left: 8em ! important;
-    font-size: 17px;
-    top: 15em;
+    left: 6em ! important;
+    font-size: 16.5px;
+    top: 16em;
 }
 .downimg_p_txt{
   font-size: 13px ! important;
@@ -610,4 +610,9 @@
   }
   
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .innerBlocktConsult{
+    height: 2910px ! important;
+  }
+ } 
 

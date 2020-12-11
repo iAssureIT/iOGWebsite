@@ -686,7 +686,13 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 0px ! important;
      }
      .iconCircle{
-        margin-left: 19% ! important;
+        margin-left: 30% ! important;
+     }
+     .type1btnDiv{
+        height: 565px ! important;
+     }
+     .BtnImageDown{
+        padding-left: 0px ! important;
      }
 
   }
@@ -697,6 +703,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 
     .new_wizardNotefor4{
       left:-12px ! important;
+     }
+     .Typecomp2Btn_img{
+        padding-left: 0px ! important;
      }
 }  
 

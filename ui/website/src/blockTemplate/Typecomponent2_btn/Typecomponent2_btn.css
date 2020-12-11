@@ -48,7 +48,10 @@
     .TypebtnText{
         margin-left: 0px ! important;
     }
-    .type1btnDiv{
+     .Typecomp2Btn_img{
+      padding-left: 0px ! important;
+     }
+    /*.type1btnDiv{
         height: 500px ! important;
-    }
+    }*/
 }

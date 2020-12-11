@@ -15,7 +15,7 @@ export default class HomePage extends Component {
   render() {  
     return (
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-        <div className="Bubble hidden-sm hidden-xs" >
+        <div className="Bubble hidden-md hidden-sm hidden-xs" >
           <div className="Main_Cards__Bubble bub1"></div>
            <div className="Main_Cards__Bubble bub2"></div>
         </div>

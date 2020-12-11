@@ -7,6 +7,12 @@
 .visionHeight{
 	height: 615px;
 }
+.Typecomponent1Img_vision{
+  width: 590px;
+  height: 380px;
+  /*padding-top: 50px;*/
+  /*float:right;*/
+}
 
 @media screen and (max-width: 600px) {
 

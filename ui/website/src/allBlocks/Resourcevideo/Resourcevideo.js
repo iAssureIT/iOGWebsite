@@ -112,7 +112,7 @@ export default class Resourcevideo extends Component {
                              {
                               this.VideoData().map((data, index)=>{
                               return (
-                                <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mobileright_padd  mt100">
+                                <div key={index} className="col-lg-4  col-md-6 col-sm-12 col-xs-12 mobileright_padd  mt100">
                                 <div className="videocard1">
                                     <div className="introvideo">      
                                     <ReactPlayer

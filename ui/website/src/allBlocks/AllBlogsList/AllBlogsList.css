@@ -227,3 +227,10 @@ left: 35% ! important;
 	}
 }	
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	.blogtext1{
+		left:6em ! important;
+	}
+/* Styles */
+}

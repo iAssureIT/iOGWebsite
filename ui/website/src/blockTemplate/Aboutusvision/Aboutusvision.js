@@ -79,7 +79,7 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding visionHeight">
               <div className="">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 Typecomponent1Img">
+                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 Typecomponent1Img_vision">
                       <img src={this.state.blocks.fgImage} alt="" className="img-responsive plane" />
                   </div>
                       <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{marginTop:"-43px"}}>

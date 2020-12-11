@@ -152,8 +152,8 @@ componentDidMount(){
                   console.log("repeatedBlocks from consultsrvice=",result);
                 return(
                  
-                   <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12 padding_Mob"style={{marginBottom:"60px"}}>
-                    <div className="col-lg-12 col-md-12 New_Study_shadow">
+                   <div className=" col-lg-4 col-md-6 col-sm-12 col-xs-12 padding_Mob"style={{marginBottom:"60px"}}>
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 New_Study_shadow">
                      <div className="col-md-12 col-lg-12 col-lg-12 col-md-12 FirstPart">
                       <div class="iconCircle">
                        <img src={result.Image} alt="enteprice" class="innerCircle img-responsive"/>
