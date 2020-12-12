@@ -666,12 +666,27 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 .sxSelectListsWrapper__2321j{
   width: 42% ! important;
 }
+@media screen and (min-width: 320px) {
+.Typecomponent1Img_vision {
+        width: 350px;
+        height: 218px;
+    }
+}
 
 @media screen and (min-width: 411px) {
 
     .pt20{
         padding-top: 29px ! important;
     }
+
+}
+@media screen and (max-width:1024px){
+    .new_round-tabfor4{
+        margin-left:219% ! important;
+     }
+     .new_wizardNotefor4{
+      left:240px ! important;
+     }
 
 }
 @media screen and (max-width:768px){
@@ -708,7 +723,21 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         padding-left: 0px ! important;
      }
 }  
+@media only screen (max-width:1024px) and(orientation: portrait) {
+   .price.price-three{
+      margin-left: 165px ! important;
+      margin-top: 35px ! important;
+    }
+    .upstream_tab{
+        margin-left:175px ! important;
+    }
+    .oilimage{
+        right: 136px ! important;
+        top:120px ! important;
+    }
 
+
+}
 
 
 

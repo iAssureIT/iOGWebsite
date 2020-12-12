@@ -2454,18 +2454,18 @@ a.nameParts{
 }
 .Journycaro5{
   left:0px ! important;
-  top:925px ! important;
+  top:1065px ! important;
 }
 .Journycaro6{
   left:0px ! important;
 }
 .Journycaro7{
   left:0px ! important;
-  top:1111px ! important;
+  top:1190px ! important;
 }
 .Journycaro8{
   left:0px ! important;
-  top:1300px ! important;
+  top:1337px ! important;
 }
 .Journycaro9{
   left:0px ! important;
@@ -2655,4 +2655,81 @@ a.nameParts{
  }
 
 }
+@media screen and(orientation: portrait) {
+  .roadjourny img{
+    left:535px ! important;
+  }
+  .Journycaro1{
+    left:482px ! important;
+  }
+  .add2{
+    right: -130px ! important;
+  }
+  .Journycaro2{
+    left:394px ! important;
+  }
+  .add4{
+    left:412px ! important;
+  }
+  .Journycaro4{
+    left:615px ! important;
+    top:723px ! important;
+  }
+  .add3{
+    top:293px ! important;
+    left:560px ! important;
+  }
+  .Journycaro6{
+    top:819px ! important;
+    left:330px ! important;
+  }
+  .add6{
+    left:240px ! important;
+    top:-58px ! important;
+  }
+  .Journycaro5{
+    top:1002px ! important;
+    left:575px ! important;
+  }
+  .Journycaro7{
+    top:1132px ! important;
+    left:515px ! important;
+  }
+  .Journycaro9{
+    left:24px ! important;
+  }
+  .Journycaro8{
+    top:1315px ! important;
+    left:582px ! important;
+  }
+  .add5{
+    right: 112px ! important;
+  }
+  .add8{
+    right: -622px ! important;
+  }
+  .add7{
+    left:904px ! important;
+  }
+  .add10{
+    left:208px ! important;
+  }
+  .Journycaro10{
+    left:424px ! important;
+  }
+  .add9{
+    left:322px ! important;
+  }
+  .journytextblock{
+    width: 75% ! important;
+  }
+ } 
+ @media screen and (max-width: 812px){
+ /* .new_round-tabfor4{
+    margin-left: 143% ! important;
+  }
+  .new_wizardNotefor4{
+    left:127px ! important;
+  }*/
+ }
 

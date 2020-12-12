@@ -129,7 +129,7 @@ export default class Upstream extends Component {
     render(){
         return(
           <div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs upstreamblock lightbluebg NOpadding">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs upstreamblock lightbluebg NOpadding"style={{overflow:"hidden"}}>
                 <div id="price" className=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheader1 text-center">
                     <hr/>

@@ -439,7 +439,7 @@ handlechange(event){
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{padding:"0px"}}>
                  <h5 className="columnhead"><a href="/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
                   <a href="/demand-management" className="dropdownintab expertise_a">Demand Management</a>
-                  <a href="/invetory-management"className="dropdownintab expertise_a">Inventory Management</a>
+                  <a href="/inventory-management"className="dropdownintab expertise_a">Inventory Management</a>
                   <a href="/distribution-planning"className="dropdownintab expertise_a">Distribution Planning</a>
                   <a href="/retail-automation"className="dropdownintab expertise_a">Retail Automation</a><br/>
                </div> 
@@ -491,7 +491,7 @@ handlechange(event){
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                     <h5 className="columnhead"><a href="/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
                       <a href="/asset-criticality-analysis"className="dropdownintab expertise_a">Asset Criticality Analysis </a>
-                      <a href="/asset-lifecycle"className="dropdownintab expertise_a">Asset Lifecycle Management </a>
+                      <a href="/asset-lifecycle-management"className="dropdownintab expertise_a">Asset Lifecycle Management </a>
                       <a href="/asset-strategy-management"className="dropdownintab expertise_a">Asset Strategy Management </a>
                       <a href="/inspection-&-calibration"className="dropdownintab">Inspection & Calibration</a>
                 </div>   
