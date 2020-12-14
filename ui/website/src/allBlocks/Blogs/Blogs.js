@@ -164,7 +164,7 @@ export default class Blogs extends Component {
                         {
                             this.upstreamData().map((data, index)=>{
                             return (
-                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}>
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile_width" key={index}>
                                   <div className="">
                                     <div className={" index"+index}>
                                         <div className=" blogtext pricehover-float ">

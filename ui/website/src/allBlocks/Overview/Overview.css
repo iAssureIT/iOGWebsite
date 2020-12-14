@@ -85,9 +85,9 @@
     .BT1_bannerTitle{
       font-size: 37px ! important;
     }
-    .serflip-card{
+    /*.serflip-card{
       width: 240px ! important;
-    }
+    }*/
 
   }
  @media screen and (min-width: 1900px) {

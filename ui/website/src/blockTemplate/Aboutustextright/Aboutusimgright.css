@@ -22,6 +22,13 @@
     height: 500px;*/
 
 }
+.righttextaboutus ul{
+    font-size: 17px ! important;
+}
+
+.righttextaboutus p{
+    font-size: 17px ! important;
+}
 
 @media screen and (max-width: 600px) {
     .About5block{

@@ -830,9 +830,10 @@ height: 90px;
   }
 
   .resbanner{
-    background-image: url("/images/IOG_Banner_crop.png");
+    background-image: url("/images/Mobile.png");
     background-size: cover;
-    height: 450px;
+    height: 640px;
+    object-fit: contain;
     background-repeat: no-repeat;
   } 
   .arrow-right {

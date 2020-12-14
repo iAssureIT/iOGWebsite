@@ -496,7 +496,7 @@ pin6click(event){
         <div id="hidepoweredbyblack1"className="hiddendiv"></div>
         <div id="hidepoweredbyblack2"className="hiddendiv"></div>
         <div id="hidepoweredbyblack3"className="hiddendiv"></div>
-        <div className="resbanner hidden-lg hidden-md"style={{height:"400px"},{width:"100%"}}></div>
+        <div className="resbanner hidden-sm hidden-lg hidden-md"style={{height:"400px"},{width:"100%"}}></div>
       </div>
       
     );  

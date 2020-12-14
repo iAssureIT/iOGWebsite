@@ -105,7 +105,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     font-size: 30px;
 }
 
-
+.energypagedata h2{
+    color:#333 ! important;
+}
 
 
 
@@ -709,11 +711,20 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      .BtnImageDown{
         padding-left: 0px ! important;
      }
+     .serflip-card{
+        width: 160px ! important;
+     }
 
   }
 @media screen and (max-width:480px){
     .new_round-tabfor4{
         margin-left:27% ! important;
+     }
+      .serflip-card{
+        width: 275px ! important;
+     }
+     .mobile_width{
+        
      }
 
     .new_wizardNotefor4{

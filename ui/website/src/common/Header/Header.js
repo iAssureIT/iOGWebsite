@@ -434,7 +434,7 @@ handlechange(event){
                        <a href="/refinery-scheduling"className="dropdownintab expertise_a">Production Scheduling</a>
                        <a href="/retro-analysis"className="dropdownintab expertise_a"> Retro-Analysis</a>
                        <a href="/lp-utilities"className="dropdownintab expertise_a">LP Utilities</a>
-                       <a href="/lp-configuration"className="dropdownintab expertise_a">LP Configuration studies</a>
+                       <a href="/lp-configuration-studies"className="dropdownintab expertise_a">LP Configuration studies</a>
                  </div> 
                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style={{padding:"0px"}}>
                  <h5 className="columnhead"><a href="/supply-&-distribution" className="columnhead">Supply & Distribution</a></h5>
@@ -484,12 +484,12 @@ handlechange(event){
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
                   <h5 className="columnhead"><a href="/energy-management."className="columnhead">Energy Management</a></h5>
-                    <a href="/network-optimization-utility"className="dropdownintab expertise_a">Utility Network Optimization</a>
+                    <a href="/utility-network-optimization"className="dropdownintab expertise_a">Utility Network Optimization</a>
                     <a href="/equipment-monitoring"className="dropdownintab expertise_a">Equipment Monitoring</a>
                     <a href="/energy-accounting"className="dropdownintab expertise_a">Energy Accounting</a>
                 </div> 
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                    <h5 className="columnhead"><a href="/asset-management"className="columnhead ">Asset Performance Management</a> </h5>
+                    <h5 className="columnhead"><a href="/asset-performance-management"className="columnhead ">Asset Performance Management</a> </h5>
                       <a href="/asset-criticality-analysis"className="dropdownintab expertise_a">Asset Criticality Analysis </a>
                       <a href="/asset-lifecycle-management"className="dropdownintab expertise_a">Asset Lifecycle Management </a>
                       <a href="/asset-strategy-management"className="dropdownintab expertise_a">Asset Strategy Management </a>
@@ -499,7 +499,7 @@ handlechange(event){
               </div>
             </div> 
              <div class="dropdown">
-              <button class="dropbtn"><a href="/industries"className={this.state.pageUrl == "/industries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemical"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
+              <button class="dropbtn"><a href="/industries"className={this.state.pageUrl == "/industries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemicals"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
                 ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management"
 /*                ||  this.state.pageUrl == "/production-management" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
                 ||  this.state.pageUrl == "/demand-management"  ||  this.state.pageUrl == "/invetory-management" ||  this.state.pageUrl == "/distribution-planning" ||  this.state.pageUrl == "/retail-automation" ||  this.state.pageUrl == "/digital-transformation"  
@@ -507,12 +507,12 @@ handlechange(event){
                 ||  this.state.pageUrl == "/dynamic-simulation"  ||  this.state.pageUrl == "/operator-training" ||  this.state.pageUrl == "/occupational-health-management" ||  this.state.pageUrl == "/process-safety-management" ||  this.state.pageUrl == "/environment-management" 
                 ||  this.state.pageUrl == "/apc-services"  ||  this.state.pageUrl == "/etrm" ||  this.state.pageUrl == "/utility-network-optimization" ||  this.state.pageUrl == "/equipment-monitoring" ||  this.state.pageUrl == "/energy-accounting" */
                        ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>INDUSTRIES</a> 
-                 <i className={this.state.pageUrl == "/newindustries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemical"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
+                 <i className={this.state.pageUrl == "/newindustries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemicals"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
                 ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab  hidden-xs" style={{position:"fixed"}}>
                 <a href="/refinery">Refinery</a>
-                <a href="/petrochemical">Petrochemicals</a>
+                <a href="/petrochemicals">Petrochemicals</a>
                 <a href="/chemicals">Chemicals</a>
                 <a href="/lng">LNG</a>
                 <a href="/gas-processing">Gas Processing</a>
