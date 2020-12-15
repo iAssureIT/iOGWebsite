@@ -232,6 +232,8 @@ export default class ContactUsForm extends React.Component {
 
     closeThisModal(){
        $('#modalId').css('display','none');
+       $('.modal-backdrop.in').css('display','none');
+
     }
 
     render() {

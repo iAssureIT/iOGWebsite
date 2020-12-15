@@ -165,7 +165,7 @@ app.post('/send-email', (req, res)=> {
         // pass : 'iAssureIT@123'
       }
     });
-    console.log('after transport',transporter);
+    console.log('after transport');
     let mailOptions = {
       
       from   : '"iOG-Solutions" <info@iogsolutions.com>', // sender address

@@ -350,7 +350,7 @@ journyData7(){
     return [
         {
             journyTitle : "Apr 2018",
-            journytext  : "Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry."   
+            journytext  : "Celebrated 5th anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry."   
         },
         
     ]

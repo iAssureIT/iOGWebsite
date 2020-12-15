@@ -133,7 +133,7 @@ export default class Footer extends Component {
 
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
                                  7090,7th Floor,  Marvel Fuego,<br/>Magarpatta  Road, Opp Seasons Mall,<br/>Hadapsar,
-                                  Pune,India- 411028.<br/>
+                                  Pune, India- 411028.<br/>
                                   <div className="Hidden_div"></div>
                                    <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"},{paddingRight:"10px"}}></i>Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: info@iogsolutions.com<br/>
                                    <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone&nbsp;: +91 2029510500 
@@ -144,7 +144,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col newAddress1"style={{color:"#ffffff"}}>Registered Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
-                                  L402 Marvel Ritz E, near Dsk Toyota,<br/> behind Amanora Town Center,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
+                                  L402 Marvel Ritz E, near DSK Toyota,<br/> behind Amanora Town Centre,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
                              </p>
                          </div>
                         </div> 
@@ -279,7 +279,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat col "style={{color:"#ffffff"}}>Registered Address</h6>
                             <p className="fs15"style={{color:"#ffffff"}}>
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>&nbsp;
-                                  L402 Marvel Ritz E, near Dsk Toyota, behind Amanora Town Center,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
+                                  L402 Marvel Ritz E, near DSK Toyota, behind Amanora Town Centre,<br/>Hadapsar, Pune, Maharashtra 411028.<br/>
                              </p>
                          </div>   
                          </div>

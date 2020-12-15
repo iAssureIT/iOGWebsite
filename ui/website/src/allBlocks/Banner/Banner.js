@@ -338,7 +338,7 @@ pin6click(event){
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
                    <p className="newhovertxt">Processing multiple grades, grade transitions, product sequencing & the variable cost of feedstocks etc.</p>
-                   <a href="/petrochemical"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <a href="/petrochemicals"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div>  
                  </div>
                  <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"/>
