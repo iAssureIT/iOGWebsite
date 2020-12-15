@@ -216,7 +216,7 @@ journyData(){
     return [
         {
             journyTitle : "Apr 2013",
-            journytext  : "iOGSolutions registered itself on 17th April 2013 and starts operations with an office in Pune."   
+            journytext  : "iOG Solutions registered itself on 17th April 2013 and starts operations with an office in Pune."   
         },
        /* {
             journyTitle : "Feb 2014",

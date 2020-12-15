@@ -464,7 +464,7 @@ handlechange(event){
                </div>   
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                   <h5 className="columnhead"><a href="/simulation-and-modeling" className="columnhead">Simulation & Modeling</a></h5>
+                   <h5 className="columnhead"><a href="/simulation-and-modeling" className="columnhead">Simulation & Modelling</a></h5>
                     <a href="/steady-state-simulation" className="red"className="dropdownintab expertise_a">Steady State Simulation</a>
                     <a href="/dynamic-simulation"className="dropdownintab expertise_a">Dynamic Simulation</a>
                     <a href="/operator-training"className="dropdownintab expertise_a">Operator Training</a> 
@@ -500,7 +500,7 @@ handlechange(event){
             </div> 
              <div class="dropdown">
               <button class="dropbtn"><a href="/industries"className={this.state.pageUrl == "/industries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemicals"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
-                ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management"
+                ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservoir-engineering-services" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management"
 /*                ||  this.state.pageUrl == "/production-management" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
                 ||  this.state.pageUrl == "/demand-management"  ||  this.state.pageUrl == "/invetory-management" ||  this.state.pageUrl == "/distribution-planning" ||  this.state.pageUrl == "/retail-automation" ||  this.state.pageUrl == "/digital-transformation"  
                 ||  this.state.pageUrl == "/application-support"  ||  this.state.pageUrl == "/application-integration" ||  this.state.pageUrl == "/visualization-&-dashboards" ||  this.state.pageUrl == "/industries-v4" ||  this.state.pageUrl == "/steady-state-simulation" 

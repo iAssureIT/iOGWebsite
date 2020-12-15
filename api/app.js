@@ -165,7 +165,7 @@ app.post('/send-email', (req, res)=> {
         // pass : 'iAssureIT@123'
       }
     });
-    console.log('after transport');
+    console.log('after transport',transporter);
     let mailOptions = {
       
       from   : '"iOG-Solutions" <info@iogsolutions.com>', // sender address
@@ -265,8 +265,9 @@ app.post('/send-email/portalreview', (req, res)=> {
     auth: { 
       // user: 'review.wealthyvia@gmail.com',
       // pass: 'Artha123$'
-      user : 'iassureitmail@gmail.com',
-        pass : 'iAssureIT@123'
+      user: 'iogdevelopers@gmail.com',
+        pass: 'IOGSolutions@7090'
+
     }
   });
   let mailOptions = {

@@ -231,7 +231,7 @@ export default class ContactUsForm extends React.Component {
    
 
     closeThisModal(){
-      window.location.reload();
+       $('#modalId').css('display','none');
     }
 
     render() {

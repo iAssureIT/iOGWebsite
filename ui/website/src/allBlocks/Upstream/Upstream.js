@@ -105,7 +105,7 @@ export default class Upstream extends Component {
             },  
             {
                 upstreamTitle : "Reservoir Management",
-                hryperlink    : "/reservior-management",
+                hryperlink    : "/reservoir-engineering-services",
                 upstreamimg   : "/images/upstream4.png",
                 upstreamtext  : "iOG solutions provide end-to-end consulting services for management of reservoirs, utilizing state of the art geo-science and engineering technologies."
             }, 
