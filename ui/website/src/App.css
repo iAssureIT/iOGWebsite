@@ -298,6 +298,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     font-size: 15px;
     /*color: #aaa !important;*/
 }
+.TextRightImg{
+    width: 500px;
+    height: 400px;
+}
+.TextRightImg img{
+    width: 500px;
+    /*height: 220px;*/
+    object-fit: contain;
+}
 .blog-title {
     
     font-size: 18px;
@@ -707,13 +716,16 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 30% ! important;
      }
      .type1btnDiv{
-        height: 565px ! important;
+        height: 630px ! important;
      }
      .BtnImageDown{
         padding-left: 0px ! important;
      }
      .serflip-card{
-        width: 160px ! important;
+        width: 275px ! important;
+     }
+     .NwesBoxShadow{
+        height: 440px ! important;
      }
 
   }

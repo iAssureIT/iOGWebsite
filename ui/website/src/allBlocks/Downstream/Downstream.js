@@ -39,7 +39,7 @@ export default class Downstream extends Component {
             {
                 downstreamTitle  : "Simulation & Modelling",
                 downstreamTitle1 : "",
-                hryperlink       : "/simulation-and-modeling",
+                hryperlink       : "/simulation-and-modelling",
                 downstreamimg    : "/images/Illustration_5.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             }, 

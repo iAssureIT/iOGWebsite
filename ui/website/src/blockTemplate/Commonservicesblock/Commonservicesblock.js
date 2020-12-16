@@ -135,10 +135,10 @@ export default class Commonservicesblock extends Component {
                                 console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2   col-lg-4 col-md-4 col-md-offset-1 col-sm-4 col-xs-4";
+                                    var classes = "col-lg-offset-2 col-lg-4 col-md-6 col-md-offset-1 col-sm-4 col-xs-4";
                                    
                                   }else{
-                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center";
+                                    var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center";
                                  
                                 }
                                 }else if(productlength == 1){
@@ -146,7 +146,7 @@ export default class Commonservicesblock extends Component {
                                   if(plength === index+1){
                                     var classes = "webpageshopcont col-lg-3 col-md-3 col-xs-3   text-center";                                   
                                   }else{
-                                    var classes="webpageshopcont col-lg-3 col-md-3  col-sm-12 col-xs-12  text-center";                                 
+                                    var classes="webpageshopcont col-lg-3 col-md-6  col-sm-12 col-xs-12  text-center";                                 
                                 }
                                 }else{
                                   var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               

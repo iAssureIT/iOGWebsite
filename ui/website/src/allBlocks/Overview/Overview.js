@@ -83,8 +83,7 @@ render(){
                              }
                         </ul> 
                        </div> 
-                        <p className="line_paraaaa">{data.overviewtext5}</p>                                     
-
+                        <p className="line_paraaaa">{data.overviewtext5}</p>                                    
                     </div>
                           );
                       })

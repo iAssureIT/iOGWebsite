@@ -406,7 +406,7 @@ handlechange(event){
 
             <div class="dropdown ">
               <button class="dropbtn"><a href="/expertise" className={this.state.pageUrl == "/expertise" ||  this.state.pageUrl == "/supply-&-distribution" ||  this.state.pageUrl == "/planning-&-scheduling" ||  this.state.pageUrl == "/manufacturing-execution-system"   
-                ||  this.state.pageUrl == "/digital-services" ||  this.state.pageUrl == "/simulation-and-modeling"  ||  this.state.pageUrl == "/health-safety-environment" ||  this.state.pageUrl == "/energy-management." ||  this.state.pageUrl == "/asset-management"  
+                ||  this.state.pageUrl == "/digital-services" ||  this.state.pageUrl == "/simulation-and-modelling"  ||  this.state.pageUrl == "/health-safety-environment" ||  this.state.pageUrl == "/energy-management." ||  this.state.pageUrl == "/asset-management"  
                 ||  this.state.pageUrl == "/other-services"  ||  this.state.pageUrl == "/production-plannning" ||  this.state.pageUrl == "/refinery-scheduling" ||  this.state.pageUrl == "/lp-utilities" ||  this.state.pageUrl == "/retro-analysis" ||  this.state.pageUrl == "/lp-configuration"
                 ||  this.state.pageUrl == "/production-accounting"  ||  this.state.pageUrl == "/real-time-data-historian" ||  this.state.pageUrl == "/corporate-dashboard" ||  this.state.pageUrl == "/operation-logbook" ||  this.state.pageUrl == "/oil-movement"   
                 ||  this.state.pageUrl == "/demand-management"  ||  this.state.pageUrl == "/invetory-management" ||  this.state.pageUrl == "/distribution-planning" ||  this.state.pageUrl == "/retail-automation" ||  this.state.pageUrl == "/digital-transformation"  

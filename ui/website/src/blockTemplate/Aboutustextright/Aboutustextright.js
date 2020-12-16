@@ -30,11 +30,19 @@ componentDidMount(){
       console.log("pageUrl now = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
       console.log("consult url",a);
-      if(pageUrl =="/masterpage/about-us"){
+      if(pageUrl =="/about-us"){
         // $('.innerBlocktConsult').css('height','1230px');
-        $('.l_BT1_para').css('marginTop','61px');
-        $('.truck').css('marginTop','7px');
+        $('.TextRightImg img').css('height','220px');
+        // $('.truck').css('marginTop','7px');
       }
+       else if(pageUrl =="/geology-geophysics"){
+        $('.TextRightImg img').css('height','350px');
+
+       }
+       else{
+         $('.TextRightImg img').css('height','330px');
+
+       }
 
 /*console.log("==>",this.props.block_id);*/
           {
@@ -70,7 +78,7 @@ componentDidMount(){
                       </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 hidden-xs">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 truck "style={{paddingTop:"10px"}}>
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TextRightImg"style={{paddingTop:"10px"}}>
                       <img src={this.state.blocks.fgImage} alt="" className="img-responsive" />
                     </div>
                   </div>

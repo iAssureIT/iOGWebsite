@@ -342,7 +342,7 @@ export default class Resourcedownload extends React.Component {
                             </a>
                           </div> */
 
-                         <div key={index} className="col-lg-4  col-md-4 col-sm-12 col-xs-12 mt100" data-toggle="modal" id={data.downstreamlink} data-target="#modalId1" onClick={this.modalClickEvent1.bind(this)}>
+                         <div key={index} className="col-lg-4  col-md-6 col-sm-12 col-xs-12 mt100" data-toggle="modal" id={data.downstreamlink} data-target="#modalId1" onClick={this.modalClickEvent1.bind(this)}>
                             <div className="videocard" title="Click to Download" download>
                               <h3>{data.downstreamTitle}</h3>
                               <div className="go-corner" >

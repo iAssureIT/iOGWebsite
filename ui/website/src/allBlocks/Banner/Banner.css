@@ -1006,8 +1006,8 @@ height: 90px;
 
 @media only screen and (max-width: 768px) {
 .oilimage{
-  right: 168px;
-  top: 126px;
+  right: 108px;
+  top: 159px;
 }
 .boat_img2_img{
   width: 173px ! important;
@@ -1045,8 +1045,8 @@ height: 90px;
   width: 180px ! important;
 }
 .plantimage11{
-  right: 47px ! important;
-  top: 216px ! important;
+  right: -7px ! important;
+  top: 278px ! important;
  }
  .petrolimage{
    right: 45px ! important;
@@ -1061,8 +1061,8 @@ height: 90px;
     top: 211px ! important;
  }
  .petrolimage1{
-  right: 187px ! important;
-  top: 292px ! important;
+  right: 140px ! important;
+  top: 364px ! important;
  }
  .boat_img2{
   left: 158px ! important;
@@ -1076,9 +1076,8 @@ height: 90px;
   width: 173px ! important;
  }
  .nexttogasimage{
-  right: 301px !important;
-  top: 203px ! important;
-  /*width: 150px ! important;*/
+   right: 243px ! important;
+   top: 268px ! important;
  }
  .waterimg{
   left: 41px ! important;
@@ -1095,23 +1094,23 @@ height: 90px;
  }
  .new_HoverDiv1{
     margin-left: -157px ! important;
-    margin-top: -103px !important;
+    margin-top: -164px !important;
  }
  .new_HoverDiv4{
-    margin-left: -50px ! important;
-    margin-top: -179px ! important;
+    margin-left: -124px ! important;
+    margin-top: -238px ! important;
  }
  .new_HoverDiv5{
-  margin-left: -61px ! important;
-  margin-top: -158px ! important;
+  margin-left: -129px ! important;
+  margin-top: -230px ! important;
  }
  .new_HoverDiv7{
-    margin-left: -64px ! important;
-    margin-top: -84px ! important;
+    margin-left: -70px ! important;
+    margin-top: -197px ! important;
  }
  .new_HoverDiv2{
-    margin-left: -33px ! important;
-    margin-top: -15px ! important;
+    margin-left: -84px ! important;
+    margin-top: -231px ! important;
  }
 }
 .gasimage{

@@ -29,6 +29,20 @@
 .righttextaboutus p{
     font-size: 17px ! important;
 }
+.TypecomponentBtnImg{
+  width: 500px;
+  height: 380px;
+  padding-top: 50px;
+  /*float:right;*/
+}
+.TypecomponentBtnImg img{
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+
+  /*height: 100%;*/
+  /*width: 100%;*/
+}
 
 @media screen and (max-width: 600px) {
     .About5block{
