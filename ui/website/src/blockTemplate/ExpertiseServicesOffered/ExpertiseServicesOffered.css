@@ -28,7 +28,7 @@
     margin-left: 15px;
   }
   .innerServiceDiv{
-    padding-top: 45px;
+    padding-top: 30px;
   	/*padding-left: 45px;*/
   }
   .B2T_serviceTitle{
@@ -107,7 +107,7 @@
 
 @media (max-width: 480px){
   .B4T_ServicesDiv{
-    margin-left: 8px ! important;
+    margin-left: 20px ! important;
     width: 304px ! important;
     min-height: 125px ! important;
   }

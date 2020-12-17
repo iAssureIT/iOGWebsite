@@ -322,10 +322,7 @@
   .services_img img{
     height: 311px ! important;
   }
-  .overviewPadding{
-    padding-left: 0px ! important;
-    padding-right: 0px ! important;
-  }
+ 
   .Mobile_leftPadd{
     padding-left:0px ! important;
     }
@@ -333,7 +330,7 @@
     margin-left: 20px ! important;
   }
   #consultdown_img0{
-    top: 26em ! important;
+    top: 27em ! important;
     height: 95px ! important;
     left:4em ! important;
   }
@@ -364,7 +361,7 @@
 #consultdown_img6 {
     position: absolute;
     top: 170em ! important;
-    left: 1em ! important;
+    left: 4em ! important;
     height: 97px;
 }
 #consultdown_img2{
@@ -374,8 +371,8 @@
   }
   #consultdown_data0 {
     width: 345px ! important;
-    top: 457px ! important;
-    right: -4% ! important;
+    top: 474px ! important;
+    left: 1em ! important;
     text-align: justify;
 }
 #consultdown_data1{
@@ -388,7 +385,7 @@
   top:80em ! important;
   width: 345px ! important;
   text-align: justify;
-  right: -13px ! important;
+  left: 1em ! important;
 }
 
 #consultdown_data3{
@@ -405,19 +402,19 @@
     top: 131em ! important;
     width: 304px ! important;
     text-align: justify;
-    right: 27px ! important;
+    left: 1em ! important;
 }
 #consultdown_data5 {
     top: 161em ! important;
     width: 306px ! important;
     text-align: justify;
-    left: 14px ! important;
+    left: 1em ! important;
 }
 #consultdown_data6 {
     top: 180em ! important;
     width: 306px ! important;
     text-align: justify;
-    right: 14px ! important;
+    left: 1em ! important;
 }
 .innerBlocktConsult{
   height: 2000 ! important;
@@ -429,7 +426,7 @@
   width: 295px ! important;
 }
 .downimgtext{
-    left: 6em ! important;
+    left: 8em ! important;
     font-size: 16.5px;
     top: 16em;
 }

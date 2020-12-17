@@ -47,6 +47,12 @@
   .B4T_img{
     margin-left: 0px;
   }
+  .B3T_challengesDiv{
+  margin-left: 0px ! important;
+}
+.B3T_challengesDiv{
+  /*left:57px ! important;*/
+}
 }
 @media (max-width: 480px){
 .B2T_challengesTitle{
@@ -54,6 +60,9 @@
 
 }
 .B3T_challengesDiv{
-  left:57px ! important;
+  margin-left: 0px ! important;
+}
+.B3T_challengesDiv{
+  /*left:57px ! important;*/
 }
 }

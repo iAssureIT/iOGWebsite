@@ -122,6 +122,17 @@ componentDidMount(){
         $('.downimgtext').css('left','17em');
 
       }
+          if(pageUrl=="/iog-train")
+     {
+         window.matchMedia('screen and (max-width: 480px) and (min-width:320px)') 
+         {
+         $('.downimgtext').css('left','6em');
+         }
+     }
+     else{
+       $('.downimgtext').css('left','8em');
+
+     }
 
 
 
@@ -195,7 +206,7 @@ console.log("10 sep==>",this.props.block_id);
           </div>
          </div>
          <div>
-             <div className="downimgtext text-center">{this.state.blocks.blockTitle}</div>
+             <div className="downimgtext text-center hidden-xs">{this.state.blocks.blockTitle}</div>
             <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt" dangerouslySetInnerHTML={{ __html:this.state.blocks.blockDescription}}></p>
           </div>  
           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 container">  

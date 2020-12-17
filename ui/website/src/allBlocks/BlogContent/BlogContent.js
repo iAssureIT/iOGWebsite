@@ -23,8 +23,17 @@ export default class BlogContent extends Component {
   printTicket(event){
 
   event.preventDefault();
+   $('#footer').hide();
+   $('.headerflowscroll').hide();
+   $('.sbbannerWall').hide();
+   $('.iogfooter').hide();
   var printContents = document.getElementById('pdfWrap').innerHTML;
   window.print(printContents);
+   $('#footer').show();
+   $('.headerflowscroll').show();
+   $('.sbbannerWall').show();
+   $('.iogfooter').show();
+
 
 
 }

@@ -298,6 +298,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     font-size: 15px;
     /*color: #aaa !important;*/
 }
+.B2T_p ul {
+    padding-left: 15px ! important;
+}
 .TextRightImg{
     width: 500px;
     height: 400px;
@@ -708,6 +711,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      .new_wizardNotefor4{
       left:113px ! important;
      }
+     .BtnImageDown{
+        margin-top: 180px ! important;
+     }
      .BT4_txt{
         font-size: 13px ! important;
         margin-left: 0px ! important;
@@ -727,6 +733,19 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      .NwesBoxShadow{
         height: 440px ! important;
      }
+     .jobformcontent{
+        margin-left: 200px ! important;
+     }
+      .challengedivPadd{
+        padding-left: 0px ! important;
+     }
+    .new_round-tabforTwo{
+        margin-left: 98% ! important;
+      }
+      .new_wizardNotefortwo{
+        right: -130px ! important;
+      }
+
 
   }
 @media screen and (max-width:480px){
@@ -740,12 +759,36 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         
      }
 
+      .overviewPadding{
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+      }
+     .challengedivPadd{
+        padding-left: 0px ! important;
+     }
+
     .new_wizardNotefor4{
       left:-12px ! important;
+      font-size: 11px ! important;
      }
      .Typecomp2Btn_img{
         padding-left: 0px ! important;
      }
+     .BtnImageDown{
+        margin-top: 0px ! important;
+     }
+       .new_round-tabforTwo{
+        margin-left: 40% ! important;
+      }
+      .new_wizardNotefortwo{
+        right: 0px ! important;
+      }
+      .Type1_comp_padd{
+        padding-left: 0px ! important;
+      }
+      .new_wizardNotefor5{
+        font-size: 9px ! important;
+      }
 }  
 @media only screen (max-width:1024px) and(orientation: portrait) {
    .price.price-three{

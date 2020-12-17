@@ -138,34 +138,22 @@ printTicket(event){
 		return (
       <div>
       	<div className="container-fluid" >
-
-            <PageHead pageHeadData={this.state.pageHead}/>
-      		  <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
-            <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
-      		  <BlogContent blogContent={this.state.blogContent} style={{padding:"0px"}} />
-             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
-              <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
-                <i className="fa fa-facebook mar10" href=""></i>
-              </a>
-
-
-            {/*  <a href={"https://twitter.com/home?status=" + this.state.CurrentUrl} target="_blank">
-                <i className="fa fa-twitter mar10" ></i>
-              </a>*/}
-
-              <a href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl}  target="_blank"  rel="noopener noreferrer">
-                <i className="fa fa-twitter mar10" ></i></a>
-              <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
-                <i class="fa fa-linkedin mar10"></i>
-              </a>
-            </div>
-            
-           {/* <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 bottomDiv">
-              <span className="countNumberLike">{this.state.viewCount} views</span>
-            </div>*/}
-          {/* <button className="iogpdfbtn" onClick={this.printTicket.bind(this)}>Generate pdf</button>*/}
-            <div style={{width:0, height: 0}}></div>
-            </div>
+           <PageHead pageHeadData={this.state.pageHead}/>
+      		   <SingleBlogBanner blogTitle={this.state.blogTitle} summary={this.state.summary} bannerImage={this.state.bannerImage}/>
+              <div className="mt40 col-lg-10 col-md-10 col-sm-12 col-xs-12"><label className="blogDateSBP pull-right">Date :<Moment format=" MMMM D YYYY ">{this.state.createdAt}</Moment></label></div>
+      		      <BlogContent blogContent={this.state.blogContent} style={{padding:"0px"}} />
+                  <div className="col-lg-8 col-lg-offset-2 col-md-10 col-sm-12 col-xs-12 likeDiv mt40">
+                    <a href={"https://www.facebook.com/sharer/sharer.php?u="+ this.state.CurrentUrl} target="_blank">
+                      <i className="fa fa-facebook mar10" href=""></i>
+                    </a>
+                    <a href={"https://twitter.com/intent/tweet?url="+this.state.CurrentUrl}  target="_blank"  rel="noopener noreferrer">
+                      <i className="fa fa-twitter mar10" ></i></a>
+                    <a href={"https://www.linkedin.com/shareArticle?mini=true&url="+this.state.CurrentUrl} target="_blank">
+                      <i class="fa fa-linkedin mar10"></i>
+                    </a>
+                  </div>
+                  <div style={{width:0, height: 0}}></div>
+                  </div>
             {/*<BlogComment/>*/}
 			  </div>
 	   	);

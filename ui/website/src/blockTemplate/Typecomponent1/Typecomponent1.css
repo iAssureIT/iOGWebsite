@@ -20,7 +20,7 @@
 	text-align: justify;
 }
 .Type1_comp_padd{
-  padding-left: 40px ! important;
+  padding-left: 40px;
 }
 
 .intro_img{
@@ -59,7 +59,7 @@
     /*float:right;*/
   }
   .MobileDivHeight{
-    height: 600px ! important;
+    height: 930px ! important;
   }
 
 }

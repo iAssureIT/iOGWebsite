@@ -241,7 +241,7 @@ export default class Footer extends Component {
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
                             <ul className="no-icon-list">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/expertise">Expertise</a></li>
                                 <li><a href="/industries">Industries</a></li>
                             </ul>
@@ -260,8 +260,8 @@ export default class Footer extends Component {
                         <div className="col-sm-2 col-xs-4">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
-                                <li><a href="/newcareers">Careers</a></li>
-                                <li><a href="/blog">Blogs</a></li>
+                                <li><a href="/careers">Careers</a></li>
+                                <li><a href="/blogs">Blogs</a></li>
                                 <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div> 
