@@ -712,7 +712,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       left:113px ! important;
      }
      .BtnImageDown{
-        margin-top: 180px ! important;
+        /*margin-top: 180px ! important;*/
      }
      .BT4_txt{
         font-size: 13px ! important;

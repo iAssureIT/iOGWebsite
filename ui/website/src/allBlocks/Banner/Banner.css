@@ -2770,3 +2770,44 @@ div.drop-container:after {
 .goog-te-gadget .goog-te-combo{
   margin: 0px;
 }
+
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  .oilimage{
+        right: 170px ! important;
+        top: 124px ! important;
+    }
+  .plantimage11{
+    right: -7px ! important;
+    top: 263px ! important;
+  }  
+  .nexttogasimage{
+    right: 358px ! important;
+    top: 284px ! important;
+  } 
+  .boat_img2{
+    left: 187px ! important;
+    top: 388px ! important;
+  } 
+  .waterimg2{
+    top: 76% ! important;
+    left: 9% ! important;
+  } 
+  .petrolimage1{
+    right: 150px ! important;
+    top: 421px ! important;
+  }
+  .topnav a{
+    padding-left:  5px ! important;
+  } 
+  
+  .dropdown .dropbtn{
+    padding-left: 5px ! important;
+  }
+
+}
