@@ -15,12 +15,12 @@ export default class Map extends Component {
             <h1 className="text-center sitemapheading"><span className="sitemapheading1">SITEMAP</span></h1>
            </div>
             <div className=" col-lg-12 col-md-12 col-xs-12  ">
-             <div className="maindiv1234 servicediv col-lg-3 ">
+             <div className="maindiv1234 servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12">
               
                <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21 "></span> 
                  <a href="/about-us" className="Aboutuslink">ABOUT US</a><br/>
-                  <div className="col-lg-6 sitemapline"></div>
+                  <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
                 <span class="bottomlinksraquo  subdata "></span> <a href="/about-us" className="">Company Profile</a><br/>
@@ -30,11 +30,11 @@ export default class Map extends Component {
                 </div>
 
               </div>
-               <div className="maindiv1234 servicediv col-lg-3">
+               <div className="maindiv1234 servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12">
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/services" className="Aboutuslink">SERVICES</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu">
                    <span class="bottomlinksraquo  subdata"></span> <a href="/iog-study" className="">iOGStudy</a><br/>
@@ -43,11 +43,11 @@ export default class Map extends Component {
                    <span class="bottomlinksraquo  subdata"></span> <a href="/iog-train" className="">iOGTrain</a><br/>
                 </div>
                </div> 
-              <div className="maindiv1234 servicediv col-lg-3 ">
+              <div className="maindiv1234 servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12">
                 <div className="mainpages">
                 <span class="bottomlinksraquo"></span> 
                  <a href="/industries" className="Aboutuslink">INDUSTRIES</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">
                 <span class="bottomlinksraquo  subdata"></span> <a href="/refinery" className="">Refinery</a><br/>
@@ -58,26 +58,26 @@ export default class Map extends Component {
                 <span class="bottomlinksraquo  subdata"></span> <a href="/oil-&-gas-e-&-p" className="">Oil & Gas E & P</a><br/>
                </div>
               </div>
-               <div className="maindiv1234 servicediv col-lg-3">
+               <div className="maindiv1234 servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12">
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/careers" className="Aboutuslink">Careers</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div><br/>
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/blogs" className="Aboutuslink">Blogs</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div><br/>
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/resources" className="Aboutuslink">Resources</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div><br/>
                  <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/contact-us" className="Aboutuslink">Contact Us</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div><br/>
                
                </div> 
@@ -85,11 +85,11 @@ export default class Map extends Component {
              <div className=" col-lg-12 col-md-col-sm-12 col-xs-12 NOPadding  ">
               
                <div className=" col-lg-12 col-md-12 col-xs-12  ">
-                <div className=" servicediv col-lg-3 "> 
+                <div className=" servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12 "> 
                <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21 "></span> 
                  <a href="/planning-&-scheduling" className="Aboutuslink">Planning & Scheduling</a><br/>
-                  <div className="col-lg-6 sitemapline"></div>
+                  <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
                 <span class="bottomlinksraquo  subdata"></span> <a href="/planning-&-scheduling"     className="">Planning & Scheduling</a><br/>
@@ -101,11 +101,11 @@ export default class Map extends Component {
                 </div>
 
               </div>
-               <div className=" servicediv col-lg-3">
+               <div className=" servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12">
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/supply-&-distribution" className="Aboutuslink">Supply & Distribution</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-4 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu">
                   <span class="bottomlinksraquo  subdata"></span> <a href="/demand-management"               className="">Demand Management</a><br/>
@@ -114,11 +114,11 @@ export default class Map extends Component {
                     <span class="bottomlinksraquo  subdata"></span> <a href="/retail-automation"         className="">Retail Automation</a><br/>
                 </div>
                </div> 
-              <div className=" servicediv col-lg-3 ">
+              <div className=" servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12 ">
                 <div className="mainpages">
                 <span class="bottomlinksraquo"></span> 
                  <a href="/manufacturing-execution-system" className="Aboutuslink">Manufacturing Execution System</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-3 col-sm-4 col-xs-12 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">
                <span class="bottomlinksraquo  subdata"></span> <a href="/production-accounting"          className="">Production Accounting</a><br/>
@@ -128,11 +128,11 @@ export default class Map extends Component {
                     <span class="bottomlinksraquo  subdata"></span> <a href="/oil-movement"              className="">Oil Movement Management Systems</a><br/>
                </div>
               </div>
-               <div className=" servicediv col-lg-3 "> 
+               <div className=" servicediv col-lg-3 col-md-3 col-sm-4 col-xs-12 "> 
                <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21 "></span> 
                  <a href="/simulation-and-modeling" className="Aboutuslink">Simulation & Modeling</a><br/>
-                  <div className="col-lg-6 sitemapline"></div>
+                  <div className="col-lg-6 col-md-4 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
                     <span class="bottomlinksraquo  subdata"></span> <a href="/steady-state-simulation"      className="">Steady State Simulation </a><br/>
@@ -145,11 +145,11 @@ export default class Map extends Component {
              </div>
              <div className=" col-lg-12 col-md-12 col-xs-12 maindiv1234 ">
                
-               <div className=" servicediv col-lg-3">
+               <div className=" servicediv col-lg-3 col-md-4 col-sm-4 col-xs-12">
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/new-energy-management" className="Aboutuslink">Energy Management </a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-4 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu">
                     <span class="bottomlinksraquo  subdata"></span> <a href="/utility-network-optimization"      className="">Utility Network Optimization</a><br/>
@@ -157,11 +157,11 @@ export default class Map extends Component {
                     <span class="bottomlinksraquo  subdata"></span> <a href="/energy-accounting"      className="">Energy Accounting</a><br/><br/>
                 </div>
                </div> 
-              <div className=" servicediv col-lg-3 ">
+              <div className=" servicediv col-lg-3 col-md-4 col-sm-4 col-xs-12 ">
                 <div className="mainpages">
                 <span class="bottomlinksraquo"></span> 
                  <a href="/asset-performance-management" className="Aboutuslink">Asset Management</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-4 col-sm-4 col-xs-12 sitemapline"></div>
                 </div> 
                 <div className="submenu submenuindustries">
              
@@ -171,11 +171,11 @@ export default class Map extends Component {
                     <span class="bottomlinksraquo  subdata"></span> <a href="/inspection-&-calibration"       className="">Inspection  Management</a><br/>
                </div>
               </div>
-               <div className=" servicediv col-lg-3 "> 
+               <div className=" servicediv col-lg-3 col-md-4 col-sm-4 col-xs-12"> 
                <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21 "></span> 
                  <a href="/health-safety-environment" className="Aboutuslink">Health Safety & Environment</a><br/>
-                  <div className="col-lg-6 sitemapline"></div>
+                  <div className="col-lg-6 col-md-4 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu"> 
                     <span class="bottomlinksraquo  subdata"></span> <a href="/occupational-health-management"      className="">Occupational Health Management</a><br/>
@@ -184,11 +184,11 @@ export default class Map extends Component {
                     <span class="bottomlinksraquo  subdata"></span> <a href="/environment-management"      className="">Environment Management</a><br/>
                 </div>
               </div>
-              <div className=" servicediv col-lg-3">
+              <div className=" servicediv col-lg-3 col-md-4 col-sm-4 col-xs-12">
                 <div className="mainpages ">
                 <span class="bottomlinksraquo left_h21"></span> 
                  <a href="/other-services" className="Aboutuslink">Other Services</a><br/>
-                 <div className="col-lg-6 sitemapline"></div>
+                 <div className="col-lg-6 col-md-4 col-sm-4 col-xs-12 sitemapline"></div>
                 </div>
                 <div className="submenu">
                     <span class="bottomlinksraquo  subdata"></span> <a href="/apc-services"      className="">APC Services</a><br/>

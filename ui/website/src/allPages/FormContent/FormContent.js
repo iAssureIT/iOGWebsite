@@ -736,7 +736,7 @@ class FormContent extends Component{
                   <div className="row">
                       <div className="">
                        
-                        <div className="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 jobpageform">
+                        <div className="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-12 col-sm-12 col-xs-12 jobpageform">
                             <form id="contactForm" >
                               <div className="col-lg-12">
                                 {/*<div className="col-lg-12 col-md-12 col-sm-11 col-xs-12 ">

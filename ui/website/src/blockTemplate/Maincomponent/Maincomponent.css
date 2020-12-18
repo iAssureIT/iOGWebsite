@@ -377,3 +377,33 @@
         padding-left: 82px ! important;
      }
 } 
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .iogblock1text{
+        padding-top: 57px ! important;
+    }
+    .iogblock2text{
+        margin-top: 0px ! important;
+    }
+    .iogimgblock2{
+        height: 600px ! important;
+    }
+    .iogblock3text{
+        padding: 25px ! important;
+        height: 265px ! important;
+    }
+    .iogimg_4{
+        margin-left: 0px ! important;
+    }
+    .iogimg_4 img{
+        /*margin-top: -102px ! important;*/
+        width: 97% ! important;
+    }
+    .iogimgblock3{
+        height: 262px ! important;
+    }
+ }   

@@ -126,11 +126,11 @@ componentDidMount(){
      {
          window.matchMedia('screen and (max-width: 480px) and (min-width:320px)') 
          {
-         $('.downimgtext').css('left','6em');
+         // $('.downimgtext').css('left','6em');
          }
      }
      else{
-       $('.downimgtext').css('left','8em');
+       // $('.downimgtext').css('left','8em');
 
      }
 
