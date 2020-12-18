@@ -833,7 +833,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
       .new_wizardNotefor5{
         font-size: 9px ! important;
-        right: -9px ! important;
+        right: 11px ! important;
       }
       .new_wizardNote{
         right: -75px ! important;
