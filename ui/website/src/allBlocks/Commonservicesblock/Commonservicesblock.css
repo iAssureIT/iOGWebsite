@@ -35,6 +35,14 @@
      perspective: 1000px;
     border-radius: 15px;
 }
+.serflip-cardservices{
+   margin-bottom: 70px;
+    height: 300px;
+    width:300px; 
+     perspective: 1000px;
+    border-radius: 15px;
+
+}
 
 .serflip-card-inner {
   position: relative;
@@ -47,7 +55,11 @@
   border-radius: 15px;
 }
 
-.serflip-card:hover .serflip-card-inner {
+.serflip-cardservices:hover .serflip-card-inner {
+  transform: rotateY(180deg);
+  transition-duration:1.5s;
+}
+.serflip-cardservices:hover .serflip-card-inner {
   transform: rotateY(180deg);
   transition-duration:1.5s;
 }
@@ -95,10 +107,24 @@
   height: 130px;
   margin-bottom: 15px;
 }
+.serflip-cardservices img{
+  height: 130px;
+  width: 190px;
+  object-fit: contain;
+  padding-left: 50px;
+  margin-bottom: 15px;
+}
 
-.serflip-card h2{
+.serflip-cardservices h2{
 	/*margin-top: 70px;*/
 	font-size: 18px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.serflip-card h2{
+  /*margin-top: 70px;*/
+  font-size: 18px;
   line-height: 35px;
   font-weight: 600;
   text-align: center;
@@ -407,4 +433,18 @@
     padding-left: 0px ! important;
   }
 }
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  .newcard_landscape{
+    width: 220px ! important;
+
+  }
+  .serflip-cardservices img{
+    padding-left: 0px ! important;
+  }
+}  
 

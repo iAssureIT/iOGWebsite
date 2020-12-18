@@ -216,7 +216,7 @@ journyData(){
     return [
         {
             journyTitle : "Apr 2013",
-            journytext  : "iOG Solutions registered itself on 17th April 2013 and starts operations with an office in Pune."   
+            journytext  : "iOG Solutions registers itself on 17th April 2013 and starts operations with an office in Pune."   
         },
        /* {
             journyTitle : "Feb 2014",
@@ -359,7 +359,7 @@ journyData9(){
     return [
         {
             journyTitle : "Nov 2019",
-            journytext  : "iOG Solutions moved to its new office space in #7090, Marvel Feugo, Pune with a grand inaugural ceremony."   
+            journytext  : "iOG Solutions moves to its new office space in #7090, Marvel Feugo, Pune with a grand inaugural ceremony."   
         },
         
     ]
@@ -377,7 +377,7 @@ journyData11(){
     return [
         {
             journyTitle : "Apr 2018",
-            journytext  : "Celebrated 5 Years anniversary of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry."   
+            journytext  : "Celebrated 5 Y of iOG Solutions being the reputed Service provider across the world for Oil & Gas industry."   
         },
         
     ]

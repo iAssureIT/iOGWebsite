@@ -23,6 +23,17 @@
     color: #333;
     font-weight: 500;
  }
+ .new_wizardNotefor3
+ {
+    /* border: 1px solid; */
+    text-align: center;
+    margin-right: 0px;
+    position: relative;
+    top: 31px;
+    right: 15px;
+    color: #333;
+    font-weight: 500;
+ }
  .new_wizardNotefor5
  {
     /* border: 1px solid; */
@@ -90,6 +101,23 @@
  }
 
  .new_round-tab {
+    width: 24px;
+    margin-left: 29%;
+    height: 24px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #f1f1f1;
+    border: 2px solid #fff;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    /*top:44px;*/
+}
+.new_round-tabfor3 {
     width: 24px;
     margin-left: 29%;
     height: 24px;
@@ -319,7 +347,13 @@
  }
 .new_wizardNotefor5{
     /*right: -59px ! important;*/
-    font-size: 11px ! important;
+    font-size: 10px ! important;
+ }
+ .new_wizardNote_for6{
+    right: 13px ! important;
+    font-size: 8px ! important;
+    color: #000 ! important;
+    font-weight: 500 ! important
  }
  .adjustfor5{
     margin-left: 0px;
@@ -342,6 +376,7 @@
 .mb_100{
     margin-bottom: 0px ! important;
 }
+
 }
 @media only screen and (min-width: 768px)  {
   
@@ -395,6 +430,12 @@
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .navigation_tab{
         margin-left: 26px ! important
+    }
+    .new_round-tabforTwo{
+        left:145% ! important;
+    }
+    .new_wizardNotefortwo{
+        right: -252px ! important;
     }
   }  
 

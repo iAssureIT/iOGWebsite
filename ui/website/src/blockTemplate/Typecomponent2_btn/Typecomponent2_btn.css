@@ -44,6 +44,9 @@
     padding-left: 71px;
     padding-top: 55px;
 }
+.Textrighgtblock{
+    height: 500px;
+}
 @media screen and (max-width: 768px) {
     .TypebtnText{
         margin-left: 0px ! important;
@@ -51,7 +54,12 @@
      .Typecomp2Btn_img{
       padding-left: 0px ! important;
      }
+    .Textrighgtblock{
+      height: 600px ! important;
+
+    }
     /*.type1btnDiv{
         height: 500px ! important;
     }*/
 }
+

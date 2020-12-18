@@ -50,7 +50,7 @@ componentDidMount(){
 
     render(){
         return(
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel alternateblock Textrighgtblock nopaddinginResponsive"style={{height:"490px"}}>
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel alternateblock Textrighgtblock nopaddinginResponsive">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel nopaddinginResponsive">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-12 nopaddinginResponsive">
                 <div className="col-lg-6 col-md-6 col-sm-6 hidden-xs img1 Typecomp2Btn_img Typecomponent2BtnImg"style={{paddingLeft:"71px"}}>

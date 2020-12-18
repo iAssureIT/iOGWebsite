@@ -149,7 +149,7 @@ export default class Commonservicesblock extends Component {
                                     var classes="webpageshopcont col-lg-3 col-md-6  col-sm-12 col-xs-12  text-center";                                 
                                 }
                                 }else{
-                                  var classes="webpageshopcont col-lg-4 col-md-4 col-xs-12 col-sm-4  text-center";                               
+                                  var classes="webpageshopcont col-lg-4 col-md-6 col-xs-12 col-sm-6  text-center";                               
                                 }
                                  return (
                                  <div key={index} className={classes} style={{paddingRight:"0px"}}>
@@ -157,7 +157,7 @@ export default class Commonservicesblock extends Component {
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="">
                                           <div className="text-center">
-                                            <div className="serflip-card"style={{width:"285px"}}>
+                                            <div className="serflip-cardservices newcard_landscape"style={{width:"285px"}}>
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front hidden-sm hidden-xs">
                                                     <img src={data.Image} className="text-center" alt=""/>

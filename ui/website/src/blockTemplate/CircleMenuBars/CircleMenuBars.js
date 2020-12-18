@@ -165,11 +165,11 @@ componentDidMount(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={result.Link}>
-                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                      <span className={"new_round-tabfor3 "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
                                    
-                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    <div className="new_wizardNotefor3 ">{result.Title}</div>
                                     </a>
                                 </div>
                                
@@ -312,7 +312,7 @@ componentDidMount(){
              else if(length==6){
               return(
                      
-                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12 hidden-sm hidden-xs">
+                 <div className="new_wizard col-lg-12 col-md-12 col-xs-12 col-sm-12">
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 new_connecting-line"></div>
                     
                     <h4 className="navigationTitle_for6">You May Also Visit</h4>
@@ -331,7 +331,7 @@ componentDidMount(){
                                             
                                         </span>
                                    
-                                    <div className="new_wizardNote_for6 ">{result.Title}</div>
+                                    <div className="new_wizardNote_for6 "id={"new_wizardNote_for_Text"+index}>{result.Title}</div>
                                     </a>
                                 </div>
                                

@@ -45,7 +45,10 @@
 }
 @media only screen and (max-width : 768px){
   .B4T_img{
-    margin-left: 0px;
+    margin-left: 50px;
+  }
+  .B4T_txt{
+    margin-left: 8px ! important;
   }
   .B3T_challengesDiv{
   margin-left: 0px ! important;

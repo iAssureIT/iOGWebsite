@@ -708,6 +708,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .new_round-tabfor4{
         margin-left:127% ! important;
      }
+     .new_wizardNotefor5{
+      right: -12px ! important;
+     }
      .new_wizardNotefor4{
       left:113px ! important;
      }
@@ -728,9 +731,23 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         padding-left: 0px ! important;
      }
      .serflip-card{
-        width: 275px ! important;
+        width: 260px ! important;
      }
-     .NwesBoxShadow{
+     .righttextaboutus ul{
+        padding-left: 12px ! important;
+        font-size:15px ! important;
+     }
+     .About5block{
+        padding-top: 0px ! important;
+     }
+     .About5block{
+
+     }
+     .new_round-tab{
+      margin-left: 55% ! important;
+     }
+
+    .NwesBoxShadow{
         height: 440px ! important;
      }
      .jobformcontent{
@@ -738,6 +755,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      }
       .challengedivPadd{
         padding-left: 0px ! important;
+     }
+     .TypecomponentBtnImg img{
+        margin-top: 165px ! important;
      }
     .new_round-tabforTwo{
         margin-left: 98% ! important;
@@ -751,6 +771,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       .Aboutuslink{
         margin-left: 0px ! important;
       }
+      .navigationTitle_for6{
+        left:275px ! important;
+      }
+       .new_round-tabfor3{
+        margin-left: 99% ! important;
+      }
+      .new_wizardNotefor3{
+        right: -99px ! important;
+      }
 
 
   }
@@ -763,6 +792,16 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      }
      .mobile_width{
         
+     }
+     .type1btnDiv{
+        margin-bottom: 0px ! important;
+
+     }
+     .navigationTitle_for6{
+        left:74px ! important;
+     }
+     .new_wizardNote_for6{
+        right: 8px ! important;
      }
 
       .overviewPadding{
@@ -794,7 +833,18 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
       .new_wizardNotefor5{
         font-size: 9px ! important;
+        right: -9px ! important;
       }
+      .new_wizardNote{
+        right: -75px ! important;
+      }
+        .new_round-tabfor3{
+        margin-left: 29% ! important;
+      }
+      .new_wizardNotefor3{
+        right: 7px ! important;
+      }
+     
 }  
 @media only screen (max-width:1024px) and(orientation: portrait) {
    .price.price-three{
@@ -825,6 +875,21 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .subdata{
         padding-left: 0px ! important;
     }
+    .TypecomponentBtnImg img{
+        margin-top: 0px ! important;
+     }
+     .B4T_ServicesDiv{
+        margin-left: 55px ! important;
+     }
+      .new_wizardNotefor3{
+        right: -218px ! important;
+      }
+       .new_round-tabfor3{
+        margin-left: 164% ! important;
+      }
+      .new_wizardNotefor5{
+        right: 11px ! important;
+      }
 
   }  
 
