@@ -16,8 +16,8 @@ export default class CommonservicesblockTitle extends Component {
       blocks:{
         
         "blockComponentName"  : "CommonservicesblockTitle",
-         blockTitle : "This is Block Title",
-        "blockType"           : "simple",
+         blockTitle : "",
+        "blockType"           : "",
         "repeatedBlocks"    : [
                       {
                           "Title"       : "",

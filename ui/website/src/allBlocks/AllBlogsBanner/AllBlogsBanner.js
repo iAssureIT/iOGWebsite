@@ -10,17 +10,11 @@ export default class AllBlogsBanner extends React.Component {
 	
 render() {
 		return (
-			<div className="col-lg-12 nopadding AllBlogsbannerWall">
-				<div className="col-lg-12 AllBlogscentered">
-					<div className="col-lg-12 AllBlogstextcentered">
-						<h1 className="fs72">Blogs</h1>
-{/*						<button type="button" className="sbtn col-lg-2 col-lg-offset-5">Read More</button>
-*/}						
-
-					</div>
-					
-
-				</div>
+			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOPadding">
+			  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding" style={{marginTop:"30px"}}>
+	              <h2 className="BT1_bannerTitleblog_res text-center HistorianTitle text-center"><b>Blogs</b></h2>
+	               <div className="dynamicpageimg BT1_img1"></div>
+	            </div>
 			</div>
 		);
 	}

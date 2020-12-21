@@ -362,7 +362,7 @@
         width: 600px ! important;
      }
      .iogblock3text{
-        width: 583px ! important;
+        width: 600px ! important;
         padding-top: 180px ! important;
      }  
      .iogimgblock2{
@@ -375,6 +375,9 @@
      }
      .ht_top{
         padding-left: 82px ! important;
+     }
+     .ht_row2{
+        height: 250px ! important;
      }
 } 
 

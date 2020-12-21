@@ -476,6 +476,12 @@
     .navigation_tab{
         margin-left: 48px ! important;
     }
+    .new_round-tabfor3{
+        margin-left: 49% ! important;
+    }
+    .new_wizardNotefor3{
+            right: -17px ! important;
+    }
   
 }
 @media screen and (min-width: 1900px) {

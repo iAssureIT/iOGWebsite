@@ -848,7 +848,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         left:74px ! important;
      }
      .new_wizardNote_for6{
-        right: 8px ! important;
+        right: -12px ! important;
+     }
+     .All1blog1{
+      width: 275px ! important;
+      margin-left: 25px ! important;
+     }
+     .videocard1{
+      width: 315px ! important;
      }
 
       .overviewPadding{
@@ -880,7 +887,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
       .new_wizardNotefor5{
         font-size: 9px ! important;
-        right: 11px ! important;
+        right: -14px ! important;
       }
       .new_wizardNote{
         right: -75px ! important;

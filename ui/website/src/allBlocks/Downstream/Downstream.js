@@ -23,19 +23,12 @@ export default class Downstream extends Component {
                 
             }, 
             {
-                downstreamTitle : "Asset Management",
-                downstreamTitle1: "",
-                hryperlink      : "/asset-performance-management",
-                downstreamimg   : "/images/Illustration_12.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            },
-            {
-                downstreamTitle  : "APC Services",
+                downstreamTitle  : "Manufacturing Execution Systems",
                 downstreamTitle1 : "",
-                hryperlink       : "/apc-services",
-                downstreamimg    : "/images/Illustration_4.png",
+                hryperlink       : "/manufacturing-execution-system",
+                downstreamimg    : "/images/Illustration_3.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            }, 
+            },  
             {
                 downstreamTitle  : "Simulation & Modelling",
                 downstreamTitle1 : "",
@@ -50,6 +43,27 @@ export default class Downstream extends Component {
                 downstreamimg    : "/images/Illustration_6.png",
                 downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
+            {
+                downstreamTitle  : "APC Services",
+                downstreamTitle1 : "",
+                hryperlink       : "/apc-services",
+                downstreamimg    : "/images/Illustration_4.png",
+                downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
+            {
+                downstreamTitle : "Asset Management",
+                downstreamTitle1: "",
+                hryperlink      : "/asset-performance-management",
+                downstreamimg   : "/images/Illustration_12.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            },
+            {
+                downstreamTitle : "Health Safety & Environment ",
+                downstreamTitle1: "",
+                hryperlink      : "/health-safety-environment",
+                downstreamimg   : "/images/Illustration_11.png",
+                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
+            }, 
              {
                 downstreamTitle  : "ETRM & Pricing Tool ",
                 downstreamTitle1 : "",
@@ -64,21 +78,7 @@ export default class Downstream extends Component {
                 downstreamimg   : "/images/Illustration_13.png",
                 downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
             },
-            {
-                downstreamTitle  : "Manufacturing Execution Systems",
-                downstreamTitle1 : "",
-                hryperlink       : "/manufacturing-execution-system",
-                downstreamimg    : "/images/Illustration_3.png",
-                downstreamtext   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            },  
            
-            {
-                downstreamTitle : "Health Safety & Environment ",
-                downstreamTitle1: "",
-                hryperlink      : "/health-safety-environment",
-                downstreamimg   : "/images/Illustration_11.png",
-                downstreamtext  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, elit id pharetra cursus, turpis ex mollis magna, eu fringilla urna ante ut tellus. Cras imperdiet tristique venenatis Vivamus elementum enim ipsum, nec pharetra sapien ornare eu. Mauris quis arcu quis tortor imperdiet viverra. Sed ut iaculis"
-            } 
             
             
         ]

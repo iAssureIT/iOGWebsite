@@ -21,6 +21,10 @@
 .cuformWall h1, .cuformWall h3, .cuformWall p{
     color: #555;
 }
+.cuformWall p{
+  font-size: 14px;
+  font-weight: 700
+}
 .bt30{
 		margin-bottom:  10px;
 	}

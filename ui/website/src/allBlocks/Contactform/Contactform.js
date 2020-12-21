@@ -248,7 +248,7 @@ export default class ContactUsForm extends React.Component {
                     <form className="conatctform col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contactmodalId">
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
                             <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">Connect with us for information about our services,technical support and training.</p>
-                            <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b> Happy to Help</b></h4>
+                            <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b></b></h4>
                         </div>
                         <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
                           <label htmlFor="name">Name<span className="astrick">*</span></label>

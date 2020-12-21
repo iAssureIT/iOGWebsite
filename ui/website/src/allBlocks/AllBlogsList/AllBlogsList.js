@@ -80,12 +80,12 @@ render() {
 
 		<div>
 			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid AllBlogsBox" style={{padding:"0px"}}>
-				<div class="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">
+				{/*<div class="upstreamcontentheader col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center ">
 				  	<div class="lightbluetext latestblog blogtext1 blogs_newhwading">
 				  		<b>Blogs</b>
 				    </div>
-				</div>
-			    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				</div>*/}
+			    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Bolgs_div ">
 			       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 BolgsHoghDef">
 		          {
 		            Allblogs && Allblogs.length > 0 ?
