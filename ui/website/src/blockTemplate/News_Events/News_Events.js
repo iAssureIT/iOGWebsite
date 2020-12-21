@@ -111,7 +111,7 @@ console.log("==>",this.props.block_id);
               <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 yearbox">
                <b>{result.Title}</b>
               </div>
-               <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 NOPadding NwesBoxShadow">
+               <div className="col-lg-9 col-md-10 col-sm-12 col-xs-12 NOPadding NwesBoxShadow">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  blogsimg1 NOPadding">
                     <img alt="" className="img-responsive" src={result.Image}/>
                   </div>

@@ -19,6 +19,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 .alternateblock{
     background-color: #f1f1f1c7;
 }
+.blogBox p > img {
+  /*width: 300px ! important;*/
+  object-fit: contain;
+
+}
+.blogBoxSmall p > img{
+  width: 300px ! important;
+  object-fit: contain;
+}
 
 
 .fs12{
@@ -748,7 +757,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      }
 
     .NwesBoxShadow{
-        height: 440px ! important;
+        height: 380px ! important;
      }
      .jobformcontent{
         margin-left: 200px ! important;
@@ -881,15 +890,21 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      .B4T_ServicesDiv{
         margin-left: 55px ! important;
      }
-      .new_wizardNotefor3{
+     .new_wizardNotefor3{
         right: -218px ! important;
-      }
-       .new_round-tabfor3{
+     }
+     .new_round-tabfor3{
         margin-left: 164% ! important;
-      }
-      .new_wizardNotefor5{
+     }
+     .new_wizardNotefor5{
         right: 11px ! important;
-      }
+     }
+     .innerBlocktepmlate6{
+        margin-left: 145px ! important;
+     }
+     .NwesBoxShadow{
+      height: 350px ! important;
+     }
 
   }  
 
