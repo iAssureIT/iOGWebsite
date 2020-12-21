@@ -18,7 +18,7 @@ export default class SingleBlogBanner extends React.Component {
 				<div className="col-lg-12 col-md-12 sbcentered">
 
 					<div className="col-lg-12 sbbtextcentered">
-						<div className="col-lg-12 col-md-12 hidden-xs hidden-md ht100">
+						<div className="col-lg-12 col-md-12 hidden-xs hidden-sm ht100">
 							<h1 className="fs72 newblogTxt"style={{color:"#fff"}}>{this.props.blogTitle}</h1>
 							<p className="col-lg-8 col-lg-offset-2 fs24"> 
 							{this.props.summary}</p>

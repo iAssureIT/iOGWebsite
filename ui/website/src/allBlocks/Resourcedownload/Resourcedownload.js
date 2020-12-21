@@ -364,7 +364,7 @@ export default class Resourcedownload extends React.Component {
            
                     <div className="modal fade" id="modalId1" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div className="modal-dialog modal-lg " role="document">
-                        <div className="modal-content ContactmodalContent_brochure col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
+                        <div className="modal-content ContactmodalContent_brochure col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-2 col-sm-12 col-xs-12   ">
             {/*              <button type="button" className="close closeButton" data-dismiss="modal">&times;</button>*/}
                           <div className="modal-body contactModalBody row ">
                            <div className="row">
@@ -410,8 +410,8 @@ export default class Resourcedownload extends React.Component {
                                         </div>
                                         
                                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-                                          <button type="button" className="btn sbtn cancelBtn brochureformBtn col-lg-2" data-dismiss="modal" onClick={this.closeThisModal.bind(this)} >Cancel</button>
-                                          <button type="button" className="btn sbtn lightbluebg brochureformBtn buttonhover col-lg-2 col-lg-offset-8" onClick={this.Submit.bind(this)}>Submit</button>      
+                                          <button type="button" className="btn sbtn cancelBtn brochureformBtn col-lg-2 col-md-4 col-sm-6 col-xs-6" data-dismiss="modal" onClick={this.closeThisModal.bind(this)} >Cancel</button>
+                                          <button type="button" className="btn sbtn lightbluebg brochureformBtn buttonhover col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-8 landscape_btn" onClick={this.Submit.bind(this)}>Submit</button>      
                                         </div>
                                             </form>
                                         </div>

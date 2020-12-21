@@ -714,6 +714,32 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 
 }
 @media screen and (max-width:768px){
+
+     .ContactmodalContent_brochure{
+      height: 460px ! important;
+     }
+      .serflip-card-back p{
+      font-size: 13.5px ! important;
+     }
+     .dwstmTitle{
+      font-size: 17px ! important;
+     }
+
+     .new_round-tabfor6{
+      margin-left: 59% ! important;
+     }
+     .newcard_landscape{
+      width: 270px ! important;
+     }
+     .landscape_btn{
+      float: right ! important;
+     }
+     .ContactmodalContent{
+      height: 500px ! important;
+     }
+     .ContactmodalContent_brochure{
+      margin-top: 46% ! important;
+     }
     .new_round-tabfor4{
         margin-left:127% ! important;
      }
@@ -789,9 +815,21 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       .new_wizardNotefor3{
         right: -99px ! important;
       }
-
-
+       .new_round-tabfor9 {
+       margin-left: 5% ! important;
+     }
+     .new_round-tabfor5{
+      margin-left: 56% ! important;
+     }
+     .new_wizardNote_for6{
+      right: -18px ! important;
+     }
+      .new_wizardNotefor9{
+        font-size: 10px ! important;
+      }
+     
   }
+
 @media screen and (max-width:480px){
     .new_round-tabfor4{
         margin-left:27% ! important;
@@ -853,6 +891,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       .new_wizardNotefor3{
         right: 7px ! important;
       }
+      .new_wizardNotefor9{
+        font-size: 10px ! important;
+      }
      
 }  
 @media only screen (max-width:1024px) and(orientation: portrait) {
@@ -897,13 +938,55 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 164% ! important;
      }
      .new_wizardNotefor5{
-        right: 11px ! important;
+        right: 6px ! important;
      }
      .innerBlocktepmlate6{
         margin-left: 145px ! important;
      }
      .NwesBoxShadow{
       height: 350px ! important;
+     }
+     .journytextblock{
+      width: 76% ! important;
+     }
+     .type1btnDiv{
+      height: 575px ! important;
+     }
+     .new_wizardNote_for6{
+      right: 35px ! important;
+     }
+     .navigationTitle_for6{
+      left:430px ! important;
+     }
+     .servicekbtnarrow{
+      margin-left: 5px ! important;
+     }
+     .ContactmodalContent_brochure{
+      height: 460px ! important;
+     }
+     .landscape_btn{
+      float: right ! important;
+     }
+     .ContactmodalContent{
+      height: 500px ! important;
+     }
+     .ContactmodalContent{
+      margin-top: 20% ! important;
+     }
+     .new_round-tab{
+      left:-33px ! important;
+     }
+     .new_wizardNotefor9{
+      right: 0px ! important;
+     }
+     .serflip-card-back p{
+      font-size: 13.5px ! important;
+     }
+     .dwstmTitle{
+      font-size: 17px ! important;
+     }
+     .B4T_ServicesDiv{
+      min-height: 215px ! important;
      }
 
   }  

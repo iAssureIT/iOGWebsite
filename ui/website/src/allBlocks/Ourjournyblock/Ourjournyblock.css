@@ -2782,4 +2782,10 @@ a.nameParts{
     top: 1123px ! important;
    }
   } 
+  @media screen and (min-width: 1900px) {
+  .add10 {
+    top: -22px ! important;
+    left:785px ! important;
+  }
+}
 

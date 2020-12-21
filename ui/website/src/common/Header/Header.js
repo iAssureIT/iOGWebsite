@@ -464,7 +464,7 @@ handlechange(event){
                </div>   
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 column columnmenu columnmenu1">
-                   <h5 className="columnhead"><a href="/simulation-and-modeling" className="columnhead">Simulation & Modelling</a></h5>
+                   <h5 className="columnhead"><a href="/simulation-and-modelling" className="columnhead">Simulation & Modelling</a></h5>
                     <a href="/steady-state-simulation" className="red"className="dropdownintab expertise_a">Steady State Simulation</a>
                     <a href="/dynamic-simulation"className="dropdownintab expertise_a">Dynamic Simulation</a>
                     <a href="/operator-training"className="dropdownintab expertise_a">Operator Training</a> 
@@ -546,7 +546,7 @@ handlechange(event){
       <div className="row"style={{zIndex:"10"}} > 
         <div className="modal fade" style={{zIndex:"10"}} id="modalId" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-lg " role="document">
-            <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-12 col-xs-12   ">
+            <div className="modal-content ContactmodalContent col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-2 col-sm-12 col-xs-12   ">
 {/*              <button type="button" className="close closeButton" data-dismiss="modal">&times;</button>*/}
               <div className="modal-body contactModalBody row ">
                <div className="row">

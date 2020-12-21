@@ -287,7 +287,7 @@ export default class ContactUsForm extends React.Component {
                         
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
                           <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal" onClick={this.closeThisModal.bind(this)} >Cancel</button>
-                          <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-2 col-lg-offset-8" onClick={this.Submit.bind(this)}>Submit</button>
+                          <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-2 col-lg-offset-8 landscape_btn" onClick={this.Submit.bind(this)}>Submit</button>
                         </div>
                     </form>
                 </div>

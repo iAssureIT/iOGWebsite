@@ -6,13 +6,24 @@
     margin: 0 auto;
     left: 0;
     right: 640px ! important;
-    top: 57%;
+    top: 56%;
     z-index: 1;
 }
 .new_tab{
     border: none ! important;  
 }
 .new_wizardNote
+ {
+    /* border: 1px solid; */
+    text-align: center;
+    margin-right: 0px;
+    position: relative;
+    top: 31px;
+    right: 15px;
+    color: #333;
+    font-weight: 500;
+ }
+ .new_wizardNotefor9
  {
     /* border: 1px solid; */
     text-align: center;
@@ -73,7 +84,7 @@
     margin-right: 0px;
     position: relative;
     top: 35px;
-    right: 36px;
+    right: 50px;
     color: #333;
  }
  .wizard-inner{
@@ -101,6 +112,57 @@
  }
 
  .new_round-tab {
+    width: 24px;
+    margin-left: 29%;
+    height: 24px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #f1f1f1;
+    border: 2px solid #fff;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    /*top:44px;*/
+}
+ .new_round-tabfor6 {
+    width: 24px;
+    margin-left: 21%;
+    height: 24px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #f1f1f1;
+    border: 2px solid #fff;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    /*top:44px;*/
+}
+.new_round-tabfor5 {
+    width: 24px;
+    margin-left: 29%;
+    height: 24px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #f1f1f1;
+    border: 2px solid #fff;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    /*top:44px;*/
+}
+.new_round-tabfor9 {
     width: 24px;
     margin-left: 29%;
     height: 24px;
@@ -379,12 +441,14 @@
 
 }
 @media only screen and (min-width: 768px)  {
+
   
 }
 @media screen and (min-width: 480px) {
 .adjustfor5{
     margin-left: 10px ! important;
 }
+
 /*.new_round-tabfor4{
     margin-left:27% ! important;
 }*/

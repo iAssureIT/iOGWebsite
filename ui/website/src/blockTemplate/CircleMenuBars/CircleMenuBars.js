@@ -127,7 +127,7 @@ componentDidMount(){
                                     <a href={result.Link}>
                                     
 
-                                        <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                        <span className={"new_round-tabfor5  "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
                                    
@@ -286,11 +286,11 @@ componentDidMount(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={result.Link}>
-                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                      <span className={"new_round-tabfor9 "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
                                    
-                                    <div className="new_wizardNote ">{result.Title}</div>
+                                    <div className="new_wizardNotefor9">{result.Title}</div>
                                     </a>
                                 </div>
                                
@@ -327,7 +327,7 @@ componentDidMount(){
                             <div className=" nav-tabs new_tab" role="tablist">
                                 <div role="presentation" className="">
                                     <a href={result.Link}>
-                                      <span className={"new_round-tab "+(this.state.urlParam === result.Link ? "active": "")}>
+                                      <span className={"new_round-tabfor6 "+(this.state.urlParam === result.Link ? "active": "")}>
                                             
                                         </span>
                                    
