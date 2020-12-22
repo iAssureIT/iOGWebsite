@@ -250,45 +250,56 @@ export default class ContactUsForm extends React.Component {
                             <p className="bt30 text-center col-lg-12 col-md-12 col-xs-12 col-sm-12 ">Connect with us for information about our services,technical support and training.</p>
                             <h4 className="text-center bt30 col-lg-12 col-md-12 col-xs-12 col-sm-12 "><b></b></h4>
                         </div>
-                        <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
-                          <label htmlFor="name">Name<span className="astrick">*</span></label>
+                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12"> 
+                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">
+                          <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
+                            <label htmlFor="name">Name<span className="astrick">*</span></label>
+                              {/*<div className="input-group">
+                                <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>*/}
+                                <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="userName" type="text" ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} placeholder="Enter Your Name"  required />
+                             {/* </div>*/}
+                          </div>
+                          <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
+                            <label htmlFor="name">Contact Number<span className="astrick">*</span></label>
+                              {/*<div className="input-group">
+                                <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>*/}
+                                <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="contact" type="text" ref="contact" maxLength={10} onKeyDown={this.isNumberKey.bind(this)} value={this.state.contact} onChange={this.handleChange.bind(this)} placeholder="Enter Your Phone Number"  required />
+                             {/* </div>*/}
+                          </div>
+                         </div>  
+                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 "> 
+                          <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label htmlFor="email">Email<span className="astrick">*</span></label>
+                           {/* <div className="input-group">
+                              <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-envelope" aria-hidden="true"></i></span>*/}
+                              <input className="form-control errorinputText inputtextContent" id="email" type="email" name="email" data-text="clientEmail" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}   placeholder="Your@email.com" required />
+                         {/*   </div>
+                             */}
+                          </div>
+                          
+                          <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label htmlFor="subject">Subject<span className="astrick">*</span></label>
                             {/*<div className="input-group">
-                              <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>*/}
-                              <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="userName" type="text" ref="userName" value={this.state.userName} onChange={this.handleChange.bind(this)} placeholder="Enter Your Name"  required />
-                           {/* </div>*/}
+                              <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>*/}
+                              <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="subject" type="text" name="subject" value={this.state.subject} onChange={this.handleChange.bind(this)}  ref="subject" placeholder="Enter Subject" required/>
+                         {/*   </div>*/}
+                          </div>
+                        </div> 
+                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30 ">   
+                          <div className="commentBox col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+                            <label htmlFor="subject">Note<span className="redFont"></span></label>
+                              <textarea className="form-control inputtextContent padd10" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
+                          </div>
                         </div>
-                        <div className="formcontent col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
-                          <label htmlFor="name">Contact Number<span className="astrick">*</span></label>
-                            {/*<div className="input-group">
-                              <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-user" aria-hidden="true"></i></span>*/}
-                              <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="contact" type="text" ref="contact" maxLength={10} onKeyDown={this.isNumberKey.bind(this)} value={this.state.contact} onChange={this.handleChange.bind(this)} placeholder="Enter Your Phone Number"  required />
-                           {/* </div>*/}
-                        </div>
-                        <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <label htmlFor="email">Email<span className="astrick">*</span></label>
-                         {/* <div className="input-group">
-                            <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-envelope" aria-hidden="true"></i></span>*/}
-                            <input className="form-control errorinputText inputtextContent" id="email" type="email" name="email" data-text="clientEmail" ref="email"  value={this.state.email} onChange={this.handleChange.bind(this)}   placeholder="Your@email.com" required />
-                       {/*   </div>
-                           */}
-                        </div>
-                        
-                        <div className="formcontent col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <label htmlFor="subject">Subject<span className="astrick">*</span></label>
-                          {/*<div className="input-group">
-                            <span className="input-group-addon addonColor inputtextContent "><i className="fa fa-pencil-square-o" aria-hidden="true"></i></span>*/}
-                            <input className="form-control errorinputText inputtextContent nameSpaceUpper" id="subject" type="text" name="subject" value={this.state.subject} onChange={this.handleChange.bind(this)}  ref="subject" placeholder="Enter Subject" required/>
-                       {/*   </div>*/}
-                        </div>
-                        <div className="commentBox col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
-                          <label htmlFor="subject">Note<span className="redFont"></span></label>
-                            <textarea className="form-control inputtextContent padd10" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
-                        </div>
-                        
+                       </div> 
+                      <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
+                       <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
                         <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
                           <button type="button" className="btn sbtn cancelBtn contactformBtn col-lg-2" data-dismiss="modal" onClick={this.closeThisModal.bind(this)} >Cancel</button>
                           <button type="button" className="btn sbtn lightbluebg contactformBtn buttonhover col-lg-2 col-lg-offset-8 landscape_btn" onClick={this.Submit.bind(this)}>Submit</button>
-                        </div>
+                         </div>
+                       </div>
+                      </div> 
                     </form>
                 </div>
             </div>
