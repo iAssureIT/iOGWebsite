@@ -160,7 +160,7 @@ componentDidMount(){
                      <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
                     </div>
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
+					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                          <div className="">
 						 {
 					   	this.state.blocks.repeatedBlocks ?
@@ -189,10 +189,10 @@ componentDidMount(){
 	                	</div>
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 hidden-sm hidden-xs ApplicationImg" style={{paddingLeft:"55px"}}>
+	                	<div className="col-lg-4 col-md-4 hidden-sm hidden-xs ApplicationImg"style={{paddingLeft:"20px"}}>
 	                      <img src={this.state.blocks.fgImage} className=" img-responsive newApplicationImage" style={{height:"350px"}} />
 	                    </div>
-						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{paddingTop:"35px"}}>
+						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12"style={{paddingLeft:"0px"}}>
 						  {
 						   	this.state.blocks.repeatedBlocks ?
 						   	this.state.blocks.repeatedBlocks.slice(first,second).map((result, index)=>{
