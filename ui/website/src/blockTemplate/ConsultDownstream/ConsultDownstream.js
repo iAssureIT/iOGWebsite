@@ -13,7 +13,7 @@ export default class ConsultDownstream extends Component {
     super(props);
     this.state = {
       "blocks":{
-        "blockTitle"         : "iOG Consult for downstream",
+        "blockTitle"         : "",
         "blockSubTitle"      : "",
         "blockDescription"   : "",
         "blockComponentName" : "",
@@ -21,58 +21,58 @@ export default class ConsultDownstream extends Component {
         "blockType"          : "simple",
         "repeatedBlocks"    : [
                       {
-                          "Title"         : "BUSINESS PROCESS MAPPING",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Design Efficient FEED that strikes the right balance of IT investments and the business",
+                          "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "FEED FOR INTEGRATED",
-                          "SubTitle"    : "iOG understands the various paradigms",
+                        "Title"         : "",
+                          "SubTitle"    : "",
                           "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "DOWNSTREAM OIL & EXPERT",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Assessment of the business requirements, analyze and enhance the Downstream",
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                      
                       {
-                        "Title"         : "OPTIMIZE THE OF EXISTING",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Finding simplification opportunities to reduce the cost of application support",
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                        "Title"         : "BUSINESS CASE",
-                          "SubTitle"    : "iOG understands the various paradigms",
+                        "Title"         : "",
+                          "SubTitle"    : "",
                           "Description" : "Device structured ap-proach to transition and manage applications",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       
                       {
-                        "Title"         : "REVIEW OF AREAS NEEDING",
-                          "SubTitle"    : "iOG understands the various paradigms",
+                        "Title"         : "",
+                          "SubTitle"    : "",
                           "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                          "Title"         : "ESTABLISHING INDUSTRY",
+                          "Title"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Ensure process streamlining & standardization and efficiency improvements",
                           "Image"     : "/images/consultsrvice.png",
                           "Link"      : "/xyz"
                       },
                       {
-                          "Title"         : "ASSESSMENT OF READINESS",
+                          "Title"         : "",
                           "SubTitle"    : "iOG understands the various paradigms",
                           "Description" : "Review of performance on key metrics Identification of opportunities for Infrastructure Rationalizationscing",
                           "Image"     : "/images/consultsrvice.png",
