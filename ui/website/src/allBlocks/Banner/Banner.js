@@ -463,7 +463,7 @@ pin6click(event){
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"171px"}}>
                    {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p">Production & analysis of wells for production & economic viability to bring crude oil & raw natural gas to the surface</p>
+                    <p className="newhovertxt_e_p">Production & analysis of wells for production and economic viability to bring crude oil and raw natural gas to the surface</p>
                    <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
                   </div> 
                   </div>

@@ -2180,75 +2180,75 @@ a.nameParts{
 
 @media only screen and (max-width : 768px){
   .Journycaro1{
-  left: 130px ! important;
-    box-shadow: 0px 0px 3px 2px #eee;
+    left: 100px ! important;
+    box-shadow: 0 10px 29px rgba(92,141,255,.22);
     margin-bottom: 20px;
 }
 .Journycaro2{
-   left: 130px ! important;
+   left: 100px ! important;
    top:400px ! important;
-    box-shadow: 0px 0px 3px 2px #eee;
+   box-shadow: 0 10px 29px rgba(92,141,255,.22);
      margin-bottom: 20px;
 
 }
 .Journycaro3{
-  left: 130px ! important;
+  left: 100px ! important;
   top:572px ! important;
-  box-shadow: 0px 0px 3px 2px #eee;
+  box-shadow: 0 10px 29px rgba(92,141,255,.22);
   margin-bottom: 20px;
 
 }
 .Journycaro4{
- left: 130px ! important;
- box-shadow: 0px 0px 3px 2px #eee;
+ left: 100px ! important;
+ box-shadow: 0 10px 29px rgba(92,141,255,.22); 
   top:742px ! important;
  margin-bottom: 20px;
 
 }
 .Journycaro5{
-  left: 130px ! important;
+  left: 100px ! important;
   top:1086px ! important;
-  box-shadow: 0px 0px 3px 2px #eee;
+  box-shadow: 0 10px 29px rgba(92,141,255,.22);
   margin-bottom: 20px;
 
 }
 .Journycaro6{
-  left: 130px ! important;
-  box-shadow: 0px 0px 3px 2px #eee;
+  left: 100px ! important;
+ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   margin-bottom: 20px;
   top:916px ! important;
 }
 .Journycaro7{
-  left: 130px ! important;
-  box-shadow: 0px 0px 3px 2px #eee;
+  left: 100px ! important;
+ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   margin-bottom: 20px;
   top:1264px ! important;
 
 }
 .Journycaro8{
- left: 130px ! important;
- box-shadow: 0px 0px 3px 2px #eee;
+ left: 100px ! important;
+ box-shadow: 0 10px 29px rgba(92,141,255,.22);
  margin-bottom: 20px;
  top:1435px ! important;
 
 }
 .Journycaro9{
- left: 130px ! important;
- box-shadow: 0px 0px 3px 2px #eee;
+ left: 100px ! important;
+box-shadow: 0 10px 29px rgba(92,141,255,.22);
  margin-bottom: 20px;
  top:1610px ! important;
 
 }
 .Journycaro10{
- left: 130px ! important;
- box-shadow: 0px 0px 3px 2px #eee;
+ left: 100px ! important;
+box-shadow: 0 10px 29px rgba(92,141,255,.22);
  margin-bottom: 20px;
  top:1770px ! important;
 
 }
 .Journycaro11{
-  left: 130px ! important;
-  box-shadow: 0px 0px 3px 2px #eee;
+  left: 100px ! important;
+ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   margin-bottom: 20px;
 
 }
@@ -2333,6 +2333,7 @@ a.nameParts{
 
 
   .webclientbackimg{
+
     width: 550px ! important;
   }
   .webclientcaro{
@@ -2440,41 +2441,49 @@ a.nameParts{
 }
 .Journycaro1{
   left:0px ! important;
+  top:140px ! important;
+}
+.Journycaro2{
+  /*left:0px ! important;*/
+  top:320px ! important;
 }
 .Journycaro3{
   left:0px ! important;
+  top:500px ! important;
 }
 .Journycaro4{
   left:0px ! important;
+  top:695px ! important;
 }
 .Journycaro5{
   left:0px ! important;
-  top:1065px ! important;
+  top:1055px ! important;
 }
 .Journycaro6{
   left:0px ! important;
+  top:875px ! important;
 }
 .Journycaro7{
   left:0px ! important;
-  top:1190px ! important;
+  top:1245px ! important;
 }
 .Journycaro8{
   left:0px ! important;
-  top:1337px ! important;
+  top:1440px ! important;
 }
 .Journycaro9{
   left:0px ! important;
-  top:1480px ! important;
+  top:1630px ! important;
 }
 .Journycaro10{
   left:0px ! important;
-  top:1665px ! important;
+  top:1825px ! important;
 }
 .Journycaro11{
   left:0px ! important;
 }
 .new_wizard_journy{
-  margin-top: 880px;
+  margin-top: 1065px;
 }
 .add4 {
     display: none;
@@ -2513,7 +2522,10 @@ a.nameParts{
     top: 66px ! important;
   }
   .webclientbackimg{
-    width: 550px ! important;
+    width: 350px ! important;
+    height: 150px ! important;
+    margin-left: 10px ! important;
+    box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
   .webclientcaro{
     width: 321px ! important;

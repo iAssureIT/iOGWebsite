@@ -167,6 +167,7 @@ export default class Ourjournyblock extends Component {
         }
         if (scroll >= 1450) {
             $(".Journycaro10").addClass("journyanim");
+            
         }
        /* if (scroll >= 1650) {
             $(".Journycaro11").addClass("journyanim");
