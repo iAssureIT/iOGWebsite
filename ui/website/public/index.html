@@ -34,6 +34,7 @@
 
 
       new google.translate.TranslateElement({pageLanguage: 'bg', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+      console.log("pageLanguage",pageLanguage);
        
 
 
@@ -62,7 +63,7 @@
   jQuery('.lang-select').click(function() {
     location.reload();
     var theLang = jQuery(this).attr('data-lang');
-    console.log("data-lang",data-lang);
+    console.log("data-lang----",data-lang);
     // if(theLang=="fr"){
     //   $('#dropdownFr').css('color','red');
     // }

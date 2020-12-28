@@ -68,6 +68,9 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
     this.setState({
       pageUrl:pageUrl
     })
+    if(pageUrl=="#googtrans(en|fr)"){
+        $('.expertiesdropdown').css('marginLeft','-565px');
+    }
     var divUrl = currentLocation ? currentLocation.split('/') : "";
      console.log("divUrl[4]",divUrl[4]);
     if(divUrl[3] == "#googtrans(en|fr)"){

@@ -189,7 +189,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  font-size: 12px;
+  font-size: 12px;  
   font-weight: normal;
 }
 
@@ -372,7 +372,7 @@
 }
 .expertiesdropdown{
     width: 945px;
-    margin-left: -332px;
+    margin-left: -444px;
     padding-left: 40px;
 }
 .columnhead{
