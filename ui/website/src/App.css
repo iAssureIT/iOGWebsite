@@ -840,6 +840,16 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      .mobile_width{
         
      }
+     .Typecomponent1Img_vision{
+      width: 350px ! important;
+      height: 185px ! important;
+     }
+     .webclientbackimg{
+      margin-left: 10px ! important;
+     }
+     .MobileDivHeight{
+      height: 600px ! important;
+     }
      .type1btnDiv{
         margin-bottom: 0px ! important;
 
