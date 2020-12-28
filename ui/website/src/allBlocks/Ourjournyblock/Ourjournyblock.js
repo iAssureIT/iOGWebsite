@@ -61,9 +61,10 @@ export default class Ourjournyblock extends Component {
   componentDidMount(){
     $(document).ready(function(){
     $(window).scroll(function(){
-   var windowtop =$(window).scrollTop();
-   var windowheight =$(window).height();;
-  
+     var windowtop =$(window).scrollTop();
+     var windowheight =$(window).height();
+     console.log("windowtop",windowtop);
+    
 
       var nb1t = (2*windowtop)+"px";
       var nbtheight = 200;
@@ -73,6 +74,10 @@ export default class Ourjournyblock extends Component {
       if(windowheight == 669){
         $(".roadjourny").addClass("roadjournyoverflow");
       
+      }
+      else  if(windowheight == 0){
+        $('.Journycaro1').css('display','none');
+
       }
       else{
           $(".roadjourny").css("height",nb1t);
@@ -87,43 +92,87 @@ export default class Ourjournyblock extends Component {
         $(window).scroll(function() 
     {    
         var scroll = $(window).scrollTop();
-
+        
         if (scroll >= 50) {
             $(".add1").addClass("addanim");
-        } 
+        }else{
+           $(".add1").removeClass("addanim");
+
+        }
         if (scroll >= 150) {
             $(".add2").addClass("addanim");
+        }else{
+           $(".add2").removeClass("addanim");
+
         } 
         if (scroll >= 200) {
             $(".add3").addClass("addanim");
-        } 
+        }else{
+           $(".add3").removeClass("addanim");
+
+        }
         if (scroll >= 250) {
             $(".add4").addClass("addanim");
         } 
+        else{
+           $(".add4").removeClass("addanim");
+
+        }
         if (scroll >= 330) {
             $(".add5").addClass("addanim");
-        } 
+        }
+        else{
+           $(".add5").removeClass("addanim");
+
+        }
         if (scroll >= 430) {
             $(".add6").addClass("addanim");
         } 
+        else{
+           $(".add6").removeClass("addanim");
+
+        }
         if (scroll >= 630) {
             $(".add7").addClass("addanim");
         } 
+        else{
+           $(".add7").removeClass("addanim");
+
+        }
         if (scroll >= 750) {
             $(".add8").addClass("addanim");
-        } 
+        } else{
+           $(".add8").removeClass("addanim");
+
+        }
         if (scroll >= 900) {
             $(".add9").addClass("addanim");
-        }   
+        }  
+        else{
+           $(".add9").removeClass("addanim");
+
+        } 
          if (scroll >= 1250) {
             $(".add10").addClass("addanim");
         } 
+        else{
+           $(".add10").removeClass("addanim");
+
+        }
          if (scroll >= 1450) {
             $(".add11").addClass("addanim");
         }  
+        else{
+           $(".add11").removeClass("addanim");
+
+        }
          if (scroll >= 1600) {
             $(".add12").addClass("addanim");
-        }           
+        } 
+        else{
+           $(".add12").removeClass("addanim");
+
+        }          
     });
  $(window).scroll(function() 
     {    
@@ -139,20 +188,31 @@ export default class Ourjournyblock extends Component {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 50) {
-            $(".Journycaro1").addClass("journyanim");
-        }
+              $(".Journycaro1").addClass("journyanim");
+            }else{
+              $(".Journycaro1").removeClass("journyanim");
+            }
+
         if (scroll >= 150) {
             $(".Journycaro2").addClass("journyanim");
-        }
+        }else{
+              $(".Journycaro2").removeClass("journyanim");
+            }
         if (scroll >= 200) {
             $(".Journycaro3").addClass("journyanim");
-        }
+        }else{
+              $(".Journycaro3").removeClass("journyanim");
+            }
         if (scroll >= 250) {
             $(".Journycaro4").addClass("journyanim");
-        } 
+        }else{
+              $(".Journycaro4").removeClass("journyanim");
+            }
         if (scroll >= 330) {
             $(".Journycaro5").addClass("journyanim");
-        } 
+        } else{
+              $(".Journycaro5").removeClass("journyanim");
+            }
         if (scroll >= 430) {
             $(".Journycaro6").addClass("journyanim");
         }

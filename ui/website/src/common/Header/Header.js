@@ -34,6 +34,7 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
           if(pageUrl == '/ourjourney'){
             $(".hidepoweredby").css("backgroundColor", "#fff");
           }
+
            if(pageUrl == '/#googtrans(en|fr)'){
             $("#dropdownFr").css("color", "red");
           }
@@ -75,6 +76,9 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
        $('.ct-topbar').css('bottom','76px');
 
     }
+     if(pageUrl == '/contact-us'){
+            $(".contactBar").css("display", "none");
+          }
 
     if(divUrl[2]== "#googtrans(en|de)" ){
       $('.expertiesdropdown').css('marginLeft','-396px');
