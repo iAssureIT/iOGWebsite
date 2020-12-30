@@ -54,13 +54,16 @@
 
 .yearbox{
     box-shadow: 0px 0px 2px 3px #c2b9b9;
-    width: 60px;
-    height: 47px;
-    /*padding-left:10px;*/
+    width: 52px;
+    min-height: 47px;
+    text-align: center;
+    padding-left:3px;
     padding-top: 7px;
+    /*padding-left: 0px;*/
+    padding-right: 0px;
     overflow: hidden;
     margin-right: 45px;
-    font-size: 11px;
+    font-size: 12px;
     color:#333;
     border-radius: 3px;
 }

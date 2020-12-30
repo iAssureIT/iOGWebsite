@@ -17,28 +17,28 @@ export default class ConsultDownstream extends Component {
         "blockSubTitle"      : "",
         "blockDescription"   : "",
         "blockComponentName" : "",
-        "fgImage"            : "/images/consultdown.png",
+        "fgImage"            : "",
         "blockType"          : "simple",
         "repeatedBlocks"    : [
                       {
                           "Title"         : "",
                           "SubTitle"    : "",
                           "Description" : "",
-                          "Image"     : "/images/consultsrvice.png",
-                          "Link"      : "/xyz"
-                      },
-                      {
-                        "Title"         : "",
-                          "SubTitle"    : "",
-                          "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-                          "Image"     : "/images/consultsrvice.png",
+                          "Image"     : "",
                           "Link"      : "/xyz"
                       },
                       {
                         "Title"         : "",
                           "SubTitle"    : "",
                           "Description" : "",
-                          "Image"     : "/images/consultsrvice.png",
+                          "Image"     : "",
+                          "Link"      : "/xyz"
+                      },
+                      {
+                        "Title"         : "",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"     : "",
                           "Link"      : "/xyz"
                       },
                      
@@ -46,29 +46,29 @@ export default class ConsultDownstream extends Component {
                         "Title"         : "",
                           "SubTitle"    : "",
                           "Description" : "",
-                          "Image"     : "/images/consultsrvice.png",
+                          "Image"     : "",
                           "Link"      : "/xyz"
                       },
                       {
                         "Title"         : "",
                           "SubTitle"    : "",
-                          "Description" : "Device structured ap-proach to transition and manage applications",
-                          "Image"     : "/images/consultsrvice.png",
+                          "Description" : "",
+                          "Image"     : "",
                           "Link"      : "/xyz"
                       },
                       
                       {
                         "Title"         : "",
                           "SubTitle"    : "",
-                          "Description" : "Detailed Analysis of Business Processes & Client quirement Reengineering processes to align",
-                          "Image"     : "/images/consultsrvice.png",
+                          "Description" : "",
+                          "Image"     : "",
                           "Link"      : "/xyz"
                       },
                       {
                           "Title"         : "",
-                          "SubTitle"    : "iOG understands the various paradigms",
-                          "Description" : "Ensure process streamlining & standardization and efficiency improvements",
-                          "Image"     : "/images/consultsrvice.png",
+                          "SubTitle"    : "",
+                          "Description" : "",
+                          "Image"     : "",
                           "Link"      : "/xyz"
                       },
                       {

@@ -46,14 +46,14 @@
 #consultdown_data0{
    position: absolute;
    top: 22em;
-   right: 1%;
+   right: 3%;
    width: 600px;
 
 }
 #consultdown_data1{
    position: absolute;
    top: 35em;
-   left:8%;
+   left:5%;
    width: 552px;
    text-align: right;
 
@@ -101,7 +101,7 @@
 #consultdown_data2{
     position: absolute;
     top: 48em;
-    right: 4%;
+    right: 5%;
     width: 552px;
     text-align: left;
 
@@ -232,7 +232,7 @@
 #consultdown_img0{
     position: absolute;
     top: 22em;
-    left: 27em;
+    left: 23em;
     height: 135px;
 }
 #consultdown_img1{
@@ -244,7 +244,7 @@
 #consultdown_img2{
     position: absolute;
     top: 48em;
-    left: 25em;
+    left: 23em;
     height: 135px;
 }
 #consultdown_img3{
