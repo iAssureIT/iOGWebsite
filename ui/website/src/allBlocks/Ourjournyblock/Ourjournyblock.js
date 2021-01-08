@@ -152,13 +152,13 @@ export default class Ourjournyblock extends Component {
            $(".add9").removeClass("addanim");
 
         } 
-         if (scroll >= 1250) {
+        /* if (scroll >= 1250) {
             $(".add10").addClass("addanim");
         } 
         else{
            $(".add10").removeClass("addanim");
 
-        }
+        }*/
          if (scroll >= 1450) {
             $(".add11").addClass("addanim");
         }  
