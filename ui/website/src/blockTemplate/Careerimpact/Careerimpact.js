@@ -66,7 +66,7 @@ componentDidMount(){
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
-                  console.log("job title",response);
+                  console.log("career response---------------------",response);
                     if(response.data){
                       this.setState({
                           blocks:response.data

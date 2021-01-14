@@ -7,6 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import $ from "jquery";
 import './Header.css';
 import 'bootstrap/js/modal.js';
+// import GoogleTranslate from '../Applicant/GoogleTranslate';
 import './Megamenu.js'
 import Contactform       from '../../allBlocks/Contactform/Contactform.js';
 
@@ -59,8 +60,8 @@ import Contactform       from '../../allBlocks/Contactform/Contactform.js';
     // this.changeLanguage();
 
     // this.handlechange();
-    var fr_id=this.state.id;
-    console.log("fr_id",fr_id);
+   /* var fr_id=this.state.id;
+    console.log("fr_id",fr_id);*/
 
     var currentLocation = window.location.href;
     // console.log("currentLocation----",currentLocation);

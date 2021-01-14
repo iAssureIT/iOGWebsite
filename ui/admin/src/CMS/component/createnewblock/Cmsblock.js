@@ -878,11 +878,11 @@ class CmsBlock extends Component {
                     												</div>
               														}
               												    {   
-                                            this.state.rBlocksSubTitle === ""
+                                           /* this.state.rBlocksSubTitle === ""
                                             ?
                                                  this.state.parsed.rBlocksSubTitle === ""
                                                   ? null
-                                                  :
+                                                  :*/
                                                   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                     <div className="form-group ">
                                                       <label className="label-category labelform">Repeated Sub Title<span className="astrick"></span></label>
@@ -890,7 +890,7 @@ class CmsBlock extends Component {
                                                     </div>
                                                   </div>
 
-                                            : ""
+                                           /* : ""*/
                                                  
               														}
               											
