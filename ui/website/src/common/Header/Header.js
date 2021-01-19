@@ -190,14 +190,6 @@ triggerHtmlEvent(element, eventName) {
 
  }
 
-
- googleTranslateElementInit() {
-
-    const google = window.google;
-    new google.translate.TranslateElement({pageLanguage: this.state.lang, layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-     // window.location.reload();
- }
-
  /*  triggerHtmlEvent(element, eventName) {
     var event;
     if (document.createEvent) {

@@ -30,17 +30,10 @@
 
 
 <script type="text/javascript">
-    function googleTranslateElementInit() {
-
-
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-      console.log("pageLanguage",pageLanguage);
-       
-
-
-
-
-    }
+   function googleTranslateElementInit() {
+    // setCookie('googtrans', '/en/pt',1);
+    new google.translate.TranslateElement('google_translate_element');
+  }
 
   function triggerHtmlEvent(element, eventName) {
     var event;
