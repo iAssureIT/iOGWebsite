@@ -1579,17 +1579,17 @@ animation: fadeIn ease 20s;
     font-size: 13px;
     font-weight: 500;
     padding-left: 10px;
-    text-align: center;
+    text-align: justify;
     position: absolute;
     width: 177px;
 }
 .newhovertxt_again{
-    top: 122px;
+    top: 132px;
     position: absolute;
     width: 160px;
     font-weight: 500;
-    left: 103px;
-    text-align: center;
+    left: 92px;
+    text-align: justify;
     font-size: 13px;
 }
 .newhovertxt_6{
@@ -1603,11 +1603,11 @@ animation: fadeIn ease 20s;
   width: 113px;
 }
 .newhovertxt_8{
-    margin-top: -275px;
+    margin-top: -260px;
     margin-left: 95px;
-    font-size: 12.6px;
+    font-size: 13px;
     padding-left: 10px;
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
     width: 169px;
     position: absolute;
@@ -1623,13 +1623,13 @@ animation: fadeIn ease 20s;
   width: 122px;
 }
 .newhovertxt_4{
-    margin-top: -273px;
+    margin-top: -260px;
     margin-left: 102px;
-    font-size: 12.5px;
+    font-size: 13px;
     width: 164px;
     font-weight: 500;
     /* padding-left: 10px; */
-    text-align: center;
+    text-align: justify;
     position: absolute;
 }
 .newhovertxt_5{
@@ -1646,21 +1646,139 @@ animation: fadeIn ease 20s;
     font-size: 13px;
     font-weight: 500;
     padding-left: 10px;
-    text-align: center;
+    text-align: justify;
     position: absolute;
     width: 183px;
 
 }
 .newhovertxt_e_p1{
-    margin-top: -234px;
+    margin-top: -226px;
     margin-left: 81px;
-    font-size: 12.5px;
+    font-size: 13px;
     padding-left: 10px;
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
     position: absolute;
-    width: 150px;
+    width: 170px;
+    height: 100px;
+    /*overflow: scroll;*/
 
+}
+#style-14::-webkit-scrollbar-thumb
+{
+  /*background-color: #7a7676;*/
+  /*border-radius: 30px;*/
+
+  /*background: red;*/
+}
+#style-3::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+#style-14::-webkit-scrollbar-track
+{
+  width: 6px;
+  /*background-color: #F5F5F5;*/
+ }
+
+#style-3::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
+#style-2::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: 0px 11px 15px 1px #ccc;;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #eee;
+}
+::-webkit-scrollbar-button {
+    background: #ccc;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /*border-radius: 30px;*/
+}
+::-webkit-scrollbar-track-piece {
+    background: #cecece;
+}
+::-webkit-scrollbar-thumb {
+    background: #009de2;
+}
+
+
+
+.scrollbar
+{
+ margin-left: 87px;
+ float: left;
+ height: 85px;
+ width: 165px;
+ padding-right: 11px;
+ overflow-y: scroll;
+ margin-bottom: 25px;
+}
+.scrollbar1 {
+    margin-left: 87px;
+    float: left;
+    height: 103px;
+    width: 195px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    padding-left: 22px;
+    padding-right: 12px;
+}
+.scrollbar2 {
+    margin-left: 87px;
+    float: left;
+    height: 103px;
+    width: 195px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.scrollbar3 {
+    margin-left: 87px;
+    float: left;
+    height: 103px;
+    width: 186px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    padding-left: 19px;
+    padding-right: 12px;
+}
+.scrollbar4{
+    /*margin-left: 87px;*/
+    float: left;
+    height: 103px;
+    width: 186px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    padding-left: 14px;
+    padding-right: 12px;
+}
+.scrollbar5{
+    /*margin-left: 87px;*/
+    float: left;
+    height: 103px;
+    width: 180px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    padding-left: 12px;
+    padding-right: 18px;
+}
+
+
+
+.force-overflow
+{
+  min-height: 102px;
+  /*background-color: red;*/
 }
 .new_HoverDivforboat img{
   width: 365px;

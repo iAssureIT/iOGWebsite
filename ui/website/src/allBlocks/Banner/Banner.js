@@ -334,43 +334,48 @@ pin6click(event){
             {/* <img src="/images/newbanner_1.png"className="col-lg-12 col--md-12 col-sm-12 col-xs-12 img-responsive NOpadding"/>*/}
               <div className=""style={{overflow:"hidden"}}>
               <figure className="oilimage"id="oilimageDiv">
-                 <div className="new_HoverDiv7">
+                 <a href="/petrochemicals">
+                  <div className="new_HoverDiv7">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                    <div style={{width:"177px"}}>
-                   <p className="newhovertxt">Processing multiple grades, grade transitions, product sequencing & the variable cost of feedstocks etc.</p>
-                   <a href="/petrochemicals"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   <p className="newhovertxt scrollbar3">Digital transformation in petrochemicals industry presents significant opportunities to increase innovation in products and solutions, in addition to improvement in the operational performance.</p>
+                  {/* <a href="/petrochemicals"><span className="servicekbtnarrow7"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   */}
                   </div>  
                  </div>
+                </a> 
                  <img alt="" src="/images/Banner3_6.png"className="tabimage scaleimage oilimage_img"/>
                 </figure>
                {/* <figure className="gasimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/Banner3_8.png" className="tabimage scaleimage"style={{width:"255px"}}/>
                 </figure>*/}
                 <figure className="nexttogasimage"id="nexttogasimageDiv">
-                 <div className="new_HoverDiv5">
+                  <a href="/refinery"><div className="new_HoverDiv5">
                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                    <div style={{width:"165px"}}>
-                    <p className="newhovertxt_8">Keeping up with the technological advancements & making sense out of IT investments are few challenges of Modern Refining Business</p>
-                    <a href="/refinery">
-                      <span className="servicekbtnarrow8">
-                       <i className="fa fa-chevron-circle-right"></i>
-                      </span>
-                    </a>
-                  </div>  
-                 </div>
+                      <div style={{width:"165px"}}>
+                       <p className="newhovertxt_8 scrollbar2" id="style-14">Refiners seeking to improve their manufacturing processes with digital technology are focusing on innovations to reduce production costs and improve manufacturing efficiency while gearing up their workforce for the new, digital way of working.</p>
+                      {/*<a href="/refinery">
+                        <span className="servicekbtnarrow8">
+                         <i className="fa fa-chevron-circle-right"></i>
+                        </span>
+                      </a>*/}
+                    </div>  
+                  </div>
+                 </a> 
                   <img alt="" className="img-responsive scaleimage nexttogasimg_size nexttogasimage_img"src="/images/Banner3_5.png" /> 
                 </figure>
                {/* <figure className="petrolimage"style={{overflow:"hidden"}}>
                  <img alt="" src="/images/newbanner_img10.png"className="tabimage"style={{width:"241px"}}/>
                 </figure>*/}
                 <figure className="petrolimage1"id="petrolimage1Div">
-                 <div className="new_HoverDiv2">
-                  <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                  <div style={{width:"165px"}}>
-                   <p className="newhovertxt_again">Unpredictable raw material prices,outdating process plants & machinery, data overload caused by leveraging new-age technologies</p>
-                   <a href="/chemicals"><span className="servicekbtnarrow1"><i className="fa fa-chevron-circle-right"></i></span></a>
-                  </div>  
-                 </div>
+                 <a href="/chemicals">
+                  <div className="new_HoverDiv2">
+                    <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
+                    <div style={{width:"165px"}}>
+                     <p className="newhovertxt_again scrollbar4" id="style-14">Digitally enabled business work processes have tremendous potential for the Chemicals Industry, allowing them to innovate and impact demand trends, create new distribution channels and strengthen their production processes in terms of yield and opex.</p>
+                    </div>  
+                   </div>
+                 </a> 
                  <img alt="" className="img-responsive tabimage scaleimage petrolimage1_img"src="/images/newbanner_img5.png"/>
                 </figure>
                 {/* <figure className="plantimage1"id="plantimage1Div">
@@ -396,14 +401,15 @@ pin6click(event){
                    </div>
                  <div className="new_HoverDiv4"> 
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                  <div style={{width:"165px"}}>
-                    
-                     <p className="newhovertxt_4">Skid & modular construction techniques that are common in gas processing plant construction are hindering the integration of various critical sub-processes.</p>
-                   <a href="/gas-processing"><span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>
-                  </div>
+                     <a href="/gas-processing">
+                      <div style={{width:"165px"}}> 
+                       <p className="newhovertxt_4 scrollbar5">The extent of digital adoption in the Gas Processing sector will likely depend on companies’ receptiveness to change. A data-driven approach can potentially reduce annual downtime to a reasonable extent as well as help reduce the high capital intensity of the industry.</p>
+{/*                       <span className="servicekbtnarrow3"><i className="fa fa-chevron-circle-right"></i></span></a>*/}
+                      </div>
+                     </a>  
                  </div>
                  <img alt="" className="img-responsive tabimage scaleimage plantimage11_img"src="/images/Banner3_8.png"/>
-                </figure>
+                 </figure>
                 <figure className="waterimg"id="waterimgDiv">
                   <div className="ripplediv">
                     {/* <div className="ripplebox" onClick={this.pinclick.bind(this)} title="Click Me">
@@ -430,14 +436,18 @@ pin6click(event){
                 </figure>
                 
                  <figure className="boat_img " style={{overflow:"hidden"}} id="boat_imgDiv">
-                  <div className="new_HoverDivforboat">
+                  <a href="/lng"><div className="new_HoverDivforboat">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                   <div style={{width:"171px"}}>
-                   {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p1">Integrated modeling between the utility system & liquefaction process for optimal utilization of LNG fuel</p>
-                   <a href="/lng"><span className="servicekbtnarrow4_1"><i className="fa fa-chevron-circle-right"></i></span></a>
-                  </div> 
+                     <div style={{width:"171px"}}>
+                     {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
+                      {/*<div class="scrollbar" id="style-14">
+                        <div class="force-overflow"></div>
+                      </div>*/}
+                      <p className="newhovertxt_e_p1 scrollbar"><span className="force-overflow">Digital transformation of the LNG value chain is going to play the key role along its growth at the fastest rate among all fossil fuels in the coming decade. More & more LNG operators are striving for centralized integrated platform to exchange information and ensure standardization across operations.</span></p>
+                    {/* <a href="/lng"><span className="servicekbtnarrow4_1"><i className="fa fa-chevron-circle-right"></i></span></a>*/}
+                     </div> 
                   </div>
+                 </a> 
                   
                    
                    <div class="drop-container1">
@@ -459,22 +469,23 @@ pin6click(event){
                    </div>
                  </div>  */}
                  <figure className="boat_img2" id="boat_img2Div">
-                  <div className="new_HoverDiv1">
+                   <a href="/oil-&-gas-e-&-p"><div className="new_HoverDiv1">
                     <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
-                   <div style={{width:"171px"}}>
-                   {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
-                    <p className="newhovertxt_e_p">Production & analysis of wells for production and economic viability to bring crude oil and raw natural gas to the surface</p>
-                   <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>
-                  </div> 
-                  </div>
-                   <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"/>
+                     <div style={{width:"171px"}}>
+                     {/* <i className="fa fa-times hover_close"onClick={this.pin1removeclick.bind(this)}></i>*/}
+                      <p className="newhovertxt_e_p scrollbar1" id="style-14">While striving to discover what lies below the surface, the E&P segment has not only learnt to deal with large volumes of data by leveraging IT, in the next phase of digital transformation, it is focussing on data mapping, analysis and real-time decision-making between the layers of IT applications and machines.</p>
+                     {/*<a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow4"><i className="fa fa-chevron-circle-right"></i></span></a>*/}
+                    </div>
+                   </div>
+                  </a> 
+                 <img alt="" className="img-responsive tabimage  boat_img2_img"src="/images/Banner3_4.png"/>
                 </figure>
                 <figure className="waterimg2"id="waterimg2Div">
                  <div className="new_HoverDiv6">
                   <img className="img-responsive" id="loading" src="/images/newbanner_img14.png"/>
                   <div style={{width:"139px"}}>
                    <p className="newhovertxt_6">Merchandising different types of oil and gas</p>
-                   <a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>
+                   {/*<a href="/oil-&-gas-e-&-p"><span className="servicekbtnarrow2"><i className="fa fa-chevron-circle-right"></i></span></a>*/}
                   </div>
                   </div>
                  <img alt="" className="img-responsive scaleimage waterimg2Div_img"src="/images/newbanner_img4.png"/>
