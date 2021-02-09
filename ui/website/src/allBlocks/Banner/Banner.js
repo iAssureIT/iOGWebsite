@@ -60,7 +60,7 @@ componentDidMount(){
     }, function() {
       $('#blackbannerDiv').addClass('hiddendiv');
        $('.boat_img').css('z-index','0');
-       $('.waterimg').css('z-index','10');
+       $('.waterimg').css('z-index','0');
        $('.new_HoverDivforboat').css('display','none');
         // $('#hidepoweredbyblack1').addClass('hiddendiv');
     

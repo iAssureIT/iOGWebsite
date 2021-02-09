@@ -1698,13 +1698,13 @@ animation: fadeIn ease 20s;
     background-color: #eee;
 }
 ::-webkit-scrollbar-button {
-    background: #ccc;
+    background: #e9e8e8;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     /*border-radius: 30px;*/
 }
 ::-webkit-scrollbar-track-piece {
-    background: #cecece;
+    background:#e9e8e8;
 }
 ::-webkit-scrollbar-thumb {
     background: #009de2;
