@@ -708,6 +708,10 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .new_round-tabfor4{
         margin-left:219% ! important;
      }
+      .new_wizardNotefor4
+       {
+         right: -88px ! important;
+       }
      .new_wizardNotefor4{
       left:240px ! important;
      }

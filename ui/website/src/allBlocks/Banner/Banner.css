@@ -828,11 +828,36 @@ height: 90px;
   .result_hover {
     border: 1px solid #fff;
   }
+  @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px){
+      .resbanner{
+        height: 670px ! important;
+
+      }
+ }
+  @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px){
+      .resbanner{
+        height: 735px ! important;
+
+      }
+ }
+ @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .resbanner{
+        height: 735px ! important;
+
+      }
+ }
 
   .resbanner{
     background-image: url("/images/Mobile.png");
     background-size: cover;
-    height: 640px;
+    height: 590px;
     object-fit: contain;
     background-repeat: no-repeat;
   } 
@@ -2929,3 +2954,25 @@ div.drop-container:after {
   }
 
 }
+
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 823px) 
+  and (-webkit-device-pixel-ratio: 3.5) 
+  and (orientation: portrait) {
+    .resbanner{
+      height: 850px ! important;
+    }
+
+}
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 731px) 
+  and (-webkit-device-pixel-ratio: 3.5) 
+  and (orientation: portrait) {
+    .resbanner{
+      height: 830px ! important;
+    }
+
+}
+

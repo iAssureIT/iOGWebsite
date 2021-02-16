@@ -2841,10 +2841,45 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     top: 1123px ! important;
    }
   } 
+
   @media screen and (min-width: 1900px) {
   .add10 {
     top: -22px ! important;
     left:785px ! important;
   }
 }
+
+@media only screen 
+    and (device-width : 1440px) 
+    and (device-height : 900px) { 
+    .Journycaro10{
+      left: 480px ! important;
+
+      }
+      .add9{
+        left:357px !important;
+      }
+      .add10{
+        left:138px ! important;
+      }
+      .add8{
+        right: -518px ! important;
+      }
+      .Journycaro5{
+        left:996px ! important;
+      }
+      .Journycaro6{
+        left:368px ! important;
+      }
+      .add6{
+        left:254px ! important;
+      }
+      .Journycaro4{
+        left:877px ! important;
+      }
+      .iogimg_4{
+        width: 866px ! important;
+        margin-left: 0px ! important
+      }
+ }
 
