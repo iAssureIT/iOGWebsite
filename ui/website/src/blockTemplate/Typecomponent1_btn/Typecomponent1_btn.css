@@ -15,7 +15,7 @@
 }
 .type1btnDiv{
   height: 480px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding-top: 25px;
   margin-bottom: 65px;
 }
@@ -59,7 +59,7 @@
   /*width: 100%;*/
 }
 .TypebtnText{
-  margin-left: 30px;
+  margin-left: 90px;
 }
 .Typecomponent2BtnImg{
   width: 500px;
@@ -72,6 +72,17 @@
   padding-left: 100px ! important;
   margin-top: 20px ! important;
 }
+
+@media only screen 
+    and (device-width : 1920px) 
+    and (device-height : 768px){
+  .BtnImageDown{
+    padding-left: 207px ! important;
+    }
+    .TypebtnText {
+      margin-left: 264px;
+    }
+ } 
 .Typecomponent2BtnImg img{
 
  /*width:400px;

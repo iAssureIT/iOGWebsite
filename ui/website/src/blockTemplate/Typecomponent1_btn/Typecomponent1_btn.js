@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import $     from 'jquery';
 
 import './Typecomponent1_btn.css';
 
@@ -23,7 +24,13 @@ export default class Typecomponent1 extends React.Component {
     
   }
 componentDidMount(){
-/*console.log("==>",this.props.block_id);*/
+
+   var pageUrl = window.location.pathname;
+   // console.log("pageUrl in typecomp1btn",pageUrl);
+   let a = pageUrl ? pageUrl.split('/') : "";
+   if(pageUrl =="/industries"){
+        $('.TypecomponentBtnImg').css('paddingTop','120px');
+      }
           {
              axios
                 .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)

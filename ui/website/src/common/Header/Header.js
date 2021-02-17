@@ -379,7 +379,7 @@ handlechange(event){
             {console.log("-----",this.state.pageUrl == "/about-us" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
               <a href="/about-us" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourney"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
                 <button class="dropbtn">ABOUT US 
-                 <i className="fa fa-angle-down Headerdownarraow"></i>
+                 <i className="fa fa-angle-down Headerdownarraow hidden-xs"></i>
                </button>
              </a>
 
@@ -394,7 +394,7 @@ handlechange(event){
             <div class="dropdown">
               {console.log("-----",this.state.pageUrl === "/service-arms" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
               <button class="dropbtn"><a href="/services"className={this.state.pageUrl == "/services" ? "Currentactivetab NopaddingToA":"NopaddingToA"}>SERVICES</a> 
-                <i  className={this.state.pageUrl == "/service-arms" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
+                <i  className={this.state.pageUrl == "/service-arms" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow hidden-xs":"NopaddingToA fa fa-angle-down Headerdownarraow hidden-xs"}></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab  hidden-xs" style={{position:"fixed"}}>
                  <a href="/iog-study" className={this.state.pageUrl == "/iog-study" ? "Currentactivetab " : "" } >iOGStudy</a>
@@ -423,7 +423,7 @@ handlechange(event){
                 ||  this.state.pageUrl == "/application-support"  ||  this.state.pageUrl == "/application-integration" ||  this.state.pageUrl == "/visualization-&-dashboards" ||  this.state.pageUrl == "/industries-v4" ||  this.state.pageUrl == "/steady-state-simulation" 
                 ||  this.state.pageUrl == "/dynamic-simulation"  ||  this.state.pageUrl == "/operator-training" ||  this.state.pageUrl == "/occupational-health-management" ||  this.state.pageUrl == "/process-safety-management" ||  this.state.pageUrl == "/environment-management" 
                 ||  this.state.pageUrl == "/apc-services"  ||  this.state.pageUrl == "/etrm" ||  this.state.pageUrl == "/utility-network-optimization" ||  this.state.pageUrl == "/equipment-monitoring" ||  this.state.pageUrl == "/energy-accounting" 
-                ||  this.state.pageUrl == "/asset-lifecycle"  ||  this.state.pageUrl == "/asset-criticality-analysis" ||  this.state.pageUrl == "/asset-strategy-management" ||  this.state.pageUrl == "/inspection-&-calibration"  ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
+                ||  this.state.pageUrl == "/asset-lifecycle"  ||  this.state.pageUrl == "/asset-criticality-analysis" ||  this.state.pageUrl == "/asset-strategy-management" ||  this.state.pageUrl == "/inspection-&-calibration"  ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow hidden-xs":"NopaddingToA fa fa-angle-down Headerdownarraow hidden-xs"}></i>
               </button>
               <div class="col-lg-10 col-md-10 hidden-sm hidden-xs dropdown-content expertiesdropdown NOPadding" id="dropdownFr" style={{position:"fixed"}}>
                <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 NOPadding">
@@ -508,7 +508,7 @@ handlechange(event){
                 ||  this.state.pageUrl == "/apc-services"  ||  this.state.pageUrl == "/etrm" ||  this.state.pageUrl == "/utility-network-optimization" ||  this.state.pageUrl == "/equipment-monitoring" ||  this.state.pageUrl == "/energy-accounting" */
                        ? "Currentactivetab NopaddingToA" : "NopaddingToA" }>INDUSTRIES</a> 
                  <i className={this.state.pageUrl == "/newindustries" ||  this.state.pageUrl == "/refinery" ||  this.state.pageUrl == "/petrochemicals"  ||  this.state.pageUrl == "/chemicals" ||  this.state.pageUrl == "/gas-processing" ||  this.state.pageUrl == "/oil-&-gas-e-&-p"  
-                ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow":"NopaddingToA fa fa-angle-down Headerdownarraow"}></i>
+                ||  this.state.pageUrl == "/well-drilling" ||  this.state.pageUrl == "/reservior-management" ||  this.state.pageUrl == "/geology-geophysics" ||  this.state.pageUrl == "/supply-chain-management" ? "Currentactivetab NopaddingToA fa fa-angle-down Headerdownarraow hidden-xs":"NopaddingToA fa fa-angle-down Headerdownarraow hidden-xs"}></i>
               </button>
               <div class="dropdown-content normaldropdown dropdownintab  hidden-xs" style={{position:"fixed"}}>
                 <a href="/refinery">Refinery</a>

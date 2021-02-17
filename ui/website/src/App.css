@@ -7,6 +7,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     font-family: 'Raleway', sans-serif ! important;
     /*color:#000;*/
 }
+.TypecomponentBtnImg{
+  width: 465px ! important;
+  height: 380px ! important;
+  padding-top: 50px;
+  /*float:right;*/
+}
+.contentheaderNewPage{
+  letter-spacing: 0.5px;
+}
 .sharefacebook{
     padding-top: 150px;
 }
@@ -29,7 +38,12 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   object-fit: contain;
 }
 
-
+.ApplicationImg{
+  padding-left: 20px  !important;
+}
+.ApplicationImg img{
+  object-fit: contain;
+}
 .fs12{
     font-size: 12px;
 }
@@ -1010,7 +1024,20 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       min-height: 215px ! important;
      }
 
-  }  
+  } 
+
+  @media only screen 
+    and (device-width : 1920px) 
+    and (device-height : 768px){
+   .ApplicationImg{
+    padding-left: 90px ! important;
+  }
+
+   .ApplicationImg img{
+    object-fit: contain;
+   }
+
+} 
 
 
 

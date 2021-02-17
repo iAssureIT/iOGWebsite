@@ -189,7 +189,7 @@ componentDidMount(){
 	                	</div>
 	                    </div>
 	      
-	                	<div className="col-lg-4 col-md-4 hidden-sm hidden-xs ApplicationImg"style={{paddingLeft:"20px"}}>
+	                	<div className="col-lg-4 col-md-4 hidden-sm hidden-xs ApplicationImg">
 	                      <img src={this.state.blocks.fgImage} className=" img-responsive newApplicationImage" style={{height:"350px"}} />
 	                    </div>
 						 <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12"style={{paddingLeft:"0px"}}>

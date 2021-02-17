@@ -97,15 +97,10 @@ export default class ConsultDownstream extends Component {
   }
 componentDidMount(){
   var pageUrl = window.location.pathname;
-      console.log("pageUrl now = ",pageUrl);
+      // console.log("pageUrl now = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
       console.log("consult url",a);
       if(pageUrl =="/masterpage/iog-consult"){
-        // $('.innerBlocktConsult').css('height','1230px');
-        // $('.innerBlocktConsult').css('marginTop','-143px');
-
-// 
-
       }
        if(pageUrl =="/iog-implement"){
         $('.innerBlocktConsult').css('marginTop','-143px');

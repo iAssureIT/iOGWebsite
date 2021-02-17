@@ -29,6 +29,17 @@
   margin-top: 30px;
   margin-bottom: 70px;
 }
+.newcard_HD{
+  width: 285px;
+}
+@media only screen 
+    and (device-width : 1920px) 
+    and (device-height : 768px) { 
+  .newcard_HD{
+    width: 400px ! important;
+
+   }
+}
 .serflip-card {
     /*background-color: #fff;*/
     /*box-shadow: 0 10px 29px rgba(92,141,255,.22);*/

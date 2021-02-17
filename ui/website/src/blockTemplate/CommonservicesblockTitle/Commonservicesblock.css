@@ -415,6 +415,14 @@
 .newcard{
   width: 300px;
 }
+@media only screen 
+    and (device-width : 1920px) 
+    and (device-height : 768px) { 
+  .newcard{
+    width: 400px ! important;
+
+   }
+}
 
 
 @media screen and (max-width: 768px) {

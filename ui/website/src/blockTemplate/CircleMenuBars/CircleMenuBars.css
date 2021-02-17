@@ -52,7 +52,7 @@
     margin-right: 0px;
     position: relative;
     top: 31px;
-    right: 15px;
+    right: 25px;
     color: #333;
     font-weight: 500;
  }
@@ -73,21 +73,27 @@
     margin-right: 0px;
     position: relative;
     top: 31px;
-    right: -96px;
+    right: -85px;
     color: #333;
     font-weight: 500;
  }
-
-
-@media screen and (min-width: 1280px) and (max-width: 1280px)
-              and (min-height: 800px) and (max-height: 800px) {
-
-     .new_wizardNotefor4{
-         right: -88px ! important;
-
-
-     }
- }
+@media only screen 
+    and (device-width : 1440px) 
+    and (device-height : 900px) { 
+    .new_wizardNotefor5{
+    right: 25px ! important;
+  }
+}
+@media only screen 
+    and (device-width : 1920px) 
+    and (device-height : 768px) { 
+    .new_wizardNotefor4{
+    right: -110px ! important;
+  }
+  .new_wizardNote_for6{
+    right: 72px ! important;
+  }
+}
  .new_wizardNote_for6
  {
     /* border: 1px solid; */
@@ -478,7 +484,7 @@
 
 @media screen and (min-width: 1400px) {
     .navigation_tab{
-        margin-left: 40px ! important;
+        margin-left: 37px ! important;
     }
 }
 

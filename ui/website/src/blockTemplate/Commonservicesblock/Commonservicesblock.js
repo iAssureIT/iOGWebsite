@@ -157,7 +157,7 @@ export default class Commonservicesblock extends Component {
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                       <div className="">
                                           <div className="text-center">
-                                            <div className="serflip-cardservices newcard_landscape"style={{width:"285px"}}>
+                                            <div className="serflip-cardservices newcard_HD newcard_landscape">
                                               <div className="serflip-card-inner">
                                                   <div className="serflip-card-front hidden-sm hidden-xs">
                                                     <img src={data.Image} className="text-center" alt=""/>
