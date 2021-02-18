@@ -524,5 +524,58 @@
     .new_wizardNotefortwo{
         right: -252px ! important;
     }
-  }  
+  }
+
+ @media only screen and (device-width : 360px) and (device-height : 640px) { 
+    .new_round-tabfor5 {
+       /*width : 268px ! important;*/
+       margin-left: 28% ! important;
+      }
+    .new_wizardNotefor5{
+        right: 5px ! important;
+    }  
+  } 
+   @media only screen and (device-width : 320px) and (device-height : 568px) { 
+    .adjustfor5{
+       /*width : 268px ! important;*/
+       margin-left: 0px ! important;
+      }
+     
+  } 
+
+  @media only screen and (device-width : 375px) and (device-height : 667px) { 
+    .new_round-tabfor5 {
+       /*width : 268px ! important;*/
+       margin-left: 18% ! important;
+      }
+    .new_wizardNotefor5{
+        right: 5px ! important;
+    }  
+  } 
+
+ @media only screen and (device-width : 375px) and (device-height : 812px) { 
+    .new_round-tabfor5 {
+       /*width : 268px ! important;*/
+       margin-left: 18% ! important;
+      }
+     .new_round-tabfor6{
+        margin-left: 20% ! important;
+     }
+     .new_wizardNotefor5{
+        right: 5px ! important;
+     }
+    .new_wizardNote_for6{
+        right: 3px ! important;
+    }  
+  }      
+
+ @media only screen and (device-width : 414px) and (device-height : 736px) { 
+   .new_round-tabfor6 {
+            margin-left: 32% ! important;
+        }
+    .new_wizardNote_for6{
+        right: 3px ! important;
+    }  
+  }      
+
 
