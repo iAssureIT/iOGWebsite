@@ -2441,43 +2441,43 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
 }
 .Journycaro1{
   left:0px ! important;
-  top:140px ! important;
+  top:205px ! important;
 }
 .Journycaro2{
   /*left:0px ! important;*/
-  top:320px ! important;
+  top:380px ! important;
 }
 .Journycaro3{
   left:0px ! important;
-  top:500px ! important;
+  top:565px ! important;
 }
 .Journycaro4{
   left:0px ! important;
-  top:695px ! important;
+  top:750px ! important;
 }
 .Journycaro5{
   left:0px ! important;
-  top:1055px ! important;
+  top:1111px ! important;
 }
 .Journycaro6{
   left:0px ! important;
-  top:875px ! important;
+  top:930px ! important;
 }
 .Journycaro7{
   left:0px ! important;
-  top:1245px ! important;
+  top:1295px ! important;
 }
 .Journycaro8{
   left:0px ! important;
-  top:1440px ! important;
+  top:1480px ! important;
 }
 .Journycaro9{
   left:0px ! important;
-  top:1630px ! important;
+  top:1665px ! important;
 }
 .Journycaro10{
   left:0px ! important;
-  top:1825px ! important;
+  top:1855px ! important;
 }
 .Journycaro11{
   left:0px ! important;
@@ -2522,13 +2522,13 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     top: 66px ! important;
   }
   .webclientbackimg{
-    width: 350px ! important;
+    width: 310px ! important;
     height: 150px ! important;
-    margin-left: 10px ! important;
+    margin-left: 30px ! important;
     box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
   .webclientcaro{
-    width: 321px ! important;
+    width: 250px ! important;
   }
 .Journycaro1 p {
   text-align: center ! important;
@@ -2605,6 +2605,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
 .Journycaro2 h3 {
   text-align: center ! important;
 }
+ .journytextblock{
+        width: 100% ! important;
+      }
 
 }
 @media (max-width: 480px){
@@ -2880,6 +2883,112 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       .iogimg_4{
         width: 866px ! important;
         margin-left: 0px ! important
+      }
+ }
+  @media only screen 
+    and (min-device-width : 393px) 
+    and (device-height : 851px){
+      .webclientbackimg{
+        width: 310px ! important;
+        margin-left: 49px ! important;
+      }
+      .journytextblock{
+        width: 100% ! important;
+      }
+ }
+  @media only screen 
+    and (min-device-width : 1024px) 
+    and (device-height : 1366px){
+      .Journycaro2{
+        left:0px ! important;
+      }
+      .Journycaro1{
+        left:287px ! important;
+      }
+ }
+ @media only screen and (device-width : 375px)and (device-height : 812px){ 
+   .webclientbackimg{
+    width: 300px ! important;
+     border: 1px solid #b5b2b2;
+   }
+   .new_wizard_journy{
+    margin-top: 850px ! important;
+   }
+
+ }  
+  @media only screen and (device-width : 360px) and (device-height : 640px){ 
+   .webclientbackimg{
+    width: 300px ! important;
+     border: 1px solid #b5b2b2;
+   }
+
+ }  
+ /* @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 640px){
+   .webclientbackimg{
+    width: 285px ! important;
+   }
+
+ }  */
+ @media only screen 
+    and (min-device-width : 414px) 
+    and (device-height :  736px){
+   .webclientbackimg{
+      width: 339px ! important;
+      margin-left: 40px ! important;
+      border: 1px solid #b5b2b2;
+   }
+   .webclientcaro {
+    width: 310px ! important;
+    }
+
+  } 
+   @media only screen 
+    and (min-device-width : 411px) 
+    and (device-height :  823px){
+   .webclientbackimg{
+      width: 339px ! important;
+      margin-left: 40px ! important;
+      border: 1px solid #b5b2b2;
+   }
+   .webclientcaro {
+    width: 310px ! important;
+    }
+
+ }  
+  @media only screen 
+    and (min-device-width : 411px) 
+    and (device-height :  731px){
+   .webclientbackimg{
+      width: 339px ! important;
+      margin-left: 40px ! important;
+      border: 1px solid #b5b2b2;
+   }
+   .webclientcaro {
+     width: 315px ! important; 
+}
+
+ }  
+ @media only screen 
+    and (min-device-width : 320px) 
+   and (device-height : 568px){
+   .webclientbackimg{
+        width: 255px ! important;
+        margin-left: 30px ! important;
+         border: 1px solid #b5b2b2;
+      }
+      .webclientcaro{
+        width: 213px ! important;
+      }
+      .journytextblock{
+        width: 100% ! important;
+      }
+      .journytextblock{
+        height: 130px ! important;
+      }
+      .responsivefooter{
+        height: 640px ! important;
       }
  }
 

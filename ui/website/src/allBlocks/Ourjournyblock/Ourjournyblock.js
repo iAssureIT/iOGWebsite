@@ -225,7 +225,7 @@ export default class Ourjournyblock extends Component {
         if (scroll >= 900) {
             $(".Journycaro9").addClass("journyanim");
         }
-        if (scroll >= 1450) {
+        if (scroll >= 1150) {
             $(".Journycaro10").addClass("journyanim");
             
         }
@@ -497,58 +497,58 @@ journyData11(){
                         <img alt="" src="/images/roadjourny.png" />
                     </div>
                   </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 hidden-xs  NOpadding">
-              <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 NOpadding">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock " style={{background:"#1056f3"}}>
-                <h1 className="col-lg-10 col-lg-offset-1"style={{opacity:1}}><b>Our</b> Journey</h1>
-              </div>
-                <img className="add1" src="/images/add1.png" />
-              </div>
-                <img className="add2" src="/images/add1.png" />
-              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg1">
-              </div>
-          </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
-              <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg">
-                <img className="add3" src="/images/add1.png" />
-              </div>
-              <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 journybg3">
-              <img className="add4" src="/images/add1.png" />
-              </div>
-              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg4">
-              <img className="add5" src="/images/add1.png" />
-              </div>
-              <img className="add6" src="/images/add1.png" />
-          </div>
-          <div className="col-lg-12 col-md-12 col-sm-12   col-xs-12   NOpadding">
-              <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg2">
-              <img className="add7" src="/images/add1.png" />
-              </div>
-              <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 journybg31">
-                <img className="add8" src="/images/add1.png" />
-              </div>
-          </div>
-          <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 journybg5">
-              <img className="add9" src="/images/add1.png" />
-              </div>
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 journybg5">
-              <img className="add10" src="/images/add1.png" />
-              </div>
-              <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
-              </div>
-          </div>
-          <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-              <img className="add11" src="/images/add1.png" />
-              </div>
-          </div>
-            <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
-              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-              <img className="add12" src="/images/add1.png" />
-              </div>
-          </div>
-         
+                  <div className="col-lg-12 col-md-12 col-sm-12   NOpadding">
+                      <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 NOpadding">
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock " style={{background:"#1056f3"}}>
+                        <h1 className="col-lg-10 col-sm-12 col-xs-12  col-lg-offset-1"style={{opacity:1}}><b>Our</b> Journey</h1>
+                      </div>
+                        <img className="add1" src="/images/add1.png" />
+                      </div>
+                        <img className="add2" src="/images/add1.png" />
+                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg1 hidden-xs">
+                      </div>
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
+                      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg hidden-xs">
+                        <img className="add3" src="/images/add1.png" />
+                      </div>
+                      <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 journybg3">
+                      <img className="add4" src="/images/add1.png" />
+                      </div>
+                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg4">
+                      <img className="add5" src="/images/add1.png" />
+                      </div>
+                      <img className="add6" src="/images/add1.png" />
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12   col-xs-12   NOpadding">
+                      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg2">
+                      <img className="add7" src="/images/add1.png" />
+                      </div>
+                      <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 journybg31">
+                        <img className="add8" src="/images/add1.png" />
+                      </div>
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
+                      <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 journybg5">
+                      <img className="add9" src="/images/add1.png" />
+                      </div>
+                      <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 journybg5">
+                      <img className="add10" src="/images/add1.png" />
+                      </div>
+                      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 journybg6">
+                      </div>
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
+                      <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+                      <img className="add11" src="/images/add1.png" />
+                      </div>
+                  </div>
+                    <div className="col-lg-12 col-md-12 col-sm-12  hidden-xs  NOpadding">
+                      <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+                      <img className="add12" src="/images/add1.png" />
+                      </div>
+                  </div>
+                 
          {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  NOpadding">
               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 ">
               <img className="add10" src="/images/add1.png" />
