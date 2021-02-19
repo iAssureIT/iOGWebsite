@@ -220,6 +220,10 @@
   letter-spacing: 0.5px;
 }
 
+::i-block-chrome, .services_title {
+     border:1px solid #f00;
+}
+
 .safari_BT4_txt{
   height:160px;
 }
