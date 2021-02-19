@@ -16,11 +16,11 @@
 
 @media screen and (max-width: 600px) {
 
-	.blck1heightnew{
-		width: 305px ! important;
-	}
-	.visionHeight{
-	height: 960px ! important;
+.blck1heightnew{
+	width: 305px ! important;
+}
+.visionHeight{
+height: 960px ! important;
 }
 .blck1heightnew{
 	height: 214px ! important;
@@ -39,3 +39,24 @@
 }
 
 }
+
+ @media only screen and (device-width : 320px) and (device-height : 568px) { 
+     .righttextaboutus{
+      width: 245px ! important;
+    }
+    .serflip-card img{
+      /*margin-left: 10px ! important;*/
+    }
+        .serflip-card {
+        width: 237px ! important;
+    }
+      .Typecomponent1Img_vision {
+        width: 300px ! important;
+    }
+    .blck1heightnew{
+      height: 284px ! important;
+    }
+    .blck1heightnew{
+      width:239px ! important;
+    }
+  }

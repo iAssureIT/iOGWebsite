@@ -85,7 +85,7 @@ export default class Blogs extends Component {
                     <hr/>
                      <h2 style={{color:"#333"}}><b>Latest Blogs</b></h2>
                     </div>
-                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs" style={{height:"515px"}}>
+                    <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs" style={{height:"555px"}}>
                       <div>
                         <OwlCarousel
                         className="owl-theme"

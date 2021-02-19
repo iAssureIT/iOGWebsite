@@ -499,7 +499,7 @@ journyData11(){
                   </div>
                   <div className="col-lg-12 col-md-12 col-sm-12   NOpadding">
                       <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 NOpadding">
-                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock " style={{background:"#1056f3"}}>
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 journytextblock hidden-xs " style={{background:"#1056f3"}}>
                         <h1 className="col-lg-10 col-sm-12 col-xs-12  col-lg-offset-1"style={{opacity:1}}><b>Our</b> Journey</h1>
                       </div>
                         <img className="add1" src="/images/add1.png" />

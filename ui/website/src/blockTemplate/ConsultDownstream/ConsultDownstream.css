@@ -350,7 +350,7 @@
 }
  #consultdown_img3 {
     position: absolute;
-    top: 99em ! important;
+    /*top: 99em ! important;*/
     left: 4em ! important;
     height: 97px;
 }
@@ -398,7 +398,7 @@
 
 #consultdown_data3{
   left:1em ! important;
-  top:110em ! important;
+  /*top:110em ! important;*/
   width: 345px ! important;
   text-align: justify;
   /*right: -4px ! important;*/
@@ -436,7 +436,7 @@
 .downimgtext{
     left: 8em ! important;
     font-size: 16.5px;
-    top: 16em;
+    top: 13em;
 }
 .downimg_p_txt{
   font-size: 13px ! important;
@@ -617,7 +617,7 @@
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .innerBlocktConsult{
-    height: 2910px ! important;
+    /*height: 2910px ! important;*/
   }
  }
 
@@ -676,6 +676,29 @@
     .downimgtext{
       left:15em ! important;
     }
-  }  
+  } 
+
+
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+    .innerBlocktConsult {
+      overflow: hidden;
+      /*height: 2968px ! important;*/
+    } 
+   /* .downimgtext{
+      top:16em ! important;
+    }
+    .downimg_p_txt{
+      top:23.5em ! important;
+    }*/
+}  
+@media only screen and (device-width : 360px) and (device-height : 640px) { 
+
+  #consultdown_img3{
+    top:97em ! important;
+  }
+  #consultdown_data3{
+    top:108em ! important;
+  }
+}  
  
 

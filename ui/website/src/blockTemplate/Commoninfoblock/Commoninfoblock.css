@@ -1,13 +1,122 @@
 .services_img{
   width: 100%;
+  object-fit: contain;
   /*height: 580px;*/
 }
-@media (max-width: 480px){
+.services_img img{
+		width: 100%;
+	 }
+@media only screen and (device-width : 375px) and (device-height : 667px) {
 	.services_img{
-	  width: 100%;
-	  height: 405px ! important;
-	  padding: 0px ! important;
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
 	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	 
+@media only screen and (device-width : 393px) and (device-height : 851px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	 
+@media only screen and (device-width : 360px) and (device-height : 640px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	
+@media only screen and (device-width : 411px) and (device-height : 731px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	
+@media only screen and (device-width : 411px) and (device-height : 823px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	 
+@media only screen and (device-width : 320px) and (device-height : 568px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	
+@media only screen and (device-width : 414px) and (device-height : 736px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+	.services_img{
+	     width: 100% ! important ;
+	    object-fit: contain! important;
+	    height: 362px ! important;
+	    padding: 0px ! important;
+	}
+	.services_img img{
+		height: 375px ! important;
+        /*object-fit: contain;*/
+	 }
+
+}	 
+
+
+
+
+
+@media (max-width: 480px){
+	
 	.commonBlockpadd{
 		padding-left: 10px ! important;
 		padding-right: 10px ! important;

@@ -35,3 +35,29 @@
             height: 500px;
             width: 100%;
 }
+
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+    .NewLoader{
+      margin-left: -250px !important;
+    }
+
+  } 
+
+@media only screen and (device-width : 414px) and (device-height : 736px) { 
+    .NewLoader{
+      margin-left: -250px !important;
+    }
+
+  }   
+@media only screen and (device-width : 375px) and (device-height : 812px) { 
+    .NewLoader{
+      margin-left: -250px !important;
+    }
+
+  } 
+@media only screen and (device-width : 375px) and (device-height : 667px) { 
+    .NewLoader{
+      margin-left: -250px !important;
+    }
+
+  }       

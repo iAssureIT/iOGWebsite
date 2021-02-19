@@ -448,3 +448,10 @@
   }
 }  
 
+
+@media only screen and (device-width : 393px) and (device-height : 851px) {
+
+   .serflip-cardservices img{
+    margin-left: 20px ! important;
+  } 
+}

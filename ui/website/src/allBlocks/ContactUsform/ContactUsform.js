@@ -503,7 +503,7 @@ class ContactUsform extends Component{
                   {/*<div className="errorMsg">{this.state.errors.message}</div>*/}
                 </div>
                 <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12">
-                  <div className="col-lg-2 col-lg-offset-10">
+                  <div className="col-lg-2 col-lg-offset-10"style={{paddingLeft:"0px"}}>
                     <button type='submit' className="btn lightbluebg contactformbtn buttonhover" onClick={this.Submit.bind(this)}> Submit</button>
                   </div>
                </div>

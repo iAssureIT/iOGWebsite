@@ -96,6 +96,9 @@ export default class ConsultDownstream extends Component {
     };    
   }
 componentDidMount(){
+
+
+
   var pageUrl = window.location.pathname;
       // console.log("pageUrl now = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";

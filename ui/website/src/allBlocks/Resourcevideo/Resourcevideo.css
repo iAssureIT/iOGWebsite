@@ -161,7 +161,7 @@ height: 100px;
     margin: 0px;
   }
   .videocard{
-    width: 230px;
+    /*width: 230px;*/
     margin: 0px;
   }
   .Mobile_leftPadd{
@@ -178,3 +178,21 @@ height: 100px;
   }
 
 }
+
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+       
+    .resfooterend{
+      height: 61px ! important;
+    } 
+    .contactcontent {
+      margin-bottom: 35px;
+      margin-left: 23px;
+      margin-top: 26px;
+   
+    }
+    .videocard{
+      widows: 270px ! important;
+    }
+
+
+  } 
