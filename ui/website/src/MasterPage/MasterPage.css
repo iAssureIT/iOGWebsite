@@ -60,4 +60,12 @@
       margin-left: -250px !important;
     }
 
+  }  
+
+
+@media screen and (max-width: 600px){ 
+    .NewLoader{
+      margin-left: -250px !important;
+    }
+
   }       

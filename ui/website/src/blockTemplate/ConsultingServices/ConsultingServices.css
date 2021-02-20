@@ -232,3 +232,15 @@
 .chrome_BT4_txt{
   height:160px;
 }
+@media only screen and (device-width : 320px) and (device-height : 568px) { 
+  .New_Study_shadow{
+    width:210px ! important;
+  }
+  .new_BT3_innerBlock{
+
+    width: 320px ! important;
+  }
+  .maindivWidth_mob{
+    width: 310px  ! important;
+  }
+ } 

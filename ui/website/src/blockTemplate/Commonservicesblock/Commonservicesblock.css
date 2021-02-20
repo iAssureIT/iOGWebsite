@@ -404,3 +404,12 @@
     }
   }  
 
+@media only screen and (device-width : 1024px) and (device-height : 1366px) { 
+
+   .newcard_HD{
+    width:250px;
+   }
+
+} 
+
+

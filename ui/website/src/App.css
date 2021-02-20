@@ -1105,6 +1105,12 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       .B4T_img{
         margin-left: 60px ! important;
       }
+       .serflip-card img{
+         margin-left: 20px ! important;
+    }  
+    .serflip-cardservices img{
+      margin-left: 20px ! important;
+    } 
 
   } 
   @media only screen and (device-width : 375px) and (device-height : 667px) { 
@@ -1183,6 +1189,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .title_Description{
     letter-spacing: 0.5px ! important;
   }
+  @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:768px){
+   /* Safari only override */ ::i-block-chrome,
+    .services_title { 
+      letter-spacing:0.5px; 
+       }
+    .title_Description { 
+      letter-spacing:0.5px; 
+       }
+    }
 
 
 

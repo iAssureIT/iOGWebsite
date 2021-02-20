@@ -13,7 +13,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -26,7 +26,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -39,7 +39,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -52,7 +52,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -65,7 +65,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -78,7 +78,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -91,7 +91,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -104,7 +104,7 @@
 	    height: 362px ! important;
 	    padding: 0px ! important;
 	}
-	.services_img img{
+	.img1 img{
 		height: 375px ! important;
         /*object-fit: contain;*/
 	 }
@@ -136,4 +136,11 @@
 	padding-left: 70px;
 	padding-right: 70px;
 }
+@media screen and (max-width: 600px) {
+	.services_img img{
+		height: 375px ! important;
+		object-fit: contain;
+	}
+}	
+
 

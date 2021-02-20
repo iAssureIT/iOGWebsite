@@ -321,7 +321,7 @@
         right: 580px ! important;
       }
       .topnav a.icon{
-        right: 8px ! important;
+        right: -15px ! important;
         top:-5px ! important;
       }
     }
@@ -699,6 +699,99 @@
   #consultdown_data3{
     top:108em ! important;
   }
-}  
+} 
+@media only screen and (device-width : 320px) and (device-height : 568px) { 
+  #consultdown_data3{
+    top:108em ! important;
+    width: 280px !important;
+  } 
+  #consultdown_img3{
+    top:100em ! important;
+  }
+  #consultdown_data0{
+    width: 280px ! important;
+  }
+  #consultdown_data2{
+    width: 280px ! important;
+  }
+
+ } 
+@media only screen and (device-width : 375px) and (device-height : 812px) { 
+
+   #consultdown_data3{
+    top:108em ! important;
+   }
+   #consultdown_img3{
+    top:99em ! important;
+   }
+} 
+@media only screen and (device-width : 375px) and (device-height : 667px) { 
+
+   #consultdown_data3{
+    top:108em ! important;
+   }
+   #consultdown_img3{
+    top:99em ! important;
+   }
+} 
+@media only screen and (device-width : 414px) and (device-height : 736px) { 
+
+   #consultdown_data3{
+    top:108em ! important;
+   }
+   #consultdown_img3{
+    top:99em ! important;
+   }
+} 
+@media only screen and (device-width : 1024px) and (device-height : 1366px) { 
+
+   #consultdown_data3{
+    top:62em ! important;
+    width: 450px;
+   }
+   #consultdown_img0{
+    left:6em ! important;
+   }
+   #consultdown_data0{
+    right: 0% ! important;
+    width: 450px;
+   }
+   #consultdown_data2{
+    right: 0% ! important;
+   }
+    #consultdown_img2{
+    left:6em ! important;
+   }
+    #consultdown_img4{
+    left:6em ! important;
+   }
+   #consultdown_data1{
+        left: -3%;
+       width: 450px;
+   }
+   #consultdown_img3{
+    top:62em ! important;
+    left:33em;
+   }
+   #consultdown_img1{
+    left:33em;
+   }
+   #consultdown_data4{
+    right: 0%;
+    width: 450px;
+   }
+   #consultdown_data5{
+    width: 450px;
+   }
+   #consultdown_img5{
+    left:40em;
+   }
+   .newcard_HD{
+    width:250px;
+   }
+
+} 
+
+
  
 
