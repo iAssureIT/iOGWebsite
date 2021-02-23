@@ -221,8 +221,8 @@
     padding: 0px;
   }
   .topnav a.icon {
-    top: 5px;
-    right: 0px;
+    top: 5px ! important;
+    right: 0px ! important;
     position: absolute;
     float: right;
     /*right: -5px;*/
@@ -319,8 +319,8 @@
     /*font-size: 0px ! important;*/
    }
    .topnav a.icon{
-    top:-3px ! important;
-     right: -8px ! important;
+    top:0px ! important;
+    right: -8px ! important;
    }
    .headerlogo img {
     height: 74px ! important;

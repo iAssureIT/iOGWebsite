@@ -876,7 +876,7 @@ height: 90px;
     and (min-device-width : 393px) 
     and (device-height : 851px){
       .resbanner{
-        margin-top: 100px ! important;
+        margin-top: 110px ! important;
          background-size: cover;
         height: 760px ! important;
         /*background:50% ! important;*/
@@ -903,7 +903,7 @@ height: 90px;
     margin-top: 105px;
     background-image: url("/images/Mobile.png");
     background-size: cover;
-    height: 742px ! important;
+    height: 700px ! important;
     object-fit: contain;
     background-color:#eeeeeeed;
     background-repeat: no-repeat;
