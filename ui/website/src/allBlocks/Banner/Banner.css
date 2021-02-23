@@ -900,10 +900,10 @@ height: 90px;
  }
 
   .resbanner{
-    margin-top: 25px;
+    margin-top: 105px;
     background-image: url("/images/Mobile.png");
     background-size: cover;
-    height: 648px;
+    height: 742px ! important;
     object-fit: contain;
     background-color:#eeeeeeed;
     background-repeat: no-repeat;
