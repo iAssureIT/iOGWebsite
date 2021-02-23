@@ -13,7 +13,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   padding-top: 50px;
   /*float:right;*/
 }
-.contentheaderNewPage{
+.contentheaderNewPage h2{
   letter-spacing: 0.5px;
 }
 .sharefacebook{
@@ -1111,6 +1111,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .serflip-cardservices img{
       margin-left: 20px ! important;
     } 
+    .pt20{
+      padding-top: 20px ! important;
+    }
 
   } 
   @media only screen and (device-width : 375px) and (device-height : 667px) { 
@@ -1183,6 +1186,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .NewLoader{
       margin-left: 0px !important;
     }
+    .energypagedata p{
+      letter-spacing: 0.5px ! important;
+    }
 
   } 
 
@@ -1192,12 +1198,73 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:768px){
    /* Safari only override */ ::i-block-chrome,
     .services_title { 
-      letter-spacing:0.5px; 
+      letter-spacing:0.5px ! important; 
        }
     .title_Description { 
-      letter-spacing:0.5px; 
+      letter-spacing:0.5px ! important; 
        }
+    .contentheaderNewPage h2{
+      letter-spacing: 0.5px;
+      }   
     }
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+  { @media {
+
+     .services_title { 
+      letter-spacing:0.5px ! important; 
+       }
+    .title_Description { 
+      letter-spacing:0.5px ! important; 
+       }
+    .contentheaderNewPage h2{
+      letter-spacing: 0.5px;
+    }   
+
+  }}  
+
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .pt20{
+      padding-top: 20px ! important;
+    }
+    .blogtext p{
+      height: 185px ! important;
+    }
+    .journytextblock{
+      height: 129px ! important;
+    }
+    .Journycaro9{
+      top:1145px ! important;
+    }
+    .add10{
+      left: 128px ! important;
+      top: -67px ! important;
+    }
+    .add9{
+      left:172px ! important;
+      top:157px ! important;
+    }
+    .Journycaro10{
+      left:285px ! important;
+    }
+    .newcard_HD{
+      width: 220px ! important;
+    }
+    .newcard {
+    width: 255px ! important;
+    }
+    .navigation_tab{
+      margin-left: 25px ! important;
+    }.new_wizardNotefor9{
+      right: 0px ! important;
+    }
+    .secondblockk {
+    padding-top: 100px;
+    }
+  } 
 
 
 

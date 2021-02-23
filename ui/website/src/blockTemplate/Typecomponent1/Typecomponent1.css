@@ -7,6 +7,9 @@
   
 
 }
+.Type1_comp_marg_top{
+  margin-top: 60px ! important;
+}
 .righttextaboutus{
 	padding-top: 20px;
 	font-size: 17px ! important;
@@ -104,5 +107,88 @@
   .Typecomponent1Img{
     width: 350px ! important;
   }
-}  
+}
+
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+   .padding_left_TDesc{
+    padding-left: 10px ! important;
+   }
+    .Typecomponent1Img {
+      width: 293px;
+      height: 216px;
+    }
+    .MobileDivHeight{
+      height: 730px ! important;
+    }
+    .Type1_comp_marg_top{
+      margin-top: 0px ! important;
+    }
+  }  
+  @media only screen and (device-width : 360px) and (device-height : 640px) { 
+   .padding_left_TDesc{
+    padding-left: 10px ! important;
+   }
+    /* .Typecomponent1Img {
+      width: 293px;
+      height: 216px;
+    }
+    .MobileDivHeight{
+      height: 880px ! important;
+    }*/
+  }  
+
+
+  @media only screen and (device-width : 414px) and (device-height : 736px) { 
+   .padding_left_TDesc{
+    padding-left: 10px ! important;
+   }
+    /* .Typecomponent1Img {
+      width: 300px;
+      height: 250px;
+      margin-top: 25px;
+    }
+    .MobileDivHeight{
+      height: 880px ! important;
+    }*/
+  }  
+  @media only screen and (device-width : 375px) and (device-height : 812px) { 
+   .padding_left_TDesc{
+    padding-left: 10px ! important;
+   }
+     /*.Typecomponent1Img {
+      width: 300px;
+      height: 250px;
+      margin-top: 25px;
+    }
+    .MobileDivHeight{
+      height: 940px ! important;
+    }*/
+  } 
+/*  @media only screen and (device-width : 411px) and (device-height : 731px) {
+    .MobileDivHeight{
+      height: 700px ! important;
+    }
+  } 
+    @media only screen and (device-width : 411px) and (device-height : 823px) {
+
+      .MobileDivHeight{
+        height: 700px ! important;
+      }
+
+    }
+   @media only screen and (device-width : 320px) and (device-height : 568px) {
+
+      .MobileDivHeight{
+        height: 770px ! important;
+      }
+
+    }
+   @media only screen and (device-width : 375px) and (device-height : 667px) {
+     .MobileDivHeight{
+        height: 770px ! important;
+      }
+
+   }*/
+
+
 

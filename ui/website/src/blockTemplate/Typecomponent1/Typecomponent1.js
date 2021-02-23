@@ -46,7 +46,7 @@ componentDidMount(){
 }
     render(){
         return(
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel MobileDivHeight onselecthover" style={{marginTop:"60px"}}
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel MobileDivHeight onselecthover Type1_comp_marg_top"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 

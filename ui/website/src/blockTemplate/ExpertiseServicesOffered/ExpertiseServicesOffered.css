@@ -215,4 +215,10 @@
     .new_wizardNotefor5{
       right: 2px ! important;
     }
+    .B4T_ServicesDiv{
+      height: 230px ! important;
+    }
+    .ServiceTxt p{
+      letter-spacing: 0.3px ! important;
+    }
   }   

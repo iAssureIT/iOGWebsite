@@ -373,8 +373,9 @@ handlechange(event){
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12 TopnavPadding">
            <div class="topnav" id="myTopnav">
-            <a href="/" className="">HOME</a>
-
+            <a href="/" className="hidden-xs">HOME</a>
+            
+             <a href="/" className="hidden-lg hidden-md">HOME</a> 
             <div class="dropdown">
             {console.log("-----",this.state.pageUrl == "/about-us" ? "Currentactivetab NopaddingToA" : "NopaddingToA normalTabColor")}
               <a href="/about-us" className={this.state.pageUrl == "/about" || this.state.pageUrl == "/founder-profile" || this.state.pageUrl == "/news-&-events" || this.state.pageUrl == "/ourjourney"  ? "Currentactivetab NopaddingToA" : "NopaddingToA" } >
@@ -382,6 +383,7 @@ handlechange(event){
                  <i className="fa fa-angle-down Headerdownarraow hidden-xs"></i>
                </button>
              </a>
+
 
               <div className="dropdown-content normaldropdown dropdownintab dropdownforAbiutus hidden-xs" style={{position:"fixed"}}>
                 {/* <a href="/about">Company Profile</a>*/}

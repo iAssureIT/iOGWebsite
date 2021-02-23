@@ -509,8 +509,90 @@ ul.no-icon-list1 {
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
     .footer-two{
-      height: 440px ! important;
+      height: 340px ! important;
     }
-  }  
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 768px) 
+  and (orientation: landscape) 
+ {
+    .footer-two{
+      height: 438px ! important;
+    }
+}
+
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .pt20{
+      padding-top: 20px ! important;
+    }
+    .blogtext p{
+      height: 185px ! important;
+    }
+    .journytextblock{
+      height: 129px ! important;
+    }
+    .Journycaro9{
+      top:1145px ! important;
+    }
+    .add10{
+      left: 128px ! important;
+      top: -67px ! important;
+    }
+    .add9{
+      left:172px ! important;
+      top:157px ! important;
+    }
+    .Journycaro10{
+      left:285px ! important;
+    }
+    .newcard_HD{
+      width: 220px ! important;
+    }
+    .newcard {
+    width: 255px ! important;
+    }
+    .navigation_tab{
+      margin-left: 25px ! important;
+    }.new_wizardNotefor9{
+      right: 0px ! important;
+    }
+  } 
+
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+     .newcard_HD{
+      width: 220px ! important;
+    }
+    .newcard {
+    width: 355px ! important;
+    }
+}
+  @media only screen and (device-width : 375px) and (device-height : 812px) { 
+  .responsivefooter{
+    height: 592px ! important;
+  }
+}  
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+  .responsivefooter{
+    height: 593px ! important;
+  }
+} 
+@media only screen and (device-width : 414px) and (device-height : 736px) { 
+  .responsivefooter{
+    height: 580px ! important;
+  }
+}  
+
+

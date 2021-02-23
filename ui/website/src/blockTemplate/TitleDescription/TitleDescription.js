@@ -47,7 +47,7 @@ componentDidMount(){
     render()
     {
         return(
-             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  posRel"style={{marginTop:"50px"}} 
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 title_description_div posRel"
                  id="Type1Component" 
                  data-field1="blockTitle" 
                  data-field2="blockDescription" 
@@ -59,7 +59,7 @@ componentDidMount(){
                   </div>                    
                 </div> */}
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{marginBottom:"50px"}}>
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{paddingLeft:"50px"}}>
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_left_TDesc">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <h2 style={{marginBottom:"30px"}} className="title_Description para-top">{this.state.blocks.blockTitle} </h2>
                               <div> 
