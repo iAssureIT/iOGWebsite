@@ -121,7 +121,7 @@
       height: 730px ! important;
     }
     .Type1_comp_marg_top{
-      margin-top: 0px ! important;
+      margin-top: 30px ! important;
     }
   }  
   @media only screen and (device-width : 360px) and (device-height : 640px) { 

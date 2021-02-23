@@ -506,8 +506,8 @@ ul.no-icon-list1 {
 
 }
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
   and (orientation: landscape) 
  {
     .footer-two{
@@ -516,8 +516,8 @@ ul.no-icon-list1 {
 }
 
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 768px) 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
   and (orientation: landscape) 
  {
     .footer-two{

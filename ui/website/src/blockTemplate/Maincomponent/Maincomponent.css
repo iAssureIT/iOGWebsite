@@ -475,7 +475,7 @@
   } 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 
     .Padding_career{
-        margin-top: -260px ! important;
+        /*margin-top: -260px ! important;*/
     } 
     .panel-default>.panel-heading a{
             padding: 10px 3px ! important;
@@ -487,14 +487,14 @@
 
 @media only screen and (device-width : 375px) and (device-height : 812px) { 
     .Padding_career{
-        margin-top: -260px ! important;
+        /*margin-top: -260px ! important;*/
     } 
    
  }  
 
  @media only screen and (device-width : 414px) and (device-height : 736px) { 
     .Padding_career{
-        margin-top: -200px ! important;
+        /*margin-top: -200px ! important;*/
     } 
    
  }   
