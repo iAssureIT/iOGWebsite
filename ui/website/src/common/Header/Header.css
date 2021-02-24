@@ -233,6 +233,10 @@
     width: 70px;
     display: block;
   }
+   .headerflow{
+      background-color: #fff;
+      height: 130px ! important;
+    }
   .ct-topbar
   {
 

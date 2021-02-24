@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
 
-// import $                  from 'jquery';
+import $                  from 'jquery';
 import './ExpertiseServicesOffered.css';
 
 
@@ -74,6 +74,16 @@ export default class ExpertiseServicesOffered extends Component {
     };    
   }
 componentDidMount(){
+
+     /*var pageUrl = window.location.pathname;
+       if(pageUrl =="/iog-consult"){
+         $('.services_title').addClass('services_title_safari');
+
+       }*/
+     var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+      if (isSafari){
+         $('.contentheaderH2Class').addClass('contentheaderH2');
+      }
 /*console.log("==>",this.props.block_id);*/
           {
              axios
@@ -111,7 +121,7 @@ componentDidMount(){
            </div>
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12   contentheaderNewPage text-center"style={{marginBottom:"0px"}}>
               <hr/>
-               <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
+               <h2 className="contentheaderH2Class" style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NopaddingMob Expertise_maindiv">
             { 

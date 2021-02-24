@@ -27,6 +27,9 @@
   	font-weight: 600;
     margin-left: 15px;
   }
+  .contentheaderH2{
+    font-family: sans-serif ! important;
+  }
   .innerServiceDiv{
     padding-top: 30px;
   	/*padding-left: 45px;*/

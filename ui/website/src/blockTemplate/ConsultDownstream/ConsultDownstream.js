@@ -120,6 +120,7 @@ componentDidMount(){
         $('.downimgtext').css('left','17em');
 
       }
+      
           if(pageUrl=="/iog-train")
      {
          window.matchMedia('screen and (max-width: 480px) and (min-width:320px)') 

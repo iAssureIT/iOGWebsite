@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import $                  from 'jquery';
 import './TitleDescription.css';
 
 export default class TitleDescription extends React.Component {
@@ -21,6 +21,12 @@ export default class TitleDescription extends React.Component {
     
   }
 componentDidMount(){
+  var pageUrl = window.location.pathname;
+       if(pageUrl =="/asset-strategy-management"){
+         $('.title_Description').addClass('title_In_safari');
+       }
+
+                                
 /*console.log("==>",this.props.block_id);*/
           {
              axios

@@ -10,8 +10,12 @@
 .title_description_div{
   margin-top: 50px;
 }
+.title_In_safari{
+  font-family: sans-serif ! important;
+}
 .title_Description{
 	color: #333 ! important;
+  letter-spacing: 0.3px;
 }
  .new-para-top{
  	font-size: 35px ! important;

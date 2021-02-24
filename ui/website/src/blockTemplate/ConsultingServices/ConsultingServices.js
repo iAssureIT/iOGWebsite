@@ -98,6 +98,13 @@ export default class ConsultingServices extends Component {
     };    
   }
 componentDidMount(){
+
+
+  var pageUrl = window.location.pathname;
+   if(pageUrl =="/iog-consult"){
+     $('.services_title').addClass('services_title_safari');
+
+   }
 // console.log("==>",this.props.block_id);
           {
              axios
@@ -126,9 +133,13 @@ componentDidMount(){
 
             if (isSafari){
               $('.BT4_txt').addClass('safari_BT4_txt');
+              $('.services_title').addClass('chrome_BT4_txt_title');
             }else{
               if (isChrome){
                 $('.BT4_txt').addClass('chrome_BT4_txt');
+                
+
+
               }else{
                 $('.BT4_txt').removeClass('chrome_BT4_txt');
                 $('.BT4_txt').removeClass('safari_BT4_txt');
@@ -140,7 +151,7 @@ componentDidMount(){
      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid"> 
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 innerBlocktepmlate3 servivesblockIog NOPadding">
          <div>
-            <div className="text-center services_title"><b>{this.state.blocks.blockTitle}</b></div>
+            <div className="text-center services_title "><b>{this.state.blocks.blockTitle}</b></div>
          </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 servivesblockIog">
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">

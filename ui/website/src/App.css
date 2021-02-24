@@ -1192,12 +1192,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 
   } 
 
-  .title_Description{
-    letter-spacing: 0.5px ! important;
-  }
-   .services_title { 
-      letter-spacing:0.5px ! important; 
-       }
+  
   @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:768px){
    /* Safari only override */ ::i-block-chrome,
     .services_title { 

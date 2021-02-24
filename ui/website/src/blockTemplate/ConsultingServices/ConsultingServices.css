@@ -228,7 +228,9 @@
   height:160px;
 }
 
-
+.chrome_BT4_txt_title{
+  letter-spacing: 0.5px;
+}
 .chrome_BT4_txt{
   height:160px;
 }
@@ -245,56 +247,8 @@
   }
  } 
 
-  @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:768px){
-   /* Safari only override */ ::i-block-chrome,
-    .services_title { 
-      letter-spacing:0.5px ! important; 
-       }
-    .title_Description { 
-      letter-spacing:0.5px ! important; 
-       }
-    }
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-  { @media {
+ .services_title_safari{
+  font-family: sans-serif ! important;
+  color: #333 ! important;
+ }
 
-     .services_title { 
-      letter-spacing:0.5px ! important; 
-       }
-    .title_Description { 
-      letter-spacing:0.5px ! important; 
-       }
-
-  }} 
-@supports (overflow:-webkit-marquee) and (justify-content:inherit)
-{
-   .services_title { 
-      letter-spacing:0.5px ! important; 
-       }
-    .title_Description { 
-      letter-spacing:0.5px ! important; 
-       }
-
-}
-@supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)) {
-
-   .services_title { 
-      letter-spacing:0.5px ! important; 
-       }
-    .title_Description { 
-      letter-spacing:0.5px ! important; 
-       }
-    .contentheaderNewPage h2{
-      letter-spacing: 0.5px ! important;
-    }    
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0) {
-   .services_title { 
-      letter-spacing:0.5px ! important; 
-       }
-    .title_Description { 
-      letter-spacing:0.5px ! important; 
-       }
-    .contentheaderNewPage h2{
-      letter-spacing: 0.5px ! important;
-    }    
-   }
