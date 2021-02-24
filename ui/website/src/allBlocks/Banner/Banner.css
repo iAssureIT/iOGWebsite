@@ -851,11 +851,19 @@ height: 90px;
       }
  }
   @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px){
+      .resbanner{
+        height: 730px ! important;
+
+      }
+ }
+  @media only screen 
     and (min-device-width : 360px) 
     and (max-device-width : 640px){
       .resbanner{
-        background-repeat: no-repeat;
-        height: 665px ! important;
+        /*background-repeat: no-repeat;*/
+        /*height: 730px ! important;*/
 
       }
  }
@@ -881,7 +889,7 @@ height: 90px;
     and (min-device-width : 320px) 
     and (device-height : 568px){
       .resbanner{
-        /*height: 570px ! important;*/
+        height: 570px ! important;
         background:50%;
 
       }
@@ -908,7 +916,7 @@ height: 90px;
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { 
       .resbanner{
-        height: 770px ! important;
+        height: 812px ! important;
         background: 50%,100%;
         /*margin-top: 100px ! important;*/
 
