@@ -607,12 +607,16 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -12px;
+    /*margin-left: -12px;*/
     margin-top: 12px;
     }
     .ct-topbar{
       left:293px ! important;
       top:38px;
+    }
+     .headerflow{
+      background-color: #fff;
+      height: 130px ! important;
     }
 
   }  
@@ -633,6 +637,10 @@ border:1px solid #eee ! important;
     .ct-topbar{
       right: -78px ! important;
     }
+     .headerflow{
+      background-color: #fff;
+      height: 115px ! important;
+    }
 
   }  
   @media only screen and (device-width : 375px) and (device-height : 667px) { 
@@ -646,12 +654,16 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    /*margin-left: -9px;*/
     margin-top: 12px;
     }
     .ct-topbar{
       left: 308px ! important;
       top:38px;
+    }
+     .headerflow{
+      background-color: #fff;
+      height: 120px ! important;
     }
 
   } 
@@ -666,11 +678,15 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    /*margin-left: -9px;*/
     margin-top: 12px;
     }
     .ct-topbar{
       left: 254px ! important;
+    }
+     .headerflow{
+      background-color: #fff;
+      height: 110px ! important;
     }
 
   }  
@@ -686,12 +702,16 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    /*margin-left: -9px;*/
     margin-top: 12px;
     }
     .ct-topbar{
       left: 344px ! important;
       top:20px;
+    }
+     .headerflow{
+      background-color: #fff;
+      height: 130px ! important;
     }
 
   }  
@@ -708,11 +728,15 @@ border:1px solid #eee ! important;
     height: 68px ! important;
     /*z-index: 1000;*/
     /*margin-left: -9px;*/
-    margin-top: -12px;
+    margin-top: 10px;
     }
     .ct-topbar{
       left: 344px ! important;
       top:25px;
+    }
+     .headerflow{
+      background-color: #fff;
+      height: 115px ! important;
     }
 
   }  
@@ -728,11 +752,15 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    /*margin-left: -9px;*/
     margin-top: 12px;
     }
     .ct-topbar{
       left: 293px ! important;
+    }
+     .headerflow{
+      background-color: #fff;
+      height: 115px ! important;
     }
 
   }  
@@ -742,17 +770,21 @@ border:1px solid #eee ! important;
     /*font-size: 0px ! important;*/
    }
    .topnav a.icon{
-   top: -10px ! important;
+   /*top: -10px ! important;*/
     right: -10px ! important;
    }
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
     /*margin-left: -9px;*/
-    margin-top: -10px;
+    margin-top: 20px;
     }
     .ct-topbar{
       left: 327px ! important;
+    }
+    .headerflow{
+      background-color: #fff;
+      height: 130px ! important;
     }
 
   }  
