@@ -707,8 +707,8 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
-    margin-top: 12px;
+    /*margin-left: -9px;*/
+    margin-top: -12px;
     }
     .ct-topbar{
       left: 344px ! important;
@@ -748,8 +748,8 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
-    margin-top: 12px;
+    /*margin-left: -9px;*/
+    margin-top: -10px;
     }
     .ct-topbar{
       left: 327px ! important;
