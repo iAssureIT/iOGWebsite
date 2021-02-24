@@ -863,7 +863,7 @@ height: 90px;
     and (max-device-width : 640px){
       .resbanner{
         /*background-repeat: no-repeat;*/
-        /*height: 730px ! important;*/
+        height: 730px ! important;
 
       }
  }
