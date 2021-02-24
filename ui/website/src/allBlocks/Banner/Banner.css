@@ -873,7 +873,7 @@ height: 90px;
     and (device-height : 823px){
       .resbanner{
         /*margin-top: 120px ! important;*/
-        height: 775px ! important;
+        height: 820px ! important;
 
       }
  }
@@ -3029,7 +3029,7 @@ div.drop-container:after {
   and (-webkit-device-pixel-ratio: 3.5) 
   and (orientation: portrait) {
     .resbanner{
-      height: 750px ! important;
+      height: 820px ! important;
     }
 
 }
