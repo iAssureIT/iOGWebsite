@@ -3,6 +3,10 @@
   object-fit: contain;
   /*height: 580px;*/
 }
+.img1 img{
+
+	width: 100%;
+}
 .services_img img{
 		width: 100%;
 	 }
