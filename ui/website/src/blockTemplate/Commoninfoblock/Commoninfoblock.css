@@ -141,6 +141,16 @@
 		height: 375px ! important;
 		object-fit: contain;
 	}
-}	
+}
+@media only screen 
+  and (device-width: 1440px) 
+  and (device-height: 900px) 
+
+  /*and (orientation: landscape) */
+ { 
+  .img1 img{
+    width: 100%;
+  }
+ }	
 
 

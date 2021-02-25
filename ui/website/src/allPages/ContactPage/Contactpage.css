@@ -176,4 +176,8 @@ margin-bottom: 50px;
   .contactpageform{
     height: 1100px;
   }
+  .input-group .form-control{
+    z-index: 0 ! important;
+  }
+ 
 }

@@ -3,12 +3,12 @@
 }
 .B3T_challengesDiv {
     top: 45px;
-   box-shadow: 2px 2px 7px 2px #3a3737;
+    box-shadow: 0px 0px 3px 2px #c4bfbf;
     margin-left: 23px;
     margin-bottom: 40px;
     min-height: 200px;
-    width: 350px;
-    height: 234px;
+    width: 348px;
+    height: 232px;
     padding-top: 35px;
 
     
@@ -69,4 +69,50 @@
     /*left:57px ! important;*/
   }
 }
- 
+ @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .B3T_challengesDiv {
+    margin-left: 23px;
+    margin-bottom: 40px;
+    min-height: 200px;
+    width: 241px ! important;
+    height: 185px;
+  }
+  .B4T_img {
+    margin-left: 45px;
+  }
+  .B4T_txt{
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .new_round-tabfor5{
+        margin-left: 80%;
+  }
+  .new_wizardNotefor5{
+    right: -50px ! important;
+  }
+}
+
+@media only screen 
+  and (device-width: 1440px) 
+  and (device-height: 900px) 
+
+  /*and (orientation: landscape) */
+ { 
+  .B3T_challengesDiv{
+    margin-left: 35px;
+    width: 347px;
+  }
+  .B4T_ServicesDiv{
+    margin-left: 80px;
+  }
+  .navigation_tab{
+    margin-left: 35px;
+  }
+  .img1 img{
+    width: 100%;
+  }
+ }

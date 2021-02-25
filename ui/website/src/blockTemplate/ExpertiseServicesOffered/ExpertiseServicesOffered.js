@@ -74,12 +74,14 @@ export default class ExpertiseServicesOffered extends Component {
     };    
   }
 componentDidMount(){
+     var pageUrl = window.location.pathname;
+      // var bsContainerWidth = $("body").find('.container').width()
+      // console.log("bsContainerWidth",bsContainerWidth);
+        if (pageUrl =="/well-testing" ){
+         $('.services_block').css('marginTop','220px');
+        }
 
-     /*var pageUrl = window.location.pathname;
-       if(pageUrl =="/iog-consult"){
-         $('.services_title').addClass('services_title_safari');
-
-       }*/
+       
      var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
       if (isSafari){
          $('.contentheaderH2Class').addClass('contentheaderH2');

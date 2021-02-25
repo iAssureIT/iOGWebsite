@@ -4,7 +4,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
 
 
-// import $                  from 'jquery';
+import $                  from 'jquery';
 import './ImgTitle.css';
 
 
@@ -23,6 +23,11 @@ export default class ImgTitle extends Component {
     
   }
 componentDidMount(){
+  var pageUrl = window.location.pathname;
+   if(pageUrl =="/production-monitoring-and-surveillance"){
+     $('.BT1_bannerTitle').css('top','180px');
+
+   }
 /*console.log("==>",this.props.block_id);*/
           {
              axios

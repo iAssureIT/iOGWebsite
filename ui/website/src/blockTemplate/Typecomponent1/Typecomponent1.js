@@ -21,6 +21,11 @@ export default class Typecomponent1 extends React.Component {
     
   }
 componentDidMount(){
+  /*var pageUrl = window.location.pathname;
+   if(pageUrl =="/iog-consult"){
+     $('.services_title').addClass('services_title_safari');
+
+   }*/
 /*console.log("==>",this.props.block_id);*/
           {
              axios
