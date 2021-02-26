@@ -963,6 +963,23 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .navigationTitle_for6{
       left:430px ! important;
      }
+     .servicekbtnarrow{
+      margin-left: 2px ! important;
+     }
+     .navigation_tab{
+      margin-left: 27px ! important;
+     }
+
+  }
+  @media only screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   
+     .navigation_tab{
+      margin-left: 20px ! important;
+     }
 
   }
 @media only screen 
@@ -1283,7 +1300,45 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     padding-top: 100px;
     }
   } 
+ @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .righttextaboutus h3{
+      font-size: 23px ! important;
+    }
+    .landscape_css{
+      margin-right: 20px;
+    }
+    .contacticon21{
+      /*margin-left: 20px ! important;*/
+    }
+    .contacticon2{
+      /*margin-left: 20px;*/
+    }
+  
+  }
 
+ @media only screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .righttextaboutus h3{
+      font-size: 23px ! important;
+    }
+    .landscape_css{
+      margin-right: 20px;
+    }
+    .contacticon21{
+      /*margin-left: 20px ! important;*/
+    }
+    .contacticon2{
+      /*margin-left: 20px;*/
+    }
+  
+  }
 
 
 /*.goog-te-gadget{

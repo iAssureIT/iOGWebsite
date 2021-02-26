@@ -766,6 +766,59 @@
     top:99em ! important;
    }
 } 
+@media only screen and (device-width : 1024px) and (device-height : 768px) { 
+    #consultdown_data0 {
+      right: 1%;
+      width: 419px;
+  }
+  #consultdown_img0{
+        left: 12em;
+
+  }
+  #consultdown_data1{
+    left: 5%;
+    width: 425px;
+  }
+  #consultdown_img1{
+    left: 41em;
+  }
+  #consultdown_data2{
+    width: 380px;
+  }
+  #consultdown_img2{
+    left:13em;
+  }
+  #consultdown_data3{
+    top:65em;
+    width: 465px;
+  }
+  #consultdown_img4{
+    left:14em;
+  }
+  #consultdown_img3{
+    top: 66em;
+    left: 42em;
+  }
+  #consultdown_data4{
+    width:392px;
+  }
+  #consultdown_data5{
+    width: 480px;
+  }
+  #consultdown_img5{
+    left:41em;
+  }
+  #consultdown_img6{
+    left:15em;
+  }
+  #consultdown_data6{
+    width: 378px;
+  }
+  .downimgtext{
+    left:16em ! important;
+  }
+}
+
 @media only screen and (device-width : 1024px) and (device-height : 1366px) { 
 
    #consultdown_data3{

@@ -260,18 +260,18 @@ class Contactpage extends Component{
                                 <div className="col-lg-8 col-md-8 col-sm-8 hidden-xs col-lg-offset-2 contactcontbackimg">
                                 </div>
                                 <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3 contacticons">
-                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 landscape_css">
                                     <a href={"https://api.whatsapp.com/send?phone="+ 919822790500} target="_blank">
                                       <i className="fa fa-whatsapp contacticon2"  aria-hidden="true"></i>
                                     </a>
                                   </div>
-                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 landscape_css">
                                       <a href="https://www.linkedin.com/company/iogsolutions/" target="_blank" ><i className="fa fa-linkedin contacticon2"></i></a>
                                   </div>
-                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 landscape_css">
                                       <a href="https://twitter.com/iogsolutions" target="_blank"><i className="fa fa-twitter contacticon2"></i></a>
                                   </div>
-                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                  <div className="col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
                                       <a href="https://www.facebook.com/iOGsolutions/" target="_blank"><i className="fa fa-facebook contacticon21"></i></a>
                                   </div>
                                 </div>

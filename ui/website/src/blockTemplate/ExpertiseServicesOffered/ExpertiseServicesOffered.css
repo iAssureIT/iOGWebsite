@@ -230,4 +230,17 @@
     .ServiceTxt p{
       letter-spacing: 0.3px ! important;
     }
-  }   
+  }
+  @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   
+     .B4T_ServicesDiv{
+      margin-left: 50px ! important;
+      height: 225px ! important;
+     }
+
+  } 
+   

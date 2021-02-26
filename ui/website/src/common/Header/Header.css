@@ -207,6 +207,21 @@
   display: block;
 }
 
+@media only screen 
+  and (device-width: 1440px) 
+  and (device-height: 900px) 
+  /*and (orientation: landscape) */
+  {
+     .dropdown .dropbtn {
+      font-size: 15px ! important;
+  }
+    .topnav a {
+      font-size: 15px ! important;
+  }
+
+}
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -403,7 +418,7 @@
   padding:0px;
 }
 .setlogo{
-  padding-left: 60px;
+  padding-left: 60px ! important;
   /*padding-top: 7px;*/
 }
 
@@ -607,7 +622,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -12px;
+    margin-left: -50px;
     margin-top: 0px;
     }
     .ct-topbar{
@@ -627,7 +642,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -12px;
+    margin-left: -50px;
     margin-top: 12px;
     }
     .ct-topbar{
@@ -646,7 +661,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    margin-left: -50px;
     margin-top: -12px;
     }
     .ct-topbar{
@@ -666,7 +681,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    margin-left: -50px;
     margin-top: 12px;
     }
     .ct-topbar{
@@ -686,7 +701,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
+    margin-left: -50px;
     margin-top: 12px;
     }
     .ct-topbar{
@@ -707,7 +722,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    /*margin-left: -9px;*/
+    margin-left: -50px;
     margin-top: -12px;
     }
     .ct-topbar{
@@ -716,6 +731,12 @@ border:1px solid #eee ! important;
     }
 
   }  
+   @media only screen and (device-width : 390px) and (device-height : 844px) { 
+        .resbanner {
+        margin-top: 104px;
+        height: 748px ! important;
+    }
+   }
 
    @media only screen and (device-width : 360px) and (device-height : 640px) { 
    .topnav a{
@@ -728,8 +749,8 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -9px;
-    margin-top: -12px;
+    margin-left: -50px;
+    margin-top: -10px;
     }
     .ct-topbar{
       left: 293px ! important;
@@ -752,7 +773,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    /*margin-left: -9px;*/
+    margin-left: -50px;
     margin-top: -10px;
     }
     .ct-topbar{
@@ -778,7 +799,36 @@ border:1px solid #eee ! important;
   .dropdown .dropbtn{
     font-size: 14px;
   }
- }  
+ } 
+
+ @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .setlogo{
+      padding-left: 10px ! important;
+    }
+    .dropdown .dropbtn{
+      padding: 14px 2px;
+    }
+    .topnav a{
+      padding: 14px 2px;
+
+    }
+}
+ 
+  @media only screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .setlogo{
+      padding-left: 15px ! important;
+    }
+    
+}
+ 
 
 
 

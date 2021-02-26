@@ -116,3 +116,20 @@
     width: 100%;
   }
  }
+
+@media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   .B3T_challengesDiv{
+    width: 250px;
+    margin-left: 15px;
+   }
+   .B4T_img{
+    margin-left: 50px;
+   }
+   .new_wizardNote_for6{
+    right: 35px ! important;
+   }
+} 

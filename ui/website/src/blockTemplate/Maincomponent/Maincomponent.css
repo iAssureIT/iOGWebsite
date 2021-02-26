@@ -486,6 +486,31 @@
         margin-top: 100px ! important;
     }
 
+  }
+   @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .iogblock1text {
+        /*height: 270px ! important;*/
+    }
+    .iogimgblock2{
+        height: 595px ! important;
+    }
+
+   
+  } 
+    @media only screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+        .iogimgblock2 {
+        height: 365px ! important;
+    }
+
+   
   } 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 
     .Padding_career{

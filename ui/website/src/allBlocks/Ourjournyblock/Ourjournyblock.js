@@ -521,7 +521,7 @@ journyData11(){
                       <img className="add6" src="/images/add1.png" />
                   </div>
                   <div className="col-lg-12 col-md-12 col-sm-12   col-xs-12   NOpadding">
-                      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg2">
+                      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 journybg2 hidden-xs">
                       <img className="add7" src="/images/add1.png" />
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 journybg31">
