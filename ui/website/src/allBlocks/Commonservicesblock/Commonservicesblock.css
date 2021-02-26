@@ -486,3 +486,13 @@
     margin-left: 20px ! important;
   } 
 }
+@media only screen and (device-width : 375px) and (device-height : 812px) { 
+    .newcard_landscape {
+      width: 248px ! important;
+  }
+}
+@media only screen and (device-width : 320px) and (device-height : 568px) { 
+    .newcard_landscape {
+      width: 210px ! important;
+  }
+}

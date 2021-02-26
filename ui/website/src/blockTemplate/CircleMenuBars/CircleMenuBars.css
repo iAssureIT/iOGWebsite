@@ -561,8 +561,47 @@
        /*width : 268px ! important;*/
        margin-left: 0px ! important;
       }
+      .new_wizardNotefor4{
+        left: 0px;
+      }
+      .righttextaboutus{
+        width: 210px;
+      }
+      .new_round-tabfor6{
+        margin-left: 10% ! important;
+      }
+      .new_wizardNote_for6{
+        font-size: 6px !important;
+      }
+      .new_wizardNotefor5{
+        font-size: 8px ! important;
+      }
      
   } 
+   @media only screen and (device-width : 384px) and (device-height : 640px) { 
+    .new_round-tabfor6 {
+        margin-left: 11% ! important;
+    }
+   }
+     @media only screen and (device-width : 600px) and (device-height : 960px) { 
+    .new_round-tabfor6 {
+        margin-left: 24% ! important;
+    }
+    .new_round-tabfor4 {
+        margin-left: 39% ! important;
+    }
+    .new_wizardNotefor4 {
+        left: -5px ! important;
+    }
+    .webclientbackimg{
+      width: 500px;
+      margin-left: 40px;
+      border:1px solid  #eee;
+    }
+    .webclientcaro{
+      width: 450px ! important;
+    }
+   }
 
   @media only screen and (device-width : 375px) and (device-height : 667px) { 
     .new_round-tabfor5 {
@@ -580,7 +619,7 @@
        margin-left: 18% ! important;
       }
      .new_round-tabfor6{
-        margin-left: 20% ! important;
+        margin-left: 16% ! important;
      }
      .new_wizardNotefor5{
         right: 5px ! important;
@@ -591,6 +630,10 @@
     .serflip-cardservices img{
         margin-left: 20px;
     }
+    .new_wizardNote_for6{
+      right: 9px;
+    }
+
   }      
 
  @media only screen and (device-width : 414px) and (device-height : 736px) { 
@@ -722,6 +765,22 @@
      }
 
   } 
+
+   @media only screen and (device-width : 384px) and (device-height : 640px) { 
+    .new_round-tabfor5 {
+        margin-left: 37% ! important;
+    }
+    .new_wizardNotefor5{
+      right: 0px;
+    }
+    .new_round-tabfor6{
+      margin-left: 25%;
+    }
+    .new_wizardNote_for6{
+      right: 4px;
+    }
+   
+ }
 
 
 

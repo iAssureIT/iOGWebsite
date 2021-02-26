@@ -29,6 +29,12 @@
    }
 
   }
+
+   @media only screen and (device-width : 320px) and (device-height : 568px) {
+    .backgrd_curve1_mob{
+      height: 1400px ! important;
+    }
+   }
 /*.director_imgDiv img{
 	width: 370px;
     height: 370px;

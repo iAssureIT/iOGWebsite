@@ -171,6 +171,15 @@
     padding: 10px;
   }
 }
+@media only screen and (device-width : 384px) and (device-height : 640px) {
+
+  .Plicy_padding{
+    padding: 10px;
+  }
+   .policyMainDiv{
+    padding: 10px;
+  }
+}
 
 
 

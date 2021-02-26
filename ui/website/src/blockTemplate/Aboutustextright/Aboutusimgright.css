@@ -44,3 +44,10 @@
         height: 560px ! important;
     }
  }   
+ @media only screen and (device-width : 320px) and (device-height : 568px) { 
+    
+      .righttextaboutus{
+        width: 210px;
+      }
+     
+  } 

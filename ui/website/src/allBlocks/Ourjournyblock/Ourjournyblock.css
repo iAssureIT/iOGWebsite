@@ -3244,3 +3244,31 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
 
 } 
 
+ @media only screen and (device-width : 384px) and (device-height : 640px) { 
+      .webclientcaro {
+        width: 300px ! important;
+    }
+    .webclientbackimg{
+      margin-left: 20px;
+    }
+ }
+   @media only screen and (device-width : 600px) and (device-height : 960px) { 
+    .new_round-tabfor6 {
+        margin-left: 24% ! important;
+    }
+    .new_round-tabfor4 {
+        margin-left: 39% ! important;
+    }
+    .new_wizardNotefor4 {
+        left: -5px ! important;
+    }
+    .webclientbackimg{
+      width: 500px;
+      margin-left: 40px;
+      border:1px solid  #eee;
+    }
+    .webclientcaro{
+      width: 450px ! important;
+    }
+   }
+

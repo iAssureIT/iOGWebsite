@@ -681,14 +681,23 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -50px;
-    margin-top: 12px;
+    margin-left: -70px;
+    /*margin-top: 12px;*/
     }
     .ct-topbar{
       left: 254px ! important;
     }
+    .topnav.responsive{
+      left:-62px;
+    }
 
-  }  
+  } 
+   @media only screen and (device-width : 384px) and (device-height : 640px) { 
+    .topnav.responsive{
+      left:-32px ! important;
+    }
+
+   } 
 
   @media only screen and (device-width : 411px) and (device-height : 823px) { 
    .topnav a{
@@ -731,6 +740,29 @@ border:1px solid #eee ! important;
     }
 
   }  
+  @media only screen and (device-width : 384px) and (device-height : 640px) { 
+   .topnav a{
+    /*font-size: 0px ! important;*/
+   }
+   .topnav a.icon{
+    top:-11px ! important;
+    right: -16px ! important;
+   }
+   .headerlogo img {
+    height: 68px ! important;
+    /*z-index: 1000;*/
+    margin-left: -50px;
+    margin-top: -12px;
+    }
+    .ct-topbar{
+      left: 319px ! important;
+      top:25px;
+    }
+    .headerflowscroll{
+      height: 95px;
+    }
+
+  }  
    @media only screen and (device-width : 390px) and (device-height : 844px) { 
         .resbanner {
         margin-top: 104px;
@@ -749,11 +781,34 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -50px;
+    margin-left: -70px;
     margin-top: -10px;
     }
     .ct-topbar{
       left: 293px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }
+
+  }  
+   @media only screen and (device-width : 412px) and (device-height : 732px) { 
+   .topnav a{
+    /*font-size: 0px ! important;*/
+   }
+   .topnav a.icon{
+    /*top:-15px ! important;*/
+    /*right: -16px ! important;*/
+   }
+   .headerlogo img {
+    height: 68px ! important;
+    /*z-index: 1000;*/
+    margin-left: -70px;
+    margin-top: -10px;
+    }
+    .ct-topbar{
+      left: 333px ! important;
        margin-top: 8px;
     }
      .headerflowscroll{

@@ -577,6 +577,9 @@ ul.no-icon-list1 {
   .topnav a{
         padding: 14px 7px;
   }
+  .footerdiv1{
+      padding: 0px;
+    }
 }
 
   @media only screen 
@@ -590,8 +593,23 @@ ul.no-icon-list1 {
     .newcard {
     width: 355px ! important;
     }
+    .footerdiv1{
+      padding: 0px;
+    }
 
 }
+ @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+     .Journycaro9{
+      left:-25px;
+     }
+     .Journycaro4{
+      top: 681px;
+     }
+  }
  @media only screen 
   and (device-width: 1024px) 
   and (device-height: 768px) 
@@ -607,7 +625,41 @@ ul.no-icon-list1 {
   .footerdiv1{
     padding: 0px;
   }
-   
+  .roadjourny img{
+    left:141px;
+  }
+  .Journycaro4 {
+        left: 805px ! important;
+        top: 625px ! important;
+    }
+    .Journycaro6 {
+        left: 290px ! important;
+    }
+    .add2{
+      top:371px;
+    }
+    .add6 {
+        left: 168px ! important;
+    }
+    .Journycaro5 {
+      left: 921px ! important;
+    }
+    .add8 {
+        right: -457px ! important;
+    }
+    .Journycaro7 {
+        left: 487px ! important;
+    }
+    .Journycaro9{
+      left:58px;
+    }
+    .Journycaro10 {
+        left: 394px ! important;
+    }
+    .add9 {
+        left: 271px ! important;
+    }
+             
 }
   @media only screen and (device-width : 375px) and (device-height : 812px) { 
   .responsivefooter{

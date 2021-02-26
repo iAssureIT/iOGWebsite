@@ -427,7 +427,7 @@
     and (device-width : 1440px) 
     and (device-height : 900px) { 
   .newcard{
-    width: 340px ! important;
+    width: 300px ! important;
 
    }
 }

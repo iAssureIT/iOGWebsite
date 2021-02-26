@@ -71,4 +71,14 @@
     .Type3component{
         margin-bottom: 95px ! important;
     }
-  }  
+  } 
+
+   @media only screen and (device-width : 320px) and (device-height : 568px) { 
+    
+      .repeated_block1height{
+        width: 120px;
+      }
+      .blk_ht{
+        padding-left: 0px;
+      }
+  } 

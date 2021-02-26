@@ -235,7 +235,7 @@ export default class Footer extends Component {
            
          <div className="footoverflow">
             <div id="footer" className="bgiogblue responsivefooter col-lg-12 footer-two">
-                <div className=" col-sm-12 col-xs-12 ">
+                <div className=" col-sm-12 col-xs-12 "style={{paddingLeft:"0px"}}>
                     <div className="">
                         <div className=" col-sm-2 col-xs-4">
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}><b>Menu</b></h6>
@@ -247,7 +247,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className=" col-sm-2 col-xs-4">
+                        <div className=" col-sm-2 col-xs-4"style={{paddingLeft:"0px"}}>
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Service Arms</h6>
                             <ul className="no-icon-list">
                                  <li><a href="/iog-study">iOGStudy</a></li>

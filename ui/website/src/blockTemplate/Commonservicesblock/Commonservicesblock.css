@@ -411,5 +411,12 @@
    }
 
 } 
+@media only screen and (device-width : 375px) and (device-height : 667px) { 
+  .serflip-card {
+      width: 250px ! important;
+  }
+
+} 
+
 
 

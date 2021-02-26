@@ -186,6 +186,7 @@
 @media only screen and (device-width : 320px) and (device-height : 568px) { 
     .B4T_ServicesDiv {
        width : 268px ! important;
+       height: 250px ! important;
        margin-left: 0px ! important;
       }
   }   
@@ -205,6 +206,20 @@
     .B4T_ServicesDiv {
        /*width : 268px ! important;*/
        margin-left: 80px ! important;
+      }
+  } 
+  @media only screen and (device-width : 600px) and (device-height : 960px) { 
+    .B4T_ServicesDiv {
+      width: auto ! important;
+      margin-left: 0px ! important;
+       /*width : 268px ! important;*/
+       /*margin-left: 80px ! important;*/
+      }
+      .new_round-tabforTwo{
+        margin-left: 43% ! important;
+      }
+      .new_wizardNotefortwo{
+        right: 0px ! important;
       }
   } 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 

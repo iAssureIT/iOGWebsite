@@ -100,5 +100,16 @@
   }
 
 }
+@media only screen and (device-width : 384px) and (device-height : 640px) {
+
+ .Policy_Challenges {
+    padding: 0px;
+}
+  .contactcontent{
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+
 
 

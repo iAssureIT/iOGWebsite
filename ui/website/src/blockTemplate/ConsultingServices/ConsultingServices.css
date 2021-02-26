@@ -71,6 +71,12 @@
       box-shadow: 2px 2px 8px 3px #dad6d6;
       padding: 0px;
 }
+@media only screen and (device-width : 375px) and (device-height : 667px) { 
+    .New_Study_shadow {
+        width: 235px ! important;
+    }
+     
+  } 
 .BT4_imgBack{
 
     height: 60px;
@@ -251,4 +257,10 @@
   font-family: sans-serif ! important;
   color: #333 ! important;
  }
+@media only screen and (device-width : 360px) and (device-height : 640px) { 
+
+   .padding_5E{
+    padding-left: 0px ! important;
+   }
+} 
 

@@ -60,3 +60,8 @@ height: 960px ! important;
       width:239px ! important;
     }
   }
+   @media only screen and (device-width : 600px) and (device-height : 960px) { 
+    .blck1heightnew {
+        width: 506px ! important;
+    }
+}

@@ -699,7 +699,13 @@
     .downimg_p_txt{
       top:23.5em ! important;
     }*/
-}  
+}
+@media only screen and (device-width : 320px) and (device-height : 851px) { 
+    .innerBlocktConsult {
+      overflow: hidden;
+      }
+
+  }  
 @media only screen and (device-width : 360px) and (device-height : 640px) { 
 
   #consultdown_img3{
@@ -707,6 +713,18 @@
   }
   #consultdown_data3{
     top:104em ! important;
+  }
+  .innerBlocktConsult {
+      overflow: hidden;
+      }
+  #consultdown_data0{
+    left: 0px ! important;
+  } 
+  #consultdown_data2{
+    left: 0em ! important;
+  }   
+  #consultdown_data3{
+    left: 0em ! important;
   }
 } 
 @media only screen and (device-width : 320px) and (device-height : 568px) { 
@@ -867,6 +885,15 @@
    }
 
 } 
+@media only screen and (device-width : 384px) and (device-height : 640px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
 
 
  

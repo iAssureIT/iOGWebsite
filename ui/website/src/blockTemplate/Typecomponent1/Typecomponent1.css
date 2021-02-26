@@ -195,5 +195,13 @@
 
    }*/
 
+   @media only screen and (device-width : 320px) and (device-height : 568px) {
+
+      .MobileDivHeight{
+        height: 670px ! important;
+      }
+
+    }
+
 
 
