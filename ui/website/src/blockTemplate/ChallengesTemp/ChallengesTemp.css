@@ -133,3 +133,147 @@
     right: 35px ! important;
    }
 } 
+
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 375px) and (device-height : 667px) { 
+  .B4T_img {
+    margin-left: 70px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 360px) and (device-height : 640px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 25px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 400px) and (device-height : 700px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 414px) and (device-height : 736px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 375px) and (device-height : 812px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 800px) and (device-height : 1280px) { 
+  .B4T_img {
+    margin-left: 40px;
+  }
+  .B3T_challengesDiv{
+    width: 315px ! important;
+    margin-left: 63px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 384px) and (device-height : 640px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 275px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 412px) and (device-height : 732px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 285px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 411px) and (device-height : 731px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 285px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 411px) and (device-height : 823px) { 
+  .B4T_img {
+    margin-left: 70px;
+  }
+  .B3T_challengesDiv{
+    width: 285px ! important;
+    margin-left: 43px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 600px) and (device-height : 960px) { 
+  .B4T_img {
+    margin-left: 140px;
+  }
+  .B3T_challengesDiv{
+    width: 400px ! important;
+    margin-left: 80px ! important;
+  }
+  
+
+}
+@media only screen and (device-width : 320px) and (device-height :568px) { 
+  .B4T_img {
+    margin-left: 60px;
+  }
+  .B3T_challengesDiv{
+    width: 250px ! important;
+    margin-left: 20px ! important;
+  }
+  
+
+}

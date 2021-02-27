@@ -9,7 +9,7 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.services_img img{
@@ -22,7 +22,7 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
@@ -39,12 +39,12 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
 		width:100%;
-		 height: 375px ! important;
+		 height: auto ! important;
         /*object-fit: contain;*/
 	 }
 
@@ -53,11 +53,12 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
-		height: 375px ! important;
+		width: 100%;
+		/*height: 375px ! important;*/
         /*object-fit: contain;*/
 	 }
 
@@ -66,11 +67,12 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
-		height: 375px ! important;
+		width: 100%;
+		/*height: 375px ! important;*/
         /*object-fit: contain;*/
 	 }
 
@@ -79,11 +81,12 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
-		height: 375px ! important;
+		width: 100%;
+		/*height: 375px ! important;*/
         /*object-fit: contain;*/
 	 }
 
@@ -92,11 +95,12 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
-		height: 375px ! important;
+		width: 100%;
+		height: 300px ! important;
         /*object-fit: contain;*/
 	 }
 
@@ -105,12 +109,13 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
+		width: 100%;
 		height: 375px ! important;
-        object-fit: contain;
+        /*object-fit: contain;*/
 	 }
 
 }
@@ -118,11 +123,12 @@
 	.services_img{
 	     width: 100% ! important ;
 	    object-fit: contain! important;
-	    height: 362px ! important;
+	    height: auto ! important;
 	    padding: 0px ! important;
 	}
 	.img1 img{
-		height: 375px ! important;
+		width: 100%;
+		height: 300px ! important;
         /*object-fit: contain;*/
 	 }
 

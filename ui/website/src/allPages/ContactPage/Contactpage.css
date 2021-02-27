@@ -204,11 +204,29 @@ margin-bottom: 50px;
 @media only screen and (device-width : 320px) and (device-height : 568px) { 
 
     .sxSelectHeader__Xlz5r{
-        height: 40px ! important;
+        height: 45px ! important;
 
     }
     .sxSelectPlaceholder__1-20v{
-      line-height: 21.1px ! important;
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 12px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 12px ! important;
+    }
+
+
+  }   
+  @media only screen and (device-width : 768px) and (device-height : 1024px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 45px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
     }
     .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
       font-size: 12px ! important;
@@ -240,11 +258,29 @@ margin-bottom: 50px;
    @media only screen and (device-width : 375px) and (device-height : 667px) { 
 
     .sxSelectHeader__Xlz5r{
-        height: 40px ! important;
+        height: 45px ! important;
 
     }
     .sxSelectPlaceholder__1-20v{
-      line-height: 21.1px ! important;
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 12px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 12px ! important;
+    }
+
+
+  }    
+  @media only screen and (device-width : 414px) and (device-height : 736px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 45px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
     }
     .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
       font-size: 12px ! important;
@@ -262,13 +298,121 @@ margin-bottom: 50px;
 
     }
     .sxSelectPlaceholder__1-20v{
-      line-height: 21.1px ! important;
+      line-height: 13px ! important;
     }
     .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
-      font-size: 12px ! important;
+      font-size: 11px ! important;
     }
     .sxListItem__2kr9F .sxListItemLabel__S0lF1{
-      font-size: 12px ! important;
+      font-size: 11px ! important;
+    }
+
+
+  }    
+   @media only screen and (device-width : 400px) and (device-height : 700px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 11px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 11px ! important;
+    }
+
+
+  }    
+   @media only screen and (device-width : 800px) and (device-height : 1280px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 11px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 11px ! important;
+    }
+
+
+  }    
+  @media only screen and (device-width : 384px) and (device-height : 640px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 11px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 11px ! important;
+    }
+
+
+  }    
+  @media only screen and (device-width : 412px) and (device-height : 732px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 11px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 11px ! important;
+    }
+
+
+  }    
+  @media only screen and (device-width : 411px) and (device-height : 731px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 11px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 11px ! important;
+    }
+
+
+  }    
+  @media only screen and (device-width : 411px) and (device-height : 823px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 11px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 11px ! important;
     }
 
 

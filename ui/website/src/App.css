@@ -856,6 +856,11 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
      
   }
+ @media only screen and (device-width : 320px) and (device-height : 568px) { 
+  .videocard1 {
+    width: 265px ! important;
+  }
+ } 
 
 @media screen and (max-width:480px){
     .new_round-tabfor4{

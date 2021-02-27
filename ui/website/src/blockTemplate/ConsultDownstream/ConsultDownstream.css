@@ -894,6 +894,24 @@
     top:99em;
   }
 }
+@media only screen and (device-width : 412px) and (device-height : 732px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
+@media only screen and (device-width : 400px) and (device-height : 700px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
 
 
  

@@ -30,3 +30,108 @@
 	padding-top: 10px;
     font-size: 18px;
 }
+@media only screen and (device-width : 414px) and (device-height : 736px) { 
+  .resource_blck{
+    padding: 30px ! important;
+    border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+
+}
+@media only screen and (device-width : 375px) and (device-height : 667px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  .videocard1{}
+
+}
+@media only screen and (device-width : 320px) and (device-height : 568px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 411px) and (device-height : 823px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 411px) and (device-height : 731px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 360px) and (device-height : 640px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 600px) and (device-height : 960px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 412px) and (device-height : 732px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 384px) and (device-height : 640px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 400px) and (device-height : 700px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
+  .resource_blck{
+    padding: 30px ! important;
+     border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+  
+
+}
+@media only screen and (device-width : 768px) and (device-height : 1024px) { 
+  .resource_blck{
+   height: 400px;
+  }
+  
+
+}
