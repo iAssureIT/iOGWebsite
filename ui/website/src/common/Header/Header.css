@@ -836,6 +836,66 @@ border:1px solid #eee ! important;
       height: 100px;
     }  
    }
+    @media only screen and (device-width : 400px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 720px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+   }
+    @media only screen and (device-width : 400px) and (device-height : 600px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 720px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+   }
+    @media only screen and (device-width : 400px) and (device-height : 700px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 720px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+   }
+     @media only screen and (device-width : 400px) and (device-height : 768px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 720px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+   }
     @media only screen and (device-width : 401px) { 
     .headerlogo img{
       margin-left: -70px ! important;
