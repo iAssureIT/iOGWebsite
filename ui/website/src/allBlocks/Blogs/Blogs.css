@@ -191,6 +191,24 @@
 
    
   }
+   @media only screen 
+  and (device-width: 728px) 
+  and (device-height: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .blogbtn1{
+      padding: 7px 0px;
+      width: 220px;
+      float: right;
+
+    }
+    .blogdate{
+      padding-top: 113px ! important;
+    }
+
+
+   
+  }
   @media only screen and (device-width : 320px) and (device-height : 568px) { 
     
      .blogblock {
@@ -208,3 +226,33 @@
   }
 
 }
+  @media only screen and (device-width : 320px) and (device-height : 533px) { 
+    .blogtext {
+        height: 693px ! important;
+    }
+    .blogblock {
+        height: 689px ! important;
+    }
+    .price-footerBlog {
+        margin-top: 100px ! important;
+    }
+    .blogtext h4{
+          margin-bottom: 20px;
+          line-height: 1;
+    }
+   /*  .index0{
+      width: 182px ! important;
+    }
+    .index2{
+      width: 182px ! important;
+    }
+    .index1{
+      width: 182px ! important;
+    }
+    .index3{
+      width: 182px ! important;
+    }
+    .index4{
+      width: 182px ! important;
+    }*/
+  }

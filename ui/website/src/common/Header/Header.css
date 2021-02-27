@@ -821,6 +821,95 @@ border:1px solid #eee ! important;
     }
 
   }  
+   @media only screen and (device-width : 401px) and (device-height : 768px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 770px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+   }
+    @media only screen and (device-width : 401px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 770px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+   }
+     @media only screen and (device-width : 401px) and (device-height : 700px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 770px ! important;
+      }
+     .ct-topbar{
+      left: 333px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }  
+
+
+   }
+     @media only screen and (device-width : 320px) and (device-height : 768px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 770px ! important;
+      }
+   }
+     @media only screen and (device-width : 600px) and (device-height : 1024px) { 
+    .headerlogo img{
+      margin-left: -50px ! important;
+    }
+    .resbanner {
+        height: 770px ! important;
+      }
+   }
+
+    @media only screen and (device-width : 320px) and (device-height : 533px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+      margin-top: -10px ! important;
+    }
+    .resbanner {
+        height: 540px ! important;
+      }
+      .ct-topbar{
+        left: 260px ! important;
+         margin-top: 8px;
+      }
+      .topnav a.icon {
+        top: -9px;
+        right: -23px;
+      }
+      .topnav.responsive{
+        left:-59px ! important;
+      }
+      .headerflowscroll{
+        height: 90px ! important;
+      }
+   }
+
+
    @media only screen and (device-width : 412px) and (device-height : 732px) { 
    .topnav a{
     /*font-size: 0px ! important;*/

@@ -831,17 +831,26 @@ height: 90px;
 
 @media screen and (max-width: 600px) {
    .resbanner{
-        height: 670px ! important;
+        /*height: 670px ! important;*/
        }    
 }  
   @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px){
+    and (device-width : 375px) 
+    and (device-width : 667px){
       .resbanner{
         height: 660px ! important;
 
       }
  }
+  @media only screen 
+    and (device-width : 401px) 
+    and (device-width : 768px){
+      .resbanner{
+        height: 660px ! important;
+
+      }
+ }
+
   @media only screen 
     and (device-width : 390px) 
     and (device-height : 844px){
@@ -851,14 +860,7 @@ height: 90px;
 
       }
  }
-  @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px){
-      .resbanner{
-        height: 698px ! important;
-
-      }
- }
+ 
   @media only screen 
     and (min-device-width : 414px) 
     and (max-device-width : 736px){

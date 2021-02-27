@@ -262,5 +262,14 @@
    .padding_5E{
     padding-left: 0px ! important;
    }
+}
+@media only screen and (device-width : 320px) and (device-height : 533px) { 
+
+   .padding_Mob{
+    padding-left: 0px ! important;
+   }
+   .padding_MobNokia{
+    padding-left: 0px ! important;
+   }
 } 
 

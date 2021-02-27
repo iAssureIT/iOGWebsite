@@ -218,6 +218,24 @@ margin-bottom: 50px;
     }
 
 
+  } 
+  @media only screen and (device-width : 320px){ 
+
+    .sxSelectHeader__Xlz5r{
+        height: 45px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 12px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 12px ! important;
+    }
+
+
   }   
   @media only screen and (device-width : 768px) and (device-height : 1024px) { 
 
@@ -256,6 +274,24 @@ margin-bottom: 50px;
 
   }    
    @media only screen and (device-width : 375px) and (device-height : 667px) { 
+
+    .sxSelectHeader__Xlz5r{
+        height: 45px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 12px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 12px ! important;
+    }
+
+
+  }    
+  @media only screen and (device-width : 375px) { 
 
     .sxSelectHeader__Xlz5r{
         height: 45px ! important;
@@ -434,7 +470,41 @@ margin-bottom: 50px;
     }
 
 
-  }    
+  }  
+  @media only screen and (device-width : 390px){
+     .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 12px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 12px ! important;
+    }
+
+
+  }
+
+  @media only screen and (device-width : 401px){
+     .sxSelectHeader__Xlz5r{
+        height: 40px ! important;
+
+    }
+    .sxSelectPlaceholder__1-20v{
+      line-height: 13px ! important;
+    }
+    .sxSubListItem__1gP3t .sxSubListItemLabel__1vcup{
+      font-size: 12px ! important;
+    }
+    .sxListItem__2kr9F .sxListItemLabel__S0lF1{
+      font-size: 12px ! important;
+    }
+
+  }   
 
 @media screen and (max-width:600){
    .sxSelectHeader__Xlz5r{

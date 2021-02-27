@@ -866,11 +866,17 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .new_round-tabfor4{
         margin-left:27% ! important;
      }
+     .uptitle h3{
+      font-size: 22px ! important;
+     }
       .serflip-card{
-        width: 275px ! important;
+        width: 220px ! important;
      }
      .mobile_width{
         
+     }
+     .contentheader1 h2{
+      font-size: 30px ! important;
      }
      .para-top{
       font-size: 19px ! important;
@@ -1347,6 +1353,33 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
   
   }
+@media only screen and (device-width : 401px) { 
+  .serflip-cardservices img{
+    width: 220px ! important;
+  }
+}
+@media only screen and (device-width : 393px) { 
+  .serflip-cardservices img{
+    margin-left: 0px ! important;
+  }  
+}  
+@media only screen and (device-width : 360px) { 
+  .newcard_landscape {
+      width: 245px ! important;
+  }
+}
+@media only screen and (device-width : 600px) and (device-height :1024px) { 
+.newcard_landscape {
+    width: 337px ! important;
+    margin-left: 71px;
+  }
+ .serflip-cardservices img{
+  width: 285px ! important;
+ } 
+}  
+
+
+
 
 
 /*.goog-te-gadget{

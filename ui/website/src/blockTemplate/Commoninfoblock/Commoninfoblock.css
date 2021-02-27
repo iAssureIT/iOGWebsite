@@ -49,6 +49,20 @@
 	 }
 
 }	
+@media only screen and (device-width : 401px)and (device-height : 600px){
+	.img1 img{
+		height: 300px ! important;
+
+	}
+
+}
+@media only screen and (device-width : 401px){
+	.img1 img{
+		height: 300px ! important;
+
+	}
+
+}
 @media only screen and (device-width : 411px) and (device-height : 731px) {
 	.services_img{
 	     width: 100% ! important ;

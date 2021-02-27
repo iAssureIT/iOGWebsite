@@ -257,7 +257,7 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         
-                        <div className="col-sm-2 col-xs-4">
+                        <div className="col-sm-2 col-xs-4"style={{paddingRight:"0px"}}>
                             <h6 className="font-montserrat"style={{color:"#ffffff"}}>Resources</h6>
                             <ul className="no-icon-list">
                                 <li><a href="/careers">Careers</a></li>

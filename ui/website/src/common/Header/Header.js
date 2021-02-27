@@ -300,23 +300,6 @@ handlechange(event){
     return (
     <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerflow"> 
       <div className="row"> 
-       {/* <ul>
-            <li><a href="javascript:;" id="German" onclick="translateLanguage(this.id);"><span>German </span>
-                <img src="img/flags/germany_flag.jpg" alt="" /></a> </li>
-            <li><a href="javascript:;" id="Italian" onclick="translateLanguage(this.id);"><span>Italian
-            </span>
-                <img src="img/flags/italy_flag.jpg" alt="" /></a> </li>
-            <li><a href="javascript:;" id="Hindi" onclick="translateLanguage(this.id);"><span>Hindi </span>
-                <img src="img/flags/india_flag.png" alt="" /></a> </li>
-            <li><a href="javascript:;" id="French" onclick="translateLanguage(this.id);"><span>French </span>
-                <img src="img/flags/french_flag.jpg" alt="" /></a> </li>
-            <li><a href="javascript:;" id="Spanish" onclick="translateLanguage(this.id);"><span>Spanish
-            </span>
-                <img src="img/flags/spain_flag.jpg" alt="" /></a> </li>
-            <li><a href="javascript:;" id="Russian" onclick="translateLanguage(this.id);"><span>Russian
-            </span>
-                <img src="img/flags/russia_flag.jpg" alt="" /></a> </li>
-        </ul>*/}
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-static-top" id="bb">
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 onscrollheader"></div>
           {/*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sepersteflagdiv ">*/}
@@ -373,7 +356,7 @@ handlechange(event){
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12 TopnavPadding">
            <div class="topnav" id="myTopnav">
-            <a href="/" className="hidden-xs">HOME</a>
+            <a href="/" className="hidden-xs hidden-sm">HOME</a>
             
              <a href="/" className="hidden-lg hidden-md">HOME</a> 
             <div class="dropdown">

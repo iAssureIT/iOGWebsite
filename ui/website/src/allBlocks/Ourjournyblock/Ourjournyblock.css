@@ -3035,6 +3035,19 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
 
 }
+@media only screen and (device-width : 768px) and (device-height : 1024px) { 
+
+    .scrollwrap{
+    top: 169px;
+    left: 370px;
+    }
+    .journyanim {
+    opacity: 1;
+    transition-duration: 0.5s;
+    border: 1px solid #bdbcbc;
+  }
+   
+}
 
 @media only screen and (device-width : 375px) and (device-height : 667px) { 
 
@@ -3251,6 +3264,17 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     .webclientbackimg{
       margin-left: 20px;
     }
+ }
+
+ @media only screen and (device-width : 401px) and (device-height : 700px) { 
+      .webclientcaro {
+        width: 300px ! important;
+    }
+      .topnav a.icon {
+      top: -5px;
+      right: -13px;
+    }
+   
  }
    @media only screen and (device-width : 600px) and (device-height : 960px) { 
     .new_round-tabfor6 {

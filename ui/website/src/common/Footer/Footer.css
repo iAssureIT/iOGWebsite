@@ -676,5 +676,12 @@ ul.no-icon-list1 {
     height: 580px ! important;
   }
 }  
-
+ @media only screen and (device-width : 320px) and (device-height : 533px) { 
+  .responsivefooter a{
+    font-size: 12px ! important;
+  }
+  .footer-two ul li a{
+    line-height: 20px;
+  }
+ }
 

@@ -18,6 +18,13 @@
 	 }
 
 }
+@media only screen and (device-width : 401px)and (device-height : 600px){
+	.img1 img{
+		height: 300px ! important;
+
+	}
+
+}
 @media only screen and (device-width : 375px) and (device-height : 667px) {
 	.services_img{
 	     width: 100% ! important ;

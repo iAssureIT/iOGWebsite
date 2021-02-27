@@ -155,8 +155,8 @@ componentDidMount(){
          </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 servivesblockIog">
            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_5E">
-             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_MobNokia">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_MobNokia">
                { 
                 this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0?
                 this.state.blocks.repeatedBlocks.map((result, index)=>{
