@@ -702,13 +702,44 @@ border:1px solid #eee ! important;
     height: 68px ! important;
     /*z-index: 1000;*/
     margin-left: -70px;
-    /*margin-top: 12px;*/
+    margin-top: -15px;
     }
     .ct-topbar{
       left: 254px ! important;
     }
     .topnav.responsive{
       left:-62px;
+    }
+
+  } 
+  @media only screen and (device-width : 375px) and (device-height : 700px) { 
+  .topnav a.icon {
+    top   : -11px;
+    right : -20px;
+    color :#585755 ! important
+  }
+   .headerlogo img {
+    height: 68px ! important;
+    /*z-index: 1000;*/
+    margin-left: -70px;
+    margin-top: -5px;
+    }
+    .ct-topbar{
+      left: 312px ! important;
+    }
+    .topnav.responsive{
+      left:-62px;
+    }
+      .topnav.responsive .icon {
+      position: absolute;
+     
+      right: -20px;
+    }
+    .topnav.responsive {
+        left: -50px;
+    }
+    .headerflowscroll{
+      height: 95px ! important;
     }
 
   } 
