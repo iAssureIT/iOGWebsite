@@ -201,6 +201,12 @@
        margin-left: 0px ! important;
       }
   } 
+  @media only screen and (device-width : 1440px) and (device-height : 900px) { 
+    .B4T_ServicesDiv {
+       /*width : 268px ! important;*/
+       margin-left: 80px ! important;
+      }
+  } 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 
     .resfooterend {
       height: 71px ! important;

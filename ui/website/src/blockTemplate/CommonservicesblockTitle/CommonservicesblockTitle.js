@@ -139,7 +139,7 @@ componentDidMount(){
                                 console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
-                                    var classes = "col-lg-offset-2  col-lg-4 col-md-6  col-sm-6 col-xs-4";
+                                    var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-6  col-sm-6 col-xs-4";
                                    
                                   }else{
                                     var classes="webshopmargintop webpageshopcont col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center";

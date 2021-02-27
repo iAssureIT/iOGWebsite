@@ -29,7 +29,7 @@ componentDidMount(){
    // console.log("pageUrl in typecomp1btn",pageUrl);
    let a = pageUrl ? pageUrl.split('/') : "";
    if(pageUrl =="/industries"){
-        $('.TypecomponentBtnImg').css('paddingTop','120px');
+        // $('.TypecomponentBtnImg').css('paddingTop','120px');
       }
           {
              axios

@@ -843,10 +843,19 @@ height: 90px;
       }
  }
   @media only screen 
+    and (device-width : 390px) 
+    and (device-height : 844px){
+      .resbanner{
+        margin-top: 100px;
+        height: 800px ! important;
+
+      }
+ }
+  @media only screen 
     and (min-device-width : 375px) 
     and (max-device-width : 667px){
       .resbanner{
-        height: 660px ! important;
+        height: 698px ! important;
 
       }
  }
@@ -859,11 +868,11 @@ height: 90px;
       }
  }
   @media only screen 
-    and (min-device-width : 360px) 
-    and (max-device-width : 640px){
+    and (device-width : 360px) 
+    and (device-width : 640px){
       .resbanner{
         /*background-repeat: no-repeat;*/
-        height: 730px ! important;
+        height: 690px ! important;
 
       }
  }
@@ -872,7 +881,7 @@ height: 90px;
     and (device-height : 731px){
       .resbanner{
         /*margin-top: 130px ! important;*/
-        height: 730px ! important;
+        height: 765px ! important;
 
       }
  }
@@ -881,7 +890,7 @@ height: 90px;
     and (device-height : 823px){
       .resbanner{
         /*margin-top: 120px ! important;*/
-        height: 820px ! important;
+        height: 860px ! important;
 
       }
  }
@@ -898,12 +907,12 @@ height: 90px;
     and (min-device-width : 393px) 
     and (device-height : 851px){
       .resbanner{
-       background-image: url(/images/Mobile.png);
-        background-size: cover;
-        height: 853px ! important;
-        object-fit: contain;
+       /*background-image: url(/images/Mobile.png);*/
+        /*background-size: cover;*/
+        height: 850px ! important;
+        /*object-fit: contain;*/
          background: 50%; 
-        background-repeat: no-repeat;
+        /*background-repeat: no-repeat;*/
 
       }
       .webclientbackimg{
@@ -3147,5 +3156,35 @@ div.drop-container:after {
     left: 197px;
     top: 390px;
   }
+}
+
+@media only screen and (device-width : 1440px) and (device-height : 900px) { 
+  .oilimage{
+    right: 220px ! important;
+    top:170px ! important;
+  }
+  .nexttogasimage{
+    right: 460px ! important;
+    top: 301px ! important;
+  }
+  .plantimage11 {
+    right: 50px ! important;
+    top: 318px ! important;
+  }
+  .petrolimage1{
+    right: 260px ! important;
+    top:440px ! important;
+  }
+  .boat_img2 {
+    left: 311px ! important;
+  }
+  .waterimg2Div_img{
+    width: 170px;
+  }
+  .waterimg2{
+    left:8% ! important;
+    top:72% ! important;
+  }  
+
 }
 

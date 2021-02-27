@@ -766,6 +766,20 @@ border:1px solid #eee ! important;
 
   }  
 
+  @media only screen 
+  and (device-width: 1440px) 
+  and (device-height: 900px) 
+
+  /*and (orientation: landscape) */
+ { 
+  .topnav a{
+    font-size: 14px;
+  }
+  .dropdown .dropbtn{
+    font-size: 14px;
+  }
+ }  
+
 
 
 

@@ -167,11 +167,28 @@
       padding-left: 0px ! important;
      }
 
+
   }
 
+  @media only screen 
+  and (device-width: 1440px) 
+  and (device-height: 900px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .Typecomp2Btn_img {
+      padding-left: 25px ! important;
+    }
+     .TypebtnText{
+      width: 670px ! important;
+     }
+     .TypebtnText {
+      margin-left: 80px ! important;
+    }
+ }  
+
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .TypebtnText{
@@ -179,5 +196,27 @@
     }
     .BtnImageDown{
       margin-top: 140px ! important;
+    }
+ }   
+ @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .TypebtnText{
+      margin-left: 0px ! important;
+    }
+    .BtnImageDown{
+      /*margin-top: 140px ! important;*/
+    }
+ }   
+ @media only screen 
+  and (min-width: 1440px) 
+  and (max-height: 900px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   
+    .BtnImageDown{
+      margin-top:0px ! important;
     }
  }   

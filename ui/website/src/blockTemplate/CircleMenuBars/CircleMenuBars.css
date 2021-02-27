@@ -515,8 +515,8 @@
       
 }
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .navigation_tab{
@@ -528,6 +528,20 @@
     .new_wizardNotefortwo{
         right: -252px ! important;
     }
+
+  }
+  @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   .navigationTitle_for6{
+    left: 436px ! important;
+   }
+   .newcard_landscape{
+    /*width: 300px ! important;*/
+   }
+    
   }
 
  @media only screen and (device-width : 360px) and (device-height : 640px) { 
@@ -672,6 +686,9 @@
   .navigation_tab{
     margin-left: 35px ! important;
   }
+  .navigationTitle_for6 {
+    left: 630px ! important;
+    }
  
  }  
 

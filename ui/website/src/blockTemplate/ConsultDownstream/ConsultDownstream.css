@@ -462,56 +462,65 @@
     }  
 }
 
-@media screen and (min-width: 1400px) {
- /* .downimgtext{
-    left:28em !important;
+@media only screen and (device-height: 900px) and (device-width: 1440px){
+.downimgtext{
+
+  }
+  .downimgtext{
+    left:22em !important;
   }
    #consultdown_img0{
-    left: 36em ! important;
+    left: 26em ! important;
   }
    #consultdown_data0{
-    right: 18% ! important;
+    right: 3% ! important;
   }
   #consultdown_data1{
-    left:13% ! important;
+    left:9% ! important;
   }
   #consultdown_data3{
-    left:10% ! important;
+   left:5% ! important;
   }
   #consultdown_data2{
-    right: 21% ! important;
+    right: 6% ! important;
   }
   #consultdown_img4{
-    left:36em ! important;
+    left:26em ! important;
   }
   #consultdown_data4{
-    right: 20%;
+    right: 4%;
   }
   #consultdown_data5{
-    left:17em ! important;
+    left:7% ! important;
   }
   #consultdown_img6{
-    left:36em ! important;
+    left:30em ! important;
   }
   #consultdown_data6{
-    right: 20% ! important;
+    right: 5% ! important;
   }
   #consultdown_img1{
-    left:67em ! important;
+    left:56em ! important;
 
   }
   #consultdown_img2{
-    left:35em ! important;
+    left:26em ! important;
   }
   #consultdown_img3{
-    left:67em ! important;
+    left:56em ! important;
 
   }
   #consultdown_img5{
-    left:67em ! important;
+    left:56em ! important;
 
-  }*/
-  
+  }
+  #consultdown_img6{
+    left:26em ! important;
+
+  }
+ .img1 img{
+  width: 100%;
+ }  
 }
 @media screen and (min-width: 1600px) {
   .downimgtext{
@@ -623,8 +632,8 @@
 
 
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     #consultdown_img0{

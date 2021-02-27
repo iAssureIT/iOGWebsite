@@ -2834,6 +2834,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
    }
    .Journycaro5{
     left:604px ! important;
+    top:830px ! important;
    }
    .Journycaro7{
     left:372px ! important;
@@ -2982,6 +2983,11 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
     .webclientcaro{
       width:284px ! important;
+
+    }
+     .webclientbackimg{
+      /*width: 310px ! important;*/
+      border: 1px solid #b5b2b2;
     }
 
 }
@@ -3052,6 +3058,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
     .webclientbackimg{
       width: 310px ! important;
+      border: 1px solid #b5b2b2;
     }
 
 
