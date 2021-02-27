@@ -259,6 +259,7 @@
   .headerlogo img{
     position: fixed;
     top: 12px;
+    margin-left: -70px;
   }
 
 }
@@ -1005,7 +1006,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 68px ! important;
     /*z-index: 1000;*/
-    margin-left: -50px;
+    margin-left: -60px;
     margin-top: -10px;
     }
     .ct-topbar{

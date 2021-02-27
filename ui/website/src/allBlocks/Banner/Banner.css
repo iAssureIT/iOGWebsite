@@ -862,8 +862,8 @@ height: 90px;
  }
  
   @media only screen 
-    and (min-device-width : 414px) 
-    and (max-device-width : 736px){
+    and (device-width : 414px) 
+    and (device-height : 736px){
       .resbanner{
         height: 730px ! important;
 
@@ -871,7 +871,7 @@ height: 90px;
  }
   @media only screen 
     and (device-width : 360px) 
-    and (device-width : 640px){
+    and (device-height : 640px){
       .resbanner{
         /*background-repeat: no-repeat;*/
         height: 690px ! important;
