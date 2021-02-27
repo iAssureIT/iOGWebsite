@@ -861,7 +861,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     width: 265px ! important;
   }
  } 
-
+ 
 @media screen and (max-width:480px){
     .new_round-tabfor4{
         margin-left:27% ! important;
@@ -879,7 +879,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       font-size: 30px ! important;
      }
      .para-top{
-      font-size: 19px ! important;
+      font-size: 20px ! important;
      }
      .Typecomponent1Img_vision{
       width: 350px ! important;
@@ -1356,6 +1356,11 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 @media only screen and (device-width : 401px) { 
   .serflip-cardservices img{
     width: 220px ! important;
+  }
+    .contactcontent {
+      margin-bottom: 20px;
+      margin-left: 30px;
+      margin-top: 20px;
   }
 }
 @media only screen and (device-width : 393px) { 

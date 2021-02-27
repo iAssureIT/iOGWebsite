@@ -3295,4 +3295,22 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       width: 450px ! important;
     }
    }
+ @media only screen and (device-width : 400px) and (device-height : 700px) { 
+   .webclientcaro {
+      width: 300px ! important;
+  }
+  .webclientbackimg{
+    border: 1px solid #aea7a7;
+  }
+}  
+ @media only screen and (device-width : 400px) { 
+   .webclientcaro {
+      width: 300px ! important;
+  }
+} 
+ @media only screen and (device-width : 401px) { 
+   .webclientcaro {
+      width: 300px ! important;
+  }
+}   
 

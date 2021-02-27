@@ -522,3 +522,23 @@ margin-bottom: 50px;
     }
 
 }
+@media only screen and (device-width : 400px) { 
+  .serflip-cardservices img{
+    width: 220px ! important;
+  }
+    .contactcontent {
+      margin-bottom: 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+  }
+}
+@media only screen and (device-width : 401px) and (device-height : 700px) { 
+  .serflip-cardservices img{
+    width: 220px ! important;
+  }
+    .contactcontent {
+      margin-bottom: 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+  }
+}

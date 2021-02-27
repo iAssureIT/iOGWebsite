@@ -38,6 +38,38 @@
   }
 
 }
+@media only screen and (device-width : 401px) and (device-height : 700px) { 
+  .resource_blck{
+    padding: 30px ! important;
+    border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+
+}
+@media only screen and (device-width : 400px) and (device-height : 700px) { 
+  .resource_blck{
+    padding: 30px ! important;
+    border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+
+}
+@media only screen and (device-width : 401px) { 
+  .resource_blck{
+    padding: 30px ! important;
+    border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+
+}
+@media only screen and (device-width : 400px)  { 
+  .resource_blck{
+    padding: 30px ! important;
+    border: 1px solid #9a9696;
+    margin-left: 14px;
+  }
+
+}
 @media only screen and (device-width : 375px) and (device-height : 667px) { 
   .resource_blck{
     padding: 30px ! important;

@@ -822,6 +822,29 @@ border:1px solid #eee ! important;
     }
 
   }  
+   @media only screen and (device-width : 360px) and (device-height : 700px) { 
+   .topnav a{
+    /*font-size: 0px ! important;*/
+   }
+   .topnav a.icon{
+    /*top:-15px ! important;*/
+    /*right: -16px ! important;*/
+   }
+   .headerlogo img {
+    height: 68px ! important;
+    /*z-index: 1000;*/
+    margin-left: -70px;
+    margin-top: 0px;
+    }
+    .ct-topbar{
+      left: 293px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    }
+
+  }  
    @media only screen and (device-width : 401px) and (device-height : 768px) { 
     .headerlogo img{
       margin-left: -70px ! important;
