@@ -934,6 +934,13 @@ height: 90px;
 
       }
   }
+   @media only screen and (device-width : 411px){ 
+    .resbanner{
+        /*background-repeat: no-repeat;*/
+        height: 710px ! important;
+
+      }
+  }
    @media only screen and (device-width : 240px){ 
     .resbanner{
         /*background-repeat: no-repeat;*/
