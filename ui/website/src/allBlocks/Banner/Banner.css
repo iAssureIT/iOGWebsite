@@ -885,7 +885,21 @@ height: 90px;
 
       }
   }
+   @media only screen and (device-width : 360px) { 
+    .resbanner{
+        /*background-repeat: no-repeat;*/
+        height: 720px ! important;
+
+      }
+  }
 @media only screen and (device-width : 375px) and (device-height : 700px) { 
+    .resbanner{
+        /*background-repeat: no-repeat;*/
+        height: 720px ! important;
+
+      }
+  }
+  @media only screen and (device-width : 375px) { 
     .resbanner{
         /*background-repeat: no-repeat;*/
         height: 720px ! important;
@@ -906,7 +920,21 @@ height: 90px;
 
       }
   }
+   @media only screen and (device-width : 384px){ 
+    .resbanner{
+        /*background-repeat: no-repeat;*/
+        height: 700px ! important;
+
+      }
+  }
    @media only screen and (device-width : 240px) and (device-height : 320px) { 
+    .resbanner{
+        /*background-repeat: no-repeat;*/
+        height: 420px ! important;
+
+      }
+  }
+   @media only screen and (device-width : 240px){ 
     .resbanner{
         /*background-repeat: no-repeat;*/
         height: 420px ! important;

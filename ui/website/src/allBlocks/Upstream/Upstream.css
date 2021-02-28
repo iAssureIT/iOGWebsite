@@ -173,7 +173,10 @@
     margin-left: 309px ! important;
   }
   .upstreamtext{
-    font-size: 11px ! important;
+    font-size: 13px ! important;
+  }
+  .upstream_tab h3{
+    font-size: 21px ! important;
   }
 
   /*.card--left
@@ -279,6 +282,12 @@
     margin-bottom: 12px;
     margin-left: 587px
 
+}
+@media screen and (max-width: 600px) {
+  .upstreamblock_new{
+    margin-bottom: 10px ! important;
+    padding-top: 20px ! important; 
+  }
 }
 
 

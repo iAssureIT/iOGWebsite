@@ -25,6 +25,13 @@
 	}
 
 }
+@media only screen and (device-width : 390px)and (device-height : 844px){
+	.img1 img{
+		height: 300px ! important;
+
+	}
+
+}
 @media only screen and (device-width : 400px)and (device-height : 700px){
 	.img1 img{
 		height: 300px ! important;

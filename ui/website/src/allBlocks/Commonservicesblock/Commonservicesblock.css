@@ -146,7 +146,7 @@
 .contentheader h2{
   font-size: 42px;
   line-height: 55px;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
 }
 .contentheader hr{
   height: 2px;
