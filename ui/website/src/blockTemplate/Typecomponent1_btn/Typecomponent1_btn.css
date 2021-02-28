@@ -219,4 +219,16 @@
     .BtnImageDown{
       margin-top:0px ! important;
     }
- }   
+ }  
+
+@media only screen 
+  and (device-width: 1536px) 
+  and (device-height: 2048px) 
+  and (orientation: landscape){
+   /* .TypecomponentBtnImg_ipad{
+      margin-left: 230px ! important;
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }*/
+  }  

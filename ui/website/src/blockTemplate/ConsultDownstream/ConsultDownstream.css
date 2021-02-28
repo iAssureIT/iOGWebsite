@@ -927,6 +927,33 @@
     width: 280px ! important;
   }
 }
+@media only screen and (device-width : 411px) and (device-height : 823px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+   #consultdown_data0 {
+    width: 350px ! important;
+  }
+  #consultdown_data2 {
+    width: 350px ! important;
+  }
+   #consultdown_data4 {
+    width: 350px ! important;
+  }
+   #consultdown_data6 {
+    width: 350px ! important;
+  }
+   #consultdown_data3 {
+    width: 350px ! important;
+  }
+  .innerBlocktConsult{
+    margin-top: -100px ! important;
+  }
+}
 @media only screen and (device-width : 480px) and (device-height : 854px) { 
   #consultdown_data3 {
     position: absolute;
@@ -1041,7 +1068,149 @@
     left:0em ! important;
   }
 }
+@media only screen 
+  and (device-width: 1536px) 
+  and (device-height: 2048px) 
+  and (orientation: portrait){
+    #consultdown_data0 p{
+      text-align: left ! important;
+      
 
+    }
+    #consultdown_data2 p{
+      text-align: left ! important;
+      
+
+    }
+    #consultdown_data4 p{
+      text-align: left ! important;
+      
+
+    }
+    #consultdown_data6 p{
+      text-align: left ! important;
+      
+
+    }
+
+    #consultdown_data0{
+      right: 4% ! important;
+      width: 692px ! important;
+
+    }
+     #consultdown_data4{
+      right: 4% ! important;
+       width: 692px ! important;
+
+    }
+     #consultdown_data2{
+      right: 4% ! important;
+      width: 692px ! important;
+
+    }
+    #consultdown_img1{
+      left:55em ! important;
+    }
+    #consultdown_img3{
+      left:55em ! important;
+    }
+     #consultdown_img5{
+      left:55em ! important;
+    }
+    #consultdown_data1 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_data3 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_data5 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_data7 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_img0{
+      left: 28em ! important;
+
+    }
+     #consultdown_img2{
+      left: 28em ! important;
+
+    }
+     #consultdown_img4{
+      left: 28em ! important;
+
+    }
+    #consultdown_data1{
+      left:9% ! important;
+    }
+    #consultdown_data3{
+      left:7% ! important;
+    }
+    #consultdown_data5{
+      left:7% ! important;
+    }
+    .downimgtext{
+      left:23em ! important;
+    }
+  }
+ @media only screen 
+  and (device-width: 2048px) 
+  and (device-height:1536px ) 
+  and (orientation: landscape){
+    #consultdown_img1{
+     left: 76em ! important;
+    }
+     #consultdown_img3{
+     left: 76em ! important;
+    }
+     #consultdown_img5{
+     left: 76em ! important;
+    }
+    .new_wizardNotefor4 {
+    right: -122px ! important;
+    }
+    #consultdown_img0 {
+    left: 46em ! important;
+   }
+   #consultdown_img2 {
+    left: 46em ! important;
+   }
+   #consultdown_img4 {
+    left: 46em ! important;
+   }
+   #consultdown_img6 {
+    left: 46em ! important;
+   }
+   #consultdown_data1 {
+    left: 13% ! important;
+    width: 690px ! important;
+  }
+   #consultdown_data3 {
+    left: 13% ! important;
+    width: 690px ! important;
+  }
+   #consultdown_data5 {
+    left: 13% ! important;
+     width: 690px ! important;
+  }
+  #consultdown_data0{
+    right: 16% ! important;
+    width: 690px ! important;
+    }
+    #consultdown_data2{
+    right: 16% ! important;
+    width: 690px ! important;
+    }
+    #consultdown_data4{
+    right: 16% ! important;
+    width: 690px ! important;
+    }
+  }
 
 
  

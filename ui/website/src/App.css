@@ -7,6 +7,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     font-family: 'Raleway', sans-serif ! important;
     /*color:#000;*/
 }
+.marginTopMobile{
+  margin-bottom: 35px ! important;
+}
 .TypecomponentBtnImg{
   width: 465px ! important;
   height: 380px ! important;
@@ -1129,10 +1132,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
 
        .serflip-card img{
-      margin-left: 20px ! important;
-    }   
+        margin-left: 20px ! important;
+      }  
 
-
+      .serflip-card {
+        width: 265px ! important;
+    }  
+    .BT3_innerBlockImage{
+      height: 370px ! important;
+    }
   }   
    @media only screen and (device-width : 480px) and (device-height : 854px) { 
     .serflip-card {
@@ -1476,7 +1484,46 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .newcard_landscape {
       width: 155px ! important;
   }
-}    
+}  
+@media only screen 
+  and (device-width: 2048px) 
+  and (device-height:1536px ) 
+  and (orientation: landscape){
+    .newcard_landscape {
+      width: 370px ! important;
+      }
+      .newcard {
+        width: 450px ! important;
+    }
+
+  } 
+@media only screen 
+  and (device-width: 1536px) 
+  and (device-height: 2048px) 
+  and (orientation: portrait){
+    .TypecomponentBtnImg{
+      margin-left: 230px ! important;
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+    .righttextaboutus p{
+      text-align: left ! important;
+    }
+    .All1blog1 {
+        width: 320px ! important;
+    }
+    
+
+  } 
+  @media only screen 
+  and (device-width: 2048px) 
+  and (device-height: 1536px) 
+  and (orientation: landscape){
+   .Allblog{
+    width: 430px ! important;
+   }
+  }    
 
 
 

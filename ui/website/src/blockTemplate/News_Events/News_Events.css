@@ -54,7 +54,7 @@
 
 .yearbox{
     box-shadow: 0px 0px 2px 3px #c2b9b9;
-    width: 52px;
+    width: 53px ! important;
     min-height: 47px;
     text-align: center;
     padding-left:3px;
@@ -62,10 +62,11 @@
     /*padding-left: 0px;*/
     padding-right: 0px;
     overflow: hidden;
-    margin-right: 45px;
+    margin-right: 2px ! important;
     font-size: 12px;
     color:#333;
     border-radius: 3px;
+    margin-left: 33px;
 }
 .maindivNews{
   margin-top: 25px;
@@ -97,5 +98,29 @@
   .blogsimg1{
     height: 150px ! important;
   }
+  .yearbox{
+          margin-left: 0px ! important;
+    }
 } 
- 
+@media screen and (max-width:600px){
+   .yearbox{
+          margin-left: 0px ! important;
+    }
+} 
+@media only screen 
+  and (device-width: 1440px) 
+  and (device-height: 900px) {
+    .yearbox{
+          width: 55px ! important;
+          margin-right: 4px ! important;
+          margin-left: 15px ! important;
+    }
+  } 
+  @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) {
+    .yearbox{
+         
+          margin-left: 0px ! important;
+    }
+  } 

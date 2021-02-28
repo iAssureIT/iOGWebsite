@@ -51,3 +51,15 @@
       }
      
   } 
+ 
+@media only screen 
+  and (device-width: 2048px) 
+  and (device-height: 1536px) 
+  and (orientation: landscape){
+    .TypecomponentBtnImg{
+      margin-left: 230px ! important;
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+  } 

@@ -85,7 +85,7 @@ componentDidMount(){
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-5 col-sm-6 hidden-xs BtnImageDown">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 TypecomponentBtnImg_ipad TypecomponentBtnImg">
                               <img src={this.state.blocks.fgImage} alt="" className="img-responsive"/>
                           </div>
                         </div>

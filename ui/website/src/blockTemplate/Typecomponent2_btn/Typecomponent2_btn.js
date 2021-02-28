@@ -58,7 +58,7 @@ componentDidMount(){
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 TypebtnText"style={{paddingTop:"8%"}}>
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTitle hrpadding   contentheaderNewPage AboutUsLine text-center"style={{marginBottom:"0px"}}>
-                      <hr style={{float:"left"}} className/>
+                      <hr style={{float:"left"}} className="marginTopMobile"/>
                      {/*  <h2 style={{color:"#333"}}><b>{this.state.blocks.blockTitle}</b></h2>*/}
                     </div>
                    <div>

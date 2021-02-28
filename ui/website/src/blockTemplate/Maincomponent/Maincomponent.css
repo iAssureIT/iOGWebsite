@@ -74,8 +74,8 @@
     margin-top: -95px;
 }
 .iogimg_4 img{
-    width: 100%;
-    margin-top: -23px;
+    width: 98.3%;
+    margin-top: -12px;
     object-fit: contain;
 }
 
@@ -90,9 +90,9 @@
     font-size: 15px;
     /*padding-left: 87px;*/
     /*margin-left: 33px;*/
-    width: 433px ! important;
-    height: 339px;
-    padding-top: 100px ! important;
+    width: 380px ! important;
+    height: 350px;
+    padding-top: 60px ! important;
     padding: 64px;
     /* margin-top: 82px; */
 }
@@ -388,7 +388,9 @@
    {
     .iogblock3text{
         padding-top: 100px ! important;
-        padding-left: 20px ! important; 
+        padding-left: 55px ! important; 
+        width: 413px ! important;
+        height: 362px ! important;
     }
 
    }
@@ -492,7 +494,8 @@
         width: 427px ! important;
     }
     .iogimg_4 img{
-        width: 98%;
+        width: 98.1%;
+        margin-top: 2px;
     }
     .iogblock4text{
         margin-top: 100px ! important;
@@ -589,5 +592,71 @@
         /*margin-top: -200px ! important;*/
     } 
    
- }   
+ } 
+
+ @media only screen 
+  and (device-width: 2048px) 
+  and (device-height: 1536px) 
+  and (orientation: landscape){
+   
+    .CareerBlockHighDef {
+      right: 134px ! important;
+    }
+    .ht_top{
+      /*padding-left: 130px ! important;*/
+    }
+    .iogimgblock2{
+      margin-left: -56px ! important;
+    }
+    .iogimgblock2{
+      height: 848px ! important;
+    }
+    .iogblock3text{
+      width: 631px ! important;
+      /*margin-left: 62px ! important;*/
+    }
+    .iogimgblock3 {
+        width: 637px ! important;
+    }
+    .iogimg_4 img{
+      width: 99.3% ! important;
+    }
+    .iogblock4text{
+      padding-top: 145px ! important;
+    }
+    
+
+  } 
+  @media only screen 
+  and (device-width: 1536px) 
+  and (device-height: 2048px) 
+  and (orientation: portrait){
+    .CareerBlockHighDef {
+     right: 69px ! important;
+     width: 431px ! important;
+    }
+    .iogimgblock2{
+      height: 915px ! important;
+    }
+    .iogblock3text{
+      width: 440px ! important;
+    }
+    .iogblock3text{
+      /*margin-left: 42px ! important;*/
+    }
+    .iogimg_4{
+      width: 877px ! important;
+    }
+    .iogimg_4 img{
+      width: 100% ! important;
+    }
+    .iogimgblock3{
+      width: 470px ! important;
+    }
+    .iogblock4text{
+      padding-top: 113px ! important;
+    }
+
+  }    
+  
 
