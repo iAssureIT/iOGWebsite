@@ -834,5 +834,10 @@
     right: 8px ! important;
   }
 }  
+@media only screen and (device-width : 480px) and (device-height : 854px){ 
+  .new_wizardNote_for6{
+    right: 8px ! important;
+  }
+}  
 
 
