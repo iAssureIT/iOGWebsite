@@ -914,5 +914,19 @@
       right: -95px ! important;
      }
   }    
+  @media only screen 
+  and (device-width: 2048px) 
+  and (device-height: 1536px) 
+  and (orientation: landscape){
+     .new_wizardNote_for6{
+      right: 73px ! important;
+     }
+     .new_wizardNotefor4{
+      right: -121px ! important;
+     }
+     .new_wizardNotefor5{
+      right: 47px ! important;
+     }
+  }    
 
 
