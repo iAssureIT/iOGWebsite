@@ -13,7 +13,12 @@
   /*padding-top: 50px;*/
   /*float:right;*/
 }
+  @media only screen and (device-width : 411px) and (device-height : 823px) { 
+    .blck1heightnew{
+      width: 285px ! important;
+    }
 
+  }
 @media screen and (max-width: 600px) {
 
 .blck1heightnew{
@@ -26,9 +31,11 @@ height: 960px ! important;
 	height: 214px ! important;
 }
 .blck{
-	padding-top: 15px ! important;
-}
-..About5block{
+      padding: 10px 15px 56px;
+      /*margin-top: 58px;*/
+      margin: 20px;
+   }
+.About5block{
 	padding-top: 0px ! important
 }
 

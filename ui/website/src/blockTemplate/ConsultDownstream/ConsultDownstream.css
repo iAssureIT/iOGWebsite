@@ -390,7 +390,7 @@
   width: 300px ! important;
 }
 #consultdown_data2{
-  top:80em ! important;
+  top:79em ! important;
   width: 345px ! important;
   text-align: justify;
   left: 1em ! important;
@@ -436,11 +436,11 @@
 .downimgtext{
     left: 8em ! important;
     font-size: 16.5px;
-    top: 13em;
+    top: 11em;
 }
 .downimg_p_txt{
   font-size: 13px ! important;
-  top:22.5em ! important;
+  top:20.5em ! important;
 }
 .adjustfor5{
   margin-left: 10px ! important;
@@ -696,6 +696,9 @@
       overflow: hidden;
       /*height: 2968px ! important;*/
     } 
+    .downimg_p_txt{
+      top:17em ! important;
+    }
    /* .downimgtext{
       top:16em ! important;
     }
@@ -985,6 +988,15 @@
   }
 }
 @media only screen and (device-width : 400px) and (device-height : 700px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
+@media only screen and (device-width : 390px) and (device-height : 844px) { 
   #consultdown_data3 {
     position: absolute;
     top: 110em;

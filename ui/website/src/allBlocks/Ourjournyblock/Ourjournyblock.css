@@ -1905,7 +1905,7 @@ a.nameParts{
     right: 83px;
     color: #333;
  }
- .new_wizardNotefor4
+ .new_wizardNotefor4forJ
  {
     /* border: 1px solid; */
     text-align: center;
@@ -2935,14 +2935,67 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         left:287px ! important;
       }
  }
+  @media only screen 
+    and (device-width : 1024px) 
+    and (device-height : 768px){
+      .new_round-tabfor4 {
+        margin-left: 216% ! important;
+    }
+    .new_wizardNotefor4forJ{
+      right: -232px ! important;
+    }
+      
+ }
+ @media only screen and (device-width : 400px){
+   .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+
+ }
+ @media only screen and (device-width : 375px){
+   .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+
+ }
+ @media only screen and (device-width : 360px){
+   .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+
+ }
+ @media only screen and (device-width : 393px){
+   .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+
+ }
+  @media only screen and (device-width : 320px){
+   .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+
+ }
+ @media only screen and (device-width : 800px)and (device-height : 1280px){ 
+  .new_round-tabfor4 {
+    margin-left: 132% ! important;
+  }
+  .new_wizardNotefor4forJ{
+    right: -109px ! important;
+  }
+ }
+
  @media only screen and (device-width : 375px)and (device-height : 812px){ 
    .webclientbackimg{
     width: 300px ! important;
      border: 1px solid #b5b2b2;
    }
    .new_wizard_journy{
-    margin-top: 850px ! important;
+    margin-top: 965px ! important;
    }
+   .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
 
  }  
   @media only screen and (device-width : 360px) and (device-height : 640px){ 
@@ -2967,6 +3020,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
     .text{
       margin-left: 152px ! important;
+    }
+    .new_wizardNotefor4forJ{
+        right: 4px ! important;
     }
 
  } 
@@ -2999,6 +3055,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       /*width: 310px ! important;*/
       border: 1px solid #b5b2b2;
     }
+    .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
 
 }
 @media only screen and (device-width : 411px) and (device-height : 731px) { 
@@ -3020,6 +3079,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
     .text{
       margin-left: 152px ! important;
+    }
+    .new_wizardNotefor4forJ{
+        right: 4px ! important;
     }
 
 }
@@ -3043,6 +3105,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     .text{
       margin-left: 152px ! important;
     }
+    .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
 
 }
 @media only screen and (device-width : 768px) and (device-height : 1024px) { 
@@ -3056,6 +3121,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     transition-duration: 0.5s;
     border: 1px solid #bdbcbc;
   }
+  .new_wizardNotefor4forJ{
+        right: -105px ! important;
+    }
    
 }
 
@@ -3083,6 +3151,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       width: 310px ! important;
       border: 1px solid #b5b2b2;
     }
+    .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
 
 
 }
@@ -3105,6 +3176,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
     .text{
       margin-left: 152px ! important;
+    }
+    .new_wizardNotefor4forJ{
+        right: 4px ! important;
     }
 
 }
@@ -3274,6 +3348,46 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     .webclientbackimg{
       margin-left: 20px;
     }
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
+ }
+
+@media only screen and (device-width : 412px) and (device-height : 732px) { 
+    
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
+ }
+ @media only screen and (device-width : 600px) and (device-height : 960px) { 
+    
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
+ }
+  @media only screen and (device-width : 320px) and (device-height : 533px) { 
+    
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
+ }
+ @media only screen and (device-width : 480px) and (device-height : 854px) { 
+    
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
+ }
+ @media only screen and (device-width : 320px) and (device-height : 568px) { 
+    
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
+ }
+ @media only screen and (device-width : 414px) and (device-height : 736px) { 
+    
+    .new_wizardNotefor4forJ{
+      right: 4px ! important;
+    }
  }
 
  @media only screen and (device-width : 401px) and (device-height : 700px) { 
@@ -3312,7 +3426,17 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   .webclientbackimg{
     border: 1px solid #aea7a7;
   }
-}  
+} 
+ @media only screen and (device-width : 393px) and (device-height : 851px) { 
+     .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+  }
+   @media only screen and (device-width : 360px) and (device-height : 640px) { 
+     .new_wizardNotefor4forJ{
+        right: 4px ! important;
+    }
+  } 
  @media only screen and (device-width : 400px) { 
    .webclientcaro {
       width: 300px ! important;
