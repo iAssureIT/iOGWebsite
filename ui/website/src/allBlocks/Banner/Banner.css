@@ -3411,12 +3411,29 @@ div.drop-container:after {
     top: 361px ! important;
   }
   .nexttogasimage {
-    right: 708px ! important;
-    top: 365px ! important;
+    right: 771px ! important;
+    top: 398px ! important;
   }
   .oilimage{
-    right: 350px ! important;
-    top: 174px ! important;
+    right: 429px ! important;
+    top: 218px ! important;
+  }
+  .nexttogasimage {
+    right: 771px ! important;
+    top: 366px ! important;
+  }
+  .petrolimage1 {
+    top: 544px ! important;
+    right: 414px;
+  }
+  .plantimage11 {
+    right: 118px ! important;
+    top: 415px ! important;
+  }
+}
+@media only screen and (device-width : 2560px) and (device-height : 1600px) {
+  .nexttogasimg_size {
+    width: 310px ! important;
   }
 }
 

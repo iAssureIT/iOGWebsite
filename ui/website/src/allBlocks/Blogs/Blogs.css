@@ -274,16 +274,20 @@
     .blogdate{
       padding-top: 0px ! important;
     }
-
-
    
+  }
+  @media only screen and (device-width : 412px) and (device-height : 712px) { 
+    .All1blog1{
+      width: 305px ! important;
+    }
+
   }
   @media only screen and (device-width : 320px) and (device-height : 568px) { 
     
-     .blogblock {
+  .blogblock {
         height: 661px ! important;
     }
-    .blogdate{
+  .blogdate{
       margin-top: 40px;
      
   }

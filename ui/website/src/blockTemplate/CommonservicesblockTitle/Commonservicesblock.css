@@ -497,4 +497,11 @@
   }
 
 }
+@media only screen and (device-width : 411px){
+  .img1 img{
+    height: 300px ! important;
+
+  }
+
+}
 

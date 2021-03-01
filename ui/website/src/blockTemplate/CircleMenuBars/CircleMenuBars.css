@@ -884,6 +884,9 @@
   .new_wizardNote_for6{
     right: 16px ! important;
   }
+  .new_round-tabfor6{
+    margin-left: 17% ! important;
+  }
 }  
 @media only screen and (device-width : 412px){ 
   .new_wizardNote_for6{
@@ -928,5 +931,11 @@
       right: 47px ! important;
      }
   }    
+ @media only screen and (device-width : 2560px) and (device-height : 1600px) {
+  .new_wizardNotefor4{
+    right: -146px ! important;
+  }
+ }
+
 
 

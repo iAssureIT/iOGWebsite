@@ -684,4 +684,9 @@ ul.no-icon-list1 {
     line-height: 20px;
   }
  }
+@media only screen and (device-width : 2560px) and (device-height : 1600px) {
+   .pt20 {
+      padding-top: 17px ! important;
+  }
+}
 

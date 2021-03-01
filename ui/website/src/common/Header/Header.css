@@ -1208,30 +1208,31 @@ border:1px solid #eee ! important;
  }
 
    @media only screen and (device-width : 412px) and (device-height : 732px) { 
-   .topnav a{
-    /*font-size: 0px ! important;*/
-   }
-   .topnav a.icon{
-    color :#585755 ! important;
-    /*top:-15px ! important;*/
-    /*right: -16px ! important;*/
-   }
-   .headerlogo img {
-    height: 68px ! important;
-    /*z-index: 1000;*/
-    margin-left: -70px;
-    margin-top: -10px;
-    }
-    .ct-topbar{
-      left: 333px ! important;
-       margin-top: 8px;
-    }
-     .headerflowscroll{
-      height: 100px;
-    }
-    .topnav.responsive .icon {
-      color: #f19000 ! important;
+     .topnav a{
+      /*font-size: 0px ! important;*/
+     }
+     .topnav a.icon{
+      color :#585755 ! important;
+      right: -27px ! important;
+      /*top:-15px ! important;*/
+      /*right: -16px ! important;*/
+     }
+     .headerlogo img {
+      height: 65px ! important;
+      /*z-index: 1000;*/
+          margin-left: -64px;
+         margin-top: -5px;
       }
+      .ct-topbar{
+          left: 350px ! important;
+          margin-top: 8px;
+      }
+       .headerflowscroll{
+        height: 100px;
+      }
+      .topnav.responsive .icon {
+        color: #f19000 ! important;
+        }
 
   }  
   @media only screen and (device-width : 412px) and (device-height : 640px) { 
@@ -1378,7 +1379,18 @@ border:1px solid #eee ! important;
 
      }
   }   
- 
+ @media only screen and (device-width : 2560px) and (device-height : 1600px) {
+  .headerlogo img{
+    height: 100px ! important;
+  }
+  .topnav a{
+    font-size: 20px ! important;
+  }
+  .dropdown .dropbtn{
+    font-size: 20px ! important;
+  }
+ }
+
 
 
 

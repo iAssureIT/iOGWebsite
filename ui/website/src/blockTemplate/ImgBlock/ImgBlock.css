@@ -126,7 +126,21 @@
         /*object-fit: contain;*/
 	 }
 
-}	 
+}
+@media only screen and (device-width : 412px) and (device-height : 732px) {
+	.img1 img{
+		height: 300px ! important;
+
+	}
+
+} 
+@media only screen and (device-width : 412px){
+	.img1 img{
+		height: 300px ! important;
+
+	}
+
+} 	 
 @media only screen and (device-width : 320px) and (device-height : 568px) {
 	.services_img{
 	     width: 100% ! important ;

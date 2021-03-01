@@ -516,6 +516,11 @@
         width: 275px ! important;
      }
  }
+  @media only screen and (device-width : 412px) and (device-height : 732px) {
+   .serflip-card {
+        width: 275px ! important;
+    } 
+  }  
  @media only screen and (device-width : 400px) and (device-height : 700px){ 
   .serflip-card{
         width: 275px ! important;

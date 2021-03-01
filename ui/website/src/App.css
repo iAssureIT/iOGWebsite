@@ -1008,10 +1008,23 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 @media only screen 
   and (device-width: 1024px) 
   and (device-height: 1366px) 
-  and (orientation: landscape) 
+  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .jobformcontent{
         margin-left: 250px ! important;
+    }
+    .blogtext h4{
+      height: 75px ! important;
+      overflow: hidden;
+    }
+    .blogtext p{
+      height: 100px ! important;
+    }
+    .blogdate{
+      padding-left: 0px ! important;
+    }
+    .new_wizardNotefor4forJ{
+      right: -234px ! important;
     }
     .jobpageform{
         margin-top: 80px ! important;
@@ -1285,6 +1298,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     
 
   } 
+  @media only screen and (device-width : 412px) and (device-height : 732px) { 
+    
+    .serflip-cardservices img{
+     width: 227px ! important;
+    } 
+    
+
+  } 
   @media only screen and (device-width : 600px) and (device-height : 960px) { 
     
     .serflip-cardservices img{
@@ -1318,7 +1339,8 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 60px ! important;
       }
 
-  } 
+  }
+ 
 
   @media only screen and (device-width : 320px) and (device-height : 568px) { 
      .righttextaboutus{
@@ -1592,6 +1614,15 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     
 
   } 
+    @media only screen 
+  and (device-width: 2560px) 
+  and (device-height: 1600px) 
+  and (orientation: landscape){
+   .Typecomp_1_img img{
+      width: 100%;
+
+    }
+  }
   @media only screen 
   and (device-width: 2048px) 
   and (device-height: 1536px) 
@@ -1622,7 +1653,54 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     height: 232px;
     padding-top: 35px;
     }
+  }   
+   @media only screen 
+  and (device-width: 2560px) 
+  and (device-height: 1600px) 
+  and (orientation: landscape){
+   .Allblog{
+    width: 430px ! important;
+   }
+   .Typecomp_1_img img{
+      width: 100%;
+
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+    .TypecomponentBtnImg{
+      margin-left: 200px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 225px ! important;
+    }
+    .B3T_challengesDiv {
+      top: 45px;
+      box-shadow: 0px 0px 3px 2px #c4bfbf;
+      margin-left: 147px;
+      margin-bottom: 40px;
+      min-height: 200px;
+      width: 585px;
+      height: 232px;
+      padding-top: 35px;
+    }
+        .newcard {
+        width: 475px;
+    }
+    .new_round-tabfor9{
+      margin-left: 67% ! important;
+    }
+    .new_wizardNotefor9{
+      right: -52px ! important;
+    }
+    .new_wizardNote_for6{
+      right: 102px ! important;
+    }
+    .Allblog{
+    margin-left: 80px  ! important;
+  }
   }    
+ 
 
 
 
