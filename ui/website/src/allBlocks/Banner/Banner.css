@@ -3402,3 +3402,21 @@ div.drop-container:after {
 
 }
 
+@media only screen and (device-width : 2560px) and (device-height : 1600px) {
+ .boat_img{
+  left:167px ! important;
+ } 
+ .boat_img2 {
+    left: 691px ! important;
+    top: 361px ! important;
+  }
+  .nexttogasimage {
+    right: 708px ! important;
+    top: 365px ! important;
+  }
+  .oilimage{
+    right: 350px ! important;
+    top: 174px ! important;
+  }
+}
+

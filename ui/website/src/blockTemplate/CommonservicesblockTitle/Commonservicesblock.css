@@ -476,4 +476,25 @@
     width: 255px ! important;
     }
 }
+@media only screen and (device-width : 320px)and (device-height : 480px){
+  .img1 img{
+    height: 300px ! important;
+
+  }
+
+}
+@media only screen and (device-width : 320px){
+  .img1 img{
+    height: 300px ! important;
+
+  }
+
+}
+@media only screen and (device-width : 360px){
+  .img1 img{
+    height: 300px ! important;
+
+  }
+
+}
 

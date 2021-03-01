@@ -33,6 +33,7 @@ componentDidMount(){
       if(pageUrl =="/about-us"){
         // $('.innerBlocktConsult').css('height','1230px');
         $('.TextRightImg img').css('height','220px');
+        $('.About5block').css('height','380px');
         // $('.truck').css('marginTop','7px');
       }
        else if(pageUrl =="/geology-geophysics"){
