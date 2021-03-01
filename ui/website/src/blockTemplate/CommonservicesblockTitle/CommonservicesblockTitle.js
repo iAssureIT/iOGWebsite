@@ -136,7 +136,7 @@ componentDidMount(){
                          
                             {
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
-                                console.log("dta=======>",data);
+                                // console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
                                     var classes = "col-lg-offset-2 col-md-offset-2  col-lg-4 col-md-6  col-sm-6 col-xs-4";

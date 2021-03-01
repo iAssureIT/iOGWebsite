@@ -80,7 +80,7 @@ export default class ContactUsForm extends React.Component {
             "message"      : this.refs.message.value,
      
     }
-    console.log("dataArray======>",dataArray);
+    // console.log("dataArray======>",dataArray);
       let fields = {};
       fields["name"]      = "";
       fields["email"]   = "";

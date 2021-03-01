@@ -2,7 +2,7 @@ import React from 'react';
 import axios       from 'axios';
 import swal              from 'sweetalert';
 import Moment from 'react-moment';
-
+// import swal              from 'sweetalert';
 import './AllBlogsList.css';
 
 export default class AllBlogsList extends React.Component {
@@ -50,7 +50,7 @@ getBlogData(){
 
       	.get('http://iogapi.iassureit.com/api/blogs/get/all/list')
       	.then((response)=>{
-       	console.log("===>",response.data);
+       	// console.log("===>",response.data);
 	      this.setState({
 	      		Blogs:response.data
 	        });
@@ -73,7 +73,7 @@ componentDidMount(){
 }
 render() {
 	var Allblogs = this.state.Blogs;
-	console.log("Allblogs=>",Allblogs);
+	// console.log("Allblogs=>",Allblogs);
 	var subscribed = false;
 	   const token = localStorage.getItem("user_ID");
 	return (

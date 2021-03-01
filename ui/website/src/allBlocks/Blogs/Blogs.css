@@ -8,9 +8,50 @@
   border: 1px solid #f19000;
   background-color: #f19000;
 }
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1; 
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    text-decoration: none;
+}
 
+.carousel, .carousel-inner {
+   height: 100%;
+   backface-visibility:visible;
+   filter: Alpha(Opacity=100);
+    opacity: 1;
+    text-decoration: none;
+}
+.carouselInner{
+    height: 100% !important;
+    position:relative;
+    backface-visibility:visible;
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    text-decoration: none;
+}
+.owl-carousel owl-theme owl-loaded owl-drag{
+   filter: Alpha(Opacity=100);
+    opacity: 1;
+    text-decoration: none;
 
+}
+.owl-theme div:hover {
 
+    /*filter: Alpha(Opacity=100);*/
+    opacity: 1;
+    text-decoration: none;
+}
+.summary_blogs_HP{
+  height: 150px;
+  margin-bottom: 20px;
+}
+.carousel-inner{
+  backface-visibility:visible;
+}
 
 
 .blogsimg img{
@@ -60,11 +101,14 @@
 }
 
 .blogblock{
-  height: 465px ! important;
+  height: 495px ! important;
 	box-shadow: 0px -2px 12px 0px #d6d0d0;
 	border-radius: 8px;
   padding:0px;
 
+}
+.blogtext p{
+  overflow: hidden;
 }
 
 .blogbtn1{
@@ -134,6 +178,7 @@
   }
   .blogdate{
     margin-bottom: 15px ! important;
+    padding: 7px 11px;
   }
   .New_Study_shadow{
     width: 250px ! important;

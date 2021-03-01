@@ -8,9 +8,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-
+import axios       from 'axios';
+import swal              from 'sweetalert';
 import './Blogs.css';
-
+import Moment from 'react-moment';
 const OwlCarousel = Loadable({
     
   loader: () => import('react-owl-carousel'),
@@ -41,7 +42,39 @@ export default class Blogs extends Component {
 }
 };
 }
-    upstreamData(){
+
+getBlogData(){
+  axios
+
+        .get('http://iogapi.iassureit.com/api/blogs/get/all/list')
+        .then((response)=>{
+           var FirstFiveblogs = response.data.slice(0, 5);
+        // console.log("===>",response.data);
+        this.setState({
+            Blogs:FirstFiveblogs
+          });
+        })
+          .catch(function(error){
+          console.log(error);
+            if(error.message === "Request failed with status code 401")
+
+
+              {
+                   swal("Your session is expired! Please login again.","", "error");
+                   this.props.history.push("/");
+              }
+      })
+}
+componentDidMount(){
+  var pageUrl = window.location.pathname;
+  var Blogs =[];
+  this.getBlogData();
+
+}
+
+/*    upstreamData(){
+
+          
         return [
             {
                 upstreamTitle : "EHS Applications in Oil & Gas",
@@ -76,8 +109,11 @@ export default class Blogs extends Component {
            
         ]
     }
-
+*/
     render(){
+      var Allblogs = this.state.Blogs;
+     
+      // console.log("FirstFiveblogs homepage===",FirstFiveblogs);
         return(
             <div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -88,12 +124,15 @@ export default class Blogs extends Component {
                     <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1  col-lg-offset-1 hidden-sm hidden-xs" style={{height:"555px"}}>
                       <div>
                         <OwlCarousel
-                        className="owl-theme"
+                        className="owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12"
                         loop
+                        mergeFit= {true}
+                        // startPosition= {start_pos}
                         nav= {true}
+                        // responsive={true}
                         dots={false}
                         items={3}
-                        margin={0}
+                        margin={10}
                         // slideBy={2}
                         navText={["<div class='fa fa-angle-left blogleftarrow'></div>","<div class='fa fa-angle-right blogrightarrow'></div>"]}
                         // responsive={
@@ -103,7 +142,9 @@ export default class Blogs extends Component {
                         autoplayHoverPause={true}
                         >
                         {
-                            this.upstreamData().map((data, index)=>{
+                             Allblogs && Allblogs.length > 0 ?
+                              Allblogs.map((data, index)=>{
+                                // console.log("{data.bannerImage}---",data.bannerImage);
                             return (
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" key={index}style={{height:"600px"}}>
                                   <div className="">
@@ -113,17 +154,17 @@ export default class Blogs extends Component {
                                              <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="">
                                                   <div className="img-responsive blogsimg">
-                                                    <img alt="" src={data.downstreamimg}/>
+                                                    <img alt="" src={data.bannerImage ? data.bannerImage.path : ""}/>
                                                   </div>
-                                                  <div className=""><h4>{data.upstreamTitle}</h4></div>
-                                                     <div className="">
-                                                     <p>{data.upstreamLi}</p>
+                                                  <div className=""><h4>{data.blogTitle}</h4></div>
+                                                     <div className="summary_blogs_HP"style={{overflow:"hidden"}}>
+                                                     <p>{data.summary}</p>
                                                     </div>
                                                     <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate">July 5,2019</div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate"><Moment format=" MMMM D YYYY ">{data.createdAt}</Moment></div>
                                                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <a className="" href="/blogs">
+                                                            <a className="" href={"/singleblog/"+data.blogURL}>
                                                                 <input type="button" className="col-lg-10 col-md-12 col-sm-12 col-xs-12 btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
                                                             </a>
                                                         </div>
@@ -138,6 +179,8 @@ export default class Blogs extends Component {
                                 </div>
                                 );
                             })
+                              :
+                              <div className="BlogLoader"><img src="/images/Spin-Preloader.gif"/></div>
                         }
                     </OwlCarousel>
                 </div>                
@@ -162,7 +205,8 @@ export default class Blogs extends Component {
                         autoplayHoverPause={true}
                         >
                         {
-                            this.upstreamData().map((data, index)=>{
+                             Allblogs && Allblogs.length > 0 ?
+                              Allblogs.map((data, index)=>{
                             return (
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile_width" key={index}>
                                   <div className="">
@@ -172,15 +216,15 @@ export default class Blogs extends Component {
                                              <div className="blogblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div className="">
                                                   <div className=" blogsimg">
-                                                    <img alt="" src={data.downstreamimg}/>
+                                                    <img alt="" src={data.bannerImage ? data.bannerImage.path : ""}/>
                                                   </div>
-                                                  <div className=""><h4>{data.upstreamTitle}</h4></div>
+                                                  <div className=""><h4>{data.blogTitle}</h4></div>
                                                      <div className="">
-                                                     <p>{data.upstreamLi}</p>
+                                                     <p>{data.summary}</p>
                                                     </div>
                                                    <div className="price-footer price-footerBlog col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-6 blogdate">July 5,2019</div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-6 blogdate"><Moment format=" MMMM D YYYY ">{data.createdAt}</Moment></div>
                                                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-6">
                                                             <a className="" href="/blogs">
                                                                 <input type="button" className=" btn blogbtn1 lightbluebg buttonhover" value="Read More"/>                                    
@@ -197,6 +241,8 @@ export default class Blogs extends Component {
                                 </div>
                                 );
                             })
+                               :
+                              <h4 className="noBlogs p10 textAlignCenter"><b>No blogs found</b></h4>
                         }
                     </OwlCarousel>
                 </div>                
@@ -207,3 +253,4 @@ export default class Blogs extends Component {
         );
     }
 }
+

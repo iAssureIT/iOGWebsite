@@ -132,7 +132,7 @@ export default class Commonservicesblock extends Component {
                           <div className={classfor4} style={{paddingLeft:"0px"}}> 
                             {
                              this.state.blocks.repeatedBlocks.map((data, index)=>{
-                                console.log("dta=======>",data);
+                                // console.log("dta=======>",data);
                                 if(productlength == 2){
                                   if(plength === index+2){
                                     var classes = "col-lg-offset-2 col-lg-4 col-md-6 col-md-offset-2 col-sm-4 col-xs-4";

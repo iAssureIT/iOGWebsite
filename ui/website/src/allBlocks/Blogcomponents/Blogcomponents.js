@@ -77,7 +77,7 @@ getBlogData(){
   axios
       .get('/api/blogs/get/all/list')
       .then((response)=>{
-          console.log("===>",response.data);
+          // console.log("===>",response.data);
           this.setState({
             Blogs   : response.data,
             loading : false,

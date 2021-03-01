@@ -192,7 +192,7 @@ export default class Resourcedownload extends React.Component {
     this.setState({
       dataArray:dataArray
     })
-    console.log("dataArray======>",dataArray);
+    // console.log("dataArray======>",dataArray);
       let fields = {};
       fields["name"]      = "";
       fields["email"]   = "";

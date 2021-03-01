@@ -141,7 +141,7 @@ class ContactUsform extends Component{
       "enquiry"          : this.state.enquiry,
      
     }
-    console.log("dataArray======>",dataArray);
+    // console.log("dataArray======>",dataArray);
       let fields = {};
       fields["userName"]      = "";
       fields["companyName"]   = "";

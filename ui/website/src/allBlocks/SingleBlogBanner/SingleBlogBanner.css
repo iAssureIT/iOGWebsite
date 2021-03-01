@@ -1,5 +1,5 @@
 .sbbannerWall{
-	height: 535px;
+	/*height: 535px;*/
   margin-top: 127px;
 	/*background-color:  #444;*/
 	padding: 0px !important;
@@ -20,14 +20,31 @@
 .nopadding{
 	padding: 0px;
 }
+.blogTitle_Single{
+  font-size: 35px ! important;
+  color: #fff ! important;
+  margin-top: -30px ! important;
+  margin-bottom: 20px;
+
+}
+@media screen and (max-width: 600px) {
+  .blogTitle_Single{
+    font-size: 24px ! important;
+  }
+  .fs24{
+    font-size: 18px ! important;
+  }
+
+}
 .sbcentered {
   background-color: #191818ba;
-  background-image: url("/images/bannerback1.png");
+  /*background-image: url("/images/bannerback1.png");*/
   padding: 0px !important;
-  background-repeat: no-repeat;
-  height: 535px;
+  /*background-repeat: no-repeat;*/
+  height: 450px;
   background-size: 100% 100%;
   padding:0;
+  background-color: rgba(25,24,24,.73);
 
 
 }
@@ -48,7 +65,7 @@
   font-size: 40px ! important;
 }
 .fs24{
-  font-size: 22px;
+  font-size: 20px;
   color:#fff ! important;
 }
 .ht100{

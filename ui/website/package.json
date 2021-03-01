@@ -20,6 +20,7 @@
     "jquery-validation": "^1.19.2",
     "jspdf": "^1.5.3",
     "moment": "^2.24.0",
+    "owl.carousel": "^2.3.4",
     "react": "^16.8.6",
     "react-cookies": "^0.1.1",
     "react-dom": "^16.8.6",
