@@ -146,38 +146,38 @@
  .Journycaro1{
     left:1138px !important;
   }
-  .add1{
+ /* .add1{
     left:936px ! important;
-  }
+  }*/
   .Journycaro2{
     left:874px !important;
   }
-  .add2{
+ /* .add2{
     right: -49px ! important;
-  }
+  }*/
   .Journycaro3{
     left:648px !important;
   }
-  .add3{
+ /* .add3{
     left:990px !important;
-  }
+  }*/
   .Journycaro4{
     left:1337px ! important;
   }
-  .add4{
+ /* .add4{
     left:613px ! important;
     top:265px ! important;
-  }
-  .add6{
+  }*/
+ /* .add6{
     left:715px ! important;
-  }
+  }*/
   .Journycaro7{
     left:1028px ! important;
   }
-  .add7{
+  /*.add7{
     top:1238px ! important;
     left:243px ! important;
-  }
+  }*/
   .Journycaro8{
     top:1339px ! important;
     left:1280px ! important;
@@ -185,11 +185,12 @@
    .Journycaro9{
     left:482px ! important;
   }
-  .add9{
+  
+ /* .add9{
     left: 817px ! important;
   }
   .add8{
     right:-827px ! important;
-  }
+  }*/
   
 }

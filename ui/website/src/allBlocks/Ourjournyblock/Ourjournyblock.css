@@ -3489,6 +3489,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         left:-28px ! important;
 
       }
+      .add3{
+        display: none;
+      }
       .Journycaro1 {
           left: 1026px !important;
       }
@@ -3532,8 +3535,21 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     left: 841px ! important;
     top: 277px ! important;
   }
-  .new_wizardNotefor4 {
-    right: -122px ! important;
+  .new_wizardNotefor4forJ {
+    right: 50px ! important;
+    text-align: center;
+    margin-right: 0px;
+    position: relative;
+    top: 31px;
+    right: -85px;
+    color: #333;
+    font-weight: 500;
+    }
+    .Journycaro10{
+      opacity: 1;
+    }
+     .Journycaro9{
+      opacity: 1;
     }
 }
 

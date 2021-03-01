@@ -596,7 +596,7 @@ journyData11(){
                                             
                                         </span>
                                    
-                                    <div className="new_wizardNotefor4 ">{result.Title}</div>
+                                    <div className="new_wizardNotefor4forJ ">{result.Title}</div>
                                     </a>
                                 </div>
                                

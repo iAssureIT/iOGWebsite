@@ -1250,6 +1250,52 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
 
   } 
+   @media only screen and (device-width : 800px) and (device-height : 1220px) { 
+    
+    .serflip-cardservices img{
+     width: 220px ! important;
+    } 
+    
+
+  } 
+   @media only screen and (device-width : 1024px) and (device-height : 768px) { 
+    
+    .serflip-cardservices img{
+     width: 170x ! important;
+    } 
+    
+
+  } 
+   @media only screen and (device-width : 768px) and (device-height : 1024px) { 
+    
+    .serflip-cardservices img{
+     width: 220px ! important;
+    } 
+    
+
+  } 
+  @media only screen and (device-width : 600px) and (device-height : 960px) { 
+    
+    .serflip-cardservices img{
+     width: 340px ! important;
+    } 
+    .newcard_landscape {
+      width: 380px ! important;
+    }
+    
+
+  } 
+   @media only screen and (device-width : 480px) and (device-height : 854px) { 
+    
+    .serflip-cardservices img{
+     width: 340px ! important;
+    } 
+    .newcard_landscape {
+      width: 350px ! important;
+    }
+    
+
+  } 
   @media only screen and (device-width : 375px) and (device-height : 667px) { 
     .B3T_challengesDiv {
 
@@ -1505,13 +1551,29 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       margin-left: 230px ! important;
     }
     .TypebtnText{
-      margin-left: 270px ! important;
+      margin-left: 175px ! important;
     }
     .righttextaboutus p{
-      text-align: left ! important;
+      /*text-align: left ! important;*/
     }
     .All1blog1 {
         width: 320px ! important;
+    }
+    .Typecomp_1_img img{
+      width: 100%;
+
+    }
+    .BtnImageDown{
+      padding-left: 0px ! important;
+    }
+    .downimgtext{
+      left:29em ! important;
+    }
+    .B3T_challengesDiv{
+      margin-left: 125px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 50px ! important;
     }
     
 
@@ -1523,6 +1585,29 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
    .Allblog{
     width: 430px ! important;
    }
+   .Typecomp_1_img img{
+      width: 100%;
+
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+    .TypecomponentBtnImg{
+      margin-left: 200px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 120px ! important;
+    }
+    .B3T_challengesDiv {
+    top: 45px;
+    box-shadow: 1px 2px 4px 3px #c4bfbf;
+    margin-left: 79px;
+    margin-bottom: 40px;
+    min-height: 200px;
+    width: 493px;
+    height: 232px;
+    padding-top: 35px;
+    }
   }    
 
 

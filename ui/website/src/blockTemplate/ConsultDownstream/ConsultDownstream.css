@@ -467,7 +467,7 @@
 
   }
   .downimgtext{
-    left:22em !important;
+    left:21em !important;
   }
    #consultdown_img0{
     left: 26em ! important;
@@ -489,6 +489,9 @@
   }
   #consultdown_data4{
     right: 4%;
+  }
+  .downimg_p_txt{
+    padding-right: 25px ! important;
   }
   #consultdown_data5{
     left:7% ! important;
@@ -1134,28 +1137,31 @@
 
     }
     #consultdown_img0{
-      left: 28em ! important;
+      left: 31em ! important;
 
     }
      #consultdown_img2{
-      left: 28em ! important;
+      left: 31em ! important;
 
     }
      #consultdown_img4{
-      left: 28em ! important;
+      left: 31em ! important;
 
     }
     #consultdown_data1{
-      left:9% ! important;
+      left:12% ! important;
     }
     #consultdown_data3{
-      left:7% ! important;
+      left:9% ! important;
     }
     #consultdown_data5{
-      left:7% ! important;
+      left:9% ! important;
     }
     .downimgtext{
-      left:23em ! important;
+      left:22em ! important;
+    }
+    #consultdown_data6{
+      right: 12% ! important;
     }
   }
  @media only screen 
@@ -1210,7 +1216,60 @@
     right: 16% ! important;
     width: 690px ! important;
     }
+    .downimgtext {
+        left: 30em !important;
+    }
   }
+  @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
+  and (orientation: portrait) 
+   {
+  .newcard_landscape{
+    width: 220px ! important;
+
+  }
+  .downimgtext{
+    left:15em ! important;
+  } 
+  #consultdown_img1{
+    left:36em ! important;
+  }
+  #consultdown_img3{
+    left:36em ! important;
+  }
+  #consultdown_img5{
+    left:36em ! important;
+  }
+  #consultdown_data4{
+    right: 6% ! important;
+  }
+   #consultdown_data2{
+    right: 0% ! important;
+    width: 490px  !important;
+  }
+   #consultdown_data1{
+    left: 2em ! important;
+    /*width: 490px  !important;*/
+  }
+
+   #consultdown_data6{
+    right: 3% ! important;
+    width: 490px ! important;
+  }
+  #consultdown_img0{
+    left:13em ! important;
+  }
+  #consultdown_img2{
+    left:13em ! important;
+  }
+  #consultdown_img4{
+    left:13em ! important;
+  }
+  #consultdown_img6{
+    left:13em ! important;
+  }
+}
 
 
  

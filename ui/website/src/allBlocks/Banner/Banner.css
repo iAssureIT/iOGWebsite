@@ -3282,7 +3282,7 @@ div.drop-container:after {
     width: 450px;
    }
    #consultdown_img0{
-    left:6em ! important;
+    /*left:6em ! important;*/
    }
    #consultdown_data0{
     right: 0% ! important;
@@ -3292,10 +3292,10 @@ div.drop-container:after {
     right: 0% ! important;
    }
     #consultdown_img2{
-    left:6em ! important;
+    /*left:6em ! important;*/
    }
     #consultdown_img4{
-    left:6em ! important;
+    /*left:6em ! important;*/
    }
    #consultdown_data1{
         left: -3%;

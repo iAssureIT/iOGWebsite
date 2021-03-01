@@ -100,6 +100,23 @@ componentDidMount(){
 
 
   var pageUrl = window.location.pathname;
+  var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  if(isSafari && pageUrl=="/iog-train"){
+      $('.downimgtext').css('left','20em');
+  }
+
+   if(pageUrl=="/iog-train"){
+        $('.downimgtext').css('left','17em');
+
+      }
+      if(pageUrl=="/iog-train"){
+        $('.downimgtext').css('left','17em');
+
+      }
+      if(pageUrl=="/iog-implement"){
+        $('.downimgtext').css('left','18em');
+
+      }
       // console.log("pageUrl now = ",pageUrl);
       let a = pageUrl ? pageUrl.split('/') : "";
       console.log("consult url",a);
@@ -110,16 +127,13 @@ componentDidMount(){
       }
        if(pageUrl =="/iog-study"){
         $('.innerBlocktConsult').css('marginTop','-36px');
-        $('.downimgtext').css('left','20em');
+        // $('.downimgtext').css('left','20em');
       }
       if(pageUrl=="/masterpage/sample_repeateddelete"){
         $('.downimg_p_txt').css('top','-1.5em');
 
       }
-       if(pageUrl=="/iog-train"){
-        $('.downimgtext').css('left','17em');
-
-      }
+      
       
           if(pageUrl=="/iog-train")
      {
@@ -135,8 +149,8 @@ componentDidMount(){
 
 
 
-console.log("10 sep==>",this.props.block_id);
-          console.log("this.props.block_id0000",this.props.block_id);
+// console.log("10 sep==>",this.props.block_id);
+          // console.log("this.props.block_id0000",this.props.block_id);
           
           {
              axios
@@ -204,8 +218,8 @@ console.log("10 sep==>",this.props.block_id);
            <div className="Main_Cards__Bubble1 bub21">
           </div>
          </div>
-         <div>
-             <div className="downimgtext text-center hidden-xs">{this.state.blocks.blockTitle}</div>
+         <div className="">
+             <div className="Srtvices_implementHead downimgtext text-center hidden-xs">{this.state.blocks.blockTitle}</div>
             <p className="col-lg-10 col-md-10 col-sm-10 col-xs-10 downimg_p_txt" dangerouslySetInnerHTML={{ __html:this.state.blocks.blockDescription}}></p>
           </div>  
           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 container">  

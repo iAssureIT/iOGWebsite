@@ -757,9 +757,9 @@ border:1px solid #eee ! important;
       left:-62px;
     }
       .topnav.responsive .icon {
-      position: absolute;
-     
+      color: #f19000 ! important;
       right: -20px;
+       position: absolute;
     }
     .topnav.responsive {
         left: -50px;
@@ -773,6 +773,9 @@ border:1px solid #eee ! important;
     .topnav.responsive{
       left:-32px ! important;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
    } 
     @media only screen and (device-width : 600px) and (device-height : 960px) { 
@@ -782,6 +785,9 @@ border:1px solid #eee ! important;
     .headerlogo img{
       margin-left: -40px ! important;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
    } 
 
@@ -835,6 +841,9 @@ border:1px solid #eee ! important;
       left: 344px ! important;
       top:25px;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
   }  
   @media only screen and (device-width : 384px) and (device-height : 640px) { 
@@ -856,6 +865,9 @@ border:1px solid #eee ! important;
       left: 319px ! important;
       top:25px;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
     .headerflowscroll{
       height: 95px;
     }
@@ -866,6 +878,9 @@ border:1px solid #eee ! important;
         margin-top: 104px;
         height: 748px ! important;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
 
    @media only screen and (device-width : 360px) and (device-height : 640px) { 
@@ -917,6 +932,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
   }  
    @media only screen and (device-width : 401px) and (device-height : 768px) { 
@@ -933,6 +951,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }  
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
    @media only screen and (device-width : 240px) and (device-height : 320px) { 
     .headerlogo img{
@@ -973,6 +994,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }  
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
     @media only screen and (device-width : 400px) { 
     .headerlogo img{
@@ -988,6 +1012,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }  
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
      @media only screen and (device-width : 360px) { 
     .headerlogo img{
@@ -1014,6 +1041,9 @@ border:1px solid #eee ! important;
       right: -26px;
 
      }
+     .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
     } 
     @media only screen and (device-width : 400px) and (device-height : 600px) { 
     .headerlogo img{
@@ -1034,6 +1064,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }  
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
     @media only screen and (device-width : 400px) and (device-height : 700px) { 
     .headerlogo img{
@@ -1054,6 +1087,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }  
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
      @media only screen and (device-width : 400px) and (device-height : 768px) { 
     .headerlogo img{
@@ -1068,7 +1104,10 @@ border:1px solid #eee ! important;
     }
      .headerflowscroll{
       height: 100px;
-    }  
+    } 
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      } 
    }
     @media only screen and (device-width : 401px) { 
     .headerlogo img{
@@ -1084,6 +1123,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }  
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
      @media only screen and (device-width : 401px) and (device-height : 700px) { 
     .headerlogo img{
@@ -1098,7 +1140,10 @@ border:1px solid #eee ! important;
     }
      .headerflowscroll{
       height: 100px;
-    }  
+    } 
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      } 
 
 
    }
@@ -1116,6 +1161,9 @@ border:1px solid #eee ! important;
     }
     .resbanner {
         height: 770px ! important;
+      }
+      .topnav.responsive .icon {
+      color: #f19000 ! important;
       }
    }
 
@@ -1142,6 +1190,9 @@ border:1px solid #eee ! important;
       .headerflowscroll{
         height: 90px ! important;
       }
+      .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
    }
  @media only screen and (device-width : 480px) and (device-height : 854px) { 
   .ct-topbar{
@@ -1150,6 +1201,9 @@ border:1px solid #eee ! important;
   .topnav a.icon{
     right: -18px ! important;
   }
+  .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
  }
 
@@ -1175,6 +1229,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
   }  
   @media only screen and (device-width : 412px) and (device-height : 640px) { 
@@ -1199,6 +1256,9 @@ border:1px solid #eee ! important;
      .headerflowscroll{
       height: 100px;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
   }  
    @media only screen and (device-width : 320px) and (device-height : 640px) { 
@@ -1232,6 +1292,9 @@ border:1px solid #eee ! important;
           color: #f19000 ! important;
       }
 
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
   }  
 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 
@@ -1241,6 +1304,7 @@ border:1px solid #eee ! important;
    .topnav a.icon{
    top: -10px ! important;
     right: -5px ! important;
+    color :#585755 ! important;
    }
    .headerlogo img {
     height: 60px ! important;
@@ -1255,7 +1319,9 @@ border:1px solid #eee ! important;
     .headerflowscroll{
       height: 100px;
     }
-
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
 
   }  
 
