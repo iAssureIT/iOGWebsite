@@ -1151,7 +1151,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
 
        .serflip-card img{
-        margin-left: 20px ! important;
+        /*margin-left: 20px ! important;*/
       }  
 
       .serflip-card {
@@ -1264,7 +1264,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 60px ! important;
       }
        .serflip-card img{
-         margin-left: 20px ! important;
+         /*margin-left: 20px ! important;*/
     }  
     .serflip-cardservices img{
       margin-left: 20px ! important;
@@ -1303,6 +1303,71 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .serflip-cardservices img{
      width: 227px ! important;
     } 
+    
+
+  } 
+   @media only screen and (device-width : 412px) { 
+    
+    .serflip-cardservices img{
+     width: 227px ! important;
+    } 
+    .serflip-card {
+        width: 275px ! important;
+    }
+    .serflip-card img{
+      width: 225px ! important;
+    }
+    
+
+  } 
+   @media only screen and (device-width : 384px) { 
+    
+    
+    .serflip-card{
+      width: 255px ! important;
+    }
+    
+}
+  
+   @media only screen and (device-width : 390px) { 
+    
+    
+    .serflip-card{
+      width: 275px ! important;
+    }
+    
+
+  } 
+   @media only screen and (device-width : 411px) { 
+    
+    
+    .serflip-card{
+      width: 270px ! important;
+    }
+    .serflip-card img{
+      width: 210px ! important;
+    }
+    
+
+  } 
+   @media only screen and (device-width : 375px) { 
+    
+    
+    .serflip-card{
+      width: 260px ! important;
+    }
+     .serflip-card img{
+      width: 210px ! important;
+    }
+    
+
+  } 
+   @media only screen and (device-width : 414px) { 
+    
+    
+    .serflip-card{
+      width: 260px ! important;
+    }
     
 
   } 
@@ -1396,7 +1461,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       padding-right: 29px ! important;
     }
     .serflip-card img{
-      margin-left: 15px ! important;
+      /*margin-left: 15px ! important;*/
     }
 
     .NewLoader{
@@ -1498,6 +1563,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
     .contacticon2{
       /*margin-left: 20px;*/
+    }
+    .newcard_HD{
+      width: 225px ! important;
     }
   
   }
@@ -1723,7 +1791,13 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .Allblog{
     margin-left: 80px  ! important;
   }
-  }    
+  .newcard{
+    width: 450px ! important;
+  }
+  .Mobile_leftPadd{
+    margin-left: 260px !important;
+  }
+ }    
  
 
 

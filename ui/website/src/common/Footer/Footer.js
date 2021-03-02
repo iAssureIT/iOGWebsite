@@ -136,7 +136,7 @@ export default class Footer extends Component {
                                   Pune, India- 411028.<br/>
                                   <div className="Hidden_div"></div>
                                    <i class="fa fa-envelope footermailicon"style={{color:"#ffffff"},{paddingRight:"10px"}}></i>Mail&nbsp;&nbsp;&nbsp;&nbsp;: info@iogsolutions.com<br/>
-                                   <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i>Phone&nbsp;: +91 2029510500 
+                                   <i className="fa fa-mobile iconPadding" aria-hidden="true"style={{color:"#ffffff"}}></i>Phone&nbsp;: +91 20 2952 6092
                                 
                              </p>
                          </div>
@@ -272,7 +272,7 @@ export default class Footer extends Component {
                                  <i className="fa fa-map-marker" aria-hidden="true"style={{color:"#ffffff"}}></i>
                                  7090, 7th Floor, Marvel Fuego,<br/>Magarpatta Road, Opp Seasons Mall,Hadapsar 
                                   Pune,India- 411028.<br/>
-                                 <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 2029510500
+                                 <i className="fa fa-mobile" aria-hidden="true"style={{color:"#ffffff"}}></i> Phone: +91 20 2952 6092
                              </p>
                         </div>
                          <div className="col-lg-12 col-md-12 col-sm-6 col-xs-12"style={{padding:"0px"}}>

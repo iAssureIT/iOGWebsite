@@ -280,3 +280,10 @@ left: 35% ! important;
 		}
    
  } 
+
+  @media only screen and (device-width : 2560px) and (device-height : 1600px) { 
+ 
+	 .BolgsHoghDef{
+	 	margin-left: 100px ! important;
+	 }
+}

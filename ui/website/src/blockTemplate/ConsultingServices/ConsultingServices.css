@@ -77,6 +77,18 @@
     }
      
   } 
+ @media only screen and (device-width : 320px) and (device-height : 480px) { 
+    .New_Study_shadow {
+        width: 195px ! important;
+    }
+     
+  }  
+   @media only screen and (device-width : 480px) and (device-height : 320px) { 
+    .New_Study_shadow {
+        width: 295px ! important;
+    }
+     
+  }  
 .BT4_imgBack{
 
     height: 60px;

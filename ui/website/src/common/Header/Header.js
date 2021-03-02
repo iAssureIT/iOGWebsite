@@ -352,7 +352,7 @@ handlechange(event){
 
            </div> 
          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 setlogo">
-           <a className="headerlogo" href="/"><img alt="Logo" src="https://iogiassureit.s3.amazonaws.com/iOG/Logo (1).svg"/></a>         
+           <a className="headerlogo" href="/"><img alt="Logo" src="/images/iOG_logo_full-v2.png"/></a>         
         </div>
           <div className="col-lg-9 col-md-9 col-sm-9 col-xs-12 TopnavPadding">
            <div class="topnav" id="myTopnav">
