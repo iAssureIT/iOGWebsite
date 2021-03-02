@@ -863,6 +863,12 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .videocard1 {
     width: 265px ! important;
   }
+  .new_BT3_innerBlock{
+    width: 310 ! important;
+  }
+  .maindivWidth_mob {
+    width: 300px ! important;
+  }
  } 
   @media only screen and (device-width : 411px) and (device-height : 823px) { 
   .new_BT3_innerBlock {
@@ -1440,7 +1446,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
 
     #consultdown_data3{
-      top:101em ! important;
+      top:100em ! important;
     }   
     .resfooterend{
       height: 65px ! important;
@@ -1453,6 +1459,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       margin-left: 23px;
       margin-top: 26px;
    
+    }
+    .serflip-card img{
+      width: 220px ! important;
     }
     .videocard{
       widows: 270px ! important;
