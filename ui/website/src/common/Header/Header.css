@@ -617,6 +617,7 @@ border:1px solid #eee ! important;
     /*font-size: 0px ! important;*/
    }
    .topnav a.icon{
+     color :#585755 ! important;
     /*top:-15px ! important;*/
      /*right: -16px ! important;*/
    }
@@ -630,6 +631,12 @@ border:1px solid #eee ! important;
       left:293px ! important;
       top:38px;
     }
+    .topnav.responsive .icon {
+      color: #f19000 ! important;
+     }
+     .topnav.responsive{
+      left:-41px;
+     }
 
   } 
   @media only screen and (device-width : 400px) and (device-height : 700px) { 
@@ -775,7 +782,7 @@ border:1px solid #eee ! important;
    .headerlogo img {
     height: 60px ! important;
     /*z-index: 1000;*/
-    margin-left: -70px;
+    margin-left: -50px;
     margin-top: -15px;
     }
     .ct-topbar{
