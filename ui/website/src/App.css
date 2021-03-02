@@ -1368,7 +1368,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 
     } 
     #consultdown_img3{
-      top:92em ! important;
+      top:94em ! important;
     }
     .BT3_innerBlockImage{
       height: 450px ! important;
@@ -1525,10 +1525,18 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .serflip-cardservices img{
     width: 220px ! important;
   }
+}
+  @media only screen and (device-width : 400px) and (device-height :640px) { 
+  .serflip-cardservices img{
+    width: 245px ! important;
+  }
     .contactcontent {
       margin-bottom: 20px;
       margin-left: 30px;
       margin-top: 20px;
+  }
+    .serflip-card {
+      width: 270px ! important;
   }
 }
 @media only screen and (device-width : 393px) { 
@@ -1541,6 +1549,11 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       width: 245px ! important;
   }
 }
+@media only screen and (device-width : 360px) { 
+   .serflip-card{
+    width: 240px ! important;
+   } 
+}
 @media only screen and (device-width : 600px) and (device-height :1024px) { 
 .newcard_landscape {
     width: 337px ! important;
@@ -1549,6 +1562,17 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
  .serflip-cardservices img{
   width: 285px ! important;
  } 
+} 
+@media only screen and (device-width : 360px) and (device-height :640px) { 
+ .serflip-card{
+  width: 270px ! important;
+ } 
+ .serflip-card img {
+    width: 215px ! important;
+  }
+  .blck1heightnew{
+    width: 278px ! important;
+  }
 } 
 
 @media only screen and (device-width : 320px) and (device-height : 533px){ 

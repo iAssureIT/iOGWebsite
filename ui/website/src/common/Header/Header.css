@@ -652,6 +652,76 @@ border:1px solid #eee ! important;
     }
 
   }   
+  @media only screen and (device-width : 400px) and (device-height : 640px) { 
+   .topnav a{
+    /*font-size: 0px ! important;*/
+   }
+   .topnav a.icon{
+    color :#585755 ! important;
+    top:-15px ! important;
+     right: -16px ! important;
+   }
+   .headerlogo img {
+    height: 60px ! important;
+    /*z-index: 1000;*/
+    margin-left: -67px;
+    /*margin-top: 12px;*/
+    }
+    .ct-topbar{
+      right: -78px ! important;
+    }
+
+  }   
+  @media only screen and (device-width : 400px) { 
+   .topnav a{
+    /*font-size: 0px ! important;*/
+   }
+   .topnav a.icon{
+    color :#585755 ! important;
+    top:-15px ! important;
+     right: -16px ! important;
+   }
+   .headerlogo img {
+    height: 60px ! important;
+    /*z-index: 1000;*/
+    margin-left: -67px;
+    /*margin-top: 12px;*/
+    }
+    .ct-topbar{
+      right: -78px ! important;
+    }
+
+  }   
+   
+   @media only screen and (device-width : 360px) { 
+    .headerlogo img{
+      margin-left: -70px ! important;
+    }
+    .resbanner {
+        height: 700px ! important;
+      }
+     .ct-topbar{
+      left: 303px ! important;
+       margin-top: 8px;
+    }
+     .headerflowscroll{
+      height: 100px;
+    } 
+    .topnav.responsive{
+      left:-24px ! important;
+    } 
+    .topnav a.icon{
+      color: #333;
+    }
+    .topnav a.icon {
+      top: -10px;
+      right: -26px;
+
+     }
+     .topnav.responsive .icon {
+      color: #f19000 ! important;
+      }
+    }  
   @media only screen and (device-width : 414px) and (device-height : 736px) { 
    .topnav a{
     /*font-size: 0px ! important;*/
@@ -1016,35 +1086,7 @@ border:1px solid #eee ! important;
       color: #f19000 ! important;
       }
    }
-     @media only screen and (device-width : 360px) { 
-    .headerlogo img{
-      margin-left: -70px ! important;
-    }
-    .resbanner {
-        height: 700px ! important;
-      }
-     .ct-topbar{
-      left: 303px ! important;
-       margin-top: 8px;
-    }
-     .headerflowscroll{
-      height: 100px;
-    } 
-    .topnav.responsive{
-      left:-24px ! important;
-    } 
-    .topnav a.icon{
-      color: #333;
-    }
-    .topnav a.icon {
-      top: -10px;
-      right: -26px;
-
-     }
-     .topnav.responsive .icon {
-      color: #f19000 ! important;
-      }
-    } 
+    
     @media only screen and (device-width : 400px) and (device-height : 600px) { 
     .headerlogo img{
       margin-left: -70px ! important;

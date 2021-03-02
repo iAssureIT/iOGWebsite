@@ -996,6 +996,34 @@
     top:99em;
   }
 }
+@media only screen and (device-width : 400px) and (device-height : 640px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
+
+@media only screen and (device-width : 400px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
+@media only screen and (device-width : 360px) { 
+  #consultdown_data3 {
+    position: absolute;
+    top: 110em;
+  }
+  #consultdown_img3{
+    top:99em;
+  }
+}
 @media only screen and (device-width : 390px) and (device-height : 844px) { 
   #consultdown_data3 {
     position: absolute;
