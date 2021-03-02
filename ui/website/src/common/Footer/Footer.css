@@ -596,6 +596,9 @@ ul.no-icon-list1 {
     .footerdiv1{
       padding: 0px;
     }
+    .pt20{
+      padding-top: 20px;
+    }
 
 }
  @media only screen 
@@ -659,6 +662,9 @@ ul.no-icon-list1 {
     .add9 {
         left: 271px ! important;
     }
+    .pt20{
+      padding-top: 20px;
+    }
              
 }
   @media only screen and (device-width : 375px) and (device-height : 812px) { 
@@ -687,6 +693,32 @@ ul.no-icon-list1 {
 @media only screen and (device-width : 2560px) and (device-height : 1600px) {
    .pt20 {
       padding-top: 17px ! important;
+  }
+  .footimg7{
+       left: 2288px ! important;
+  }
+  .footimg5{
+    left:1900px ! important;
+  }
+  .footimg4{
+    left:1668px ! important;
+  }
+  .footimg3{
+   left:1430px ! important;
+  }
+  .foot3anim{
+    left:1095px ! important;
+  }
+  .footimg2{
+    left:675px ! important;
+    bottom: 84px;
+    height: 94px;
+  }
+  .footerdivs{
+    padding-left: 250px ! important;
+  }
+  .newaddressdiv{
+    padding-left: 325px ! important;
   }
 }
 

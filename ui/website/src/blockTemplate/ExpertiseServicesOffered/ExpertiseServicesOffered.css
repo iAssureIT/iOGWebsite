@@ -298,4 +298,10 @@
         margin-left: 170px ! important;
     }
   } 
+ @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
+  .B4T_ServicesDiv{
+    margin-left: 89px ! important;
+    width: 670px ! important;
+  }
+ } 
  

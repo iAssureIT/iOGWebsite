@@ -712,6 +712,54 @@
       padding-top: 113px ! important;
     }
 
-  }    
+  }
+  @media only screen and (device-width : 1680px) and (device-height : 1050px) {
+    .CareerBlockHighDef {
+      position: absolute;
+      right: 90px ! important;
+      width: 504px ! important;
+    }
+    .iogimgblock2{
+      margin-left: -71px ! important  ;
+      height: 1036px ! important;
+    }
+    .iogimgblock2 img{
+      width: 504px ! important;
+    }
+    .iogblock3text {
+    width: 536px ! important;
+    height: 370px;
+    padding-top: 112px ! important;
+    } 
+    .iogimgblock3 {
+      width: 525px ! important; 
+    }
+    .iogimgblock3 img{
+      width: 100%;
+     height: 99%;
+    }
+    .iogblock3text {
+    width: 443px ! important;
+    }
+    .iogimg_4 {
+      width: 970px ! important;
+    }
+  }  
+   @media only screen and (device-width : 1280px) and (device-height : 800px) {
+     .iogimg_4{
+      margin-left: 0px ! important;
+       margin-top: -20px ! important;
+     }
+     .iogimg_4 img{
+      width:97.3% ! important;
+
+     }
+     .iogimgblock2{
+      height: 732px ! important;
+     }
+     .iogblock3text{
+      height: 330px ! important;
+     }
+   }  
   
 

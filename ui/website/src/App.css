@@ -1807,7 +1807,16 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     margin-left: 260px !important;
   }
  }    
- 
+ @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
+  .newcard_HD {
+    width: 330px ! important;
+  }
+ }
+ @media only screen and (device-width : 1280px) and (device-height : 800px) { 
+  .All1blog1{
+    margin-left: 85px ! important;
+  }
+ }
 
 
 

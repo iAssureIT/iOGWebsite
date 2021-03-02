@@ -936,6 +936,14 @@
     right: -146px ! important;
   }
  }
+@media only screen and (device-width : 1680px) and (device-height : 1050px) { 
+  .new_wizardNotefor4{
+    right:-99px ! important; 
+  }
+  .navigation_tab {
+    margin-left: 40px ! important;
+  }
+} 
 
 
 

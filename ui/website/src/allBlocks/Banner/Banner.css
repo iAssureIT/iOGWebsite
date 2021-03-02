@@ -3401,7 +3401,19 @@ div.drop-container:after {
   }  
 
 }
+@media only screen and (device-width : 1680px) and (device-height : 1050px) { 
+  .waterimg2 {
+    top: 69% ! important;
+    left: 11% ! important;
+ }
+ .waterimg2Div_img{
+  width: 200px ! important
+ }
+ .Type2Img img{
+  width: 85% ! important;
 
+ }
+}
 @media only screen and (device-width : 2560px) and (device-height : 1600px) {
  .boat_img{
   left:167px ! important;
@@ -3456,5 +3468,19 @@ div.drop-container:after {
   .waterimg_size{
     width: 230px ! important;
   }
+}
+@media only screen and (device-width : 1280px) and (device-height : 800px) { 
+  .waterimg2 {
+    position: absolute;
+    top: 72%;
+    left: 10%;
+  }
+  .boat_img2 {
+    position: absolute;
+    bottom: 0px;
+    left: 264px;
+    top: 366px;
+  }
+
 }
 
