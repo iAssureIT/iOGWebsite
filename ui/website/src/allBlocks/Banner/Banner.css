@@ -3361,6 +3361,92 @@ div.drop-container:after {
       margin-left: -85px;
     }
 } 
+@media only screen and (device-width : 1024px){ 
+
+   #consultdown_data3{
+    top:62em ! important;
+    width: 450px;
+   }
+   #consultdown_img0{
+    /*left:6em ! important;*/
+   }
+   #consultdown_data0{
+    right: 0% ! important;
+    width: 450px;
+   }
+   #consultdown_data2{
+    right: 0% ! important;
+   }
+    #consultdown_img2{
+    /*left:6em ! important;*/
+   }
+    #consultdown_img4{
+    /*left:6em ! important;*/
+   }
+   #consultdown_data1{
+        left: -3%;
+       width: 450px;
+   }
+   #consultdown_img3{
+    top:62em ! important;
+    left:33em;
+   }
+   #consultdown_img1{
+    left:33em;
+   }
+   #consultdown_data4{
+    right: 0%;
+    width: 450px;
+   }
+   #consultdown_data5{
+    width: 450px;
+   }
+   #consultdown_img5{
+    left:40em;
+   }
+   .oilimage{
+    right: 160px;
+    top: 108px;
+   }
+   .oilimage_img{
+    width: 220px;
+   }
+   .plantimage11_img {
+    width: 220px;
+    } 
+    .plantimage11{
+      right: 19px;
+      top: 247px;
+    }
+    .nexttogasimg_size {
+    width: 220px;
+    }
+    .nexttogasimage{
+      right: 335px;
+       top: 216px;
+    }
+    .petrolimage1_img {
+    width: 221px;
+    }
+    .petrolimage1{
+      right: 192px;
+     top: 350px;
+    }
+    .waterimg2{
+          top: 78%;
+         left: 8%;
+    }
+    .boat_img2_img {
+    width: 220px;
+    }
+    .boat_img2{
+      left: 194px;
+       top: 404px;
+    }
+    .new_HoverDiv4{
+      margin-left: -85px;
+    }
+} 
 
 @media only screen and (device-width : 1170px) and (device-height : 2532px) { 
   .waterimg2{
@@ -3401,7 +3487,49 @@ div.drop-container:after {
   }  
 
 }
+@media only screen and (device-width : 1440px){ 
+  .oilimage{
+    right: 220px ! important;
+    top:170px ! important;
+  }
+  .nexttogasimage{
+    right: 460px ! important;
+    top: 301px ! important;
+  }
+  .plantimage11 {
+    right: 50px ! important;
+    top: 318px ! important;
+  }
+  .petrolimage1{
+    right: 260px ! important;
+    top:440px ! important;
+  }
+  .boat_img2 {
+    left: 311px ! important;
+  }
+  .waterimg2Div_img{
+    width: 170px;
+  }
+  .waterimg2{
+    left:8% ! important;
+    top:72% ! important;
+  }  
+
+}
 @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
+  .waterimg2 {
+    top: 69% ! important;
+    left: 11% ! important;
+ }
+ .waterimg2Div_img{
+  width: 200px ! important
+ }
+ .Type2Img img{
+  width: 85% ! important;
+
+ }
+}
+@media only screen and (device-width : 1680px){ 
   .waterimg2 {
     top: 69% ! important;
     left: 11% ! important;
@@ -3469,6 +3597,32 @@ div.drop-container:after {
     width: 230px ! important;
   }
 }
+@media only screen and (device-width : 2560px){
+  .nexttogasimg_size {
+    width: 370px ! important;
+  }
+    .oilimage_img {
+      width: 370px ! important;
+  }
+  .plantimage11_img{
+     width: 370px ! important;
+  }
+  .petrolimage1_img{
+    width: 370px ! important;
+  }
+  .boat_img2_img{
+    width: 370px ! important;
+  }
+  .waterimg2Div_img{
+    width: 300px ! important;
+  }
+  .boat_img_size{
+    width: 370px ! important;
+  }
+  .waterimg_size{
+    width: 230px ! important;
+  }
+}
 @media only screen and (device-width : 1280px) and (device-height : 800px) { 
   .waterimg2 {
     position: absolute;
@@ -3483,4 +3637,130 @@ div.drop-container:after {
   }
 
 }
+@media only screen and (device-width : 1280px) { 
+  .waterimg2 {
+    position: absolute;
+    top: 72%;
+    left: 10%;
+  }
+  .boat_img2 {
+    position: absolute;
+    bottom: 0px;
+    left: 264px;
+    top: 366px;
+  }
+
+}
+@media screen and (device-width: 1920px){
+  .nexttogasimage {
+    right: 597px ! important;
+    top: 338px ! important;
+  }
+  .petrolimage1 {
+    right: 308px ! important;
+    top: 456px ! important;
+   }
+   .plantimage11 {
+    right: 66px ! important;
+    top: 291px ! important;
+  }
+  .oilimage {
+    right: 335px ! important;
+    top: 159px ! important;
+  }
+  .boat_img2 {
+    left: 467px ! important;
+    top: 363px ! important;
+  }
+  .waterimg2 {
+    top: 66% ! important;
+    left: 10% ! important;
+  }
+}
+@media screen and (device-width: 1856px){
+  .nexttogasimage {
+    right: 597px ! important;
+    top: 338px ! important;
+  }
+  .petrolimage1 {
+   right: 374px ! important;
+    top: 475px ! important;
+   }
+   .plantimage11 {
+    right: 125px ! important;
+    top: 331px ! important;
+  }
+  .oilimage {
+    right: 335px ! important;
+    top: 159px ! important;
+  }
+  .boat_img2 {
+    left: 467px ! important;
+    top: 363px ! important;
+  }
+  .waterimg2 {
+    top: 69% ! important;
+    left: 15% ! important;
+  }
+  .waterimg2Div_img{
+    width: 200px ! important;
+  }
+  .nexttogasimg_size {
+    width: 285px;
+  }
+  .oilimage_img {
+    width: 290px;
+  }
+  .plantimage11_img {
+    width: 290px;
+  }
+  .petrolimage1_img {
+    width: 290px;
+  }
+}
+@media screen and (device-width: 1792px){
+  .nexttogasimage {
+    right: 619px ! important;
+    top: 318px ! important;
+  }
+  .petrolimage1 {
+   right: 374px ! important;
+    top: 455px ! important;
+   }
+   .plantimage11 {
+    right: 125px ! important;
+    top: 294px ! important;
+  }
+  .oilimage {
+    right: 351px ! important;
+    top: 130px ! important;
+  }
+  .boat_img2 {
+    left: 441px ! important;
+    top: 320px ! important;
+  }
+  .waterimg2 {
+    top: 69% ! important;
+    left: 15% ! important;
+  }
+  .waterimg2Div_img{
+    width: 200px ! important;
+  }
+  .nexttogasimg_size {
+    width: 285px;
+  }
+  .oilimage_img {
+    width: 290px;
+  }
+  .plantimage11_img {
+    width: 290px;
+  }
+  .petrolimage1_img {
+    width: 290px;
+  }
+  .boat_img2_img{
+    width: 290px ! important;
+  }
+}
+
 

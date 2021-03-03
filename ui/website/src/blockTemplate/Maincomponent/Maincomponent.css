@@ -353,8 +353,9 @@
 @media screen and (min-width: 1900px) {
      .CareerBlockHighDef{
         right: 87px ! important;
-        width: 500px ! important;
+        width: 505px ! important;
      }
+
      .iogimgblock2 img{
         margin-top: 195px ! important;
      }
@@ -368,6 +369,7 @@
      .iogimgblock2{
         padding-left: 0px ! important;
         margin-left: -33px ! important;
+        height: 857px ! important;
 
      } 
      .iogblock1text{
@@ -637,6 +639,43 @@
 
   } 
   @media only screen 
+  and (device-width: 2048px){
+   
+    .CareerBlockHighDef {
+      right: 134px ! important;
+    }
+    .ht_top{
+      /*padding-left: 130px ! important;*/
+    }
+    .iogimgblock2{
+      margin-left: -56px ! important;
+    }
+    .iogimgblock2{
+      height: 848px ! important;
+    }
+    .iogblock3text{
+      width: 631px ! important;
+      /*margin-left: 62px ! important;*/
+    }
+    .iogimgblock3 {
+        width: 637px ! important;
+    }
+    .iogimg_4 img{
+      width: 99.3% ! important;
+    }
+    .iogblock4text{
+      padding-top: 145px ! important;
+    }
+    .iogimgblock2 img{
+      width: 98% ! important;
+    }
+    .iogimgblock2 {
+        height: 874px ! important;
+    }
+        
+
+  } 
+  @media only screen 
   and (device-width: 2560px) 
   and (device-height: 1600px) 
  {
@@ -677,9 +716,50 @@
    }
    .iogblock4text {
     padding-top: 254px ! important;
-  }
+    }
 
-    
+  } 
+   @media only screen 
+  and (min-device-width: 2560px) 
+ {
+   
+    .CareerBlockHighDef {
+      right: 134px ! important;
+      width: 671px ! important;
+    }
+    .iogblock2text{
+      padding-top: 355px ! important;
+    }
+    .ht_top{
+      margin-top: 130px ! important;
+    }
+    .iogimgblock2 {
+      height: 1156px ! important;
+    }
+    .iogimgblock2{
+      margin-left: -56px ! important;
+    }
+    .iogblock3text{
+      width: 803px ! important;
+      height: 690px ! important;
+      /*margin-left: 62px ! important;*/
+    }
+    .iogimgblock3 {
+        width: 798px ! important;
+    }
+    .iogimg_4 img{
+      width: 99.3% ! important;
+    }
+    .iogblock4text{
+      padding-top: 145px ! important;
+    }
+    .iogimg_4 {
+     width: 1490px ! important;
+     /*margin-top: 186px;*/
+   }
+   .iogblock4text {
+    padding-top: 254px ! important;
+    }
 
   } 
   @media only screen 
@@ -760,6 +840,116 @@
      .iogblock3text{
       height: 330px ! important;
      }
+     
+   }  
+     @media only screen and (device-width : 1280px) {
+     .iogimg_4{
+      margin-left: 0px ! important;
+       margin-top: -20px ! important;
+     }
+     .iogimg_4 img{
+      width:97.3% ! important;
+
+     }
+     .iogimgblock2{
+      height: 732px ! important;
+     }
+     .iogblock3text{
+      height: 330px ! important;
+     }
+     
+   }  
+      @media only screen and (device-width : 1856px) {
+     .iogimg_4{
+      margin-left: 0px ! important;
+       margin-top: -20px ! important;
+       width: 1150px ! important;
+     }
+     .iogimgblock1 img{
+      width: 100% ! important;
+     }
+     .CareerBlockHighDef{
+      width: 540px ! important;
+     }
+     .ht_row2{
+      height: 240px  ! important;
+     }
+     .iogblock2text{
+      margin-top: 200px ! important;
+     }
+     .iogimg_4 img{
+      width:98.7% ! important;
+
+     }
+     .iogimgblock2 img {
+      width: 545px;
+      height: 100%;
+      margin-left: 24px;
+    }
+     .iogimgblock2{
+      height: 968px ! important;
+     }
+     .iogblock3text{
+      height: 330px ! important;
+     }
+     .iogimgblock3 {
+        width: 561px;
+      } 
+    .iogimgblock3 img{
+      width: 100%;
+       height: 326px;
+    }    
+
+    .iogblock3text{
+          width: 585px ! important;
+          padding-top: 93px ! important;
+    }
+   }  
+  @media only screen and (device-width : 1792px) {
+     .iogimg_4{
+      margin-left: 0px ! important;
+       margin-top: -20px ! important;
+       width: 1150px ! important;
+     }
+     .iogimgblock1 img{
+      width: 100% ! important;
+     }
+     .CareerBlockHighDef{
+      width: 540px ! important;
+     }
+     .ht_row2{
+      height: 240px  ! important;
+     }
+     .iogblock2text{
+      margin-top: 200px ! important;
+     }
+     .iogimg_4 img{
+      width:98.7% ! important;
+
+     }
+     .iogimgblock2 img {
+       width: 543px;
+      height: 100%;
+      margin-left: 4px;
+    }
+     .iogimgblock2{
+      height: 1250px ! important;
+     }
+     .iogblock3text{
+      height: 330px ! important;
+     }
+     .iogimgblock3 {
+        width: 561px;
+      } 
+    .iogimgblock3 img{
+      width: 100%;
+       height: 326px;
+    }    
+
+    .iogblock3text{
+          width: 527px ! important;
+          padding-top: 93px ! important;
+    }
    }  
   
 

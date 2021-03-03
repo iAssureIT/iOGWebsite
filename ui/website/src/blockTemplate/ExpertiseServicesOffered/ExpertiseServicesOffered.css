@@ -304,4 +304,24 @@
     width: 670px ! important;
   }
  } 
+ @media only screen and (device-width : 1920px) { 
+  .B4T_ServicesDiv{
+    margin-left: 89px ! important;
+    /*width: 670px ! important;*/
+  }
+ } 
+ @media only screen and (device-width : 1856px) { 
+  .B4T_ServicesDiv{
+    margin-left: 89px ! important;
+    width: 750px ! important;
+    /*width: 670px ! important;*/
+  }
+ } 
+ @media only screen and (device-width : 1792px) { 
+  .B4T_ServicesDiv{
+    margin-left: 89px ! important;
+    width: 750px ! important;
+    /*width: 670px ! important;*/
+  }
+ } 
  

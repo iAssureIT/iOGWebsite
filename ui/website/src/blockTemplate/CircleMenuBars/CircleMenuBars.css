@@ -936,6 +936,11 @@
     right: -146px ! important;
   }
  }
+ @media only screen and (device-width : 2560px) {
+  .new_wizardNotefor4{
+    right: -146px ! important;
+  }
+ }
 @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
   .new_wizardNotefor4{
     right:-99px ! important; 
@@ -944,6 +949,44 @@
     margin-left: 40px ! important;
   }
 } 
+@media only screen and (device-width : 1680px){ 
+  .new_wizardNotefor4{
+    right:-99px ! important; 
+  }
+  .navigation_tab {
+    margin-left: 40px ! important;
+  }
+} 
+ @media screen and (device-width: 1920px){
+
+ .new_wizardNotefor4{
+    right: -119px ! important;
+
+  }
+  .new_wizardNote_for6{
+    right: 75px ! important;
+  }
+
+ }
+  @media screen and (device-width: 1856px){
+   .new_wizardNotefor4{
+    right: -110px ! important;
+
+  } 
+  .new_wizardNote_for6{
+    right: 73px ! important;
+  }
+}
+ @media screen and (device-width: 1792px){
+   .new_wizardNotefor4{
+    right: -110px ! important;
+
+  } 
+  .new_wizardNote_for6{
+    right: 73px ! important;
+  }
+}
+
 
 
 

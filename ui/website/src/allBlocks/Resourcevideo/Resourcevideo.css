@@ -217,4 +217,9 @@ height: 100px;
     margin-left: 95px;
   }
  } 
+ @media only screen and (device-width : 1792px) { 
+  .reactplayerDiv {
+    width: 463px ! important;
+  }
+ } 
 

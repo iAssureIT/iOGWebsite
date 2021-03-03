@@ -1817,6 +1817,79 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     margin-left: 85px ! important;
   }
  }
+ @media screen and (device-width: 1920px){
+
+  .Type2Img img{
+    width: 85% ! important;
+
+  }
+  .newcard{
+    width: 370px ! important;
+  }
+  .ApplicationImg{
+    padding-left: 110px ! important;
+  }
+  .B3T_challengesDiv{
+    margin-left: 85px;
+    margin-bottom: 54px;
+    min-height: 200px;
+    width: 465px;
+  }
+  .newcard_HD {
+    width: 370px;
+  }
+
+ }
+  @media screen and (device-width: 1856px){
+
+  .Type2Img img{
+    width: 85% ! important;
+
+  }
+  .newcard{
+    width: 370px ! important;
+  }
+  .ApplicationImg{
+    padding-left: 110px ! important;
+  }
+  .B3T_challengesDiv{
+    margin-left: 85px;
+    margin-bottom: 54px;
+    min-height: 200px;
+    width: 465px;
+  }
+  .newcard_HD {
+    width: 370px ! important;
+  }
+  .All1blog1{
+    margin-left: 80px ! important;
+  }
+ }
+  @media screen and (device-width: 1792px){
+
+  .Type2Img img{
+    width: 85% ! important;
+
+  }
+  .newcard{
+    width: 370px ! important;
+  }
+  .ApplicationImg{
+    padding-left: 110px ! important;
+  }
+  .B3T_challengesDiv{
+    margin-left: 85px;
+    margin-bottom: 54px;
+    min-height: 200px;
+    width: 465px;
+  }
+  .newcard_HD {
+    width: 370px ! important;
+  }
+  .All1blog1{
+    margin-left: 80px ! important;
+  }
+ }
 
 
 
