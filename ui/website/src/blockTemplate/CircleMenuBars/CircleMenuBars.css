@@ -495,7 +495,7 @@
 
 @media screen and (min-width: 1600px) {
     .navigation_tab{
-        margin-left: 48px ! important;
+        margin-left: 41px ! important;
     }
     .new_round-tabfor3{
         margin-left: 49% ! important;
@@ -984,6 +984,17 @@
   } 
   .new_wizardNote_for6{
     right: 73px ! important;
+  }
+}
+ @media screen and (device-width: 1152px){
+   .new_round-tabfor4{
+    margin-left: 219% ! important;
+   }
+   .new_wizardNotefor4{
+    right: -271px ! important;
+   }
+   .navigation_tab {
+    margin-left: 30px ! important;
   }
 }
 

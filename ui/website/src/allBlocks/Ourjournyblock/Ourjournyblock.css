@@ -2833,6 +2833,9 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     left:483px ! important;
    }
+   .add1{
+    opacity: 1;
+   }
    .add5{
     top:675px ! important;
     opacity: 1;
@@ -2894,6 +2897,105 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     top: 1123px ! important;
    }
   } 
+  @media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   .roadjourny img{
+    left:400px ! important;
+   }
+    .roadjourny{
+    overflow:inherit;
+   }  
+   .Journycaro1{
+    opacity: 1;
+    left:483px ! important;
+   }
+   .add5{
+    opacity: 1;
+    top:717px ! important;
+    opacity: 1;
+   }
+   .add{
+    left:578px ! important;
+   }
+    
+    .add10{
+      opacity: 1;
+      top: -18px ! important;
+      left: 116px ! important;
+    }
+   .Journycaro2{
+    opacity: 1;
+    left:256px ! important;
+   }
+    .Journycaro3{
+      opacity: 1;
+    }
+   .add2{
+    opacity: 1;
+    right: 0px ! important;
+   }
+   .Journycaro4{
+    opacity: 1;
+    left:595px ! important;
+    top:698px ! important;
+   }
+   .Journycaro6{
+    opacity: 1;
+    left:162px ! important;
+   }
+   .Journycaro5{
+    opacity: 1;
+    left:604px ! important;
+    top:830px ! important;
+   }
+   .Journycaro7{
+    opacity: 1;
+    left:372px ! important;
+   }
+   .Journycaro8{
+    opacity: 1;
+    top: 1329px ! important;
+    left: 582px ! important;
+   }
+   .add9{
+    opacity: 1;
+    left:185px ! important;
+   }
+   .add7{
+    opacity: 1 ! important;
+    left:596px ! important;
+    top:241px ! important;
+   }
+   .add8{
+    opacity: 1;
+    right: -487px ! important;
+   }
+   .add6{
+    opacity: 1;
+    left:85px ! important;
+   }
+   .Journycaro10{
+    opacity: 1 ! important;
+    left: 278px ! important;
+   }
+   .Journycaro9{
+    opacity: 1;
+    top: 1161px ! important;
+   }
+   .add2{
+      opacity: 1;
+   }
+   .add3{
+      opacity: 1;
+      left:507px ! important;
+   }
+   .add4{
+      opacity: 1;
+   }
+  } 
 
   @media screen and (min-width: 1900px) {
   .add10 {
@@ -2901,6 +3003,93 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     left:785px ! important;
   }
 }
+@media only screen and (device-width : 1600px)  { 
+    .Journycaro10{
+       opacity: 1;
+       left: 611px ! important;
+
+      }
+      .add9{
+        opacity: 1;
+        left:515px !important;
+      }
+      .roadjourny{
+        overflow:inherit;
+       }  
+      .add10{
+        opacity: 1;
+        left:262px ! important;
+      }
+      .add8{
+         opacity: 1;
+        right: -624px ! important;
+      }
+      .Journycaro1{
+         opacity: 1;
+         left:820px ! important;
+       }
+       .Journycaro2{
+         opacity: 1;
+         left:583px ! important;
+       }
+       .Journycaro3{
+         opacity: 1;
+         left:534px ! important;
+       }
+       .Journycaro4{
+         opacity: 1;
+       }
+      .Journycaro5{
+         opacity: 1;
+        left:1120px ! important;
+      }
+      .Journycaro6{
+         opacity: 1;
+        left:492px ! important;
+      }
+       .Journycaro7{
+         opacity: 1;
+        left:729px ! important;
+      }
+      .Journycaro9{
+         opacity: 1;
+        left:211px ! important;
+      }
+      .add6{
+         opacity: 1;
+         left:414px ! important;
+      }
+      .add7{
+        opacity: 1;
+      }
+      .add5{
+        opacity: 1;
+      }
+      .add4{
+        opacity: 1;
+        left:420px ! important;
+      }
+      .add3{
+        opacity: 1;
+        left:808px ! important;
+      }
+      .add2{
+        opacity: 1;
+        right: 51px ! important;
+      }
+      .add1{
+        opacity: 1;
+        left:740px ! important;
+      }
+      .Journycaro4{
+         opacity: 1;
+        left:877px ! important;
+      }
+      .iogimg_4{
+        width: 866px ! important;
+        margin-left: 0px ! important
+      }
+ }
 
 @media only screen 
     and (device-width : 1440px) 
@@ -3402,6 +3591,56 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     left: 566px;
     /* opacity: 0; */
 }
+
+.iogimg_4{
+  margin-left: 0px ! important;
+}
+
+
+} 
+ @media only screen and (device-width : 1024px) and (device-height : 768px) { 
+
+   .add1{
+    left:594px;
+   }
+   .add2{
+    left:6px;
+   }
+   .roadjourny img{
+    left:385px;
+   }
+   .Journycaro1 {
+    left: 521px ! important;
+    }
+    .Journycaro2 {
+    left: 260px ! important;
+  }
+  .add6{
+    left:72px;
+  }
+  .Journycaro4{
+    left:628px;
+  }
+  .Journycaro5{
+    left:628px;
+  }
+  .Journycaro7{
+    left:377px;
+  }
+  .add7 {
+    position: relative;
+    left: 811px;
+    top: 83px;
+    opacity: 0;
+  }
+  .Journycaro8 {
+    z-index: 1000;
+    position: absolute;
+    top: 1323px;
+    left: 566px;
+    /* opacity: 0; */
+}
+
 .iogimg_4{
   margin-left: 0px ! important;
 }
@@ -5020,6 +5259,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
    @media only screen and (device-width : 1280px) and (device-height : 800px) {
     .roadjourny{
       overflow: inherit;
+      z-index: 0;
     }
     .Journycaro1{
       left:532px ! important;
@@ -5101,6 +5341,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
  @media only screen and (device-width : 1280px) {
     .roadjourny{
       overflow: inherit;
+      z-index: 0;
     }
     .Journycaro1{
       left:532px ! important;
@@ -5182,12 +5423,103 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     top: 271px;
   }
 }
+@media only screen and (device-width : 1152px) {
+    .roadjourny{
+      overflow: inherit;
+      z-index: 0;
+    }
+    .roadjourny img{
+      left:205px ! important;
+    }
+    .Journycaro1{
+      left:425px ! important;
+      opacity: 1;
+    }
+    .add1{
+      left:501px ! important;
+      opacity: 1;
+    }
+    .Journycaro2{
+      left:170px ! important;
+      opacity: 1;
+    }
+    .Journycaro3{
+      left:92px ! important;
+      opacity: 1;
+    }
+    .Journycaro4{
+      top:650px! important;
+      left:600px ! important;
+      opacity: 1;
+    }
+    .Journycaro5{
+      left:746px ! important;
+      opacity: 1;
+    }
+    .add5{
+      opacity: 1;
+    }
+    .Journycaro7{
+      left:323px ! important;
+      opacity: 1;
+    }
+    .add8{
+      right: -377px ! important;
+      opacity: 1;
+    }
+    .Journycaro8{
+      left:672px ! important;
+      opacity: 1;
+    }
+    .add7{
+      left: 712px ! important;
+      top:241px ! important;
+      opacity: 1;
+    }
+    .add6{
+      left: 16px ! important;
+      opacity: 1;
+    }
+    .Journycaro9{
+      top:1149px ! important;
+      opacity: 1;
+    }
+    .Journycaro10{
+      left: 213px ! important;
+      opacity: 1;
+    }
+    .add9{
+      left:115px ! important;
+      opacity: 1;
+    }
+    .Journycaro6{
+      left:106px ! important;
+      opacity: 1;
+    }
+    .add2{
+      opacity: 1;
+    }
+    .add4 {
+      opacity: 1;
+      position: relative;
+      left: 169px;
+    }
+    .add10{
+      opacity: 1;
+    }
+    .add3 {
+    left: 513px;
+    opacity: 1;
+    top: 271px;
+  }
+}
 @media only screen and (device-width : 1920px) {
   .roadjourny img{
     left:-147px ! important;
   }
     .roadjourny{
       overflow: inherit;
+      z-index: 0;
     }
     .Journycaro1{
      left: 837px ! important;
@@ -5284,6 +5616,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
     .roadjourny{
       overflow: inherit;
+      z-index: 0;
     }
     .Journycaro1{
      left: 837px ! important;
@@ -5381,6 +5714,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
     .roadjourny{
       overflow: inherit;
+      z-index: 0;
     }
     .Journycaro1{
      left: 760px ! important;

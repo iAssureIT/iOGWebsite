@@ -222,4 +222,14 @@ height: 100px;
     width: 463px ! important;
   }
  } 
+ @media only screen and (device-width : 1856px) { 
+  .reactplayerDiv {
+    width: 430px ! important;
+  }
+ } 
+ @media only screen and (device-width : 1600px) { 
+  .reactplayerDiv {
+    width: 405px ! important;
+  }
+ } 
 

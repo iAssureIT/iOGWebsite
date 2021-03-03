@@ -72,3 +72,15 @@ height: 960px ! important;
         width: 506px ! important;
     }
 }
+@media screen and (device-width: 1152px){
+  .backgrd_curve1{
+    height: auto! important;
+    padding-left: 30px ! important;
+  }
+  .foundermainDiv{
+    padding-left: 80px ! important;
+  }
+  .DirectorText{
+    padding-top: 5px ! important;
+  }
+}
