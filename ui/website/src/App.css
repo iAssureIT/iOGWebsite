@@ -725,7 +725,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
 
 }
-@media screen and (max-width:1024px){
+@media screen and (device-width:1024px){
     .new_round-tabfor4{
         margin-left:219% ! important;
      }
@@ -735,6 +735,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
        }
      .new_wizardNotefor4{
       left:240px ! important;
+     }
+     .blogdate{
+      padding-top: 0px ! important;
      }
 
 }
@@ -822,7 +825,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         padding-left: 0px ! important;
      }
      .TypecomponentBtnImg img{
-        margin-top: 165px ! important;
+        /*margin-top: 165px ! important;*/
      }
     .new_round-tabforTwo{
         margin-left: 98% ! important;
@@ -1018,6 +1021,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .jobformcontent{
         margin-left: 250px ! important;
+    }
+    .TypebtnText{
+      margin-left: 0px ! important;
     }
     .blogtext h4{
       height: 75px ! important;
@@ -1815,12 +1821,40 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     z-index: 0;
   }
  }
+ @media only screen and (device-width : 1680px){ 
+  .newcard_HD {
+    width: 330px ! important;
+  }
+  .roadjourny{
+    z-index: 0;
+  }
+  .B3T_challengesDiv{
+    width: 450px ! important;
+  }
+   .B4T_img{
+    margin-left: 150px ! important;
+  }
+  .ApplicationImg{
+    padding-left: 70px ! important;
+  }
+ }
  @media only screen and (device-width : 1280px) and (device-height : 800px) { 
   .All1blog1{
     margin-left: 85px ! important;
   }
   .roadjourny{
     z-index: 0;
+  }
+ }
+ @media only screen and (device-width : 1280px){ 
+  .All1blog1{
+    margin-left: 85px ! important;
+  }
+  .roadjourny{
+    z-index: 0;
+  }
+  .DirectorText{
+    padding-top: 10px ! important;
   }
  }
  @media screen and (device-width: 1920px){
@@ -1919,6 +1953,12 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .roadjourny{
     z-index: 0;
   }
+  .journybg{
+    display: none;
+  }
+  .TypebtnText{
+    margin-left: 0px ! important;
+  }
  } 
 
 @media only screen and (device-width : 1600px) {
@@ -1935,6 +1975,24 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     z-index: 0;
   }
 }
+@media only screen and (device-width : 800px) {
+  .serflip-cardservices img{
+    width: 230px ! important;
+  }
+  .TypebtnText{
+    margin-left: 0px ! important;
+  }
+  .B3T_challengesDiv{
+    width: 175px ! important;
+  }
+  .B4T_img{
+    margin-left: 18px;
+  }
+  .B4T_txt{
+    margin:0px;
+    font-size: 10px ! important;
+  }
+ } 
 
 
 

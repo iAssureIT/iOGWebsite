@@ -2001,6 +2001,21 @@ a.nameParts{
     color: #000;
     /*top:44px;*/
 }
+ @media screen and (device-width: 1152px){
+  .new_round-tabfor4{
+    margin-left: 219% ! important;
+   }
+   .new_wizardNotefor4{
+    right: -271px ! important;
+   }
+   .navigation_tab {
+    margin-left: 30px ! important;
+  }
+  .new_wizardNotefor4forJ{
+    right: -267px ! important;
+  }
+}
+
 .nopadding{
     padding: 0px;
 }
@@ -2996,7 +3011,179 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       opacity: 1;
    }
   } 
+ 
+ @media only screen and (device-width: 800px)  {
+      .roadjourny img{
+        display: none;
+      }
+      .add1{
+        display: none;
+      } 
+      .add2{
+        display: none;
+      }
+      .add3{
+        display: none;
+      } 
+      .add4{
+        display: none;
+      } 
+      .add5{
+        display: none;
+      } 
+      .add6{
+        display: none;
+      } 
+      .add7{
+        display: none;
+      } 
+      .add8{
+        display: none;
+      } 
+      .add9{
+        display: none;
+      }  
+      .add10{
+        display: none;
+      } 
+      .webclientcaro {
+        height: 150px ! important;
+        /*padding: 10px;*/
+        width: 630px ! important;
+        /*height: 100px;*/
+        text-align:center;
+        border:1px solid #8b8d8e ! important;
+    }
+    .journybg{
+      display: none;
+    }
+     .webclientcaro h3{
+      text-align: center;
+     }
+     .Journycaro1 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro2 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro3 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro4 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro5 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro6 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro7 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro8 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro9 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro10 p{
+      text-align: center;
+      padding: 10px;
+     }
+     .Journycaro11 p{
+      text-align: center;
+      padding: 10px;
+     }
+    .Journycaro1{
+        left: 73px ! important;
+         top: 297px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+    .Journycaro3{
+        left: 73px ! important;
+        top: 675px ! important;
+        text-align: center;
+         opacity: 1;
+        /*padding: 10px;*/
+    }
+    .Journycaro5{
+        left: 73px ! important;
+         top:1230px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+    .Journycaro7{
+        left: 73px ! important;
+         top: 1420px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+    .Journycaro9{
+        left: 73px ! important;
+         top: 1790px ! important;
+         text-align: center;
+          opacity: 1;
+    }
 
+    .Journycaro2{
+     left: 73px ! important;
+     top: 480px ! important;
+       opacity: 1;
+    }
+    .Journycaro4{
+     left: 73px ! important;
+      top: 855px ! important;
+       opacity: 1;
+    }
+    .Journycaro6{
+     left: 73px ! important;
+      top: 1040px ! important;
+       opacity: 1;
+    }
+    .Journycaro8{
+     left: 73px ! important;
+      top: 1605px ! important;
+       opacity: 1;
+    }
+    .Journycaro10{
+     left: 73px ! important;
+      top: 1980px ! important;
+      opacity: 1;
+    }
+    .add11{
+      display: none;
+    }
+    .add12{
+      display: none;
+    }
+    .journybg2{
+      display: none;
+    }
+    .new_wizard_journy{
+      margin-top: 700px ! important;
+    }
+    .journytextblock{
+      width: 100% ! important;
+    }
+    .new_round-tabfor4{
+      margin-left: 127% ! important;
+    }
+    .new_wizardNotefor4forJ{
+      right: -110px! important;
+    }
+    
+  } 
   @media screen and (min-width: 1900px) {
   .add10 {
     top: -22px ! important;
@@ -5477,7 +5664,8 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       opacity: 1;
     }
     .add6{
-      left: 16px ! important;
+      left: -754px ! important;
+      top:527px ! important;
       opacity: 1;
     }
     .Journycaro9{
@@ -5502,7 +5690,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     .add4 {
       opacity: 1;
       position: relative;
-      left: 169px;
+      left: 548px;
     }
     .add10{
       opacity: 1;

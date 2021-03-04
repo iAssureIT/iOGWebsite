@@ -3895,4 +3895,57 @@ div.drop-container:after {
 
 }
 
+@media only screen and (device-width : 800px) {
+  .oilimage_img {
+    width: 200px;
+  }
+  .oilimage {
+    right: 161px;
+    top: 159px;
+
+  }
+  .plantimage11_img {
+    width: 200px;
+  }
+  .plantimage11 {
+    right: 38px;
+    top: 304px;
+  }
+  .boat_img_size {
+    left: 45px;
+    top: 32px;
+  }
+  .waterimg {
+    left: 31px;
+    top: 205px;
+  }
+  .nexttogasimg_size {
+    width: 200px;
+  }
+  .nexttogasimage {
+    right: 295px;
+    top: 294px;
+  }
+  .boat_img2_img {
+    width: 200px;
+  }
+  .petrolimage1_img {
+    width: 200px;
+  }
+  .boat_img2 {
+    left: 117px;
+    top: 381px;
+  }
+  .waterimg2 {
+    top: 72%;
+    left: 4%;
+  }
+  .petrolimage1 {
+    right: 175px;
+    top: 424px;
+  }
+  .new_HoverDiv4{
+    margin-left: -93px ! important;
+  }
+}
 

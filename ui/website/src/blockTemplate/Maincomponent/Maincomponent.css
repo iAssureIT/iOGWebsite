@@ -1082,6 +1082,44 @@
           width: 527px ! important;
           padding-top: 93px ! important;
     }
-   }  
+   }
+     @media only screen and (device-width : 800px) {
+      .iogimgblock1 img{
+        height: 350px ! important;
+      }
+      .iogblock1text{
+        padding-top: 10px ! important;
+      }
+      .iogimgblock2 img{
+        height: 59% ! important;
+      }
+      .iogblock3text {
+        font-size: 13px;
+        width: 358px ! important;
+        height: 191px;
+        padding:0px ! important;
+      }
+      .iogimgblock3{
+        height: auto ! important;
+      }
+      .iogimg_4{
+        margin-left: 0px  !important;
+        margin-top: -6px ! important;
+      }
+      .iogblock4text{
+        padding-top: 10px ! important;
+        font-size: 13px ! important;
+      }
+
+     }
+     @media only screen and (device-width : 1400px) {
+      .iogimg_4{
+        width: 828px ! important;
+      }
+      .iogblock3text{
+        width: 395px ! important;
+      }
+
+     }  
   
 

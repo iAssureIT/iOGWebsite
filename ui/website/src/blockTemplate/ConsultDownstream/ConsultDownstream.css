@@ -1381,6 +1381,18 @@
     }
 
   }
+  @media only screen and (device-width: 1280px){
+    #consultdown_img5{
+      left:46em ! important;
+    }
+    #consultdown_img3{
+      left:46em ! important;
+    }
+    #consultdown_img1{
+      left:46em ! important;
+    }
+
+  }
 
 @media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
     #consultdown_data0 p{
@@ -1844,6 +1856,102 @@
   }
   
 }
+
+ @media only screen and (device-width : 800px) { 
+      .ct-topbar{
+        left:515px ! important;
+      }
+      .B4T_ServicesDiv{
+        width: 530px ! important;
+      }
+      .topnav.responsive{
+            width: 600px ! important;
+            height: 529px ! important;
+            left: -158px ! important;
+      }
+      .newcard_landscape {
+          width: 202px ! important;
+          margin-left: 35px;
+      }
+      #consultdown_img1{
+        left:21em ! important;
+      }
+       #consultdown_img3{
+        left:21em ! important;
+      }
+       #consultdown_img5{
+        left:21em ! important;
+      }
+      #consultdown_img0{
+       top: 24em;
+       left: 7em;
+      }
+      #consultdown_data1 {
+        left: -3% ! important;
+        width: 401px ! important;
+       }
+        #consultdown_data2 {
+        position: absolute;
+        top: 48em;
+        right: 0%;
+        width: 400px;
+      }
+      #consultdown_img1 {
+          height: 135px ! important;
+          left: 27em ! important;
+      }
+
+        #consultdown_img2 {
+        top: 49em;
+        left: 4em;
+       }
+        #consultdown_data3 {
+         left: -5% ! important;
+        width: 401px ! important; 
+      }
+      #consultdown_img3 {
+          left: 28em ! important;
+          height: 135px ! important;
+      }
+      #consultdown_img4{
+        left: 2em ! important;
+         height: 135px ! important;
+      }
+       #consultdown_img6{
+        left: 2em ! important;
+         height: 135px ! important;
+      }
+      #consultdown_data5 {
+          width: 400px ! important;
+          left: -3em ! important;
+      }
+      #consultdown_img5 {
+          left: 27em ! important;
+          height: 135px;
+      }
+      .downimgtext{
+        left: 12em ! important;
+      }
+      #consultdown_data0 {
+        position: absolute;
+        top: 24em;
+        right: 0%;
+        width: 400px;
+      }
+      #consultdown_data4 {
+        right: 0%;
+        width: 400px;
+      }
+       #consultdown_data6 {
+        right: 0%;
+        width: 400px;
+      }
+      .downimg_p_txt
+      {
+        left:7em;
+      }
+
+  }   
 
 
  
