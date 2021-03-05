@@ -1674,10 +1674,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       width: 155px ! important;
   }
 }  
-@media only screen 
-  and (device-width: 2048px) 
-  and (device-height:1536px ) 
-  and (orientation: landscape){
+@media only screen and (device-width: 2048px) and (device-height:1536px ) and (orientation: landscape){
     .newcard_landscape {
       width: 370px ! important;
       margin-left: 25px ! important;
@@ -1691,10 +1688,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
 
   } 
-@media only screen 
-  and (device-width: 1536px) 
-  and (device-height: 2048px) 
-  and (orientation: portrait){
+@media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
     .TypecomponentBtnImg{
       margin-left: 230px ! important;
     }
@@ -1726,19 +1720,13 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     
 
   } 
-    @media only screen 
-  and (device-width: 2560px) 
-  and (device-height: 1600px) 
-  and (orientation: landscape){
+@media only screen and (device-width: 2560px)  and (device-height: 1600px) and (orientation: landscape){
    .Typecomp_1_img img{
       width: 100%;
 
     }
   }
-  @media only screen 
-  and (device-width: 2048px) 
-  and (device-height: 1536px) 
-  and (orientation: landscape){
+@media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
    .Allblog{
     width: 430px ! important;
    }
@@ -1766,10 +1754,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     padding-top: 35px;
     }
   }   
-   @media only screen 
-  and (device-width: 2560px) 
-  and (device-height: 1600px) 
-  and (orientation: landscape){
+   @media only screen and (device-width: 2560px) and (device-height: 1600px) and (orientation: landscape){
    .Allblog{
     width: 430px ! important;
    }
@@ -1800,7 +1785,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       height: 232px;
       padding-top: 35px;
     }
-        .newcard {
+    .newcard {
         width: 475px;
     }
     .new_round-tabfor9{
@@ -1872,7 +1857,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     padding-top: 10px ! important;
   }
   .newcard_HD {
-    width: 260px;
+    width: 260px ! important;
   }
  }
  @media screen and (device-width: 1920px){
