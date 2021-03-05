@@ -532,9 +532,7 @@
     }
   } 
 
-  @media only screen 
-  and (device-width: 1440px) 
-  and (device-height: 900px)  {
+@media only screen and (device-width: 1440px) and (device-height: 900px)  {
     .secondblockk{
         /*padding-top: 80px ! important;*/
     }
@@ -616,11 +614,7 @@
     }
 
   }
-   @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen  and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .iogblock1text {
         /*height: 270px ! important;*/
     }
@@ -648,22 +642,14 @@
     }
    
   } 
-    @media only screen 
-  and (device-width: 768px) 
-  and (device-height: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
         .iogimgblock2 {
         height: 365px ! important;
     }
 
    
   } 
-    @media only screen 
-  and (device-width: 768px) 
-  and (device-height: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
    .iogimgblock2 img{
     height: 97% ! important;
    }
@@ -705,10 +691,7 @@
    
  } 
 
- @media only screen 
-  and (device-width: 2048px) 
-  and (device-height: 1536px) 
-  and (orientation: landscape){
+ @media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
    
     .CareerBlockHighDef {
       right: 134px ! important;
@@ -734,12 +717,9 @@
     }
     .iogblock4text{
       padding-top: 145px ! important;
-    }
-    
-
+    }  
   } 
-  @media only screen 
-  and (device-width: 2048px){
+  @media only screen and (device-width: 2048px){
    
     .CareerBlockHighDef {
       right: 134px ! important;
@@ -787,9 +767,7 @@
           
 
   } 
-  @media only screen 
-  and (device-width: 2560px) 
-  and (device-height: 1600px) 
+@media only screen and (device-width: 2560px) and (device-height: 1600px) 
  {
    
     .CareerBlockHighDef {
@@ -831,8 +809,7 @@
     }
 
   } 
-   @media only screen 
-  and (min-device-width: 2560px) 
+@media only screen and (min-device-width: 2560px) 
  {
    
     .CareerBlockHighDef {
@@ -874,10 +851,7 @@
     }
 
   } 
-  @media only screen 
-  and (device-width: 1536px) 
-  and (device-height: 2048px) 
-  and (orientation: portrait){
+@media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
     .CareerBlockHighDef {
      right: 69px ! important;
      width: 431px ! important;
@@ -968,6 +942,9 @@
     .iogimg_4 {
       width: 970px ! important;
     }
+    .iogimgblock1 img{
+      margin-left: 7px ! important;
+    }
   }  
    @media only screen and (device-width : 1280px) and (device-height : 800px) {
      .iogimg_4{
@@ -983,6 +960,10 @@
      }
      .iogblock3text{
       height: 330px ! important;
+      width: 354px ! important;
+     }
+     .CareerBlockHighDef{
+      width: 375px ! important;
      }
      
    }  
@@ -994,6 +975,9 @@
      .iogimg_4 img{
       width:97.3% ! important;
 
+     }
+     .CareerBlockHighDef{
+      width: 375px ! important;
      }
      .iogimgblock2{
       height: 732px ! important;
