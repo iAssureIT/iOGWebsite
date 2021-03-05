@@ -1680,9 +1680,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   and (orientation: landscape){
     .newcard_landscape {
       width: 370px ! important;
+      margin-left: 25px ! important;
       }
       .newcard {
-        width: 450px ! important;
+        width: 410px ! important;
+        margin-left: 10px;
+    }
+    .Expertise_maindiv{
+      margin-left: 0px ! important;
     }
 
   } 
@@ -1772,6 +1777,10 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       width: 100%;
 
     }
+    .Type2Img img{
+      width: 85% ! important;
+
+    }
     .TypebtnText{
       margin-left: 270px ! important;
     }
@@ -1806,13 +1815,19 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .Allblog{
     margin-left: 80px  ! important;
   }
-  .newcard{
-    width: 450px ! important;
-  }
-  .Mobile_leftPadd{
-    margin-left: 260px !important;
-  }
- }    
+    .newcard{
+      width: 450px ! important;
+    }
+    .Mobile_leftPadd{
+      margin-left: 290px !important;
+    }
+    .MacProPdding{
+      margin-left: 50px ! important;
+    }
+    .TypebtnText_Padding{
+          padding-top: 4% ! important;
+      }
+   }    
  @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
   .newcard_HD {
     width: 330px ! important;
@@ -1865,21 +1880,28 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   }
   .newcard{
     width: 370px ! important;
+    margin-left: 25px ! important;
   }
   .ApplicationImg{
     padding-left: 110px ! important;
   }
   .B3T_challengesDiv{
-    margin-left: 85px;
+    margin-left:  ! important;
     margin-bottom: 54px;
     min-height: 200px;
-    width: 465px;
+    width: 465px ! important;
   }
   .newcard_HD {
-    width: 370px;
+    width: 370px ! important;
   }
   .roadjourny{
-    z-index: 0;
+    z-index: 0 ! important;
+  }
+  .Typecomp_1_img img{
+    width: 100% ! important;
+  }
+  .Type2Img{
+    width: 85% ! important;
   }
 
  }
@@ -1965,6 +1987,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
  .B3T_challengesDiv{
   width: 430px ! important;
  } 
+ .newcard {
+  margin-left: 20px ! important;
+ }
  .ApplicationImg {
     padding-left: 81px !important;
   }

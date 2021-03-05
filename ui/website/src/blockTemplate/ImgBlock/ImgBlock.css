@@ -60,6 +60,13 @@
 	}
 
 }
+@media only screen and (device-width : 360px){
+	.img1 img{
+		height: 250px ! important;
+
+	}
+
+}
 @media only screen and (device-width : 411px)and (device-height : 640px){
 	.img1 img{
 		height: 300px ! important;

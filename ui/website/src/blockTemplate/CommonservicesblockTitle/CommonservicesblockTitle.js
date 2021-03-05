@@ -100,11 +100,11 @@ componentDidMount(){
   var productlength = plength % 3;
  console.log("productlength>>>>>",productlength);
     if(productlength == 2){
-      var classfor4="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 Mobile_leftPadd";
+      var classfor4="MacProPddingfor3 col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 Mobile_leftPadd";
 
     }
     else if(productlength == 1){
-      var classfor4="col-lg-12 col-md-12 col-sm-12 col-xs-12";
+      var classfor4="MacProPdding col-lg-12 col-md-12 col-sm-12 col-xs-12";
 
     }
     else{

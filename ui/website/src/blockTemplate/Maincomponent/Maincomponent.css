@@ -482,11 +482,23 @@
         padding-top: 30px ! important;
     }
     .iogimgblock2{
-            height: 1007px;
-            margin-top: -170px;
+      height: 931px;
+      margin-top: -170px;
     }
     .iogimgblock2 img{
-        object-fit: none;
+        object-fit: contain;
+        height: 100%;
+    }
+    .iogblock3text{
+      padding: 30px ! important;
+      height: 255px ! important;
+      width: 281px ! important;
+    }
+    .iogimg_4{
+      margin-top: -16px ! important;
+    }
+    .iogimgblock3{
+      height:283px ! important;
     }
   } 
   @media only screen and (device-width: 1152px) {

@@ -287,3 +287,13 @@ left: 35% ! important;
 	 	margin-left: 100px ! important;
 	 }
 }
+@media only screen and (device-width : 1280px){ 
+  .All1blog1{
+    margin-left: 101px ! important;
+  }
+ }
+ @media only screen and (device-width : 1600px) {
+   .All1blog1{
+    margin-left: 90px ! important;
+  }
+}

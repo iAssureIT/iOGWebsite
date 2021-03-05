@@ -935,6 +935,9 @@
   .new_wizardNotefor4{
     right: -146px ! important;
   }
+  .new_wizardNotefor5{
+    right: 58px ! important;
+  }
  }
  @media only screen and (device-width : 2560px) {
   .new_wizardNotefor4{

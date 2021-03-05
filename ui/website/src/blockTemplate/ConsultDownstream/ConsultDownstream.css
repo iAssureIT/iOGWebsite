@@ -463,9 +463,6 @@
 }
 
 @media only screen and (device-height: 900px) and (device-width: 1440px){
-.downimgtext{
-
-  }
   .downimgtext{
     left:21em !important;
   }
@@ -641,28 +638,28 @@
     left:28em !important;
   }
    #consultdown_img0{
-    left: 36em ! important;
+    left: 41em ! important;
   }
    #consultdown_data0{
     right: 18% ! important;
   }
   #consultdown_data1{
-    left:13% ! important;
+    left:17% ! important;
   }
   #consultdown_data3{
-    left:10% ! important;
+    left:14% ! important;
   }
   #consultdown_data2{
     right: 21% ! important;
   }
   #consultdown_img4{
-    left:36em ! important;
+    left:41em ! important;
   }
   #consultdown_data4{
     right: 20%;
   }
   #consultdown_data5{
-    left:17em ! important;
+    left:14% ! important;
   }
   #consultdown_img6{
     left:36em ! important;
@@ -675,7 +672,7 @@
 
   }
   #consultdown_img2{
-    left:35em ! important;
+    left:41em ! important;
   }
   #consultdown_img3{
     left:67em ! important;
@@ -1020,7 +1017,10 @@
     width: 378px;
   }
   .downimgtext{
-    left:16em ! important;
+    left:14em ! important;
+  }
+  .downimg_p_txt{
+    left:8em ! important;
   }
 }
 
@@ -1069,6 +1069,13 @@
    }
    .newcard_HD{
     width:250px;
+   }
+   .downimg_p_txt{
+    left: 6em ! important;
+    padding-right: 0px;
+   }
+   .downimgtext{
+    left:14em ! important;
    }
 
 } 

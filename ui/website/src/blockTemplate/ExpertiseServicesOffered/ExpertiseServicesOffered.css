@@ -286,7 +286,8 @@
   and (device-height: 1536px) 
   and (orientation: landscape){
     .B4T_ServicesDiv{
-      margin-left: 100px ! important;
+      margin-left: 110px ! important;
+      width: 830px ! important;
     }
   } 
    @media only screen 

@@ -396,6 +396,7 @@
     width: 945px;
     margin-left: -444px;
     padding-left: 40px;
+    z-index: 1001 ! important;
 }
 .columnhead{
   /*line-height: 20px;*/

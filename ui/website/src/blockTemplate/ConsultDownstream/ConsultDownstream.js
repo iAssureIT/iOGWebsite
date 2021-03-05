@@ -105,12 +105,12 @@ componentDidMount(){
       $('.downimgtext').css('left','20em');
   }
 
-   if(pageUrl=="/iog-train"){
-        $('.downimgtext').css('left','17em');
+   if(pageUrl=="/iog-consult"){
+        $('.downimgtext').css('left','18em');
 
       }
       if(pageUrl=="/iog-train"){
-        $('.downimgtext').css('left','17em');
+        $('.downimgtext').css('left','18.5em');
 
       }
       if(pageUrl=="/iog-implement"){
