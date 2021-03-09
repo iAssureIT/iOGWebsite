@@ -1454,6 +1454,20 @@ border:1px solid #eee ! important;
     padding: 14px 2px ! important;
   }
  }
+  @media only screen and (device-width : 851px) {
+  .headerlogo img{
+    height: 78px ! important;
+    margin-left: -57px;
+  }
+  .topnav a{
+    font-size: 9px ! important;
+    padding: -2px 2px ! important; 
+  }
+  .dropdown .dropbtn{
+    font-size: 9px ! important;
+    padding: 14px 2px ! important;
+  }
+ }
 
 
 

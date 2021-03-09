@@ -1283,7 +1283,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
    @media only screen and (device-width : 1024px) and (device-height : 768px) { 
     
     .serflip-cardservices img{
-     width: 170x ! important;
+     width: 170px ! important;
     } 
     
 
