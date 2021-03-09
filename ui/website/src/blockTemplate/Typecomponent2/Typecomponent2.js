@@ -52,7 +52,7 @@ componentDidMount(){
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 posRel ">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-12">
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 img1"style={{paddingLeft:"30px"}}>
-                 <img src={this.state.blocks.fgImage} alt="" className="third_img_new Type2Img" style={{width:"100%"}} />
+                 <img src={this.state.blocks.fgImage} alt="" className="third_img_new Type2Img" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12"style={{paddingTop:"10%"}}>
                    {/*<h2 className="lightbluetext para-top">{this.state.blocks.blockTitle}</h2>*/}

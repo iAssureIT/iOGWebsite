@@ -601,11 +601,7 @@ ul.no-icon-list1 {
     }
 
 }
- @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+ @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
      .Journycaro9{
       left:-25px;
      }
@@ -662,7 +658,7 @@ ul.no-icon-list1 {
     height: 94px;
   }
   .footerdivs{
-    padding-left: 250px ! important;
+    /*padding-left: 250px ! important;*/
   }
   .newaddressdiv{
     padding-left: 325px ! important;
@@ -724,7 +720,7 @@ ul.no-icon-list1 {
     height: 94px;
   }
   .footerdivs{
-    padding-left: 250px ! important;
+    /*padding-left: 250px ! important;*/
   }
   .newaddressdiv{
     padding-left: 195px ! important;
@@ -747,6 +743,21 @@ ul.no-icon-list1 {
   }
   .newaddressdiv{
     padding-left: 25px ! important;
+  }
+  .footerdiv1{
+    padding:0px ! important;
+  }
+
+}
+@media only screen and (device-width : 1920px) { 
+  .footer-two{
+    height: 375px ! important;
+  }
+  .pt20 {
+    padding-top: 18px ! important;
+  }
+  .newaddressdiv{
+    padding-left: 100px ! important;
   }
 
 }

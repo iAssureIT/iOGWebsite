@@ -689,7 +689,8 @@
  @media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
    
     .CareerBlockHighDef {
-      right: 134px ! important;
+     right: 61px ! important;
+    width: 584px ! important;
     }
     .ht_top{
       /*padding-left: 130px ! important;*/
@@ -698,10 +699,10 @@
       margin-left: -56px ! important;
     }
     .iogimgblock2{
-      height: 848px ! important;
+      height: 1000px ! important;
     }
     .iogblock3text{
-      width: 631px ! important;
+      width: 617px ! important;
       /*margin-left: 62px ! important;*/
     }
     .iogimgblock3 {
@@ -712,13 +713,17 @@
     }
     .iogblock4text{
       padding-top: 145px ! important;
-    }  
+    } 
+     .iogimgblock2 img {
+      margin-top: 195px ! important;
+      margin-left: 34px;
+    }     
   } 
   @media only screen and (device-width: 2048px){
    
     .CareerBlockHighDef {
-      right: 134px ! important;
-      width: 501px ! important;
+     right: 61px ! important;
+    width: 584px ! important;
     }
     .ht_top{
       /*padding-left: 130px ! important;*/
@@ -727,10 +732,10 @@
       margin-left: -56px ! important;
     }
     .iogimgblock2{
-      height: 848px ! important;
+      height: 1000px ! important;
     }
     .iogblock3text{
-      width: 631px ! important;
+      width: 617px ! important;
       padding-top:  130px ! important;
     }
     .iogimgblock3 {
@@ -745,11 +750,8 @@
     .iogimgblock2 img{
       width: 98% ! important;
     }
-    .iogimgblock2 {
-        height: 874px ! important;
-    }
     .iogimg_4 {
-       width: 1144px ! important;
+       width: 1215px ! important;
        /*margin-top: 170px ! important;*/
      }
      .iogblock1text {
@@ -758,9 +760,11 @@
      .iogimgblock3 img {
       width: 107% ! important;
       height: 373px;
-    }
-          
-
+    }  
+    .iogimgblock2 img {
+      margin-top: 195px ! important;
+      margin-left: 34px;
+    }     
   } 
 @media only screen and (device-width: 2560px) and (device-height: 1600px) 
  {
@@ -1031,6 +1035,7 @@
      }
      .iogblock3text{
       height: 330px ! important;
+       width: 354px ! important;
      }
      
    }  

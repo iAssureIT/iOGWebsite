@@ -984,14 +984,8 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         right: 136px ! important;
         top:120px ! important;
     }
-
-
 }
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .navigationTitle_for6{
       left:430px ! important;
      }
@@ -1003,22 +997,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      }
 
   }
-  @media only screen 
-  and (device-width: 768px) 
-  and (device-height: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
    
      .navigation_tab{
       margin-left: 20px ! important;
      }
 
   }
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
     .jobformcontent{
         margin-left: 250px ! important;
     }
@@ -1518,12 +1504,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }   
 
   }}  
-
-  @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
     .pt20{
       padding-top: 20px ! important;
     }
@@ -1562,11 +1543,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     padding-top: 100px;
     }
   } 
- @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .righttextaboutus h3{
       font-size: 23px ! important;
     }
@@ -1585,11 +1562,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   
   }
 
- @media only screen 
-  and (device-width: 768px) 
-  and (device-height: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+ @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
     .righttextaboutus h3{
       font-size: 23px ! important;
     }
@@ -1717,7 +1690,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .ApplicationImg{
       padding-left: 50px ! important;
     }
-    
+    .iconCircle{
+        margin-left: 39% ! important;
+     }
 
   } 
 @media only screen and (device-width: 2560px)  and (device-height: 1600px) and (orientation: landscape){
@@ -1755,6 +1730,53 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     width: 493px;
     height: 232px;
     padding-top: 35px;
+    }
+     .iconCircle{
+        margin-left: 39% ! important;
+     }
+  }   
+  @media only screen and (device-width: 2048px){
+   .Allblog{
+    width: 430px ! important;
+   }
+   .Typecomp_1_img img{
+      width: 100%;
+    }
+     .iconCircle{
+        margin-left: 39% ! important;
+     }
+    .Type2Img{
+      width: 80% ! important;
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+    .TypecomponentBtnImg{
+      margin-left: 200px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 120px ! important;
+    }
+    .B3T_challengesDiv {
+    top: 45px;
+    box-shadow: 1px 2px 4px 3px #c4bfbf;
+    margin-left: 79px;
+    margin-bottom: 40px;
+    min-height: 200px;
+    width: 493px;
+    height: 232px;
+    padding-top: 35px;
+    }
+     .newcard_landscape {
+      width: 370px ! important;
+      margin-left: 25px ! important;
+      }
+      .newcard {
+        width: 410px ! important;
+        margin-left: 10px;
+    }
+    .Expertise_maindiv{
+      margin-left: 0px ! important;
     }
   }   
    @media only screen and (device-width: 2560px) and (device-height: 1600px) and (orientation: landscape){
@@ -1827,11 +1849,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
    .Allblog{
     width: 430px ! important;
    }
+   .iconCircle{
+    margin-left: 41% ! important;
+   }
    .Typecomp_1_img img{
       width: 100%;
 
     }
-    .Type2Img img{
+    .Type2Img{
       width: 85% ! important;
 
     }
@@ -1950,7 +1975,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
  }
  @media screen and (device-width: 1920px){
 
-  .Type2Img img{
+  .Type2Img{
     width: 85% ! important;
 
   }
@@ -1979,11 +2004,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .Type2Img{
     width: 85% ! important;
   }
+   .iconCircle{
+        margin-left: 40% ! important;
+     }
 
  }
   @media screen and (device-width: 1856px){
 
-  .Type2Img img{
+  .Type2Img{
     width: 85% ! important;
 
   }
@@ -2008,10 +2036,13 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   .roadjourny{
     z-index: -1;
   }
+   .iconCircle{
+        margin-left: 39% ! important;
+     }
  }
   @media screen and (device-width: 1792px){
 
-  .Type2Img img{
+  .Type2Img {
     width: 85% ! important;
 
   }
@@ -2100,7 +2131,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       margin-left: 100px ! important;
   }
   .commonBlockpadd {
-    padding-left: 30px ! important;
+    padding-left: 150px ! important;
   }
   .iconCircle{
     margin-left: 43% ! important;
@@ -2112,7 +2143,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       width: 100%;
 
     }
-    .Type2Img img{
+    .Type2Img {
       width: 85% ! important;
 
     }
@@ -2140,12 +2171,3 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 80px ! important;
     }
  } 
-
-
-
-
-
-/*.goog-te-gadget{
-    display: none;
- }
-*/
