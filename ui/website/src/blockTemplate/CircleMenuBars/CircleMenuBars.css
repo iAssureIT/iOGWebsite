@@ -470,14 +470,6 @@
     margin-left: 10px ! important;
 }
 
-/*.new_round-tabfor4{
-    margin-left:27% ! important;
-}*/
-/*
-.new_wizardNotefor4 {
-    left: -6px ! important;
-    font-size: 12px ! important;
-}*/
 .pt20{
     padding-top: 24px ! important;
 }
@@ -514,11 +506,7 @@
     }
       
 }
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .navigation_tab{
         margin-left: 26px ! important
     }
@@ -530,11 +518,7 @@
     }
 
   }
-  @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
    .navigationTitle_for6{
     left: 436px ! important;
    }
@@ -556,7 +540,41 @@
         margin-left: 2% ! important;
      }
   } 
+   @media only screen and (device-width : 360px) { 
+    .new_round-tabfor5 {
+       /*width : 268px ! important;*/
+       margin-left: 28% ! important;
+      }
+    .new_wizardNotefor5{
+        right: 5px ! important;
+    }  
+    .new_round-tabfor6{
+        margin-left: 2% ! important;
+     }
+  } 
    @media only screen and (device-width : 320px) and (device-height : 568px) { 
+    .adjustfor5{
+       /*width : 268px ! important;*/
+       margin-left: 0px ! important;
+      }
+      .new_wizardNotefor4{
+        left: 0px;
+      }
+      .righttextaboutus{
+        width: 210px;
+      }
+      .new_round-tabfor6{
+        margin-left: 10% ! important;
+      }
+      .new_wizardNote_for6{
+        font-size: 6px !important;
+      }
+      .new_wizardNotefor5{
+        font-size: 8px ! important;
+      }
+     
+  } 
+    @media only screen and (device-width : 320px) { 
     .adjustfor5{
        /*width : 268px ! important;*/
        margin-left: 0px ! important;
@@ -691,22 +709,13 @@
         }
   }
 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
      .navigation_tab{
       margin-left: 25px ! important;
     }
 
   }
-
-  @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
      .navigation_tab{
       margin-left: 35px ! important;
     }
@@ -715,11 +724,7 @@
     }
 
 }
-   
-   
-  @media only screen 
-  and (device-width: 1440px) 
-  and (device-height: 900px) 
+@media only screen and (device-width: 1440px) and (device-height: 900px) 
 
   /*and (orientation: landscape) */
  { 
@@ -738,22 +743,13 @@
     }
  
  } 
-@media only screen 
-  and (device-width: 768px) 
-  and (device-height: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-   
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
      .navigation_tab{
       margin-left: 20px ! important;
      }
 
   } 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen  and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
    
      .navigation_tab{
       margin-left: 27px ! important;
@@ -786,6 +782,17 @@
    
  }
   @media only screen and (device-width : 411px) and (device-height : 823px) { 
+    .new_round-tabfor5 {
+        margin-left: 37% ! important;
+    }
+    .new_wizardNotefor5{
+      right: 2px ! important;
+    }
+    .new_round-tabfor6{
+   }
+   
+ }
+ @media only screen and (device-width : 411px) { 
     .new_round-tabfor5 {
         margin-left: 37% ! important;
     }
@@ -892,7 +899,15 @@
     .new_wizardNote_for6 {
       right: 6px ! important;
   }
-}  
+} 
+@media only screen and (device-width : 400px){ 
+    .new_round-tabfor6 {
+      margin-left: 20% ! important;
+  } 
+  .new_wizardNote_for6{
+    right: 6px ! important;
+  }
+}
 @media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
     .new_wizardNote_for6{
       right: 79px ! important;

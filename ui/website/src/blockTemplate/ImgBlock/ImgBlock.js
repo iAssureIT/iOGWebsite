@@ -13,9 +13,11 @@ export default class ImgBlock extends Component {
     super(props);
     this.state = {
       blocks: {
-        "blockComponentName"   : "Commoninfoblock",
-        "blockType"            : "simple",
-        "fgImage"              : "/images/bgimage1.jpg",
+        "blockComponentName"   : "ImgBlock",
+        "blockType"            : "",
+        "blockTitle"           : "",
+        "blockDescription"     : "",
+        "fgImage"              : "",
       },
       blockID:"",
       block_id:""
@@ -50,12 +52,17 @@ console.log("inside==>",this.props.block_id);
 
   
     render(){
-      console.log("========",this.state.blocks.fgImage);
+      console.log("this.state.blocks.cheeeeeeck========",this.state.blocks);
         return(
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding container-fluid ">
-                <div className="img1">
-                  <img src={this.state.blocks.fgImage} alt="" className="" />
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOPadding">
+               {
+                this.state.blocks.fgImage ?
+
+                <div className="image_consult">
+                  <img src={this.state.blocks.fgImage} alt="" className="img-responsive" />
                 </div>
+                :null
+              }
               </div>
         
         );

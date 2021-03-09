@@ -2,7 +2,7 @@
   width: 100%;
   /*height: 556px;*/
 }
-.img1 img{
+.image_consult img{
 	width: 100% ! important;
 }
 @media only screen and (device-width : 411px) and (device-height : 823px) {
@@ -12,98 +12,98 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 401px)and (device-height : 600px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 320px)and (device-height : 480px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 390px)and (device-height : 844px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 400px)and (device-height : 700px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 400px)and (device-height : 640px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 400px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 360px){
-	.img1 img{
+	.image_consult img{
 		height: 250px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 411px)and (device-height : 640px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 411px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 412px)and (device-height : 640px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 412px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 320px)and (device-height : 640px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 }
 @media only screen and (device-width : 320px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
@@ -117,7 +117,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
         /*object-fit: contain;*/
         width: 100%;
@@ -134,7 +134,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width:100%;
 		 height: 320px ! important;
         /*object-fit: contain;*/
@@ -148,7 +148,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width: 100%;
 		height: 300px ! important;
         /*object-fit: contain;*/
@@ -162,7 +162,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width: 100%;
 		/*height: 375px ! important;*/
         /*object-fit: contain;*/
@@ -176,7 +176,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width: 100%;
 		/*height: 375px ! important;*/
         /*object-fit: contain;*/
@@ -184,14 +184,14 @@
 
 }
 @media only screen and (device-width : 412px) and (device-height : 732px) {
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
 
 } 
 @media only screen and (device-width : 412px){
-	.img1 img{
+	.image_consult img{
 		height: 300px ! important;
 
 	}
@@ -204,7 +204,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width: 100%;
 		height: 300px ! important;
         /*object-fit: contain;*/
@@ -218,7 +218,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width: 100%;
 		height: 375px ! important;
         /*object-fit: contain;*/
@@ -232,7 +232,7 @@
 	    height: auto ! important;
 	    padding: 0px ! important;
 	}
-	.img1 img{
+	.image_consult img{
 		width: 100%;
 		height: 300px ! important;
         /*object-fit: contain;*/
