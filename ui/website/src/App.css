@@ -1734,6 +1734,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       width: 100%;
 
     }
+    .Type2Img{
+      width: 80% ! important;
+    }
     .TypebtnText{
       margin-left: 270px ! important;
     }
@@ -1786,7 +1789,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       padding-top: 35px;
     }
     .newcard {
-        width: 475px;
+        width: 475px ! important;
     }
     .new_round-tabfor9{
       margin-left: 67% ! important;
@@ -1802,15 +1805,88 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
   }
     .newcard{
       width: 450px ! important;
+      margin-left: 15px ! important
     }
     .Mobile_leftPadd{
-      margin-left: 290px !important;
+      /*margin-left: 290px !important;*/
     }
     .MacProPdding{
       margin-left: 50px ! important;
     }
     .TypebtnText_Padding{
           padding-top: 4% ! important;
+      }
+      .MacProPddingfor3{
+        margin-left: 290px ! important;
+      }
+      .MacProPddingfor_{
+        margin-left: 265px ! important;
+      }
+   }    
+    @media only screen and (device-width: 2560px){
+   .Allblog{
+    width: 430px ! important;
+   }
+   .Typecomp_1_img img{
+      width: 100%;
+
+    }
+    .Type2Img img{
+      width: 85% ! important;
+
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+    .TypecomponentBtnImg{
+      margin-left: 200px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 225px ! important;
+    }
+    .B3T_challengesDiv {
+      top: 45px;
+      box-shadow: 0px 0px 3px 2px #c4bfbf;
+      margin-left: 147px;
+      margin-bottom: 40px;
+      min-height: 200px;
+      width: 585px;
+      height: 232px;
+      padding-top: 35px;
+    }
+    .newcard {
+        width: 475px ! important;
+    }
+    .new_round-tabfor9{
+      margin-left: 67% ! important;
+    }
+    .new_wizardNotefor9{
+      right: -52px ! important;
+    }
+    .new_wizardNote_for6{
+      right: 102px ! important;
+    }
+    .Allblog{
+    margin-left: 80px  ! important;
+  }
+    .newcard{
+      width: 450px ! important;
+      margin-left: 15px ! important
+    }
+    .Mobile_leftPadd{
+      /*margin-left: 290px !important;*/
+    }
+    .MacProPdding{
+      margin-left: 50px ! important;
+    }
+    .TypebtnText_Padding{
+          padding-top: 4% ! important;
+      }
+      .MacProPddingfor3{
+        margin-left: 290px ! important;
+      }
+      .MacProPddingfor_{
+        margin-left: 265px ! important;
       }
    }    
  @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
@@ -2017,6 +2093,52 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     margin:0px;
     font-size: 10px ! important;
   }
+ } 
+@media only screen and (device-width : 2880px) {
+ .newcard_HD {
+      width: 420px ! important;
+      margin-left: 100px ! important;
+  }
+  .commonBlockpadd {
+    padding-left: 30px ! important;
+  }
+  .iconCircle{
+    margin-left: 43% ! important;
+  }
+   .Allblog{
+    width: 430px ! important;
+   }
+   .Typecomp_1_img img{
+      width: 100%;
+
+    }
+    .Type2Img img{
+      width: 85% ! important;
+
+    }
+    .TypebtnText{
+      margin-left: 270px ! important;
+    }
+    .TypecomponentBtnImg{
+      margin-left: 200px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 225px ! important;
+    }
+    .B3T_challengesDiv {
+      top: 45px;
+      box-shadow: 0px 0px 3px 2px #c4bfbf;
+      margin-left: 133px;
+      margin-bottom: 40px;
+      min-height: 200px;
+      width: 678px;
+      height: 232px;
+      padding-top: 35px;
+    }
+    .newcard {
+        width: 475px ! important;
+        margin-left: 80px ! important;
+    }
  } 
 
 

@@ -5,15 +5,9 @@
 /*    padding-top: 282px;
 */ padding-left: 0px;
    padding-right: 0px;
-    /*background-color: #fff;*/
-    /*padding-top: 35px;*/
-    /*padding: 0;*/
 }
 .iogimgblock1{
     width: 100%;
-    /* padding-top: 143px; */
-    /*padding-left: 69px;*/
-    /*margin-left: 52px;*/
     height: 389px;
 }
 .CareerBlockHighDef{
@@ -397,11 +391,7 @@
 
    }
 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .iogblock1text{
         padding-top: 57px ! important;
     }
@@ -427,11 +417,7 @@
     }
  }
 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
     .pt20{
       padding-top: 20px ! important;
     }
@@ -545,7 +531,7 @@
         width: 427px ! important;
     }
     .iogimg_4 img{
-        width: 98.1%;
+        width: 100%;
         margin-top: 2px;
     }
     .iogblock4text{
@@ -554,10 +540,13 @@
     .iogblock1text{
         padding-top: 70px ! important;
     }
+     .iogimg_4 {
+      width: 855px ! important;
+    }
 
   }
   @media only screen and (device-width: 1440px)  {
-    .secondblockk{
+     .secondblockk{
         /*padding-top: 80px ! important;*/
     }
     .iogimgblock2{
@@ -569,7 +558,7 @@
         width: 427px ! important;
     }
     .iogimg_4 img{
-        width: 98.1%;
+        width: 100%;
         margin-top: 2px;
     }
     .iogblock4text{
@@ -577,6 +566,12 @@
     }
     .iogblock1text{
         padding-top: 70px ! important;
+    }
+    .iogblock3text {
+      width: 419px ! important;
+    }
+    .iogimg_4 {
+      /*width: 849px ! important;*/
     }
 
   }
@@ -848,6 +843,58 @@
    }
    .iogblock4text {
     padding-top: 254px ! important;
+    }
+
+  } 
+  @media only screen and (device-width: 2880px) 
+ {
+   
+    .CareerBlockHighDef {
+      right: 134px ! important;
+      width: 780px ! important;
+    }
+    .ht_row2 {
+      height: 490px ! important;
+    }
+    .iogblock2text{
+      padding-top: 355px ! important;
+    }
+    .ht_top{
+      margin-top: 130px ! important;
+    }
+    .iogimgblock2 {
+      height: 1335px ! important;
+    }
+    .iogimgblock2{
+      margin-left: -56px ! important;
+    }
+    .iogblock3text{
+      width: 1030px ! important;
+      height: 690px ! important;
+      padding-top: 230px ! important;
+      /*margin-left: 62px ! important;*/
+    }
+    .iogblock4text{
+      width: 80% ! important;
+    }
+    .iogimgblock3 {
+        width: 798px ! important;
+    }
+    .iogimg_4 img{
+      width: 99.3% ! important;
+    }
+    .iogblock4text{
+      padding-top: 145px ! important;
+    }
+    .iogimg_4 {
+         width: 1819px ! important;
+        margin-left: -100px;
+   }
+     .iogblock4text {
+      padding-top: 254px ! important;
+      }
+      .mb_100 {
+      margin-bottom: 260px;
     }
 
   } 

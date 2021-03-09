@@ -7,16 +7,6 @@
   height: 100%;
   }
 .banner{
-	
-	
-    /*position: relative;*/
-    /*z-index: 1;*/
-    /*overflow: hidden;*/
-    /*background-image: linear-gradient(44deg,#8232ec,#695cff);*/
-    /*background: #333;*/
-    /*background-size: 100% 75%;*/
-    /*color: #fff;*/
-    /*height: 500px;*/
 }
 .bannerContainer1{
   opacity: 1;
@@ -28,18 +18,10 @@
 
 }
 .bannerContainer {
-    /* max-width: 930px; */
-    /* position: relative; */
     background-size: 100% 100% ;
     width: 100%;
-  /*  margin-right: auto;*/
     height: 48em;
-  /*  margin-left: auto;*/
-    /*float: left;*/
     background-image: url(/images/banner.png);
-    /*padding-top: 10em;*/
-    /*padding-bottom: 158px;*/
-    /*margin-top: -60px;*/
 }
 .resbannerimg{
   background-size: 100% 100%;
@@ -122,14 +104,10 @@
 }
 
 .banner-wrapper:after, .banner-wrapper:before {
-    /*position: absolute;*/
     z-index: 0;
     bottom: -5px;
     left: 0;
-    /*width: 100%;*/
-    /*height: 100%;*/
     background-color: #eee;
-    /*border-radius: 0 0 50% 50%;*/
     content: "";
 }
 
@@ -198,11 +176,7 @@ height: 150px;
 }
 .truckanim img{
   margin-right:127px;
-
-
 }
-
-
 .truckanim2{
     position: relative;
     left: 959px;
@@ -221,10 +195,7 @@ height: 150px;
 }
 .truckanimtion img{
   margin-right:645px;
-
-
 }
-
 .twheel4{
   position: absolute;
   right: 18px;
@@ -3895,6 +3866,50 @@ div.drop-container:after {
 
 }
 
+@media screen and (device-width: 2880px){
+  .boat_img_size {
+    width: 333px ! important;
+    height: 187px;
+  }
+  .boat_img2 {
+    left: 713px ! important;
+  }
+  .waterimg2 {
+    top: 57% ! important;
+    left: 16% ! important;
+  }
+  .nexttogasimage {
+    right: 858px ! important;
+  }
+  .petrolimage1{
+    right: 437px ! important;
+  }
+  .oilimage{
+    right: 490px ! important;
+  }
+  .plantimage11 {
+    right: 91px ! important;
+  }
+  .waterimg2Div_img {
+    width: 270px ! important;
+  }
+  .boat_img2_img {
+    width: 370px ! important;
+  }
+  .nexttogasimg_size {
+    width: 428px ! important;
+  }
+  .petrolimage1_img {
+    width: 421px ! important;
+  }
+  .oilimage_img {
+    width: 420px ! important;
+  }
+  .plantimage11_img {
+    width: 421px ! important;
+  }
+}
+
 @media only screen and (device-width : 800px) {
   .oilimage_img {
     width: 200px;
@@ -3904,6 +3919,7 @@ div.drop-container:after {
     top: 159px;
 
   }
+
   .plantimage11_img {
     width: 200px;
   }

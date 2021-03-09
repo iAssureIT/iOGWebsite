@@ -1705,7 +1705,63 @@
         left: 38em !important;
     }
   }
-
+@media only screen and (device-width: 2880px) {
+    #consultdown_img1{
+     left: 109em ! important;
+    }
+     #consultdown_img3{
+     left: 109em ! important;
+    }
+     #consultdown_img5{
+     left: 109em ! important;
+    }
+    .new_wizardNotefor4 {
+    right: -122px ! important;
+    }
+    #consultdown_img0 {
+    left: 68em ! important;
+   }
+   #consultdown_img2 {
+    left: 68em ! important;
+   }
+   #consultdown_img4 {
+    left: 68em ! important;
+   }
+   #consultdown_img6 {
+    left: 68em ! important;
+   }
+   #consultdown_data1 {
+    left: 20% ! important;
+    width: 690px ! important;
+  }
+   #consultdown_data3 {
+    left: 20% ! important;
+    width: 690px ! important;
+  }
+   #consultdown_data5 {
+    left: 20% ! important;
+     width: 690px ! important;
+  }
+  #consultdown_data0{
+    right: 23% ! important;
+    width: 690px ! important;
+    }
+    #consultdown_data2{
+    right: 23% ! important;
+    width: 690px ! important;
+    }
+    #consultdown_data4{
+    right: 23% ! important;
+    width: 690px ! important;
+    }
+    #consultdown_data6{
+    right: 23% ! important;
+    width: 690px ! important;
+    }
+    .downimgtext {
+        left: 44em !important;
+    }
+  }
   @media only screen and (device-width: 1680px) and (device-height: 1050px) {
   .downimgtext {
     left: 25em !important;

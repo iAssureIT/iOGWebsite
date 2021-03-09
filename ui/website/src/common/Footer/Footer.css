@@ -668,6 +668,68 @@ ul.no-icon-list1 {
     padding-left: 325px ! important;
   }
 }
+@media only screen and (device-width : 2880px) {
+   .pt20 {
+      padding-top: 17px ! important;
+  }
+  .footimg7{
+       left: 2288px ! important;
+  }
+  .footimg5{
+    left:1900px ! important;
+  }
+  .footimg4{
+    left:1668px ! important;
+  }
+  .footimg3{
+   left:1430px ! important;
+  }
+  .foot3anim{
+    left:1095px ! important;
+  }
+  .footimg2{
+    left:675px ! important;
+    bottom: 84px;
+    height: 94px;
+  }
+  .footerdivs{
+    padding-left: 250px ! important;
+  }
+  .newaddressdiv{
+    padding-left: 325px ! important;
+  }
+}
+@media only screen and (device-width : 2048px) and (device-height : 1536px) {
+   .pt20 {
+      padding-top: 17px ! important;
+  }
+  .footimg7{
+       left: 1780px ! important;
+  }
+  .footimg5{
+    left:1400px ! important;
+  }
+  .footimg4{
+    left:1468px ! important;
+  }
+  .footimg3{
+   left:1130px ! important;
+  }
+  .foot3anim{
+    left:895px ! important;
+  }
+  .footimg2{
+    left:352px ! important;
+    bottom: 84px;
+    height: 94px;
+  }
+  .footerdivs{
+    padding-left: 250px ! important;
+  }
+  .newaddressdiv{
+    padding-left: 195px ! important;
+  }
+}
 @media only screen and (device-width : 1152px) { 
   .footer-two{
     height: 398px ! important;
