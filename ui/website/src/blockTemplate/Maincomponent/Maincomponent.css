@@ -375,6 +375,9 @@
      .ht_row2{
         height: 250px ! important;
      }
+     .iogimg_4 img{
+      width: 96% ! important;
+     }
 } 
 @media only screen 
   and (device-width: 1440px) 
@@ -1181,7 +1184,7 @@
        }
 
      }
-      @media only screen and (device-width : 851px) {
+      @media only screen and (max-device-width : 851px) {
       .iogimgblock1 img{
         height: 350px ! important;
       }
@@ -1217,6 +1220,12 @@
       .iogblock3text{
         width: 395px ! important;
       }
+
+     }  
+   @media only screen and (device-width : 3200px) {
+     .ht_top{
+      display: none;
+     }
 
      }  
   

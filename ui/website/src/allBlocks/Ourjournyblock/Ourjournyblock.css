@@ -4667,6 +4667,160 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
     
   }   
+  @media only screen and (device-width: 3200px){
+      .roadjourny img{
+        display: none;
+      }
+      .add1{
+        display: none;
+      } 
+      .add2{
+        display: none;
+      }
+      .add3{
+        display: none;
+      } 
+      .add4{
+        display: none;
+      } 
+      .add5{
+        display: none;
+      } 
+      .add6{
+        display: none;
+      } 
+      .add7{
+        display: none;
+      } 
+      .add8{
+        display: none;
+      } 
+      .add9{
+        display: none;
+      }  
+      .add10{
+        display: none;
+      } 
+      .webclientcaro {
+        height: 150px ! important;
+        /*padding: 10px;*/
+        width: 1400px ! important;
+        /*height: 100px;*/
+        text-align:center;
+        border:1px solid #8b8d8e ! important;
+    }
+    .journybg{
+      display: none;
+    }
+     .webclientcaro h3{
+      text-align: center;
+     }
+     .Journycaro1 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro2 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro3 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro4 p{
+         padding: 10px;
+      text-align: center;
+     }
+     .Journycaro5 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro6 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro7 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro8 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro9 p{
+      text-align: center;
+         padding: 10px;
+     }
+     .Journycaro10 p{
+      text-align: center;
+      padding: 10px;
+     }
+     .Journycaro11 p{
+      text-align: center;
+      padding: 10px;
+     }
+    .Journycaro1{
+        left: 101px ! important;
+         top: 297px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+    .Journycaro3{
+        left: 101px ! important;
+        top: 497px ! important;
+        text-align: center;
+         opacity: 1;
+        /*padding: 10px;*/
+    }
+    .Journycaro5{
+        left: 101px ! important;
+         top: 697px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+    .Journycaro7{
+        left: 101px ! important;
+         top: 913px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+    .Journycaro9{
+        left: 101px ! important;
+         top: 1119px ! important;
+         text-align: center;
+          opacity: 1;
+    }
+
+    .Journycaro2{
+     left: 1562px ! important;
+      top: 300px ! important;
+       opacity: 1;
+    }
+    .Journycaro4{
+     left: 1562px ! important;
+      top: 502px ! important;
+       opacity: 1;
+    }
+    .Journycaro6{
+     left: 1562px ! important;
+      top: 700px ! important;
+       opacity: 1;
+    }
+    .Journycaro8{
+     left:1562px ! important;
+      top: 915px ! important;
+       opacity: 1;
+    }
+    .Journycaro10{
+     left:1562px ! important;
+      top: 1120px ! important;
+      opacity: 1;
+    }
+    .journybg2{
+      display: none;
+    }
+    
+  }   
   @media only screen and (device-width: 1536px) and (orientation: portrait){
       .roadjourny img{
         display: none;

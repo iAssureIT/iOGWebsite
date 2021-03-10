@@ -3866,7 +3866,7 @@ div.drop-container:after {
 
 }
 
-@media screen and (device-width: 2880px){
+@media screen and (min-device-width: 2880px){
   .boat_img_size {
     width: 333px ! important;
     height: 187px;

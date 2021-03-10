@@ -77,7 +77,7 @@
     margin-right: 0px;
     position: relative;
     top: 31px;
-    right: -85px;
+    right: -48%;
     color: #333;
     font-weight: 500;
  }
@@ -1003,7 +1003,7 @@
    margin-left: 12% ! important;
   }
 } 
-@media only screen and (device-width : 2880px){ 
+@media only screen and (min-device-width : 2880px){ 
   .new_wizardNotefor4{
     right:-168px ! important; 
   }
@@ -1072,6 +1072,25 @@
    }
    .navigation_tab {
     margin-left: 30px ! important;
+  }
+  .navigationTitle_for6{
+    left:456px ! important;
+  }
+}
+ @media screen and (device-width: 1600px){
+  .navigationTitle_for6{
+    left:700px ! important;
+  }
+}
+ @media screen and (min-device-width: 3200px){
+  .new_wizardNotefor5{
+    right:74px ! important;
+  }
+  .new_wizardNote_for6{
+    right: 130px ! important;
+  }
+  .new_wizardNotefor4forJ{
+    right: 79px ! important;
   }
 }
 @media screen and (device-width: 800px){

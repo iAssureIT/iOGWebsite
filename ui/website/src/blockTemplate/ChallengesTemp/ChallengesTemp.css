@@ -277,3 +277,12 @@
   
 
 }
+@media only screen and (min-device-width : 3200px){
+.B3T_challengesDiv {
+    margin-left: 104px ! important;
+    width: 850px ! important;
+    }
+    .ApplicationImg{
+      padding-left: 300px ! important;
+    }
+  }

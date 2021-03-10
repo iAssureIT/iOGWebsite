@@ -317,3 +317,10 @@ left: 35% ! important;
        margin-left: 70px ! important;
   }
 }
+@media only screen and (device-width : 3200px) {
+   .All1blog1{
+     	 width: 465px ! important;
+	    height: 340px ! important;
+	    margin-left: 50px ! important;
+  }
+}

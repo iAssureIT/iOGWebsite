@@ -327,4 +327,14 @@
     /*width: 670px ! important;*/
   }
  } 
+ @media only screen and (min-device-width : 3200px) { 
+  .B4T_ServicesDiv{
+    margin-left: 100px ! important;
+    width: 870px ! important;
+    /*width: 670px ! important;*/
+  }
+  .Expertise_maindiv{
+    margin-left: 0px ! important;
+  }
+ } 
  
