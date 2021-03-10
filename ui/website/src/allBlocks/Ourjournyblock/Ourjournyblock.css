@@ -4139,8 +4139,8 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
   .Journycaro3 {
     opacity: 1;
-    left: 700px !important;
-    top: 591px ! important;
+    left: 677px !important;
+    top: 661px ! important;
   }
   .add4{
     opacity: 1;
@@ -4287,8 +4287,8 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
   .Journycaro3 {
     opacity: 1;
-    left: 700px !important;
-    top: 591px ! important;
+    left: 677px !important;
+    top: 661px ! important;
   }
   .add4{
     opacity: 1;
@@ -5649,9 +5649,10 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
        z-index: 0! important ;
     }
     .Journycaro4{
-      top:627px! important;
+      top:692px! important;
       opacity: 1;
-       z-index: 0! important ;
+      left: 630px ! important;
+      z-index: 0! important ;
     }
     .Journycaro5{
       left:846px ! important;
@@ -5743,16 +5744,17 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     .Journycaro2{
       left:280px ! important;
       opacity: 1;
-       z-index: 0! important ;
+      z-index: 0! important ;
     }
     .Journycaro3{
       opacity: 1;
        z-index: 0! important ;
     }
     .Journycaro4{
-      top:627px! important;
+      top:692px! important;
       opacity: 1;
-       z-index: 0! important ;
+      left: 630px ! important;
+      z-index: 0! important ;
     }
     .Journycaro5{
       left:846px ! important;
@@ -6284,7 +6286,6 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         opacity: 1;
         top: 275px;
          z-index: 0! important ;
-
   }
     .add10{
       opacity: 1;

@@ -899,6 +899,9 @@
     .new_wizardNote_for6 {
       right: 6px ! important;
   }
+  .new_round-tabfor6 {
+    margin-left: 19% ! important;
+  }
 } 
 @media only screen and (device-width : 400px){ 
     .new_round-tabfor6 {
