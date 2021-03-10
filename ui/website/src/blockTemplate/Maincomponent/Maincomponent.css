@@ -488,8 +488,15 @@
     }
   } 
   @media only screen and (device-width: 1152px) {
+    .CareerBlockHighDef{
+      width: 334px ! important;
+    }
     .iogimg_4 img{
       width: 96.3%;
+    }
+    .iogimg_4 {
+      width: 668px ! important;
+      margin-left: 14px ! important;
     }
     .iogblock2text {
       margin-top: 33px ! important;
@@ -497,9 +504,9 @@
     .iogimgblock2 img{
       height: 123%;
     }
-    .iogimg_4{
+   /* .iogimg_4{
       margin-left: 0px ! important;
-    }
+    }*/
     .secondblockk {
     /*padding-top: 100px;*/
     }
@@ -623,6 +630,8 @@
         padding-top: 80px ! important;
     }
     .iogimg_4 img{
+        width: 94.3% ! important;
+        margin-left: 15px ! important;
         margin-top: -61px ! important;
     }
     .iogimg_4{
@@ -632,8 +641,11 @@
         padding-top: 0px ! important;
     }
     .iogblock3text{
-        padding-top: 50px ! important;
-        padding-left: 20px ! important;
+        padding: 27px ! important;
+        width: 268px ! important;
+    }
+    .CareerBlockHighDef{
+      width: 289px ! important;
     }
    
   } 
@@ -1084,7 +1096,12 @@
           width: 585px ! important;
           padding-top: 93px ! important;
     }
-   }  
+   }
+    @media only screen and (device-width : 1366px) and (device-height: 768px) {
+      .iogimg_4 img{
+        width: 99.3% ! important;
+      }
+    }  
   @media only screen and (device-width : 1792px) {
      .iogimg_4{
       margin-left: 0px ! important;
@@ -1142,7 +1159,7 @@
         height: 59% ! important;
       }
       .iogblock3text {
-        font-size: 13px;
+        font-size: 12px;
         width: 358px ! important;
         height: 191px;
         padding:0px ! important;
@@ -1158,6 +1175,10 @@
         padding-top: 10px ! important;
         font-size: 13px ! important;
       }
+      .iogimg_4 img {
+       width: 92.3%;
+         margin-left: 14px;
+       }
 
      }
       @media only screen and (device-width : 851px) {

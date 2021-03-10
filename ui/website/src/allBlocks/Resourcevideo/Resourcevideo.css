@@ -178,6 +178,12 @@ height: 100px;
   }
 
 }
+@media screen and (min-width: 1680px) {
+  .reactplayerDiv{
+    width: 433px ! important;
+  }
+
+}
 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 
        

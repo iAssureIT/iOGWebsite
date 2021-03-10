@@ -523,6 +523,9 @@ ul.no-icon-list1 {
     .footer-two{
       height: 438px ! important;
     }
+     .footerdiv1{
+    padding:0px ! important;
+  }
 }
 
 
@@ -732,6 +735,9 @@ ul.no-icon-list1 {
   }
   .newaddressdiv{
     padding-left: 25px ! important;
+  }
+  .footerdiv1{
+    padding:0px ! important;
   }
 }
 @media only screen and (device-width : 1280px) { 

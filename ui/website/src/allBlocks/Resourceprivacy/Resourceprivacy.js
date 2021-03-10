@@ -19,7 +19,7 @@ export default class Resourceprivacy extends Component {
                 </div>
                 <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12"style={{padding:"0px"}}>
                   <div className="col-lg-12  col-md-12 col-sm-12 col-xs-12 "style={{padding:"0px"}}>
-                     <div className="col-lg-11  col-md-11 col-sm-12 col-xs-12 resource_blck blckk-ht hidden-sm hidden-xs"style={{marginLeft:"60px"}}>
+                     <div className="col-lg-11  col-md-11 col-sm-12 col-xs-12 resource_blck blckk-ht resource_privacy hidden-sm hidden-xs">
                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  contentheadernew text-center">
                             <hr/>
                              <h2 style={{color:"#333"}}><b>Privacy Policy</b></h2>

@@ -1557,7 +1557,10 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       /*margin-left: 20px;*/
     }
     .newcard_HD{
-      width: 225px ! important;
+      width: 220px ! important;
+    }
+    .iconCircle{
+      margin-left: 28% ! important;
     }
   
   }
@@ -2074,7 +2077,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 
    }
    .newcard {
-    width: 255px ! important;
+    width: 240px ! important;
   }
   .All1blog1{
     margin-left: 71px ! important;

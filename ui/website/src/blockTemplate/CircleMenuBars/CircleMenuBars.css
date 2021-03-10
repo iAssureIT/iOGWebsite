@@ -741,6 +741,9 @@
   .navigationTitle_for6 {
     left: 630px ! important;
     }
+    .new_wizardNotefor4{
+      font-size: 13px ! important;
+    }
  
  } 
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -762,6 +765,12 @@
      }
      .new_wizardNotefor9{
         right: 5px ! important;
+     }
+     .new_round-tabfor3{
+      margin-left: 156% ! important;
+     }
+     .new_wizardNotefor3{
+      right: -198px ! important;
      }
 
   } 
@@ -924,6 +933,9 @@
      .new_wizardNotefor4{
       right: -95px ! important;
      }
+     .navigationTitle_for6{
+      left: 662px ! important;
+    }
   }    
   @media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
      .new_wizardNote_for6{
@@ -935,6 +947,9 @@
      .new_wizardNotefor5{
       right: 47px ! important;
      }
+     .navigationTitle_for6{
+      left: 904px ! important;
+    }
   }    
  @media only screen and (device-width : 2560px) and (device-height : 1600px) {
   .new_wizardNotefor4{
@@ -949,6 +964,11 @@
     right: -146px ! important;
   }
  }
+  @media only screen and (device-width : 1280px) {
+ .navigationTitle_for6{
+    left:543px ! important;
+  }
+ }
 @media only screen and (device-width : 1680px) and (device-height : 1050px) { 
   .new_wizardNotefor4{
     right:-99px ! important; 
@@ -956,6 +976,13 @@
   .navigation_tab {
     margin-left: 40px ! important;
   }
+   .navigationTitle_for6{
+    left:715px ! important;
+  }
+   .new_wizardNote_for6{
+    right: 63px ! important;
+  }
+
 } 
 @media only screen and (device-width : 1680px){ 
   .new_wizardNotefor4{
@@ -963,6 +990,17 @@
   }
   .navigation_tab {
     margin-left: 40px ! important;
+  }
+   .navigationTitle_for6{
+    left:715px ! important;
+  }
+  .new_wizardNote_for6{
+    right: 63px ! important;
+  }
+} 
+@media only screen and (device-width : 1152px){ 
+ .new_round-tabfor6{
+   margin-left: 12% ! important;
   }
 } 
 @media only screen and (device-width : 2880px){ 
@@ -978,6 +1016,10 @@
   .navigation_tab{
     margin-left: 72px ! important;
   }
+  .navigationTitle_for6 {
+      left: 1405px ! important;
+  }
+
 } 
  @media screen and (device-width: 1920px){
 
@@ -990,6 +1032,13 @@
   }
 
  }
+ @media screen and (device-width: 2560px){
+
+   .navigationTitle_for6 {
+      left: 1185px!important;
+  }
+
+ }
   @media screen and (device-width: 1856px){
    .new_wizardNotefor4{
     right: -110px ! important;
@@ -997,6 +1046,9 @@
   } 
   .new_wizardNote_for6{
     right: 73px ! important;
+  }
+  .navigationTitle_for6{
+    left: 850px ! important;
   }
 }
  @media screen and (device-width: 1792px){
@@ -1006,6 +1058,9 @@
   } 
   .new_wizardNote_for6{
     right: 73px ! important;
+  }
+   .navigationTitle_for6{
+    left: 820px ! important;
   }
 }
  @media screen and (device-width: 1152px){

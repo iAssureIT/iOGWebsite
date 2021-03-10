@@ -282,6 +282,16 @@ left: 35% ! important;
 	 	margin-left: 100px ! important;
 	 }
 }
+@media only screen and (device-width : 1366px) and (device-height : 768px) { 
+ .All1blog1{
+	 	margin-left: 45px ! important;
+	 }
+}
+@media only screen and (device-width : 1360px) { 
+ .All1blog1{
+	 	margin-left: 45px ! important;
+	 }
+}
 @media only screen and (device-width : 1280px){ 
   .All1blog1{
     margin-left: 101px ! important;
@@ -292,8 +302,18 @@ left: 35% ! important;
     margin-left: 90px ! important;
   }
 }
+ @media only screen and (device-width : 1680px) {
+   .All1blog1{
+    margin-left: 100px ! important;
+  }
+}
 @media only screen and (device-width : 2048px) {
    .All1blog1{
        margin-left: 80px ! important;
+  }
+}
+@media only screen and (device-width : 1152px) {
+   .All1blog1{
+       margin-left: 70px ! important;
   }
 }
