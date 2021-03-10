@@ -283,8 +283,11 @@
    @media only screen and (device-width: 2560px) and (device-height: 1600px) 
   {
     .B4T_ServicesDiv {
-        width: 950px;
-        margin-left: 170px ! important;
+         width: 1040px;
+         margin-left: 138px ! important;
+    }
+    .Expertise_maindiv{
+      margin-left: 0px ! important;
     }
   } 
  @media only screen and (device-width : 1680px) and (device-height : 1050px) { 

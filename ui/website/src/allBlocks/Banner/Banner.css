@@ -3485,6 +3485,10 @@ div.drop-container:after {
     left:8% ! important;
     top:72% ! important;
   }  
+  .new_HoverDiv1 {
+    margin-left: -232px ! important;
+    margin-top: -131px ! important;
+  }
 
 }
 @media only screen and (device-width : 1600px) { 
@@ -3863,7 +3867,6 @@ div.drop-container:after {
   .plantimage11 {
     right: 91px ! important;
   }
-
 }
 
 @media screen and (min-device-width: 2880px){

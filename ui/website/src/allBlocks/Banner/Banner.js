@@ -69,7 +69,7 @@ componentDidMount(){
 
     $("#boat_img2Div").hover(function() { 
        $('#blackbannerDiv').removeClass('hiddendiv');
-       $('.waterimg2').css('z-index','120');
+       $('.waterimg2').css('z-index','110');
        // $('.boat_img').css('z-index','10');
        // $('#hidepoweredbyblack1').removeClass('hiddendiv');
       

@@ -803,6 +803,7 @@
     .iogblock3text{
       width: 803px ! important;
       height: 690px ! important;
+      padding-top: 275px ! important;
       /*margin-left: 62px ! important;*/
     }
     .iogimgblock3 {
@@ -820,6 +821,7 @@
    }
    .iogblock4text {
     padding-top: 254px ! important;
+    padding-left: 40px ! important;
     }
 
   } 
@@ -845,6 +847,7 @@
     .iogblock3text{
       width: 803px ! important;
       height: 690px ! important;
+       padding-top: 275px ! important;
       /*margin-left: 62px ! important;*/
     }
     .iogimgblock3 {
@@ -862,6 +865,10 @@
    }
    .iogblock4text {
     padding-top: 254px ! important;
+     padding-left: 40px ! important;
+    }
+    .Padding_career{
+      margin-top: 85px ! important;
     }
 
   } 

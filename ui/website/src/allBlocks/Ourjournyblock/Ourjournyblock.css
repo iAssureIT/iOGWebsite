@@ -4215,12 +4215,14 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
 }
 @media only screen and (device-width: 1680px) and (device-height: 1050px) 
  {
-      .roadjourny img{
+    .roadjourny img{
     left:-249px ! important;
+    z-index: 0! important ;
   }
   .add1{
     opacity: 1;
     left: 387px ! important;
+    z-index: 0! important ;
   }
   .add9{
     display: none;
@@ -4229,21 +4231,25 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     top:265px ! important;
     left: 552px ! important;
+    z-index: 0! important ;
   }
   .Journycaro2{
     opacity: 1;
     left: 248px !important;
     top: 411px ! important;
+    z-index: 0! important ;
   }
   .Journycaro3 {
     opacity: 1;
     left: 677px !important;
     top: 661px ! important;
+    z-index: 0! important ;
   }
   .add4{
     opacity: 1;
    left: -476px ! important;
     top: 461px ! important;
+    z-index: 0! important ;
   }
   
   .Journycaro3 p{
@@ -4263,33 +4269,39 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     top: 761px ! important;
     left: 200px ! important;
     text-align: right ! important;
+    z-index: 0! important ;
 
   }
   .add3 {
     opacity: 1;
     left: 603px ! important;
     top: 280px ! important;
+    z-index: 0! important ;
   }
   .Journycaro6 {
     opacity: 1;
     top: 810px ! important;
     left: 746px ! important;
+    z-index: 0! important ;
   }
   .add6{
     opacity: 1;
     left: 696px ! important;
     top: 14px ! important;
+    z-index: 0! important ;
 
   }
   .Journycaro5{
     opacity: 1;
     top: 964px ! important;
-   left: 934px ! important;
+    left: 934px ! important;
+    z-index: 0! important ;
   }
   .add5{
     opacity: 1;
     top: 763px ! important;
     right: 582px ! important;
+    z-index: 0! important ;
 
   }
   .Journycaro7 p{
@@ -4308,25 +4320,30 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     top: 1119px ! important;
     left: 939px ! important;
+    z-index: 0! important ;
   }
   .add8{
     opacity: 1;
     right: -271px ! important;
     top: 156px ! important;
+    z-index: 0! important ;
   }
   .add10{
     opacity: 1;
     top: -37px ! important;
     left: 304px ! important;
+    z-index: 0! important ;
   }
   .Journycaro10{
     opacity: 1;
-        left: 279px ! important;
+    left: 279px ! important;
+    z-index: 0! important ;
   }
   .Journycaro8 {
     opacity: 1;
-        top: 1125px ! important;
+    top: 1125px ! important;
     left: 282px ! important;
+    z-index: 0! important ;
 
 
   }
@@ -4334,6 +4351,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     left: 421px ! important;
     top: 1308px ! important;
+    z-index: 0! important ;
   }
   .Journycaro9 p{
     text-align: left ! important;
@@ -4346,52 +4364,63 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     left: 246px ! important;
     top: 348px ! important;
+    z-index: 0! important ;
   }
   .add12 {
     left: 189px ! important;
     top: -112px  !important;
     opacity: 1;
+    z-index: 0! important ;
      
    }
    .add2{
     opacity:1;
     right: 431px ! important;
+    z-index: 0! important ;
    }
    .roadjourny{
     overflow:inherit;
+    z-index: 0! important ;
    }      
   }   
 @media only screen and (device-width: 1680px) 
  {
       .roadjourny img{
     left:-249px ! important;
+    z-index: 0! important ;
   }
   .add1{
     opacity: 1;
     left: 387px ! important;
+    z-index: 0! important ;
   }
   .add9{
     display: none;
+    z-index: 0! important ;
   }
   .Journycaro1{
     opacity: 1;
     top:265px ! important;
     left: 552px ! important;
+    z-index: 0! important ;
   }
   .Journycaro2{
     opacity: 1;
     left: 248px !important;
     top: 411px ! important;
+    z-index: 0! important ;
   }
   .Journycaro3 {
     opacity: 1;
     left: 677px !important;
     top: 661px ! important;
+    z-index: 0! important ;
   }
   .add4{
     opacity: 1;
    left: -476px ! important;
     top: 461px ! important;
+    z-index: 0! important ;
   }
   
   .Journycaro3 p{
@@ -4411,28 +4440,33 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     top: 761px ! important;
     left: 200px ! important;
     text-align: right ! important;
+    z-index: 0! important ;
 
   }
   .add3 {
     opacity: 1;
     left: 603px ! important;
     top: 280px ! important;
+    z-index: 0! important ;
   }
   .Journycaro6 {
     opacity: 1;
     top: 810px ! important;
     left: 746px ! important;
+    z-index: 0! important ;
   }
   .add6{
     opacity: 1;
     left: 696px ! important;
     top: 14px ! important;
+    z-index: 0! important ;
 
   }
   .Journycaro5{
     opacity: 1;
     top: 964px ! important;
    left: 934px ! important;
+   z-index: 0! important ;
   }
   .add5{
     opacity: 1;
@@ -4456,25 +4490,30 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     top: 1119px ! important;
     left: 939px ! important;
+    z-index: 0! important ;
   }
   .add8{
     opacity: 1;
     right: -271px ! important;
     top: 156px ! important;
+    z-index: 0! important ;
   }
   .add10{
     opacity: 1;
     top: -37px ! important;
     left: 304px ! important;
+    z-index: 0! important ;
   }
   .Journycaro10{
     opacity: 1;
         left: 279px ! important;
+        z-index: 0! important ;
   }
   .Journycaro8 {
     opacity: 1;
         top: 1125px ! important;
     left: 282px ! important;
+    z-index: 0! important ;
 
 
   }
@@ -4482,6 +4521,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     left: 421px ! important;
     top: 1308px ! important;
+    z-index: 0! important ;
   }
   .Journycaro9 p{
     text-align: left ! important;
@@ -4494,19 +4534,23 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     opacity: 1;
     left: 246px ! important;
     top: 348px ! important;
+    z-index: 0! important ;
   }
   .add12 {
     left: 189px ! important;
     top: -112px  !important;
     opacity: 1;
+    z-index: 0! important ;
      
    }
    .add2{
     opacity:1;
     right: 431px ! important;
+    z-index: 0! important ;
    }
    .roadjourny{
     overflow:inherit;
+    z-index: 0! important ;
    }  
   
 
