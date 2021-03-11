@@ -5585,9 +5585,10 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
    .roadjourny{
     overflow:inherit;
      z-index: 0! important ;
-   }  
-  
-   
+   }
+   .add9{
+    display: none;
+   }    
 } 
  @media only screen and (device-width : 2560px) {
   .new_wizardNotefor4forJ{
