@@ -160,7 +160,7 @@ componentDidMount(){
                                                      <div className="summary_blogs_HP"style={{overflow:"hidden"}}>
                                                      <p>{data.summary}</p>
                                                     </div>
-                                                    <div className="price-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div className="price-footer price-footertab col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                       <div className="row">
                                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 blogdate"><Moment format=" MMMM D YYYY ">{data.createdAt}</Moment></div>
                                                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">

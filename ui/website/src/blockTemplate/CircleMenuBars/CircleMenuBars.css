@@ -506,7 +506,7 @@
     }
       
 }
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px)  {
     .navigation_tab{
         margin-left: 26px ! important
     }
@@ -516,11 +516,14 @@
     .new_wizardNotefortwo{
         right: -252px ! important;
     }
+    .new_round-tabfor5{
+      margin-left: 64% ! important;
+    }
 
   }
-  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  @media only screen and (device-width: 1024px) {
    .navigationTitle_for6{
-    left: 436px ! important;
+    left: 405px ! important;
    }
    .newcard_landscape{
     /*width: 300px ! important;*/
@@ -709,13 +712,13 @@
         }
   }
 
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px)  {
      .navigation_tab{
       margin-left: 25px ! important;
     }
 
   }
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
      .navigation_tab{
       margin-left: 35px ! important;
     }
@@ -746,13 +749,13 @@
     }
  
  } 
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 768px) {
      .navigation_tab{
       margin-left: 20px ! important;
      }
 
   } 
-@media only screen  and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen  and (device-width: 1024px) {
    
      .navigation_tab{
       margin-left: 27px ! important;
@@ -761,7 +764,7 @@
         margin-left: 24px ! important;
      }
      .new_wizardNote_for6{
-        right: 30px ! important;
+        right: 56px ! important;
      }
      .new_wizardNotefor9{
         right: 5px ! important;
@@ -771,6 +774,9 @@
      }
      .new_wizardNotefor3{
       right: -198px ! important;
+     }
+     .new_round-tabfor6{
+      margin-left: 6% ! important;
      }
 
   } 
@@ -955,7 +961,7 @@
       right: 45px ! important;
     }
   }    
-  @media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
+  @media only screen and (device-width: 2048px){
      .new_wizardNote_for6{
       right: 73px ! important;
      }
@@ -969,7 +975,7 @@
       left: 904px ! important;
     }
   }    
- @media only screen and (device-width : 2560px) and (device-height : 1600px) {
+ @media only screen and (device-width : 2560px) {
   .new_wizardNotefor4{
     right: -146px ! important;
   }
@@ -1027,7 +1033,7 @@
    margin-left: 12% ! important;
   }
 } 
-@media only screen and (min-device-width : 2880px){ 
+@media only screen and (device-width : 2880px){ 
   .new_wizardNotefor4{
     right:-168px ! important; 
   }

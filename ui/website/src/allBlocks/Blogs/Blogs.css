@@ -196,53 +196,30 @@
 
     }
 }
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .blogblock{
-      height: 540px ! important;
-    }
-    .blogbtn1{
-      margin-top: 50px ! important;
-    }
-    .blogdate{
-      padding-top: 77px ! important;
-    }
-  }
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
   .blogblock{
     height: 515px ! important;
 
     }
-
-    .blogbtn1{
-      padding: 7px 0px;
-    }
   }
-@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
     .blogbtn1{
       padding: 7px 0px;
-      width: 220px;
-
-    }
-    .blogdate{
-      /*padding-top: 113px ! important;*/
+      width: 205px;
     }
     .blogblock{
       height: 555px ! important;
     }
-
-
-   
+    .price-footertab{
+      margin-top: 35px ! important;
+      padding-left: 20px! important;
+    }  
   }
-   @media only screen 
-  and (device-width: 728px) 
-  and (device-height: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 728px)  {
     .blogbtn1{
       padding: 7px 0px;
       width: 220px;
       float: right;
-
     }
     .blogdate{
       padding-top: 113px ! important;

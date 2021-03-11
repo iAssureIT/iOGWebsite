@@ -207,13 +207,5 @@
  }	
 
  @media only screen and (device-width : 2560px) and (device-height : 1600px) {
- 	.commonBlockpadd{
-		padding-left: 250px ! important; 
- 	 }
- 	.newcard_HD {
-	    width: 376px ! important;
-	    margin-left: 95px ! important; 
-	   } 
-
- }
+ 	}
 

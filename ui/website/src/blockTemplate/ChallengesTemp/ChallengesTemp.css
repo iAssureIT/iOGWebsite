@@ -117,11 +117,7 @@
   }
  }
 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px)  {
    .B3T_challengesDiv{
     width: 250px;
     margin-left: 15px;

@@ -393,34 +393,7 @@
     }
 
    }
-
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .iogblock1text{
-        padding-top: 57px ! important;
-    }
-    .iogblock2text{
-        margin-top: 0px ! important;
-    }
-    .iogimgblock2{
-        height: 600px ! important;
-    }
-    .iogblock3text{
-        padding: 25px ! important;
-        height: 265px ! important;
-    }
-    .iogimg_4{
-        margin-left: 0px ! important;
-    }
-    .iogimg_4 img{
-        /*margin-top: -102px ! important;*/
-        width: 97% ! important;
-    }
-    .iogimgblock3{
-        height: 262px ! important;
-    }
- }
-
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
     .pt20{
       padding-top: 20px ! important;
     }
@@ -456,9 +429,6 @@
     .newcard_HD{
       width: 220px ! important;
     }
-    .newcard {
-    width: 255px ! important;
-    }
     .navigation_tab{
       margin-left: 25px ! important;
     }.new_wizardNotefor9{
@@ -478,13 +448,17 @@
         object-fit: contain;
         height: 100%;
     }
+    .CareerBlockHighDef{
+      width: 289px ! important;
+    }
     .iogblock3text{
-      padding: 30px ! important;
+      padding: 20px ! important;
       height: 255px ! important;
-      width: 281px ! important;
+      width: 267px ! important;
     }
     .iogimg_4{
       margin-top: -16px ! important;
+      margin-left: 0px ! important;
     }
     .iogimgblock3{
       height:283px ! important;
@@ -621,39 +595,6 @@
       width: 471px;
     }
 
-  }
-@media only screen  and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .iogblock1text {
-        /*height: 270px ! important;*/
-    }
-    .iogimgblock2{
-        height: 595px ! important;
-    }
-    .iogblock2text{
-        margin-top: 0px ! important;
-    }
-    .iogblock1text{
-        padding-top: 80px ! important;
-    }
-    .iogimg_4 img{
-        width: 94.3% ! important;
-        margin-left: 15px ! important;
-        margin-top: -61px ! important;
-    }
-    .iogimg_4{
-        margin-left: 0px ! important;
-    }
-    .iogblock4text{
-        padding-top: 0px ! important;
-    }
-    .iogblock3text{
-        padding: 27px ! important;
-        width: 268px ! important;
-    }
-    .CareerBlockHighDef{
-      width: 289px ! important;
-    }
-   
   } 
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
         .iogimgblock2 {

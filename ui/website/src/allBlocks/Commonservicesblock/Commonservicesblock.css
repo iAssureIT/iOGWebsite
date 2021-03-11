@@ -434,11 +434,7 @@
   }
 }
 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
   .newcard_landscape{
     width: 220px ! important;
 
@@ -447,21 +443,14 @@
     padding-left: 0px ! important;
   }
 }  
-@media only screen 
-  and (device-width: 1366px) 
-  and (device-height: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1366px) {
   .newcard_landscape{
     width: 300px ! important;
 
   }
 
 } 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: portrait) 
+@media only screen and (device-width: 1024px) 
    {
   .newcard_landscape{
     width: 220px ! important;

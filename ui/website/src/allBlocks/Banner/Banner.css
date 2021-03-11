@@ -1706,7 +1706,7 @@ animation: fadeIn ease 20s;
     width: 400px ! important;
     border-radius: 5px;
     /*background-image: url(/images/newbanner_img14.png);*/
-    margin-left: -176px;
+    margin-left: -220px;
     margin-top: -143px;
     position: absolute;
     animation: fadeIn ease 1.5s;
@@ -3185,11 +3185,7 @@ div.drop-container:after {
 
 
 
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px)  {
 
   .oilimage{
         right: 170px ! important;

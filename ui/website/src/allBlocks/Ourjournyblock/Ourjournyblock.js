@@ -215,20 +215,34 @@ export default class Ourjournyblock extends Component {
             }
         if (scroll >= 430) {
             $(".Journycaro6").addClass("journyanim");
-        }
+        }else{
+              $(".Journycaro6").removeClass("journyanim");
+            }
         if (scroll >= 630) {
             $(".Journycaro7").addClass("journyanim");
         }
+        else{
+              $(".Journycaro7").removeClass("journyanim");
+            }
         if (scroll >= 750) {
             $(".Journycaro8").addClass("journyanim");
         }
+        else{
+              $(".Journycaro8").removeClass("journyanim");
+            }
         if (scroll >= 900) {
             $(".Journycaro9").addClass("journyanim");
         }
+        else{
+              $(".Journycaro9").removeClass("journyanim");
+            }
         if (scroll >= 1000) {
             $(".Journycaro10").addClass("journyanim");
             
         }
+        else{
+              $(".Journycaro10").removeClass("journyanim");
+            }
        /* if (scroll >= 1650) {
             $(".Journycaro11").addClass("journyanim");
         }*/

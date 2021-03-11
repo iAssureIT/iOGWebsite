@@ -739,6 +739,9 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      .blogdate{
       padding-top: 0px ! important;
      }
+     .setlogo{
+        padding-left: 22px ! important;
+     }
 
 }
 @media screen and (max-width:768px)  and (max-height: 1024px) {
@@ -985,7 +988,19 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         top:120px ! important;
     }
 }
-@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
+    .navigationTitle_for6{
+      left:430px ! important;
+     }
+     .servicekbtnarrow{
+      margin-left: 2px ! important;
+     }
+     .navigation_tab{
+      margin-left: 27px ! important;
+     }
+
+  }
+  @media only screen and (device-width: 1024px) {
     .navigationTitle_for6{
       left:430px ! important;
      }
@@ -1004,7 +1019,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      }
 
   }
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px){
     .jobformcontent{
         margin-left: 250px ! important;
     }
@@ -1043,7 +1058,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 164% ! important;
      }
      .new_wizardNotefor5{
-        right: 6px ! important;
+        right: -32px ! important;
      }
      .innerBlocktepmlate6{
         margin-left: 145px ! important;
@@ -1099,9 +1114,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
 
   } 
 
-  @media only screen 
-    and (device-width : 1920px) 
-    and (device-height : 768px){
+  @media only screen and (device-width : 1920px){
    .ApplicationImg{
     padding-left: 90px ! important;
   }
@@ -1111,8 +1124,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
    }
 
 } 
-
-  @media only screen and (device-width : 320px) and (device-height : 568px) { 
+@media only screen and (device-width : 320px) and (device-height : 568px) { 
     .B3T_challengesDiv {
 
           width : 238px ! important;
@@ -1504,7 +1516,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }   
 
   }}  
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
     .pt20{
       padding-top: 20px ! important;
     }
@@ -1532,7 +1544,10 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       width: 220px ! important;
     }
     .newcard {
-    width: 215px ! important;
+      width: 200px ! important;
+    }
+    .serflip-card img{
+      width: 150px ! important;
     }
     .navigation_tab{
       margin-left: 25px ! important;
@@ -1543,7 +1558,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     padding-top: 100px;
     }
   } 
-@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1024px) {
     .righttextaboutus h3{
       font-size: 23px ! important;
     }
@@ -1852,14 +1867,14 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 265px ! important;
       }
       .newcard_HD {
-        width: 437px ! important;
+        width: 500px ! important;
         margin-left: 30px ! important;
       }
       .B2T_p{
-        text-align: center ! important;
+        /*text-align: center ! important;*/
       }
        .B2T_p ul li{
-        text-align: left ! important;
+        /*text-align: left ! important;*/
       }
    }    
     @media only screen and (device-width: 2560px){
@@ -1984,7 +1999,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     padding-top: 10px ! important;
   }
   .newcard_HD {
-    width: 260px ! important;
+    width: 250px ! important;
   }
   .newcard{
     width: 260px ! important;
@@ -2184,8 +2199,11 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       padding-top: 35px;
     }
     .newcard {
-        width: 475px ! important;
+        width: 425px ! important;
         margin-left: 80px ! important;
+    }
+    .Expertise_maindiv{
+        margin-left: 0px ! important;
     }
  } 
  @media only screen and (device-width : 3200px) {

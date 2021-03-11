@@ -464,7 +464,7 @@
 
 @media only screen and (device-height: 900px) and (device-width: 1440px){
   .downimgtext{
-    left:21em !important;
+    left:20.5em !important;
   }
    #consultdown_img0{
     left: 26em ! important;
@@ -525,7 +525,7 @@
 
 @media screen and (device-width: 1440px) {
   .downimgtext{
-    left:21em !important;
+    left:20.5em !important;
   }
    #consultdown_img0{
     left: 26em ! important;
@@ -802,63 +802,6 @@
   }
  }
 
-
-@media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    #consultdown_img0{
-      left:15em ! important;
-
-    }
-     #consultdown_img2{
-      left:15em ! important;
-    }
-     #consultdown_img4{
-      left:15em ! important;
-    }
-     #consultdown_img6{
-      left:15em ! important;
-    }
-    #consultdown_data0{
-      right: 0% ! important;
-      padding-left: 114px ! important;
-    }
-    #consultdown_data2{
-      right: -2% ! important;
-      padding-left: 100px ! important;
-    }
-    #consultdown_data4{
-      right: -2% ! important;
-      padding-left: 100px ! important;
-    }
-    #consultdown_data3{
-      left:-10% ! important;
-    }
-    #consultdown_img5{
-      left:38em ! important;
-    }
-    #consultdown_data1{
-      left:-4% ! important;
-    }
-    #consultdown_img3{
-      left:38em ! important;
-    }
-    #consultdown_img1{
-      left:41em ! important;
-    }
-    #consultdown_data5{
-      padding-right: 115px ! important;
-    }
-    #consultdown_data6{
-      padding-left: 166px ! important;
-    }
-    .downimgtext{
-      left:15em ! important;
-    }
-  } 
-
   @media only screen and (device-width: 1152px) {
     #consultdown_img0{
       left:15em ! important;
@@ -1029,115 +972,9 @@
     top:99em ! important;
    }
 } 
-@media only screen and (device-width : 1024px) and (device-height : 768px) { 
-    #consultdown_data0 {
-      right: 1%;
-      width: 419px;
-  }
-  #consultdown_img0{
-        left: 12em;
 
-  }
-  #consultdown_data1{
-    left: 5%;
-    width: 425px;
-  }
-  #consultdown_img1{
-    left: 41em;
-  }
-  #consultdown_data2{
-    width: 380px;
-  }
-  #consultdown_img2{
-    left:13em;
-  }
-  #consultdown_data3{
-    top:65em;
-    width: 465px;
-  }
-  #consultdown_img4{
-    left:14em;
-  }
-  #consultdown_img3{
-    top: 66em;
-    left: 42em;
-  }
-  #consultdown_data4{
-    width:392px;
-  }
-  #consultdown_data5{
-    width: 480px;
-  }
-  #consultdown_img5{
-    left:41em;
-  }
-  #consultdown_img6{
-    left:15em;
-  }
-  #consultdown_data6{
-    width: 378px;
-  }
-  .downimgtext{
-    left:14em ! important;
-  }
-  .downimg_p_txt{
-    left:8em ! important;
-  }
-}
+@media only screen and (device-width : 1024px){ 
 
-@media only screen and (device-width : 1024px) and (device-height : 1366px) { 
-
-   #consultdown_data3{
-    top:62em ! important;
-    width: 450px;
-   }
-   #consultdown_img0{
-    left:6em ! important;
-   }
-   #consultdown_data0{
-    right: 0% ! important;
-    width: 450px;
-   }
-   #consultdown_data2{
-    right: 0% ! important;
-   }
-    #consultdown_img2{
-    left:6em ! important;
-   }
-    #consultdown_img4{
-    left:6em ! important;
-   }
-   #consultdown_data1{
-        left: -3%;
-       width: 450px;
-   }
-   #consultdown_img3{
-    top:62em ! important;
-    left:33em;
-   }
-   #consultdown_img1{
-    left:33em;
-   }
-   #consultdown_data4{
-    right: 0%;
-    width: 450px;
-   }
-   #consultdown_data5{
-    width: 450px;
-   }
-   #consultdown_img5{
-    left:40em;
-   }
-   .newcard_HD{
-    width:250px;
-   }
-   .downimg_p_txt{
-    left: 6em ! important;
-    padding-right: 0px;
-   }
-   .downimgtext{
-    left:14em ! important;
-   }
 
 } 
 @media only screen and (device-width : 384px) and (device-height : 640px) { 
@@ -1736,14 +1573,13 @@
         left: 30em !important;
     }
   }
-  @media only screen 
-  and (device-width: 1024px) and (device-height: 1366px)  and (orientation: portrait) {
+  @media only screen and (device-width: 1024px){
   .newcard_landscape{
     width: 220px ! important;
 
   }
   .downimgtext{
-    left:15em ! important;
+    left:14em ! important;
   } 
   #consultdown_img1{
     left:36em ! important;
@@ -1754,16 +1590,14 @@
   #consultdown_img5{
     left:36em ! important;
   }
-  #consultdown_data4{
-    right: 6% ! important;
-  }
-   #consultdown_data2{
-    right: 0% ! important;
-    width: 490px  !important;
-  }
    #consultdown_data1{
-    left: 2em ! important;
-    /*width: 490px  !important;*/
+    left: 0em ! important;
+  }
+    #consultdown_data3{
+    left: 0em ! important;
+  }
+    #consultdown_data5{
+    left: 0em ! important;
   }
 
    #consultdown_data6{
@@ -1771,17 +1605,63 @@
     width: 490px ! important;
   }
   #consultdown_img0{
-    left:13em ! important;
+    left:11em ! important;
   }
   #consultdown_img2{
-    left:13em ! important;
+    left:11em ! important;
   }
   #consultdown_img4{
-    left:13em ! important;
+    left:11em ! important;
   }
   #consultdown_img6{
-    left:13em ! important;
+    left:11em ! important;
   }
+/*kkkkkkkkkk*/
+ 
+   #consultdown_data3{
+    top:62em ! important;
+    width: 450px;
+   }
+   #consultdown_data0{
+    right: 4% ! important;
+    width: 450px;
+   }
+   #consultdown_data2{
+    right: 4% ! important;
+     width: 450px;
+   }
+   #consultdown_data1{
+        left: -3%;
+       width: 450px;
+   }
+   #consultdown_img3{
+    top:62em ! important;
+    left:33em;
+   }
+   #consultdown_img1{
+    left:33em;
+   }
+   #consultdown_data4{
+    right: 4%;
+    width: 450px;
+   }
+   #consultdown_data5{
+    width: 450px;
+   }
+   #consultdown_img5{
+    left:40em;
+   }
+   .newcard_HD{
+    width:250px;
+   }
+   .downimg_p_txt{
+    left: 6em ! important;
+    padding-right: 0px;
+   }
+   .downimgtext{
+    left:14em ! important;
+   }
+
 }
 @media only screen and (min-device-width: 2560px) {
     #consultdown_img1{

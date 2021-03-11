@@ -35,6 +35,14 @@
             height: 500px;
             width: 100%;
 }
+.NewLoader1{
+            /*background-image: url("/images/spin-Preloader.gif");*/
+            background-repeat: no-repeat;
+            background-size: 98% 100%;
+            height: 1000px;
+            width: 100%;
+}
+
 
 @media only screen and (device-width : 393px) and (device-height : 851px) { 
     .NewLoader{

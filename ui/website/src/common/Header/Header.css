@@ -1392,9 +1392,7 @@ border:1px solid #eee ! important;
 
  @media only screen 
   and (device-width: 1024px) 
-  and (device-height: 768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
     .setlogo{
       padding-left: 10px ! important;
     }
@@ -1468,6 +1466,12 @@ border:1px solid #eee ! important;
     padding: 14px 2px ! important;
   }
  }
+ @media screen and (device-width:1024px){
+     .setlogo{
+        padding-left: 22px ! important;
+     }
+
+}
 
 
 

@@ -148,7 +148,7 @@ componentDidMount(){
 					    	)
 						})
 					:
-					<div className="text-center  NewLoader">
+					<div className="text-center  NewLoader1">
 					 <img src="/images/Spin-Preloader.gif"/>
 				   </div>
 				}

@@ -108,17 +108,14 @@
     }
 } 
 @media only screen 
-  and (device-width: 1440px) 
-  and (device-height: 900px) {
+  and (device-width: 1440px) {
     .yearbox{
           width: 55px ! important;
           margin-right: 4px ! important;
           margin-left: 15px ! important;
     }
   } 
-  @media only screen 
-  and (device-width: 1024px) 
-  and (device-height: 768px) {
+  @media only screen and (device-width: 1024px)  {
     .yearbox{
          
           margin-left: 0px ! important;
