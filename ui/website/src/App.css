@@ -734,7 +734,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
          right: -88px ! important;
        }
      .new_wizardNotefor4{
-      left:240px ! important;
+      left:196px ! important;
      }
      .blogdate{
       padding-top: 0px ! important;
@@ -1000,18 +1000,6 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
      }
 
   }
-  @media only screen and (device-width: 1024px) {
-    .navigationTitle_for6{
-      left:430px ! important;
-     }
-     .servicekbtnarrow{
-      margin-left: 2px ! important;
-     }
-     .navigation_tab{
-      margin-left: 27px ! important;
-     }
-
-  }
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
    
      .navigation_tab{
@@ -1058,7 +1046,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
         margin-left: 164% ! important;
      }
      .new_wizardNotefor5{
-        right: -32px ! important;
+        right: 10px ! important;
      }
      .innerBlocktepmlate6{
         margin-left: 145px ! important;
@@ -1156,8 +1144,6 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .B3T_challengesDiv {
 
           width : 325px ! important;
-          /*margin-left: 27px ! important;*/
-          /*border: 1px solid #dedbdb;*/
       }
 
        .serflip-card img{

@@ -27,7 +27,7 @@
   width: 385px;
 }
 
-@media only screen and (device-width : 1440px) and (device-height : 900px) {
+@media only screen and (device-width : 1440px){
   .Journycaro1{
     left:651px !important;
   }

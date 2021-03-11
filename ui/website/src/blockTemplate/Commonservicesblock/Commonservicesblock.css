@@ -3,6 +3,9 @@
   font-weight: 700;
   margin-top: 2px;
 }
+.paddingLeft_common{
+  padding-left: 0px ! important;
+}
 .leafModalBody{
   height: 415px;
   padding: 0px;

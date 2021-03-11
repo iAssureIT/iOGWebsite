@@ -12,6 +12,33 @@
 	/*width: 500px;*/
 	height: 400px;
 }
+@media only screen and (device-width : 1366px){
+.director_img{
+    height: 370px;
+  }
+  .director_img img{
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media only screen and (device-width : 1440px){
+.director_img{
+    height: 370px;
+  }
+  .director_img img{
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media only screen and (device-width : 2560px){
+.director_img{
+    height: 520px;
+  }
+  .director_img img{
+    height: 100%;
+    object-fit: contain;
+  }
+}
 .para_Spacingforfounder ul{
 	padding-left: 17px;
 }
