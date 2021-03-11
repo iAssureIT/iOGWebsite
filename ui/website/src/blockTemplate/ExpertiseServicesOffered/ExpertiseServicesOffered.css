@@ -269,21 +269,21 @@
      }
 
   } 
-  @media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
+  @media only screen and (device-width: 1536px){
     .B4T_ServicesDiv{
       margin-left: 85px ! important;
     }
   }
-   @media only screen  and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
+   @media only screen  and (min-device-width: 2048px){
     .B4T_ServicesDiv{
       margin-left: 110px ! important;
       width: 830px ! important;
     }
   } 
-   @media only screen and (device-width: 2560px) and (device-height: 1600px) 
+   @media only screen and (device-width: 2560px)
   {
     .B4T_ServicesDiv {
-         width: 1040px;
+         width: 1040px ! important;
          margin-left: 138px ! important;
     }
     .Expertise_maindiv{

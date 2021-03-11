@@ -488,7 +488,68 @@
     right: 4%;
   }
   .downimg_p_txt{
-    padding-right: 25px ! important;
+    padding-right: 160px ! important;
+  }
+  #consultdown_data5{
+    left:7% ! important;
+  }
+  #consultdown_img6{
+    left:30em ! important;
+  }
+  #consultdown_data6{
+    right: 5% ! important;
+  }
+  #consultdown_img1{
+    left:56em ! important;
+
+  }
+  #consultdown_img2{
+    left:26em ! important;
+  }
+  #consultdown_img3{
+    left:56em ! important;
+
+  }
+  #consultdown_img5{
+    left:56em ! important;
+
+  }
+  #consultdown_img6{
+    left:26em ! important;
+
+  }
+ .img1 img{
+  width: 100%;
+ }  
+}
+
+@media screen and (device-width: 1440px) {
+  .downimgtext{
+    left:21em !important;
+  }
+   #consultdown_img0{
+    left: 26em ! important;
+  }
+   #consultdown_data0{
+    right: 3% ! important;
+  }
+  #consultdown_data1{
+    left:9% ! important;
+  }
+  #consultdown_data3{
+   left:5% ! important;
+  }
+  #consultdown_data2{
+    right: 6% ! important;
+  }
+  #consultdown_img4{
+    left:26em ! important;
+  }
+  #consultdown_data4{
+    right: 4%;
+  }
+  .downimg_p_txt{
+      padding-right: 160px ! important;
   }
   #consultdown_data5{
     left:7% ! important;
@@ -1404,23 +1465,97 @@
 @media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
     #consultdown_data0 p{
       text-align: left ! important;
-      
-
     }
     #consultdown_data2 p{
       text-align: left ! important;
-      
-
     }
     #consultdown_data4 p{
       text-align: left ! important;
-      
-
     }
     #consultdown_data6 p{
       text-align: left ! important;
-      
+    }
 
+    #consultdown_data0{
+      right: 4% ! important;
+      width: 692px ! important;
+
+    }
+     #consultdown_data4{
+      right: 4% ! important;
+       width: 692px ! important;
+
+    }
+     #consultdown_data2{
+      right: 4% ! important;
+      width: 692px ! important;
+
+    }
+    #consultdown_img1{
+      left:55em ! important;
+    }
+    #consultdown_img3{
+      left:55em ! important;
+    }
+     #consultdown_img5{
+      left:55em ! important;
+    }
+    #consultdown_data1 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_data3 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_data5 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_data7 p{
+       text-align: right ! important;
+
+    }
+    #consultdown_img0{
+      left: 31em ! important;
+
+    }
+     #consultdown_img2{
+      left: 31em ! important;
+
+    }
+     #consultdown_img4{
+      left: 31em ! important;
+
+    }
+    #consultdown_data1{
+      left:12% ! important;
+    }
+    #consultdown_data3{
+      left:9% ! important;
+    }
+    #consultdown_data5{
+      left:9% ! important;
+    }
+    .downimgtext{
+      left:22em ! important;
+    }
+    #consultdown_data6{
+      right: 12% ! important;
+    }
+  }
+  @media only screen and (device-width: 1536px){
+    #consultdown_data0 p{
+      text-align: left ! important;
+    }
+    #consultdown_data2 p{
+      text-align: left ! important;
+    }
+    #consultdown_data4 p{
+      text-align: left ! important;
+    }
+    #consultdown_data6 p{
+      text-align: left ! important;
     }
 
     #consultdown_data0{
@@ -1648,7 +1783,7 @@
     left:13em ! important;
   }
 }
-@media only screen and (device-width: 2560px) and (device-height:1600px ) {
+@media only screen and (min-device-width: 2560px) {
     #consultdown_img1{
      left: 90em ! important;
     }

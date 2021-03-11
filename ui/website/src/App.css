@@ -1664,7 +1664,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     }
 
   } 
-@media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
+@media only screen and (device-width: 1536px){
     .TypecomponentBtnImg{
       margin-left: 230px ! important;
     }
@@ -1696,15 +1696,19 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
     .iconCircle{
         margin-left: 39% ! important;
      }
+     .B4T_ServicesDiv{
+      width: 638px ! important;
+      margin-left: 75px ! important;
+     }
 
   } 
-@media only screen and (device-width: 2560px)  and (device-height: 1600px) and (orientation: landscape){
+@media only screen and (device-width: 2560px){
    .Typecomp_1_img img{
       width: 100%;
 
     }
   }
-@media only screen and (device-width: 2048px) and (device-height: 1536px) and (orientation: landscape){
+@media only screen and (device-width: 2048px){
    .Allblog{
     width: 430px ! important;
    }
@@ -1782,7 +1786,7 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       margin-left: 0px ! important;
     }
   }   
-   @media only screen and (device-width: 2560px) and (device-height: 1600px) and (orientation: landscape){
+   @media only screen and (min-device-width: 2560px){
    .Allblog{
     width: 430px ! important;
    }
@@ -1846,6 +1850,16 @@ div, a, p, h1, h2, h3, h4, h5, h6, i, span, label{
       }
       .MacProPddingfor_{
         margin-left: 265px ! important;
+      }
+      .newcard_HD {
+        width: 437px ! important;
+        margin-left: 30px ! important;
+      }
+      .B2T_p{
+        text-align: center ! important;
+      }
+       .B2T_p ul li{
+        text-align: left ! important;
       }
    }    
     @media only screen and (device-width: 2560px){

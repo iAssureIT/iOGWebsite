@@ -568,7 +568,7 @@
         width: 427px ! important;
     }
     .iogimg_4 img{
-        width: 100%;
+        width: 99%;
         margin-top: 2px;
     }
     .iogblock4text{
@@ -577,11 +577,14 @@
     .iogblock1text{
         padding-top: 70px ! important;
     }
-    .iogblock3text {
-      width: 419px ! important;
+     .iogimg_4 {
+      width: 855px ! important;
     }
-    .iogimg_4 {
-      /*width: 849px ! important;*/
+    .iogblock3text{
+        padding-top: 100px ! important;
+        padding-left: 55px ! important; 
+        width: 413px ! important;
+        height: 362px ! important;
     }
 
   }
@@ -781,7 +784,7 @@
       margin-left: 34px;
     }     
   } 
-@media only screen and (device-width: 2560px) and (device-height: 1600px) 
+@media only screen and (device-width: 2560px)
  {
    
     .CareerBlockHighDef {
@@ -924,7 +927,7 @@
     }
 
   } 
-@media only screen and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait){
+@media only screen and (device-width: 1536px){
     .CareerBlockHighDef {
      right: 69px ! important;
      width: 431px ! important;
