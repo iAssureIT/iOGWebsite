@@ -19,14 +19,7 @@
     font-weight: 700;
     letter-spacing: 2px;
 }
-@media only screen and (min-width: 1920px) and (max-width: 2560px) {
-  .downimgtext{
-    left:21em ! important;
 
-
-  }
-
-}
 .downimgtext_new{
    /* position: absolute;
     top: 5em;
@@ -45,10 +38,6 @@
     padding-right:135px;
 }
 .downimg_p_txt_new{
-    /*position: absolute;
-    top: 12.5em;
-    left: 9em;*/
-    /*text-align: justify; */
     font-size: 20px
 }
 #consultdown_data0{
@@ -1717,7 +1706,7 @@
     width: 690px ! important;
     }
     .downimgtext {
-        left: 38em !important;
+        left: 39em !important;
     }
   }
 @media only screen and (min-device-width: 2880px) {

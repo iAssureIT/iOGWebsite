@@ -43,7 +43,19 @@
  	}
 
  }
-
+@media screen and (device-width: 2560px) {
+	.jobformcontent{
+		margin-left: 900px ! important;
+	}
+	.jobpageform{
+		margin-top: 50px ! important;
+	}
+}
+@media screen and (device-width: 2048px) {
+	.jobformcontent{
+		margin-left: 700px ! important;
+	}
+}
 @media screen and (min-width: 768px) {
 
 	 /* .jobformcontent{
