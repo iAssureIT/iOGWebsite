@@ -434,7 +434,7 @@ journyData9(){
     return [
         {
             journyTitle : "Nov 2019",
-            journytext  : "iOG Solutions moves to its new office space in #7090, Marvel Feugo, Pune with a grand inaugural ceremony."   
+            journytext  : "iOG Solutions moves to its new office space in #7090, Marvel Fuego, Pune with a grand inaugural ceremony."   
         },
         
     ]

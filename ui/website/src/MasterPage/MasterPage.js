@@ -41,9 +41,21 @@ componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			// this.getAllBlockList();
 			var pageUrl = window.location.pathname;
+
+
+
 			console.log("pageUrl now = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
-			console.log("a>>>>",a);
+			// console.log("a>>>> for contact",a);
+			if(a[1]=="contact-us"){
+			  $(".NewLoader1").css("display", "none");	
+			}
+			if(a[1]=="ourjourney"){
+			  $(".NewLoader1").css("display", "none");	
+			}
+			if(a[1]=="resources"){
+			  $(".NewLoader1").css("display", "none");	
+			}
 	        if(a=='MasterPage'){
 	        	 $(".hidepoweredby").css("backgroundColor", "#eee");
 	          }else{

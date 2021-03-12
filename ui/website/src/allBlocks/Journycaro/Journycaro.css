@@ -28,65 +28,7 @@
 }
 
 @media only screen and (device-width : 1440px){
-  .Journycaro1{
-    left:651px !important;
-  }
-  .add1{
-    left:936px ! important;
-  }
-  .Journycaro2{
-    left:430px !important;
-  }
-   .add2{
-    right: -168px ! important;
-    top: 252px ! important;
-  }
-  .Journycaro3{
-    left:365px !important;
-  }
-  .add3{
-   top: 57px ! important;
-   left: 831px !important;
-  }
-  .Journycaro4{
-    left:874px ! important;
-    top: 630px ! important;
-  }
-   .add4{
-    left:267px ! important;
-    top:265px ! important;
-  }
-  .add6{
-    left:253px ! important;
-  }
-  .Journycaro7{
-    left:530px ! important;
-  }
-  .add7{
-    top:1238px ! important;
-    left:243px ! important;
-  }
-  .Journycaro8{
-   top: 1281px ! important;
-    left: 988px ! important;
-  }
-   .Journycaro9{
-    left:30px ! important;
-    top:1215px ! important;
-  }
-  .add9{
-    left: 344px ! important;
-  }
-  .add8{
-    right:-515px ! important;
-  }
-  .roadjourny img{
-    left: 150px ! important;
-  }
-  .add7{
-    left: 897px ! important;
-    top: 241px ! important;
-   } 
+  
   
 }
 @media screen and (min-width: 1600px) {
