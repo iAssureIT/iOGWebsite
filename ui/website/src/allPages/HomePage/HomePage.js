@@ -45,7 +45,53 @@ getBlogData(){
               }
       })
 }
+componentWillReceiveProps(nextProps){
+   axios
+
+        .get('http://iogapi.iassureit.com/api/blogs/get/all/list')
+        .then((response)=>{
+           var FirstFiveblogs = response.data.slice(0, 5);
+        // console.log("===>",response.data);
+        this.setState({
+            Blogs:FirstFiveblogs
+          });
+        })
+          .catch(function(error){
+          console.log(error);
+            if(error.message === "Request failed with status code 401")
+
+
+              {
+                   swal("Your session is expired! Please login again.","", "error");
+                   this.props.history.push("/");
+              }
+      })
+  var pageUrl = window.location.pathname;
+  var Blogs =[];
+  this.getBlogData();
+
+}
 componentDidMount(){
+  axios
+
+        .get('http://iogapi.iassureit.com/api/blogs/get/all/list')
+        .then((response)=>{
+           var FirstFiveblogs = response.data.slice(0, 5);
+        // console.log("===>",response.data);
+        this.setState({
+            Blogs:FirstFiveblogs
+          });
+        })
+          .catch(function(error){
+          console.log(error);
+            if(error.message === "Request failed with status code 401")
+
+
+              {
+                   swal("Your session is expired! Please login again.","", "error");
+                   this.props.history.push("/");
+              }
+      })
   var pageUrl = window.location.pathname;
   var Blogs =[];
   this.getBlogData();
