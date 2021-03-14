@@ -53,6 +53,15 @@ componentDidMount(){
 			if(a[1]=="ourjourney"){
 			  $(".NewLoader1").css("display", "none");	
 			}
+			if(a[1]=="privacypolicy"){
+			  $(".NewLoader1").css("display", "none");	
+			}
+			if(a[1]=="termsofuse"){
+			  $(".NewLoader1").css("display", "none");	
+			}
+			if(a[1]=="sitemap"){
+			  $(".NewLoader1").css("display", "none");	
+			}
 			if(a[1]=="resources"){
 			  $(".NewLoader1").css("display", "none");	
 			}
