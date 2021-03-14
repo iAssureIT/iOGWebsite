@@ -2953,40 +2953,40 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
    }
   } 
   @media only screen and (device-width: 851px)  {
-      .roadjourny img{
+.roadjourny img{
         display: none;
       }
-      .add1{
+.add1{
         display: none;
       } 
-      .add2{
+.add2{
         display: none;
       }
-      .add3{
+.add3{
         display: none;
       } 
-      .add4{
+.add4{
         display: none;
       } 
-      .add5{
+.add5{
         display: none;
       } 
-      .add6{
+.add6{
         display: none;
       } 
-      .add7{
+.add7{
         display: none;
       } 
-      .add8{
+.add8{
         display: none;
       } 
-      .add9{
+.add9{
         display: none;
       }  
-      .add10{
+.add10{
         display: none;
       } 
-      .webclientcaro {
+.webclientcaro {
         height: 150px ! important;
         /*padding: 10px;*/
         width: 630px ! important;
@@ -2994,109 +2994,109 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         text-align:center;
         border:1px solid #8b8d8e ! important;
     }
-    .journybg{
+.journybg{
       display: none;
     }
-     .webclientcaro h3{
+.webclientcaro h3{
       text-align: center;
      }
-     .Journycaro1 p{
+.Journycaro1 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro2 p{
+.Journycaro2 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro3 p{
+.Journycaro3 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro4 p{
+.Journycaro4 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro5 p{
+.Journycaro5 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro6 p{
+.Journycaro6 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro7 p{
+.Journycaro7 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro8 p{
+.Journycaro8 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro9 p{
+.Journycaro9 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro10 p{
+.Journycaro10 p{
       text-align: center;
       padding: 10px;
      }
-     .Journycaro11 p{
+.Journycaro11 p{
       text-align: center;
       padding: 10px;
      }
-    .Journycaro1{
+.Journycaro1{
         left: 73px ! important;
          top: 297px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro3{
+.Journycaro3{
         left: 73px ! important;
         top: 675px ! important;
         text-align: center;
          opacity: 1;
         /*padding: 10px;*/
     }
-    .Journycaro5{
+.Journycaro5{
         left: 73px ! important;
          top:1230px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro7{
+.Journycaro7{
         left: 73px ! important;
          top: 1420px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro9{
+.Journycaro9{
         left: 73px ! important;
          top: 1790px ! important;
          text-align: center;
           opacity: 1;
     }
 
-    .Journycaro2{
+.Journycaro2{
      left: 73px ! important;
      top: 480px ! important;
        opacity: 1;
     }
-    .Journycaro4{
+.Journycaro4{
      left: 73px ! important;
       top: 855px ! important;
        opacity: 1;
     }
-    .Journycaro6{
+.Journycaro6{
      left: 73px ! important;
       top: 1040px ! important;
        opacity: 1;
     }
-    .Journycaro8{
+.Journycaro8{
      left: 73px ! important;
       top: 1605px ! important;
        opacity: 1;
     }
-    .Journycaro10{
+.Journycaro10{
      left: 73px ! important;
       top: 1980px ! important;
       opacity: 1;
@@ -3125,40 +3125,40 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     
   } 
  @media only screen and (device-width: 800px)  {
-      .roadjourny img{
+.roadjourny img{
         display: none;
       }
-      .add1{
+.add1{
         display: none;
       } 
-      .add2{
+.add2{
         display: none;
       }
-      .add3{
+.add3{
         display: none;
       } 
-      .add4{
+.add4{
         display: none;
       } 
-      .add5{
+.add5{
         display: none;
       } 
-      .add6{
+.add6{
         display: none;
       } 
-      .add7{
+.add7{
         display: none;
       } 
-      .add8{
+.add8{
         display: none;
       } 
-      .add9{
+.add9{
         display: none;
       }  
-      .add10{
+.add10{
         display: none;
       } 
-      .webclientcaro {
+.webclientcaro {
         height: 150px ! important;
         /*padding: 10px;*/
         width: 630px ! important;
@@ -3166,63 +3166,63 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         text-align:center;
         border:1px solid #8b8d8e ! important;
     }
-    .journybg{
+.journybg{
       display: none;
     }
-     .webclientcaro h3{
+.webclientcaro h3{
       text-align: center;
      }
-     .Journycaro1 p{
+.Journycaro1 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro2 p{
+.Journycaro2 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro3 p{
+.Journycaro3 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro4 p{
+.Journycaro4 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro5 p{
+.Journycaro5 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro6 p{
+.Journycaro6 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro7 p{
+.Journycaro7 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro8 p{
+.Journycaro8 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro9 p{
+.Journycaro9 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro10 p{
+.Journycaro10 p{
       text-align: center;
       padding: 10px;
      }
-     .Journycaro11 p{
+.Journycaro11 p{
       text-align: center;
       padding: 10px;
      }
-    .Journycaro1{
+.Journycaro1{
         left: 73px ! important;
          top: 297px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro3{
+.Journycaro3{
         left: 73px ! important;
         top: 675px ! important;
         text-align: center;
@@ -3392,7 +3392,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
 
 @media only screen and (device-width : 1440px)  { 
 .Journycaro1{
-    left:651px !important;
+    left:680px !important;
     opacity: 1;
     z-index: 0! important ;
   }
@@ -3408,7 +3408,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     z-index: 0! important ;
   }
   .Journycaro2{
-    left: 544px !important;
+    left: 550px !important;
     opacity: 1;
     z-index: 0! important ;
   }
@@ -3431,7 +3431,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
   .Journycaro4{
     left:874px ! important;
-    top: 630px ! important;
+    top: 683px ! important;
     opacity: 1;
     z-index: 0! important ;
   }
@@ -3442,8 +3442,8 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     z-index: 0! important ;
   }
    .add4{
-    left:308px ! important;
-    top:265px ! important;
+    left: 321px ! important;
+    top: 202px ! important;
     opacity: 1;
     z-index: 0! important ;
   }
@@ -3460,8 +3460,8 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     z-index: 0! important ;
   }
   .Journycaro7{
-    left:530px ! important;
-    top:1125px ! important;
+    left: 572px ! important;
+    top: 1146px ! important;
     opacity: 1;
     z-index: 0! important ;
   }
@@ -3520,7 +3520,15 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         overflow:inherit;
         z-index: 0! important ;
         top:92px ! important;
-        }     
+        } 
+ .add11 {
+    position: relative;
+    left: 758px;
+    z-index: 100;
+    height: 75px;
+    top: -847px;
+    opacity: 1;
+    }           
  }
  @media only screen and (device-width : 1400px) { 
     .Journycaro10{
@@ -4125,7 +4133,7 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
       width: 450px ! important;
     }
    }
- @media only screen and (device-width : 400px) and (device-height : 700px) { 
+@media only screen and (device-width : 400px) and (device-height : 700px) { 
    .webclientcaro {
       width: 300px ! important;
   }
@@ -4133,78 +4141,78 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     border: 1px solid #aea7a7;
   }
 } 
- @media only screen and (device-width : 393px) and (device-height : 851px) { 
+@media only screen and (device-width : 393px) and (device-height : 851px) { 
      .new_wizardNotefor4forJ{
         right: 4px ! important;
     }
   }
-   @media only screen and (device-width : 360px) and (device-height : 640px) { 
+@media only screen and (device-width : 360px) and (device-height : 640px) { 
      .new_wizardNotefor4forJ{
         right: 4px ! important;
     }
   } 
- @media only screen and (device-width : 400px) { 
+@media only screen and (device-width : 400px) { 
    .webclientcaro {
       width: 300px ! important;
   }
 } 
- @media only screen and (device-width : 401px) { 
+@media only screen and (device-width : 401px) { 
    .webclientcaro {
       width: 300px ! important;
   }
 }
 @media only screen and (device-width: 1680px) and (device-height: 1050px) 
  {
-    .roadjourny img{
+.roadjourny img{
     left:-249px ! important;
     z-index: 0! important ;
   }
-  .add1{
+.add1{
     opacity: 1;
     left: 387px ! important;
     z-index: 0! important ;
   }
-  .add9{
+.add9{
     display: none;
   }
-  .Journycaro1{
+.Journycaro1{
     opacity: 1;
     top:265px ! important;
     left: 552px ! important;
     z-index: 0! important ;
   }
-  .Journycaro2{
+.Journycaro2{
     opacity: 1;
     left: 248px !important;
     top: 411px ! important;
     z-index: 0! important ;
   }
-  .Journycaro3 {
+.Journycaro3 {
     opacity: 1;
     left: 677px !important;
     top: 661px ! important;
     z-index: 0! important ;
   }
-  .add4{
+.add4{
     opacity: 1;
    left: -476px ! important;
     top: 461px ! important;
     z-index: 0! important ;
   }
   
-  .Journycaro3 p{
+.Journycaro3 p{
     text-align: left ! important;
   }
-  .Journycaro3 h3{
+.Journycaro3 h3{
     text-align: left ! important;
   }
-  .Journycaro4 p{
+.Journycaro4 p{
     text-align: left ! important;
   }
-  .Journycaro4 h3{
+.Journycaro4 h3{
     text-align: left ! important;
   }
-  .Journycaro4{
+.Journycaro4{
     opacity: 1;
     top: 761px ! important;
     left: 200px ! important;
@@ -4212,111 +4220,111 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     z-index: 0! important ;
 
   }
-  .add3 {
+.add3 {
     opacity: 1;
     left: 603px ! important;
     top: 280px ! important;
     z-index: 0! important ;
   }
-  .Journycaro6 {
+.Journycaro6 {
     opacity: 1;
     top: 810px ! important;
     left: 746px ! important;
     z-index: 0! important ;
   }
-  .add6{
+.add6{
     opacity: 1;
     left: 696px ! important;
     top: 14px ! important;
     z-index: 0! important ;
 
   }
-  .Journycaro5{
+.Journycaro5{
     opacity: 1;
     top: 964px ! important;
     left: 934px ! important;
     z-index: 0! important ;
   }
-  .add5{
+.add5{
     opacity: 1;
     top: 763px ! important;
     right: 582px ! important;
     z-index: 0! important ;
 
   }
-  .Journycaro7 p{
+.Journycaro7 p{
     text-align: left ! important; 
   }
-  .Journycaro7 h3{
+.Journycaro7 h3{
     text-align: left ! important; 
   }
-   .Journycaro8 p{
+.Journycaro8 p{
     text-align: right ! important; 
   }
-  .Journycaro8 h3{
+.Journycaro8 h3{
     text-align: right ! important; 
   }
-  .Journycaro7{
+.Journycaro7{
     opacity: 1;
     top: 1119px ! important;
     left: 939px ! important;
     z-index: 0! important ;
   }
-  .add8{
+.add8{
     opacity: 1;
     right: -271px ! important;
     top: 156px ! important;
     z-index: 0! important ;
   }
-  .add10{
+.add10{
     opacity: 1;
     top: -37px ! important;
     left: 304px ! important;
     z-index: 0! important ;
   }
-  .Journycaro10{
+.Journycaro10{
     opacity: 1;
     left: 279px ! important;
     z-index: 0! important ;
   }
-  .Journycaro8 {
+.Journycaro8 {
     opacity: 1;
     top: 1125px ! important;
     left: 282px ! important;
     z-index: 0! important ;
   }
-  .Journycaro9{
+.Journycaro9{
     opacity: 1;
     left: 421px ! important;
     top: 1308px ! important;
     z-index: 0! important ;
   }
-  .Journycaro9 p{
+.Journycaro9 p{
     text-align: left ! important;
   }
-  .Journycaro9 h3{
+.Journycaro9 h3{
     text-align: left ! important;
   }
 
-  .add7 {
+.add7 {
     opacity: 1;
     left: 246px ! important;
     top: 348px ! important;
     z-index: 0! important ;
   }
-  .add12 {
+.add12 {
     left: 189px ! important;
     top: -112px  !important;
     opacity: 1;
     z-index: 0! important ;
      
    }
-   .add2{
+.add2{
     opacity:1;
     right: 431px ! important;
     z-index: 0! important ;
    }
-   .roadjourny{
+  .roadjourny{
     overflow:inherit;
     z-index: 0! important ;
    }      
@@ -4804,40 +4812,40 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     
   }   
   @media only screen and (device-width: 1536px) and (orientation: portrait){
-      .roadjourny img{
+  .roadjourny img{
         display: none;
       }
-      .add1{
+  .add1{
         display: none;
       } 
-      .add2{
+  .add2{
         display: none;
       }
-      .add3{
+  .add3{
         display: none;
       } 
-      .add4{
+  .add4{
         display: none;
       } 
-      .add5{
+  .add5{
         display: none;
       } 
-      .add6{
+  .add6{
         display: none;
       } 
-      .add7{
+  .add7{
         display: none;
       } 
-      .add8{
+  .add8{
         display: none;
       } 
-      .add9{
+  .add9{
         display: none;
       }  
-      .add10{
+  .add10{
         display: none;
       } 
-      .webclientcaro {
+  .webclientcaro {
         height: 150px ! important;
         /*padding: 10px;*/
         width: 630px ! important;
@@ -4845,760 +4853,747 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         text-align:center;
         border:1px solid #8b8d8e ! important;
     }
-    .journybg{
+.journybg{
       display: none;
     }
-     .webclientcaro h3{
-      text-align: center;
+.webclientcaro h3{
+       text-align: center;
      }
-     .Journycaro1 p{
+.Journycaro1 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro2 p{
+.Journycaro2 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro3 p{
+.Journycaro3 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro4 p{
+.Journycaro4 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro5 p{
+.Journycaro5 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro6 p{
+.Journycaro6 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro7 p{
+.Journycaro7 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro8 p{
+.Journycaro8 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro9 p{
+.Journycaro9 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro10 p{
+.Journycaro10 p{
       text-align: center;
       padding: 10px;
      }
-     .Journycaro11 p{
+.Journycaro11 p{
       text-align: center;
       padding: 10px;
      }
-    .Journycaro1{
+.Journycaro1{
         left: 101px ! important;
          top: 297px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro3{
+.Journycaro3{
         left: 101px ! important;
         top: 497px ! important;
         text-align: center;
          opacity: 1;
         /*padding: 10px;*/
     }
-    .Journycaro5{
+.Journycaro5{
         left: 101px ! important;
          top: 697px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro7{
+.Journycaro7{
         left: 101px ! important;
          top: 913px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro9{
+.Journycaro9{
         left: 101px ! important;
          top: 1119px ! important;
          text-align: center;
           opacity: 1;
     }
-
-    .Journycaro2{
+.Journycaro2{
      left: 791px ! important;
       top: 300px ! important;
        opacity: 1;
     }
-    .Journycaro4{
+.Journycaro4{
      left: 791px ! important;
       top: 502px ! important;
        opacity: 1;
     }
-    .Journycaro6{
+.Journycaro6{
      left: 791px ! important;
       top: 700px ! important;
        opacity: 1;
     }
-    .Journycaro8{
+.Journycaro8{
      left: 791px ! important;
       top: 915px ! important;
        opacity: 1;
     }
-    .Journycaro10{
+.Journycaro10{
      left: 791px ! important;
       top: 1120px ! important;
       opacity: 1;
     }
-    .journybg2{
+.journybg2{
       display: none;
     }
 
     
   }   
-  @media only screen and (device-width: 2048px){
-     .new_wizardNotefor4forJ{
+@media only screen and (device-width: 2048px){
+.new_wizardNotefor4forJ{
     right: 63px !important;
   }
-  .roadjourny img{
+.roadjourny img{
     left:-249px ! important;
     top:92px! important;
   }
-  .add1{
+.add1{
     opacity: 1;
     left: 567px ! important;
     top:291px ! important;
   }
-  .Journycaro1{
+.Journycaro1{
     opacity: 1;
     top:265px ! important;
    left: 877px ! important;
   }
-  .Journycaro2{
+.Journycaro2{
     opacity: 1;
     left: 669px !important;
     top: 411px ! important;
   }
-  .Journycaro3 {
+.Journycaro3 {
     opacity: 1;
     top: 629px ! important;
     left: 1103px ! important;
   }
-  .add4{
+.add4{
     opacity: 1;
     left: 311px ! important;
     top: 239px ! important;
   }
-  
-  .Journycaro3 p{
+.Journycaro3 p{
     text-align: left ! important;
   }
-  .Journycaro3 h3{
+.Journycaro3 h3{
     text-align: left ! important;
   }
-  .Journycaro4 p{
+.Journycaro4 p{
     text-align: right ! important;
   }
-  .Journycaro4 h3{
+.Journycaro4 h3{
     text-align: right ! important;
   }
-  .Journycaro4{
+.Journycaro4{
     opacity: 1;
     left: 346px !important;
     top: 618px ! important;
     text-align: right ! important;
-
   }
-  .add3 {
+.add3 {
     opacity: 1;
     left: 747px ! important;
     top: 370px ! important;
   }
-  .Journycaro6 {
+.Journycaro6 {
     opacity: 1;
     top: 840px ! important;
    left: 583px ! important;
   }
-  .add6{
+.add6{
     opacity: 1;
     left: 465px ! important;
     top: -47px ! important;
   }
-  .Journycaro5{
+.Journycaro5{
     opacity: 1;
     top: 964px ! important;
    left: 1180px ! important;
   }
-  .add5{
+.add5{
     opacity: 1;
     top: 810px ! important;
     right: 624px ! important;
-
   }
-  .Journycaro7 p{
+.Journycaro7 p{
     text-align: left ! important; 
   }
-  .Journycaro7 h3{
+.Journycaro7 h3{
     text-align: left ! important; 
   }
-   .Journycaro8 p{
+.Journycaro8 p{
     text-align: right ! important; 
   }
-  .Journycaro8 h3{
+.Journycaro8 h3{
     text-align: right ! important; 
   }
-  .Journycaro7{
+.Journycaro7{
     opacity: 1;
     top: 1119px ! important;
     left: 1283px ! important;
   }
-  .add8{
+.add8{
     opacity: 1;
     right: -527px ! important;
     top: 156px ! important;
   }
-  .add10{
+.add10{
     opacity: 1;
     top: 66px ! important;
     left: 390px ! important;
   }
-  .Journycaro10{
+.Journycaro10{
     opacity: 1;
    left: 682px ! important;
   }
-  .Journycaro8 {
+.Journycaro8 {
     opacity: 1;
     top: 1199px ! important;
     left: 650px ! important;
   }
-  .Journycaro9{
+.Journycaro9{
     opacity: 1;
     left: 238px ! important;
     top: 1303px ! important;
   }
-  .add7 {
+.add7 {
     opacity: 1;
     left: 651px ! important;
     top: 393px ! important;
   }
-  .add12 {
+.add12 {
     left: 562px ! important;
     top: -112px  !important;
     opacity: 1;
      
    }
-   .add2{
+.add2{
     opacity:1;
     right: 244px ! important;
     top:471px ! important;
    }
-   .roadjourny{
+.roadjourny{
     overflow:inherit;
    }  
-  
-
+.add9{
+    display: none;
+   }
 }
- @media only screen and (device-width: 2048px) and (orientation: landscape){
-  
-}
- @media only screen and (device-width : 2560px) {
-  .new_wizardNotefor4forJ{
+@media only screen and (device-width : 2560px) {
+.new_wizardNotefor4forJ{
     right: 63px !important;
   }
-  .roadjourny img{
+.roadjourny img{
     left:-249px ! important;
   }
-  .add1{
+.add1{
     opacity: 1;
     left:886px ! important;
   }
-  .Journycaro1{
+.Journycaro1{
     opacity: 1;
     top:265px ! important;
     left:1393px ! important;
   }
-  .Journycaro2{
+.Journycaro2{
     opacity: 1;
     left: 1107px !important;
     top: 411px ! important;
   }
-  .Journycaro3 {
+.Journycaro3 {
     opacity: 1;
     left: 608px !important;
     top: 613px ! important;
   }
-  .add4{
+.add4{
     opacity: 1;
     left:646px ! important;
     top: 239px ! important;
   }
   
-  .Journycaro3 p{
+.Journycaro3 p{
     text-align: right ! important;
   }
-  .Journycaro3 h3{
+.Journycaro3 h3{
     text-align: right ! important;
   }
-  .Journycaro4 p{
+.Journycaro4 p{
     text-align: left ! important;
   }
-  .Journycaro4 h3{
+.Journycaro4 h3{
     text-align: left ! important;
   }
-  .Journycaro4{
+.Journycaro4{
     opacity: 1;
     top: 543px ! important;
     left: 1586px ! important;
     text-align: right ! important;
-
-  }
-  .add3 {
+}
+.add3 {
     opacity: 1;
    left: 1061px ! important;
     top: 280px ! important;
   }
-  .Journycaro6 {
+.Journycaro6 {
     opacity: 1;
     top: 785px ! important;
     left: 1230px ! important;
   }
-  .add6{
+.add6{
     opacity: 1;
     left: 1169px  ! important;
     top: 12px ! important;
   }
-  .Journycaro5{
+.Journycaro5{
     opacity: 1;
     top: 964px ! important;
     left: 1799px ! important;
   }
-  .add5{
+.add5{
     opacity: 1;
     top: 763px ! important;
     right: 429px ! important;
   }
-  .Journycaro7 p{
+.Journycaro7 p{
     text-align: left ! important; 
   }
-  .Journycaro7 h3{
+.Journycaro7 h3{
     text-align: left ! important; 
   }
-   .Journycaro8 p{
+.Journycaro8 p{
     text-align: right ! important; 
   }
-  .Journycaro8 h3{
-    text-align: right ! important; 
+.Journycaro8 h3{
+   text-align: right ! important; 
   }
-  .Journycaro7{
+.Journycaro7{
     opacity: 1;
         top: 1119px ! important;
        left: 1814px ! important;
   }
-  .add8{
+.add8{
     opacity: 1;
    right: -860px ! important;
     top: 156px ! important;
   }
-  .add10{
+.add10{
     opacity: 1;
   }
-  .Journycaro10{
+.Journycaro10{
     opacity: 1;
     left: 1180px ! important;
   }
-  .Journycaro8 {
+.Journycaro8 {
     opacity: 1;
-        top: 1086px ! important;
-       left: 1042px ! important;
+    top: 1086px ! important;
+    left: 1042px ! important;
 
   }
-  .Journycaro9{
+.Journycaro9{
     opacity: 1;
      left: 686px ! important;
      top: 1268px ! important;
   }
-  .add7 {
+.add7 {
     opacity: 1;
     left: 1125px ! important;
     top: 348px ! important;
   }
-  .add12 {
+.add12 {
     left: 1067px ! important;
     top: -112px  !important;
     opacity: 1;
      
    }
-   .add2{
+.add2{
     opacity:1;
    }
-   .roadjourny{
+.roadjourny{
     overflow:inherit;
    }     
 } 
 @media only screen and (device-width : 2880px) {
-  .new_wizardNotefor4forJ{
+.new_wizardNotefor4forJ{
     right: 63px !important;
   }
-  .roadjourny img{
+.roadjourny img{
     left:-567px ! important;
      /*z-index: 0! important ;*/
   }
-  .add1{
+.add1{
     opacity: 1;
     left:765px ! important;
     z-index: 0! important ;
   }
-  .Journycaro1{
+.Journycaro1{
     opacity: 1;
     top:265px ! important;
     left:1393px ! important;
      z-index: 0! important ;
   }
-  .Journycaro2{
+.Journycaro2{
     opacity: 1;
     left: 1107px !important;
     top: 411px ! important;
      z-index: 0! important ;
   }
-  .Journycaro3 {
+.Journycaro3 {
     opacity: 1;
     top: 543px ! important;
     left: 1586px ! important;
     text-align: left ! important;
      z-index: 0! important ;
   }
-  .add4{
+.add4{
     opacity: 1;
     left:546px ! important;
     top: 239px ! important;
      z-index: 0! important ;
   }
-  
-  .Journycaro3 p{
+.Journycaro3 p{
     text-align: left ! important;
   }
-  .Journycaro3 h3{
+.Journycaro3 h3{
     text-align: left ! important;
   }
-  .Journycaro4 p{
+.Journycaro4 p{
     text-align: right ! important;
   }
-  .Journycaro4 h3{
+.Journycaro4 h3{
     text-align: right ! important;
   }
-  .Journycaro4{
+.Journycaro4{
     opacity: 1;
     left: 608px !important;
     top: 613px ! important;
     text-align: right ! important;
      z-index: 0! important ;
-
   }
-  .add3 {
+.add3 {
     opacity: 1;
     left: 1067px ! important;
     top: 280px ! important;
      z-index: 0! important ;
   }
-  .Journycaro6 {
+.Journycaro6 {
     opacity: 1;
     top: 785px ! important;
     left: 1087px ! important;
      z-index: 0! important ;
   }
-  .add6{
+.add6{
     opacity: 1;
     left: 978px ! important;
     top: -110px ! important;
      z-index: 0! important ;
   }
-  .Journycaro5{
+.Journycaro5{
     opacity: 1;
     top: 964px ! important;
     left: 1799px ! important;
      z-index: 0! important ;
   }
-  .add5{
+.add5{
     opacity: 1;
     top: 763px ! important;
     right: 701px ! important;
      z-index: 0! important ;
   }
-  .Journycaro7 p{
+.Journycaro7 p{
     text-align: left ! important; 
   }
-  .Journycaro7 h3{
+.Journycaro7 h3{
     text-align: left ! important; 
   }
-   .Journycaro8 p{
+.Journycaro8 p{
     text-align: right ! important; 
   }
-  .Journycaro8 h3{
+.Journycaro8 h3{
     text-align: right ! important; 
   }
-  .Journycaro7{
+.Journycaro7{
     opacity: 1;
     top: 1119px ! important;
     left: 1808px ! important;
      z-index: 0! important ;
   }
-  .add8{
+.add8{
     opacity: 1;
     right: -760px ! important;
     top: 156px ! important;
      z-index: 0! important ;
   }
-  .add10{
+.add10{
     opacity: 1;
      z-index: 0! important ;
   }
-  .Journycaro10{
+.Journycaro10{
     opacity: 1;
     left: 1180px ! important;
      z-index: 0! important ;
   }
-  .Journycaro8 {
+.Journycaro8 {
     opacity: 1;
     top: 1086px ! important;
     left: 1042px ! important;
      z-index: 0! important ;
   }
-  .Journycaro9{
+.Journycaro9{
     opacity: 1;
      left: 686px ! important;
      top: 1268px ! important;
       z-index: 0! important ;
   }
-  .add7 {
+.add7 {
     opacity: 1;
     left: 1131px ! important;
     top: 348px ! important;
      z-index: 0! important ;
   }
-  .add12 {
+.add12 {
     left: 1067px ! important;
     top: -112px  !important;
     opacity: 1;
      
    }
-   .add2{
+.add2{
     opacity:1;
     top:402px! important;
     right: 331px ! important;
      z-index: 0! important ;
    }
-   .roadjourny{
+.roadjourny{
     overflow:inherit;
      z-index: 0! important ;
    }
-   .add9{
+.add9{
     display: none;
    }    
 } 
  @media only screen and (device-width : 2560px) {
-  .new_wizardNotefor4forJ{
+.new_wizardNotefor4forJ{
     right: 63px !important;
   }
-   .roadjourny{
+.roadjourny{
         overflow: inherit;
         z-index: 0;
         top: 92px;
       }
-  .roadjourny img{
+.roadjourny img{
     left:-249px ! important;
   }
-  .add1{
+.add1{
     opacity: 1;
     left:886px ! important;
     /*z-index: 0! important ;*/
   }
-  .Journycaro1{
+.Journycaro1{
     opacity: 1;
     top:265px ! important;
     left:1393px ! important;
     z-index: 0! important ;
   }
-  .Journycaro2{
+.Journycaro2{
     opacity: 1;
     left: 1168px !important;
     top: 433px ! important;
     z-index: 0! important ;
   }
-  .Journycaro3 {
+.Journycaro3 {
     opacity: 1;
     top: 620px ! important;
     left: 1617px ! important;
     /*z-index: 0! important ;*/
   }
-  .add4{
+.add4{
     opacity: 1;
     left: 661px ! important;
     top: 272px ! important;
     z-index: 0! important ;
-  }
-  
-  .Journycaro3 p{
+  }  
+.Journycaro3 p{
     text-align: left ! important;
   }
-  .Journycaro3 h3{
+.Journycaro3 h3{
     text-align: left ! important;
   }
-  .Journycaro4 p{
+.Journycaro4 p{
     text-align: right ! important;
   }
-  .Journycaro4 h3{
+.Journycaro4 h3{
     text-align: right ! important;
   }
-  .Journycaro4{
+.Journycaro4{
     opacity: 1;
     left: 680px !important;
     top: 652px ! important; 
     text-align: right ! important;
     /*z-index: 0! important ;*/
-
   }
-  .add3 {
+.add3 {
     opacity: 1;
    left: 1086px ! important;
     top: 389px ! important;
     z-index: 0! important ;
   }
-  .Journycaro6 {
+.Journycaro6 {
     opacity: 1;
     top: 879px ! important;
     left: 1088px ! important;
     z-index: 0! important ;
   }
-  .add6{
+.add6{
     opacity: 1;
     left: 977px  ! important;
     top: 12px ! important;
     z-index: 0! important ;
   }
-  .Journycaro5{
+.Journycaro5{
     opacity: 1;
     top: 1005px ! important;
     left: 1776px ! important;
     /*z-index: 0! important ;*/
   }
-  .add5{
+.add5{
     opacity: 1;
     top: 839px ! important;
     right: 470px ! important;
     z-index: 0! important ;
   }
-  .Journycaro7 p{
+.Journycaro7 p{
     text-align: left ! important; 
     z-index: 0! important ;
   }
-  .Journycaro7 h3{
+.Journycaro7 h3{
     text-align: left ! important; 
     z-index: 0! important ;
   }
-   .Journycaro8 p{
+.Journycaro8 p{
     text-align: right ! important; 
     z-index: 0! important ;
   }
-  .Journycaro8 h3{
+.Journycaro8 h3{
     text-align: right ! important; 
     z-index: 0! important ;
   }
-  .Journycaro7{
+.Journycaro7{
     opacity: 1;
     top: 1158px ! important;
     left: 1814px ! important;
   }
-  .add8{
+.add8{
     opacity: 1;
     right: -860px ! important;
     top: 206px ! important;
   }
-  .add10{
+.add10{
     opacity: 1;
     top: 70px ! important;
     left: 919px ! important;
   }
-  .Journycaro10{
+.Journycaro10{
     opacity: 1;
     top: 1518px;
     left: 1180px ! important;
   }
-  .Journycaro8 {
+.Journycaro8 {
     opacity: 1;
      top: 1207px ! important;
     left: 1166px ! important;
-
   }
-  .Journycaro9{
+.Journycaro9{
     opacity: 1;
      left: 686px ! important;
     top: 1333px ! important;
   }
-  .add7 {
+.add7 {
     opacity: 1;
     left: 1163px ! important;
     top: 423px ! important;
   }
-  .add12 {
+.add12 {
     left: 1074px ! important;
     top: -80px !important;
-    opacity: 1;
-     
+    opacity: 1;  
    }
-   .add2{
+.add2{
     opacity:1;
     right: 81px;
     top: 487px;
     z-index: 0! important ;
    }
-   .add9{
+.add9{
     display: none;
    }
-   .roadjourny{
+.roadjourny{
     overflow:inherit;
    }   
 }  
  @media only screen and (device-width : 1600px) {
-      .roadjourny img{
+.roadjourny img{
         display: none;
       }
-      .roadjourny{
+.roadjourny{
         overflow: inherit;
         z-index: 0;
       }
-      .add1{
+.add1{
         display: none;
       } 
-      .add2{
+.add2{
         display: none;
       }
-      .add3{
+.add3{
         display: none;
       } 
-      .add4{
+.add4{
         display: none;
       } 
-      .add5{
+.add5{
         display: none;
       } 
-      .add6{
+.add6{
         display: none;
       } 
-      .add7{
+.add7{
         display: none;
       } 
-      .add8{
+.add8{
         display: none;
       } 
-      .add9{
+.add9{
         display: none;
       }  
-      .add10{
+.add10{
         display: none;
       } 
-      .webclientcaro {
+.webclientcaro {
         height: 150px ! important;
         /*padding: 10px;*/
         width: 630px ! important;
@@ -5606,361 +5601,357 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
         text-align:center;
         border:1px solid #8b8d8e ! important;
     }
-    .journybg{
+.journybg{
       display: none;
     }
-     .webclientcaro h3{
+.webclientcaro h3{
       text-align: center;
      }
-     .Journycaro1 p{
+.Journycaro1 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro2 p{
+.Journycaro2 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro3 p{
+.Journycaro3 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro4 p{
+.Journycaro4 p{
          padding: 10px;
       text-align: center;
      }
-     .Journycaro5 p{
+.Journycaro5 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro6 p{
+.Journycaro6 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro7 p{
+.Journycaro7 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro8 p{
+.Journycaro8 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro9 p{
+.Journycaro9 p{
       text-align: center;
          padding: 10px;
      }
-     .Journycaro10 p{
+.Journycaro10 p{
       text-align: center;
       padding: 10px;
      }
-     .Journycaro11 p{
+.Journycaro11 p{
       text-align: center;
       padding: 10px;
      }
-    .Journycaro1{
+.Journycaro1{
         left: 101px ! important;
          top: 297px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro3{
+.Journycaro3{
         left: 101px ! important;
         top: 497px ! important;
         text-align: center;
          opacity: 1;
         /*padding: 10px;*/
     }
-    .Journycaro5{
+.Journycaro5{
         left: 101px ! important;
          top: 697px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro7{
+.Journycaro7{
         left: 101px ! important;
          top: 913px ! important;
          text-align: center;
           opacity: 1;
     }
-    .Journycaro9{
+.Journycaro9{
         left: 101px ! important;
          top: 1119px ! important;
          text-align: center;
           opacity: 1;
     }
-
-    .Journycaro2{
+.Journycaro2{
      left: 791px ! important;
       top: 300px ! important;
        opacity: 1;
     }
-    .Journycaro4{
+.Journycaro4{
      left: 791px ! important;
       top: 502px ! important;
        opacity: 1;
     }
-    .Journycaro6{
+.Journycaro6{
      left: 791px ! important;
       top: 700px ! important;
        opacity: 1;
     }
-    .Journycaro8{
+.Journycaro8{
      left: 791px ! important;
       top: 915px ! important;
        opacity: 1;
     }
-    .Journycaro10{
+.Journycaro10{
      left: 791px ! important;
       top: 1120px ! important;
       opacity: 1;
     }
-    .journybg2{
+.journybg2{
       display: none;
     }
-
-
  }
 
  @media only screen and (device-width: 1024px) {
-    .Journycaro4{
+.Journycaro4{
       display: none;
-
     }
-    .add3{
+.add3{
       display: none;
     }
   }
-   @media only screen and (device-width : 1280px) and (device-height : 800px) {
+@media only screen and (device-width : 1280px) and (device-height : 800px) {
     
 }
- @media only screen and (device-width : 1280px) {
-     .roadjourny{
+@media only screen and (device-width : 1280px) {
+.roadjourny{
       overflow: inherit;
       top:92px ! important;
       z-index: 0;
     }
-    .Journycaro1{
+.Journycaro1{
       left:532px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add10{
+.add10{
       opacity: 1;
       top:78px ! important;
     }
-    .add1{
+.add1{
       left:495px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro2{
+.Journycaro2{
       left:438px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro3{
+.Journycaro3{
       opacity: 1;
       left: 239px ! important;
        z-index: 0! important ;
     }
-    .Journycaro4{
+.Journycaro4{
          top: 711px! important;
         opacity: 1;
         left: 701px ! important;
       z-index: 0! important ;
     }
-    .Journycaro5{
+.Journycaro5{
       left:846px ! important;
       opacity: 1;
       top: 918px ! important;
       z-index: 0! important ;
     }
-    .add5{
+.add5{
       opacity: 1;
       top:805px ! important;
        z-index: 0! important ;
     }
-    .Journycaro7{
+.Journycaro7{
       left:423px ! important;
       top:1115px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add8{
+.add8{
       right: -412px ! important;
       top:175px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro8{
+.Journycaro8{
       left:760px ! important;
       opacity: 1;
       top:1412px ! important;
        z-index: 0! important ;
     }
-    .add7{
+.add7{
       left: 712px ! important;
       top:326px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add6{
+.add6{
       left: 95px ! important;
       top: -46px;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro9{
+.Journycaro9{
       top:1149px ! important;
       top:1220px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro10{
+.Journycaro10{
       left: 335px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add9{
+.add9{
       left:224px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro6{
+.Journycaro6{
       left:204px ! important;
       opacity: 1;
       top: 834px;
        z-index: 0! important ;
     }
-    .add2{
+.add2{
       opacity: 1;
       right: -103px ! important;
        z-index: 0! important ;
     }
-    .add4 {
+.add4 {
       opacity: 1;
       position: relative;
       left: 239px;
        z-index: 0! important ;
     }
-    .add3 {
+.add3 {
       left: 630px;
       opacity: 1;
       top: 325px;
      z-index: 0! important ;
   }
-  .downimgtext{
+.downimgtext{
     left:19em ! important;
   }
 }
 @media only screen and (device-width : 1152px) {
-    .roadjourny{
+.roadjourny{
       overflow: inherit;
       z-index: 0;
     }
-    .roadjourny img{
+.roadjourny img{
       left:205px ! important;
     }
-    .Journycaro1{
+.Journycaro1{
       left:425px ! important;
       opacity: 1;
     }
-    .journybg2{
+.journybg2{
       display: none;
     }
-    .add1{
+.add1{
       left:501px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro2{
+.Journycaro2{
       left:170px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro3{
+.Journycaro3{
       left:92px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro4{
+.Journycaro4{
       top:650px! important;
       left:600px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro5{
+.Journycaro5{
       left:746px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add5{
+.add5{
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro7{
+.Journycaro7{
       left:323px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add8{
+.add8{
       right: -761px ! important;
       opacity: 1;
       top:170px ! important;
        z-index: 0! important ;
     }
-    .Journycaro8{
+.Journycaro8{
       left:672px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add7{
+.add7{
       left: 712px ! important;
       top:241px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add6{
+.add6{
       left: -754px ! important;
       top:527px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro9{
+.Journycaro9{
       top:1149px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro10{
+.Journycaro10{
       left: 213px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add9{
+.add9{
       left:133px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro6{
+.Journycaro6{
       left:106px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add2{
+.add2{
       opacity: 1;
        z-index: 0! important ;
     }
-    .add4 {
+.add4 {
       opacity: 1;
       position: relative;
       left: 548px;
        z-index: 0! important ;
     }
-    .add10{
+.add10{
       opacity: 1;
       top:50px;
        z-index: 0! important ;
     }
-    .add3 {
+.add3 {
     left: 513px;
     opacity: 1;
     top: 271px;
@@ -5968,233 +5959,245 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
   }
 }
 @media only screen and (device-width : 1920px) {
-  .roadjourny img{
+.roadjourny img{
     left:-147px ! important;
+    top:91px !  important;
   }
-    .roadjourny{
+.roadjourny{
       overflow: inherit;
       z-index: 0! important ;
     }
-    .Journycaro1{
-     left: 837px ! important;
+.Journycaro1{
+     left: 850px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .add1{
+.add1{
       left: 595px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .Journycaro2{
-      left: 548px ! important;
+.Journycaro2{
+      left: 758px ! important;   
       opacity: 1;
+      top:363px ! important;
       z-index: 0;
     }
-    .Journycaro3{
+.Journycaro3{
       opacity: 1;
-      left: 521px;
+      left: 550px;
       z-index: 0;
 
     }
-    .Journycaro4{
+.Journycaro4{
       top: 697px! important;
-      left: 967px;
+      left: 1050px;
       opacity: 1;
       z-index: 0;
     }
-    .Journycaro5{
+.Journycaro5{
       left: 1169px ! important;
+      top:950px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .add5{
+.add5{
       opacity: 1;
       right: 511px;
+      top:804px  ! important;
       z-index: 0;
 
     }
-    .Journycaro7{
+.Journycaro7{
       left: 759px ! important;
+      top:1155px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .add8{
+.add8{
       right: -538px ! important;
+      top:196px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .Journycaro8{
+.Journycaro8{
       left: 967px ! important;
       opacity: 1;
       z-index: 0;
+      top:1392px ! important;
     }
-    .add7{
+.add7{
       left: 930px ! important;
-      top:241px ! important;
+      top:333px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .add6{
+.add6{
       left: 433px ! important;
+      top:-34px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .Journycaro9{
-      top: 1266px ! important;
+.Journycaro9{
+      top: 1360px ! important;
       left: 158px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .Journycaro10{
-     left: 638px ! important;
+.Journycaro10{
+     left: 706px ! important;
+      top: 1543px;
       opacity: 1;
       z-index: 0;
     }
-    .add9{
-      left: 536px ! important;
+.add9{
+      left: 532px ! important;
+      top:319px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .Journycaro6{
+.Journycaro6{
      left: 529px ! important;
+     top:860px ! important;
       opacity: 1;
       z-index: 0;
     }
-    .add2{
+.add2{
       opacity: 1;
-      right: 244px;
+      right: 88px;
+      top: 457px;
       z-index: 0;
     }
-    .add4 {
+.add4 {
       opacity: 1;
       position: relative;
-      left: 329px;
+      left: 361px;
     }
-    .add3 {
-      left: 869px;
+.add3 {
+      left: 940px;
       opacity: 1;
-      top: 271px;
+      top: 352px;
       z-index: 0;
   }
-  .add10{
+.add10{
     opacity: 1;
-    top: 81px ! important;
+    top: 165px ! important;
     left: 109px ! important;
     z-index: 0;
   }
 }
 @media only screen and (device-width : 1856px) {
-  .roadjourny img{
+.roadjourny img{
     left:-147px ! important;
   }
-    .roadjourny{
+.roadjourny{
       overflow: inherit;
       z-index: 0;
     }
-    .Journycaro1{
+.Journycaro1{
      left: 837px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add1{
+.add1{
       left: 550px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro2{
+.Journycaro2{
       left: 548px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro3{
+.Journycaro3{
       opacity: 1;
       left: 476px;
        z-index: 0! important ;
 
     }
-    .Journycaro4{
+.Journycaro4{
       top: 697px! important;
       left: 967px;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro5{
+.Journycaro5{
       left: 1169px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add5{
+.add5{
       opacity: 1;
       right: 511px;
        z-index: 0! important ;
 
     }
-    .Journycaro7{
+.Journycaro7{
       left: 680px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add8{
+.add8{
       right: -495px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro8{
+.Journycaro8{
       left: 967px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add7{
+.add7{
       left: 930px ! important;
       top:241px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add6{
+.add6{
       left: 375px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro9{
+.Journycaro9{
       top: 1266px ! important;
       left: 110px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro10{
+.Journycaro10{
      left: 638px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add9{
+.add9{
       left: 469px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro6{
+.Journycaro6{
      left: 529px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add2{
+.add2{
       opacity: 1;
       right: 223px;
       top: 375px;
        z-index: 0! important ;
     }
-    .add4 {
+.add4{
       opacity: 1;
       position: relative;
       left: 291px;
        z-index: 0! important ;
     }
-    .add3 {
+.add3{
       left: 869px;
       opacity: 1;
       top: 271px;
        z-index: 0! important ;
   }
-    .add10{
+.add10{
       opacity: 1;
       top: 81px ! important;
       left: 60px ! important;
@@ -6202,117 +6205,116 @@ box-shadow: 0 10px 29px rgba(92,141,255,.22);
     }
 }
 @media only screen and (device-width : 1792px) {
-  .roadjourny img{
+.roadjourny img{
     left:-147px ! important;
   }
-    .roadjourny{
+.roadjourny{
       overflow: inherit;
       z-index: 0;
     }
-    .Journycaro1{
+.Journycaro1{
      left: 760px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add1{
+.add1{
       left: 510px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro2{
+.Journycaro2{
       left: 482px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro3{
+.Journycaro3{
       opacity: 1;
       left: 412px;
        z-index: 0! important ;
-
     }
-    .Journycaro4{
+.Journycaro4{
       top: 673px! important;
       left: 901px;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro5{
+.Journycaro5{
       left: 1095px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add5{
+.add5{
       opacity: 1;
       right: 511px;
        z-index: 0! important ;
 
     }
-    .Journycaro7{
+.Journycaro7{
       left: 624px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add8{
+.add8{
       right: -455px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro8{
+.Journycaro8{
       left: 967px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add7{
+.add7{
       left: 930px ! important;
       top:241px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add6{
+.add6{
       left: 308px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro9{
+.Journycaro9{
       top: 1266px ! important;
       left: 29px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro10{
+.Journycaro10{
      left: 538px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add9{
+.add9{
       left: 409px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .Journycaro6{
+.Journycaro6{
      left: 415px ! important;
       opacity: 1;
        z-index: 0! important ;
     }
-    .add2{
+.add2{
       opacity: 1;
       right: 223px;
       top: 375px;
        z-index: 0! important ;
     }
-    .add4 {
+.add4 {
       opacity: 1;
       position: relative;
       left: 247px;
        z-index: 0! important ;
     }
-    .add3 {
+.add3 {
         left: 781px;
         opacity: 1;
         top: 275px;
          z-index: 0! important ;
   }
-    .add10{
+.add10{
       opacity: 1;
       top: 81px ! important;
       left: 13px ! important;
