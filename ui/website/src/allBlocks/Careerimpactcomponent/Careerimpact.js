@@ -151,7 +151,7 @@ CareersData(){
                             var textPara = renderHTML(this.state.para);
                             var textPara1 = renderHTML(this.state.para1);
  
-                            console.log("textPara",textPara);
+                            // console.log("textPara",textPara);
                            return (
                                     <div key={index} className="panel panel-default blockdefault">
                                       <div className="panel-heading" role="tab" id="headingThree">

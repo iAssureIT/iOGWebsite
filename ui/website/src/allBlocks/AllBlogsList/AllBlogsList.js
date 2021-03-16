@@ -19,7 +19,7 @@ constructor(props) {
 deleteBlog(event){
 event.preventDefault();
 	var id= event.target.id;
-	console.log("id delet",id);
+	// console.log("id delet",id);
 	swal({
           title: "Are you sure you want to delete this Blog?",
           text: "Once deleted, you will not be able to recover this Blog!",

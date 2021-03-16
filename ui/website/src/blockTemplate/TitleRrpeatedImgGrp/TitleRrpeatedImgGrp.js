@@ -68,7 +68,7 @@ constructor(props) {
   }
 componentDidMount(){
 
-	console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks);
+	// console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks);
 	for(var i=0;i<this.state.blocks.repeatedBlocks.length;i++)
 	{
 		console.log("this.state.blocks.repeatedBlocks",this.state.blocks.repeatedBlocks[i].Title)

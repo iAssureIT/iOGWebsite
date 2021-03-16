@@ -171,7 +171,7 @@ export default class Footer extends Component {
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="">
                         <div className="textcolorwhite col-lg-5 col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-left pt20">
-                            <p style={{color:"#ffffff"}}>Copyright ©2019 <a href="/">iOGSolutions</a>. All rights reserved.</p>
+                            <p style={{color:"#ffffff"}}>Copyright ©2021 <a href="/">iOGSolutions</a>. All rights reserved.</p>
                         </div>
                         <div className="textcolorwhite col-lg-5 col-md-5 col-sm-6 col-xs-12 pull-right pt20">
                             <p className="text-right"style={{paddingRight:"20px"}}>
@@ -315,7 +315,7 @@ export default class Footer extends Component {
                 <div className="col-sm-12 col-xs-12">
                     <div className="">
                     <div className="textcolorwhite  col-sm-6 col-xs-12 pull-left pt20">
-                        <p style={{color:"#ffffff"}}style={{color:"#ffffff"}}>Copyright ©2019 <a style={{color:"#fff"}} href="/">iOGSolutions</a>. All rights reserved.</p>
+                        <p style={{color:"#ffffff"}}style={{color:"#ffffff"}}>Copyright ©2021 <a style={{color:"#fff"}} href="/">iOGSolutions</a>. All rights reserved.</p>
                      </div>
                     </div>
                    
