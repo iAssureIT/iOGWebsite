@@ -59,7 +59,7 @@ componentDidUpdate(prevProps, prevState){
     // console.log("id --->",id);
 
 		axios
-      .get('http://iogapi.iassureit.com/api/blogs/get/'+id)
+      .get('/api/blogs/get/'+id)
       .then((response)=>{
         // console.log("===>",response.data);
         this.setState({
@@ -88,7 +88,7 @@ componentDidUpdate(prevProps, prevState){
       var blogURL = this.props.match.params.selectedUrl;
 
       axios
-      .get('http://iogapi.iassureit.com/api/blogs/get/count/url/'+blogURL)
+      .get('/api/blogs/get/count/url/'+blogURL)
       .then((response)=>{
         this.setState({
             viewCount: response.data.count,

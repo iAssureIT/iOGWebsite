@@ -77,7 +77,7 @@ componentDidMount(){
                     });
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                   console.log("this.props.block_id----",this.props.block_id);
                     if(response.data){

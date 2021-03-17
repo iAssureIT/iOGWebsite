@@ -75,7 +75,7 @@ export default class ContactUsForm extends React.Component {
         };
         console.log("notification",formValues1);
         axios
-        .post('http://iogapi.iassureit.com/send-email',formValues1)
+        .post('/send-email',formValues1)
         .then((res)=>{
             if(res.status === 200){
                 swal("Thank you for contacting us. We will get back to you shortly.")
@@ -103,7 +103,7 @@ export default class ContactUsForm extends React.Component {
         console.log("notification",formValues2);
      
         axios
-        .post('http://iogapi.iassureit.com/send-email',formValues2)
+        .post('/send-email',formValues2)
         .then((res)=>{
             if(res.status === 200){
                 console.log("Mail Sent TO ADMIN successfully!")

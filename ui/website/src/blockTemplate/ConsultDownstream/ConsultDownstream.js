@@ -154,7 +154,7 @@ componentDidMount(){
           
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                   console.log("response.data.length>>>>>>>>>>>>>",response.data.repeatedBlocks.length);
                   if(response.data.repeatedBlocks.length == 10){

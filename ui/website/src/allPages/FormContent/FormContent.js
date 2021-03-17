@@ -52,7 +52,7 @@ class FormContent extends Component{
    }
 
       axios
-          .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
+          .get('/api/projectsettings/get/S3')
           .then((response)=>{
             // console.log("response",response);
             const config = {
@@ -685,7 +685,7 @@ class FormContent extends Component{
         function getConfig() {
           return new Promise(function (resolve, reject) {
             axios
-              .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
+              .get('/api/projectsettings/get/S3')
               .then((response) => {
                 // console.log("s3 response",response);
                 const config = {

@@ -63,7 +63,7 @@ componentDidMount(){
 console.log("==>",this.props.block_id);
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                   console.log("eventsresponse--",response.data);
                 /*var blocks = this.state.blocks;

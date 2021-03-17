@@ -124,7 +124,7 @@ componentDidMount(){
 					      		});
             console.log("urlParam----",urlParam)
 			axios
-			.get('http://iogapi.iassureit.com/api/pages/get/page_block/'+urlParam)
+			.get('/api/pages/get/page_block/'+urlParam)
 	        .then((response)=>{
 	        	console.log("data in page=",response.data);
 	      		if (response.data) {

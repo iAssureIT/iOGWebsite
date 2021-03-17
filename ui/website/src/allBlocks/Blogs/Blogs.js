@@ -47,7 +47,7 @@ export default class Blogs extends Component {
 componentWillReceiveProps(nextProps){
    axios
 
-        .get('http://iogapi.iassureit.com/api/blogs/get/all/list')
+        .get('/api/blogs/get/all/list')
         .then((response)=>{
            var FirstFiveblogs = response.data.slice(0, 5);
         // console.log("===>",response.data);
@@ -75,7 +75,7 @@ componentWillReceiveProps(nextProps){
 getBlogData(){
   axios
 
-        .get('http://iogapi.iassureit.com/api/blogs/get/all/list')
+        .get('/api/blogs/get/all/list')
         .then((response)=>{
            var FirstFiveblogs = response.data.slice(0, 5);
         // console.log("===>",response.data);

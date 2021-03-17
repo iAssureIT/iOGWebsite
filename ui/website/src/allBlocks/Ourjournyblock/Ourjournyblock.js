@@ -263,7 +263,7 @@ export default class Ourjournyblock extends Component {
                     });
           {
              axios
-                .get('http://iogapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                .get('/api/blocks/get/'+this.props.block_id)
                 .then((response)=>{
                   console.log("journey block---",response);
                     if(response.data){
