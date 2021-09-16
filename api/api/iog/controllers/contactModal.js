@@ -4,12 +4,9 @@ const ContactModal             = require('../models/contactModal.js');
 
 exports.create_contactModal = (req, res, next) => {
     console.log("inside comment");
-
-        const contactModal         = new ContactModal({
-
-                    _id                     :  new mongoose.Types.ObjectId(), 
-
-                  userName                 : req.body.userName,
+        const contactModal = new ContactModal({
+                    _id                     :  new mongoose.Types.ObjectId(),
+                  userName                  : req.body.userName,
                   companyName               : req.body.companyName,
                   designation               : req.body.designation,
                   country                   : req.body.country,
@@ -18,8 +15,7 @@ exports.create_contactModal = (req, res, next) => {
                   contactNumber             : req.body.contactNumber,
                   subject                   : req.body.subject,
                   enquiry                   : req.body.enquiry,
-                  createdAt                  : new Date(),  
-
+                  createdAt                 : new Date(),
         });
         
         contactModal.save()
@@ -44,6 +40,7 @@ exports.list_contactform = (req,res,next)=>{
      .sort({createdAt : -1})
         .exec()
         .then(data=>{
+            // console.log("list_contactform => data",data);
             res.status(200).json(data);
         })
         .catch(err =>{

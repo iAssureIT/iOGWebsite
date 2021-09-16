@@ -79,6 +79,12 @@
 .noWrapText{
   white-space: nowrap;
 }
+.wrapText{
+  max-width: 300px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .tableicons{
   font-size: 20px;
     padding: 5px 8px;

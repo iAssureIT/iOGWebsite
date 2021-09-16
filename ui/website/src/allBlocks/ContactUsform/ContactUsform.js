@@ -30,7 +30,8 @@ class ContactUsform extends Component{
      this.handleChange = this.handleChange.bind(this);
 
   }
-    handleChange(event){
+  
+  handleChange(event){
     event.preventDefault();
     this.setState({
       "userName"         : this.refs.userName.value,
@@ -60,24 +61,22 @@ class ContactUsform extends Component{
   }
 
   handleChangeSelect(itemValue){
-
     console.log("selectValue",itemValue)
     var itemLabel = itemValue.label;
     this.setState({
        "enquiry" :  itemLabel,
-    });
-    
+    });    
   }
 
   
   componentDidMount() {
     $(document).ready(function(){
     $('.dropdown-submenu a.test').on("click", function(e){
-      $(this).next('ul').toggle();
-      e.stopPropagation();
-      e.preventDefault();
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
     });
-  });
 
     $.validator.addMethod("regexifsc", function (value, element, regexpr) {
       return regexpr.test(value);
@@ -127,21 +126,19 @@ class ContactUsform extends Component{
 
   Submit(event){
     event.preventDefault();
-      if ($('#contactForm').valid()) {
-       
+    if ($('#contactForm').valid()) {       
       var dataArray={
-      "userName"         : this.refs.userName.value,
-      "companyName"      : this.refs.companyName.value,
-      "designation"      : this.refs.designation.value,
-      "country"          : this.refs.country.value,
-      "email"            : this.refs.email.value,
-      "message"          : this.refs.message.value,
-      "contactNumber"    : this.refs.contactNumber.value,
-      "subject"          : this.refs.subject.value,
-      "enquiry"          : this.state.enquiry,
-     
-    }
-    // console.log("dataArray======>",dataArray);
+        "userName"         : this.refs.userName.value,
+        "companyName"      : this.refs.companyName.value,
+        "designation"      : this.refs.designation.value,
+        "country"          : this.refs.country.value,
+        "email"            : this.refs.email.value,
+        "message"          : this.refs.message.value,
+        "contactNumber"    : this.refs.contactNumber.value,
+        "subject"          : this.refs.subject.value,
+        "enquiry"          : this.state.enquiry,     
+      }
+      // console.log("dataArray======>",dataArray);
       let fields = {};
       fields["userName"]      = "";
       fields["companyName"]   = "";
@@ -151,106 +148,106 @@ class ContactUsform extends Component{
       fields["message"]       = "";
       fields["contactNumber"] = "";
       fields["subject"]       = "";
-/*      fields["enquiry"]       = "";
-*/
-        // var adminEmail = this.getAdminEmail();  //Get email id from company settings. Write API for that.
-        var adminEmail = "iogdevelopers@gmail.com";
-        // var adminEmail = "iassureitmail@gmail.com";
-        const formValues1 = {
-            "email"         : this.refs.email.value ,
-            "subject"       : "Your Query/Feedback is sent successfully to www..com!",
-            "message"       : "",
-            "mail"          : 'Dear ' + this.state.userName + ', <br/><br/>'+
-                             
-                              "<b>Your Email: </b>"  + this.refs.email.value + '<br/><br/>'+
-                              "Your following message has been successfully delivered to the admin! We will get back to you shortly. <br/> <br/> " +
-                              "===============================  <br/> <br/> " +
-                              "<pre> " + this.state.message+ "</pre>" +
-                              " <br/> <br/> =============================== " +
-                              "<br/><br/> Thank You, <br/> Support Team, <br/> www..com " ,
-        };
-        // console.log("notification",formValues1);
+      /*      fields["enquiry"]       = ""; */
+
+      var adminEmail = "iogdevelopers@gmail.com";
+      var additionalEmail = "info@iogsolutions.com";
+
+      //==== For testing purpose =====
+      // var adminEmail      = "ashish.a.naik@gmail.com";
+      // var additionalEmail = "ashish.naik@iassureit.com";
+
+      const formValues1 = {
+        "email"         : this.refs.email.value ,
+        "subject"       : "Your Query/Feedback is sent successfully to www.iogsolutions.com!",
+        "message"       : "",
+        "mail"          : 'Dear ' + this.state.userName + ', <br/><br/>'+
+                         
+                          "<b>Your Email: </b>"  + this.refs.email.value + '<br/><br/>'+
+                          "Your following message has been successfully delivered to the admin! We will get back to you shortly. <br/> <br/> " +
+                          "===============================  <br/> <br/> " +
+                          "<pre> " + this.state.message+ "</pre>" +
+                          " <br/> <br/> =============================== " +
+                          "<br/><br/> Thank You, <br/> Support Team, <br/> www.iogsolutions.com " ,
+      };
         
-        axios
+      axios
         .post('/send-email',formValues1)
         .then((res)=>{
           console.log("contact result---",res);
             if(res.status === 200){
-                swal("Thank you for contacting us. We will get back to you shortly.")
-                }
+                swal("Thank you for contacting us. We will get back to you shortly.") 
+            }
         })
         .catch((error)=>{
-          console.log("error = ", error);
-         
+          console.log("error = ", error);         
         })
-        const formValues2 = {
-            "email"         : [adminEmail,
-                               'info@iogsolutions.com'
-                               ] ,
-            "subject"       : "New query/feedback arrived from Website!",
-            "message"       : "",
-            "mail"          : 'Dear Admin, <br/>'+
-                              "Following new query/feedback came from website! <br/> <br/> " +
-                              "------------------------------------------------------------------------------  <br/> <br/> " +
-                              "<b>Client Name: </b>"   + this.state.userName + '<br/>'+
-                             
-                              "<b>Client Company Name: </b>"  + this.state.companyName + '<br/>'+
 
-                              "<b>Designation: </b>"  + this.state.designation + '<br/>'+
 
-                              "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
+      const formValues2 = {
+          "email"         : [adminEmail,additionalEmail] ,
+          "subject"       : "New query/feedback arrived from Website!",
+          "message"       : "",
+          "mail"          : 'Dear Admin, <br/>'+
+                            "Following new query/feedback came from website! <br/> <br/> " +
+                            "------------------------------------------------------------------------------  <br/> <br/> " +
+                            "<b>Client Name: </b>"   + this.state.userName + '<br/>'+
+                           
+                            "<b>Client Company Name: </b>"  + this.state.companyName + '<br/>'+
 
-                              "<pre> " + this.state.message + "</pre>" +
-                              "<br/><br/> ============================ " +
-                              "<br/><br/> This is a system generated email! " ,
-        };
+                            "<b>Designation: </b>"  + this.state.designation + '<br/>'+
+                            "<b>Country : </b>"  + this.state.country + '<br/>'+
+
+                            "<b>Client Email: </b>"  + this.state.email + '<br/><br/>'+
+                            
+                            "<b>Client Contact Number: </b>"  + this.state.contactNumber + '<br/><br/>'+
+                            
+                            "<b>Enquiry For: </b>"  + this.state.enquiry + '<br/><br/>'+
+                            
+                            "<b>Subject: </b>"  + this.state.subject + '<br/><br/>'+
+
+                            "<pre> " + this.state.message + "</pre>" +
+                            "<br/><br/> ============================ " +
+                            "<br/><br/> This is a system generated email! " ,
+      };
         // console.log("notification",formValues2);
      
-        axios
-        .post('/send-email',formValues2)
+      axios.post('/send-email',formValues2)
         .then((res)=>{
-            if(res.status === 200){
-                console.log("Mail Sent TO ADMIN successfully!")
-            }
+          if(res.status === 200){
+              console.log("Mail Sent TO ADMIN successfully!")
+          }
         })
         .catch((error)=>{
           console.log("error = ", error);
         });
-          axios.post("/api/contactModal/post", dataArray)
+
+
+      axios.post("/api/contactModal/post", dataArray)
         .then((response)=>{
           console.log("response",response);
-        //   swal({
-        //   title : "Thank You....!",
-        //   text  : "",
-        //   buttons: false,
-        // });
-
-         /* swal({
-            title : response.data.message,
-            text  : response.data.message
-          });*/
+          this.setState({
+            "userName"         : "",
+            "companyName"      : "",
+            "designation"      : "",
+            "country"          : "",
+            "email"            : "",
+            "message"          : "",
+            "contactNumber"    : "",
+            "subject"          : "",
+            "enquiry"          : "",
+            "fields"           : fields
+          });      
         })
-      /*swal({
-          title : "Thank You....!",
-          text  : "",
-          buttons: false,
-        });*/
-      this.setState({
-        "userName"         : "",
-        "companyName"      : "",
-        "designation"      : "",
-        "country"          : "",
-        "email"            : "",
-        "message"          : "",
-        "contactNumber"    : "",
-        "subject"          : "",
-        "enquiry"          : "",
-        "fields"           : fields
-      });
+        .catch((error)=>{
+          console.log("error = ", error);
+        });
+
     }else{
       window.scrollTo(0, 0);
     }
   }
+  
   validateFormReq() {
     // let fields = this.state.fields;
     // let errors = {};
@@ -296,6 +293,7 @@ class ContactUsform extends Component{
     //   });
     //   return formIsValid;
   }
+  
   validateForm() {
     // let fields = this.state.fields;
     // let errors = {};
@@ -344,6 +342,7 @@ class ContactUsform extends Component{
     //   });
     //   return formIsValid;
   }
+  
   isNumberKey(evt){
     var charCode = (evt.which) ? evt.which : evt.keyCode
     if (charCode > 31 && (charCode < 48 || charCode > 57)  && (charCode < 96 || charCode > 105))
@@ -355,19 +354,18 @@ class ContactUsform extends Component{
       return true;
     }
   }
+  
   isTextKey(evt)  {
-   var charCode = (evt.which) ? evt.which : evt.keyCode;
-   if (charCode!=189 && charCode > 32 && (charCode < 65 || charCode > 90) )
-   {
-    evt.preventDefault();
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode!=189 && charCode > 32 && (charCode < 65 || charCode > 90) ){
+      evt.preventDefault();
       return false;
-    }
-    else{
+    }else{
       return true;
     }
   }
-  render(){
 
+  render(){
     console.log("this.state.enquiry",this.state.enquiry);
     const fruit = [
           {

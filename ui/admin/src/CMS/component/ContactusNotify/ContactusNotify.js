@@ -7,36 +7,31 @@ import $                    from 'jquery';
 import axios                from 'axios';
 import IAssureTable         from '../IAssureTable/IAssureTable.jsx';
 
-// import OneFieldForm         from '../OneFieldForm/OneFieldForm.js';
-// import 'rc-time-picker/assets/index.css';
-// import '../css/AttendanceManagement.css';
-
 const format = "h:mm a";
 class Contactus extends Component{
    constructor(props) {
     super(props);
     this.state = {
 
-        tabledata:[],
+      tabledata:[],
       "tableHeading": {
-          userName         : "Name",
-          email            : "Company Name",
-          contactNumber    : "Contact No",          // // actions          : 'Action',
-          // designation      : "Contact Number",
-          // companyName      : "Country",
-          // designation      : "Designation",
-          email             : "Email",
-          // message          : "Message",
-          // contactNumber      : "Subject",
-         
+          dateTime         : "Date & Time",
+          userName         : "Person Name",
+          companyName      : "Company Name",
+          country          : "Country",
+          email            : "Email ID",
+          contactNumber    : "Phone No",          // // actions          : 'Action',
+          enquiry          : "Enquiry For",
+          subject          : "Subject",
+          message          : "Message",         
       },
       "tableObjects"  : 
       {
           deleteMethod   : 'delete',
-          apiLink        : '/api/jobform/',
+          apiLink        : '',
           paginationApply: false,
           searchApply    : false,
-          editUrl        : '/brands/'
+          editUrl        : ''
       },
           "startRange"   : 0,
           "limitRange"   : 10,
@@ -57,65 +52,48 @@ class Contactus extends Component{
     axios.get('/api/contactModal/get/list')
 
     .then((response)=>{
-      console.log("contact Response",response);
-      var tableData = response.data;
-      var tableData = tableData.map((a, i)=>{
-        return {
-          _id              : a._id,
-          Name             : a.name1,
-          email            : a.email,
-          contactNumber    : a.contactNumber,
-          city             : a.city,
-          // state1           : a.State,
-          // country          : a.Country,
-          // education        : a.Education,
-          // college          : a.College Name,
-          // year             : a.Year of Passing,
-          // experience       : a.Experience,
-          // curr_ctc         : a.Current CTC,
-          // exp_ctc          : a.Expected CTC,
-          // position         : a.Position Applied For,
-          // // resume           : "",
-          // skills           : Skills,
-          // noticePeriod     : Notice period,
+      console.log("contact Response",response.data);
+      var tableData = [];
+      for(var i=0; i<response.data.length; i++ ){
+        var dateTime         = response.data[i].hasOwnProperty('createdAt')     ? moment(response.data[i].createdAt).format("ddd, MMM Do YYYY, h:mm:ss a")      : "-NA-";
+        var userName         = response.data[i].hasOwnProperty('userName')      ? response.data[i].userName       : "-NA-";
+        var companyName      = response.data[i].hasOwnProperty('companyName')   ? response.data[i].companyName    : "-NA-";
+        var country          = response.data[i].hasOwnProperty('country')       ? response.data[i].country        : "-NA-";
+        var email            = response.data[i].hasOwnProperty('email')         ? response.data[i].email          : "-NA-";
+        var contactNumber    = response.data[i].hasOwnProperty('contactNumber') ? response.data[i].contactNumber  : "-NA-";
+        var enquiry          = response.data[i].hasOwnProperty('enquiry')       ? response.data[i].enquiry        : "-NA-";
+        var subject          = response.data[i].hasOwnProperty('subject')       ? response.data[i].subject        : "-NA-";
+        var message          = response.data[i].hasOwnProperty('message')       ? response.data[i].message        : "-NA-";
 
-         
-        }
-      })
-      console.log("tabledata===>",response);
-      this.setState({
-        tableData : response.data
-      })
+        console.log("companyName => ", companyName);
+
+        tableData.push({
+          _id              : response.data[i]._id,
+          dateTime         : dateTime,
+          userName         : userName,
+          companyName      : companyName,
+          country          : country,
+          email            : email,
+          contactNumber    : contactNumber,
+          enquiry          : enquiry,
+          subject          : subject,
+          message          : message,
+        });
+      }
+
+      if(i >= response.data.length){
+        this.setState({
+          tableData : tableData
+        },()=>{
+          console.log("this.state.tableData = ",this.state.tableData);
+        })        
+      }
+
     })
     .catch(function(error){
       console.log("error = ",error);
     });
   }
-
-  // getData(){
-  //   axios.get('/api/jobform/get/list')
-  //      .then((response) => {
-  //               console.log(" response.data for careers Post==>", response.data);
-  //               var tableData = response.data.map((a, i)=>{
-  //                 console.log("a44444",a);
-  //                   return({
-  //                       _id         : a._id,
-  //                       Name        : a.name1,
-  //                       // environment : a.environment,
-  //                       // status      : a.status,
-  //                       // secretkey   : a.secretkey,
-  //                       // partnerid   : a.partnerid,
-  //                   })
-  //               })
-             
-  //               this.setState({ 
-  //                 paymentgatewayInfo: response.data, 
-  //                 tableData: tableData
-  //               });
-  //               console.log("tableData",this.state.tableData);
-  //           })
-  //           .catch((error) => {});
-  // }
 
     
  handleChange(event){
@@ -125,21 +103,20 @@ class Contactus extends Component{
       [name]: event.target.value,
      });
   }
+
   render(){
-   console.log(this.getData());
     return(
-                 <div>
-                  <div className="col-lg-12 col-md-12 col-xs-12 col-xs-12 text-center">
-                   <h3><b>Contact Details</b></h3>
-                  </div> 
-                   <IAssureTable
-                      tableHeading={this.state.tableHeading}
-                      dataCount={this.state.dataCount}
-                      tableData={this.state.tableData}
-                      getData={this.getData.bind(this)}
-                      tableObjects={this.state.tableObjects}
-                      />
-                 </div>     
+            <div>
+              <div className="col-lg-12 col-md-12 col-xs-12 col-xs-12 text-center">
+               <h3><b>Contact Details</b></h3>
+              </div> 
+              <IAssureTable
+                tableHeading={this.state.tableHeading}
+                dataCount={this.state.dataCount}
+                tableData={this.state.tableData}
+                getData={this.getData.bind(this)}
+                tableObjects={this.state.tableObjects} />
+            </div>     
                  
     );
   }
